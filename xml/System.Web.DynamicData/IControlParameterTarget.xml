@@ -1,0 +1,88 @@
+<Type Name="IControlParameterTarget" FullName="System.Web.DynamicData.IControlParameterTarget">
+  <TypeSignature Language="C#" Value="public interface IControlParameterTarget" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IControlParameterTarget" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IControlParameterTarget" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines members that a class must implement in order to provide data to for an instance of the <see cref="T:System.Web.DynamicData.DynamicControlParameter" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The control that implements this interface can be set as the <xref:System.Web.DynamicData.DynamicControlParameter.ControlId%2A> property of a <xref:System.Web.DynamicData.DynamicControlParameter> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FilteredColumn">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaColumn FilteredColumn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn FilteredColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IControlParameterTarget.FilteredColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column to which the parameter is being applied, if available.</summary>
+        <value>The column to which the parameter is being applied, if available.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementing this property is optional. A <xref:System.Web.DynamicData.FilterUserControl> object can provide it, but controls such as the <xref:System.Web.UI.WebControls.GridView> control cannot.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyNameExpression">
+      <MemberSignature Language="C#" Value="public string GetPropertyNameExpression (string columnName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPropertyNameExpression(string columnName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IControlParameterTarget.GetPropertyNameExpression(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The name of the column.</param>
+        <summary>Get an expression that can be used as a control parameter's property name.</summary>
+        <returns>An expression that can be used as a control parameter's property name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaTable Table { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable Table" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.IControlParameterTarget.Table" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the data that is being served by this provider.</summary>
+        <value>The type of the data that is being served by this provider.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

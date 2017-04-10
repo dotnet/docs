@@ -1,0 +1,170 @@
+<Type Name="WebBaseEventCollection" FullName="System.Web.Management.WebBaseEventCollection">
+  <TypeSignature Language="C#" Value="public sealed class WebBaseEventCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebBaseEventCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseEventCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Web.Management.WebBaseEvent" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ The <xref:System.Web.Management.WebBaseEventCollection> class is used to deliver a collection of health-monitoring events to providers such as the <xref:System.Web.Management.SqlWebEventProvider>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebBaseEventCollection> class.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEventCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/CS/webbaseeventcollection.cs#1)]
+ [!code-vb[System.Web.Management.WebBaseEventCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/VB/webbaseeventcollection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebBaseEventCollection (System.Collections.ICollection events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.#ctor(System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="events" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="events">The collection of <see cref="T:System.Web.Management.WebBaseEvent" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseEventCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebBaseEventCollection.%23ctor%28System.Collections.ICollection%29> constructor allows you to create an instance of the <xref:System.Web.Management.WebBaseEventCollection> class and initialize it with a collection of <xref:System.Web.Management.WebBaseEvent> objects.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use this constructor.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEventCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/CS/webbaseeventcollection.cs#2)]
+ [!code-vb[System.Web.Management.WebBaseEventCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/VB/webbaseeventcollection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="events" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.Management.WebBaseEvent value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Management.WebBaseEvent value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.Contains(System.Web.Management.WebBaseEvent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.Management.WebBaseEvent" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.Management.WebBaseEvent" /> object to search for.</param>
+        <summary>Indicates whether the collection contains the specified <see cref="T:System.Web.Management.WebBaseEvent" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified element; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebBaseEventCollection.Contains%2A> property.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEventCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/CS/webbaseeventcollection.cs#5)]
+ [!code-vb[System.Web.Management.WebBaseEventCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/VB/webbaseeventcollection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Management.WebBaseEvent value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Management.WebBaseEvent value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.IndexOf(System.Web.Management.WebBaseEvent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.Management.WebBaseEvent" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Web.Management.WebBaseEvent" /> object for which to obtain the index.</param>
+        <summary>Gets the index of the specified <see cref="T:System.Web.Management.WebBaseEvent" /> object.</summary>
+        <returns>The index of the specified <see cref="T:System.Web.Management.WebBaseEvent" /> object within the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebBaseEventCollection.IndexOf%2A> property.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEventCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/CS/webbaseeventcollection.cs#4)]
+ [!code-vb[System.Web.Management.WebBaseEventCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/VB/webbaseeventcollection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The object is not in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Management.WebBaseEvent this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebBaseEvent Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEventCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.WebBaseEvent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The collection index of the <see cref="T:System.Web.Management.WebBaseEvent" /> object you want to retrieve.</param>
+        <summary>Gets the <see cref="T:System.Web.Management.WebBaseEvent" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.Web.Management.WebBaseEvent" /> object at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.WebBaseEventCollection.Item%2A> property.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEventCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/CS/webbaseeventcollection.cs#3)]
+ [!code-vb[System.Web.Management.WebBaseEventCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEventCollection/VB/webbaseeventcollection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified index is outside the range of the collection.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

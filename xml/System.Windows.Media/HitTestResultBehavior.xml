@@ -1,0 +1,67 @@
+<Type Name="HitTestResultBehavior" FullName="System.Windows.Media.HitTestResultBehavior">
+  <TypeSignature Language="C#" Value="public enum HitTestResultBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestResultBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestResultBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines whether to continue the enumeration of any remaining visual objects during a hit test.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A hit test results callback method defines the actions that you perform when a hit test is identified on a particular visual object in the visual tree. After you perform the actions, you return a <xref:System.Windows.Media.HitTestResultBehavior> value that determines whether to continue the enumeration of any other visual objects.  
+  
+ You can enumerate all visual objects in a visual tree whose geometry contains a specified coordinate value. By returning Continue in your hit test callback method, you can identify all visual objects that are hit, even those that may be partly or wholly obscured by other visual objects.  
+  
+   
+  
+## Examples  
+ The following example shows how to return a <xref:System.Windows.Media.HitTestResultBehavior> value from a hit test results callback method.  
+  
+ [!code-csharp[HitTestingOverview#102](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#102)]
+ [!code-vb[HitTestingOverview#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#102)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestResultBehavior Continue = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestResultBehavior.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestResultBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Continue hit testing against the next visual in the visual tree hierarchy.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="Stop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestResultBehavior Stop = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestResultBehavior.Stop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestResultBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stop any further hit testing and return from the callback.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

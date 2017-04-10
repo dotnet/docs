@@ -1,0 +1,139 @@
+<Type Name="MsgBoxResult" FullName="Microsoft.VisualBasic.MsgBoxResult">
+  <TypeSignature Language="C#" Value="public enum MsgBoxResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsgBoxResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MsgBoxResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates which button was pressed on a message box, returned by the <see langword="MsgBox" /> function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call the `MsgBox` function, you can use the `MsgBoxResult` enumeration in your code in place of the actual values.  
+  
+ The `MsgBox` function returns a `MsgBoxResult` enumeration value.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="Abort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxResult Abort = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Abort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Abort** button was pressed. This member is equivalent to the Visual Basic constant <see langword="vbAbort" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="Cancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxResult Cancel = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Cancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Cancel** button was pressed. This member is equivalent to the Visual Basic constant <see langword="vbCancel" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ignore">
+      <MemberSignature Language="C#" Value="Ignore" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxResult Ignore = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Ignore" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Ignore** button was pressed. This member is equivalent to the Visual Basic constant <see langword="vbIgnore" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="No" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxResult No = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**No** button was pressed. This member is equivalent to the Visual Basic constant <see langword="vbNo" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ok">
+      <MemberSignature Language="C#" Value="Ok" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxResult Ok = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Ok" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**OK** button was pressed. This member is equivalent to the Visual Basic constant <see langword="vbOK" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Retry">
+      <MemberSignature Language="C#" Value="Retry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxResult Retry = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Retry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Retry** button was pressed. This member is equivalent to the Visual Basic constant <see langword="vbRetry" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="Yes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.MsgBoxResult Yes = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.MsgBoxResult.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.MsgBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Yes** button was pressed. This member is equivalent to the Visual Basic constant <see langword="vbYes" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

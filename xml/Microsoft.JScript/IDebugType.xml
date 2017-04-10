@@ -1,0 +1,47 @@
+<Type Name="IDebugType" FullName="Microsoft.JScript.IDebugType">
+  <TypeSignature Language="C#" Value="public interface IDebugType" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebugType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("613CC05D-05F4-4969-B369-5AEEF56E32D0")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods that provide information about debugger objects. This interface is implemented by debugger objects that represent a type in the debugger target.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HasInstance">
+      <MemberSignature Language="C#" Value="public bool HasInstance (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasInstance(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugType.HasInstance(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to test.</param>
+        <summary>When implemented in a class, determines whether the specified object is an instance of the current type.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is an instance of the current type; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1051 @@
+<Type Name="WebPartConnection" FullName="System.Web.UI.WebControls.WebParts.WebPartConnection">
+  <TypeSignature Language="C#" Value="public sealed class WebPartConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartConnection extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.ExpandableObjectConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true, "Transformers")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an object that enables two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls to form a connection. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the Web Parts control set, a connection is a link or association between two <xref:System.Web.UI.WebControls.WebParts.WebPart> (or other server or user) controls that enables them to share data. This ability to share data allows connected controls to be used in ways that exceed the functionality offered by the isolated controls. For example, if one control provides postal code data, and another control can read that data and provide local weather information based on the postal code, then the connected capability of the two controls provides more value to users. To extend this example, other controls could be created that also display information based on a postal code, such as a control with links to local news, and all these controls that can work with postal code data could share data with the single control that provides a postal code. End users of Web Parts applications can create and manage connections between all such compatible controls directly from a Web browser, using the standard connections user interface (UI) provided by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, or using a custom UI provided by a developer.  
+  
+ This <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class overview is a general statement of the basic details for creating a connection. For more on specific components and requirements involved in creating connections, see [Web Parts Connections Overview](http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b), or see the reference classes and code examples mentioned in the following discussion. There are several fundamental aspects of a Web Parts connection:  
+  
+-   Two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Every Web Parts connection consists of two controls. It is possible for a control to participate in more than one connection simultaneously, but every single connection consists of exactly two controls. The controls can derive directly from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class, or they can be other server controls, including ASP.NET controls, custom server controls, and user controls. Controls that do not derive from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, if placed in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, are automatically wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object at run time, which enables them to inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class and function as run-time <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
+  
+-   Controls residing in <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones. Both <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and any other type of server control must reside in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone to be able to participate in Web Parts connections (and most other Web Parts features).  
+  
+-   Consumers and providers. In every Web Parts connection there are two controls: a provider of data and a consumer of data. The provider furnishes data to the consumer through a specified callback method that returns data in the form of an interface. (For an example of how to create and specify the callback method, see the Example section of this topic.) This callback method is known as a provider connection point. The details of this connection point (its "friendly" name, an ID, and the type of the returned interface) are contained in a <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object associated with the provider control. The consumer receives the data through a specified method that can accept an instance of the interface. This method is known as a consumer connection point, and the details of the connection point (name, ID, and type of interface) are contained in a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object associated with the consumer control.  
+  
+-   Compatible controls or a valid transformer. For a connection to work, the consumer and provider must either be compatible (meaning that their specified connection point methods can work with the same type of interface), or there must be a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object capable of translating the type offered by the provider into a type understood by the consumer.  
+  
+-   A <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object. For a connection to exist, there must be an instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class that contains references to the provider and consumer controls, along with the details of their connection points. If the provider and consumer are incompatible and instead use a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object to connect, the connection references the transformer.  
+  
+-   A means of establishing the connection. After compatible consumer and provider controls have been properly designed with connection point methods and placed in a zone, and a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object is available, the last basic step necessary is to initiate the connection. One way this can happen is for users to create the connection through the UI. If you place an `<asp:connectionszone>` element on the page, and the other required components for a connection are in place, at run time a user can switch the page into connect display mode, click a connect verb on the verbs menu of either the provider or consumer, and a connection UI (based on the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control) will appear. Through this UI, the user can initiate the connection. Another way to initiate the connection is to do it programmatically. In either case, whether through the UI or programmatically, the underlying method that initiates the connection is the same. The application calls the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method (or the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method if using a transformer) on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, passing to it the provider, the consumer, and their respective connection point objects, and the method returns a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class defines an object that encapsulates the essential details of a connection between two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The class consists almost entirely of properties related to the details of a particular connection. Several properties concern the consumer control in a connection. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer%2A> property references the consumer control itself, and the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID%2A> property references the consumer's ID. The <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object, which contains the details of the consumer's connection point, is referenced by the consumer's <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPoint%2A> property. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID%2A> property references the ID of the <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object. All these consumer-related connection properties must have a value assigned to them to create a connection.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class also has several properties that relate to the provider control in a connection, and these correspond to the properties for a consumer. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider%2A> property references the provider control itself, while the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID%2A> property references its ID. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPoint%2A> property references the <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object, and the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID%2A> property references the ID of the provider's connection point.  
+  
+ Several properties concern the state of the connection. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsActive%2A> property indicates whether the connection is active (currently exchanging data) or inactive (still connected but not actively sharing data). The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> property indicates whether the connection is a shared (available to all users of a page) or a user-specific connection, and the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic%2A> property indicates whether the control is static (declared in the page markup and thus permanent) or dynamic (created programmatically, meaning that it can be deleted).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a simple connection between two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The example demonstrates three ways of forming a connection: declaratively, by placing tags for the connection in the markup of the Web page; programmatically, by creating the connection in code; and through the UI, by placing a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control on the page, which enables users to establish a connection.  
+  
+ The code example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the interface and controls. The source file contains a simple interface named `IZipCode`. There is also a <xref:System.Web.UI.WebControls.WebParts.WebPart> class named `ZipCodeWebPart` that implements the interface and acts as the provider control. Its `ProvideIZipCode` method is the callback method that implements the interface's only member. The method simply returns an instance of the interface. Note that the method is marked with a `ConnectionProvider` attribute in its metadata. This is the mechanism for identifying the method as the callback method for the provider's connection point. The other <xref:System.Web.UI.WebControls.WebParts.WebPart> class is named `WeatherWebPart`, and it acts as the consumer for the connection. This class has a method named `GetZipCode` that gets an instance of the `IZipCode` interface from the provider control. Note that this method is marked as the consumer's connection point method with a `ConnectionConsumer` attribute in its metadata.  
+  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the Web page. Near the top are the `Register` directives for the user control and the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Because the example assumes dynamic compilation of the controls, the source code for the controls should be in an App_Code subfolder; the `Register` tag in the page references only an arbitrary tag prefix and the namespace of the controls. The custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls (the provider and consumer) are declared within the Web page's `<asp:webpartzone>` element, inside a `<zonetemplate>` element.  
+  
+ The page provides three ways to form a connection between the custom controls. The first method is declarative. In the markup for the page, a <`StaticConnections>` element is declared, and within that is an `<asp:WebPartConnections>` element, with the various consumer and provider details of the connection specified as attributes. This is one way to create a connection, by declaring it directly in the Web page, specifically within the `<asp:WebPartManager>` element. Because of this static connection, a connection between the two custom controls is created immediately the first time the page loads.  
+  
+ A second method for forming a connection between the controls is provided by the `<asp:connectionszone>` element in the page. If a user switches a page into connect display mode at run time, and clicks a connect verb on one of the custom controls, the `<asp:connectionszone>` element automatically renders the UI for creating a connection.  
+  
+ The page also demonstrates a third way of creating a connection, which is to do it programmatically. In the `Button1_Click` method, the code creates a <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object for the provider control, and retrieves its connection point details by calling the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints%2A> method. It carries out a similar task for the consumer control, calling the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetConsumerConnectionPoints%2A> method. Finally, it creates the new <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object by calling the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Overview/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the Web page in a browser, the first connection already exists because it is declared within the `<StaticConnections>` element. Enter some text in the **ZIP Code Provider** control, and it will be displayed in the consumer control. Next, disconnect the two controls. Using the **Display Mode** drop-down list control, change the page to connect display mode. Click the verbs menu (represented by a downward arrow in the title bar) for each of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and notice that each has a **Connect** option. This is a connect verb, which appears in the verbs menu only when the page is in connect mode. Click the connect verb on one of the controls, and the connection UI provided by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control appears. Click the **Disconnect** button to end the static connection between the controls. Use the **Display Mode** control to return the page to browse mode. Try to enter some new text in the provider again, and note that because the controls are disconnected, the text fails to update in the consumer control.  
+  
+ Next, use the same method as above to switch the page into connect display mode again. Click a connect verb on one of the controls. Click the **Create a Connection** link, and use the UI provided by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to create a connection between the controls. This is the second method for creating a connection. Note that as soon as the connection is formed, the last string you entered in the provider control (that failed to appear because the controls were disconnected) suddenly appears in the consumer, because the connection has been recreated. Click the **Disconnect** button to end the current connection that you just created. Return the page to browse mode. Enter some new text in the provider to demonstrate that the text is not updated, and that the controls are again disconnected.  
+  
+ Return the page to connect display mode. Instead of clicking a connect verb, click the **Connect WebPart Controls** button, which illustrates the third method of forming a connection. This approach connects the controls programmatically in one simple step without having to use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. Note that as the connection is created, the last string you entered in the provider suddenly appears in the consumer control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartConnection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.%23ctor%2A> constructor is public so that the ASP.NET parser can create an instance when a connection is declared in the markup of a Web page; this constructor is not intended to be used in developer code.  
+  
+ When you want to create a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object programmatically, you should use the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A?displayProperty=fullName> or the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A?displayProperty=fullName> method provided in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. These methods handle the many details of creating a connection, and return a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.%23ctor%2A> constructor for the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> class sets the values of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic%2A> properties to `true`. Thus the default state of a new connection is to be static (meaning that it is declared in the markup of the containing Web page) and shared (visible to all users of the page). This will be the case when you add a connection in the typical scenario, by declaring the connection in the markup of the page with an `<asp:webpartconnection>` element. However, in other circumstances a connection will have different values for these properties. For example, when you add a connection programmatically by creating the connection object in code, and the user is viewing the page in the default user personalization scope, the connection is created as a dynamic, per-user(visible only to the specific user) connection.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic%2A> properties are read-only, and these properties that determine the nature of a connection are set internally by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control depending on how a connection is created (declaratively in the page markup, or programmatically through your code or the user interface).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Consumer">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPart Consumer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPart Consumer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> object that is acting as the consumer control in a connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that represents the Web Parts control acting as the consumer in a connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every Web Parts connection consists of two controls that share data. One control acts as the provider of data, and the other control acts as a consumer, receiving and processing the data from the provider. The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer%2A> property gets a reference to the <xref:System.Web.UI.WebControls.WebParts.WebPart> control acting as a consumer in a connection relationship.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer%2A> property.  
+  
+ The code example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_Consumer#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_Consumer#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_Consumer#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_Consumer#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the code for the Web page that hosts the controls and demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer%2A> property. Near the top of the page are the `Register` directives for the user control and the custom controls. Because this example uses dynamic compilation, the `Register` directive for the source file does not need to reference an assembly name; it includes only an arbitrary tag prefix and the namespace of the controls. In the `Button2_Click` method, the code accesses the connection object through the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, and gets a reference to the consumer control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_Consumer#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_Consumer#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Consumer/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the page in a browser, use the **Display Mode** drop-down list control to switch the page to connect mode. Click the verbs menu (represented by the downward arrow in the title bar) on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and click the connect verb. Use the **Connect WebPart Controls** button, or the provided connection user interface (UI), to create a connection between the two controls. Click the **Display Consumer Info** button to run the code that demonstrates the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Consumer%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The length of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID" /> property is zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsumerConnectionPoint">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint ConsumerConnectionPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint ConsumerConnectionPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that serves as a connection point for a control that is acting as a consumer in a connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" /> associated with the consumer control in a connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ One of the required steps for creating a connection between two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls is to create connection points for each control. The consumer connection point is an object that contains the information about how to connect to the control acting as a consumer. In the consumer's source code, one of the methods must be identified with the `ConnectionConsumer` attribute. The <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object that is associated with a consumer control contains details about the method and the attribute, including an ID for the method, a display name for use in the user interface (UI), and what type of interface the method can retrieve. This set of information about the consumer, its method for forming connections, and the type of interface it understands, collectively forms a consumer connection point.  
+  
+ By default, a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object can connect to only one <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object at a time. A consumer could have multiple methods identified as possible consumer connection points, but a consumer can only participate in one connection as a consumer (hence, only one of its consumer connection points can be active) at a time. In contrast, a <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> can connect to any number of <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> objects. This default behavior can be changed by overriding the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute.AllowsMultipleConnections%2A> property on the <xref:System.Web.UI.WebControls.WebParts.ConnectionConsumerAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPoint%2A> property.  
+  
+ The example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ConsumerConnectionPoint#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ConsumerConnectionPoint#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_ConsumerConnectionPoint#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_ConsumerConnectionPoint#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the code for the Web page that hosts the controls and demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPoint%2A> property. In the `Button1_Click` method, all the objects required to form a connection are created, including a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object. These objects are all passed to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method to create the connection. In the `Button2_Click` method, the code accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPoint%2A> property and displays some details of the connection point.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ConsumerConnectionPoint#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ConsumerConnectionPoint#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPoint/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the page in a browser, use the **Display Mode** drop-down list control to switch the page to connect mode. Click the verbs menu (represented by the downward arrow in the title bar) on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and click the connect verb. Use the **Connect WebPart Controls** button, or the provided connection UI, to create a connection between the two controls. Click the **ConnectionPoint Details** button to run the code that demonstrates the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPoint%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsumerConnectionPointID">
+      <MemberSignature Language="C#" Value="public string ConsumerConnectionPointID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConsumerConnectionPointID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("default")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property value on a connection that references the ID of the object serving as the consumer connection point for that connection.</summary>
+        <value>A string that contains the ID for the consumer connection point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a static connection declared in the markup of a Web page, developers can specify which consumer connection point will be used for the connection by assigning a value to the `ConsumerConnectionPointID` attribute on the `<asp:webpartconnection>` element. If a value is not assigned to the attribute, the <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.DefaultID> property value is used.  
+  
+ When you create dynamic (programmatic) connections, normally you should not set the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID%2A> property. You can simply call the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, passing to it the consumer and consumer connection point objects (along with the other required parameters), and that method determines the correct ID to use for the consumer's connection point. Similarly, when you disconnect, you can call the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts%2A> method without needing to specify the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID%2A> property value.  
+  
+> [!NOTE]
+>  The ID of a consumer's connection point can be determined when you designate a <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server control as a consumer. You must identify a method in the consumer that retrieves an instance of an interface furnished by either a provider control or a transformer. To identify the method, mark it with the `ConnectionConsumer` code attribute. When you add this attribute, you can add an optional string value parameter that serves as an ID for the consumer's <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object. If you supply a value for the optional ID parameter, that value becomes the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID%2A> property for the connection. If you do not supply an ID value, the <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.DefaultID> property value is used.  
+  
+   
+  
+## Examples  
+ The following code example shows the declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID%2A> property.  
+  
+ The example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ConsumerConnectionPointID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ConsumerConnectionPointID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_ConsumerConnectionPointID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_ConsumerConnectionPointID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the Web page. Note that a connection is declared in the page markup, using the `<StaticConnections>` and `<asp:WebPartsConnection>` elements. The connection declaration includes the required `ConsumerConnectionPointID` attribute. A second method for creating the connection appears in the `Button1_Click` method, where the code creates a new connection, using the connection point defined in the consumer control. Then, in the `Button2_Click` method, the code accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ConsumerConnectionPointID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ConsumerConnectionPointID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerConnectionPointID/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the page in a browser, a connection already exists because of the static connection declared in the page. Enter some text in the provider control, and note that it is displayed in the consumer due to the connection. Next, disconnect the controls. Using the **Display Mode** drop-down list control, switch the page to connect mode. Click the verbs menu (represented by the downward arrow in the title bar) on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and click the connect verb. Click the **Disconnect** button. Use the **Connect WebPart Controls** button to recreate a connection between the two controls. Click the **ConnectionPoint Details** button to run the code that accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerConnectionPointID%2A> property value. The value is written out in a label below the controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsumerID">
+      <MemberSignature Language="C#" Value="public string ConsumerID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConsumerID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property value on a connection that references the ID of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control acting as a consumer for that connection.</summary>
+        <value>A string that contains the ID of the control acting as a consumer in a connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID%2A> property value is required when you create a connection between <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. If a value is not assigned to the property, an exception is thrown when the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control attempts to activate the connection.  
+  
+   
+  
+## Examples  
+ The following code example shows the declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID%2A> property.  
+  
+ The example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ConsumerID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ConsumerID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_ConsumerID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_ConsumerID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the Web page. Note that a connection is declared in the page markup, using the `<StaticConnections>` and `<asp:WebPartsConnection>` elements. The connection declaration includes the required `ConsumerID` attribute. A second method for creating the connection appears in the `Button1_Click` method, where the code creates a new connection, using the connection point defined in the consumer control. Then, in the `Button2_Click` method, the code accesses the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID%2A> property and displays it in a label.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ConsumerID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ConsumerID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ConsumerID/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the page in a browser, a connection already exists because of the static connection declared in the page. Enter some text in the provider control, and note that it is displayed in the consumer due to the connection. Next, disconnect the controls. Using the **Display Mode** drop-down list control, switch the page to connect mode. Click the verbs menu (represented by the downward arrow in the title bar) on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and click the connect verb. Click the **Disconnect** button. Use the **Connect WebPart Controls** button to recreate a connection between the two controls. Click the **Consumer Details** button to run the code that accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ConsumerID%2A> property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public string ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ID of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object.</summary>
+        <value>A string that contains the ID of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object has a unique value assigned to its <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ID%2A> property. This is to ensure that there is a way to distinguish between multiple connections.  
+  
+ If you create a static connection by declaring an `<asp:webpartconnection>` element in a Web page, and you do not assign a value to the `ID` attribute for the connection, an exception is thrown when the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control attempts to activate the connection.  
+  
+ When the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control creates a new dynamic connection, it calls the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CreateDynamicConnectionID%2A> method to generate a unique ID for the connection.  
+  
+   
+  
+## Examples  
+ The following code example shows the declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ID%2A> property.  
+  
+ The example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_ID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_ID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the Web page. Note that a connection is declared in the page markup, using the `<StaticConnections>` and `<asp:WebPartsConnection>` elements. The connection declaration includes the required `ID` attribute. A second method for creating the connection appears in the `Button1_Click` method, where the code creates a new connection, using the connection point defined in the consumer control. Here, the ID property is not required, because the connection is dynamic, and the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control assigns an ID to the connection. In the `Button2_Click` method, the code accesses the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ID%2A> property and displays it in a label.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ID/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the page in a browser, a connection already exists because of the static connection declared in the page. Enter some text in the provider control, and note that it is displayed in the consumer due to the connection. Next, disconnect the controls. Using the **Display Mode** drop-down list control, switch the page to connect mode. Click the verbs menu (represented by the downward arrow in the title bar) on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and click the connect verb. Click the **Disconnect** button. Use the **Connect WebPart Controls** button to recreate a connection between the two controls. Click the **Connection Details** button to run the code that accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ID%2A> property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public bool IsActive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsActive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object is currently established and able to exchange data between its provider and consumer controls.</summary>
+        <value>
+          <see langword="true" /> if the connection is active; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsActive%2A> property indicates a state of a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object. When the connection is in this state, the provider and consumer controls in the connection are communicating and able to exchange data through a common interface or a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object.  
+  
+ When a user views a rendered page that includes an established connection in normal browse mode, the connection is typically active (unless it failed to be activated due to some conflict or other issue when the page loaded). In the early stages of the page and control life cycle, the property value is `false`. The connection is activated just after the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated> event on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is raised. Specifically, the connection is activated after the consumer has retrieved an instance of the specified interface from the provider or a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object.  
+  
+ It is useful to know whether a connection is active in situations where there might be conflicts or synchronization issues due to multiple connections on a page. For example, if there is some kind of conflict between two connections, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control has the option of not activating one of the connections to avoid the conflict.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsActive%2A> property.  
+  
+ The example has three parts:  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_IsActive#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsActive/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_IsActive#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsActive/VB/ZipCodeComponent.vb#2)]  
+  
+ The second part of the code example is the Web page. Near the top is a `Register` directive that refers to the source code for the two dynamically compiled <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The static connection is declared within the `<StaticConnections>` element on the page. Within the `<script>` element are four event handlers. Each event handler checks the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsActive%2A> property on the static connection, and writes a message to the <xref:System.Web.UI.WebControls.Label> control indicating whether the connection is active or inactive at that state of the page and control life cycle. This demonstrates at what point the connection becomes active, and that it remains active after the page is rendered.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_IsActive#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsActive/CS/wpConnectIsActiveCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_IsActive#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsActive/VB/wpConnectIsActiveVB.aspx#1)]  -->  
+  
+ Load the page in a browser. The static connection is already created, and messages have already been written to the labels showing whether the connection was active at various points in the page and control life cycle. Click the **Connection Details** button, and note that the connection is not active at that point, but that the connection is reactivated each time after the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectionsActivated> event, and that it is still active (and will remain so) after the <xref:System.Web.UI.Control.PreRender> event of the page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsShared">
+      <MemberSignature Language="C#" Value="public bool IsShared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsShared" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object is visible to all users or only to the current user.</summary>
+        <value>
+          <see langword="true" /> if the connection is shared; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As with individual <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object can be a shared or a per-user instance. A shared instance means that the connection is visible to all users of a Web page, and a per-user instance means the connection is visible only to a specific user.  
+  
+ In general, the way a connection is added to a page determines whether the connection is shared. If the connection is declared in the markup of a Web page, then the connection is shared and the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> property value is `true`. In addition, if the Web page is in shared personalization scope when a connection is added, the connection is also shared. Typically, when a user uses the `<asp:connectionszone>` user interface (UI) to add a connection, the page is in user personalization scope, so the connection is not shared and the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> property value is `false`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> property.  
+  
+ The code example has five parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An entry in the Web.config file that is required to run the example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_IsShared#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_IsShared#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_IsShared#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_IsShared#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the Web page. In the `Button2_Click` method, it checks the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> property of the existing connection and displays the result on the page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_IsShared#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_IsShared#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsShared/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ The fourth part of the code example is an entry in the Web.config file that is required for the user account that will be running the example to be able to edit the page in shared personalization scope. To enable this, you must have an entry in the Web.config file within the `<system.web>` section that looks like the following example.  
+  
+```  
+<webParts>  
+  <personalization>  
+    <authorization>  
+      <allow users="UserAccount"  
+             roles="admin"  
+             verbs="enterSharedScope"/>  
+    </authorization>            
+  </personalization>  
+</webParts>  
+```  
+  
+ After you load the page in a browser, use the **Display Mode** drop-down list control to switch the page to connect display mode. Click the **Connect WebPart Controls** button to form a connection. Next, click the **Connection Details** button to display whether the connection is shared. If you created the connection with the page in the default user personalization scope, the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> property value should be `false` for the connection.  
+  
+ On the verbs menu of one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls (indicated by the downward arrow in the title bar), click the connect verb. When the connection UI appears, click the **Disconnect** button to end the connection. Use the **Display Mode** control to return the page to browse mode.  
+  
+ In the **Display Mode** control, select the **Shared** option to switch the page into shared personalization scope. Follow the same steps as those above to create a connection, and again click the **Connection Details** button to display whether the connection is shared. In this case, the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared%2A> property should be `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStatic">
+      <MemberSignature Language="C#" Value="public bool IsStatic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStatic" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object is declared in the markup of a Web page, or created programmatically.</summary>
+        <value>
+          <see langword="true" /> if the connection is static; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Connections between Web Parts controls can be either static or dynamic. A static connection is declared in the markup of a Web page, using an `<asp:WebPartConnection>` element. Dynamic connections are created programmatically or when a user creates a connection through the user interface (UI) defined by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ Static connections are shared objects, meaning they are available to all users of the Web page. Also, they are essentially permanent because, like a static <xref:System.Web.UI.WebControls.WebParts.WebPart> control, they cannot be permanently deleted.  
+  
+> [!NOTE]
+>  While a static connection object cannot be permanently deleted, it can be permanently disconnected. In this case, the disconnected object would exist on the server, but an end user would never be aware of the object's existence in a page.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic%2A> property.  
+  
+ The code example has three parts:  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_IsStatic#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsStatic/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_IsStatic#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsStatic/VB/ZipCodeComponent.vb#2)]  
+  
+ The second part of the code example is the Web page. Near the top is a `Register` directive that refers to the source code for the two dynamically compiled <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The static connection is declared within the `<StaticConnections>` element on the page. The `Button1_Click` method accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic%2A> property to check whether the connection is static.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_IsStatic#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_IsStatic/CS/wpConnectIsStaticCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_IsStatic#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_IsStatic/VB/wpConnectIsStaticVB.aspx#1)]  -->  
+  
+ Load the page in a browser. The static connection is already created. Enter some text in the provider control, and note that the text is displayed in the consumer control. Click the **Connection Details** button to display the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPart Provider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPart Provider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control that acts as the provider in a Web Parts connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that acts as the provider of data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every Web Parts connection consists of two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls--a consumer and a provider--and the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider%2A> property returns a reference to the provider control in a connection.  
+  
+ Like its counterpart in a connection (the consumer control), the provider control is required to establish a connection. Whether you create the connection programmatically, or by declaring it in page persistence format, you must specify a control to act as the provider for a connection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider%2A> property.  
+  
+ The code example has three parts:  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_Provider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Provider/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_Provider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Provider/VB/ZipCodeComponent.vb#2)]  
+  
+ The second part of the code example is the Web page. Near the top is a `Register` directive that refers to the source code for the two dynamically compiled <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The static connection is declared within the `<StaticConnections>` element on the page. Notice that in the `<asp:webpartconnection>` element, the `ProviderID` attribute has the ID of the provider control assigned to it. This is required to identify the provider for the static connection. The `Button1_Click` method accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider%2A> property and writes some of its details to a label.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_Provider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_Provider/CS/wpConnectProviderCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_Provider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_Provider/VB/wpConnectProviderVB.aspx#1)]  -->  
+  
+ Load the page in a browser. The static connection is already created. Enter some text in the provider control, and note that the text is displayed in the consumer control. Click the **Provider Details** button to display some of the property values accessed through the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Provider%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The length of the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" /> property value is zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderConnectionPoint">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.ProviderConnectionPoint ProviderConnectionPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint ProviderConnectionPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.ProviderConnectionPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that serves as a connection point for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control acting as a provider for a connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" /> associated with the provider control in a connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ One of the required steps for creating a connection between two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls is to create connection points for each control. The provider connection point is an object that contains the information about how to connect to the control acting as a provider. In the provider's source code, one of the methods must be identified with the `ConnectionProvider` attribute. The <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> that is associated with a provider control contains details about the method and the attribute, including an ID for the method, a display name for use in the user interface (UI), and what type of interface instance the method can return to a consumer control. This set of information about the provider, its method for forming connections, and the type of interface it provides, collectively forms a provider connection point.  
+  
+ By default, a <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> can connect to only one <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object at a time. A consumer could have multiple methods identified as possible consumer connection points, but a consumer can only participate in one connection as a consumer (hence, only one of its consumer connection points can be active) at a time. In contrast, a <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> can connect to any number of <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> objects by default. For example, a provider control that provides a postal code could be connected to multiple consumer controls that use a postal code to create various kinds of data based on a postal code, such as weather data, news, and so on. This default behavior can be changed by overriding the <xref:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.AllowsMultipleConnections%2A> property on the <xref:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPoint%2A> property.  
+  
+ The example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ProviderConnectionPoint#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ProviderConnectionPoint#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that serve as the consumer and the provider for the connection, and an interface used for the connection points. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_ProviderConnectionPoint#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_ProviderConnectionPoint#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the code for the Web page that hosts the controls and demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPoint%2A> property. In the `Button1_Click` method, all the objects required to form a connection are created, including a <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object. Note the call to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints%2A> method on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. The various created objects are all passed to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method to create the connection. In the `Button2_Click` method, the code accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPoint%2A> property and displays some details of the connection point.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ProviderConnectionPoint#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ProviderConnectionPoint#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPoint/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the page in a browser, use the **Display Mode** drop-down list control to switch the page to connect mode. Click the verbs menu (represented by the downward arrow in the title bar) on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and click the connect verb. Use the **Connect WebPart Controls** button, or the provided connection UI, to create a connection between the two controls. Click the **ConnectionPoint Details** button to run the code that demonstrates the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPoint%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderConnectionPointID">
+      <MemberSignature Language="C#" Value="public string ProviderConnectionPointID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProviderConnectionPointID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("default")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property value on a connection that references the ID of the object serving as the provider connection point for that connection.</summary>
+        <value>A string that contains the ID for a provider connection point object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a static connection declared in the markup of a Web page, developers can specify which provider connection point will be used for the connection by assigning a value to the `ProviderConnectionPointID` attribute on the `<asp:webpartconnection>` element. If a value is not assigned to the attribute, the <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint.DefaultID> property value is used.  
+  
+ When you create dynamic (programmatic) connections, normally you should not set the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID%2A> property. You can simply call the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%2A> method on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control, passing to it the provider and provider connection point objects (along with the other required parameters), and that method determines the correct ID to use for the provider's connection point. Similarly, when you disconnect, you can call the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts%2A> method without needing to specify the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID%2A> property value.  
+  
+> [!NOTE]
+>  The ID of a provider's connection point can be determined when you designate a <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server control as a provider. You must identify a callback method in the provider that serves an instance of an interface containing data to a consumer. To identify the method, mark it with the `ConnectionProvider` code attribute. When you add this attribute, you can add an optional string value parameter that serves as an ID for the provider's <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object. If you supply a value for the optional ID parameter, that value becomes the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID%2A> property for the connection. If you do not supply an ID value, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control assigns a default ID when the object is created.  
+  
+   
+  
+## Examples  
+ The following code example shows the declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID%2A> property.  
+  
+ The example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ProviderConnectionPointID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ProviderConnectionPointID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_ProviderConnectionPointID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_ProviderConnectionPointID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the Web page. Note that a connection is declared in the page markup, using the `<StaticConnections>` and `<asp:WebPartsConnection>` elements. The connection declaration includes the required `ProviderConnectionPointID` attribute. A second method for creating the connection appears in the `Button1_Click` method, where the code creates a new connection, using the connection point (and the ID) defined in the provider control. Then, in the `Button2_Click` method, the code accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ProviderConnectionPointID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ProviderConnectionPointID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderConnectionPointID/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the page in a browser, a connection already exists because of the static connection declared in the page. Enter some text in the provider control, and note that it is displayed in the consumer due to the connection. Next, disconnect the controls. Using the **Display Mode** drop-down list control, switch the page to connect mode. Click the verbs menu (represented by the downward arrow in the title bar) on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and click the connect verb. Click the **Disconnect** button. Use the **Connect WebPart Controls** button to recreate a connection between the two controls. Click the **ConnectionPoint Details** button to run the code that accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderConnectionPointID%2A> property value. The value is written out in a label below the controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderID">
+      <MemberSignature Language="C#" Value="public string ProviderID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProviderID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property value on a connection that references the ID of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control acting as a provider for that connection.</summary>
+        <value>A string that contains the ID of the provider control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID%2A> property value is required when you create a connection between two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. If a value is not assigned to the property, an exception is thrown when the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control attempts to activate the connection.  
+  
+   
+  
+## Examples  
+ The following code example shows the declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID%2A> property.  
+  
+ The example has four parts:  
+  
+-   A user control that enables you to change the Web Parts display mode on a page.  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host all the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of this code example is the user control that enables users to change display modes on a Web page. Save the following source code to an .ascx file, giving it the file name that is assigned to the `Src` attribute of the `Register` directive for this user control, which is near the top of the hosting Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ProviderID#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ProviderID#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_ProviderID#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_ProviderID#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the code example is the Web page. Note that a connection is declared in the page markup, using the `<StaticConnections>` and `<asp:WebPartsConnection>` elements. The connection declaration includes the required `ProviderID` attribute. A second method for creating the connection appears in the `Button1_Click` method, where the code creates a new connection, using the connection point defined in the consumer control. Then, in the `Button2_Click` method, the code accesses the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID%2A> property and displays it in a label.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ProviderID#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/CS/wpmgrConnectWebPartsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ProviderID#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ProviderID/VB/wpmgrConnectWebPartsVB.aspx#1)]  -->  
+  
+ After you load the page in a browser, a connection already exists because of the static connection declared in the page. Enter some text in the provider control, and note that it is displayed in the consumer due to the connection. Next, disconnect the controls. To do that, use the **Display Mode** drop-down list control to switch the page to connect mode. Click the verbs menu (represented by the downward arrow in the title bar) on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, and click the connect verb. Click the **Disconnect** button, and the controls are disconnected. Next, use the **Connect WebPart Controls** button to recreate a connection between the two controls. Click the **Consumer Details** button to run the code that accesses the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ProviderID%2A> property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartConnection.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Overrides the inherited <see cref="M:System.Object.ToString" /> method and returns a short type name for the connection object.</summary>
+        <returns>A string that contains the short (unqualified) type name of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used mostly for convenience by control designers. It improves how connection objects appear in Design view by using the shorter type name, as opposed to a fully qualified type name. However, the method can be called at any point in your code where you want to know the type name of a connection object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ToString%2A> method to return the short type name of a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object.  
+  
+ The code example has three parts:  
+  
+-   Source code for an interface and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page to host the controls and run the code example.  
+  
+-   An explanation of how to run the example page.  
+  
+ The first part of the code example is the source code for the interface, and the consumer and provider controls. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartConnection_ToString#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ToString/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_WebPartConnection_ToString#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ToString/VB/ZipCodeComponent.vb#2)]  
+  
+ The second part of the code example is the Web page. Near the top is a `Register` directive that refers to the source code for the two dynamically compiled <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The static connection is declared within the `<StaticConnections>` element on the page. The `Button1_Click` method calls the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ToString%2A> method to write the type name of the connection to a label.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartConnection_ToString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartConnection_ToString/CS/wpConnectToStringCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartConnection_ToString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartConnection_ToString/VB/wpConnectToStringVB.aspx#1)]  -->  
+  
+ Load the page in a browser. The static connection is already created. Enter some text in the provider control, and note that the text is displayed in the consumer control. Click the **Connection Details** button to execute the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.ToString%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transformer">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartTransformer Transformer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartTransformer Transformer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartTransformer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> object that is used to transform data between two otherwise incompatible connection points in a Web Parts connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a Web Parts connection, there are two ways in which the provider and consumer controls in the connection can connect. They can connect directly, through their respective <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> objects and an interface type that is understood by both controls. Or, if they are incompatible, they can connect indirectly, using a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object that transforms an interface instance from a provider into a type understood by a consumer.  
+  
+ When a transformer is needed as part of a connection, the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformer%2A> property provides a reference to the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object. You can add a transformer for a connection declaratively in the markup of a Web page, by adding a tag for a custom transformer (or one of the transformers provided with the Web Parts control set) within the `<asp:WebPartConnection>` element. You can also add a transformer programmatically, creating an instance of it in your code, and calling the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectWebParts%28System.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ProviderConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPart%2CSystem.Web.UI.WebControls.WebParts.ConsumerConnectionPoint%2CSystem.Web.UI.WebControls.WebParts.WebPartTransformer%29> method on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control to create the connection, passing to it the transformer object along with the other required parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transformers">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartTransformerCollection Transformers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartTransformerCollection Transformers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerDefaultProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartTransformerCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects used internally by the Web Parts control set.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection" /> containing <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformers%2A> property is never intended for use by developers. To access the transformer associated with a connection, developers should always use the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformer%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnection.Transformers%2A> property is used internally by the Web Parts control set to enable page developers to declare transformer elements within the `<asp:webpartconnection>` element in the markup of a Web page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

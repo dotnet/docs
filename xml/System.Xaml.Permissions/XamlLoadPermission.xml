@@ -1,0 +1,353 @@
+<Type Name="XamlLoadPermission" FullName="System.Xaml.Permissions.XamlLoadPermission">
+  <TypeSignature Language="C#" Value="public sealed class XamlLoadPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit XamlLoadPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.Permissions.XamlLoadPermission" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Declares permissions for loading types from assemblies that are used by a XAML reader or writer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.Permissions.XamlLoadPermission> is relevant for scenarios such as whether internal types are permitted to load under partial trust.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlLoadPermission (System.Collections.Generic.IEnumerable&lt;System.Xaml.Permissions.XamlAccessLevel&gt; allowedAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Xaml.Permissions.XamlAccessLevel&gt; allowedAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.#ctor(System.Collections.Generic.IEnumerable{System.Xaml.Permissions.XamlAccessLevel})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="allowedAccess" Type="System.Collections.Generic.IEnumerable&lt;System.Xaml.Permissions.XamlAccessLevel&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="allowedAccess">An enumerable set of specific <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> class, using an enumerable set of specific <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to this constructor initializes the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection with each `allowedAccess` entry as an item, and sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `false` in the created instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="allowedAccess" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="allowedAccess" /> contained invalid information, such as a null item.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlLoadPermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">A <see cref="T:System.Security.Permissions.PermissionState" /> enumeration value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> class, using existing permissions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Permissions.PermissionState> sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `true` in the created instance. Any call to this constructor sets the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection to `null` because it is not relevant if permissions are being reported rather than <xref:System.Xaml.Permissions.XamlAccessLevel>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlLoadPermission (System.Xaml.Permissions.XamlAccessLevel allowedAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.Permissions.XamlAccessLevel allowedAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.#ctor(System.Xaml.Permissions.XamlAccessLevel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="allowedAccess" Type="System.Xaml.Permissions.XamlAccessLevel" />
+      </Parameters>
+      <Docs>
+        <param name="allowedAccess">The defining <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> class, using a single <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A call to this constructor initializes the <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> collection with `allowedAccess` as the only item, and sets the return for <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> to `false` in the created instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="allowedAccess" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedAccess">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.Permissions.XamlAccessLevel&gt; AllowedAccess { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xaml.Permissions.XamlAccessLevel&gt; AllowedAccess" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xaml.Permissions.XamlAccessLevel&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of all <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> values that this <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> represents.</summary>
+        <value>A read-only list of <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> values, or <see langword="null" />. See Remarks.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the current <xref:System.Xaml.Permissions.XamlLoadPermission> is initialized such that <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is `true`, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> may be `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns an identical copy of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</summary>
+        <returns>A copy of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Per the interface contract of <xref:System.Security.IPermission> this value is <xref:System.Security.IPermission> in the signature but can be cast to <xref:System.Xaml.Permissions.XamlLoadPermission>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement elem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement elem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elem" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="elem">The XML encoding to use to reconstruct the security object.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="elem" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="elem" /> does not contain the XML encoding for a <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.  
+  
+ -or-  
+  
+ The version attribute within <paramref name="elem" /> is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Includes">
+      <MemberSignature Language="C#" Value="public bool Includes (System.Xaml.Permissions.XamlAccessLevel requestedAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Includes(class System.Xaml.Permissions.XamlAccessLevel requestedAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Includes(System.Xaml.Permissions.XamlAccessLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestedAccess" Type="System.Xaml.Permissions.XamlAccessLevel" />
+      </Parameters>
+      <Docs>
+        <param name="requestedAccess">The specific <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> to check for.</param>
+        <summary>Returns whether this <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> includes a specified <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> in its <see cref="P:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess" /> list.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="requestedAccess" /> exists as an item in the <see cref="P:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess" /> list of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />. Otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="requestedAccess" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Intersect(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> to intersect with the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />. Can be <see langword="null" />.</param>
+        <summary>Creates and returns a <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> that is the intersection of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> and the specified permission.</summary>
+        <returns>A new permission that represents the intersection of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> and the specified <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />. This new permission is <see langword="null" /> if the intersection is empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is not <see langword="null" /> or is not a <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission that is to be tested for the subset relationship. Can be <see langword="null" />.</param>
+        <summary>Determines whether the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> is a subset of the specified permission.</summary>
+        <returns>
+          <see langword="true" /> if the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
+  
+ If `target` is `null` and the current <xref:System.Xaml.Permissions.XamlLoadPermission> is both <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> `false` and has an empty <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> list, this method returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is not <see langword="null" /> or is not a <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns whether this <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> denotes unrestricted permissions.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> denotes unrestricted permissions. <see langword="false" /> if this <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> has specific access level restrictions in <see cref="P:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess" />, or has no permissions.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of this <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> and its current state.</summary>
+        <returns>An XML encoding of this <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />, including any state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Union(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="other">A <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> to combine with the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />. Can be <see langword="null" />.</param>
+        <summary>Creates a permission that is the union of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> and the specified permission.</summary>
+        <returns>A new <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> that represents the union of the current <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> and the specified <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For union, intersect, and subset logic, <xref:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted%2A> is checked first, and might return a result based solely on that check. Next, <xref:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess%2A> is checked.  
+  
+ If `other` is `null`, the current <xref:System.Xaml.Permissions.XamlLoadPermission> is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not <see langword="null" /> or is not a <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

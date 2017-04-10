@@ -1,0 +1,77 @@
+<Type Name="SoapParameterStyle" FullName="System.Web.Services.Protocols.SoapParameterStyle">
+  <TypeSignature Language="C#" Value="public enum SoapParameterStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SoapParameterStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapParameterStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how parameters are formatted in a SOAP message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.SoapParameterStyle> can be set when applying a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to an XML Web service method or a method of a client proxy class. The <xref:System.Web.Services.Protocols.SoapParameterStyle> can also be set by applying a <xref:System.Web.Services.Protocols.SoapDocumentServiceAttribute> to a class implementing an XML Web service.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bare">
+      <MemberSignature Language="C#" Value="Bare" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapParameterStyle Bare = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapParameterStyle.Bare" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapParameterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Parameters sent to and from an XML Web service method are placed in XML elements directly following the <see langword="Body" /> element of a SOAP request or SOAP response.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapParameterStyle Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapParameterStyle.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapParameterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies using the default <see cref="T:System.Web.Services.Protocols.SoapParameterStyle" /> for the XML Web service. The default for an XML Web service can be set by applying a <see cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" /> to the class implementing the XML Web service. If a <see cref="T:System.Web.Services.Protocols.SoapDocumentServiceAttribute" /> is not applied to the class implementing the XML Web service, the default is <see cref="F:System.Web.Services.Protocols.SoapParameterStyle.Wrapped" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wrapped">
+      <MemberSignature Language="C#" Value="Wrapped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapParameterStyle Wrapped = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapParameterStyle.Wrapped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapParameterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Parameters sent to and from an XML Web service method are encapsulated within a single XML element followig the <see langword="Body" /> element of the XML portion of a SOAP request or SOAP response.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

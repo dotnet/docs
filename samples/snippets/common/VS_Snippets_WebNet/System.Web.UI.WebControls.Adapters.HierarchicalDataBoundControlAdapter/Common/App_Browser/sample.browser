@@ -1,0 +1,16 @@
+<!--<Snippet5>-->
+<browsers>
+    <browser refID="WinCE">
+        <controlAdapters>
+            <adapter controlType="System.Web.UI.WebControls.TreeView" 
+                adapterType="Contoso.HierarchicalTreeViewAdapter" />
+        </controlAdapters>
+    </browser>
+    <browser refID="IE">
+        <controlAdapters>
+            <adapter controlType="System.Web.UI.WebControls.TreeView" 
+                adapterType="Contoso.HierarchicalTreeViewAdapter" />
+        </controlAdapters>
+    </browser>
+</browsers>
+<!--</Snippet5>-->

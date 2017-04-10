@@ -1,0 +1,163 @@
+<Type Name="RoleProviderCollection" FullName="System.Web.Security.RoleProviderCollection">
+  <TypeSignature Language="C#" Value="public sealed class RoleProviderCollection : System.Configuration.Provider.ProviderCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoleProviderCollection extends System.Configuration.Provider.ProviderCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleProviderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.Provider.ProviderCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A collection of objects that inherit the <see cref="T:System.Web.Security.RoleProvider" /> abstract class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role providers for an application are exposed as a read-only <xref:System.Web.Security.RoleProviderCollection> by the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class. You can access a specific role provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Security.SqlRoleProvider>. This enables you to manage role information from multiple data stores in a single application as well as access custom members of a role provider that are not part of the <xref:System.Web.Security.RoleProvider> abstract class.  
+  
+   
+  
+## Examples  
+ The following code example lists the providers enabled for an application and their respective types.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.Roles#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.Roles/CS/Providerscs.aspx#7)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.Roles#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.Roles/VB/Providersvb.aspx#7)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoleProviderCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProviderCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new, empty role-provider collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not intended to be used from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override void Add (System.Configuration.Provider.ProviderBase provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Configuration.Provider.ProviderBase" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The role provider to add to the collection.</param>
+        <summary>Adds a role provider to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not intended to be used from your code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" /> is not of a type that inherits the <see cref="T:System.Web.Security.RoleProvider" /> abstract class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Security.RoleProvider[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Security.RoleProvider[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProviderCollection.CopyTo(System.Web.Security.RoleProvider[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Security.RoleProvider[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Web.Security.RoleProviderCollection" />. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the role provider collection to a one-dimensional array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> to copy role provider objects to the specified array.  
+  
+   
+  
+## Examples  
+ The following code example uses the [CopyTo Method (RoleProvider\<xref:System.Web.Security.RoleProviderCollection.CopyTo%2A> method to copy the contents of a <xref:System.Web.Security.RoleProviderCollection> to an array of <xref:System.Web.Security.RoleProvider> objects.  
+  
+ [!code-csharp[System.Web.Security.RoleProviderCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/CS/snippetscs.aspx#3)]
+ [!code-vb[System.Web.Security.RoleProviderCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/VB/snippetsvb.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Security.RoleProvider this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Security.RoleProvider Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.RoleProviderCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.RoleProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the role provider.</param>
+        <summary>Gets the role provider in the collection referenced by the specified provider name.</summary>
+        <value>An object that inherits the <see cref="T:System.Web.Security.RoleProvider" /> abstract class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role providers for an application are exposed as a read-only <xref:System.Web.Security.RoleProviderCollection> by the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class. You can access a specific role provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Security.SqlRoleProvider>. This enables you to manage role information from multiple data stores in a single application as well as access custom members of a role provider that are not part of the <xref:System.Web.Security.RoleProvider> abstract class.  
+  
+   
+  
+## Examples  
+ The following code example accesses a <xref:System.Web.Security.SqlRoleProvider> configured for an application from the <xref:System.Web.Security.Roles.Providers%2A> property of the <xref:System.Web.Security.Roles> class by name.  
+  
+ [!code-csharp[System.Web.Security.RoleProviderCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/CS/snippetscs.aspx#2)]
+ [!code-vb[System.Web.Security.RoleProviderCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.RoleProviderCollection/VB/snippetsvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

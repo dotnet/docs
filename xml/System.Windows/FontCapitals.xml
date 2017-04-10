@@ -1,0 +1,163 @@
+<Type Name="FontCapitals" FullName="System.Windows.FontCapitals">
+  <TypeSignature Language="C#" Value="public enum FontCapitals" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontCapitals extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontCapitals" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the capital letter style for a <see cref="T:System.Windows.Documents.Typography" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
+  
+ The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
+  
+ ![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
+Example of capitals  
+  
+ Titling capitals are lighter in weight and proportion and designed to give a more elegant look than normal capitals. Titling capitals are typically used in larger font sizes as headings. The following text displays normal and titling capitals for the Pescadero font. Notice the narrower stem widths of the text on the second line.  
+  
+ ![Text using OpenType titling capitals](~/add/media/opentypefont20.gif "Text using OpenType titling capitals")  
+Example of normal and titling capitals  
+  
+> [!NOTE]
+>  Most OpenType fonts expose only a subset of the total OpenType features available.  
+  
+   
+  
+## Examples  
+ The following code example shows how to define capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object. When the "SmallCaps" format is used, any leading capital letter is ignored.  
+  
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#9)]  -->
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#9](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#9)]  -->  
+  
+ The following code example shows how to define titling capitals for the Pescadero font, using properties of the <xref:System.Windows.Documents.Typography> object.  
+  
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet17](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#opentypefontsnippet17)]  -->
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#OpenTypeFontSnippet17](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#opentypefontsnippet17)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllPetiteCaps">
+      <MemberSignature Language="C#" Value="AllPetiteCaps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontCapitals AllPetiteCaps = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontCapitals.AllPetiteCaps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontCapitals</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both capital and lowercase letters are replaced with a glyph form of an uppercase letter with the same approximate height. Petite capitals are smaller than small capitals.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllSmallCaps">
+      <MemberSignature Language="C#" Value="AllSmallCaps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontCapitals AllSmallCaps = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontCapitals.AllSmallCaps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontCapitals</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both capital and lowercase letters are replaced with a glyph form of an uppercase letter with the same approximate height.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontCapitals Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontCapitals.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontCapitals</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Capital letters render normally.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PetiteCaps">
+      <MemberSignature Language="C#" Value="PetiteCaps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontCapitals PetiteCaps = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontCapitals.PetiteCaps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontCapitals</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Lowercase letters are replaced with a glyph form of an uppercase letter with the same approximate height. Petite capitals are smaller than small capitals.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallCaps">
+      <MemberSignature Language="C#" Value="SmallCaps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontCapitals SmallCaps = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontCapitals.SmallCaps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontCapitals</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Lowercase letters are replaced with a glyph form of an uppercase letter with the same approximate height.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Titling">
+      <MemberSignature Language="C#" Value="Titling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontCapitals Titling = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontCapitals.Titling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontCapitals</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Glyph forms are substituted with a typographic form specifically designed for titles.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unicase">
+      <MemberSignature Language="C#" Value="Unicase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontCapitals Unicase = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontCapitals.Unicase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontCapitals</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Capital letters display in unicase. Unicase fonts render both upper and lowercase letters in a mixture of upper and lowercase glyphs determined by the type designer.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

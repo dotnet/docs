@@ -1,0 +1,1314 @@
+<Type Name="XmlSchemaValidator" FullName="System.Xml.Schema.XmlSchemaValidator">
+  <TypeSignature Language="C#" Value="public sealed class XmlSchemaValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSchemaValidator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an XML Schema Definition Language (XSD) Schema validation engine. The <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  -   Do not use schemas from unknown or untrusted sources or locations. Doing so will compromise the security of your code.  
+> -   XML schemas (including inline schemas) are inherently vulnerable to denial of service attacks; do not accept them in untrusted scenarios.  
+> -   Schema validation error messages and exceptions may expose sensitive information about the content model or URI paths to the schema file. Be careful not to expose this information to untrusted callers.  
+  
+ The <xref:System.Xml.Schema.XmlSchemaValidator> class provides an efficient, high-performance mechanism to validate XML data against XML schemas in a push-based manner. For example, the <xref:System.Xml.Schema.XmlSchemaValidator> class allows you to validate an XML infoset in-place without having to serialize it as an XML document and then reparse the document using a validating XML reader. The <xref:System.Xml.Schema.XmlSchemaValidator> class can also be used to build validation engines over custom XML data sources or as a way to build a validating XML writer.  
+  
+ For more information about the <xref:System.Xml.Schema.XmlSchemaValidator> class, see the [XmlSchemaValidator Push-Based Validation](~/docs/standard/data/xml/xmlschemavalidator-push-based-validation.md) topic.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
+  
+   
+  
+## Examples  
+ The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+  
+ [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+ [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+  
+ The example takes the `contosoBooks.xml` file as input.  
+  
+ [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+  
+ The example also takes the `contosoBooks.xsd` as an input.  
+  
+ [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaValidator (System.Xml.XmlNameTable nameTable, System.Xml.Schema.XmlSchemaSet schemas, System.Xml.IXmlNamespaceResolver namespaceResolver, System.Xml.Schema.XmlSchemaValidationFlags validationFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNameTable nameTable, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.IXmlNamespaceResolver namespaceResolver, valuetype System.Xml.Schema.XmlSchemaValidationFlags validationFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.#ctor(System.Xml.XmlNameTable,System.Xml.Schema.XmlSchemaSet,System.Xml.IXmlNamespaceResolver,System.Xml.Schema.XmlSchemaValidationFlags)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="nameTable" Type="System.Xml.XmlNameTable" />
+        <Parameter Name="schemas" Type="System.Xml.Schema.XmlSchemaSet" />
+        <Parameter Name="namespaceResolver" Type="System.Xml.IXmlNamespaceResolver" />
+        <Parameter Name="validationFlags" Type="System.Xml.Schema.XmlSchemaValidationFlags" />
+      </Parameters>
+      <Docs>
+        <param name="nameTable">An <see cref="T:System.Xml.XmlNameTable" /> object containing element and attribute names as atomized strings.</param>
+        <param name="schemas">An <see cref="T:System.Xml.Schema.XmlSchemaSet" /> object containing the XML Schema Definition Language (XSD) schemas used for validation.</param>
+        <param name="namespaceResolver">An <see cref="T:System.Xml.IXmlNamespaceResolver" /> object used for resolving namespaces encountered during validation.</param>
+        <param name="validationFlags">An <see cref="T:System.Xml.Schema.XmlSchemaValidationFlags" /> value specifying schema validation options.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.%23ctor%2A> constructor.  
+  
+-   The contents of the <xref:System.Xml.Schema.XmlSchemaSet> parameter are copied into an internal <xref:System.Xml.Schema.XmlSchemaSet> object when the <xref:System.Xml.Schema.XmlSchemaValidationFlags> or the <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation options are set. As a result, changes to the input <xref:System.Xml.Schema.XmlSchemaSet> object during validation do not affect the outcome of validation.  
+  
+-   If the <xref:System.Xml.Schema.XmlSchemaSet> parameter specified is not compiled, its <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A> method is called.  
+  
+-   The <xref:System.Xml.IXmlNamespaceResolver> parameter is especially important for validating `xs:QName` types. The <xref:System.Xml.Schema.XmlSchemaValidator> class does not copy the in-scope namespaces from the <xref:System.Xml.IXmlNamespaceResolver> object but instead holds a reference to it. This allows new namespaces to be added to the <xref:System.Xml.IXmlNamespaceResolver> object during the validation process.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
+  
+   
+  
+## Examples  
+ For an example of the <xref:System.Xml.Schema.XmlSchemaValidator.%23ctor%2A> constructor, see the <xref:System.Xml.Schema.XmlSchemaValidator> class reference topic.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the parameters specified are <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.Schema.XmlSchemaException">An error occurred while compiling schemas in the <see cref="T:System.Xml.Schema.XmlSchemaSet" /> parameter.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSchema">
+      <MemberSignature Language="C#" Value="public void AddSchema (System.Xml.Schema.XmlSchema schema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSchema(class System.Xml.Schema.XmlSchema schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.AddSchema(System.Xml.Schema.XmlSchema)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="System.Xml.Schema.XmlSchema" />
+      </Parameters>
+      <Docs>
+        <param name="schema">An <see cref="T:System.Xml.Schema.XmlSchema" /> object to add to the set of schemas used for validation.</param>
+        <summary>Adds an XML Schema Definition Language (XSD) schema to the set of schemas used for validation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.AddSchema%2A> method.  
+  
+-   The <xref:System.Xml.Schema.XmlSchemaValidator.AddSchema%2A> method can be used to simulate the effect of encountering an inline XML schema in the XML document being validated.  
+  
+-   The target namespace of the <xref:System.Xml.Schema.XmlSchema> parameter cannot match that of any element or attribute already encountered by the <xref:System.Xml.Schema.XmlSchemaValidator> object.  
+  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation option is not set, the <xref:System.Xml.Schema.XmlSchemaValidator.AddSchema%2A> method does nothing.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Xml.Schema.XmlSchema" /> parameter specified is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The target namespace of the <see cref="T:System.Xml.Schema.XmlSchema" /> parameter matches that of any element or attribute already encountered by the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object.</exception>
+        <exception cref="T:System.Xml.Schema.XmlSchemaException">The <see cref="T:System.Xml.Schema.XmlSchema" /> parameter is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndValidation">
+      <MemberSignature Language="C#" Value="public void EndValidation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndValidation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.EndValidation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ends validation and checks identity constraints for the entire XML document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Schema.XmlSchemaValidator.EndValidation%2A> method ends validation and checks identity constraints for the entire XML document if the <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation option is set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">An identity constraint error was found in the XML document.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpectedAttributes">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaAttribute[] GetExpectedAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchemaAttribute[] GetExpectedAttributes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaAttribute[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the expected attributes for the current element context.</summary>
+        <returns>An array of <see cref="T:System.Xml.Schema.XmlSchemaAttribute" /> objects or an empty array if there are no expected attributes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> method.  
+  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> method is called immediately after the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> method, all the attributes that could appear in the XML document are returned.  
+  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes%2A> method is called after one or more calls to the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> method, the attributes that haven't yet been validated for the current element are returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpectedParticles">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaParticle[] GetExpectedParticles ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchemaParticle[] GetExpectedParticles() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaParticle[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the expected particles in the current element context.</summary>
+        <returns>An array of <see cref="T:System.Xml.Schema.XmlSchemaParticle" /> objects or an empty array if there are no expected particles.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid particles that can be returned by the <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> method are instances of the <xref:System.Xml.Schema.XmlSchemaElement> and <xref:System.Xml.Schema.XmlSchemaAny> classes.  
+  
+ When the compositor for the content model is an `xs:sequence`, only the next particle in the sequence is returned. If the compositor for the content model is an `xs:all` or an `xs:choice`, then all valid particles that could follow in the current element context are returned.  
+  
+ For example, in the XML Schema Definition Language (XSD) schema and XML document that follow, after validating the `book` element, the `book` element is the current element context. The <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> method returns an array containing a single <xref:System.Xml.Schema.XmlSchemaElement> object representing the `title` element. When the validation context is the `title` element, the <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> method returns an empty array. If the <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> method is called after the `title` element has been validated but before the `description` element has been validated, it returns an array containing a single <xref:System.Xml.Schema.XmlSchemaElement> object representing the `description` element. If the <xref:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles%2A> method is called after the `description` element has been validated then it returns an array containing a single <xref:System.Xml.Schema.XmlSchemaAny> object representing the wildcard.  
+  
+```vb  
+Dim reader As XmlReader =  XmlReader.Create("input.xml")   
+  
+Dim schemaSet As XmlSchemaSet =  New XmlSchemaSet()   
+schemaSet.Add(Nothing, "schema.xsd")  
+Dim manager As XmlNamespaceManager =  New XmlNamespaceManager(reader.NameTable)   
+  
+Dim validator As XmlSchemaValidator =  New XmlSchemaValidator(reader.NameTable,schemaSet,manager,XmlSchemaValidationFlags.None)  
+validator.Initialize()  
+  
+validator.ValidateElement("book", "", Nothing)  
+validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
+validator.ValidateEndOfAttributes(Nothing)  
+For Each element As XmlSchemaElement In validator.GetExpectedParticles()  
+    Console.WriteLine(element.Name)  
+Next  
+  
+validator.ValidateElement("title", "", Nothing)  
+validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
+validator.ValidateEndOfAttributes(Nothing)  
+For Each element As XmlSchemaElement In validator.GetExpectedParticles()  
+    Console.WriteLine(element.Name)  
+Next  
+validator.ValidateEndElement(Nothing)  
+  
+For Each element As XmlSchemaElement In validator.GetExpectedParticles()  
+    Console.WriteLine(element.Name)  
+Next  
+  
+validator.ValidateElement("description", "", Nothing)  
+validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
+validator.ValidateEndOfAttributes(Nothing)  
+validator.ValidateEndElement(Nothing)  
+  
+For Each particle As XmlSchemaParticle In validator.GetExpectedParticles()  
+    Console.WriteLine(particle.GetType())  
+Next  
+  
+validator.ValidateElement("namespace", "", Nothing)  
+validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
+validator.ValidateEndOfAttributes(Nothing)  
+validator.ValidateEndElement(Nothing)  
+  
+validator.ValidateEndElement(Nothing)  
+```  
+  
+```csharp  
+XmlReader reader = XmlReader.Create("input.xml");  
+  
+XmlSchemaSet schemaSet = new XmlSchemaSet();  
+schemaSet.Add(null, "schema.xsd");  
+XmlNamespaceManager manager = new XmlNamespaceManager(reader.NameTable);  
+  
+XmlSchemaValidator validator = new XmlSchemaValidator(reader.NameTable, schemaSet, manager, XmlSchemaValidationFlags.None);  
+validator.Initialize();  
+  
+validator.ValidateElement("book", "", null);  
+  
+validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
+validator.ValidateEndOfAttributes(null);  
+foreach (XmlSchemaElement element in validator.GetExpectedParticles())  
+{  
+    Console.WriteLine(element.Name);  
+}  
+  
+validator.ValidateElement("title", "", null);  
+validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
+validator.ValidateEndOfAttributes(null);  
+foreach (XmlSchemaElement element in validator.GetExpectedParticles())  
+{  
+    Console.WriteLine(element.Name);  
+}  
+validator.ValidateEndElement(null);  
+  
+foreach (XmlSchemaElement element in validator.GetExpectedParticles())  
+{  
+    Console.WriteLine(element.Name);  
+}  
+  
+validator.ValidateElement("description", "", null);  
+validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
+validator.ValidateEndOfAttributes(null);  
+validator.ValidateEndElement(null);  
+  
+foreach (XmlSchemaParticle particle in validator.GetExpectedParticles())  
+{  
+    Console.WriteLine(particle.GetType());  
+}  
+  
+validator.ValidateElement("namespace", "", null);  
+validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
+validator.ValidateEndOfAttributes(null);  
+validator.ValidateEndElement(null);  
+  
+validator.ValidateEndElement(null);  
+```  
+  
+ The example takes the following XML as input.  
+  
+ `<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">`  
+  
+ `<xs:element name="book">`  
+  
+ `<xs:complexType>`  
+  
+ `<xs:sequence>`  
+  
+ `<xs:element name="title" type="xs:string" />`  
+  
+ `<xs:element name="description" type="xs:string" />`  
+  
+ `<xs:any processContents ="lax"/>`  
+  
+ `</xs:sequence>`  
+  
+ `</xs:complexType>`  
+  
+ `</xs:element>`  
+  
+ `</xs:schema>`  
+  
+ The example takes the following XSD schema as input.  
+  
+ `<book>`  
+  
+ `<title>My Book</title>`  
+  
+ `<description>My Book's Description</description>`  
+  
+ `<namespace>System.Xml.Schema</namespace>`  
+  
+ `</book>`  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnspecifiedDefaultAttributes">
+      <MemberSignature Language="C#" Value="public void GetUnspecifiedDefaultAttributes (System.Collections.ArrayList defaultAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetUnspecifiedDefaultAttributes(class System.Collections.ArrayList defaultAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.GetUnspecifiedDefaultAttributes(System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultAttributes" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="defaultAttributes">An <see cref="T:System.Collections.ArrayList" /> to populate with <see cref="T:System.Xml.Schema.XmlSchemaAttribute" /> objects for any attributes not yet encountered during validation in the element context.</param>
+        <summary>Validates identity constraints on the default attributes and populates the <see cref="T:System.Collections.ArrayList" /> specified with <see cref="T:System.Xml.Schema.XmlSchemaAttribute" /> objects for any attributes with default values that have not been previously validated using the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> method in the element context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Schema.XmlSchemaValidator.GetUnspecifiedDefaultAttributes%2A> method must be called after validating all the attributes for the current element with the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> method. The <xref:System.Xml.Schema.XmlSchemaValidator.GetUnspecifiedDefaultAttributes%2A> method should be used to determine what default attributes are to be inserted into the XML document being validated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the state of the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Schema.XmlSchemaValidator.Initialize%2A> method is only valid if called immediately after the construction of an <xref:System.Xml.Schema.XmlSchemaValidator> object or after a call to <xref:System.Xml.Schema.XmlSchemaValidator.EndValidation%2A>.  
+  
+   
+  
+## Examples  
+ The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+  
+ [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+ [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+  
+ The example takes the `contosoBooks.xml` file as input.  
+  
+ [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+  
+ The example also takes the `contosoBooks.xsd` as an input.  
+  
+ [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Calling the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.Initialize" /> method is valid immediately after the construction of an <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object or after a call to <see cref="M:System.Xml.Schema.XmlSchemaValidator.EndValidation" /> only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (System.Xml.Schema.XmlSchemaObject partialValidationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(class System.Xml.Schema.XmlSchemaObject partialValidationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.Initialize(System.Xml.Schema.XmlSchemaObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partialValidationType" Type="System.Xml.Schema.XmlSchemaObject" />
+      </Parameters>
+      <Docs>
+        <param name="partialValidationType">An <see cref="T:System.Xml.Schema.XmlSchemaElement" />, <see cref="T:System.Xml.Schema.XmlSchemaAttribute" />, or <see cref="T:System.Xml.Schema.XmlSchemaType" /> object used to initialize the validation context of the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object for partial validation.</param>
+        <summary>Initializes the state of the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object using the <see cref="T:System.Xml.Schema.XmlSchemaObject" /> specified for partial validation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Schema.XmlSchemaValidator.Initialize%2A> method that takes an <xref:System.Xml.Schema.XmlSchemaObject> as a parameter initializes an <xref:System.Xml.Schema.XmlSchemaValidator> object to its starting state for partial validation.  
+  
+   
+  
+## Examples  
+ In the following example, an <xref:System.Xml.Schema.XmlSchemaObject> is initialized for partial validation using the <xref:System.Xml.Schema.XmlSchemaValidator.Initialize%2A> method. The `orderNumber` schema element is passed by selecting the schema element by <xref:System.Xml.XmlQualifiedName> in the <xref:System.Xml.Schema.XmlSchemaObjectTable> collection returned by the <xref:System.Xml.Schema.XmlSchemaSet.GlobalElements%2A> property of the <xref:System.Xml.Schema.XmlSchemaSet> object. The <xref:System.Xml.Schema.XmlSchemaValidator> object then validates this specific element.  
+  
+```vb  
+Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()  
+schemaSet.Add(Nothing, "schema.xsd")  
+schemaSet.Compile()  
+Dim nameTable As NameTable = New NameTable()  
+Dim manager As XmlNamespaceManager = New XmlNamespaceManager(nameTable)  
+  
+Dim validator As XmlSchemaValidator = New XmlSchemaValidator(nameTable, schemaSet, manager, XmlSchemaValidationFlags.None)  
+validator.Initialize(schemaSet.GlobalElements.Item(New XmlQualifiedName("orderNumber")))  
+  
+validator.ValidateElement("orderNumber", "", Nothing)  
+validator.GetUnspecifiedDefaultAttributes(New ArrayList())  
+validator.ValidateEndOfAttributes(Nothing)  
+validator.ValidateText("123")  
+validator.ValidateEndElement(Nothing)  
+```  
+  
+```csharp  
+XmlSchemaSet schemaSet = new XmlSchemaSet();  
+schemaSet.Add(null, "schema.xsd");  
+schemaSet.Compile();  
+NameTable nameTable = new NameTable();  
+XmlNamespaceManager manager = new XmlNamespaceManager(nameTable);  
+  
+XmlSchemaValidator validator = new XmlSchemaValidator(nameTable, schemaSet, manager, XmlSchemaValidationFlags.None);  
+validator.Initialize(schemaSet.GlobalElements[new XmlQualifiedName("orderNumber")]);  
+  
+validator.ValidateElement("orderNumber", "", null);  
+validator.GetUnspecifiedDefaultAttributes(new ArrayList());  
+validator.ValidateEndOfAttributes(null);  
+validator.ValidateText("123");  
+validator.ValidateEndElement(null);  
+```  
+  
+ The example takes the following XML schema as input.  
+  
+ `<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">`  
+  
+ `<xs:element name="orderNumber" type="xs:int" />`  
+  
+ `</xs:schema>`  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Calling the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.Initialize" /> method is valid immediately after the construction of an <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object or after a call to <see cref="M:System.Xml.Schema.XmlSchemaValidator.EndValidation" /> only.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> parameter is not an <see cref="T:System.Xml.Schema.XmlSchemaElement" />, <see cref="T:System.Xml.Schema.XmlSchemaAttribute" />, or <see cref="T:System.Xml.Schema.XmlSchemaType" /> object.</exception>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Xml.Schema.XmlSchemaObject" /> parameter cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LineInfoProvider">
+      <MemberSignature Language="C#" Value="public System.Xml.IXmlLineInfo LineInfoProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.IXmlLineInfo LineInfoProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidator.LineInfoProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.IXmlLineInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line number information for the XML node being validated.</summary>
+        <value>An <see cref="T:System.Xml.IXmlLineInfo" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+-   Line information is reported by any <xref:System.Xml.Schema.XmlSchemaValidationException> thrown during the validation process.  
+  
+-   The default <xref:System.Xml.IXmlLineInfo> object returned by the <xref:System.Xml.Schema.XmlSchemaValidator.LineInfoProvider%2A> property returns 0 for the <xref:System.Xml.IXmlLineInfo.LineNumber%2A> and <xref:System.Xml.IXmlLineInfo.LinePosition%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToEndElement">
+      <MemberSignature Language="C#" Value="public void SkipToEndElement (System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SkipToEndElement(class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaInfo" Type="System.Xml.Schema.XmlSchemaInfo" />
+      </Parameters>
+      <Docs>
+        <param name="schemaInfo">An <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> object whose properties are set if the current element content is successfully skipped. This parameter can be <see langword="null" />.</param>
+        <summary>Skips validation of the current element content and prepares the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object to validate content in the parent element's context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A> method.  
+  
+-   The <xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A> method skips validation of the current element content and prepares the <xref:System.Xml.Schema.XmlSchemaValidator> object to validate content in the parent element's context; it is equivalent to skipping validation for all the children of the current element and then calling the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method.  
+  
+-   If the current element content is successfully skipped, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>.  
+  
+> [!NOTE]
+>  No validation errors are reported on skipped content.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" /> method was not called in the correct sequence. For example, calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" /> after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceUri">
+      <MemberSignature Language="C#" Value="public Uri SourceUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SourceUri" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidator.SourceUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the source URI for the XML node being validated.</summary>
+        <value>A <see cref="T:System.Uri" /> object representing the source URI for the XML node being validated; the default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+-   The source URI is reported by any <xref:System.Xml.Schema.XmlSchemaValidationException> thrown during the validation process.  
+  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidator.SourceUri%2A> property is not set, the file name for the XML document is <xref:System.String.Empty> in validation error messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAttribute">
+      <MemberSignature Language="C#" Value="public object ValidateAttribute (string localName, string namespaceUri, string attributeValue, System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateAttribute(string localName, string namespaceUri, string attributeValue, class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute(System.String,System.String,System.String,System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="attributeValue" Type="System.String" />
+        <Parameter Name="schemaInfo" Type="System.Xml.Schema.XmlSchemaInfo" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the attribute to validate.</param>
+        <param name="namespaceUri">The namespace URI of the attribute to validate.</param>
+        <param name="attributeValue">The value of the attribute to validate.</param>
+        <param name="schemaInfo">An <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> object whose properties are set on successful validation of the attribute. This parameter can be <see langword="null" />.</param>
+        <summary>Validates the attribute name, namespace URI, and value in the current element context.</summary>
+        <returns>The validated attribute's value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> method.  
+  
+-   The <xref:System.Xml.Schema.XmlSchemaValidator.GetUnspecifiedDefaultAttributes%2A> method must be called after validating all the attributes for the current element with the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> method.  
+  
+-   If an <xref:System.Xml.Schema.XmlSchemaAttribute> object was passed to the <xref:System.Xml.Schema.XmlSchemaValidator.Initialize%2A> method, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> method validates the attribute against the <xref:System.Xml.Schema.XmlSchemaAttribute> object.  
+  
+-   If the attribute is successfully validated in the current element context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.SchemaAttribute%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaType%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
+  
+   
+  
+## Examples  
+ The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+  
+ [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+ [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+  
+ The example takes the `contosoBooks.xml` file as input.  
+  
+ [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+  
+ The example also takes the `contosoBooks.xsd` as an input.  
+  
+ [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The attribute is not valid in the current element context.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> method was not called in the correct sequence. For example, calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
+        <exception cref="T:System.ArgumentNullException">One or more of the parameters specified are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAttribute">
+      <MemberSignature Language="C#" Value="public object ValidateAttribute (string localName, string namespaceUri, System.Xml.Schema.XmlValueGetter attributeValue, System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateAttribute(string localName, string namespaceUri, class System.Xml.Schema.XmlValueGetter attributeValue, class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute(System.String,System.String,System.Xml.Schema.XmlValueGetter,System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="attributeValue" Type="System.Xml.Schema.XmlValueGetter" />
+        <Parameter Name="schemaInfo" Type="System.Xml.Schema.XmlSchemaInfo" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the attribute to validate.</param>
+        <param name="namespaceUri">The namespace URI of the attribute to validate.</param>
+        <param name="attributeValue">An <see cref="T:System.Xml.Schema.XmlValueGetter" /><see langword="delegate" /> used to pass the attribute's value as a Common Language Runtime (CLR) type compatible with the XML Schema Definition Language (XSD) type of the attribute.</param>
+        <param name="schemaInfo">An <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> object whose properties are set on successful validation of the attribute. This parameter and can be <see langword="null" />.</param>
+        <summary>Validates the attribute name, namespace URI, and value in the current element context.</summary>
+        <returns>The validated attribute's value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> method.  
+  
+-   The <xref:System.Xml.Schema.XmlSchemaValidator.GetUnspecifiedDefaultAttributes%2A> method must be called after validating all the attributes for the current element with the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> method.  
+  
+-   If an <xref:System.Xml.Schema.XmlSchemaAttribute> object was passed to the <xref:System.Xml.Schema.XmlSchemaValidator.Initialize%2A> method, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute%2A> method validates the attribute against the <xref:System.Xml.Schema.XmlSchemaAttribute> object.  
+  
+-   If the attribute is successfully validated in the current element context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.SchemaAttribute%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaType%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
+  
+   
+  
+## Examples  
+ The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+  
+ [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+ [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+  
+ The example takes the `contosoBooks.xml` file as input.  
+  
+ [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+  
+ The example also takes the `contosoBooks.xsd` as an input.  
+  
+ [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The attribute is not valid in the current element context.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> method was not called in the correct sequence. For example, calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" /> after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
+        <exception cref="T:System.ArgumentNullException">One or more of the parameters specified are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateElement">
+      <MemberSignature Language="C#" Value="public void ValidateElement (string localName, string namespaceUri, System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateElement(string localName, string namespaceUri, class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateElement(System.String,System.String,System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="schemaInfo" Type="System.Xml.Schema.XmlSchemaInfo" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the element to validate.</param>
+        <param name="namespaceUri">The namespace URI of the element to validate.</param>
+        <param name="schemaInfo">An <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> object whose properties are set on successful validation of the element's name. This parameter can be <see langword="null" />.</param>
+        <summary>Validates the element in the current context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> method.  
+  
+-   If the element name is successfully validated in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.IsNil%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaType%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaElement%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
+  
+-   If the element name or any of its attributes are invalid the current context, the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>; otherwise the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>.  
+  
+   
+  
+## Examples  
+ The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+  
+ [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+ [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+  
+ The example takes the `contosoBooks.xml` file as input.  
+  
+ [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+  
+ The example also takes the `contosoBooks.xsd` as an input.  
+  
+ [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The element's name is not valid in the current context.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateElement" /> method was not called in the correct sequence. For example, the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateElement" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateElement">
+      <MemberSignature Language="C#" Value="public void ValidateElement (string localName, string namespaceUri, System.Xml.Schema.XmlSchemaInfo schemaInfo, string xsiType, string xsiNil, string xsiSchemaLocation, string xsiNoNamespaceSchemaLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateElement(string localName, string namespaceUri, class System.Xml.Schema.XmlSchemaInfo schemaInfo, string xsiType, string xsiNil, string xsiSchemaLocation, string xsiNoNamespaceSchemaLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateElement(System.String,System.String,System.Xml.Schema.XmlSchemaInfo,System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="schemaInfo" Type="System.Xml.Schema.XmlSchemaInfo" />
+        <Parameter Name="xsiType" Type="System.String" />
+        <Parameter Name="xsiNil" Type="System.String" />
+        <Parameter Name="xsiSchemaLocation" Type="System.String" />
+        <Parameter Name="xsiNoNamespaceSchemaLocation" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the element to validate.</param>
+        <param name="namespaceUri">The namespace URI of the element to validate.</param>
+        <param name="schemaInfo">An <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> object whose properties are set on successful validation of the element's name. This parameter can be <see langword="null" />.</param>
+        <param name="xsiType">The <c>xsi:Type</c> attribute value of the element. This parameter can be <see langword="null" />.</param>
+        <param name="xsiNil">The <c>xsi:Nil</c> attribute value of the element. This parameter can be <see langword="null" />.</param>
+        <param name="xsiSchemaLocation">The <c>xsi:SchemaLocation</c> attribute value of the element. This parameter can be <see langword="null" />.</param>
+        <param name="xsiNoNamespaceSchemaLocation">The <c>xsi:NoNamespaceSchemaLocation</c> attribute value of the element. This parameter can be <see langword="null" />.</param>
+        <summary>Validates the element in the current context with the <c>xsi:Type</c>, <c>xsi:Nil</c>, <c>xsi:SchemaLocation</c>, and <c>xsi:NoNamespaceSchemaLocation</c> attribute values specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateElement%2A> method.  
+  
+-   If the element name is successfully validated in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.IsNil%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaType%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaElement%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
+  
+-   If the element name or any of its attributes are invalid in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>; otherwise the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>.  
+  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidationFlags> value was not passed as a parameter to the <xref:System.Xml.Schema.XmlSchemaValidator.%23ctor%2A> constructor, `xsi:SchemaLocation` and `xsi:NoNamespaceSchemaLocation` attribute values are ignored.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The element's name is not valid in the current context.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateElement" /> method was not called in the correct sequence. For example, the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateElement" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateEndElement">
+      <MemberSignature Language="C#" Value="public object ValidateEndElement (System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateEndElement(class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement(System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaInfo" Type="System.Xml.Schema.XmlSchemaInfo" />
+      </Parameters>
+      <Docs>
+        <param name="schemaInfo">An <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> object whose properties are set on successful validation of the element. This parameter can be <see langword="null" />.</param>
+        <summary>Verifies if the text content of the element is valid according to its data type for elements with simple content, and verifies if the content of the current element is complete for elements with complex content.</summary>
+        <returns>The parsed, typed text value of the element if the element has simple content.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method.  
+  
+-   For elements with simple content, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method verifies that the text content of the element is valid according to its data type and returns the parsed typed value. The text content of the element is obtained from the results of previous calls to <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A>.  
+  
+-   For elements with complex content, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method verifies if the content of the current element is complete.  
+  
+-   If the element has a default value, the value returned from the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method is the default value for the element.  
+  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidator> object was constructed with the <xref:System.Xml.Schema.XmlSchemaValidationFlags> value as a parameter, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method checks the identity constraint rules (if any) that apply to the element.  
+  
+-   If the element is successfully validated in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.IsDefault%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The element's content is not valid.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement" /> method was not called in the correct sequence. For example, if the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement" /> method is called after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateEndElement">
+      <MemberSignature Language="C#" Value="public object ValidateEndElement (System.Xml.Schema.XmlSchemaInfo schemaInfo, object typedValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateEndElement(class System.Xml.Schema.XmlSchemaInfo schemaInfo, object typedValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement(System.Xml.Schema.XmlSchemaInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaInfo" Type="System.Xml.Schema.XmlSchemaInfo" />
+        <Parameter Name="typedValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="schemaInfo">An <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> object whose properties are set on successful validation of the text content of the element. This parameter can be <see langword="null" />.</param>
+        <param name="typedValue">The typed text content of the element.</param>
+        <summary>Verifies if the text content of the element specified is valid according to its data type.</summary>
+        <returns>The parsed, typed simple content of the element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  If you are validating against the `xs:key`, `xs:keyref`, or `xs:unique` identity constraints, do not use the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method overload. Instead, call the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> method and pass it the value of the element. Then call the  <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method overload, which takes <xref:System.Xml.Schema.XmlSchemaInfo> as an argument, to verify that the text content of the element is valid according to its data type.  
+  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method.  
+  
+-   For elements with simple content, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A?displayProperty=fullName> method verifies that the text content of the element is valid according to its data type and returns the parsed typed value. The text content of the element is obtained from the typed content passed as a parameter.  
+  
+-   If calls to the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> method have been previously made, an <xref:System.InvalidOperationException> is thrown.  
+  
+-   If the element has complex content an <xref:System.InvalidOperationException> is thrown.  
+  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidator> object was constructed with the <xref:System.Xml.Schema.XmlSchemaValidationFlags> value as a parameter, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method checks the identity constraint rules (if any) that apply to the element.  
+  
+-   If the element is successfully validated in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.IsDefault%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
+  
+   
+  
+## Examples  
+ The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+  
+ [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+ [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+  
+ The example takes the `contosoBooks.xml` file as input.  
+  
+ [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+  
+ The example also takes the `contosoBooks.xsd` as an input.  
+  
+ [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The element's text content is not valid.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement" /> method was not called in the correct sequence (for example, if the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement" /> method is called after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />), calls to the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateText" /> method have been previously made, or the element has complex content.</exception>
+        <exception cref="T:System.ArgumentNullException">The typed text content parameter cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateEndOfAttributes">
+      <MemberSignature Language="C#" Value="public void ValidateEndOfAttributes (System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateEndOfAttributes(class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaInfo" Type="System.Xml.Schema.XmlSchemaInfo" />
+      </Parameters>
+      <Docs>
+        <param name="schemaInfo">An <see cref="T:System.Xml.Schema.XmlSchemaInfo" /> object whose properties are set on successful verification that all the required attributes in the element context are present. This parameter can be <see langword="null" />.</param>
+        <summary>Verifies whether all the required attributes in the element context are present and prepares the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object to validate the child content of the element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes%2A> method.  
+  
+-   The <xref:System.Xml.Schema.XmlSchemaValidator.GetUnspecifiedDefaultAttributes%2A> method should always be called before <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes%2A>.  
+  
+-   The <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes%2A> method must be called before proceeding with validation of an element's content.  
+  
+-   If all the required attributes in the element context are present, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>.  
+  
+   
+  
+## Examples  
+ The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+  
+ [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+ [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+  
+ The example takes the `contosoBooks.xml` file as input.  
+  
+ [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+  
+ The example also takes the `contosoBooks.xsd` as an input.  
+  
+ [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">One or more of the required attributes in the current element context were not found.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" /> method was not called in the correct sequence. For example, calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" /> after calling <see cref="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />.</exception>
+        <exception cref="T:System.ArgumentNullException">One or more of the parameters specified are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateText">
+      <MemberSignature Language="C#" Value="public void ValidateText (string elementValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateText(string elementValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementValue">A text <see langword="string" /> to validate in the current element context.</param>
+        <summary>Validates whether the text <see langword="string" /> specified is allowed in the current element context, and accumulates the text for validation if the current element has simple content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> method.  
+  
+-   If the element has simple content, the text `string` specified is concatenated on each call to the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> method until the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method is called. When the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method is called, all the text is validated.  
+  
+-   If the element has complex content, no text concatenation occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The text <see langword="string" /> specified is not allowed in the current element context.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateText" /> method was not called in the correct sequence. For example, the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateText" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The text <see langword="string" /> parameter cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateText">
+      <MemberSignature Language="C#" Value="public void ValidateText (System.Xml.Schema.XmlValueGetter elementValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateText(class System.Xml.Schema.XmlValueGetter elementValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateText(System.Xml.Schema.XmlValueGetter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementValue" Type="System.Xml.Schema.XmlValueGetter" />
+      </Parameters>
+      <Docs>
+        <param name="elementValue">An <see cref="T:System.Xml.Schema.XmlValueGetter" /><see langword="delegate" /> used to pass the text value as a Common Language Runtime (CLR) type compatible with the XML Schema Definition Language (XSD) type of the attribute.</param>
+        <summary>Validates whether the text returned by the <see cref="T:System.Xml.Schema.XmlValueGetter" /> object specified is allowed in the current element context, and accumulates the text for validation if the current element has simple content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> method.  
+  
+-   If the element has simple content, the text `string` specified is concatenated on each call to the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateText%2A> method until the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method is called. When the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method is called, all the text is validated.  
+  
+-   If the element has complex content, no text concatenation occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">The text <see langword="string" /> specified is not allowed in the current element context.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateText" /> method was not called in the correct sequence. For example, the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateText" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The text <see langword="string" /> parameter cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateWhitespace">
+      <MemberSignature Language="C#" Value="public void ValidateWhitespace (string elementValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateWhitespace(string elementValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementValue">A white space <see langword="string" /> to validate in the current element context.</param>
+        <summary>Validates whether the white space in the <see langword="string" /> specified is allowed in the current element context, and accumulates the white space for validation if the current element has simple content.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">White space is not allowed in the current element context.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace" /> method was not called in the correct sequence. For example, if the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateWhitespace">
+      <MemberSignature Language="C#" Value="public void ValidateWhitespace (System.Xml.Schema.XmlValueGetter elementValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateWhitespace(class System.Xml.Schema.XmlValueGetter elementValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace(System.Xml.Schema.XmlValueGetter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementValue" Type="System.Xml.Schema.XmlValueGetter" />
+      </Parameters>
+      <Docs>
+        <param name="elementValue">An <see cref="T:System.Xml.Schema.XmlValueGetter" /><see langword="delegate" /> used to pass the white space value as a Common Language Runtime (CLR) type compatible with the XML Schema Definition Language (XSD) type of the attribute.</param>
+        <summary>Validates whether the white space returned by the <see cref="T:System.Xml.Schema.XmlValueGetter" /> object specified is allowed in the current element context, and accumulates the white space for validation if the current element has simple content.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">White space is not allowed in the current element context.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace" /> method was not called in the correct sequence. For example, if the <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace" /> method is called after calling <see cref="Overload:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationEventHandler">
+      <MemberSignature Language="C#" Value="public event System.Xml.Schema.ValidationEventHandler ValidationEventHandler;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Xml.Schema.ValidationEventHandler ValidationEventHandler" />
+      <MemberSignature Language="DocId" Value="E:System.Xml.Schema.XmlSchemaValidator.ValidationEventHandler" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.ValidationEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Xml.Schema.ValidationEventHandler" /> that receives schema validation warnings and errors encountered during schema validation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no <xref:System.Xml.Schema.ValidationEventHandler> is specified, an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown for all schema validation errors with an <xref:System.Xml.Schema.XmlSeverityType> value of <xref:System.Xml.Schema.XmlSeverityType>. An <xref:System.Xml.Schema.XmlSchemaValidationException> is not thrown for validation warnings with an <xref:System.Xml.Schema.XmlSeverityType> value of <xref:System.Xml.Schema.XmlSeverityType>.  
+  
+   
+  
+## Examples  
+ The following example validates the `contosoBooks.xml` file against the `contosoBooks.xsd` schema. The example uses the <xref:System.Xml.Serialization.XmlSerializer> class to deserialize the `contosoBooks.xml` file and pass the value of the nodes to the methods of the <xref:System.Xml.Schema.XmlSchemaValidator> class.  
+  
+ [!code-csharp[XmlSchemaValidatorExamples#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaValidatorExamples/CS/XmlSchemaValidatorExamples.cs#1)]
+ [!code-vb[XmlSchemaValidatorExamples#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaValidatorExamples/VB/XmlSchemaValidatorExamples.vb#1)]  
+  
+ The example takes the `contosoBooks.xml` file as input.  
+  
+ [!code-xml[XPathXMLExamples#2](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xml#2)]  
+  
+ The example also takes the `contosoBooks.xsd` as an input.  
+  
+ [!code-xml[XPathXMLExamples#3](~/samples/snippets/xml/VS_Snippets_Data/XPathXMLExamples/XML/contosoBooks.xsd#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationEventSender">
+      <MemberSignature Language="C#" Value="public object ValidationEventSender { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ValidationEventSender" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidator.ValidationEventSender" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object sent as the sender object of a validation event.</summary>
+        <value>An <see cref="T:System.Object" />; the default is this <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For an example of a validation event, see the <xref:System.Xml.Schema.XmlSchemaValidator.ValidationEventHandler> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlResolver">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlResolver XmlResolver { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlResolver XmlResolver" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidator.XmlResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the <see cref="T:System.Xml.XmlResolver" /> object used to resolve <c>xs:import</c> and <c>xs:include</c> elements as well as <c>xsi:schemaLocation</c> and <c>xsi:noNamespaceSchemaLocation</c> attributes.</summary>
+        <value>An <see cref="T:System.Xml.XmlResolver" /> object; the default is an <see cref="T:System.Xml.XmlUrlResolver" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

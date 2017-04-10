@@ -202,9 +202,7 @@ stringList.Add(4);
 -   [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
   
 -   [Generics](../../../csharp/programming-guide/generics/index.md)  
-  
--   [Variables and Expressions](http://go.microsoft.com/fwlink/?LinkId=221228) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
+
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
   

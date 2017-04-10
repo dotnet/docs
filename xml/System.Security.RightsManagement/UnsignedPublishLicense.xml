@@ -1,0 +1,304 @@
+<Type Name="UnsignedPublishLicense" FullName="System.Security.RightsManagement.UnsignedPublishLicense">
+  <TypeSignature Language="C#" Value="public class UnsignedPublishLicense" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnsignedPublishLicense extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.UnsignedPublishLicense" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an unsigned rights managed <see cref="T:System.Security.RightsManagement.PublishLicense" /> or an unsigned <see cref="T:System.Security.RightsManagement.PublishLicense" /> template.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.PublishLicense> defines security data about rights, users, and other security-related information.  The license defines how a specific user on a specific computer can use specified rights-managed content.  
+  
+ The publishing process begins with the document author, who defines rights information in an <xref:System.Security.RightsManagement.UnsignedPublishLicense>.  Next, the authoring application calls the <xref:System.Security.RightsManagement.UnsignedPublishLicense>.<xref:System.Security.RightsManagement.UnsignedPublishLicense.Sign%2A> method to create a signed <xref:System.Security.RightsManagement.PublishLicense>.  The signed <xref:System.Security.RightsManagement.PublishLicense> can then be provided to the end-user client application which can call <xref:System.Security.RightsManagement.PublishLicense.AcquireUseLicense%2A> to request an end-user <xref:System.Security.RightsManagement.UseLicense>.  The returned <xref:System.Security.RightsManagement.UseLicense> then allows the client application to exercise the rights that are granted to the user.  
+  
+ The document author can use the <xref:System.Security.RightsManagement.UnsignedPublishLicense> class either to create a signed <xref:System.Security.RightsManagement.PublishLicense>, or to build and serialize a <xref:System.Security.RightsManagement.PublishLicense> template.  
+  
+ As with other <xref:System.Security.RightsManagement> types, <xref:System.Security.RightsManagement.UnsignedPublishLicense> is only usable in full trust applications.  
+  
+<a name="xamlTextUsage_UnsignedPublishLicense"></a>   
+## XAML Text Usage  
+ This type is not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnsignedPublishLicense ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.UnsignedPublishLicense> creates an empty and unsigned publish-license.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UnsignedPublishLicense (string publishLicenseTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string publishLicenseTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="publishLicenseTemplate" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="publishLicenseTemplate">The [!INCLUDE[TLA#tla_xrml](~/includes/tlasharptla-xrml-md.md)] publish-license template to use to create this license.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" /> class from a specified [!INCLUDE[TLA2#tla_xrml](~/includes/tla2sharptla-xrml-md.md)] publish-license template.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `publishLicenseTemplate` [!INCLUDE[TLA2#tla_xrml](~/includes/tla2sharptla-xrml-md.md)] `<RANGETIME>` or `<INTERVALTIME>` elements are ignored when the <xref:System.Security.RightsManagement.UnsignedPublishLicense> is created by the <xref:System.Security.RightsManagement.UnsignedPublishLicense.%23ctor%2A>(String) constructor.  To specify these values for the publish license, the <xref:System.Security.RightsManagement.ContentGrant> properties for <xref:System.Security.RightsManagement.ContentGrant.ValidFrom%2A> and <xref:System.Security.RightsManagement.ContentGrant.ValidUntil%2A> must be explicitly set.  The following example shows how to explicitly set the <xref:System.Security.RightsManagement.ContentGrant.ValidFrom%2A> and <xref:System.Security.RightsManagement.ContentGrant.ValidUntil%2A> properties.  
+  
+ [!code-csharp[UnsignedPubLicense_snip#RmPkgPubGrants](~/samples/snippets/csharp/VS_Snippets_Wpf/UnsignedPubLicense_snip/CSharp/Window1.xaml.cs#rmpkgpubgrants)]
+ [!code-vb[UnsignedPubLicense_snip#RmPkgPubGrants](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UnsignedPubLicense_snip/visualbasic/window1.xaml.vb#rmpkgpubgrants)]  
+  
+   
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubunpublic)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubunpublic)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentId">
+      <MemberSignature Language="C#" Value="public Guid ContentId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ContentId" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.ContentId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the publisher-created content identifier.</summary>
+        <value>The publisher-created rights-managed content identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The publisher creates a <xref:System.Security.RightsManagement.UnsignedPublishLicense.ContentId%2A> to identify rights-managed content in a <xref:System.Security.RightsManagement.UseLicense> and a <xref:System.Security.RightsManagement.PublishLicense>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grants">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Security.RightsManagement.ContentGrant&gt; Grants { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Security.RightsManagement.ContentGrant&gt; Grants" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.Grants" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Security.RightsManagement.ContentGrant&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of assigned user rights.</summary>
+        <value>A collection of the assigned user rights that are provided in this license.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalizedNameDescriptionDictionary">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;int,System.Security.RightsManagement.LocalizedNameDescriptionPair&gt; LocalizedNameDescriptionDictionary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;int32, class System.Security.RightsManagement.LocalizedNameDescriptionPair&gt; LocalizedNameDescriptionDictionary" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.LocalizedNameDescriptionDictionary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Int32,System.Security.RightsManagement.LocalizedNameDescriptionPair&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of name and description pairs.</summary>
+        <value>A collection of name and description pairs.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.ContentUser Owner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.RightsManagement.ContentUser Owner" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.ContentUser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content owner.</summary>
+        <value>The user who owns the published content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.UnsignedPublishLicense.Owner%2A> specifies the user who owns the <xref:System.Security.RightsManagement.PublishLicense>.  
+  
+ <xref:System.Security.RightsManagement.UnsignedPublishLicense.Owner%2A> is also associated with the Owner node in the issuance license [!INCLUDE[TLA#tla_xrml](~/includes/tlasharptla-xrml-md.md)].  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property to assign a <xref:System.Security.RightsManagement.ContentUser>.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubunpublic)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubUnPubLic](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubunpublic)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferralInfoName">
+      <MemberSignature Language="C#" Value="public string ReferralInfoName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReferralInfoName" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the contact name for the author or publisher of the content.</summary>
+        <value>The contact name for the author or publisher of the content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_ReferralInfoName"></a>   
+## XAML Text Usage  
+ Members of this type are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferralInfoUri">
+      <MemberSignature Language="C#" Value="public Uri ReferralInfoUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ReferralInfoUri" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.UnsignedPublishLicense.ReferralInfoUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the contact [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] for the author or publisher of the content.</summary>
+        <value>The contact [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the author or publisher of the content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_ReferralInfoUri"></a>   
+## XAML Text Usage  
+ Members of this type are not typically used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.PublishLicense Sign (System.Security.RightsManagement.SecureEnvironment secureEnvironment, out System.Security.RightsManagement.UseLicense authorUseLicense);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.RightsManagement.PublishLicense Sign(class System.Security.RightsManagement.SecureEnvironment secureEnvironment, class System.Security.RightsManagement.UseLicense authorUseLicense) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.Sign(System.Security.RightsManagement.SecureEnvironment,System.Security.RightsManagement.UseLicense@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.PublishLicense</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="secureEnvironment" Type="System.Security.RightsManagement.SecureEnvironment" />
+        <Parameter Name="authorUseLicense" Type="System.Security.RightsManagement.UseLicense&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="secureEnvironment">The secure environment for license activation and binding.</param>
+        <param name="authorUseLicense">A returned <see cref="T:System.Security.RightsManagement.UseLicense" /> for the document author.</param>
+        <summary>Creates a signed <see cref="T:System.Security.RightsManagement.PublishLicense" /> and returns a <see cref="T:System.Security.RightsManagement.UseLicense" /> for the document author.</summary>
+        <returns>The signed <see cref="T:System.Security.RightsManagement.PublishLicense" /> that is created by signing this <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this class to initialize a <xref:System.Security.RightsManagement.PublishLicense>.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubencrypt)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubEncrypt](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubencrypt)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.UnsignedPublishLicense.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a serialized template created from the [!INCLUDE[TLA2#tla_xrml](~/includes/tla2sharptla-xrml-md.md)] of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" />.</summary>
+        <returns>A serialized template created from the [!INCLUDE[TLA2#tla_xrml](~/includes/tla2sharptla-xrml-md.md)] of the <see cref="T:System.Security.RightsManagement.UnsignedPublishLicense" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

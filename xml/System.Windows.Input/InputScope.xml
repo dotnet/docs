@@ -1,0 +1,163 @@
+<Type Name="InputScope" FullName="System.Windows.Input.InputScope">
+  <TypeSignature Language="C#" Value="public class InputScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputScope extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputScope" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Input.InputScopeConverter, PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents information related to the scope of data provided by an input method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.FrameworkElement.InputScope%2A> and <xref:System.Windows.FrameworkContentElement.InputScope%2A> properties to get an <xref:System.Windows.Input.InputScope> for a particular element.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InputScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputScope.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputScope" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Names">
+      <MemberSignature Language="C#" Value="public System.Collections.IList Names { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Names" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.Names" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the input scope name.</summary>
+        <value>A member of the <see cref="T:System.Windows.Input.InputScopeName" /> enumeration specifying a name for this input scope.  
+  
+ The default value is <see cref="F:System.Windows.Input.InputScopeNameValue.Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using an input scope name is the simplest way to refer to an <xref:System.Windows.Input.InputScope> for an element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Raised when an attempt is made to set this property to any value other than a valid member of the <see cref="T:System.Windows.Input.InputScopeName" /> enumeration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PhraseList">
+      <MemberSignature Language="C#" Value="public System.Collections.IList PhraseList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList PhraseList" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.PhraseList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of phrases to be used as suggested input patterns by input processors.</summary>
+        <value>An object containing a collection of phrases to be used as suggested input patterns by input processors.  This object implements the <see cref="T:System.Collections.IList" /> interface.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegularExpression">
+      <MemberSignature Language="C#" Value="public string RegularExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RegularExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.RegularExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a regular expression to be used as a suggested text input pattern by input processors.</summary>
+        <value>A string that defines a regular expression to be used as a suggested text input pattern by input processors.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SrgsMarkup">
+      <MemberSignature Language="C#" Value="public string SrgsMarkup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SrgsMarkup" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputScope.SrgsMarkup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that specifies any Speech Recognition Grammar Specification (SRGS) markup to be used as a suggested input pattern by input processors.</summary>
+        <value>A string that specifies any SRGS markup to be used as a suggested input pattern by input processors.  
+  
+ This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Currently, this property is only applicable to speech input.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when an attempt is made to set this property to **null**.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

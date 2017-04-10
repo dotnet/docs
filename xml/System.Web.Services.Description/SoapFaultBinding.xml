@@ -1,0 +1,196 @@
+<Type Name="SoapFaultBinding" FullName="System.Web.Services.Description.SoapFaultBinding">
+  <TypeSignature Language="C#" Value="public class SoapFaultBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapFaultBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapFaultBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionFormatExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtension("fault", "http://schemas.xmlsoap.org/wsdl/soap/", typeof(System.Web.Services.Description.FaultBinding))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an extensibility element added to a <see cref="T:System.Web.Services.Description.FaultBinding" /> within an XML Web service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class specifies the contents of any SOAP error message returned.  
+  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapFaultBinding#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFaultBinding/CPP/soapfaultbinding.cpp#1)]
+ [!code-csharp[SoapFaultBinding#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFaultBinding/CS/soapfaultbinding.cs#1)]
+ [!code-vb[SoapFaultBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFaultBinding/VB/soapfaultbinding.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapFaultBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapFaultBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Web.Services.Description.SoapFaultBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public string Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapFaultBinding.Encoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("encodingStyle")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a URI representing the encoding style used to encode the SOAP fault message.</summary>
+        <value>A string containing a URI. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property should be set only if the value of the <xref:System.Web.Services.Description.SoapFaultBinding.Use%2A> property is `Encoded`.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapFaultBinding_ctor#4](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFaultBinding_ctor/CPP/soapfaultbinding_ctor.cpp#4)]
+ [!code-csharp[SoapFaultBinding_ctor#4](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFaultBinding_ctor/CS/soapfaultbinding_ctor.cs#4)]
+ [!code-vb[SoapFaultBinding_ctor#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFaultBinding_ctor/VB/soapfaultbinding_ctor.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapFaultBinding.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the name attribute that relates the soap fault to the wsdl fault defined for the specified operation.</summary>
+        <value>A <see cref="T:System.String" /> object that contains the name attribute that relates the soap fault to the wsdl fault defined for the operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapFaultBinding.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("namespace")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the URI representing the location of the specification for encoding of content not specifically defined by the <see cref="P:System.Web.Services.Description.SoapFaultBinding.Encoding" /> property.</summary>
+        <value>A string representing a URI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property will return an empty string ("") if the property value has not been set. The value should only be set if the value of the <xref:System.Web.Services.Description.SoapFaultBinding.Use%2A> property is `Encoded`. Otherwise the XML Web service will exhibit unexpected behavior.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapFaultBinding_ctor#5](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFaultBinding_ctor/CPP/soapfaultbinding_ctor.cpp#5)]
+ [!code-csharp[SoapFaultBinding_ctor#5](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFaultBinding_ctor/CS/soapfaultbinding_ctor.cs#5)]
+ [!code-vb[SoapFaultBinding_ctor#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFaultBinding_ctor/VB/soapfaultbinding_ctor.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Use">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapBindingUse Use { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.SoapBindingUse Use" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapFaultBinding.Use" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("use")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.SoapBindingUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether the fault message is encoded using rules specified by the <see cref="P:System.Web.Services.Description.SoapFaultBinding.Encoding" /> property, or is encapsulated within a concrete XML schema.</summary>
+        <value>One of the <see cref="T:System.Web.Services.Description.SoapBindingUse" /> values. The default is <see langword="Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[SoapFaultBinding_ctor#3](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFaultBinding_ctor/CPP/soapfaultbinding_ctor.cpp#3)]
+ [!code-csharp[SoapFaultBinding_ctor#3](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFaultBinding_ctor/CS/soapfaultbinding_ctor.cs#3)]
+ [!code-vb[SoapFaultBinding_ctor#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFaultBinding_ctor/VB/soapfaultbinding_ctor.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

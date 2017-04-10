@@ -198,10 +198,9 @@ enables inspecting an object and its properties to determine if that object
 satisfies the sought pattern. You use the `when` keyword to specify additional
 rules to the pattern.
 
-### `is` expressions
+### `is` expression
 
-The `is` pattern expressions extend the familiar `is` operator
-to query a object beyond its type.
+The `is` pattern expression extends the familiar `is` operator to query an object beyond its type.
 
 Let's start with a simple scenario. We'll add capabilities to this scenario
 that demonstrate how pattern matching expressions make algorithms that work

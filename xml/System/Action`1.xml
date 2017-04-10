@@ -1,0 +1,90 @@
+<Type Name="Action&lt;T&gt;" FullName="System.Action&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate void Action&lt;in T&gt;(T obj);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Action`1&lt;- T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Action`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="obj" Type="T" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">The type of the parameter of the method that this delegate encapsulates.</typeparam>
+    <param name="obj">The parameter of the method that this delegate encapsulates.</param>
+    <summary>Encapsulates a method that has a single parameter and does not return a value.  
+  
+ To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#486d58da4553e12d).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#486d58da4553e12d). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ You can use the <xref:System.Action%601> delegate to pass a method as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have one parameter that is passed to it by value, and it must not return a value. (In C#, the method must return `void`. In Visual Basic, it must be defined by the `Sub`…`End Sub` construct. It can also be a method that returns a value that is ignored.) Typically, such a method is used to perform an operation.  
+  
+> [!NOTE]
+>  To reference a method that has one parameter and returns a value, use the generic <xref:System.Func%602> delegate instead.  
+  
+ When you use the <xref:System.Action%601> delegate, you do not have to explicitly define a delegate that encapsulates a method with a single parameter. For example, the following code explicitly declares a delegate named `DisplayMessage` and assigns a reference to either the <xref:System.Console.WriteLine%2A> method or the `ShowWindowsMessage` method to its delegate instance.  
+  
+ [!code-cpp[System.Action~1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Action~1/cpp/delegate.cpp#1)]
+ [!code-csharp[System.Action~1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action~1/cs/Delegate.cs#1)]
+ [!code-vb[System.Action~1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action~1/vb/Delegate.vb#1)]  
+  
+ The following example simplifies this code by instantiating the <xref:System.Action%601> delegate instead of explicitly defining a new delegate and assigning a named method to it.  
+  
+ [!code-cpp[System.Action~1#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Action~1/cpp/action`1.cpp#2)]
+ [!code-csharp[System.Action~1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action~1/cs/Action1.cs#2)]
+ [!code-vb[System.Action~1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action~1/vb/Action1.vb#2)]  
+  
+ You can also use the <xref:System.Action%601> delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](~/docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).)  
+  
+ [!code-csharp[System.Action~1#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action~1/cs/Anon.cs#3)]  
+  
+ You can also assign a lambda expression to an <xref:System.Action%601> delegate instance, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).)  
+  
+ [!code-csharp[System.Action~1#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action~1/cs/Lambda.cs#4)]
+ [!code-vb[System.Action~1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action~1/vb/lambda.vb#4)]  
+  
+ The <xref:System.Collections.Generic.List%601.ForEach%2A> and <xref:System.Array.ForEach%2A> methods each take an <xref:System.Action%601> delegate as a parameter. The method encapsulated by the delegate allows you to perform an action on each element in the array or list. The example uses the <xref:System.Collections.Generic.List%601.ForEach%2A> method to provide an illustration.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.Action%601> delegate to print the contents of a <xref:System.Collections.Generic.List%601> object. In this example, the `Print` method is used to display the contents of the list to the console. In addition, the C# example also demonstrates the use of anonymous methods to display the contents to the console. Note that the example does not explicitly declare an <xref:System.Action%601> variable. Instead, it passes a reference to a method that takes a single parameter and that does not return a value to the <xref:System.Collections.Generic.List%601.ForEach%2A?displayProperty=fullName> method, whose single parameter is an <xref:System.Action%601> delegate. Similarly, in the C# example, an <xref:System.Action%601> delegate is not explicitly instantiated because the signature of the anonymous method matches the signature of the <xref:System.Action%601> delegate that is expected by the <xref:System.Collections.Generic.List%601.ForEach%2A?displayProperty=fullName> method.  
+  
+ [!code-csharp[System.Action_PrintExample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Action_PrintExample/cs/action.cs#01)]
+ [!code-vb[System.Action_PrintExample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Action_PrintExample/vb/action.vb#01)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

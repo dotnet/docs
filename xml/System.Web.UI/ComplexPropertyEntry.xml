@@ -1,0 +1,66 @@
+<Type Name="ComplexPropertyEntry" FullName="System.Web.UI.ComplexPropertyEntry">
+  <TypeSignature Language="C#" Value="public class ComplexPropertyEntry : System.Web.UI.BuilderPropertyEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComplexPropertyEntry extends System.Web.UI.BuilderPropertyEntry" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ComplexPropertyEntry" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.BuilderPropertyEntry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as the property entry for read/write and read-only properties such as templates.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A complex property entry represents an item such as a template.  
+  
+ The page parser uses property entry classes during parsing to represent expressions found within server control tags.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsCollectionItem">
+      <MemberSignature Language="C#" Value="public bool IsCollectionItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCollectionItem" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ComplexPropertyEntry.IsCollectionItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the property is a collection object.</summary>
+        <value>
+          <see langword="true" /> if the property entry represents an item that contains a collection of values; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ComplexPropertyEntry.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the item represented in the property entry contains a method for setting its value.</summary>
+        <value>
+          <see langword="true" /> if the item represented by the property entry does not contain a set method; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

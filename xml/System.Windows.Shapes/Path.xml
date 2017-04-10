@@ -1,0 +1,161 @@
+<Type Name="Path" FullName="System.Windows.Shapes.Path">
+  <TypeSignature Language="C#" Value="public sealed class Path : System.Windows.Shapes.Shape" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Path extends System.Windows.Shapes.Shape" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shapes.Path" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Shapes.Shape</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Draws a series of connected lines and curves.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Shapes.Path> object can draw closed or open shapes, multiple shapes, and even curved shapes.  
+  
+ Unlike the <xref:System.Windows.Shapes.Line> and <xref:System.Windows.Shapes.Polyline> objects, you can use this object to draw curves. See the <xref:System.Windows.Shapes.Path.Data%2A> property for a description of the shapes that the <xref:System.Windows.Shapes.Path> element supports.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Shapes.Path> element and set its properties by using code.  
+  
+ [!code-cpp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/cpp/VS_Snippets_Wpf/ShapesProcedural/CPP/ShapesProcedural.cpp#shapesproceduralpath)]
+ [!code-csharp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralpath)]
+ [!code-vb[shapesprocedural#ShapesProceduralPath](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralpath)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Path ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Path.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shapes.Path" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry Data { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry Data" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Path.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Media.Geometry" /> that specifies the shape to be drawn.</summary>
+        <value>A description of the shape to be drawn.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To draw simple shapes, use the <xref:System.Windows.Media.EllipseGeometry>, <xref:System.Windows.Media.LineGeometry>, and <xref:System.Windows.Media.RectangleGeometry> objects. To draw curves, arcs, or complex shapes, use the <xref:System.Windows.Media.PathGeometry> object. To create a composite geometry, use a <xref:System.Windows.Media.GeometryGroup>. To combine geometries, use a <xref:System.Windows.Media.CombinedGeometry>.  
+  
+<a name="xamlPropertyElementUsage_Data"></a>   
+## XAML Property Element Usage  
+  
+```  
+<Path>  
+  <Path.Data>  
+    singleGeometry  
+  </Path.Data>  
+</Path>  
+```  
+  
+<a name="xamlAttributeUsage_Data"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object Data="moveAndDrawCommands"/>  
+```  
+  
+<a name="xamlValues_Data"></a>   
+## XAML Values  
+ *singleGeometry*  
+ A single object element that derives from <xref:System.Windows.Media.Geometry>. This can be one of the following:  
+  
+-   One of the simple geometries <xref:System.Windows.Media.EllipseGeometry>, <xref:System.Windows.Media.LineGeometry>, or <xref:System.Windows.Media.RectangleGeometry>.  
+  
+-   A single <xref:System.Windows.Media.GeometryGroup>, which supports other geometries as child elements. See XAML Values section for <xref:System.Windows.Media.GeometryGroup>.  
+  
+-   A <xref:System.Windows.Media.PathGeometry>, which supports child object elements that establish a path geometry object model of figures and segments. See XAML Values section for <xref:System.Windows.Media.PathGeometry>.  
+  
+ *moveAndDrawCommands*  
+ One or more move and draw commands. For the complete syntax, see [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md).  
+  
+<a name="dependencyPropertyInfo_Data"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Shapes.Path.DataProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Shapes.Path> element and set the <xref:System.Windows.Shapes.Path.Data%2A> property by using code.  
+  
+ [!code-cpp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/cpp/VS_Snippets_Wpf/ShapesProcedural/CPP/ShapesProcedural.cpp#shapesproceduralpath)]
+ [!code-csharp[shapesprocedural#ShapesProceduralPath](~/samples/snippets/csharp/VS_Snippets_Wpf/ShapesProcedural/Csharp/ShapesProcedural.cs#shapesproceduralpath)]
+ [!code-vb[shapesprocedural#ShapesProceduralPath](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ShapesProcedural/VisualBasic/ShapesProceduralVB.vb#shapesproceduralpath)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DataProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DataProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Path.DataProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shapes.Path.Data" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefiningGeometry">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry DefiningGeometry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry DefiningGeometry" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Path.DefiningGeometry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

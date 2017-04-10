@@ -1,0 +1,247 @@
+<Type Name="ImageFlags" FullName="System.Drawing.Imaging.ImageFlags">
+  <TypeSignature Language="C#" Value="public enum ImageFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the attributes of the pixel data contained in an <see cref="T:System.Drawing.Image" /> object. The <see cref="P:System.Drawing.Image.Flags" /> property returns a member of this enumeration.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Caching">
+      <MemberSignature Language="C#" Value="Caching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags Caching = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.Caching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pixel data can be cached for faster access.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorSpaceCmyk">
+      <MemberSignature Language="C#" Value="ColorSpaceCmyk" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags ColorSpaceCmyk = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.ColorSpaceCmyk" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pixel data uses a CMYK color space.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorSpaceGray">
+      <MemberSignature Language="C#" Value="ColorSpaceGray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags ColorSpaceGray = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.ColorSpaceGray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pixel data is grayscale.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorSpaceRgb">
+      <MemberSignature Language="C#" Value="ColorSpaceRgb" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags ColorSpaceRgb = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.ColorSpaceRgb" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pixel data uses an RGB color space.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorSpaceYcbcr">
+      <MemberSignature Language="C#" Value="ColorSpaceYcbcr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags ColorSpaceYcbcr = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.ColorSpaceYcbcr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the image is stored using a YCBCR color space.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorSpaceYcck">
+      <MemberSignature Language="C#" Value="ColorSpaceYcck" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags ColorSpaceYcck = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.ColorSpaceYcck" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the image is stored using a YCCK color space.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAlpha">
+      <MemberSignature Language="C#" Value="HasAlpha" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags HasAlpha = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.HasAlpha" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pixel data contains alpha information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasRealDpi">
+      <MemberSignature Language="C#" Value="HasRealDpi" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags HasRealDpi = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.HasRealDpi" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that dots per inch information is stored in the image.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasRealPixelSize">
+      <MemberSignature Language="C#" Value="HasRealPixelSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags HasRealPixelSize = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.HasRealPixelSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the pixel size is stored in the image.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HasTranslucent">
+      <MemberSignature Language="C#" Value="HasTranslucent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags HasTranslucent = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.HasTranslucent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the pixel data has alpha values other than 0 (transparent) and 255 (opaque).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>There is no format information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PartiallyScalable">
+      <MemberSignature Language="C#" Value="PartiallyScalable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags PartiallyScalable = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.PartiallyScalable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pixel data is partially scalable, but there are some limitations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="ReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags ReadOnly = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.ReadOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pixel data is read-only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scalable">
+      <MemberSignature Language="C#" Value="Scalable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageFlags Scalable = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageFlags.Scalable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pixel data is scalable.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

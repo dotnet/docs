@@ -1,0 +1,1092 @@
+<Type Name="SectionInformation" FullName="System.Configuration.SectionInformation">
+  <TypeSignature Language="C#" Value="public sealed class SectionInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SectionInformation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.SectionInformation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains metadata about an individual section within the configuration hierarchy. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation> object contains the metadata about an individual section within the configuration hierarchy. This object can be used in order to validate and change the properties of an individual section.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.SectionInformation> metadata that is associated with a <xref:System.Configuration.ConfigurationSection> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#91](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#91)]
+ [!code-vb[System.Configuration.ConfigurationElement#91](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#91)]  
+  
+ The following example is an excerpt of the configuration file that is used by the previous example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+  <configSections>  
+    <section name="MyUrls" type="Samples.AspNet.UrlsSection,  
+      ConfigurationElement, Version=1.0.0.0, Culture=neutral,  
+      PublicKeyToken=null" allowDefinition="Everywhere"  
+      allowExeDefinition="MachineToApplication"  
+      restartOnExternalChanges="true" />  
+  </configSections>  
+  <MyUrls name="MyFavorites">  
+    <simple name="Contoso" url="http://www.contoso.com" port="8080" />  
+    <urls>  
+      <clear />  
+      <add name="Microsoft" url="http://www.microsoft.com" port="0" />  
+    </urls>  
+  </MyUrls>  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowDefinition">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationAllowDefinition AllowDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationAllowDefinition AllowDefinition" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates where in the configuration file hierarchy the associated configuration section can be defined.</summary>
+        <value>A value that indicates where in the configuration file hierarchy the associated <see cref="T:System.Configuration.ConfigurationSection" /> object can be declared.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Configuration.SectionInformation.AllowDefinition%2A> applies only to configuration files of Web applications. For client applications, you must use <xref:System.Configuration.SectionInformation.AllowExeDefinition%2A>.  
+  
+   
+  
+## Examples  
+ The examples in this section show how to get the <xref:System.Configuration.SectionInformation.AllowDefinition%2A> property value after accessing the related section information in the configuration file.  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#95](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#95)]
+ [!code-vb[System.Configuration.ConfigurationElement#95](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#95)]  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation.AllowDefinition%2A> value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#96](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#96)]
+ [!code-vb[System.Configuration.ConfigurationElement#96](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#96)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value conflicts with a value that is already defined.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowExeDefinition">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationAllowExeDefinition AllowExeDefinition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationAllowExeDefinition AllowExeDefinition" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowExeDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowExeDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates where in the configuration file hierarchy the associated configuration section can be declared.</summary>
+        <value>A value that indicates where in the configuration file hierarchy the associated <see cref="T:System.Configuration.ConfigurationSection" /> object can be declared for .exe files.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Configuration.SectionInformation.AllowExeDefinition%2A> applies only to configuration files of client applications. For Web applications, you must use <xref:System.Configuration.SectionInformation.AllowDefinition%2A>.  
+  
+   
+  
+## Examples  
+ The examples in this section show how to get the <xref:System.Configuration.SectionInformation.AllowExeDefinition%2A> property value after accessing the related section information in the configuration file.  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#95](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#95)]
+ [!code-vb[System.Configuration.ConfigurationElement#95](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#95)]  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation.AllowExeDefinition%2A> value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#97](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#97)]
+ [!code-vb[System.Configuration.ConfigurationElement#97](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#97)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value conflicts with a value that is already defined.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowLocation">
+      <MemberSignature Language="C#" Value="public bool AllowLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the configuration section allows the <see langword="location" /> attribute.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="location" /> attribute is allowed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When set to `false`, the <xref:System.Configuration.SectionInformation.AllowLocation%2A> property indicates that the section is accessed by native-code readers. Therefore, the use of the `location` attribute is not allowed, because the native-code readers do not support the concept of `location`.  
+  
+   
+  
+## Examples  
+ The examples in this section show how to get the <xref:System.Configuration.SectionInformation.AllowLocation%2A> property value after accessing the related section information in the configuration file.  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#95](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#95)]
+ [!code-vb[System.Configuration.ConfigurationElement#95](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#95)]  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation.AllowLocation%2A> value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#98](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#98)]
+ [!code-vb[System.Configuration.ConfigurationElement#98](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#98)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value conflicts with a value that is already defined.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowOverride">
+      <MemberSignature Language="C#" Value="public bool AllowOverride { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowOverride" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.AllowOverride" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the associated configuration section can be overridden by lower-level configuration files.</summary>
+        <value>
+          <see langword="true" /> if the section can be overridden; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The examples in this section show how to get the <xref:System.Configuration.SectionInformation.AllowOverride%2A> property value after accessing the related section information in the configuration file.  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#95](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#95)]
+ [!code-vb[System.Configuration.ConfigurationElement#95](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#95)]  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation.AllowOverride%2A> value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#99)]
+ [!code-vb[System.Configuration.ConfigurationElement#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#99)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigSource">
+      <MemberSignature Language="C#" Value="public string ConfigSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigSource" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ConfigSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the include file in which the associated configuration section is defined, if such a file exists.</summary>
+        <value>The name of the include file in which the associated <see cref="T:System.Configuration.ConfigurationSection" /> is defined, if such a file exists; otherwise, an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.ConfigSource%2A> property represents the value of the `configSource` attribute that is specified for a <xref:System.Configuration.ConfigurationSection> object that is associated with the <xref:System.Configuration.SectionInformation> object.  
+  
+ A <xref:System.Configuration.ConfigurationSection> implementation can optionally specify a separate file in which the configuration settings for that section are defined. This can be useful in multiple ways:  
+  
+-   Using include files can result in a more logical and modular structure for configuration files.  
+  
+-   File-access security and permissions can be used to restrict access to sections of configuration settings.  
+  
+-   Settings in an include file that are not used during application initialization can be modified and reloaded without requiring an application restart.  
+  
+ The following example shows how this attribute is used in a configuration file to specify that the `pages` section is defined in an external include file:  
+  
+ `<pages configSource="pages.config"/>`  
+  
+ If any of the settings in a configuration include file require the application to restart when they are modified, set the <xref:System.Configuration.SectionInformation.RestartOnExternalChanges%2A> property to `true`.  
+  
+ In ASP.NET applications, at run time you can assign to the <xref:System.Configuration.SectionInformation.ConfigSource%2A> property the name of an alternative configuration file. In that case, the contents of the file are overwritten by the default connection string information that is contained in the Web.config file. This occurs also when the alternative file does not exist and it is created at run time. If the Web.config file does not contain any connection string information, an empty  section is added to the alternative file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceDeclaration">
+      <MemberSignature Language="C#" Value="public void ForceDeclaration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces the associated configuration section to appear in the configuration file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> method forces this <xref:System.Configuration.SectionInformation> declaration to be written to the configuration file.  
+  
+> [!NOTE]
+>  The <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> method can force a <xref:System.Configuration.SectionInformation> declaration to be written to a configuration file, even if the section is not required because it is already declared in a parent file. Using the <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> method can make a configuration file more portable from one computer to another. It enables you to make sure that the section exists even when you do not have control over parent configuration files.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceDeclaration">
+      <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="force" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="require">To be added.</param>
+        <summary>Forces the associated configuration section to appear in the configuration file, or removes an existing section from the configuration file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> method forces this <xref:System.Configuration.SectionInformation> declaration to be written to the configuration file if `force` is `true`. If `force` is `false`, this action might be ignored if the <xref:System.Configuration.SectionInformation> declaration is required by the system.  
+  
+> [!NOTE]
+>  The <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> method can force a <xref:System.Configuration.SectionInformation> declaration to be written to a configuration file, even if this section is not required because it is already declared in a parent file. Using the <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> method can make a configuration file more portable from one computer to another. This also lets you make sure that the section exists even if you do not have control over parent configuration files.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#113](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#113)]
+ [!code-vb[System.Configuration.ConfigurationElement#113](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#113)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">
+          <paramref name="force" /> is <see langword="true" /> and the associated section cannot be exported to the child configuration file, or it is undeclared.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceSave">
+      <MemberSignature Language="C#" Value="public bool ForceSave { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ForceSave" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ForceSave" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the associated configuration section will be saved even if it has not been modified.</summary>
+        <value>
+          <see langword="true" /> if the associated <see cref="T:System.Configuration.ConfigurationSection" /> object will be saved even if it has not been modified; otherwise, <see langword="false" />. The default is <see langword="false" />.  
+  
+ <block subset="none" type="note">  
+<para>  
+ If the configuration file is saved (even if there are no modifications), ASP.NET restarts the application.  
+  
+</para>  
+</block></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.SectionInformation.ForceSave%2A> property of a <xref:System.Configuration.ConfigurationSection> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/ConfigurationElement.cs#1)]
+ [!code-vb[System.Configuration.ConfigurationElement#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/ConfigurationElement.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParentSection">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection GetParentSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection GetParentSection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.GetParentSection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the configuration section that contains the configuration section associated with this object.</summary>
+        <returns>The configuration section that contains the <see cref="T:System.Configuration.ConfigurationSection" /> that is associated with this <see cref="T:System.Configuration.SectionInformation" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this <xref:System.Configuration.ConfigurationSection> object has no parent sections, the <xref:System.Configuration.SectionInformation.GetParentSection%2A> method returns the same value as the <xref:System.Configuration.SectionInformation.Name%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.SectionInformation.GetParentSection%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#92](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#92)]
+ [!code-vb[System.Configuration.ConfigurationElement#92](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#92)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method is invoked from a parent section.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRawXml">
+      <MemberSignature Language="C#" Value="public string GetRawXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetRawXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.GetRawXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an XML node object that represents the associated configuration-section object.</summary>
+        <returns>The XML representation for this configuration section.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.SectionInformation.GetRawXml%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#93](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#93)]
+ [!code-vb[System.Configuration.ConfigurationElement#93](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#93)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This configuration object is locked and cannot be edited.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritInChildApplications">
+      <MemberSignature Language="C#" Value="public bool InheritInChildApplications { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InheritInChildApplications" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.InheritInChildApplications" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the settings that are specified in the associated configuration section are inherited by applications that reside in a subdirectory of the relevant application.</summary>
+        <value>
+          <see langword="true" /> if the settings specified in this <see cref="T:System.Configuration.ConfigurationSection" /> object are inherited by child applications; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.InheritInChildApplications%2A> property represents the `inheritInChildApplications`attribute of a `location` element in a configuration file.  
+  
+ Set <xref:System.Configuration.SectionInformation.InheritInChildApplications%2A> to `false` to prevent settings that are specific to a certain location (such as the root directory of a Web site) from being inherited by applications that exist in subdirectories.  
+  
+ The following example shows how to use this attribute in a configuration file to specify that the settings defined in the location element for the root of a Web site should not be inherited by child applications:  
+  
+ `<location path="." inheritInChildApplications="false">`  
+  
+ The <xref:System.Configuration.SectionInformation.InheritInChildApplications%2A> property applies only to location-specific configuration settings.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.SectionInformation.InheritInChildApplications%2A> value of a <xref:System.Configuration.ConfigurationSection> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#100](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#100)]
+ [!code-vb[System.Configuration.ConfigurationElement#100](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#100)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeclarationRequired">
+      <MemberSignature Language="C#" Value="public bool IsDeclarationRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDeclarationRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsDeclarationRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the configuration section must be declared in the configuration file.</summary>
+        <value>
+          <see langword="true" /> if the associated <see cref="T:System.Configuration.ConfigurationSection" /> object must be declared in the configuration file; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The examples in this section show how to get the <xref:System.Configuration.SectionInformation.IsDeclarationRequired%2A> property value after accessing the related section information in the configuration file.  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#102](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#102)]
+ [!code-vb[System.Configuration.ConfigurationElement#102](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#102)]  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation.IsDeclarationRequired%2A> value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#103](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#103)]
+ [!code-vb[System.Configuration.ConfigurationElement#103](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeclared">
+      <MemberSignature Language="C#" Value="public bool IsDeclared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDeclared" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsDeclared" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated configuration section is declared in the configuration file.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Configuration.ConfigurationSection" /> is declared in the configuration file; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The examples in this section show how to get the <xref:System.Configuration.SectionInformation.IsDeclared%2A> property value after accessing the related section information in the configuration file.  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#102](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#102)]
+ [!code-vb[System.Configuration.ConfigurationElement#102](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#102)]  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation.IsDeclared%2A> value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#104](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#104)]
+ [!code-vb[System.Configuration.ConfigurationElement#104](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#104)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLocked">
+      <MemberSignature Language="C#" Value="public bool IsLocked { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLocked" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsLocked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated configuration section is locked.</summary>
+        <value>
+          <see langword="true" /> if the section is locked; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.IsLocked%2A> property returns `true` when the related section is locked by the <xref:System.Configuration.SectionInformation.AllowOverride%2A> or the <xref:System.Configuration.SectionInformation.AllowDefinition%2A> property. A section is locked if it cannot be overridden or defined in the current configuration file.  
+  
+   
+  
+## Examples  
+ The examples in this section show how to get the <xref:System.Configuration.SectionInformation.IsLocked%2A> property value after accessing the related section information in the configuration file.  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#102](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#102)]
+ [!code-vb[System.Configuration.ConfigurationElement#102](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#102)]  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation.IsLocked%2A> value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#105](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#105)]
+ [!code-vb[System.Configuration.ConfigurationElement#105](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#105)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsProtected">
+      <MemberSignature Language="C#" Value="public bool IsProtected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsProtected" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.IsProtected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated configuration section is protected.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Configuration.ConfigurationSection" /> is protected; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Protected configuration sections are encrypted and read-only.  
+  
+ For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+  
+   
+  
+## Examples  
+ The examples in this section show how to get the <xref:System.Configuration.SectionInformation.IsProtected%2A> property value after accessing the related section information in the configuration file.  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#102](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#102)]
+ [!code-vb[System.Configuration.ConfigurationElement#102](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#102)]  
+  
+ The following example gets the <xref:System.Configuration.SectionInformation.IsProtected%2A> value.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#106](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#106)]
+ [!code-vb[System.Configuration.ConfigurationElement#106](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#106)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the associated configuration section.</summary>
+        <value>The complete name of the configuration section.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.Name%2A> is the name of the section without the path.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.SectionInformation.Name%2A> value of a <xref:System.Configuration.ConfigurationSection> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#107](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#107)]
+ [!code-vb[System.Configuration.ConfigurationElement#107](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#107)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideMode">
+      <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideMode" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.OverrideMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Configuration.OverrideMode" /> enumeration value that specifies whether the associated configuration section can be overridden by child configuration files.</summary>
+        <value>One of the <see cref="T:System.Configuration.OverrideMode" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.AllowOverride%2A> property gets or sets a value that indicates whether resources declared inside a `location` element can be overridden by child configuration files. The <xref:System.Configuration.SectionInformation.OverrideMode%2A> property gets or sets a value that specifies similar behavior, but does so for a specific configuration element or group, and uses one of the <xref:System.Configuration.OverrideMode> enumeration values. The <xref:System.Configuration.SectionInformation.OverrideMode%2A> property enables behavior to be inherited from a parent element.  
+  
+ You cannot programmatically set both the <xref:System.Configuration.SectionInformation.AllowOverride%2A> and <xref:System.Configuration.SectionInformation.OverrideMode%2A> property. Setting the <xref:System.Configuration.SectionInformation.AllowOverride%2A> property to `true` sets the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property to <xref:System.Configuration.OverrideMode>. Setting the <xref:System.Configuration.SectionInformation.AllowOverride%2A> property to `false` sets the <xref:System.Configuration.SectionInformation.OverrideMode%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">An attempt was made to change both the <see cref="P:System.Configuration.SectionInformation.AllowOverride" /> and <see cref="P:System.Configuration.SectionInformation.OverrideMode" /> properties, which is not supported for compatibility reasons.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideModeDefault">
+      <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideModeDefault { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideModeDefault" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideModeDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.OverrideMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the default override behavior of a configuration section by child configuration files.</summary>
+        <value>One of the <see cref="T:System.Configuration.OverrideMode" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.OverrideModeDefault%2A> property of a configuration section can only be set to the <xref:System.Configuration.OverrideMode> or <xref:System.Configuration.OverrideMode> value of the <xref:System.Configuration.OverrideMode> enumeration. Setting the <xref:System.Configuration.SectionInformation.OverrideModeDefault%2A> property to <xref:System.Configuration.OverrideMode> is equivalent to setting the value to <xref:System.Configuration.OverrideMode>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The override behavior is specified in a parent configuration section.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideModeEffective">
+      <MemberSignature Language="C#" Value="public System.Configuration.OverrideMode OverrideModeEffective { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.OverrideMode OverrideModeEffective" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.OverrideModeEffective" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.OverrideMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the override behavior of a configuration section that is in turn based on whether child configuration files can lock the configuration section.</summary>
+        <value>One of the <see cref="T:System.Configuration.OverrideMode" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns either <xref:System.Configuration.OverrideMode> or <xref:System.Configuration.OverrideMode>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionProvider">
+      <MemberSignature Language="C#" Value="public System.Configuration.ProtectedConfigurationProvider ProtectionProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProtectedConfigurationProvider ProtectionProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.ProtectionProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ProtectedConfigurationProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the protected configuration provider for the associated configuration section.</summary>
+        <value>The protected configuration provider for this <see cref="T:System.Configuration.ConfigurationSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For unprotected sections, the <xref:System.Configuration.SectionInformation.ProtectionProvider%2A> property is `null`.  
+  
+ For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.SectionInformation.ProtectSection%2A> value of a <xref:System.Configuration.ConfigurationSection> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#108](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#108)]
+ [!code-vb[System.Configuration.ConfigurationElement#108](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#108)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectSection">
+      <MemberSignature Language="C#" Value="public void ProtectSection (string provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="protectionProvider" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>Marks a configuration section for protection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.ProtectSection%2A> method marks the section for encryption so it will be written in encrypted form on disk.  
+  
+ The following protection providers are included by default:  
+  
+ <xref:System.Configuration.DpapiProtectedConfigurationProvider>  
+  
+ <xref:System.Configuration.RsaProtectedConfigurationProvider>  
+  
+> [!NOTE]
+>  If you call the <xref:System.Configuration.SectionInformation.ProtectSection%2A> method with a `null` parameter or an empty string, the <xref:System.Configuration.RsaProtectedConfigurationProvider> class is used as the protection provider.  
+  
+ For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.SectionInformation.ProtectSection%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#94](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#94)]
+ [!code-vb[System.Configuration.ConfigurationElement#94](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#94)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Configuration.SectionInformation.AllowLocation" /> property is set to <see langword="false" />.  
+  
+ \- or -  
+  
+ The target section is already a protected data section.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RequirePermission">
+      <MemberSignature Language="C#" Value="public bool RequirePermission { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequirePermission" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.RequirePermission" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated configuration section requires access permissions.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="requirePermission" /> attribute is set to <see langword="true" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Configuration.SectionInformation.RequirePermission%2A> is set to `true`, the `GetSection` methods are restricted by the trust level setting of the application. This means that methods or properties that allow access to configuration section handlers are restricted by the trust level set for the Web application.  
+  
+> [!NOTE]
+>  Because high and full trust are the only levels that allow access to files outside the current application domain, an application can use configuration section handlers only at these trust levels.  
+  
+ When <xref:System.Configuration.SectionInformation.RequirePermission%2A> is set to `false`, the access to the configuration data is not restricted by the application's trust level settings.  
+  
+> [!NOTE]
+>  The appropriate file ACL (Access Control List) permissions are still required, regardless of the <xref:System.Configuration.SectionInformation.RequirePermission%2A> setting. ACL permissions determine who can access the configuration file.  
+  
+   
+  
+## Examples  
+ The following example shows two possible trust levels for a Web application when the <xref:System.Configuration.SectionInformation.RequirePermission%2A> property of the `appSettings` section is `true`.  
+  
+```  
+<system.web>  
+   // With the following trust value   
+   // the code below works.  
+  <trust level="Full" />  
+</system.web>  
+  
+<system.web>  
+  // With the following trust value   
+  // the code below does not work.  
+  <trust level="Medium" />  
+</system.web>  
+```  
+  
+ The following example shows code that runs without errors when the trust level is set to full. Otherwise, the code results in an error.  
+  
+```csharp  
+AppSettingsSection apSection =   
+  ConfigurationManager.GetSection("appSettings") as AppSettingsSection;  
+  
+NameValueCollection apSectionCollection =  
+  ConfigurationManager.AppSettings;  
+```  
+  
+```vb  
+Dim apSection As AppSettingsSection = _   
+  TryCast(ConfigurationManager.GetSection("appSettings"),   
+    AppSettingsSection)  
+  
+  Dim apSectionCollection As NameValueCollection = _   
+    ConfigurationManager.AppSettings  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value conflicts with a value that is already defined.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RestartOnExternalChanges">
+      <MemberSignature Language="C#" Value="public bool RestartOnExternalChanges { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RestartOnExternalChanges" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.RestartOnExternalChanges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether a change in an external configuration include file requires an application restart.</summary>
+        <value>
+          <see langword="true" /> if a change in an external configuration include file requires an application restart; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Configuration.SectionInformation.RestartOnExternalChanges%2A> property to `false` to prevent an application restart when configuration settings in the external include file are modified for this <xref:System.Configuration.ConfigurationSection> object.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.SectionInformation.RestartOnExternalChanges%2A> property value of a <xref:System.Configuration.ConfigurationSection> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#109](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#109)]
+ [!code-vb[System.Configuration.ConfigurationElement#109](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#109)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value conflicts with a value that is already defined.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RevertToParent">
+      <MemberSignature Language="C#" Value="public void RevertToParent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RevertToParent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.RevertToParent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the associated configuration section to inherit all its values from the parent section.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">This method cannot be called outside editing mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SectionName">
+      <MemberSignature Language="C#" Value="public string SectionName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SectionName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.SectionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the associated configuration section.</summary>
+        <value>The name of the associated <see cref="T:System.Configuration.ConfigurationSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.SectionName%2A> property value is the complete section name, which includes the configuration inheritance hierarchy.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.SectionInformation.SectionName%2A> value of a <xref:System.Configuration.ConfigurationSection> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#110](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#110)]
+ [!code-vb[System.Configuration.ConfigurationElement#110](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRawXml">
+      <MemberSignature Language="C#" Value="public void SetRawXml (string xml);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string xml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rawXml" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xml">To be added.</param>
+        <summary>Sets the object to an XML representation of the associated configuration section within the configuration file.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="rawXml" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SectionInformation.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the section class name.</summary>
+        <value>The name of the class that is associated with this <see cref="T:System.Configuration.ConfigurationSection" /> section.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SectionInformation.Type%2A> property returns the name of the section class that handles this instance of the <xref:System.Configuration.ConfigurationSection> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the <xref:System.Configuration.SectionInformation.Type%2A> value of a <xref:System.Configuration.ConfigurationSection> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#111](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#111)]
+ [!code-vb[System.Configuration.ConfigurationElement#111](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#111)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The selected value is <see langword="null" /> or an empty string ("").</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The selected value conflicts with a value that is already defined.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UnprotectSection">
+      <MemberSignature Language="C#" Value="public void UnprotectSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnprotectSection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.UnprotectSection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the protected configuration encryption from the associated configuration section.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about protected configuration sections, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationElement#112](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/CS/SectionInforrmation.cs#112)]
+ [!code-vb[System.Configuration.ConfigurationElement#112](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationElement/VB/SectionInforrmation.vb#112)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="ForceDeclaration">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces the associated configuration section to appear in the configuration file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A configuration section is not written in a configuration file when it is inherited from a parent file. If you want the parent section to show in the child configuration file, you must set the <xref:System.Configuration.SectionInformation.ForceDeclaration%2A> to `true`. This makes a configuration file more portable from one computer to another. This also lets you make sure that the section exists even if you do not have control over parent configuration files.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

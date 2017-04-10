@@ -1,0 +1,44 @@
+<Type Name="StructuralType" FullName="System.Data.Metadata.Edm.StructuralType">
+  <TypeSignature Language="C#" Value="public abstract class StructuralType : System.Data.Metadata.Edm.EdmType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StructuralType extends System.Data.Metadata.Edm.EdmType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.StructuralType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.EdmType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A base type for all the types in a conceptual model that have members.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Structural Types (Metadata)](http://msdn.microsoft.com/en-us/c0c54fe0-e0ba-4e1d-8572-dfd2fbf788fa).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Members">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmMember&gt; Members { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.EdmMember&gt; Members" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.StructuralType.Members" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EdmMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of members on this type.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains a set of members on this type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,117 @@
+<Type Name="LoggerVerbosity" FullName="Microsoft.Build.Framework.LoggerVerbosity">
+  <TypeSignature Language="C#" Value="public enum LoggerVerbosity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoggerVerbosity extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.LoggerVerbosity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the available verbosity levels of a <see cref="T:Microsoft.Build.Utilities.Logger" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The descriptions of verbosity levels are only guidelines to how a typical logger (including the default [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] console logger) logs build events. Loggers are free to interpret verbosity levels in any way they want.  
+  
+   
+  
+## Examples  
+ The following example shows how to write a basic logger that responds to build events.  
+  
+ [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Detailed">
+      <MemberSignature Language="C#" Value="Detailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Detailed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Detailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Detailed verbosity, which displays errors, warnings, messages with <see cref="T:Microsoft.Build.Framework.MessageImportance" /> values of <see cref="F:Microsoft.Build.Framework.MessageImportance.High" /> or <see cref="F:Microsoft.Build.Framework.MessageImportance.Normal" />, all status events, and a build summary.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Diagnostic">
+      <MemberSignature Language="C#" Value="Diagnostic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Diagnostic = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Diagnostic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Diagnostic verbosity, which displays all errors, warnings, messages, status events, and a build summary.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimal">
+      <MemberSignature Language="C#" Value="Minimal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Minimal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Minimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Minimal verbosity, which displays errors, warnings, messages with <see cref="T:Microsoft.Build.Framework.MessageImportance" /> values of <see cref="F:Microsoft.Build.Framework.MessageImportance.High" />, and a build summary.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Normal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Normal verbosity, which displays errors, warnings, messages with <see cref="T:Microsoft.Build.Framework.MessageImportance" /> values of <see cref="F:Microsoft.Build.Framework.MessageImportance.High" />, some status events, and a build summary.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Quiet">
+      <MemberSignature Language="C#" Value="Quiet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Quiet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Quiet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Quiet verbosity, which displays a build summary.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

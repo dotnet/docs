@@ -1,0 +1,49 @@
+<Type Name="GridViewRowEventHandler" FullName="System.Web.UI.WebControls.GridViewRowEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void GridViewRowEventHandler(object sender, GridViewRowEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridViewRowEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewRowEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.GridViewRowEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.GridViewRowEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.GridView.RowCreated" /> and <see cref="E:System.Web.UI.WebControls.GridView.RowDataBound" /> events of a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before the <xref:System.Web.UI.WebControls.GridView> control can be rendered, a <xref:System.Web.UI.WebControls.GridViewRow> object must be created for each row in the control. The <xref:System.Web.UI.WebControls.GridView.RowCreated> event is raised each time a row in the <xref:System.Web.UI.WebControls.GridView> control is created. This allows you to provide an event-handling method that performs a custom routine, such as adding custom content to a row, whenever this event occurs.  
+  
+ Similarly, each row in the control must be bound to a record in the data source before the <xref:System.Web.UI.WebControls.GridView> control can be rendered. The <xref:System.Web.UI.WebControls.GridView.RowDataBound> event is raised when a data row (represented by a <xref:System.Web.UI.WebControls.GridViewRow> object) is bound to data in the <xref:System.Web.UI.WebControls.GridView> control. This allows you to provide an event-handling method that performs a custom routine, such as modifying the values of the data bound to the row, whenever this event occurs.  
+  
+ When you create a <xref:System.Web.UI.WebControls.GridViewRowEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewRowEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowDataBound> event of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowEventHandler/CS/gridviewroweventhandlercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowEventHandler/VB/gridviewroweventhandlervb.aspx#1)]  -->  
+  
+ The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewRowEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowDataBound> event of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,169 @@
+<Type Name="ViewTechnology" FullName="System.ComponentModel.Design.ViewTechnology">
+  <TypeSignature Language="C#" Value="public enum ViewTechnology" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewTechnology extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ViewTechnology" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines identifiers for a set of technologies that designer hosts support.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The view adapter model replaces and adds functionality to the <xref:System.ComponentModel.Design.ViewTechnology> feature; however, the <xref:System.ComponentModel.Design.ViewTechnology> feature is retained for both backward compatibility and future use, if you choose. For more information, see ".NET Shape Library: A Sample Designer" in the Windows Forms Knowledge Base at http://windowsforms.net/articles/shapedesigner.aspx.  
+  
+ <xref:System.ComponentModel.Design.ViewTechnology> defines identifiers that can indicate the mode to use for controlling the display of a designer-hosted document.  
+  
+ You should only use the Default value in your designer hosting environment. In previous versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the <xref:System.ComponentModel.Design.ViewTechnology> enumeration specified the type of UI model supported by a root designer. Because this model is not extensible, you should instead use a *view adapter* model. A view adapter is a type that adapts an object of one type to another.  
+  
+ For example, an HTML designer might return a `DemoDOM` tree as its view. The HTML designer returns a view technology of Default. A Windows Forms hosting environment would have one or more view adapter classes available. If one such class could convert the `DemoDOM` into a Windows Forms control, the hosting application can support this type of designer. If no adapter can handle the data type returned from the designer’s <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> method, the load of the designer will fail, and the user will be presented with an error.  
+  
+ [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] has an extensible scheme for providing view adapters, so it can adapt to any UI technology. Third-party technology providers can also offer an appropriate view adapter, and their object models are immediately consumable.  
+  
+ For an example that uses view adapters, see ".NET Shape Library: A Sample Designer" in the Windows Forms Knowledge Base at http://windowsforms.net/articles/shapedesigner.aspx.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.Design.ViewTechnology> class in a designer. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.IRootDesigner> interface.  
+  
+ [!code-cpp[IRootDesigner Sample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IRootDesigner Sample/CPP/class1.cpp#1)]
+ [!code-csharp[IRootDesigner Sample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IRootDesigner Sample/CS/class1.cs#1)]
+ [!code-vb[IRootDesigner Sample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IRootDesigner Sample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.ViewTechnology Default = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.ViewTechnology</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the default view technology support.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The root designer may return any type of object, but the object must be compatible with an adapter for the technology of the host. Hosting environments such as [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] provide a way to plug in new view technology adapters. The default view object for the Windows Forms designer is a <xref:System.Windows.Forms.Control?displayProperty=fullName> instance.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.Design.ViewTechnology> class in a designer. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.IRootDesigner> interface.  
+  
+ [!code-cpp[IRootDesigner Sample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IRootDesigner Sample/CPP/class1.cpp#1)]
+ [!code-csharp[IRootDesigner Sample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IRootDesigner Sample/CS/class1.cs#1)]
+ [!code-vb[IRootDesigner Sample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IRootDesigner Sample/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Passthrough">
+      <MemberSignature Language="C#" Value="Passthrough" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.ViewTechnology Passthrough = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.Passthrough" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This value has been deprecated. Use ViewTechnology.Default instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.ViewTechnology</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a mode in which the view object is passed directly to the development environment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The view object must implement any interfaces the development environment requires. The [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment supports view objects that are either an ActiveX control, active document, or an object that implements the IVsWindowPane interface that is available through [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] VSI ([!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Integration) program. The [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment provides support for this view technology. Support for this view technology is not necessarily available in all development environments.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsForms">
+      <MemberSignature Language="C#" Value="WindowsForms" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.ViewTechnology WindowsForms = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.WindowsForms" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This value has been deprecated. Use ViewTechnology.Default instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.ViewTechnology</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a mode in which a Windows Forms control object provides the display for the root designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The designer host fills the development environment document window with the Windows Forms control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.Design.ViewTechnology> class in a designer. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.LocalizationExtenderProvider> class.  
+  
+ [!code-cpp[LocalizationExtenderProviderExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/LocalizationExtenderProviderExample/CPP/class1.cpp#1)]
+ [!code-csharp[LocalizationExtenderProviderExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/LocalizationExtenderProviderExample/CS/class1.cs#1)]
+ [!code-vb[LocalizationExtenderProviderExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LocalizationExtenderProviderExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

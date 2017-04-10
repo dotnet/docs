@@ -1,0 +1,66 @@
+<Type Name="XamlObjectReaderSettings" FullName="System.Xaml.XamlObjectReaderSettings">
+  <TypeSignature Language="C#" Value="public class XamlObjectReaderSettings : System.Xaml.XamlReaderSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlObjectReaderSettings extends System.Xaml.XamlReaderSettings" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectReaderSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xaml.XamlReaderSettings</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies processing rules or option settings for a <see cref="T:System.Xaml.XamlObjectReader" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlObjectReaderSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReaderSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectReaderSettings" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireExplicitContentVisibility">
+      <MemberSignature Language="C#" Value="public bool RequireExplicitContentVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequireExplicitContentVisibility" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether writers that use the associated <see cref="T:System.Xaml.XamlObjectReader" /> for context should use designer settings for writing content explicitly.</summary>
+        <value>
+          <see langword="true" /> to specify that writers that use this context should use designer settings for writing any output content in cases where <see cref="P:System.Xaml.XamlMember.IsWritePublic" /> reports <see langword="false" />; <see langword="false" /> if designer settings should be ignored.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting is queried internally. It influences the following behavior for the context that a <xref:System.Xaml.XamlObjectReader> passes to any <xref:System.Xaml.XamlWriter>:  
+  
+-   The <xref:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility%2A> behavior only applies for properties where <xref:System.Xaml.XamlMember.IsWritePublic%2A> is `false`, AND when a `ShouldSerialize` pattern is unavailable for the property value.  
+  
+-   If the statement in the first bullet point is true, AND <xref:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility%2A> is `true`, then designer settings determine whether the property writes its output as content or the property is considered implicit. Access to designer settings is through internal APIs in .NET Framework XAML Services and is based on reading <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> from backing assemblies. In this case, the internal code checks for the value <xref:System.ComponentModel.DesignerSerializationVisibility?displayProperty=fullName> and writes its output to the property. Otherwise, the content is considered implicit.  
+  
+-   If the statement in the first bullet is `true`, AND <xref:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility%2A> is `false`, the property always writes its output, and <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> from backing assemblies is irrelevant.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

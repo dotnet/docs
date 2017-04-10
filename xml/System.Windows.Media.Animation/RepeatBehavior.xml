@@ -1,0 +1,462 @@
+<Type Name="RepeatBehavior" FullName="System.Windows.Media.Animation.RepeatBehavior">
+  <TypeSignature Language="C#" Value="public struct RepeatBehavior : IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit RepeatBehavior extends System.ValueType implements class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.RepeatBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Animation.RepeatBehaviorConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes how a <see cref="T:System.Windows.Media.Animation.Timeline" /> repeats its simple duration.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are three types of <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> behaviors:  
+  
+-   **Iteration Count** - specifies the number of times the simple duration of a <xref:System.Windows.Media.Animation.Timeline> plays. The default iteration count is 1.0, and means the <xref:System.Windows.Media.Animation.Timeline> is active for exactly one of its simple durations. A count of 0.5 specifies that the timeline is active for half of its simple duration, while a count of 2 specifies that the timeline repeats its simple duration twice. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A> property.  
+  
+-   **Duration** - specifies the length of the <xref:System.Windows.Media.Animation.Timeline> object's active duration. For example, a <xref:System.Windows.Media.Animation.Timeline> with a simple <xref:System.Windows.Media.Animation.Timeline.Duration%2A> value of 1 second and a <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=fullName> value of 2.5 seconds will run for 2.5 iterations.  
+  
+-   **Forever** - the <xref:System.Windows.Media.Animation.Timeline> repeats indefinitely.  
+  
+<a name="xamlAttributeUsage_RepeatBehavior"></a>   
+## XAML Attribute Usage  
+ \<*object* *property*="*iterationCount*x"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="[*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="[*days*.]*hours*:*minutes*"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="*days*"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="<xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>"/>  
+  
+-  
+  
+<a name="xamlValues_RepeatBehavior"></a>   
+## XAML Values  
+ Items in square brackets (`[` and `]`) are optional.  
+  
+ *iterationCount*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ A value greater than or equal to 0 that specifies the number of times a timeline should play. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Count%2A> property.  
+  
+ *days*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value greater than or equal to 0 that specifies the number of days for a <xref:System.Windows.Media.Animation.Timeline> object's active duration. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A> property.  
+  
+ *hours*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value between 0 and 23 that specifies the number of hours for a <xref:System.Windows.Media.Animation.Timeline> object's active duration. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A> property.  
+  
+ *minutes*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value between 0 and 59 that specifies the number of minutes for a <xref:System.Windows.Media.Animation.Timeline> object's active duration. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A> property.  
+  
+ *seconds*  
+ <xref:System.Double?displayProperty=fullName>  
+  
+ A value between 0 and 59 that specifies the number of seconds for a <xref:System.Windows.Media.Animation.Timeline> object's active duration. For more information, see the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A> property.  
+  
+ *fractionalSeconds*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value consisting of 1 to 7 digits that represents fractional seconds.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RepeatBehavior (double count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="count" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="count">A number greater than or equal to 0 that specifies the number of iterations to make.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> structure with the specified iteration count.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="count" /> evaluates to infinity, a value that is not a number, or is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RepeatBehavior (TimeSpan duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.#ctor(System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="duration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="duration">The total length of time that the <see cref="T:System.Windows.Media.Animation.Timeline" /> should play (its active duration).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> structure with the specified repeat duration.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="duration" /> evaluates to a negative number.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public double Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of times a <see cref="T:System.Windows.Media.Animation.Timeline" /> should repeat.</summary>
+        <value>The numeric value representing the number of iterations to repeat.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To avoid throwing an exception when accessing this property, use the <xref:System.Windows.Media.Animation.RepeatBehavior.HasCount%2A> property first to verify that the <xref:System.Windows.Media.Animation.RepeatBehavior> represents an iteration count, not a repeat duration.  
+  
+ For more information about making a timeline repeat, see the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> describes a repeat duration, not an iteration count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public TimeSpan Duration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Duration" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.Duration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total length of time a <see cref="T:System.Windows.Media.Animation.Timeline" /> should play.</summary>
+        <value>The total length of time a timeline should play.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To avoid throwing an exception when accessing this property, use the <xref:System.Windows.Media.Animation.RepeatBehavior.HasDuration%2A> property first to verify that the <xref:System.Windows.Media.Animation.RepeatBehavior> represents a repeat duration.  
+  
+ For more information about making a timeline repeat, see the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> does not describe a repeat duration; it describes an iteration count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to compare with this instance.</param>
+        <summary>Indicates whether this instance is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is a <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> that represents the same repeat behavior as this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.Animation.RepeatBehavior repeatBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.Equals(System.Windows.Media.Animation.RepeatBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="repeatBehavior" Type="System.Windows.Media.Animation.RepeatBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="repeatBehavior">The value to compare to this instance.</param>
+        <summary>Returns a value that indicates whether this instance is equal to the specified <see cref="T:System.Windows.Media.Animation.RepeatBehavior" />.</summary>
+        <returns>
+          <see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior" /> are equal to this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.Animation.RepeatBehavior repeatBehavior1, System.Windows.Media.Animation.RepeatBehavior repeatBehavior2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior1, valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.Equals(System.Windows.Media.Animation.RepeatBehavior,System.Windows.Media.Animation.RepeatBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="repeatBehavior1" Type="System.Windows.Media.Animation.RepeatBehavior" />
+        <Parameter Name="repeatBehavior2" Type="System.Windows.Media.Animation.RepeatBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="repeatBehavior1">The first value to compare.</param>
+        <param name="repeatBehavior2">The second value to compare.</param>
+        <summary>Indicates whether the two specified <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> structures are equal.</summary>
+        <returns>
+          <see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior1" /> are equal to that of <paramref name="repeatBehavior2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Forever">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Animation.RepeatBehavior Forever { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Animation.RepeatBehavior Forever" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.Forever" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.RepeatBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> that specifies an infinite number of repetitions.</summary>
+        <value>A <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> that specifies an infinite number of repetitions.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code of this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasCount">
+      <MemberSignature Language="C#" Value="public bool HasCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.HasCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the repeat behavior has a specified iteration count.</summary>
+        <value>
+          <see langword="true" /> if the specified type refers to an iteration count; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDuration">
+      <MemberSignature Language="C#" Value="public bool HasDuration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasDuration" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.RepeatBehavior.HasDuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the repeat behavior has a specified repeat duration.</summary>
+        <value>
+          <see langword="true" /> if the specified type refers to a repeat duration; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Animation.RepeatBehavior repeatBehavior1, System.Windows.Media.Animation.RepeatBehavior repeatBehavior2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior1, valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.op_Equality(System.Windows.Media.Animation.RepeatBehavior,System.Windows.Media.Animation.RepeatBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="repeatBehavior1" Type="System.Windows.Media.Animation.RepeatBehavior" />
+        <Parameter Name="repeatBehavior2" Type="System.Windows.Media.Animation.RepeatBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="repeatBehavior1">The first value to compare.</param>
+        <param name="repeatBehavior2">The second value to compare.</param>
+        <summary>Indicates whether the two specified <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if both the type and repeat behavior of <paramref name="repeatBehavior1" /> are equal to that of <paramref name="repeatBehavior2" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Animation.RepeatBehavior repeatBehavior1, System.Windows.Media.Animation.RepeatBehavior repeatBehavior2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior1, valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.op_Inequality(System.Windows.Media.Animation.RepeatBehavior,System.Windows.Media.Animation.RepeatBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="repeatBehavior1" Type="System.Windows.Media.Animation.RepeatBehavior" />
+        <Parameter Name="repeatBehavior2" Type="System.Windows.Media.Animation.RepeatBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="repeatBehavior1">The first value to compare.</param>
+        <param name="repeatBehavior2">The second value to compare.</param>
+        <summary>Indicates whether the two <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="repeatBehavior1" /> and <paramref name="repeatBehavior2" /> are different types or the repeat behavior properties are not equal; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider formatProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider formatProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="formatProvider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format to use.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="formatProvider">The provider to use to format the value.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>Formats the value of the current instance using the specified format.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of this <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> instance.</summary>
+        <returns>A string representation of this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider formatProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider formatProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehavior.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatProvider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="formatProvider">The format used to construct the return value.</param>
+        <summary>Returns a string representation of this <see cref="T:System.Windows.Media.Animation.RepeatBehavior" /> instance with the specified format.</summary>
+        <returns>A string representation of this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

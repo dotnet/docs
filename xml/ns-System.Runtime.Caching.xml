@@ -1,0 +1,24 @@
+<Namespace Name="System.Runtime.Caching">
+  <Docs>
+    <summary>The <see cref="N:System.Runtime.Caching" /> namespace contains types that let you implement caching in NET Framework applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes in this namespace provide a way to use caching facilities like those in ASP.NET, but without a dependency on the `System.Web` assembly.  
+  
+> [!NOTE]
+>  The output caching functionality and types in the <xref:System.Runtime.Caching> namespace were introduced in [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)].  
+  
+ The caching types that are provided in this namespace offer the following features:  
+  
+-   Caching is accessible to all .NET Framework applications (not just ASP.NET).  
+  
+-   Caching is extensible.  
+  
+-   You can create custom caching providers. For example, instead of using the default in-memory cache engine, you can create custom providers that store cache data in databases, in custom objects, or in the file system.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

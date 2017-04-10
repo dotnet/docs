@@ -1,0 +1,230 @@
+<Type Name="GetManifestCompletedEventArgs" FullName="System.Deployment.Application.GetManifestCompletedEventArgs">
+  <TypeSignature Language="C#" Value="public class GetManifestCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetManifestCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Deployment.Application.GetManifestCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Deployment.Application.InPlaceHostingManager.GetManifestCompleted" /> event of <see cref="T:System.Deployment.Application.InPlaceHostingManager" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Deployment.Application.GetManifestCompletedEventArgs> to obtain information about a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application after the deployment and application manifests have been downloaded.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use <xref:System.Deployment.Application.InPlaceHostingManager> to install a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application programmatically on a client machine.  
+  
+ [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
+ [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivationContext">
+      <MemberSignature Language="C#" Value="public ActivationContext ActivationContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ActivationContext ActivationContext" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.ActivationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ActivationContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the context for the current [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</summary>
+        <value>An <see cref="T:System.ActivationContext" /> object representing the context for the current application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationIdentity">
+      <MemberSignature Language="C#" Value="public ApplicationIdentity ApplicationIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ApplicationIdentity ApplicationIdentity" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.ApplicationIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ApplicationIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a description of the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</summary>
+        <value>An <see cref="T:System.ApplicationIdentity" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationManifest">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlReader ApplicationManifest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlReader ApplicationManifest" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.ApplicationManifest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application manifest for this deployment.</summary>
+        <value>An <see cref="T:System.Xml.XmlReader" /> representing the application manifest.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this variable to grab any information you need from the application manifest, such as a list of dependencies, trust information, and so on. For more information on the structure of this document, see [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).  
+  
+   
+  
+## Examples  
+ The following code example shows how to examine an application manifest from within a <xref:System.Deployment.Application.InPlaceHostingManager.GetManifestCompleted> event handler to determine whether the application requires full trust by default.  
+  
+ [!code-csharp[System.Deployment.Application.InPlaceHostingManager#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#5)]
+ [!code-vb[System.Deployment.Application.InPlaceHostingManager#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeploymentManifest">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlReader DeploymentManifest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlReader DeploymentManifest" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.DeploymentManifest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment manifest for this deployment.</summary>
+        <value>An <see cref="T:System.Xml.XmlReader" /> representing the deployment manifest.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCached">
+      <MemberSignature Language="C#" Value="public bool IsCached { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCached" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.IsCached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application is cached.</summary>
+        <value>
+          <see langword="true" /> if the application is cached; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogFilePath">
+      <MemberSignature Language="C#" Value="public string LogFilePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LogFilePath" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.LogFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] error log.</summary>
+        <value>A <see cref="T:System.String" /> containing the location of the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] error log.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProductName">
+      <MemberSignature Language="C#" Value="public string ProductName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProductName" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.ProductName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</summary>
+        <value>A <see cref="T:System.String" /> representing the product name of the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application, as stored in the assembly metadata of the application's main executable file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscriptionIdentity">
+      <MemberSignature Language="C#" Value="public string SubscriptionIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SubscriptionIdentity" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string identifying the subscription.</summary>
+        <value>A string with information identifying the subscription.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportUri">
+      <MemberSignature Language="C#" Value="public Uri SupportUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SupportUri" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.SupportUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location of a Web page users can visit to obtain product support for the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</summary>
+        <value>A <see cref="T:System.Uri" /> containing the value found in the <c>supportUrl</c> attribute of the deployment manifest's <c>&lt;description&gt;</c> tag. For more information, see [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public Version Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.GetManifestCompletedEventArgs.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of the update for the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</summary>
+        <value>A <see cref="T:System.Version" /> representing the version number contained within the downloaded manifest.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,304 @@
+<Type Name="PEDirectoriesBuilder" FullName="System.Reflection.PortableExecutable.PEDirectoriesBuilder">
+  <TypeSignature Language="C#" Value="public sealed class PEDirectoriesBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PEDirectoriesBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEDirectoriesBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PEDirectoriesBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEDirectoriesBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressOfEntryPoint">
+      <MemberSignature Language="C#" Value="public int AddressOfEntryPoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AddressOfEntryPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.AddressOfEntryPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseRelocationTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry BaseRelocationTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry BaseRelocationTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.BaseRelocationTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundImportTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry BoundImportTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry BoundImportTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.BoundImportTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyrightTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry CopyrightTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry CopyrightTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.CopyrightTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorHeaderTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry CorHeaderTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry CorHeaderTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.CorHeaderTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry DebugTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry DebugTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.DebugTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelayImportTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry DelayImportTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry DelayImportTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.DelayImportTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ExceptionTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ExceptionTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.ExceptionTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ExportTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ExportTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.ExportTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalPointerTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry GlobalPointerTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry GlobalPointerTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.GlobalPointerTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportAddressTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ImportAddressTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ImportAddressTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.ImportAddressTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ImportTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ImportTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.ImportTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadConfigTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry LoadConfigTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry LoadConfigTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.LoadConfigTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ResourceTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ResourceTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.ResourceTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadLocalStorageTable">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.DirectoryEntry ThreadLocalStorageTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.PortableExecutable.DirectoryEntry ThreadLocalStorageTable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEDirectoriesBuilder.ThreadLocalStorageTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

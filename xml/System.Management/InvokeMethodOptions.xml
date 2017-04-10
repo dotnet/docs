@@ -1,0 +1,126 @@
+<Type Name="InvokeMethodOptions" FullName="System.Management.InvokeMethodOptions">
+  <TypeSignature Language="C#" Value="public class InvokeMethodOptions : System.Management.ManagementOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InvokeMethodOptions extends System.Management.ManagementOptions" />
+  <TypeSignature Language="DocId" Value="T:System.Management.InvokeMethodOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Management.ManagementOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies options for invoking a management method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe. The <xref:System.Management.InvokeMethodOptions> class is used to invoke the method.  
+  
+ [!code-csharp[wminet_InvokeMethodOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions/cs/InvokeMethodOptions.cs#1)]
+ [!code-vb[wminet_InvokeMethodOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions/vb/InvokeMethodOptions.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvokeMethodOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.InvokeMethodOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.InvokeMethodOptions" /> class for the <see cref="M:System.Management.ManagementObject.InvokeMethod(System.String,System.Object[])" /> operation, using default values. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe. The default constructor of the <xref:System.Management.InvokeMethodOptions> class is used.  
+  
+ [!code-csharp[wminet_InvokeMethodOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions()/cs/InvokeMethodOptions().cs#1)]
+ [!code-vb[wminet_InvokeMethodOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions()/vb/InvokeMethodOptions().vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvokeMethodOptions (System.Management.ManagementNamedValueCollection context, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.InvokeMethodOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Management.ManagementNamedValueCollection" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="context">A provider-specific, named-value pairs object to be passed through to the provider.</param>
+        <param name="timeout">The length of time to let the operation perform before it times out. The default value is <see cref="F:System.TimeSpan.MaxValue" />. Setting this parameter will invoke the operation semisynchronously.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.InvokeMethodOptions" /> class for an invoke operation using the specified values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example invokes the **Win32_Process::Create** method to start a new process of Calc.exe. The <xref:System.Management.InvokeMethodOptions> class is used to invoke the method.  
+  
+ [!code-csharp[wminet_InvokeMethodOptions(2)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions(2)/cs/InvokeMethodOptions(2).cs#1)]
+ [!code-vb[wminet_InvokeMethodOptions(2)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_InvokeMethodOptions(2)/vb/InvokeMethodOptions(2).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.InvokeMethodOptions.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of the object.</summary>
+        <returns>The cloned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1102 @@
+<Type Name="AuthenticablePrincipal" FullName="System.DirectoryServices.AccountManagement.AuthenticablePrincipal">
+  <TypeSignature Language="C#" Value="public class AuthenticablePrincipal : System.DirectoryServices.AccountManagement.Principal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticablePrincipal extends System.DirectoryServices.AccountManagement.Principal" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.AccountManagement.Principal</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.DirectoryServices.AccountManagement.DirectoryRdnPrefix("CN")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates the account and contact data common to principals that can be authenticated.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AuthenticablePrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> class by using the specified context. This constructor is called by derived-class constructors to initialize the base class and is not intended for use directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AuthenticablePrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context, string samAccountName, string password, bool enabled);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context, string samAccountName, string password, bool enabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="samAccountName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="enabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="samAccountName">The SAM account name for this principal.</param>
+        <param name="password">The password for this account.</param>
+        <param name="enabled">A Boolean value that specifies whether the account is enabled.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> class by using the specified context, SAM account name, password, and enabled value. This constructor is called by derived-class constructors to initialize the base class and is not intended for use directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccountExpirationDate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; AccountExpirationDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AccountExpirationDate" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Nullable <see cref="T:System.DateTime" /> that specifies the date and time that the account expires.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the date and time that the account expires, or null if the account never expires.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+  
+ When you set the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate%2A>, the time will default to UTC.  If you want to write in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:DateTimeKind.Local>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AccountLockoutTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; AccountLockoutTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AccountLockoutTime" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Nullable <see cref="T:System.DateTime" /> that specifies the date and time that the account was locked out.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the date and time that the account was locked out, or null if no lockout time is set on the account.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The account lockout time is system dependent, and cannot be set by the Account Management API. To unlock the account, use the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.UnlockAccount%2A> method.  
+  
+ It is possible that an account may not be locked out when the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime%2A> returns a non-null value. Applications should use the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.IsAccountLockedOut%2A> method to determine whether the account is locked out.  
+  
+ As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancedSearchFilter">
+      <MemberSignature Language="C#" Value="public virtual System.DirectoryServices.AccountManagement.AdvancedFilters AdvancedSearchFilter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.AdvancedFilters AdvancedSearchFilter" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AdvancedSearchFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.AdvancedFilters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedSearchFilter" /> object, for use with [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
+        <value>An <see cref="T:System.DirectoryServices.AccountManagement.AdvancedSearchFilter" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) documentation for examples.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowReversiblePasswordEncryption">
+      <MemberSignature Language="C#" Value="public bool AllowReversiblePasswordEncryption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowReversiblePasswordEncryption" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AllowReversiblePasswordEncryption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether reversible password encryption is enabled for this account.</summary>
+        <value>
+          <see langword="true" /> if reversible password encryption is enabled for this account; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BadLogonCount">
+      <MemberSignature Language="C#" Value="public int BadLogonCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BadLogonCount" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.BadLogonCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of logon attempts using incorrect credentials for this account.</summary>
+        <value>The number of logon attempts using incorrect credentials for this account.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Certificates">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.Certificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2Collection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> that contains the X509 certificates for this account.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2Collection" /> that contains the X509 certificates for this account.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangePassword">
+      <MemberSignature Language="C#" Value="public void ChangePassword (string oldPassword, string newPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ChangePassword(string oldPassword, string newPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.ChangePassword(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldPassword" Type="System.String" />
+        <Parameter Name="newPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldPassword">The password that is changed.</param>
+        <param name="newPassword">The new password.</param>
+        <summary>Changes the account password from the old password to the new password. Do not use this with a <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended for computer principals. Calling this with a <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> will cause a <xref:System.NotSupportedException> to be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The principal has not been persisted.</exception>
+        <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">The new password does not meet the complexity requirements.</exception>
+        <exception cref="T:System.NotSupportedException">The principal is not a user.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DelegationPermitted">
+      <MemberSignature Language="C#" Value="public bool DelegationPermitted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DelegationPermitted" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.DelegationPermitted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Nullable Boolean value that specifies whether the account may be delegated.</summary>
+        <value>
+          <see langword="true" /> if the account may be delegated; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Nullable Boolean value that specifies whether this account is enabled for authentication.</summary>
+        <value>
+          <see langword="true" /> if the principal is enabled, or null if the account has not been persisted; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the principal has not been persisted in the store, this property returns null. After the principal is persisted, the default enabled setting depends on the store. The AD DS and AD LDS stores disable new principals when they are persisted, whereas SAM enables new principals when they are persisted. The application can only set this property to a value after it has been persisted in the store.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <exception cref="T:System.ArgumentNullException">The application tried to set a null value for this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpirePasswordNow">
+      <MemberSignature Language="C#" Value="public void ExpirePasswordNow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExpirePasswordNow() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.ExpirePasswordNow" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Expires the password for this account. This will force the user to change his/her password at the next logon.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to force the user to change the password at the next logon.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByBadPasswordAttempt">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByBadPasswordAttempt (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByBadPasswordAttempt(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByBadPasswordAttempt(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of authentication principal objects that have an incorrect password try recorded in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects, or an empty collection if no results are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:DateTimeKind.Local>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByBadPasswordAttempt&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt; FindByBadPasswordAttempt&lt;T&gt; (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;!!T&gt; FindByBadPasswordAttempt&lt;T&gt;(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByBadPasswordAttempt``1(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a bad password attempt within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByExpirationTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByExpirationTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByExpirationTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByExpirationTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the account expiration. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account expiration recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of authentication principal objects that have an account expiration time recorded in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByExpirationTime&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt; FindByExpirationTime&lt;T&gt; (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;!!T&gt; FindByExpirationTime&lt;T&gt;(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByExpirationTime``1(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have an expiration time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByLockoutTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByLockoutTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByLockoutTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByLockoutTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the account lockout. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account lockout recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of authentication principal objects that have an account lockout time recorded in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC.  If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByLockoutTime&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt; FindByLockoutTime&lt;T&gt; (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;!!T&gt; FindByLockoutTime&lt;T&gt;(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByLockoutTime``1(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a lockout time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByLogonTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByLogonTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByLogonTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByLogonTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the logon record. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account logon recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of authentication principal objects that have an account logon recorded in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code connects to the ADAM instance hosted by the server "adamHost1.fabrikam.com" on port number "5000." The username (adamAdmin), and password (SecretPwd123) are specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
+  
+ A search is performed for all authenticable principals under the container "DC=adamApp1,DC=fabrikam,DC=com" that have not logged on to this ADAM instance for the last 45 days. The principals returned by the search are then deleted.  
+  
+```  
+PrincipalContext ctx = new PrincipalContext(  
+                                      ContextType.ApplicationDirectory,   
+                                      "adamHost1.fabrikam.com:5000",   
+                                      "DC=adamApp1,DC=fabrikam,DC=com",   
+                                      "adamAdmin", "SecretPwd123");  
+  
+PrincipalSearchResult<AuthenticablePrincipal> oldPrincipals =   
+                     AuthenticablePrincipal.FindByLogonTime(ctx,   
+                            (DateTime.Now - new TimeSpan(45, 0, 0, 0)),   
+                            MatchType.LessThan);  
+  
+foreach (Principal p in oldPrincipals)  
+{  
+    p.Delete();  
+}  
+  
+oldPrincipals.Dispose();  
+ctx.Dispose();  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByLogonTime&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt; FindByLogonTime&lt;T&gt; (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;!!T&gt; FindByLogonTime&lt;T&gt;(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByLogonTime``1(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a logon time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByPasswordSetTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByPasswordSetTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt; FindByPasswordSetTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByPasswordSetTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.AuthenticablePrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of authentication principal objects that have an account password set recorded in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByPasswordSetTime&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt; FindByPasswordSetTime&lt;T&gt; (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;!!T&gt; FindByPasswordSetTime&lt;T&gt;(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.FindByPasswordSetTime``1(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a password set time within the specified date and time range.  This is the template function for extended classes that wish to implement this functionality.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeDirectory">
+      <MemberSignature Language="C#" Value="public string HomeDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HomeDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.HomeDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the home directory for this account.</summary>
+        <value>The home directory for this account, or null if no home directory exists.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeDrive">
+      <MemberSignature Language="C#" Value="public string HomeDrive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HomeDrive" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.HomeDrive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the home drive for this account.</summary>
+        <value>The home drive for the account, or null if no home drive exists.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAccountLockedOut">
+      <MemberSignature Language="C#" Value="public bool IsAccountLockedOut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAccountLockedOut() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.IsAccountLockedOut" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a Boolean value that specifies whether the account is currently locked out.</summary>
+        <returns>
+          <see langword="true" /> if the account is locked out; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is possible that an account may not be locked out when the <xref:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime%2A> returns a non-null value. This method computes the correct store-specific lockout value to determine whether the account is locked out.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastBadPasswordAttempt">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastBadPasswordAttempt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastBadPasswordAttempt" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastBadPasswordAttempt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Nullable <see cref="T:System.DateTime" /> that specifies the date and time of the last incorrect password attempt on this account.</summary>
+        <value>A Nullable <see cref="T:System.DateTime" /> that specifies the date and time of the last incorrect password attempt on this account, or null if no incorrect password tries are recorded.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LastLogon">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastLogon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastLogon" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastLogon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Nullable <see cref="T:System.DateTime" /> that specifies the date and time of the last logon for this account.</summary>
+        <value>A Nullable <see cref="T:System.DateTime" /> that specifies the date and time of the last logon for this account.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LastPasswordSet">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastPasswordSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastPasswordSet" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastPasswordSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Nullable <see cref="T:System.DateTime" /> that specifies the last date and time that the password was set for this account.</summary>
+        <value>A Nullable <see cref="T:System.DateTime" /> that specifies the last date and time that the password was set for this account.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As with all <xref:System.DateTime> properties in <xref:System.DirectoryServices.AccountManagement>, the time returned is in UTC form.  To convert it to local time, call the <xref:System.DateTime.ToLocalTime%2A> method on the return object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordNeverExpires">
+      <MemberSignature Language="C#" Value="public bool PasswordNeverExpires { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PasswordNeverExpires" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.PasswordNeverExpires" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the password expires for this account.</summary>
+        <value>
+          <see langword="true" /> if the password expires for this account; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordNotRequired">
+      <MemberSignature Language="C#" Value="public bool PasswordNotRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PasswordNotRequired" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.PasswordNotRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether a password is required for this account.</summary>
+        <value>
+          <see langword="true" /> if a password is required for this account; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PermittedLogonTimes">
+      <MemberSignature Language="C#" Value="public byte[] PermittedLogonTimes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] PermittedLogonTimes" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.PermittedLogonTimes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the times when the principal can logon.</summary>
+        <value>The permitted logon times for this account.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PermittedWorkstations">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalValueCollection&lt;string&gt; PermittedWorkstations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.PrincipalValueCollection`1&lt;string&gt; PermittedWorkstations" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.PermittedWorkstations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalValueCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of workstations that this principal is permitted to log into.</summary>
+        <value>The mutable list of workstations that this principal is permitted to log into.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshExpiredPassword">
+      <MemberSignature Language="C#" Value="public void RefreshExpiredPassword ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RefreshExpiredPassword() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.RefreshExpiredPassword" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Refreshes an expired password.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptPath">
+      <MemberSignature Language="C#" Value="public string ScriptPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScriptPath" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.ScriptPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the script path for this account.</summary>
+        <value>A path of the script for this account, or null if there is no script path.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPassword">
+      <MemberSignature Language="C#" Value="public void SetPassword (string newPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPassword(string newPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.SetPassword(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newPassword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="newPassword">The new password.</param>
+        <summary>Sets the account password to the specified value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">Throws an exception if the caller does not have appropriate rights, the new password does not meet password complexity requirements, or for any other reason that the underlying stores reject the password change.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SmartcardLogonRequired">
+      <MemberSignature Language="C#" Value="public bool SmartcardLogonRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SmartcardLogonRequired" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.SmartcardLogonRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether a smartcard is required to log on to the account.</summary>
+        <value>
+          <see langword="true" /> if a smartcard is required to log on to this account; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UnlockAccount">
+      <MemberSignature Language="C#" Value="public void UnlockAccount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnlockAccount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.UnlockAccount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unlocks the account if it is currently locked out.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example code connects to the LDAP domain "fabrikam.com" with the username (administrator) and password (SecretPwd123) initialized in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor.  
+  
+ A search is performed to find the user with name "John Smith" under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  If the user is found, a check is performed to determine whether this user's account has been locked out. If the account has been locked out, the code example unlocks the account.  
+  
+```  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain,   
+                                         "fabrikam.com",   
+                                         "CN=Users,DC=fabrikam,DC=com",   
+                                         "administrator",   
+                                         "SecretPwd123");  
+  
+UserPrincipal usr = UserPrincipal.FindByIdentity(ctx, "John Smith");  
+if (usr != null)  
+{  
+    if (usr.IsAccountLockedOut())  
+        usr.UnlockAccount();  
+  
+    usr.Dispose();  
+}  
+ctx.Dispose();   
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UserCannotChangePassword">
+      <MemberSignature Language="C#" Value="public bool UserCannotChangePassword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UserCannotChangePassword" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.UserCannotChangePassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the user can change the password for this account. Do not use this with a <see cref="T:System.DirectoryServices.AccountManagement.ComputerPrincipal" />.</summary>
+        <value>
+          <see langword="true" /> if the user is not permitted to change the password; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended for computer principals. Calling this with a <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal> will cause a <xref:System.NotSupportedException> to be thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <exception cref="T:System.NotSupportedException">This principal object is not a user.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> class. This constructor is called by derived-class constructors to initialize the base class and is not intended for use directly from your code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

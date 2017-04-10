@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Access Office Interop Objects by Using Visual C# Features (C# Programming Guide)
-Visual C# 2010 introduces new features that simplify access to Office API objects. The new features include named and optional arguments, a new type called `dynamic`, and the ability to pass arguments to reference parameters in COM methods as if they were value parameters.  
+Visual C# has features that simplify access to Office API objects. The new features include named and optional arguments, a new type called `dynamic`, and the ability to pass arguments to reference parameters in COM methods as if they were value parameters.  
   
  In this topic you will use the new features to write code that creates and displays a Microsoft Office Excel worksheet. You will then write code to add an Office Word document that contains an icon that is linked to the Excel worksheet.  
   

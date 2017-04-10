@@ -1,0 +1,43 @@
+<Type Name="CharIListConverter" FullName="System.Windows.Media.Converters.CharIListConverter">
+  <TypeSignature Language="C#" Value="public sealed class CharIListConverter : System.Windows.Media.Converters.BaseIListConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CharIListConverter extends System.Windows.Media.Converters.BaseIListConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Converters.CharIListConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Converters.BaseIListConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts the members of an <see cref="T:System.Collections.IList" /> collection of [!INCLUDE[TLA#tla_unicode](~/includes/tlasharptla-unicode-md.md)] characters to and from instances of <see cref="T:System.String" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The converted <xref:System.String> is a concatenated list of all the characters in the <xref:System.Collections.IList>. They are not delimited.  
+  
+ This class is only intended to be used by the <xref:System.Windows.Markup.Primitives.MarkupWriter> for serialization of [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CharIListConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Converters.CharIListConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Converters.CharIListConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

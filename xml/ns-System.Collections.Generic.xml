@@ -1,0 +1,13 @@
+<Namespace Name="System.Collections.Generic">
+  <Docs>
+    <summary>The <see cref="N:System.Collections.Generic" /> namespace contains interfaces and classes that define generic collections, which allow users to create strongly typed collections that provide better type safety and performance than non-generic strongly typed collections.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Many of the generic collection types are direct analogs of nongeneric types. <xref:System.Collections.Generic.Dictionary%602> is a generic version of <xref:System.Collections.Hashtable>; it uses the generic structure <xref:System.Collections.Generic.KeyValuePair%602> for enumeration instead of <xref:System.Collections.DictionaryEntry>. <xref:System.Collections.Generic.List%601> is a generic version of <xref:System.Collections.ArrayList>. There are generic <xref:System.Collections.Generic.Queue%601> and <xref:System.Collections.Generic.Stack%601> classes that correspond to the nongeneric versions. There are generic and nongeneric versions of <xref:System.Collections.Generic.SortedList%602>. Both versions are hybrids of a dictionary and a list. The <xref:System.Collections.Generic.SortedDictionary%602> generic class is a pure dictionary and has no nongeneric counterpart. The <xref:System.Collections.Generic.LinkedList%601> generic class is a true linked list and has no nongeneric counterpart.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

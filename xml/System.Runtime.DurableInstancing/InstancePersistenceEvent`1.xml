@@ -1,0 +1,64 @@
+<Type Name="InstancePersistenceEvent&lt;T&gt;" FullName="System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public abstract class InstancePersistenceEvent&lt;T&gt; : System.Runtime.DurableInstancing.InstancePersistenceEvent where T : InstancePersistenceEvent&lt;T&gt;new()" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InstancePersistenceEvent`1&lt;.ctor (class System.Runtime.DurableInstancing.InstancePersistenceEvent`1&lt;!T&gt;) T&gt; extends System.Runtime.DurableInstancing.InstancePersistenceEvent" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstancePersistenceEvent`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <BaseTypeName>System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;T&gt;</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Runtime.DurableInstancing.InstancePersistenceEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the event.</typeparam>
+    <summary>Represents an event that an instance store raises to notify hosts about a change. This is a generic class.  Classes such as <see cref="T:System.Activities.DurableInstancing.HasRunnableWorkflowEvent" /> and <see cref="T:System.Activities.DurableInstancing.HasActivatableWorkflowEvent" /> derive from this class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InstancePersistenceEvent (System.Xml.Linq.XName name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstancePersistenceEvent`1.#ctor(System.Xml.Linq.XName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+      </Parameters>
+      <Docs>
+        <param name="name">XName (namespace combined with name) of the event.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstancePersistenceEvent`1" /> class using the XName parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public static T Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property !T Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstancePersistenceEvent`1.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the instance of the actual event object (for example: <see cref="T:System.Activities.DurableInstancing.HasRunnableWorkflowEvent" />).</summary>
+        <value>The event object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

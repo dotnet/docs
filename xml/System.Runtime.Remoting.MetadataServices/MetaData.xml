@@ -1,0 +1,467 @@
+<Type Name="MetaData" FullName="System.Runtime.Remoting.MetadataServices.MetaData">
+  <TypeSignature Language="C#" Value="public class MetaData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetaData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.MetadataServices.MetaData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods that allow you to work with XML schema.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.MetadataServices.MetaData> class provides methods that allow you to generate Web Services Description Language (WSDL) from type information, convert an XML Schema into a code stream, and compile the code stream into an assembly. This functionality is also present in the [Soapsuds Tool (Soapsuds.exe)](http://msdn.microsoft.com/en-us/40f6f8c8-b80c-4e9f-a920-31bcd0cf45c5).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetaData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.Runtime.Remoting.MetadataServices.MetaData" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertCodeSourceFileToAssemblyFile">
+      <MemberSignature Language="C#" Value="public static void ConvertCodeSourceFileToAssemblyFile (string codePath, string assemblyPath, string strongNameFilename);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertCodeSourceFileToAssemblyFile(string codePath, string assemblyPath, string strongNameFilename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceFileToAssemblyFile(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codePath" Type="System.String" />
+        <Parameter Name="assemblyPath" Type="System.String" />
+        <Parameter Name="strongNameFilename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="codePath">The path to the file that contains the source code.</param>
+        <param name="assemblyPath">The location where the new run-time assembly is generated.</param>
+        <param name="strongNameFilename">The strong name to compile into the new assembly. Can be <see cref="F:System.String.Empty" />.</param>
+        <summary>Compiles a specified code source file into a runtime assembly file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information on strong names, see [Strong-Named Assemblies](~/docs/framework/app-domains/strong-named-assemblies.md).  
+  
+> [!NOTE]
+>  If a file with the specified name already exists, it is overwritten.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceFileToAssemblyFile%2A> method to write the schema definition of the specified types to a runtime assembly with the specified name. The `CsSource.cs` file converted here contains C# source code.  
+  
+ [!code-cpp[MetaData.ConvertCodeSourceFileToAssemblyFile#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MetaData.ConvertCodeSourceFileToAssemblyFile/CPP/source.cpp#1)]
+ [!code-csharp[MetaData.ConvertCodeSourceFileToAssemblyFile#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MetaData.ConvertCodeSourceFileToAssemblyFile/CS/source.cs#1)]
+ [!code-vb[MetaData.ConvertCodeSourceFileToAssemblyFile#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MetaData.ConvertCodeSourceFileToAssemblyFile/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertCodeSourceStreamToAssemblyFile">
+      <MemberSignature Language="C#" Value="public static void ConvertCodeSourceStreamToAssemblyFile (System.Collections.ArrayList outCodeStreamList, string assemblyPath, string strongNameFilename);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertCodeSourceStreamToAssemblyFile(class System.Collections.ArrayList outCodeStreamList, string assemblyPath, string strongNameFilename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertCodeSourceStreamToAssemblyFile(System.Collections.ArrayList,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outCodeStreamList" Type="System.Collections.ArrayList" />
+        <Parameter Name="assemblyPath" Type="System.String" />
+        <Parameter Name="strongNameFilename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="outCodeStreamList">A <see cref="T:System.Collections.ArrayList" /> of streams with the source code.</param>
+        <param name="assemblyPath">The location where the new run-time assembly is generated.</param>
+        <param name="strongNameFilename">The strong name to compile into the new run-time assembly. Can be <see cref="F:System.String.Empty" />.</param>
+        <summary>Compiles specified code source streams into a run-time assembly file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information on strong names, see [Strong-Named Assemblies](~/docs/framework/app-domains/strong-named-assemblies.md).  
+  
+> [!NOTE]
+>  If a file with the specified name already exists, it is overwritten.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertSchemaStreamToCodeSourceStream">
+      <MemberSignature Language="C#" Value="public static void ConvertSchemaStreamToCodeSourceStream (bool clientProxy, string outputDirectory, System.IO.Stream inputStream, System.Collections.ArrayList outCodeStreamList);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, string outputDirectory, class System.IO.Stream inputStream, class System.Collections.ArrayList outCodeStreamList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientProxy" Type="System.Boolean" />
+        <Parameter Name="outputDirectory" Type="System.String" />
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="outCodeStreamList" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="clientProxy">Indicates the type of proxy to generate. If <see langword="true" />, generates a simple proxy (also known as wrapped proxy) that automatically loads the channels, exposes all the methods of the remote object, and provides access to the channel properties. If <see langword="false" />, generates a transparent proxy that exposes all the methods of the remote object.</param>
+        <param name="outputDirectory">The directory where the new C# source code files with the proxy are created.</param>
+        <param name="inputStream">The input stream that contains the schema definition in Web Services Description Language (WSDL) format.</param>
+        <param name="outCodeStreamList">The list of file names for the code streams that are generated. Note that the <see cref="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList,System.String,System.String)" /> method can create multiple source code streams.</param>
+        <summary>Converts the specified schema definition into C# proxy source code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If files with the specified names already exist, they are overwritten.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertSchemaStreamToCodeSourceStream">
+      <MemberSignature Language="C#" Value="public static void ConvertSchemaStreamToCodeSourceStream (bool clientProxy, string outputDirectory, System.IO.Stream inputStream, System.Collections.ArrayList outCodeStreamList, string proxyUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, string outputDirectory, class System.IO.Stream inputStream, class System.Collections.ArrayList outCodeStreamList, string proxyUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientProxy" Type="System.Boolean" />
+        <Parameter Name="outputDirectory" Type="System.String" />
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="outCodeStreamList" Type="System.Collections.ArrayList" />
+        <Parameter Name="proxyUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clientProxy">Indicates the type of proxy to generate. If <see langword="true" />, generates a simple proxy (also known as wrapped proxy) that automatically loads the channels, exposes all the methods of the remote object, and provides access to the channel properties. If <see langword="false" />, generates a transparent proxy that exposes all the methods of the remote object.</param>
+        <param name="outputDirectory">The directory where the new C# source code files with the proxy are created.</param>
+        <param name="inputStream">The input stream that contains the schema definition in Web Services Description Language (WSDL) format.</param>
+        <param name="outCodeStreamList">The list of file names for the code streams that are generated. Note that the <see cref="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList,System.String,System.String)" /> method can create multiple source code streams.</param>
+        <param name="proxyUrl">The URL where the target remote object that is represented by the new proxy will be located.</param>
+        <summary>Converts the specified schema definition into C# proxy source code for a remote object that is located at the specified URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If files with the specified names already exist, they are overwritten.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertSchemaStreamToCodeSourceStream">
+      <MemberSignature Language="C#" Value="public static void ConvertSchemaStreamToCodeSourceStream (bool clientProxy, string outputDirectory, System.IO.Stream inputStream, System.Collections.ArrayList outCodeStreamList, string proxyUrl, string proxyNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertSchemaStreamToCodeSourceStream(bool clientProxy, string outputDirectory, class System.IO.Stream inputStream, class System.Collections.ArrayList outCodeStreamList, string proxyUrl, string proxyNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientProxy" Type="System.Boolean" />
+        <Parameter Name="outputDirectory" Type="System.String" />
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="outCodeStreamList" Type="System.Collections.ArrayList" />
+        <Parameter Name="proxyUrl" Type="System.String" />
+        <Parameter Name="proxyNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clientProxy">Indicates the type of proxy to generate. If <see langword="true" />, generates a simple proxy (also known as wrapped proxy) that automatically loads the channels, exposes all the methods of the remote object, and provides access to the channel properties. If <see langword="false" />, generates a transparent proxy that exposes all the methods of the remote object.</param>
+        <param name="outputDirectory">The directory where the new C# source code files with the proxy are created.</param>
+        <param name="inputStream">The input stream containing the schema definition in Web Services Description Language (WSDL) format.</param>
+        <param name="outCodeStreamList">The list of file names for the code streams that are generated. Note that the <see cref="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertSchemaStreamToCodeSourceStream(System.Boolean,System.String,System.IO.Stream,System.Collections.ArrayList,System.String,System.String)" /> method can create multiple source code streams.</param>
+        <param name="proxyUrl">The URL where the target remote object that is represented by the new proxy will be located.</param>
+        <param name="proxyNamespace">The namespace of the newly created proxy.</param>
+        <summary>Converts the specified schema definition into C# proxy source code for a remote object that is located at the specified URL and in the provided class namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If files with the specified names already exist, they are overwritten.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypesToSchemaToFile">
+      <MemberSignature Language="C#" Value="public static void ConvertTypesToSchemaToFile (System.Runtime.Remoting.MetadataServices.ServiceType[] types, System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToFile(class System.Runtime.Remoting.MetadataServices.ServiceType[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile(System.Runtime.Remoting.MetadataServices.ServiceType[],System.Runtime.Remoting.MetadataServices.SdlType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Runtime.Remoting.MetadataServices.ServiceType[]" />
+        <Parameter Name="sdlType" Type="System.Runtime.Remoting.MetadataServices.SdlType" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="types">The <see cref="T:System.Runtime.Remoting.MetadataServices.ServiceType" /> instances to convert to XML schema.</param>
+        <param name="sdlType">The type of service description language to use for the XML schema.</param>
+        <param name="path">The path of the XML file.</param>
+        <summary>Converts the specified service types to XML schema, and writes it to a file that is specified by name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Runtime.Remoting.MetadataServices.ServiceType> instance allows you to associate a URL with an object <xref:System.Type>.  
+  
+> [!NOTE]
+>  If a file with the specified name already exists, it is overwritten.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypesToSchemaToFile">
+      <MemberSignature Language="C#" Value="public static void ConvertTypesToSchemaToFile (Type[] types, System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToFile(class System.Type[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile(System.Type[],System.Runtime.Remoting.MetadataServices.SdlType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="sdlType" Type="System.Runtime.Remoting.MetadataServices.SdlType" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="types">The object types to convert to XML schema.</param>
+        <param name="sdlType">The type of service description language to use for the XML schema.</param>
+        <param name="path">The path of the XML file.</param>
+        <summary>Converts the specified object types to XML schema, and writes it to a file that is specified by name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If a file with the specified name already exists, it is overwritten.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the [ConvertTypesToSchemaToFile Method (Type\<xref:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToFile%2A> method to write the schema definition of the specified types to a file.  
+  
+ [!code-cpp[MetaData.ConvertTypesToSchemaToFile#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MetaData.ConvertTypesToSchemaToFile/CPP/source.cpp#1)]
+ [!code-csharp[MetaData.ConvertTypesToSchemaToFile#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MetaData.ConvertTypesToSchemaToFile/CS/source.cs#1)]
+ [!code-vb[MetaData.ConvertTypesToSchemaToFile#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MetaData.ConvertTypesToSchemaToFile/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypesToSchemaToStream">
+      <MemberSignature Language="C#" Value="public static void ConvertTypesToSchemaToStream (System.Runtime.Remoting.MetadataServices.ServiceType[] serviceTypes, System.Runtime.Remoting.MetadataServices.SdlType sdlType, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToStream(class System.Runtime.Remoting.MetadataServices.ServiceType[] serviceTypes, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, class System.IO.Stream outputStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream(System.Runtime.Remoting.MetadataServices.ServiceType[],System.Runtime.Remoting.MetadataServices.SdlType,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceTypes" Type="System.Runtime.Remoting.MetadataServices.ServiceType[]" />
+        <Parameter Name="sdlType" Type="System.Runtime.Remoting.MetadataServices.SdlType" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="serviceTypes">The <see cref="T:System.Runtime.Remoting.MetadataServices.ServiceType" /> instances to convert to XML schema.</param>
+        <param name="sdlType">The type of service description language to use for the XML schema.</param>
+        <param name="outputStream">The <see cref="T:System.IO.Stream" /> that the schema is written to.</param>
+        <summary>Converts the specified service types to XML schema, and writes it to a specified stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Runtime.Remoting.MetadataServices.ServiceType> instance allows you to associate a URL with an object <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTypesToSchemaToStream">
+      <MemberSignature Language="C#" Value="public static void ConvertTypesToSchemaToStream (Type[] types, System.Runtime.Remoting.MetadataServices.SdlType sdlType, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ConvertTypesToSchemaToStream(class System.Type[] types, valuetype System.Runtime.Remoting.MetadataServices.SdlType sdlType, class System.IO.Stream outputStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream(System.Type[],System.Runtime.Remoting.MetadataServices.SdlType,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="sdlType" Type="System.Runtime.Remoting.MetadataServices.SdlType" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="types">The object types to convert to XML schema.</param>
+        <param name="sdlType">The type of service description language to use for the XML schema.</param>
+        <param name="outputStream">The <see cref="T:System.IO.Stream" /> that the schema is written to.</param>
+        <summary>Converts the specified object types to XML schema, and writes it to a specified stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of the [ConvertTypesToSchemaToStream Method (Type\<xref:System.Runtime.Remoting.MetadataServices.MetaData.ConvertTypesToSchemaToStream%2A> method to write the schema definition of the specified types to a stream.  
+  
+ [!code-cpp[MetaData.ConvertTypesToSchemaToStream#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MetaData.ConvertTypesToSchemaToStream/CPP/source.cpp#1)]
+ [!code-csharp[MetaData.ConvertTypesToSchemaToStream#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MetaData.ConvertTypesToSchemaToStream/CS/source.cs#1)]
+ [!code-vb[MetaData.ConvertTypesToSchemaToStream#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MetaData.ConvertTypesToSchemaToStream/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveSchemaFromUrlToFile">
+      <MemberSignature Language="C#" Value="public static void RetrieveSchemaFromUrlToFile (string url, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RetrieveSchemaFromUrlToFile(string url, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToFile(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL where the XML schema is located.</param>
+        <param name="path">The path of the file that the schema is written to.</param>
+        <summary>Downloads the XML schema from a URL, and writes it to the specified file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If a file with the specified name already exists, it is overwritten.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveSchemaFromUrlToStream">
+      <MemberSignature Language="C#" Value="public static void RetrieveSchemaFromUrlToStream (string url, System.IO.Stream outputStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RetrieveSchemaFromUrlToStream(string url, class System.IO.Stream outputStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.RetrieveSchemaFromUrlToStream(System.String,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="outputStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL where the XML schema is located.</param>
+        <param name="outputStream">The <see cref="T:System.IO.Stream" /> that the schema is written to.</param>
+        <summary>Downloads the XML schema from a URL, and writes it to the specified stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveStreamToFile">
+      <MemberSignature Language="C#" Value="public static void SaveStreamToFile (System.IO.Stream inputStream, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SaveStreamToFile(class System.IO.Stream inputStream, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.MetadataServices.MetaData.SaveStreamToFile(System.IO.Stream,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputStream" Type="System.IO.Stream" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="inputStream">The stream to write to the specified file.</param>
+        <param name="path">The file that the input stream is written to.</param>
+        <summary>Saves the input stream to a file with the specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If a file with the specified name already exists, it is overwritten.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

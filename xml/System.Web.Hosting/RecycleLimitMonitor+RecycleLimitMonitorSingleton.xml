@@ -1,0 +1,118 @@
+<Type Name="RecycleLimitMonitor+RecycleLimitMonitorSingleton" FullName="System.Web.Hosting.RecycleLimitMonitor+RecycleLimitMonitorSingleton">
+  <TypeSignature Language="C#" Value="public class RecycleLimitMonitor.RecycleLimitMonitorSingleton : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit RecycleLimitMonitor/RecycleLimitMonitorSingleton extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates a recycle limit monitor singleton.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the recycle limit monitor.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureCreated">
+      <MemberSignature Language="C#" Value="public static void EnsureCreated ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnsureCreated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.EnsureCreated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a recycle limit monitor singleton if it doesn't already exist.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeLifetimeService">
+      <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.InitializeLifetimeService" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Obtains a lifetime service object to control the lifetime policy for this instance.</summary>
+        <returns>Returns null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterProxyAndStart">
+      <MemberSignature Language="C#" Value="public void RegisterProxyAndStart (System.Web.Hosting.RecycleLimitMonitor proxy, string applicationID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterProxyAndStart(class System.Web.Hosting.RecycleLimitMonitor proxy, string applicationID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.RegisterProxyAndStart(System.Web.Hosting.RecycleLimitMonitor,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="proxy" Type="System.Web.Hosting.RecycleLimitMonitor" />
+        <Parameter Name="applicationID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="proxy">The recycle limit monitor proxy.</param>
+        <param name="applicationID">The application ID.</param>
+        <summary>Registers a recycle limit monitor proxy and starts a timer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterProxyAndStop">
+      <MemberSignature Language="C#" Value="public void UnregisterProxyAndStop (System.Web.Hosting.RecycleLimitMonitor proxy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterProxyAndStop(class System.Web.Hosting.RecycleLimitMonitor proxy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitMonitor.RecycleLimitMonitorSingleton.UnregisterProxyAndStop(System.Web.Hosting.RecycleLimitMonitor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="proxy" Type="System.Web.Hosting.RecycleLimitMonitor" />
+      </Parameters>
+      <Docs>
+        <param name="proxy">The recycle limit monitor proxy.</param>
+        <summary>Removes a recycle limit monitor proxy.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

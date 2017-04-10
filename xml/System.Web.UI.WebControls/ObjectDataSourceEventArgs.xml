@@ -1,0 +1,108 @@
+<Type Name="ObjectDataSourceEventArgs" FullName="System.Web.UI.WebControls.ObjectDataSourceEventArgs">
+  <TypeSignature Language="C#" Value="public class ObjectDataSourceEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectDataSourceEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating" /> and <see cref="E:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated" /> events of the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> class is used in the <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating%2A> and <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreated%2A> methods to provide access to the business object instance before any data operations that are using the <xref:System.Web.UI.WebControls.ObjectDataSource> control and business object are performed. The business object is set and accessed using the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property. By adding an event handler delegate to handle the <xref:System.Web.UI.WebControls.ObjectDataSourceView.ObjectCreating> event, you can create an instance of the business object in custom code instead of the <xref:System.Web.UI.WebControls.ObjectDataSource> performing the instantiation. This is useful when you want a non-default instance of your business object or to call a non-default constructor to create the instance; the <xref:System.Web.UI.WebControls.ObjectDataSource> always calls the default constructor to create an instance of the business object it works with. You can also add an event handler delegate to handle the  <xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated> event, which enables you to access any publicly exposed members of the business object to perform any additional initialization or work.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreating%2A> and <xref:System.Web.UI.WebControls.ObjectDataSourceView.OnObjectCreated%2A> methods are not called by the <xref:System.Web.UI.WebControls.ObjectDataSource> control, if the business object method that performs the data operations is `static`.  
+  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource> control exposes many events that you can handle to work with the underlying business object at various times in its lifecycle. The following table lists the events and the associated <xref:System.EventArgs> classes and event handler delegates.  
+  
+|Event|EventArgs|EventHandler|  
+|-----------|---------------|------------------|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreating>.<br /><br /> Occurs immediately before the instance of the business object is created.|<xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectCreated>.<br /><br /> Occurs immediately after the instance of the business object is created.|<xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceObjectEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Selecting>.<br /><br /> Occurs before the data is retrieved.|<xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceSelectingEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Inserting>, <xref:System.Web.UI.WebControls.ObjectDataSource.Updating>, and <xref:System.Web.UI.WebControls.ObjectDataSource.Deleting>.<br /><br /> Occur before an insert, update, or delete operation is performed.|<xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceMethodEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Selected>.<br /><br /> Occurs after the data is retrieved.|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.Inserted>, <xref:System.Web.UI.WebControls.ObjectDataSource.Updated>, <xref:System.Web.UI.WebControls.ObjectDataSource.Deleted>.<br /><br /> Occur after the insert, update, or delete operation is completed.|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceStatusEventHandler>|  
+|<xref:System.Web.UI.WebControls.ObjectDataSource.ObjectDisposing>.<br /><br /> Occurs before a business object is destroyed.|<xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventArgs>|<xref:System.Web.UI.WebControls.ObjectDataSourceDisposingEventHandler>|  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to retrieve and display information. The second code example provides the example basic business object that the first code example uses.  
+  
+ The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to retrieve and display information. In this example, as in many real-world scenarios, it might not be possible nor appropriate to use a default instance of the business object with the <xref:System.Web.UI.WebControls.ObjectDataSource> control. In this example, the <xref:System.Web.UI.WebControls.ObjectDataSource> cannot successfully call the default constructor because it will throw an exception. In some cases, the default constructor might be protected and in others it might not initialize the business object to a desired state. Whatever the reason, you can create an instance of the business object yourself and set the instance to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object that is passed to the handler. This is the business object instance that the <xref:System.Web.UI.WebControls.ObjectDataSource> will use to perform its work.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/objds15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/objds15vb.aspx#1)]  -->  
+  
+ The following code example demonstrates the example basic business object that the preceding code example uses.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_15#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/northwindemployee15.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_15#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/northwindemployee15.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectDataSourceEventArgs (object objectInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object objectInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ObjectDataSourceEventArgs.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="objectInstance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="objectInstance">The business object with which the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> interacts to perform data operations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" /> class using the specified object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectInstance">
+      <MemberSignature Language="C#" Value="public object ObjectInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ObjectInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that represents the business object with which the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> control performs data operations.</summary>
+        <value>The business object the <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> uses to perform data operations; otherwise, <see langword="null" />, if <see langword="null" /> is passed to the <see cref="T:System.Web.UI.WebControls.ObjectDataSourceEventArgs" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to retrieve and display information. The second code example provides the example basic business object that the first code example uses.  
+  
+ The following code example demonstrates how to use an <xref:System.Web.UI.WebControls.ObjectDataSource> control with a business object and a <xref:System.Web.UI.WebControls.GridView> control to retrieve and display information. In this example, as in many real-world scenarios, it might not be possible nor appropriate to use a default instance of the business object with the <xref:System.Web.UI.WebControls.ObjectDataSource> control. In this example, the <xref:System.Web.UI.WebControls.ObjectDataSource> cannot successfully call the default constructor because it will throw an exception. In some cases, the default constructor might be protected and in others it might not initialize the business object to a desired state. Whatever the reason, you can create an instance of the business object yourself and set the instance to the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs.ObjectInstance%2A> property of the <xref:System.Web.UI.WebControls.ObjectDataSourceEventArgs> object that is passed to the handler. This is the business object instance that the <xref:System.Web.UI.WebControls.ObjectDataSource> will use to perform its work.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/objds15cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ObjectDataSource_15#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/objds15vb.aspx#1)]  -->  
+  
+ The following code example demonstrates the example basic business object that the preceding code example uses.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ObjectDataSource_15#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/CS/northwindemployee15.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.ObjectDataSource_15#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ObjectDataSource_15/VB/northwindemployee15.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

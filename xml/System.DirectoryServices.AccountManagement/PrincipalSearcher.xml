@@ -1,0 +1,298 @@
+<Type Name="PrincipalSearcher" FullName="System.DirectoryServices.AccountManagement.PrincipalSearcher">
+  <TypeSignature Language="C#" Value="public class PrincipalSearcher : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrincipalSearcher extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Encapsulates the methods and search patterns used to execute a query against the underlying principal store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default page size of 256 KB is used when the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher> class performs a query for domain principals. The application may override the default value by setting the <xref:System.DirectoryServices.DirectorySearcher.PageSize%2A> property in the underlying <xref:System.DirectoryServices.DirectorySearcher> object that is returned from the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcher%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalSearcher ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> class. The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property must be set before the Principal searcher object can be used to perform a search.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalSearcher (System.DirectoryServices.AccountManagement.Principal queryFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.Principal queryFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.#ctor(System.DirectoryServices.AccountManagement.Principal)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="queryFilter" Type="System.DirectoryServices.AccountManagement.Principal" />
+      </Parameters>
+      <Docs>
+        <param name="queryFilter">The <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that specifies the filter to use for the search. The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property is initialized to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> class with the specified query filter.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Persisted principal objects can not be used as the <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />.  
+  
+ The <paramref name="queryFilter" /> parameter cannot be null or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.PrincipalContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets that principal context that is used to perform the query. The context specifies the server or domain against which search operations are performed.</summary>
+        <value>The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext> object contained in this property is obtained from the context property of the principal object set in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> property. Queries are performed using the credentials specified in the principal context object and the container specified in the <xref:System.DirectoryServices.AccountManagement%2CPrincipalContext.Container%2A> property. For <xref:System.DirectoryServices.AccountManagement.ContextType> and <xref:System.DirectoryServices.AccountManagement.ContextType> context types, the container is the Distinguished Name (DN) of a container object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disposes the current instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAll">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt; FindAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt; FindAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.FindAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a principal search result that contains a collection of all the principal objects that match the principal specified in the query filter property.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult'1" /> object that matches the query filter or an empty collection if no results are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The principal objects returned in the principal search result match the type of object contained in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> property. The search is conducted in the context specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context%2A> property. For more information, see the Query by Example overview topic.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the Query by Example overview topic.  
+  
+ The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
+        <exception cref="T:System.ArgumentException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindOne">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.Principal FindOne ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.Principal FindOne() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.FindOne" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.Principal</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a principal search result that contains the first principal object found that matches the principal specified in the <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property.</summary>
+        <returns>A  <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that contains the principal object that matches the query filter or null if no results are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is exactly one match of the object specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A>, this method returns that object. If there are multiple matches of the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> object, this method arbitrarily returns one of the matching principals.  
+  
+ The <xref:System.DirectoryServices.AccountManagement.Principal> object returned from this method matches the type of object contained in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> property. The search is conducted in the context specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context%2A> property. For more information, see the [Query by Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+  
+ The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
+        <exception cref="T:System.ArgumentException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnderlyingSearcher">
+      <MemberSignature Language="C#" Value="public object GetUnderlyingSearcher ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetUnderlyingSearcher() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcher" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the underlying search object that is used by the Account Management API to perform the search.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectorySearcher" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application can modify the properties directly on the <xref:System.DirectoryServices.DirectorySearcher> object before executing the query. The query will then execute using the modified properties. For example, the default page size of 256 KB is used when the <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher> class performs a query for <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principals. The application may override the default value by setting the <xref:System.DirectoryServices.DirectorySearcher.PageSize%2A> property in the underlying <xref:System.DirectoryServices.DirectorySearcher> object that is returned from this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.  
+  
+ The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> contains referential properties. For more information, see the [Query by Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) overview topic.  
+  
+ The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> is a persisted principal.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnderlyingSearcherType">
+      <MemberSignature Language="C#" Value="public Type GetUnderlyingSearcherType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetUnderlyingSearcherType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcherType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the type of the object returned from the <see cref="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcher" /> method.</summary>
+        <returns>A <see cref="T:System.Type" /> that specifies the type of object returned from the <see cref="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcher" /> method.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">A <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> must first be assigned to the principal searcher before the query can be performed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryFilter">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.Principal QueryFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.Principal QueryFilter" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.Principal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the query filter that is used to locate matching principals.</summary>
+        <value>The <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object that is used for the query or null if no filter is set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The principal object contained in this property can be any type of object derived from the principal class; computer, user, or group. The <xref:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter%2A> can also be an extended principal type that is defined by extending either <xref:System.DirectoryServices.AccountManagement.Principal>, <xref:System.DirectoryServices.AccountManagement.UserPrincipal>, <xref:System.DirectoryServices.AccountManagement.GroupPrincipal> or <xref:System.DirectoryServices.AccountManagement.ComputerPrincipal>. The type of the derived class object that is passed to this property determines the type of object that is queried. The resulting query contains a logical AND of all the properties set on the specified principal object. For more information, see the Query by Example overview topic. For more information on the extended classes, see the [Principal Extensions](http://msdn.microsoft.com/en-us/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Persisted Principal objects can not be used as the <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />.  
+  
+ The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> cannot be null or empty.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

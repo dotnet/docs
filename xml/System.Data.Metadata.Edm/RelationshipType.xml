@@ -1,0 +1,44 @@
+<Type Name="RelationshipType" FullName="System.Data.Metadata.Edm.RelationshipType">
+  <TypeSignature Language="C#" Value="public abstract class RelationshipType : System.Data.Metadata.Edm.EntityTypeBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RelationshipType extends System.Data.Metadata.Edm.EntityTypeBase" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RelationshipType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.EntityTypeBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base class for relationships in a conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Relationships](http://msdn.microsoft.com/en-us/48026c06-5e7f-4a9c-a73c-e4c53583f52b).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RelationshipEndMembers">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.RelationshipEndMember&gt; RelationshipEndMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.RelationshipEndMember&gt; RelationshipEndMembers" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.RelationshipType.RelationshipEndMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.RelationshipEndMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of ends for this relationship type.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains the list of Ends for this relationship type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

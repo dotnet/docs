@@ -1,0 +1,367 @@
+<Type Name="MessagePartCollection" FullName="System.Web.Services.Description.MessagePartCollection">
+  <TypeSignature Language="C#" Value="public sealed class MessagePartCollection : System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessagePartCollection extends System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MessagePartCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionBaseCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.MessagePart" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Description.MessagePart> class corresponds to a Web Services Description Language (WSDL) `<part>` element enclosed by the `<message>` element, which is in turn enclosed by the `<definitions>` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the methods and properties exposed by the `MessagePartCollection` class.  
+  
+ [!code-cpp[MessagePartCollection#8](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagePartCollection/CPP/messagepartcollection.cpp#8)]
+ [!code-csharp[MessagePartCollection#8](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagePartCollection/CS/messagepartcollection.cs#8)]
+ [!code-vb[MessagePartCollection#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagePartCollection/VB/messagepartcollection.vb#8)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.MessagePart messagePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.MessagePart messagePart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.Add(System.Web.Services.Description.MessagePart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messagePart" Type="System.Web.Services.Description.MessagePart" />
+      </Parameters>
+      <Docs>
+        <param name="messagePart">The <see cref="T:System.Web.Services.Description.MessagePart" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.MessagePart" /> to the end of the <see cref="T:System.Web.Services.Description.MessagePartCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="messagePart" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DescriptionNamespaceSample1#14](~/samples/snippets/cpp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CPP/descriptionnamespacesample1.cpp#14)]
+ [!code-csharp[DescriptionNamespaceSample1#14](~/samples/snippets/csharp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CS/descriptionnamespacesample1.cs#14)]
+ [!code-vb[DescriptionNamespaceSample1#14](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DescriptionNamespaceSample1/VB/descriptionnamespacesample1.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.MessagePart messagePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.MessagePart messagePart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.Contains(System.Web.Services.Description.MessagePart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messagePart" Type="System.Web.Services.Description.MessagePart" />
+      </Parameters>
+      <Docs>
+        <param name="messagePart">The <see cref="T:System.Web.Services.Description.MessagePart" /> for which to check collection membership.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.MessagePart" /> is a member of the <see langword="MessagePartCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="messagePart" /> parameter is a member of the <see cref="T:System.Web.Services.Description.MessagePartCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a use of the `Contains` method.  
+  
+ [!code-cpp[MessagePartCollection#5](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagePartCollection/CPP/messagepartcollection.cpp#5)]
+ [!code-csharp[MessagePartCollection#5](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagePartCollection/CS/messagepartcollection.cs#5)]
+ [!code-vb[MessagePartCollection#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagePartCollection/VB/messagepartcollection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.MessagePart[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.MessagePart[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.CopyTo(System.Web.Services.Description.MessagePart[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Services.Description.MessagePart[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.MessagePart" /> serving as the destination of the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.MessagePartCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.MessagePart" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a use of the `CopyTo` method.  
+  
+ [!code-cpp[MessagePartCollection#3](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagePartCollection/CPP/messagepartcollection.cpp#3)]
+ [!code-csharp[MessagePartCollection#3](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagePartCollection/CS/messagepartcollection.cs#3)]
+ [!code-vb[MessagePartCollection#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagePartCollection/VB/messagepartcollection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKey">
+      <MemberSignature Language="C#" Value="protected override string GetKey (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKey(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.GetKey(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.MessagePart messagePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.MessagePart messagePart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.IndexOf(System.Web.Services.Description.MessagePart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messagePart" Type="System.Web.Services.Description.MessagePart" />
+      </Parameters>
+      <Docs>
+        <param name="messagePart">The <see cref="T:System.Web.Services.Description.MessagePart" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.MessagePart" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>A 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a use of the `IndexOf` method to determine whether a specified `MessagePart` is a member of the collection.  
+  
+ [!code-cpp[MessagePartCollection#6](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagePartCollection/CPP/messagepartcollection.cpp#6)]
+ [!code-csharp[MessagePartCollection#6](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagePartCollection/CS/messagepartcollection.cs#6)]
+ [!code-vb[MessagePartCollection#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagePartCollection/VB/messagepartcollection.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.MessagePart messagePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.MessagePart messagePart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.Insert(System.Int32,System.Web.Services.Description.MessagePart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="messagePart" Type="System.Web.Services.Description.MessagePart" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert the <c>messagePart</c> parameter.</param>
+        <param name="messagePart">The <see cref="T:System.Web.Services.Description.MessagePart" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.MessagePart" /> to the <see cref="T:System.Web.Services.Description.MessagePartCollection" /> at the specified zero-based index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `messagePart` parameter is added to the end of the <xref:System.Web.Services.Description.MessagePartCollection>.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DescriptionNamespaceSample1#15](~/samples/snippets/cpp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CPP/descriptionnamespacesample1.cpp#15)]
+ [!code-csharp[DescriptionNamespaceSample1#15](~/samples/snippets/csharp/VS_Snippets_Remoting/DescriptionNamespaceSample1/CS/descriptionnamespacesample1.cs#15)]
+ [!code-vb[DescriptionNamespaceSample1#15](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DescriptionNamespaceSample1/VB/descriptionnamespacesample1.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.MessagePart this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MessagePart Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessagePartCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.MessagePart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.MessagePart" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of a <see cref="T:System.Web.Services.Description.MessagePart" /> at the specified zero-based index.</summary>
+        <value>A <see langword="MessagePart" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of a zero-based index to iterate through the members of a `MessagePartCollection`.  
+  
+ [!code-cpp[MessagePartCollection#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagePartCollection/CPP/messagepartcollection.cpp#1)]
+ [!code-csharp[MessagePartCollection#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagePartCollection/CS/messagepartcollection.cs#1)]
+ [!code-vb[MessagePartCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagePartCollection/VB/messagepartcollection.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.MessagePart this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MessagePart Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MessagePartCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.MessagePart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.Services.Description.MessagePart" /> returned.</param>
+        <summary>Gets a <see cref="T:System.Web.Services.Description.MessagePart" /> specified by its name.</summary>
+        <value>A <see langword="MessagePart" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[MessagePartCollection#4](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagePartCollection/CPP/messagepartcollection.cpp#4)]
+ [!code-csharp[MessagePartCollection#4](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagePartCollection/CS/messagepartcollection.cs#4)]
+ [!code-vb[MessagePartCollection#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagePartCollection/VB/messagepartcollection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.MessagePart messagePart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.MessagePart messagePart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.Remove(System.Web.Services.Description.MessagePart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messagePart" Type="System.Web.Services.Description.MessagePart" />
+      </Parameters>
+      <Docs>
+        <param name="messagePart">The <see cref="T:System.Web.Services.Description.MessagePart" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.MessagePart" /> from the <see cref="T:System.Web.Services.Description.MessagePartCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed <xref:System.Web.Services.Description.MessagePart> move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the `Remove` method.  
+  
+ [!code-cpp[MessagePartCollection#7](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagePartCollection/CPP/messagepartcollection.cpp#7)]
+ [!code-csharp[MessagePartCollection#7](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagePartCollection/CS/messagepartcollection.cs#7)]
+ [!code-vb[MessagePartCollection#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagePartCollection/VB/messagepartcollection.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParent">
+      <MemberSignature Language="C#" Value="protected override void SetParent (object value, object parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParent(object value, object parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MessagePartCollection.SetParent(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="parent" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

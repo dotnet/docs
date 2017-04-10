@@ -1,0 +1,179 @@
+<Type Name="Label" FullName="System.Windows.Controls.Label">
+  <TypeSignature Language="C#" Value="public class Label : System.Windows.Controls.ContentControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Label extends System.Windows.Controls.ContentControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Label" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.ContentControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.Label)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the text label for a control and provides support for access keys.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides both functional and visual support for access keys (also known as mnemonics). It is frequently used to enable quick keyboard access to controls such as a <xref:System.Windows.Controls.TextBox>. To assign a <xref:System.Windows.Controls.Label> to a <xref:System.Windows.Controls.Control>, set the <xref:System.Windows.Controls.Label.Target%2A> property to the control that should get focus when the user presses the access key. Setting the target also causes [!INCLUDE[TLA#tla_uiautomation](~/includes/tlasharptla-uiautomation-md.md)] to use the text of the label as the name of the targeted control. For more information, see [Accessibility](~/docs/framework/ui-automation/accessibility.md).  
+  
+ To set the access key, add an underscore before the character that should be the access key. If your content has multiple underscore characters, only the first one is converted into an access key; the other underscores appear as normal text. If the underscore that you want converted to the access key is not the first underscore, use two consecutive underscores for any underscores that precede the one that you want to convert. For example, the following code contains an access key and displays as _Hello**W**orld:  
+  
+```  
+<Label>__Hello_World</Label>   
+```  
+  
+ Because the underscore that precedes H is a double, the W key registers as the access key.  
+  
+ A label is not focusable, and it is not a tab stop. For details, see [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md).  
+  
+ A <xref:System.Windows.Controls.Label> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
+  
+## Customizing the Label Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.Label> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Label>, see [Label Styles and Templates](~/docs/framework/wpf/controls/label-styles-and-templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.Label> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Controls.Label> that uses a binding to set the target.  
+  
+ <!-- TODO: review snippet reference [!code-xml[Label#1](~/samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#1)]  -->
+ <!-- TODO: review snippet reference [!code-xml[Label#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#1)]  -->  
+  
+ The following example shows how to create a <xref:System.Windows.Controls.Label> that has an access key and supports text wrapping.  
+  
+ <!-- TODO: review snippet reference [!code-xml[Label#4](~/samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#4)]  -->
+ <!-- TODO: review snippet reference [!code-xml[Label#4](~/samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#4)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Label ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Label.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Label" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Label.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an appropriate <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> implementation for this control, as part of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] infrastructure.</summary>
+        <returns>The type-specific <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> implementation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public System.Windows.UIElement Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement Target" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Label.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Markup.NameReferenceConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the element that receives focus when the user presses the label's access key.</summary>
+        <value>The <see cref="T:System.Windows.UIElement" /> that receives focus when the user presses the access key. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can provide keyboard shortcuts to elements that don't support access keys by giving a <xref:System.Windows.Controls.Label> an access key and setting this property. Assign an access key to a label by placing an underscore immediately before the character that acts as the access key. An access key can be specified in the <xref:System.Windows.Controls.ContentControl.Content%2A> property or by setting <xref:System.Windows.Controls.ContentControl.Content%2A> to an <xref:System.Windows.Controls.AccessText> object.  
+  
+ You cannot use this property to define a <xref:System.Windows.UIElement>. For example, the following compiles but is not functional: `<object.Target><UIElement../></object.Target>`. This property provides a reference to an element that is already defined in your application.  
+  
+<a name="dependencyPropertyInfo_Target"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Label.TargetProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlAttributeUsage_Target"></a>   
+## XAML Attribute Usage  
+  
+```  
+<Label Target=" nameOfExistingElement"/>  
+  
+```  
+  
+<a name="xamlPropertyElementUsage_Target"></a>   
+## XAML Property Element Usage  
+  
+<a name="xamlValues_Target"></a>   
+## XAML Values  
+ `nameOfExistingElement`  
+ The name of <xref:System.Windows.UIElement> that receives focus when the access key is pressed.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.Label.Target%2A> property of a <xref:System.Windows.Controls.Label>.  
+  
+ <!-- TODO: review snippet reference [!code-xml[Label#1](~/samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#1)]  -->
+ <!-- TODO: review snippet reference [!code-xml[Label#1](~/samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TargetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TargetProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Label.TargetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Label.Target" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

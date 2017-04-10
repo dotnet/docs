@@ -1,0 +1,101 @@
+<Type Name="FormsProtectionEnum" FullName="System.Web.Configuration.FormsProtectionEnum">
+  <TypeSignature Language="C#" Value="public enum FormsProtectionEnum" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormsProtectionEnum extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsProtectionEnum" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the type of encryption, if any, to use for cookies.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you select the All value, the system uses the configured data-validation algorithm, based on the [machineKey Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4b5699a9-bc21-4c4a-85f1-8b3b8ebd2d46) tag. This is the default, and recommended, value.  
+  
+ If you select None, cookies might be subject to plaintext attacks.  
+  
+ If you select Validation, the cookie is created using cookie validation by concatenating a validation key with the cookie data, computing a Message Authentication Code (MAC), and appending the MAC to the outgoing cookie.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.FormsProtectionEnum> enumeration. Refer to the code example in the <xref:System.Web.Configuration.FormsAuthenticationConfiguration> class topic to learn how to get the section.  
+  
+ [!code-csharp[System.Web.Configuration.FormsAuthenticationConfiguration#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.FormsAuthenticationConfiguration/CS/formsauthenticationconfiguration.cs#11)]
+ [!code-vb[System.Web.Configuration.FormsAuthenticationConfiguration#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.FormsAuthenticationConfiguration/VB/formsauthenticationconfiguration.vb#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.FormsProtectionEnum All = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.FormsProtectionEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the application use both data validation and encryption to help protect cookies. This option uses the configured data-validation algorithm (based on the <see langword="machineKey" /> element). Triple-DES (3DES) is used for encryption, if it is available and if the key is at least 48 bytes long. <see langword="All" /> is the default (and recommended) value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Encryption">
+      <MemberSignature Language="C#" Value="Encryption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.FormsProtectionEnum Encryption = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.Encryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.FormsProtectionEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that cookies are encrypted using Triple-DES or DES, but data validation is not performed on cookies. Cookies used this way might be subject to chosen plaintext security attacks.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.FormsProtectionEnum None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.FormsProtectionEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that both encryption and validation are disabled for sites that use cookies only for personalization and thus have weaker security requirements. Using cookies in this manner is not recommended; however, it is the least resource-intensive way to enable personalization using the .NET Framework.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Validation">
+      <MemberSignature Language="C#" Value="Validation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.FormsProtectionEnum Validation = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.Validation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.FormsProtectionEnum</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the application use a validation scheme to verify that the contents of an encrypted cookie have not been altered in transit. The cookie is created by concatenating a validation key with the cookie data, computing a Message Authentication Code (MAC), and appending the MAC to the outgoing cookie.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

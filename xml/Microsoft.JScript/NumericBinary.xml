@@ -1,0 +1,92 @@
+<Type Name="NumericBinary" FullName="Microsoft.JScript.NumericBinary">
+  <TypeSignature Language="C#" Value="public sealed class NumericBinary : Microsoft.JScript.BinaryOp" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NumericBinary extends Microsoft.JScript.BinaryOp" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NumericBinary" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.BinaryOp</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Performs binary operations on numeric operands. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NumericBinary (int operatorTok);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 operatorTok) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumericBinary.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="operatorTok" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="operatorTok">One of the <see cref="T:Microsoft.JScript.JSToken" /> enumeration values. Specifies the operation to perform.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NumericBinary" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoOp">
+      <MemberSignature Language="C#" Value="public static object DoOp (object v1, object v2, Microsoft.JScript.JSToken operatorTok);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object DoOp(object v1, object v2, valuetype Microsoft.JScript.JSToken operatorTok) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumericBinary.DoOp(System.Object,System.Object,Microsoft.JScript.JSToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v1" Type="System.Object" />
+        <Parameter Name="v2" Type="System.Object" />
+        <Parameter Name="operatorTok" Type="Microsoft.JScript.JSToken" />
+      </Parameters>
+      <Docs>
+        <param name="v1">The first operand.</param>
+        <param name="v2">The second operand.</param>
+        <param name="operatorTok">One of the <see cref="T:Microsoft.JScript.JSToken" /> enumeration values. Specifies the operation to perform.</param>
+        <summary>Performs the specified binary operation on the specified numeric operands.</summary>
+        <returns>The result of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateNumericBinary">
+      <MemberSignature Language="C#" Value="public object EvaluateNumericBinary (object v1, object v2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object EvaluateNumericBinary(object v1, object v2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumericBinary.EvaluateNumericBinary(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v1" Type="System.Object" />
+        <Parameter Name="v2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="v1">The first operand.</param>
+        <param name="v2">The second operand.</param>
+        <summary>Performs a binary operation on the specified numeric operands.</summary>
+        <returns>The result of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

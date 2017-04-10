@@ -1,0 +1,767 @@
+<Type Name="Random" FullName="System.Random">
+  <TypeSignature Language="C#" Value="public class Random" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Random extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Random" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a pseudo-random number generator, which is a device that produces a sequence of numbers that meet certain statistical requirements for randomness.  
+  
+ To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/random.cs#bb77e610694e64ca).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/random.cs#bb77e610694e64ca). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ Pseudo-random numbers are chosen with equal probability from a finite set of numbers. The chosen numbers are not completely random because a mathematical algorithm is used to select them, but they are sufficiently random for practical purposes. The current implementation of the <xref:System.Random> class is based on a modified version of Donald E. Knuth's subtractive random number generator algorithm. For more information, see D. E. Knuth. *The Art of Computer Programming, Volume 2: Seminumerical Algorithms*. Addison-Wesley, Reading, MA, third edition, 1997.  
+  
+ To generate a cryptographically secure random number, such as one that's suitable for creating a random password, use the <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class or derive a class from <xref:System.Security.Cryptography.RandomNumberGenerator?displayProperty=fullName>.  
+  
+ In this topic:  
+  
+ [Instantiating the random number generator](#Instantiate)   
+ [Avoiding multiple instantiations](#Multiple)   
+ [The System.Random class and thread safety](#ThreadSafety)   
+ [Generating different types of random numbers](#Functionality)   
+ [Substituting your own algorithm](#Overriding)   
+ [How do you use System.Random to…](#Operations)   
+ [Retrieve the same sequence of random values](#Same)  
+ [Retrieve unique sequences of random values](#Unique)  
+ [Retrieve integers in a specified range](#Range)  
+ [Retrieve integers with a specified number of digits](#Digits)  
+ [Retrieve floating-point values in a specified range](#Floats)  
+ [Generate random Boolean values](#Boolean)  
+ [Generate random 64-bit integers](#Long)  
+ [Retrieve bytes in a specified range](#Bytes)  
+ [Retrieve an element from an array or collection at random](#Array)  
+ [Retrieve a unique element from an array or collection](#UniqueArray)  
+  
+<a name="Instantiate"></a>   
+## Instantiating the random number generator  
+ You instantiate the random number generator by providing a seed value (a starting value for the pseudo-random number generation algorithm) to a <xref:System.Random.%23ctor%2A> class constructor.  You can supply the seed value either explicitly or implicitly:  
+  
+-   The <xref:System.Random.%23ctor%28System.Int32%29> constructor uses an explicit seed value that you supply.  
+  
+-   The <xref:System.Random.%23ctor> constructor uses the system clock to provide a seed value. This is the most common way of instantiating the random number generator.  
+  
+ If the same seed is used for separate <xref:System.Random> objects, they will generate the same series of random numbers. This can be useful for creating a test suite that processes random values, or for replaying games that derive their data from random numbers. However, note that <xref:System.Random> objects in processes running under different versions of the .NET Framework may return different series of random numbers even if they're instantiated with identical seed values.  
+  
+ To produce different sequences of random numbers, you can make the seed value time-dependent, thereby producing a different series with each new instance of <xref:System.Random>. The parameterized <xref:System.Random.%23ctor%28System.Int32%29> constructor can take an <xref:System.Int32> value based on the number of ticks in the current time, whereas the parameterless <xref:System.Random.%23ctor> constructor uses the system clock to generate its seed value. However, because the clock has finite resolution, using the parameterless constructor to create different <xref:System.Random> objects in close succession creates random number generators that produce identical sequences of random numbers. The following example illustrates how two <xref:System.Random> objects that are instantiated in close succession generate an identical series of random numbers. On most Windows systems, <xref:System.Random> objects created within 15 milliseconds of one another are likely to have identical seed values.  
+  
+ [!code-cpp[System.Random#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/random1.cpp#1)]
+ [!code-csharp[System.Random#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/Random1.cs#1)]
+ [!code-vb[System.Random#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/Random1.vb#1)]  
+  
+ To avoid this problem, create a single <xref:System.Random> object instead of multiple objects.  
+  
+<a name="Multiple"></a>   
+## Avoiding multiple instantiations  
+ Initializing two random number generators in a tight loop or in rapid succession creates two random number generators that can produce identical sequences of random numbers. In most cases, this is not the developer's intent and can lead to performance issues, because instantiating and initializing a random number generator is a relatively expensive process.  
+  
+ Both to improve performance and to avoid inadvertently creating separate random number generators that generate identical numeric sequences, we recommend that you create one <xref:System.Random> object to generate many random numbers over time, instead of creating new <xref:System.Random> objects to generate one random number.  
+  
+ However, the <xref:System.Random> class isn't thread safe. If you call <xref:System.Random> methods from multiple threads, follow the guidelines discussed in the next section.  
+  
+<a name="ThreadSafety"></a>   
+## The System.Random class and thread safety  
+ Instead of instantiating individual <xref:System.Random> objects, we recommend that you create a single <xref:System.Random> instance to generate all the random numbers needed by your app. However, <xref:System.Random> objects are not thread safe. If your app calls <xref:System.Random> methods from multiple threads, you must use a synchronization object to ensure that only one thread can access the random number generator at a time. If you don't ensure that the <xref:System.Random> object is accessed in a thread-safe way, calls to methods that return random numbers return 0.  
+  
+ The following example uses the C# [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md) and the Visual Basic [SyncLock statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md) to ensure that a single random number generator is accessed by 11 threads in a thread-safe manner. Each thread generates 2 million random numbers, counts the number of random numbers generated and calculates their sum, and then updates the totals for all threads when it finishes executing.  
+  
+ [!code-cpp[System.Random#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/threadsafeex1.cpp#3)]
+ [!code-csharp[System.Random#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/threadsafeex1.cs#3)]
+ [!code-vb[System.Random#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/threadsafeex1.vb#3)]  
+  
+ The example ensures thread-safety in the following ways:  
+  
+-   The <xref:System.ThreadStaticAttribute> attribute is used to define thread-local variables that track the total number of random numbers generated and their sum for each thread.  
+  
+-   A lock (the `lock` statement in C# and the `SyncLock` statement in Visual Basic) protects access to the variables for the total count and sum of all random numbers generated on all threads.  
+  
+-   A semaphore (the <xref:System.Threading.CountdownEvent> object) is used to ensure that the main thread blocks until all other threads complete execution.  
+  
+-   The example checks whether the random number generator has become corrupted by determining whether two consecutive calls to random number generation methods return 0. If corruption is detected, the example uses the <xref:System.Threading.CancellationTokenSource> object to signal that all threads should be canceled.  
+  
+-   Before generating each random number, each thread checks the state of the <xref:System.Threading.CancellationToken> object. If cancellation is requested, the example calls the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A?displayProperty=fullName> method to cancel the thread.  
+  
+ The following example is identical to the first, except that it uses a <xref:System.Threading.Tasks.Task> object and a lambda expression instead of <xref:System.Threading.Thread> objects.  
+  
+ [!code-csharp[System.Random#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/threadsafeex2.cs#4)]
+ [!code-vb[System.Random#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/threadsafeex2.vb#4)]  
+  
+ It differs from the first example in the following ways:  
+  
+-   The variables to keep track of the number of random numbers generated and their sum in each task are local to the task, so there is no need to use the <xref:System.ThreadStaticAttribute> attribute.  
+  
+-   The static <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method is used to ensure that the main thread doesn't complete before all tasks have finished. There is no need for the <xref:System.Threading.CountdownEvent> object.  
+  
+-   The exception that results from task cancellation is surfaced in the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=fullName> method. In the previous example, it is handled by each thread.  
+  
+<a name="Functionality"></a>   
+## Generating different types of random numbers  
+ The random number generator provides methods that let you generate the following kinds of random numbers:  
+  
+-   A series of <xref:System.Byte> values. You determine the number of byte values by passing an array initialized to the number of elements you want the method to return to the <xref:System.Random.NextBytes%2A> method. The following example generates 20 bytes.  
+  
+     [!code-cpp[System.Random#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/nextbytes1.cpp#5)]
+     [!code-csharp[System.Random#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/nextbytes1.cs#5)]
+     [!code-vb[System.Random#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/nextbytes1.vb#5)]  
+  
+-   A single integer. You can choose whether you want an integer from 0 to a maximum value (<xref:System.Int32.MaxValue?displayProperty=fullName> – 1) by calling the <xref:System.Random.Next> method, an integer between 0 and a specific value by calling the <xref:System.Random.Next%28System.Int32%29> method, or an integer within a range of values by calling the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method. In the parameterized overloads, the specified maximum value is exclusive; that is, the actual maximum number generated is one less than the specified value.  
+  
+     The following example calls the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method to generate 10 random numbers between -10 and 10. Note that the second argument to the method specifies the exclusive upper bound of the range of random values returned by the method. In other words, the largest integer that the method can return is one less than this value.  
+  
+     [!code-cpp[System.Random#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/nextex1.cpp#6)]
+     [!code-csharp[System.Random#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/nextex1.cs#6)]
+     [!code-vb[System.Random#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/nextex1.vb#6)]  
+  
+-   A single floating-point value from 0.0 to less than 1.0 by calling the <xref:System.Random.NextDouble%2A> method. The exclusive upper bound of the random number returned by the method is 1, so its actual upper bound is 0.99999999999999978. The following example generates 10 random floating-point numbers.  
+  
+     [!code-cpp[System.Random#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/nextdoubleex1.cpp#7)]
+     [!code-csharp[System.Random#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/nextdoubleex1.cs#7)]
+     [!code-vb[System.Random#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/nextdoubleex1.vb#7)]  
+  
+> [!IMPORTANT]
+>  The <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method allows you to specify the range of the returned random number. However, the `maxValue` parameter, which specifies the upper range returned number, is an exclusive, not an inclusive, value. This means that the method call `Next(0, 100)` returns a value between 0 and 99, and not between 0 and 100.  
+  
+ You can also use the <xref:System.Random> class for such tasks as generating [random T:System.Boolean values](#Boolean), generating [random floating point values with a range other than 0 to 1](#Floats), generating [random 64-bit integers](#Long), and [randomly retrieving a unique element from an array or collection](#UniqueArray). For these and other common tasks, see the [How do you use System.Random to…](#Operations) section.  
+  
+<a name="Overriding"></a>   
+## Substituting your own algorithm  
+ You can implement your own random number generator by inheriting from the <xref:System.Random> class and supplying your random number generation algorithm. To supply your own algorithm, you must override the <xref:System.Random.Sample%2A> method, which implements the random number generation algorithm. You should also override the <xref:System.Random.Next>, <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29>, and <xref:System.Random.NextBytes%2A> methods to ensure that they call your overridden <xref:System.Random.Sample%2A> method. You don't have to override the <xref:System.Random.Next%28System.Int32%29> and <xref:System.Random.NextDouble%2A> methods.  
+  
+ For an example that derives from the <xref:System.Random> class and modifies its default pseudo-random number generator, see the <xref:System.Random.Sample%2A> reference page.  
+  
+<a name="Operations"></a>   
+## How do you use System.Random to…  
+ The following sections discuss and provide sample code for some of the ways you might want to use random numbers in your app.  
+  
+<a name="Same"></a>   
+### Retrieve the same sequence of random values  
+ Sometimes you want to generate the same sequence of random numbers in software test scenarios and in game playing. Testing with the same sequence of random numbers allows you to detect regressions and confirm bug fixes. Using the same sequence of random number in games allows you to replay previous games.  
+  
+ You can generate the same sequence of random numbers by providing the same seed value to the <xref:System.Random.%23ctor%28System.Int32%29> constructor. The seed value provides a starting value for the pseudo-random number generation algorithm. The following example uses 100100 as an arbitrary seed value to instantiate the <xref:System.Random> object, displays 20 random floating-point values, and persists the seed value. It then restores the seed value, instantiates a new random number generator, and displays the same 20 random floating-point values.  Note that the example may produce different sequences of random numbers if run on different versions of the .NET Framework.  
+  
+ [!code-cpp[System.Random#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/same1.cpp#12)]
+ [!code-csharp[System.Random#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/same1.cs#12)]
+ [!code-vb[System.Random#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/same1.vb#12)]  
+  
+<a name="Unique"></a>   
+### Retrieve unique sequences of random numbers  
+ Providing different seed values to instances of the <xref:System.Random> class causes each random number generator to produce a different sequence of values. You can provide a seed value either explicitly by calling the <xref:System.Random.%23ctor%28System.Int32%29> constructor, or implicitly by calling the <xref:System.Random.%23ctor> constructor. Most developers call the parameterless constructor, which uses the system clock. The following example uses this approach to instantiate two <xref:System.Random> instances. Each instance displays a series of 10 random integers.  
+  
+ [!code-cpp[System.Random#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/unique.cpp#13)]
+ [!code-csharp[System.Random#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/unique.cs#13)]
+ [!code-vb[System.Random#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/unique.vb#13)]  
+  
+ However, because of its finite resolution, the system clock doesn't detect time differences that are less than approximately 15 milliseconds. Therefore, if your code calls the <xref:System.Random.%23ctor> overload to instantiate two <xref:System.Random> objects in succession, you might inadvertently be providing the objects with identical seed values. To see this in the previous example, comment out the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method call, and compile and run the example again.  
+  
+ To prevent this from happening, we recommend that you instantiate a single <xref:System.Random> object rather than multiple ones. However, since <xref:System.Random> isn't thread safe, you must use some synchronization device if you access a <xref:System.Random> instance from multiple threads; for more information, see [The Random class and thread safety](#ThreadSafety) earlier in this topic. Alternately, you can use a delay mechanism, such as the <xref:System.Threading.Thread.Sleep%2A> method used in the previous example, to ensure that the instantiations occur more than 15 millisecond apart.  
+  
+<a name="Range"></a>   
+### Retrieve integers in a specified range  
+ You can retrieve integers in a specified range by calling the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method, which lets you specify both the lower and the upper bound of the numbers you'd like the random number generator to return. The upper bound is an exclusive, not an inclusive, value. That is, it isn't included in the range of values returned by the method. The following example uses this method to generate random integers between -10 and 10. Note that it specifies 11, which is one greater than the desired value, as the value of the `maxValue` argument in the method call.  
+  
+ [!code-cpp[System.Random#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/range1.cpp#15)]
+ [!code-csharp[System.Random#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/range1.cs#15)]
+ [!code-vb[System.Random#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/range1.vb#15)]  
+  
+<a name="Digits"></a>   
+### Retrieve integers with a specified number of digits  
+ You can call the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method to retrieve numbers with a specified number of digits. For example, to retrieve numbers with four digits (that is, numbers that range from 1000 to 9999), you call the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method with a `minValue` value of 1000 and a `maxValue` value of 10000, as the following example shows.  
+  
+ [!code-cpp[System.Random#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/range2.cpp#16)]
+ [!code-csharp[System.Random#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/range2.cs#16)]
+ [!code-vb[System.Random#16](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/range2.vb#16)]  
+  
+<a name="Floats"></a>   
+### Retrieve floating-point values in a specified range  
+ The <xref:System.Random.NextDouble%2A> method returns random floating-point values that range from 0 to less than 1. However, you'll often want to generate random values in some other range.  
+  
+ If the interval between the minimum and maximum desired values is 1, you can add the difference between the desired starting interval and 0 to the number returned by the <xref:System.Random.NextDouble%2A> method. The following example does this to generate 10 random numbers between -1 and 0.  
+  
+ [!code-cpp[System.Random#17](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/doublerange2.cpp#17)]
+ [!code-csharp[System.Random#17](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/doublerange2.cs#17)]
+ [!code-vb[System.Random#17](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/doublerange2.vb#17)]  
+  
+ To generate random floating-point numbers whose lower bound is 0 but upper bound is greater than 1 (or, in the case of negative numbers, whose lower bound is less than -1 and upper bound is 0), multiply the random number by the non-zero bound. The following example does this to generate 20 million random floating-point numbers that range from 0 to <xref:System.Int64.MaxValue?displayProperty=fullName>. In also displays the distribution of the random values generated by the method.  
+  
+ [!code-cpp[System.Random#18](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/doublerange1.cpp#18)]
+ [!code-csharp[System.Random#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/doublerange1.cs#18)]
+ [!code-vb[System.Random#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/doublerange1.vb#18)]  
+  
+ To generate random floating-point numbers between two arbitrary values, like the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method does for integers, use the following formula:  
+  
+```  
+Random.NextDouble() * (maxValue – minValue) + minValue  
+```  
+  
+ The following example generates 1 million random numbers that range from 10.0 to 11.0, and displays their distribution.  
+  
+ [!code-cpp[System.Random#19](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/doublerange3.cpp#19)]
+ [!code-csharp[System.Random#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/doublerange3.cs#19)]
+ [!code-vb[System.Random#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/doublerange3.vb#19)]  
+  
+<a name="Boolean"></a>   
+### Generate random Boolean values  
+ The <xref:System.Random> class doesn't provide methods that generate <xref:System.Boolean> values. However, you can define your own class or method to do that. The following example defines a class, `BooleanGenerator`, with a single method, `NextBoolean`. The `BooleanGenerator` class stores a <xref:System.Random> object as a private variable. The `NextBoolean` method calls the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29?displayProperty=fullName> method and passes the result to the <xref:System.Convert.ToBoolean%28System.Int32%29?displayProperty=fullName> method. Note that 2 is used as the argument to specify the upper bound of the random number. Since this is an exclusive value, the method call returns either 0 or 1.  
+  
+ [!code-cpp[System.Random#8](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/booleans1.cpp#8)]
+ [!code-csharp[System.Random#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/booleans1.cs#8)]
+ [!code-vb[System.Random#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/booleans1.vb#8)]  
+  
+ Instead of creating a separate class to generate random <xref:System.Boolean> values, the example could simply have defined a single method. In that case, however, the <xref:System.Random> object should have been defined as a class-level variable to avoid instantiating a new <xref:System.Random> instance in each method call. In Visual Basic, the Random instance can be defined as a [Static](~/docs/visual-basic/language-reference/modifiers/static.md) variable in the `NextBoolean` method.  The following example provides an implementation.  
+  
+ [!code-cpp[System.Random#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/booleans2.cpp#20)]
+ [!code-csharp[System.Random#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/booleans2.cs#20)]
+ [!code-vb[System.Random#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/booleans2.vb#20)]  
+  
+<a name="Long"></a>   
+### Generate random 64-bit integers  
+ The overloads of the <xref:System.Random.Next%2A> method return 32-bit integers. However, in some cases, you might want to work with 64-bit integers. You can do this as follows:  
+  
+1.  Call the <xref:System.Random.NextDouble%2A> method to retrieve a double-precision floating point value.  
+  
+2.  Multiply that value by <xref:System.Int64.MaxValue?displayProperty=fullName>.  
+  
+ The following example uses this technique to generate 20 million random long integers and categorizes them in 10 equal groups. It then evaluates the distribution of the random numbers by counting the number in each group from 0 to <xref:System.Int64.MaxValue?displayProperty=fullName>. As the output from the example shows, the numbers are distributed more or less equally through the range of a long integer.  
+  
+ [!code-cpp[System.Random#14](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/long1.cpp#14)]
+ [!code-csharp[System.Random#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/long1.cs#14)]
+ [!code-vb[System.Random#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/long1.vb#14)]  
+  
+ An alternative technique that uses bit manipulation does not generate truly random numbers. This technique calls <xref:System.Random.Next> to generate two integers, left-shifts one by 32 bits, and ORs them together. This technique has two limitations:  
+  
+1.  Because bit 31 is the sign bit, the value in bit 31 of the resulting long integer is always 0.  This can be addressed by generating a random 0 or 1, left-shifting it 31 bits, and ORing it with the original random long integer.  
+  
+2.  More seriously, because the probability that the value returned by <xref:System.Random.Next> will be 0, there will be few if any random numbers in the range 0x0-0x00000000FFFFFFFF.  
+  
+<a name="Bytes"></a>   
+### Retrieve bytes in a specified range  
+ The overloads of the <xref:System.Random.Next%2A> method allow you to specify the range of random numbers, but the <xref:System.Random.NextBytes%2A> method does not. The following example implements a `NextBytes` method that lets you specify the range of the returned bytes. It defines a `Random2` class that derives from <xref:System.Random> and overloads its `NextBytes` method.  
+  
+ [!code-cpp[System.Random#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/bytes1.cpp#9)]
+ [!code-csharp[System.Random#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/bytes1.cs#9)]
+ [!code-vb[System.Random#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/bytes1.vb#9)]  
+  
+ The `NextBytes(Byte[], Byte, Byte)` method wraps a call to the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method and specifies the minimum value and one greater than the maximum value (in this case, 0 and 101) that we want returned in the byte array. Because we are sure that the integer values returned by the <xref:System.Random.Next%2A> method are within the range of the <xref:System.Byte> data type, we can safely cast them (in C#) or convert them (in Visual Basic) from integers to bytes.  
+  
+<a name="Array"></a>   
+### Retrieve an element from an array or collection at random  
+ Random numbers often serve as indexes to retrieve values from arrays or collections. To retrieve a random index value, you can call the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> method, and use the lower bound of the array as the value of its `minValue` argument and one greater than the upper bound of the array as the value of its `maxValue` argument. For a zero-based array, this is equivalent to its <xref:System.Array.Length%2A> property, or one greater than the value returned by the <xref:System.Array.GetUpperBound%2A?displayProperty=fullName> method. The following example randomly retrieves the name of a city in the United States from an array of cities.  
+  
+ [!code-cpp[System.Random#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/array1.cpp#10)]
+ [!code-csharp[System.Random#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/array1.cs#10)]
+ [!code-vb[System.Random#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/array1.vb#10)]  
+  
+<a name="UniqueArray"></a>   
+### Retrieve a unique element from an array or collection  
+ A random number generator can always return duplicate values. As the range of numbers becomes smaller or the number of values generated becomes larger, the probability of duplicates grows. If random values must be unique, more numbers are generated to compensate for duplicates, resulting in increasingly poor performance.  
+  
+ There are a number of techniques to handle this scenario. One common solution is to create an array or collection that contains the values to be retrieved, and a parallel array that contains random floating-point numbers. The second array is populated with random numbers at the time the first array is created, and the <xref:System.Array.Sort%28System.Array%2CSystem.Array%29?displayProperty=fullName> method is used to sort the first array by using the values in the parallel array.  
+  
+ For example, if you're developing a Solitaire game, you want to ensure that each card is used only once. Instead of generating random numbers to retrieve a card and tracking whether that card has already been dealt, you can create a parallel array of random numbers that can be used to sort the deck. Once the deck is sorted, your app can maintain a pointer to indicate the index of the next card on the deck.  
+  
+ The following example illustrates this approach. It defines a `Card` class that represents a playing card and a `Dealer` class that deals a deck of shuffled cards. The `Dealer` class constructor populates two arrays: a `deck` array that has class scope and that represents all the cards in the deck; and a local `order` array that has the same number of elements as the `deck` array and is populated with randomly generated <xref:System.Double> values.  The <xref:System.Array.Sort%28System.Array%2CSystem.Array%29?displayProperty=fullName> method is then called to sort the `deck` array based on the values in the `order` array.  
+  
+ [!code-cpp[System.Random#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/uniquearray1.cpp#11)]
+ [!code-csharp[System.Random#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/uniquearray1.cs#11)]
+ [!code-vb[System.Random#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/uniquearray1.vb#11)]  
+  
+   
+  
+## Examples  
+ The following example creates a single random number generator and calls its <xref:System.Random.NextBytes%2A>, <xref:System.Random.Next%2A>, and <xref:System.Random.NextDouble%2A> methods to generate sequences of random numbers within different ranges.  
+  
+ [!code-cpp[System.Random#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/random2.cpp#2)]
+ [!code-csharp[System.Random#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/Random2.cs#2)]
+ [!code-vb[System.Random#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/Random2.vb#2)]  
+  
+ The following example generates a random integer that it uses as an index to retrieve a string value from an array.  
+  
+ [!code-cpp[System.Random.Next#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Next/CPP/next1.cpp#3)]
+ [!code-csharp[System.Random.Next#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Next/CS/next1.cs#3)]
+ [!code-vb[System.Random.Next#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Next/VB/next1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>In the .NET Framework 1.0 and 1.1, a minimum implementation of a class derived from <see cref="T:System.Random" /> required overriding the <see cref="M:System.Random.Sample" /> method to define a new or modified algorithm for generating random numbers. The derived class could then rely on the base class implementation of the <see cref="M:System.Random.Next" />, <see cref="M:System.Random.Next(System.Int32)" />, <see cref="M:System.Random.Next(System.Int32,System.Int32)" />, <see cref="M:System.Random.NextBytes(System.Byte[])" />, and <see cref="M:System.Random.NextDouble" /> methods to call the derived class implementation of the <see cref="M:System.Random.Sample" /> method.  
+  
+ In the .NET Framework 2.0 and later, the behavior of the <see cref="M:System.Random.Next" />, <see cref="M:System.Random.Next(System.Int32,System.Int32)" />, and <see cref="M:System.Random.NextBytes(System.Byte[])" /> methods have changed so that these methods do not necessarily call the derived class implementation of the <see cref="M:System.Random.Sample" /> method. As a result, classes derived from <see cref="T:System.Random" /> that target the .NET Framework 2.0 and later should also override these three methods.</para>
+    </block>
+    <block subset="none" type="usage">
+      <para>The implementation of the random number generator in the <see cref="T:System.Random" /> class isn't guaranteed to remain the same across major versions of the .NET Framework. As a result, you shouldn't assume that the same seed will result in the same pseudo-random sequence in different versions of the .NET Framework.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Random ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Random.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Random" /> class, using a time-dependent default seed value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default seed value is derived from the system clock and has finite resolution. As a result, different <xref:System.Random> objects that are created in close succession by a call to the default constructor will have identical default seed values and, therefore, will produce identical sets of random numbers. This problem can be avoided by using a single <xref:System.Random> object to generate all random numbers. You can also work around it by modifying the seed value returned by the system clock and then explicitly providing this new seed value to the <xref:System.Random.%23ctor%28System.Int32%29> constructor. For more information, see the <xref:System.Random.%23ctor%28System.Int32%29> constructor.  
+  
+ Call this constructor if you want your random number generator to generate a random sequence of numbers. To generate a fixed  sequence of random numbers that will be the same for different random number generators, call the <xref:System.Random.%23ctor%28System.Int32%29> constructor with a fixed seed value . This <xref:System.Random> constructor overload is frequently used when testing apps that use random numbers.  
+  
+ Once you've instantiated the random number generator, you call individual <xref:System.Random> methods, such as <xref:System.Random.Next> or <xref:System.Random.NextDouble>, to generate random numbers.  
+  
+   
+  
+## Examples  
+ The following example uses the default constructor to instantiate three <xref:System.Random> objects and displays a sequence of five random integers for each. Because the first two <xref:System.Random> objects are created in close succession, they are instantiated using identical seed values based on the system clock and, therefore, they produce an identical sequence of random numbers. On the other hand, the default constructor of the third <xref:System.Random> object is called after a two-second delay caused by calling the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method. Because this produces a different seed value for the third <xref:System.Random> object, it produces a different sequence of random numbers.  
+  
+ [!code-csharp[System.Random.Ctor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Ctor/CS/ctor1.cs#2)]
+ [!code-vb[System.Random.Ctor#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Ctor/VB/ctor1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Random (int Seed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 Seed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Random.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="Seed" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Seed">A number used to calculate a starting value for the pseudo-random number sequence. If a negative number is specified, the absolute value of the number is used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Random" /> class, using the specified seed value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Providing an identical seed value to different <xref:System.Random> objects causes each instance to produce identical sequences of random numbers. This is often done when testing apps that rely on random number generators.  
+  
+ If your application requires different random number sequences, invoke this constructor repeatedly with different seed values. One way to produce a unique seed value is to make it time-dependent. For example, derive the seed value from the system clock, as the <xref:System.Random.%23ctor> overload does. However, the system clock might not have sufficient resolution to provide different invocations of this constructor with a different seed value. This results in random number generators that generate identical sequences of pseudo-random numbers, as illustrated by the first two <xref:System.Random> objects in the following example. To prevent this, apply an algorithm to differentiate the seed value in each invocation, or call the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method to ensure that you provide each constructor with a different seed value.  
+  
+ [!code-csharp[System.Random.Ctor#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Ctor/CS/ctor4.cs#4)]
+ [!code-vb[System.Random.Ctor#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Ctor/VB/ctor4.vb#4)]  
+  
+ Another option is to instantiate a single <xref:System.Random> object that you use to generate all the random numbers in your application. This yields slightly better performance, since instantiating a random number generator is fairly expensive.  
+  
+   
+  
+## Examples  
+ The following example creates <xref:System.Random> objects with the class constructor that takes a seed parameter and generates a sequence of random integers and doubles. The example illustrates that the same sequence is generated when the <xref:System.Random> object is created again with the constructor and seed parameter.  
+  
+ [!code-cpp[System.Random.Ctor#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Ctor/CPP/ctor.cpp#1)]
+ [!code-csharp[System.Random.Ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Ctor/CS/ctor.cs#1)]
+ [!code-vb[System.Random.Ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Ctor/VB/ctor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public virtual int Next ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Random.Next" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a non-negative random integer.</summary>
+        <returns>A 32-bit signed integer that is greater than or equal to 0 and less than <see cref="F:System.Int32.MaxValue" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Random.Next%2A?displayProperty=fullName> generates a random number whose value ranges from 0 to less than <xref:System.Int32?displayProperty=fullName>. To generate a random number whose value ranges from 0 to some other positive number, use the <xref:System.Random.Next%28System.Int32%29?displayProperty=fullName> method overload. To generate a random number within a different range, use the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29?displayProperty=fullName> method overload.  
+  
+   
+  
+## Examples  
+ The following example makes repeated calls to the <xref:System.Random.Next%2A> method to generate a specific number of random numbers requested by the user. The <xref:System.Console.ReadLine%2A?displayProperty=fullName> method is used to get customer input.  
+  
+ [!code-cpp[System.Random.Next#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Next/CPP/next3.cpp#5)]
+ [!code-csharp[System.Random.Next#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Next/CS/next3.cs#5)]
+ [!code-vb[System.Random.Next#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Next/VB/next3.vb#5)]  
+  
+ The following example derives a class from <xref:System.Random> to generate a sequence of random numbers whose distribution differs from the uniform distribution generated by the <xref:System.Random.Sample%2A> method of the base class. It overrides the <xref:System.Random.Sample%2A> method to provide the distribution of random numbers, and overrides the <xref:System.Random.Next%2A?displayProperty=fullName> method to use series of random numbers.  
+  
+ [!code-cpp[System.Random.Sample#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Sample/cpp/sampleex.cpp#1)]
+ [!code-csharp[System.Random.Sample#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Sample/CS/sample.cs#1)]
+ [!code-vb[System.Random.Sample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Sample/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Starting with the .NET Framework version 2.0, if you derive a class from <see cref="T:System.Random" /> and override the <see cref="M:System.Random.Sample" /> method, the distribution provided by the derived class implementation of the <see cref="M:System.Random.Sample" /> method is not used in calls to the base class implementation of the <see cref="M:System.Random.Next" /> method. Instead, the uniform distribution returned by the base <see cref="T:System.Random" /> class is used. This behavior improves the overall performance of the <see cref="T:System.Random" /> class. To modify this behavior to call the <see cref="M:System.Random.Sample" /> method in the derived class, you must also override the <see cref="M:System.Random.Next" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public virtual int Next (int maxValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 maxValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Random.Next(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxValue" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="maxValue">The exclusive upper bound of the random number to be generated. <c>maxValue</c> must be greater than or equal to 0.</param>
+        <summary>Returns a non-negative random integer that is less than the specified maximum.</summary>
+        <returns>A 32-bit signed integer that is greater than or equal to 0, and less than <paramref name="maxValue" />; that is, the range of return values ordinarily includes 0 but not <paramref name="maxValue" />. However, if <paramref name="maxValue" /> equals 0, <paramref name="maxValue" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Random.Next%28System.Int32%29> overload returns random integers that range from 0 to `maxValue` – 1. However, if `maxValue` is 0, the method returns 0.  
+  
+   
+  
+## Examples  
+ The following example generates random integers with various overloads of the <xref:System.Random.Next%2A> method.  
+  
+ [!code-cpp[System.Random.Next#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Next/CPP/next.cpp#1)]
+ [!code-csharp[System.Random.Next#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Next/CS/next.cs#1)]
+ [!code-vb[System.Random.Next#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Next/VB/next.vb#1)]  
+  
+ The following example generates a random integer that it uses as an index to retrieve a string value from an array. Because the highest index of the array is one less than its length, the value of the <xref:System.Array.Length%2A?displayProperty=fullName> property is supplied as a the `maxValue` parameter.  
+  
+ [!code-cpp[System.Random.Next#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Next/CPP/next1.cpp#3)]
+ [!code-csharp[System.Random.Next#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Next/CS/next1.cs#3)]
+ [!code-vb[System.Random.Next#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Next/VB/next1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="maxValue" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public virtual int Next (int minValue, int maxValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 minValue, int32 maxValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Random.Next(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="minValue" Type="System.Int32" />
+        <Parameter Name="maxValue" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="minValue">The inclusive lower bound of the random number returned.</param>
+        <param name="maxValue">The exclusive upper bound of the random number returned. <c>maxValue</c> must be greater than or equal to <c>minValue</c>.</param>
+        <summary>Returns a random integer that is within a specified range.</summary>
+        <returns>A 32-bit signed integer greater than or equal to <paramref name="minValue" /> and less than <paramref name="maxValue" />; that is, the range of return values includes <paramref name="minValue" /> but not <paramref name="maxValue" />. If <paramref name="minValue" /> equals <paramref name="maxValue" />, <paramref name="minValue" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29> overload returns random integers that range from `minValue` to `maxValue` – 1. However, if `maxValue` equals `minValue`, the method returns `minValue`.  
+  
+ Unlike the other overloads of the <xref:System.Random.Next%2A> method, which return only non-negative values, this method can return a negative random integer.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Random.Next%28System.Int32%2CSystem.Int32%29?displayProperty=fullName> method to generate random integers with three distinct ranges. Note that the exact output from the example depends on the system-supplied seed value passed to the <xref:System.Random> class constructor.  
+  
+ [!code-cpp[System.Random.Next#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Next/CPP/next2.cpp#2)]
+ [!code-csharp[System.Random.Next#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Next/CS/Next2.cs#2)]
+ [!code-vb[System.Random.Next#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Next/VB/next2.vb#2)]  
+  
+ The following example generates a random integer that it uses as an index to retrieve a string value from an array. Because the highest index of the array is one less than its length, the value of the <xref:System.Array.Length%2A?displayProperty=fullName> property is supplied as a the `maxValue` parameter.  
+  
+ [!code-cpp[System.Random.Next#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Next/CPP/next4.cpp#4)]
+ [!code-csharp[System.Random.Next#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Next/CS/next4.cs#4)]
+ [!code-vb[System.Random.Next#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Next/VB/next4.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="minValue" /> is greater than <paramref name="maxValue" />.</exception>
+        <block subset="none" type="overrides">
+          <para>Starting with the .NET Framework version 2.0, if you derive a class from <see cref="T:System.Random" /> and override the <see cref="M:System.Random.Sample" /> method, the distribution provided by the derived class implementation of the <see cref="M:System.Random.Sample" /> method is not used in calls to the base class implementation of the <see cref="M:System.Random.Next(System.Int32,System.Int32)" /> method overload if the difference between the <paramref name="minValue" /> and <paramref name="maxValue" /> parameters is greater than <see cref="F:System.Int32.MaxValue" />. Instead, the uniform distribution returned by the base <see cref="T:System.Random" /> class is used. This behavior improves the overall performance of the <see cref="T:System.Random" /> class. To modify this behavior to call the <see cref="M:System.Random.Sample" /> method in the derived class, you must also override the <see cref="M:System.Random.Next(System.Int32,System.Int32)" /> method overload.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="NextBytes">
+      <MemberSignature Language="C#" Value="public virtual void NextBytes (byte[] buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NextBytes(unsigned int8[] buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Random.NextBytes(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">An array of bytes to contain random numbers.</param>
+        <summary>Fills the elements of a specified array of bytes with random numbers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each element of the array of bytes is set to a random number greater than or equal to 0, and less than or equal to <xref:System.Byte>.  
+  
+ For example, to generate a cryptographically secured random number suitable for creating a random password, use a method such as <xref:System.Security.Cryptography.RNGCryptoServiceProvider.GetBytes%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Random.NextBytes%2A> method to fill an array of bytes with random byte values.  
+  
+ [!code-cpp[Classic Random.NextBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Random.NextBytes Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Random.NextBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Random.NextBytes Example/CS/source.cs#1)]
+ [!code-vb[Classic Random.NextBytes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Random.NextBytes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="buffer" /> is <see langword="null" />.</exception>
+        <block subset="none" type="overrides">
+          <para>Starting with the .NET Framework version 2.0, if you derive a class from <see cref="T:System.Random" /> and override the <see cref="M:System.Random.Sample" /> method, the distribution provided by the derived class implementation of the <see cref="M:System.Random.Sample" /> method is not used in calls to the base class implementation of the <see cref="M:System.Random.NextBytes(System.Byte[])" /> method. Instead, the uniform distribution returned by the base <see cref="T:System.Random" /> class is used. This behavior improves the overall performance of the <see cref="T:System.Random" /> class. To modify this behavior to call the <see cref="M:System.Random.Sample" /> method in the derived class, you must also override the <see cref="M:System.Random.NextBytes(System.Byte[])" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="NextDouble">
+      <MemberSignature Language="C#" Value="public virtual double NextDouble ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 NextDouble() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Random.NextDouble" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a random floating-point number that is greater than or equal to 0.0, and less than 1.0.</summary>
+        <returns>A double-precision floating point number that is greater than or equal to 0.0, and less than 1.0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The actual upper bound of the random number returned by this method is 0.99999999999999978.  
+  
+ To retrieve random floating-point values within a range other than 0.0 and 1.0, see the "Retrieve floating-point values in a specified range" section of the <xref:System.Random> class topic.  
+  
+ This method is the public version of the protected method, <xref:System.Random.Sample%2A>.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Random.NextDouble%2A> method to generate sequences of random doubles.  
+  
+ [!code-cpp[System.Random.Ctor#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Ctor/CPP/ctor.cpp#1)]
+ [!code-csharp[System.Random.Ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Ctor/CS/ctor.cs#1)]
+ [!code-vb[System.Random.Ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Ctor/VB/ctor.vb#1)]  
+  
+ The following example calls the <xref:System.Random.NextDouble%2A> method to generate 100 random numbers and displays their frequency distribution.  
+  
+ [!code-csharp[System.Random.NextDouble#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.random.nextdouble/cs/nextdouble1.cs#2)]
+ [!code-vb[System.Random.NextDouble#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.random.nextdouble/vb/nextdouble1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sample">
+      <MemberSignature Language="C#" Value="protected virtual double Sample ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance float64 Sample() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Random.Sample" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a random floating-point number between 0.0 and 1.0.</summary>
+        <returns>A double-precision floating point number that is greater than or equal to 0.0, and less than 1.0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To produce a different random distribution or a different random number generator principle, derive a class from the <xref:System.Random> class and override the <xref:System.Random.Sample%2A> method.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Random.Sample%2A> method is `protected`, which means that it is accessible only within the <xref:System.Random> class and its derived classes. To generate a random number between 0 and 1 from a <xref:System.Random> instance, call the <xref:System.Random.NextDouble%2A> method.  
+  
+   
+  
+## Examples  
+ The following example derives a class from <xref:System.Random> and overrides the <xref:System.Random.Sample%2A> method to generate a distribution of random numbers. This distribution is different than the uniform distribution generated by the <xref:System.Random.Sample%2A> method of the base class.  
+  
+ [!code-cpp[System.Random.Sample#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random.Sample/cpp/sampleex.cpp#1)]
+ [!code-csharp[System.Random.Sample#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random.Sample/CS/sample.cs#1)]
+ [!code-vb[System.Random.Sample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random.Sample/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Starting with the .NET Framework version 2.0, if you derive a class from <see cref="T:System.Random" /> and override the <see cref="M:System.Random.Sample" /> method, the distribution provided by the derived class implementation of the <see cref="M:System.Random.Sample" /> method is not used in calls to the base class implementation of the following methods:  
+  
+-   The <see cref="M:System.Random.NextBytes(System.Byte[])" /> method.  
+  
+-   The <see cref="M:System.Random.Next" /> method.  
+  
+-   The <see cref="M:System.Random.Next(System.Int32,System.Int32)" /> method, if (<paramref name="maxValue" /> - <paramref name="minValue" />) is greater than <see cref="F:System.Int32.MaxValue" />.  
+  
+ Instead, the uniform distribution provided by the base <see cref="T:System.Random" /> class is used. This behavior improves the overall performance of the <see cref="T:System.Random" /> class. To modify this behavior to call the implementation of the <see cref="M:System.Random.Sample" /> method in the derived class, you must also override the behavior of these three members. The example provides an illustration.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

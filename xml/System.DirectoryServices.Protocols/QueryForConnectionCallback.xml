@@ -1,0 +1,34 @@
+<Type Name="QueryForConnectionCallback" FullName="System.DirectoryServices.Protocols.QueryForConnectionCallback">
+  <TypeSignature Language="C#" Value="public delegate System.DirectoryServices.Protocols.LdapConnection QueryForConnectionCallback(LdapConnection primaryConnection, LdapConnection referralFromConnection, string newDistinguishedName, LdapDirectoryIdentifier identifier, NetworkCredential credential, long currentUserToken);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryForConnectionCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="primaryConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="referralFromConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="newDistinguishedName" Type="System.String" />
+    <Parameter Name="identifier" Type="System.DirectoryServices.Protocols.LdapDirectoryIdentifier" />
+    <Parameter Name="credential" Type="System.Net.NetworkCredential" />
+    <Parameter Name="currentUserToken" Type="System.Int64" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.DirectoryServices.Protocols.LdapConnection</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="primaryConnection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the primary connection.</param>
+    <param name="referralFromConnection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection that provides the referral.</param>
+    <param name="newDistinguishedName">A <see cref="T:System.String" /> object that specifies the distinguished name (DN) of the desired entry in the referred server.</param>
+    <param name="identifier">A <see cref="T:System.DirectoryServices.Protocols.LdapDirectoryIdentifier" /> object that specifies the identifier for the referred LDAP directory.</param>
+    <param name="credential">A <see cref="T:System.Net.NetworkCredential" /> object that specifies the credentials to pass to the referred server.</param>
+    <param name="currentUserToken">The LUID for the current user.</param>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" /> delegate determines whether there is a cached connection available for use.</summary>
+    <returns>A cached <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> is returned, if there is one available. If no cached connection is available, <see langword="NULL" /> is returned.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

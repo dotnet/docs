@@ -1,0 +1,144 @@
+<Type Name="ServiceOperationRights" FullName="System.Data.Services.ServiceOperationRights">
+  <TypeSignature Language="C#" Value="public enum ServiceOperationRights" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceOperationRights extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.ServiceOperationRights" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An enumeration used to define access rights to service operations deployed by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets all rights access to the service operation `OrdersByCity`.  
+  
+```  
+namespace AccountingServiceWebApp  
+{  
+  public class AccountingService : DataService<DataModel>  
+  {  
+      public static void InitializeService(IDataServiceConfiguration config)  
+      {  
+          config.SetServiceOperationAccessRule("OrdersInCity", ServiceOperationRights.All);  
+      }  
+      public IQueryable<Orders> OrdersByCity(string city)  
+      {  
+          return this.CurrentDataSource.Orders.Where(o => o.ShippingCity == city);  
+      }  
+  }  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights All = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All rights assigned to the service operation..</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllRead">
+      <MemberSignature Language="C#" Value="AllRead" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights AllRead = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.AllRead" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to read single or multiple data items deployed by the service operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No authorization to access the service operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideEntitySetRights">
+      <MemberSignature Language="C#" Value="OverrideEntitySetRights" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights OverrideEntitySetRights = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.OverrideEntitySetRights" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Overrides entity set rights that are explicitly defined in the data service with the service operation rights.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMultiple">
+      <MemberSignature Language="C#" Value="ReadMultiple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights ReadMultiple = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.ReadMultiple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to read multiple data items by using the service operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSingle">
+      <MemberSignature Language="C#" Value="ReadSingle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights ReadSingle = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.ReadSingle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to read a single data item by using the service operation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

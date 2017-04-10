@@ -1,0 +1,147 @@
+<Type Name="TriggerBase" FullName="System.Windows.TriggerBase">
+  <TypeSignature Language="C#" Value="public abstract class TriggerBase : System.Windows.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TriggerBase extends System.Windows.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TriggerBase" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the base class for specifying a conditional value within a <see cref="T:System.Windows.Style" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] styling and templating model allows you to specify triggers within your <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate>, and <xref:System.Windows.DataTemplate>. Essentially, <xref:System.Windows.TriggerBase> is the base class for objects that allow you to apply changes when certain conditions (such as when a certain property value becomes `true`, or when an event occurs) are satisfied.  
+  
+   
+  
+## Examples  
+ There are several different types of triggers: <xref:System.Windows.Trigger>, <xref:System.Windows.MultiTrigger>, <xref:System.Windows.EventTrigger>, <xref:System.Windows.DataTrigger>, and <xref:System.Windows.MultiDataTrigger>.  
+  
+ The <xref:System.Windows.Trigger> class is the simplest type of triggers. A <xref:System.Windows.Trigger> object allows you to apply changes based on the value of a property. For example, the following example shows a named <xref:System.Windows.Style> available to <xref:System.Windows.Controls.Button> controls. The <xref:System.Windows.Style> defines a <xref:System.Windows.Trigger> element that changes the <xref:System.Windows.Controls.Control.Foreground%2A> property of a button when the <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> property is `true`.  
+  
+ [!code-xml[BtnStyles#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BtnStyles/CS/app.xaml#2)]  
+  
+ If you need to apply changes based on the state of multiple properties, you can use the <xref:System.Windows.MultiTrigger>. For an example, see the <xref:System.Windows.MultiTrigger> page.  
+  
+ The <xref:System.Windows.EventTrigger> class allows you to apply changes when an event occurs. The following example contains two <xref:System.Windows.EventTrigger> objects, one of which occurs when the mouse enters the element and the other occurs when the mouse leaves the element.  
+  
+ [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleEventTriggerAnimation/CS/Default.xaml#eventtriggersnippet)]
+ <!-- TODO: review snippet reference [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleEventTriggerAnimation/XAML/Default.xaml#eventtriggersnippet)]  -->  
+  
+ These are also the <xref:System.Windows.DataTrigger> and the <xref:System.Windows.MultiDataTrigger> classes. These are similar to <xref:System.Windows.Trigger> and <xref:System.Windows.MultiTrigger> except that they are for data-bound properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnterActions">
+      <MemberSignature Language="C#" Value="public System.Windows.TriggerActionCollection EnterActions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TriggerActionCollection EnterActions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.TriggerBase.EnterActions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.TriggerActionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Windows.TriggerAction" /> objects to apply when the trigger object becomes active. This property does not apply to the <see cref="T:System.Windows.EventTrigger" /> class.</summary>
+        <value>The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not apply to the <xref:System.Windows.EventTrigger> class because an event represents a point in time while <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> correspond to object states. For <xref:System.Windows.EventTrigger> objects, use the <xref:System.Windows.EventTrigger.Actions%2A> property instead.  
+  
+> [!NOTE]
+>  This property can only be set in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] via the collection syntax shown, or by accessing the collection object and using its various methods such as Add. The property to access the collection object itself is read-only, the collection itself is read-write.  
+  
+<a name="xamlPropertyElementUsage_EnterActions"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.EnterActions>  
+    OneOrMoreTriggerActions  
+  </object.EnterActions >  
+</object>  
+```  
+  
+<a name="xamlValues_EnterActions"></a>   
+## XAML Values  
+ *OneOrMoreTriggerActions*  
+ One or more <xref:System.Windows.TriggerAction> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitActions">
+      <MemberSignature Language="C#" Value="public System.Windows.TriggerActionCollection ExitActions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TriggerActionCollection ExitActions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.TriggerBase.ExitActions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.TriggerActionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Windows.TriggerAction" /> objects to apply when the trigger object becomes inactive. This property does not apply to the <see cref="T:System.Windows.EventTrigger" /> class.</summary>
+        <value>The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not apply to the <xref:System.Windows.EventTrigger> class because an event represents a point in time while <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> correspond to object states. For <xref:System.Windows.EventTrigger> objects, use the <xref:System.Windows.EventTrigger.Actions%2A> property instead.  
+  
+> [!NOTE]
+>  This property can only be set in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] via the collection syntax shown, or by accessing the collection object and using its various methods such as Add. The property to access the collection object itself is read-only, the collection itself is read-write.  
+  
+<a name="xamlPropertyElementUsage_ExitActions"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.ExitActions>  
+    OneOrMoreTriggerActions  
+  </object.ExitActions >  
+</object>  
+```  
+  
+<a name="xamlValues_ExitActions"></a>   
+## XAML Values  
+ *OneOrMoreTriggerActions*  
+ One or more <xref:System.Windows.TriggerAction> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

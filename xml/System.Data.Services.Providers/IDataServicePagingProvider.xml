@@ -1,0 +1,77 @@
+<Type Name="IDataServicePagingProvider" FullName="System.Data.Services.Providers.IDataServicePagingProvider">
+  <TypeSignature Language="C#" Value="public interface IDataServicePagingProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServicePagingProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.IDataServicePagingProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides paging support for the clients of a custom data service provider.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetContinuationToken">
+      <MemberSignature Language="C#" Value="public object[] GetContinuationToken (System.Collections.IEnumerator enumerator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetContinuationToken(class System.Collections.IEnumerator enumerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServicePagingProvider.GetContinuationToken(System.Collections.IEnumerator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enumerator" Type="System.Collections.IEnumerator" />
+      </Parameters>
+      <Docs>
+        <param name="enumerator">Enumerator for which the continuation token is being requested.</param>
+        <summary>Returns the next-page token to put in the <see langword="$skiptoken" /> query option.</summary>
+        <returns>The next-page token as a collection of primitive types.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns a `null` value when paging is not required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContinuationToken">
+      <MemberSignature Language="C#" Value="public void SetContinuationToken (System.Linq.IQueryable query, System.Data.Services.Providers.ResourceType resourceType, object[] continuationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetContinuationToken(class System.Linq.IQueryable query, class System.Data.Services.Providers.ResourceType resourceType, object[] continuationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServicePagingProvider.SetContinuationToken(System.Linq.IQueryable,System.Data.Services.Providers.ResourceType,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.Linq.IQueryable" />
+        <Parameter Name="resourceType" Type="System.Data.Services.Providers.ResourceType" />
+        <Parameter Name="continuationToken" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="query">Query for which the continuation token is being provided.</param>
+        <param name="resourceType">Resource type of the result on which the <see langword="$skip" /> token is to be applied.</param>
+        <param name="continuationToken">Continuation token parsed into primitive type values.</param>
+        <summary>Gets the next-page token from the <see langword="$skiptoken" /> query option in the request URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.Providers.IDataServicePagingProvider.SetContinuationToken%2A> method gets the next-page token from the `$skiptoken` in the request URI, parsed into primitive values, for the provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

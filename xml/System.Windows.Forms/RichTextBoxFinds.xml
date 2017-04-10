@@ -1,0 +1,119 @@
+<Type Name="RichTextBoxFinds" FullName="System.Windows.Forms.RichTextBoxFinds">
+  <TypeSignature Language="C#" Value="public enum RichTextBoxFinds" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RichTextBoxFinds extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxFinds" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how a text search is carried out in a <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application locates text in the <xref:System.Windows.Forms.RichTextBox> control by calling the <xref:System.Windows.Forms.RichTextBox.Find%2A> method of the <xref:System.Windows.Forms.RichTextBox> control. This enumeration enables you to specify how the search is performed when the <xref:System.Windows.Forms.RichTextBox.Find%2A> method is called. You can combine one or more values from this enumeration to specify more than one search option when calling the <xref:System.Windows.Forms.RichTextBox.Find%2A> method.  
+  
+   
+  
+## Examples  
+ The following example searches the entire contents of a <xref:System.Windows.Forms.RichTextBox> for the first instance of a search string passed into the text parameter of the method. The search starting location is specified by the start parameter of the method. If the search string is found in the <xref:System.Windows.Forms.RichTextBox>, the method returns the index location of the first character of the found text and highlights the found text; otherwise, it returns a value of -1. The example also specifies options in the search to match the case of the specified search string. The example assumes that this method is placed in the class of a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.RichTextBox> named `richTextBox1`. You can use this example when performing a "Find Next" type operation once the first instance of search text has been found to find other instances of the text.  
+  
+ [!code-cpp[Classic RichTextBox.Find2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic RichTextBox.Find2 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic RichTextBox.Find2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic RichTextBox.Find2 Example/CS/source.cs#1)]
+ [!code-vb[Classic RichTextBox.Find2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic RichTextBox.Find2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MatchCase">
+      <MemberSignature Language="C#" Value="MatchCase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds MatchCase = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.MatchCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Locate only instances of the search text that have the exact casing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoHighlight">
+      <MemberSignature Language="C#" Value="NoHighlight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds NoHighlight = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.NoHighlight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The search text, if found, should not be highlighted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Locate all instances of the search text, whether the instances found in the search are whole words or not.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reverse">
+      <MemberSignature Language="C#" Value="Reverse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds Reverse = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.Reverse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The search starts at the end of the control's document and searches to the beginning of the document.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WholeWord">
+      <MemberSignature Language="C#" Value="WholeWord" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds WholeWord = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.WholeWord" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Locate only instances of the search text that are whole words.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

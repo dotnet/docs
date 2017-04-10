@@ -1,0 +1,53 @@
+<Type Name="CustomAttributeNamedArgumentKind" FullName="System.Reflection.Metadata.CustomAttributeNamedArgumentKind">
+  <TypeSignature Language="C#" Value="public enum CustomAttributeNamedArgumentKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomAttributeNamedArgumentKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.CustomAttributeNamedArgumentKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Field">
+      <MemberSignature Language="C#" Value="Field" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.CustomAttributeNamedArgumentKind Field = unsigned int8(83)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.CustomAttributeNamedArgumentKind.Field" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.CustomAttributeNamedArgumentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="Property" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.CustomAttributeNamedArgumentKind Property = unsigned int8(84)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.CustomAttributeNamedArgumentKind.Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.CustomAttributeNamedArgumentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

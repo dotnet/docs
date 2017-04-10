@@ -1,0 +1,131 @@
+<Type Name="RegExpObject" FullName="Microsoft.JScript.RegExpObject">
+  <TypeSignature Language="C#" Value="public sealed class RegExpObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegExpObject extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.RegExpObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a regular expression object. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="global">
+      <MemberSignature Language="C#" Value="public bool global { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool global" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpObject.global" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether searches are performed with the global flag (<c>/g</c>), matching all occurrences.</summary>
+        <value>
+          <see langword="true" /> if global searches are performed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ignoreCase">
+      <MemberSignature Language="C#" Value="public bool ignoreCase { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ignoreCase" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpObject.ignoreCase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether searches are performed with the case-insensitive flag (<c>/i</c>).</summary>
+        <value>
+          <see langword="true" /> if case-insensitive searches are performed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lastIndex">
+      <MemberSignature Language="C#" Value="public object lastIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object lastIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpObject.lastIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the last successful match.</summary>
+        <value>The index of the last successful match, if there was one.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="multiline">
+      <MemberSignature Language="C#" Value="public bool multiline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool multiline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpObject.multiline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether searches are performed with the multiline flag (<c>/m</c>).</summary>
+        <value>
+          <see langword="true" /> if searches are performed in multiline mode; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="source">
+      <MemberSignature Language="C#" Value="public string source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpObject.source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the regular expression pattern that is represented by this object.</summary>
+        <value>The regular expression pattern that is represented by this object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpObject.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a string representation of this object that contains the regular expression pattern and flags.</summary>
+        <returns>A string representation of this object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

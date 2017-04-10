@@ -1,0 +1,129 @@
+<Type Name="BinaryClientFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider">
+  <TypeSignature Language="C#" Value="public class BinaryClientFormatterSinkProvider : System.Runtime.Remoting.Channels.IClientFormatterSinkProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryClientFormatterSinkProvider extends System.Object implements class System.Runtime.Remoting.Channels.IClientChannelSinkProvider, class System.Runtime.Remoting.Channels.IClientFormatterSinkProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IClientFormatterSinkProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the implementation for the binary client formatter sink provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider> creates client formatter sinks that use the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> to serialize messages for the client channel through which remoting messages flow.  
+  
+ The function of the formatter sink is to generate the necessary headers and serialize the message to the stream. After the formatter sink, the <xref:System.Runtime.Remoting.Messaging.IMessage> is forwarded to all sinks in the channel sink chain through the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> or <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A> calls. At this stage, the message has already been serialized and is provided as information only. Sinks that need to create or modify the message must be placed in the sink chain before the formatter. You can do this by implementing both the <xref:System.Runtime.Remoting.Messaging.IMessageSink> and <xref:System.Runtime.Remoting.Channels.IClientChannelSink> interfaces. The formatter sink can then be placed in the sink chain later.  
+  
+ Formatter sinks use sink configuration properties to configure the channel at run time. Sink properties can be specified in a configuration file, or programmatically, inside of a <xref:System.Collections.IDictionary>. In a configuration file all values are represented by strings, but when building a property <xref:System.Collections.IDictionary> programmatically, value types can be specified with their native values or with strings.  
+  
+ The following table shows the sink configuration properties that can be specified for the current sink provider.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|`includeVersions`|Specifies whether the formatter will include versioning information. Values are `true` or `false`.|  
+  
+> [!IMPORTANT]
+>  Using an instance of this object with untrusted data or across an unsecure channel is a security risk. Use this object only with trusted data and across a secure channel. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BinaryClientFormatterSinkProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider" /> class with default values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BinaryClientFormatterSinkProvider (System.Collections.IDictionary properties, System.Collections.ICollection providerData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary properties, class System.Collections.ICollection providerData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider.#ctor(System.Collections.IDictionary,System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+        <Parameter Name="providerData" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="properties">A <see cref="T:System.Collections.IDictionary" /> of configuration properties to use with the new instance of <see cref="T:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider" />.</param>
+        <param name="providerData">A <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Runtime.Remoting.Channels.SinkProviderData" /> objects that contain provider data to use with the new instance of <see cref="T:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider" /> class with the given properties and provider data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSink">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Channels.IClientChannelSink CreateSink (System.Runtime.Remoting.Channels.IChannelSender channel, string url, object remoteChannelData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Channels.IClientChannelSink CreateSink(class System.Runtime.Remoting.Channels.IChannelSender channel, string url, object remoteChannelData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelSender,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.IClientChannelSink</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channel" Type="System.Runtime.Remoting.Channels.IChannelSender" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="remoteChannelData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="channel">Channel for which this sink chain is being constructed.</param>
+        <param name="url">URL of object to connect to or the channel URI for the target object.</param>
+        <param name="remoteChannelData">A channel data object that describes a channel on the remote server.</param>
+        <summary>Creates a sink chain.</summary>
+        <returns>The first sink of the newly formed channel sink chain, or <see langword="null" />, which indicates that this provider will not or cannot provide a connection for this endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider.CreateSink%2A> method is called, it creates its own channel sink, forwards the <xref:System.Runtime.Remoting.Channels.IClientChannelSinkProvider.CreateSink%2A> call to the next sink provider in the chain (if there is one), and ensures that the next sink and the current one are linked together.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Channels.IClientChannelSinkProvider Next { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Channels.IClientChannelSinkProvider Next" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.BinaryClientFormatterSinkProvider.Next" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.IClientChannelSinkProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the next <see cref="T:System.Runtime.Remoting.Channels.IClientChannelSinkProvider" /> in the sink provider chain.</summary>
+        <value>The next <see cref="T:System.Runtime.Remoting.Channels.IClientChannelSinkProvider" /> in the sink provider chain.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

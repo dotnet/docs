@@ -1,0 +1,137 @@
+<Type Name="DateConstructor" FullName="Microsoft.JScript.DateConstructor">
+  <TypeSignature Language="C#" Value="public class DateConstructor : Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DateConstructor extends Microsoft.JScript.ScriptFunction" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.DateConstructor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ScriptFunction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.DateObject CreateInstance (object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.DateObject CreateInstance(object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DateConstructor.CreateInstance(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasVarArgs)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.DateObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="args">The arguments to pass to the constructor.</param>
+        <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
+        <returns>An instance of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public string Invoke ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Invoke() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DateConstructor.Invoke" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the number of milliseconds that have elapsed since January 1, 1970.</summary>
+        <returns>The number of milliseconds that have elapsed since January 1, 1970.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="parse">
+      <MemberSignature Language="C#" Value="public static double parse (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 parse(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DateConstructor.parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.None, Microsoft.JScript.JSBuiltin.Date_parse)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">A string that contains a date and time to convert.</param>
+        <summary>Converts the specified string representation of a date and time to its <see cref="T:System.Double" /> equivalent.</summary>
+        <returns>A <see cref="T:System.Double" /> equivalent of the date and time that is contained in <paramref name="str" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UTC">
+      <MemberSignature Language="C#" Value="public static double UTC (object year, object month, object date, object hours, object minutes, object seconds, object ms);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 UTC(object year, object month, object date, object hours, object minutes, object seconds, object ms) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.None, Microsoft.JScript.JSBuiltin.Date_UTC)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Object" />
+        <Parameter Name="month" Type="System.Object" />
+        <Parameter Name="date" Type="System.Object" />
+        <Parameter Name="hours" Type="System.Object" />
+        <Parameter Name="minutes" Type="System.Object" />
+        <Parameter Name="seconds" Type="System.Object" />
+        <Parameter Name="ms" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="year">The year of the date and time to convert.</param>
+        <param name="month">The month of the date and time to convert.</param>
+        <param name="date">The date of the date and time to convert.</param>
+        <param name="hours">The hours of the date and time to convert.</param>
+        <param name="minutes">The minutes of the date and time to convert.</param>
+        <param name="seconds">The seconds of the date and time to convert.</param>
+        <param name="ms">The milliseconds of the date and time to convert.</param>
+        <summary>Converts the specified date and time to its <see cref="T:System.Double" /> equivalent.</summary>
+        <returns>A <see cref="T:System.Double" /> equivalent of the specified date and time.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,136 @@
+<Type Name="MobileFormsAuthentication" FullName="System.Web.Mobile.MobileFormsAuthentication">
+  <TypeSignature Language="C#" Value="public class MobileFormsAuthentication" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileFormsAuthentication extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Mobile.MobileFormsAuthentication" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supports cookieless devices by appending appropriate authentication information to the appropriate URLs. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This helper class is designed to assist with writing authenticated mobile Web sites. The class objects provide mobile device-compatible versions of the ASP.NET <xref:System.Web.Security.FormsAuthentication> class methods, <xref:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage%2A> and <xref:System.Web.Mobile.MobileFormsAuthentication.SignOut%2A>. For more information on securing your Web application, see [Basic Security Practices for Web Applications](http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad).  
+  
+   
+  
+## Examples  
+ The following code example shows a login.aspx page. The authentication is validated using the <xref:System.Web.Security.Membership.ValidateUser%2A> function. The <xref:System.Web.Security.Membership> class relies on membership providers to communicate with a data source.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[MobileFormsAuthentication#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormsAuthentication/CS/MobileFormsAuth.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[MobileFormsAuthentication#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormsAuthentication/VB/MobileFormsAuth.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName="RedirectFromLoginPage">
+      <MemberSignature Language="C#" Value="public static void RedirectFromLoginPage (string userName, bool createPersistentCookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RedirectFromLoginPage(string userName, bool createPersistentCookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="userName">Name of the user for cookie authentication purposes. This does not need to map to an account name and is used by URL Authorization.</param>
+        <param name="createPersistentCookie">Specifies whether or not a durable cookie (one that is session based or outlasts the session) must be issued.</param>
+        <summary>Redirects an authenticated user to the originally requested URL after logging in. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The methods create an encrypted string from the authentication cookie and append it to the redirecting URL of the originating request. A client-side redirect is then issued for that URL. This can be used to work around the limitations of certain mobile devices that either do not support cookies, or support cookies that are too small for storing authentication information in a secure manner.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage%2A> method to send an authenticated user to the originally requested URL.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[MobileFormsAuthentication#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormsAuthentication/CS/MobileFormsAuth.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[MobileFormsAuthentication#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormsAuthentication/VB/MobileFormsAuth.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RedirectFromLoginPage">
+      <MemberSignature Language="C#" Value="public static void RedirectFromLoginPage (string userName, bool createPersistentCookie, string strCookiePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RedirectFromLoginPage(string userName, bool createPersistentCookie, string strCookiePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage(System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+        <Parameter Name="strCookiePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userName">Name of the user for cookie authentication purposes. This does not need to map to an account name and is used by URL Authorization.</param>
+        <param name="createPersistentCookie">Specifies whether or not a durable cookie (one that is session based or outlasts the session) must be issued.</param>
+        <param name="strCookiePath">Returns the configured cookie path used for the current application.</param>
+        <summary>Redirects an authenticated user to the originally requested URL after logging in. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The methods create an encrypted string from the authentication cookie and append it to the redirecting URL of the originating request. A client-side redirect is then issued for that URL. This can be used to work around the limitations of certain mobile devices that either do not support cookies, or support cookies that are too small for storing authentication information in a secure manner.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.Mobile.MobileFormsAuthentication.RedirectFromLoginPage%2A> method to send the authenticated user back to the URL that was originally requested.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[MobileFormsAuthentication#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileFormsAuthentication/CS/MobileFormsAuth.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[MobileFormsAuthentication#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileFormsAuthentication/VB/MobileFormsAuth.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOut">
+      <MemberSignature Language="C#" Value="public static void SignOut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignOut() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Mobile.MobileFormsAuthentication.SignOut" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calls the <see cref="M:System.Web.Security.FormsAuthentication.SignOut" /> method and sets the <see cref="P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData" /> property to <see langword="false" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

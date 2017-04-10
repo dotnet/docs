@@ -1,0 +1,643 @@
+<Type Name="FSharpReflectionExtensions" FullName="Microsoft.FSharp.Reflection.FSharpReflectionExtensions">
+  <TypeSignature Language="C#" Value="public static class FSharpReflectionExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FSharpReflectionExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Reflection.FSharpReflectionExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AutoOpen</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FSharpType.GetExceptionFields.Static">
+      <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] FSharpType.GetExceptionFields.Static (Type exceptionType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.PropertyInfo[] FSharpType.GetExceptionFields.Static(class System.Type exceptionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpType#GetExceptionFields#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="exceptionType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpType.GetRecordFields.Static">
+      <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] FSharpType.GetRecordFields.Static (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.PropertyInfo[] FSharpType.GetRecordFields.Static(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpType#GetRecordFields#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpType.GetUnionCases.Static">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Reflection.UnionCaseInfo[] FSharpType.GetUnionCases.Static (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Reflection.UnionCaseInfo[] FSharpType.GetUnionCases.Static(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpType#GetUnionCases#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Reflection.UnionCaseInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpType.IsExceptionRepresentation.Static">
+      <MemberSignature Language="C#" Value="public static bool FSharpType.IsExceptionRepresentation.Static (Type exceptionType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool FSharpType.IsExceptionRepresentation.Static(class System.Type exceptionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpType#IsExceptionRepresentation#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="exceptionType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpType.IsRecord.Static">
+      <MemberSignature Language="C#" Value="public static bool FSharpType.IsRecord.Static (Type typ, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool FSharpType.IsRecord.Static(class System.Type typ, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpType#IsRecord#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typ" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="typ">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpType.IsUnion.Static">
+      <MemberSignature Language="C#" Value="public static bool FSharpType.IsUnion.Static (Type typ, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool FSharpType.IsUnion.Static(class System.Type typ, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpType#IsUnion#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typ" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="typ">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.GetExceptionFields.Static">
+      <MemberSignature Language="C#" Value="public static object[] FSharpValue.GetExceptionFields.Static (object exn, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object[] FSharpValue.GetExceptionFields.Static(object exn, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#GetExceptionFields#Static(System.Object,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exn" Type="System.Object" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="exn">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.GetRecordFields.Static">
+      <MemberSignature Language="C#" Value="public static object[] FSharpValue.GetRecordFields.Static (object record, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object[] FSharpValue.GetRecordFields.Static(object record, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#GetRecordFields#Static(System.Object,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="record" Type="System.Object" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="record">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.GetUnionFields.Static">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Reflection.UnionCaseInfo,object[]&gt; FSharpValue.GetUnionFields.Static (object value, Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class Microsoft.FSharp.Reflection.UnionCaseInfo, object[]&gt; FSharpValue.GetUnionFields.Static(object value, class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#GetUnionFields#Static(System.Object,System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;Microsoft.FSharp.Reflection.UnionCaseInfo,System.Object[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="unionType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="unionType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.MakeRecord.Static">
+      <MemberSignature Language="C#" Value="public static object FSharpValue.MakeRecord.Static (Type recordType, object[] values, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object FSharpValue.MakeRecord.Static(class System.Type recordType, object[] values, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#MakeRecord#Static(System.Type,System.Object[],Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.MakeUnion.Static">
+      <MemberSignature Language="C#" Value="public static object FSharpValue.MakeUnion.Static (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, object[] args, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object FSharpValue.MakeUnion.Static(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, object[] args, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#MakeUnion#Static(Microsoft.FSharp.Reflection.UnionCaseInfo,System.Object[],Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="args">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.PreComputeRecordConstructor.Static">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object[],object&gt; FSharpValue.PreComputeRecordConstructor.Static (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object[], object&gt; FSharpValue.PreComputeRecordConstructor.Static(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#PreComputeRecordConstructor#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object[],System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.PreComputeRecordConstructorInfo.Static">
+      <MemberSignature Language="C#" Value="public static System.Reflection.ConstructorInfo FSharpValue.PreComputeRecordConstructorInfo.Static (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.ConstructorInfo FSharpValue.PreComputeRecordConstructorInfo.Static(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#PreComputeRecordConstructorInfo#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ConstructorInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.PreComputeRecordReader.Static">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object[]&gt; FSharpValue.PreComputeRecordReader.Static (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object[]&gt; FSharpValue.PreComputeRecordReader.Static(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#PreComputeRecordReader#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Object[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.PreComputeUnionConstructor.Static">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object[],object&gt; FSharpValue.PreComputeUnionConstructor.Static (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object[], object&gt; FSharpValue.PreComputeUnionConstructor.Static(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#PreComputeUnionConstructor#Static(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object[],System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.PreComputeUnionConstructorInfo.Static">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo FSharpValue.PreComputeUnionConstructorInfo.Static (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.MethodInfo FSharpValue.PreComputeUnionConstructorInfo.Static(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#PreComputeUnionConstructorInfo#Static(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.PreComputeUnionReader.Static">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object[]&gt; FSharpValue.PreComputeUnionReader.Static (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object[]&gt; FSharpValue.PreComputeUnionReader.Static(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#PreComputeUnionReader#Static(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Object[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.PreComputeUnionTagMemberInfo.Static">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo FSharpValue.PreComputeUnionTagMemberInfo.Static (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.MemberInfo FSharpValue.PreComputeUnionTagMemberInfo.Static(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#PreComputeUnionTagMemberInfo#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MemberInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FSharpValue.PreComputeUnionTagReader.Static">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,int&gt; FSharpValue.PreComputeUnionTagReader.Static (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; allowAccessToPrivateRepresentation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, int32&gt; FSharpValue.PreComputeUnionTagReader.Static(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; allowAccessToPrivateRepresentation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpReflectionExtensions.FSharpValue#PreComputeUnionTagReader#Static(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionType" Type="System.Type" />
+        <Parameter Name="allowAccessToPrivateRepresentation" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionType">To be added.</param>
+        <param name="allowAccessToPrivateRepresentation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

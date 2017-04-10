@@ -1,0 +1,231 @@
+<Type Name="PolicyAssertionCollection" FullName="System.ServiceModel.Description.PolicyAssertionCollection">
+  <TypeSignature Language="C#" Value="public class PolicyAssertionCollection : System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PolicyAssertionCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.PolicyAssertionCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Xml.XmlElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains policy assertions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.PolicyAssertionCollection> class to group together policy assertions and to enumerate or modify a group of assertions.  
+  
+ The <xref:System.ServiceModel.Description.PolicyAssertionCollection> is used most frequently as a return value for the methods of the <xref:System.ServiceModel.Description.PolicyConversionContext> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyAssertionCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.PolicyAssertionCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyAssertionCollection (System.Collections.Generic.IEnumerable&lt;System.Xml.XmlElement&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlElement&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.#ctor(System.Collections.Generic.IEnumerable{System.Xml.XmlElement})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlElement&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="elements">The policy assertions the collection is to contain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.PolicyAssertionCollection" /> class using the specified <see cref="T:System.Xml.XmlElement" /> objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string localName, string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string localName, string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.Contains(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The name of the policy assertion.</param>
+        <param name="namespaceUri">The namespace of the policy assertion.</param>
+        <summary>Returns a value that indicates whether the collection contains the specified policy assertion.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified policy assertion; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement Find (string localName, string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement Find(string localName, string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.Find(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the policy assertion.</param>
+        <param name="namespaceUri">The namespace of the policy assertion.</param>
+        <summary>Returns the specified policy assertion.</summary>
+        <returns>The specified policy assertion, or <see langword="null" /> if the assertion cannot be found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAll">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; FindAll (string localName, string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt; FindAll(string localName, string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.FindAll(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the policy assertion.</param>
+        <param name="namespaceUri">The namespace of the policy assertion.</param>
+        <summary>Returns all specified policy assertions.</summary>
+        <returns>A collection of all policy assertions that match the specification, or an empty collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Xml.XmlElement item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Xml.XmlElement item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.InsertItem(System.Int32,System.Xml.XmlElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Xml.XmlElement" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index at which to insert <c>item</c>.</param>
+        <param name="item">The policy assertion to insert at <c>index</c>. The assertion must not be null.</param>
+        <summary>Inserts a specified policy assertion into the collection at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement Remove (string localName, string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement Remove(string localName, string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.Remove(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the policy assertion.</param>
+        <param name="namespaceUri">The namespace of the policy assertion.</param>
+        <summary>Removes the specified policy assertion from the collection.</summary>
+        <returns>The policy assertion that was removed from the collection or <see langword="null" /> if the policy assertion was not in the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAll">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; RemoveAll (string localName, string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt; RemoveAll(string localName, string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.RemoveAll(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">The local name of the policy assertion.</param>
+        <param name="namespaceUri">The namespace of the policy assertion.</param>
+        <summary>Removes all policy assertions that match the specified name and namespace.</summary>
+        <returns>A collection of all removed policy assertions or an empty collection if no assertions were found that match the specified name and namespace.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Xml.XmlElement item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Xml.XmlElement item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyAssertionCollection.SetItem(System.Int32,System.Xml.XmlElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Xml.XmlElement" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index that contains the assertion to replace.</param>
+        <param name="item">The policy assertion to replace the assertion already at <c>index</c>. The assertion must not be null.</param>
+        <summary>Replaces the policy assertion at a specified index with a specified policy assertion.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,421 @@
+<Type Name="PEReader" FullName="System.Reflection.PortableExecutable.PEReader">
+  <TypeSignature Language="C#" Value="public sealed class PEReader : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PEReader extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PEReader (System.Collections.Immutable.ImmutableArray&lt;byte&gt; peImage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; peImage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.Collections.Immutable.ImmutableArray{System.Byte})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peImage" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="peImage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PEReader (System.IO.Stream peStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream peStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="peStream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PEReader (byte* peImage, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* peImage, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.Byte*,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peImage" Type="System.Byte*" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="peImage">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PEReader (System.IO.Stream peStream, System.Reflection.PortableExecutable.PEStreamOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream peStream, valuetype System.Reflection.PortableExecutable.PEStreamOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peStream" Type="System.IO.Stream" />
+        <Parameter Name="options" Type="System.Reflection.PortableExecutable.PEStreamOptions" />
+      </Parameters>
+      <Docs>
+        <param name="peStream">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PEReader (byte* peImage, int size, bool isLoadedImage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8* peImage, int32 size, bool isLoadedImage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.Byte*,System.Int32,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peImage" Type="System.Byte*" />
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="isLoadedImage" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="peImage">To be added.</param>
+        <param name="size">To be added.</param>
+        <param name="isLoadedImage">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PEReader (System.IO.Stream peStream, System.Reflection.PortableExecutable.PEStreamOptions options, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream peStream, valuetype System.Reflection.PortableExecutable.PEStreamOptions options, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.#ctor(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peStream" Type="System.IO.Stream" />
+        <Parameter Name="options" Type="System.Reflection.PortableExecutable.PEStreamOptions" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="peStream">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEntireImage">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.PEMemoryBlock GetEntireImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.PortableExecutable.PEMemoryBlock GetEntireImage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.GetEntireImage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEMemoryBlock</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadata">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.PEMemoryBlock GetMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.PortableExecutable.PEMemoryBlock GetMetadata() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.GetMetadata" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEMemoryBlock</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSectionData">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.PEMemoryBlock GetSectionData (int relativeVirtualAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.PortableExecutable.PEMemoryBlock GetSectionData(int32 relativeVirtualAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.GetSectionData(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEMemoryBlock</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeVirtualAddress" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="relativeVirtualAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSectionData">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.PEMemoryBlock GetSectionData (string sectionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.PortableExecutable.PEMemoryBlock GetSectionData(string sectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.GetSectionData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEMemoryBlock</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sectionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sectionName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasMetadata">
+      <MemberSignature Language="C#" Value="public bool HasMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEReader.HasMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEntireImageAvailable">
+      <MemberSignature Language="C#" Value="public bool IsEntireImageAvailable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEntireImageAvailable" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEReader.IsEntireImageAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLoadedImage">
+      <MemberSignature Language="C#" Value="public bool IsLoadedImage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLoadedImage" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEReader.IsLoadedImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PEHeaders">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.PEHeaders PEHeaders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.PortableExecutable.PEHeaders PEHeaders" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.PEReader.PEHeaders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.PEHeaders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCodeViewDebugDirectoryData">
+      <MemberSignature Language="C#" Value="public System.Reflection.PortableExecutable.CodeViewDebugDirectoryData ReadCodeViewDebugDirectoryData (System.Reflection.PortableExecutable.DebugDirectoryEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.PortableExecutable.CodeViewDebugDirectoryData ReadCodeViewDebugDirectoryData(valuetype System.Reflection.PortableExecutable.DebugDirectoryEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.ReadCodeViewDebugDirectoryData(System.Reflection.PortableExecutable.DebugDirectoryEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.CodeViewDebugDirectoryData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Reflection.PortableExecutable.DebugDirectoryEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDebugDirectory">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.DebugDirectoryEntry&gt; ReadDebugDirectory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.PortableExecutable.DebugDirectoryEntry&gt; ReadDebugDirectory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.ReadDebugDirectory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.PortableExecutable.DebugDirectoryEntry&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEmbeddedPortablePdbDebugDirectoryData">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MetadataReaderProvider ReadEmbeddedPortablePdbDebugDirectoryData (System.Reflection.PortableExecutable.DebugDirectoryEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Metadata.MetadataReaderProvider ReadEmbeddedPortablePdbDebugDirectoryData(valuetype System.Reflection.PortableExecutable.DebugDirectoryEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.ReadEmbeddedPortablePdbDebugDirectoryData(System.Reflection.PortableExecutable.DebugDirectoryEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MetadataReaderProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Reflection.PortableExecutable.DebugDirectoryEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryOpenAssociatedPortablePdb">
+      <MemberSignature Language="C#" Value="public bool TryOpenAssociatedPortablePdb (string peImagePath, Func&lt;string,System.IO.Stream&gt; pdbFileStreamProvider, out System.Reflection.Metadata.MetadataReaderProvider pdbReaderProvider, out string pdbPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryOpenAssociatedPortablePdb(string peImagePath, class System.Func`2&lt;string, class System.IO.Stream&gt; pdbFileStreamProvider, class System.Reflection.Metadata.MetadataReaderProvider pdbReaderProvider, string pdbPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEReader.TryOpenAssociatedPortablePdb(System.String,System.Func{System.String,System.IO.Stream},System.Reflection.Metadata.MetadataReaderProvider@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peImagePath" Type="System.String" />
+        <Parameter Name="pdbFileStreamProvider" Type="System.Func&lt;System.String,System.IO.Stream&gt;" />
+        <Parameter Name="pdbReaderProvider" Type="System.Reflection.Metadata.MetadataReaderProvider&amp;" RefType="out" />
+        <Parameter Name="pdbPath" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="peImagePath">To be added.</param>
+        <param name="pdbFileStreamProvider">To be added.</param>
+        <param name="pdbReaderProvider">To be added.</param>
+        <param name="pdbPath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

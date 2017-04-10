@@ -1,0 +1,259 @@
+<Type Name="ConfigurationCollectionAttribute" FullName="System.Configuration.ConfigurationCollectionAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ConfigurationCollectionAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConfigurationCollectionAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationCollectionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Declaratively instructs the .NET Framework to create an instance of a configuration element collection. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Configuration.ConfigurationCollectionAttribute> attribute to decorate a <xref:System.Configuration.ConfigurationElementCollection> element. This instructs the .NET Framework to create an instance of the collection and to initialize it using your custom <xref:System.Configuration.ConfigurationElement> values.  
+  
+> [!NOTE]
+>  The simplest way to create a custom configuration element is to use the attributed (declarative) model. You declare the elements and decorate them with the <xref:System.Configuration.ConfigurationCollectionAttribute> attribute. For each element marked with this attribute, the .NET Framework uses reflection to read the decorating parameters and create a related <xref:System.Configuration.ConfigurationElementCollection> instance. You can also use the programmatic model. In this case it is your responsibility to declare the custom public collection but also to override the <xref:System.Configuration.ConfigurationElementCollection> member and return the properties collection.  
+  
+ The .NET Framework configuration system provides attribute types that you can use during the creation of custom configuration elements. There are two kinds of attributes:  
+  
+-   The attributes that instruct the .NET Framework how to create instances of the custom configuration element properties. These types include:  
+  
+    -   <xref:System.Configuration.ConfigurationCollectionAttribute>  
+  
+    -   <xref:System.Configuration.ConfigurationPropertyAttribute>  
+  
+-   The attributes that instruct the .NET Framework how to validate the custom configuration element properties. These types include:  
+  
+    -   <xref:System.Configuration.IntegerValidatorAttribute>  
+  
+    -   <xref:System.Configuration.LongValidatorAttribute>  
+  
+    -   <xref:System.Configuration.RegexStringValidatorAttribute>  
+  
+    -   <xref:System.Configuration.StringValidatorAttribute>  
+  
+    -   <xref:System.Configuration.TimeSpanValidatorAttribute>  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationCollectionAttribute>.  
+  
+ This example consists of three classes: `UrlsSection`, `UrlsCollection` and `UrlConfigElement`.The `UrlsSection` class uses the <xref:System.Configuration.ConfigurationCollectionAttribute> to define a custom configuration section. This section contains a URL collection (defined by the `UrlsCollection` class) of URL elements (defined by the `UrlConfigElement` class). When you run the example, an instance of the `UrlsSection` class is created and the following configuration elements are generated in the application configuration file:  
+  
+```  
+<configuration>  
+    <configSections>  
+        <section name="MyUrls" type="UrlsSection,   
+          ConfigurationCollectionAttribute, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
+    </configSections>  
+    <MyUrls>  
+        <urls>  
+            <remove name="Contoso" />  
+            <add name="Contoso" url="http://www.contoso.com" port="0" />  
+        </urls>  
+    </MyUrls>  
+</configuration  
+```  
+  
+ [!code-csharp[System.Configuration.ConfigurationCollectionAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/CS/customcollectionsection.cs#1)]
+ [!code-vb[System.Configuration.ConfigurationCollectionAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/VB/customcollectionsection.vb#1)]  
+  
+ [!code-csharp[System.Configuration.ConfigurationCollectionAttribute#31](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/CS/configurationcollectionattribute.cs#31)]
+ [!code-vb[System.Configuration.ConfigurationCollectionAttribute#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/VB/configurationcollectionattribute.vb#31)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConfigurationCollectionAttribute (Type itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationCollectionAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">The type of the property collection to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationCollectionAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this constructor to tell the .NET Framework the custom type of the property collection to be created.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationCollectionAttribute.%23ctor%2A>.  
+  
+ [!code-csharp[System.Configuration.ConfigurationCollectionAttribute#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/CS/customcollectionsection.cs#20)]
+ [!code-vb[System.Configuration.ConfigurationCollectionAttribute#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/VB/customcollectionsection.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="itemType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddItemName">
+      <MemberSignature Language="C#" Value="public string AddItemName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AddItemName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.AddItemName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see langword="&lt;add&gt;" /> configuration element.</summary>
+        <value>The name that substitutes the standard name "add" for the configuration item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationCollectionAttribute.AddItemName%2A> property allows you to assign a different name to the configuration element. For example, you could use `addUrl` instead of "add".  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationCollectionAttribute.AddItemName%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationCollectionAttribute#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/CS/customcollectionsection.cs#20)]
+ [!code-vb[System.Configuration.ConfigurationCollectionAttribute#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/VB/customcollectionsection.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItemsName">
+      <MemberSignature Language="C#" Value="public string ClearItemsName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClearItemsName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.ClearItemsName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name for the <see langword="&lt;clear&gt;" /> configuration element.</summary>
+        <value>The name that replaces the standard name "clear" for the configuration item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationCollectionAttribute.ClearItemsName%2A> property allows you to assign a different name to the `<clear>` configuration element. For example, you could use `clearUrls` instead of "clear".  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationCollectionAttribute.ClearItemsName%2A>.  
+  
+ [!code-csharp[System.Configuration.ConfigurationCollectionAttribute#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/CS/customcollectionsection.cs#20)]
+ [!code-vb[System.Configuration.ConfigurationCollectionAttribute#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/VB/customcollectionsection.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionType">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationElementCollectionType CollectionType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.CollectionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the <see cref="T:System.Configuration.ConfigurationCollectionAttribute" /> attribute.</summary>
+        <value>The type of the <see cref="T:System.Configuration.ConfigurationCollectionAttribute" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemType">
+      <MemberSignature Language="C#" Value="public Type ItemType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ItemType" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.ItemType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the collection element.</summary>
+        <value>The type of the collection element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationCollectionAttribute.ItemType%2A> property is used by reflection to get the configuration element type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItemName">
+      <MemberSignature Language="C#" Value="public string RemoveItemName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RemoveItemName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.RemoveItemName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name for the <see langword="&lt;remove&gt;" /> configuration element.</summary>
+        <value>The name that replaces the standard name "remove" for the configuration element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConfigurationCollectionAttribute.RemoveItemName%2A> property allows you to assign a different name to the `<remove>` configuration element. For example, you could use `removeUrl` instead of "remove".  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ConfigurationCollectionAttribute.RemoveItemName%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationCollectionAttribute#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/CS/customcollectionsection.cs#20)]
+ [!code-vb[System.Configuration.ConfigurationCollectionAttribute#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationCollectionAttribute/VB/customcollectionsection.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

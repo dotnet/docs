@@ -1,0 +1,40 @@
+<Type Name="RoutedEventHandler" FullName="System.Windows.RoutedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void RoutedEventHandler(object sender, RoutedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoutedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.RoutedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle various routed events that do not have specific event data beyond the data that is common for all routed events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.RoutedEventHandler> delegate is used for any routed event that does not report event-specific information in the event data. There are many such routed events; prominent examples include <xref:System.Windows.Controls.Primitives.ButtonBase.Click> and <xref:System.Windows.FrameworkElement.Loaded>.  
+  
+ The most noteworthy difference between writing a handler for a routed event as opposed to a general [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] event is that the `sender` of the event (the element where the handler is attached and invoked) cannot be considered to necessarily be the source of the event. The source is reported as a property in the event data (<xref:System.Windows.RoutedEventArgs.Source%2A>). A difference between `sender`and <xref:System.Windows.RoutedEventArgs.Source%2A> is the result of the event being routed to different elements, during the traversal of the routed event through an element tree.  
+  
+ You can use either `sender` or <xref:System.Windows.RoutedEventArgs.Source%2A> for an object reference if you are deliberately not interested in the routing behavior of a direct or bubbling routed event and you only intend to handle routed events on the elements where they are first raised. In this circumstance, `sender` and <xref:System.Windows.RoutedEventArgs.Source%2A> are the same object.  
+  
+ If you do intend to take advantage of the inherent features of routed events and write your handlers accordingly, the two most important properties of the event data that you will work with when writing event handlers are <xref:System.Windows.RoutedEventArgs.Source%2A> and <xref:System.Windows.RoutedEventArgs.Handled%2A>.  
+  
+ For certain combinations of input events and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] control classes, the element that raises the event is not the first element that has the opportunity to handle it. If the input event has a Preview version of the event, then the root of the element tree has first opportunity, can set <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` in the shared event data, and can influence how the input event is reported to remaining elements in its event route. The Preview handling behavior can give the appearance that a particular routed event is not raised as expected. For more information, see [Preview Events](~/docs/framework/wpf/advanced/preview-events.md) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="XpsDocumentNotificationLevel" FullName="System.Windows.Xps.XpsDocumentNotificationLevel">
+  <TypeSignature Language="C#" Value="public enum XpsDocumentNotificationLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XpsDocumentNotificationLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.XpsDocumentNotificationLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates whether a write operation to an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] document or a print queue sends back page-by-page and document-by-document progress notifications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When notification is not enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> copies the serialized [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] document to the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> that created the <xref:System.Windows.Xps.XpsDocumentWriter>. When it is enabled, the <xref:System.Windows.Xps.XpsDocumentWriter> first deserializes the document, next reserializes it, and then writes it to the target while it sends progress notifications for each page and document.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.XpsDocumentNotificationLevel None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.XpsDocumentNotificationLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.XpsDocumentNotificationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The notification status is not indicated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveNotificationDisabled">
+      <MemberSignature Language="C#" Value="ReceiveNotificationDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.XpsDocumentNotificationLevel ReceiveNotificationDisabled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.XpsDocumentNotificationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Progress notifications are disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveNotificationEnabled">
+      <MemberSignature Language="C#" Value="ReceiveNotificationEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.XpsDocumentNotificationLevel ReceiveNotificationEnabled = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationEnabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.XpsDocumentNotificationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Progress notifications are enabled.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

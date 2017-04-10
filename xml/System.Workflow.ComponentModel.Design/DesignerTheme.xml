@@ -1,0 +1,328 @@
+<Type Name="DesignerTheme" FullName="System.Workflow.ComponentModel.Design.DesignerTheme">
+  <TypeSignature Language="C#" Value="public abstract class DesignerTheme : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerTheme extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerTheme" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Design.DesignerTheme/ThemeSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.ThemeTypeConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supplies base class implementation for all activity designer theme classes used in a workflow design-time environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ All classes that supply theme property settings to <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> classes must inherit from the <xref:System.Workflow.ComponentModel.Design.DesignerTheme> class.  Designer themes provide a set of property values with which to display background and foreground colors and styles, fonts, and other style settings for the designer classes displayed on a workflow design surface.  
+  
+ The <xref:System.Workflow.ComponentModel.Design.AmbientTheme> class also inherits from <xref:System.Workflow.ComponentModel.Design.DesignerTheme>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DesignerTheme (System.Workflow.ComponentModel.Design.WorkflowTheme theme);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.WorkflowTheme theme) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="theme" Type="System.Workflow.ComponentModel.Design.WorkflowTheme" />
+      </Parameters>
+      <Docs>
+        <param name="theme">The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> with which the designer theme is associated.</param>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.DesignerTheme" /> class by using a <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyTo">
+      <MemberSignature Language="C#" Value="public virtual string ApplyTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplyTo" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ApplyTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unqualified name of the designer type to which the designer theme is applied.</summary>
+        <value>The name of the designer type to which the designer theme is applied.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.DesignerTheme.ApplyTo%2A> property associates the designer theme with a designer by using the unqualified name of the designer type, while the <xref:System.Workflow.ComponentModel.Design.DesignerTheme.DesignerType%2A> property associates the designer theme with a designer type by using the <xref:System.Type> of the designer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.ReadOnlyException">A user attempted a set operation when the <see cref="P:System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly" /> property was set to <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainingTheme">
+      <MemberSignature Language="C#" Value="protected System.Workflow.ComponentModel.Design.WorkflowTheme ContainingTheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.WorkflowTheme ContainingTheme" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ContainingTheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.WorkflowTheme</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the workflow theme that encapsulates the designer theme.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.WorkflowTheme" /> object associated with the <see cref="T:System.Workflow.ComponentModel.Design.DesignerTheme" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.DesignerTheme.ContainingTheme%2A> property returns the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme> object that the <xref:System.Workflow.ComponentModel.Design.DesignerTheme.%23ctor%2A> used during initialization.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerType">
+      <MemberSignature Language="C#" Value="public virtual Type DesignerType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type DesignerType" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.DesignerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the designer associated with the designer theme.</summary>
+        <value>A <see cref="T:System.Type" /> that represents the designer to be associated with the current designer theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.DesignerTheme.DesignerType%2A> property associates the designer theme with a designer type by using the <xref:System.Type> of the designer, while the <xref:System.Workflow.ComponentModel.Design.DesignerTheme.ApplyTo%2A> property associates the designer theme with a designer by using the unqualified name of the designer type.  
+  
+ Possible values for this property include <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>, <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>, and any classes created by activity designer developers that inherit from <xref:System.Workflow.ComponentModel.Design.DesignerTheme>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Data.ReadOnlyException">A user attempted a set operation when the <see cref="P:System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly" /> property was set to <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.DesignerTheme" /> and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~DesignerTheme ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows the <see cref="T:System.Workflow.ComponentModel.Design.DesignerTheme" /> to attempt to free resources and perform other clean-up operations before it is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.DesignerTheme.Finalize%2A> releases only unmanaged resources prior to garbage collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public virtual void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs further initialization tasks beyond those performed by <see cref="M:System.Workflow.ComponentModel.Design.DesignerTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.DesignerTheme> class provides no default behavior for this method. Classes that inherit from <xref:System.Workflow.ComponentModel.Design.DesignerTheme> must provide their own logic for this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAmbientPropertyChanged">
+      <MemberSignature Language="C#" Value="public virtual void OnAmbientPropertyChanged (System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnAmbientPropertyChanged(valuetype System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.OnAmbientPropertyChanged(System.Workflow.ComponentModel.Design.AmbientProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ambientProperty" Type="System.Workflow.ComponentModel.Design.AmbientProperty" />
+      </Parameters>
+      <Docs>
+        <param name="ambientProperty">The <see cref="T:System.Workflow.ComponentModel.Design.AmbientProperty" /> enumeration value that the designer theme should now use.</param>
+        <summary>Notifies the designer theme class that the ambient property settings for the designer have changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from <xref:System.Workflow.ComponentModel.Design.DesignerTheme> use this method to make necessary changes when the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> enumeration value changes from <xref:System.Workflow.ComponentModel.Design.AmbientProperty> to <xref:System.Workflow.ComponentModel.Design.AmbientProperty> or <xref:System.Workflow.ComponentModel.Design.AmbientProperty> to <xref:System.Workflow.ComponentModel.Design.AmbientProperty>.  
+  
+ The <xref:System.Workflow.ComponentModel.Design.AmbientProperty> enumeration determines where a designer theme obtains its ambient property settings. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> value is set, the designer theme class obtains its ambient settings from the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.AmbientTheme%2A> property. If the <xref:System.Workflow.ComponentModel.Design.AmbientProperty> value is set, the designer theme class obtains its ambient settings from the operating system on which the designer is installed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public bool ReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the designer theme is read-only.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Workflow.ComponentModel.Design.DesignerTheme" /> is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme> that the <xref:System.Workflow.ComponentModel.Design.DesignerTheme> is initialized with is not a null reference (`Nothing` in Visual Basic), <xref:System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly%2A> obtains its value from the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.ReadOnly%2A?displayProperty=fullName> property. If the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme> is a null reference (`Nothing`), <xref:System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly%2A> is `false`.  
+  
+ If the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme> is assigned to the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme%2A?displayProperty=fullName>, the <xref:System.Workflow.ComponentModel.Design.DesignerTheme.ReadOnly%2A> property is set to `true`, and properties on all designer themes associated with this theme cannot be changed. If required, properties can be set after loading the theme but before assigning it to the <xref:System.Workflow.ComponentModel.Design.WorkflowTheme.CurrentTheme%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerTheme.System#IDisposable#Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of <xref:System.Workflow.ComponentModel.Design.DesignerTheme.System.IDisposable.Dispose%2A> implements the <xref:System.IDisposable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

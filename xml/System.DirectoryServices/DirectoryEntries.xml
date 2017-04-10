@@ -1,0 +1,485 @@
+<Type Name="DirectoryEntries" FullName="System.DirectoryServices.DirectoryEntries">
+  <TypeSignature Language="C#" Value="public class DirectoryEntries : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryEntries extends System.Object implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryEntries" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.DirectoryServices.DirectoryEntry" /> objects.</summary>
+    <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+      <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+    </permission>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry Add (string name, string schemaClassName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry Add(string name, string schemaClassName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schemaClassName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the new entry.</param>
+        <param name="schemaClassName">The name of the schema that is used for the new entry.</param>
+        <summary>Creates a new entry in the container.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the new entry.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must call the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A> method on the new entry to make the creation permanent. When you call this method, you can then set mandatory property values on the new entry. The providers each have different requirements for properties that need to be set before a call to the <xref:System.DirectoryServices.DirectoryEntry.CommitChanges%2A> method is made. If those requirements are not met, the provider might throw an exception. Check with your provider to determine which properties must be set before committing changes.  
+  
+   
+  
+## Examples  
+ The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
+  
+```vb  
+Dim strPath As String = "IIS://localhost/W3SVC/1/Root"  
+' Create a new 'DirectoryEntry' object with the given path.  
+Dim myDE As New DirectoryEntry(strPath)  
+Dim myEntries As DirectoryEntries = myDE.Children  
+' Create a new entry 'Sample' in the container.  
+Dim myDirectoryEntry As DirectoryEntry = myEntries.Add("CN=Sample", myDE.SchemaClassName)  
+' Save changes of entry in the 'Active Directory Domain Services'.  
+myDirectoryEntry.CommitChanges()  
+Console.WriteLine(myDirectoryEntry.Name + " entry is created in container.")  
+```  
+  
+ The following C# example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
+  
+ [C#]  
+  
+```  
+String strPath = "IIS://localhost/W3SVC/1/Root";  
+  
+// Create a new 'DirectoryEntry' object with the given path.  
+DirectoryEntry myDE = new DirectoryEntry(strPath);  
+DirectoryEntries myEntries = myDE.Children;  
+  
+// Create a new entry 'Sample' in the container.  
+DirectoryEntry myDirectoryEntry =   
+   myEntries.Add("CN=Sample", myDE.SchemaClassName);  
+// Save changes of entry in the 'Active Directory Domain Services'.  
+myDirectoryEntry.CommitChanges();  
+Console.WriteLine (myDirectoryEntry.Name + " entry is created in container.");  
+```  
+  
+ The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
+  
+```  
+String* strPath = S"IIS://localhost/W3SVC/1/Root";  
+  
+// Create a new 'DirectoryEntry' object with the given path.  
+DirectoryEntry* myDE = new DirectoryEntry(strPath);  
+DirectoryEntries* myEntries = myDE->Children;  
+  
+// Create a new entry 'Sample' in the container.  
+DirectoryEntry* myDirectoryEntry = myEntries->Add(S"CN=Sample", myDE->SchemaClassName);  
+// Save changes of entry in the 'Active Directory Domain Services'.  
+myDirectoryEntry->CommitChanges();  
+Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name);  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred during the call to the underlying interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry Find (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry Find(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Find(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Contains the name of the child object for which to search.</param>
+        <summary>Returns the member of this collection with the specified name.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> that represents the child object that was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If child objects of different types have the same name, the first matching child object is returned.  
+  
+> [!NOTE]
+>  The Internet Information Services (IIS) provider does not support this method. Use the overloaded <xref:System.DirectoryServices.DirectoryEntries.Find%2A> method and specify an empty string ("") for the `schemaClassName` parameter.  
+>   
+>  If no matching result is found, a <xref:System.DirectoryServices.DirectoryServicesCOMException> with error code 0x2030 is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The Active Directory Domain Services object is not a container.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred during the call to the underlying interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry Find (string name, string schemaClassName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry Find(string name, string schemaClassName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Find(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="schemaClassName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the child directory object for which to search.</param>
+        <param name="schemaClassName">The class name of the child directory object for which to search.</param>
+        <summary>Returns the member of this collection with the specified name and of the specified type.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> object that represents the child object that was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no matching result is found, a <xref:System.DirectoryServices.DirectoryServicesCOMException> with error code 0x2030 is thrown.  
+  
+   
+  
+## Examples  
+ The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the newly created entry.  
+  
+```vb  
+Try  
+     Dim myEntry1 As DirectoryEntry  
+     Dim myEntry2 As DirectoryEntry  
+     Dim strPath As String = "LDAP://DC=fabrikam,DC=com"  
+  
+     ' Create a 'DirectoryEntry' object with the given path.  
+     Dim myDE As New DirectoryEntry(strPath)  
+     Dim myEntries As DirectoryEntries = myDE.Children  
+  
+     ' Create a new entry in the container.  
+     myEntry1 = myEntries.Add("CN=Sample Entry", myDE.SchemaClassName)  
+     ' Save changes in the 'Active Directory Domain Services' store.  
+     myEntry1.CommitChanges()  
+  
+     ' Find a child in the 'DirectoryEntries' collection which has the   
+     ' specified name and type.  
+     myEntry2 = myEntries.Find("CN=Sample Entry", myDE.SchemaClassName)  
+     Console.WriteLine(myEntry2.Name + " is found in container.")  
+  
+     Catch e As Exception  
+          Console.WriteLine("The following exception was raised : {0}", e.Message.ToString())  
+     End Try  
+```  
+  
+ The following C# example shows how to create a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the newly- created entry.  
+  
+```csharp  
+using System;  
+using System.DirectoryServices;   
+  
+class MyClass1  
+{  
+   static void Main()  
+   {  
+      try  
+      {          
+         DirectoryEntry myEntry1;  
+         DirectoryEntry myEntry2;  
+         String strPath = "LDAP://DC=fabrikam,DC=com";  
+  
+         // Create a 'DirectoryEntry' object with the given path.  
+         DirectoryEntry myDE = new DirectoryEntry(strPath);  
+         DirectoryEntries myEntries = myDE.Children;  
+  
+         // Create a new entry in the container.  
+         myEntry1 = myEntries.Add("CN=Sample Entry",myDE.SchemaClassName);  
+         // Save changes in the 'Active Directory Domain Services' store.  
+         myEntry1.CommitChanges();  
+  
+         // Find a child in the 'DirectoryEntries' collection which has the   
+         // specified name and type.  
+         myEntry2 = myEntries.Find("CN=Sample Entry",myDE.SchemaClassName);  
+         Console.WriteLine (myEntry2.Name + " is found in container.");  
+  
+      }  
+      catch(Exception e)  
+      {  
+         Console.WriteLine("The following exception was raised : {0}",e.Message);  
+      }  
+   }  
+}  
+  
+```  
+  
+ The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the new entry.  
+  
+```cpp#  
+#using <mscorlib.dll>  
+#using <System.dll>  
+#using <System.Directoryservices.dll>  
+  
+using namespace System;  
+using namespace System::DirectoryServices;   
+  
+int main() {  
+    try {          
+        DirectoryEntry* myEntry1;  
+        DirectoryEntry* myEntry2;  
+        String* strPath = S"LDAP://DC=fabrikam,DC=com";  
+  
+        // Create a 'DirectoryEntry' object with the given path.  
+        DirectoryEntry* myDE = new DirectoryEntry(strPath);  
+        DirectoryEntries* myEntries = myDE->Children;  
+  
+        // Create a new entry in the container.  
+        myEntry1 = myEntries->Add(S"CN=Sample Entry", myDE->SchemaClassName);  
+        // Save changes in the 'Active Directory Domain Services' store.  
+        myEntry1->CommitChanges();  
+  
+        // Find a child in the 'DirectoryEntries' collection which has the   
+        // specified name and type.  
+        myEntry2 = myEntries->Find(S"CN=Sample Entry", myDE->SchemaClassName);  
+        Console::WriteLine ("{0} is found in container.", myEntry2->Name);  
+    } catch(Exception* e) {  
+        Console::WriteLine("The following exception was raised : {0}", e->Message);  
+    }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The Active Directory Domain Services object is not a container.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred during the call to the underlying interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.DirectoryServices.DirectoryEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.DirectoryServices.DirectoryEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntries.Remove(System.DirectoryServices.DirectoryEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.DirectoryServices.DirectoryEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">The name of the <see cref="T:System.DirectoryServices.DirectoryEntry" /> object to delete.</param>
+        <summary>Deletes a member of this collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the entry to be removed is a container, the container must be empty. To delete a container and all its children, use the <xref:System.DirectoryServices.DirectoryEntry.DeleteTree%2A> method.  
+  
+   
+  
+## Examples  
+ The following Visual Basic .NET example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
+  
+```vb  
+Imports System  
+Imports System.DirectoryServices  
+  
+Class MyClass1  
+   Shared Sub Main()  
+      Try  
+         Dim strPath As String = "IIS://localhost/W3SVC/1/Root"  
+         Dim strName As String = ""  
+  
+         ' Create a new 'DirectoryEntry' object with the given path.  
+         Dim myDE As New DirectoryEntry(strPath)  
+         Dim myEntries As DirectoryEntries = myDE.Children  
+  
+         ' Create a new entry 'Sample' in the container.  
+         Dim myDirectoryEntry As DirectoryEntry = myEntries.Add("Sample", myDE.SchemaClassName)  
+         ' Save changes of entry in the 'Active Directory Domain Services'.  
+         myDirectoryEntry.CommitChanges()  
+         Console.WriteLine(myDirectoryEntry.Name + " entry is created in container.")  
+  
+         ' Find 'Sample' entry in container.  
+         myDirectoryEntry = myEntries.Find("Sample", myDE.SchemaClassName)  
+         Console.WriteLine(myDirectoryEntry.Name + " found in container.")  
+         ' Remove 'Sample' entry from container.  
+         strName = myDirectoryEntry.Name  
+         myEntries.Remove(myDirectoryEntry)  
+         Console.WriteLine(strName + " entry is removed from container.")  
+  
+      Catch e As Exception  
+         Console.WriteLine("The following exception was raised : {0}", e.Message.ToString())  
+      End Try  
+   End Sub 'Main  
+End Class 'MyClass1  
+  
+```  
+  
+ The following C# example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
+  
+```csharp  
+using System;  
+using System.DirectoryServices;   
+  
+class MyClass1  
+{  
+   static void Main()  
+   {  
+      try  
+      {  
+         String strPath = "IIS://localhost/W3SVC/1/Root";  
+         String strName = "";  
+  
+         // Create a new 'DirectoryEntry' object with the given path.  
+         DirectoryEntry myDE = new DirectoryEntry(strPath);  
+         DirectoryEntries myEntries = myDE.Children;  
+  
+         // Create a new entry 'Sample' in the container.  
+         DirectoryEntry myDirectoryEntry =   
+            myEntries.Add("Sample", myDE.SchemaClassName);  
+         // Save changes of entry in the 'Active Directory Domain Services'.  
+         myDirectoryEntry.CommitChanges();  
+         Console.WriteLine (myDirectoryEntry.Name +   
+            " entry is created in container.");  
+  
+         // Find 'Sample' entry in container.  
+         myDirectoryEntry = myEntries.Find("Sample", myDE.SchemaClassName);  
+         Console.WriteLine(myDirectoryEntry.Name + " found in container.");  
+         // Remove 'Sample' entry from container.  
+         strName = myDirectoryEntry.Name;  
+         myEntries.Remove(myDirectoryEntry);  
+         Console.WriteLine(strName+ " entry is removed from container.");  
+  
+      }  
+      catch(Exception e)  
+      {  
+         Console.WriteLine("The following exception was raised : {0}",  
+            e.Message);  
+      }  
+   }  
+}  
+  
+```  
+  
+ The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
+  
+```cpp#  
+#using <mscorlib.dll>  
+#using <System.dll>  
+#using <System.Directoryservices.dll>  
+  
+using namespace System;  
+using namespace System::DirectoryServices;   
+  
+int main() {  
+    try {  
+        String* strPath = S"IIS://localhost/W3SVC/1/Root";  
+        String* strName = S"";  
+  
+        // Create a new 'DirectoryEntry' object with the given path.  
+        DirectoryEntry* myDE = new DirectoryEntry(strPath);  
+        DirectoryEntries* myEntries = myDE->Children;  
+  
+        // Create a new entry 'Sample' in the container.  
+        DirectoryEntry* myDirectoryEntry =  myEntries->Add(S"Sample", myDE->SchemaClassName);  
+        // Save changes of entry in the 'Active Directory Domain Services'.  
+        myDirectoryEntry->CommitChanges();  
+        Console::WriteLine(S"{0} entry is created in container.", myDirectoryEntry->Name);  
+  
+        // Find 'Sample' entry in container.  
+        myDirectoryEntry = myEntries->Find(S"Sample", myDE->SchemaClassName);  
+        Console::WriteLine(S"{0} found in container.", myDirectoryEntry->Name);  
+        // Remove 'Sample' entry from container.  
+        strName = myDirectoryEntry->Name;  
+        myEntries->Remove(myDirectoryEntry);  
+        Console::WriteLine(S"{0} entry is removed from container.", strName);  
+    } catch(Exception* e) {  
+        Console::WriteLine(S"The following exception was raised : {0}", e->Message);  
+    }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.COMException">An error occurred during the call to the underlying interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaFilter">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.SchemaNameCollection SchemaFilter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.SchemaNameCollection SchemaFilter" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntries.SchemaFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.SchemaNameCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the schemas that specify which child objects are contained in the collection.</summary>
+        <value>A <see cref="T:System.DirectoryServices.SchemaNameCollection" /> that specifies which child objects are contained in the <see cref="T:System.DirectoryServices.DirectoryEntries" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.DirectoryServices.DirectoryEntries.SchemaFilter%2A> property is empty, child objects of all types are visible in the collection; otherwise, only those of the specified types are visible.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

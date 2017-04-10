@@ -1,0 +1,281 @@
+<Type Name="XmlSortKeyAccumulator" FullName="System.Xml.Xsl.Runtime.XmlSortKeyAccumulator">
+  <TypeSignature Language="C#" Value="public struct XmlSortKeyAccumulator" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit XmlSortKeyAccumulator extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Accumulates a list of sort keys and stores them in an array.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddDateTimeSortKey">
+      <MemberSignature Language="C#" Value="public void AddDateTimeSortKey (System.Xml.Xsl.Runtime.XmlCollation collation, DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDateTimeSortKey(class System.Xml.Xsl.Runtime.XmlCollation collation, valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDateTimeSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="System.Xml.Xsl.Runtime.XmlCollation" />
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A <see langword="DateTime" /> value.</param>
+        <summary>Creates a new <see cref="T:System.DateTime" /> sort key and appends it to the current run of sort keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDecimalSortKey">
+      <MemberSignature Language="C#" Value="public void AddDecimalSortKey (System.Xml.Xsl.Runtime.XmlCollation collation, decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDecimalSortKey(class System.Xml.Xsl.Runtime.XmlCollation collation, valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDecimalSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="System.Xml.Xsl.Runtime.XmlCollation" />
+        <Parameter Name="value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A <see langword="decimal" /> value.</param>
+        <summary>Creates a new <see cref="T:System.Decimal" /> sort key and appends it to the current run of sort keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDoubleSortKey">
+      <MemberSignature Language="C#" Value="public void AddDoubleSortKey (System.Xml.Xsl.Runtime.XmlCollation collation, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDoubleSortKey(class System.Xml.Xsl.Runtime.XmlCollation collation, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddDoubleSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="System.Xml.Xsl.Runtime.XmlCollation" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A <see langword="double" /> value.</param>
+        <summary>Creates a new <see cref="T:System.Double" /> sort key and appends it to the current run of sort keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddEmptySortKey">
+      <MemberSignature Language="C#" Value="public void AddEmptySortKey (System.Xml.Xsl.Runtime.XmlCollation collation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddEmptySortKey(class System.Xml.Xsl.Runtime.XmlCollation collation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddEmptySortKey(System.Xml.Xsl.Runtime.XmlCollation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="System.Xml.Xsl.Runtime.XmlCollation" />
+      </Parameters>
+      <Docs>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <summary>Creates a new empty sort key and appends it to the current run of sort keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddIntegerSortKey">
+      <MemberSignature Language="C#" Value="public void AddIntegerSortKey (System.Xml.Xsl.Runtime.XmlCollation collation, long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddIntegerSortKey(class System.Xml.Xsl.Runtime.XmlCollation collation, int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddIntegerSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="System.Xml.Xsl.Runtime.XmlCollation" />
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A value of type <see langword="Int64" />.</param>
+        <summary>Creates a new <see cref="T:System.Int64" /> sort key and appends it to the current run of sort keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddIntSortKey">
+      <MemberSignature Language="C#" Value="public void AddIntSortKey (System.Xml.Xsl.Runtime.XmlCollation collation, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddIntSortKey(class System.Xml.Xsl.Runtime.XmlCollation collation, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddIntSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="System.Xml.Xsl.Runtime.XmlCollation" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A value of type <see langword="Int32" />.</param>
+        <summary>Creates a new <see cref="T:System.Int32" /> sort key and appends it to the current run of sort keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStringSortKey">
+      <MemberSignature Language="C#" Value="public void AddStringSortKey (System.Xml.Xsl.Runtime.XmlCollation collation, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddStringSortKey(class System.Xml.Xsl.Runtime.XmlCollation collation, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.AddStringSortKey(System.Xml.Xsl.Runtime.XmlCollation,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collation" Type="System.Xml.Xsl.Runtime.XmlCollation" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="collation">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlCollation" /> class.</param>
+        <param name="value">A value of type <see langword="string" />.</param>
+        <summary>Creates a new <see cref="T:System.String" /> sort key and appends it to the current run of sort keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public void Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinishSortKeys">
+      <MemberSignature Language="C#" Value="public void FinishSortKeys ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FinishSortKeys() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.FinishSortKeys" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Finishes creating the current run of sort keys and begins a new run.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public Array Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Array Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Array</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array of sort keys that was constructed by the internal <see cref="T:System.Xml.Xsl.Runtime.XmlSortKeyAccumulator" /> class.</summary>
+        <value>An array of sort keys.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

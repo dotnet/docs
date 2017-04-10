@@ -1,0 +1,162 @@
+<Type Name="RibbonComboBoxAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer">
+  <TypeSignature Language="C#" Value="public class RibbonComboBoxAutomationPeer : System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer, System.Windows.Automation.Provider.IValueProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonComboBoxAutomationPeer extends System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer implements class System.Windows.Automation.Provider.IValueProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IValueProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonComboBoxAutomationPeer (System.Windows.Controls.Ribbon.RibbonComboBox owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonComboBox owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonComboBox)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.Ribbon.RibbonComboBox" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenCore">
+      <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.GetChildrenCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
+        <returns>The child elements of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />.</summary>
+        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is the <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.ItemContainer" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.Scroll" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput" />, <see cref="F:System.Windows.Automation.Peers.PatternInterface.Transform" />, or <see cref="F:System.Windows.Automation.Peers.PatternInterface.Value" /> value, this method returns an object that supports the control pattern; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> is read-only</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> is not enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFocusCore">
+      <MemberSignature Language="C#" Value="protected override void SetFocusCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetFocusCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.SetFocusCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the keyboard focus on the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocus" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> did not get focus.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.SetValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to set the <see cref="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" /> property to.</param>
+        <summary>Sets the <see cref="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" /> property of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> to the specified value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /> is not enabled.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" /> property of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /></summary>
+        <value>The <see cref="P:System.Windows.Controls.Ribbon.RibbonComboBox.Text" /> property of the <see cref="T:System.Windows.Controls.Ribbon.RibbonComboBox" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonComboBoxAutomationPeer" /></value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

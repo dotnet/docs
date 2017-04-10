@@ -1,0 +1,181 @@
+<Type Name="GridViewRowPresenter" FullName="System.Windows.Controls.GridViewRowPresenter">
+  <TypeSignature Language="C#" Value="public class GridViewRowPresenter : System.Windows.Controls.Primitives.GridViewRowPresenterBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewRowPresenter extends System.Windows.Controls.Primitives.GridViewRowPresenterBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridViewRowPresenter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Primitives.GridViewRowPresenterBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an object that specifies the layout of a row of data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.GridViewRowPresenter> and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> classes support the <xref:System.Windows.Controls.GridView> view mode for a <xref:System.Windows.Controls.ListView> control.  
+  
+   
+  
+## Examples  
+ The following example shows how to use a <xref:System.Windows.Controls.GridViewRowPresenter> to style rows in a <xref:System.Windows.Controls.ListView> control.  
+  
+ <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#gridviewrowpresenter)]  -->
+ <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#GridViewRowPresenter](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#gridviewrowpresenter)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewRowPresenter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewRowPresenter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.GridViewRowPresenter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewRowPresenter.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arrangeSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="arrangeSize">The area to use to display the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</param>
+        <summary>Positions the content of a row according to the size of the corresponding <see cref="T:System.Windows.Controls.GridViewColumn" /> objects.</summary>
+        <returns>The actual <see cref="T:System.Windows.Size" /> that is used to display the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public object Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Content" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewRowPresenter.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data content to display in a row.</summary>
+        <value>The object that represents the content of a row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The typical usage of the <xref:System.Windows.Controls.GridViewRowPresenter> in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] is to place it in a <xref:System.Windows.Controls.ControlTemplate> of a control. The template binds the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property to a property of the control by using [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md). The following example shows how to bind the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> property of a <xref:System.Windows.Controls.GridViewRowPresenter> to the <xref:System.Windows.Controls.ContentControl.Content%2A> property of a <xref:System.Windows.Controls.ListViewItem> control.  
+  
+ <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewItemStyle/CS/Window1.xaml#controltemplate)]  -->
+ <!-- TODO: review snippet reference [!code-xml[ListViewItemStyle#ControlTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewItemStyle/XAML/Window1.xaml#controltemplate)]  -->  
+  
+<a name="xamlTextUsage_Content"></a>   
+## XAML Text Usage  
+ See Remarks.  
+  
+<a name="dependencyPropertyInfo_Content"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewRowPresenter.ContentProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewRowPresenter.ContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewRowPresenter.Content%2A> dependency property.  
+  
+   
+  
+## Examples  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewRowPresenter.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">The maximum area to use to display the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</param>
+        <summary>Determines the area that is required to display the row.</summary>
+        <returns>The actual <see cref="T:System.Windows.Size" /> of the area that displays the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewRowPresenter.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</summary>
+        <returns>A string that shows the <see cref="P:System.Windows.Controls.GridViewRowPresenter.Content" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

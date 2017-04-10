@@ -1,0 +1,73 @@
+<Type Name="PerformanceCounterCategoryType" FullName="System.Diagnostics.PerformanceCounterCategoryType">
+  <TypeSignature Language="C#" Value="public enum PerformanceCounterCategoryType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PerformanceCounterCategoryType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterCategoryType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates whether the performance counter category can have multiple instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are two types of performance counter categories: single-instance and multi-instance. By default, a category is single-instance when it is created and becomes multi-instance when another instance is added. Categories are created when an application is set up, and instances are added at run time. In the .NET Framework version 1.0 and version 1.1, it is not necessary to know whether a performance counter category is multi-instance or single-instance. In the .NET Framework version 2.0, the <xref:System.Diagnostics.PerformanceCounterCategoryType> enumeration is used to indicate whether a performance counter can have multiple instances.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MultiInstance">
+      <MemberSignature Language="C#" Value="MultiInstance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterCategoryType MultiInstance = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterCategoryType.MultiInstance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategoryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The performance counter category can have multiple instances.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleInstance">
+      <MemberSignature Language="C#" Value="SingleInstance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterCategoryType SingleInstance = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterCategoryType.SingleInstance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategoryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The performance counter category can have only a single instance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterCategoryType Unknown = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterCategoryType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterCategoryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The instance functionality for the performance counter category is unknown.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

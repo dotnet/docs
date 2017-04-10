@@ -1,0 +1,79 @@
+<Type Name="CustomAttributeValue&lt;TType&gt;" FullName="System.Reflection.Metadata.CustomAttributeValue&lt;TType&gt;">
+  <TypeSignature Language="C#" Value="public struct CustomAttributeValue&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CustomAttributeValue`1&lt;TType&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.CustomAttributeValue`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CustomAttributeValue (System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;&gt; fixedArguments, System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeNamedArgument&lt;TType&gt;&gt; namedArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.CustomAttributeTypedArgument`1&lt;!TType&gt;&gt; fixedArguments, valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.CustomAttributeNamedArgument`1&lt;!TType&gt;&gt; namedArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.CustomAttributeValue`1.#ctor(System.Collections.Immutable.ImmutableArray{System.Reflection.Metadata.CustomAttributeTypedArgument{`0}},System.Collections.Immutable.ImmutableArray{System.Reflection.Metadata.CustomAttributeNamedArgument{`0}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fixedArguments" Type="System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;&gt;" />
+        <Parameter Name="namedArguments" Type="System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeNamedArgument&lt;TType&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="fixedArguments">To be added.</param>
+        <param name="namedArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedArguments">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;&gt; FixedArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.CustomAttributeTypedArgument`1&lt;!TType&gt;&gt; FixedArguments" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeValue`1.FixedArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamedArguments">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeNamedArgument&lt;TType&gt;&gt; NamedArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.CustomAttributeNamedArgument`1&lt;!TType&gt;&gt; NamedArguments" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeValue`1.NamedArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.CustomAttributeNamedArgument&lt;TType&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

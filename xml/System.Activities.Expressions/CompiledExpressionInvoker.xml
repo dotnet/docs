@@ -1,0 +1,187 @@
+<Type Name="CompiledExpressionInvoker" FullName="System.Activities.Expressions.CompiledExpressionInvoker">
+  <TypeSignature Language="C#" Value="public class CompiledExpressionInvoker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompiledExpressionInvoker extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.CompiledExpressionInvoker" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a compiled expression invoker.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompiledExpressionInvoker (System.Activities.Expressions.ITextExpression expression, bool isReference, System.Activities.CodeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Expressions.ITextExpression expression, bool isReference, valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.#ctor(System.Activities.Expressions.ITextExpression,System.Boolean,System.Activities.CodeActivityMetadata)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expression" Type="System.Activities.Expressions.ITextExpression" />
+        <Parameter Name="isReference" Type="System.Boolean" />
+        <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The expression.</param>
+        <param name="isReference">
+          <see langword="True" /> to keep object reference data; otherwise, <see langword="false" />.</param>
+        <param name="metadata">The activity metadata.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.CompiledExpressionInvoker" /> class using the expression, isReference and metadata.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledExpressionRoot">
+      <MemberSignature Language="C#" Value="public static object GetCompiledExpressionRoot (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetCompiledExpressionRoot(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.GetCompiledExpressionRoot(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <summary>Sets the compiled expression root.</summary>
+        <returns>The compiled expression root.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledExpressionRootForImplementation">
+      <MemberSignature Language="C#" Value="public static object GetCompiledExpressionRootForImplementation (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetCompiledExpressionRootForImplementation(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.GetCompiledExpressionRootForImplementation(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <summary>Gets the compiled expression root for the implementation of <see cref="T:System.Activities.Expressions.CompiledExpressionInvoker" />.</summary>
+        <returns>The compiled expression root.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeExpression">
+      <MemberSignature Language="C#" Value="public object InvokeExpression (System.Activities.ActivityContext activityContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeExpression(class System.Activities.ActivityContext activityContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.InvokeExpression(System.Activities.ActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityContext" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="activityContext">The activity context.</param>
+        <summary>Invokes the compiled expression.</summary>
+        <returns>The invoked expression.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStaticallyCompiled">
+      <MemberSignature Language="C#" Value="public bool IsStaticallyCompiled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStaticallyCompiled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.CompiledExpressionInvoker.IsStaticallyCompiled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the compiled expression invoker is statically compiled.</summary>
+        <value>
+          <see langword="true" /> if the compiled expression invoker is statically compiled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCompiledExpressionRoot">
+      <MemberSignature Language="C#" Value="public static void SetCompiledExpressionRoot (object target, System.Activities.XamlIntegration.ICompiledExpressionRoot compiledExpressionRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCompiledExpressionRoot(object target, class System.Activities.XamlIntegration.ICompiledExpressionRoot compiledExpressionRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.SetCompiledExpressionRoot(System.Object,System.Activities.XamlIntegration.ICompiledExpressionRoot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="compiledExpressionRoot" Type="System.Activities.XamlIntegration.ICompiledExpressionRoot" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="compiledExpressionRoot">The compiled expression root to be set.</param>
+        <summary>Sets the compiled expression root.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The compiled expression root.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCompiledExpressionRootForImplementation">
+      <MemberSignature Language="C#" Value="public static void SetCompiledExpressionRootForImplementation (object target, System.Activities.XamlIntegration.ICompiledExpressionRoot compiledExpressionRoot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCompiledExpressionRootForImplementation(object target, class System.Activities.XamlIntegration.ICompiledExpressionRoot compiledExpressionRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.CompiledExpressionInvoker.SetCompiledExpressionRootForImplementation(System.Object,System.Activities.XamlIntegration.ICompiledExpressionRoot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="compiledExpressionRoot" Type="System.Activities.XamlIntegration.ICompiledExpressionRoot" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="compiledExpressionRoot">The compiled expression root to be set.</param>
+        <summary>Sets the compiled expression root for the implementation of <see cref="T:System.Activities.Expressions.CompiledExpressionInvoker" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The compiled expression root.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,103 @@
+<Type Name="TrackBarThumbState" FullName="System.Windows.Forms.VisualStyles.TrackBarThumbState">
+  <TypeSignature Language="C#" Value="public enum TrackBarThumbState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrackBarThumbState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the visual state of a track bar slider (also known as a thumb) that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.TrackBarThumbState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the following classes:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.Thumb>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbBottom>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbLeft>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbRight>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbTop>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar.ThumbVertical>  
+  
+ The <xref:System.Windows.Forms.VisualStyles.TrackBarThumbState> values are also used as an argument in the <xref:System.Windows.Forms.TrackBarRenderer?displayProperty=fullName> class methods that draw the track bar slider.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState Disabled = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrackBarThumbState.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TrackBarThumbState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The slider appears disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hot">
+      <MemberSignature Language="C#" Value="Hot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState Hot = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrackBarThumbState.Hot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TrackBarThumbState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The slider appears hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState Normal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrackBarThumbState.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TrackBarThumbState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The slider appears normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pressed">
+      <MemberSignature Language="C#" Value="Pressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TrackBarThumbState Pressed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TrackBarThumbState.Pressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TrackBarThumbState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The slider appears pressed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

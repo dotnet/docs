@@ -1,0 +1,83 @@
+<Type Name="SettingsManageabilityAttribute" FullName="System.Configuration.SettingsManageabilityAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SettingsManageabilityAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SettingsManageabilityAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsManageabilityAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies special services for application settings properties. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsManageabilityAttribute> indicates that special, predefined services are to be provided to individual application settings properties and property groups. Most of these services will be provided by the Windows operating system.  
+  
+ For more information about application settings properties and their use, see [Application Settings for Windows Forms](~/docs/framework/winforms/advanced/application-settings-for-windows-forms.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SettingsManageabilityAttribute (System.Configuration.SettingsManageability manageability);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Configuration.SettingsManageability manageability) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsManageabilityAttribute.#ctor(System.Configuration.SettingsManageability)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="manageability" Type="System.Configuration.SettingsManageability" />
+      </Parameters>
+      <Docs>
+        <param name="manageability">A <see cref="T:System.Configuration.SettingsManageability" /> value that enumerates the services being requested.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsManageabilityAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multiple services can be requested by combining together values defined by the <xref:System.Configuration.SettingsManageability> enumeration with the logical `OR` operator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Manageability">
+      <MemberSignature Language="C#" Value="public System.Configuration.SettingsManageability Manageability { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.SettingsManageability Manageability" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsManageabilityAttribute.Manageability" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsManageability</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the set of special services that have been requested.</summary>
+        <value>A value that results from using the logical <see langword="OR" /> operator to combine all the <see cref="T:System.Configuration.SettingsManageability" /> enumeration values corresponding to the requested services.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set in the <xref:System.Configuration.SettingsManageabilityAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

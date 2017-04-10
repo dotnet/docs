@@ -1,0 +1,66 @@
+<Type Name="ConfigurationLocationCollection" FullName="System.Configuration.ConfigurationLocationCollection">
+  <TypeSignature Language="C#" Value="public class ConfigurationLocationCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationLocationCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationLocationCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Configuration.ConfigurationLocationCollection" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.ConfigurationLocationCollection> class to iterate through a collection of <xref:System.Configuration.ConfigurationLocation> objects, which represent the resources for which location-specific configuration settings are defined. <xref:System.Configuration.ConfigurationLocationCollection> is the type returned by the <xref:System.Configuration.Configuration.Locations%2A> property.  
+  
+> [!NOTE]
+>  The <xref:System.Configuration.ConfigurationLocationCollection> class might not reference the collection of  <xref:System.Configuration.ConfigurationLocation> objects in the order that they are specified in the configuration file.  
+  
+   
+  
+## Examples  
+ In the following code example, the Web configuration for the application `MySampleApp` is loaded, and the locations defined in this configuration are displayed by iterating through the <xref:System.Configuration.ConfigurationLocationCollection> object returned by the <xref:System.Configuration.Configuration.Locations%2A> property.  
+  
+ [!code-csharp[ConfigurationLocationCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ConfigurationLocationCollection/CS/sample.cs#1)]
+ [!code-vb[ConfigurationLocationCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ConfigurationLocationCollection/VB/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationLocation this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationLocation Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationLocationCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationLocation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index location of the <see cref="T:System.Configuration.ConfigurationLocationCollection" /> to return.</param>
+        <summary>Gets the <see cref="T:System.Configuration.ConfigurationLocationCollection" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationLocationCollection" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.ConfigurationLocationCollection.Item%2A> accessor to the <xref:System.Configuration.ConfigurationLocationCollection> class to get a specific <xref:System.Configuration.ConfigurationLocation> object from the collection by specifying its index within the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

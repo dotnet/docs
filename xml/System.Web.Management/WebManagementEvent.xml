@@ -1,0 +1,152 @@
+<Type Name="WebManagementEvent" FullName="System.Web.Management.WebManagementEvent">
+  <TypeSignature Language="C#" Value="public class WebManagementEvent : System.Web.Management.WebBaseEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebManagementEvent extends System.Web.Management.WebBaseEvent" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebManagementEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Management.WebBaseEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the base class for events that carry application and process information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ The <xref:System.Web.Management.WebManagementEvent> is the base class for all the ASP.NET health-monitoring event types. It uses the <xref:System.Web.Management.WebProcessInformation> class to obtain process information that is available to its derived classes.  
+  
+> [!NOTE]
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of deriving from the <xref:System.Web.Management.WebManagementEvent> class, see the example provided in this topic.  
+  
+   
+  
+## Examples  
+ The following example shows how to implement a custom event by deriving it from the <xref:System.Web.Management.WebManagementEvent> class.  
+  
+ [!code-csharp[System.Web.Management.WebManagementEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebManagementEvent/CS/webmanagementevent.cs#1)]
+ [!code-vb[System.Web.Management.WebManagementEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebManagementEvent/VB/webmanagementevent.vb#1)]  
+  
+ The following is an excerpt of the configuration file that enables ASP.NET to use the custom event.  
+  
+```  
+<healthMonitoring enabled="true"   
+  heartBeatInterval="0">  
+  <eventMappings>  
+  
+    <add  name="SampleWebManagementEvent" type="SamplesAspNet.SampleWebManagementEvent,webmanagementevent,Version=1.0.1573.24438, Culture=neutral, PublicKeyToken=2f5f337ae5c9bdaa, processorArchitecture=MSIL"/>  
+  
+  </eventMappings>  
+  <rules>  
+    <add   
+      name="Custom WebManagementEvent"  
+      eventName="SampleWebManagementEvent"  
+      provider="EventLogProvider"  
+      profile="Critical"/>  
+  </rules>  
+</healthMonitoring>  
+```  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When formatting your custom event information for display, override the <see cref="M:System.Web.Management.WebBaseEvent.FormatCustomEventDetails(System.Web.Management.WebEventFormatter)" /> method rather than the <see cref="Overload:System.Web.Management.WebBaseEvent.ToString" /> method. This will avoid overwriting or tampering with sensitive system information.  
+  
+ The event code you specify for your custom event must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebManagementEvent (string message, object eventSource, int eventCode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebManagementEvent.#ctor(System.String,System.Object,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Object" />
+        <Parameter Name="eventCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The event description.</param>
+        <param name="eventSource">The object that is the source of the event.</param>
+        <param name="eventCode">The code associated with the event. When you implement a custom event, the event code must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebManagementEvent" /> class using the supplied parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebManagementEvent.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by ASP.NET. You can call the <xref:System.Web.Management.WebManagementEvent.%23ctor%2A> constructor when deriving from the <xref:System.Web.Management.WebManagementEvent> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebManagementEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebManagementEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Object" />
+        <Parameter Name="eventCode" Type="System.Int32" />
+        <Parameter Name="eventDetailCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The event description.</param>
+        <param name="eventSource">The object that is the source of the event.</param>
+        <param name="eventCode">The code associated with the event. When you implement a custom event, the event code must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <param name="eventDetailCode">The <see cref="T:System.Web.Management.WebEventCodes" /> value that specifies the detailed identifier for the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebManagementEvent" /> class using the supplied parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebManagementEvent.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by ASP.NET. You can call the <xref:System.Web.Management.WebManagementEvent.%23ctor%2A> constructor when deriving from the <xref:System.Web.Management.WebManagementEvent> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessInformation">
+      <MemberSignature Language="C#" Value="public System.Web.Management.WebProcessInformation ProcessInformation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebProcessInformation ProcessInformation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebManagementEvent.ProcessInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.WebProcessInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets information about the ASP.NET application-hosting process.</summary>
+        <value>A <see cref="T:System.Web.Management.WebProcessInformation" /> object that contains information about the process.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Management.WebManagementEvent.ProcessInformation%2A> value.  
+  
+ [!code-csharp[System.Web.Management.WebManagementEvent#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebManagementEvent/CS/webmanagementevent.cs#5)]
+ [!code-vb[System.Web.Management.WebManagementEvent#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebManagementEvent/VB/webmanagementevent.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

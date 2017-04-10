@@ -1,0 +1,34 @@
+<Type Name="InputEventHandler" FullName="System.Windows.Input.InputEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void InputEventHandler(object sender, InputEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InputEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.InputEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles input related routed events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No existing event in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] uses the <xref:System.Windows.Input.KeyboardEventHandler> delegate. The event data type for this class, <xref:System.Windows.Input.InputEventArgs>, is the base class for various more specific event data classes for input. <xref:System.Windows.Input.InputEventArgs> defines the event data properties of input events that are common regardless of the device that initiated the event.  
+  
+ An example of a delegate that uses <xref:System.Windows.Input.InputEventArgs> derived event data and that corresponds to an existing input event is <xref:System.Windows.Input.KeyboardFocusChangedEventHandler>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

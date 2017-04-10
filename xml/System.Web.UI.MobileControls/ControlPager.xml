@@ -1,0 +1,211 @@
+<Type Name="ControlPager" FullName="System.Web.UI.MobileControls.ControlPager">
+  <TypeSignature Language="C#" Value="public class ControlPager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlPager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ControlPager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Used by a form to paginate its controls. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During pagination, a <xref:System.Web.UI.MobileControls.ControlPager> object is passed to each control on the form, and is used by the control to determine the control's page index.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlPager (System.Web.UI.MobileControls.Form form, int pageWeight);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.MobileControls.Form form, int32 pageWeight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ControlPager.#ctor(System.Web.UI.MobileControls.Form,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="form" Type="System.Web.UI.MobileControls.Form" />
+        <Parameter Name="pageWeight" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="form">The form page.</param>
+        <param name="pageWeight">The weight of the specified form page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ControlPager" /> class for the specified form that uses the specified weight for a page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultWeight">
+      <MemberSignature Language="C#" Value="public static readonly int DefaultWeight;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 DefaultWeight" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ControlPager.DefaultWeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the assigned weight for a page. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The choice of units that you use for optimum page weight and control weights is flexible. Because device adapters can provide both types of weights, a set of adapters can coordinate an appropriate convention for weight units. However, if you follow the default unit system, your adapters can use the default weights of controls. The default unit system is based on one line equaling 100 units, as indicated by the constant <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemPager">
+      <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ItemPager GetItemPager (System.Web.UI.MobileControls.MobileControl control, int itemCount, int itemsPerPage, int itemWeight);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.MobileControls.ItemPager GetItemPager(class System.Web.UI.MobileControls.MobileControl control, int32 itemCount, int32 itemsPerPage, int32 itemWeight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ControlPager.GetItemPager(System.Web.UI.MobileControls.MobileControl,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.ItemPager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.MobileControls.MobileControl" />
+        <Parameter Name="itemCount" Type="System.Int32" />
+        <Parameter Name="itemsPerPage" Type="System.Int32" />
+        <Parameter Name="itemWeight" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="control">The control to be paginated.</param>
+        <param name="itemCount">The number of items in the <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object.</param>
+        <param name="itemsPerPage">The maximum number of items on a page.</param>
+        <param name="itemWeight">The optimum weight of the <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object.</param>
+        <summary>Creates and returns an <see cref="T:System.Web.UI.MobileControls.ItemPager" /> object for paginating the contents of the given control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>The <see cref="T:System.Web.UI.MobileControls.ItemPager" /> for paginating the contents of the given control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPage">
+      <MemberSignature Language="C#" Value="public int GetPage (int weight);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetPage(int32 weight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ControlPager.GetPage(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="weight" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="weight">The weight of a control.</param>
+        <summary>Returns a newly assigned page index based on the weight of the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>A newly assigned page index based on the weight of the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls call this method iteratively during pagination to retrieve their assigned pages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageCount">
+      <MemberSignature Language="C#" Value="public int PageCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PageCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ControlPager.PageCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets or returns the number of form pages currently created by the pager. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The number of form pages currently created by the pager.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageWeight">
+      <MemberSignature Language="C#" Value="public int PageWeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PageWeight" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ControlPager.PageWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the optimal weight of a form page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The optimal weight of a form page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemainingWeight">
+      <MemberSignature Language="C#" Value="public int RemainingWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RemainingWeight" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ControlPager.RemainingWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets or returns the weight that remains on the current ASP.NET mobile Web Forms page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The weight that remains on the current ASP.NET mobile Web Forms page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultWeight">
+      <MemberSignature Language="C#" Value="public static readonly int UseDefaultWeight;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 UseDefaultWeight" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ControlPager.UseDefaultWeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns whether to use the value of the <see cref="F:System.Web.UI.MobileControls.ControlPager.DefaultWeight" /> field for pagination. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Extend the <xref:System.Web.UI.MobileControls.ControlPager> class and change this field and the <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight> field, if you need to use some value other than the <xref:System.Web.UI.MobileControls.ControlPager.DefaultWeight> field as the default weight for a page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

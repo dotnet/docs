@@ -1,0 +1,259 @@
+<Type Name="TransactionManager" FullName="System.Transactions.TransactionManager">
+  <TypeSignature Language="C#" Value="public static class TransactionManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed TransactionManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains methods used for transaction management. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class contains static properties and methods used to obtain information about the default transaction options. It also contains several static methods used for recovery of a durable resource when the durable resource fails. No special action is required of a durable resource if the Microsoft Distributed Transaction Coordinator (MSDTC) fails.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultTimeout">
+      <MemberSignature Language="C#" Value="public static TimeSpan DefaultTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan DefaultTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionManager.DefaultTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default timeout interval for new transactions.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> value that specifies the timeout interval for new transactions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The timeout interval of a transaction is the time within which the transaction must be completed. If the transaction manager has not heard from all transaction participants within the timeout interval, it aborts the transaction.  
+  
+ This value can be set in the `DefaultSettingsSection` of the config file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DistributedTransactionStarted">
+      <MemberSignature Language="C#" Value="public static event System.Transactions.TransactionStartedEventHandler DistributedTransactionStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Transactions.TransactionStartedEventHandler DistributedTransactionStarted" />
+      <MemberSignature Language="DocId" Value="E:System.Transactions.TransactionManager.DistributedTransactionStarted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a distributed transaction has started.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **Caution** Signing up for this event degrades the performance of all distributed transactions. Local transactions are not monitored as performance is affected even more.  
+  
+ **Note** This method uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostCurrentCallback">
+      <MemberSignature Language="C#" Value="public static System.Transactions.HostCurrentTransactionCallback HostCurrentCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Transactions.HostCurrentTransactionCallback HostCurrentCallback" />
+      <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionManager.HostCurrentCallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.HostCurrentTransactionCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a custom transaction factory.</summary>
+        <value>A <see cref="T:System.Transactions.HostCurrentTransactionCallback" /> that contains a custom transaction factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **Note** This method uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumTimeout">
+      <MemberSignature Language="C#" Value="public static TimeSpan MaximumTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan MaximumTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionManager.MaximumTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default maximum timeout interval for new transactions.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> value that specifies the maximum timeout interval that is allowed when creating new transactions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an explanation of the timeout interval, see the documentation for the <xref:System.Transactions.TransactionManager.DefaultTimeout%2A> property.  
+  
+ This value can be set in the `MachineSettingsSection` of the config file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecoveryComplete">
+      <MemberSignature Language="C#" Value="public static void RecoveryComplete (Guid manager);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RecoveryComplete(valuetype System.Guid manager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionManager.RecoveryComplete(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceManagerIdentifier" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="manager">To be added.</param>
+        <summary>Notifies the transaction manager that a resource manager recovering from failure has finished reenlisting in all unresolved transactions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All durable resource managers should do recovery when they first start up by calling the <xref:System.Transactions.TransactionManager.Reenlist%2A> method for each outstanding transaction.  Only when all of the reenlistments are done should the resource manager call <xref:System.Transactions.TransactionManager.RecoveryComplete%2A>.  
+  
+ For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
+  
+ **Note** This method uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="resourceManagerIdentifier" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Reenlist">
+      <MemberSignature Language="C#" Value="public static System.Transactions.Enlistment Reenlist (Guid manager, byte[] recoveryInfo, System.Transactions.IEnlistmentNotification notification);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Transactions.Enlistment Reenlist(valuetype System.Guid manager, unsigned int8[] recoveryInfo, class System.Transactions.IEnlistmentNotification notification) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.TransactionManager.Reenlist(System.Guid,System.Byte[],System.Transactions.IEnlistmentNotification)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.Enlistment</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceManagerIdentifier" Type="System.Guid" />
+        <Parameter Name="recoveryInformation" Type="System.Byte[]" />
+        <Parameter Name="enlistmentNotification" Type="System.Transactions.IEnlistmentNotification" />
+      </Parameters>
+      <Docs>
+        <param name="manager">To be added.</param>
+        <param name="recoveryInfo">To be added.</param>
+        <param name="notification">To be added.</param>
+        <summary>Reenlists a durable participant in a transaction.</summary>
+        <returns>An <see cref="T:System.Transactions.Enlistment" /> that describes the enlistment.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource manager facilitates resolution of durable enlistments in a transaction by reenlisting the transaction participant after resource failure.  
+  
+ The `resourceManagerIdentifier` parameter is used to consistently label the participant of a transaction in the event of a resource failure.  When calling the <xref:System.Transactions.TransactionManager.Reenlist%2A> method, the resource manager must provide the same `resourceManagerIdentifier` as it used when it originally called the <xref:System.Transactions.Transaction.EnlistDurable%2A> method during enlistment, or a <xref:System.Transactions.TransactionException> is thrown.  
+  
+ When a participant is reenlisted using this method, the phase 2 methods of <xref:System.Transactions.IEnlistmentNotification> that correspond to the transaction's outcome (that is, <xref:System.Transactions.IEnlistmentNotification.Commit%2A> , <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> or <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> ) are called as appropriate.  
+  
+ After the participants are successfully reenlisted, you should then call <xref:System.Transactions.TransactionManager.RecoveryComplete%2A> to complete the recovery.  
+  
+ You should only call this method when a resource manager restarts from failure. In addition, you should only reenlist unresolved transactions logged by a resource manager during the initial Prepare phase of a two-phase commit. Any attempt to call this method at invalid times can produce erroneous results.  
+  
+ If the transaction manager fails, and your resource manager performs recovery only a short time after you called the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> method on an enlistment in phase 1 of the Two-Phase Commit protocol, your resource manager might either receive the <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> or <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> callback.  
+  
+ For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
+  
+ **Note** This method uses <xref:System.Security.Permissions.SecurityAction> to prevent it from being called from untrusted code; however, only the immediate caller is required to possess the `FullTrust` permission set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="recoveryInformation" /> is invalid.  
+  
+ -or-  
+  
+ Transaction Manager information in <paramref name="recoveryInformation" /> does not match the configured transaction manager.  
+  
+ -or-  
+  
+ <paramref name="RecoveryInformation" /> is not recognized by <see cref="N:System.Transactions" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="M:System.Transactions.TransactionManager.RecoveryComplete(System.Guid)" /> has already been called for the specified <paramref name="resourceManagerIdentifier" />. The reenlistment is rejected.</exception>
+        <exception cref="T:System.Transactions.TransactionException">The <paramref name="resourceManagerIdentifier" /> does not match the content of the specified recovery information in <paramref name="recoveryInformation" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

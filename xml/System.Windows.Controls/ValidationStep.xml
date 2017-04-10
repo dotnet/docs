@@ -1,0 +1,98 @@
+<Type Name="ValidationStep" FullName="System.Windows.Controls.ValidationStep">
+  <TypeSignature Language="C#" Value="public enum ValidationStep" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationStep extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationStep" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies when a <see cref="T:System.Windows.Controls.ValidationRule" /> runs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses a <xref:System.Windows.Controls.ValidationRule> named `ValidateDateAndPrice`. The <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> for this rule is set to ConvertedProposedValue so that when it runs, the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method has access to values that are of the source property's type.  
+  
+ When the `PriceIsAPositiveNumber` and `FutureDateRule` rules run, the values in each <xref:System.Windows.Controls.ValidationRule.Validate%2A> method are strings because the default value of <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is RawProposedValue. Therefore, the rules run before the values are converted to their respective types.  
+  
+ [!code-xml[BindingGroupSnippets#WindowLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Window1.xaml#windowlayout)]  
+  
+ The following example shows the `ValidateDateAndPrice`<xref:System.Windows.Controls.ValidationRule>. In the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method, the `Price` property is of type <xref:System.Double> and the `OfferExpires` property is of type <xref:System.DateTime>. The strings have been converted to their respective types by the time the <xref:System.Windows.Controls.ValidationRule> runs.  
+  
+ [!code-csharp[BindingGroupSnippets#ValidateObject](~/samples/snippets/csharp/VS_Snippets_Wpf/BindingGroupSnippets/CSharp/Data.cs#validateobject)]
+ [!code-vb[BindingGroupSnippets#ValidateObject](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindingGroupSnippets/visualbasic/data.vb#validateobject)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CommittedValue">
+      <MemberSignature Language="C#" Value="CommittedValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ValidationStep CommittedValue = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.CommittedValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the value has been committed to the source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertedProposedValue">
+      <MemberSignature Language="C#" Value="ConvertedProposedValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ValidationStep ConvertedProposedValue = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.ConvertedProposedValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the value is converted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RawProposedValue">
+      <MemberSignature Language="C#" Value="RawProposedValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ValidationStep RawProposedValue = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.RawProposedValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> before any conversion occurs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedValue">
+      <MemberSignature Language="C#" Value="UpdatedValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ValidationStep UpdatedValue = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ValidationStep.UpdatedValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ValidationStep</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Runs the <see cref="T:System.Windows.Controls.ValidationRule" /> after the source is updated.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,234 @@
+<Type Name="IHierarchicalDataSourceDesigner" FullName="System.Web.UI.Design.IHierarchicalDataSourceDesigner">
+  <TypeSignature Language="C#" Value="public interface IHierarchicalDataSourceDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHierarchicalDataSourceDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support in a visual designer for a class that is derived from the <see cref="T:System.Web.UI.HierarchicalDataSourceControl" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, when creating a new data source class for hierarchical data and an accompanying designer, you would inherit the <xref:System.Web.UI.Design.HierarchicalDataSourceDesigner> class rather than implement the <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner> interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanConfigure">
+      <MemberSignature Language="C#" Value="public bool CanConfigure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanConfigure" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if the underlying data source has a configuration wizard that can be launched with <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" />, otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure%2A> property is used by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], to determine whether to display a **Configure** command at design time.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and you do not provide configuration functionality, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRefreshSchema">
+      <MemberSignature Language="C#" Value="public bool CanRefreshSchema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRefreshSchema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> can be called; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema%2A> property is used by a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], to determine whether to display a **Refresh Schema** command at design time.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and the schema will never change, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Configure">
+      <MemberSignature Language="C#" Value="public void Configure ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Configure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Launches the configuration wizard for the underlying data source.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and you do not provide configuration functionality, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method should raise a <see cref="T:System.NotSupportedException" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.DataSourceChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a data source control has changed in some way that affects data-bound controls.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Typically, when you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface, the <see cref="E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.DataSourceChanged" /> event handler calls the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method. If the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" /> property is <see langword="true" />, recreate any sample data, and then raise the event again to allow each data-bound control to refresh its markup.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.DesignerHierarchicalDataSourceView GetView (string viewPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.DesignerHierarchicalDataSourceView GetView(string viewPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.GetView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.DesignerHierarchicalDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewPath">The XPath for the part of the data source to retrieve.</param>
+        <summary>Gets the named data source view that is associated with the data source control.</summary>
+        <returns>The named data source view that is associated with the data source control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshSchema">
+      <MemberSignature Language="C#" Value="public void RefreshSchema (bool preferSilent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshSchema(bool preferSilent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="preferSilent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="preferSilent">
+          <see langword="true" /> to suppress events raised while refreshing the schema; otherwise <see langword="false" />.</param>
+        <summary>Refreshes the schema of the underlying data source.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement the <see cref="T:System.Web.UI.Design.IHierarchicalDataSourceDesigner" /> interface to create your own data source and the schema will never change, the <see cref="P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema" /> property should always return <see langword="false" /> and the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method should raise a <see cref="T:System.NotSupportedException" />.  
+  
+ Typically, if the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> is called by the design host as a result of user action, the <paramref name="preferSilent" /> parameter would be <see langword="false" />, because the user would expect to be notified of any problems with refreshing the schema. But, if the schema is refreshed implicitly, such as after a call to the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method, or if the refreshing process involves a number of steps, <paramref name="preferSilent" /> should be set to <see langword="true" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeDataSourceEvents">
+      <MemberSignature Language="C#" Value="public void ResumeDataSourceEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeDataSourceEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Restores events after calling the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaRefreshed">
+      <MemberSignature Language="C#" Value="public event EventHandler SchemaRefreshed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SchemaRefreshed" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SchemaRefreshed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the fields or data of the underlying data source have changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressDataSourceEvents">
+      <MemberSignature Language="C#" Value="public void SuppressDataSourceEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuppressDataSourceEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Turns off events in the data source control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can restore events with the <xref:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Typically, you would call the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents" /> method when opening a dialog box, such as with the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure" /> method, or during a call to the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" /> method, if building the schema requires multiple processes, any of which might create an exception. After processing is finished, call the <see cref="M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

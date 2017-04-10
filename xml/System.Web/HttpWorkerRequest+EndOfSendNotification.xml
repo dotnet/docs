@@ -1,0 +1,32 @@
+<Type Name="HttpWorkerRequest+EndOfSendNotification" FullName="System.Web.HttpWorkerRequest+EndOfSendNotification">
+  <TypeSignature Language="C#" Value="public delegate void HttpWorkerRequest.EndOfSendNotification(HttpWorkerRequest wr, object extraData);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed HttpWorkerRequest/EndOfSendNotification extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpWorkerRequest.EndOfSendNotification" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="wr" Type="System.Web.HttpWorkerRequest" />
+    <Parameter Name="extraData" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="wr">The current <see cref="T:System.Web.HttpWorkerRequest" />.</param>
+    <param name="extraData">Any additional data needed to process the request.</param>
+    <summary>Represents the method that Notifies callers when sending of the response is complete.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The host can use this notification to implement buffer recycling.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

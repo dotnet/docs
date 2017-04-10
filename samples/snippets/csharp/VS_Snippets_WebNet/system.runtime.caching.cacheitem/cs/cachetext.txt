@@ -1,0 +1,50 @@
+Assembly Information
+
+Property	Value
+Name	System.Web.Extensions
+
+ 
+T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression
+Represents an abstract base class for T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression objects.
+{2}
+Remarks
+
+Example
+
+
+ 
+M:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.#ctor
+Initializes a new instance of the T:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression class.
+Remarks
+
+Example
+
+
+ 
+M:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)
+Executes the expression by using a specified owner control, T:System.Web.HttpContext, and data source.
+Parameters
+
+Parameter	Description
+owner	The owner control to use.
+
+context	The T:System.Web.HttpContext to use.
+dataSource	The data source to use.
+
+Remarks
+
+Example
+
+
+ 
+P:System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression.Parameters
+Gets the parameters that are associated with this T:System.Web.UI.WebControls.Expressions.DataSourceExpression object.
+Return Value
+The parameters that are associated with the T:System.Web.UI.WebControls.Expressions.DataSourceExpression object.
+Remarks
+
+Example
+
+Philip
+
+

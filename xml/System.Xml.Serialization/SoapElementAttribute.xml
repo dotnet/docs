@@ -1,0 +1,290 @@
+<Type Name="SoapElementAttribute" FullName="System.Xml.Serialization.SoapElementAttribute">
+  <TypeSignature Language="C#" Value="public class SoapElementAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapElementAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapElementAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that the public member value be serialized by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> as an encoded SOAP XML element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.SoapElementAttribute> class belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object as encoded SOAP XML. The resulting XML conforms to section 5 of the World Wide Web Consortium (www.w3.org) document, "Simple Object Access Protocol (SOAP) 1.1". For a complete list of similar attributes, see [Attributes That Control Encoded SOAP Serialization](~/docs/framework/serialization/attributes-that-control-encoded-soap-serialization.md).  
+  
+ To serialize an object as an encoded SOAP message, you must construct the <xref:System.Xml.Serialization.XmlSerializer> using an <xref:System.Xml.Serialization.XmlTypeMapping> created with the <xref:System.Xml.Serialization.SoapReflectionImporter.ImportTypeMapping%2A> method of the <xref:System.Xml.Serialization.SoapReflectionImporter> class.  
+  
+ Apply the <xref:System.Xml.Serialization.SoapElementAttribute> to a public field to direct the <xref:System.Xml.Serialization.XmlSerializer> to serialize the field as an encoded SOAP XML element.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example serializes an instance of a class named `Transportation` that contains a field named `Vehicle`. A <xref:System.Xml.Serialization.SoapElementAttribute> is applied to the field. When the field is serialized, the XML element name is "Wheels" instead of "Vehicle". The `SerializeOverride` method creates a <xref:System.Xml.Serialization.SoapElementAttribute> and sets the <xref:System.Xml.Serialization.SoapAttributes.SoapElement%2A> property of a <xref:System.Xml.Serialization.SoapAttributes> to the <xref:System.Xml.Serialization.SoapElementAttribute>. The <xref:System.Xml.Serialization.SoapAttributes> is added to a <xref:System.Xml.Serialization.SoapAttributeOverrides> that is used to create an <xref:System.Xml.Serialization.XmlTypeMapping>. An <xref:System.Xml.Serialization.XmlSerializer> is constructed with the <xref:System.Xml.Serialization.XmlTypeMapping>, and an instance of the `Transportation` class is again serialized. Because the <xref:System.Xml.Serialization.SoapElementAttribute> is used to override the serialization, the generated XML element name is now "Truck" instead of "Wheels".  
+  
+ [!code-cpp[SoapElementOverrides#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapElementOverrides/CPP/soapelementoverrides.cpp#1)]
+ [!code-csharp[SoapElementOverrides#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapElementOverrides/CS/soapelementoverrides.cs#1)]
+ [!code-vb[SoapElementOverrides#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapElementOverrides/VB/soapelementoverrides.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapElementAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapElementAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapElementAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example serializes an instance of a class named `Transportation` that contains a field named `Vehicle`. A <xref:System.Xml.Serialization.SoapElementAttribute> is applied to the field. When the field is serialized, the XML element name is "Wheels" instead of "Vehicle". The `SerializeOverride` method creates a <xref:System.Xml.Serialization.SoapElementAttribute> and sets the <xref:System.Xml.Serialization.SoapAttributes.SoapElement%2A> property of a <xref:System.Xml.Serialization.SoapAttributes> to the <xref:System.Xml.Serialization.SoapElementAttribute>. The <xref:System.Xml.Serialization.SoapAttributes> is added to a <xref:System.Xml.Serialization.SoapAttributeOverrides> that is used to create an <xref:System.Xml.Serialization.XmlTypeMapping>. An <xref:System.Xml.Serialization.XmlSerializer> is constructed with the <xref:System.Xml.Serialization.XmlTypeMapping>, and an instance of the `Transportation` class is again serialized. Because the <xref:System.Xml.Serialization.SoapElementAttribute> is used to override the serialization, the generated XML element name is now "Truck" instead of "Wheels".  
+  
+ [!code-cpp[SoapElementOverrides#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapElementOverrides/CPP/soapelementoverrides.cpp#1)]
+ [!code-csharp[SoapElementOverrides#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapElementOverrides/CS/soapelementoverrides.cs#1)]
+ [!code-vb[SoapElementOverrides#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapElementOverrides/VB/soapelementoverrides.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapElementAttribute (string elementName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapElementAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementName">The XML element name of the serialized member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapElementAttribute" /> class and specifies the name of the XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example serializes an instance of a class named `Transportation` that contains a field named `Vehicle`. A <xref:System.Xml.Serialization.SoapElementAttribute> is applied to the field. When the field is serialized, the XML element name is "Wheels" instead of "Vehicle". The `SerializeOverride` method creates a <xref:System.Xml.Serialization.SoapElementAttribute> and sets the <xref:System.Xml.Serialization.SoapAttributes.SoapElement%2A> property of a <xref:System.Xml.Serialization.SoapAttributes> to the <xref:System.Xml.Serialization.SoapElementAttribute>. The <xref:System.Xml.Serialization.SoapAttributes> is added to a <xref:System.Xml.Serialization.SoapAttributeOverrides> that is used to create an <xref:System.Xml.Serialization.XmlTypeMapping>. An <xref:System.Xml.Serialization.XmlSerializer> is constructed with the <xref:System.Xml.Serialization.XmlTypeMapping>, and an instance of the `Transportation` class is again serialized. Because the <xref:System.Xml.Serialization.SoapElementAttribute> is used to override the serialization, the generated XML element name is now "Truck" instead of "Wheels".  
+  
+ [!code-cpp[SoapElementOverrides#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapElementOverrides/CPP/soapelementoverrides.cpp#1)]
+ [!code-csharp[SoapElementOverrides#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapElementOverrides/CS/soapelementoverrides.cs#1)]
+ [!code-vb[SoapElementOverrides#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapElementOverrides/VB/soapelementoverrides.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public string DataType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataType" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapElementAttribute.DataType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML Schema definition language (XSD) data type of the generated XML element.</summary>
+        <value>One of the XML Schema data types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists the XML Schema simple data types with their .NET equivalents.  
+  
+ For the XML Schema `base64Binary` and `hexBinary` data types, use an array of <xref:System.Byte> structures, and apply a <xref:System.Xml.Serialization.SoapElementAttribute> with the <xref:System.Xml.Serialization.SoapAttributeAttribute.DataType%2A> set to "base64Binary" or "hexBinary", as appropriate. For the XML Schema `time` and `date` data types, use the <xref:System.DateTime> type and apply the <xref:System.Xml.Serialization.SoapElementAttribute> with the <xref:System.Xml.Serialization.SoapElementAttribute.DataType%2A> set to "date" or "time".  
+  
+ For every XML Schema data type that is mapped to a string, apply the <xref:System.Xml.Serialization.SoapElementAttribute> with its <xref:System.Xml.Serialization.SoapElementAttribute.DataType%2A> property set to the XML Schema type. Note that this does not change the serialization format, only the schema for the member.  
+  
+> [!NOTE]
+>  The property is case-sensitive, so you must set it exactly to one of the XML Schema data types.  
+  
+> [!NOTE]
+>  Passing binary data as an XML element is more efficient than passing it as an XML attribute.  
+  
+ For more information about XML data types, see the World Wide Web Consortium (www.w3.org) document, "XML Schema Part 2: Datatypes".  
+  
+|XSD data type|.NET data type|  
+|-------------------|--------------------|  
+|anyURI|<xref:System.String>|  
+|base64Binary|Array of <xref:System.Byte> objects|  
+|boolean|<xref:System.Boolean>|  
+|byte|<xref:System.SByte>|  
+|date|<xref:System.DateTime>|  
+|dateTime|<xref:System.DateTime>|  
+|decimal|<xref:System.Decimal>|  
+|double|<xref:System.Double>|  
+|ENTITY|<xref:System.String>|  
+|ENTITIES|<xref:System.String>|  
+|float|<xref:System.Single>|  
+|gDay|<xref:System.String>|  
+|gMonth|<xref:System.String>|  
+|gMonthDay|<xref:System.String>|  
+|gYear|<xref:System.String>|  
+|gYearMonth|<xref:System.String>|  
+|hexBinary|Array of <xref:System.Byte> objects|  
+|ID|<xref:System.String>|  
+|IDREF|<xref:System.String>|  
+|IDREFS|<xref:System.String>|  
+|int|<xref:System.Int32>|  
+|integer|<xref:System.String>|  
+|language|<xref:System.String>|  
+|long|<xref:System.Int64>|  
+|Name|<xref:System.String>|  
+|NCName|<xref:System.String>|  
+|negativeInteger|<xref:System.String>|  
+|NMTOKEN|<xref:System.String>|  
+|NMTOKENS|<xref:System.String>|  
+|normalizedString|<xref:System.String>|  
+|nonNegativeInteger|<xref:System.String>|  
+|nonPositiveInteger|<xref:System.String>|  
+|NOTATION|<xref:System.String>|  
+|positiveInteger|<xref:System.String>|  
+|QName|<xref:System.Xml.XmlQualifiedName>|  
+|duration|<xref:System.String>|  
+|string|<xref:System.String>|  
+|short|<xref:System.Int16>|  
+|time|<xref:System.DateTime>|  
+|token|<xref:System.String>|  
+|unsignedByte|<xref:System.Byte>|  
+|unsignedInt|<xref:System.UInt32>|  
+|unsignedLong|<xref:System.UInt64>|  
+|unsignedShort|<xref:System.UInt16>|  
+  
+   
+  
+## Examples  
+ The following example serializes an instance of a class named `Transportation` that contains a field named `Vehicle`. A <xref:System.Xml.Serialization.SoapElementAttribute> is applied to the field. When the field is serialized, the XML element name is "Wheels" instead of "Vehicle". The `SerializeOverride` method creates a <xref:System.Xml.Serialization.SoapElementAttribute> and sets the <xref:System.Xml.Serialization.SoapAttributes.SoapElement%2A> property of a <xref:System.Xml.Serialization.SoapAttributes> to the <xref:System.Xml.Serialization.SoapElementAttribute>. The <xref:System.Xml.Serialization.SoapAttributes> is added to a <xref:System.Xml.Serialization.SoapAttributeOverrides> that is used to create an <xref:System.Xml.Serialization.XmlTypeMapping>. An <xref:System.Xml.Serialization.XmlSerializer> is constructed with the <xref:System.Xml.Serialization.XmlTypeMapping>, and an instance of the `Transportation` class is again serialized. Because the <xref:System.Xml.Serialization.SoapElementAttribute> is used to override the serialization, the generated XML element name is now "Truck" instead of "Wheels".  
+  
+ [!code-cpp[SoapElementOverrides#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapElementOverrides/CPP/soapelementoverrides.cpp#1)]
+ [!code-csharp[SoapElementOverrides#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapElementOverrides/CS/soapelementoverrides.cs#1)]
+ [!code-vb[SoapElementOverrides#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapElementOverrides/VB/soapelementoverrides.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementName">
+      <MemberSignature Language="C#" Value="public string ElementName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapElementAttribute.ElementName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the generated XML element.</summary>
+        <value>The name of the generated XML element. The default is the member identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example serializes an instance of a class named `Transportation` that contains a field named `Vehicle`. A <xref:System.Xml.Serialization.SoapElementAttribute> is applied to the field. When the field is serialized, the XML element name is "Wheels" instead of "Vehicle". The `SerializeOverride` method creates a <xref:System.Xml.Serialization.SoapElementAttribute> and sets the <xref:System.Xml.Serialization.SoapAttributes.SoapElement%2A> property of a <xref:System.Xml.Serialization.SoapAttributes> to the <xref:System.Xml.Serialization.SoapElementAttribute>. The <xref:System.Xml.Serialization.SoapAttributes> is added to a <xref:System.Xml.Serialization.SoapAttributeOverrides> that is used to create an <xref:System.Xml.Serialization.XmlTypeMapping>. An <xref:System.Xml.Serialization.XmlSerializer> is constructed with the <xref:System.Xml.Serialization.XmlTypeMapping>, and an instance of the `Transportation` class is again serialized. Because the <xref:System.Xml.Serialization.SoapElementAttribute> is used to override the serialization, the generated XML element name is now "Truck" instead of "Wheels".  
+  
+ [!code-cpp[SoapElementOverrides#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapElementOverrides/CPP/soapelementoverrides.cpp#1)]
+ [!code-csharp[SoapElementOverrides#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapElementOverrides/CS/soapelementoverrides.cs#1)]
+ [!code-vb[SoapElementOverrides#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapElementOverrides/VB/soapelementoverrides.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullable">
+      <MemberSignature Language="C#" Value="public bool IsNullable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapElementAttribute.IsNullable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Xml.Serialization.XmlSerializer" /> must serialize a member that has the <see langword="xsi:null" /> attribute set to "1".</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xml.Serialization.XmlSerializer" /> generates the <see langword="xsi:null" /> attribute; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:null` set to "1". For more information, see the World Wide Web Consortium (www.w3.org) specification named "XML Schema Part 1: Structures".  
+  
+ If the <xref:System.Xml.Serialization.SoapElementAttribute.IsNullable%2A> property is set to `true`, the `xsi:null` attribute is generated for class members that have been set to `null`. For example, if you set a field named `MyStringArray` to `null`, the <xref:System.Xml.Serialization.XmlSerializer> generates the following XML code.  
+  
+```  
+<MyStringArray xsi:null = "1" />  
+```  
+  
+ If the <xref:System.Xml.Serialization.XmlElementAttribute.IsNullable%2A> property is `false`, no XML element is generated.  
+  
+> [!NOTE]
+>  You cannot apply the <xref:System.Xml.Serialization.XmlElementAttribute.IsNullable%2A> property to a member typed as a value type because a value type cannot contain `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

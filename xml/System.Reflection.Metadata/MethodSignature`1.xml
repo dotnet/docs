@@ -1,0 +1,139 @@
+<Type Name="MethodSignature&lt;TType&gt;" FullName="System.Reflection.Metadata.MethodSignature&lt;TType&gt;">
+  <TypeSignature Language="C#" Value="public struct MethodSignature&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MethodSignature`1&lt;TType&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MethodSignature`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MethodSignature (System.Reflection.Metadata.SignatureHeader header, TType returnType, int requiredParameterCount, int genericParameterCount, System.Collections.Immutable.ImmutableArray&lt;TType&gt; parameterTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.Metadata.SignatureHeader header, !TType returnType, int32 requiredParameterCount, int32 genericParameterCount, valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; parameterTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodSignature`1.#ctor(System.Reflection.Metadata.SignatureHeader,`0,System.Int32,System.Int32,System.Collections.Immutable.ImmutableArray{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="header" Type="System.Reflection.Metadata.SignatureHeader" />
+        <Parameter Name="returnType" Type="TType" />
+        <Parameter Name="requiredParameterCount" Type="System.Int32" />
+        <Parameter Name="genericParameterCount" Type="System.Int32" />
+        <Parameter Name="parameterTypes" Type="System.Collections.Immutable.ImmutableArray&lt;TType&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="header">To be added.</param>
+        <param name="returnType">To be added.</param>
+        <param name="requiredParameterCount">To be added.</param>
+        <param name="genericParameterCount">To be added.</param>
+        <param name="parameterTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericParameterCount">
+      <MemberSignature Language="C#" Value="public int GenericParameterCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GenericParameterCount" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.GenericParameterCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SignatureHeader Header { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.SignatureHeader Header" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.Header" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.SignatureHeader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; ParameterTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; ParameterTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.ParameterTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiredParameterCount">
+      <MemberSignature Language="C#" Value="public int RequiredParameterCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RequiredParameterCount" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.RequiredParameterCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public TType ReturnType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TType ReturnType" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

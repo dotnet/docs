@@ -1,0 +1,103 @@
+<Type Name="ScrollBarVisibility" FullName="System.Windows.Controls.ScrollBarVisibility">
+  <TypeSignature Language="C#" Value="public enum ScrollBarVisibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollBarVisibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollBarVisibility" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the visibility of a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> for scrollable content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration to set the <xref:System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibility%2A> and <xref:System.Windows.Controls.ScrollViewer.VerticalScrollBarVisibility%2A> property values of the <xref:System.Windows.Controls.ScrollViewer> control.  
+  
+ The member values of this enumeration specify <xref:System.Windows.Controls.Primitives.ScrollBar> visibility in a given direction. These member values also specify whether the corresponding <xref:System.Windows.Controls.ScrollViewer> dimension is applied to its enclosed content.  
+  
+ When you apply the <xref:System.Windows.Controls.ScrollViewer.ViewportWidth%2A> or <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A> to <xref:System.Windows.Controls.ScrollViewer> content, you set the viewport size for the content.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the member values of this enumeration to set the <xref:System.Windows.Controls.ScrollViewer.HorizontalScrollBarVisibility%2A> property of the <xref:System.Windows.Controls.ScrollViewer> control.  
+  
+ [!code-cpp[scrollviewer#1](~/samples/snippets/cpp/VS_Snippets_Wpf/ScrollViewer/CPP/ScrollViewer_wcp.cpp#1)]
+ [!code-csharp[scrollviewer#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollViewer/CSharp/ScrollViewer_wcp.cs#1)]
+ [!code-vb[scrollviewer#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollViewer/VisualBasic/ScrollViewer.vb#1)]
+ [!code-xml[scrollviewer#1](~/samples/snippets/xaml/VS_Snippets_Wpf/ScrollViewer/XAML/Pane1.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ScrollBarVisibility Auto = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollBarVisibility.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> appears and the dimension of the <see cref="T:System.Windows.Controls.ScrollViewer" /> is applied to the content when the viewport cannot display all of the content. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, the width of the content is set to the <see cref="P:System.Windows.Controls.ScrollViewer.ViewportWidth" /> of the <see cref="T:System.Windows.Controls.ScrollViewer" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, the height of the content is set to the <see cref="P:System.Windows.Controls.ScrollViewer.ViewportHeight" /> of the <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ScrollBarVisibility Disabled = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollBarVisibility.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> does not appear even when the viewport cannot display all of the content. The dimension of the content is set to the corresponding dimension of the <see cref="T:System.Windows.Controls.ScrollViewer" /> parent. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, the width of the content is set to the <see cref="P:System.Windows.Controls.ScrollViewer.ViewportWidth" /> of the <see cref="T:System.Windows.Controls.ScrollViewer" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, the height of the content is set to the <see cref="P:System.Windows.Controls.ScrollViewer.ViewportHeight" /> of the <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hidden">
+      <MemberSignature Language="C#" Value="Hidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ScrollBarVisibility Hidden = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollBarVisibility.Hidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> does not appear even when the viewport cannot display all of the content. The dimension of the <see cref="T:System.Windows.Controls.ScrollViewer" /> is not applied to the content.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="Visible" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ScrollBarVisibility Visible = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollBarVisibility.Visible" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> always appears. The dimension of the <see cref="T:System.Windows.Controls.ScrollViewer" /> is applied to the content. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, the width of the content is set to the <see cref="P:System.Windows.Controls.ScrollViewer.ViewportWidth" /> of the <see cref="T:System.Windows.Controls.ScrollViewer" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, the height of the content is set to the <see cref="P:System.Windows.Controls.ScrollViewer.ViewportHeight" /> of the <see cref="T:System.Windows.Controls.ScrollViewer" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

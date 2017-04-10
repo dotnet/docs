@@ -1,0 +1,79 @@
+<Type Name="TextExpressionCompiler" FullName="System.Activities.XamlIntegration.TextExpressionCompiler">
+  <TypeSignature Language="C#" Value="public class TextExpressionCompiler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextExpressionCompiler extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.TextExpressionCompiler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the text expression compiler.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextExpressionCompiler (System.Activities.XamlIntegration.TextExpressionCompilerSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.XamlIntegration.TextExpressionCompilerSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.TextExpressionCompiler.#ctor(System.Activities.XamlIntegration.TextExpressionCompilerSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Activities.XamlIntegration.TextExpressionCompilerSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">The settings used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compile">
+      <MemberSignature Language="C#" Value="public System.Activities.XamlIntegration.TextExpressionCompilerResults Compile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.XamlIntegration.TextExpressionCompilerResults Compile() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.TextExpressionCompiler.Compile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.XamlIntegration.TextExpressionCompilerResults</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Compiles the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" />.</summary>
+        <returns>The result of the compiled <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSource">
+      <MemberSignature Language="C#" Value="public bool GenerateSource (System.IO.TextWriter textWriter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GenerateSource(class System.IO.TextWriter textWriter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.TextExpressionCompiler.GenerateSource(System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textWriter" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="textWriter">The argument used.</param>
+        <summary>Indicated whether the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" /> generates sources.</summary>
+        <returns>
+          <see langword="True" /> if the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompiler" /> generates sources; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

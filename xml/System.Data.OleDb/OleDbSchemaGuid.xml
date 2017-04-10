@@ -1,0 +1,1182 @@
+<Type Name="OleDbSchemaGuid" FullName="System.Data.OleDb.OleDbSchemaGuid">
+  <TypeSignature Language="C#" Value="public sealed class OleDbSchemaGuid" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbSchemaGuid extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbSchemaGuid" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Returns the type of schema table specified by the <see cref="M:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable(System.Guid,System.Object[])" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each field in the <xref:System.Data.OleDb.OleDbSchemaGuid> class maps to an OLE DB schema rowset.  
+  
+> [!NOTE]
+>  Some members of the <xref:System.Data.OleDb.OleDbSchemaGuid> class, (such as <xref:System.Data.OleDb.OleDbSchemaGuid.Procedure_Columns> schema) may not be supported by your OLE DB provider. Refer to your database documentation to determine whether you can retrieve this schema information by querying the system tables of your database.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OleDbSchemaGuid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbSchemaGuid.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbSchemaGuid" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Assertions">
+      <MemberSignature Language="C#" Value="public static readonly Guid Assertions;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Assertions" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Assertions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the assertions defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Assertions> maps to the OLE DB ASSERTIONS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CONSTRAINT_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CONSTRAINT_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CONSTRAINT_NAME|`string`|Constraint name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Catalogs">
+      <MemberSignature Language="C#" Value="public static readonly Guid Catalogs;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Catalogs" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Catalogs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the physical attributes associated with catalogs accessible from the data source. Returns the assertions defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Catalogs> maps to the OLE DB CATALOGS rowset and returns the following restriction column.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CATALOG_NAME|`string`|Catalog name. Cannot be a null value.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Character_Sets">
+      <MemberSignature Language="C#" Value="public static readonly Guid Character_Sets;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Character_Sets" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Character_Sets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the character sets defined in the catalog that is accessible to a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Character_Sets> maps to the OLE DB CHARACTER_SETS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CHARACTER_SET_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CHARACTER_SET_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CHARACTER_SET_NAME|`string`|Character set name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Check_Constraints">
+      <MemberSignature Language="C#" Value="public static readonly Guid Check_Constraints;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Check_Constraints" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Check_Constraints" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the check constraints defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Check_Constraints> maps to the OLE DB CHECK_CONSTRAINTS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CONSTRAINT_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CONSTRAINT_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CONSTRAINT_NAME|`string`|Constraint name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Check_Constraints_By_Table">
+      <MemberSignature Language="C#" Value="public static readonly Guid Check_Constraints_By_Table;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Check_Constraints_By_Table" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Check_Constraints_By_Table" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the check constraints defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Check_Constraints> maps to the OLE DB CHECK_CONSTRAINTS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CONSTRAINT_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CONSTRAINT_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CONSTRAINT_NAME|`string`|Constraint name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collations">
+      <MemberSignature Language="C#" Value="public static readonly Guid Collations;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Collations" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Collations" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the character collations defined in the catalog that is accessible to a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Collations> maps to the OLE DB COLLATIONS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|COLLATION_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|COLLATION_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|COLLATION_NAME|`string`|Collation name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column_Domain_Usage">
+      <MemberSignature Language="C#" Value="public static readonly Guid Column_Domain_Usage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Column_Domain_Usage" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Column_Domain_Usage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the columns defined in the catalog that are dependent on a domain defined in the catalog and owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Column_Domain_Usage> maps to the OLE DB COLUMN_DOMAIN_USAGE rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|DOMAIN_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|DOMAIN_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|DOMAIN_NAME|`string`|View name.|  
+|COLUMN_NAME|`string`|Column name. This column, together with the COLUMN_GUID and COLUMN_PROPID columns, forms the column ID. One or more of these columns will be a null value, depending on which elements of the DBID structure the provider uses. (DBID is a formal structure serialized into the COLUMN_NAME column of the COLUMN_DOMAIN_USAGE rowset.)|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column_Privileges">
+      <MemberSignature Language="C#" Value="public static readonly Guid Column_Privileges;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Column_Privileges" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Column_Privileges" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the privileges on columns of tables defined in the catalog that are available to or granted by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Column_Privileges> maps to the OLE DB COLUMN_PRIVILEGES rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name in which the table is defined. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name in which the table is defined. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+|COLUMN_NAME|`string`|Column name. This column, together with the COLUMN_GUID and COLUMN_PROPID columns, forms the column ID. One or more of these columns will be a null value, depending on which elements of the DBID structure the provider uses.|  
+|GRANTOR|`string`|User that granted the privileges on the table in TABLE_NAME.|  
+|GRANTEE|`string`|User name (or "PUBLIC") that the privilege has been granted to.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public static readonly Guid Columns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Columns" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Columns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the columns of tables (including views) defined in the catalog that is accessible to a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Columns> maps to the OLE DB COLUMNS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name. The column returned cannot contain a null value.|  
+|COLUMN_NAME|`string`|The name of the column; this might not be unique. If this cannot be determined, a null value is returned. This column, together with the COLUMN_GUID and COLUMN_PROPID columns, forms the column ID. One or more of these columns will be a null value, depending on which elements of the DBID structure the provider uses. (DBID is a formal structure serialized into the COLUMN_NAME column of the COLUMN_DOMAIN_USAGE rowset.) If possible, the resulting column ID should be persistent. However, some providers do not support persistent identifiers for columns. The column ID of a base table should be invariant under views.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Constraint_Column_Usage">
+      <MemberSignature Language="C#" Value="public static readonly Guid Constraint_Column_Usage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Constraint_Column_Usage" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Constraint_Column_Usage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the columns used by referential constraints, unique constraints, check constraints, and assertions, defined in the catalog and owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Constraint_Column_Usage> maps to the OLE DB CONSTRAINT_COLUMN_USAGE rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name in which the table is defined. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name in which the table is defined. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+|COLUMN_NAME|`string`|Column name. This column, together with the COLUMN_GUID and COLUMN_PROPID columns, forms the column ID. One or more of these columns will be a null value, depending on which elements of the DBID structure the provider uses.|  
+|CONSTRAINT_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CONSTRAINT_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CONSTRAINT_NAME|`string`|Constraint name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Constraint_Table_Usage">
+      <MemberSignature Language="C#" Value="public static readonly Guid Constraint_Table_Usage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Constraint_Table_Usage" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Constraint_Table_Usage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the tables that are used by referential constraints, unique constraints, check constraints, and assertions defined in the catalog and owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Constraint_Table_Usage> maps to the OLE DB CONSTRAINT_TABLE_USAGE rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name in which the table is defined. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name in which the table is defined. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+|CONSTRAINT_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CONSTRAINT_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CONSTRAINT_NAME|`string`|Constraint name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbInfoKeywords">
+      <MemberSignature Language="C#" Value="public static readonly Guid DbInfoKeywords;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid DbInfoKeywords" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.DbInfoKeywords" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a list of provider-specific keywords.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using <xref:System.Data.OleDb.OleDbSchemaGuid.DbInfoKeywords> is equivalent to calling the OLE DB IDBInfo::GetKeywords interface. The list of keywords is returned as a DataTable with a single column named "Keyword". Each keyword returned by the provider will be on its own row in the DataTable.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbInfoLiterals">
+      <MemberSignature Language="C#" Value="public static readonly Guid DbInfoLiterals;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid DbInfoLiterals" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.DbInfoLiterals" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a list of provider-specific literals used in text commands.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using <xref:System.Data.OleDb.OleDbSchemaGuid.DbInfoLiterals> is equivalent to calling the OLE DB **IDBInfo::GetLiteralInfo** interface, or the ADO `Connection.OpenSchema` method with the `adSchemaDBInfoLiterals` constant.  
+  
+ When using the <xref:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable%2A> method, if the `schema` parameter contains a value of <xref:System.Data.OleDb.OleDbSchemaGuid.DbInfoLiterals> and the `restrictions` parameter contains one or more restrictions, an <xref:System.ArgumentException> is generated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Foreign_Keys">
+      <MemberSignature Language="C#" Value="public static readonly Guid Foreign_Keys;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Foreign_Keys" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Foreign_Keys" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the foreign key columns defined in the catalog by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Foreign_Keys> maps to the OLE DB FOREIGN_KEYS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|PK_TABLE_CATALOG|`string`|Catalog name in which the primary key table is defined. A null value if the provider does not support catalogs.|  
+|PK_TABLE_SCHEMA|`string`|Unqualified schema name in which the primary key table is defined. A null value if the provider does not support schemas.|  
+|PK_TABLE_NAME|`string`|Primary key table name.|  
+|FK_TABLE_CATALOG|`string`|Catalog name in which the foreign key table is defined. A null value if the provider does not support catalogs.|  
+|FK_TABLE_SCHEMA|`string`|Unqualified schema name in which the foreign key table is defined. A null value if the provider does not support schemas.|  
+|FK_TABLE_NAME|`string`|Foreign key table name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indexes">
+      <MemberSignature Language="C#" Value="public static readonly Guid Indexes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Indexes" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Indexes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the indexes defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Indexes> maps to the OLE DB INDEXES rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|INDEX_NAME|`string`|Index name.|  
+|TYPE|`UInt16 (Int32)`|The type of the index. One of the following:<br /><br /> DBPROPVAL_IT_BTREE-The index is a B+-tree.<br /><br /> DBPROPVAL_IT_HASH-The index is a hash file using, for example, linear or extensible hashing.<br /><br /> DBPROPVAL_IT_CONTENT-The index is a content index.<br /><br /> DBPROPVAL_IT_OTHER-The index is some other type of index.|  
+|TABLE_NAME|`string`|Table name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key_Column_Usage">
+      <MemberSignature Language="C#" Value="public static readonly Guid Key_Column_Usage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Key_Column_Usage" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Key_Column_Usage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the columns defined in the catalog that is constrained as keys by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Key_Column_Usage> maps to the OLE DB KEY_COLUMN_USAGE rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CONSTRAINT_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CONSTRAINT_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CONSTRAINT_NAME|`string`|Constraint name.|  
+|TABLE_CATALOG|`string`|Catalog name in which the table containing the key column is defined. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name in which the table containing the key column is defined. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name containing the key column.|  
+|COLUMN_NAME|`string`|Name of the column participating in the unique, primary, or foreign key. This column, together with the COLUMN_GUID and COLUMN_PROPID columns, forms the column ID. One or more of these columns will be a null value, depending on which elements of the DBID structure the provider uses. (DBID is a formal structure serialized into the COLUMN_NAME column of the COLUMN_DOMAIN_USAGE rowset.)|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Primary_Keys">
+      <MemberSignature Language="C#" Value="public static readonly Guid Primary_Keys;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Primary_Keys" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Primary_Keys" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the primary key columns defined in the catalog by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Primary_Keys> maps to the OLE DB PRIMARY_KEYS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name in which the table is defined. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name in which the table is defined. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Procedure_Columns">
+      <MemberSignature Language="C#" Value="public static readonly Guid Procedure_Columns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Procedure_Columns" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Procedure_Columns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns information about the columns of rowsets returned by procedures.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Procedure_Columns> maps to the OLE DB PROCEDURE_COLUMNS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|PROCEDURE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|PROCEDURE_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|PROCEDURE_NAME|`string`|Procedure name.|  
+|COLUMN_NAME|`string`|The name of the column; this might not be unique. If this cannot be determined, a null value is returned. This column, together with the COLUMN_GUID and COLUMN_PROPID columns, forms the column ID. One or more of these columns will be a null value, depending on which elements of the DBID structure the provider uses.|  
+  
+> [!NOTE]
+>  The <xref:System.Data.OleDb.OleDbSchemaGuid.Procedure_Columns> schema is not supported by any OLE DB providers that ship in MDAC version 2.7. Refer to your database documentation to determine whether you can retrieve this schema information by querying the system tables of your database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Procedure_Parameters">
+      <MemberSignature Language="C#" Value="public static readonly Guid Procedure_Parameters;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Procedure_Parameters" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Procedure_Parameters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns information about the parameters and return codes of procedures.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Procedure_Parameters> maps to the OLE DB PROCEDURE_PARAMETERS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|PROCEDURE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|PROCEDURE_SCHEMA|`string`|Schema name. A null value if the provider does not support catalogs.|  
+|PROCEDURE_NAME|`string`|Procedure name.|  
+|PARAMETER_NAME|`string`|Parameter name. A null value if the parameter is not named.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Procedures">
+      <MemberSignature Language="C#" Value="public static readonly Guid Procedures;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Procedures" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Procedures" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the procedures defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Procedures> maps to the OLE DB PROCEDURES rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|PROCEDURE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|PROCEDURE_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|PROCEDURE_NAME|`string`|Procedure name.|  
+|PROCEDURE_TYPE|`UInt16`|DB_PT_UNKNOWN-It is not known whether there is a returned value.<br /><br /> DB_PT_PROCEDURE-Procedure; there is no returned value.<br /><br /> DB_PT_FUNCTION-Function; there is a returned value.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider_Types">
+      <MemberSignature Language="C#" Value="public static readonly Guid Provider_Types;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Provider_Types" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Provider_Types" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the base data types supported by the .NET Framework Data Provider for OLE DB.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Provider_Types> maps to the OLE DB PROVIDER_TYPES rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|DATA_TYPE|`UInt16 (Int32)`|The indicator of the data type.|  
+|BEST_MATCH|`Int16`|VARIANT_TRUE-The data type is the best match between all data types in the data store and the OLE DB data type indicated by the value in the DATA_TYPE column.<br /><br /> VARIANT_FALSE-The data type is not the best match. For each set of rows in which the value of the DATA_TYPE column is the same, the BEST_MATCH column is set to VARIANT_TRUE in only one row.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Referential_Constraints">
+      <MemberSignature Language="C#" Value="public static readonly Guid Referential_Constraints;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Referential_Constraints" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Referential_Constraints" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the referential constraints defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Referential_Constraints> maps to the OLE DB REFERENTIAL_CONSTRAINTS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CONSTRAINT_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CONSTRAINT_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CONSTRAINT_NAME|`string`|Constraint name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaGuids">
+      <MemberSignature Language="C#" Value="public static readonly Guid SchemaGuids;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid SchemaGuids" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.SchemaGuids" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a list of schema rowsets, identified by their GUIDs, and a pointer to the descriptions of the restriction columns.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using <xref:System.Data.OleDb.OleDbSchemaGuid.SchemaGuids> is equivalent to calling the OLE DB **IDBSchemaRowset::GetSchemas** interface. The list of schemas and restrictions are returned as a DataTable with two columns named "Schema" and "RestrictionSupport". Each combination of schema GUID and restriction bitmask returned by the provider will be on its on row in the DataTable.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schemata">
+      <MemberSignature Language="C#" Value="public static readonly Guid Schemata;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Schemata" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Schemata" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the schema objects that are owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Schemata> maps to the OLE DB SCHEMATAS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CATALOG_NAME|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|SCHEMA_NAME|`string`|Unqualified schema name|  
+|SCHEMA_OWNER|`string`|User that owns the schemas.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sql_Languages">
+      <MemberSignature Language="C#" Value="public static readonly Guid Sql_Languages;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Sql_Languages" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Sql_Languages" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the conformance levels, options, and dialects supported by the SQL-implementation processing data defined in the catalog.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Sql_Languages> maps to the OLE DB SQL_LANGUAGES rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|SQL_LANGUAGE_SOURCE|`string`|"ISO 9075" for standard SQL.|  
+|SQL_LANGUAGE_YEAR|`string`|"1992" for ANSI SQL-92–compliant SQL.|  
+|SQL_LANGUAGE_CONFORMANCE|`string`|One of the following: "ENTRY", "INTERMEDIATE", or "FULL".|  
+|SQL_LANGUAGE_INTEGRITY|`string`|"YES"= Optional integrity feature is supported.<br /><br /> "NO"=Optional integrity feature is not supported.|  
+|SQL_LANGUAGE_IMPLEMENTATION|`string`|NULL for "ISO 9075" implementation.|  
+|SQL_LANGUAGE_BINDING_STYLE|`string`|"DIRECT" for C/C++ callable direct execution of SQL.|  
+|SQL_LANGUAGE_PROGRAMMING_LANGUAGE|`string`|NULL.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Statistics">
+      <MemberSignature Language="C#" Value="public static readonly Guid Statistics;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Statistics" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Statistics" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the statistics defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Statistics> maps to the OLE DB STATISTICS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table_Constraints">
+      <MemberSignature Language="C#" Value="public static readonly Guid Table_Constraints;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Table_Constraints" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Table_Constraints" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the table constraints defined in the catalog that is owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Table_Constraints> maps to the OLE DB TABLE_CONSTRAINTS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|CONSTRAINT_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|CONSTRAINT_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|CONSTRAINT_NAME|`string`|Constraint name.|  
+|TABLE_CATALOG|`string`|Catalog name in which the table is defined. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name in which the table is defined. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+|CONSTRAINT_TYPE|`string`|Constraint type. One of the following: UNIQUE, PRIMARY KEY, FOREIGN KEY, or CHECK.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table_Privileges">
+      <MemberSignature Language="C#" Value="public static readonly Guid Table_Privileges;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Table_Privileges" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Table_Privileges" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the privileges on tables defined in the catalog that are available to, or granted by, a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Table_Privileges> maps to the OLE DB TABLE_PRIVILEGES rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name in which the table is defined. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name in which the table is defined. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+|GRANTOR|`string`|User that granted the privileges on the table in TABLE_NAME.|  
+|GRANTEE|`string`|User name (or "PUBLIC") that the privilege has been granted to.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table_Statistics">
+      <MemberSignature Language="C#" Value="public static readonly Guid Table_Statistics;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Table_Statistics" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Table_Statistics" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Describes the available set of statistics on tables in the provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Table_Statistics> maps to the OLE DB TABLE_STATISTICS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name of the table of this statistic. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Schema name of the table. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+|STATISTICS_CATALOG|`string`|Catalog name of the statistic. A null value if the provider does not support catalogs.|  
+|STATISTICS_SCHEMA|`string`|Schema name of the statistic. A null value if the provider does not support schemas.|  
+|STATISTICS_NAME|`string`|Name of the statistic.|  
+|STATISTICS_TYPE|`UInt16 (Int32)`|Bitmask specifying the kinds of statistics supported by this statistic:<br /><br /> DBSTAT_HISTOGRAM—Indicates histogram support.<br /><br /> DBSTAT_COLUMN_CARDINALITY— Indicates column cardinality support.<br /><br /> DBSTAT_TUPLE_CARDINALITY—Indicates tuple cardinality support.<br /><br /> `Note:` Histograms correspond to only the first column for a multi-column statistic.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tables">
+      <MemberSignature Language="C#" Value="public static readonly Guid Tables;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Tables" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Tables" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the tables (including views) defined in the catalog that are accessible to a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Tables> maps to the OLE DB TABLES rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name. The column returned cannot contain a null value.|  
+|TABLE_TYPE|`string`|Table type. One of the following or a provider-specific value: "ALIAS", "TABLE" "SYNONYM", "SYSTEM TABLE", "VIEW", "GLOBAL TEMPORARY", "LOCAL TEMPORARY", or "SYSTEM VIEW". The column returned cannot contain a null value.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tables_Info">
+      <MemberSignature Language="C#" Value="public static readonly Guid Tables_Info;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Tables_Info" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Tables_Info" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the tables (including views) that are accessible to a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Tables_Info> maps to the OLE DB TABLES_INFO rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_TYPE|`string`|Table type. One of the following or a provider-specific value: ALIAS, TABLE, SYNONYM, SYSTEM TABLE, VIEW, GLOBAL TEMPORARY, LOCAL TEMPORARY, EXTERNAL TABLE, or SYSTEM VIEW.|  
+|TABLE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|Table name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translations">
+      <MemberSignature Language="C#" Value="public static readonly Guid Translations;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Translations" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Translations" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the character translations defined in the catalog that is accessible to a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Translations> maps to the OLE DB TRANSLATIONS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TRANSLATION_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|TRANSLATION_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|TRANSLATION_NAME|`string`|Translation name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trustee">
+      <MemberSignature Language="C#" Value="public static readonly Guid Trustee;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Trustee" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Trustee" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the trustees defined in the data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Trustee> maps to the OLE DB TRUSTEE schema. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TRUSTEE_NAME|`string`|Trustee name.|  
+|TRUSTEE_GUID|`guid`|GUID that uniquely identifies the trustee. Providers that do no use GUIDs to identify trustees should return a null value in this column.|  
+|TRUSTEE_PROPID|`UInt32 (Int64)`|PropID that uniquely identifies the trustee. Providers that do not use PropIDs to identify trustees should return a null value in this column.|  
+|TRUSTEE_TYPE|`UInt32 (Int64)`|Trustee type. One of the following:<br /><br /> TRUSTEE_IS_UNKNOWN - The trustee is an unknown type, but not necessarily an invalid type.<br /><br /> TRUSTEE_IS_USER - The trustee account is a user account.<br /><br /> TRUSTEE_IS_GROUP - The trustee is a group account.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Usage_Privileges">
+      <MemberSignature Language="C#" Value="public static readonly Guid Usage_Privileges;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Usage_Privileges" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Usage_Privileges" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the USAGE privileges on objects defined in the catalog that are available to or granted by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Usage_Privileges> maps to the OLE DB USAGE_PRIVILEGES rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|OBJECT_CATALOG|`string`|Catalog name in which the object is defined. A null value if the provider does not support catalogs.|  
+|OBJECT_SCHEMA|`string`|Unqualified schema name in which the object is defined. A null value if the provider does not support schemas.|  
+|OBJECT_NAME|`string`|Object name.|  
+|OBJECT_TYPE|`string`|Object type. One of the following: DOMAIN, CHARACTER SET, COLLATION, or TRANSLATION.|  
+|GRANTOR|`string`|User that granted the privileges on the object in OBJECT_NAME.|  
+|GRANTEE|`string`|User name (or "PUBLIC") that the privilege has been granted to.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="View_Column_Usage">
+      <MemberSignature Language="C#" Value="public static readonly Guid View_Column_Usage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid View_Column_Usage" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.View_Column_Usage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the columns on which viewed tables depend, as defined in the catalog and owned by a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.View_Column_Usage> maps to the OLE DB VIEW_COLUMN_USAGE rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|VIEW_CATALOG|string|Catalog name. A null value if the provider does not support catalogs.|  
+|VIEW_SCHEMA|string|Unqualified schema name. A null value if the provider does not support schemas.|  
+|VIEW_NAME|string|View name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="View_Table_Usage">
+      <MemberSignature Language="C#" Value="public static readonly Guid View_Table_Usage;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid View_Table_Usage" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.View_Table_Usage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the tables on which viewed tables, defined in the catalog and owned by a given user, are dependent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.View_Table_Usage> maps to the OLE DB VIEW_TABLE_USAGE rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|VIEW_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|VIEW_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|VIEW_NAME|`string`|View name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Views">
+      <MemberSignature Language="C#" Value="public static readonly Guid Views;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid Views" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OleDb.OleDbSchemaGuid.Views" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the views defined in the catalog that is accessible to a given user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbSchemaGuid.Views> maps to the OLE DB VIEWS rowset. Unless otherwise specified, restriction columns are returned in the following order.  
+  
+|Restriction column|CLR data type|Description|  
+|------------------------|-------------------|-----------------|  
+|TABLE_CATALOG|`string`|Catalog name. A null value if the provider does not support catalogs.|  
+|TABLE_SCHEMA|`string`|Unqualified schema name. A null value if the provider does not support schemas.|  
+|TABLE_NAME|`string`|View name.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

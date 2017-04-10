@@ -1,0 +1,73 @@
+<Type Name="RoutingStrategy" FullName="System.Windows.RoutingStrategy">
+  <TypeSignature Language="C#" Value="public enum RoutingStrategy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoutingStrategy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.RoutingStrategy" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the routing strategy of a routed event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Routing strategy for each routed event must be only one of these values. However, input events often exist in pairs on base classes, where one event is the bubbling version and one event is the tunneling version. For input events uniquely, the tunneling and bubbling versions have shared arguments and are raised in succession in response to the input device condition that raises the events.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bubble">
+      <MemberSignature Language="C#" Value="Bubble" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.RoutingStrategy Bubble = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.RoutingStrategy.Bubble" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutingStrategy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The routed event uses a bubbling strategy, where the event instance routes upwards through the tree, from event source to root.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Direct">
+      <MemberSignature Language="C#" Value="Direct" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.RoutingStrategy Direct = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.RoutingStrategy.Direct" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutingStrategy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The routed event does not route through an element tree, but does support other routed event capabilities such as class handling, <see cref="T:System.Windows.EventTrigger" /> or <see cref="T:System.Windows.EventSetter" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tunnel">
+      <MemberSignature Language="C#" Value="Tunnel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.RoutingStrategy Tunnel = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.RoutingStrategy.Tunnel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutingStrategy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The routed event uses a tunneling strategy, where the event instance routes downwards through the tree, from root to source element.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

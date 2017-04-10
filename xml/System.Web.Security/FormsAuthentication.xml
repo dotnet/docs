@@ -1,0 +1,1291 @@
+<Type Name="FormsAuthentication" FullName="System.Web.Security.FormsAuthentication">
+  <TypeSignature Language="C#" Value="public sealed class FormsAuthentication" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormsAuthentication extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsAuthentication" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages forms-authentication services for Web applications. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Forms authentication enables user and password validation for Web applications that do not require Windows authentication. With forms authentication, user information is stored in an external data source, such as a <xref:System.Web.Security.Membership> database, or in the configuration file for an application. Once a user is authenticated, forms authentication maintains an authentication ticket in a cookie or in the URL so that an authenticated user does not need to supply credentials with each request.  
+  
+ Forms authentication is enabled by setting the `mode` attribute of the  configuration element to `Forms`. You can require that all requests to an application contain a valid user authentication ticket by using the  configuration element to deny the request of any unknown user, as shown in the following example.  
+  
+```  
+<system.web>  
+  <authentication mode="Forms">  
+    <forms loginUrl="login.aspx" />  
+  </authentication>  
+  <authorization>  
+    <deny users="?" />  
+  </authorization>  
+</system.web>  
+```  
+  
+ In the previous example, any request for an ASP.NET page that is part of the application requires a valid user name that is supplied by forms authentication. If no user name exists, then the request is redirected to the configured <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A>.  
+  
+ The <xref:System.Web.Security.FormsAuthentication> class provides access to methods and properties that you can use in an application that authenticates users. The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method redirects a browser to the configured <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> for users to log into an application. The <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects an authenticated user back to the original protected URL that was requested or to the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A>. There are also methods that enable you to manage forms-authentication tickets, if needed.  
+  
+   
+  
+## Examples  
+ The following code example shows the Web.config file for an ASP.NET application that uses the ASP.NET membership provider for forms authentication and requires all users to be authenticated.  
+  
+```  
+<configuration>  
+  <connectionStrings>  
+    <add name="SqlServices" connectionString="Data Source=MySqlServer;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
+  </connectionStrings>  
+  <system.web>  
+    <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
+      <providers>  
+        <add name="SqlProvider"  
+          type="System.Web.Security.SqlMembershipProvider"  
+          connectionStringName="SqlServices"  
+          enablePasswordRetrieval="false"  
+          enablePasswordReset="true"  
+          requiresQuestionAndAnswer="true"  
+          passwordFormat="Hashed"  
+          applicationName="/" />  
+      </providers>  
+    </membership>  
+  </system.web>  
+</configuration>  
+```  
+  
+ The following code example shows the login page for an ASP.NET application that uses forms authentication and ASP.NET membership.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">To use the <see cref="T:System.Web.Security.FormsAuthentication" /> class in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormsAuthentication ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.FormsAuthentication" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not intended to be used from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authenticate">
+      <MemberSignature Language="C#" Value="public static bool Authenticate (string name, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Authenticate(string name, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.Authenticate(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The recommended alternative is to use the Membership APIs, such as Membership.ValidateUser. For more information, see http://go.microsoft.com/fwlink/?LinkId=252463.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The user name.</param>
+        <param name="password">The password for the user.</param>
+        <summary>Validates a user name and password against credentials stored in the configuration file for an application.</summary>
+        <returns>
+          <see langword="true" /> if the user name and password are valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Authenticate method verifies user credentials that are stored in the  section of the application configuration file. Alternatively, you can use ASP.NET membership to store user credentials and call the <xref:System.Web.Security.MembershipProvider.ValidateUser%2A> to verify the credentials. For more information, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+  
+ For improved security, you can encrypt passwords stored in the configuration file for an application by using the <xref:System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example shows user credentials stored in the Web.config file for an application. The password values have been hashed using the <xref:System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile%2A> method.  
+  
+ `<authentication mode="Forms">`  
+  
+ `<forms loginUrl="login.aspx">`  
+  
+ `<credentials passwordFormat="SHA1">`  
+  
+ `<user name="user1"   password="27CE4CA7FBF00685AF2F617E3F5BBCAFF7B7403C" />`  
+  
+ `<user name="user2"   password="D108F80936F78DFDD333141EBC985B0233A30C7A" />`  
+  
+ `<user name="user3" password="7BDB09781A3F23885CD43177C0508B375CB1B7E9"/>`  
+  
+ `</credentials>`  
+  
+ `</forms>`  
+  
+ `</authentication>`  
+  
+ The following code example shows a login page that uses the <xref:System.Web.Security.FormsAuthentication.Authenticate%2A> method to validate user credentials.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.FormsAuthentication#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/CS/logincs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.FormsAuthentication#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/VB/loginvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookieDomain">
+      <MemberSignature Language="C#" Value="public static string CookieDomain { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CookieDomain" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.CookieDomain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the domain of the forms-authentication cookie.</summary>
+        <value>The <see cref="P:System.Web.HttpCookie.Domain" /> of the forms-authentication cookie. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.CookieDomain%2A> property value is set in the configuration file for an ASP.NET application by using the `domain` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.CookieDomain%2A> property value determines the <xref:System.Web.HttpCookie.Domain%2A> that the cookie will be used for.  
+  
+   
+  
+## Examples  
+ The following code example sets the `domain` attribute in the Web.config file.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseCookies"  
+    domain="contoso.com" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookieMode">
+      <MemberSignature Language="C#" Value="public static System.Web.HttpCookieMode CookieMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Web.HttpCookieMode CookieMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.CookieMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpCookieMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the application is configured for cookieless forms authentication.</summary>
+        <value>One of the <see cref="T:System.Web.HttpCookieMode" /> values that indicates whether the application is configured for cookieless forms authentication. The default is <see cref="F:System.Web.HttpCookieMode.UseDeviceProfile" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property reflects the value for the `cookieless` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property determines whether the <xref:System.Web.Security.FormsAuthenticationTicket> value will be stored in a session cookie in the browser or stored in the <xref:System.Web.HttpRequest.QueryString%2A> property.  
+  
+> [!NOTE]
+>  When the <xref:System.Web.Security.FormsAuthenticationTicket> value is stored in the URI, the length of the generated URI may be longer than the maximum length allowed. This is most likely to occur when the <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property is set to the application name and the application name is long (40 or more characters), when user names in the application are long, or when long <xref:System.Web.Security.FormsAuthenticationTicket.UserData%2A> strings are stored in the <xref:System.Web.Security.FormsAuthenticationTicket> value. If the generated URI is too long, the Web server will return a `400 - Bad Request` error.  
+  
+   
+  
+## Examples  
+ The following code example sets the `cookieless` attribute to `AutoDetect` in the Web.config file.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="AutoDetect" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookiesSupported">
+      <MemberSignature Language="C#" Value="public static bool CookiesSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool CookiesSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.CookiesSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the application is configured to support cookieless forms authentication.</summary>
+        <value>
+          <see langword="false" /> if the application is configured to support cookieless forms authentication; otherwise, <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property returns a value based on the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> value and the capabilities of the browser.  
+  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true`.  
+  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the browser supports cookies and cookies are enabled; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+  
+-   If the <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property is set to <xref:System.Web.HttpCookieMode>, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `true` if the <xref:System.Web.HttpRequest.Browser%2A> for the current <xref:System.Web.HttpContext.Request%2A> supports both cookies and redirecting with cookies; otherwise, the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property will return `false`.  
+  
+   
+  
+## Examples  
+ The following code example sets the `cookieless` attribute to <xref:System.Web.HttpCookieMode> in the Web.config file. This configuration will result in the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property returning `false`.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseUri" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public static System.Web.Security.FormsAuthenticationTicket Decrypt (string encryptedTicket);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.FormsAuthenticationTicket Decrypt(string encryptedTicket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.Decrypt(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.FormsAuthenticationTicket</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encryptedTicket" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="encryptedTicket">The encrypted authentication ticket.</param>
+        <summary>Creates a <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> object based on the encrypted forms-authentication ticket passed to the method.</summary>
+        <returns>A <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> object. If the <paramref name="encryptedTicket" /> parameter is not a valid ticket, <see langword="null" /> is returned.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="encryptedTicket" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="encryptedTicket" /> is an empty string ("").  
+  
+ \- or -  
+  
+ The length of <paramref name="encryptedTicket" /> is greater than 4096 characters.  
+  
+ \- or -  
+  
+ <paramref name="encryptedTicket" /> is of an invalid format.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultUrl">
+      <MemberSignature Language="C#" Value="public static string DefaultUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.DefaultUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URL that the <see cref="T:System.Web.Security.FormsAuthentication" /> class will redirect to if no redirect URL is specified.</summary>
+        <value>The URL that the <see cref="T:System.Web.Security.FormsAuthentication" /> class will redirect to if no redirect URL is specified. The default is "default.aspx."</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property value is set in the configuration file for an ASP.NET application by using the `defaultUrl` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property is used by the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method if no return URL is included in the request. Similarly, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method will return the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> if no return URL is included in the request.  
+  
+   
+  
+## Examples  
+ The following code example sets the `defaultUrl` attribute in the Web.config file.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    defaultUrl="index.aspx" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableCrossAppRedirects">
+      <MemberSignature Language="C#" Value="public static bool EnableCrossAppRedirects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool EnableCrossAppRedirects" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether authenticated users can be redirected to URLs in other Web applications.</summary>
+        <value>
+          <see langword="true" /> if authenticated users can be redirected to URLs in other Web applications; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property value is set using the `enableCrossAppRedirects` attribute of the  configuration element.  
+  
+ The <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property is checked within the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method when the redirect URL does not point to a page in the current application. If <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> is `true`, then the redirect is performed; if <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> is `false`, the browser is redirected to the page defined in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
+  
+> [!NOTE]
+>  When you redirect pages across applications, you must make sure that specific attributes in the  configuration element are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7).  
+  
+> [!IMPORTANT]
+>  When cross-application redirects are allowed, your site is vulnerable to an exploit that directs users to a malicious Web site but uses the login page for your site. Always verify that the redirect URL that is returned by the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method is a URL that you expect so that you can make sure that you allow redirects only to approved Web sites. You must also verify that the redirect URL uses the appropriate protocol (HTTP or HTTPS). To perform these verifications, you can add a postback event handler to your login page, or you can add a handler for the <xref:System.Web.UI.WebControls.Login.LoggedIn> event of the <xref:System.Web.UI.WebControls.Login> control.  
+  
+   
+  
+## Examples  
+ The following code example sets the `enableCrossAppRedirects` attribute to `true` in the Web.config file for an ASP.NET application.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseUri"  
+    requireSSL="true"   
+    enableCrossAppRedirects="true" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableFormsAuthentication">
+      <MemberSignature Language="C#" Value="public static void EnableFormsAuthentication (System.Collections.Specialized.NameValueCollection configurationData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableFormsAuthentication(class System.Collections.Specialized.NameValueCollection configurationData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.EnableFormsAuthentication(System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configurationData" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="configurationData">A name-value collection that contains values for "defaultUrl" and/or "loginUrl". The parameter can be null if there are no values for the default URL or the login URL.</param>
+        <summary>Enables forms authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property is `null`, that property is set to the default URL value from the `configurationData` parameter. If the <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> property is `null`, that property is set to the login URL value from the `configurationData` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The application is not in the pre-start initialization phase.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public static string Encrypt (System.Web.Security.FormsAuthenticationTicket ticket);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Encrypt(class System.Web.Security.FormsAuthenticationTicket ticket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.Encrypt(System.Web.Security.FormsAuthenticationTicket)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ticket" Type="System.Web.Security.FormsAuthenticationTicket" />
+      </Parameters>
+      <Docs>
+        <param name="ticket">The <see cref="T:System.Web.Security.FormsAuthenticationTicket" /> object with which to create the encrypted forms-authentication ticket.</param>
+        <summary>Creates a string containing an encrypted forms-authentication ticket suitable for use in an HTTP cookie.</summary>
+        <returns>A string containing an encrypted forms-authentication ticket.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example stores the result of the <xref:System.Web.Security.FormsAuthentication.Encrypt%2A> method in a cookie by using the <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> property and redirects the user to the URL returned from the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ticket" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FormsCookieName">
+      <MemberSignature Language="C#" Value="public static string FormsCookieName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string FormsCookieName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.FormsCookieName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the cookie used to store the forms-authentication ticket.</summary>
+        <value>The name of the cookie used to store the forms-authentication ticket. The default is ".ASPXAUTH".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> property value is set in the configuration file for an ASP.NET application by using the `name` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> is used to reference the cookie that stores the <xref:System.Web.Security.FormsAuthenticationTicket> information.  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> property value by using the `name` attribute in the Web.config file.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseCookies"  
+    name=".ASPXFORMSAUTH" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormsCookiePath">
+      <MemberSignature Language="C#" Value="public static string FormsCookiePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string FormsCookiePath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.FormsCookiePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path for the forms-authentication cookie.</summary>
+        <value>The path of the cookie where the forms-authentication ticket information is stored. The default is "/".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property value is set in the configuration file for an ASP.NET application using the `path` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> specifies the <xref:System.Web.HttpCookie.Path%2A> for the cookie that stores the <xref:System.Web.Security.FormsAuthenticationTicket> information.  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property value by using the `path` attribute in the Web.config file.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseCookies"  
+    path="/MyApplication" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthCookie">
+      <MemberSignature Language="C#" Value="public static System.Web.HttpCookie GetAuthCookie (string userName, bool createPersistentCookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.HttpCookie GetAuthCookie(string userName, bool createPersistentCookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.GetAuthCookie(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpCookie</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The name of the authenticated user.</param>
+        <param name="createPersistentCookie">
+          <see langword="true" /> to create a durable cookie (one that is saved across browser sessions); otherwise, <see langword="false" />.</param>
+        <summary>Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response, so that an application can have more control over how the cookie is issued.</summary>
+        <returns>An <see cref="T:System.Web.HttpCookie" /> that contains encrypted forms-authentication ticket information. The default value for the <see cref="P:System.Web.Security.FormsAuthentication.FormsCookiePath" /> property is used.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The path of the cookie is determined by the <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthCookie">
+      <MemberSignature Language="C#" Value="public static System.Web.HttpCookie GetAuthCookie (string userName, bool createPersistentCookie, string strCookiePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.HttpCookie GetAuthCookie(string userName, bool createPersistentCookie, string strCookiePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.GetAuthCookie(System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpCookie</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+        <Parameter Name="strCookiePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The name of the authenticated user.</param>
+        <param name="createPersistentCookie">
+          <see langword="true" /> to create a durable cookie (one that is saved across browser sessions); otherwise, <see langword="false" />.</param>
+        <param name="strCookiePath">The <see cref="P:System.Web.HttpCookie.Path" /> of the authentication cookie.</param>
+        <summary>Creates an authentication cookie for a given user name. This does not set the cookie as part of the outgoing response.</summary>
+        <returns>An <see cref="T:System.Web.HttpCookie" /> that contains encrypted forms-authentication ticket information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRedirectUrl">
+      <MemberSignature Language="C#" Value="public static string GetRedirectUrl (string userName, bool createPersistentCookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRedirectUrl(string userName, bool createPersistentCookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.GetRedirectUrl(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The name of the authenticated user.</param>
+        <param name="createPersistentCookie">This parameter is ignored.</param>
+        <summary>Returns the redirect URL for the original request that caused the redirect to the login page.</summary>
+        <returns>A string that contains the redirect URL.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method when you want to perform the redirect in your application code instead of using the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method.  
+  
+ The <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method returns the URL specified in the query string using the `ReturnURL` variable name. For example, in the URL `http://www.contoso.com/login.aspx?ReturnUrl=caller.aspx`, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method returns the return URL `caller.aspx`. If the `ReturnURL` variable does not exist, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method returns the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
+  
+ ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
+  
+ By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> methods returns the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow the return URL to refer to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the  configuration element.  
+  
+> [!IMPORTANT]
+>  Setting the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` to allow cross-application redirects is a potential security threat. For more information, see the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example redirects authenticated users to the URL returned from the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationTicketClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationTicketClass/CS/formsauthenticationticketclasscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationTicketClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationTicketClass/VB/formsauthenticationticketclassvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashPasswordForStoringInConfigFile">
+      <MemberSignature Language="C#" Value="public static string HashPasswordForStoringInConfigFile (string password, string passwordFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HashPasswordForStoringInConfigFile(string password, string passwordFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The recommended alternative is to use the Membership APIs, such as Membership.CreateUser. For more information, see http://go.microsoft.com/fwlink/?LinkId=252463.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="passwordFormat" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="password">The password to hash.</param>
+        <param name="passwordFormat">The hash algorithm to use. <c>passwordFormat</c> is a <see langword="String" /> that represents one of the <see cref="T:System.Web.Configuration.FormsAuthPasswordFormat" /> enumeration values.</param>
+        <summary>Produces a hash password suitable for storing in a configuration file based on the specified password and hash algorithm.</summary>
+        <returns>The hashed password.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile%2A> method creates a hashed password value that can be used when storing forms-authentication credentials in the configuration file for an application.  
+  
+ Authentication credentials stored in the configuration file for an application are used by the <xref:System.Web.Security.FormsAuthentication.Authenticate%2A> method to verify passwords for users of an application. Alternatively, you can use ASP.NET membership to store user credentials. For more information, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+  
+   
+  
+## Examples  
+ The following code example takes a user name, password, and hash type and displays the  section of the configuration that includes the user definition and hashed password.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormsAuthenticationHashPassword#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormsAuthenticationHashPassword/CS/formsauthenticationhashpasswordcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormsAuthenticationHashPassword#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormsAuthenticationHashPassword/VB/formsauthenticationhashpasswordvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="password" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="passwordFormat" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="passwordFormat" /> is not a valid <see cref="T:System.Web.Configuration.FormsAuthPasswordFormat" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public static void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the <see cref="T:System.Web.Security.FormsAuthentication" /> object based on the configuration settings for the application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.Initialize%2A> method is called when the <xref:System.Web.Security.FormsAuthenticationModule> creates an instance of the <xref:System.Web.Security.FormsAuthentication> class. This method is not intended to be called from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public static bool IsEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether forms authentication is enabled.</summary>
+        <value>
+          <see langword="true" /> if forms authentication is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginUrl">
+      <MemberSignature Language="C#" Value="public static string LoginUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string LoginUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.LoginUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URL for the login page that the <see cref="T:System.Web.Security.FormsAuthentication" /> class will redirect to.</summary>
+        <value>The URL for the login page that the <see cref="T:System.Web.Security.FormsAuthentication" /> class will redirect to. The default is "login.aspx."</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> property value is set in the configuration file for an ASP.NET application by using the `loginUrl` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> is used by the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example sets the `loginUrl` attribute in the Web.config file.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    defaultUrl="index.aspx" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RedirectFromLoginPage">
+      <MemberSignature Language="C#" Value="public static void RedirectFromLoginPage (string userName, bool createPersistentCookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RedirectFromLoginPage(string userName, bool createPersistentCookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RedirectFromLoginPage(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The authenticated user name.</param>
+        <param name="createPersistentCookie">
+          <see langword="true" /> to create a durable cookie (one that is saved across browser sessions); otherwise, <see langword="false" />.</param>
+        <summary>Redirects an authenticated user back to the originally requested URL or the default URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL specified in the query string using the `ReturnURL` variable name. For example, in the URL `http://www.contoso.com/login.aspx?ReturnUrl=caller.aspx`, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects tothe return URL `caller.aspx`. If the `ReturnURL` variable does not exist, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
+  
+ ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
+  
+ By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> methods redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow redirects to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the  configuration element.  
+  
+> [!IMPORTANT]
+>  Setting the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` to allow cross-application redirects is a potential security threat. For more information, see the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property.  
+  
+ If the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property is `true`, and either the `ReturnUrl` variable is within the current application or the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property is `true`, then the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method issues an authentication ticket and places it in the default cookie using the <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method.  
+  
+ If <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false` and the redirect path is to a URL in the current application, the ticket is issued as part of the redirect URL. If <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false`, <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> is `true`, and the redirect URL does not refer to a page within the current application, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method issues an authentication ticket and places it in the <xref:System.Web.HttpRequest.QueryString%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example redirects validated users to either the originally requested URL or the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A>. The code example uses ASP.NET membership to validate users. For more information about ASP.NET membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/logincs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/loginvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The return URL specified in the query string contains a protocol other than HTTP: or HTTPS:.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RedirectFromLoginPage">
+      <MemberSignature Language="C#" Value="public static void RedirectFromLoginPage (string userName, bool createPersistentCookie, string strCookiePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RedirectFromLoginPage(string userName, bool createPersistentCookie, string strCookiePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RedirectFromLoginPage(System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+        <Parameter Name="strCookiePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The authenticated user name.</param>
+        <param name="createPersistentCookie">
+          <see langword="true" /> to create a durable cookie (one that is saved across browser sessions); otherwise, <see langword="false" />.</param>
+        <param name="strCookiePath">The cookie path for the forms-authentication ticket.</param>
+        <summary>Redirects an authenticated user back to the originally requested URL or the default URL using the specified cookie path for the forms-authentication cookie.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the return URL specified in the query string using the `ReturnURL` variable name. For example, in the URL `http://www.contoso.com/login.aspx?ReturnUrl=caller.aspx`, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects tothe return URL `caller.aspx`. If the `ReturnURL` variable does not exist, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
+  
+ ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
+  
+ By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow redirects to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the  configuration element.  
+  
+> [!IMPORTANT]
+>  Setting the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` to allow cross-application redirects is a potential security threat. For more information, see the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property.  
+  
+ If the <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> property is `true`, and either the `ReturnUrl` variable is within the current application or the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property is `true`, then the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method issues an authentication ticket and places it in the cookie specified by the `strCookiePath` parameter using the <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method.  
+  
+ If <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false` and the redirect path is to a URL in the current application, the ticket is issued as part of the redirect URL. If <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false`, <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> is `true`, and the redirect URL does not refer to a page within the current application, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method issues an authentication ticket and places it in the <xref:System.Web.HttpRequest.QueryString%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The return URL specified in the query string contains a protocol other than HTTP: or HTTPS:.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RedirectToLoginPage">
+      <MemberSignature Language="C#" Value="public static void RedirectToLoginPage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RedirectToLoginPage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RedirectToLoginPage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Redirects the browser to the login URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method redirects the browser to the <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A>.  
+  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method does not clear the forms-authentication cookie. You can use the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method in conjunction with the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method to log one user out and allow a different user to log in.  
+  
+   
+  
+## Examples  
+ The following code example clears the forms-authentication cookie using the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method and redirects the user to the login page using the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.FormsAuthentication#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/CS/signoutcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.FormsAuthentication#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/VB/signoutvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RedirectToLoginPage">
+      <MemberSignature Language="C#" Value="public static void RedirectToLoginPage (string extraQueryString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RedirectToLoginPage(string extraQueryString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RedirectToLoginPage(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extraQueryString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="extraQueryString">The query string to include with the redirect URL.</param>
+        <summary>Redirects the browser to the login URL with the specified query string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method redirects the browser to the <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> and includes the `extraQueryString` value as the <xref:System.Management.ManagementQuery.QueryString%2A> for the redirected URL.  
+  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method does not clear the forms-authentication cookie. You can use the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method in conjunction with the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method to log one user out and allow a different user to log in.  
+  
+   
+  
+## Examples  
+ The following code example clears the forms-authentication cookie using the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method and redirects the user to the login page using the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.FormsAuthentication#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/CS/signout2cs.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.FormsAuthentication#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/VB/signout2vb.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenewTicketIfOld">
+      <MemberSignature Language="C#" Value="public static System.Web.Security.FormsAuthenticationTicket RenewTicketIfOld (System.Web.Security.FormsAuthenticationTicket tOld);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Security.FormsAuthenticationTicket RenewTicketIfOld(class System.Web.Security.FormsAuthenticationTicket tOld) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.RenewTicketIfOld(System.Web.Security.FormsAuthenticationTicket)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.FormsAuthenticationTicket</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tOld" Type="System.Web.Security.FormsAuthenticationTicket" />
+      </Parameters>
+      <Docs>
+        <param name="tOld">The forms-authentication ticket to update.</param>
+        <summary>Conditionally updates the issue date and time and expiration date and time for a <see cref="T:System.Web.Security.FormsAuthenticationTicket" />.</summary>
+        <returns>The updated <see cref="T:System.Web.Security.FormsAuthenticationTicket" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.RenewTicketIfOld%2A> method updates the expiration date and time of the supplied <xref:System.Web.Security.FormsAuthenticationTicket> if the current date and time minus the <xref:System.Web.Security.FormsAuthenticationTicket.IssueDate%2A> value is greater than the <xref:System.Web.Security.FormsAuthenticationTicket.Expiration%2A> value minus the current date and time.  
+  
+ The ticket is updated with the <xref:System.Web.Security.FormsAuthenticationTicket.IssueDate%2A> property set to the current date and time and the <xref:System.Web.Security.FormsAuthenticationTicket.Expiration%2A> property set to the current date and time plus the original <xref:System.Web.Security.FormsAuthenticationTicket.Expiration%2A> value minus the original <xref:System.Web.Security.FormsAuthenticationTicket.IssueDate%2A> value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireSSL">
+      <MemberSignature Language="C#" Value="public static bool RequireSSL { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool RequireSSL" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.RequireSSL" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the forms-authentication cookie requires SSL in order to be returned to the server.</summary>
+        <value>
+          <see langword="true" /> if SSL is required to return the forms-authentication cookie to the server; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.RequireSSL%2A> property value is set in the configuration file for an ASP.NET application by using the `requireSSL` attribute of the  configuration element. You can specify in the Web.config file for your ASP.NET application whether SSL (Secure Sockets Layer) is required to return the forms-authentication cookie to the server by setting the `requireSSL` attribute . For more information, see <xref:System.Web.HttpCookie.Secure%2A>.  
+  
+ It is recommended that if you configure `requireSSL` as `false`, you also configure `slidingExpiration` as `false`, to reduce the amount of time for which a ticket is valid.  
+  
+   
+  
+## Examples  
+ The following code example sets the `requireSSL` attribute in the Web.config file.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    cookieless="UseCookies"  
+    requireSSL="true"  
+    path="/MyApplication" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAuthCookie">
+      <MemberSignature Language="C#" Value="public static void SetAuthCookie (string userName, bool createPersistentCookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAuthCookie(string userName, bool createPersistentCookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.SetAuthCookie(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The name of an authenticated user. This does not have to map to a Windows account.</param>
+        <param name="createPersistentCookie">
+          <see langword="true" /> to create a persistent cookie (one that is saved across browser sessions); otherwise, <see langword="false" />.</param>
+        <summary>Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response, or to the URL if you are using cookieless authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method adds a forms-authentication ticket to either the cookies collection, or to the URL if <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false`. The forms-authentication ticket supplies forms-authentication information to the next request made by the browser. With forms authentication, you can use the <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method when you want to authenticate a user but still retain control of the navigation with redirects.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <see cref="P:System.Web.Security.FormsAuthentication.RequireSSL" /> is <see langword="true" /> and <see cref="P:System.Web.HttpRequest.IsSecureConnection" /> is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAuthCookie">
+      <MemberSignature Language="C#" Value="public static void SetAuthCookie (string userName, bool createPersistentCookie, string strCookiePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAuthCookie(string userName, bool createPersistentCookie, string strCookiePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.SetAuthCookie(System.String,System.Boolean,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="createPersistentCookie" Type="System.Boolean" />
+        <Parameter Name="strCookiePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="userName">The name of an authenticated user.</param>
+        <param name="createPersistentCookie">
+          <see langword="true" /> to create a durable cookie (one that is saved across browser sessions); otherwise, <see langword="false" />.</param>
+        <param name="strCookiePath">The cookie path for the forms-authentication ticket.</param>
+        <summary>Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response, using the supplied cookie path, or using the URL if you are using cookieless authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method adds a forms-authentication ticket to either the cookies collection or the URL if <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false`. The forms-authentication ticket supplies forms-authentication information to the next request made by the browser. With forms authentication, you can use the <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method when you want to authenticate a user but still retain control of the navigation with redirects.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <see cref="P:System.Web.Security.FormsAuthentication.RequireSSL" /> is <see langword="true" /> and <see cref="P:System.Web.HttpRequest.IsSecureConnection" /> is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOut">
+      <MemberSignature Language="C#" Value="public static void SignOut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignOut() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthentication.SignOut" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the forms-authentication ticket from the browser.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method removes the forms-authentication ticket information from the cookie or the URL if <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false`. You can use the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method in conjunction with the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method to log one user out and allow a different user to log in.  
+  
+ If you run exclusively in cookieless mode, or if you support both authenticated and anonymous users, you should explicitly control the redirect to the login page if you require special business logic to execute as a result of removing the anonymous identifier.  
+  
+ When the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method is called, a redirect to the application's login page is made by calling the <xref:System.Web.HttpResponse.Redirect%2A> method with the `endResponse` parameter set to `false`. The redirect does not take place until the current page has finished executing, so additional code can be run. If the code does not contain an explicit redirect to another page, the user is redirected to the login page configured in the application's configuration file.  
+  
+ Calling the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method only removes the forms authentication cookie. The Web server does not store valid and expired authentication tickets for later comparison. This makes your site vulnerable to a replay attack if a malicious user obtains a valid forms authentication cookie. To improve security when using a forms authentication cookie, you should do the following:  
+  
+-   Use absolute expiration for forms authentication cookies by setting the <xref:System.Web.Security.FormsAuthentication.SlidingExpiration%2A> property to `false`. This limits the window in which a hijacked cookie can be replayed.  
+  
+-   Only issue and accept authentication cookies over Secure Sockets Layer (SSL), by setting the <xref:System.Web.Security.FormsAuthentication.RequireSSL%2A> property to `true` and by running the entire Web site under SSL. Setting the <xref:System.Web.Security.FormsAuthentication.RequireSSL%2A> property to `true` ensures that ASP.NET will never send an authentication cookie to the browser over a non-SSL connection; however, the client might not honor the secure setting on the cookie. This means the client might send the forms authentication cookie over a non-SSL connection, thus leaving it vulnerable to hijack. You can prevent a client from sending the forms authentication cookie in the clear by running the entire Web site under SSL.  
+  
+-   Use persistent storage on the server to record when a user logs out of the Web site, and then use an application event such as <xref:System.Web.HttpApplication.PostAuthenticateRequest> event to determine whether the current user was authenticated with forms authentication. If the user was authenticated with forms authentication, and if the information in persistent storage indicates the user is logged out, immediately clear the authentication cookie and redirect the browser back to the login page. After a successful login, update storage to reflect that the user is logged in. When you use this method, your application must track the logged-in status of the user, and must force idle users to log out.  
+  
+   
+  
+## Examples  
+ The following code example clears the forms-authentication cookie using the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method and redirects the user to the login page using the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.FormsAuthentication#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/CS/signoutcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.FormsAuthentication#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/VB/signoutvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlidingExpiration">
+      <MemberSignature Language="C#" Value="public static bool SlidingExpiration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool SlidingExpiration" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.SlidingExpiration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether sliding expiration is enabled.</summary>
+        <value>
+          <see langword="true" /> if sliding expiration is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.SlidingExpiration%2A> property value is set using the `slidingExpiration` attribute of the  configuration element.  
+  
+ Sliding expiration resets the expiration time for a valid authentication cookie if a request is made and more than half of the timeout interval has elapsed. If the cookie expires, the user must re-authenticate. Setting the <xref:System.Web.Security.FormsAuthentication.SlidingExpiration%2A> property to `false` can improve the security of an application by limiting the time for which an authentication cookie is valid, based on the configured `timeout` value.  
+  
+ We recommend that if you configure `requireSSL` as `false`, you also configure `slidingExpiration` as `false`, to reduce the amount of time for which a ticket is valid.  
+  
+   
+  
+## Examples  
+ The following code example sets the `slidingExpiration` attribute to `false` in the Web.config file for an ASP.NET application.  
+  
+```  
+<authentication mode="Forms">  
+  <forms loginUrl="member_login.aspx"  
+    name=".ASPXFORMSAUTH"  
+    cookieless="UseCookies"  
+    requireSSL="true"   
+    slidingExpiration="false" />  
+</authentication>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TicketCompatibilityMode">
+      <MemberSignature Language="C#" Value="public static System.Web.Configuration.TicketCompatibilityMode TicketCompatibilityMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Web.Configuration.TicketCompatibilityMode TicketCompatibilityMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.TicketCompatibilityMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.TicketCompatibilityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether to use Coordinated Universal Time (UTC) or local time for the ticket expiration date.</summary>
+        <value>A value that indicates whether to use Coordinated Universal Time (UTC) or local time for the ticket expiration date.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public static TimeSpan Timeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan Timeout" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthentication.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the amount of time before an authentication ticket expires.</summary>
+        <value>The amount of time before an authentication ticket expires.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="SetAuthCookie">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an authentication ticket for the supplied user name and adds it to the cookies collection of the response, or to the URL if you are using cookieless authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method adds a forms-authentication ticket to either the cookies collection or the URL if <xref:System.Web.Security.FormsAuthentication.CookiesSupported%2A> is `false`. The forms-authentication ticket supplies forms-authentication information to the next request made by the browser. With forms authentication, you can use the <xref:System.Web.Security.FormsAuthentication.SetAuthCookie%2A> method when you want to authenticate a user but still retain control of the navigation with redirects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="RedirectToLoginPage">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Redirects the browser to the login URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method redirects the browser to the <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A>.  
+  
+ The <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method does not clear the forms-authentication cookie. You can use the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method in conjunction with the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method to log one user out and allow a different user to log in.  
+  
+ Unlike the <xref:System.Web.HttpResponse.Redirect%2A?displayProperty=fullName> method, this method does not end the request by calling <xref:System.Web.HttpResponse.End%2A?displayProperty=fullName>. This means that code that follows the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method call will run.  
+  
+   
+  
+## Examples  
+ The following code example clears the forms-authentication cookie using the <xref:System.Web.Security.FormsAuthentication.SignOut%2A> method and redirects the user to the login page using the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.FormsAuthentication#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/CS/signoutcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.FormsAuthentication#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthentication/VB/signoutvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

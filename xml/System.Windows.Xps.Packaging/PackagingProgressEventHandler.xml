@@ -1,0 +1,25 @@
+<Type Name="PackagingProgressEventHandler" FullName="System.Windows.Xps.Packaging.PackagingProgressEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void PackagingProgressEventHandler(object sender, PackagingProgressEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PackagingProgressEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.PackagingProgressEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Xps.Packaging.PackagingProgressEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Xps.Serialization.XpsPackagingPolicy.PackagingProgressEvent" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

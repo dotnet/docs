@@ -1,0 +1,73 @@
+<Type Name="BaseUriHelper" FullName="System.Windows.Navigation.BaseUriHelper">
+  <TypeSignature Language="C#" Value="public static class BaseUriHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed BaseUriHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.BaseUriHelper" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a method to resolve relative [!INCLUDE[TLA#tla_uri#plural](~/includes/tlasharptla-urisharpplural-md.md)] with respect to the base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of a container, such as a <see cref="T:System.Windows.Controls.Frame" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BaseUriProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BaseUriProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BaseUriProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.BaseUriHelper.BaseUriProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see langword="BaseUri" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBaseUri">
+      <MemberSignature Language="C#" Value="public static Uri GetBaseUri (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri GetBaseUri(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.BaseUriHelper.GetBaseUri(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element from which the property value is read.</param>
+        <summary>Gets the value of the <see langword="BaseUri" /> for a specified <see cref="T:System.Windows.UIElement" />.</summary>
+        <returns>The base [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of a given element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to get the <xref:System.Windows.Markup.IUriContext.BaseUri%2A?displayProperty=fullName> property if it is implemented or the <xref:System.Windows.Navigation.BaseUriHelper.BaseUri%2A> attached property if is set on an element. <xref:System.Windows.Navigation.BaseUriHelper.GetBaseUri%2A> will traverse the parent elements of `element` to search for the nearest <xref:System.Windows.Navigation.BaseUriHelper.BaseUri%2A> (<xref:System.Windows.Markup.IUriContext> or attached property).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for getting the value of the <see langword="BaseUri" /> attached property. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

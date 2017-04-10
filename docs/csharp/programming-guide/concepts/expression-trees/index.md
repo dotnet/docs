@@ -102,9 +102,9 @@ int factorial = Expression.Lambda<Func<int, int>>(block, value).Compile()(5);
   
 Console.WriteLine(factorial);  
 // Prints 120.  
-```  
-  
- For more information, see [Generating Dynamic Methods with Expression Trees in Visual Studio 2010 (or later)](http://go.microsoft.com/fwlink/?LinkId=169513).  
+```
+
+For more information, see [Generating Dynamic Methods with Expression Trees in Visual Studio 2010](http://go.microsoft.com/fwlink/p/?LinkId=169513), which also applies to later versions of Visual Studio.
   
 ## Parsing Expression Trees  
  The following code example demonstrates how the expression tree that represents the lambda expression `num => num < 5` can be decomposed into its parts.  

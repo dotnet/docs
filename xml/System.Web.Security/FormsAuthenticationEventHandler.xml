@@ -1,0 +1,46 @@
+<Type Name="FormsAuthenticationEventHandler" FullName="System.Web.Security.FormsAuthenticationEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void FormsAuthenticationEventHandler(object sender, FormsAuthenticationEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormsAuthenticationEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsAuthenticationEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.Security.FormsAuthenticationEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.Security.FormsAuthenticationEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the **FormsAuthentication_OnAuthenticate** event of a <see cref="T:System.Web.Security.FormsAuthenticationModule" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.FormsAuthenticationEventHandler> delegate is defined for the <xref:System.Web.Security.FormsAuthenticationModule.Authenticate> event of the <xref:System.Web.Security.FormsAuthenticationModule> class. You can access the <xref:System.Web.Security.FormsAuthenticationModule.Authenticate> event of the <xref:System.Web.Security.FormsAuthenticationModule> class by specifying a subroutine named **FormsAuthentication_OnAuthenticate** in the Global.asax file for your ASP.NET application. The <xref:System.Web.Security.FormsAuthenticationModule.Authenticate> event is raised during the <xref:System.Web.HttpApplication.AuthenticateRequest> event.  
+  
+ The <xref:System.Web.Security.FormsAuthenticationModule> constructs a <xref:System.Web.Security.FormsAuthenticationEventArgs> object using the current <xref:System.Web.HttpContext> and passes it to the **FormsAuthentication_OnAuthenticate** event.  
+  
+ You can use the <xref:System.Web.Security.FormsAuthenticationEventArgs.User%2A> property of the <xref:System.Web.Security.FormsAuthenticationEventArgs> object supplied to the **FormsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.Security.FormsAuthenticationEventArgs.User%2A> property during the **FormsAuthentication_OnAuthenticate** event, the identity supplied by the forms authentication ticket in the cookie or URL is used.  
+  
+ The **FormsAuthentication_OnAuthenticate** event is only raised when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode> and the <xref:System.Web.Security.FormsAuthenticationModule> is an active HTTP module for the application.  
+  
+   
+  
+## Examples  
+ The following code example uses the **FormsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a <xref:System.Security.Principal.GenericPrincipal> object with a custom <xref:System.Security.Principal.IPrincipal.Identity%2A>.  
+  
+ [!code-csharp[System.Web.Security.FormsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.FormsAuthenticationModule/CS/global.asax#1)]
+ [!code-vb[System.Web.Security.FormsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.FormsAuthenticationModule/VB/global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

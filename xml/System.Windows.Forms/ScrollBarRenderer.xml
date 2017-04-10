@@ -1,0 +1,613 @@
+<Type Name="ScrollBarRenderer" FullName="System.Windows.Forms.ScrollBarRenderer">
+  <TypeSignature Language="C#" Value="public sealed class ScrollBarRenderer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScrollBarRenderer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollBarRenderer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods used to render a scroll bar control with visual styles. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ScrollBarRenderer> class provides a set of `static` methods that can be used to render a scroll bar control with the current visual style of the operating system. Rendering a control refers to drawing the user interface of a control. This is useful if you are drawing a custom control that should have the appearance of the current visual style. To draw a scroll bar, use a combination of the methods in this class to render each part of the scroll bar.  
+  
+ If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods of this class will draw the scroll bar with the current visual style. Otherwise, the methods of this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property.  
+  
+ This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=fullName> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar?displayProperty=fullName> class. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a custom control that uses the <xref:System.Windows.Forms.ScrollBarRenderer> methods to draw a scroll bar that responds to mouse clicks.  
+  
+ [!code-cpp[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#0)]
+ [!code-csharp[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#0)]
+ [!code-vb[System.Windows.Forms.ScrollBarRenderer#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DrawArrowButton">
+      <MemberSignature Language="C#" Value="public static void DrawArrowButton (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawArrowButton(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawArrowButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll arrow.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll arrow.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState" /> values that specifies the visual state of the scroll arrow.</param>
+        <summary>Draws a scroll arrow with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawArrowButton%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll arrow in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+  
+ [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawHorizontalThumb">
+      <MemberSignature Language="C#" Value="public static void DrawHorizontalThumb (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll box.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll box.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box.</param>
+        <summary>Draws a horizontal scroll box (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumb%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll box in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+  
+ [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawHorizontalThumbGrip">
+      <MemberSignature Language="C#" Value="public static void DrawHorizontalThumbGrip (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalThumbGrip(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumbGrip(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll box grip.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll box grip.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box grip.</param>
+        <summary>Draws a grip on a horizontal scroll box (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawHorizontalThumbGrip%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw a scroll box grip in the state determined by the location of the mouse pointer. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+  
+ [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawLeftHorizontalTrack">
+      <MemberSignature Language="C#" Value="public static void DrawLeftHorizontalTrack (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawLeftHorizontalTrack(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawLeftHorizontalTrack(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll bar track.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll bar track.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll bar track.</param>
+        <summary>Draws a horizontal scroll bar track with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawLeftHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw the left side of a scroll bar track in the pressed state. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+  
+ [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawLowerVerticalTrack">
+      <MemberSignature Language="C#" Value="public static void DrawLowerVerticalTrack (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawLowerVerticalTrack(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawLowerVerticalTrack(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll bar track.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll bar track.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll bar track.</param>
+        <summary>Draws a vertical scroll bar track with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRightHorizontalTrack">
+      <MemberSignature Language="C#" Value="public static void DrawRightHorizontalTrack (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRightHorizontalTrack(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawRightHorizontalTrack(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll bar track.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll bar track.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll bar track.</param>
+        <summary>Draws a horizontal scroll bar track with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.DrawRightHorizontalTrack%2A> method in a custom control's <xref:System.Windows.Forms.Control.OnPaint%2A> method to draw the scroll bar track. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+  
+ [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawSizeBox">
+      <MemberSignature Language="C#" Value="public static void DrawSizeBox (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawSizeBox(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawSizeBox(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the sizing handle.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the sizing handle.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState" /> values that specifies the visual state of the sizing handle.</param>
+        <summary>Draws a scroll bar sizing handle with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawUpperVerticalTrack">
+      <MemberSignature Language="C#" Value="public static void DrawUpperVerticalTrack (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawUpperVerticalTrack(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawUpperVerticalTrack(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll bar track.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll bar track.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll bar track.</param>
+        <summary>Draws a vertical scroll bar track with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawVerticalThumb">
+      <MemberSignature Language="C#" Value="public static void DrawVerticalThumb (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalThumb(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawVerticalThumb(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll box.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll box.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box.</param>
+        <summary>Draws a vertical scroll box (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawVerticalThumbGrip">
+      <MemberSignature Language="C#" Value="public static void DrawVerticalThumbGrip (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalThumbGrip(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.DrawVerticalThumbGrip(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll box grip.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll box grip.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box grip.</param>
+        <summary>Draws a grip on a vertical scroll box (also known as the thumb) with visual styles.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSizeBoxSize">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Size GetSizeBoxSize (System.Drawing.Graphics g, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetSizeBoxSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.GetSizeBoxSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the sizing handle.</param>
+        <summary>Returns the size of the sizing handle.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size of the sizing handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the sizing handle is determined by the current visual style of the operating system.  
+  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetThumbGripSize">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Size GetThumbGripSize (System.Drawing.Graphics g, System.Windows.Forms.VisualStyles.ScrollBarState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size GetThumbGripSize(class System.Drawing.Graphics g, valuetype System.Windows.Forms.VisualStyles.ScrollBarState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollBarRenderer.GetThumbGripSize(System.Drawing.Graphics,System.Windows.Forms.VisualStyles.ScrollBarState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="state" Type="System.Windows.Forms.VisualStyles.ScrollBarState" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
+        <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box grip.</param>
+        <summary>Returns the size of the scroll box grip.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size of the scroll box grip.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the scroll box grip is determined by the current visual style of the operating system.  
+  
+ Before using this method, you should verify that the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The operating system does not support visual styles.  
+  
+ -or-  
+  
+ Visual styles are disabled by the user in the operating system.  
+  
+ -or-  
+  
+ Visual styles are not applied to the client area of application windows.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ScrollBarRenderer.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ScrollBarRenderer" /> class can be used to draw a scroll bar with visual styles.</summary>
+        <value>
+          <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client areas of application windows; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `false`, the methods of this class will throw an <xref:System.InvalidOperationException>.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ScrollBarRenderer.IsSupported%2A> property to determine whether to use the <xref:System.Windows.Forms.ScrollBarRenderer> methods. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ScrollBarRenderer> class.  
+  
+ [!code-cpp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/cpp/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ScrollBarRenderer#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScrollBarRenderer/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

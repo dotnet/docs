@@ -1,0 +1,110 @@
+<Type Name="JSLocalField" FullName="Microsoft.JScript.JSLocalField">
+  <TypeSignature Language="C#" Value="public sealed class JSLocalField : Microsoft.JScript.JSVariableField" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JSLocalField extends Microsoft.JScript.JSVariableField" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSLocalField" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSVariableField</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a local variable.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JSLocalField (string name, RuntimeTypeHandle handle, int slotNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.RuntimeTypeHandle handle, int32 slotNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSLocalField.#ctor(System.String,System.RuntimeTypeHandle,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="handle" Type="System.RuntimeTypeHandle" />
+        <Parameter Name="slotNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of this field.</param>
+        <param name="handle">A handle to the internal metadata representation of this field.</param>
+        <param name="slotNumber">The slot number of the variable.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSLocalField" /> class, using the specified name, handle, and slot number.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldType">
+      <MemberSignature Language="C#" Value="public override Type FieldType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type FieldType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSLocalField.FieldType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of this field.</summary>
+        <value>The type of this field.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override object GetValue (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSLocalField.GetValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object whose field value will be returned.</param>
+        <summary>Gets the value of the field.</summary>
+        <returns>The value of the field.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public override void SetValue (object obj, object value, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Globalization.CultureInfo locale);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object obj, object value, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, class System.Globalization.CultureInfo locale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSLocalField.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="invokeAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="locale" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object whose field value will be set.</param>
+        <param name="value">The value to assign to the field.</param>
+        <param name="invokeAttr">A bitwise combination of the enumeration values that control the binding.</param>
+        <param name="binder">A set of properties that enables the binding, coercion of argument types, and invocation of members through reflection.</param>
+        <param name="locale">Provides information about a specific culture or locale. Used to format numbers, dates, and strings correctly.</param>
+        <summary>Sets the value of the field, using the specified value, culture, and binding information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

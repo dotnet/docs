@@ -1,0 +1,553 @@
+<Type Name="LdapSessionOptions" FullName="System.DirectoryServices.Protocols.LdapSessionOptions">
+  <TypeSignature Language="C#" Value="public class LdapSessionOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LdapSessionOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.LdapSessionOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.LdapSessionOptions" /> class is used to get or set various LDAP session options.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoReconnect">
+      <MemberSignature Language="C#" Value="public bool AutoReconnect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoReconnect" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.AutoReconnect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.AutoReconnect" /> property specifies if auto-reconnect is enabled.</summary>
+        <value>This property is <see langword="true" /> if auto-reconnect is enabled or <see langword="false" /> if it is not.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DomainName">
+      <MemberSignature Language="C#" Value="public string DomainName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DomainName" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.DomainName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.DomainName" /> property returns the domain to which this connection is bound.</summary>
+        <value>The domain to which this connection is bound.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FastConcurrentBind">
+      <MemberSignature Language="C#" Value="public void FastConcurrentBind ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FastConcurrentBind() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapSessionOptions.FastConcurrentBind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapSessionOptions.FastConcurrentBind" /> method enables support for fast concurrent binds.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">This method does not work on the current platform.</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.LdapException">An LDAP error occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HostName">
+      <MemberSignature Language="C#" Value="public string HostName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HostName" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.HostName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.HostName" /> property returns the name of the LDAP server associated with the connection.</summary>
+        <value>The name of the LDAP server associated with the connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HostReachable">
+      <MemberSignature Language="C#" Value="public bool HostReachable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HostReachable" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.HostReachable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.HostReachable" /> property specifies whether the host is reachable.</summary>
+        <value>This property is <see langword="true" /> if the host is reachable or <see langword="false" /> if it is not.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LocatorFlag">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.LocatorFlags LocatorFlag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.LocatorFlags LocatorFlag" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.LocatorFlag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.LocatorFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.LocatorFlag" /> property specifies one of the values of the <see cref="T:System.DirectoryServices.Protocols.LocatorFlags" /> enumeration that are used when locating a domain controller.</summary>
+        <value>One of the values of the <see cref="T:System.DirectoryServices.Protocols.LocatorFlags" /> enumeration that are used when locating a domain controller.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PingKeepAliveTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan PingKeepAliveTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan PingKeepAliveTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingKeepAliveTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingKeepAliveTimeout" /> property contains a <see cref="T:System.TimeSpan" /> object that specifies the minimum number of seconds the client waits, after the last response from the server, before sending a keep-alive ping.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> object that specifies the minimum number of seconds the client waits, after the last response from the server, before sending a keep-alive ping.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.ArgumentException">The specified time span is less than <see cref="F:System.TimeSpan.Zero" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PingLimit">
+      <MemberSignature Language="C#" Value="public int PingLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PingLimit" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingLimit" /> property contains the number of unanswered pings that the client sends before closing a connection.</summary>
+        <value>The number of unanswered pings that the client sends before closing a connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.ArgumentException">The specified value is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PingWaitTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan PingWaitTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan PingWaitTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingWaitTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.PingWaitTimeout" /> property contains a <see cref="T:System.TimeSpan" /> object that specifies the number of milliseconds that the client waits for the response to come back after sending a ping.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> object that specifies the number of milliseconds that the client waits for the response to come back after sending a ping.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.ArgumentException">The specified time span is less than <see cref="F:System.TimeSpan.Zero" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolVersion">
+      <MemberSignature Language="C#" Value="public int ProtocolVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ProtocolVersion" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.ProtocolVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.ProtocolVersion" /> property specifies the LDAP protocol version to use.</summary>
+        <value>The LDAP protocol version to use.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryClientCertificate">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.QueryClientCertificateCallback QueryClientCertificate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.QueryClientCertificateCallback QueryClientCertificate" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.QueryClientCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.QueryClientCertificateCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.QueryClientCertificate" /> property contains a <see cref="T:System.DirectoryServices.Protocols.QueryClientCertificateCallback" /> object that specifies the default callback function used to specify client certificates when establishing an SSL connection.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.QueryClientCertificateCallback" /> object that specifies the default callback function used to specify client certificates when establishing an SSL connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property on the <xref:System.DirectoryServices.Protocols.LdapConnection> object is also set, the certificate specified in the <xref:System.DirectoryServices.Protocols.DirectoryConnection.ClientCertificates%2A> property is ignored.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferralCallback">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.ReferralCallback ReferralCallback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.ReferralCallback ReferralCallback" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralCallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ReferralCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralCallback" /> property contains a <see cref="T:System.DirectoryServices.Protocols.ReferralCallback" /> object that specifies the default callback function used when chasing referrals.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.ReferralCallback" /> object that specifies the default callback function used when chasing referrals.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferralChasing">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.ReferralChasingOptions ReferralChasing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.ReferralChasingOptions ReferralChasing" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralChasing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ReferralChasingOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralChasing" /> property contains a <see cref="T:System.DirectoryServices.ReferralChasingOption" /> object that specifies how the LDAP library follows referrals returned by LDAP servers.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ReferralChasingOption" /> object that specifies how the LDAP library follows referrals returned by LDAP servers.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not defined in <see cref="T:System.DirectoryServices.ReferralChasingOption" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferralHopLimit">
+      <MemberSignature Language="C#" Value="public int ReferralHopLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ReferralHopLimit" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralHopLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.ReferralHopLimit" /> property specifies the number of hops allowed when chasing referrals.</summary>
+        <value>The number of hops allowed when chasing referrals.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.ArgumentException">The specified value is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RootDseCache">
+      <MemberSignature Language="C#" Value="public bool RootDseCache { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RootDseCache" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.RootDseCache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.RootDseCache" /> property enables the internal RootDSE cache.</summary>
+        <value>This property is <see langword="true" /> if the cache is enabled or <see langword="false" /> if it is not.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaslMethod">
+      <MemberSignature Language="C#" Value="public string SaslMethod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SaslMethod" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SaslMethod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.SaslMethod" /> property specifies the preferred Simple Authentication and Security Layer (SASL) binding method.</summary>
+        <value>The preferred SASL binding method.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Sealing">
+      <MemberSignature Language="C#" Value="public bool Sealing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Sealing" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.Sealing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.Sealing" /> property enables Kerberos encryption.</summary>
+        <value>This property is <see langword="true" /> if Kerberos encryption is enabled or <see langword="false" /> if it is not.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureSocketLayer">
+      <MemberSignature Language="C#" Value="public bool SecureSocketLayer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SecureSocketLayer" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SecureSocketLayer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.SecureSocketLayer" /> property enables secure socket layer on connection.</summary>
+        <value>This property is <see langword="true" /> if secure socket layer is enabled or <see langword="false" /> if it is not.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityContext">
+      <MemberSignature Language="C#" Value="public object SecurityContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SecurityContext" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SecurityContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.SecurityContext" /> property specifies the security context associated with the current connection.</summary>
+        <value>The security context associated with the current connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SendTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan SendTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SendTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SendTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.SendTimeout" /> property contains a <see cref="T:System.TimeSpan" /> object that specifies the send time-out.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> object that specifies the send time-out.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.ArgumentException">The value specified is less than <see cref="F:System.TimeSpan.Zero" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Signing">
+      <MemberSignature Language="C#" Value="public bool Signing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Signing" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.Signing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.Signing" /> property enables Kerberos encryption.</summary>
+        <value>This property is <see langword="true" /> if Kerberos encryption is enabled or <see langword="false" /> if it is not.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SslInformation">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation SslInformation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation SslInformation" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SslInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.SslInformation" /> property contains a <see cref="T:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation" /> object that contains data about the current secure connection.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.SecurityPackageContextConnectionInformation" /> object that contains data about the current secure connection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SspiFlag">
+      <MemberSignature Language="C#" Value="public int SspiFlag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SspiFlag" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.SspiFlag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.SspiFlag" /> property specifies the flags to pass to the Security Support Provider Interface (SSPI) InitializeSecurityContext function.  For more information about the InitializeSecurityContext function, see the InitializeSecurityContext function topic in the MSDN library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
+        <value>The flags to pass to the SSPI InitializeSecurityContext function.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartTransportLayerSecurity">
+      <MemberSignature Language="C#" Value="public void StartTransportLayerSecurity (System.DirectoryServices.Protocols.DirectoryControlCollection controls);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartTransportLayerSecurity(class System.DirectoryServices.Protocols.DirectoryControlCollection controls) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapSessionOptions.StartTransportLayerSecurity(System.DirectoryServices.Protocols.DirectoryControlCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controls" Type="System.DirectoryServices.Protocols.DirectoryControlCollection" />
+      </Parameters>
+      <Docs>
+        <param name="controls">A <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object that contains the controls to use.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapSessionOptions.StartTransportLayerSecurity(System.DirectoryServices.Protocols.DirectoryControlCollection)" /> method starts transport layer security encryption.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.TlsOperationException">The request failed.</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.LdapException">An LDAP error occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StopTransportLayerSecurity">
+      <MemberSignature Language="C#" Value="public void StopTransportLayerSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StopTransportLayerSecurity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.LdapSessionOptions.StopTransportLayerSecurity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.LdapSessionOptions.StopTransportLayerSecurity" /> method ends transport layer security encryption.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.TlsOperationException">The request failed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TcpKeepAlive">
+      <MemberSignature Language="C#" Value="public bool TcpKeepAlive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TcpKeepAlive" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.TcpKeepAlive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.TcpKeepAlive" /> property enables TCP keep-alive.</summary>
+        <value>This property is <see langword="true" /> if TCP keep-alive is enabled or <see langword="false" /> if it is not.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyServerCertificate">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.VerifyServerCertificateCallback VerifyServerCertificate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.VerifyServerCertificateCallback VerifyServerCertificate" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.LdapSessionOptions.VerifyServerCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.VerifyServerCertificateCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.LdapSessionOptions.VerifyServerCertificate" /> property contains a <see cref="T:System.DirectoryServices.Protocols.VerifyServerCertificateCallback" /> object that specifies the default callback method to use to verify server certificates when an SSL connection is established.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.VerifyServerCertificateCallback" /> object that specifies the default callback method to use to verify server certificates when an SSL connection is established.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object is already disposed.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

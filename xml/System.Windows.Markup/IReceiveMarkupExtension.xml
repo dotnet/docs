@@ -1,0 +1,57 @@
+<Type Name="IReceiveMarkupExtension" FullName="System.Windows.Markup.IReceiveMarkupExtension">
+  <TypeSignature Language="C#" Value="public interface IReceiveMarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReceiveMarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IReceiveMarkupExtension" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("IReceiveMarkupExtension has been deprecated. This interface is no longer in use.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a mechanism whereby types can declare that they can receive an expression (or another class) from a markup extension, where the output is a different property type than the target property. Do not use for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] implementations; see Remarks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)], <xref:System.Windows.Markup.IReceiveMarkupExtension> was a WPF-specific technique for permitting types to enter a different codepath whenever any of its XAML-accessible members where set as markup extensions during XAML parsing. In [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], this interface is obsolete, and is replaced with a .NET Framework XAML Services implementation for how markup extensions can receive services or types can invoke markup-extension specific setter logic.  
+  
+ For [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] implementations, if types want to perform special processing when setting properties by markup extension rather than by other means, types should be defined with <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attributes applied. The attribute specifies a callback, which is typically defined as a private member of the type.  
+  
+ In infrastructure implementations of WPF classes, most cases where <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> is applied reference a `ReceiveMarkupExtension` method that previously implemented this interface, but now instead use context through the callback.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ReceiveMarkupExtension">
+      <MemberSignature Language="C#" Value="public void ReceiveMarkupExtension (string property, System.Windows.Markup.MarkupExtension markupExtension, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReceiveMarkupExtension(string property, class System.Windows.Markup.MarkupExtension markupExtension, class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IReceiveMarkupExtension.ReceiveMarkupExtension(System.String,System.Windows.Markup.MarkupExtension,System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.String" />
+        <Parameter Name="markupExtension" Type="System.Windows.Markup.MarkupExtension" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="property">The name of the target property.</param>
+        <param name="markupExtension">The markup extension instance of the incoming data.</param>
+        <param name="serviceProvider">Can provide additional services that should be performed when processing the markup extension data for a property value.</param>
+        <summary>Provides the handling for markup extensions that provide property values. Do not use for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] implementations; see Remarks in <see cref="T:System.Windows.Markup.IReceiveMarkupExtension" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

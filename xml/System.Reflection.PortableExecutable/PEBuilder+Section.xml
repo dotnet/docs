@@ -1,0 +1,73 @@
+<Type Name="PEBuilder+Section" FullName="System.Reflection.PortableExecutable.PEBuilder+Section">
+  <TypeSignature Language="C#" Value="protected struct PEBuilder.Section" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected sequential ansi sealed beforefieldinit PEBuilder/Section extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.PEBuilder.Section" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Section (string name, System.Reflection.PortableExecutable.SectionCharacteristics characteristics);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Reflection.PortableExecutable.SectionCharacteristics characteristics) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.PortableExecutable.PEBuilder.Section.#ctor(System.String,System.Reflection.PortableExecutable.SectionCharacteristics)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="characteristics" Type="System.Reflection.PortableExecutable.SectionCharacteristics" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="characteristics">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Characteristics">
+      <MemberSignature Language="C#" Value="public readonly System.Reflection.PortableExecutable.SectionCharacteristics Characteristics;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly valuetype System.Reflection.PortableExecutable.SectionCharacteristics Characteristics" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEBuilder.Section.Characteristics" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PortableExecutable.SectionCharacteristics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public readonly string Name;" />
+      <MemberSignature Language="ILAsm" Value=".field public initonly string Name" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutable.PEBuilder.Section.Name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

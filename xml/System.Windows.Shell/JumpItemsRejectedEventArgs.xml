@@ -1,0 +1,98 @@
+<Type Name="JumpItemsRejectedEventArgs" FullName="System.Windows.Shell.JumpItemsRejectedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class JumpItemsRejectedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JumpItemsRejectedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpItemsRejectedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Shell.JumpList.JumpItemsRejected" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JumpItemsRejectedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpItemsRejectedEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpItemsRejectedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JumpItemsRejectedEventArgs (System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt; rejectedItems, System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItemRejectionReason&gt; reasons);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.Windows.Shell.JumpItem&gt; rejectedItems, class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Shell.JumpItemRejectionReason&gt; reasons) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpItemsRejectedEventArgs.#ctor(System.Collections.Generic.IList{System.Windows.Shell.JumpItem},System.Collections.Generic.IList{System.Windows.Shell.JumpItemRejectionReason})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rejectedItems" Type="System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt;" />
+        <Parameter Name="reasons" Type="System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItemRejectionReason&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rejectedItems">The list of Jump List items that could not be added to the Jump List by the Windows shell.</param>
+        <param name="reasons">The list of reasons why the rejected Jump List items could not be added to the Jump List.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpItemsRejectedEventArgs" /> class that has the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every rejected item must have a corresponding rejection reason.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The count of <paramref name="rejectedItems " />does not equal the count of rejection <paramref name="reasons" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectedItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt; RejectedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Windows.Shell.JumpItem&gt; RejectedItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpItemsRejectedEventArgs.RejectedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of Jump List items that could not be added to the Jump List by the Windows shell.</summary>
+        <value>The list of Jump List items that could not be added to the Jump List by the Windows shell.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectionReasons">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItemRejectionReason&gt; RejectionReasons { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Shell.JumpItemRejectionReason&gt; RejectionReasons" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpItemsRejectedEventArgs.RejectionReasons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItemRejectionReason&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of reasons why the rejected Jump List items could not be added to the Jump List.</summary>
+        <value>The list of reasons why the rejected Jump List items could not be added to the Jump List.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

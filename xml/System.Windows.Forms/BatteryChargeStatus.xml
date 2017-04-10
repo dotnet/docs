@@ -1,0 +1,126 @@
+<Type Name="BatteryChargeStatus" FullName="System.Windows.Forms.BatteryChargeStatus">
+  <TypeSignature Language="C#" Value="public enum BatteryChargeStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BatteryChargeStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BatteryChargeStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines identifiers that indicate the current battery charge level or charging state information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.PowerStatus.BatteryChargeStatus%2A> property of the <xref:System.Windows.Forms.PowerStatus> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Charging">
+      <MemberSignature Language="C#" Value="Charging" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BatteryChargeStatus Charging = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.Charging" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a battery is charging.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Critical">
+      <MemberSignature Language="C#" Value="Critical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BatteryChargeStatus Critical = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.Critical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a critically low level of battery charge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BatteryChargeStatus High = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a high level of battery charge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Low">
+      <MemberSignature Language="C#" Value="Low" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BatteryChargeStatus Low = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.Low" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a low level of battery charge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSystemBattery">
+      <MemberSignature Language="C#" Value="NoSystemBattery" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BatteryChargeStatus NoSystemBattery = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.NoSystemBattery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that no battery is present.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BatteryChargeStatus Unknown = int32(255)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BatteryChargeStatus.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BatteryChargeStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates an unknown battery condition.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

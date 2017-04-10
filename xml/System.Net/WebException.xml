@@ -1,0 +1,449 @@
+<Type Name="WebException" FullName="System.Net.WebException">
+  <TypeSignature Language="C#" Value="public class WebException : InvalidOperationException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WebException extends System.InvalidOperationException implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Net.WebException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Requests</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.InvalidOperationException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The exception that is thrown when an error occurs while accessing the network through a pluggable protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebException> class is thrown by classes descended from <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> that implement pluggable protocols for accessing the Internet.  
+  
+ When <xref:System.Net.WebException> is thrown by a descendant of the <xref:System.Net.WebRequest> class, the <xref:System.Net.WebException.Response%2A> property provides the Internet response to the application.  
+  
+ **Associated Tips**  
+  
+ **Check the Response property of the exception to determine why the request failed.**  
+ When a <xref:System.Net.WebException> exception is thrown by a descendent of the <xref:System.Net.WebRequest> class, the <xref:System.Net.WebException.Response%2A> property provides the Internet response to the application.  
+  
+ **Check the Status property of the exception to determine why the request failed.**  
+ The <xref:System.Net.WebException.Status%2A> property of the exception provides status information for the error. For more information, see <xref:System.Net.WebExceptionStatus>.  
+  
+ **If you are timing out when stepping into an XML Web Service, set the timeout value for the XML Web Service call to infinite.**  
+ For more information, see [Error: Timeout While Debugging Web Services](http://msdn.microsoft.com/library/4b7df112-788a-4429-9a0c-4c6dac4fb609).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes a new instance of the <xref:System.Net.WebException> class. The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. This message takes into account the current system culture. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus>.  
+  
+   
+  
+## Examples  
+ The following example throws a default <xref:System.Net.WebException>.  
+  
+ [!code-cpp[WebException_Constructor1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Constructor1/CPP/webexception_constructor1.cpp#1)]
+ [!code-csharp[WebException_Constructor1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Constructor1/CS/webexception_constructor1.cs#1)]
+ [!code-vb[WebException_Constructor1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Constructor1/VB/webexception_constructor1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The text of the error message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class with the specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus>.  
+  
+   
+  
+## Examples  
+ The following example throws a <xref:System.Net.WebException> by specifying an error message.  
+  
+ [!code-cpp[WebException_Constructor2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Constructor2/CPP/webexception_constructor2.cpp#1)]
+ [!code-csharp[WebException_Constructor2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Constructor2/CS/webexception_constructor2.cs#1)]
+ [!code-vb[WebException_Constructor2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Constructor2/VB/webexception_constructor2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebException (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the information required to serialize the new <see cref="T:System.Net.WebException" />.</param>
+        <param name="streamingContext">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the source of the serialized stream that is associated with the new <see cref="T:System.Net.WebException" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.WebException> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The text of the error message.</param>
+        <param name="innerException">A nested exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class with the specified error message and nested exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus>.  
+  
+   
+  
+## Examples  
+ The following example throws a <xref:System.Net.WebException> by specifying an error message and nested exception.  
+  
+ [!code-cpp[WebException_Constructor4#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Constructor4/CPP/webexception_constructor4.cpp#1)]
+ [!code-csharp[WebException_Constructor4#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Constructor4/CS/webexception_constructor4.cs#1)]
+ [!code-vb[WebException_Constructor4#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Constructor4/VB/webexception_constructor4.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebException (string message, System.Net.WebExceptionStatus status);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, valuetype System.Net.WebExceptionStatus status) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Net.WebExceptionStatus)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="status" Type="System.Net.WebExceptionStatus" />
+      </Parameters>
+      <Docs>
+        <param name="message">The text of the error message.</param>
+        <param name="status">One of the <see cref="T:System.Net.WebExceptionStatus" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class with the specified error message and status.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Net.WebException.Status%2A> property set to the value of `status`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`.  
+  
+   
+  
+## Examples  
+ The following example throws a <xref:System.Net.WebException> by specifying an error message and a <xref:System.Net.WebExceptionStatus>.  
+  
+ [!code-cpp[WebException_Constructor3#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Constructor3/CPP/webexception_constructor3.cpp#1)]
+ [!code-csharp[WebException_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Constructor3/CS/webexception_constructor3.cs#1)]
+ [!code-vb[WebException_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Constructor3/VB/webexception_constructor3.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebException (string message, Exception innerException, System.Net.WebExceptionStatus status, System.Net.WebResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, valuetype System.Net.WebExceptionStatus status, class System.Net.WebResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception,System.Net.WebExceptionStatus,System.Net.WebResponse)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+        <Parameter Name="status" Type="System.Net.WebExceptionStatus" />
+        <Parameter Name="response" Type="System.Net.WebResponse" />
+      </Parameters>
+      <Docs>
+        <param name="message">The text of the error message.</param>
+        <param name="innerException">A nested exception.</param>
+        <param name="status">One of the <see cref="T:System.Net.WebExceptionStatus" /> values.</param>
+        <param name="response">A <see cref="T:System.Net.WebResponse" /> instance that contains the response from the remote host.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class with the specified error message, nested exception, status, and response.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message`, the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`, the <xref:System.Net.WebException.Status%2A> property set to the value of `status`, and the <xref:System.Net.WebException.Response%2A> property set to the value of `response`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message.  
+  
+   
+  
+## Examples  
+ The following example throws a <xref:System.Net.WebException> by specifying an error message and a <xref:System.Net.WebExceptionStatus>.  
+  
+ [!code-cpp[WebException_Constructor5#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Constructor5/CPP/webexception_constructor5.cpp#1)]
+ [!code-csharp[WebException_Constructor5#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Constructor5/CS/webexception_constructor5.cs#1)]
+ [!code-vb[WebException_Constructor5#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Constructor5/VB/webexception_constructor5.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to be used.</param>
+        <param name="streamingContext">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> to be used.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance with the data needed to serialize the <see cref="T:System.Net.WebException" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Response">
+      <MemberSignature Language="C#" Value="public System.Net.WebResponse Response { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebResponse Response" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebException.Response" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the response that the remote host returned.</summary>
+        <value>If a response is available from the Internet resource, a <see cref="T:System.Net.WebResponse" /> instance that contains the error response from an Internet resource; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some Internet protocols, such as HTTP, return otherwise valid responses indicating that an error has occurred at the protocol level. When the response to an Internet request indicates an error, <xref:System.Net.WebRequest.GetResponse%2A?displayProperty=fullName> sets the <xref:System.Net.WebException.Status%2A> property to <xref:System.Net.WebExceptionStatus?displayProperty=fullName> and provides the <xref:System.Net.WebResponse> that contains the error message in the <xref:System.Net.WebException.Response%2A> property of the <xref:System.Net.WebException> that was thrown. The application can examine the <xref:System.Net.WebResponse> to determine the actual error.  
+  
+   
+  
+## Examples  
+ The following example checks the <xref:System.Net.WebException.Status%2A> property and prints to the console the <xref:System.Net.HttpWebResponse.StatusCode%2A> and <xref:System.Net.HttpWebResponse.StatusDescription%2A> of the underlying <xref:System.Net.HttpWebResponse> instance.  
+  
+ [!code-cpp[WebException_Status_Response#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Status_Response/CPP/webexception_status_response.cpp#1)]
+ [!code-csharp[WebException_Status_Response#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Status_Response/CS/webexception_status_response.cs#1)]
+ [!code-vb[WebException_Status_Response#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Status_Response/VB/webexception_status_response.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.Net.WebExceptionStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.WebExceptionStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.Net.WebException.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebExceptionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the status of the response.</summary>
+        <value>One of the <see cref="T:System.Net.WebExceptionStatus" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebException.Status%2A> property indicates the reason for the <xref:System.Net.WebException>.  
+  
+ The value of <xref:System.Net.WebException.Status%2A> is one of the <xref:System.Net.WebExceptionStatus> values.  
+  
+> [!WARNING]
+>  The <xref:System.Net.WebExceptionStatus> error is not returned to [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
+  
+   
+  
+## Examples  
+ The following example checks the <xref:System.Net.WebException.Status%2A> property and prints to the console the <xref:System.Net.HttpWebResponse.StatusCode%2A> and <xref:System.Net.HttpWebResponse.StatusDescription%2A> of the underlying <xref:System.Net.HttpWebResponse> instance.  
+  
+ [!code-cpp[WebException_Status_Response#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Status_Response/CPP/webexception_status_response.cpp#1)]
+ [!code-csharp[WebException_Status_Response#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Status_Response/CS/webexception_status_response.cs#1)]
+ [!code-vb[WebException_Status_Response#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Status_Response/VB/webexception_status_response.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">The object into which this <see cref="T:System.Net.WebException" /> will be serialized.</param>
+        <param name="streamingContext">The destination of the serialization.</param>
+        <summary>Serializes this instance into the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

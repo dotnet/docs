@@ -1,0 +1,524 @@
+<Type Name="Image" FullName="System.Web.UI.WebControls.Image">
+  <TypeSignature Language="C#" Value="public class Image : System.Web.UI.WebControls.WebControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Image extends System.Web.UI.WebControls.WebControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Image" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("ImageUrl")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.PreviewControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays an image on a Web page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Accessibility](#accessibility)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.UI.WebControls.Image> control lets you work with images from server code. Use the <xref:System.Web.UI.WebControls.Image> control to display any valid image supported by the requesting browser on the Web page. The path to the displayed image is specified by setting the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property. You can specify the text to display in place of image when the image is not available by setting the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property. The alignment of the image in relation to other elements on the Web page is specified by setting <xref:System.Web.UI.WebControls.Image.ImageAlign%2A> property.  
+  
+> [!NOTE]
+>  This control only displays an image. If you need to capture mouse clicks on the image, use the <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+<a name="accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:Image  
+    AccessKey="string"  
+    AlternateText="string"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CssClass="string"  
+    DescriptionUrl="uri"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ForeColor="color name|#dddddd"  
+    GenerateEmptyAlternateText="True|False"  
+    Height="size"  
+    ID="string"  
+    ImageAlign="NotSet|Left|Right|Baseline|Top|Middle|Bottom|  
+        AbsBottom|AbsMiddle|TextTop"  
+    ImageUrl="uri"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    ToolTip="string"  
+    Visible="True|False"  
+    Width="size"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create an <xref:System.Web.UI.WebControls.Image> control on a Web page.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Image Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Image Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Image ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Image.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Image" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Image> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.Image> class.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Image.Image Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.Image Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Image.Image Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.Image Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Image.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render on the client browser.</param>
+        <summary>Adds the attributes of an <see cref="T:System.Web.UI.WebControls.Image" /> to the output stream for rendering on the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Image.AddAttributesToRender%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.Image> always displays with a thin border.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomImageAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageAddAttributesToRender/CS/custom_image_addattributestorendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomImageAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageAddAttributesToRender/VB/custom_image_addattributestorendervb.aspx#1)]  -->  
+[!code-csharp[CustomImageAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageAddAttributesToRender/CS/custom_image_addattributestorender.cs#2)]
+[!code-vb[CustomImageAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageAddAttributesToRender/VB/custom_image_addattributestorender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternateText">
+      <MemberSignature Language="C#" Value="public virtual string AlternateText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AlternateText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.AlternateText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alternate text displayed in the <see cref="T:System.Web.UI.WebControls.Image" /> control when the image is unavailable. Browsers that support the ToolTips feature display this text as a ToolTip.</summary>
+        <value>The alternate text displayed in the <see cref="T:System.Web.UI.WebControls.Image" /> control when the image is unavailable.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the text to display if the image specified in the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property is not available. In browsers that support the ToolTips feature, this text also displays as a ToolTip.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [ASP.NET Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property to specify the alternate text to display for the image when the image is not available.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DescriptionUrl">
+      <MemberSignature Language="C#" Value="public virtual string DescriptionUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DescriptionUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.DescriptionUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location to a detailed description for the image.</summary>
+        <value>The URL for the file that contains a detailed description for the image. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Image.DescriptionUrl%2A> property specifies an HTML file that provides additional details for the image. The <xref:System.Web.UI.WebControls.Image.DescriptionUrl%2A> property renders as the `longdesc` attribute for the image control. If the <xref:System.Web.UI.WebControls.Image.DescriptionUrl%2A> property is not set, or is set to an empty string (""), the <xref:System.Web.UI.WebControls.Image> control renders without the `longdesc` attribute.  
+  
+ Use the <xref:System.Web.UI.WebControls.Image.DescriptionUrl%2A> property to supplement the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property. For example, if you use an <xref:System.Web.UI.WebControls.Image> control to display an image of the solar system, you can set the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property to `The Solar System,` and then set the <xref:System.Web.UI.WebControls.Image.DescriptionUrl%2A> property to an HTML page that further describes the image of planets orbiting the sun in the solar system.  
+  
+ The <xref:System.Web.UI.WebControls.Image.DescriptionUrl%2A> property is optional, but it can enhance the accessibility of your Web page for text-only browsers and screen readers. Browsers can use the detailed text description to convey important concepts in place of, or in addition to, the visual image. Refer to your browser documentation for details on how it uses the descriptive content specified by the `longdesc` attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public override bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the control is enabled.</summary>
+        <value>
+          <see langword="true" /> if the control is enabled; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.Image> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.FontInfo Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.FontInfo Font" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.FontInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the font properties for the text associated with the control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.FontInfo" /> that contains the properties for the text associated with the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This property is inherited from the <xref:System.Web.UI.WebControls.WebControl> class and is not applicable to the <xref:System.Web.UI.WebControls.Image> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateEmptyAlternateText">
+      <MemberSignature Language="C#" Value="public virtual bool GenerateEmptyAlternateText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateEmptyAlternateText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.GenerateEmptyAlternateText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the control generates an alternate text attribute for an empty string value.</summary>
+        <value>
+          <see langword="true" /> if the control generates the alternate text attribute for an empty string value; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, when the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property is not set, the <xref:System.Web.UI.WebControls.Image> control does not include the `alt` attribute to specify the alternate text in the control rendering. Set the <xref:System.Web.UI.WebControls.Image.GenerateEmptyAlternateText%2A> property to `true` to always include the alternate text attribute in rendered output for the <xref:System.Web.UI.WebControls.Image> control.  
+  
+ The XHTML document type definition requires the `alt` attribute on image controls. However, accessibility best practices recommend that image controls that do not convey information relevant to the context of the Web page should not specify an `alt` attribute. You can meet both XHTML and accessibility requirements by setting the <xref:System.Web.UI.WebControls.Image.GenerateEmptyAlternateText%2A> property to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageAlign">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ImageAlign ImageAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ImageAlign ImageAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.ImageAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ImageAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment of the <see cref="T:System.Web.UI.WebControls.Image" /> control in relation to other elements on the Web page.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.ImageAlign" /> values. The default is <see langword="NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Image.ImageAlign%2A> property to specify or determine the alignment of the image in relation to other elements on the Web page. The following table lists the possible alignments.  
+  
+|Alignment|Description|  
+|---------------|-----------------|  
+|`NotSet`|The alignment is not set.|  
+|`Left`|The image is aligned on the left edge of the Web page with text wrapping on the right.|  
+|`Right`|The image is aligned on the right edge of the Web page with text wrapping on the left.|  
+|`Baseline`|The lower edge of the image is aligned with the lower edge of the first line of text.|  
+|`Top`|The upper edge of the image is aligned with the upper edge of the highest element on the same line.|  
+|`Middle`|The middle of the image is aligned with the lower edge of the first line of text.|  
+|`Bottom`|The lower edge of the image is aligned with the lower edge of the first line of text.|  
+|`AbsBottom`|The lower edge of the image is aligned with the lower edge of the largest element on the same line.|  
+|`AbsMiddle`|The middle of the image is aligned with the middle of the largest element on the same line.|  
+|`TextTop`|The upper edge of the image is aligned with the upper edge of the highest text on the same line.|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Image.ImageAlign%2A> property to specify the alignment of the <xref:System.Web.UI.WebControls.Image> control in relation to other elements on the Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified value is not one of the <see cref="T:System.Web.UI.WebControls.ImageAlign" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageUrl">
+      <MemberSignature Language="C#" Value="public virtual string ImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.ImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL that provides the path to an image to display in the <see cref="T:System.Web.UI.WebControls.Image" /> control.</summary>
+        <value>The URL that provides the path to an image to display in the <see cref="T:System.Web.UI.WebControls.Image" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property to specify the URL of an image to display in the <xref:System.Web.UI.WebControls.Image> control. You can use a relative or an absolute URL. A relative URL relates the location of the image to the location of the Web page without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the code. An absolute URL provides the complete path, so moving the site to another directory requires that you update the code.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property to specify the location of the image to display in the <xref:System.Web.UI.WebControls.Image> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Image.AlternateText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Image.AlternateText Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Image.AlternateText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Image.AlternateText Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderContents">
+      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Image.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Renders the image control contents to the specified writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Image.RenderContents%2A> method is primarily used by control developers. The <xref:System.Web.UI.WebControls.Image> control implements the <xref:System.Web.UI.WebControls.Image.RenderContents%2A> method to skip rendering of any child controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Image.RenderContents%2A> method in a custom server control so that some text is always displayed after the <xref:System.Web.UI.WebControls.Image>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomImageRenderContents#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageRenderContents/CS/custom_image_rendercontentscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomImageRenderContents#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageRenderContents/VB/custom_image_rendercontentsvb.aspx#1)]  -->  
+[!code-csharp[CustomImageRenderContents#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageRenderContents/CS/custom_image_rendercontents.cs#2)]
+[!code-vb[CustomImageRenderContents#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageRenderContents/VB/custom_image_rendercontents.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDisabledAttribute">
+      <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Image.SupportsDisabledAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" /> property is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property indicates an ASP.NET version lower than <c>4.0</c>; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

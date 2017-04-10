@@ -1,0 +1,103 @@
+<Type Name="DomainCollisionOptions" FullName="System.DirectoryServices.ActiveDirectory.DomainCollisionOptions">
+  <TypeSignature Language="C#" Value="public enum DomainCollisionOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DomainCollisionOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies additional information about a forest trust collision when the <see cref="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" /> property value is <see cref="F:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.Domain" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NetBiosNameDisabledByAdmin">
+      <MemberSignature Language="C#" Value="NetBiosNameDisabledByAdmin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DomainCollisionOptions NetBiosNameDisabledByAdmin = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.NetBiosNameDisabledByAdmin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.DomainCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The forest trust NetBIOS record was disabled by administrative action.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NetBiosNameDisabledByConflict">
+      <MemberSignature Language="C#" Value="NetBiosNameDisabledByConflict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DomainCollisionOptions NetBiosNameDisabledByConflict = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.NetBiosNameDisabledByConflict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.DomainCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The forest trust NetBIOS record was disabled due to a conflict with an existing NetBIOS record.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DomainCollisionOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.DomainCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No action has occurred.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SidDisabledByAdmin">
+      <MemberSignature Language="C#" Value="SidDisabledByAdmin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DomainCollisionOptions SidDisabledByAdmin = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.SidDisabledByAdmin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.DomainCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The forest trust SID was disabled by administrative action.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SidDisabledByConflict">
+      <MemberSignature Language="C#" Value="SidDisabledByConflict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DomainCollisionOptions SidDisabledByConflict = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions.SidDisabledByConflict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.DomainCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The forest trust SID was disabled due to a conflict with an existing SID.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

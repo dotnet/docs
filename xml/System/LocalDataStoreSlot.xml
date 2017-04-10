@@ -1,0 +1,76 @@
+<Type Name="LocalDataStoreSlot" FullName="System.LocalDataStoreSlot">
+  <TypeSignature Language="C#" Value="public sealed class LocalDataStoreSlot" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocalDataStoreSlot extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.LocalDataStoreSlot" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates a memory slot to store local data. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework provides two mechanisms for using thread local storage (TLS): thread-relative static fields, and data slots.  
+  
+-   Thread-relative static fields are `static` fields (`Shared` fields in Visual Basic) that are marked with the <xref:System.ThreadStaticAttribute> attribute. They provide better performance than data slots, and enable compile-time type checking.  
+  
+-   Data slots are slower and more awkward to use than thread-relative static fields. Also, data is stored as type <xref:System.Object>, so you must cast it to the correct type before using it. However, you can use data slots when you have insufficient information at compile time to allocate static fields.  
+  
+ For more information about using TLS, see [Thread Local Storage: Thread-Relative Static Fields and Data Slots](~/docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md).  
+  
+ Similarly, the .NET Framework provides two mechanisms for using context local storage: context-relative static fields and data slots. Context-relative static fields are static fields that are marked with the <xref:System.ContextStaticAttribute> attribute. The trade-offs between using these two mechanisms are similar to the tradeoffs between using thread-relative static fields and data slots.  
+  
+ The <xref:System.LocalDataStoreSlot> structure serves as a local store memory mechanism that threads and contexts can use to store thread-specific and context-specific data, respectively. The common language runtime allocates a multi-slot data store array to each process when it is created. The thread or context calls various functions to allocate a data slot in the data store, to store and retrieve a data value in the slot, and to free a data slot for reuse after the thread or context object expires.  
+  
+ The data slots are unique per thread or context; their values are not shared between the thread or context objects. Data slots can be allocated by a name or by an index number.  
+  
+ For more information about storing local data, see <xref:System.Threading.Thread> or <xref:System.Runtime.Remoting.Contexts.Context>. The <xref:System.LocalDataStoreSlot> class is used with methods such as <xref:System.Threading.Thread.AllocateNamedDataSlot%2A?displayProperty=fullName>, <xref:System.Runtime.Remoting.Contexts.Context.AllocateNamedDataSlot%2A?displayProperty=fullName>, <xref:System.Threading.Thread.GetData%2A?displayProperty=fullName>, and <xref:System.Runtime.Remoting.Contexts.Context.GetData%2A?displayProperty=fullName>; it does not have any methods of its own that you need to use.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~LocalDataStoreSlot ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.LocalDataStoreSlot.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ensures that resources are freed and other cleanup operations are performed when the garbage collector reclaims the <see cref="T:System.LocalDataStoreSlot" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The garbage collector calls <xref:System.LocalDataStoreSlot.Finalize%2A> when the current object is ready to be finalized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

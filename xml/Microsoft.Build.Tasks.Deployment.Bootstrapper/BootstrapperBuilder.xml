@@ -1,0 +1,153 @@
+<Type Name="BootstrapperBuilder" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder">
+  <TypeSignature Language="C#" Value="public class BootstrapperBuilder : Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BootstrapperBuilder extends System.Object implements class Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("1D9FE38A-0226-4b95-9C6B-6DFFA2236270")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The top-level object for the bootstrapper system.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BootstrapperBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="BootstrapperBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BootstrapperBuilder (string visualStudioVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string visualStudioVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="visualStudioVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="visualStudioVersion">The version of [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)] to use.</param>
+        <summary>Initializes a new instance of the <see langword="BootstrapperBuilder" /> class, using the specified version of [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)].</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Build">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults Build (Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults Build(class Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Build(Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">The properties used to create the bootstrapper.</param>
+        <summary>Generates a bootstrapper by using the specified settings.</summary>
+        <returns>The results of the bootstrapper generation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOutputFolders">
+      <MemberSignature Language="C#" Value="public string[] GetOutputFolders (string[] productCodes, string culture, string fallbackCulture, Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation componentsLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetOutputFolders(string[] productCodes, string culture, string fallbackCulture, valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation componentsLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.GetOutputFolders(System.String[],System.String,System.String,Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="productCodes" Type="System.String[]" />
+        <Parameter Name="culture" Type="System.String" />
+        <Parameter Name="fallbackCulture" Type="System.String" />
+        <Parameter Name="componentsLocation" Type="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation" />
+      </Parameters>
+      <Docs>
+        <param name="productCodes">The <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProduct.ProductCode" /> values of the selected components.</param>
+        <param name="culture">The culture used to create the bootstrapper.</param>
+        <param name="fallbackCulture">The fallback culture used to create the bootstrapper.</param>
+        <param name="componentsLocation">Specifies how the bootstrapper packages the selected components.</param>
+        <summary>Returns the directories to which bootstrapper component files are copied when they are created, given the specified settings.</summary>
+        <returns>The directories to which bootstrapper component files are copied when they are created, given the specified settings.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of the required bootstrapper files.</summary>
+        <value>The path for the required bootstrapper files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Products">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection Products { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection Products" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Products" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets all products available at the current bootstrapper <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Path" />.</summary>
+        <value>All products available at the current bootstrapper <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Path" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,3560 @@
+<Type Name="Pens" FullName="System.Drawing.Pens">
+  <TypeSignature Language="C#" Value="public sealed class Pens" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Pens extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Pens" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Pens for all the standard colors. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Pen> objects returned by this class are immutable, meaning their properties cannot be changed. To see the colors represented by pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+   
+  
+## Examples  
+ The following method demonstrates how to use the <xref:System.Drawing.Pens> class.  This example is designed to be used with Windows Forms.  Paste the code into a form and call the `UsePensClass` method when handling the form's <xref:System.Windows.Forms.Control.Paint> event, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.PensExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PensExample/CPP/form1.cpp#4)]
+ [!code-csharp[System.Drawing.PensExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PensExample/CS/form1.cs#4)]
+ [!code-vb[System.Drawing.PensExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PensExample/VB/form1.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AliceBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen AliceBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen AliceBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.AliceBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AntiqueWhite">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen AntiqueWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen AntiqueWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.AntiqueWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aqua">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Aqua { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Aqua" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Aqua" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Aquamarine">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Aquamarine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Aquamarine" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Aquamarine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Azure">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Azure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Azure" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Azure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Beige">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Beige { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Beige" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Beige" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bisque">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Bisque { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Bisque" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Bisque" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Black">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Black { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Black" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Black" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlanchedAlmond">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen BlanchedAlmond { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen BlanchedAlmond" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.BlanchedAlmond" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Blue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Blue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Blue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Blue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlueViolet">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen BlueViolet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen BlueViolet" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.BlueViolet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Brown">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Brown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Brown" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Brown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BurlyWood">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen BurlyWood { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen BurlyWood" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.BurlyWood" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CadetBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen CadetBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen CadetBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.CadetBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Chartreuse">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Chartreuse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Chartreuse" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Chartreuse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Chocolate">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Chocolate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Chocolate" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Chocolate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coral">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Coral { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Coral" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Coral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CornflowerBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen CornflowerBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen CornflowerBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.CornflowerBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cornsilk">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Cornsilk { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Cornsilk" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Cornsilk" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crimson">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Crimson { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Crimson" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Crimson" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cyan">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Cyan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Cyan" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Cyan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkCyan">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkCyan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkCyan" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkCyan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGoldenrod">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkGoldenrod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkGoldenrod" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkGoldenrod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGray">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkGray" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkKhaki">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkKhaki { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkKhaki" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkKhaki" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkMagenta">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkMagenta { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkMagenta" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkMagenta" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOliveGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkOliveGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkOliveGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkOliveGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOrange">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkOrange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkOrange" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkOrange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkOrchid">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkOrchid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkOrchid" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkOrchid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkRed">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkRed" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSalmon">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkSalmon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkSalmon" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkSalmon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSeaGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkSeaGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkSeaGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkSeaGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSlateBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkSlateBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkSlateBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkSlateBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkSlateGray">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkSlateGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkSlateGray" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkSlateGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkTurquoise">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkTurquoise { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkTurquoise" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkTurquoise" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkViolet">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DarkViolet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DarkViolet" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DarkViolet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepPink">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DeepPink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DeepPink" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DeepPink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepSkyBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DeepSkyBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DeepSkyBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DeepSkyBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DimGray">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DimGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DimGray" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DimGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DodgerBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen DodgerBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen DodgerBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.DodgerBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Firebrick">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Firebrick { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Firebrick" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Firebrick" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FloralWhite">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen FloralWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen FloralWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.FloralWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForestGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen ForestGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen ForestGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.ForestGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fuchsia">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Fuchsia { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Fuchsia" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Fuchsia" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gainsboro">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Gainsboro { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Gainsboro" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Gainsboro" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GhostWhite">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen GhostWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen GhostWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.GhostWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gold">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Gold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Gold" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Gold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Goldenrod">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Goldenrod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Goldenrod" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Goldenrod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Gray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Gray" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Gray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Green">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Green { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Green" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Green" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreenYellow">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen GreenYellow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen GreenYellow" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.GreenYellow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Honeydew">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Honeydew { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Honeydew" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Honeydew" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HotPink">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen HotPink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen HotPink" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.HotPink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndianRed">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen IndianRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen IndianRed" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.IndianRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indigo">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Indigo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Indigo" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Indigo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ivory">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Ivory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Ivory" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Ivory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Khaki">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Khaki { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Khaki" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Khaki" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lavender">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Lavender { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Lavender" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Lavender" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LavenderBlush">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LavenderBlush { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LavenderBlush" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LavenderBlush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LawnGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LawnGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LawnGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LawnGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LemonChiffon">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LemonChiffon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LemonChiffon" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LemonChiffon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightCoral">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightCoral { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightCoral" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightCoral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightCyan">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightCyan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightCyan" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightCyan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGoldenrodYellow">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightGoldenrodYellow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightGoldenrodYellow" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightGoldenrodYellow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGray">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightGray" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightPink">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightPink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightPink" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightPink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSalmon">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightSalmon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightSalmon" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSalmon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSeaGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightSeaGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightSeaGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSeaGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSkyBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightSkyBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightSkyBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSkyBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSlateGray">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightSlateGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightSlateGray" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSlateGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightSteelBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightSteelBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightSteelBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightSteelBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightYellow">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LightYellow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LightYellow" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LightYellow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lime">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Lime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Lime" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Lime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LimeGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen LimeGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen LimeGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.LimeGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Linen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Linen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Linen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Linen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Magenta">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Magenta { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Magenta" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Magenta" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maroon">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Maroon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Maroon" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Maroon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumAquamarine">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumAquamarine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumAquamarine" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumAquamarine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumOrchid">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumOrchid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumOrchid" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumOrchid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumPurple">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumPurple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumPurple" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumPurple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSeaGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumSeaGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumSeaGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumSeaGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSlateBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumSlateBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumSlateBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumSlateBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumSpringGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumSpringGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumSpringGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumSpringGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumTurquoise">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumTurquoise { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumTurquoise" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumTurquoise" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediumVioletRed">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MediumVioletRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MediumVioletRed" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MediumVioletRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MidnightBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MidnightBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MidnightBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MidnightBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MintCream">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MintCream { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MintCream" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MintCream" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MistyRose">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen MistyRose { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen MistyRose" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.MistyRose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Moccasin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Moccasin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Moccasin" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Moccasin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavajoWhite">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen NavajoWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen NavajoWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.NavajoWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Navy">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Navy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Navy" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Navy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldLace">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen OldLace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen OldLace" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.OldLace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Olive">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Olive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Olive" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Olive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OliveDrab">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen OliveDrab { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen OliveDrab" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.OliveDrab" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orange">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Orange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Orange" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Orange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrangeRed">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen OrangeRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen OrangeRed" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.OrangeRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orchid">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Orchid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Orchid" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Orchid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleGoldenrod">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen PaleGoldenrod { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen PaleGoldenrod" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PaleGoldenrod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen PaleGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen PaleGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PaleGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleTurquoise">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen PaleTurquoise { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen PaleTurquoise" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PaleTurquoise" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaleVioletRed">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen PaleVioletRed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen PaleVioletRed" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PaleVioletRed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PapayaWhip">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen PapayaWhip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen PapayaWhip" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PapayaWhip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeachPuff">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen PeachPuff { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen PeachPuff" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PeachPuff" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Peru">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Peru { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Peru" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Peru" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pink">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Pink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Pink" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Pink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Plum">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Plum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Plum" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Plum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowderBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen PowderBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen PowderBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.PowderBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Purple">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Purple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Purple" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Purple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Red">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Red { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Red" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Red" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RosyBrown">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen RosyBrown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen RosyBrown" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.RosyBrown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoyalBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen RoyalBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen RoyalBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.RoyalBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaddleBrown">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SaddleBrown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SaddleBrown" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SaddleBrown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Salmon">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Salmon { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Salmon" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Salmon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SandyBrown">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SandyBrown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SandyBrown" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SandyBrown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeaGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SeaGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SeaGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SeaGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeaShell">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SeaShell { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SeaShell" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SeaShell" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sienna">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Sienna { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Sienna" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Sienna" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Silver">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Silver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Silver" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Silver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkyBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SkyBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SkyBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SkyBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlateBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SlateBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SlateBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SlateBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlateGray">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SlateGray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SlateGray" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SlateGray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Snow">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Snow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Snow" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Snow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpringGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SpringGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SpringGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SpringGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SteelBlue">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen SteelBlue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen SteelBlue" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.SteelBlue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tan">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Tan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Tan" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Tan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Teal">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Teal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Teal" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Teal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thistle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Thistle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Thistle" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Thistle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tomato">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Tomato { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Tomato" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Tomato" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transparent">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Transparent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Transparent" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Transparent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Turquoise">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Turquoise { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Turquoise" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Turquoise" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Violet">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Violet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Violet" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Violet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Wheat">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Wheat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Wheat" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Wheat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="White">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen White { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen White" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.White" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WhiteSmoke">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen WhiteSmoke { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen WhiteSmoke" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.WhiteSmoke" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yellow">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen Yellow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen Yellow" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.Yellow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YellowGreen">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Pen YellowGreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Pen YellowGreen" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Pens.YellowGreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Pen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A system-defined <see cref="T:System.Drawing.Pen" /> object with a width of 1.</summary>
+        <value>A <see cref="T:System.Drawing.Pen" /> object set to a system-defined color.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To see the color represented by this pen and other pens in this class, see [Colors by Name](http://go.microsoft.com/fwlink/?LinkId=92332).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

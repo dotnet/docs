@@ -1,0 +1,104 @@
+<Canvas
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Pane1"
+>
+<Grid ShowGridLines ="false" Background ="White" >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="250"/>
+<ColumnDefinition Width="250"/>
+</Grid.ColumnDefinitions>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+</Grid.RowDefinitions>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="0" FontSize="24">
+        Combo Boxes</TextBlock>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="1" FontSize="14" 
+        Grid.ColumnSpan="2">The following combo box examples demonstrate:</TextBlock>  
+<DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="2">
+<ComboBox Text="Is not open">
+    <ComboBoxItem MouseMove="OnHover" Name="cbi1">Item1</ComboBoxItem>
+    <ComboBoxItem MouseMove="OnHover" Name="cbi2">Item2</ComboBoxItem>
+    <ComboBoxItem MouseMove="OnHover" Name="cbi3">Item3</ComboBoxItem>
+</ComboBox>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="2" FontSize="12" 
+        VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Simple combo box that 
+        has a text box that is not editable. As you move from item to item the highlighted 
+        item is identified.
+</TextBlock>
+
+<DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="3">
+<ComboBox IsEditable="true">
+    <ComboBoxItem IsSelected="true">Item1</ComboBoxItem>
+    <ComboBoxItem>Item2</ComboBoxItem>
+    <ComboBoxItem>Item3</ComboBoxItem>
+    <ComboBoxItem>Item4</ComboBoxItem>
+    <ComboBoxItem>Item5</ComboBoxItem>
+    <ComboBoxItem>Item6</ComboBoxItem>
+    <ComboBoxItem>Item7</ComboBoxItem>
+    <ComboBoxItem>Item8</ComboBoxItem>
+    <ComboBoxItem>Item9</ComboBoxItem>
+    <ComboBoxItem>Item10</ComboBoxItem>
+    <ComboBoxItem>Item11</ComboBoxItem>
+    <ComboBoxItem>Item12</ComboBoxItem>
+    <ComboBoxItem>Item13</ComboBoxItem>
+    <ComboBoxItem>Item14</ComboBoxItem>
+    <ComboBoxItem>Item15</ComboBoxItem>
+</ComboBox>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="3" FontSize="12" 
+         VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Combo box that has 
+         the first item selected and has an editable text box. Type some text into the 
+         text box.
+</TextBlock>
+
+<DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="4">
+<ComboBox>
+    <DockPanel><Image Source="data\cat.png"></Image><TextBlock FontFamily="Arial" FontSize="14">
+         CAT</TextBlock></DockPanel>
+    <DockPanel><Image Source="data\dog.png"></Image><TextBlock FontFamily="Arial Bold" FontSize="10">
+         Dog</TextBlock></DockPanel>
+    <DockPanel><Image Source="data\fish.png"></Image><TextBlock FontFamily="Times New Roman" FontSize="10">
+         Fish</TextBlock></DockPanel>
+</ComboBox>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="4" FontSize="12" 
+         VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Combo box with rich 
+         content. The items are dock panels that contain images and text.
+</TextBlock>
+
+<DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="5">
+<ComboBox Name="cb" StaysOpenOnEdit="true" IsEditable="true" DropDownOpened="OnDropDownOpened" 
+        DropDownClosed="OnDropDownClosed">
+        <ComboBoxItem>Item1</ComboBoxItem>
+        <ComboBoxItem>Item2</ComboBoxItem>
+        <ComboBoxItem>Item3</ComboBoxItem>
+        <ComboBoxItem>Item4</ComboBoxItem>
+</ComboBox>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="5" FontSize="12" 
+        VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Combo box that demonstrates 
+        the combo box events.
+</TextBlock>
+
+<Button Margin="5, 10, 5, 5" Grid.Column="0" Grid.Row="6" Click="OnClick">Click me to create 
+        a combo box with VB code.</Button>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="6" FontSize="12" 
+        VerticalAlignment="Center" TextWrapping="WrapWithOverflow">Creating a combobox with Visual Basic.
+</TextBlock>
+</Grid>
+<Canvas Name="cv2" Width="550" Height="50" Canvas.Top="310" Canvas.Left="10"></Canvas>
+</Canvas>

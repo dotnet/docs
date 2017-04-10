@@ -1,0 +1,105 @@
+<Type Name="XamlXmlWriterSettings" FullName="System.Xaml.XamlXmlWriterSettings">
+  <TypeSignature Language="C#" Value="public class XamlXmlWriterSettings : System.Xaml.XamlWriterSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlXmlWriterSettings extends System.Xaml.XamlWriterSettings" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlXmlWriterSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xaml.XamlWriterSettings</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides initialization settings for the <see cref="T:System.Xaml.XamlXmlWriter" /> XAML writer implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The defaults for all <xref:System.Xaml.XamlXmlWriterSettings> values are `false`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlXmlWriterSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriterSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriterSettings" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssumeValidInput">
+      <MemberSignature Language="C#" Value="public bool AssumeValidInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AssumeValidInput" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlWriterSettings.AssumeValidInput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the <see cref="T:System.Xaml.XamlXmlWriter" /> should always assume valid XAML input for purposes of duplicate resolution or other error checking.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xaml.XamlXmlWriter" /> skips certain validation or error checks, such as throwing exceptions on duplicate members. <see langword="false" /> if the <see cref="T:System.Xaml.XamlXmlWriter" /> throws exceptions when invalid XAML is encountered. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseOutput">
+      <MemberSignature Language="C#" Value="public bool CloseOutput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CloseOutput" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlWriterSettings.CloseOutput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the <see cref="T:System.Xaml.XamlXmlWriter" /> should close immediately on <see langword="Dispose" /> or other operations, or whether the XAML writer should instead write the buffer output before closing. Use this setting with caution; closing immediately can result in invalid XAML that cannot be loaded again.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Xaml.XamlXmlWriter" /> immediately closes on a <see langword="Dispose" /> or similar operations. <see langword="false" /> if the remaining buffer output is written before the <see cref="T:System.Xaml.XamlXmlWriter" /> is released. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting influences the logic of <xref:System.Xaml.XamlXmlWriter.Dispose%2A?displayProperty=fullName>, which calls `Close` on the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter> when <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `true`; or it calls <xref:System.Xaml.XamlXmlWriter.Flush%2A> (again tied to the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter>) if <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlXmlWriterSettings Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xaml.XamlXmlWriterSettings Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriterSettings.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlXmlWriterSettings</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of this <see cref="T:System.Xaml.XamlXmlWriterSettings" /> instance.</summary>
+        <returns>The returned copy.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

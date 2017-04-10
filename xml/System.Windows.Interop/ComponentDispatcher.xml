@@ -1,0 +1,335 @@
+<Type Name="ComponentDispatcher" FullName="System.Windows.Interop.ComponentDispatcher">
+  <TypeSignature Language="C#" Value="public static class ComponentDispatcher" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ComponentDispatcher extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.ComponentDispatcher" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables shared control of the message pump between [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in interoperation scenarios.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the class itself is static, all members of <xref:System.Windows.Interop.ComponentDispatcher> are specific to a particular thread. For example, if you examine the value of <xref:System.Windows.Interop.ComponentDispatcher.IsThreadModal%2A> on two different threads, you might get different values.  
+  
+ The methods are static but they are backed by per-thread data structures.  The static methods allow singleton access but the <xref:System.Windows.Interop.ComponentDispatcher> is sorting out the appropriate per-thread operations.  
+  
+ The owner of the message pump is defined by the code that calls the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] function  [GetMessage](http://msdn.microsoft.com/library/ms644936.aspx). The owner calls <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A> for every keyboard message. This method raises the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage> event with the messages contained in the event data. If that event is not handled, the owner raises the <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> event with the messages contained in the event argument.  
+  
+> [!NOTE]
+>  Only keyboard messages are supported.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentKeyboardMessage">
+      <MemberSignature Language="C#" Value="public static System.Windows.Interop.MSG CurrentKeyboardMessage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Interop.MSG CurrentKeyboardMessage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.ComponentDispatcher.CurrentKeyboardMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.MSG</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last message that was raised.</summary>
+        <value>The last message.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterThreadModal">
+      <MemberSignature Language="C#" Value="public static event EventHandler EnterThreadModal;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EnterThreadModal" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.EnterThreadModal" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>add: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>remove: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a thread becomes modal.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="IsThreadModal">
+      <MemberSignature Language="C#" Value="public static bool IsThreadModal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsThreadModal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.ComponentDispatcher.IsThreadModal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the thread is modal.</summary>
+        <value>
+          <see langword="true" /> if the thread is modal; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LeaveThreadModal">
+      <MemberSignature Language="C#" Value="public static event EventHandler LeaveThreadModal;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LeaveThreadModal" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.LeaveThreadModal" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>add: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>remove: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a modal thread becomes nonmodal.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PopModal">
+      <MemberSignature Language="C#" Value="public static void PopModal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PopModal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.PopModal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called to indicate that a modal thread is no longer modal.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PushModal">
+      <MemberSignature Language="C#" Value="public static void PushModal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PushModal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.PushModal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called to indicate that the thread is modal.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">All members of this class require <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /> permission.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseIdle">
+      <MemberSignature Language="C#" Value="public static void RaiseIdle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RaiseIdle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.RaiseIdle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called to indicate that a thread is idle.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseThreadMessage">
+      <MemberSignature Language="C#" Value="public static bool RaiseThreadMessage (ref System.Windows.Interop.MSG msg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RaiseThreadMessage(valuetype System.Windows.Interop.MSG msg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage(System.Windows.Interop.MSG@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Interop.MSG&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="msg">The message and its associated data.</param>
+        <summary>Indicates that a new message is available for possible handling.</summary>
+        <returns>
+          <see langword="true" />, if one of the modules listening to the message loop processed the message. The owner of the message loop should ignore the message. <see langword="false" />, if the message was not processed. In this case, the owner of the message pump should call the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] function [TranslateMessage](http://msdn.microsoft.com/library/ms644955.aspx) followed by [DispatchMessage](http://msdn.microsoft.com/library/ms644934.aspx).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The owner of the message pump should call this method for every keyboard message.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadFilterMessage">
+      <MemberSignature Language="C#" Value="public static event System.Windows.Interop.ThreadMessageEventHandler ThreadFilterMessage;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Interop.ThreadMessageEventHandler ThreadFilterMessage" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>add: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>remove: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.ThreadMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the message pump receives a keyboard message.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadIdle">
+      <MemberSignature Language="C#" Value="public static event EventHandler ThreadIdle;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ThreadIdle" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.ThreadIdle" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>add: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>remove: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the thread is idle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there are no messages in the queue, then the idle state announced by the <xref:System.Windows.Interop.ComponentDispatcher.ThreadIdle> event is an efficient time to do processing.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreadPreprocessMessage">
+      <MemberSignature Language="C#" Value="public static event System.Windows.Interop.ThreadMessageEventHandler ThreadPreprocessMessage;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Interop.ThreadMessageEventHandler ThreadPreprocessMessage" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>add: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>remove: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.ThreadMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the message pump receives a keyboard message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event should be raised after <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage>, if that event is not handled.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to access any member of this class. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

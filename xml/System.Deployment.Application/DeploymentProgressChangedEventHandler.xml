@@ -1,0 +1,32 @@
+<Type Name="DeploymentProgressChangedEventHandler" FullName="System.Deployment.Application.DeploymentProgressChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DeploymentProgressChangedEventHandler(object sender, DeploymentProgressChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeploymentProgressChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentProgressChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Deployment.Application.DeploymentProgressChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Deployment.Application.DeploymentProgressChangedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged" /> event, <see cref="E:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged" /> event, or <see cref="E:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged" /> event of an <see cref="T:System.Deployment.Application.ApplicationDeployment" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Deployment.Application.DeploymentProgressChangedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

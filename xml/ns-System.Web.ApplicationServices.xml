@@ -1,0 +1,21 @@
+<Namespace Name="System.Web.ApplicationServices">
+  <Docs>
+    <summary>The <see cref="N:System.Web.ApplicationServices" /> namespace provides classes that enable you to access ASP.NET forms authentication, roles, and profiles application services as Windows Communication Foundation (WCF) services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ApplicationServices.AuthenticationService>, <xref:System.Web.ApplicationServices.RoleService>, and <xref:System.Web.ApplicationServices.ProfileService> classes contain methods that let you log on users, check which roles the current user belongs to, and retrieve profile properties for the user through WCF services. The namespace also includes the following classes:  
+  
+-   <xref:System.Web.ApplicationServices.CreatingCookieEventArgs>, which is used to customize the authentication cookie from the <xref:System.Web.ApplicationServices.AuthenticationService> class.  
+  
+-   <xref:System.Web.ApplicationServices.AuthenticatingEventArgs>, which is used to select the membership provider at run time.  
+  
+-   <xref:System.Web.ApplicationServices.SelectingProviderEventArgs>, which is used to select the role provider at run time.  
+  
+-   <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs>, which is used to create custom validation for user profile properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

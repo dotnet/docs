@@ -1,0 +1,51 @@
+---
+title: "ISymUnmanagedMethod::GetSequencePointCount Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ISymUnmanagedMethod.GetSequencePointCount"
+apilocation: 
+  - "diasymreader.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ISymUnmanagedMethod::GetSequencePointCount"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ISymUnmanagedMethod::GetSequencePointCount method [.NET Framework debugging]"
+  - "GetSequencePointCount method [.NET Framework debugging]"
+ms.assetid: 836133e8-6108-4b9b-b0a9-bce4e08dccda
+caps.latest.revision: 8
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+# ISymUnmanagedMethod::GetSequencePointCount Method
+Gets the count of sequence points within this method.  
+  
+## Syntax  
+  
+```  
+HRESULT GetSequencePointCount(  
+    [out, retval] ULONG32* pRetVal);  
+```  
+  
+#### Parameters  
+ `pRetVal`  
+ [out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the sequence points.  
+  
+## Return Value  
+ S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
+  
+## Requirements  
+ **Header:** CorSym.idl, CorSym.h  
+  
+## See Also  
+ [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

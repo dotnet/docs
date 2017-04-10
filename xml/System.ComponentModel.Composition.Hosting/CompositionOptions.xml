@@ -1,0 +1,92 @@
+<Type Name="CompositionOptions" FullName="System.ComponentModel.Composition.Hosting.CompositionOptions">
+  <TypeSignature Language="C#" Value="public enum CompositionOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompositionOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CompositionOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines options for export providers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Composition.Hosting.CompositionOptions Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionOptions.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Hosting.CompositionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No options are defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableSilentRejection">
+      <MemberSignature Language="C#" Value="DisableSilentRejection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Composition.Hosting.CompositionOptions DisableSilentRejection = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionOptions.DisableSilentRejection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Hosting.CompositionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Silent rejection is disabled, so all rejections will result in errors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportCompositionService">
+      <MemberSignature Language="C#" Value="ExportCompositionService" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Composition.Hosting.CompositionOptions ExportCompositionService = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionOptions.ExportCompositionService" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Hosting.CompositionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This provider is an export composition service.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IsThreadSafe">
+      <MemberSignature Language="C#" Value="IsThreadSafe" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Composition.Hosting.CompositionOptions IsThreadSafe = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionOptions.IsThreadSafe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Hosting.CompositionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This provider should be thread-safe.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

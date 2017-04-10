@@ -1,0 +1,41 @@
+<Type Name="PeekCompletedEventHandler" FullName="System.Messaging.PeekCompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void PeekCompletedEventHandler(object sender, PeekCompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PeekCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.PeekCompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Messaging.PeekCompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, the <see cref="T:System.Messaging.MessageQueue" />.</param>
+    <param name="e">A <see cref="T:System.Messaging.PeekCompletedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Messaging.MessageQueue.PeekCompleted" /> event of a <see cref="T:System.Messaging.MessageQueue" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Messaging.PeekCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example illustrates how to create an event delegate (<xref:System.Messaging.PeekCompletedEventHandler>) for the event handler (`MyPeekCompleted`) and associate it with the <xref:System.Messaging.MessageQueue.PeekCompleted?displayProperty=fullName> event. The event handler peeks a message and writes its label to the screen.  
+  
+ [!code-cpp[MessageQueue.BeginPeek_noparms#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.BeginPeek_noparms/CPP/mqbeginpeek_noparms.cpp#1)]
+ [!code-csharp[MessageQueue.BeginPeek_noparms#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.BeginPeek_noparms/CS/mqbeginpeek_noparms.cs#1)]
+ [!code-vb[MessageQueue.BeginPeek_noparms#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.BeginPeek_noparms/VB/mqbeginpeek_noparms.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

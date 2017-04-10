@@ -1,0 +1,209 @@
+<Type Name="AuthorizationContext" FullName="System.Security.Claims.AuthorizationContext">
+  <TypeSignature Language="C#" Value="public class AuthorizationContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthorizationContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Claims.AuthorizationContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides context information of an authorization event. This includes the principal that represents the caller, the resource that is being requested, and the action that is being performed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Claims.AuthorizationContext> class represents the context that is used by a claims authorization manager, an implementation of the <xref:System.Security.Claims.ClaimsAuthorizationManager> class,  to determine whether a principal (subject) should be authorized to perform a specified action on a given resource. The claims authorization manager evaluates the authorization context in the <xref:System.Security.Claims.ClaimsAuthorizationManager.CheckAccess%2A> method and either denies or grants access based on the claims presented by the principal.  
+  
+ The <xref:System.Security.Claims.AuthorizationContext.Principal%2A> property contains the principal for which authorization is being requested, the <xref:System.Security.Claims.AuthorizationContext.Resource%2A> property contains the resource on which the principal is being authorized, and the <xref:System.Security.Claims.AuthorizationContext.Action%2A> property contains the actions that the principal intends  to perform on the resource. Both the resource and the action are represented as a collection of claims; however, in most cases, each collection contains a single claim.  
+  
+   
+  
+## Examples  
+ The code example that is used in the <xref:System.Security.Claims.AuthorizationContext> topic is taken from the `Claims Based Authorization` sample. This sample provides a custom claims authorization manager that can authorize subjects based on a policy that is specified in configuration. This custom manager consists of three basic components: a class derived from <xref:System.Security.Claims.ClaimsAuthorizationManager> that implements the manager, the `ResourceAction` class that pairs a resource and an action, and a policy reader that reads and compiles policy that is specified in the configuration file. This compiled policy can then be used by the claims authorization manager to evaluate a principal in order to authorize access to resources. Not all elements are shown for the sake of brevity. For information about this sample and other samples available for WIF and about where to download them, see [WIF Code Sample Index](~/docs/framework/security/wif-code-sample-index.md).  
+  
+ The following code shows the <xref:System.Security.Claims.ClaimsAuthorizationManager.CheckAccess%2A> method for the custom claims authorization manager. A function that evaluates the principal based on the resource and action specified in the <xref:System.Security.Claims.AuthorizationContext> is invoked. This function returns either `true` or `false`, which either grants or denies access to the principal.  
+  
+ [!code-csharp[WifClaimsBasedAuthorization#3](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs#3)]  
+[!code-csharp[WifClaimsBasedAuthorization#5](~/samples/snippets/csharp/VS_Snippets_Misc/wifclaimsbasedauthorization/cs/claimsauthorizationlibrary/myclaimsauthorizationmanager.cs#5)]  
+  
+ The following XML shows an example of the authorization policy that was specified in configuration. In the first policy, the principal must possess one of the specified claims in order to perform the specified action on the specified resource. In the second policy, the principal must possess both claims to be able to perform the specified action on the specified resource. In all others, the principal is automatically granted access regardless of the claims it possesses.  
+  
+```xml  
+<system.identityModel>  
+  <identityConfiguration>  
+    <claimsAuthorizationManager type="ClaimsAuthorizationLibrary.MyClaimsAuthorizationManager, ClaimsAuthorizationLibrary">  
+      <policy resource="http://localhost:28491/Developers.aspx" action="GET">  
+        <or>  
+          <claim claimType="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" claimValue="developer" />  
+          <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+        </or>  
+      </policy>  
+      <policy resource="http://localhost:28491/Administrators.aspx" action="GET">  
+        <and>  
+          <claim claimType="http://schemas.xmlsoap.org/claims/Group" claimValue="Administrator" />  
+          <claim claimType="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country" claimValue="USA" />  
+        </and>  
+      </policy>  
+      <policy resource="http://localhost:28491/Default.aspx" action="GET">  
+      </policy>  
+      <policy resource="http://localhost:28491/" action="GET">  
+      </policy>  
+      <policy resource="http://localhost:28491/Claims.aspx" action="GET">  
+      </policy>  
+    </claimsAuthorizationManager>  
+  
+    ...  
+  
+  </identityConfiguration>  
+</system.identityModel>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AuthorizationContext (System.Security.Claims.ClaimsPrincipal principal, System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt; resource, System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt; action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Claims.ClaimsPrincipal principal, class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Claims.Claim&gt; resource, class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Claims.Claim&gt; action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Claims.AuthorizationContext.#ctor(System.Security.Claims.ClaimsPrincipal,System.Collections.ObjectModel.Collection{System.Security.Claims.Claim},System.Collections.ObjectModel.Collection{System.Security.Claims.Claim})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="principal" Type="System.Security.Claims.ClaimsPrincipal" />
+        <Parameter Name="resource" Type="System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt;" />
+        <Parameter Name="action" Type="System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="principal">The principal for which authorization is to be checked.</param>
+        <param name="resource">A collection of claims that represents the resource for which the principal is to be authorized. The collection typically contains a single element.</param>
+        <param name="action">A collection of claims that represents the action to be performed on the resource. The collection typically contains a single element.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.AuthorizationContext" /> class with the specified principal, resource claim, and action claim.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="principal" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="resource" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="action" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AuthorizationContext (System.Security.Claims.ClaimsPrincipal principal, string resource, string action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Claims.ClaimsPrincipal principal, string resource, string action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Claims.AuthorizationContext.#ctor(System.Security.Claims.ClaimsPrincipal,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="principal" Type="System.Security.Claims.ClaimsPrincipal" />
+        <Parameter Name="resource" Type="System.String" />
+        <Parameter Name="action" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="principal">The principal for which authorization is to be checked.</param>
+        <param name="resource">The resource for which the principal is to be authorized. The resource is specified as the value of a name claim.</param>
+        <param name="action">The action to be performed on the resource. The action is specified as the value of a name claim.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.AuthorizationContext" /> class with the specified principal, resource name, and action name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Claims.AuthorizationContext.Action%2A> property is initialized to contain a name claim (<xref:System.Security.Claims.ClaimTypes.Name?displayProperty=fullName>) that has the value specified by the `action` parameter. The <xref:System.Security.Claims.AuthorizationContext.Resource%2A> property is initialized to contain a name claim that has the value specified by the `resource` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="principal" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="resource" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="action" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt; Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Claims.Claim&gt; Action" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Claims.AuthorizationContext.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the action for which the principal is to be authorized.</summary>
+        <value>A collection of claims that represents the actions relevant to the request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection typically contains a single element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Principal">
+      <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsPrincipal Principal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsPrincipal Principal" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Claims.AuthorizationContext.Principal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Claims.ClaimsPrincipal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the principal (subject) for which authorization is being requested.</summary>
+        <value>The principal for which authorization is being requested.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resource">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt; Resource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Security.Claims.Claim&gt; Resource" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Claims.AuthorizationContext.Resource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Security.Claims.Claim&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the resource on which the principal is to be authorized.</summary>
+        <value>A collection of claims that represents the resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection typically contains a single element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

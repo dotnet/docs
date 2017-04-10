@@ -1,0 +1,25 @@
+<Type Name="ScrollEventHandler" FullName="System.Windows.Controls.Primitives.ScrollEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ScrollEventHandler(object sender, ScrollEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ScrollEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Controls.Primitives.ScrollEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> routed event that occurs when the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> of a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> moves.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

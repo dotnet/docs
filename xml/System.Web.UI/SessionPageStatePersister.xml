@@ -1,0 +1,118 @@
+<Type Name="SessionPageStatePersister" FullName="System.Web.UI.SessionPageStatePersister">
+  <TypeSignature Language="C#" Value="public class SessionPageStatePersister : System.Web.UI.PageStatePersister" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionPageStatePersister extends System.Web.UI.PageStatePersister" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.SessionPageStatePersister" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.PageStatePersister</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores ASP.NET page view state on the Web server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET pages can store <xref:System.Web.UI.Page> state information between the inherently stateless HTTP request and response required to process and serve any Web page. This state is called "view state."  
+  
+ The default ASP.NET persistence mechanism is to store view state on the client using the <xref:System.Web.UI.HiddenFieldPageStatePersister> class. Storing view state and data with each HTTP request and response performs well in general and is important in large Web farm scenarios because it does not matter which Web server services the request: the page state is available in the current context for the server to accurately render the page.  
+  
+ In scenarios where pages are served to small devices that have limited client-side resources or use a markup language that does not support a hidden field element, it is required to store view state on the server. Several ASP.NET device page adapters override the `GetStatePersister` method to return a <xref:System.Web.UI.SessionPageStatePersister> object that stores page state on the server in the session object associated with the client.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can write a <xref:System.Web.UI.Adapters.PageAdapter> class to return an instance of the <xref:System.Web.UI.SessionPageStatePersister> class instead of the default <xref:System.Web.UI.HiddenFieldPageStatePersister> class to save view state to the server-side session object.  
+  
+ [!code-csharp[System.Web.UI.SessionPageStatePersister_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.SessionPageStatePersister_1/CS/mypageadapter2.cs#1)]
+ [!code-vb[System.Web.UI.SessionPageStatePersister_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.SessionPageStatePersister_1/VB/mypageadapter2.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SessionPageStatePersister (System.Web.UI.Page page);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Page page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.SessionPageStatePersister.#ctor(System.Web.UI.Page)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="page" Type="System.Web.UI.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">The <see cref="T:System.Web.UI.Page" /> that the view state persistence mechanism is created for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.SessionPageStatePersister" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how you can write a <xref:System.Web.UI.Adapters.PageAdapter> class to return an instance of the <xref:System.Web.UI.SessionPageStatePersister> class to save view state to the server-side session object.  
+  
+ [!code-csharp[System.Web.UI.SessionPageStatePersister_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.SessionPageStatePersister_1/CS/mypageadapter2.cs#1)]
+ [!code-vb[System.Web.UI.SessionPageStatePersister_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.SessionPageStatePersister_1/VB/mypageadapter2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Web.SessionState.HttpSessionState" /> is null (<see langword="Nothing" /> in Visual Basic)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override void Load ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.SessionPageStatePersister.Load" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Deserializes and loads persisted state from the server-side session object when a <see cref="T:System.Web.UI.Page" /> object initializes its control hierarchy.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.SessionPageStatePersister> class implements the <xref:System.Web.UI.SessionPageStatePersister.Load%2A> method to load page state from the <xref:System.Web.SessionState.HttpSessionState> object associated with the client.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="M:System.Web.UI.SessionPageStatePersister.Load" /> method could not successfully deserialize the state contained in the request to the Web server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public override void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Save() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.SessionPageStatePersister.Save" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serializes any object state contained in the <see cref="P:System.Web.UI.PageStatePersister.ViewState" /> or the <see cref="P:System.Web.UI.PageStatePersister.ControlState" /> property and writes the state to the session object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.SessionPageStatePersister> class implements the <xref:System.Web.UI.HiddenFieldPageStatePersister.Save%2A> method to persist page state in the <xref:System.Web.SessionState.HttpSessionState> object associated with the client.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

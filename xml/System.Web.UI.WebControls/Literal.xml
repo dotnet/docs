@@ -1,0 +1,346 @@
+<Type Name="Literal" FullName="System.Web.UI.WebControls.Literal">
+  <TypeSignature Language="C#" Value="public class Literal : System.Web.UI.Control, System.Web.UI.ITextControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Literal extends System.Web.UI.Control implements class System.Web.UI.ITextControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Literal" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Control</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.ITextControl</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Text")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.LiteralDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ControlBuilder(typeof(System.Web.UI.WebControls.LiteralControlBuilder))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.DataBindingHandler("System.Web.UI.Design.TextDataBindingHandler, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Reserves a location on the Web page to display static text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ Use the <xref:System.Web.UI.WebControls.Literal?displayProperty=fullName> control to reserve a location on the Web page to display text. The <xref:System.Web.UI.WebControls.Literal> control is similar to the <xref:System.Web.UI.WebControls.Label> control, except the <xref:System.Web.UI.WebControls.Literal> control does not allow you to apply a style to the displayed text. You can programmatically control the text displayed in the control by setting the <xref:System.Web.UI.WebControls.Literal.Text%2A> property.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input.  
+  
+ For more information about security, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:Literal  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ID="string"  
+    Mode="Transform|PassThrough|Encode"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SkinID="string"  
+    Text="string"  
+    Visible="True|False"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Literal> control to display static text.  
+  
+> [!NOTE]
+>  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Literal#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Literal/CS/literalcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Literal#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal/VB/literalvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Literal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Literal.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Literal" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddParsedSubObject">
+      <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Literal.AddParsedSubObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
+        <summary>Notifies the <see cref="T:System.Web.UI.WebControls.Literal" /> control that an XML or HTML element was parsed and adds that element to the <see cref="T:System.Web.UI.ControlCollection" /> of the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Literal.AddParsedSubObject%2A> method in a custom server control so that it always sets the <xref:System.Web.UI.WebControls.Literal.Text%2A> property to the parsed object's `Text` property, if the parsed object is a <xref:System.Web.UI.WebControls.Literal>, and to an empty `string` otherwise.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomLiteralAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/CS/custom_literal_addparsedsubobjectcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomLiteralAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/VB/custom_literal_addparsedsubobjectvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomLiteralAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/CS/custom_literal_addparsedsubobject.cs#2)]
+ [!code-vb[CustomLiteralAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralAddParsedSubObject/VB/custom_literal_addparsedsubobject.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="obj" /> is not of type <see cref="T:System.Web.UI.LiteralControl" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlCollection">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Literal.CreateControlCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an <see cref="T:System.Web.UI.EmptyControlCollection" /> object for the current instance of the <see cref="T:System.Web.UI.WebControls.Literal" /> control.</summary>
+        <returns>A <see cref="T:System.Web.UI.ControlCollection" /> object to contain the current server control's child server controls.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Literal.CreateControlCollection%2A> method in a custom server control so that it always returns an instance of the <xref:System.Web.UI.EmptyControlCollection> class for the <xref:System.Web.UI.WebControls.Literal> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomLiteralCreateControlCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/CS/custom_literal_createcontrolcollectioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomLiteralCreateControlCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/VB/custom_literal_createcontrolcollectionvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomLiteralCreateControlCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/CS/custom_literal_createcontrolcollection.cs#2)]
+ [!code-vb[CustomLiteralCreateControlCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralCreateControlCollection/VB/custom_literal_createcontrolcollection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="public override void Focus ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Focus() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Literal.Focus" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Set input focus to a control; the <see cref="M:System.Web.UI.WebControls.Literal.Focus" /> base control method is not supported on a <see cref="T:System.Web.UI.WebControls.Literal" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Literal> control overrides the <xref:System.Web.UI.Control.Focus%2A> method of the base class. The <xref:System.Web.UI.WebControls.Literal.Focus%2A> method of a <xref:System.Web.UI.WebControls.Literal> control always throws an exception to indicate that the <xref:System.Web.UI.WebControls.Literal.Focus%2A> method is not supported on a <xref:System.Web.UI.WebControls.Literal> control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.WebControls.Literal.Focus" /> was called on a <see cref="T:System.Web.UI.WebControls.Literal" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.LiteralMode Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.LiteralMode Mode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Literal.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.LiteralMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an enumeration value that specifies how the content in the <see cref="T:System.Web.UI.WebControls.Literal" /> control is rendered.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.LiteralMode" /> enumeration values. The default is <see langword="Transform" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Literal.Mode%2A> property to specify how the contents of a <xref:System.Web.UI.WebControls.Literal> control should be rendered. This property is set using one of the <xref:System.Web.UI.WebControls.LiteralMode> enumeration values. The following table lists the possible values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`PassThrough`|The contents of the control are not modified.|  
+|`Encode`|The contents of the control are converted to an HTML-encoded string.|  
+|`Transform`|Unsupported markup-language elements are removed from the contents of the control. If the <xref:System.Web.UI.WebControls.Literal> control is rendered on a browser that supports HTML or XHTML, the control's contents are not modified.|  
+  
+ If you specify `PassThrough`, the entire contents of the <xref:System.Web.UI.WebControls.Literal.Text%2A> property are passed to the device or browser without making any modifications. For example, if the <xref:System.Web.UI.WebControls.Literal.Text%2A> property of a <xref:System.Web.UI.WebControls.Literal> control contains an `<hr>` tag, it is sent to all devices and browsers whether it is supported or not.  
+  
+ If you specify `Encode`, the contents for the <xref:System.Web.UI.WebControls.Literal.Text%2A> property are converted into an HTML-encoded string before rendering. For example, if the <xref:System.Web.UI.WebControls.Literal.Text%2A> property of a <xref:System.Web.UI.WebControls.Literal> control contains an `<hr>` tag, it is converted to `&lt;Hr&gt;` and sent to the device or browser.  
+  
+ If you specify `Transform`, the rendering behavior of the <xref:System.Web.UI.WebControls.Literal.Text%2A> property depends on the type of markup being rendered. When the <xref:System.Web.UI.WebControls.Literal> control is rendered for a device or browser that supports HTML or XHTML, specifying <xref:System.Web.UI.WebControls.LiteralMode> produces the same behavior as specifying <xref:System.Web.UI.WebControls.LiteralMode>. All markup tags and elements for the <xref:System.Web.UI.WebControls.Literal.Text%2A> property are rendered for the requesting browser.  
+  
+ When the <xref:System.Web.UI.WebControls.Literal> control is rendered for a markup language other than HTML or XHTML, such as WML or cHTML, you can use the <xref:System.Web.UI.WebControls.LiteralMode> value to remove unsupported markup elements. In this case, any markup language elements of the <xref:System.Web.UI.WebControls.Literal.Text%2A> property that are not supported in the targeted markup language are not rendered for the control. For example, if the <xref:System.Web.UI.WebControls.Literal.Text%2A> property of a <xref:System.Web.UI.WebControls.Literal> control contains an `<hr>` tag, the tag is removed before the content is sent to a WML device. If an unsupported tag contains content, only the tag is removed and the content is sent to the device or browser. For example, if the <xref:System.Web.UI.WebControls.Literal.Text%2A> property contains the content `<XYZ>Test</XYZ>`, the `<XYZ>` and `</XYZ>` tags are removed, and the text "Test" is sent to the device or browser.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set a <xref:System.Web.UI.WebControls.Literal> control's <xref:System.Web.UI.WebControls.Literal.Mode%2A> property. The <xref:System.Web.UI.WebControls.Literal.Mode%2A> property is initially set to `Encode` in the declarative syntax for the control. After the page loads, the user can click a button to set the <xref:System.Web.UI.WebControls.Literal.Mode%2A> property to `PassThrough`. This causes the contents of the <xref:System.Web.UI.WebControls.Literal.Text%2A> property to render differently.  
+  
+> [!NOTE]
+>  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-vb[Literal.Mode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal.Mode/VB/literal.modevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.LiteralMode" /> enumeration values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Literal.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> object that receives the server control content.</param>
+        <summary>Sends server control content to a provided <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to be rendered on the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.Literal.Render%2A> method in a custom server control so that specific text is always displayed before the <xref:System.Web.UI.WebControls.Literal>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomLiteralRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralRender/CS/custom_literal_rendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomLiteralRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralRender/VB/custom_literal_rendervb.aspx#1)]  -->  
+[!code-csharp[CustomLiteralRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomLiteralRender/CS/custom_literal_render.cs#2)]
+[!code-vb[CustomLiteralRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomLiteralRender/VB/custom_literal_render.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Literal.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the caption displayed in the <see cref="T:System.Web.UI.WebControls.Literal" /> control.</summary>
+        <value>The caption displayed in the <see cref="T:System.Web.UI.WebControls.Literal" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.Literal.Text%2A> property to specify or determine the caption displayed in the <xref:System.Web.UI.WebControls.Literal> control. This allows you to programmatically change the caption at run time.  
+  
+ The caption is HTML-decoded depending on how you assign a value to this property. If you assign a value through an attribute of the <xref:System.Web.UI.WebControls.Literal> control, the value is HTML decoded before it is displayed. For example, `<asp:Literal id="DisplayLiteral" Text="A&nbsp;B"/>` is rendered as "A B" on the browser. However, if you set this property programmatically or by placing the text between the opening and closing tags of the control, the caption is not HTML decoded. For example, `<asp:Literal id="DisplayLiteral"> A&nbsp;B </asp:Literal>` is rendered as "A&nbsp;B".  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.Literal.Text%2A> property to programmatically change the caption displayed in the <xref:System.Web.UI.WebControls.Literal> control.  
+  
+> [!NOTE]
+>  The following example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information about the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Literal#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Literal/CS/literalcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Literal#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Literal/VB/literalvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

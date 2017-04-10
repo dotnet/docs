@@ -1,0 +1,454 @@
+<Type Name="SelectQuery" FullName="System.Management.SelectQuery">
+  <TypeSignature Language="C#" Value="public class SelectQuery : System.Management.WqlObjectQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectQuery extends System.Management.WqlObjectQuery" />
+  <TypeSignature Language="DocId" Value="T:System.Management.SelectQuery" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Management.WqlObjectQuery</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a WQL SELECT data query.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectQuery (string queryOrClassName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string queryOrClassName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="queryOrClassName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="queryOrClassName">The entire query or the class name to use in the query. The parser in this class attempts to parse the string as a valid WQL SELECT query. If the parser is unsuccessful, it assumes the string is a class name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class for the specified query or the specified class name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Management.SelectQuery> by specifying a query.  
+  
+ [!code-csharp[wminet_SelectQuery(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery(S)/cs/SelectQuery(S).cs#1)]
+ [!code-vb[wminet_SelectQuery(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery(S)/vb/SelectQuery(S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectQuery (bool isSchemaQuery, string condition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isSchemaQuery, string condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor(System.Boolean,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isSchemaQuery" Type="System.Boolean" />
+        <Parameter Name="condition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="isSchemaQuery">
+          <see langword="true" /> to indicate that this is a schema query; otherwise, <see langword="false" />. A <see langword="false" /> value is invalid in this constructor.</param>
+        <param name="condition">The condition to be applied to form the result set of classes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class for a schema query, optionally specifying a condition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Management.SelectQuery> by specifying a condition.  
+  
+ [!code-csharp[wminet_SelectQuery(B_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery(B_S)/cs/SelectQuery(B_S).cs#1)]
+ [!code-vb[wminet_SelectQuery(B_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery(B_S)/vb/SelectQuery(B_S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectQuery (string className, string condition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string className, string condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="condition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="className">The name of the class to select in the query.</param>
+        <param name="condition">The condition to be applied in the query.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class with the specified class name and condition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Management.SelectQuery> by specifying a WMI class name and a condition.  
+  
+ [!code-csharp[wminet_SelectQuery(S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery(S_S)/cs/SelectQuery(S_S).cs#1)]
+ [!code-vb[wminet_SelectQuery(S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery(S_S)/vb/SelectQuery(S_S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectQuery (string className, string condition, string[] selectedProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string className, string condition, string[] selectedProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor(System.String,System.String,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="condition" Type="System.String" />
+        <Parameter Name="selectedProperties" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="className">The name of the class from which to select.</param>
+        <param name="condition">The condition to be applied to instances of the selected class.</param>
+        <param name="selectedProperties">An array of property names to be returned in the query results.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class with the specified class name and condition, selecting only the specified properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Management.SelectQuery> by specifying a WMI class name, condition, and array of properties.  
+  
+ [!code-csharp[wminet_SelectQuery(S_S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery(S_S_S)/cs/SelectQuery(S_S_S).cs#1)]
+ [!code-vb[wminet_SelectQuery(S_S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery(S_S_S)/vb/SelectQuery(S_S_S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildQuery">
+      <MemberSignature Language="C#" Value="protected void BuildQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BuildQuery() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.BuildQuery" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Builds the query string according to the current property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassName">
+      <MemberSignature Language="C#" Value="public string ClassName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClassName" />
+      <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.ClassName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the class name to be selected from in the query.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the name of the class in the query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new class name.  
+  
+ A value for the **ClassName** property would replace the \<className> item in a SELECT query of the form "SELECT * FROM \<className> WHERE \<condition>".  
+  
+## Property Value  
+ A string representing the name of the class in the query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Management.SelectQuery> by specifying a query and then changes the <xref:System.Management.SelectQuery.ClassName%2A> property.  
+  
+ [!code-csharp[wminet_SelectQuery_ClassName#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery_ClassName/cs/SelectQuery_ClassName.cs#1)]
+ [!code-vb[wminet_SelectQuery_ClassName#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery_ClassName/vb/SelectQuery_ClassName.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the object.</summary>
+        <returns>The copied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Condition">
+      <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
+      <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.Condition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the condition to be applied in the SELECT query.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the condition to be applied to the SELECT query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new condition.  
+  
+ A value for the **Condition** property would replace the \<condition> item in a SELECT query of the form "SELECT * FROM \<className> WHERE \<condition>".  
+  
+## Property Value  
+ A string containing the condition to be applied in the SELECT query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSchemaQuery">
+      <MemberSignature Language="C#" Value="public bool IsSchemaQuery { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaQuery" />
+      <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.IsSchemaQuery" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this query is a schema query or an instances query.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the query is a schema query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new query type.  
+  
+## Property Value  
+ `true` if this query should be evaluated over the schema; `false` if the query should be evaluated over instances.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseQuery">
+      <MemberSignature Language="C#" Value="protected override void ParseQuery (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ParseQuery(string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.ParseQuery(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="query">The query string to be parsed.</param>
+        <summary>Parses the query string and sets the property values accordingly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="public override string QueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
+      <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.QueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the query in the <see cref="T:System.Management.SelectQuery" /> object, in string form.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. In addition, setting this property causes the other members of the object to be updated when the string is reparsed.  
+  
+## Property Value  
+ A string representing the query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Management.SelectQuery> with the default constructor and then changes the <xref:System.Management.SelectQuery.QueryString%2A> property.  
+  
+ [!code-csharp[wminet_SelectQuery_QueryString#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_SelectQuery_QueryString/cs/SelectQuery_QueryString.cs#1)]
+ [!code-vb[wminet_SelectQuery_QueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_SelectQuery_QueryString/vb/SelectQuery_QueryString.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection SelectedProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection SelectedProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.SelectedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ggets or sets an array of property names to be selected in the query.</summary>
+        <value>Returns a <see cref="T:System.Collections.Specialized.StringCollection" /> containing the names of the properties to be selected in the query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new properties.  
+  
+ A value for the **SelectedProperties** property would replace the \<property> item in a SELECT query of the form "SELECT \<property> FROM \<className> WHERE \<condition>".  
+  
+## Property Value  
+ A <xref:System.Collections.Specialized.StringCollection> containing the names of the properties to be selected in the query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,68 @@
+<Type Name="Try" FullName="Microsoft.JScript.Try">
+  <TypeSignature Language="C#" Value="public sealed class Try : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Try extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Try" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Identifies blocks of code to run in error handling scopes. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="JScriptExceptionValue">
+      <MemberSignature Language="C#" Value="public static object JScriptExceptionValue (object e, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object JScriptExceptionValue(object e, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Try.JScriptExceptionValue(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Object" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="e">The object that represents the exception.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Returns the specified object as an exception, converting it to a specific <see cref="T:Microsoft.JScript.JScriptException" /> if it can.</summary>
+        <returns>The exception <paramref name="e" />, converted to a specific <see cref="T:Microsoft.JScript.JScriptException" /> if that is possible.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushHandlerScope">
+      <MemberSignature Language="C#" Value="public static void PushHandlerScope (Microsoft.JScript.Vsa.VsaEngine engine, string id, int scopeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PushHandlerScope(class Microsoft.JScript.Vsa.VsaEngine engine, string id, int32 scopeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Try.PushHandlerScope(Microsoft.JScript.Vsa.VsaEngine,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="scopeId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="engine">A reference to the scripting engine.</param>
+        <param name="id">The name of the scope of the <see langword="try" /> block.</param>
+        <param name="scopeId">The ID of the scope of the <see langword="try" /> block.</param>
+        <summary>Creates a new <see cref="T:Microsoft.JScript.BlockScope" /> object for the <see langword="try" /> block and pushes it onto the global scope stack.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

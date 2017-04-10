@@ -1,0 +1,108 @@
+<Type Name="SyntaxCheck" FullName="System.ComponentModel.SyntaxCheck">
+  <TypeSignature Language="C#" Value="public static class SyntaxCheck" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SyntaxCheck extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.SyntaxCheck" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods to verify the machine name and path conform to a specific syntax. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckMachineName">
+      <MemberSignature Language="C#" Value="public static bool CheckMachineName (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckMachineName(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckMachineName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">A string containing the machine name to check.</param>
+        <summary>Checks the syntax of the machine name to confirm that it does not contain "\\".</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> matches the proper machine name format; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckPath">
+      <MemberSignature Language="C#" Value="public static bool CheckPath (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckPath(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">A string containing the path to check.</param>
+        <summary>Checks the syntax of the path to see whether it starts with "\\\\".</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> matches the proper path format; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckRootedPath">
+      <MemberSignature Language="C#" Value="public static bool CheckRootedPath (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckRootedPath(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.SyntaxCheck.CheckRootedPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">A string containing the path to check.</param>
+        <summary>Checks the syntax of the path to see if it starts with "\\" or drive letter "C:".</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> matches the proper path format; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

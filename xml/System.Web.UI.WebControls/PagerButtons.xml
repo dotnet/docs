@@ -1,0 +1,97 @@
+<Type Name="PagerButtons" FullName="System.Web.UI.WebControls.PagerButtons">
+  <TypeSignature Language="C#" Value="public enum PagerButtons" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagerButtons extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerButtons" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the types of buttons to display for navigating between pages of content in a paginated control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.PagerButtons> enumeration represents the types of buttons to display for navigating between pages of content in a paginated control. This enumeration is used by the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property to specify the type of navigation buttons to display in controls that use the <xref:System.Web.UI.WebControls.PagerSettings> class, such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>.  
+  
+ `PagerButtons.NextPrevious` displays **Next** and **Previous** buttons to access the next and previous pages of the paginated control.  
+  
+ `PagerButtons.NextPreviousFirstLast` displays **Next** and **Previous** buttons as well as **First** and **Last** buttons to directly access the first and last pages of the paginated control.  
+  
+ `PagerButtons.Numeric` displays numeric link buttons corresponding to the pages of the paginated control.  
+  
+ `PagerButtons.NumericFirstLast` displays numeric link buttons corresponding to the pages of the paginated control as well as **First** and **Last** buttons to directly access the first and last pages of the paginated control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NextPrevious">
+      <MemberSignature Language="C#" Value="NextPrevious" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerButtons NextPrevious = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerButtons.NextPrevious" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A set of pagination controls consisting of **Previous** and **Next** buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPreviousFirstLast">
+      <MemberSignature Language="C#" Value="NextPreviousFirstLast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerButtons NextPreviousFirstLast = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A set of pagination controls consisting of **Previous**, **Next**, **First**, and **Last** buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Numeric">
+      <MemberSignature Language="C#" Value="Numeric" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerButtons Numeric = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerButtons.Numeric" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A set of pagination controls consisting of numbered link buttons to access pages directly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumericFirstLast">
+      <MemberSignature Language="C#" Value="NumericFirstLast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerButtons NumericFirstLast = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerButtons.NumericFirstLast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A set of pagination controls consisting of numbered and **First** and **Last** link buttons.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,275 @@
+<Type Name="BlobEncoder" FullName="System.Reflection.Metadata.Ecma335.BlobEncoder">
+  <TypeSignature Language="C#" Value="public struct BlobEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BlobEncoder extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.BlobEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Builder">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.BlobEncoder.Builder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomAttributeSignature">
+      <MemberSignature Language="C#" Value="public void CustomAttributeSignature (Action&lt;System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder&gt; fixedArguments, Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder&gt; namedArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CustomAttributeSignature(class System.Action`1&lt;valuetype System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder&gt; fixedArguments, class System.Action`1&lt;valuetype System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder&gt; namedArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.CustomAttributeSignature(System.Action{System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder},System.Action{System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fixedArguments" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder&gt;" />
+        <Parameter Name="namedArguments" Type="System.Action&lt;System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="fixedArguments">To be added.</param>
+        <param name="namedArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomAttributeSignature">
+      <MemberSignature Language="C#" Value="public void CustomAttributeSignature (out System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder fixedArguments, out System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder namedArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CustomAttributeSignature(valuetype System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder fixedArguments, valuetype System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder namedArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.CustomAttributeSignature(System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder@,System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fixedArguments" Type="System.Reflection.Metadata.Ecma335.FixedArgumentsEncoder&amp;" RefType="out" />
+        <Parameter Name="namedArguments" Type="System.Reflection.Metadata.Ecma335.CustomAttributeNamedArgumentsEncoder&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="fixedArguments">To be added.</param>
+        <param name="namedArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldSignature">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.SignatureTypeEncoder FieldSignature ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder FieldSignature() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.FieldSignature" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.SignatureTypeEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalVariableSignature">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.LocalVariablesEncoder LocalVariableSignature (int variableCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.LocalVariablesEncoder LocalVariableSignature(int32 variableCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.LocalVariableSignature(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.LocalVariablesEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variableCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="variableCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodSignature">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.MethodSignatureEncoder MethodSignature (System.Reflection.Metadata.SignatureCallingConvention convention = System.Reflection.Metadata.SignatureCallingConvention.Default, int genericParameterCount = 0, bool isInstanceMethod = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.MethodSignatureEncoder MethodSignature(valuetype System.Reflection.Metadata.SignatureCallingConvention convention, int32 genericParameterCount, bool isInstanceMethod) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.MethodSignature(System.Reflection.Metadata.SignatureCallingConvention,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.MethodSignatureEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="convention" Type="System.Reflection.Metadata.SignatureCallingConvention" />
+        <Parameter Name="genericParameterCount" Type="System.Int32" />
+        <Parameter Name="isInstanceMethod" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="convention">To be added.</param>
+        <param name="genericParameterCount">To be added.</param>
+        <param name="isInstanceMethod">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodSpecificationSignature">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder MethodSpecificationSignature (int genericArgumentCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder MethodSpecificationSignature(int32 genericArgumentCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.MethodSpecificationSignature(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.GenericTypeArgumentsEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericArgumentCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="genericArgumentCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionSetArguments">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder PermissionSetArguments (int argumentCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder PermissionSetArguments(int32 argumentCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.PermissionSetArguments(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.NamedArgumentsEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argumentCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="argumentCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionSetBlob">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.PermissionSetEncoder PermissionSetBlob (int attributeCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.PermissionSetEncoder PermissionSetBlob(int32 attributeCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.PermissionSetBlob(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.PermissionSetEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="attributeCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertySignature">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.MethodSignatureEncoder PropertySignature (bool isInstanceProperty = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.MethodSignatureEncoder PropertySignature(bool isInstanceProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.PropertySignature(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.MethodSignatureEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isInstanceProperty" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isInstanceProperty">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeSpecificationSignature">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.SignatureTypeEncoder TypeSpecificationSignature ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.SignatureTypeEncoder TypeSpecificationSignature() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.BlobEncoder.TypeSpecificationSignature" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.SignatureTypeEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

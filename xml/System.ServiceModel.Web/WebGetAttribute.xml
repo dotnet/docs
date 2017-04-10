@@ -1,0 +1,398 @@
+<Type Name="WebGetAttribute" FullName="System.ServiceModel.Web.WebGetAttribute">
+  <TypeSignature Language="C#" Value="public sealed class WebGetAttribute : Attribute, System.ServiceModel.Description.IOperationBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebGetAttribute extends System.Attribute implements class System.ServiceModel.Description.IOperationBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.WebGetAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IOperationBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an attribute indicating that a service operation is logically a retrieval operation and that it can be called by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] REST programming model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Web.WebGetAttribute> attribute is applied to a service operation in addition to the <xref:System.ServiceModel.OperationContractAttribute> and associates the operation with a <xref:System.UriTemplate> as well as the HTTP protocol Get verb. The association with HTTP Get verb means that the operation is used to retrieve information from the service. The <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a *passive* operation behavior (the <xref:System.ServiceModel.Description.IOperationBehavior> methods do nothing) that adds metadata to the operation description. Applying the <xref:System.ServiceModel.Web.WebGetAttribute> attribute to a service operation has no effect unless a behavior that is looking for this metadata in the operation description (such as <xref:System.ServiceModel.Description.WebHttpBehavior>) is added to the service's behavior collection.  
+  
+ Service operations with the <xref:System.ServiceModel.Web.WebGetAttribute> attribute applied should be logical retrieval operations. The HTTP GET method is associated with all operations marked with the <xref:System.ServiceModel.Web.WebGetAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Web.WebGetAttribute> attribute.  
+  
+ [!code-csharp[WebAttribute#0](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#0)]
+ [!code-vb[WebAttribute#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebGetAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Web.WebGetAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyStyle">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Web.WebMessageBodyStyle BodyStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Web.WebMessageBodyStyle BodyStyle" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.BodyStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Web.WebMessageBodyStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the body style of the messages that are sent to and from the service operation.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageBodyStyle" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When set to <xref:System.ServiceModel.Web.WebMessageBodyStyle>, the result of the service operation is written directly to the body of the response message.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Web.WebGetAttribute.BodyStyle%2A> property.  
+  
+ [!code-csharp[WebAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#1)]
+ [!code-vb[WebAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBodyStyleSetExplicitly">
+      <MemberSignature Language="C#" Value="public bool IsBodyStyleSetExplicitly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBodyStyleSetExplicitly" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.IsBodyStyleSetExplicitly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.IsBodyStyleSetExplicitly" /> property.</summary>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.BodyStyle" /> property is set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is designed to be used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and should never be set from user code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequestFormatSetExplicitly">
+      <MemberSignature Language="C#" Value="public bool IsRequestFormatSetExplicitly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRequestFormatSetExplicitly" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.IsRequestFormatSetExplicitly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.IsRequestFormatSetExplicitly" /> property.</summary>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" /> property was set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is designed to be used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and should never be set from user code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsResponseFormatSetExplicitly">
+      <MemberSignature Language="C#" Value="public bool IsResponseFormatSetExplicitly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsResponseFormatSetExplicitly" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.IsResponseFormatSetExplicitly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.IsResponseFormatSetExplicitly" /> property.</summary>
+        <value>A value that specifies whether the <see cref="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" /> property was set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is designed to be used by the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and should never be set from user code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestFormat">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Web.WebMessageFormat RequestFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Web.WebMessageFormat RequestFormat" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.RequestFormat" /> property.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the format of requests made to a service operation. The two possible values are `Xml` and `Json`.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Web.WebGetAttribute.RequestFormat%2A> property.  
+  
+ [!code-csharp[WebAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#2)]
+ [!code-vb[WebAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseFormat">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Web.WebMessageFormat ResponseFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Web.WebMessageFormat ResponseFormat" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Web.WebMessageFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the <see cref="P:System.ServiceModel.Web.WebGetAttribute.ResponseFormat" /> property.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.Web.WebMessageFormat" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the format of responses sent from a service operation. The two possible values are `Xml` and `Json`.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> property.  
+  
+ [!code-csharp[WebAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#3)]
+ [!code-vb[WebAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IOperationBehavior.AddBindingParameters">
+      <MemberSignature Language="C#" Value="void IOperationBehavior.AddBindingParameters (System.ServiceModel.Description.OperationDescription operation, System.ServiceModel.Channels.BindingParameterCollection parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.System#ServiceModel#Description#IOperationBehavior#AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="operation">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior">
+      <MemberSignature Language="C#" Value="void IOperationBehavior.ApplyClientBehavior (System.ServiceModel.Description.OperationDescription operation, System.ServiceModel.Dispatcher.ClientOperation client);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.Dispatcher.ClientOperation client) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.System#ServiceModel#Description#IOperationBehavior#ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="clientOperation" Type="System.ServiceModel.Dispatcher.ClientOperation" />
+      </Parameters>
+      <Docs>
+        <param name="operation">To be added.</param>
+        <param name="client">To be added.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="void IOperationBehavior.ApplyDispatchBehavior (System.ServiceModel.Description.OperationDescription operation, System.ServiceModel.Dispatcher.DispatchOperation service);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.OperationDescription operation, class System.ServiceModel.Dispatcher.DispatchOperation service) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.System#ServiceModel#Description#IOperationBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="dispatchOperation" Type="System.ServiceModel.Dispatcher.DispatchOperation" />
+      </Parameters>
+      <Docs>
+        <param name="operation">To be added.</param>
+        <param name="service">To be added.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IOperationBehavior.Validate">
+      <MemberSignature Language="C#" Value="void IOperationBehavior.Validate (System.ServiceModel.Description.OperationDescription operation);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IOperationBehavior.Validate(class System.ServiceModel.Description.OperationDescription operation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebGetAttribute.System#ServiceModel#Description#IOperationBehavior#Validate(System.ServiceModel.Description.OperationDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationDescription" Type="System.ServiceModel.Description.OperationDescription" />
+      </Parameters>
+      <Docs>
+        <param name="operation">To be added.</param>
+        <summary>Implements the <see cref="M:System.ServiceModel.Description.IOperationBehavior.Validate(System.ServiceModel.Description.OperationDescription)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does nothing because the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is a passive operation behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriTemplate">
+      <MemberSignature Language="C#" Value="public string UriTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UriTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.WebGetAttribute.UriTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the Uniform Resource Identifier (URI) template for the service operation.</summary>
+        <value>The URI template for the service operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ URI templates are used to determine which requests get dispatched to which service operations. URI templates allow you to map a URI or a set of URIs to a service operation. [!INCLUDE[crabout](~/includes/crabout-md.md)] URI templates, see [UriTemplate and UriTemplateTable](~/docs/framework/wcf/feature-details/uritemplate-and-uritemplatetable.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Web.WebGetAttribute.UriTemplate%2A> property.  
+  
+ [!code-csharp[WebAttribute#4](~/samples/snippets/csharp/VS_Snippets_CFX/webattribute/cs/program.cs#4)]
+ [!code-vb[WebAttribute#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/webattribute/vb/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

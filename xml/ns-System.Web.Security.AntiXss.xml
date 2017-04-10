@@ -1,0 +1,13 @@
+<Namespace Name="System.Web.Security.AntiXss">
+  <Docs>
+    <summary>Contains methods that you can use to encode strings in order help you protect your application against cross-site scripting (XSS) attacks and LDAP injection attacks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The encoding algorithms look for a prescribed set of characters that are considered safe and encode all other characters. (This is sometimes referred to as "safe-listing" or "whitelisting.")  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

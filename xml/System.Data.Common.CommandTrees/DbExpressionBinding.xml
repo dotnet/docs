@@ -1,0 +1,100 @@
+<Type Name="DbExpressionBinding" FullName="System.Data.Common.CommandTrees.DbExpressionBinding">
+  <TypeSignature Language="C#" Value="public sealed class DbExpressionBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbExpressionBinding extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an input set to relational expressions such as <see cref="T:System.Data.Common.CommandTrees.DbFilterExpression" />, <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" />, and <see cref="T:System.Data.Common.CommandTrees.DbJoinExpression" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is very similar to a `foreach` traversal with a binding to each element of the traversal. This class is provided as a helper class for many of the expressions that correspond to relational operators.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Expression { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Expression" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpressionBinding.Expression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the input set.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the input set.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of the binding, or its result type is not equal or promotable to the result type of the current value of the property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Variable">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbVariableReferenceExpression Variable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbVariableReferenceExpression Variable" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpressionBinding.Variable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbVariableReferenceExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.Common.CommandTrees.DbVariableReferenceExpression" /> that references the element variable.</summary>
+        <value>The variable reference.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableName">
+      <MemberSignature Language="C#" Value="public string VariableName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VariableName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpressionBinding.VariableName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name assigned to the element variable.</summary>
+        <value>The name assigned to the element variable.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VariableType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.TypeUsage VariableType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.TypeUsage VariableType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpressionBinding.VariableType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type metadata of the element variable.</summary>
+        <value>The type metadata of the element variable.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

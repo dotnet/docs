@@ -1,0 +1,45 @@
+<Namespace Name="System.Speech.Recognition">
+  <Docs>
+    <summary>The <see cref="N:System.Speech.Recognition" /> namespace contains Windows Desktop Speech technology types for implementing speech recognition.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Windows Desktop Speech Technology software offers a basic speech recognition infrastructure that digitizes acoustical signals, and recovers words and speech elements from audio input.  
+  
+ Applications use the <xref:System.Speech.Recognition> namespace to access and extend this basic speech recognition technology by defining algorithms for identifying and acting on specific phrases or word patterns, and by managing the runtime behavior of this speech infrastructure.  
+  
+ **Create Grammars**  
+  
+ You create grammars, which consist of a set of rules or constraints, to define words and phrases that your application will recognize as meaningful input. Using a constructor for the <xref:System.Speech.Recognition.Grammar> class, you can create a grammar object at runtime from <xref:System.Speech.Recognition.GrammarBuilder> or <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instances, or from a file, a string, or a stream that contains a definition of a grammar.  
+  
+ Using the <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices> classes, you can programmatically create grammars of low to medium complexity that can be used to perform recognition for many common scenarios. To create grammars programmatically that conform to the [Speech Recognition Grammar Specification 1.0 (SRGS)](http://go.microsoft.com/fwlink/?LinkId=201761) and take advantage of the authoring flexibility of SRGS, use the types of the <xref:System.Speech.Recognition.SrgsGrammar> namespace. You can also create XML-format SRGS grammars using any text editor and use the result to create <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> , or <xref:System.Speech.Recognition.Grammar> objects.  
+  
+ In addition, the <xref:System.Speech.Recognition.DictationGrammar> class provides a special-case grammar to support a conventional dictation model.  
+  
+ See [Create Grammars](http://msdn.microsoft.com/en-us/dbea278c-21a5-4816-aee7-5fd88ef993dd) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
+  
+ **Manage Speech Recognition Engines**  
+  
+ Instances of <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> supplied with <xref:System.Speech.Recognition.Grammar> objects provide the primary access to the speech recognition engines of the Windows Desktop Speech Technology.  
+  
+ You can use the <xref:System.Speech.Recognition.SpeechRecognizer> class to create client applications that use the speech recognition technology provided by Windows, which you can configure through the **Control Panel**. Such applications accept input through a computer's default audio input mechanism.  
+  
+ For more control over the configuration and type of recognition engine, build an application using <xref:System.Speech.Recognition.SpeechRecognitionEngine>, which runs in-process. Using the <xref:System.Speech.Recognition.SpeechRecognitionEngine> class, you can also dynamically select audio input from devices, files, or streams.  
+  
+ See [Initialize and Manage a Speech Recognition Engine](http://msdn.microsoft.com/en-us/6eed5b59-1258-4013-8a4c-a1ddabd93ae4) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information.  
+  
+ **Respond to Events**  
+  
+ <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> objects generate events in response to audio input to the speech recognition engine. The `AudioLevelUpdated`, `AudioSignalProblemOccurred`, `AudioStateChanged` events are raised in response to changes in the incoming signal. The `SpeechDetected` event is raised when the speech recognition engine identifies incoming audio as speech. The speech recognition engine raises the `SpeechRecognized` event when it matches speech input to one of its loaded grammars, and raises the `SpeechRecognitionRejected` when speech input does not match any of its loaded grammars.  
+  
+ Other types of events include the `LoadGrammarCompleted` event which a speech recognition engine raises when it has loaded a grammar. The <xref:System.Speech.Recognition.SpeechRecognizer.StateChanged> is exclusive to the <xref:System.Speech.Recognition.SpeechRecognizer> class, which raises the event when the state of Windows Speech Recognition changes.  
+  
+ You can register to be notified for events that the speech recognition engine raises and create handlers using the `EventsArgs` classes associated with each of these events to program your application's behavior when an event is raised.  
+  
+ See [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

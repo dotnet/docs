@@ -1,0 +1,52 @@
+<Type Name="XamlBuildTypeInspectionExtensionContext" FullName="Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext">
+  <TypeSignature Language="C#" Value="public sealed class XamlBuildTypeInspectionExtensionContext : Microsoft.Build.Tasks.Xaml.BuildExtensionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XamlBuildTypeInspectionExtensionContext extends Microsoft.Build.Tasks.Xaml.BuildExtensionContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext" />
+  <AssemblyInfo>
+    <AssemblyName>XamlBuildTask</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.Xaml.BuildExtensionContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies information about the XAML build type inspection context.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlBuildTypeInspectionExtensionContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkupItemsByTypeName">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.Build.Framework.ITaskItem&gt; MarkupItemsByTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Build.Framework.ITaskItem&gt; MarkupItemsByTypeName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlBuildTypeInspectionExtensionContext.MarkupItemsByTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Build.Framework.ITaskItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of markup items for XAML build type inspection context by type name.</summary>
+        <value>The collection of markup items.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

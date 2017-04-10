@@ -1,0 +1,66 @@
+<Type Name="StructFormat" FullName="System.Windows.Forms.StructFormat">
+  <TypeSignature Language="C#" Value="public enum StructFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StructFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StructFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>This enumeration is not used.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ansi">
+      <MemberSignature Language="C#" Value="Ansi" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StructFormat Ansi = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StructFormat.Ansi" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StructFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StructFormat Auto = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StructFormat.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StructFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unicode">
+      <MemberSignature Language="C#" Value="Unicode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StructFormat Unicode = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StructFormat.Unicode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.StructFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value is not used.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

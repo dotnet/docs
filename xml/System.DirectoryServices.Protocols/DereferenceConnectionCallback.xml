@@ -1,0 +1,25 @@
+<Type Name="DereferenceConnectionCallback" FullName="System.DirectoryServices.Protocols.DereferenceConnectionCallback">
+  <TypeSignature Language="C#" Value="public delegate void DereferenceConnectionCallback(LdapConnection primaryConnection, LdapConnection connectionToDereference);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DereferenceConnectionCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DereferenceConnectionCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="primaryConnection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="connectionToDereference" Type="System.DirectoryServices.Protocols.LdapConnection" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="primaryConnection">An <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the primary connection.</param>
+    <param name="connectionToDereference">An <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection to dereference.</param>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DereferenceConnectionCallback" /> delegate dereferences a connection that is no longer required. The connection was probably established through a successful call to the <see cref="T:System.DirectoryServices.Protocols.QueryForConnectionCallback" /> or <see cref="T:System.DirectoryServices.Protocols.NotifyOfNewConnectionCallback" /> delegate.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

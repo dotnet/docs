@@ -1,0 +1,188 @@
+<Type Name="IFragmentCapableXmlDictionaryWriter" FullName="System.Xml.IFragmentCapableXmlDictionaryWriter">
+  <TypeSignature Language="C#" Value="public interface IFragmentCapableXmlDictionaryWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFragmentCapableXmlDictionaryWriter" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.IFragmentCapableXmlDictionaryWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Contains properties and methods that when implemented by a <see cref="T:System.Xml.XmlDictionaryWriter" />, allows processing of XML fragments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class defines the properties and methods related to the capability of an <xref:System.Xml.XmlDictionaryWriter> to redirect part of its output (a 'fragment') to a different stream than the stream it was created with and to directly insert such a fragment captured by redirection back into the main stream of the same writer at a later point.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanFragment">
+      <MemberSignature Language="C#" Value="public bool CanFragment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanFragment" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.IFragmentCapableXmlDictionaryWriter.CanFragment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Xml.XmlDictionaryWriter" /> can process XML fragments.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Xml.XmlDictionaryWriter" /> can process XML fragments; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns t`r`ue if the writer that implements this interface can generate and accept XML fragments.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFragment">
+      <MemberSignature Language="C#" Value="public void EndFragment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndFragment() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.IFragmentCapableXmlDictionaryWriter.EndFragment" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ends the processing of an XML fragment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Stops redirecting output to the stream supplied by the matching `StartFragment` call. After this call, the XML writing output goes to the stream originally used by the writer before the `StartFragment` call.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFragment">
+      <MemberSignature Language="C#" Value="public void StartFragment (System.IO.Stream stream, bool generateSelfContainedTextFragment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartFragment(class System.IO.Stream stream, bool generateSelfContainedTextFragment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.IFragmentCapableXmlDictionaryWriter.StartFragment(System.IO.Stream,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="generateSelfContainedTextFragment" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="generateSelfContainedTextFragment">If <see langword="true" />, any namespaces declared outside the fragment is declared again if used inside of it; if <see langword="false" /> the namespaces are not declared again.</param>
+        <summary>Starts the processing of an XML fragment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Temporarily starts redirecting the writing of the XML output to the supplied stream until `EndFragment` is called. If `generateSelfContainedTextFragment` is `true`, then the redirected XML output is always text XML and is self-contained in terms of its namespace context. `StartFragment`() calls cannot be nested.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteFragment">
+      <MemberSignature Language="C#" Value="public void WriteFragment (byte[] buffer, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteFragment(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.IFragmentCapableXmlDictionaryWriter.WriteFragment(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to write to.</param>
+        <param name="offset">The starting position from which to write in <c>buffer</c>.</param>
+        <param name="count">The number of bytes to be written to the <c>buffer</c>.</param>
+        <summary>Writes an XML fragment to the underlying stream of the writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Writes a fragment captured between `StartFragment` and `EndFragment` and calls back into the XmlDictionaryWriter's main stream. The fragment written is `count` bytes starting at the index `offset` from the supplied `buffer`. The behavior is undefined if the supplied fragment was not captured using this writer instance.  
+  
+   
+  
+## Examples  
+  
+```  
+MemoryStream stream = new MemoryStream();  
+MemoryStream fragmentStream = new MemoryStream();  
+XmlDictionaryWriter writer = XmlDictionaryWriter.CreateTextWriter(stream);  
+IXmlFragmentCapableXmlDictionaryWriter fragmentWriter = writer as IXmlFragmentCapableXmlDictionaryWriter;  
+if (fragmentWriter == null || !fragmentWriter.CanFragment)  
+{  
+Console.WriteLine("This writer doesn't support fragments");  
+return;  
+}  
+writer.WriteStartElement("Root");  
+fragmentWriter.StartFragment(fragmentStream, false);  
+writer.WriteStartElement("Body");  
+writer.WriteString("This is my body");  
+writer.WriteEndElement();  
+fragmentWriter.EndFragment();  
+writer.WriteStartElement("CharsInTheBody");  
+writer.WriteValue(fragmentStream.Length);  
+writer.WriteEndElement();  
+fragmentWriter.WriteFragment(fragmentStream.GetBuffer(), 0, (int)fragmentStream.Length);  
+writer.WriteEndElement(); // Root  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

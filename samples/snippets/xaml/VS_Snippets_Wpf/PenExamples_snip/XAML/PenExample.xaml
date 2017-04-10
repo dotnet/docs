@@ -1,0 +1,47 @@
+<!-- <SnippetPenExampleWholePage>-->
+<Page 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Background="White">
+
+  <Image Stretch="None" Margin="20">
+    <Image.Source>
+      <DrawingImage>
+        <DrawingImage.Drawing>
+          <DrawingGroup>
+            <GeometryDrawing>
+              <GeometryDrawing.Geometry>
+                <GeometryGroup>
+                  <RectangleGeometry Rect="0,0,50,50" />
+                  <EllipseGeometry Center="75,75" RadiusX="50" RadiusY="50" />
+                  <LineGeometry StartPoint="75,75" EndPoint="75,0" />
+                </GeometryGroup>
+              </GeometryDrawing.Geometry>
+              <GeometryDrawing.Pen>
+                <Pen 
+                  Thickness="10" 
+                  LineJoin="Round" 
+                  EndLineCap="Triangle"
+                  StartLineCap="Round">
+                  <Pen.Brush>
+                    <LinearGradientBrush>
+                      <GradientStop Offset="0.0" Color="#CCCCFF" />
+                      <GradientStop Offset="1.0" Color="Purple" />
+                    </LinearGradientBrush>
+                  </Pen.Brush>
+                </Pen>
+              </GeometryDrawing.Pen>
+            </GeometryDrawing>
+          </DrawingGroup>
+        </DrawingImage.Drawing>
+      </DrawingImage>
+    </Image.Source>
+  </Image>
+
+
+
+
+
+
+</Page>
+<!-- </SnippetPenExampleWholePage>-->

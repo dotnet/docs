@@ -1,0 +1,359 @@
+<Type Name="RC2CryptoServiceProvider" FullName="System.Security.Cryptography.RC2CryptoServiceProvider">
+  <TypeSignature Language="C#" Value="public sealed class RC2CryptoServiceProvider : System.Security.Cryptography.RC2" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RC2CryptoServiceProvider extends System.Security.Cryptography.RC2" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RC2CryptoServiceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.RC2</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a wrapper object to access the cryptographic service provider (CSP) implementation of the <see cref="T:System.Security.Cryptography.RC2" /> algorithm. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RC2CryptoServiceProvider> implementation supports key lengths from 40 bits to 128 bits in increments of 8 bits.  
+  
+ The <xref:System.Security.Cryptography.RC2CryptoServiceProvider> object is a block cipher that encrypts and decrypts data in blocks of 8 bytes.  This class pads the final block of data if it is less than 8 bytes.  As a result of this padding, the length of encrypted data could be greater than the original plaintext.  
+  
+ Note that the <xref:System.Security.Cryptography.RC2CryptoServiceProvider> object does not use salt.  
+  
+> [!NOTE]
+>  A newer symmetric encryption algorithm, Advanced Encryption Standard (AES), is available. Consider using the <xref:System.Security.Cryptography.Aes> algorithm and its derived classes instead of the <xref:System.Security.Cryptography.RC2CryptoServiceProvider> class. Use <xref:System.Security.Cryptography.RC2CryptoServiceProvider> only for compatibility with legacy applications and data.  
+  
+   
+  
+## Examples  
+ The following code example encrypts and then decrypts a string.  
+  
+ [!code-csharp[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/CS/class1.cs#1)]
+ [!code-vb[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RC2CryptoServiceProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RC2CryptoServiceProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example encrypts and then decrypts a string.  
+  
+ [!code-csharp[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/CS/class1.cs#1)]
+ [!code-vb[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The cryptographic service provider (CSP) cannot be acquired.</exception>
+        <exception cref="T:System.InvalidOperationException">A non-compliant FIPS algorithm was found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDecryptor">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateDecryptor (byte[] rgbKey, byte[] rgbIV);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.CreateDecryptor(System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbKey" Type="System.Byte[]" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
+        <param name="rgbIV">The initialization vector to use for the symmetric algorithm.</param>
+        <summary>Creates a symmetric <see cref="T:System.Security.Cryptography.RC2" /> decryptor object with the specified key (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />)and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric <see cref="T:System.Security.Cryptography.RC2" /> decryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to decrypt an encrypted message created using the <xref:System.Security.Cryptography.RC2CryptoServiceProvider.CreateEncryptor%2A> overload with the same parameters.  
+  
+   
+  
+## Examples  
+ The following code example encrypts and then decrypts a string.  
+  
+ [!code-csharp[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/CS/class1.cs#1)]
+ [!code-vb[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An <see cref="F:System.Security.Cryptography.CipherMode.OFB" /> cipher mode was used.  
+  
+ -or-  
+  
+ A <see cref="F:System.Security.Cryptography.CipherMode.CFB" /> cipher mode with a feedback size other than 8 bits was used.  
+  
+ -or-  
+  
+ An invalid key size was used.  
+  
+ -or-  
+  
+ The algorithm key size was not available.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEncryptor">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform CreateEncryptor (byte[] rgbKey, byte[] rgbIV);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] rgbKey, unsigned int8[] rgbIV) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ICryptoTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbKey" Type="System.Byte[]" />
+        <Parameter Name="rgbIV" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="rgbKey">The secret key to use for the symmetric algorithm.</param>
+        <param name="rgbIV">The initialization vector to use for the symmetric algorithm.</param>
+        <summary>Creates a symmetric <see cref="T:System.Security.Cryptography.RC2" /> encryptor object with the specified key (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />) and initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />).</summary>
+        <returns>A symmetric <see cref="T:System.Security.Cryptography.RC2" /> encryptor object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.RC2CryptoServiceProvider.CreateDecryptor%2A> overload with the same parameters to decrypt the result of this method.  
+  
+   
+  
+## Examples  
+ The following code example encrypts and then decrypts a string.  
+  
+ [!code-csharp[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/CS/class1.cs#1)]
+ [!code-vb[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An <see cref="F:System.Security.Cryptography.CipherMode.OFB" /> cipher mode was used.  
+  
+ -or-  
+  
+ A <see cref="F:System.Security.Cryptography.CipherMode.CFB" /> cipher mode with a feedback size other than 8 bits was used.  
+  
+ -or-  
+  
+ An invalid key size was used.  
+  
+ -or-  
+  
+ The algorithm key size was not available.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EffectiveKeySize">
+      <MemberSignature Language="C#" Value="public override int EffectiveKeySize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EffectiveKeySize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2CryptoServiceProvider.EffectiveKeySize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the effective size, in bits, of the secret key used by the <see cref="T:System.Security.Cryptography.RC2" /> algorithm.</summary>
+        <value>The effective key size, in bits, used by the <see cref="T:System.Security.Cryptography.RC2" /> algorithm.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The <see cref="P:System.Security.Cryptography.RC2CryptoServiceProvider.EffectiveKeySize" /> property was set to a value other than the <see cref="F:System.Security.Cryptography.SymmetricAlgorithm.KeySizeValue" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateIV">
+      <MemberSignature Language="C#" Value="public override void GenerateIV ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateIV() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.GenerateIV" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a random initialization vector (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.IV" />) to use for the algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to generate a random <xref:System.Security.Cryptography.SymmetricAlgorithm.IV%2A> when none is specified.  
+  
+   
+  
+## Examples  
+ The following code example encrypts and then decrypts a string.  
+  
+ [!code-csharp[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/CS/class1.cs#1)]
+ [!code-vb[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateKey">
+      <MemberSignature Language="C#" Value="public override void GenerateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RC2CryptoServiceProvider.GenerateKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a random key (<see cref="P:System.Security.Cryptography.SymmetricAlgorithm.Key" />) to be used for the algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to generate a random key when none is specified.  
+  
+ The <xref:System.Security.Cryptography.RC2CryptoServiceProvider> implementation supports key lengths from 40 bits to 128 bits in increments of 8 bits.  
+  
+   
+  
+## Examples  
+ The following code example encrypts and then decrypts a string.  
+  
+ [!code-csharp[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/CS/class1.cs#1)]
+ [!code-vb[System.Security.Cryptography.RC2CryptoServiceProvider Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.RC2CryptoServiceProvider Example/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSalt">
+      <MemberSignature Language="C#" Value="public bool UseSalt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSalt" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RC2CryptoServiceProvider.UseSalt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether to create a key with an 11-byte-long, zero-value salt.</summary>
+        <value>
+          <see langword="true" /> if the key should be created with an 11-byte-long, zero-value salt; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RC2CryptoServiceProvider.UseSalt%2A> property allows you to interoperate with an existing application that uses an 11-byte-long, zero-value salt.  For most scenarios, you should not use a salt with an <xref:System.Security.Cryptography.RC2CryptoServiceProvider> key.  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Security.Cryptography.RC2CryptoServiceProvider.UseSalt%2A> property to `true`, and then encrypts and decrypts a value.  
+  
+ [!code-cpp[Cryptography.RC2CryptoServiceProvider#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.RC2CryptoServiceProvider/cpp/example.cpp#1)]
+ [!code-csharp[Cryptography.RC2CryptoServiceProvider#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.RC2CryptoServiceProvider/CS/example.cs#1)]
+ [!code-vb[Cryptography.RC2CryptoServiceProvider#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.RC2CryptoServiceProvider/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

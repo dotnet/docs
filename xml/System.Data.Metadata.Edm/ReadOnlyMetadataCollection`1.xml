@@ -1,0 +1,188 @@
+<Type Name="ReadOnlyMetadataCollection&lt;T&gt;" FullName="System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class ReadOnlyMetadataCollection&lt;T&gt; : System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt; where T : MetadataItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReadOnlyMetadataCollection`1&lt;(class System.Data.Metadata.Edm.MetadataItem) T&gt; extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <BaseTypeName>System.Data.Metadata.Edm.MetadataItem</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of elements in the collection.</typeparam>
+    <summary>Represents a collection of members in the [!INCLUDE[vstecado](~/includes/vstecado-md.md)] metadata hierarchy by providing a read-only collection with advanced lookup capabilities. This class is derived from the <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public virtual bool Contains (string identity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The identity of the item.</param>
+        <summary>Determines whether the collection contains an item with the specified identity.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the item to be searched for; otherwise, <see langword="false" />. The default is false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;T&gt;.Enumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;T&gt;+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that can iterate through this collection.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Enumerator" /> that can be used to iterate through this <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public virtual T GetValue (string identity, bool ignoreCase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T GetValue(string identity, bool ignoreCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.GetValue(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The identity of the item to be searched for.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <summary>Retrieves an item from this collection by using the specified identity.</summary>
+        <returns>An item from this collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public virtual int IndexOf (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.IndexOf(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">A value to seek.</param>
+        <summary>Returns the index of the specified value in this collection.</summary>
+        <returns>The index of the specified value in this collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this collection is read-only.</summary>
+        <value>
+          <see langword="true" /> if this collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual T this[string identity] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The identity of the item to be searched for.</param>
+        <summary>Gets an item from this collection by using the specified identity.</summary>
+        <value>An item from this collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public virtual bool TryGetValue (string identity, bool ignoreCase, out T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string identity, bool ignoreCase, !T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.TryGetValue(System.String,System.Boolean,`0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="item" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The identity of the item to be searched for.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to perform the case-insensitive search; otherwise, <see langword="false" />.</param>
+        <param name="item">When this method returns, this output parameter contains an item from the collection. If there is no matched item, this output parameter contains null.</param>
+        <summary>Retrieves an item from this collection by using the specified identity.</summary>
+        <returns>
+          <see langword="true" /> if there is an item that matches the search criteria; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

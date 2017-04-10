@@ -1,0 +1,93 @@
+<Type Name="ResourceExpressionFields" FullName="System.Web.Compilation.ResourceExpressionFields">
+  <TypeSignature Language="C#" Value="public sealed class ResourceExpressionFields" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceExpressionFields extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ResourceExpressionFields" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the fields from a parsed resource expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a page is parsed, the values contained in a resource expression are parsed and stored in an instance of the <xref:System.Web.Compilation.ResourceExpressionFields> class. This <xref:System.Web.Compilation.ResourceExpressionFields> object contains two fields, <xref:System.Web.Compilation.ResourceExpressionFields.ClassKey%2A> and <xref:System.Web.Compilation.ResourceExpressionFields.ResourceKey%2A>. These fields are drawn from the values of a resource expression in either the explicit (`<%$ Resources: ClassKey, ResourceKey %>`) or implicit (`meta:resourcekey="ResourceKey"`) form.  
+  
+ The <xref:System.Web.Compilation.ResourceExpressionFields.ClassKey%2A> property identifies the class name of a resource that is mapped to a resource file. For example, to reference a resource file named Financial.resx, or a localized version such as Financial.en-GB.resx, the resource expression would appear as `<%$ Resources: Financial, ResourceKey %>`. After parsing, the <xref:System.Web.Compilation.ResourceExpressionFields.ClassKey%2A> property would return "Financial" as its value.  
+  
+ The <xref:System.Web.Compilation.ResourceExpressionFields.ResourceKey%2A> property identifies the particular key/value pair to be retrieved from the file. If the Financial.resx file contains a key called `Currency`, that value could be specified with the resource expression `<%$ Resources: Financial, Currency %>`. After parsing, the <xref:System.Web.Compilation.ResourceExpressionFields.ResourceKey%2A> property would return "Currency" as its value.  
+  
+ The resource expression is parsed through the <xref:System.Web.Compilation.ResourceExpressionBuilder.ParseExpression%2A> method.  
+  
+> [!CAUTION]
+>  Sensitive information should not be stored in a resource file.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClassKey">
+      <MemberSignature Language="C#" Value="public string ClassKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClassKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the class key for a parsed resource expression.</summary>
+        <value>A <see cref="T:System.String" /> containing the class key, or <see cref="F:System.String.Empty" /> if the class key has not been set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the class key for a parsed resource expression. The class key represents the name of the resource file, and is the value specified before the comma (,) in an expression of the form `<%$ Resources: [Namespace.]ClassKey, ResourceKey $>`. A namespace value for the resource class is optional. When a namespace is provided, the namespace and the class key are returned in the <xref:System.Web.Compilation.ResourceExpressionFields.ClassKey%2A> property. The class key cannot contain spaces or double-byte character sets (DBCS).  
+  
+ To reference a resource file named Financial.resx or a localized version such as Financial.en-GB.resx, you would include the resource expression <`%$ Resources: Financial, ResourceKey %>`. After parsing, the <xref:System.Web.Compilation.ResourceExpressionFields.ClassKey%2A> property would return "Financial" as its value.  
+  
+> [!CAUTION]
+>  Sensitive information should not be stored in a resource file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceKey">
+      <MemberSignature Language="C#" Value="public string ResourceKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResourceKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the resource key for a parsed resource expression.</summary>
+        <value>A <see cref="T:System.String" /> containing the resource key, or <see cref="F:System.String.Empty" /> if the resource key has not been set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the resource key for a parsed resource expression. The resource key is the value specified after the comma (,) in an expression of the form `<%$ Resources: ClassKey, ResourceKey %>`. The <xref:System.Web.Compilation.ResourceExpressionFields.ResourceKey%2A> property identifies a particular key/value pair within the resource file mapped to the class key. For example, if a file named Financial.resx contains a key called `Currency`, that value could be specified with the resource expression `<%$ Resources: Financial, Currency %>`. After parsing, the <xref:System.Web.Compilation.ResourceExpressionFields.ResourceKey%2A> property would return "Currency" as its value.  
+  
+> [!CAUTION]
+>  Sensitive information should not be stored in a resource file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

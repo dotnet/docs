@@ -1,0 +1,134 @@
+<Type Name="CodeArrayIndexerExpression" FullName="System.CodeDom.CodeArrayIndexerExpression">
+  <TypeSignature Language="C#" Value="public class CodeArrayIndexerExpression : System.CodeDom.CodeExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeArrayIndexerExpression extends System.CodeDom.CodeExpression" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArrayIndexerExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a reference to an index of an array.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeArrayIndexerExpression> can be used to represent a reference to an index of an array of one or more dimensions. Use <xref:System.CodeDom.CodeIndexerExpression> for representing a reference to an index of a code (non-array) indexer. The <xref:System.CodeDom.CodeArrayIndexerExpression.TargetObject%2A> property indicates the indexer object. The <xref:System.CodeDom.CodeArrayIndexerExpression.Indices%2A> property indicates either a single index within the target array, or a set of indexes that together specify a specific intersection of indexes across the dimensions of the array.  
+  
+   
+  
+## Examples  
+ The following code creates a <xref:System.CodeDom.CodeArrayIndexerExpression> that references index 5 of an array of integers named `x` :  
+  
+ [!code-cpp[CodeArrayIndexerExpressionSnippet#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeArrayIndexerExpressionSnippet/CPP/codearrayindexerexpressionsnippet.cpp#1)]
+ [!code-csharp[CodeArrayIndexerExpressionSnippet#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeArrayIndexerExpressionSnippet/CS/codearrayindexerexpressionsnippet.cs#1)]
+ [!code-vb[CodeArrayIndexerExpressionSnippet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeArrayIndexerExpressionSnippet/VB/codearrayindexerexpressionsnippet.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayIndexerExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayIndexerExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayIndexerExpression" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayIndexerExpression (System.CodeDom.CodeExpression targetObject, System.CodeDom.CodeExpression[] indices);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, class System.CodeDom.CodeExpression[] indices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayIndexerExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetObject" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="indices" Type="System.CodeDom.CodeExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the array the indexer targets.</param>
+        <param name="indices">The index or indexes to reference.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayIndexerExpression" /> class using the specified target object and indexes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indices">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpressionCollection Indices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpressionCollection Indices" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayIndexerExpression.Indices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpressionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index or indexes of the indexer expression.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that indicates the index or indexes of the indexer expression.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.CodeDom.CodeExpressionCollection> can contain a <xref:System.CodeDom.CodeExpression> that specifies a single index within the target array, or multiple <xref:System.CodeDom.CodeExpression> objects that together specify a specific intersection of indexes across the dimensions of the array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetObject">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression TargetObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression TargetObject" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayIndexerExpression.TargetObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target object of the array indexer.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that represents the array being indexed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property typically contains either a <xref:System.CodeDom.CodeVariableReferenceExpression>, a <xref:System.CodeDom.CodePropertyReferenceExpression>, or a <xref:System.CodeDom.CodeFieldReferenceExpression>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

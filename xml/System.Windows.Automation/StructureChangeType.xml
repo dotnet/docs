@@ -1,0 +1,122 @@
+<Type Name="StructureChangeType" FullName="System.Windows.Automation.StructureChangeType">
+  <TypeSignature Language="C#" Value="public enum StructureChangeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StructureChangeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.StructureChangeType" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("e4cfef41-071d-472c-a65c-c14f59ea81eb")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify changes in the structure of the [!INCLUDE[TLA#tla_uiautomation](~/includes/tlasharptla-uiautomation-md.md)] element tree.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChildAdded">
+      <MemberSignature Language="C#" Value="ChildAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildAdded = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildAdded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A child element was added to the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element tree.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildRemoved">
+      <MemberSignature Language="C#" Value="ChildRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildRemoved = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildRemoved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A child element was removed from the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element tree.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenBulkAdded">
+      <MemberSignature Language="C#" Value="ChildrenBulkAdded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildrenBulkAdded = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildrenBulkAdded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Child elements were added to the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element tree.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenBulkRemoved">
+      <MemberSignature Language="C#" Value="ChildrenBulkRemoved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildrenBulkRemoved = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildrenBulkRemoved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Child elements were removed from the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element tree.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenInvalidated">
+      <MemberSignature Language="C#" Value="ChildrenInvalidated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildrenInvalidated = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildrenInvalidated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Child elements were invalidated in the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element tree. This might mean that one or more children were added or removed, depending on the UI Automation providers implementation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildrenReordered">
+      <MemberSignature Language="C#" Value="ChildrenReordered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.StructureChangeType ChildrenReordered = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.StructureChangeType.ChildrenReordered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.StructureChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The order of the child elements in the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element tree changed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

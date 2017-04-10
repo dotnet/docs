@@ -1,0 +1,1073 @@
+<Type Name="AdRotator" FullName="System.Web.UI.WebControls.AdRotator">
+  <TypeSignature Language="C#" Value="public class AdRotator : System.Web.UI.WebControls.DataBoundControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdRotator extends System.Web.UI.WebControls.DataBoundControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AdRotator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.DataBoundControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("AdCreated")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("AdvertisementFile")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.AdRotatorDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ToolboxData("&lt;{0}:AdRotator runat="server"&gt;&lt;/{0}:AdRotator&gt;")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays an advertisement banner on a Web page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#Introduction)  
+  
+-   [XML Advertisement File Format](#XMLAdvertisementFileFormat)  
+  
+-   [Declarative Syntax](#DeclarativeSyntax)  
+  
+<a name="Introduction"></a>   
+## Introduction  
+ Use the <xref:System.Web.UI.WebControls.AdRotator> control to display a randomly selected advertisement banner on the Web page. The displayed advertisement changes whenever the page refreshes.  
+  
+ Advertisement information is stored in a separate XML file. The XML file allows you to maintain a list of advertisements and their associated attributes. Attributes include the path to an image to display, the URL to link to when the control is clicked, the alternate text to display when the image is not available, a keyword, and the frequency of the advertisement. Information in this file is not validated by the <xref:System.Web.UI.WebControls.AdRotator> control. To prevent ads from executing malicious scripts, you should always check the data before releasing it, or accept ad information only from trusted sources.  
+  
+ To secure your advertisement file from unauthorized Internet access, do one or more of the following:  
+  
+-   Store it in the App_Data directory, which is configured to deny Internet access for files of any type.  
+  
+-   Rename the file with an extension that is not .xml, and map the extension to the `HttpForbiddenHandler` in Web.config. For more information, see the  section in your Machine.config file.  
+  
+ As an alternative to an XML file as the source of data, it is possible to provide advertisement information through a callback event. This event can also be used in combination with the XML file to extend the behavior of the <xref:System.Web.UI.WebControls.AdRotator> control, such as redirecting to another page. See the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property for additional information on the file format.  
+  
+> [!NOTE]
+>  When page caching is enabled, an <xref:System.Web.UI.WebControls.AdRotator> control is not cached. A new advertisement is selected whenever the Web page refreshes. A new advertisement is not selected, however, if you provide an event handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event.  
+  
+<a name="XMLAdvertisementFileFormat"></a>   
+## XML Advertisement File Format  
+ The <xref:System.Web.UI.WebControls.AdRotator> control uses a separate XML advertisement file to store the advertisement information, such as the location of the image to display and the URL of the page to link to. The <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property of the <xref:System.Web.UI.WebControls.AdRotator> control specifies the path to this file.  
+  
+ When creating the advertisement file, opening and closing `<Advertisements>` tags mark the beginning and the end of the file, respectively. Opening and closing `<Ad>` tags delimit each advertisement. All advertisements are nested between the opening and closing `<Advertisements>` tags. If the file contains multiple `<Advertisements>` tags, only the first set of `<Advertisements>` tags in the file will be parsed by the <xref:System.Web.UI.WebControls.AdRotator> control. All other `<Advertisements>` tags will be ignored.  
+  
+ The data elements for each advertisement are nested between the opening and closing `<Ad>` tags. Although certain data elements are predefined (such as <xref:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl%2A> and <xref:System.Web.UI.WebControls.AdCreatedEventArgs.NavigateUrl%2A>), you can place custom elements between the `<Ad>` tags. These elements will be read by the <xref:System.Web.UI.WebControls.AdRotator> control when it parses the file. The information is then passed to the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event in the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A> dictionary property.  
+  
+ The following table lists the data elements that are predefined for the XML advertisement file.  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|`ImageUrl`|The absolute or relative URL to an image file (optional).|  
+|`NavigateUrl`|The URL of a page to link to if the user clicks the ad (optional). **Note:**  If this element is not set, the `HRef` property is not rendered on the anchor tag.|  
+|`Height`|The height of the image, in pixels (optional).|  
+|`Width`|The width of the image, in pixels (optional).|  
+|`AlternateText`|The text display in place of the image when the image specified by the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.ImageUrl%2A> property is not available (optional).<br /><br /> In some browsers, this text also appears as a `ToolTip` for the advertisement.|  
+|`Keyword`|A category for the advertisement (for example, "computers") that you can filter by (optional).|  
+|`Impressions`|A number that indicates the importance of the ad in the schedule of rotation relative to the other ads in the file (optional).<br /><br /> The larger the number, the more often the ad is displayed. The total of all `<Impressions>` values in the XML file cannot exceed 2,047,999,999*.* If it does, the <xref:System.Web.UI.WebControls.AdRotator> control throws a run-time exception.|  
+  
+ The following example shows the format for the XML advertisement file.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>  
+      URL of image to display for Advertisement #1  
+    </ImageUrl>  
+    <NavigateUrl>  
+      URL of page to link to for Advertisement #1  
+    </NavigateUrl>  
+    <AlternateText>  
+      Text to show as a ToolTip for Advertisement #1  
+    </AlternateText>  
+    <Keyword>  
+      Keyword used to filter for Advertisement #1  
+    </Keyword>  
+    <Impressions>  
+       Relative importance of Advertisement #1  
+    </Impressions>  
+    <CustomInformation>  
+      Custom Data about Advertisement #1  
+    </CustomInformation>  
+  </Ad>  
+</Advertisements>  
+```  
+  
+<a name="DeclarativeSyntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:AdRotator  
+    AccessKey="string"  
+    AdvertisementFile="uri"  
+    AlternateTextField="string"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CssClass="string"  
+    DataMember="string"  
+    DataSource="string"  
+    DataSourceID="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    ID="string"  
+    ImageUrlField="string"  
+    KeywordFilter="string"  
+    NavigateUrlField="string"  
+    OnAdCreated="AdCreated event handler"  
+    OnDataBinding="DataBinding event handler"  
+    OnDataBound="DataBound event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    Target="string|_blank|_parent|_search|_self|_top"  
+    ToolTip="string"  
+    Visible="True|False"  
+    Width="size"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdRotator> control to display an advertisement banner on a Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[classic adrotator.advertisementfile example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[classic adrotator.advertisementfile example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example demonstrates the file format for an XML file that contains advertisement information for the previous example. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <height>60</height>  
+    <width>190</width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <height>90</height>  
+    <width>90</width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+  </Ad>  
+</Advertisements>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdRotator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.AdRotator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.AdRotator> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.AdRotator> class. The new <xref:System.Web.UI.WebControls.AdRotator> control is then added to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of a <xref:System.Web.UI.WebControls.PlaceHolder> control and displayed on the Web Forms page.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[AdRotatorCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdRotatorCtor/CS/adrotatorctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[AdRotatorCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdRotatorCtor/VB/adrotatorctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdCreated">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.AdCreatedEventHandler AdCreated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.AdCreatedEventHandler AdCreated" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.AdRotator.AdCreated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AdCreatedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs once per round trip to the server after the creation of the control, but before the page is rendered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised once per round trip to the server after the creation of the control, but before the page is rendered. When the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property is set, this event occurs after the advertisement has been selected from the file.  
+  
+ You can control how the <xref:System.Web.UI.WebControls.AdRotator> control is displayed by modifying the arguments passed to the event handler of the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. If the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property is not set, this allows you to specify the advertisement information directly, without using a separate advertisement file. If the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property is set, this allows you to extend the behavior of the <xref:System.Web.UI.WebControls.AdRotator> control, such as redirecting to another page.  
+  
+> [!NOTE]
+>  When page caching is enabled, an <xref:System.Web.UI.WebControls.AdRotator> control is not cached. A new advertisement is selected whenever the Web page refreshes. A new advertisement is not selected, however, if you provide an event handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. It gets the URL associated with the advertisement, when the <xref:System.Web.UI.WebControls.AdRotator> control is created, and displays it below the control.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
+</Advertisements>  
+```  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvertisementFile">
+      <MemberSignature Language="C#" Value="public string AdvertisementFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AdvertisementFile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.XmlUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to an XML file that contains advertisement information.</summary>
+        <value>The location of an XML file containing advertisement information. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property to specify the location of an XML file that contains advertisement information. The XML file must reside within the same Web site. For deployment and security purposes, it is strongly recommended that you place the file in the same Web application. It is only possible to access an XML file that is located in a different application on the same site if the application has sufficient trust.  
+  
+ You can set this property to either an absolute path or a path relative to the XML file. Use a relative path to simplify deployment. If you use a relative path, that path is relative to the location of the page or user control that contains the <xref:System.Web.UI.WebControls.AdRotator> control.  
+  
+ The <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property is optional. An advertisement can also be programmatically set in the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event.  
+  
+ The XML file contains the following predefined attributes. Only the `ImageUrl` attribute is required.  
+  
+|Attribute|Description|  
+|---------------|-----------------|  
+|`ImageUrl`|The URL of the image to display.|  
+|`Height`|The height of the image, in pixels (optional).|  
+|`Width`|The width of the image, in pixels (optional).|  
+|`NavigateUrl`|The URL of the page to navigate to when the <xref:System.Web.UI.WebControls.AdRotator> control is clicked.|  
+|`AlternateText`|The text to display if the image is unavailable. On some browsers, this text is displayed as a ToolTip.|  
+|`Keyword`|The category for the advertisement. This is used by the <xref:System.Web.UI.WebControls.AdRotator> control to filter the list of advertisements for a specific category.|  
+|`Impressions`|A value that indicates how often an advertisement is displayed in relation to other advertisements in the XML file.|  
+  
+> [!NOTE]
+>  The `ImageUrl` and `NavigateUrl` attributes can be a full URL, a root-relative path, or a relative path. If you use a root-relative path, the path is relative to the same Web site. If you use a relative path, the path is relative to the directory that contains the advertisement file.  
+  
+ You can also include custom attributes by using custom tags in the XML file. All attribute tags are parsed from the advertisement file, and the values are placed in the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A> dictionary. You can use the <xref:System.Web.UI.WebControls.AdCreatedEventArgs.AdProperties%2A> dictionary to programmatically access your custom attributes.  
+  
+ Information in this file is not validated by the <xref:System.Web.UI.WebControls.AdRotator> control. To prevent ads from executing malicious scripts, you should always check the data before releasing it, or accept ad information only from trusted sources.  
+  
+ To secure your advertisement file from unauthorized Internet access, do one or more of the following:  
+  
+-   Store it in the Data directory, which is configured in Machine.config to deny Internet access for files of any type.  
+  
+-   Rename the file with an extension that is not .xml, and map the extension to `HttpForbiddenHandler` in Web.config. For more information, see the  section in your Machine.config file.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property to specify the location of the XML file that contains advertisement information.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AdRotator.AdvertisementFile Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AdRotator.AdvertisementFile Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example shows the file format of the XML advertisement file.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
+</Advertisements>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternateTextField">
+      <MemberSignature Language="C#" Value="public string AlternateTextField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AlternateTextField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.AlternateTextField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("AlternateText")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a custom data field to use in place of the <see langword="AlternateText" /> attribute for an advertisement.</summary>
+        <value>The name that identifies the field where the alternate text for an advertisement is stored. The default value is "AlternateText."</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> property is used to select a custom data field to use in place of the `AlternateText` attribute for an advertisement. Like `AlternateText`, this custom field is defined in the XML file that contains advertisement information.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> property to specify a custom data field. The <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A>, <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A>, and <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> properties are used to dynamically select a custom field to use in place of the `NavigateUrl`, `ImageUrl`, and `AlternateText` attributes. This example uses a device filter to indicate that custom fields should be used for Wireless Application Protocol (WAP)-enabled devices.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  -->  
+  
+ The following is the sample XML data for the previous example.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/ad1.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
+    <AlternateText>Visual Basic Developer Site</AlternateText>  
+    <Width>140</Width>  
+    <Height>100</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+    <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad2.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
+    <AlternateText>MSDN</AlternateText>  
+    <Width>150</Width>  
+    <Height>150</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+    <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
+</Advertisements>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.FontInfo Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.FontInfo Font" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.FontInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the font properties associated with the advertisement banner control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.FontInfo" /> object that represents the font properties of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageUrlField">
+      <MemberSignature Language="C#" Value="public string ImageUrlField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImageUrlField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.ImageUrlField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("ImageUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a custom data field to use in place of the <see langword="ImageUrl" /> attribute for an advertisement.</summary>
+        <value>The name that identifies the field where the URL for the image displayed for an advertisement is stored. The default value is "ImageUrl."</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A> property is used for selecting a custom data field used in place of the `ImageUrl` attribute for an advertisement. Like `ImageUrl`, this custom field is defined in the XML file that contains advertisement information.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A> property to specify a custom data field. The <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A>, <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A>, and <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> properties are used to dynamically select a custom field to use in place of the `NavigateUrl`, `ImageUrl`, and `AlternateText` attributes. This example uses a device filter to indicate that custom fields should be used for Wireless Application Protocol (WAP)-enabled devices.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  -->  
+  
+ The following is the sample XML data for the previous example.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/ad1.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
+    <AlternateText>Visual Basic Developer Site</AlternateText>  
+    <Width>140</Width>  
+    <Height>100</Height>  
+      <!-- The following custom elements will be used by WAP-enabled  
+        devices. -->  
+     <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad2.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
+    <AlternateText>MSDN</AlternateText>  
+    <Width>150</Width>  
+    <Height>150</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+    <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
+</Advertisements>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeywordFilter">
+      <MemberSignature Language="C#" Value="public string KeywordFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeywordFilter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.KeywordFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a category keyword to filter for specific types of advertisements in the XML advertisement file.</summary>
+        <value>The keyword to filter for specific types of advertisements in the XML advertisement file. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each advertisement in the XML advertisement file can be assigned a category keyword. Use the <xref:System.Web.UI.WebControls.AdRotator.KeywordFilter%2A> property to filter the advertisements for the specified keyword. Only advertisements containing the keyword will be selected for the <xref:System.Web.UI.WebControls.AdRotator> control. The <xref:System.Web.UI.WebControls.AdRotator.KeywordFilter%2A> property can be programmatically set to match the profile of the user.  
+  
+ The <xref:System.Web.UI.WebControls.AdRotator.KeywordFilter%2A> property is a very simple filter that searches for the specified keyword. It is not possible to specify more than one keyword in the <xref:System.Web.UI.WebControls.AdRotator.KeywordFilter%2A> property, nor is it possible to declare multiple keywords in the advertisement file.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property needs to be set for this property to have any effect.  
+  
+> [!CAUTION]
+>  If the specified keyword is not found in the XML advertisement file, no advertisement is displayed in the <xref:System.Web.UI.WebControls.AdRotator> control. Be sure to specify a keyword for this property with at least one match in the advertisement file.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdRotator.KeywordFilter%2A> property to filter for game-related advertisements.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AdRotator.KeywordFilter Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.KeywordFilter Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AdRotator.KeywordFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.KeywordFilter Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to specify a keyword for each advertisement in the XML advertisement file. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Business</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Games</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
+</Advertisements>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigateUrlField">
+      <MemberSignature Language="C#" Value="public string NavigateUrlField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrlField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.NavigateUrlField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("NavigateUrl")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a custom data field to use in place of the <see langword="NavigateUrl" /> attribute for an advertisement.</summary>
+        <value>The name that identifies the field containing the URL for the page to navigate to when the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control is clicked. The default value is "NavigateUrl."</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A> property is used to select a custom data field used in place of the `NavigateUrl` attribute for an advertisement. Like `NavigateUrl`, this custom field is defined in the XML file that contains advertisement information.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A> property to specify a custom data field. The <xref:System.Web.UI.WebControls.AdRotator.NavigateUrlField%2A>, <xref:System.Web.UI.WebControls.AdRotator.ImageUrlField%2A>, and <xref:System.Web.UI.WebControls.AdRotator.AlternateTextField%2A> properties are used to dynamically select a custom field to use in place of the `NavigateUrl`, `ImageUrl`, and `AlternateText` attributes. This example uses a device filter to indicate that custom fields should be used for Wireless Application Protocol (WAP)-enabled devices.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/CS/defaultcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.AdRotator.MobileExamples#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.AdRotator.MobileExamples/VB/defaultvb.aspx#1)]  -->  
+  
+ The following is the sample XML data for the previous example.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/ad1.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>  
+    <AlternateText>Visual Basic Developer Site</AlternateText>  
+    <Width>140</Width>  
+    <Height>100</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+     <WmlImageUrl>~/Images/mobileAd1.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/ad2.gif</ImageUrl>  
+    <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>  
+    <AlternateText>MSDN</AlternateText>  
+    <Width>150</Width>  
+    <Height>150</Height>  
+    <!-- The following custom elements will be used by WAP-enabled  
+      devices. -->  
+    <WmlImageUrl>~/Images/mobileAd2.jpg</WmlImageUrl>  
+    <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>  
+    <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>  
+  </Ad>  
+</Advertisements>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAdCreated">
+      <MemberSignature Language="C#" Value="protected virtual void OnAdCreated (System.Web.UI.WebControls.AdCreatedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAdCreated(class System.Web.UI.WebControls.AdCreatedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.AdCreatedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.Web.UI.WebControls.AdCreatedEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.AdRotator.AdCreated" /> event for the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event is raised on the server after the <xref:System.Web.UI.WebControls.AdRotator> control is created, but before the page is rendered. If the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property is set, the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event is raised after an advertisement has been selected by the <xref:System.Web.UI.WebControls.AdRotator> control.  
+  
+ Raising an event invokes the event-handling method through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. It gets the URL associated with the advertisement when the <xref:System.Web.UI.WebControls.AdRotator> control is created and displays it below the control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AdCreatedEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AdCreatedEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdCreatedEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to format the XML file that contains the advertisement information. For more information on the XML file, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
+</Advertisements>  
+```  
+  
+ <!-- TODO: review snippet reference [!code-csharp[AdCreatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AdCreatedEventHandler/CS/adcreatedeventhandlercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[AdCreatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AdCreatedEventHandler/VB/adcreatedeventhandlervb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event arguments.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains event data.</param>
+        <summary>Gets the advertisement information for rendering by looking up the file data or calling the user event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.AdRotator.OnPreRender%2A> method so that it always displays a border in a custom <xref:System.Web.UI.WebControls.AdRotator> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomADRotatorOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorOnPreRender/CS/customadrotatoronprerendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomADRotatorOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorOnPreRender/VB/customadrotatoronprerendervb.aspx#1)]  -->  
+[!code-csharp[CustomADRotatorOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorOnPreRender/CS/customadrotatoronprerender.cs#2)]
+[!code-vb[CustomADRotatorOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorOnPreRender/VB/customadrotatoronprerender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformDataBinding">
+      <MemberSignature Language="C#" Value="protected override void PerformDataBinding (System.Collections.IEnumerable data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void PerformDataBinding(class System.Collections.IEnumerable data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.PerformDataBinding(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="data">An object that represents the data source; the object must implement the <see cref="T:System.Collections.IEnumerable" /> interface.</param>
+        <summary>Binds the specified data source to the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers.  
+  
+ The <xref:System.Web.UI.WebControls.AdRotator.PerformDataBinding%2A> method is called by the base <xref:System.Web.UI.WebControls.DataBoundControl> class methods to bind the advertisement data from a data source to the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformSelect">
+      <MemberSignature Language="C#" Value="protected override void PerformSelect ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PerformSelect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.PerformSelect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the advertisement data from the associated data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers.  
+  
+ The <xref:System.Web.UI.WebControls.AdRotator.PerformSelect%2A> method for an <xref:System.Web.UI.WebControls.AdRotator> object retrieves the advertisement data from the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A>, and then calls the <xref:System.Web.UI.Control.OnDataBinding%2A> and <xref:System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound%2A> methods.  
+  
+ If the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> property is not set, then the method calls the <xref:System.Web.UI.WebControls.AdRotator.PerformSelect%2A> method of the base <xref:System.Web.UI.WebControls.DataBoundControl> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render on the client.</param>
+        <summary>Displays the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control on the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Displays an image obtained from the advertisement chosen in <xref:System.Web.UI.WebControls.AdRotator.OnPreRender%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.AdRotator.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.AdRotator> displays a random advertisement, from an XML file, with a link and an image.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomADRotatorRender0#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorRender0/CS/customadrotatorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomADRotatorRender0#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorRender0/VB/customadrotatorvb.aspx#1)]  -->  
+[!code-csharp[CustomADRotatorRender0#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomADRotatorRender0/CS/customadrotator.cs#2)]
+[!code-vb[CustomADRotatorRender0#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomADRotatorRender0/VB/customadrotator.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagKey">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.TagKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the HTML tag for the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control.</summary>
+        <value>An <see cref="T:System.Web.UI.HtmlTextWriterTag" /> enumeration value representing the HTML tag for an <see cref="T:System.Web.UI.WebControls.AdRotator" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used primarily by control developers.  
+  
+ Use the <xref:System.Web.UI.WebControls.AdRotator.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value associated with an <xref:System.Web.UI.WebControls.AdRotator> control. This property overrides the base implementation to always return <xref:System.Web.UI.HtmlTextWriterTag?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public string Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Target" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("_top")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.TargetConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the browser window or frame that displays the contents of the Web page linked to when the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control is clicked.</summary>
+        <value>The browser window or frame that displays the contents of the Web page linked to when the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control is clicked. The default value is an empty string (""), which refreshes the window or frame with focus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property to specify the target window or frame that displays the contents of the Web page linked to when the <xref:System.Web.UI.WebControls.AdRotator> control is clicked.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property renders as a `target` attribute . The `target` attribute on anchor (`a`) elements is not allowed in XHTML 1.1. Therefore, if rendered markup must conform to XHTML standards or must conform to accessibility standards, do not set the <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property. For more information, see [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97) and [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13).  
+  
+ The <xref:System.Web.UI.WebControls.AdRotator.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
+  
+|Target value|Description|  
+|------------------|-----------------|  
+|`_blank`|Renders the content in a new window without frames.|  
+|`_parent`|Renders the content in the immediate frameset parent.|  
+|`_search`|Renders the content in the search pane.|  
+|`_self`|Renders the content in the frame with focus.|  
+|`_top`|Renders the content in the full window without frames.|  
+  
+> [!NOTE]
+>  Check your browser documentation to determine whether the `_search` value is supported.  For example, Internet Explorer 5.0 or later supports the `_search` target value.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.AdRotator.Target%2A> property. It displays the contents of the Web page linked to when the <xref:System.Web.UI.WebControls.AdRotator> control is clicked in a new, unframed window.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[classic adrotator.advertisementfile example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[classic adrotator.advertisementfile example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AdRotator.AdvertisementFile Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example demonstrates the file format for an XML file that contains advertisement information. For more information on the file format, see the <xref:System.Web.UI.WebControls.AdRotator.AdvertisementFile%2A> member.  
+  
+```  
+<Advertisements>  
+  <Ad>  
+    <ImageUrl>~/Images/image1.jpg</ImageUrl>  
+    <Height>60</Height>  
+    <Width>190</Width>  
+    <NavigateUrl>http://www.microsoft.com</NavigateUrl>  
+    <AlternateText>Microsoft Main Site</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic1</Keyword>  
+    <Caption>This is the caption for Ad#1</Caption>   
+  </Ad>  
+  <Ad>  
+    <ImageUrl>~/Images/image2.jpg</ImageUrl>  
+    <Height>90</Height>  
+    <Width>90</Width>  
+    <NavigateUrl>http://www.wingtiptoys.com</NavigateUrl>  
+    <AlternateText>Wingtip Toys</AlternateText>  
+    <Impressions>80</Impressions>  
+    <Keyword>Topic2</Keyword>  
+    <Caption>This is the caption for Ad#2</Caption>   
+  </Ad>  
+</Advertisements>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueID">
+      <MemberSignature Language="C#" Value="public override string UniqueID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UniqueID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.UniqueID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique, hierarchically qualified identifier for the <see cref="T:System.Web.UI.WebControls.AdRotator" /> control.</summary>
+        <value>The fully qualified identifier for the server control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property differs from the <xref:System.Web.UI.Control.ID%2A> property in that the <xref:System.Web.UI.WebControls.AdRotator.UniqueID%2A> property includes the identifier for the server control's naming container. This identifier is generated automatically when a page request is processed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

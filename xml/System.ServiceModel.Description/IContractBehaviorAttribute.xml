@@ -1,0 +1,72 @@
+<Type Name="IContractBehaviorAttribute" FullName="System.ServiceModel.Description.IContractBehaviorAttribute">
+  <TypeSignature Language="C#" Value="public interface IContractBehaviorAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContractBehaviorAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IContractBehaviorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the contract for which an attribute that implements the <see cref="T:System.ServiceModel.Description.IContractBehavior" /> interface is active.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IContractBehaviorAttribute> interface on an attribute that is also an <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName> object to enable the use of that contract behavior attribute on a service type but restrict its application to the contract specified in the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A> property.  
+  
+ There is no requirement to implement <xref:System.ServiceModel.Description.IContractBehaviorAttribute> on custom contract behavior attributes, and if the attribute is applied either to a contract interface or to a duplex callback class the value of the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A> property is ignored.  
+  
+ For more information, see <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example assumes a custom <xref:System.ServiceModel.Dispatcher.IInstanceProvider?displayProperty=fullName> implementation called `ObjectProviderBehavior` that provides a "singleton" behavior; it always returns the same service instance and does not recycle it.  
+  
+ To insert the instance provider customization, the example shows how to implement a custom attribute (`SingletonBehaviorAttribute`) that implements <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName> to insert the custom service instance provider. It also implements <xref:System.ServiceModel.Description.IContractBehaviorAttribute>, which binds its application to the `ISampleService` contract.  
+  
+ [!code-csharp[IContractBehavior#2](~/samples/snippets/csharp/VS_Snippets_CFX/icontractbehavior/cs/objectproviderbehavior.cs#2)]
+ [!code-vb[IContractBehavior#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/icontractbehavior/vb/objectproviderbehavior.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TargetContract">
+      <MemberSignature Language="C#" Value="public Type TargetContract { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetContract" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the contract to which the contract behavior is applicable.</summary>
+        <value>The contract to which the contract behavior is applicable.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IContractBehaviorAttribute.TargetContract%2A> property to specify the contract to which the contract behavior is applied when the implementing <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName> attribute is applied to a service class.  
+  
+   
+  
+## Examples  
+ The following code example assumes a custom <xref:System.ServiceModel.Dispatcher.IInstanceProvider?displayProperty=fullName> implementation called `ObjectProviderBehavior` that provides a "singleton" behavior; it always returns the same service instance and does not recycle it.  
+  
+ To insert the instance provider customization, the example shows how to implement a custom attribute (`SingletonBehaviorAttribute`) that implements <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=fullName> to insert the custom service instance provider. It also implements <xref:System.ServiceModel.Description.IContractBehaviorAttribute>, which binds its application to the `ISampleService` contract.  
+  
+ [!code-csharp[IContractBehavior#2](~/samples/snippets/csharp/VS_Snippets_CFX/icontractbehavior/cs/objectproviderbehavior.cs#2)]
+ [!code-vb[IContractBehavior#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/icontractbehavior/vb/objectproviderbehavior.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

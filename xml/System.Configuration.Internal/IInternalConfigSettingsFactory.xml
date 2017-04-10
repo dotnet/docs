@@ -1,0 +1,63 @@
+<Type Name="IInternalConfigSettingsFactory" FullName="System.Configuration.Internal.IInternalConfigSettingsFactory">
+  <TypeSignature Language="C#" Value="public interface IInternalConfigSettingsFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInternalConfigSettingsFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigSettingsFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an interface used by the configuration system to set the <see cref="T:System.Configuration.ConfigurationSettings" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompleteInit">
+      <MemberSignature Language="C#" Value="public void CompleteInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CompleteInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigSettingsFactory.CompleteInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates that initialization of the configuration system has completed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConfigurationSystem">
+      <MemberSignature Language="C#" Value="public void SetConfigurationSystem (System.Configuration.Internal.IInternalConfigSystem internalConfigSystem, bool initComplete);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetConfigurationSystem(class System.Configuration.Internal.IInternalConfigSystem internalConfigSystem, bool initComplete) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigSettingsFactory.SetConfigurationSystem(System.Configuration.Internal.IInternalConfigSystem,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="internalConfigSystem" Type="System.Configuration.Internal.IInternalConfigSystem" />
+        <Parameter Name="initComplete" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="internalConfigSystem">An <see cref="T:System.Configuration.Internal.IInternalConfigSystem" /> object used by the <see cref="T:System.Configuration.ConfigurationSettings" /> class.</param>
+        <param name="initComplete">
+          <see langword="true" /> if the initialization process of the configuration system is complete; otherwise, <see langword="false" />.</param>
+        <summary>Provides hierarchical configuration settings and extensions specific to ASP.NET to the configuration system.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

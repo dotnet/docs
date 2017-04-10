@@ -1,0 +1,853 @@
+<Type Name="GlyphRun" FullName="System.Windows.Media.GlyphRun">
+  <TypeSignature Language="C#" Value="public class GlyphRun : System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GlyphRun extends System.Object implements class System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.GlyphRun" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a sequence of glyphs from a single face of a single font at a single size, and with a single rendering style.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.GlyphRun> object includes font details such as glyph indices and individual glyph positions. In addition, The <xref:System.Windows.Media.GlyphRun> object contains the original Unicode code points the run was generated from, character to glyph buffer offset mapping information, and per-character and per-glyph flags.  
+  
+ The <xref:System.Windows.Documents.Glyphs> element represents the output of a <xref:System.Windows.Media.GlyphRun> in XAML. The following markup syntax is used to describe the <xref:System.Windows.Documents.Glyphs> element.  
+  
+ <!-- TODO: review snippet reference [!code-xml[GlyphsOvwSamp1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp1/CS/default.xaml#1)]  -->
+ <!-- TODO: review snippet reference [!code-xml[GlyphsOvwSamp1#1](~/samples/snippets/xaml/VS_Snippets_Wpf/GlyphsOvwSamp1/XAML/default.xaml#1)]  -->  
+  
+ Each glyph defines metrics that specify how it aligns with other <xref:System.Windows.Documents.Glyphs>. The following graphic defines the various typographic qualities of two different glyph characters.  
+  
+ ![Diagraph of glyph measurements](~/add/media/glyph-example.png "Diagraph of glyph measurements")  
+Various typographic qualities of two different glyph characters  
+  
+<a name="xamlTextUsage_GlyphRun"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlyphRun ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use the PixelsPerDip override", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphRun" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlyphRun (float pixelsPerDip);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 pixelsPerDip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.#ctor(System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pixelsPerDip" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="pixelsPerDip">The Pixels Per Density Independent Pixel value, which is the equivalent of the scale factor. For example, if the DPI of a screen is 120 (or 1.25 because 120/96 = 1.25) , 1.25 pixel per density independent pixel is drawn. DIP is the unit of measurement used by WPF to be independent of device resolution and DPIs.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphRun" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlyphRun (System.Windows.Media.GlyphTypeface glyphTypeface, int bidiLevel, bool isSideways, double renderingEmSize, System.Collections.Generic.IList&lt;ushort&gt; glyphIndices, System.Windows.Point baselineOrigin, System.Collections.Generic.IList&lt;double&gt; advanceWidths, System.Collections.Generic.IList&lt;System.Windows.Point&gt; glyphOffsets, System.Collections.Generic.IList&lt;char&gt; characters, string deviceFontName, System.Collections.Generic.IList&lt;ushort&gt; clusterMap, System.Collections.Generic.IList&lt;bool&gt; caretStops, System.Windows.Markup.XmlLanguage language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GlyphTypeface glyphTypeface, int32 bidiLevel, bool isSideways, float64 renderingEmSize, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; glyphIndices, valuetype System.Windows.Point baselineOrigin, class System.Collections.Generic.IList`1&lt;float64&gt; advanceWidths, class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; glyphOffsets, class System.Collections.Generic.IList`1&lt;char&gt; characters, string deviceFontName, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; clusterMap, class System.Collections.Generic.IList`1&lt;bool&gt; caretStops, class System.Windows.Markup.XmlLanguage language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.#ctor(System.Windows.Media.GlyphTypeface,System.Int32,System.Boolean,System.Double,System.Collections.Generic.IList{System.UInt16},System.Windows.Point,System.Collections.Generic.IList{System.Double},System.Collections.Generic.IList{System.Windows.Point},System.Collections.Generic.IList{System.Char},System.String,System.Collections.Generic.IList{System.UInt16},System.Collections.Generic.IList{System.Boolean},System.Windows.Markup.XmlLanguage)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use the PixelsPerDip override", false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="glyphTypeface" Type="System.Windows.Media.GlyphTypeface" />
+        <Parameter Name="bidiLevel" Type="System.Int32" />
+        <Parameter Name="isSideways" Type="System.Boolean" />
+        <Parameter Name="renderingEmSize" Type="System.Double" />
+        <Parameter Name="glyphIndices" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
+        <Parameter Name="baselineOrigin" Type="System.Windows.Point" />
+        <Parameter Name="advanceWidths" Type="System.Collections.Generic.IList&lt;System.Double&gt;" />
+        <Parameter Name="glyphOffsets" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" />
+        <Parameter Name="characters" Type="System.Collections.Generic.IList&lt;System.Char&gt;" />
+        <Parameter Name="deviceFontName" Type="System.String" />
+        <Parameter Name="clusterMap" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
+        <Parameter Name="caretStops" Type="System.Collections.Generic.IList&lt;System.Boolean&gt;" />
+        <Parameter Name="language" Type="System.Windows.Markup.XmlLanguage" />
+      </Parameters>
+      <Docs>
+        <param name="glyphTypeface">A value of type <see cref="T:System.Windows.Media.GlyphTypeface" />.</param>
+        <param name="bidiLevel">A value of type <see cref="T:System.Int32" />.</param>
+        <param name="isSideways">A value of type <see cref="T:System.Boolean" />.</param>
+        <param name="renderingEmSize">A value of type <see cref="T:System.Double" />.</param>
+        <param name="glyphIndices">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="baselineOrigin">A value of type <see cref="T:System.Windows.Point" />.</param>
+        <param name="advanceWidths">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="glyphOffsets">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="characters">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="deviceFontName">A value of type <see cref="T:System.String" />.</param>
+        <param name="clusterMap">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="caretStops">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="language">A value of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphRun" /> class by specifying properties of the class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GlyphRun (System.Windows.Media.GlyphTypeface glyphTypeface, int bidiLevel, bool isSideways, double renderingEmSize, float pixelsPerDip, System.Collections.Generic.IList&lt;ushort&gt; glyphIndices, System.Windows.Point baselineOrigin, System.Collections.Generic.IList&lt;double&gt; advanceWidths, System.Collections.Generic.IList&lt;System.Windows.Point&gt; glyphOffsets, System.Collections.Generic.IList&lt;char&gt; characters, string deviceFontName, System.Collections.Generic.IList&lt;ushort&gt; clusterMap, System.Collections.Generic.IList&lt;bool&gt; caretStops, System.Windows.Markup.XmlLanguage language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GlyphTypeface glyphTypeface, int32 bidiLevel, bool isSideways, float64 renderingEmSize, float32 pixelsPerDip, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; glyphIndices, valuetype System.Windows.Point baselineOrigin, class System.Collections.Generic.IList`1&lt;float64&gt; advanceWidths, class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; glyphOffsets, class System.Collections.Generic.IList`1&lt;char&gt; characters, string deviceFontName, class System.Collections.Generic.IList`1&lt;unsigned int16&gt; clusterMap, class System.Collections.Generic.IList`1&lt;bool&gt; caretStops, class System.Windows.Markup.XmlLanguage language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.#ctor(System.Windows.Media.GlyphTypeface,System.Int32,System.Boolean,System.Double,System.Single,System.Collections.Generic.IList{System.UInt16},System.Windows.Point,System.Collections.Generic.IList{System.Double},System.Collections.Generic.IList{System.Windows.Point},System.Collections.Generic.IList{System.Char},System.String,System.Collections.Generic.IList{System.UInt16},System.Collections.Generic.IList{System.Boolean},System.Windows.Markup.XmlLanguage)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="glyphTypeface" Type="System.Windows.Media.GlyphTypeface" />
+        <Parameter Name="bidiLevel" Type="System.Int32" />
+        <Parameter Name="isSideways" Type="System.Boolean" />
+        <Parameter Name="renderingEmSize" Type="System.Double" />
+        <Parameter Name="pixelsPerDip" Type="System.Single" />
+        <Parameter Name="glyphIndices" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
+        <Parameter Name="baselineOrigin" Type="System.Windows.Point" />
+        <Parameter Name="advanceWidths" Type="System.Collections.Generic.IList&lt;System.Double&gt;" />
+        <Parameter Name="glyphOffsets" Type="System.Collections.Generic.IList&lt;System.Windows.Point&gt;" />
+        <Parameter Name="characters" Type="System.Collections.Generic.IList&lt;System.Char&gt;" />
+        <Parameter Name="deviceFontName" Type="System.String" />
+        <Parameter Name="clusterMap" Type="System.Collections.Generic.IList&lt;System.UInt16&gt;" />
+        <Parameter Name="caretStops" Type="System.Collections.Generic.IList&lt;System.Boolean&gt;" />
+        <Parameter Name="language" Type="System.Windows.Markup.XmlLanguage" />
+      </Parameters>
+      <Docs>
+        <param name="glyphTypeface">A value of type <see cref="T:System.Windows.Media.GlyphTypeface" />.</param>
+        <param name="bidiLevel">A value of type <see cref="T:System.Int32" />.</param>
+        <param name="isSideways">A value of type <see cref="T:System.Boolean" />.</param>
+        <param name="renderingEmSize">A  value of type <see cref="T:System.Double" />.</param>
+        <param name="pixelsPerDip">A  value of type <see cref="T:System.Double" />.</param>
+        <param name="glyphIndices">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="baselineOrigin">A value of type <see cref="T:System.Windows.Point" />.</param>
+        <param name="advanceWidths">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="glyphOffsets">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="characters">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="deviceFontName">A value of type <see cref="T:System.String" />.</param>
+        <param name="clusterMap">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="caretStops">An array of type <see cref="T:System.Collections.Generic.IList`1" />.</param>
+        <param name="language">A value of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphRun" /> class by specifying properties of the class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvanceWidths">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;double&gt; AdvanceWidths { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;float64&gt; AdvanceWidths" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.AdvanceWidths" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.DoubleIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of <see cref="T:System.Double" /> values that represent the advance widths corresponding to the glyph indices.</summary>
+        <value>A list of <see cref="T:System.Double" /> values that represent the advance widths.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each item in the list of advance widths corresponds to the glyph values returned by the <xref:System.Windows.Media.GlyphRun.GlyphIndices%2A> property. The nominal origin of the n<sup>th</sup> glyph in the run (n>0) is the nominal origin of the n-1<sup>th</sup> glyph plus the n-1<sup>th</sup> advance width added along the runs advance vector. Base glyphs generally have a non-zero advance width, whereas combining glyphs generally have a zero advance width.  
+  
+<a name="xamlTextUsage_AdvanceWidths"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaselineOrigin">
+      <MemberSignature Language="C#" Value="public System.Windows.Point BaselineOrigin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point BaselineOrigin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.BaselineOrigin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the baseline origin of the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>A <see cref="T:System.Windows.Point" /> value representing the baseline origin.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_BaselineOrigin"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BidiLevel">
+      <MemberSignature Language="C#" Value="public int BidiLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BidiLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.BidiLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the bidirectional nesting level of the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the bidirectional nesting level.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_BidiLevel"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildGeometry">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry BuildGeometry ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Geometry BuildGeometry() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.BuildGeometry" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the <see cref="T:System.Windows.Media.Geometry" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <returns>The <see cref="T:System.Windows.Media.Geometry" /> corresponding to the <see cref="T:System.Windows.Media.GlyphRun" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Geometry> returned contains the combined geometry of all glyphs in the <xref:System.Windows.Media.GlyphRun>. Overlapping contours are merged by performing a Boolean union operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaretStops">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;bool&gt; CaretStops { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;bool&gt; CaretStops" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.CaretStops" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.BoolIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of <see cref="T:System.Boolean" /> values that determine whether there are caret stops for every UTF16 code point in the Unicode representing the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>A list of <see cref="T:System.Boolean" /> values that represent whether there are caret stops.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is `null` if there is a caret stop for every UTF16 code point in the Unicode representing the <xref:System.Windows.Media.GlyphRun>.  
+  
+<a name="xamlTextUsage_CaretStops"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Characters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;char&gt; Characters { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;char&gt; Characters" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.Characters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.CharIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of UTF16 code points that represent the Unicode content of the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>A list of <see cref="T:System.Char" /> values that represent Unicode content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Characters"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClusterMap">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;ushort&gt; ClusterMap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;unsigned int16&gt; ClusterMap" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.ClusterMap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.UShortIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of <see cref="T:System.UInt16" /> values that maps characters in the <see cref="T:System.Windows.Media.GlyphRun" /> to glyph indices.</summary>
+        <value>A list of <see cref="T:System.UInt16" /> values that represent mapped glyph indices.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is one entry per character in the list. Each value in the list gives the offset of the first glyph, represented by <xref:System.Windows.Media.GlyphRun.GlyphIndices%2A>, to the corresponding character, represented by <xref:System.Windows.Media.GlyphRun.Characters%2A>.  
+  
+ Where multiple characters map to a single glyph, or to a glyph group that cannot be broken down to map exactly to individual characters, the entries for all the characters have the same value: the offset of the first glyph that represents this group of characters.  
+  
+ If the list is `null` or equal to <xref:System.String.Empty>, sequential 1 to 1 mapping is assumed.  
+  
+<a name="xamlTextUsage_ClusterMap"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeAlignmentBox">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect ComputeAlignmentBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect ComputeAlignmentBox() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.ComputeAlignmentBox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the alignment box for the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <returns>A <see cref="T:System.Windows.Rect" /> that represents the alignment box for the <see cref="T:System.Windows.Media.GlyphRun" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Windows.Rect> is relative to the origin of the <xref:System.Windows.Media.GlyphRun>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComputeInkBoundingBox">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect ComputeInkBoundingBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect ComputeInkBoundingBox() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.ComputeInkBoundingBox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the ink bounding box for the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <returns>A <see cref="T:System.Windows.Rect" /> that represents the ink bounding box the <see cref="T:System.Windows.Media.GlyphRun" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Windows.Rect> is relative to the origin of the <xref:System.Windows.Media.GlyphRun>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceFontName">
+      <MemberSignature Language="C#" Value="public string DeviceFontName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceFontName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.DeviceFontName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the specific device font for which the <see cref="T:System.Windows.Media.GlyphRun" /> has been optimized.</summary>
+        <value>A <see cref="T:System.String" /> value that represents the device font.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Windows.Media.GlyphRun> is rendered on a device that has built-in support for the named device font, the <xref:System.Windows.Media.GlyphRun> should be rendered using a device specific mechanism for selecting that font, and by sending Unicode code points rather than glyph indices. When rendering onto a device that does not include built-in support for the named device font, <xref:System.Windows.Media.GlyphRun.DeviceFontName%2A> should be ignored.  
+  
+<a name="xamlTextUsage_DeviceFontName"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontRenderingEmSize">
+      <MemberSignature Language="C#" Value="public double FontRenderingEmSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FontRenderingEmSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.FontRenderingEmSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the em size used for rendering the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>A <see cref="T:System.Double" /> value that represents the em size used for rendering.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_FontRenderingEmSize"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCaretCharacterHitFromDistance">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.CharacterHit GetCaretCharacterHitFromDistance (double distance, out bool isInside);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetCaretCharacterHitFromDistance(float64 distance, bool isInside) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetCaretCharacterHitFromDistance(System.Double,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="distance" Type="System.Double" />
+        <Parameter Name="isInside" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="distance">Offset to use for computing the caret character hit.</param>
+        <param name="isInside">Determines whether the character hit is inside the <see cref="T:System.Windows.Media.GlyphRun" />.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> value that represents the character hit of the caret of the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> value that represents the character hit that is closest to the <paramref name="distance" /> value. The out parameter <paramref name="isInside" /> returns <see langword="true" /> if the character hit is inside the <see cref="T:System.Windows.Media.GlyphRun" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `distance` value represents the offset from the leading edge of the <xref:System.Windows.Media.GlyphRun>.  
+  
+ If the hit is outside the <xref:System.Windows.Media.GlyphRun>, the character hit represents the closest caret character hit within the <xref:System.Windows.Media.GlyphRun>.  
+  
+ The <xref:System.Windows.Media.TextFormatting.CharacterHit> structure represents information about a character hit within a <xref:System.Windows.Media.GlyphRun>—the index of the first character that was hit as well as information about the leading or trailing edge.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDistanceFromCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public double GetDistanceFromCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetDistanceFromCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetDistanceFromCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> to use for computing the offset.</param>
+        <summary>Retrieves the offset from the leading edge of the <see cref="T:System.Windows.Media.GlyphRun" /> to the leading or trailing edge of a caret stop containing the specified character hit.</summary>
+        <returns>A <see cref="T:System.Double" /> that represents the offset from the leading edge of the <see cref="T:System.Windows.Media.GlyphRun" /> to the leading or trailing edge of a caret stop containing the character hit.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Media.GlyphRun> is not hit testable, the distance of 0.0 is returned. Use the <xref:System.Windows.Media.GlyphRun.IsHitTestable%2A> property to determine if a <xref:System.Windows.Media.GlyphRun> can be hit test.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The character hit is outside the range specified by the <see cref="T:System.Windows.Media.GlyphRun" /> Unicode string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.CharacterHit GetNextCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetNextCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetNextCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> to use for computing the next hit value.</param>
+        <summary>Retrieves the next valid caret character hit in the logical direction in the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> that represents the next valid caret character hit in the logical direction. If the return value is equal to <paramref name="characterHit" />, no further navigation is possible in the <see cref="T:System.Windows.Media.GlyphRun" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To retrieve the previous valid caret character hit, use <xref:System.Windows.Media.GlyphRun.GetPreviousCaretCharacterHit%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreviousCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.TextFormatting.CharacterHit GetPreviousCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetPreviousCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.GetPreviousCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> to use for computing the previous hit value.</param>
+        <summary>Retrieves the previous valid caret character hit in the logical direction in the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> that represents the previous valid caret character hit in the logical direction. If the return value is equal to <paramref name="characterHit" />, no further navigation is possible in the <see cref="T:System.Windows.Media.GlyphRun" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To retrieve the next valid caret character hit, use <xref:System.Windows.Media.GlyphRun.GetNextCaretCharacterHit%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlyphIndices">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;ushort&gt; GlyphIndices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;unsigned int16&gt; GlyphIndices" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.GlyphIndices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.UShortIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of <see cref="T:System.UInt16" /> values that represent the glyph indices in the rendering physical font.</summary>
+        <value>A list of <see cref="T:System.UInt16" /> values that represent the glyph indices.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the glyph indices are defined by the font's character map table for the corresponding Unicode code points in the inner text.  
+  
+<a name="xamlTextUsage_GlyphIndices"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlyphOffsets">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Point&gt; GlyphOffsets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Point&gt; GlyphOffsets" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.GlyphOffsets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Converters.PointIListConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Point&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of <see cref="T:System.Windows.Point" /> values representing the offsets of the glyphs in the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>A list of <see cref="T:System.Windows.Point" /> values representing the offsets of glyph.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The glyph offset values are added to the nominal glyph origin to generate the final origin for the glyph. The <xref:System.Windows.Media.GlyphRun.AdvanceWidths%2A> property represents the values of the nominal glyph origins for the <xref:System.Windows.Media.GlyphRun>.  
+  
+ Base glyphs generally have a glyph offset of (0, 0), combining glyphs generally have an offset that places them correctly on top of the nearest preceding base glyph.  
+  
+<a name="xamlTextUsage_GlyphOffsets"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlyphTypeface">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GlyphTypeface GlyphTypeface { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GlyphTypeface GlyphTypeface" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.GlyphTypeface" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GlyphTypeface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.GlyphTypeface" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.GlyphTypeface" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_GlyphTypeface"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHitTestable">
+      <MemberSignature Language="C#" Value="public bool IsHitTestable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHitTestable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.IsHitTestable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether there are any valid caret character hits within the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>
+          <see langword="true" /> if there are valid caret character hits; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSideways">
+      <MemberSignature Language="C#" Value="public bool IsSideways { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSideways" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.IsSideways" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to rotate glyphs.</summary>
+        <value>
+          <see langword="true" /> if the glyphs are rotated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Media.GlyphRun.IsSideways%2A> is `true`, the glyphs that make up text characters are rotated 90° counter-clockwise, using vertical baseline positioning metrics.  
+  
+<a name="xamlTextUsage_IsSideways"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public System.Windows.Markup.XmlLanguage Language { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Markup.XmlLanguage Language" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.XmlLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Markup.XmlLanguage" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>The <see cref="T:System.Windows.Markup.XmlLanguage" /> for the <see cref="T:System.Windows.Media.GlyphRun" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Language"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsPerDip">
+      <MemberSignature Language="C#" Value="public float PixelsPerDip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 PixelsPerDip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRun.PixelsPerDip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the PixelsPerDip at which the text should be rendered.</summary>
+        <value>The current <see cref="P:System.Windows.Media.GlyphRun.PixelsPerDip" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRun.System#ComponentModel#ISupportInitialize#EndInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1 @@
+.NET Framework Client Profile

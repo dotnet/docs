@@ -1,0 +1,657 @@
+<Type Name="SiteMapDataSource" FullName="System.Web.UI.WebControls.SiteMapDataSource">
+  <TypeSignature Language="C#" Value="public class SiteMapDataSource : System.Web.UI.HierarchicalDataSourceControl, System.ComponentModel.IListSource, System.Web.UI.IDataSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapDataSource extends System.Web.UI.HierarchicalDataSourceControl implements class System.ComponentModel.IListSource, class System.Web.UI.IDataSource" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SiteMapDataSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HierarchicalDataSourceControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IListSource</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IDataSource</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.SiteMapDataSource))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.PersistChildren(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a data source control that Web server controls and other controls can use to bind to hierarchical site map data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Specifying the Starting Node](#specifying_the_starting_node)  
+  
+-   [Retrieving Site Map Data](#retrieving_site_map_data)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource> control is a data source to the site map data that is stored by the site map providers that are configured for your site. The <xref:System.Web.UI.WebControls.SiteMapDataSource> enables Web server controls that are not specifically site navigation controls, such as the <xref:System.Web.UI.WebControls.TreeView>, <xref:System.Web.UI.WebControls.Menu>, and <xref:System.Web.UI.WebControls.DropDownList> controls, to bind to hierarchical site map data. You can use these Web server controls to display a site map as a table of contents or to actively navigate a site.  Alternatively, you can use the <xref:System.Web.UI.WebControls.SiteMapPath> control, which is designed specifically as a site navigation control and therefore does not need an instance of the <xref:System.Web.UI.WebControls.SiteMapDataSource> control.  
+  
+<a name="specifying_the_starting_node"></a>   
+## Specifying the Starting Node  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource> binds to site map data and presents its view based on a specified starting node in the site map hierarchy. By default, it is the root node of the hierarchy but it can also be any node within the hierarchy. The starting node is identified by the values of several <xref:System.Web.UI.WebControls.SiteMapDataSource> properties as follows:  
+  
+|Starting Node|Property Values|  
+|-------------------|---------------------|  
+|The root node of the hierarchy (the default setting).|The <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> is `false`.<br /><br /> The <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> is not set.|  
+|The node that represents the currently viewed page.|The <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> is `true`.<br /><br /> The <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> is not set.|  
+|A specific node of the hierarchy.|The <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> is `false`.<br /><br /> The <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> is set.|  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is set to a value other than 0, it affects the starting node and with it the site map data hierarchy that is exposed by the <xref:System.Web.UI.WebControls.SiteMapDataSource> control. The negative or positive integer value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> identifies the number of levels up or down the site map hierarchy from the starting node that is identified by the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> and <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> properties to offset the starting node of the subtree that is exposed by data source control.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is set to a negative number *-n*, the starting node of the subtree that is exposed by the data source control is the ancestor node *n* hierarchical levels above the identified starting node. If the value *n* is greater than the number of ancestor levels in the hierarchical tree, the starting node of the subtree is the root node of the site map hierarchy.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is set to a positive number +*n*, the starting node of the subtree that is exposed is a child node *n* levels below the identified starting node. Because more than one branch of child nodes might exist in the hierarchy, the <xref:System.Web.UI.WebControls.SiteMapDataSource> attempts to resolve a child node directly on the path between the identified starting node and the node that represents the currently requested page, if possible. If the node that represents the currently requested page is not in the subtree of the identified starting node, the value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is ignored. If the node that represents the currently requested page is less than *n* levels below the identified starting node, the currently requested page node is used as the starting node.  
+  
+<a name="retrieving_site_map_data"></a>   
+## Retrieving Site Map Data  
+ Site map data is retrieved from an <xref:System.Web.SiteMapProvider> object, such as <xref:System.Web.XmlSiteMapProvider>, which is the default site map provider for ASP.NET. You can specify any provider that is configured for your site to provide the site map data to the <xref:System.Web.UI.WebControls.SiteMapDataSource> and can obtain the list of available providers by accessing the <xref:System.Web.SiteMap.Providers%2A?displayProperty=fullName> collection.  
+  
+ Like all data source controls, every instance of a <xref:System.Web.UI.WebControls.SiteMapDataSource> is associated with a single helper object, known as a data source view. The <xref:System.Web.UI.WebControls.SiteMapDataSourceView> is a view on the site map data, according to the properties of the data source, and is retrieved by calling the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetHierarchicalView%2A> method. The <xref:System.Web.UI.WebControls.SiteMapDataSourceView> maintains the <xref:System.Web.SiteMapNodeCollection> object that the controls bind to.  
+  
+ By default, the starting node is the root node of the hierarchy, but you can set the starting node to any node. The starting point can be a node that is relative to the current position in the site map or to an absolute position. You can specify the starting node by setting the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource> is specialized for navigation data, and does not support common data source operations such as sorting, filtering, paging, caching, or data record operations such as updates, insertions or deletions.  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:SiteMapDataSource  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    ShowStartingNode="True|False"  
+    SiteMapProvider="string"  
+    SkinID="string"  
+    StartFromCurrentNode="True|False"  
+    StartingNodeOffset="integer"  
+    StartingNodeUrl="uri"  
+    Visible="True|False"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively bind a <xref:System.Web.UI.WebControls.TreeView> control to a site map using a <xref:System.Web.UI.WebControls.SiteMapDataSource> control. The site map data is retrieved beginning at the root node level.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/CS/webform1smdscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_1/VB/webform1smdsvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapDataSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsListCollection">
+      <MemberSignature Language="C#" Value="public virtual bool ContainsListCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContainsListCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.ContainsListCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the data source control contains a collection of data source view objects.</summary>
+        <value>
+          <see langword="true" /> if the data source control contains a collection of data source view objects; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource.ContainsListCollection%2A> property calls the static <xref:System.Web.UI.ListSourceHelper.ContainsListCollection%2A> method of the <xref:System.Web.UI.ListSourceHelper> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHierarchicalView">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.HierarchicalDataSourceView GetHierarchicalView (string viewPath);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.HierarchicalDataSourceView GetHierarchicalView(string viewPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.GetHierarchicalView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HierarchicalDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewPath">The URL of the starting node, specified by the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />.</param>
+        <summary>Retrieves a single view on the site map data for the <see cref="T:System.Web.SiteMapProvider" /> object according to the starting node and other properties of the data source.</summary>
+        <returns>A <see cref="T:System.Web.UI.HierarchicalDataSourceView" /> helper object on the site map data, starting with the node that is identified by the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> or its child, if the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode" /> is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.SiteMapProvider" /> is configured or available for the site.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" /> is <see langword="true" /> but the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set but the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> cannot resolve a node for the specified URL.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetList">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IList GetList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IList GetList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.GetList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a list of data source controls that can be used as sources of lists of data.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> of data source controls that can be used as sources of lists of data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetList%2A> method to retrieve a set of objects that can be used as sources for the <xref:System.Web.UI.WebControls.SiteMapDataSource> control. Site map data source controls encapsulate their lists of data as <xref:System.Web.UI.WebControls.SiteMapDataSourceView> objects. Therefore, when associated with one or more <xref:System.Web.UI.WebControls.SiteMapDataSourceView> objects, a <xref:System.Web.UI.WebControls.SiteMapDataSource> control represents a list source object and the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetList%2A> method returns a list containing one element — the data source control itself.  
+  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource.GetList%2A> method calls the static <xref:System.Web.UI.ListSourceHelper.GetList%2A?displayProperty=fullName> method to retrieve a list of objects that can be used as sources of data. The <xref:System.Web.UI.ListSourceHelper> checks whether the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames%2A> method returns a valid collection of view names. If it does, the <xref:System.Web.UI.ListSourceHelper> returns a list containing one element — the <xref:System.Web.UI.WebControls.SiteMapDataSource>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.DataSourceView GetView (string viewName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.DataSourceView GetView(string viewName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.GetView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewName">The name of the data source view to retrieve.</param>
+        <summary>Retrieves a named view on the site map data of the site map provider according to the starting node and other properties of the data source.</summary>
+        <returns>A <see cref="T:System.Web.UI.HierarchicalDataSourceView" /> helper object on the site map data, according to the starting node that is identified by the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> property or its child, if the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode" /> is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `viewName` parameter is the URL for the root node of the view, not the name of the data source view as it is with other data source controls that support named views.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.Provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" /> is <see langword="true" /> but the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> is set but the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> cannot resolve a node for the specified URL.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewNames">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection GetViewNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetViewNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of named views for the data source control.</summary>
+        <returns>An <see cref="T:System.Collections.ICollection" /> of named <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> objects associated with the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" />. Because the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> supports only one named view, the <see cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames" /> method returns an <see cref="T:System.Collections.ICollection" /> with one <see cref="F:System.String.Empty" /> element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames%2A> method returns a collection with one element (the default name) instead of `null` so that the <xref:System.Web.UI.WebControls.SiteMapDataSource.ContainsListCollection%2A> method returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public System.Web.SiteMapProvider Provider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SiteMapProvider Provider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.SiteMapProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Web.SiteMapProvider" /> object that is associated with the data source control.</summary>
+        <value>A <see cref="T:System.Web.SiteMapProvider" /> that is associated with the data source control; otherwise, if no provider is explicitly set, the default site map provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.SiteMapDataSource.Provider%2A> property to specify the site map provider instance to use with the data source control. The instance can be different than the provider that is identified by the <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A> property, if set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The provider named by the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider" /> is not available.  
+  
+ \- or -  
+  
+ No default provider is configured for the site.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowStartingNode">
+      <MemberSignature Language="C#" Value="public virtual bool ShowStartingNode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowStartingNode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the starting node is retrieved and displayed.</summary>
+        <value>
+          <see langword="true" /> if the starting node is displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode%2A> property is evaluated during calls to the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetView%2A> and <xref:System.Web.UI.WebControls.SiteMapDataSource.GetHierarchicalView%2A> methods, when the node tree that is returned by these methods is populated.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteMapProvider">
+      <MemberSignature Language="C#" Value="public virtual string SiteMapProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SiteMapProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the site map provider that the data source binds to.</summary>
+        <value>The name of the site map provider that the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> binds to. By default, the value is <see cref="F:System.String.Empty" />, and the default site map provider for the site is used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively bind a <xref:System.Web.UI.WebControls.TreeView> control to site map data that is provided by an <xref:System.Web.SiteMapProvider> object other than the default provider. The Web.config file makes a custom <xref:System.Web.SiteMapProvider> object available to the `SiteMapDataSource` control:  
+  
+```  
+<system.web>      
+  <siteMap>  
+    <providers>  
+      <add name="AsciiTextProvider"  
+        description="SiteMap provider which reads in .sitemap text files."  
+        type="Samples.AspNet.CS.SimpleTextSiteMapProvider"  
+      siteMapFile="test.txt"/>  
+    </providers>  
+  </siteMap>  
+</system.web>  
+```  
+  
+ The code for the `SimpleTextSiteMapProvider` class that this Web.config file example references can be found in the <xref:System.Web.SiteMapProvider> class overview. If you use the Visual Basic example, the namespace ends in "VB" instead of "CS". You can also find sample content for the "text.txt" site map file in the <xref:System.Web.SiteMapProvider> class overview.  
+  
+> [!NOTE]
+>  The `AsciiTextProvider` is not the default provider for the site, which (in this case) remains the <xref:System.Web.XmlSiteMapProvider> object. The <xref:System.Web.UI.WebControls.SiteMapDataSource.SiteMapProvider%2A> property of the <xref:System.Web.UI.WebControls.SiteMapDataSource> control is set to the name of a custom site map provider, and the <xref:System.Web.UI.WebControls.TreeView> binds to the corresponding site map data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/CS/webform3smdscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_3/VB/webform3smdsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartFromCurrentNode">
+      <MemberSignature Language="C#" Value="public virtual bool StartFromCurrentNode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StartFromCurrentNode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the site map node tree is retrieved using the node that represents the current page.</summary>
+        <value>
+          <see langword="true" /> if the node tree is retrieved relative to the current page; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> property is evaluated during calls to the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetView%2A> and the <xref:System.Web.UI.WebControls.SiteMapDataSource.GetHierarchicalView%2A> methods to help determine which site map node to use as a starting point to build the node tree. The <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> and <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> properties are mutually exclusive — if you set the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property, ensure that the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> property is `false`.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartingNodeOffset">
+      <MemberSignature Language="C#" Value="public virtual int StartingNodeOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartingNodeOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a positive or negative integer offset from the starting node that determines the root hierarchy that is exposed by the data source control.</summary>
+        <value>The default is 0, which indicates that the root hierarchy exposed by the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> is the same as the starting node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is set to a value other than 0, it affects the starting node and with it the site map data hierarchy that is exposed by the <xref:System.Web.UI.WebControls.SiteMapDataSource> control. The negative or positive integer value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> identifies the number of levels up or down the site map hierarchy from the starting node that is identified by the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> and <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> properties to offset the starting node of the subtree that is exposed by data source control.  
+  
+ If the identified starting node is the node that represents the currently requested page, the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> is ignored.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is set to a negative number -*n*, the starting node of the subtree that is exposed by the data source control is the ancestor node *n* hierarchical levels above the identified starting node. If the value *n* is greater than the number of ancestor levels in the hierarchical tree, the starting node of the subtree is the root node of the site map hierarchy.  
+  
+ If the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is set to a positive number +*n*, the starting node of the subtree that is exposed is a child node *n* levels below the identified starting node. Because more than one branch of child nodes might exist in the hierarchy, the <xref:System.Web.UI.WebControls.SiteMapDataSource> attempts to resolve a child node directly on the path between the identified starting node and the node that represents the currently requested page, if possible. If the node that represents the currently requested page is not in the subtree of the identified starting node, the value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is ignored. If the node that represents the currently requested page is less than *n* levels below the identified starting node, the currently requested page node is used as the starting node.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the effect of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> and <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> properties. The example consists of several ASP.NET pages, a master page, master page section, and a Web.sitemap file. The Web.sitemap file defines the hierarchical structure of the site. For this code example, it defines a number of pages identified by unique URLs, such as 1.aspx, 2.aspx, A.aspx, and B.aspx, as follows:  
+  
+ <!-- TODO: review snippet reference [!code[System.Web.UI.WebControls.SiteMapDataSource_2#1](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Web.sitemap#1)]  -->  
+  
+ The Site.master page contains the <xref:System.Web.UI.WebControls.SiteMapDataSource> and a <xref:System.Web.UI.WebControls.TreeView> controls inside a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control. It identifies the starting node of the exposed hierarchy as Default.aspx, using the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property. The Site.master file is used by the Default.aspx page only.  
+  
+ <!-- TODO: review snippet reference [!code[System.Web.UI.WebControls.SiteMapDataSource_2#2](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Site.master#2)]  -->  
+  
+ All other pages, such as 1.aspx, 2.aspx, A.aspx, and so on, use the Section.master master page. This master page is very similar to Site.master, however it contains several <xref:System.Web.UI.WebControls.SiteMapDataSource> controls that you can experiment with. The <xref:System.Web.UI.WebControls.TreeView> control that displays site map data is initially bound to `SiteMapDataSource1`, which specifies a <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> of 1. This indicates that the parent node of the currently requested page is displayed. If you view page 1.aspx, the hierarchy displayed by the <xref:System.Web.UI.WebControls.TreeView> is A, 1, 2. However, if you view page 4.aspx, the hierarchy is B, 3, 4.  
+  
+ If you change the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.DataSourceID%2A> for the <xref:System.Web.UI.WebControls.TreeView> to `SiteMapDataSource2`, the <xref:System.Web.UI.WebControls.TreeView> control displays site map data differently. When you use `SiteMapDataSource2`, the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> property is set to `true`, which means that the site map data is displayed relative to the currently requested page and the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeOffset%2A> property is set to -1, indicating that one level of child nodes is displayed, when possible.  When you view the A.aspx page, the hierarchy that is displayed is the hierarchy of the current level, including all siblings, such as B and C. When you view 1.aspx, the parent nodes are no longer displayed.  
+  
+ <!-- TODO: review snippet reference [!code[System.Web.UI.WebControls.SiteMapDataSource_2#3](~/samples/snippets/common/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_2/Common/Section.master#3)]  -->  
+  
+ The following code example demonstrates one of the ASP.NET pages you can use with the other components of this code example.  
+  
+```  
+<%@ Page MasterPageFile="~/Section.master" Title="Untitled Page" %>  
+  
+<asp:Content ID="Content1" ContentPlaceHolderID=MainBody Runat=Server>  
+  <h2>1.aspx</h2>  
+</asp:Content>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartingNodeUrl">
+      <MemberSignature Language="C#" Value="public virtual string StartingNodeUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StartingNodeUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a node in the site map that the data source then uses as a reference point to retrieve nodes from a hierarchical site map.</summary>
+        <value>The URL of a node in the site map. The <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> retrieves the identified <see cref="T:System.Web.SiteMapNode" /> and any child nodes from the site map. The default is an <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SiteMapDataSource> property binds to site map data and presents its view based on a specified starting node in the site map hierarchy. By default, the starting node is the root node of the hierarchy, but you can set the starting node to any node with the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property or set the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartFromCurrentNode%2A> property to `true`.  
+  
+ The value of the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to declaratively set the <xref:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl%2A> property and bind a <xref:System.Web.UI.WebControls.TreeView> control to a <xref:System.Web.UI.WebControls.SiteMapDataSource> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/CS/webform2smdsnocustomcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SiteMapDataSource_decl_6#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SiteMapDataSource_decl_6/VB/webform2smdsnocustomvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.IListSource.ContainsListCollection">
+      <MemberSignature Language="C#" Value="bool System.ComponentModel.IListSource.ContainsListCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IListSource.ContainsListCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SiteMapDataSource.System#ComponentModel#IListSource#ContainsListCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the collection is a collection of <see cref="T:System.Collections.IList" /> objects.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> is associated with one or more <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> objects; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SiteMapDataSource> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.IListSource.GetList">
+      <MemberSignature Language="C#" Value="System.Collections.IList IListSource.GetList ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IList System.ComponentModel.IListSource.GetList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.System#ComponentModel#IListSource#GetList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.ComponentModel.IListSource.GetList" />.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> of data source controls that can be used as sources of lists of data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SiteMapDataSource> instance is cast to an <xref:System.ComponentModel.IListSource> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IDataSource.GetView">
+      <MemberSignature Language="C#" Value="System.Web.UI.DataSourceView IDataSource.GetView (string viewName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.UI.DataSourceView System.Web.UI.IDataSource.GetView(string viewName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.System#Web#UI#IDataSource#GetView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewName">The URL of the root node of the view.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IDataSource.GetView(System.String)" />.</summary>
+        <returns>A <see cref="T:System.Web.UI.HierarchicalDataSourceView" /> helper object on the site map data, according to the starting node identified by the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.StartingNodeUrl" /> property or its child, if the <see cref="P:System.Web.UI.WebControls.SiteMapDataSource.ShowStartingNode" /> is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SiteMapDataSource> instance is cast to an <xref:System.Web.UI.IDataSource> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">No <see cref="T:System.Web.SiteMapProvider" /> is configured or available for the site.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IDataSource.GetViewNames">
+      <MemberSignature Language="C#" Value="System.Collections.ICollection IDataSource.GetViewNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ICollection System.Web.UI.IDataSource.GetViewNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SiteMapDataSource.System#Web#UI#IDataSource#GetViewNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IDataSource.GetViewNames" />.</summary>
+        <returns>An <see cref="T:System.Collections.ICollection" /> of named <see cref="T:System.Web.UI.WebControls.SiteMapDataSourceView" /> objects associated with the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" />. Because the <see cref="T:System.Web.UI.WebControls.SiteMapDataSource" /> supports only one named view, the <see cref="M:System.Web.UI.WebControls.SiteMapDataSource.GetViewNames" /> returns a collection containing one element set to <see cref="F:System.String.Empty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.SiteMapDataSource> instance is cast to an <xref:System.Web.UI.IDataSource> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

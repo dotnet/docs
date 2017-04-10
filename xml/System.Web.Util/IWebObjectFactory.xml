@@ -1,0 +1,35 @@
+<Type Name="IWebObjectFactory" FullName="System.Web.Util.IWebObjectFactory">
+  <TypeSignature Language="C#" Value="public interface IWebObjectFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebObjectFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Util.IWebObjectFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the interface for implementing factories for Web objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public object CreateInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.IWebObjectFactory.CreateInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Web.Util.IWebObjectFactory" /> instance.</summary>
+        <returns>A new <see cref="T:System.Web.Util.IWebObjectFactory" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2459 @@
+<Type Name="MaskedTextBox" FullName="System.Windows.Forms.MaskedTextBox">
+  <TypeSignature Language="C#" Value="public class MaskedTextBox : System.Windows.Forms.TextBoxBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MaskedTextBox extends System.Windows.Forms.TextBoxBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MaskedTextBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.TextBoxBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultBindingProperty("Text")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("MaskInputRejected")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Mask")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.MaskedTextBoxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Uses a mask to distinguish between proper and improper user input.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox> class is an enhanced <xref:System.Windows.Forms.TextBox> control that supports a declarative syntax for accepting or rejecting user input. Using the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property, you can specify the following input without writing any custom validation logic in your application:  
+  
+-   Required input characters.  
+  
+-   Optional input characters.  
+  
+-   The type of input expected at a given position in the mask; for example, a digit, or an alphabetic or alphanumeric character.  
+  
+-   Mask literals, or characters that should appear directly in the <xref:System.Windows.Forms.MaskedTextBox>; for example, the hyphens (-) in a phone number, or the currency symbol in a price.  
+  
+-   Special processing for input characters; for example, to convert alphabetic characters to uppercase.  
+  
+ When a <xref:System.Windows.Forms.MaskedTextBox> control is displayed at run time, it represents the mask as a series of prompt characters and optional literal characters. Each editable mask position, representing a required or optional input, is shown with a single prompt character. For example, the number sign (#) is often used as a placeholder for a numeric character input. You can use the <xref:System.Windows.Forms.MaskedTextBox.PromptChar%2A> property to specify a custom prompt character. The <xref:System.Windows.Forms.MaskedTextBox.HidePromptOnLeave%2A> property determines if the user sees the prompt characters when the control loses input focus.  
+  
+ As the user types input into the masked text box, valid input characters replace their respective prompt characters in a sequential fashion. If the user types an invalid input character, no replacement occurs, but instead a beep is issued if the <xref:System.Windows.Forms.MaskedTextBox.BeepOnError%2A> property is set to `true`, and the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event is raised. You can provide your own custom error logic by handing this event.  
+  
+ When the current insertion point is at a literal character, the user has a number of options:  
+  
+-   If a character other than the prompt character is typed, the literal will automatically be skipped and the input character will be applied to the next editable position, represented by the next prompt character.  
+  
+-   If the prompt character is typed and the <xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A> property is true, the input will overtype the prompt character and insertion point will be moved to the next position in the mask.  
+  
+-   As is always the case, the arrow keys can be used to navigate to a previous or subsequent position.  
+  
+ You can use the <xref:System.Windows.Forms.MaskedTextBox.MaskFull%2A> property to verify whether or not the user has entered all of the required input. The <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property will always retrieve the user's input formatted according to the mask and the <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> property.  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox> control actually defers all mask processing to the <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName> class specified by the <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> property. This standard provider supports all Unicode characters except for surrogates and vertically combined characters; however, the <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A> property can be used to restrict input to the characters sets a-z, A-Z, and 0-9.  
+  
+ Masks do not necessarily guarantee that a user's input will represent a valid value for a given type; for example, -9 could be entered for an age in years. You can verify that a user's input represents a valid value by assigning an instance of that value's type to the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property. You can detect whether the user removes focus from <xref:System.Windows.Forms.MaskedTextBox> when it contains an invalid value by monitoring for the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event. If type validation succeeds, the object representing the value will be available through the <xref:System.Windows.Forms.TypeValidationEventArgs.ReturnValue%2A> property of the <xref:System.Windows.Forms.TypeValidationEventArgs> parameter.  
+  
+ As with the <xref:System.Windows.Forms.TextBox> control, several common keyboard shortcuts do not work with <xref:System.Windows.Forms.MaskedTextBox>. In particular, CTRL-R (right justify text), CTRL-L (left justify text), and CTRL-L (center text) have no effect.  
+  
+## Compatibility with Visual Basic 6.0  
+ <xref:System.Windows.Forms.MaskedTextBox> was designed to retain most of the functionality of the Masked Edit control in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0. The following table lists common properties on the Masked Edit control and gives their equivalents on <xref:System.Windows.Forms.MaskedTextBox>.  
+  
+|Masked Edit control ([!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0) property|Equivalent MaskedTextBox ([!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]) property|  
+|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|  
+|`AllowPrompt` property|<xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A>|  
+|`AutoTab` property|None|  
+|`ClipMode` property|<xref:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat%2A>|  
+|`ClipText` property|<xref:System.Windows.Forms.MaskedTextBox.Text%2A> (when <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> is set to <xref:System.Windows.Forms.MaskFormat>)|  
+|`Format` property|None|  
+|`FormattedText` property|<xref:System.Windows.Forms.MaskedTextBox.Text%2A> (when <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> is set to <xref:System.Windows.Forms.MaskFormat>)|  
+|`Mask` property|<xref:System.Windows.Forms.MaskedTextBox.Mask%2A>|  
+|`PromptChar` property|<xref:System.Windows.Forms.MaskedTextBox.PromptChar%2A>|  
+|`PromptInclude` property|<xref:System.Windows.Forms.MaskedTextBox.ResetOnPrompt%2A>|  
+|`ValidationError` event|<xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected>|  
+  
+> [!CAUTION]
+>  The <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration or undo functionality. However, while the members associated with these features have been retained for compatibility with the <xref:System.Windows.Forms.TextBoxBase> base class, their implementations perform no actions.  
+  
+   
+  
+## Examples  
+ The following code example initializes the <xref:System.Windows.Forms.MaskedTextBox> to accept a date, and uses both the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> and <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> events to alert the user to invalid input.  
+  
+ [!code-csharp[MaskInputRejectedSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MaskInputRejectedSample/CS/form1.cs#1)]
+ [!code-vb[MaskInputRejectedSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MaskInputRejectedSample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MaskedTextBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MaskedTextBox" /> class using defaults.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.Windows.Forms.MaskedTextBox.%23ctor> constructor sets the <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> property to a null mask, represented by the string "<>". A null mask will accept any combination of characters as input.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MaskedTextBox (System.ComponentModel.MaskedTextProvider maskedTextProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.MaskedTextProvider maskedTextProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.#ctor(System.ComponentModel.MaskedTextProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="maskedTextProvider" Type="System.ComponentModel.MaskedTextProvider" />
+      </Parameters>
+      <Docs>
+        <param name="maskedTextProvider">A custom mask language provider, derived from the <see cref="T:System.ComponentModel.MaskedTextProvider" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MaskedTextBox" /> class using the specified custom mask language provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `maskedTextProvider` parameter defines the masking language used by <xref:System.Windows.Forms.MaskedTextBox>. It is responsible for parsing the mask and determining whether user input conforms to the current mask position. You can derive a new class from <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName> to define your own custom masking language, and use the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.ComponentModel.MaskedTextProvider%29> constructor to replace the standard <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName>.  
+  
+ If you want to use the default masking language and supply your own input mask, you do not need to use this constructor. Instead, you can either use the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.String%29> constructor, or use the default constructor then set the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="maskedTextProvider" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MaskedTextBox (string mask);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mask) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="mask" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="mask">A <see cref="T:System.String" /> representing the input mask. The initial value of the <see cref="P:System.Windows.Forms.MaskedTextBox.Mask" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MaskedTextBox" /> class using the specified input mask.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.String%29> constructor uses the standard <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName> with the input `mask` to parse user input into the <xref:System.Windows.Forms.MaskedTextBox>.  
+  
+ If you assign a new mask to the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property, it will override the value set by this constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="mask" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptsTab">
+      <MemberSignature Language="C#" Value="public bool AcceptsTab { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptsTab" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.AcceptsTab" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value determining how TAB keys are handled for multiline configurations. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.AcceptsTab%2A> property is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this property is not supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptsTabChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler AcceptsTabChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AcceptsTabChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.AcceptsTabChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.MaskedTextBox.AcceptsTab" /> property has changed. This event is not raised by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.AcceptsTabChanged> event is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this event is not supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowPromptAsInput">
+      <MemberSignature Language="C#" Value="public bool AllowPromptAsInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPromptAsInput" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether <see cref="P:System.Windows.Forms.MaskedTextBox.PromptChar" /> can be entered as valid data by the user.</summary>
+        <value>
+          <see langword="true" /> if the user can enter the prompt character into the control; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Even when <xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A> is `true`, the prompt character must be valid for the current location in the mask in order to be accepted. For example, if <xref:System.Windows.Forms.MaskedTextBox.PromptChar%2A> is "*", and the current location in the mask demands the user enter a digit, entering an asterisk (\*) will fail and cause the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event to occur.  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox.ResetOnPrompt%2A> property takes precedence over <xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsciiOnly">
+      <MemberSignature Language="C#" Value="public bool AsciiOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AsciiOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.AsciiOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control accepts characters outside of the ASCII character set.</summary>
+        <value>
+          <see langword="true" /> if only ASCII is accepted; <see langword="false" /> if the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control can accept any arbitrary Unicode character. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `true`, <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A> restricts user input to the characters a-z and A-Z. ASCII control characters are not allowed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeepOnError">
+      <MemberSignature Language="C#" Value="public bool BeepOnError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BeepOnError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.BeepOnError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the masked text box control raises the system beep for each user key stroke that it rejects.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control should beep on invalid input; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event will still occur if the <xref:System.Windows.Forms.MaskedTextBox.BeepOnError%2A> property is set to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUndo">
+      <MemberSignature Language="C#" Value="public bool CanUndo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanUndo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.CanUndo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the user can undo the previous operation. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.CanUndo%2A> property is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because <xref:System.Windows.Forms.MaskedTextBox> does not support undo functionality, this property always has a value of `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearUndo">
+      <MemberSignature Language="C#" Value="public void ClearUndo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearUndo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ClearUndo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears information about the most recent operation from the undo buffer of the text box. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.ClearUndo%2A> method is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, <xref:System.Windows.Forms.MaskedTextBox> does not support undo functionality.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateHandle">
+      <MemberSignature Language="C#" Value="protected override void CreateHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateHandle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.CreateHandle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a handle for the control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> representing the information needed when creating a control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the culture information associated with the masked text box.</summary>
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> representing the culture supported by the <see cref="T:System.Windows.Forms.MaskedTextBox" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <see cref="P:System.Windows.Forms.MaskedTextBox.Culture" /> was set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CutCopyMaskFormat">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.MaskFormat CutCopyMaskFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.MaskFormat CutCopyMaskFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether literals and prompt characters are copied to the clipboard.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.MaskFormat" /> values. The default is <see cref="F:System.Windows.Forms.MaskFormat.IncludeLiterals" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat%2A> property determines how text, selected within the <xref:System.Windows.Forms.MaskedTextBox> control, is interpreted when it is copied to the clipboard or retrieved through the <xref:System.Windows.Forms.MaskedTextBox.SelectedText%2A> property. Specifically, it determines whether literal characters, prompt characters, or both are included when selected text is accessed. When prompt characters are excluded, they are transformed into spaces in the copied string.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> property serves a similar purpose with respect to how the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property is interpreted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">Property set with a <see cref="T:System.Windows.Forms.MaskFormat" /> value that is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatProvider">
+      <MemberSignature Language="C#" Value="public IFormatProvider FormatProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IFormatProvider FormatProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.FormatProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IFormatProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IFormatProvider" /> to use when performing type validation.</summary>
+        <value>An object that implements the <see cref="T:System.IFormatProvider" /> interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> determines which symbols are used for the currency, date, and other culture-specific mask placeholders when type validation occurs and the control has a non-null <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCharFromPosition">
+      <MemberSignature Language="C#" Value="public override char GetCharFromPosition (System.Drawing.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetCharFromPosition(valuetype System.Drawing.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetCharFromPosition(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">The location from which to seek the nearest character.</param>
+        <summary>Retrieves the character that is closest to the specified location within the control.</summary>
+        <returns>The character at the specified location.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCharIndexFromPosition">
+      <MemberSignature Language="C#" Value="public override int GetCharIndexFromPosition (System.Drawing.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetCharIndexFromPosition(valuetype System.Drawing.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetCharIndexFromPosition(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">The location to search.</param>
+        <summary>Retrieves the index of the character nearest to the specified location.</summary>
+        <returns>The zero-based character index at the specified location.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFirstCharIndexFromLine">
+      <MemberSignature Language="C#" Value="public int GetFirstCharIndexFromLine (int lineNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetFirstCharIndexFromLine(int32 lineNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetFirstCharIndexFromLine(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineNumber">This parameter is not used.</param>
+        <summary>Retrieves the index of the first character of a given line. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <returns>This method will always return 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.GetFirstCharIndexFromLine%2A> method is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this method is not supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFirstCharIndexOfCurrentLine">
+      <MemberSignature Language="C#" Value="public int GetFirstCharIndexOfCurrentLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetFirstCharIndexOfCurrentLine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetFirstCharIndexOfCurrentLine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the index of the first character of the current line. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <returns>This method will always return 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.GetFirstCharIndexOfCurrentLine%2A> method is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this method is not supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLineFromCharIndex">
+      <MemberSignature Language="C#" Value="public override int GetLineFromCharIndex (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetLineFromCharIndex(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetLineFromCharIndex(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">This parameter is not used.</param>
+        <summary>Retrieves the line number from the specified character position within the text of the control. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <returns>This method will always return 0.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.GetLineFromCharIndex%2A> method is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this method is not supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPositionFromCharIndex">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Point GetPositionFromCharIndex (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Point GetPositionFromCharIndex(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.GetPositionFromCharIndex(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the character for which to retrieve the location.</param>
+        <summary>Retrieves the location within the control at the specified character index.</summary>
+        <returns>The location of the specified character within the client rectangle of the control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HidePromptOnLeave">
+      <MemberSignature Language="C#" Value="public bool HidePromptOnLeave { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HidePromptOnLeave" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.HidePromptOnLeave" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the prompt characters in the input mask are hidden when the masked text box loses focus.</summary>
+        <value>
+          <see langword="true" /> if <see cref="P:System.Windows.Forms.MaskedTextBox.PromptChar" /> is hidden when <see cref="T:System.Windows.Forms.MaskedTextBox" /> does not have focus; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertKeyMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.InsertKeyMode InsertKeyMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.InsertKeyMode InsertKeyMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.InsertKeyMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.InsertKeyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text insertion mode of the masked text box control.</summary>
+        <value>An <see cref="T:System.Windows.Forms.InsertKeyMode" /> value that indicates the current insertion mode. The default is <see cref="F:System.Windows.Forms.InsertKeyMode.Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> property controls the character insertion behavior of the <xref:System.Windows.Forms.MaskedTextBox> control. The state of this property is defined by the <xref:System.Windows.Forms.InsertKeyMode> enumeration, which can be always on, always off or set to respect the setting of the user's keyboard. This property supersedes the insertion mode of the keyboard. For example, if the keyboard is set to overwrite, but <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> is set to `Insert`, the <xref:System.Windows.Forms.MaskedTextBox> will operate in insert mode. The <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> property will access the true insertion mode of the <xref:System.Windows.Forms.MaskedTextBox>.  
+  
+ If changing <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> changes the value of <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A>, <xref:System.Windows.Forms.MaskedTextBox> will raise the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged> event.  
+  
+ This property has no effect if no mask has been set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">An invalid <see cref="T:System.Windows.Forms.InsertKeyMode" /> value was supplied when setting this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInputKey">
+      <MemberSignature Language="C#" Value="protected override bool IsInputKey (System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.IsInputKey(System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values.</param>
+        <summary>Determines whether the specified key is an input key or a special key that requires preprocessing.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOverwriteMode">
+      <MemberSignature Language="C#" Value="public bool IsOverwriteMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOverwriteMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.IsOverwriteMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether new user input overwrites existing input.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Windows.Forms.MaskedTextBox" /> will overwrite existing characters as the user enters new ones; <see langword="false" /> if <see cref="T:System.Windows.Forms.MaskedTextBox" /> will shift existing characters forward. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> takes into account both the value of the <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> property and the state of the user's keyboard. If <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> is set to either <xref:System.Windows.Forms.InsertKeyMode> or <xref:System.Windows.Forms.InsertKeyMode>, <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> will return `false` or `true`, respectively. If <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> is set to <xref:System.Windows.Forms.InsertKeyMode>, it will return the state of the INSERT key.  
+  
+ When <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> is `false`, <xref:System.Windows.Forms.MaskedTextBox> will reject as invalid any character entry that would result in a violation anywhere in the mask. In explanation, if inserting a character would cause a character to be shifted over into a mask position where it would not be valid, the character insertion will be rejected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOverwriteModeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler IsOverwriteModeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler IsOverwriteModeChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the insert mode has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged> event is raised after value of the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> property is changed.  
+  
+ This event is required to properly bind data to a <xref:System.Windows.Forms.MaskedTextBox> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#484](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#484)]
+ [!code-vb[System.Windows.Forms.EventExamples#484](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#484)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lines">
+      <MemberSignature Language="C#" Value="public string[] Lines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Lines" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Lines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the lines of text in multiline configurations. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <value>An array of type <see cref="T:System.String" /> that contains a single line.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.Lines%2A> property is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this property is not supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mask">
+      <MemberSignature Language="C#" Value="public string Mask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Mask" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Mask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.MaskPropertyEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the input mask to use at run time.</summary>
+        <value>A <see cref="T:System.String" /> representing the current mask. The default value is the empty string which allows any input.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> is the default property for the <xref:System.Windows.Forms.MaskedTextBox> class.  
+  
+ <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> must be a string composed of one or more of the masking elements, as shown in the following table. The masking language used by <xref:System.Windows.Forms.MaskedTextBox> is defined by its associated <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A>. The standard provider specifies a masking language based upon the one used by the Masked Edit control in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] 6.0, and should be very familiar to users migrating from that platform.  
+  
+|Masking element|Description|  
+|---------------------|-----------------|  
+|0|Digit, required. This element will accept any single digit between 0 and 9.|  
+|9|Digit or space, optional.|  
+|#|Digit or space, optional. If this position is blank in the mask, it will be rendered as a space in the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property. Plus (+) and minus (-) signs are allowed.|  
+|L|Letter, required. Restricts input to the ASCII letters a-z and A-Z. This mask element is equivalent to [a-zA-Z] in regular expressions.|  
+|?|Letter, optional. Restricts input to the ASCII letters a-z and A-Z. This mask element is equivalent to [a-zA-Z]? in regular expressions.|  
+|&|Character, required. If the <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A> property is set to true, this element behaves like the "L" element.|  
+|C|Character, optional. Any non-control character. If the <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A> property is set to `true`, this element behaves like the "?" element.|  
+|A|Alphanumeric, required. If the <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A> property is set to `true`, the only characters it will accept are the ASCII letters a-z and A-Z. This mask element behaves like the "a" element.|  
+|a|Alphanumeric, optional. If the <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A> property is set to `true`, the only characters it will accept are the ASCII letters a-z and A-Z. This mask element behaves like the "A" element.|  
+|.|Decimal placeholder. The actual display character used will be the decimal symbol appropriate to the format provider, as determined by the control's <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> property.|  
+|,|Thousands placeholder. The actual display character used will be the thousands placeholder appropriate to the format provider, as determined by the control's <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> property.|  
+|:|Time separator. The actual display character used will be the time symbol appropriate to the format provider, as determined by the control's <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> property.|  
+|/|Date separator. The actual display character used will be the date symbol appropriate to the format provider, as determined by the control's <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> property.|  
+|$|Currency symbol. The actual character displayed will be the currency symbol appropriate to the format provider, as determined by the control's <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> property.|  
+|\<|Shift down. Converts all characters that follow to lowercase.|  
+|>|Shift up. Converts all characters that follow to uppercase.|  
+|&#124;|Disable a previous shift up or shift down.|  
+|\|Escape. Escapes a mask character, turning it into a literal. "\\\\" is the escape sequence for a backslash.|  
+|All other characters|Literals. All non-mask elements will appear as themselves within <xref:System.Windows.Forms.MaskedTextBox>. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted by the user.|  
+  
+ If you change a mask when <xref:System.Windows.Forms.MaskedTextBox> already contains user input filtered by a previous mask, <xref:System.Windows.Forms.MaskedTextBox> will attempt to migrate that input into the new mask definition. If it fails, it will clear the existing input. Assigning a zero-length string as the mask will preserve any existing data in the control. When used with a zero-length mask, <xref:System.Windows.Forms.MaskedTextBox> behaves like a single-line <xref:System.Windows.Forms.TextBox> control.  
+  
+ The decimal (.), thousandths (,), time (:), date (/), and currency ($) symbols default to displaying those symbols as defined by the application's culture. You can force them to display symbols for another culture by using the <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A> property.  
+  
+ Character insertion into the mask at run time is controlled by the <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A> property. Users can navigate through the mask by using the left and right arrow keys or the mouse cursor, and can skip optional positions in the mask by entering a space.  
+  
+> [!IMPORTANT]
+>  <xref:System.Windows.Forms.MaskedTextBox> supports all Unicode characters except for surrogates and vertically combined characters.  
+  
+ The following table shows example masks.  
+  
+|Mask|Behavior|  
+|----------|--------------|  
+|`00/00/0000`|A date (day, numeric month, year) in international date format. The "/" character is a logical date separator, and will appear to the user as the date separator appropriate to the application's current culture.|  
+|`00->L<LL-0000`|A date (day, month abbreviation, and year) in United States format in which the three-letter month abbreviation is displayed with an initial uppercase letter followed by two lowercase letters.|  
+|`(999)-000-0000`|United States phone number, area code optional. If users do not want to enter the optional characters, they can either enter spaces or place the mouse pointer directly at the position in the mask represented by the first 0.|  
+|`$999,999.00`|A currency value in the range of 0 to 999999. The currency, thousandth, and decimal characters will be replaced at run time with their culture-specific equivalents.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The string supplied to the <see cref="P:System.Windows.Forms.MaskedTextBox.Mask" /> property is not a valid mask. Invalid masks include masks containing non-printable characters.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler MaskChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MaskChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.MaskChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the input mask is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.MaskChanged> event is raised after the value of the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property is changed. This event is also raised if the <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> is indirectly altered by a member such as <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>, <xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A>, <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A>, and <xref:System.Windows.Forms.MaskedTextBox.Culture%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.MaskChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.MaskChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#485](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#485)]
+ [!code-vb[System.Windows.Forms.EventExamples#485](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#485)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskCompleted">
+      <MemberSignature Language="C#" Value="public bool MaskCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MaskCompleted" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.MaskCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether all required inputs have been entered into the input mask.</summary>
+        <value>
+          <see langword="true" /> if all required input has been entered into the mask; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MaskedTextBox.MaskCompleted%2A> checks only required input elements. To determine whether all required and optional input elements have been filled in, use the <xref:System.Windows.Forms.MaskedTextBox.MaskFull%2A> property instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskedTextProvider">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.MaskedTextProvider MaskedTextProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.MaskedTextProvider MaskedTextProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.MaskedTextProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.MaskedTextProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a clone of the mask provider associated with this instance of the masked text box control.</summary>
+        <value>A masking language provider of type <see cref="P:System.Windows.Forms.MaskedTextBox.MaskedTextProvider" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> property defines the mask-parsing engine and the masking language used by the <xref:System.Windows.Forms.MaskedTextBox> control. The default provider is the <xref:System.ComponentModel.MaskedTextProvider?displayProperty=fullName> class; however, a custom provider can be specified using the <xref:System.Windows.Forms.MaskedTextBox.%23ctor%28System.ComponentModel.MaskedTextProvider%29> constructor.  
+  
+ <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> cannot be set directly. However, setting some of the properties of <xref:System.Windows.Forms.MaskedTextBox>—such as <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>, <xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A>, <xref:System.Windows.Forms.MaskedTextBox.AsciiOnly%2A>, and <xref:System.Windows.Forms.MaskedTextBox.Culture%2A>—may internally cause the creation of a new <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskFull">
+      <MemberSignature Language="C#" Value="public bool MaskFull { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MaskFull" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.MaskFull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether all required and optional inputs have been entered into the input mask.</summary>
+        <value>
+          <see langword="true" /> if all required and optional inputs have been entered; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.MaskedTextBox.MaskFull%2A> property within the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event handler to determine if the user's input was rejected because there are no remaining inputs in the mask. To determine whether only required input elements have been entered, use the <xref:System.Windows.Forms.MaskedTextBox.MaskCompleted%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example handles the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event, and uses a <xref:System.Windows.Forms.ToolTip> to alert the user if an attempt is made to enter data after all positions in the mask have been used.  
+  
+ [!code-csharp[MaskInputRejectedSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MaskInputRejectedSample/CS/form1.cs#1)]
+ [!code-vb[MaskInputRejectedSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MaskInputRejectedSample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskInputRejected">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.MaskInputRejectedEventHandler MaskInputRejected;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MaskInputRejectedEventHandler MaskInputRejected" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.MaskInputRejected" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MaskInputRejectedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user's input or assigned character does not match the corresponding format element of the input mask.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> is the default event for the <xref:System.Windows.Forms.MaskedTextBox> class.  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event occurs when a character is rejected by the input mask. The input mask, represented by the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property, is interpreted by the masked text provider associated with the control through the <xref:System.Windows.Forms.MaskedTextBox.MaskedTextProvider%2A> property. <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> is raised in the following situations:  
+  
+-   An input character does not match the corresponding format element. For example, the user enters an alphabetic character when a digit is required. This is probably the most common reason why this event is raised.  
+  
+-   The user is trying to input extraneous characters beyond the end of the mask either because the mask has already been filled or the current caret position has been moved to the very end of the displayed input mask string.  
+  
+-   A paste operation either inserts a character that does not match its associated format element, or if the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> property is `false`, it shifts existing characters into new positions where they do not match their format elements.  
+  
+-   A cut operation shifts existing characters to the left, and one or more characters do not match their newly associated format elements.  
+  
+-   An assignment was made to the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property and the assigned string caused one or more mask violations.  
+  
+ If a string was assigned to the control that causes <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> to occur, no part of the string will appear in <xref:System.Windows.Forms.MaskedTextBox>.  
+  
+ The default handling for <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> will play a beep sound if the <xref:System.Windows.Forms.MaskedTextBox.BeepOnError%2A> property is set to `true`. This event is often handled to implement custom error handling, for example, to move to the next user input control if the mask is full, or to display a custom error dialog box or ToolTip if the input character is invalid.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#486](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#486)]
+ [!code-vb[System.Windows.Forms.EventExamples#486](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#486)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLength">
+      <MemberSignature Language="C#" Value="public override int MaxLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.MaxLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of characters the user can type or paste into the text box control. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <value>This property always returns 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property and the <xref:System.Windows.Forms.MaskInputRejectedEventArgs.Position%2A> property in the <xref:System.Windows.Forms.MaskInputRejectedEventArgs> class for information about how to determine the maximum length of a string in a <xref:System.Windows.Forms.MaskedTextBox>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiline">
+      <MemberSignature Language="C#" Value="public override bool Multiline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Multiline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Multiline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this is a multiline text box control. This property is not fully supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <value>This property always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.AcceptsTab%2A> property is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this property is not fully supported; it cannot be set and it always resolves to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultilineChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler MultilineChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MultilineChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.MultilineChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Typically occurs when the value of the <see cref="P:System.Windows.Forms.MaskedTextBox.Multiline" /> property has changed; however, this event is not raised by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.MultilineChanged> event is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this event is not implemented in <xref:System.Windows.Forms.MaskedTextBox>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBackColorChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBackColorChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackColorChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnBackColorChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.Control.BackColor" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleCreated">
+      <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnHandleCreated(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnIsOverwriteModeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnIsOverwriteModeChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnIsOverwriteModeChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnIsOverwriteModeChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox.OnIsOverwriteModeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.MaskedTextBox.OnIsOverwriteModeChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.MaskedTextBox.OnIsOverwriteModeChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyDown">
+      <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Forms.KeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyPress">
+      <MemberSignature Language="C#" Value="protected override void OnKeyPress (System.Windows.Forms.KeyPressEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyPress(class System.Windows.Forms.KeyPressEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.KeyPressEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyUp">
+      <MemberSignature Language="C#" Value="protected override void OnKeyUp (System.Windows.Forms.KeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyUp(class System.Windows.Forms.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMaskChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnMaskChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMaskChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnMaskChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.MaskedTextBox.MaskChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox.OnMaskChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.MaskedTextBox.OnMaskChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.MaskedTextBox.OnMaskChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMultilineChanged">
+      <MemberSignature Language="C#" Value="protected override void OnMultilineChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMultilineChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnMultilineChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
+        <summary>Typically raises the <see cref="E:System.Windows.Forms.MaskedTextBox.MultilineChanged" /> event, but disabled for <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.OnMultilineChanged%2A> method is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this method is overridden to perform no actions.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTextAlignChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTextAlignChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTextAlignChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnTextAlignChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.MaskedTextBox.TextAlignChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox.OnTextAlignChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.MaskedTextBox.OnTextAlignChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.MaskedTextBox.OnTextAlignChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTextChanged">
+      <MemberSignature Language="C#" Value="protected override void OnTextChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTextChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnTextChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox.OnTextChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.MaskedTextBox.OnTextChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.MaskedTextBox.OnTextChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidating">
+      <MemberSignature Language="C#" Value="protected override void OnValidating (System.ComponentModel.CancelEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidating(class System.ComponentModel.CancelEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.OnValidating(System.ComponentModel.CancelEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Validating" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.OnValidating%2A> method causes the input string to be validated against the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property, if a <xref:System.Type> has been specified for this property. It will then also raise the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event.  
+  
+> [!NOTE]
+>  To ensure consistency with text-based controls, validation will occur even if the <xref:System.Windows.Forms.MaskedTextBox> is read-only (its <xref:System.Windows.Forms.MaskedTextBox.ReadOnly%2A> property is set to `true`).  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox.OnValidating%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">A critical exception occurred during the parsing of the input string.</exception>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.MaskedTextBox.OnValidating(System.ComponentModel.CancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.MaskedTextBox.OnValidating(System.ComponentModel.CancelEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordChar">
+      <MemberSignature Language="C#" Value="public char PasswordChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char PasswordChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.PasswordChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue('\0')</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character to be displayed in substitute for user input.</summary>
+        <value>The <see cref="T:System.Char" /> value used as the password character.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For sensitive user input, it is common practice to conceal the actual information entered by the user. If the <xref:System.Windows.Forms.MaskedTextBox.PasswordChar%2A> property is set to a non-null character, <xref:System.Windows.Forms.MaskedTextBox> will display this character for all input into the control. Setting this property to `null` will disable this functionality.  
+  
+ If you want to use the operating system supplied password character, which is defined in COMCTL32.dll, use the <xref:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar%2A> property instead. If both the <xref:System.Windows.Forms.MaskedTextBox.PasswordChar%2A> and <xref:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar%2A> properties are activated, the latter takes precedence.  
+  
+> [!IMPORTANT]
+>  As a security consideration, the <xref:System.Windows.Forms.MaskedTextBox> control disables cut and copy operations on password-protected strings.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The character specified when setting this property is not a valid password character, as determined by the <see cref="M:System.ComponentModel.MaskedTextProvider.IsValidPasswordChar(System.Char)" /> method of the <see cref="T:System.ComponentModel.MaskedTextProvider" /> class.</exception>
+        <exception cref="T:System.InvalidOperationException">The password character specified is the same as the current prompt character, <see cref="P:System.Windows.Forms.MaskedTextBox.PromptChar" />. The two are required to be different.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCmdKey">
+      <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference that represents the window message to process.</param>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the shortcut key to process.</param>
+        <summary>Processes a command key.</summary>
+        <returns>
+          <see langword="true" /> if the command key was processed by the control; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessKeyMessage">
+      <MemberSignature Language="C#" Value="protected override bool ProcessKeyMessage (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessKeyMessage(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ProcessKeyMessage(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference that represents the window message to process.</param>
+        <summary>Overrides the base implementation of this method to handle input language changes.</summary>
+        <returns>
+          <see langword="true" /> if the message was processed by the control; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MaskedTextBox> overrides its base control's implementation of <xref:System.Windows.Forms.MaskedTextBox.ProcessKeyMessage%2A> to properly handle character events when the user is entering characters using an Input Method Editor (IME), such as is used for entering Japanese, Chinese, and other complex non-Latin scripts. <xref:System.Windows.Forms.MaskedTextBox.ProcessKeyMessage%2A> detects any WM_CHAR messages that occur after it receives a WM_IME_CHAR message and suppresses them in order to prevent these characters from showing up in the control. If you derive from this control and override this message, you should duplicate this behavior if you wish your new control to work with IMEs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PromptChar">
+      <MemberSignature Language="C#" Value="public char PromptChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char PromptChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.PromptChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue('_')</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character used to represent the absence of user input in <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <value>The character used to prompt the user for input. The default is an underscore (_).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MaskedTextBox.PromptChar%2A> will be displayed in <xref:System.Windows.Forms.MaskedTextBox> for any mask position that the user has not yet filled in.  
+  
+ Use the <xref:System.Windows.Forms.MaskedTextBox.HidePromptOnLeave%2A> property to specify whether the prompt is displayed when <xref:System.Windows.Forms.MaskedTextBox> does not have focus.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The character specified when setting this property is not a valid prompt character, as determined by the <see cref="M:System.ComponentModel.MaskedTextProvider.IsValidPasswordChar(System.Char)" /> method of the <see cref="T:System.ComponentModel.MaskedTextProvider" /> class.</exception>
+        <exception cref="T:System.InvalidOperationException">The prompt character specified is the same as the current password character, <see cref="P:System.Windows.Forms.MaskedTextBox.PasswordChar" />. The two are required to be different.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether text in the text box is read-only.</summary>
+        <value>
+          <see langword="true" /> to indicate the text is read only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RejectInputOnFirstFailure">
+      <MemberSignature Language="C#" Value="public bool RejectInputOnFirstFailure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RejectInputOnFirstFailure" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.RejectInputOnFirstFailure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the parsing of user input should stop after the first invalid character is reached.</summary>
+        <value>
+          <see langword="true" /> if processing of the input string should be terminated at the first parsing error; otherwise, <see langword="false" /> if processing should ignore all errors. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sometimes the user will enter several characters into a <xref:System.Windows.Forms.MaskedTextBox> in a single input operation, typically by copying and pasting a string. If the entire string only contains valid characters, according to their paste position in the input mask, then the entire operation will succeed. However, when a parsing error occurs, the behavior of <xref:System.Windows.Forms.MaskedTextBox> depends on the value of <xref:System.Windows.Forms.MaskedTextBox.RejectInputOnFirstFailure%2A>, as follows:  
+  
+-   If this property is `true`, then processing of the input string stops at the invalid character. All subsequent characters are ignored. A single <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event is raised.  
+  
+-   If this property is `false`, then the invalid character is rejected, but parsing continues with the next character in the input string. A <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event is raised for every invalid character in the input string.  
+  
+ The <xref:System.Windows.Forms.MaskedTextBox.ResetOnPrompt%2A>, <xref:System.Windows.Forms.MaskedTextBox.ResetOnSpace%2A> and <xref:System.Windows.Forms.MaskedTextBox.SkipLiterals%2A> properties can also influence the interpretation of the user input.  
+  
+ If the <xref:System.Windows.Forms.MaskedTextBox.IsOverwriteMode%2A> property is `false`, then any characters already in the input mask to the right of the insertion point will be displaced by the accepted number of characters. This shifting may cause additional parsing errors.  
+  
+ A pasting operation can be mimicked programmatically by setting the <xref:System.Windows.Forms.MaskedTextBox.SelectedText%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetOnPrompt">
+      <MemberSignature Language="C#" Value="public bool ResetOnPrompt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ResetOnPrompt" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.ResetOnPrompt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines how an input character that matches the prompt character should be handled.</summary>
+        <value>
+          <see langword="true" /> if the prompt character entered as input causes the current editable position in the mask to be reset; otherwise, <see langword="false" /> to indicate that the prompt character is to be processed as a normal input character. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox> can treat two categories of characters—spaces and prompt characters—specially. Typically, each input character will be tested against the mask and either accepted or rejected. Assuming that the <xref:System.Windows.Forms.MaskedTextBox.PromptChar%2A> property is set to non-`null`, then setting the <xref:System.Windows.Forms.MaskedTextBox.ResetOnPrompt%2A> property to `true` will result in special processing for the prompt character. When the user enters the prompt character into the mask, it causes the current mask character position to be cleared and the current position to be advanced to the next editable character.  
+  
+ <xref:System.Windows.Forms.MaskedTextBox.ResetOnPrompt%2A> takes precedence over the <xref:System.Windows.Forms.MaskedTextBox.AllowPromptAsInput%2A> property, as shown in the following table.  
+  
+|ResetOnPrompt value|AllowPromptAsInput value|Resulting behavior|  
+|-------------------------|------------------------------|------------------------|  
+|`true`|`true`|The prompt character can be entered and it causes the current mask position to be reset. This is the default.|  
+|`true`|`false`|The prompt character can be entered and it causes the current mask position to be reset.|  
+|`false`|`true`|The prompt character is processed as a standard input character.|  
+|`false`|`false`|The prompt character is not valid and raises a <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetOnSpace">
+      <MemberSignature Language="C#" Value="public bool ResetOnSpace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ResetOnSpace" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.ResetOnSpace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines how a space input character should be handled.</summary>
+        <value>
+          <see langword="true" /> if the space input character causes the current editable position in the mask to be reset; otherwise, <see langword="false" /> to indicate that it is to be processed as a normal input character. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox> can treat two categories of characters—spaces and prompt characters—specially. Typically, each input character will be tested against the mask and either accepted or rejected. Setting the <xref:System.Windows.Forms.MaskedTextBox.ResetOnSpace%2A> property to `true` will result in the current mask character position to be cleared and the current position to be advanced to the next editable character.  
+  
+ The type of character input will determine whether the masking engine moves forward to the next character in the mask, or stays at the current position and waits for a matching character. If the input character is a space, and does not match the current non-editable character in the mask, the masking engine will skip ahead to the next character in the mask. If the input character is not a space, and does not match the current non-editable character in the mask, the masking engine will remain at the current mask position, and attempt to match the next input character against it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollToCaret">
+      <MemberSignature Language="C#" Value="public void ScrollToCaret ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollToCaret() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ScrollToCaret" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Scrolls the contents of the control to the current caret position. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.ScrollToCaret%2A> method is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, because the <xref:System.Windows.Forms.MaskedTextBox> control does not support multiline configuration, this method is overridden to perform no actions.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedText">
+      <MemberSignature Language="C#" Value="public override string SelectedText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectedText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.SelectedText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current selection in the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control.</summary>
+        <value>The currently selected text as a <see cref="T:System.String" />. If no text is currently selected, this property resolves to an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Selections retrieved using this property are formatted according to the control's formatting properties, such as <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>, <xref:System.Windows.Forms.MaskedTextBox.FormatProvider%2A>, <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> and <xref:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat%2A>. Selections set using this property behave like a Paste operation: each character is matched against the mask, and the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event is raised for invalid characters. If <xref:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat%2A> is `true`, literals and prompt characters are allowed when setting <xref:System.Windows.Forms.MaskedTextBox.SelectedText%2A>, and will be removed silently unless they violate the mask.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipLiterals">
+      <MemberSignature Language="C#" Value="public bool SkipLiterals { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SkipLiterals" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.SkipLiterals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the user is allowed to reenter literal values.</summary>
+        <value>
+          <see langword="true" /> to allow literals to be reentered; otherwise, <see langword="false" /> to prevent the user from overwriting literal characters. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Input masks commonly contain literals. When the user enters characters into the <xref:System.Windows.Forms.MaskedTextBox> at runtime, the current character position will sometimes fall on a literal. The <xref:System.Windows.Forms.MaskedTextBox.SkipLiterals%2A> property describes how user input for the next character is to be handled, as follows:  
+  
+-   If this property is `true`, the user can either redundantly enter the same character as the literal at the current position, or can enter the next editable character, thereby jumping the current position to that position.  
+  
+-   If this property is `false`, the user can only enter the next editable character. If the next position in the mask will not accept the literal character (for example, the user types "/" and the next position only accepts digits), the control will raise the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event.  
+  
+ As an example, in the "90/90/0000" date entry mask, the forward slash characters are literals. Assume that the user has entered two initial digits, "11", so the current position in the mask is at the first forward slash (/) literal. If <xref:System.Windows.Forms.MaskedTextBox.SkipLiterals%2A> is `true`, then the user has the following valid choices:  
+  
+-   The user can enter a "/" character. This results in the position being moved to the next character, which in this example is the fourth position, a 9 masking element.  
+  
+-   The user can enter the next editable character, which in this example is a digit. The digit would be validated and the current position would automatically be moved to the fifth position, which is a 0 masking element.  
+  
+ If <xref:System.Windows.Forms.MaskedTextBox.SkipLiterals%2A> is `false`, then only a valid data input is allowed, which in this example would be a digit.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.MaskedTextBoxTextEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text as it is currently displayed to the user.</summary>
+        <value>A <see cref="T:System.String" /> containing the text currently displayed by the control. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.MaskedTextBox.Text%2A> is the default binding property for the <xref:System.Windows.Forms.MaskedTextBox> class.  
+  
+ Strings retrieved using this property are formatted according to the control's formatting properties, such as <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> and <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A>.  
+  
+ You can assign a string with or without literal characters to <xref:System.Windows.Forms.MaskedTextBox.Text%2A> depending on the values of <xref:System.Windows.Forms.MaskedTextBox.ResetOnPrompt%2A>, <xref:System.Windows.Forms.MaskedTextBox.ResetOnSpace%2A>, and <xref:System.Windows.Forms.MaskedTextBox.SkipLiterals%2A>.  
+  
+ <xref:System.Windows.Forms.MaskedTextBox.Text%2A> is the default binding property for <xref:System.Windows.Forms.MaskedTextBox>.  
+  
+ <xref:System.Windows.Forms.MaskedTextBox> will raise the <xref:System.Windows.Forms.Control.TextChanged> event whenever the formatted text value changes. Different properties may or may not cause this value to change. For example, changing the <xref:System.Windows.Forms.MaskedTextBox.PasswordChar%2A> property will not raise the <xref:System.Windows.Forms.Control.TextChanged> event, but changing the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property will.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property.  
+  
+ [!code-vb[TestMaskedTextBox#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TestMaskedTextBox/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlign">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HorizontalAlignment TextAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.HorizontalAlignment TextAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.TextAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HorizontalAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how text is aligned in a masked text box control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> enumeration values that specifies how text is aligned relative to the control. The default is <see cref="F:System.Windows.Forms.HorizontalAlignment.Left" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.MaskedTextBox.TextAlign%2A> property to align the displayed text within a <xref:System.Windows.Forms.MaskedTextBox> to match the layout of visual elements on your form. For example, if your controls are all located on the right side of the form, you can set the <xref:System.Windows.Forms.MaskedTextBox.TextAlign%2A> property to <xref:System.Windows.Forms.HorizontalAlignment>, and the text will be aligned with the right side of the control instead of the default left alignment.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to this property is not of type <see cref="T:System.Windows.Forms.HorizontalAlignment" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlignChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextAlignChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextAlignChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.TextAlignChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the text alignment is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.TextAlignChanged> event is raised after the <xref:System.Windows.Forms.MaskedTextBox.TextAlign%2A> property is changed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TextAlignChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.TextAlignChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#487](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#487)]
+ [!code-vb[System.Windows.Forms.EventExamples#487](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#487)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextLength">
+      <MemberSignature Language="C#" Value="public override int TextLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TextLength" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.TextLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of the displayed text.</summary>
+        <value>An Int32 representing the number of characters in the <see cref="P:System.Windows.Forms.MaskedTextBox.Text" /> property. <see cref="P:System.Windows.Forms.MaskedTextBox.TextLength" /> respects properties such as <see cref="P:System.Windows.Forms.MaskedTextBox.HidePromptOnLeave" />, which means that the return results may be different depending on whether the control has focus.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextMaskFormat">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.MaskFormat TextMaskFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.MaskFormat TextMaskFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.TextMaskFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether literals and prompt characters are included in the formatted string.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.MaskFormat" /> values. The default is <see cref="F:System.Windows.Forms.MaskFormat.IncludeLiterals" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> property determines how the literal and prompt characters in the mask are processed when the generating the formatted string. More specifically, it determines whether literal characters, prompt characters, or both are included in the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property. When prompt characters are excluded, they are transformed into spaces in the formatted string.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.MaskedTextBox.CutCopyMaskFormat%2A> property serves a similar purpose with respect to how the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property is interpreted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">Property set with a <see cref="T:System.Windows.Forms.MaskFormat" /> value that is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current masked text box. This method overrides <see cref="M:System.Windows.Forms.TextBoxBase.ToString" />.</summary>
+        <returns>A <see cref="T:System.String" /> that contains information about the current <see cref="T:System.Windows.Forms.MaskedTextBox" />. The string includes the type, a simplified view of the input string, and the formatted input string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the <xref:System.Windows.Forms.MaskedTextBox.ToString%2A> method calls the base class implementation of this method, <xref:System.Windows.Forms.TextBoxBase.ToString%2A?displayProperty=fullName>, then appends the input string after processing by the mask. This method honors properties that alter the appearance of the formatted string, with the following exceptions:  
+  
+-   The returned string always includes prompt and literal characters, regardless of the values of the <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> property.  
+  
+-   Password characters are ignored, so that the actual user-typed characters are returned. In other words, the values of the <xref:System.Windows.Forms.MaskedTextBox.PasswordChar%2A> and <xref:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar%2A> properties are ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeValidationCompleted">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.TypeValidationEventHandler TypeValidationCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.TypeValidationEventHandler TypeValidationCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TypeValidationEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when <see cref="T:System.Windows.Forms.MaskedTextBox" /> has finished parsing the current value using the <see cref="P:System.Windows.Forms.MaskedTextBox.ValidatingType" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox> control will optionally validate user input against the type defined by its <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A?displayProperty=fullName> property. When this property is not `null`, the following series of events occurs:  
+  
+1.  The validation sequence begins when one of the following occurs:  
+  
+    -   <xref:System.Windows.Forms.MaskedTextBox> control looses focus.  
+  
+    -   The <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property is retrieved.  
+  
+    -   The <xref:System.Windows.Forms.MaskedTextBox.ValidateText%2A> method is called.  
+  
+2.  Any of these events result in a call to the `Parse` method of the type specified with the <xref:System.Windows.Forms.TypeValidationEventArgs.ValidatingType%2A> property. `Parse` is responsible for the conversion of the formatted input string to the target type. A successful conversion equates to a successful validation.  
+  
+3.  After `Parse` returns, the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event is raised. The event handler for this event is most commonly implemented to perform type or mask validation processing. It receives a <xref:System.Windows.Forms.TypeValidationEventArgs> parameter containing information about the conversion; for example, the <xref:System.Windows.Forms.TypeValidationEventArgs.IsValidInput%2A> member indicates whether the conversion was successful.  
+  
+4.  After the event handler for the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event returns, the standard validation event, <xref:System.Windows.Forms.Control.Validating>, is raised. A handler can be implemented to perform standard validation, perhaps including canceling the event.  
+  
+5.  If the event is not canceled in step 3, the standard control validation event <xref:System.Windows.Forms.Control.Validated> is raised.  
+  
+ If the <xref:System.Windows.Forms.TypeValidationEventArgs.Cancel%2A> property is set to `true` in the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler, the event will be canceled and the <xref:System.Windows.Forms.MaskedTextBox> control retains focus, unless the subsequent <xref:System.Windows.Forms.Control.Validating> event sets its version of the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=fullName> property back to `false`.  
+  
+   
+  
+## Examples  
+ The following code example attempts to parse the user's input as a valid <xref:System.DateTime> object. If it fails, the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler displays an error message to the user. If the value is a valid <xref:System.DateTime>, the code verifies that the date supplied is not prior to today's date. This code example requires  that your Windows Forms project contains a <xref:System.Windows.Forms.MaskedTextBox> control named `MaskedTextBox1` and a <xref:System.Windows.Forms.ToolTip> control named `ToolTip1`.  
+  
+ [!code-csharp[ValidatingTypeSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ValidatingTypeSample/CS/form1.cs#1)]
+ [!code-vb[ValidatingTypeSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ValidatingTypeSample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Undo">
+      <MemberSignature Language="C#" Value="public void Undo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Undo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.Undo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Undoes the last edit operation in the text box. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.Undo%2A> method is inherited from the base <xref:System.Windows.Forms.TextBoxBase> class. However, <xref:System.Windows.Forms.MaskedTextBox> does not support undo functionality.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSystemPasswordChar">
+      <MemberSignature Language="C#" Value="public bool UseSystemPasswordChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSystemPasswordChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the operating system-supplied password character should be used.</summary>
+        <value>
+          <see langword="true" /> if the system password should be used as the prompt character; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar%2A> property determines whether user-supplied input should be displayed in the <xref:System.Windows.Forms.MaskedTextBox> as multiple occurrences of a password character defined by the operating system. <xref:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar%2A> functions similarly to the <xref:System.Windows.Forms.MaskedTextBox.PasswordChar%2A> property, but instead of using a programmer-supplied character for the prompt, <xref:System.Windows.Forms.MaskedTextBox.UseSystemPasswordChar%2A> uses a prompt defined by the operating system. This property has precedence over <xref:System.Windows.Forms.MaskedTextBox.PasswordChar%2A>.  
+  
+> [!IMPORTANT]
+>  As a security consideration, the <xref:System.Windows.Forms.MaskedTextBox> control disables cut and copy operations on password-protected strings.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The password character specified is the same as the current prompt character, <see cref="P:System.Windows.Forms.MaskedTextBox.PromptChar" />. The two are required to be different.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateText">
+      <MemberSignature Language="C#" Value="public object ValidateText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.ValidateText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts the user input string to an instance of the validating type.</summary>
+        <returns>If successful, an <see cref="T:System.Object" /> of the type specified by the <see cref="P:System.Windows.Forms.MaskedTextBox.ValidatingType" /> property; otherwise, <see langword="null" /> to indicate conversion failure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.ValidateText%2A> method attempts to convert the formatted string contained in the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property to an instance of the type that is specified by the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property. Prompt characters are ignored in the formatted string, but literals are handled in accordance with the current value of the <xref:System.Windows.Forms.MaskedTextBox.TextMaskFormat%2A> property.  
+  
+ <xref:System.Windows.Forms.MaskedTextBox.ValidateText%2A> raises the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event after the conversion is attempted, regardless of its success.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">A critical exception occurred during the parsing of the input string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatingType">
+      <MemberSignature Language="C#" Value="public Type ValidatingType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValidatingType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.ValidatingType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data type used to verify the data input by the user.</summary>
+        <value>A <see cref="T:System.Type" /> representing the data type used in validation. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Masks do not in themselves guarantee that a user's input will represent a valid value for a given type. The following C# code shows a mask:  
+  
+```  
+maskedTextBox1.Mask = "99/99/9999";  
+```  
+  
+ The following [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code shows a mask:  
+  
+ `MaskedTextBox1.Mask = "99/99/9999"`  
+  
+ This mask can demand that the user enter eight digits, but cannot verify that the user enters month, date, and year values in the correct range; "12/20/2003" and "70/90/0000" are equally valid as far as the mask is concerned.  
+  
+ You can use <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> to verify whether the data entered by the user falls within the correct range—in the previously mentioned case, by assigning it an instance of the <xref:System.DateTime> type. The current text in the control will be validated either when the user leaves the control. You can determine whether or not the data fails validation by monitoring for the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event. <xref:System.Windows.Forms.MaskedTextBox> will only perform the check against <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> if <xref:System.Windows.Forms.MaskedTextBox.MaskCompleted%2A> is `true`.  
+  
+ If you want to use your own custom data types with <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A>, you must implement a static `Parse` method that takes a string as a parameter. This method must be implemented with one or both of the following signatures:  
+  
+ `public static Object Parse(string)`  
+  
+ `public static Object Parse(string, IFormatProvider)`  
+  
+   
+  
+## Examples  
+ The following code example attempts to parse the user's input as a valid <xref:System.DateTime>. If it fails, the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler displays an error message to the user. If the value is a valid <xref:System.DateTime>, the code performs an additional check to ensure that the date supplied is not prior to today's date. This code example requires that your Windows Forms project contains a <xref:System.Windows.Forms.MaskedTextBox> control named `MaskedTextBox1` and a <xref:System.Windows.Forms.ToolTip> control named `ToolTip1`.  
+  
+ [!code-csharp[ValidatingTypeSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ValidatingTypeSample/CS/form1.cs#1)]
+ [!code-vb[ValidatingTypeSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ValidatingTypeSample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MaskedTextBox.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WordWrap">
+      <MemberSignature Language="C#" Value="public bool WordWrap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WordWrap" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MaskedTextBox.WordWrap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a multiline text box control automatically wraps words to the beginning of the next line when necessary. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <value>The <see cref="P:System.Windows.Forms.MaskedTextBox.WordWrap" /> property always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because <xref:System.Windows.Forms.MaskedTextBox> does not support multiple lines of input, the <xref:System.Windows.Forms.MaskedTextBox.WordWrap%2A> property is ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

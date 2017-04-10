@@ -1,0 +1,92 @@
+<Type Name="GestureRecognitionResult" FullName="System.Windows.Ink.GestureRecognitionResult">
+  <TypeSignature Language="C#" Value="public class GestureRecognitionResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GestureRecognitionResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.GestureRecognitionResult" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about an ink gesture.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Ink.GestureRecognitionResult> contains an <xref:System.Windows.Ink.ApplicationGesture> and the level of likeliness that the <xref:System.Windows.Ink.GestureRecognizer> correctly identified the gesture.  
+  
+ Use the <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A> property to determine the level of likeliness that the <xref:System.Windows.Ink.GestureRecognizer> correctly identified the gesture.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to identify a gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that its <xref:System.Windows.Controls.InkCanvas.Gesture> event has been connected to the event handler in the code.  
+  
+ [!code-csharp[GestureSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[GestureSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationGesture">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.ApplicationGesture ApplicationGesture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Ink.ApplicationGesture ApplicationGesture" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.GestureRecognitionResult.ApplicationGesture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.ApplicationGesture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the recognized ink gesture.</summary>
+        <value>The recognized ink gesture.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to identify a gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that its <xref:System.Windows.Controls.InkCanvas.Gesture> event has been connected to the event handler in the code.  
+  
+ [!code-csharp[GestureSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[GestureSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecognitionConfidence">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.RecognitionConfidence RecognitionConfidence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Ink.RecognitionConfidence RecognitionConfidence" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the level of confidence that the <see cref="T:System.Windows.Ink.GestureRecognizer" /> has in the recognition of the gesture.</summary>
+        <value>One of the <see cref="T:System.Windows.Ink.RecognitionConfidence" /> levels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to identify a gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that its <xref:System.Windows.Controls.InkCanvas.Gesture> event has been connected to the event handler in the code.  
+  
+ [!code-csharp[GestureSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[GestureSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

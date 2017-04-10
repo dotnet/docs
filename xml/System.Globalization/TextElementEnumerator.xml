@@ -1,0 +1,258 @@
+<Type Name="TextElementEnumerator" FullName="System.Globalization.TextElementEnumerator">
+  <TypeSignature Language="C#" Value="public class TextElementEnumerator : System.Collections.IEnumerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TextElementEnumerator extends System.Object implements class System.Collections.IEnumerator" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.TextElementEnumerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Globalization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enumerates the text elements of a string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework defines a text element as a unit of text that is displayed as a single character, that is, a grapheme. A text element can be any of the following:  
+  
+-   A base character, which is represented as a single <xref:System.Char> value. For example, LATIN CAPITAL LETTER A (U+0041) and LATIN SMALL LETTER AE (U+00E6) are base characters.  
+  
+-   A combining character sequence, which consists of a base character and one or more combining characters. For example, example, LATIN CAPITAL LETTER A (U+0041) followed by COMBINING MACRON (U+0304) is a combining character sequence.  
+  
+-   Surrogate pairs, which the [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines as a coded character representation for a single abstract character that consists of a sequence of two code units: a high surrogate, and a low surrogate. Surrogate pairs are used to represent characters outside of the Unicode Basic Multilingual Plane as UTF-8 encoded characters. For example, GOTHIC LETTER SAUIL (U+10343) is represented in UTF-8 encoding as a high surrogate whose value is 0xD800 and a low surrogate whose value is 0xDF43. A surrogate pair can represent a base character or a combining character.  
+  
+ The <xref:System.Globalization.TextElementEnumerator> class allows you to work with the text elements in a string rather than with single <xref:System.Char> objects.  
+  
+ You instantiate a <xref:System.Globalization.TextElementEnumerator> object that represents a particular string by passing the string to the <xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A?displayProperty=fullName> method. This returns an enumerator that is positioned before the first text element in the string. Calling the <xref:System.Globalization.TextElementEnumerator.Reset%2A> method also brings the enumerator back to this position. Because this represents an invalid state, you must call <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> to advance the enumerator to the first text element of the string before reading the value of the <xref:System.Globalization.TextElementEnumerator.Current%2A> property to return the current text element.  
+  
+ When working with a <xref:System.Globalization.TextElementEnumerator> object, you are responsible for positioning the enumerator. The <xref:System.Globalization.TextElementEnumerator.Current%2A> property returns the same text element until you call either <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> or <xref:System.Globalization.TextElementEnumerator.Reset%2A>. The enumerator is in an invalid state if it is positioned before the first text element or after the last text element in the string. When the enumerator is in an invalid state, attempting to retrieve the value of the <xref:System.Globalization.TextElementEnumerator.Current%2A> property throws an exception. You can determine whether the enumerator is in an invalid state by testing whether the return value of the <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> property is `false`.  
+  
+ The <xref:System.Globalization.TextElementEnumerator> object represents a snapshot of the current state of a string variable or string literal at the moment that the <xref:System.Globalization.TextElementEnumerator> object is instantiated. Note that:  
+  
+-   Text element enumerators can only be used to read data in a string. They cannot modify the underlying string.  
+  
+-   An enumerator does not have exclusive access to the string that it represents. A string variable can be modified after the enumerator is created.  
+  
+-   A <xref:System.Globalization.TextElementEnumerator> object enumerates the text elements present in the string at the time that the <xref:System.Globalization.TextElementEnumerator> object was instantiated. It does not reflect any subsequent changes to the string variable if that variable is modified afterward.  
+  
+-   Because the <xref:System.Globalization.TextElementEnumerator> class does not override <xref:System.Object.Equals%2A?displayProperty=fullName>, two <xref:System.Globalization.TextElementEnumerator> objects that represent the same string will be considered unequal.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Globalization.TextElementEnumerator> class to enumerate the text elements of a string.  
+  
+ [!code-cpp[System.Globalization.TextElementEnumerator.Summary#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.TextElementEnumerator.Summary/CPP/tee_summary.cpp#1)]
+ [!code-csharp[System.Globalization.TextElementEnumerator.Summary#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.TextElementEnumerator.Summary/CS/tee_summary.cs#1)]
+ [!code-vb[System.Globalization.TextElementEnumerator.Summary#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.TextElementEnumerator.Summary/VB/tee_summary.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public object Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Current" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.TextElementEnumerator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current text element in the string.</summary>
+        <value>An object containing the current text element in the string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an enumerator is created or after a <xref:System.Globalization.TextElementEnumerator.Reset%2A> is called, <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> must be called to advance the enumerator to the first text element of the string before reading the value of <xref:System.Globalization.TextElementEnumerator.Current%2A>. Otherwise, <xref:System.Globalization.TextElementEnumerator.Current%2A> is undefined.  
+  
+ <xref:System.Globalization.TextElementEnumerator.Current%2A> also throws an exception if the last call to <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> returned `false`, which indicates the end of the string.  
+  
+ <xref:System.Globalization.TextElementEnumerator.Current%2A> does not move the position of the enumerator, and consecutive calls to <xref:System.Globalization.TextElementEnumerator.Current%2A> return the same object until either <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> or <xref:System.Globalization.TextElementEnumerator.Reset%2A> is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first text element of the string or after the last text element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementIndex">
+      <MemberSignature Language="C#" Value="public int ElementIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ElementIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.TextElementEnumerator.ElementIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the text element that the enumerator is currently positioned over.</summary>
+        <value>The index of the text element that the enumerator is currently positioned over.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first text element of the string or after the last text element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextElement">
+      <MemberSignature Language="C#" Value="public string GetTextElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetTextElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.TextElementEnumerator.GetTextElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the current text element in the string.</summary>
+        <returns>A new string containing the current text element in the string being read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the same text element as the <xref:System.Globalization.TextElementEnumerator.Current%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first text element of the string or after the last text element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public bool MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.TextElementEnumerator.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the enumerator to the next text element of the string.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next text element; <see langword="false" /> if the enumerator has passed the end of the string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an enumerator is created or after a <xref:System.Globalization.TextElementEnumerator.Reset%2A> is called, the enumerator is positioned before the first text element of the string, and the first call to <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> moves the enumerator over the first text element of the string.  
+  
+ If the string is modified after this enumerator was created, <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> throws an exception.  
+  
+ After the end of the string is passed, subsequent calls to <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> return `false` until <xref:System.Globalization.TextElementEnumerator.Reset%2A> is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.TextElementEnumerator.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the enumerator to its initial position, which is before the first text element in the string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.TextElementEnumerator.Reset%2A> method moves the enumerator to the beginning of the string, before the first text element. After calling <xref:System.Globalization.TextElementEnumerator.Reset%2A>, you must call <xref:System.Globalization.TextElementEnumerator.MoveNext%2A> to advance the enumerator to the first text element of the string before calling <xref:System.Globalization.TextElementEnumerator.Current%2A> to read the value of the first text element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

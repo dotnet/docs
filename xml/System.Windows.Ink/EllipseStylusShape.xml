@@ -1,0 +1,111 @@
+<Type Name="EllipseStylusShape" FullName="System.Windows.Ink.EllipseStylusShape">
+  <TypeSignature Language="C#" Value="public sealed class EllipseStylusShape : System.Windows.Ink.StylusShape" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EllipseStylusShape extends System.Windows.Ink.StylusShape" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.EllipseStylusShape" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Ink.StylusShape</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a stylus tip shaped like an ellipse.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+  
+ [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+ [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EllipseStylusShape (double width, double height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, float64 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.EllipseStylusShape.#ctor(System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="width">The width of the stylus shape.</param>
+        <param name="height">The height of the stylus shape.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.EllipseStylusShape" /> class with the specified width and height.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+  
+ [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+ [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EllipseStylusShape (double width, double height, double rotation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 width, float64 height, float64 rotation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.EllipseStylusShape.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+        <Parameter Name="rotation" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="width">The width of the stylus shape.</param>
+        <param name="height">The height of the stylus shape.</param>
+        <param name="rotation">The angle of the stylus shape.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.EllipseStylusShape" /> class with the specified width, height, and angle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+  
+ [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+ [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.EllipseStylusShape" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example demonstrates how to create an <xref:System.Windows.Ink.EllipseStylusShape> and pass it to the <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method to erase a portion of a <xref:System.Windows.Ink.Stroke>. This example assumes that there is a <xref:System.Windows.Ink.IncrementalStrokeHitTester> called `eraseTester` and that its <xref:System.Windows.Ink.IncrementalStrokeHitTester.StrokeHit> event has been connected to the event handler defined in this example. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+  
+ [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
+ [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

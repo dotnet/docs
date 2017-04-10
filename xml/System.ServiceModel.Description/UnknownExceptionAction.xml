@@ -1,0 +1,62 @@
+<Type Name="UnknownExceptionAction" FullName="System.ServiceModel.Description.UnknownExceptionAction">
+  <TypeSignature Language="C#" Value="public enum UnknownExceptionAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnknownExceptionAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.UnknownExceptionAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how a durable service will handle an unknown exception.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, when a durable service is created, <xref:System.ServiceModel.Description.DurableServiceAttribute.UnknownExceptionAction%2A> is set to TerminateInstance.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbortInstance">
+      <MemberSignature Language="C#" Value="AbortInstance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.UnknownExceptionAction AbortInstance = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.UnknownExceptionAction.AbortInstance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.UnknownExceptionAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service will abruptly stop and leave existing state information in its persistence store. Any changes to instance state during the operation which threw the unknown exception will be lost.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateInstance">
+      <MemberSignature Language="C#" Value="TerminateInstance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Description.UnknownExceptionAction TerminateInstance = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.UnknownExceptionAction.TerminateInstance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.UnknownExceptionAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service will close all channels and remove its state information from its persistence store.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

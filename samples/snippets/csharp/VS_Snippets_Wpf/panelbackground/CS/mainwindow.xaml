@@ -1,0 +1,21 @@
+﻿<Window x:Class="PanelBackground.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="350">
+  <!--<Snippet1>-->
+  <Grid>
+    <Grid.Background>
+      <RadialGradientBrush 
+          GradientOrigin="0.5,0.5" 
+          Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+        <RadialGradientBrush.GradientStops>
+          <GradientStop Color="Yellow" Offset="0" />
+          <GradientStop Color="Red" Offset="0.25" />
+          <GradientStop Color="Blue" Offset="0.75" />
+          <GradientStop Color="Green" Offset="1" />
+        </RadialGradientBrush.GradientStops>
+      </RadialGradientBrush>
+    </Grid.Background>
+  </Grid>
+  <!--</Snippet1>-->
+</Window>

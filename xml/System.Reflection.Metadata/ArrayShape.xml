@@ -1,0 +1,95 @@
+<Type Name="ArrayShape" FullName="System.Reflection.Metadata.ArrayShape">
+  <TypeSignature Language="C#" Value="public struct ArrayShape" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ArrayShape extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ArrayShape" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayShape (int rank, System.Collections.Immutable.ImmutableArray&lt;int&gt; sizes, System.Collections.Immutable.ImmutableArray&lt;int&gt; lowerBounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rank, valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; sizes, valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; lowerBounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ArrayShape.#ctor(System.Int32,System.Collections.Immutable.ImmutableArray{System.Int32},System.Collections.Immutable.ImmutableArray{System.Int32})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rank" Type="System.Int32" />
+        <Parameter Name="sizes" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" />
+        <Parameter Name="lowerBounds" Type="System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rank">To be added.</param>
+        <param name="sizes">To be added.</param>
+        <param name="lowerBounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LowerBounds">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;int&gt; LowerBounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; LowerBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ArrayShape.LowerBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rank">
+      <MemberSignature Language="C#" Value="public int Rank { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rank" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ArrayShape.Rank" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sizes">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;int&gt; Sizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; Sizes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ArrayShape.Sizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

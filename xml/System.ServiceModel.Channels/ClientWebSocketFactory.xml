@@ -1,0 +1,76 @@
+<Type Name="ClientWebSocketFactory" FullName="System.ServiceModel.Channels.ClientWebSocketFactory">
+  <TypeSignature Language="C#" Value="public abstract class ClientWebSocketFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ClientWebSocketFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ClientWebSocketFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a client web socket factory.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ClientWebSocketFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ClientWebSocketFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ClientWebSocketFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWebSocket">
+      <MemberSignature Language="C#" Value="public abstract System.Net.WebSockets.WebSocket CreateWebSocket (System.IO.Stream connection, System.ServiceModel.Channels.WebSocketTransportSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebSockets.WebSocket CreateWebSocket(class System.IO.Stream connection, class System.ServiceModel.Channels.WebSocketTransportSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ClientWebSocketFactory.CreateWebSocket(System.IO.Stream,System.ServiceModel.Channels.WebSocketTransportSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebSockets.WebSocket</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.IO.Stream" />
+        <Parameter Name="settings" Type="System.ServiceModel.Channels.WebSocketTransportSettings" />
+      </Parameters>
+      <Docs>
+        <param name="connection">The web socket connection.</param>
+        <param name="settings">The web socket settings.</param>
+        <summary>Creates a new web socket with the specified connection.</summary>
+        <returns>A new <see cref="T:System.Net.WebSockets.WebSocket" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebSocketVersion">
+      <MemberSignature Language="C#" Value="public abstract string WebSocketVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WebSocketVersion" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ClientWebSocketFactory.WebSocketVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of the web socket factory.</summary>
+        <value>The version of the web socket factory.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

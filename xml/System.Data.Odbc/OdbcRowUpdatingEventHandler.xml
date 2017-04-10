@@ -1,0 +1,36 @@
+<Type Name="OdbcRowUpdatingEventHandler" FullName="System.Data.Odbc.OdbcRowUpdatingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void OdbcRowUpdatingEventHandler(object sender, OdbcRowUpdatingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OdbcRowUpdatingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcRowUpdatingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Data.Odbc.OdbcRowUpdatingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The <see cref="T:System.Data.Odbc.OdbcRowUpdatingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Data.Odbc.OdbcDataAdapter.RowUpdating" /> event of an <see cref="T:System.Data.Odbc.OdbcDataAdapter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The handler is not required to perform any action, and your code should avoid generating exceptions or allowing exceptions to propagate to the calling method. Any exceptions that do reach the caller are ignored.  
+  
+ Use the handler to process <xref:System.Data.Odbc.OdbcRowUpdatingEventArgs> and to specify how updates are processed. For example, you may opt to skip the update of the current row or skip the update of all remaining rows. Note that the rows are updated in the order that they were received from the data source.  
+  
+ When you create an <xref:System.Data.Odbc.OdbcRowUpdatingEventArgs> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

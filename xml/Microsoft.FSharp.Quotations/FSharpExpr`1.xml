@@ -1,0 +1,56 @@
+<Type Name="FSharpExpr&lt;T&gt;" FullName="Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class FSharpExpr&lt;T&gt; : Microsoft.FSharp.Quotations.FSharpExpr" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FSharpExpr`1&lt;T&gt; extends Microsoft.FSharp.Quotations.FSharpExpr" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Quotations.FSharpExpr`1" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.FSharp.Quotations.FSharpExpr</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Class</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompiledName("FSharpExpr`1")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Raw">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Quotations.FSharpExpr Raw { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FSharp.Quotations.FSharpExpr Raw" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Quotations.FSharpExpr`1.Raw" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,89 @@
+<Type Name="TickMarkStyle" FullName="System.Web.UI.DataVisualization.Charting.TickMarkStyle">
+  <TypeSignature Language="C#" Value="public enum TickMarkStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TickMarkStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.TickMarkStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a tick mark style when setting the <see cref="P:System.Web.UI.DataVisualization.Charting.TickMark.TickMarkStyle" /> property of a <see cref="T:System.Web.UI.DataVisualization.Charting.TickMark" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.TickMarkStyle> enumeration represents the styles for major and minor tick marks.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcrossAxis">
+      <MemberSignature Language="C#" Value="AcrossAxis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.TickMarkStyle AcrossAxis = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TickMarkStyle.AcrossAxis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tick marks are drawn across the relevant axis line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InsideArea">
+      <MemberSignature Language="C#" Value="InsideArea" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.TickMarkStyle InsideArea = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TickMarkStyle.InsideArea" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tick marks are drawn inside the chart area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.TickMarkStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TickMarkStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tick marks are disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OutsideArea">
+      <MemberSignature Language="C#" Value="OutsideArea" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.TickMarkStyle OutsideArea = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.TickMarkStyle.OutsideArea" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.TickMarkStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tick marks are drawn outside the chart area.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

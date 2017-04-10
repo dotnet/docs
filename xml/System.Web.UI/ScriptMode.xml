@@ -1,0 +1,108 @@
+<Type Name="ScriptMode" FullName="System.Web.UI.ScriptMode">
+  <TypeSignature Language="C#" Value="public enum ScriptMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScriptMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether <see cref="T:System.Web.UI.ScriptManager" /> and <see cref="T:System.Web.UI.ScriptReference" /> objects refer to the debug or release version of client scripts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ScriptMode> enumerator provides values for setting which version of client script to use on a Web page. The enumerator values can be applied to either the <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property of the <xref:System.Web.UI.ScriptManager> object, or to the <xref:System.Web.UI.ScriptReference.ScriptMode%2A> property of the <xref:System.Web.UI.ScriptReference> object. The <xref:System.Web.UI.ScriptManager> object sets the version for all scripts on the page unless it is overridden by a <xref:System.Web.UI.ScriptReference> object. The <xref:System.Web.UI.ScriptReference> object sets the version for a particular script.  
+  
+ The Auto value produces different results depending on whether it refers to a standalone script file or to a script file that is embedded as a resource in an assembly. A standalone script file is defined with the <xref:System.Web.UI.ScriptReference.Path%2A> property. An assembly reference must be accessed through the <xref:System.Web.UI.ScriptReference.Name%2A> and <xref:System.Web.UI.ScriptReference.Assembly%2A> properties. The results for the Auto value are as follows:  
+  
+-   When it is applied to a standalone script file where the <xref:System.Web.UI.ScriptReference.Path%2A> property is specified, the Auto value is equivalent to Release.  
+  
+-   When it is applied to a script reference in an assembly, Auto is equivalent to Inherit. When only <xref:System.Web.UI.ScriptReference.Name%2A> is specified, it is used to reference the script. When <xref:System.Web.UI.ScriptReference.Name%2A> and the <xref:System.Web.UI.ScriptReference.Path%2A> property are both specified, the <xref:System.Web.UI.ScriptReference.Path%2A> property is used instead of <xref:System.Web.UI.ScriptReference.Name%2A>, but the Auto value is still equivalent to Inherit.  
+  
+ An error is thrown if the requested version of the script does not exist. For instance, an error is thrown if a reference is made to a standalone script file that is named CustomScript.js and <xref:System.Web.UI.ScriptMode> is set to Debug, but CustomScript.debug.js does not exist on the site. References to scripts in an assembly return the release version if the debug version does not exist.  
+  
+> [!NOTE]
+>  When the `retail` attribute of the [deployment](http://msdn.microsoft.com/en-us/dbcc2c62-3159-4a62-9f1e-8cfe3b8b09dc) element of the Machine.config file is set to `true`, the release versions of client scripts are used throughout the Web site. The <xref:System.Web.UI.ScriptMode> values in the <xref:System.Web.UI.ScriptManager> and <xref:System.Web.UI.ScriptReference> properties are ignored.  
+  
+   
+  
+## Examples  
+ The following example shows a page where the script versions are declaratively set to Release in the <xref:System.Web.UI.ScriptManager> control, but one script named CustomClient.js is declaratively set to Debug in the <xref:System.Web.UI.ScriptReference> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ScriptMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptMode/cs/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ScriptMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptMode/vb/Default.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ScriptMode Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ScriptMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the version of client scripts to use is determined at run time based on the application-level [&lt;compilation&gt;](http://msdn.microsoft.com/en-us/7c319582-074a-4d2a-a787-03b9d4541c12) element of the Web.config file, unless it is overridden in an instance of the <see cref="T:System.Web.UI.ScriptReference" /> control. In the <see cref="T:System.Web.UI.ScriptReference" /> control, when applied to a standalone script file, <see cref="F:System.Web.UI.ScriptMode.Auto" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Release" />. When applied to a script reference in an assembly, <see cref="F:System.Web.UI.ScriptMode.Auto" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Inherit" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Debug">
+      <MemberSignature Language="C#" Value="Debug" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ScriptMode Debug = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Debug" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ScriptMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the debug version of the client script is used on the Web page unless overridden in an instance of the <see cref="T:System.Web.UI.ScriptReference" /> control. In the <see cref="T:System.Web.UI.ScriptReference" /> control, the debug version of the client script is used on the Web page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ScriptMode Inherit = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ScriptMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, <see cref="F:System.Web.UI.ScriptMode.Inherit" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Auto" />. In the <see cref="T:System.Web.UI.ScriptReference" /> control, the <see cref="P:System.Web.UI.ScriptManager.ScriptMode" /> value from <see cref="T:System.Web.UI.ScriptManager" /> determines which version of the client script to use.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Release">
+      <MemberSignature Language="C#" Value="Release" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ScriptMode Release = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Release" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ScriptMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the release version of the client script is used on the Web page unless overridden by setting the <see cref="P:System.Web.UI.ScriptReference.ScriptMode" /> property of a <see cref="T:System.Web.UI.ScriptReference" /> instance to <see cref="F:System.Web.UI.ScriptMode.Debug" />. In the <see cref="T:System.Web.UI.ScriptReference" /> control, the release version of the client script is used on the Web page.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,102 @@
+<Type Name="FlowDirection" FullName="System.Windows.Forms.FlowDirection">
+  <TypeSignature Language="C#" Value="public enum FlowDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlowDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlowDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify the direction in which consecutive user interface (UI) elements are placed in a linear layout container</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.FlowDirection> enumeration describes the flow direction of consecutive UI elements, typically controls, on a design surface or container such as a form. This enumeration is used by linear layout containers such as <xref:System.Windows.Forms.FlowLayoutPanel>, which stores this information internally in the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A?displayProperty=fullName> property.  
+  
+ The <xref:System.Windows.Forms.FlowDirection> determines where a new control is placed by default when it is added to a supporting container. The flow direction of the container, along with the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties of each contained control, determine the rearrangement of controls when their container is resized.  
+  
+ The <xref:System.Windows.Forms.FlowLayoutPanel> control provides a `FlowBreak` property to its child controls. Setting the value of the `FlowBreak` property to `true` causes the <xref:System.Windows.Forms.FlowLayoutPanel> control to stop laying out controls in the current flow direction and wrap to the next row or column.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property on a <xref:System.Windows.Forms.FlowLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
+  
+ [!code-cpp[System.Windows.Forms.FlowLayoutPanel#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.FlowLayoutPanel/cpp/form1.cpp#4)]
+ [!code-csharp[System.Windows.Forms.FlowLayoutPanel#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FlowLayoutPanel/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.FlowLayoutPanel#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlowLayoutPanel/VB/form1.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BottomUp">
+      <MemberSignature Language="C#" Value="BottomUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlowDirection BottomUp = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlowDirection.BottomUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Elements flow from the bottom of the design surface to the top.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftToRight">
+      <MemberSignature Language="C#" Value="LeftToRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlowDirection LeftToRight = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlowDirection.LeftToRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Elements flow from the left edge of the design surface to the right.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeft">
+      <MemberSignature Language="C#" Value="RightToLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlowDirection RightToLeft = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlowDirection.RightToLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Elements flow from the right edge of the design surface to the left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopDown">
+      <MemberSignature Language="C#" Value="TopDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlowDirection TopDown = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlowDirection.TopDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Elements flow from the top of the design surface to the bottom.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,470 @@
+<Type Name="HttpWebClientProtocol" FullName="System.Web.Services.Protocols.HttpWebClientProtocol">
+  <TypeSignature Language="C#" Value="public abstract class HttpWebClientProtocol : System.Web.Services.Protocols.WebClientProtocol" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpWebClientProtocol extends System.Web.Services.Protocols.WebClientProtocol" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.HttpWebClientProtocol" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.WebClientProtocol</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the base class for all XML Web service client proxies that use the HTTP transport protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties on this class are used to control the behavior of the HTTP request object used to transmit the XML Web service request and response. The properties map to properties found on <xref:System.Net.HttpWebRequest>.  
+  
+ To communicate with an XML Web service using HTTP, you must create a proxy class deriving indirectly or directly from <xref:System.Web.Services.Protocols.HttpWebClientProtocol> for the XML Web service. Instead of creating the proxy class manually, you can use the Wsdl.exe tool to create a proxy class for a given XML Web service's service description.  
+  
+ Since HttpWebClientProtocol is the base class for all proxy classes, its properties are on your proxy classes. These properties are useful for controlling the request behavior of the underlying transport. For example, use the <xref:System.Web.Services.Protocols.HttpWebClientProtocol.Proxy%2A> property for calling XML Web services through a firewall. Many of these properties are used to initialize the <xref:System.Net.HttpWebRequest> that makes the Web request.  
+  
+ <xref:System.Web.Services.Protocols.SoapHttpClientProtocol>, <xref:System.Web.Services.Protocols.HttpGetClientProtocol>, and <xref:System.Web.Services.Protocols.HttpPostClientProtocol> derive directly or indirectly from <xref:System.Web.Services.Protocols.HttpWebClientProtocol> to provide support for SOAP, HTTP-GET and HTTP-POST respectively.  
+  
+   
+  
+## Examples  
+ The following example is an ASP.NET Web Form, which calls an XML Web service named `Math`. Within the `EnterBtn_Click` function, the Web Form allows the server to automatically redirect the client to other sites. It also sets client authentication credentials, proxy settings, the request encoding and the time out for the request before calling the XML Web service method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HttpWebClientProtocol Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic HttpWebClientProtocol Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HttpWebClientProtocol Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic HttpWebClientProtocol Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>The properties on this class are copied into a new instance of a <see cref="T:System.Net.WebRequest" /> object for each XML Web service method call. While you can call XML Web service methods on the same <see cref="T:System.Web.Services.Protocols.WebClientProtocol" /> instance from different threads at the same time, there is no synchronization done to ensure that a consistent snapshot of the properties gets transferred to the <see cref="T:System.Net.WebRequest" /> object. Therefore, if you need to modify the properties and make concurrent method calls from different threads you should use a different instance of the XML Web service proxy or provide your own synchronization.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HttpWebClientProtocol ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.HttpWebClientProtocol" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowAutoRedirect">
+      <MemberSignature Language="C#" Value="public bool AllowAutoRedirect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowAutoRedirect" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the client automatically follows server redirects.</summary>
+        <value>
+          <see langword="true" /> to automatically redirect the client to follow server redirects; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a client sends authentication information, such as a user name and password, you do not want to enable the server to redirect, because this can compromise security.  
+  
+ A <xref:System.Net.WebException> is thrown if the <xref:System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect%2A> property is `false` and the Web server attempts to redirect the request. The <xref:System.Net.WebException.Response%2A> property contains an <xref:System.Net.HttpWebResponse> object, where both the <xref:System.Net.HttpWebResponse.StatusCode%2A> and <xref:System.Net.HttpWebResponse.Headers%2A> properties reflect details regarding the attempted redirect. The <xref:System.Net.HttpWebResponse.StatusCode%2A> property contains an <xref:System.Net.HttpStatusCode> equivalent to one of the HTTP redirect status codes (301, 302, and 307) and the `Location` header within the <xref:System.Net.HttpWebResponse.Headers%2A> collection points to the URI that the request attempted to be redirected to.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">The <see cref="P:System.Web.Services.Protocols.HttpWebClientProtocol.AllowAutoRedirect" /> property is <see langword="false" /> and the Web server attempts to redirect the request.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAsync">
+      <MemberSignature Language="C#" Value="protected void CancelAsync (object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CancelAsync(object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.CancelAsync(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userState">The object provided in the last parameter to the asynchronous call of the <see langword="Begin" /> method.</param>
+        <summary>Cancels an asynchronous call to an XML Web service method, unless the call has already completed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCertificates">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of client certificates.</summary>
+        <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" /> that represents the client certificates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property allows a client to pass one or more client certificates, also known as Authenticode X.509 v.3 certificates, when calling an XML Web service method. If the XML Web service method has been configured to use client certificates, a client certificate can be used as one mechanism for authenticating a client. For details on setting up client certificates, see the Internet Information Services (IIS) documentation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to load in a client certificate from a file and then add it to the <xref:System.Web.Services.Protocols.HttpWebClientProtocol.ClientCertificates%2A> property for calling an XML Web service method that uses client certificates for authentication.  
+  
+ [!code-csharp[HttpWebClientProtocol.ClientCertificates#1](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpWebClientProtocol.ClientCertificates/CS/certcs.aspx#1)]
+ [!code-vb[HttpWebClientProtocol.ClientCertificates#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpWebClientProtocol.ClientCertificates/VB/certvb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CookieContainer">
+      <MemberSignature Language="C#" Value="public System.Net.CookieContainer CookieContainer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.CookieContainer CookieContainer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.CookieContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of cookies.</summary>
+        <value>A <see cref="T:System.Net.CookieContainer" /> that represents the cookies for a Web Services client.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an XML Web service method uses session state, then a cookie is passed back in the response headers to the XML Web service client that uniquely identifies the session for that XML Web service client. In order for an XML Web service to maintain session state for a client, the client must store the cookie. Clients receive the HTTP cookie by creating a new instance of <xref:System.Net.CookieContainer> and assigning that to the <xref:System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer%2A> property of the proxy class before calling the XML Web service method. If you need to maintain session state beyond when the proxy class instance goes out of scope, the client must store the HTTP cookie between calls to the XML Web service. For instance, a Web Forms client can store the HTTP cookie by saving the <xref:System.Net.CookieContainer> in its own session state. Because not all XML Web services use session state and thus clients are not always required to use the <xref:System.Web.Services.Protocols.HttpWebClientProtocol.CookieContainer%2A> property of a client proxy, the documentation for the XML Web service must state whether session state is used.  
+  
+   
+  
+## Examples  
+ The following code example is a Web Forms client of an XML Web service that uses session state. The client stores the HTTP cookie that uniquely identifies the session by storing it in the client's session state.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HttpWebClientProtocol.CookieContainer#1](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpWebClientProtocol.CookieContainer/CS/serverusageclientcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HttpWebClientProtocol.CookieContainer#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpWebClientProtocol.CookieContainer/VB/serverusageclientvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableDecompression">
+      <MemberSignature Language="C#" Value="public bool EnableDecompression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableDecompression" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.EnableDecompression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether decompression is enabled for this <see cref="T:System.Web.Services.Protocols.HttpWebClientProtocol" />.</summary>
+        <value>
+          <see langword="true" /> if decompression is enabled for this <see cref="T:System.Web.Services.Protocols.HttpWebClientProtocol" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateXmlMappings">
+      <MemberSignature Language="C#" Value="public static bool GenerateXmlMappings (Type type, System.Collections.ArrayList mapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GenerateXmlMappings(class System.Type type, class System.Collections.ArrayList mapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type,System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="mappings" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> that exposes the XML Web service methods.</param>
+        <param name="mapping">To be added.</param>
+        <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified type, and stores the mappings in the specified <see cref="T:System.Collections.ArrayList" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="type" /> can be assigned to a <see cref="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateXmlMappings">
+      <MemberSignature Language="C#" Value="public static System.Collections.Hashtable GenerateXmlMappings (Type[] types, System.Collections.ArrayList mapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Hashtable GenerateXmlMappings(class System.Type[] types, class System.Collections.ArrayList mapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GenerateXmlMappings(System.Type[],System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+        <Parameter Name="mappings" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="types">An array of type <see cref="T:System.Type" /> that contains the types that expose the XML Web service methods.</param>
+        <param name="mapping">To be added.</param>
+        <summary>Gets the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified types, and stores the mappings in the specified <see cref="T:System.Collections.ArrayList" />, as well as in a <see cref="T:System.Collections.Hashtable" /> that this method returns.</summary>
+        <returns>A <see cref="T:System.Collections.Hashtable" /> that contains the <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> for each XML Web service method exposed by the specified types. The types contained in <paramref name="types" /> are used as keys.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWebRequest">
+      <MemberSignature Language="C#" Value="protected override System.Net.WebRequest GetWebRequest (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebRequest GetWebRequest(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebRequest(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The <see cref="T:System.Uri" /> for creating the <see cref="T:System.Net.WebRequest" />.</param>
+        <summary>Creates a <see cref="T:System.Net.WebRequest" /> for the specified URI.</summary>
+        <returns>The created <see cref="T:System.Net.WebRequest" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="uri" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWebResponse">
+      <MemberSignature Language="C#" Value="protected override System.Net.WebResponse GetWebResponse (System.Net.WebRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebResponse GetWebResponse(class System.Net.WebRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.WebRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:System.Net.WebRequest" /> from which to get the response.</param>
+        <summary>Returns a response from a synchronous request to an XML Web service method.</summary>
+        <returns>A response from a synchronous request to an XML Web service method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWebResponse">
+      <MemberSignature Language="C#" Value="protected override System.Net.WebResponse GetWebResponse (System.Net.WebRequest request, IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebResponse GetWebResponse(class System.Net.WebRequest request, class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.HttpWebClientProtocol.GetWebResponse(System.Net.WebRequest,System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.WebRequest" />
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:System.Net.WebRequest" /> from which to get the response.</param>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> to pass to <see cref="M:System.Net.HttpWebRequest.EndGetResponse(System.IAsyncResult)" /> when the response has completed.</param>
+        <summary>Returns a response from an asynchronous request to an XML Web service method.</summary>
+        <returns>A response from an asynchronous request to an XML Web service method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Proxy">
+      <MemberSignature Language="C#" Value="public System.Net.IWebProxy Proxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.Proxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets proxy information for making an XML Web service request through a firewall.</summary>
+        <value>An <see cref="T:System.Net.IWebProxy" /> that contains the proxy information for making requests through a firewall. The default value is the operating system proxy settings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Services.Protocols.HttpWebClientProtocol.Proxy%2A> property if a client needs to use different proxy settings than those in the system settings. Use the <xref:System.Net.WebProxy> class to set the proxy settings, because it implements <xref:System.Net.IWebProxy>.  
+  
+ Default proxy settings can be set in a configuration file. For details, see [Configuring Internet Applications](~/docs/framework/network-programming/configuring-internet-applications.md).  
+  
+   
+  
+## Examples  
+ The following example sets the following proxy settings prior to invoking the `Math` XML Web service: the proxy server to http://proxyserver, the proxy port to 80 and the bypass to the proxy server for local addresses.  
+  
+ [!code-cpp[Classic HttpWebClientProtocol.Proxy Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic HttpWebClientProtocol.Proxy Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic HttpWebClientProtocol.Proxy Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic HttpWebClientProtocol.Proxy Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpWebClientProtocol.Proxy Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic HttpWebClientProtocol.Proxy Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsafeAuthenticatedConnectionSharing">
+      <MemberSignature Language="C#" Value="public bool UnsafeAuthenticatedConnectionSharing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UnsafeAuthenticatedConnectionSharing" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.UnsafeAuthenticatedConnectionSharing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether connection sharing is enabled when the client uses NTLM authentication to connect to the Web server that hosts the XML Web service.</summary>
+        <value>
+          <see langword="true" /> if connection sharing is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property sets the value of the <xref:System.Net.HttpWebRequest.UnsafeAuthenticatedConnectionSharing%2A> property of the <xref:System.Net.HttpWebRequest> used to communicate with the Web server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserAgent">
+      <MemberSignature Language="C#" Value="public string UserAgent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserAgent" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.HttpWebClientProtocol.UserAgent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value for the user agent header that is sent with each request.</summary>
+        <value>The value of the HTTP protocol user agent header. The default is "MS Web Services Client Protocol <paramref name="number" /> ", where <paramref name="number" /> is the version of the common language runtime (for example, 1.0.3705.0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The user agent string allows a Web server to identify the client.  
+  
+   
+  
+## Examples  
+ [!code-cpp[HttpWebClientProtocol_UserAgent#1](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpWebClientProtocol_UserAgent/CPP/httpwebclientprotocol_useragent.cpp#1)]
+ [!code-csharp[HttpWebClientProtocol_UserAgent#1](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpWebClientProtocol_UserAgent/CS/httpwebclientprotocol_useragent.cs#1)]
+ [!code-vb[HttpWebClientProtocol_UserAgent#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpWebClientProtocol_UserAgent/VB/httpwebclientprotocol_useragent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

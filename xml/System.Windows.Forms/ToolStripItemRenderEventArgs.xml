@@ -1,0 +1,173 @@
+<Type Name="ToolStripItemRenderEventArgs" FullName="System.Windows.Forms.ToolStripItemRenderEventArgs">
+  <TypeSignature Language="C#" Value="public class ToolStripItemRenderEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripItemRenderEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemRenderEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the events that render the background of objects derived from <see cref="T:System.Windows.Forms.ToolStripItem" /> in the <see cref="T:System.Windows.Forms.ToolStripRenderer" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolStripItemRenderEventArgs> class provides data for the following events:  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderDropDownButtonBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderItemBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderLabelBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderMenuItemBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderOverflowButtonBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderSplitButtonBackground>  
+  
+ In addition, it provides data for the following methods:  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.DrawButtonBackground%2A>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.DrawDropDownButtonBackground%2A>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.DrawItemBackground%2A>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.DrawLabelBackground%2A>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.DrawMenuItemBackground%2A>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.DrawOverflowButtonBackground%2A>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.DrawSplitButton%2A>  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground%2A> method to draw a border around a <xref:System.Windows.Forms.ToolStripButton> control's <xref:System.Windows.Forms.ToolStripItem.Image%2A>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#14](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#14)]
+ [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#14](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#14)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolStripItemRenderEventArgs (System.Drawing.Graphics g, System.Windows.Forms.ToolStripItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStripItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="item" Type="System.Windows.Forms.ToolStripItem" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> object used to draw the item.</param>
+        <param name="item">The <see cref="T:System.Windows.Forms.ToolStripItem" /> to be drawn.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.ToolStripItem" /> and using the specified <see cref="T:System.Drawing.Graphics" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Graphics">
+      <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemRenderEventArgs.Graphics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the graphics used to paint the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> used to paint the <see cref="T:System.Windows.Forms.ToolStripItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground%2A> method to draw a border around a <xref:System.Windows.Forms.ToolStripButton> control's <xref:System.Windows.Forms.ToolStripItem.Image%2A>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#14](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#14)]
+ [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#14](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemRenderEventArgs.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ToolStripItem" /> to paint.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ToolStripItem" /> to paint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground%2A> method to draw a border around a <xref:System.Windows.Forms.ToolStripButton> control's <xref:System.Windows.Forms.ToolStripItem.Image%2A>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#14](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#14)]
+ [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#14](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStrip">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStrip ToolStrip { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStrip ToolStrip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemRenderEventArgs.ToolStrip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStrip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="P:System.Windows.Forms.ToolStripItem.Owner" /> property for the <see cref="T:System.Windows.Forms.ToolStripItem" /> to paint.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ToolStrip" /> that is the owner of the <see cref="T:System.Windows.Forms.ToolStripItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.ToolStripItem> is in the overflow area of the <xref:System.Windows.Forms.Form>, the <xref:System.Windows.Forms.ToolStripItemRenderEventArgs.ToolStrip%2A> property returns an empty string.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground%2A> method to draw a border around a <xref:System.Windows.Forms.ToolStripButton> control's <xref:System.Windows.Forms.ToolStripItem.Image%2A>. This code example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripRenderer> class.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.GridStrip#14](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/CS/GridStrip.cs#14)]
+ [!code-vb[System.Windows.Forms.ToolStrip.GridStrip#14](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.GridStrip/VB/GridStrip.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

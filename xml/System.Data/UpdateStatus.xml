@@ -1,0 +1,107 @@
+<Type Name="UpdateStatus" FullName="System.Data.UpdateStatus">
+  <TypeSignature Language="C#" Value="public enum UpdateStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdateStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.UpdateStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the action to take with regard to the current and remaining rows during an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.UpdateStatus Continue = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.UpdateStatus.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.UpdateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Data.Common.DataAdapter" /> is to continue proccessing rows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorsOccurred">
+      <MemberSignature Language="C#" Value="ErrorsOccurred" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.UpdateStatus ErrorsOccurred = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.UpdateStatus.ErrorsOccurred" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.UpdateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The event handler reports that the update should be treated as an error.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipAllRemainingRows">
+      <MemberSignature Language="C#" Value="SkipAllRemainingRows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.UpdateStatus SkipAllRemainingRows = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.UpdateStatus.SkipAllRemainingRows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.UpdateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The current row and all remaining rows are not to be updated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipCurrentRow">
+      <MemberSignature Language="C#" Value="SkipCurrentRow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.UpdateStatus SkipCurrentRow = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.UpdateStatus.SkipCurrentRow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.UpdateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The current row is not to be updated.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

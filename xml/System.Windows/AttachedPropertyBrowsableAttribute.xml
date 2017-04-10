@@ -1,0 +1,41 @@
+<Type Name="AttachedPropertyBrowsableAttribute" FullName="System.Windows.AttachedPropertyBrowsableAttribute">
+  <TypeSignature Language="C#" Value="public abstract class AttachedPropertyBrowsableAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AttachedPropertyBrowsableAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.AttachedPropertyBrowsableAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class for [!INCLUDE[TLA#tla_netframewkattr#plural](~/includes/tlasharptla-netframewkattrsharpplural-md.md)] that report the use scope of attached properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The meaning of the term `browsable` as used in descriptions for this [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] (and derived classes) is analogous to the descriptions given for <xref:System.ComponentModel.BrowsableAttribute>, but the browsable state for an attached property is particularly relevant to property information for [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], because an attached property is primarily a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] concept.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AttachedPropertyBrowsableAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.AttachedPropertyBrowsableAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

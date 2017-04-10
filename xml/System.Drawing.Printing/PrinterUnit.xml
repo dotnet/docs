@@ -1,0 +1,91 @@
+<Type Name="PrinterUnit" FullName="System.Drawing.Printing.PrinterUnit">
+  <TypeSignature Language="C#" Value="public enum PrinterUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrinterUnit extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterUnit" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies several of the units of measure used for printing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Printing.PreviewPrintController>, <xref:System.Drawing.Printing.PrinterSettings>, and <xref:System.Windows.Forms.PageSetupDialog> classes use this enumeration.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Display">
+      <MemberSignature Language="C#" Value="Display" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterUnit Display = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterUnit.Display" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default unit (0.01 in.).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HundredthsOfAMillimeter">
+      <MemberSignature Language="C#" Value="HundredthsOfAMillimeter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterUnit HundredthsOfAMillimeter = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterUnit.HundredthsOfAMillimeter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One-hundredth of a millimeter (0.01 mm).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TenthsOfAMillimeter">
+      <MemberSignature Language="C#" Value="TenthsOfAMillimeter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterUnit TenthsOfAMillimeter = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterUnit.TenthsOfAMillimeter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One-tenth of a millimeter (0.1 mm).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThousandthsOfAnInch">
+      <MemberSignature Language="C#" Value="ThousandthsOfAnInch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterUnit ThousandthsOfAnInch = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterUnit.ThousandthsOfAnInch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One-thousandth of an inch (0.001 in.).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

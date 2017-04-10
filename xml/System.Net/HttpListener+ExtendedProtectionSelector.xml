@@ -1,0 +1,36 @@
+<Type Name="HttpListener+ExtendedProtectionSelector" FullName="System.Net.HttpListener+ExtendedProtectionSelector">
+  <TypeSignature Language="C#" Value="public delegate System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy HttpListener.ExtendedProtectionSelector(HttpListenerRequest request);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed HttpListener/ExtendedProtectionSelector extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.HttpListener.ExtendedProtectionSelector" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="request" Type="System.Net.HttpListenerRequest" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="request">The <see cref="T:System.Net.HttpListenerRequest" /> to determine the extended protection policy that the <see cref="T:System.Net.HttpListener" /> instance will use to provide extended protection.</param>
+    <summary>A delegate called to determine the <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> to use for each <see cref="T:System.Net.HttpListener" /> request.</summary>
+    <returns>An <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> object that specifies the extended protection policy to use for this request.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.HttpListener.ExtendedProtectionSelector> class is used with integrated Windows authentication to provide extended protection. For each request, the delegate can choose the settings that the <xref:System.Net.HttpListener> instance will use to provide extended protection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

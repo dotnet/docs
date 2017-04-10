@@ -1,0 +1,174 @@
+<Type Name="IComparable&lt;T&gt;" FullName="System.IComparable&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IComparable&lt;in T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComparable`1&lt;- T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.IComparable`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of object to compare.</typeparam>
+    <summary>Defines a generalized comparison method that a value type or class implements to create a type-specific comparison method for ordering or sorting its instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is implemented by types whose values can be ordered or sorted and provides a strongly typed comparison method for ordering members of a generic collection object. For example, one number can be larger than a second number, and one string can appear in alphabetical order before another. It requires that implementing types define a single method, <xref:System.IComparable%601.CompareTo%28%600%29>, that indicates whether the position of the current instance in the sort order is before, after, or the same as a second object of the same type. Typically, the method is not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
+  
+ Typically, types that provide an <xref:System.IComparable%601> implementation also implement the <xref:System.IEquatable%601> interface. The <xref:System.IEquatable%601> interface defines the <xref:System.IEquatable%601.Equals%2A> method, which determines the equality of instances of the implementing type.  
+  
+ The implementation of the <xref:System.IComparable%601.CompareTo%28%600%29> method must return an <xref:System.Int32> that has one of three values, as shown in the following table.  
+  
+|Value|Meaning|  
+|-----------|-------------|  
+|Less than zero|This object precedes the object specified by the <xref:System.IComparable%601.CompareTo%2A> method in the sort order.|  
+|Zero|This current instance occurs in the same position in the sort order as the object specified by the <xref:System.IComparable%601.CompareTo%2A> method argument.|  
+|Greater than zero|This current instance follows the object specified by the <xref:System.IComparable%601.CompareTo%2A> method argument in the sort order.|  
+  
+ All numeric types (such as <xref:System.Int32> and <xref:System.Double>) implement <xref:System.IComparable%601>, as do <xref:System.String>, <xref:System.Char>, and <xref:System.DateTime>. Custom types should also provide their own implementation of <xref:System.IComparable%601> to enable object instances to be ordered or sorted.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the implementation of  <xref:System.IComparable%601> for a simple `Temperature` object. The example creates a <xref:System.Collections.Generic.SortedList%602> collection of strings with `Temperature` object keys, and adds several pairs of temperatures and strings to the list out of sequence. In the call to the <xref:System.Collections.Generic.SortedList%602.Add%2A> method, the <xref:System.Collections.Generic.SortedList%602> collection uses the <xref:System.IComparable%601> implementation to sort the list entries, which are then displayed in order of increasing temperature.  
+  
+ [!code-cpp[IComparable\`1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/IComparable`1 Example/CPP/source.cpp#1)]
+ [!code-csharp[IComparable\`1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/IComparable`1 Example/CS/source.cs#1)]
+ [!code-vb[IComparable\`1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IComparable`1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Replace the type parameter of the <see cref="T:System.IComparable`1" /> interface with the type that is implementing this interface.  
+  
+ If you implement <see cref="T:System.IComparable`1" />, you should overload the <see langword="op_GreaterThan" />, <see langword="op_GreaterThanOrEqual" />, <see langword="op_LessThan" />, and <see langword="op_LessThanOrEqual" /> operators to return values that are consistent with <see cref="M:System.IComparable`1.CompareTo(`0)" />. In addition, you should also implement <see cref="T:System.IEquatable`1" />. See the <see cref="T:System.IEquatable`1" /> article for complete information.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (T other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(!T other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IComparable`1.CompareTo(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this instance.</param>
+        <summary>Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.</summary>
+        <returns>A value that indicates the relative order of the objects being compared. The return value has these meanings:  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance precedes <paramref name="other" /> in the sort order.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance occurs in the same position in the sort order as <paramref name="other" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance follows <paramref name="other" /> in the sort order.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IComparable%601.CompareTo%2A> provides a strongly typed comparison method for ordering members of a generic collection object. Because of this, it is usually not called directly from developer code. Instead, it is called automatically by methods such as <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> and <xref:System.Collections.Generic.SortedList%602.Add%2A>.  
+  
+ This method is only a definition and must be implemented by a specific class or value type to have effect. The meaning of the comparisons specified in the Return Values section ("precedes", "occurs in the same position as", and "follows) depends on the particular implementation.  
+  
+ By definition, any object compares greater than `null`, and two null references compare equal to each other.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the implementation of <xref:System.IComparable> for a simple `Temperature` object. The example creates a <xref:System.Collections.Generic.SortedList%602> collection of strings with `Temperature` object keys, and adds several pairs of temperatures and strings to the list out of sequence. In the call to the <xref:System.Collections.Generic.SortedList%602.Add%2A> method, the <xref:System.Collections.Generic.SortedList%602> collection uses the <xref:System.IComparable%601> implementation to sort the list entries, which are then displayed in order of increasing temperature.  
+  
+ [!code-cpp[IComparable\`1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR/IComparable`1 Example/CPP/source.cpp#1)]
+ [!code-csharp[IComparable\`1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR/IComparable`1 Example/CS/source.cs#1)]
+ [!code-vb[IComparable\`1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IComparable`1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>For objects A, B, and C, the following must be true:  
+  
+ <c>A.CompareTo(A)</c> is required to return zero.  
+  
+ If <c>A.CompareTo(B)</c> returns zero, then <c>B.CompareTo(A)</c> is required to return zero.  
+  
+ If <c>A.CompareTo(B)</c> returns zero and <c>B.CompareTo(C)</c> returns zero, then <c>A.CompareTo(C)</c> is required to return zero.  
+  
+ If <c>A.CompareTo(B)</c> returns a value other than zero, then <c>B.CompareTo(A)</c> is required to return a value of the opposite sign.  
+  
+ If <c>A.CompareTo(B)</c> returns a value <paramref name="x" /> that is not equal to zero, and <c>B.CompareTo(C)</c> returns a value <paramref name="y" /> of the same sign as <paramref name="x" />, then <c>A.CompareTo(C)</c> is required to return a value of the same sign as <paramref name="x" /> and <paramref name="y" />.</para>
+        </block>
+        <block subset="none" type="usage">
+          <para>Use the <see cref="M:System.IComparable`1.CompareTo(`0)" /> method to determine the ordering of instances of a class.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

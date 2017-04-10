@@ -1,0 +1,58 @@
+<Type Name="IRegisterMetadata" FullName="System.Activities.Presentation.Metadata.IRegisterMetadata">
+  <TypeSignature Language="C#" Value="public interface IRegisterMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRegisterMetadata" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.IRegisterMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a class that will add extra attributes to the metadata store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Metadata.IRegisterMetadata> types provide a way to encapsulate the association of design-time attributes to run-time types in a loosely coupled fashion. An application hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] can use the <xref:System.Activities.Presentation.Metadata.IRegisterMetadata> interface to register the attributes for the activity. For instance, [!INCLUDE[vs2010](~/includes/vs2010-md.md)] searches for types that implement <xref:System.Activities.Presentation.Metadata.IRegisterMetadata> when assemblies that contain these types are loaded in addition to also looking for types in the *.design assemblies.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_IRegisterMetadata#1](WFD_IRegisterMetadata#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public void Register ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Register() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.IRegisterMetadata.Register" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Adds additional metadata to the metadata store upon initialization of the designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementations should call <xref:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable%2A> to add data to the metadata store.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_IRegisterMetadata#2](WFD_IRegisterMetadata#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,331 @@
+<Type Name="BodyWriter" FullName="System.ServiceModel.Channels.BodyWriter">
+  <TypeSignature Language="C#" Value="public abstract class BodyWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BodyWriter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BodyWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the writer of the message body.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message consists of headers and a body. The headers are buffered and the body is streamed. Because the body is streamed, the user cannot pass the actual content of the body to a message. Instead the user must pass a class that knows how to write the body when asked to do so. This is done by passing a class derived from <xref:System.ServiceModel.Channels.BodyWriter> to the <xref:System.ServiceModel.Channels.Message>. A message calls the class derived from <xref:System.ServiceModel.Channels.BodyWriter> whenever it requires the body to be written using an <xref:System.Xml.XmlWriter>.  
+  
+   
+  
+## Examples  
+ The following example shows how to derive a class from <xref:System.ServiceModel.Channels.BodyWriter>. This override takes in an array of strings and writes them to a <xref:System.Xml.XmlDictionaryWriter>.  
+  
+ [!code-csharp[S_UEBodyWriter#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebodywriter/cs/program.cs#1)]
+ [!code-vb[S_UEBodyWriter#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebodywriter/vb/module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BodyWriter (bool isBuffered);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isBuffered) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isBuffered" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isBuffered">
+          <see langword="true" /> if the body writer can be called multiple times; otherwise <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.BodyWriter" /> class that explicitly indicates whether to buffer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `isBuffered` is `false` then the message calls the write method once and buffers the contents.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginWriteBodyContents">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginWriteBodyContents (System.Xml.XmlDictionaryWriter writer, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginWriteBodyContents(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.BeginWriteBodyContents(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The writer.</param>
+        <param name="callback">The callback.</param>
+        <param name="state">The state.</param>
+        <summary>Starts to write body contents for the body writer with specified writer, callback and state.</summary>
+        <returns>The result of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBufferedCopy">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.BodyWriter CreateBufferedCopy (int maxBufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.BodyWriter CreateBufferedCopy(int32 maxBufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.CreateBufferedCopy(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BodyWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxBufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="maxBufferSize">The maximum size of the buffer for the body.</param>
+        <summary>Creates a buffered copy of the body.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.BodyWriter" /> that contains a copy of this object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.ServiceModel.Channels.BodyWriter.IsBuffered%2A> is `true` then the <xref:System.ServiceModel.Channels.BodyWriter> object is returned. If <xref:System.ServiceModel.Channels.BodyWriter.IsBuffered%2A> is `false` then the contents of the <xref:System.ServiceModel.Channels.BodyWriter> up to `maxBufferSize` is returned. This also calls <xref:System.ServiceModel.Channels.BodyWriter.OnCreateBufferedCopy%28System.Int32%29> as an extensibility point.  
+  
+   
+  
+## Examples  
+ The following sample shows how to create a buffered copy of an existing <xref:System.ServiceModel.Channels.BodyWriter> instance.  
+  
+ [!code-csharp[S_UEBodyWriter#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebodywriter/cs/snippets.cs#2)]
+ [!code-vb[S_UEBodyWriter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebodywriter/vb/snippets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="maxBufferSize" /> is less than zero.</exception>
+        <exception cref="T:System.InvalidOperationException">The body has already been written and cannot be written again, or the body writer is not buffered.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndWriteBodyContents">
+      <MemberSignature Language="C#" Value="public void EndWriteBodyContents (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndWriteBodyContents(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.EndWriteBodyContents(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The result of the operation.</param>
+        <summary>Ends the writing of body contents.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBuffered">
+      <MemberSignature Language="C#" Value="public bool IsBuffered { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBuffered" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BodyWriter.IsBuffered" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the write method can be called multiple times.</summary>
+        <value>
+          <see langword="true" /> if the body writer can be called multiple times; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `isBuffered` is `false` then the message calls the write method once and buffers the contents.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginWriteBodyContents">
+      <MemberSignature Language="C#" Value="protected virtual IAsyncResult OnBeginWriteBodyContents (System.Xml.XmlDictionaryWriter writer, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginWriteBodyContents(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnBeginWriteBodyContents(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The writer</param>
+        <param name="callback">The callback</param>
+        <param name="state">The state.</param>
+        <summary>Raises an event when the body writer starts to write body contents with specified writer, callback and state.</summary>
+        <returns>The asynchronous result.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateBufferedCopy">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Channels.BodyWriter OnCreateBufferedCopy (int maxBufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.BodyWriter OnCreateBufferedCopy(int32 maxBufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnCreateBufferedCopy(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BodyWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxBufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="maxBufferSize">The maximum size of the buffer for the body.</param>
+        <summary>Provides an extensibility point when the body contents are written.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.BodyWriter" /> with the specified maximum buffer size.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class derived from <xref:System.ServiceModel.Channels.BodyWriter> can override this method to create a buffered copy of the <xref:System.ServiceModel.Channels.BodyWriter>. But the default implementation of <xref:System.ServiceModel.Channels.BodyWriter.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> calls <xref:System.ServiceModel.Channels.BodyWriter.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29>, so overriding just <xref:System.ServiceModel.Channels.BodyWriter.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> should be easier and work for most scenarios.  
+  
+ Note that the <xref:System.ServiceModel.Channels.BodyWriter> returned must be buffered, that is <xref:System.ServiceModel.Channels.BodyWriter.IsBuffered%2A> must be `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndWriteBodyContents">
+      <MemberSignature Language="C#" Value="protected virtual void OnEndWriteBodyContents (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndWriteBodyContents(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnEndWriteBodyContents(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The result of the operation.</param>
+        <summary>Raises an event when the body writer ends writing body contents.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWriteBodyContents">
+      <MemberSignature Language="C#" Value="protected abstract void OnWriteBodyContents (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteBodyContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write out the message body.</param>
+        <summary>When implemented, provides an extensibility point when the body contents are written.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method must be implemented by classes derived from <xref:System.ServiceModel.Channels.BodyWriter>. This is the key method that writes the body. If the <xref:System.ServiceModel.Channels.BodyWriter> is buffered then this method is called only once.  
+  
+   
+  
+## Examples  
+ The following example illustrates an override of the <xref:System.ServiceModel.Channels.BodyWriter.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> method.  
+  
+ [!code-csharp[S_UEBodyWriter#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebodywriter/cs/program.cs#3)]
+ [!code-vb[S_UEBodyWriter#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebodywriter/vb/module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBodyContents">
+      <MemberSignature Language="C#" Value="public void WriteBodyContents (System.Xml.XmlDictionaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBodyContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.WriteBodyContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlDictionaryWriter" /> used to write out the message body.</param>
+        <summary>Writes out the contents of the message body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of <xref:System.ServiceModel.Channels.BodyWriter.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> calls <xref:System.ServiceModel.Channels.BodyWriter.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29>, so overriding <xref:System.ServiceModel.Channels.BodyWriter.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> provides the best point of extension.  
+  
+   
+  
+## Examples  
+ The following sample shows how to call the <xref:System.ServiceModel.Channels.BodyWriter.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> method.  
+  
+ [!code-csharp[S_UEBodyWriter#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebodywriter/cs/program.cs#4)]
+ [!code-vb[S_UEBodyWriter#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebodywriter/vb/module1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

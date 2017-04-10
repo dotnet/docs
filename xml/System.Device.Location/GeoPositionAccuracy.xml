@@ -1,0 +1,57 @@
+<Type Name="GeoPositionAccuracy" FullName="System.Device.Location.GeoPositionAccuracy">
+  <TypeSignature Language="C#" Value="public enum GeoPositionAccuracy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeoPositionAccuracy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPositionAccuracy" />
+  <AssemblyInfo>
+    <AssemblyName>System.Device</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the requested accuracy level for the location data that the application uses.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The requested accuracy can be specified in the constructor for <xref:System.Device.Location.GeoCoordinateWatcher>. If not specified, the <xref:System.Device.Location.GeoCoordinateWatcher> is created with an accuracy level of Default. An accuracy level of High may degrade system performance and should be used only when necessary.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionAccuracy Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionAccuracy.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Device.Location.GeoPositionAccuracy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Optimize for power, performance, and other cost considerations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionAccuracy High = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionAccuracy.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Device.Location.GeoPositionAccuracy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Deliver the most accurate report possible. This includes using services that might charge money, or consuming higher levels of battery power or connection bandwidth.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

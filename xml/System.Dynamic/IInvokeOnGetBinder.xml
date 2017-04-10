@@ -1,0 +1,61 @@
+<Type Name="IInvokeOnGetBinder" FullName="System.Dynamic.IInvokeOnGetBinder">
+  <TypeSignature Language="C#" Value="public interface IInvokeOnGetBinder" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInvokeOnGetBinder" />
+  <TypeSignature Language="DocId" Value="T:System.Dynamic.IInvokeOnGetBinder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents information about a dynamic get member operation that indicates if the get member should invoke properties when they perform the get operation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InvokeOnGet">
+      <MemberSignature Language="C#" Value="public bool InvokeOnGet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InvokeOnGet" />
+      <MemberSignature Language="DocId" Value="P:System.Dynamic.IInvokeOnGetBinder.InvokeOnGet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value indicating if this get member operation should invoke properties when they perform the get operation. The default value when this interface is not present is true.</summary>
+        <value>True if this get member operation should invoke properties when they perform the get operation; otherwise false.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used by some languages to get a better [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] interoperation experience.  
+  
+ When the value is set to false, the dynamic [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] object will not invoke the object but will instead bind to the name, and return an object that can be invoked or indexed later. This is useful for indexed properties and languages that do not produce InvokeMember call sites.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

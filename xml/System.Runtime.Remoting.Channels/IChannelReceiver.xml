@@ -1,0 +1,183 @@
+<Type Name="IChannelReceiver" FullName="System.Runtime.Remoting.Channels.IChannelReceiver">
+  <TypeSignature Language="C#" Value="public interface IChannelReceiver : System.Runtime.Remoting.Channels.IChannel" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelReceiver implements class System.Runtime.Remoting.Channels.IChannel" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IChannelReceiver" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IChannel</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides required functions and properties for the receiver channels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The receiving side of channels must expose the <xref:System.Runtime.Remoting.Channels.IChannelReceiver> interface.  
+  
+   
+  
+## Examples  
+ [!code-cpp[IChannelReceiver_StartListening_ChannelData#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CPP/ichannelreceiver_channeldata_server.cpp#1)]
+ [!code-csharp[IChannelReceiver_StartListening_ChannelData#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CS/ichannelreceiver_channeldata_server.cs#1)]
+ [!code-vb[IChannelReceiver_StartListening_ChannelData#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/VB/ichannelreceiver_channeldata_server.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChannelData">
+      <MemberSignature Language="C#" Value="public object ChannelData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ChannelData" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the channel-specific data.</summary>
+        <value>The channel data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used when <xref:System.Runtime.Remoting.RemotingServices.Marshal%2A?displayProperty=fullName> is called and a <xref:System.Runtime.Remoting.ObjRef> is created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrlsForUri">
+      <MemberSignature Language="C#" Value="public string[] GetUrlsForUri (string objectURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetUrlsForUri(string objectURI) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.GetUrlsForUri(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectURI" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="objectURI">The URI for which URLs are required.</param>
+        <summary>Returns an array of all the URLs for a URI.</summary>
+        <returns>An array of the URLs.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used by the <xref:System.Runtime.Remoting.Channels.ChannelServices.GetUrlsForObject%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ [!code-cpp[IChannelReceiver_StartListening_ChannelData#3](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CPP/ichannelreceiver_channeldata_server.cpp#3)]
+ [!code-csharp[IChannelReceiver_StartListening_ChannelData#3](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CS/ichannelreceiver_channeldata_server.cs#3)]
+ [!code-vb[IChannelReceiver_StartListening_ChannelData#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/VB/ichannelreceiver_channeldata_server.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListening">
+      <MemberSignature Language="C#" Value="public void StartListening (object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartListening(object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.StartListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">Optional initialization information.</param>
+        <summary>Instructs the current channel to start listening for requests.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data object can be used to pass specific initialization state to the channel.  
+  
+   
+  
+## Examples  
+ [!code-cpp[IChannelReceiver_StartListening_ChannelData#4](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CPP/ichannelreceiver_channeldata_server.cpp#4)]
+ [!code-csharp[IChannelReceiver_StartListening_ChannelData#4](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/CS/ichannelreceiver_channeldata_server.cs#4)]
+ [!code-vb[IChannelReceiver_StartListening_ChannelData#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelReceiver_StartListening_ChannelData/VB/ichannelreceiver_channeldata_server.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StopListening">
+      <MemberSignature Language="C#" Value="public void StopListening (object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopListening(object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.StopListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">Optional state information for the channel.</param>
+        <summary>Instructs the current channel to stop listening for requests.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data object can be used to pass the specific state to the channel.  
+  
+   
+  
+## Examples  
+ [!code-cpp[HttpServerChannel_Server_Client#3](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CPP/httpserverchannel_9_server.cpp#3)]
+ [!code-csharp[HttpServerChannel_Server_Client#3](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CS/httpserverchannel_9_server.cs#3)]
+ [!code-vb[HttpServerChannel_Server_Client#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpServerChannel_Server_Client/VB/httpserverchannel_9_server.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

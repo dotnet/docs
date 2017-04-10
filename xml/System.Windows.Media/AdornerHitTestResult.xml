@@ -1,0 +1,51 @@
+<Type Name="AdornerHitTestResult" FullName="System.Windows.Media.AdornerHitTestResult">
+  <TypeSignature Language="C#" Value="public class AdornerHitTestResult : System.Windows.Media.PointHitTestResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdornerHitTestResult extends System.Windows.Media.PointHitTestResult" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.AdornerHitTestResult" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.PointHitTestResult</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents data returned from calling the <see cref="M:System.Windows.Documents.AdornerLayer.AdornerHitTest(System.Windows.Point)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to the visual and point information provided by the base class <xref:System.Windows.Media.PointHitTestResult>, this class uses the value of the <xref:System.Windows.Media.AdornerHitTestResult.Adorner%2A?displayProperty=fullName> property to return the <xref:System.Windows.Documents.Adorner> that was hit (since there may be multiple Visuals in a single <xref:System.Windows.Documents.Adorner>).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Adorner">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.Adorner Adorner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Adorner Adorner" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.AdornerHitTestResult.Adorner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.Adorner</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the visual that was hit.</summary>
+        <value>The visual that was hit.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There may be multiple visuals in a single <xref:System.Windows.Documents.Adorner>. This property returns the visual that was actually hit.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

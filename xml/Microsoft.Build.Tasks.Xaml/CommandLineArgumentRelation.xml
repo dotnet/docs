@@ -1,0 +1,62 @@
+<Type Name="CommandLineArgumentRelation" FullName="Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation">
+  <TypeSignature Language="C#" Value="public class CommandLineArgumentRelation : Microsoft.Build.Tasks.Xaml.PropertyRelation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandLineArgumentRelation extends Microsoft.Build.Tasks.Xaml.PropertyRelation" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.Xaml.PropertyRelation</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulations the relations between command line arguments.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandLineArgumentRelation (string argument, string value, bool required, string separator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string argument, string value, bool required, string separator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation.#ctor(System.String,System.String,System.Boolean,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="argument" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="required" Type="System.Boolean" />
+        <Parameter Name="separator" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="argument">The argument</param>
+        <param name="value">The value.</param>
+        <param name="required">
+          <see langword="true" /> if required.</param>
+        <param name="separator">The separator between arguments.</param>
+        <summary>Initializes an instance of the <see cref="Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="public string Separator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Separator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation.Separator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the separator between command line arguments.</summary>
+        <value>A string containing the separator.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

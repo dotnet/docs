@@ -1,0 +1,89 @@
+<Type Name="ConfigurationAllowExeDefinition" FullName="System.Configuration.ConfigurationAllowExeDefinition">
+  <TypeSignature Language="C#" Value="public enum ConfigurationAllowExeDefinition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationAllowExeDefinition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationAllowExeDefinition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the locations within the configuration-file hierarchy that can set or override the properties contained within a <see cref="T:System.Configuration.ConfigurationSection" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in this enumeration are optionally used when creating a new instance of the <xref:System.Configuration.ConfigurationSection> class. Note this enumeration applies to client applications only.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MachineOnly">
+      <MemberSignature Language="C#" Value="MachineOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationAllowExeDefinition MachineOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowExeDefinition.MachineOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowExeDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Configuration.ConfigurationSection" /> can be defined only in the Machine.config file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineToApplication">
+      <MemberSignature Language="C#" Value="MachineToApplication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationAllowExeDefinition MachineToApplication = int32(100)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowExeDefinition.MachineToApplication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowExeDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Configuration.ConfigurationSection" /> can be defined either in the Machine.config file or in the Exe.config file in the client application directory. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineToLocalUser">
+      <MemberSignature Language="C#" Value="MachineToLocalUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationAllowExeDefinition MachineToLocalUser = int32(300)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowExeDefinition.MachineToLocalUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowExeDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Configuration.ConfigurationSection" /> can be defined in the Machine.config file, in the Exe.config file in the client application directory, in the User.config file in the roaming user directory, or in the User.config file in the local user directory.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineToRoamingUser">
+      <MemberSignature Language="C#" Value="MachineToRoamingUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationAllowExeDefinition MachineToRoamingUser = int32(200)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowExeDefinition.MachineToRoamingUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowExeDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Configuration.ConfigurationSection" /> can be defined in the Machine.config file, in the Exe.config file in the client application directory, or in the User.config file in the roaming user directory.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

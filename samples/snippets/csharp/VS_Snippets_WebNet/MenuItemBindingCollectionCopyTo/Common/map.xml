@@ -1,0 +1,30 @@
+<MapHomeNode url="~\Home.aspx" 
+  title="Home"
+  description="Home">
+  <MapNode url="~\Music.aspx"
+    title="Music"
+    description="Music">
+    <MapNode url="~\Classical.aspx" 
+      title="Classical"
+      description="Classical"/>
+    <MapNode url="~\Rock.aspx"
+      title="Rock"
+      description="Rock"/>
+    <MapNode url="~\Jazz.aspx"
+      title="Jazz"
+      description="Jazz"/>
+  </MapNode>
+  <MapNode url="~\Movies.aspx"
+    title="Movies"
+    description="Movies">
+    <MapNode url="~\Action.aspx"
+      title="Action"
+      description="Action"/>
+    <MapNode url="~\Drama.aspx"
+      title="Drama"
+      description="Drama"/>
+    <MapNode url="~\Musical.aspx"
+      title="Musical"
+      description="Musical"/>
+  </MapNode>
+</MapHomeNode>

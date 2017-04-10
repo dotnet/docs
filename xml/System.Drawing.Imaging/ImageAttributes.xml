@@ -1,0 +1,1675 @@
+<Type Name="ImageAttributes" FullName="System.Drawing.Imaging.ImageAttributes">
+  <TypeSignature Language="C#" Value="public sealed class ImageAttributes : ICloneable, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImageAttributes extends System.Object implements class System.ICloneable, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageAttributes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Contains information about how bitmap and metafile colors are manipulated during rendering.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains several color-adjustment settings, including color-adjustment matrices, grayscale-adjustment matrices, gamma-correction values, color-map tables, and color-threshold values. During rendering, colors can be corrected, darkened, lightened, and removed. To apply such manipulations, initialize an <xref:System.Drawing.Imaging.ImageAttributes> object and pass the path of that <xref:System.Drawing.Imaging.ImageAttributes> object (along with the path of an <xref:System.Drawing.Image>) to the <xref:System.Drawing.Graphics.DrawImage%2A> method.  
+  
+   
+  
+## Examples  
+ The following example takes an image that is all one color (0.2, 0.0, 0.4, 1.0) and doubles the red component adds 0.2 to the red, green, and blue components  
+  
+ The following illustration shows the original image on the left and the transformed image on the right.  
+  
+ ![Colors](~/add/media/colortrans1.png "Colors")  
+  
+ The code in the following example uses the following steps to perform the recoloring:  
+  
+1.  Initialize a <xref:System.Drawing.Imaging.ColorMatrix> object.  
+  
+2.  Create an <xref:System.Drawing.Imaging.ImageAttributes> object and pass the <xref:System.Drawing.Imaging.ColorMatrix> object to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+3.  Pass the <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method of a <xref:System.Drawing.Graphics> object.  
+  
+ [!code-csharp[System.Drawing.RecoloringImages#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RecoloringImages/CS/Class1.cs#21)]
+ [!code-vb[System.Drawing.RecoloringImages#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RecoloringImages/VB/Class1.vb#21)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.ImageAttributes" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearBrushRemapTable">
+      <MemberSignature Language="C#" Value="public void ClearBrushRemapTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearBrushRemapTable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearBrushRemapTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the brush color-remap table of this <see cref="T:System.Drawing.Imaging.ImageAttributes" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify one color-remap table for the default category, a different color-remap table for the bitmap category, and still a different color-remap table for the brush category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the brush category, the default settings apply to the brush category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a default remap table that converts red to green, and you specify a default gamma value of 1.8. If you call the <xref:System.Drawing.Imaging.ImageAttributes.SetBrushRemapTable%2A> method, the default remap table (red to green) and the default gamma value (1.8) will not apply to brushes. If you later call the <xref:System.Drawing.Imaging.ImageAttributes.ClearBrushRemapTable%2A> method, the brush category will not revert to the default remap table; rather, the brush category will have no remap table. Similarly, the brush category will not revert to the default gamma value; rather, the brush category will have no gamma value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearColorKey">
+      <MemberSignature Language="C#" Value="public void ClearColorKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearColorKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearColorKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the color key (transparency range) for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify one color key for the default category, a different color key for the bitmap category, and still a different color key for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearColorKey">
+      <MemberSignature Language="C#" Value="public void ClearColorKey (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearColorKey(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearColorKey(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the color key is cleared.</param>
+        <summary>Clears the color key (transparency range) for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify one color key for the default category, a different color key for the bitmap category, and still a different color key for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a default color key that makes any color with a red component from 200 through 255 transparent, and you specify a default gamma value of 1.8. If you set the color key of the pen category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorKey%2A> method, the default color key and the default gamma value will not apply to pens. If you later clear the pen color key by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearColorKey%2A> method, the pen category will not revert to the default color key; rather, the pen category will have no color key. Similarly, the pen category will not revert to the default gamma value; rather, the pen category will have no gamma value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearColorMatrix">
+      <MemberSignature Language="C#" Value="public void ClearColorMatrix ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearColorMatrix() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearColorMatrix" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the color-adjustment matrix for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color-adjustment matrix for the default category, a different color-adjustment matrix for the bitmap category, and still a different color-adjustment matrix for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, then the default settings apply to the pen category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearColorMatrix">
+      <MemberSignature Language="C#" Value="public void ClearColorMatrix (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearColorMatrix(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearColorMatrix(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the color-adjustment matrix is cleared.</param>
+        <summary>Clears the color-adjustment matrix for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color-adjustment matrix for the default category, a different color-adjustment matrix for the bitmap category, and still a different color-adjustment matrix for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, then the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a color-adjustment matrix and a gamma value for the default category. If you set a color-adjustment matrix for the pen category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method, the default color-adjustment matrix will not apply to pens. If you later clear the pen color-adjustment matrix by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearColorMatrix%2A> method, the pen category will not revert to the default adjustment matrix; rather, the pen category will have no adjustment matrix. Similarly, the pen category will not revert to the default gamma value; rather, the pen category will have no gamma value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearGamma">
+      <MemberSignature Language="C#" Value="public void ClearGamma ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearGamma() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearGamma" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disables gamma correction for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a gamma value for the default category, a different gamma value for the bitmap category, and still a different gamma value for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearGamma">
+      <MemberSignature Language="C#" Value="public void ClearGamma (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearGamma(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearGamma(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which gamma correction is disabled.</param>
+        <summary>Disables gamma correction for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a gamma value for the default category, a different gamma value for the bitmap category, and still a different gamma value for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, then the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a gamma value and a color-adjustment matrix for the default category. If you set the gamma value for the pen category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetGamma%2A> method, the default gamma value will not apply to pens. If you later clear the pen gamma value by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearGamma%2A> method, the pen category will not revert to the default gamma value; rather, the pen category will have no gamma value. Similarly, the pen category will not revert to the default color-adjustment matrix; rather, the pen category will have no color-adjustment matrix.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearNoOp">
+      <MemberSignature Language="C#" Value="public void ClearNoOp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearNoOp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearNoOp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the <see langword="NoOp" /> setting for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a gamma value for the default category, a different gamma value for the bitmap category, and still a different gamma value for the pen category.  
+  
+ You can disable color adjustment for the default category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetNoOp%2A> method. Later, you can reinstate color adjustment for the default category by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearNoOp%2A> method. The color adjustment then returns to what was in place before the call to <xref:System.Drawing.Imaging.ImageAttributes.SetNoOp%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearNoOp">
+      <MemberSignature Language="C#" Value="public void ClearNoOp (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearNoOp(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearNoOp(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the <see langword="NoOp" /> setting is cleared.</param>
+        <summary>Clears the <see langword="NoOp" /> setting for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a gamma value for the default category, a different gamma value for the bitmap category, and still a different gamma value for the pen category.  
+  
+ You can disable color adjustment for a certain category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetNoOp%2A> method. Later, you can reinstate color adjustment for that category by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearNoOp%2A> method. The color adjustment then returns to what was in place before the call to <xref:System.Drawing.Imaging.ImageAttributes.SetNoOp%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearOutputChannel">
+      <MemberSignature Language="C#" Value="public void ClearOutputChannel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearOutputChannel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearOutputChannel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the CMYK (cyan-magenta-yellow-black) output channel setting for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel for the default category and a different output channel for the bitmap category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearOutputChannel">
+      <MemberSignature Language="C#" Value="public void ClearOutputChannel (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearOutputChannel(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearOutputChannel(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the output channel setting is cleared.</param>
+        <summary>Clears the (cyan-magenta-yellow-black) output channel setting for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel for the default category and a different output channel for the bitmap category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify an output channel and an adjustment matrix for the default category. If you set the output channel for the bitmap category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method, the default output channel will not apply to bitmaps. If you later clear the bitmap output channel by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearOutputChannel%2A> method, the bitmap category will not revert to the default output channel; rather, the bitmap category will have no output channel setting. Similarly, the bitmap category will not revert to the default color-adjustment matrix; rather, the bitmap category will have no color-adjustment matrix.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearOutputChannelColorProfile">
+      <MemberSignature Language="C#" Value="public void ClearOutputChannelColorProfile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearOutputChannelColorProfile() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearOutputChannelColorProfile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the output channel color profile setting for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel profile for the default category and a different output channel profile for the bitmap category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearOutputChannelColorProfile">
+      <MemberSignature Language="C#" Value="public void ClearOutputChannelColorProfile (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearOutputChannelColorProfile(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearOutputChannelColorProfile(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the output channel profile setting is cleared.</param>
+        <summary>Clears the output channel color profile setting for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel profile for the default category and a different output channel profile for the bitmap category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify an output channel profile and an adjustment matrix for the default category. If you set the output channel profile for the bitmap category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> method, the default output channel profile will not apply to bitmaps. If you later clear the bitmap output channel profile by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearOutputChannelColorProfile%2A> method, the bitmap category will not revert to the default output channel profile; rather, the bitmap category will have no output channel profile setting. Similarly, the bitmap category will not revert to the default color-adjustment matrix; rather, the bitmap category will have no color-adjustment matrix.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearRemapTable">
+      <MemberSignature Language="C#" Value="public void ClearRemapTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearRemapTable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearRemapTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the color-remap table for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a remap table for the default category, a different remap table for the bitmap category, and still a different remap table for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearRemapTable">
+      <MemberSignature Language="C#" Value="public void ClearRemapTable (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearRemapTable(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearRemapTable(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the remap table is cleared.</param>
+        <summary>Clears the color-remap table for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a remap table for the default category, a different remap table for the bitmap category, and still a different remap table for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, then the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a remap table and a gamma value for the default category. If you set the remap table for the pen category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method, the default remap table will not apply to pens. If you later clear the pen remap table by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearRemapTable%2A> method, the pen category will not revert to the default remap table; rather, the pen category will have no remap table. Similarly, the pen category will not revert to the default gamma value; rather, the pen category will have no gamma value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearThreshold">
+      <MemberSignature Language="C#" Value="public void ClearThreshold ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearThreshold() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearThreshold" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the threshold value for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The threshold is a value from 0 through 1 that specifies a cutoff point for each color component. For example, suppose the threshold is set to 0.7, and suppose you are rendering a color whose red, green, and blue components are 230, 50, and 220, respectively. The red component (230) is greater than 0.7x255, so the red component will be changed to 255 (full intensity). The green component (50) is less than 0.7x255, so the green component will be changed to 0. The blue component (220) is greater than 0.7x255, so the blue component will be changed to 255.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a threshold for the default category, a different threshold for the bitmap category, and still a different threshold for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearThreshold">
+      <MemberSignature Language="C#" Value="public void ClearThreshold (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearThreshold(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.ClearThreshold(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the threshold is cleared.</param>
+        <summary>Clears the threshold value for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The threshold is a value from 0 through 1 that specifies a cutoff point for each color component. For example, suppose the threshold is set to 0.7, and suppose you are rendering a color whose red, green, and blue components are 230, 50, and 220, respectively. The red component (230) is greater than 0.7x55, so the red component will be changed to 255 (full intensity). The green component (50) is less than 0.7x255, so the green component will be changed to 0. The blue component (220) is greater than 0.7x255, so the blue component will be changed to 255.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a threshold for the default category, a different threshold for the bitmap category, and still a different threshold for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a threshold and a gamma value for the default category. If you set the threshold for the pen category by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetThreshold%2A> method, the default threshold will not apply to pens. If you later clear the pen threshold by calling the <xref:System.Drawing.Imaging.ImageAttributes.ClearThreshold%2A> method, the pen category will not revert to the default threshold; rather, the pen category will have no threshold. Similarly, the pen category will not revert to the default gamma value; rather, the pen category will have no gamma value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an exact copy of this <see cref="T:System.Drawing.Imaging.ImageAttributes" /> object.</summary>
+        <returns>The <see cref="T:System.Drawing.Imaging.ImageAttributes" /> object this class creates, cast as an object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by this <see cref="T:System.Drawing.Imaging.ImageAttributes" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Drawing.Imaging.ImageAttributes.Dispose%2A> when you are finished using the <xref:System.Drawing.Imaging.ImageAttributes>. The <xref:System.Drawing.Imaging.ImageAttributes.Dispose%2A> method leaves the <xref:System.Drawing.Imaging.ImageAttributes> in an unusable state. After calling <xref:System.Drawing.Imaging.ImageAttributes.Dispose%2A>, you must release all references to the <xref:System.Drawing.Imaging.ImageAttributes> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Imaging.ImageAttributes> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Drawing.Imaging.ImageAttributes.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Imaging.ImageAttributes>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Imaging.ImageAttributes> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~ImageAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAdjustedPalette">
+      <MemberSignature Language="C#" Value="public void GetAdjustedPalette (System.Drawing.Imaging.ColorPalette palette, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetAdjustedPalette(class System.Drawing.Imaging.ColorPalette palette, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.GetAdjustedPalette(System.Drawing.Imaging.ColorPalette,System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="palette" Type="System.Drawing.Imaging.ColorPalette" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="palette">A <see cref="T:System.Drawing.Imaging.ColorPalette" /> that on input contains the palette to be adjusted, and on output contains the adjusted palette.</param>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category whose adjustment settings will be applied to the palette.</param>
+        <summary>Adjusts the colors in a palette according to the adjustment settings of a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color-remap table for the default category, a different color-remap table for the bitmap category, and still a different color-remap table for the pen category.  
+  
+ When you call the <xref:System.Drawing.Imaging.ImageAttributes.GetAdjustedPalette%2A> method, you can specify the adjustment category that is used to adjust the palette colors. For example, if you pass <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.GetAdjustedPalette%2A> method, the adjustment settings of the bitmap category are used to adjust the palette colors.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBrushRemapTable">
+      <MemberSignature Language="C#" Value="public void SetBrushRemapTable (System.Drawing.Imaging.ColorMap[] map);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBrushRemapTable(class System.Drawing.Imaging.ColorMap[] map) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetBrushRemapTable(System.Drawing.Imaging.ColorMap[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="map" Type="System.Drawing.Imaging.ColorMap[]" />
+      </Parameters>
+      <Docs>
+        <param name="map">An array of <see cref="T:System.Drawing.Imaging.ColorMap" /> objects.</param>
+        <summary>Sets the color-remap table for the brush category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A color-remap table is an array of <xref:System.Drawing.Imaging.ColorMap> structures. Each <xref:System.Drawing.Imaging.ColorMap> structure has two <xref:System.Drawing.Color> objects: one that specifies an old color and one that specifies a corresponding new color. During rendering, any color that matches one of the old colors in the remap table is changed to the corresponding new color.  
+  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetBrushRemapTable%2A> method has the same effect as passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method. The specified remap table applies to items in metafiles that are filled with a brush.  
+  
+ This method is intended to be used only with metafiles.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+1.  Creates a single-element <xref:System.Drawing.Imaging.ColorMap> array that holds red as the old color and green as the new color.  
+  
+2.  Passes this array to a newly created <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+ [!code-cpp[System.Drawing.ClassicImaging.ImageAttributes#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.ClassicImaging.ImageAttributes#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.ClassicImaging.ImageAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorKey">
+      <MemberSignature Language="C#" Value="public void SetColorKey (System.Drawing.Color colorLow, System.Drawing.Color colorHigh);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorKey(valuetype System.Drawing.Color colorLow, valuetype System.Drawing.Color colorHigh) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetColorKey(System.Drawing.Color,System.Drawing.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorLow" Type="System.Drawing.Color" />
+        <Parameter Name="colorHigh" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="colorLow">The low color-key value.</param>
+        <param name="colorHigh">The high color-key value.</param>
+        <summary>Sets the color key for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets the high and low color-key values so that a range of colors can be made transparent. Any color that has each of its three components (red, green, blue) between the corresponding components of the high and low color keys is made transparent.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color key for the default category, a different color key for the bitmap category, and still a different color key for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+   
+  
+## Examples  
+ For a code example, see the <xref:System.Drawing.Imaging.ImageAttributes.SetColorKey%28System.Drawing.Color%2CSystem.Drawing.Color%2CSystem.Drawing.Imaging.ColorAdjustType%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorKey">
+      <MemberSignature Language="C#" Value="public void SetColorKey (System.Drawing.Color colorLow, System.Drawing.Color colorHigh, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorKey(valuetype System.Drawing.Color colorLow, valuetype System.Drawing.Color colorHigh, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetColorKey(System.Drawing.Color,System.Drawing.Color,System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorLow" Type="System.Drawing.Color" />
+        <Parameter Name="colorHigh" Type="System.Drawing.Color" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="colorLow">The low color-key value.</param>
+        <param name="colorHigh">The high color-key value.</param>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the color key is set.</param>
+        <summary>Sets the color key (transparency range) for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method sets the high and low color-key values so that a range of colors can be made transparent. Any color that has each of its three components (red, green, blue) between the corresponding components of the high and low color keys is made transparent.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color key for the default category, a different color key for the bitmap category, and still a different color key for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color key for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorKey%2A> method, none of the default adjustment settings will apply to pens.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+1.  Opens an <xref:System.Drawing.Image> that uses the file Circle.bmp and draws it to the screen.  
+  
+2.  Creates an <xref:System.Drawing.Imaging.ImageAttributes> object and sets its color key by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorKey%2A> method.  
+  
+3.  Draws the image to the screen using the color key of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+ [!code-cpp[System.Drawing.ClassicImaging.ImageAttributes#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.ClassicImaging.ImageAttributes#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.ClassicImaging.ImageAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrices">
+      <MemberSignature Language="C#" Value="public void SetColorMatrices (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrix grayMatrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrices(class System.Drawing.Imaging.ColorMatrix newColorMatrix, class System.Drawing.Imaging.ColorMatrix grayMatrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetColorMatrices(System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrix)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="grayMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">The color-adjustment matrix.</param>
+        <param name="grayMatrix">The grayscale-adjustment matrix.</param>
+        <summary>Sets the color-adjustment matrix and the grayscale-adjustment matrix for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify adjustment matrices for the default category, different adjustment matrices for the bitmap category, and still different adjustment matrices for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrix%29?displayProperty=fullName> method is equivalent to calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrixFlag%29?displayProperty=fullName> method and passing <xref:System.Drawing.Imaging.ColorMatrixFlag?displayProperty=fullName> for the `flags` parameter. <xref:System.Drawing.Imaging.ColorMatrixFlag?displayProperty=fullName> specifies that all colors (including grays) are adjusted by the color-adjustment matrix, not the grayscale-adjustment matrix. Therefore, the grayscale-adjustment matrix passed to this method has no effect.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrices">
+      <MemberSignature Language="C#" Value="public void SetColorMatrices (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrix grayMatrix, System.Drawing.Imaging.ColorMatrixFlag flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrices(class System.Drawing.Imaging.ColorMatrix newColorMatrix, class System.Drawing.Imaging.ColorMatrix grayMatrix, valuetype System.Drawing.Imaging.ColorMatrixFlag flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetColorMatrices(System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrixFlag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="grayMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="flags" Type="System.Drawing.Imaging.ColorMatrixFlag" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">The color-adjustment matrix.</param>
+        <param name="grayMatrix">The grayscale-adjustment matrix.</param>
+        <param name="flags">An element of <see cref="T:System.Drawing.Imaging.ColorMatrixFlag" /> that specifies the type of image and color that will be affected by the color-adjustment and grayscale-adjustment matrices.</param>
+        <summary>Sets the color-adjustment matrix and the grayscale-adjustment matrix for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify adjustment matrices for the default category, different adjustment matrices for the bitmap category, and still different adjustment matrices for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrices">
+      <MemberSignature Language="C#" Value="public void SetColorMatrices (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrix grayMatrix, System.Drawing.Imaging.ColorMatrixFlag mode, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrices(class System.Drawing.Imaging.ColorMatrix newColorMatrix, class System.Drawing.Imaging.ColorMatrix grayMatrix, valuetype System.Drawing.Imaging.ColorMatrixFlag mode, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetColorMatrices(System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrixFlag,System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="grayMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="mode" Type="System.Drawing.Imaging.ColorMatrixFlag" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">The color-adjustment matrix.</param>
+        <param name="grayMatrix">The grayscale-adjustment matrix.</param>
+        <param name="mode">An element of <see cref="T:System.Drawing.Imaging.ColorMatrixFlag" /> that specifies the type of image and color that will be affected by the color-adjustment and grayscale-adjustment matrices.</param>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the color-adjustment and grayscale-adjustment matrices are set.</param>
+        <summary>Sets the color-adjustment matrix and the grayscale-adjustment matrix for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify adjustment matrices for the default category, different adjustment matrices for the bitmap category, and still different adjustment matrices for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-adjustment and grayscale-adjustment matrices for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrices%2A> method, none of the default adjustment settings will apply to pens.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrix">
+      <MemberSignature Language="C#" Value="public void SetColorMatrix (System.Drawing.Imaging.ColorMatrix newColorMatrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrix(class System.Drawing.Imaging.ColorMatrix newColorMatrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetColorMatrix(System.Drawing.Imaging.ColorMatrix)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">The color-adjustment matrix.</param>
+        <summary>Sets the color-adjustment matrix for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color-adjustment matrix for the default category, a different color-adjustment matrix for the bitmap category, and still a different color-adjustment matrix for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%28System.Drawing.Imaging.ColorMatrix%29?displayProperty=fullName> method is equivalent to calling the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%28System.Drawing.Imaging.ColorMatrix%2CSystem.Drawing.Imaging.ColorMatrixFlag%29?displayProperty=fullName> method and passing <xref:System.Drawing.Imaging.ColorMatrixFlag?displayProperty=fullName> for the `flags` parameter. <xref:System.Drawing.Imaging.ColorMatrixFlag?displayProperty=fullName> specifies that all colors (including grays) are adjusted by the color-adjustment matrix  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+1.  Creates a rectangle image that has all the color values set to 128, producing a rectangle that is filled with a solid medium-gray color. The code then draws this rectangle image to the screen.  
+  
+2.  Creates a <xref:System.Drawing.Imaging.ColorMatrix> and sets its <xref:System.Drawing.Drawing2D.Matrix> location to 1.75, which emphasizes the red component of the image.  
+  
+3.  Creates an <xref:System.Drawing.Imaging.ImageAttributes> object and calls the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method.  
+  
+4.  Draws the image (a second rectangle) to the screen using the <xref:System.Drawing.Imaging.ColorMatrix> just set in the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+ Note that the second rectangle has the color red emphasized.  
+  
+ [!code-cpp[System.Drawing.ClassicImaging.ImageAttributes#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.ClassicImaging.ImageAttributes#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.ClassicImaging.ImageAttributes#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrix">
+      <MemberSignature Language="C#" Value="public void SetColorMatrix (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrixFlag flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrix(class System.Drawing.Imaging.ColorMatrix newColorMatrix, valuetype System.Drawing.Imaging.ColorMatrixFlag flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetColorMatrix(System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrixFlag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="flags" Type="System.Drawing.Imaging.ColorMatrixFlag" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">The color-adjustment matrix.</param>
+        <param name="flags">An element of <see cref="T:System.Drawing.Imaging.ColorMatrixFlag" /> that specifies the type of image and color that will be affected by the color-adjustment matrix.</param>
+        <summary>Sets the color-adjustment matrix for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color-adjustment matrix for the default category, a different color-adjustment matrix for the bitmap category, and still a different color-adjustment matrix for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+   
+  
+## Examples  
+ For a code example, see the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%28System.Drawing.Imaging.ColorMatrix%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetColorMatrix">
+      <MemberSignature Language="C#" Value="public void SetColorMatrix (System.Drawing.Imaging.ColorMatrix newColorMatrix, System.Drawing.Imaging.ColorMatrixFlag mode, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColorMatrix(class System.Drawing.Imaging.ColorMatrix newColorMatrix, valuetype System.Drawing.Imaging.ColorMatrixFlag mode, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetColorMatrix(System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrixFlag,System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newColorMatrix" Type="System.Drawing.Imaging.ColorMatrix" />
+        <Parameter Name="mode" Type="System.Drawing.Imaging.ColorMatrixFlag" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="newColorMatrix">The color-adjustment matrix.</param>
+        <param name="mode">An element of <see cref="T:System.Drawing.Imaging.ColorMatrixFlag" /> that specifies the type of image and color that will be affected by the color-adjustment matrix.</param>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the color-adjustment matrix is set.</param>
+        <summary>Sets the color-adjustment matrix for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color-adjustment matrix for the default category, a different color-adjustment matrix for the bitmap category, and still a different color-adjustment matrix for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-adjustment matrix for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method, none of the default adjustment settings will apply to pens.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Imaging.ImageAttributes.SetColorMatrix%2A> method. To run this example, paste the code into a Windows Form and call `RotateColors` from the form's <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.RotateColors#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RotateColors/CS/Form1.cs#1)]
+ [!code-vb[System.Drawing.RotateColors#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RotateColors/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGamma">
+      <MemberSignature Language="C#" Value="public void SetGamma (float gamma);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetGamma(float32 gamma) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetGamma(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gamma" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="gamma">The gamma correction value.</param>
+        <summary>Sets the gamma value for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typical values for the `gamma` parameter are from 1.0 to 2.2; however, values from 0.1 to 5.0 could prove useful in some circumstances.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a gamma value for the default category, a different gamma value for the bitmap category, and still a different gamma value for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ Gamma values outside the usual range may be useful for old CRT monitors or for monitors that are in unusual lighting conditions, such as industrial environments or window displays.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. In addition, you need to change the image file path to a path and image name valid on your system. The code performs the following actions:  
+  
+1.  Opens an <xref:System.Drawing.Image> that uses the file Camera.jpg and draws it to the screen using the default value for gamma.  
+  
+2.  Creates an <xref:System.Drawing.Imaging.ImageAttributes> object and sets its gamma to 2.2 by calling the <xref:System.Drawing.Imaging.ImageAttributes.SetGamma%2A> method.  
+  
+3.  Draws the image (a second camera) to the screen using the gamma value just set in the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+ [!code-cpp[System.Drawing.ClassicImaging.ImageAttributes#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CPP/form1.cpp#4)]
+ [!code-csharp[System.Drawing.ClassicImaging.ImageAttributes#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CS/form1.cs#4)]
+ [!code-vb[System.Drawing.ClassicImaging.ImageAttributes#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetGamma">
+      <MemberSignature Language="C#" Value="public void SetGamma (float gamma, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetGamma(float32 gamma, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetGamma(System.Single,System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gamma" Type="System.Single" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="gamma">The gamma correction value.</param>
+        <param name="type">An element of the <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> enumeration that specifies the category for which the gamma value is set.</param>
+        <summary>Sets the gamma value for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typical values for the `gamma` parameter are from 1.0 to 2.2; however, values from 0.1 to 5.0 could prove useful in some circumstances.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a gamma value for the default category, a different gamma value for the bitmap category, and still a different gamma value for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the gamma value for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetGamma%2A> method, none of the default adjustment settings will apply to pens.  
+  
+ Gamma values outside the usual range may be useful for old CRT monitors or for monitors that are in unusual lighting conditions, such as industrial environments or window displays.  
+  
+   
+  
+## Examples  
+ For a code example, see the <xref:System.Drawing.Imaging.ImageAttributes.SetGamma%28System.Single%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNoOp">
+      <MemberSignature Language="C#" Value="public void SetNoOp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNoOp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetNoOp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Turns off color adjustment for the default category. You can call the <see cref="Overload:System.Drawing.Imaging.ImageAttributes.ClearNoOp" /> method to reinstate the color-adjustment settings that were in place before the call to the <see cref="Overload:System.Drawing.Imaging.ImageAttributes.SetNoOp" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a gamma value for the default category, a different gamma value for the bitmap category, and still a different gamma value for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+1.  Opens an <xref:System.Drawing.Image> that uses the file Camera.jpg.  
+  
+2.  Sets the gamma value of the <xref:System.Drawing.Imaging.ImageAttributes> object to 0.25.  
+  
+3.  Draws the image to the screen.  
+  
+4.  Calls the <xref:System.Drawing.Imaging.ImageAttributes.SetNoOp%2A> method.  
+  
+5.  Draws the image (a second camera) to the screen; however, because the <xref:System.Drawing.Imaging.ImageAttributes.SetNoOp%2A> method was called, the gamma setting defaults to a value of 1.0 and the image is drawn to the screen with the default gamma setting.  
+  
+ Note that the image on the left is very washed out (gamma of 0.25) and the image on the right has more contrast (gamma of 1.0).  
+  
+ [!code-cpp[System.Drawing.ClassicImaging.ImageAttributes#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CPP/form1.cpp#5)]
+ [!code-csharp[System.Drawing.ClassicImaging.ImageAttributes#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CS/form1.cs#5)]
+ [!code-vb[System.Drawing.ClassicImaging.ImageAttributes#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/VB/form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNoOp">
+      <MemberSignature Language="C#" Value="public void SetNoOp (System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNoOp(valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetNoOp(System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which color correction is turned off.</param>
+        <summary>Turns off color adjustment for a specified category. You can call the <see cref="Overload:System.Drawing.Imaging.ImageAttributes.ClearNoOp" /> method to reinstate the color-adjustment settings that were in place before the call to the <see cref="Overload:System.Drawing.Imaging.ImageAttributes.SetNoOp" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a gamma value for the default category, a different gamma value for the bitmap category, and still a different gamma value for the pen category.  
+  
+   
+  
+## Examples  
+ For a code example, see the <xref:System.Drawing.Imaging.ImageAttributes.SetNoOp> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputChannel">
+      <MemberSignature Language="C#" Value="public void SetOutputChannel (System.Drawing.Imaging.ColorChannelFlag flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputChannel(valuetype System.Drawing.Imaging.ColorChannelFlag flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetOutputChannel(System.Drawing.Imaging.ColorChannelFlag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flags" Type="System.Drawing.Imaging.ColorChannelFlag" />
+      </Parameters>
+      <Docs>
+        <param name="flags">An element of <see cref="T:System.Drawing.Imaging.ColorChannelFlag" /> that specifies the output channel.</param>
+        <summary>Sets the CMYK (cyan-magenta-yellow-black) output channel for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method to convert an image to a CMYK color space and examine the intensities of one of the CMYK color channels. For example, suppose you create an <xref:System.Drawing.Imaging.ImageAttributes> object and set its bitmap output channel to <xref:System.Drawing.Imaging.ColorChannelFlag>. If you pass the path of that <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method, the cyan component of each pixel is calculated, and each pixel in the rendered image is a shade of gray that indicates the intensity of its cyan channel. Similarly, you can render images that indicate the intensities of the magenta, yellow, and black channels.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel for the default category and a different output channel for the bitmap category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `ShowOutputChannels`, passing `e` as<xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#4)]
+ [!code-vb[System.Drawing.Misc3#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputChannel">
+      <MemberSignature Language="C#" Value="public void SetOutputChannel (System.Drawing.Imaging.ColorChannelFlag flags, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputChannel(valuetype System.Drawing.Imaging.ColorChannelFlag flags, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetOutputChannel(System.Drawing.Imaging.ColorChannelFlag,System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flags" Type="System.Drawing.Imaging.ColorChannelFlag" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="flags">An element of <see cref="T:System.Drawing.Imaging.ColorChannelFlag" /> that specifies the output channel.</param>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the output channel is set.</param>
+        <summary>Sets the CMYK (cyan-magenta-yellow-black) output channel for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method to convert an image to a CMYK color space and examine the intensities of one of the CMYK color channels. For example, suppose you create an <xref:System.Drawing.Imaging.ImageAttributes> object and set its bitmap output channel to <xref:System.Drawing.Imaging.ColorChannelFlag>. If you pass the path of that <xref:System.Drawing.Imaging.ImageAttributes> object to the <xref:System.Drawing.Graphics.DrawImage%2A> method, the cyan component of each pixel is calculated, and each pixel in the rendered image is a shade of gray that indicates the intensity of its cyan channel. Similarly, you can render images that indicate the intensities of the magenta, yellow, and black channels.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel for the default category and a different output channel for the bitmap category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the output channel for the bitmap category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method, none of the default adjustment settings will apply to bitmaps.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method. To run this example, paste the following code into a Windows Form. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call `ShowOutputChannels`, passing `e` as<xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.Misc3#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#4)]
+ [!code-vb[System.Drawing.Misc3#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputChannelColorProfile">
+      <MemberSignature Language="C#" Value="public void SetOutputChannelColorProfile (string colorProfileFilename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputChannelColorProfile(string colorProfileFilename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorProfileFilename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="colorProfileFilename">The path name of a color-profile file. If the color-profile file is in the %SystemRoot%\System32\Spool\Drivers\Color directory, this parameter can be the file name. Otherwise, this parameter must be the fully qualified path name.</param>
+        <summary>Sets the output channel color-profile file for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> and <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> methods to convert an image to a CMYK (cyan-magenta-yellow-black) color space and examine the intensities of one of the CMYK color channels. For example, suppose you write code that performs the following steps:  
+  
+1.  Create an <xref:System.Drawing.Image>.  
+  
+2.  Create an <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+3.  Pass <xref:System.Drawing.Imaging.ColorChannelFlag> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+4.  Pass the path name of a color profile file to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+5.  Pass the paths of the <xref:System.Drawing.Image> and <xref:System.Drawing.Imaging.ImageAttributes> objects to the <xref:System.Drawing.Graphics.DrawImage%2A> method.  
+  
+ [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] will use the color-profile file to calculate the cyan component of each pixel in the image, and each pixel in the rendered image will be a shade of gray that indicates the intensity of its cyan channel.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel color-profile file for the default category and a different output channel color-profile file for the bitmap category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputChannelColorProfile">
+      <MemberSignature Language="C#" Value="public void SetOutputChannelColorProfile (string colorProfileFilename, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOutputChannelColorProfile(string colorProfileFilename, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile(System.String,System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorProfileFilename" Type="System.String" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="colorProfileFilename">The path name of a color-profile file. If the color-profile file is in the %SystemRoot%\System32\Spool\Drivers\Color directory, this parameter can be the file name. Otherwise, this parameter must be the fully qualified path name.</param>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the output channel color-profile file is set.</param>
+        <summary>Sets the output channel color-profile file for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> and <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> methods to convert an image to a CMYK (cyan-magenta-yellow-black) color space and examine the intensities of one of the CMYK color channels. For example, suppose you write code that performs the following steps:  
+  
+1.  Create an <xref:System.Drawing.Image>.  
+  
+2.  Create an <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+3.  Pass <xref:System.Drawing.Imaging.ColorChannelFlag> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannel%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+4.  Pass the path name of a color profile file to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> method of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+5.  Pass the paths of the <xref:System.Drawing.Image> and <xref:System.Drawing.Imaging.ImageAttributes> objects to the <xref:System.Drawing.Graphics.DrawImage%2A> method.  
+  
+ [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] will use the color-profile file to calculate the cyan component of each pixel in the image, and each pixel in the rendered image will be a shade of gray that indicates the intensity of its cyan channel.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify an output channel color-profile file for the default category and a different output channel color-profile file for the bitmap category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the bitmap category, the default settings apply to the bitmap category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the output channel color-profile file for the bitmap category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetOutputChannelColorProfile%2A> method, none of the default adjustment settings will apply to bitmaps.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRemapTable">
+      <MemberSignature Language="C#" Value="public void SetRemapTable (System.Drawing.Imaging.ColorMap[] map);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRemapTable(class System.Drawing.Imaging.ColorMap[] map) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetRemapTable(System.Drawing.Imaging.ColorMap[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="map" Type="System.Drawing.Imaging.ColorMap[]" />
+      </Parameters>
+      <Docs>
+        <param name="map">An array of color pairs of type <see cref="T:System.Drawing.Imaging.ColorMap" />. Each color pair contains an existing color (the first value) and the color that it will be mapped to (the second value).</param>
+        <summary>Sets the color-remap table for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A color-remap table is an array of <xref:System.Drawing.Imaging.ColorMap> structures. Each <xref:System.Drawing.Imaging.ColorMap> structure has two <xref:System.Drawing.Color> objects: one that specifies an old color and one that specifies a corresponding new color. During rendering, any color that matches one of the old colors in the remap table is changed to the corresponding new color.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color remap for the default category, a color-remap table for the bitmap category, and still a different color-remap table for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+1.  Creates an image (a red circle), saves it as Circle2.jpg, opens that image, and draws it to the screen.  
+  
+2.  Creates a color map that maps the color red to the color green.  
+  
+3.  Draws the image created earlier to the screen again, but this time using the color map.  
+  
+ [!code-cpp[System.Drawing.ClassicImaging.ImageAttributes#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CPP/form1.cpp#6)]
+ [!code-csharp[System.Drawing.ClassicImaging.ImageAttributes#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CS/form1.cs#6)]
+ [!code-vb[System.Drawing.ClassicImaging.ImageAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/VB/form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRemapTable">
+      <MemberSignature Language="C#" Value="public void SetRemapTable (System.Drawing.Imaging.ColorMap[] map, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRemapTable(class System.Drawing.Imaging.ColorMap[] map, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetRemapTable(System.Drawing.Imaging.ColorMap[],System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="map" Type="System.Drawing.Imaging.ColorMap[]" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="map">An array of color pairs of type <see cref="T:System.Drawing.Imaging.ColorMap" />. Each color pair contains an existing color (the first value) and the color that it will be mapped to (the second value).</param>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the color-remap table is set.</param>
+        <summary>Sets the color-remap table for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A color-remap table is an array of <xref:System.Drawing.Imaging.ColorMap> structures. Each <xref:System.Drawing.Imaging.ColorMap> structure has two <xref:System.Drawing.Color> objects: one that specifies an old color and one that specifies a corresponding new color. During rendering, any color that matches one of the old colors in the remap table is changed to the corresponding new color.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a color remap for the default category, a color-remap table for the bitmap category, and still a different color-remap table for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the color-remap table for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the [SetRemapTable Method (ColorMap\<xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%2A> method, none of the default adjustment settings will apply to pens.  
+  
+   
+  
+## Examples  
+ For a code example, see the [SetRemapTable(ColorMap\<xref:System.Drawing.Imaging.ImageAttributes.SetRemapTable%28System.Drawing.Imaging.ColorMap%5B%5D%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetThreshold">
+      <MemberSignature Language="C#" Value="public void SetThreshold (float threshold);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetThreshold(float32 threshold) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetThreshold(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threshold" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="threshold">A real number that specifies the threshold value.</param>
+        <summary>Sets the threshold (transparency range) for the default category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The threshold is a value from 0 through 1 that specifies a cutoff point for each color component. For example, suppose the threshold is set to 0.7, and suppose you are rendering a color whose red, green, and blue components are 230, 50, and 220, respectively. The red component (230) is greater than 0.7x255, so the red component will be changed to 255 (full intensity). The green component (50) is less than 0.7x255, so the green component will be changed to 0. The blue component (220) is greater than 0.7x255, so the blue component will be changed to 255.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a threshold for the default category, a threshold for the bitmap category, and still a different threshold for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+1.  Opens an <xref:System.Drawing.Image> and draws it to the screen.  
+  
+2.  Creates an <xref:System.Drawing.Imaging.ImageAttributes> object and sets its threshold by using the <xref:System.Drawing.Imaging.ImageAttributes.SetThreshold%2A> method.  
+  
+3.  Draws the image to the screen by using the threshold of the <xref:System.Drawing.Imaging.ImageAttributes> object.  
+  
+ [!code-cpp[System.Drawing.ClassicImaging.ImageAttributes#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CPP/form1.cpp#7)]
+ [!code-csharp[System.Drawing.ClassicImaging.ImageAttributes#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CS/form1.cs#7)]
+ [!code-vb[System.Drawing.ClassicImaging.ImageAttributes#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/VB/form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetThreshold">
+      <MemberSignature Language="C#" Value="public void SetThreshold (float threshold, System.Drawing.Imaging.ColorAdjustType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetThreshold(float32 threshold, valuetype System.Drawing.Imaging.ColorAdjustType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetThreshold(System.Single,System.Drawing.Imaging.ColorAdjustType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threshold" Type="System.Single" />
+        <Parameter Name="type" Type="System.Drawing.Imaging.ColorAdjustType" />
+      </Parameters>
+      <Docs>
+        <param name="threshold">A threshold value from 0.0 to 1.0 that is used as a breakpoint to sort colors that will be mapped to either a maximum or a minimum value.</param>
+        <param name="type">An element of <see cref="T:System.Drawing.Imaging.ColorAdjustType" /> that specifies the category for which the color threshold is set.</param>
+        <summary>Sets the threshold (transparency range) for a specified category.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The threshold is a value from 0 through 1 that specifies a cutoff point for each color component. For example, suppose the threshold is set to 0.7, and suppose you are rendering a color whose red, green, and blue components are 230, 50, and 220, respectively. The red component (230) is greater than 0.7x255, so the red component will be changed to 255 (full intensity). The green component (50) is less than 0.7x255, so the green component will be changed to 0. The blue component (220) is greater than 0.7x255, so the blue component will be changed to 255.  
+  
+ An <xref:System.Drawing.Imaging.ImageAttributes> object maintains color and grayscale settings for five adjustment categories: default, bitmap, brush, pen, and text. For example, you can specify a threshold for the default category, a threshold for the bitmap category, and still a different threshold for the pen category.  
+  
+ The default color-adjustment and grayscale-adjustment settings apply to all categories that do not have adjustment settings of their own. For example, if you never specify any adjustment settings for the pen category, the default settings apply to the pen category.  
+  
+ As soon as you specify a color-adjustment or grayscale-adjustment setting for a certain category, the default adjustment settings no longer apply to that category. For example, suppose you specify a collection of adjustment settings for the default category. If you set the threshold for the pen category by passing <xref:System.Drawing.Imaging.ColorAdjustType> to the <xref:System.Drawing.Imaging.ImageAttributes.SetThreshold%2A> method, none of the default adjustment settings will apply to pens.  
+  
+   
+  
+## Examples  
+ For a code example, see the <xref:System.Drawing.Imaging.ImageAttributes.SetThreshold%28System.Single%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWrapMode">
+      <MemberSignature Language="C#" Value="public void SetWrapMode (System.Drawing.Drawing2D.WrapMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetWrapMode(valuetype System.Drawing.Drawing2D.WrapMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetWrapMode(System.Drawing.Drawing2D.WrapMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="System.Drawing.Drawing2D.WrapMode" />
+      </Parameters>
+      <Docs>
+        <param name="mode">An element of <see cref="T:System.Drawing.Drawing2D.WrapMode" /> that specifies how repeated copies of an image are used to tile an area.</param>
+        <summary>Sets the wrap mode that is used to decide how to tile a texture across a shape, or at shape boundaries. A texture is tiled across a shape to fill it in when the texture is smaller than the shape it is filling.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%29> method is equivalent to calling <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%2CSystem.Drawing.Color%29> and passing <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> for the `color` parameter. <xref:System.Drawing.Color.Black%2A?displayProperty=fullName> specifies the color of pixels outside of a rendered image. This color is visible if the mode parameter is set to <xref:System.Drawing.Drawing2D.WrapMode> and the source rectangle passed to the <xref:System.Drawing.Graphics.DrawImage%2A> method is larger than the image itself.  
+  
+   
+  
+## Examples  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
+  
+1.  Opens an <xref:System.Drawing.Image> from the Circle3.jpg file (a small, red-filled circle) and draws it to the screen.  
+  
+2.  Creates an <xref:System.Drawing.Imaging.ImageAttributes> object and sets the <xref:System.Drawing.Drawing2D.WrapMode> enumeration to <xref:System.Drawing.Drawing2D.WrapMode>.  
+  
+3.  Creates a <xref:System.Drawing.TextureBrush> using the image from the Circle3.jpg file.  
+  
+4.  Draws a rectangle to the screen that is filled with the small, red-filled circles.  
+  
+ [!code-cpp[System.Drawing.ClassicImaging.ImageAttributes#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CPP/form1.cpp#8)]
+ [!code-csharp[System.Drawing.ClassicImaging.ImageAttributes#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/CS/form1.cs#8)]
+ [!code-vb[System.Drawing.ClassicImaging.ImageAttributes#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImaging.ImageAttributes/VB/form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWrapMode">
+      <MemberSignature Language="C#" Value="public void SetWrapMode (System.Drawing.Drawing2D.WrapMode mode, System.Drawing.Color color);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetWrapMode(valuetype System.Drawing.Drawing2D.WrapMode mode, valuetype System.Drawing.Color color) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetWrapMode(System.Drawing.Drawing2D.WrapMode,System.Drawing.Color)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="System.Drawing.Drawing2D.WrapMode" />
+        <Parameter Name="color" Type="System.Drawing.Color" />
+      </Parameters>
+      <Docs>
+        <param name="mode">An element of <see cref="T:System.Drawing.Drawing2D.WrapMode" /> that specifies how repeated copies of an image are used to tile an area.</param>
+        <param name="color">An <see cref="T:System.Drawing.Imaging.ImageAttributes" /> object that specifies the color of pixels outside of a rendered image. This color is visible if the mode parameter is set to <see cref="F:System.Drawing.Drawing2D.WrapMode.Clamp" /> and the source rectangle passed to <see cref="Overload:System.Drawing.Graphics.DrawImage" /> is larger than the image itself.</param>
+        <summary>Sets the wrap mode and color used to decide how to tile a texture across a shape, or at shape boundaries. A texture is tiled across a shape to fill it in when the texture is smaller than the shape it is filling.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For a code example, see the <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWrapMode">
+      <MemberSignature Language="C#" Value="public void SetWrapMode (System.Drawing.Drawing2D.WrapMode mode, System.Drawing.Color color, bool clamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetWrapMode(valuetype System.Drawing.Drawing2D.WrapMode mode, valuetype System.Drawing.Color color, bool clamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageAttributes.SetWrapMode(System.Drawing.Drawing2D.WrapMode,System.Drawing.Color,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="System.Drawing.Drawing2D.WrapMode" />
+        <Parameter Name="color" Type="System.Drawing.Color" />
+        <Parameter Name="clamp" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="mode">An element of <see cref="T:System.Drawing.Drawing2D.WrapMode" /> that specifies how repeated copies of an image are used to tile an area.</param>
+        <param name="color">A color object that specifies the color of pixels outside of a rendered image. This color is visible if the mode parameter is set to <see cref="F:System.Drawing.Drawing2D.WrapMode.Clamp" /> and the source rectangle passed to <see cref="Overload:System.Drawing.Graphics.DrawImage" /> is larger than the image itself.</param>
+        <param name="clamp">This parameter has no effect. Set it to <see langword="false" />.</param>
+        <summary>Sets the wrap mode and color used to decide how to tile a texture across a shape, or at shape boundaries. A texture is tiled across a shape to fill it in when the texture is smaller than the shape it is filling.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For a code example, see the <xref:System.Drawing.Imaging.ImageAttributes.SetWrapMode%28System.Drawing.Drawing2D.WrapMode%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

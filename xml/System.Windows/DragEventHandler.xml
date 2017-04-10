@@ -1,0 +1,84 @@
+<Type Name="DragEventHandler" FullName="System.Windows.DragEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DragEventHandler(object sender, DragEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DragEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents a method that will handle drag-and-drop routed events, for example <see cref="E:System.Windows.UIElement.DragEnter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used with the following attached events.  
+  
+-   <xref:System.Windows.DragDrop.DragEnter?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.DragLeave?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.DragOver?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.Drop?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.PreviewDragEnter?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.PreviewDragLeave?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.PreviewDragOver?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.PreviewDrop?displayProperty=fullName>  
+  
+ This delegate is also used with the following routed events on base elements. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
+  
+-   <xref:System.Windows.UIElement.DragEnter?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.DragLeave?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.DragOver?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.Drop?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.PreviewDragEnter?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.PreviewDragLeave?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.PreviewDragOver?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.PreviewDrop?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.DragEnter?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.DragLeave?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.DragOver?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.Drop?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.PreviewDragEnter?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.PreviewDragLeave?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.PreviewDragOver?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.PreviewDrop?displayProperty=fullName>  
+  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

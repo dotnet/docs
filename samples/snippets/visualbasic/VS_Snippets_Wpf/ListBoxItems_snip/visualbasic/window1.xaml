@@ -1,0 +1,63 @@
+<Window Background="cornsilk"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ListBox_Index.Window1"
+>
+    
+<Grid>
+<Grid.ColumnDefinitions>
+<ColumnDefinition/>
+<ColumnDefinition/>
+</Grid.ColumnDefinitions>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+</Grid.RowDefinitions>
+<TextBlock Margin="10,10,0,5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" 
+      TextWrapping="WrapWithOverflow" FontSize="20">List Box Snippets
+</TextBlock>
+
+<ListBox Margin="10,0,0,5" SelectionChanged="OnSelectionChanged" SelectionMode="Multiple" 
+    Name="lb" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1">
+    <ListBoxItem>Item 0</ListBoxItem>
+    <ListBoxItem>Item 1</ListBoxItem>
+    <ListBoxItem>Item 2</ListBoxItem>
+    <ListBoxItem>Item 3</ListBoxItem>
+</ListBox>
+<TextBlock Margin="10,0,3,5" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" 
+      TextWrapping="WrapWithOverflow" FontSize="12">This example gets the index of the first 
+      list box item in a selection.
+</TextBlock>
+
+
+<ListBox Margin="10,0,0,5" SelectionMode="Multiple" 
+    VerticalAlignment="Top" Grid.Column="0" Grid.Row="2">
+    <ListBoxItem Name="lbi0" Selected="OnSelected" Unselected="OnUnselected">
+         Item 0</ListBoxItem>
+    <ListBoxItem Name="lbi1" Selected="OnSelected" Unselected="OnUnselected">
+         Item 1</ListBoxItem>
+    <ListBoxItem Name="lbi2" Selected="OnSelected" Unselected="OnUnselected">
+         Item 2</ListBoxItem>
+    <ListBoxItem Name="lbi3" Selected="OnSelected" Unselected="OnUnselected">
+         Item 3</ListBoxItem>
+</ListBox>
+<TextBlock Margin="10,0,3,5" Grid.Column="1" Grid.Row="2" 
+      TextWrapping="WrapWithOverflow" FontSize="12">This uses the Selected and Unselected
+      events.
+</TextBlock>
+
+  <Label Margin="10,0,0,5" Height="50" Grid.Column="0" Grid.Row="3" Name="Item"/>
+
+  <ListBox Margin="10,0,0,5" SelectedIndex="1"
+    Name="listBox1" VerticalAlignment="Top" Grid.Column="0" Grid.Row="4">
+    <ListBoxItem>Item 0</ListBoxItem>
+    <ListBoxItem>Item 1</ListBoxItem>
+    <ListBoxItem>Item 2</ListBoxItem>
+    <ListBoxItem>Item 3</ListBoxItem>
+  </ListBox>
+</Grid>
+</Window>
+        

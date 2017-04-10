@@ -1,0 +1,1594 @@
+<Type Name="SyndicationFeed" FullName="System.ServiceModel.Syndication.SyndicationFeed">
+  <TypeSignature Language="C#" Value="public class SyndicationFeed" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyndicationFeed extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.SyndicationFeed" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a top-level feed object, &lt;<see langword="feed" />&gt; in Atom 1.0 and &lt;<see langword="rss" />&gt; in RSS 2.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to a <`feed`> element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to Atom 1.0.  
+  
+|SyndicationFeed property|Serialized form|  
+|------------------------------|---------------------|  
+|`AttributeExtensions`|An attribute in the <`feed`> element for each attribute in the collection.|  
+|`Authors`|An <`author`> element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
+|`Categories`|A <`category`> element for each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection.|  
+|`Contributors`|A <`contributor`> element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
+|`Copyright`|A <`rights`> element.|  
+|`Description`|A <`subtitle`> element.|  
+|`ElementExtensions`|Each element in the collection is written within the <`feed`> element.|  
+|`Generator`|A <`generator`> element.|  
+|`Id`|An <`id`>element.|  
+|`ImageUri`|A <`logo`> element.|  
+|`Items`|An <`entry`> element for each <xref:System.ServiceModel.Syndication.SyndicationItem> in the collection.|  
+|`Language`|Not serialized.|  
+|`LastUpdatedTime`|An <`updated`> element.|  
+|`Links`|A <`link`> element for each <xref:System.ServiceModel.Syndication.SyndicationLink> in the collection.|  
+|`Title`|A <`title`> element.|  
+  
+ When serialized to RSS 2.0, a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is written to an <`rss`> element. The following table shows how each property defined in the <xref:System.ServiceModel.Syndication.SyndicationFeed> class is serialized to RSS 2.0.  
+  
+|SyndicationFeed property|Serialized form|  
+|------------------------------|---------------------|  
+|`AttributeExtensions`|An attribute in the <`channel`> element for each attribute in the collection.|  
+|`Authors`|A <`managingEditor`> element if only one <xref:System.ServiceModel.Syndication.SyndicationPerson> is in the collection; otherwise, an <`a10:author`> element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
+|`Categories`|A <`category`> element for each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection.|  
+|`Contributors`|An <`a10:contributor`> element for each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection.|  
+|`Copyright`|A <`copyright`> element.|  
+|`Description`|A <`description`> element.|  
+|`ElementExtensions`|Each element in the collection is written within the <`channel`> element.|  
+|`Generator`|A <`generator`> element.|  
+|`Id`|An <`a10:id`> element.|  
+|`ImageUri`|An <`image`> element.|  
+|`Items`|An <`item`> element for each <xref:System.ServiceModel.Syndication.SyndicationItem> in the collection.|  
+|`Language`|A <`language`> element.|  
+|`LastUpdatedTime`|A <`lastBuildDate`> element.|  
+|`Links`|An <`a10:link`> element for each <xref:System.ServiceModel.Syndication.SyndicationLink> in the collection.|  
+|`Title`|A <`title`> element.|  
+  
+   
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance and serialize it to both Atom 1.0 and RSS 2.0.  
+  
+ [!code-csharp[SyndicationFeed#0](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#0)]
+ [!code-vb[SyndicationFeed#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#0)]  
+  
+ The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationFeed> is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#1](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#1)]  
+  
+ The following XML shows how a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#2](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyndicationFeed ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyndicationFeed (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Syndication.SyndicationItem&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.SyndicationItem})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="items">A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class with the specified collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection of <xref:System.ServiceModel.Syndication.SyndicationItem> objects passed into this constructor is buffered.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to call this constructor.  
+  
+ [!code-csharp[SyndicationFeed#3](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#3)]
+ [!code-vb[SyndicationFeed#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SyndicationFeed (System.ServiceModel.Syndication.SyndicationFeed source, bool cloneItems);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.SyndicationFeed source, bool cloneItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.#ctor(System.ServiceModel.Syndication.SyndicationFeed,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.ServiceModel.Syndication.SyndicationFeed" />
+        <Parameter Name="cloneItems" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> used to initialize the new instance.</param>
+        <param name="cloneItems">A value that specifies whether to clone the items in the source instance.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class with the specified feed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `cloneItems` parameter is `true`, all <xref:System.ServiceModel.Syndication.SyndicationItem> instances in the source <xref:System.ServiceModel.Syndication.SyndicationFeed> instance are cloned and added to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance. If the `cloneItems` parameter is `false`, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance contains references to the existing <xref:System.ServiceModel.Syndication.SyndicationItem> instances.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyndicationFeed (string title, string description, Uri feedAlternateLink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string description, class System.Uri feedAlternateLink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.#ctor(System.String,System.String,System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="feedAlternateLink" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="title">The title of the feed.</param>
+        <param name="description">The description of the feed.</param>
+        <param name="feedAlternateLink">The URI for the feed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class with the specified title, description, and Uniform Resource Identifier (URI).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to call this constructor.  
+  
+ [!code-csharp[SyndicationFeed#4](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#4)]
+ [!code-vb[SyndicationFeed#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyndicationFeed (string title, string description, Uri feedAlternateLink, System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string description, class System.Uri feedAlternateLink, class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Syndication.SyndicationItem&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.#ctor(System.String,System.String,System.Uri,System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.SyndicationItem})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="feedAlternateLink" Type="System.Uri" />
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="title">The title of the feed.</param>
+        <param name="description">The description of the feed.</param>
+        <param name="feedAlternateLink">The URI for the feed.</param>
+        <param name="items">A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class with the specified title, description, URI, and collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to call this constructor.  
+  
+ [!code-csharp[SyndicationFeed#5](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#5)]
+ [!code-vb[SyndicationFeed#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyndicationFeed (string title, string description, Uri feedAlternateLink, string id, DateTimeOffset lastUpdatedTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string description, class System.Uri feedAlternateLink, string id, valuetype System.DateTimeOffset lastUpdatedTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.#ctor(System.String,System.String,System.Uri,System.String,System.DateTimeOffset)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="feedAlternateLink" Type="System.Uri" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="lastUpdatedTime" Type="System.DateTimeOffset" />
+      </Parameters>
+      <Docs>
+        <param name="title">The syndication feed title.</param>
+        <param name="description">The syndication feed description.</param>
+        <param name="feedAlternateLink">The alternate URI for the syndication feed.</param>
+        <param name="id">The ID of the syndication feed.</param>
+        <param name="lastUpdatedTime">The <see cref="T:System.DateTimeOffset" /> that contains the last time the syndication feed was updated.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to call this constructor.  
+  
+ [!code-csharp[SyndicationFeed#49](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#49)]
+ [!code-vb[SyndicationFeed#49](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#49)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SyndicationFeed (string title, string description, Uri feedAlternateLink, string id, DateTimeOffset lastUpdatedTime, System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string title, string description, class System.Uri feedAlternateLink, string id, valuetype System.DateTimeOffset lastUpdatedTime, class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Syndication.SyndicationItem&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.#ctor(System.String,System.String,System.Uri,System.String,System.DateTimeOffset,System.Collections.Generic.IEnumerable{System.ServiceModel.Syndication.SyndicationItem})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="feedAlternateLink" Type="System.Uri" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="lastUpdatedTime" Type="System.DateTimeOffset" />
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="title">The syndication feed title.</param>
+        <param name="description">The syndication feed description.</param>
+        <param name="feedAlternateLink">The alternate URI for the syndication feed.</param>
+        <param name="id">The ID of the syndication feed.</param>
+        <param name="lastUpdatedTime">The <see cref="T:System.DateTimeOffset" /> that contains the last time the syndication feed was updated.</param>
+        <param name="items">A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to call this constructor.  
+  
+ [!code-csharp[SyndicationFeed#50](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#50)]
+ [!code-vb[SyndicationFeed#50](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeExtensions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,string&gt; AttributeExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;class System.Xml.XmlQualifiedName, string&gt; AttributeExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.Xml.XmlQualifiedName,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of attribute extensions.</summary>
+        <value>A dictionary that contains a collection of attribute extensions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the <`atom`> element. When serialized to RSS 2.0, each custom attribute is written to the <`channel`> element. [!INCLUDE[crexample](~/includes/crexample-md.md)] adding an attribute extension, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
+  
+   
+  
+## Examples  
+ The following code shows how to add an attribute extension to a syndication feed.  
+  
+ [!code-csharp[LooselyTypedExtensions#0](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/program.cs#0)]
+ <!-- TODO: review snippet reference [!code-vb[LooselyTypedExtensions#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/program.vb#0)]  -->  
+  
+ The following XML shows how an attribute extension is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#14](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#14)]  
+  
+ The following XML shows how an attribute extension is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#15](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authors">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt; Authors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationPerson&gt; Authors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Authors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of authors of the feed.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> objects that represents the authors of the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an <`author`> element. When serialized to RSS 2.0, if only a single <xref:System.ServiceModel.Syndication.SyndicationPerson> exists in the collection, it is written to a <`managingEditor`> element. Otherwise, each <xref:System.ServiceModel.Syndication.SyndicationPerson> is written to an <`a10:author`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to add an author to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+  
+ [!code-csharp[SyndicationFeed#8](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#8)]
+ [!code-vb[SyndicationFeed#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#8)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#16](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#16)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> collection is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#17](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseUri">
+      <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.BaseUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the base URI for the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
+        <value>The base URI for the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to access the base URI of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[SyndicationFeed#48](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#48)]
+ [!code-vb[SyndicationFeed#48](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#48)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Categories">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt; Categories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationCategory&gt; Categories" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Categories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationCategory&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of categories for the feed.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> objects that represent the categories for the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a <`category`> element.  
+  
+ When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationCategory> in the collection is written to a <`category`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to add a category to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+  
+ [!code-csharp[SyndicationFeed#10](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#10)]
+ [!code-vb[SyndicationFeed#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#10)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#18](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#18)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#19](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Syndication.SyndicationFeed Clone (bool cloneItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationFeed Clone(bool cloneItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.Clone(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.SyndicationFeed</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cloneItems" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cloneItems">A value that specifies whether the <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects are cloned.</param>
+        <summary>Creates a copy of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> instance.</summary>
+        <returns>A duplicate <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `cloneItems` parameter is `true`, all items within the <xref:System.ServiceModel.Syndication.SyndicationFeed> object are cloned; otherwise, the new <xref:System.ServiceModel.Syndication.SyndicationFeed> instance's items collection contain references to the original <xref:System.ServiceModel.Syndication.SyndicationFeed> instance's items.  
+  
+   
+  
+## Examples  
+ The following code shows how to call this method.  
+  
+ [!code-csharp[SyndicationFeed#47](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#47)]
+ [!code-vb[SyndicationFeed#47](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#47)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contributors">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt; Contributors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationPerson&gt; Contributors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Contributors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationPerson&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the contributors to the feed.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> objects that represents the contributors to the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to a <`contributor`> element.  
+  
+ When serialized to RSS 2.0, each <xref:System.ServiceModel.Syndication.SyndicationPerson> in the collection is written to an <`a10:contributor`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to add a contributor to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+  
+ [!code-csharp[SyndicationFeed#11](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#11)]
+ [!code-vb[SyndicationFeed#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#11)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#20](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#20)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collection is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#21](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#21)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copyright">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.TextSyndicationContent Copyright { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.TextSyndicationContent Copyright" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Copyright" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets copyright information for the feed.</summary>
+        <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationContent" /> object that represents copyright information for the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a <`rights`> element.  
+  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is written to a <`copyright`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the copyright information for a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+  
+ [!code-csharp[SyndicationFeed#12](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#12)]
+ [!code-vb[SyndicationFeed#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#12)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#22](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#22)]  
+  
+```  
+<rights type="text">Copyright 2007</rights>  
+```  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Copyright%2A> is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#23](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#23)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCategory">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Syndication.SyndicationCategory CreateCategory ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationCategory CreateCategory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.CreateCategory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.SyndicationCategory</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationCategory" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not add the <xref:System.ServiceModel.Syndication.SyndicationCategory> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Categories%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItem">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Syndication.SyndicationItem CreateItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationItem CreateItem() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.CreateItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.SyndicationItem</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not add the <xref:System.ServiceModel.Syndication.SyndicationItem> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLink">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Syndication.SyndicationLink CreateLink ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationLink CreateLink() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.CreateLink" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.SyndicationLink</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new <xref:System.ServiceModel.Syndication.SyndicationLink> instance is not added to the <xref:System.ServiceModel.Syndication.SyndicationFeed> instance used to create it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePerson">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Syndication.SyndicationPerson CreatePerson ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Syndication.SyndicationPerson CreatePerson() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.CreatePerson" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.SyndicationPerson</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</summary>
+        <returns>A new <see cref="T:System.ServiceModel.Syndication.SyndicationPerson" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not add the <xref:System.ServiceModel.Syndication.SyndicationPerson> object to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Authors%2A> or <xref:System.ServiceModel.Syndication.SyndicationFeed.Contributors%2A> collections.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.TextSyndicationContent Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.TextSyndicationContent Description" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets a description of the feed.</summary>
+        <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> object that represents the description of the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a <`subtitle`> element.  
+  
+ When serialized to RSS 2.0, <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is written to a <`description`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+  
+ [!code-csharp[SyndicationFeed#13](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#13)]
+ [!code-vb[SyndicationFeed#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#13)]  
+  
+ The following XML shows how <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#24](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#24)]  
+  
+ The following XML shows how <xref:System.ServiceModel.Syndication.SyndicationFeed.Description%2A> is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#25](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementExtensions">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.SyndicationElementExtensionCollection ElementExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.SyndicationElementExtensionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element extensions for the feed.</summary>
+        <value>A <see cref="T:System.ServiceModel.Syndication.SyndicationElementExtensionCollection" /> instance that contains the element extensions in the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace.  
+  
+ `<mg:MyElement xmlns:mg="http://myserver/elements" />`  
+  
+ [!INCLUDE[crexample](~/includes/crexample-md.md)] adding element extensions, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
+  
+   
+  
+## Examples  
+ The following code shows how to add element extensions to a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[LooselyTypedExtensions#1](~/samples/snippets/csharp/VS_Snippets_CFX/looselytypedextensions/cs/snippets.cs#1)]
+ [!code-vb[LooselyTypedExtensions#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/looselytypedextensions/vb/snippets.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Generator">
+      <MemberSignature Language="C#" Value="public string Generator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Generator" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Generator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the generator of the feed.</summary>
+        <value>The name of the tool that generated the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> is written to a <`generator`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> of a <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+  
+ [!code-csharp[SyndicationFeed#39](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#39)]
+ [!code-vb[SyndicationFeed#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#39)]
+ [!code-xml[SyndicationFeed#39](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#39)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Generator%2A> property is serialized to Atom 1.0 and RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#26](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#26)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAtom10Formatter">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.Atom10FeedFormatter GetAtom10Formatter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Syndication.Atom10FeedFormatter GetAtom10Formatter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.GetAtom10Formatter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.Atom10FeedFormatter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter" /> instance.</summary>
+        <returns>An <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRss20Formatter">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.Rss20FeedFormatter GetRss20Formatter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Syndication.Rss20FeedFormatter GetRss20Formatter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.GetRss20Formatter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.Rss20FeedFormatter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> instance.</summary>
+        <returns>An <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRss20Formatter">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.Rss20FeedFormatter GetRss20Formatter (bool serializeExtensionsAsAtom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Syndication.Rss20FeedFormatter GetRss20Formatter(bool serializeExtensionsAsAtom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.GetRss20Formatter(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.Rss20FeedFormatter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializeExtensionsAsAtom" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="serializeExtensionsAsAtom">A value that specifies whether to serialize element and attribute extensions with an Atom 1.0 namespace.</param>
+        <summary>Gets a new <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> instance.</summary>
+        <returns>An <see cref="T:System.ServiceModel.Syndication.Rss20FeedFormatter" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The RSS 2.0 specification allows elements and attributes that are not specified in its specification only if they are within a namespace. When the `serializedExtensionsAsAtom` parameter is `true`, the formatter automatically adds the `a10` namespace qualifier to all extensions; otherwise, the extensions are not serialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the ID of the feed.</summary>
+        <value>The ID of the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an <`id`> element.  
+  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> is written to an <`a10:id`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[SyndicationFeed#40](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#40)]
+ [!code-vb[SyndicationFeed#40](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#40)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#27](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#27)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Id%2A> property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#28](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#28)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageUrl">
+      <MemberSignature Language="C#" Value="public Uri ImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the image URL for the feed.</summary>
+        <value>The URL for the image for the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to a <`logo`> element.  
+  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is written to an <`image`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[SyndicationFeed#41](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#41)]
+ [!code-vb[SyndicationFeed#41](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#41)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#29](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#29)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.ImageUrl%2A> property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#30](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#30)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt; Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Syndication.SyndicationItem&gt; Items" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Syndication.SyndicationItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the feed items contained in the feed.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationItem" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to <`entry`> elements.  
+  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is written to <`item`> elements.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[SyndicationFeed#42](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#42)]
+ [!code-vb[SyndicationFeed#42](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#42)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#31](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#31)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Items%2A> collection is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#32](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#32)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public string Language { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Language" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the language of the feed.</summary>
+        <value>The name of the language the feed is written in.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the `lang` attribute in the <`feed`> element.  
+  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is written to the <`language`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[SyndicationFeed#43](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#43)]
+ [!code-vb[SyndicationFeed#43](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#43)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#14](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#14)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Language%2A> property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#33](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastUpdatedTime">
+      <MemberSignature Language="C#" Value="public DateTimeOffset LastUpdatedTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastUpdatedTime" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTimeOffset</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the time the feed was last updated.</summary>
+        <value>A <see cref="T:System.DateTimeOffset" /> instance set to the time the feed was last updated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to an <`updated`>element.  
+  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is written to a <`lastBuildDate`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to se the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property on a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[SyndicationFeed#44](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#44)]
+ [!code-vb[SyndicationFeed#44](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#44)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#34](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#34)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.LastUpdatedTime%2A> property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#35](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#35)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Links">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationLink&gt; Links { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Syndication.SyndicationLink&gt; Links" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Links" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Syndication.SyndicationLink&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the links associated with the feed.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of <`link`> elements.  
+  
+ When serialized to RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is written to a number of <`a10:link`> elements.  
+  
+   
+  
+## Examples  
+ The following code shows how to add a link to the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[SyndicationFeed#45](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#45)]
+ [!code-vb[SyndicationFeed#45](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#45)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is serialized to Atom 1.0.  
+  
+ [!code-xml[SyndicationFeed#36](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#36)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Links%2A> collection is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#36](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#36)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.SyndicationFeed Load (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationFeed Load(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.Load(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.SyndicationFeed</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to load the feed from.</param>
+        <summary>Loads a syndication feed from the specified XML reader.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> that contains the loaded contents.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to call this method.  
+  
+ [!code-csharp[SyndicationFeed#9](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#9)]
+ [!code-vb[SyndicationFeed#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load&lt;TSyndicationFeed&gt;">
+      <MemberSignature Language="C#" Value="public static TSyndicationFeed Load&lt;TSyndicationFeed&gt; (System.Xml.XmlReader reader) where TSyndicationFeed : System.ServiceModel.Syndication.SyndicationFeednew();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TSyndicationFeed Load&lt;.ctor (class System.ServiceModel.Syndication.SyndicationFeed) TSyndicationFeed&gt;(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.Load``1(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TSyndicationFeed</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSyndicationFeed">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>System.ServiceModel.Syndication.SyndicationFeed</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSyndicationFeed">The syndication feed type.</typeparam>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <summary>Loads a <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived instance from the specified <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived instance that contains the feed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when you are loading a syndication item into a class derived from <xref:System.ServiceModel.Syndication.SyndicationFeed>.  
+  
+   
+  
+## Examples  
+ The following code shows how to load a syndication feed from an <xref:System.Xml.XmlReader> instance.  
+  
+ [!code-csharp[SyndicationFeed#9](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#9)]
+ [!code-vb[SyndicationFeed#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsAtom10">
+      <MemberSignature Language="C#" Value="public void SaveAsAtom10 (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAsAtom10(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.SaveAsAtom10(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <summary>Write the syndication feed to the specified <see cref="T:System.Xml.XmlWriter" /> in Atom 1.0 format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to write out a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance in the Atom 1.0 format.  
+  
+ [!code-csharp[SyndicationFeed#52](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#52)]
+ [!code-vb[SyndicationFeed#52](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#52)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsRss20">
+      <MemberSignature Language="C#" Value="public void SaveAsRss20 (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAsRss20(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.SaveAsRss20(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to write to.</param>
+        <summary>Write the syndication feed to the specified <see cref="T:System.Xml.XmlWriter" /> in RSS 2.0 format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to write out a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance in the RSS 2.0 format.  
+  
+ [!code-csharp[SyndicationFeed#51](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#51)]
+ [!code-vb[SyndicationFeed#51](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#51)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Syndication.TextSyndicationContent Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Syndication.TextSyndicationContent Title" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.SyndicationFeed.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.TextSyndicationContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the title of the feed.</summary>
+        <value>A <see cref="T:System.ServiceModel.Syndication.TextSyndicationContent" /> instance that contains the title of the feed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When serialized to Atom 1.0 and RSS 2.0, the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is written to a <`title`> element.  
+  
+   
+  
+## Examples  
+ The following code shows how to set the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property of a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance.  
+  
+ [!code-csharp[SyndicationFeed#46](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#46)]
+ [!code-vb[SyndicationFeed#46](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#46)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is serialized to Atom 1.0.  
+  
+ [!code-csharp[SyndicationFeed#39](~/samples/snippets/csharp/VS_Snippets_CFX/syndicationfeed/cs/program.cs#39)]
+ [!code-vb[SyndicationFeed#39](~/samples/snippets/visualbasic/VS_Snippets_CFX/syndicationfeed/vb/snippets.vb#39)]
+ [!code-xml[SyndicationFeed#39](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/atom.xml#39)]  
+  
+ The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed.Title%2A> property is serialized to RSS 2.0.  
+  
+ [!code-xml[SyndicationFeed#38](~/samples/snippets/common/VS_Snippets_CFX/syndicationfeed/common/rss.xml#38)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParseAttribute">
+      <MemberSignature Language="C#" Value="protected virtual bool TryParseAttribute (string name, string ns, string value, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseAttribute(string name, string ns, string value, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.TryParseAttribute(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the element.</param>
+        <param name="ns">The namespace of the element.</param>
+        <param name="value">The attribute to parse.</param>
+        <param name="version">The syndication version to use when parsing.</param>
+        <summary>Attempts to parse an attribute extension.</summary>
+        <returns>A value that specifies whether the attribute extension was parsed successfully.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the <`feed`> (for Atom 1.0) or <`rss`> (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the deserialization of a custom attribute extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">Invalid XML Encountered during read.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParseElement">
+      <MemberSignature Language="C#" Value="protected virtual bool TryParseElement (System.Xml.XmlReader reader, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryParseElement(class System.Xml.XmlReader reader, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.TryParseElement(System.Xml.XmlReader,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read from.</param>
+        <param name="version">The syndication version to use while parsing.</param>
+        <summary>Attempts to parse an element extension.</summary>
+        <returns>A value that specifies whether the element extension was parsed successfully.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the deserialization of a custom element extension. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized element extensions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">Invalid XML encountered during read.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttributeExtensions">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAttributeExtensions (System.Xml.XmlWriter writer, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteAttributeExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.WriteAttributeExtensions(System.Xml.XmlWriter,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlReader" /> to write to.</param>
+        <param name="version">The syndication version to use while writing.</param>
+        <summary>Writes the attribute extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attribute extensions are custom attributes that are not defined by the Atom 1.0 or RSS 2.0 specifications. They are serialized as an attribute of the <`feed`> (for Atom 1.0) or <`rss`> (for RSS 1.0) element, which depends upon the syndication version being used. This method is an extension point that allows you to handle the serialization of custom attribute extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized attribute extensions.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteElementExtensions">
+      <MemberSignature Language="C#" Value="protected virtual void WriteElementExtensions (System.Xml.XmlWriter writer, string version);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void WriteElementExtensions(class System.Xml.XmlWriter writer, string version) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.SyndicationFeed.WriteElementExtensions(System.Xml.XmlWriter,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="version" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlReader" /> to write to.</param>
+        <param name="version">The syndication version to use while writing.</param>
+        <summary>Writes the element extensions to the specified <see cref="T:System.Xml.XmlWriter" /> using the specified syndication version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Element extensions are valid XML elements that are not specified in either the Atom 1.0 or RSS 2.0 specifications. You can add any valid XML element as an extension, provided its namespace is different from the enclosing namespace. This method is an extension point that allows you to handle the serialization of custom element extensions. To do this, you must derive a class from <xref:System.ServiceModel.Syndication.SyndicationFeed> and override this method. This method is called for all unrecognized element extensions.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

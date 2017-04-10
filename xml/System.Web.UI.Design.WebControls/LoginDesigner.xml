@@ -1,0 +1,456 @@
+<Type Name="LoginDesigner" FullName="System.Web.UI.Design.WebControls.LoginDesigner">
+  <TypeSignature Language="C#" Value="public class LoginDesigner : System.Web.UI.Design.WebControls.CompositeControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginDesigner extends System.Web.UI.Design.WebControls.CompositeControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LoginDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.CompositeControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Login" /> Web-server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Login> control displays a user interface that allows a user to log on to the host Web site.  
+  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.Login> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.LoginDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.Login> control.  
+  
+ The <xref:System.Web.UI.Design.WebControls.LoginDesigner> class properties provide the following functionality:  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.ActionLists%2A> property returns a <xref:System.ComponentModel.Design.DesignerActionListCollection> object, which typically contains an object that is derived from the <xref:System.ComponentModel.Design.DesignerActionList> class for each level in the inheritance tree of the designer.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.AutoFormats%2A> property returns a collection of formatting schemes for display in the **Auto Format** dialog box.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.TemplateGroups%2A> property returns a collection of template groups for the fields of the associated <xref:System.Web.UI.WebControls.Login> control and the top-level <xref:System.Web.UI.WebControls.Login> template.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.UsePreviewControl%2A> property always returns `true`, indicating that the designer creates a temporary copy of the associated <xref:System.Web.UI.WebControls.Login> to generate the design-time markup.  
+  
+ The <xref:System.Web.UI.Design.WebControls.LoginDesigner> class methods provide the following functionality:  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetDesignTimeHtml%2A> method returns the markup that is used to render the associated <xref:System.Web.UI.WebControls.Login> at design time.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetEditableDesignerRegionContent%2A> method returns a serialized copy of the template for the associated <xref:System.Web.UI.WebControls.Login>.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetErrorDesignTimeHtml%2A> method provides the markup that is used to render the associated <xref:System.Web.UI.WebControls.Login> at design time when an error has occurred.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.Initialize%2A> method prepares the designer to view, edit, and design the associated <xref:System.Web.UI.WebControls.Login>.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.PreFilterProperties%2A> method is used to remove properties from, add additional properties to, or shadow properties of the associated <xref:System.Web.UI.WebControls.Login>.  
+  
+-   The <xref:System.Web.UI.Design.WebControls.LoginDesigner.SetEditableDesignerRegionContent%2A> method sets a region of the associated <xref:System.Web.UI.WebControls.Login> from a serialized copy of a control template.  
+  
+   
+  
+## Examples  
+ The following code example shows how to extend the <xref:System.Web.UI.Design.WebControls.LoginDesigner> class to change the appearance of controls that are derived from the <xref:System.Web.UI.WebControls.Login> control at design time.  
+  
+ The example derives the `MyLogin` control from the <xref:System.Web.UI.WebControls.Login>. The `MyLogin` is a copy of the <xref:System.Web.UI.WebControls.Login> control. The example also derives the `MyLoginDesigner` class from the <xref:System.Web.UI.Design.WebControls.LoginDesigner> and applies a <xref:System.ComponentModel.DesignerAttribute> attribute for the `MyLoginDesigner` on the `MyLogin` control.  
+  
+ The `MyLoginDesigner` overrides the <xref:System.Web.UI.Design.WebControls.LoginDesigner.PreFilterProperties%2A> method to make the <xref:System.Web.UI.Control.NamingContainer%2A> property visible in the **Properties** grid at design time. It overrides the <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetDesignTimeHtml%2A> method to draw a blue, dashed border around the control to make its extent more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the `MyLogin` control is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value. It overrides the <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetErrorDesignTimeHtml%2A> method to generate the markup for a placeholder that includes the error message rendered in red, bold text.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.LoginDesigner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginDesigner/CS/LoginDesigner.cs#1)]
+ [!code-vb[System.Web.UI.Design.WebControls.LoginDesigner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginDesigner/VB/LoginDesigner.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LoginDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LoginDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.LoginDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.Login> control or a copy of that control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionLists">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.ActionLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the designer action-list collection for this designer.</summary>
+        <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LoginDesigner.ActionLists%2A> property creates a <xref:System.ComponentModel.Design.DesignerActionList> object for the <xref:System.Web.UI.Design.WebControls.LoginDesigner> class, adds it to the <xref:System.ComponentModel.Design.DesignerActionListCollection> object that is obtained from the <xref:System.Web.UI.Design.WebControls.LoginDesigner.ActionLists%2A> base property, and then returns the <xref:System.ComponentModel.Design.DesignerActionListCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowResize">
+      <MemberSignature Language="C#" Value="public override bool AllowResize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowResize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.AllowResize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the <see cref="T:System.Web.UI.Design.WebControls.LoginDesigner" /> control allows resizing.</summary>
+        <value>
+          <see langword="true" /> if the control allows resizing; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.Design.WebControls.LoginDesigner.RenderOuterTable%2A> property is set to `false`, the control does not allow resizing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFormats">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.AutoFormats" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of predefined formatting schemes to display in the **Auto Format** dialog box.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> that contains the predefined schemes for the <see cref="T:System.Web.UI.WebControls.Login" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.DesignerAutoFormatCollection> object is populated from an XML-encoded member of an internal class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml (System.Web.UI.Design.DesignerRegionCollection regions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml(class System.Web.UI.Design.DesignerRegionCollection regions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regions" Type="System.Web.UI.Design.DesignerRegionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="regions">A <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> to which definitions of the selectable and clickable regions in the design-time view of the control are added.</param>
+        <summary>Gets the markup that is used to render the associated control at design time and populates a collection of designer regions.</summary>
+        <returns>A string containing the markup used to render the <see cref="T:System.Web.UI.WebControls.Login" /> at design time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetDesignTimeHtml%2A> method creates an <xref:System.Web.UI.Design.EditableDesignerRegion> object for the <xref:System.Web.UI.WebControls.Login.LayoutTemplate%2A> property of the associated <xref:System.Web.UI.WebControls.Login> control and adds it to the <xref:System.Web.UI.Design.DesignerRegionCollection> object that is referenced by the `regions` parameter. The <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetDesignTimeHtml%2A> method uses the <xref:System.Web.UI.Design.WebControls.CompositeControlDesigner.GetDesignTimeHtml%2A> base method to generate the markup for the design-time rendering of the <xref:System.Web.UI.WebControls.Login> control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetDesignTimeHtml%2A> method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.LoginDesigner> class to change the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.Login> control at design time. The example draws a blue, dashed border around the control to make its extent more visible, if the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> value.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.LoginDesigner#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginDesigner/CS/LoginDesigner.cs#4)]
+ [!code-vb[System.Web.UI.Design.WebControls.LoginDesigner#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginDesigner/VB/LoginDesigner.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you override the <see cref="M:System.Web.UI.Design.WebControls.LoginDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> method, be sure to call the <see cref="M:System.Web.UI.Design.WebControls.CompositeControlDesigner.GetDesignTimeHtml" /> base method because it eventually, through several override levels, calls on the <see cref="T:System.Web.UI.WebControls.Login" /> control or a copy of the control to generate the markup.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditableDesignerRegionContent">
+      <MemberSignature Language="C#" Value="public override string GetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
+      </Parameters>
+      <Docs>
+        <param name="region">The <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> for which to fetch content.</param>
+        <summary>Returns a serialized copy of the template that is used to render the associated control at design time.</summary>
+        <returns>A string containing a serialized copy of the template used to render the associated <see cref="T:System.Web.UI.WebControls.Login" /> at design time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetEditableDesignerRegionContent%2A> method creates a copy of the <xref:System.Web.UI.WebControls.Login.LayoutTemplate%2A> object of the associated <xref:System.Web.UI.WebControls.Login> control in the control container and returns a serialized copy.  
+  
+ The serialized template can be restored to a part of the <xref:System.Web.UI.WebControls.Login> control using the <xref:System.Web.UI.Design.WebControls.LoginDesigner.SetEditableDesignerRegionContent%2A> method.  
+  
+ The `region` parameter is not used by the <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetEditableDesignerRegionContent%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrorDesignTimeHtml">
+      <MemberSignature Language="C#" Value="protected override string GetErrorDesignTimeHtml (Exception e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetErrorDesignTimeHtml(class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.Exception" /> that was thrown.</param>
+        <summary>Provides the markup that is used to render the associated control at design time when an error has occurred.</summary>
+        <returns>A string that contains the markup used to render the associated <see cref="T:System.Web.UI.WebControls.Login" /> at design time after an error has occurred.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The placeholder that the design-time <xref:System.Web.UI.WebControls.Login> control renders contains the type name, the control name, and messages announcing and describing the error.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetErrorDesignTimeHtml%2A> method in a class that is inherited from the <xref:System.Web.UI.Design.WebControls.LoginDesigner> class to change the appearance of a control that is derived from the <xref:System.Web.UI.WebControls.Login> control at design time. The example generates the markup for a placeholder that includes the error message rendered in red, bold text.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.LoginDesigner#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginDesigner/CS/LoginDesigner.cs#2)]
+ [!code-vb[System.Web.UI.Design.WebControls.LoginDesigner#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginDesigner/VB/LoginDesigner.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">A <see cref="T:System.Web.UI.WebControls.Login" />, that implements an <see cref="T:System.ComponentModel.IComponent" />.</param>
+        <summary>Prepares the designer to view, edit, and design the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visual designer calls the <xref:System.Web.UI.Design.WebControls.LoginDesigner.Initialize%2A> method when it is ready to use the designer to render the <xref:System.Web.UI.WebControls.Login> control. The <xref:System.Web.UI.Design.WebControls.LoginDesigner.Initialize%2A> method and its base methods configure properties and set up events that are necessary for the operation of the designer.  
+  
+ The `component` parameter is the <xref:System.Web.UI.WebControls.Login> control that is associated with this designer or a copy of the <xref:System.Web.UI.WebControls.Login> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">A collection implementing the <see cref="T:System.Collections.IDictionary" /> of the added and shadowed properties.</param>
+        <summary>Used by the designer to remove properties from or add additional properties to the display in the **Properties** grid or to shadow properties of the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow various control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the **Properties** grid.  
+  
+ If a <xref:System.Web.UI.WebControls.Login.LayoutTemplate%2A> property has been defined for the <xref:System.Web.UI.WebControls.Login> control, the <xref:System.Web.UI.Design.WebControls.LoginDesigner.PreFilterProperties%2A> sets the <xref:System.ComponentModel.BrowsableAttribute> attribute of properties that do not apply when templated to `false` so those properties do not appear in the **Properties** grid.  
+  
+   
+  
+## Examples  
+ The following code sample creates a class derived from <xref:System.Web.UI.Design.WebControls.LoginDesigner>, and overrides the <xref:System.Web.UI.Design.WebControls.LoginDesigner.PreFilterProperties%2A> method to change the **Properties** grid of a <xref:System.Web.UI.WebControls.Login> control at design time. The example makes the <xref:System.Web.UI.Control.NamingContainer%2A> property visible in the **Properties** grid.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.LoginDesigner#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginDesigner/CS/LoginDesigner.cs#3)]
+ [!code-vb[System.Web.UI.Design.WebControls.LoginDesigner#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.LoginDesigner/VB/LoginDesigner.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="M:System.Web.UI.Design.WebControls.LoginDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method to add properties to or change attributes of properties in the design-time property collection. Be sure to call the base method before performing other processing.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderOuterTable">
+      <MemberSignature Language="C#" Value="public bool RenderOuterTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RenderOuterTable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.RenderOuterTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the <see cref="T:System.Web.UI.Design.WebControls.LoginDesigner" /> control uses an outer table container to apply inline CSS style rules.</summary>
+        <value>
+          <see langword="true" /> if the control uses an outer table container to apply inline CSS style rules; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LoginDesigner> control uses an outer table container to apply inline style rule in the markup. You can remove the outer table container by setting this property to `true`. Removing the outer table gives you greater flexibility in how you apply CSS rules to the markup that is rendered by the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEditableDesignerRegionContent">
+      <MemberSignature Language="C#" Value="public override void SetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region, string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="region">An <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> that provides the name of the region to update.</param>
+        <param name="content">A string that contains a serialized template for the associated control.</param>
+        <summary>Sets a region of the associated control from a serialized copy of a control template.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LoginDesigner.SetEditableDesignerRegionContent%2A> method parses a serialized template for the associated <xref:System.Web.UI.WebControls.Login> control that is specified by the `content` parameter, and then uses the template to update the region of the control that is specified by the <xref:System.Web.UI.Design.DesignerObject.Name%2A> property of the `region` parameter.  
+  
+ The <xref:System.Web.UI.WebControls.Login.LayoutTemplate%2A> property of the <xref:System.Web.UI.WebControls.Login> control can be serialized using the <xref:System.Web.UI.Design.WebControls.LoginDesigner.GetEditableDesignerRegionContent%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateGroups">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.TemplateGroupCollection TemplateGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroupCollection TemplateGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.TemplateGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.TemplateGroupCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of template groups for the fields of the associated control.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> containing an element for each templated field in the <see cref="T:System.Web.UI.WebControls.Login" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LoginDesigner.TemplateGroups%2A> property gets a <xref:System.Web.UI.Design.TemplateGroupCollection> object from the <xref:System.Web.UI.Design.WebControls.LoginDesigner.TemplateGroups%2A> base property, and then adds a <xref:System.Web.UI.Design.TemplateGroup> object that contains a single <xref:System.Web.UI.Design.TemplateDefinition> object for the layout template of the associated <xref:System.Web.UI.WebControls.Login> control to the <xref:System.Web.UI.Design.TemplateGroupCollection>. The <xref:System.Web.UI.Design.WebControls.LoginDesigner.TemplateGroups%2A> property returns this <xref:System.Web.UI.Design.TemplateGroupCollection> to the caller.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePreviewControl">
+      <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginDesigner.UsePreviewControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the designer should use a temporary copy rather than the actual control associated with the designer to generate the design-time markup.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.Design.WebControls.LoginDesigner.UsePreviewControl%2A> property is always `true`, the designer <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property returns a copy of the associated <xref:System.Web.UI.WebControls.Login> control to generate the design-time markup. The <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property creates the copy by persisting the actual <xref:System.Web.UI.WebControls.Login> control, then parsing the persisted control string. The copied control does not affect any persistence for the <xref:System.Web.UI.WebControls.Login>.  
+  
+ If the <xref:System.Web.UI.Design.WebControls.LoginDesigner.UsePreviewControl%2A> property has been overridden to return `false`, the designer uses the associated <xref:System.Web.UI.WebControls.Login> itself to generate the design-time markup, and design-time changes to the control will persist to the page markup source.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You can override the <see cref="P:System.Web.UI.Design.WebControls.LoginDesigner.UsePreviewControl" /> property to return <see langword="false" /> or to determine its value based on whether the control is marked with a class-level <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> attribute. If the <see cref="P:System.Web.UI.Design.WebControls.LoginDesigner.UsePreviewControl" /> is not overridden, the <see cref="T:System.Web.UI.WebControls.Login" /> control ignores the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

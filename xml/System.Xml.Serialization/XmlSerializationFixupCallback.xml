@@ -1,0 +1,41 @@
+<Type Name="XmlSerializationFixupCallback" FullName="System.Xml.Serialization.XmlSerializationFixupCallback">
+  <TypeSignature Language="C#" Value="public delegate void XmlSerializationFixupCallback(object fixup);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSerializationFixupCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationFixupCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="fixup" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="fixup">An instance of the <see cref="T:System.Xml.Serialization.XmlSerializationReader.Fixup" /> class that contains the object to be fixed and the array of string identifiers for the items to fill in.</param>
+    <summary>Delegate used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class for deserialization of SOAP-encoded XML data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ While deserializing XML documents into .NET Framework objects, the .NET Framework XML serialization infrastructure dynamically instantiates fix-up methods that implement the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> delegate. The infrastructure does so for SOAP-encoded arrays whose data types map to .NET Framework reference types. Then, as necessary, a fix-up method is called to fill in the objects in the array.  
+  
+ In addition, during initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization derived from the <xref:System.Xml.Serialization.XmlSerializationReader> class. During this process, the infrastructure generates <xref:System.Xml.Serialization.XmlSerializationFixupCallback> methods for SOAP-encoded, multi-referenced XML data. The methods are then invoked during deserialization.  
+  
+ Do not directly create an instance of the <xref:System.Xml.Serialization.XmlSerializationFixupCallback> class.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

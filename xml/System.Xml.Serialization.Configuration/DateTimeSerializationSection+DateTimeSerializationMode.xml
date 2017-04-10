@@ -1,0 +1,77 @@
+<Type Name="DateTimeSerializationSection+DateTimeSerializationMode" FullName="System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode">
+  <TypeSignature Language="C#" Value="public enum DateTimeSerializationSection.DateTimeSerializationMode" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed DateTimeSerializationSection/DateTimeSerializationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines XML serialization format of <see cref="T:System.DateTime" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the serialization infrastructure only, and is not intended for public use. To actually set the serialization mode, create an application configuration file, and set the [\&lt;dateTimeSerialization\&gt; Element](~/docs/framework/serialization/datetimeserialization-element.md) to an appropriate setting. For more information about configuration files, see [Configuration File Schema](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38).  
+  
+ In versions 1.0 and 1.1 of .Net Framework, as well as in versions 2.0 and later when this property is set to `Local`, <xref:System.DateTime> objects are always formatted as the local time. That is, local time zone information is always included with the serialized data. Set this property to `Local` to ensure compatibility with older versions of the .Net Framework.  
+  
+ In versions 2.0 and later of the .Net Framework, with this property set to `Roundtrip`<xref:System.DateTime> objects are examined to determine whether they are in the local, UTC or an unspecified time zone, and are serialized in such a way that this information is preserved. This is the default behavior and is recommended for all new applications that do not communicate with older versions of the framework.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.Configuration.DateTimeSerializationSection/DateTimeSerializationMode Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Same as <see langword="Roundtrip" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.Configuration.DateTimeSerializationSection/DateTimeSerializationMode Local = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The serializer formats all <see cref="T:System.DateTime" /> objects as local time. This is for version 1.0 and 1.1 compatibility.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Roundtrip">
+      <MemberSignature Language="C#" Value="Roundtrip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.Configuration.DateTimeSerializationSection/DateTimeSerializationMode Roundtrip = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Roundtrip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The serializer examines individual <see cref="T:System.DateTime" /> instances to determine the serialization format: UTC, local, or unspecified.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

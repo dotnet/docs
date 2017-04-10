@@ -1,0 +1,33 @@
+<Type Name="HostCurrentTransactionCallback" FullName="System.Transactions.HostCurrentTransactionCallback">
+  <TypeSignature Language="C#" Value="public delegate System.Transactions.Transaction HostCurrentTransactionCallback();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HostCurrentTransactionCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.HostCurrentTransactionCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Transactions.Transaction</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Provides a mechanism for the hosting environment to supply its own default notion of <see cref="P:System.Transactions.Transaction.Current" />.</summary>
+    <returns>A <see cref="T:System.Transactions.Transaction" /> object.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate provides a mechanism for a hosting environment to supply its own default notion of <xref:System.Transactions.Transaction.Current%2A>. It is called when <xref:System.Transactions.Transaction.Current%2A> is `null`, and there is no current <xref:System.Transactions.TransactionScope> that indicates that the ambient transaction may have been suppressed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,382 @@
+<Type Name="WindowsSecurityToken" FullName="System.IdentityModel.Tokens.WindowsSecurityToken">
+  <TypeSignature Language="C#" Value="public class WindowsSecurityToken : System.IdentityModel.Tokens.SecurityToken" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowsSecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.WindowsSecurityToken" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SecurityToken</BaseTypeName>
+  </Base>
+  <Interfaces>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a security token that is based on the identity of a Windows domain or user account.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, application developers do not need to use the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class, unless a Web service must gain access to details about the Windows domain or user account associated with the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token. To get the details of the Windows domain or user account, access the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsSecurityToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor does nothing, by default.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsSecurityToken (System.Security.Principal.WindowsIdentity identity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="identity">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a unique identifier for the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token and assigns that value to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Id%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsIdentity" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsSecurityToken (System.Security.Principal.WindowsIdentity identity, string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity, string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" />
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="identity">To be added.</param>
+        <param name="id">A unique identifier for the security token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the Windows user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor calls the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize%2A> method to initialize the properties of this class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsIdentity" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="id" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsSecurityToken (System.Security.Principal.WindowsIdentity windowsIdentity, string id, string authenticationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity windowsIdentity, string id, string authenticationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.#ctor(System.Security.Principal.WindowsIdentity,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="authenticationType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</param>
+        <param name="id">A unique identifier for the security token.</param>
+        <param name="authenticationType">The authentication type for the security token.</param>
+        <summary>Creates a new instance of <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationType">
+      <MemberSignature Language="C#" Value="public string AuthenticationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.AuthenticationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the authentication type for the token.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method when you are finished using the <xref:System.IdentityModel.Tokens.WindowsSecurityToken>. The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method leaves the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> in an unusable state. After calling the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method, you must release all references to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> so the garbage collector can reclaim the memory that the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> was occupying.  
+  
+> [!NOTE]
+>  Always call the <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose%2A> method before you release your last reference to the <xref:System.IdentityModel.Tokens.WindowsSecurityToken>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public override string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique identifier for the security token.</summary>
+        <value>A unique identifier for the security token.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected void Initialize (string id, DateTime effectiveTime, DateTime expirationTime, System.Security.Principal.WindowsIdentity windowsIdentity, bool clone);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(string id, valuetype System.DateTime effectiveTime, valuetype System.DateTime expirationTime, class System.Security.Principal.WindowsIdentity windowsIdentity, bool clone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize(System.String,System.DateTime,System.DateTime,System.Security.Principal.WindowsIdentity,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="effectiveTime" Type="System.DateTime" />
+        <Parameter Name="expirationTime" Type="System.DateTime" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" />
+        <Parameter Name="clone" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="id">A unique identifier for the security token. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.Id" /> property.</param>
+        <param name="effectiveTime">A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid. Set the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom" /> property.</param>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo" /> property.</param>
+        <param name="windowsIdentity">A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user. Sets the value of the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property.</param>
+        <param name="clone">
+          <see langword="true" /> to create a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that is identical to the <c>windowsIdentity</c> parameter and assign that to the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property; otherwise, assign the value of the <c>windowsIdentity</c> parameter to the <see cref="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class using the specified unique identifier, Windows user, and the first and last instants in time when the security token is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize%2A> method is called by the constructors for the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="windowsIdentity" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="id" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected void Initialize (string id, string authenticationType, DateTime effectiveTime, DateTime expirationTime, System.Security.Principal.WindowsIdentity windowsIdentity, bool clone);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(string id, string authenticationType, valuetype System.DateTime effectiveTime, valuetype System.DateTime expirationTime, class System.Security.Principal.WindowsIdentity windowsIdentity, bool clone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.Initialize(System.String,System.String,System.DateTime,System.DateTime,System.Security.Principal.WindowsIdentity,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="authenticationType" Type="System.String" />
+        <Parameter Name="effectiveTime" Type="System.DateTime" />
+        <Parameter Name="expirationTime" Type="System.DateTime" />
+        <Parameter Name="windowsIdentity" Type="System.Security.Principal.WindowsIdentity" />
+        <Parameter Name="clone" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="id">A unique identifier for the security token.</param>
+        <param name="authenticationType">The authentication type for the security token.</param>
+        <param name="effectiveTime">A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</param>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</param>
+        <param name="windowsIdentity">Represents a Windows user.</param>
+        <param name="clone">
+          <see langword="true" /> to create a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that is identical to the <c>windowsIdentity</c> parameter and assign that to the <c>WindowsIdentity</c> property; otherwise, assign the value of the <c>windowsIdentity</c> parameter to the <c>WindowsIdentity</c> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.WindowsSecurityToken" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityKeys">
+      <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.SecurityKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cryptographic keys associated with the security token.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the set of keys associated with the security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.SecurityKeys%2A> method returns an empty collection, by default.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfDisposed">
+      <MemberSignature Language="C#" Value="protected void ThrowIfDisposed ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfDisposed() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.WindowsSecurityToken.ThrowIfDisposed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Throws an exception if the <see cref="M:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose" /> method has been called for this instance.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">the <see cref="M:System.IdentityModel.Tokens.WindowsSecurityToken.Dispose" /> method has been called for this instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidFrom">
+      <MemberSignature Language="C#" Value="public override DateTime ValidFrom { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the instant in time at which this security token is first valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.ValidFrom%2A> property is set to the instant in time when the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class is created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidTo">
+      <MemberSignature Language="C#" Value="public override DateTime ValidTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last instant in time at which this security token is valid.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the last instant in time at which this security token is valid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.IdentityModel.Tokens.WindowsSecurityToken> security token is valid for 10 hours, by default. The <xref:System.IdentityModel.Tokens.WindowsSecurityToken.ValidTo%2A> property is set to the instant in time when the <xref:System.IdentityModel.Tokens.WindowsSecurityToken> class is created plus 10 hours.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsIdentity">
+      <MemberSignature Language="C#" Value="public System.Security.Principal.WindowsIdentity WindowsIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.WindowsIdentity WindowsIdentity" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.WindowsSecurityToken.WindowsIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Windows user associated with this security token.</summary>
+        <value>A <see cref="T:System.Security.Principal.WindowsIdentity" /> that represents a Windows user.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

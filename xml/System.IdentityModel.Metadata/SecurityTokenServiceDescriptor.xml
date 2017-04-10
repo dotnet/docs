@@ -1,0 +1,70 @@
+<Type Name="SecurityTokenServiceDescriptor" FullName="System.IdentityModel.Metadata.SecurityTokenServiceDescriptor">
+  <TypeSignature Language="C#" Value="public class SecurityTokenServiceDescriptor : System.IdentityModel.Metadata.WebServiceDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityTokenServiceDescriptor extends System.IdentityModel.Metadata.WebServiceDescriptor" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Metadata.WebServiceDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a Service Descriptor for a security token service.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityTokenServiceDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PassiveRequestorEndpoints">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt; PassiveRequestorEndpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Protocols.WSTrust.EndpointReference&gt; PassiveRequestorEndpoints" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.PassiveRequestorEndpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.ServiceModel.EndpointAddress" /> that represents the passive requestor endpoints.</summary>
+        <value>The collection of passive requestor endpoints.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenServiceEndpoints">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt; SecurityTokenServiceEndpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Protocols.WSTrust.EndpointReference&gt; SecurityTokenServiceEndpoints" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.SecurityTokenServiceEndpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Protocols.WSTrust.EndpointReference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.ServiceModel.EndpointAddress" /> that represents the endpoints of the security token service.</summary>
+        <value>The collection of endpoints.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

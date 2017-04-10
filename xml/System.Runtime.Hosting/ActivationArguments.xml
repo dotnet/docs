@@ -1,0 +1,272 @@
+<Type Name="ActivationArguments" FullName="System.Runtime.Hosting.ActivationArguments">
+  <TypeSignature Language="C#" Value="public sealed class ActivationArguments : System.Security.Policy.EvidenceBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ActivationArguments extends System.Security.Policy.EvidenceBase" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Hosting.ActivationArguments" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Policy.EvidenceBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for manifest-based activation of an application. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Hosting.ActivationArguments> class is used by the <xref:System.AppDomainSetup> class.  
+  
+ The manifest-based activation model uses an application manifest rather than an assembly for activation. A manifest fully describes the application, its dependencies, security requirements, and so forth. The manifest model has several advantages over the assembly-based activation model, especially for Web applications. For example, the manifest contains the security requirements of the application, which enables the user to decide whether to allow the application to execute before downloading the code. The manifest also contains information about the application dependencies.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the current <xref:System.Runtime.Hosting.ActivationArguments> object from the <xref:System.AppDomainSetup> for the <xref:System.AppDomain> of a manifest-based application.  
+  
+ [!code-csharp[System.Runtime.Hosting.ApplicationActivator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/cs/program.cs#1)]
+ [!code-vb[System.Runtime.Hosting.ApplicationActivator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivationArguments (ActivationContext activationData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ActivationContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activationData" Type="System.ActivationContext" />
+      </Parameters>
+      <Docs>
+        <param name="activationData">An object that identifies the manifest-based activation application.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class with the specified activation context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ActivationContext> object represented by the `activationData` parameter contains the <xref:System.ApplicationIdentity> and context information for manifest-based activation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activationData" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivationArguments (ApplicationIdentity applicationIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ApplicationIdentity applicationIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ApplicationIdentity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="applicationIdentity" Type="System.ApplicationIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="applicationIdentity">An object that identifies the manifest-based activation application.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class with the specified application identity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application identity uniquely identifies a manifest-based application to be activated in a new domain.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="applicationIdentity" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivationArguments (ActivationContext activationContext, string[] activationData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationContext, string[] activationData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ActivationContext,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activationContext" Type="System.ActivationContext" />
+        <Parameter Name="activationData" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="activationContext">An object that identifies the manifest-based activation application.</param>
+        <param name="activationData">An array of strings containing host-provided activation data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class with the specified activation context and activation data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ActivationContext> object represented by the `activationContext` parameter contains the <xref:System.ApplicationIdentity> and context information for manifest-based activation. The activation data consists of information such as the query string portion of a URL.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activationContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivationArguments (ApplicationIdentity applicationIdentity, string[] activationData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ApplicationIdentity applicationIdentity, string[] activationData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.#ctor(System.ApplicationIdentity,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="applicationIdentity" Type="System.ApplicationIdentity" />
+        <Parameter Name="activationData" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="applicationIdentity">An object that identifies the manifest-based activation application.</param>
+        <param name="activationData">An array of strings containing host-provided activation data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> class with the specified application identity and activation data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application identity uniquely identifies a manifest-based application to be activated in a new domain. The activation data consists of information such as the query string portion of a URL.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="applicationIdentity" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivationContext">
+      <MemberSignature Language="C#" Value="public ActivationContext ActivationContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ActivationContext ActivationContext" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ActivationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ActivationContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the activation context for manifest-based activation of an application.</summary>
+        <value>An object that identifies a manifest-based activation application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ActivationContext> object contains an <xref:System.ApplicationIdentity> and provides internal-only access to the application manifest. The activation context is used during manifest-based activation to set up the domain policy and provide an application-based security model.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the value of the <xref:System.Runtime.Hosting.ActivationArguments.ActivationContext%2A> property from the <xref:System.Runtime.Hosting.ActivationArguments> for a manifest-based application.  
+  
+ This code example is part of a larger example provided for the <xref:System.Runtime.Hosting.ActivationArguments> class.  
+  
+ [!code-csharp[System.Runtime.Hosting.ApplicationActivator#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/cs/program.cs#4)]
+ [!code-vb[System.Runtime.Hosting.ApplicationActivator#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.Hosting.ApplicationActivator/vb/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivationData">
+      <MemberSignature Language="C#" Value="public string[] ActivationData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ActivationData" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ActivationData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets activation data from the host.</summary>
+        <value>An array of strings containing host-provided activation data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The activation data consists of information such as the query string portion of a URL.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationIdentity">
+      <MemberSignature Language="C#" Value="public ApplicationIdentity ApplicationIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ApplicationIdentity ApplicationIdentity" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Hosting.ActivationArguments.ApplicationIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ApplicationIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application identity for a manifest-activated application.</summary>
+        <value>An object that identifies an application for manifest-based activation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application identity uniquely identifies a manifest-based application to be activated in a new domain.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override System.Security.Policy.EvidenceBase Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Hosting.ActivationArguments.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.EvidenceBase</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Produces a copy of the current <see cref="T:System.Runtime.Hosting.ActivationArguments" /> object.</summary>
+        <returns>A copy of the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new <xref:System.Runtime.Hosting.ActivationArguments> object, and then populates it with copies of the members of the current <xref:System.Runtime.Hosting.ActivationArguments> object  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

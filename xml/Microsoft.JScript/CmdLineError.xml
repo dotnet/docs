@@ -1,0 +1,690 @@
+<Type Name="CmdLineError" FullName="Microsoft.JScript.CmdLineError">
+  <TypeSignature Language="C#" Value="public enum CmdLineError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CmdLineError extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.CmdLineError" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies errors that occur when you run the command-line compiler jsc.exe. This enumeration is used to create <see cref="T:Microsoft.JScript.CmdLineException" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AssemblyNotFound">
+      <MemberSignature Language="C#" Value="AssemblyNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError AssemblyNotFound = int32(2001)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.AssemblyNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The referenced assembly '{0}' could not be found.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CannotCreateEngine">
+      <MemberSignature Language="C#" Value="CannotCreateEngine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError CannotCreateEngine = int32(2002)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.CannotCreateEngine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cannot create JScript engine.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompilerConstant">
+      <MemberSignature Language="C#" Value="CompilerConstant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError CompilerConstant = int32(2003)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.CompilerConstant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cannot change value of compiler constant '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateFileAsSourceAndAssembly">
+      <MemberSignature Language="C#" Value="DuplicateFileAsSourceAndAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError DuplicateFileAsSourceAndAssembly = int32(2004)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateFileAsSourceAndAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Duplicate file name: '{0}' is listed as both a source file and an imported assembly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateResourceFile">
+      <MemberSignature Language="C#" Value="DuplicateResourceFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError DuplicateResourceFile = int32(2005)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateResourceFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Resource file '{0}' referenced more than once.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateResourceName">
+      <MemberSignature Language="C#" Value="DuplicateResourceName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError DuplicateResourceName = int32(2006)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateResourceName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Resource name '{0}' is not unique.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateSourceFile">
+      <MemberSignature Language="C#" Value="DuplicateSourceFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError DuplicateSourceFile = int32(2007)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateSourceFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Duplicate file name: '{0}' is listed as a source file more than once.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorSavingCompiledState">
+      <MemberSignature Language="C#" Value="ErrorSavingCompiledState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError ErrorSavingCompiledState = int32(2008)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ErrorSavingCompiledState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Error saving compiled state: {0}.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IncompatibleTargets">
+      <MemberSignature Language="C#" Value="IncompatibleTargets" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError IncompatibleTargets = int32(2038)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.IncompatibleTargets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The value of the <see cref="P:System.CodeDom.Compiler.CompilerParameters.GenerateExecutable" /> property is not compatible with target type '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidAssembly">
+      <MemberSignature Language="C#" Value="InvalidAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidAssembly = int32(2009)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>'{0}' is not a valid assembly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCharacters">
+      <MemberSignature Language="C#" Value="InvalidCharacters" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidCharacters = int32(2036)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidCharacters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>File name '{0}' contains invalid characters (wildcard characters are not supported).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidCodePage">
+      <MemberSignature Language="C#" Value="InvalidCodePage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidCodePage = int32(2010)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidCodePage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Code page '{0}' is invalid or not installed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidDefinition">
+      <MemberSignature Language="C#" Value="InvalidDefinition" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidDefinition = int32(2011)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidDefinition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Definition '{0}' must be assigned a Boolean or integral value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidForCompilerOptions">
+      <MemberSignature Language="C#" Value="InvalidForCompilerOptions" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidForCompilerOptions = int32(2037)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidForCompilerOptions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>'{0}' is not allowed in the CompilerOptions field.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidLocaleID">
+      <MemberSignature Language="C#" Value="InvalidLocaleID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidLocaleID = int32(2012)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidLocaleID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Locale ID '{0}' is invalid or not installed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidPlatform">
+      <MemberSignature Language="C#" Value="InvalidPlatform" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidPlatform = int32(2039)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidPlatform" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Platform '{0}' is invalid. Specify 'x86', 'Itanium', 'x64', or 'anycpu'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidSourceFile">
+      <MemberSignature Language="C#" Value="InvalidSourceFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidSourceFile = int32(2014)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidSourceFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>'{0}' is not a valid source file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidTarget">
+      <MemberSignature Language="C#" Value="InvalidTarget" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidTarget = int32(2013)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidTarget" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Target '{0}' is invalid. Specify 'exe' or 'library'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidVersion">
+      <MemberSignature Language="C#" Value="InvalidVersion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidVersion = int32(2031)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>'{0}' is not a valid version string.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidWarningLevel">
+      <MemberSignature Language="C#" Value="InvalidWarningLevel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidWarningLevel = int32(2015)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidWarningLevel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Invalid warning level specified with option '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LAST">
+      <MemberSignature Language="C#" Value="LAST" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError LAST = int32(2039)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.LAST" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A placeholder enumeration member that contains the same value as the last (highest) assigned enumeration value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedResourceNotFound">
+      <MemberSignature Language="C#" Value="ManagedResourceNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError ManagedResourceNotFound = int32(2022)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ManagedResourceNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Managed resource '{0}' was not found.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingDefineArgument">
+      <MemberSignature Language="C#" Value="MissingDefineArgument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingDefineArgument = int32(2018)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingDefineArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Missing identifier for '-define:' command-line option.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingExtension">
+      <MemberSignature Language="C#" Value="MissingExtension" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingExtension = int32(2019)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingExtension" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Missing file extension for '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingLibArgument">
+      <MemberSignature Language="C#" Value="MissingLibArgument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingLibArgument = int32(2020)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingLibArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Missing file specification for '-lib:' command-line option.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingReference">
+      <MemberSignature Language="C#" Value="MissingReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingReference = int32(2034)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Missing reference in argument list '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingVersionInfo">
+      <MemberSignature Language="C#" Value="MissingVersionInfo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingVersionInfo = int32(2021)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingVersionInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Missing version information in -assembly.version option.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleOutputNames">
+      <MemberSignature Language="C#" Value="MultipleOutputNames" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MultipleOutputNames = int32(2016)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleOutputNames" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiple output file names specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleTargets">
+      <MemberSignature Language="C#" Value="MultipleTargets" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MultipleTargets = int32(2017)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleTargets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiple targets specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleWin32Resources">
+      <MemberSignature Language="C#" Value="MultipleWin32Resources" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MultipleWin32Resources = int32(2033)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleWin32Resources" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cannot specify more than one Win32 resource file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NestedResponseFiles">
+      <MemberSignature Language="C#" Value="NestedResponseFiles" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NestedResponseFiles = int32(2023)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NestedResponseFiles" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cannot process nested response files.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCodePage">
+      <MemberSignature Language="C#" Value="NoCodePage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoCodePage = int32(2024)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoCodePage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No code page is specified with option '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoError">
+      <MemberSignature Language="C#" Value="NoError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoError = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No error. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFileName">
+      <MemberSignature Language="C#" Value="NoFileName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoFileName = int32(2025)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoFileName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No file name specified with option '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoInputSourcesSpecified">
+      <MemberSignature Language="C#" Value="NoInputSourcesSpecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoInputSourcesSpecified = int32(2026)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoInputSourcesSpecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No input sources specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoLocaleID">
+      <MemberSignature Language="C#" Value="NoLocaleID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoLocaleID = int32(2027)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoLocaleID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No Locale ID is specified with option '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoWarningLevel">
+      <MemberSignature Language="C#" Value="NoWarningLevel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoWarningLevel = int32(2028)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoWarningLevel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No warning level specified with option '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceNotFound">
+      <MemberSignature Language="C#" Value="ResourceNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError ResourceNotFound = int32(2029)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ResourceNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Win32 resource '{0}' was not found.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceFileTooBig">
+      <MemberSignature Language="C#" Value="SourceFileTooBig" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError SourceFileTooBig = int32(2032)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.SourceFileTooBig" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source file too big.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceNotFound">
+      <MemberSignature Language="C#" Value="SourceNotFound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError SourceNotFound = int32(2035)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.SourceNotFound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Could not find source file '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownOption">
+      <MemberSignature Language="C#" Value="UnknownOption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError UnknownOption = int32(2030)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.UnknownOption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unknown option '{0}'.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError Unspecified = int32(2999)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unspecified error.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

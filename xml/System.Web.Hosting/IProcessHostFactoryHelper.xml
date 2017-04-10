@@ -1,0 +1,60 @@
+<Type Name="IProcessHostFactoryHelper" FullName="System.Web.Hosting.IProcessHostFactoryHelper">
+  <TypeSignature Language="C#" Value="public interface IProcessHostFactoryHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProcessHostFactoryHelper" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessHostFactoryHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("02fd465d-5c5d-4b7e-95b6-82faa031b74a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a method to retrieve an <see cref="T:System.Web.Hosting.IProcessHost" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IProcessHostFactoryHelper> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetProcessHost">
+      <MemberSignature Language="C#" Value="public object GetProcessHost (System.Web.Hosting.IProcessHostSupportFunctions functions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProcessHost(class System.Web.Hosting.IProcessHostSupportFunctions functions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostFactoryHelper.GetProcessHost(System.Web.Hosting.IProcessHostSupportFunctions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="functions" Type="System.Web.Hosting.IProcessHostSupportFunctions" />
+      </Parameters>
+      <Docs>
+        <param name="functions">Functions that are declared by the <see cref="T:System.Web.Hosting.IProcessHostSupportFunctions" /> interface.</param>
+        <summary>Gets the process host.</summary>
+        <returns>A process host object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.IProcessHostFactoryHelper.GetProcessHost%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

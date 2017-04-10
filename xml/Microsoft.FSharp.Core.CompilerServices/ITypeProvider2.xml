@@ -1,0 +1,72 @@
+<Type Name="ITypeProvider2" FullName="Microsoft.FSharp.Core.CompilerServices.ITypeProvider2">
+  <TypeSignature Language="C#" Value="public interface ITypeProvider2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract serializable ITypeProvider2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.ITypeProvider2" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplyStaticArgumentsForMethod">
+      <MemberSignature Language="C#" Value="public System.Reflection.MethodBase ApplyStaticArgumentsForMethod (System.Reflection.MethodBase methodWithoutArguments, string methodNameWithArguments, object[] staticArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodBase ApplyStaticArgumentsForMethod(class System.Reflection.MethodBase methodWithoutArguments, string methodNameWithArguments, object[] staticArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider2.ApplyStaticArgumentsForMethod(System.Reflection.MethodBase,System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodWithoutArguments" Type="System.Reflection.MethodBase" />
+        <Parameter Name="methodNameWithArguments" Type="System.String" />
+        <Parameter Name="staticArguments" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="methodWithoutArguments">To be added.</param>
+        <param name="methodNameWithArguments">To be added.</param>
+        <param name="staticArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStaticParametersForMethod">
+      <MemberSignature Language="C#" Value="public System.Reflection.ParameterInfo[] GetStaticParametersForMethod (System.Reflection.MethodBase methodWithoutArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.ParameterInfo[] GetStaticParametersForMethod(class System.Reflection.MethodBase methodWithoutArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider2.GetStaticParametersForMethod(System.Reflection.MethodBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ParameterInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodWithoutArguments" Type="System.Reflection.MethodBase" />
+      </Parameters>
+      <Docs>
+        <param name="methodWithoutArguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

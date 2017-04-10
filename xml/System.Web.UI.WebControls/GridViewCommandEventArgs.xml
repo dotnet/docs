@@ -1,0 +1,180 @@
+<Type Name="GridViewCommandEventArgs" FullName="System.Web.UI.WebControls.GridViewCommandEventArgs">
+  <TypeSignature Language="C#" Value="public class GridViewCommandEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewCommandEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewCommandEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.CommandEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.GridView.RowCommand" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridView.RowCommand> event is raised when a button within the <xref:System.Web.UI.WebControls.GridView> control is clicked. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.GridView> control also raises other specialized events when certain buttons are clicked (buttons with the `CommandName` property set to "Delete", "Update", and "Page" for example). When using one of these buttons, you should consider handling one of the specialized events provided by the control (such as <xref:System.Web.UI.WebControls.GridView.RowDeleted> or <xref:System.Web.UI.WebControls.GridView.RowDeleting>).  
+  
+ A <xref:System.Web.UI.WebControls.GridViewCommandEventArgs> object is passed to the event-handling method, which allows you to determine the command name and command argument of the button clicked. To determine the command name and command argument, use the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> and <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> properties, respectively. You can also access the button control that raised the event by using the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource%2A> property.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewCommandEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs> object passed to the event-handling method to determine the command name of the button that raised the event.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowCommmand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowCommmand/CS/gridviewrowcommandcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowCommmand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowCommmand/VB/gridviewrowcommandvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewCommandEventArgs (object commandSource, System.Web.UI.WebControls.CommandEventArgs originalArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object commandSource, class System.Web.UI.WebControls.CommandEventArgs originalArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewCommandEventArgs.#ctor(System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="commandSource" Type="System.Object" />
+        <Parameter Name="originalArgs" Type="System.Web.UI.WebControls.CommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="commandSource">The source of the command.</param>
+        <param name="originalArgs">A <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> object that contains event data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewCommandEventArgs" /> class using the specified source of the command and event arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs> class.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewCommandEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A>|The value of the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> property of the <xref:System.Web.UI.WebControls.CommandEventArgs> object contained in the `originalArgs` parameter.|  
+|<xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A>|The value of the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> property of the <xref:System.Web.UI.WebControls.CommandEventArgs> object contained in the `originalArgs` parameter.|  
+|<xref:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource%2A>|The object contained in the `commandSource` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewCommandEventArgs (System.Web.UI.WebControls.GridViewRow row, object commandSource, System.Web.UI.WebControls.CommandEventArgs originalArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.GridViewRow row, object commandSource, class System.Web.UI.WebControls.CommandEventArgs originalArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewCommandEventArgs.#ctor(System.Web.UI.WebControls.GridViewRow,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="row" Type="System.Web.UI.WebControls.GridViewRow" />
+        <Parameter Name="commandSource" Type="System.Object" />
+        <Parameter Name="originalArgs" Type="System.Web.UI.WebControls.CommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="row">A <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object that represents the row containing the button.</param>
+        <param name="commandSource">The source of the command.</param>
+        <param name="originalArgs">A <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> object that contains event data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewCommandEventArgs" /> class using the specified row, source of the command, and event arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs> class.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewCommandEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A>|The value of the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandArgument%2A> property of the <xref:System.Web.UI.WebControls.CommandEventArgs> object contained in the `originalArgs` parameter.|  
+|<xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A>|The value of the <xref:System.Web.UI.WebControls.CommandEventArgs.CommandName%2A> property of the <xref:System.Web.UI.WebControls.CommandEventArgs> object contained in the `originalArgs` parameter.|  
+|<xref:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource%2A>|The object contained in the `commandSource` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandSource">
+      <MemberSignature Language="C#" Value="public object CommandSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandSource" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the source of the command.</summary>
+        <value>A instance of the <see cref="T:System.Object" /> class that represents the source of the command.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource%2A> property to access the properties of the object that represents the source of the command. In the case of a <xref:System.Web.UI.WebControls.GridViewCommandEventArgs> object, the source of the command is the <xref:System.Web.UI.WebControls.GridView> control that contains the button clicked by the user.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewCommandEventArgs.CommandSource%2A> property to access the <xref:System.Web.UI.WebControls.GridView> control that contains the button clicked by the user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewCommandEventArgs2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCommandEventArgs2/CS/gridviewcommandeventargs2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewCommandEventArgs2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCommandEventArgs2/VB/gridviewcommandeventargs2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handled">
+      <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewCommandEventArgs.Handled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the control has handled the event.</summary>
+        <value>
+          <see langword="true" /> if data-bound event code was skipped or has finished; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to `true` in the event handler to specify that the <xref:System.Web.UI.WebControls.GridView> control should not handle the event because you are handling it in your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

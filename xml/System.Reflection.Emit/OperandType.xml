@@ -1,0 +1,483 @@
+<Type Name="OperandType" FullName="System.Reflection.Emit.OperandType">
+  <TypeSignature Language="C#" Value="public enum OperandType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed OperandType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.OperandType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the operand type of Microsoft intermediate language (MSIL) instruction.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InlineBrTarget">
+      <MemberSignature Language="C#" Value="InlineBrTarget" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineBrTarget = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineBrTarget" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 32-bit integer branch target.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineField">
+      <MemberSignature Language="C#" Value="InlineField" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineField = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineField" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 32-bit metadata token.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineI">
+      <MemberSignature Language="C#" Value="InlineI" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineI = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 32-bit integer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineI8">
+      <MemberSignature Language="C#" Value="InlineI8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineI8 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineI8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 64-bit integer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineMethod">
+      <MemberSignature Language="C#" Value="InlineMethod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineMethod = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineMethod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 32-bit metadata token.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineNone">
+      <MemberSignature Language="C#" Value="InlineNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineNone = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No operand.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlinePhi">
+      <MemberSignature Language="C#" Value="InlinePhi" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlinePhi = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlinePhi" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This API has been deprecated.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is reserved and should not be used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineR">
+      <MemberSignature Language="C#" Value="InlineR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineR = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 64-bit IEEE floating point number.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineSig">
+      <MemberSignature Language="C#" Value="InlineSig" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineSig = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineSig" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 32-bit metadata signature token.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineString">
+      <MemberSignature Language="C#" Value="InlineString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineString = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 32-bit metadata string token.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineSwitch">
+      <MemberSignature Language="C#" Value="InlineSwitch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineSwitch = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineSwitch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is the 32-bit integer argument to a switch instruction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineTok">
+      <MemberSignature Language="C#" Value="InlineTok" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineTok = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineTok" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a <see langword="FieldRef" />, <see langword="MethodRef" />, or <see langword="TypeRef" /> token.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineType">
+      <MemberSignature Language="C#" Value="InlineType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineType = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 32-bit metadata token.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineVar">
+      <MemberSignature Language="C#" Value="InlineVar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType InlineVar = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.InlineVar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is 16-bit integer containing the ordinal of a local variable or an argument.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortInlineBrTarget">
+      <MemberSignature Language="C#" Value="ShortInlineBrTarget" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType ShortInlineBrTarget = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.ShortInlineBrTarget" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is an 8-bit integer branch target.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortInlineI">
+      <MemberSignature Language="C#" Value="ShortInlineI" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType ShortInlineI = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.ShortInlineI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is an 8-bit integer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortInlineR">
+      <MemberSignature Language="C#" Value="ShortInlineR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType ShortInlineR = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.ShortInlineR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is a 32-bit IEEE floating point number.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortInlineVar">
+      <MemberSignature Language="C#" Value="ShortInlineVar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OperandType ShortInlineVar = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OperandType.ShortInlineVar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.OperandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operand is an 8-bit integer containing the ordinal of a local variable or an argumenta.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

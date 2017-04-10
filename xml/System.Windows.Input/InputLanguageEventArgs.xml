@@ -1,0 +1,105 @@
+<Type Name="InputLanguageEventArgs" FullName="System.Windows.Input.InputLanguageEventArgs">
+  <TypeSignature Language="C#" Value="public abstract class InputLanguageEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InputLanguageEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputLanguageEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class for arguments for events dealing with a change in input language.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides the base for the <xref:System.Windows.Input.InputLanguageChangedEventArgs> and <xref:System.Windows.Input.InputLanguageChangingEventArgs> classes, which in turn provide arguments for the <xref:System.Windows.Input.InputLanguageManager.InputLanguageChanged> and <xref:System.Windows.Input.InputLanguageManager.InputLanguageChanging> routed events, respectively.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InputLanguageEventArgs (System.Globalization.CultureInfo newLanguageId, System.Globalization.CultureInfo previousLanguageId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Globalization.CultureInfo newLanguageId, class System.Globalization.CultureInfo previousLanguageId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageEventArgs.#ctor(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newLanguageId" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="previousLanguageId" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="newLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing a new current input language.</param>
+        <param name="previousLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous current input language.</param>
+        <summary>Initializes base class values for a new instance of a deriving class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that derive from <xref:System.Windows.Input.InputLanguageEventArgs> should call this constructor to ensure that values provided by the abstract base class are initialized properly.  
+  
+ The constructors for <xref:System.Windows.Input.InputLanguageChangedEventArgs> and <xref:System.Windows.Input.InputLanguageChangingEventArgs> automatically call this base constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewLanguage">
+      <MemberSignature Language="C#" Value="public virtual System.Globalization.CultureInfo NewLanguage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo NewLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageEventArgs.NewLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Globalization.CultureInfo" /> object representing the new current input language.</summary>
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> object representing the new current input language.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is established through the `newLanguageId` parameter provided by the <xref:System.Windows.Input.InputLanguageEventArgs.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousLanguage">
+      <MemberSignature Language="C#" Value="public virtual System.Globalization.CultureInfo PreviousLanguage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo PreviousLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageEventArgs.PreviousLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Globalization.CultureInfo" /> object representing the previous current input language.</summary>
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous current input language.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is established through the `previousLanguageId` parameter provided by the <xref:System.Windows.Input.InputLanguageEventArgs.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,27 @@
+<Type Name="XpsResourceDictionary" FullName="System.Windows.Xps.Packaging.XpsResourceDictionary">
+  <TypeSignature Language="C#" Value="public class XpsResourceDictionary : System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsResourceDictionary extends System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsResourceDictionary" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Xps.Packaging.XpsResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a dictionary of <see cref="T:System.Windows.Xps.Packaging.XpsResource" /> elements that are usable across pages of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has no public constructor. Get a reference to an <xref:System.Windows.Xps.Packaging.XpsResourceDictionary> by using the <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddResourceDictionary%2A?displayProperty=fullName> method.  
+  
+ For more information about the `ResourceDictionary` element of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package, see chapter 7 in the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://www.microsoft.com/whdc/xps/downloads.mspx).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

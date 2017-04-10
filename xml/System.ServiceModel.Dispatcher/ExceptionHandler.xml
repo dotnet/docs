@@ -1,0 +1,175 @@
+<Type Name="ExceptionHandler" FullName="System.ServiceModel.Dispatcher.ExceptionHandler">
+  <TypeSignature Language="C#" Value="public abstract class ExceptionHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExceptionHandler extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ExceptionHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extend the <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> class to create an exception handler for unhandled exceptions that occur within the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Extend the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and override the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method to determine whether an exception should terminate the application. Then create a new instance of your custom <xref:System.ServiceModel.Dispatcher.ExceptionHandler> class and assign it to the static <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> or <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property prior to creating [!INCLUDE[indigo2](~/includes/indigo2-md.md)] clients or services.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> abstract class that overrides the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method.  
+  
+ [!code-csharp[S_UEExceptionHandler#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueexceptionhandler/cs/program.cs#0)]
+ [!code-vb[S_UEExceptionHandler#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueexceptionhandler/vb/module1.vb#0)]  
+  
+ The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime.  
+  
+ [!code-csharp[S_UEExceptionHandler#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueexceptionhandler/cs/program.cs#1)]
+ [!code-vb[S_UEExceptionHandler#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueexceptionhandler/vb/module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ExceptionHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ExceptionHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysHandle">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Dispatcher.ExceptionHandler AlwaysHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Dispatcher.ExceptionHandler AlwaysHandle" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.ExceptionHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> that handles all exceptions.</summary>
+        <value>An <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that returns <see langword="true" /> for all exceptions.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsynchronousThreadExceptionHandler">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Dispatcher.ExceptionHandler AsynchronousThreadExceptionHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Dispatcher.ExceptionHandler AsynchronousThreadExceptionHandler" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.ExceptionHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> implementation for the application domain.</summary>
+        <value>Assign a custom <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that receives unhandled exceptions that occur on asynchronous [!INCLUDE[indigo1](~/includes/indigo1-md.md)] threads.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AsynchronousThreadExceptionHandler%2A> property is `null`, and unhandled exceptions on asynchronous [!INCLUDE[indigo2](~/includes/indigo2-md.md)] threads terminate the application.  Set this property to an <xref:System.ServiceModel.Dispatcher.ExceptionHandler> object to receive and react to these exceptions.  
+  
+ If an unhandled exception occurs on an asynchronous [!INCLUDE[indigo2](~/includes/indigo2-md.md)] thread and reaches this handler, the state of the application domain may be compromised.  <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> should not return `true` for these exceptions.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleException">
+      <MemberSignature Language="C#" Value="public abstract bool HandleException (Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandleException(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The exception the occurred within the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] runtime and which may terminate the application.</param>
+        <summary>When overridden in a derived class, returns <see langword="true" /> if the exception has been handled, or <see langword="false" /> if the exception should be rethrown and the application terminated.</summary>
+        <returns>
+          <see langword="true" /> if the exception has been handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> property returns `true` if the exception has been handled. If it returns `false` or throws a different exception, the original exception is rethrown.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of the <xref:System.ServiceModel.Dispatcher.ExceptionHandler> abstract class that overrides the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> method.  
+  
+  
+  
+ The following code example shows how to enable the custom `MyExceptionHandler` for unhandled exceptions that occur within the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] runtime.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransportExceptionHandler">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Dispatcher.ExceptionHandler TransportExceptionHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Dispatcher.ExceptionHandler TransportExceptionHandler" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.ExceptionHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current transport <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> implementation for the application domain.</summary>
+        <value>A custom <see cref="T:System.ServiceModel.Dispatcher.ExceptionHandler" /> object that receives unhandled exceptions that occur within the global [!INCLUDE[indigo1](~/includes/indigo1-md.md)] transports.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.ServiceModel.Dispatcher.ExceptionHandler.TransportExceptionHandler%2A> property is set to the value of <xref:System.ServiceModel.Dispatcher.ExceptionHandler.AlwaysHandle%2A>, causing unhandled exceptions within [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transports to be ignored.  Set this property to an instance of <xref:System.ServiceModel.Dispatcher.ExceptionHandler> to receive and react to these exceptions.  
+  
+ If an unhandled exception occurs within a global [!INCLUDE[indigo2](~/includes/indigo2-md.md)] transport and reaches this handler, there is a possibility that the state of the application domain is compromised. <xref:System.ServiceModel.Dispatcher.ExceptionHandler.HandleException%2A> can return `false` for these exceptions to cause the application to be terminated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

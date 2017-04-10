@@ -1,0 +1,132 @@
+<Type Name="RegexStringValidator" FullName="System.Configuration.RegexStringValidator">
+  <TypeSignature Language="C#" Value="public class RegexStringValidator : System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegexStringValidator extends System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.RegexStringValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationValidatorBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides validation of a string based on the rules provided by a regular expression.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.RegexStringValidator> object contains the rules necessary to validate a string object based on a regular expression. The rules are established when an instance of the <xref:System.Configuration.RegexStringValidator> class is created.  
+  
+ The <xref:System.Configuration.RegexStringValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.RegexStringValidator.Validate%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.RegexStringValidator> type.  
+  
+ [!code-csharp[System.Configuration.RegexStringValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#1)]
+ [!code-vb[System.Configuration.RegexStringValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegexStringValidator (string regex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string regex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.RegexStringValidator.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="regex" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="regex">A string that specifies a regular expression.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.RegexStringValidator" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="regex" /> is null or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanValidate">
+      <MemberSignature Language="C#" Value="public override bool CanValidate (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.RegexStringValidator.CanValidate(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object.</param>
+        <summary>Determines whether the type of the object can be validated.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="type" /> parameter matches a string; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception is thrown if the validation fails.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Configuration.RegexStringValidator.CanValidate%2A> method. This code example is part of a larger example that is provided for the <xref:System.Configuration.RegexStringValidator> class.  
+  
+ [!code-csharp[System.Configuration.RegexStringValidator#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#3)]
+ [!code-vb[System.Configuration.RegexStringValidator#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.RegexStringValidator.Validate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value of an object.</param>
+        <summary>Determines whether the value of an object is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Configuration.RegexStringValidator> object contains the rules necessary to validate a string object based on a regular expression. The rules are established when an instance of the <xref:System.Configuration.RegexStringValidator> class is created. The string object to validate is passed as a parameter of the <xref:System.Configuration.RegexStringValidator.Validate%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.RegexStringValidator.Validate%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.RegexStringValidator> class.  
+  
+ [!code-csharp[System.Configuration.RegexStringValidator#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/CS/RegexStringValidator.cs#4)]
+ [!code-vb[System.Configuration.RegexStringValidator#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.RegexStringValidator/VB/RegexStringValidator.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> does not conform to the parameters of the <see cref="T:System.Text.RegularExpressions.Regex" /> class.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

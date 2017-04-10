@@ -1,0 +1,308 @@
+<Type Name="DirectoryAttributeCollection" FullName="System.DirectoryServices.Protocols.DirectoryAttributeCollection">
+  <TypeSignature Language="C#" Value="public class DirectoryAttributeCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryAttributeCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> class contains a collection of <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirectoryAttributeCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.DirectoryServices.Protocols.DirectoryAttribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.DirectoryServices.Protocols.DirectoryAttribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Add(System.DirectoryServices.Protocols.DirectoryAttribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribute" Type="System.DirectoryServices.Protocols.DirectoryAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="attribute">The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object to add.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Add(System.DirectoryServices.Protocols.DirectoryAttribute)" /> method adds a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object to the collection.</summary>
+        <returns>The zero-based index in the collection where the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> was added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="attribute" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.DirectoryServices.Protocols.DirectoryAttribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.DirectoryServices.Protocols.DirectoryAttribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.AddRange(System.DirectoryServices.Protocols.DirectoryAttribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.DirectoryServices.Protocols.DirectoryAttribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">An array of <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> to add to the collection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.AddRange(System.DirectoryServices.Protocols.DirectoryAttribute[])" /> method adds an array of <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> objects to the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributes" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">A member of <paramref name="attributes" /> is a null reference (<see langword="Nothing" /> in Visual Basic) or a member of <paramref name="attributes" /> specifies a modification operation other than Add.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.DirectoryServices.Protocols.DirectoryAttributeCollection attributeCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.DirectoryServices.Protocols.DirectoryAttributeCollection attributeCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.AddRange(System.DirectoryServices.Protocols.DirectoryAttributeCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeCollection" Type="System.DirectoryServices.Protocols.DirectoryAttributeCollection" />
+      </Parameters>
+      <Docs>
+        <param name="attributeCollection">The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> object to add to this collection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.AddRange(System.DirectoryServices.Protocols.DirectoryAttributeCollection)" /> method adds a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> object to the current collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributeCollection" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.Protocols.DirectoryAttribute value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.Protocols.DirectoryAttribute value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Contains(System.DirectoryServices.Protocols.DirectoryAttribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object for which to search.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Contains(System.DirectoryServices.Protocols.DirectoryAttribute)" /> method determines whether this <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> object contains a specified <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> is part of the collection; <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.Protocols.DirectoryAttribute[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.Protocols.DirectoryAttribute[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.CopyTo(System.DirectoryServices.Protocols.DirectoryAttribute[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.DirectoryServices.Protocols.DirectoryAttribute[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> object.</param>
+        <param name="index">The zero-based index of <c>array</c> where copying begins.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.CopyTo(System.DirectoryServices.Protocols.DirectoryAttribute[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Exceptions  
+  
+|Exception|Condition|  
+|---------------|---------------|  
+|ArgumentNullException|`array` is a null reference (`Nothing` in Visual Basic).|  
+|ArgumentOutOfRangeException|`index` is less than zero.|  
+|ArgumentException|`array` is multidimensional<br /><br /> -or-<br /><br /> The number of elements in the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> is greater than the available space from `index` to the end of the destination `array`.|  
+|InvalidCastException|The type of the source <xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> cannot be cast automatically to the type of the destination `array`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.Protocols.DirectoryAttribute value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.Protocols.DirectoryAttribute value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.IndexOf(System.DirectoryServices.Protocols.DirectoryAttribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object for which the index is returned.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.IndexOf(System.DirectoryServices.Protocols.DirectoryAttribute)" /> method returns the zero-based index of the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object in the  <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" />.</summary>
+        <returns>The index value of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object, if found; otherwise, -1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.DirectoryServices.Protocols.DirectoryAttribute value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.DirectoryServices.Protocols.DirectoryAttribute value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Insert(System.Int32,System.DirectoryServices.Protocols.DirectoryAttribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index point, in the collection, at which to insert the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</param>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object to be inserted into the collection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Insert(System.Int32,System.DirectoryServices.Protocols.DirectoryAttribute)" /> method inserts the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object into the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> at the specified <paramref name="index" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic) or <paramref name="value" /> specifies a modification operation other than Add.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero, or <paramref name="index" /> is greater than  the number of elements in the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttributeCollection" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DirectoryAttribute this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.DirectoryAttribute Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DirectoryAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index value of the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</param>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Item(System.Int32)" /> property contains the <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Exceptions  
+  
+|Exception|Condition|  
+|---------------|---------------|  
+|ArgumentException|You attempted to set the property to `null`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidate">
+      <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.OnValidate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to evaluate.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.OnValidate(System.Object)" /> method verifies that <paramref name="value" /> is a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object or specifies an add operation.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">This exception can occur under one of the following conditions:  
+  
+-   <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).  
+  
+-   <paramref name="value" /> is not a <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.DirectoryServices.Protocols.DirectoryAttribute value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.DirectoryServices.Protocols.DirectoryAttribute value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Remove(System.DirectoryServices.Protocols.DirectoryAttribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryAttribute" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object to remove.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryAttributeCollection.Remove(System.DirectoryServices.Protocols.DirectoryAttribute)" /> method removes the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryAttribute" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Exceptions  
+  
+|Exception|Condition|  
+|---------------|---------------|  
+|NotSupportedException|<xref:System.DirectoryServices.Protocols.DirectoryAttributeCollection> is read-only or has a fixed size.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

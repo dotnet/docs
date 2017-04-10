@@ -1,0 +1,194 @@
+<Type Name="EventSetter" FullName="System.Windows.EventSetter">
+  <TypeSignature Language="C#" Value="public class EventSetter : System.Windows.SetterBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventSetter extends System.Windows.SetterBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.EventSetter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.SetterBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an event setter in a style. Event setters invoke the specified event handlers in response to events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Event setters invoke the specified event handlers in response to routed events, which apply to all elements that reference the <xref:System.Windows.Style> rather than requiring you to attach instance handlers to each individual element. Only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> support <xref:System.Windows.EventSetter> objects.  
+  
+ You can only declare event setters for events that are routed events. You can declare event setters for routed events with a direct routing strategy, bubbling events, or tunneling events.  
+  
+ Instances of the <xref:System.Windows.EventSetter> class are usually created through [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], as an object element within a style defined through [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. An <xref:System.Windows.EventSetter> might also be instantiated from code.  
+  
+ Event setters cannot be used in a style that is contained in a theme resource dictionary. This is because a theme resource dictionary at run time is often loose [!INCLUDE[TLA#tla_baml](~/includes/tlasharptla-baml-md.md)] files, and does not have any scope defined where accompanying code-behind that defines the handlers can exist.  
+  
+ Handlers attached through event setters are invoked after any class handlers for an event, and also after any instance handlers. As a result, if a class handler or instance handler marks an event handled in its arguments, then the handler declared by an event setter is not invoked, unless the event setter specifically sets <xref:System.Windows.EventSetter.HandledEventsToo%2A> `true`.  
+  
+ Event setters may also come from <xref:System.Windows.Style.BasedOn%2A> styles. The event setter handlers from the style specified as <xref:System.Windows.Style.BasedOn%2A> will be invoked after the handlers on the immediate style.  
+  
+ Note that only <xref:System.Windows.Style.Setters%2A?displayProperty=fullName> supports <xref:System.Windows.EventSetter> objects. Triggers (<xref:System.Windows.TriggerBase> and derived classes) do not support <xref:System.Windows.EventSetter>.  
+  
+   
+  
+## Examples  
+ The following example establishes a single <xref:System.Windows.EventSetter> within a page-level style.  
+  
+ [!code-xml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+  
+ The following shows the example event handlers:  
+  
+ [!code-csharp[EventOvwSupport#EventSetterRef](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml.cs#eventsetterref)]
+ [!code-vb[EventOvwSupport#EventSetterRef](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/page2.xaml.vb#eventsetterref)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventSetter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventSetter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.EventSetter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventSetter (System.Windows.RoutedEvent routedEvent, Delegate handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.RoutedEvent routedEvent, class System.Delegate handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventSetter.#ctor(System.Windows.RoutedEvent,System.Delegate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="routedEvent" Type="System.Windows.RoutedEvent" />
+        <Parameter Name="handler" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="routedEvent">The particular routed event that the <see cref="T:System.Windows.EventSetter" /> responds to.</param>
+        <param name="handler">The handler to assign in this setter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.EventSetter" /> class, using the provided event and handler parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This signature is typically used if you creating an <xref:System.Windows.EventSetter> in code, or in code-behind to create an <xref:System.Windows.EventSetter> that augments an existing style prior to use.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public System.Windows.RoutedEvent Event { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.RoutedEvent Event" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.EventSetter.Event" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the particular routed event that this <see cref="T:System.Windows.EventSetter" /> responds to.</summary>
+        <value>The identifier field of the routed event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot set this property once the style containing the <xref:System.Windows.EventSetter> is in use and thus is sealed. If you set this property in code and there is the possibility that the style is in use, check the value of the <xref:System.Windows.SetterBase.IsSealed%2A> property on the <xref:System.Windows.EventSetter> instance before you attempt to set <xref:System.Windows.EventSetter.Event%2A>.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Windows.EventSetter.Event%2A> property as part of an <xref:System.Windows.EventSetter> in a markup style.  
+  
+ [!code-xml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Attempted to set this property on a sealed <see cref="T:System.Windows.EventSetter" /> .</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HandledEventsToo">
+      <MemberSignature Language="C#" Value="public bool HandledEventsToo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HandledEventsToo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.EventSetter.HandledEventsToo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether the handler assigned to the setter should still be invoked, even if the event is marked handled in its event data.</summary>
+        <value>
+          <see langword="true" /> if the handler should still be invoked; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Setting the <xref:System.Windows.RoutedEventHandlerInfo.InvokeHandledEventsToo%2A> characteristics of how an event's handlers will be invoked must always be performed in code, in keeping with the general principle that there is no way to specify <xref:System.Windows.RoutedEventHandlerInfo.InvokeHandledEventsToo%2A> when assigning defined event handlers for instances directly to named events in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute syntax. Although setting this value in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] does not generate any compile-time errors, the resulting [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] will produce a run-time exception when the style is used.  
+  
+<a name="xamlTextUsage_HandledEventsToo"></a>   
+## XAML Text Usage  
+ This property should not be used in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. See Remarks.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handler">
+      <MemberSignature Language="C#" Value="public Delegate Handler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Delegate Handler" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.EventSetter.Handler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Markup.EventSetterHandlerConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Delegate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the reference to a handler for a routed event in the setter.</summary>
+        <value>Reference to the handler that is attached by this <see cref="T:System.Windows.EventSetter" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the <xref:System.Windows.EventSetter.Handler%2A> property as part of a <xref:System.Windows.EventSetter> in a markup style.  
+  
+ [!code-xml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

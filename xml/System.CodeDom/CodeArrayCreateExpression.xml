@@ -1,0 +1,339 @@
+<Type Name="CodeArrayCreateExpression" FullName="System.CodeDom.CodeArrayCreateExpression">
+  <TypeSignature Language="C#" Value="public class CodeArrayCreateExpression : System.CodeDom.CodeExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeArrayCreateExpression extends System.CodeDom.CodeExpression" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArrayCreateExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an expression that creates an array.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeArrayCreateExpression> can be used to represent a code expression that creates an array. Expressions that create an array should specify either a number of elements, or a list of expressions to use to initialize the array.  
+  
+ Most arrays can be initialized immediately following declaration. The <xref:System.CodeDom.CodeArrayCreateExpression.Initializers%2A> property can be set to the expression to use to initialize the array.  
+  
+ A <xref:System.CodeDom.CodeArrayCreateExpression> only directly supports creating single-dimension arrays. If a language allows arrays of arrays, it is possible to create them by nesting a <xref:System.CodeDom.CodeArrayCreateExpression> within a <xref:System.CodeDom.CodeArrayCreateExpression>. Not all languages support arrays of arrays. You can check whether an <xref:System.CodeDom.Compiler.ICodeGenerator> for a language declares support for nested arrays by calling <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag.  
+  
+   
+  
+## Examples  
+ The following code uses a <xref:System.CodeDom.CodeArrayCreateExpression> to create an array of integers with 10 indexes.  
+  
+ [!code-cpp[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/CPP/codearraycreateexpressionsnippet.cpp#1)]
+ [!code-csharp[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/CS/codearraycreateexpressionsnippet.cs#1)]
+ [!code-vb[CodeArrayCreateExpressionSnippet#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeArrayCreateExpressionSnippet/VB/codearraycreateexpressionsnippet.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (System.CodeDom.CodeTypeReference createType, System.CodeDom.CodeExpression size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference createType, class System.CodeDom.CodeExpression size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.CodeDom.CodeTypeReference" />
+        <Parameter Name="size" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="createType">A <see cref="T:System.CodeDom.CodeTypeReference" /> indicating the data type of the array to create.</param>
+        <param name="size">An expression that indicates the number of indexes of the array to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and code expression indicating the number of indexes for the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (System.CodeDom.CodeTypeReference createType, System.CodeDom.CodeExpression[] initializers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference createType, class System.CodeDom.CodeExpression[] initializers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.CodeDom.CodeTypeReference" />
+        <Parameter Name="initializers" Type="System.CodeDom.CodeExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="createType">A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the data type of the array to create.</param>
+        <param name="initializers">An array of expressions to use to initialize the array.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and initialization expressions.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (System.CodeDom.CodeTypeReference createType, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference createType, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.CodeDom.CodeTypeReference" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="createType">A <see cref="T:System.CodeDom.CodeTypeReference" /> indicating the data type of the array to create.</param>
+        <param name="size">The number of indexes of the array to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and number of indexes for the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (string createType, System.CodeDom.CodeExpression size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string createType, class System.CodeDom.CodeExpression size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.String" />
+        <Parameter Name="size" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="createType">The name of the data type of the array to create.</param>
+        <param name="size">An expression that indicates the number of indexes of the array to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type name and code expression indicating the number of indexes for the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (string createType, System.CodeDom.CodeExpression[] initializers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string createType, class System.CodeDom.CodeExpression[] initializers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.String" />
+        <Parameter Name="initializers" Type="System.CodeDom.CodeExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="createType">The name of the data type of the array to create.</param>
+        <param name="initializers">An array of expressions to use to initialize the array.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type name and initializers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (string createType, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string createType, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.String" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="createType">The name of the data type of the array to create.</param>
+        <param name="size">The number of indexes of the array to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type name and number of indexes for the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (Type createType, System.CodeDom.CodeExpression size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type createType, class System.CodeDom.CodeExpression size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.Type,System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.Type" />
+        <Parameter Name="size" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="createType">The data type of the array to create.</param>
+        <param name="size">An expression that indicates the number of indexes of the array to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and code expression indicating the number of indexes for the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (Type createType, System.CodeDom.CodeExpression[] initializers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type createType, class System.CodeDom.CodeExpression[] initializers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.Type,System.CodeDom.CodeExpression[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.Type" />
+        <Parameter Name="initializers" Type="System.CodeDom.CodeExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="createType">The data type of the array to create.</param>
+        <param name="initializers">An array of expressions to use to initialize the array.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and initializers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeArrayCreateExpression (Type createType, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type createType, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArrayCreateExpression.#ctor(System.Type,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="createType" Type="System.Type" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="createType">The data type of the array to create.</param>
+        <param name="size">The number of indexes of the array to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArrayCreateExpression" /> class using the specified array data type and number of indexes for the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateType">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference CreateType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference CreateType" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayCreateExpression.CreateType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of array to create.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReference" /> that indicates the type of the array.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initializers">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpressionCollection Initializers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpressionCollection Initializers" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayCreateExpression.Initializers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpressionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the initializers with which to initialize the array.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpressionCollection" /> that indicates the initialization values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayCreateExpression.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of indexes in the array.</summary>
+        <value>The number of indexes in the array.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeExpression">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression SizeExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression SizeExpression" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArrayCreateExpression.SizeExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression that indicates the size of the array.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the size of the array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the array can be represented with a <xref:System.CodeDom.CodeExpression>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

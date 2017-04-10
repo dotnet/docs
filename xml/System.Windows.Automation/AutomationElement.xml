@@ -1,0 +1,3181 @@
+<Type Name="AutomationElement" FullName="System.Windows.Automation.AutomationElement">
+  <TypeSignature Language="C#" Value="public sealed class AutomationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AutomationElement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationElement" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element in the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree, and contains values used as identifiers by UI Automation client applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Automation.AutomationElement> corresponds to a piece of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)], regardless of underlying implementation (such as [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] or [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)]).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcceleratorKeyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty AcceleratorKeyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty AcceleratorKeyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.AcceleratorKey" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Accelerator key combinations invoke an action. For example, CTRL+O is often used to invoke the **Open** file common dialog box. An <xref:System.Windows.Automation.AutomationElement> that has the accelerator key property set always implements the <xref:System.Windows.Automation.InvokePattern> class.  
+  
+ Return values of the property are of type <xref:System.String>. The default value for the property is an empty string.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#124](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#124)]
+ [!code-vb[UIAClient_snip#124](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#124)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#125](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#125)]
+ [!code-vb[UIAClient_snip#125](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#125)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessKeyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty AccessKeyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty AccessKeyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AccessKeyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.AccessKey" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ An access key is a character in the text of a menu, menu item, or label of a control such as a button that activates the attached menu function. For example, the letter "O" is often used to invoke the **File Open** common dialog box from a **File** menu.  
+  
+ Access key values are of type <xref:System.String> and contain the character registered as the access key for the element. The default value for the string is an empty string.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#127](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#127)]
+ [!code-vb[UIAClient_snip#127](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#127)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#128](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#128)]
+ [!code-vb[UIAClient_snip#128](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#128)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncContentLoadedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent AsyncContentLoadedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent AsyncContentLoadedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies an event raised during asynchronous content-loading.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This event is used mainly by providers to indicate that asynchronous content-loading events have occurred.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutomationFocusChangedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent AutomationFocusChangedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent AutomationFocusChangedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies an event that is raised when the focus has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutomationIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty AutomationIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty AutomationIdProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AutomationIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId" /> property, which is used to identify elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Return values of the property are of type <xref:System.String>. The default value for the property is an empty string.  
+  
+ When it is available the <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> of an element is expected to always be the same in any instance of the application regardless of the local language. The value should be unique among sibling elements but not necessarily unique across the entire desktop. For example, multiple instances of an application, or multiple folder views in Microsoft Windows Explorer, may contain elements with the same <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty>, such as "SystemMenuBar".  
+  
+ While support of an <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId%2A> is always recommended for better testability, this property is not mandatory. Where it is supported, an <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId%2A> is useful for creating test automation scripts that run regardless of UI language. Clients should make no assumptions regarding the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId%2A>s exposed by other applications. An <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId%2A> is not necessarily guaranteed to be stable across different releases or builds of an application.  
+  
+ Instances of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements are uniquely identified on the desktop by their <xref:System.Windows.Automation.AutomationElement.RuntimeIdProperty> properties.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> is supported by all UI Automation elements in the control view except top-level application windows, UI Automation elements derived from [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] controls that do not have an ID or x:Uid, and UI Automation elements derived from [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] controls that do not have a control ID.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#129](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#129)]
+ [!code-vb[UIAClient_snip#129](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#129)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#130](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#130)]
+ [!code-vb[UIAClient_snip#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#130)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutomationPropertyChangedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent AutomationPropertyChangedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent AutomationPropertyChangedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.AutomationPropertyChangedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies a property-changed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoundingRectangleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty BoundingRectangleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty BoundingRectangleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.BoundingRectangleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.BoundingRectangle" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Bounding rectangles are of type <xref:System.Windows.Rect>. The returned rectangle is in physical screen coordinates. The default value is <xref:System.Windows.Rect.Empty%2A>. <xref:System.Windows.Rect.Empty%2A> is returned if the item is not currently displaying a [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+ The returned rectangle can contain points that are not clickable. Instances where this could happen include when the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] item has an irregular shape or clickable region, or it is obscured by other [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#131](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#131)]
+ [!code-vb[UIAClient_snip#131](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#131)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#132](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#132)]
+ [!code-vb[UIAClient_snip#132](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#132)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cached">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement.AutomationElementInformation Cached { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.AutomationElement/AutomationElementInformation Cached" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.Cached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement+AutomationElementInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cached [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.AutomationElement" /> object.</summary>
+        <value>A structure containing the cached property values for the <see cref="T:System.Windows.Automation.AutomationElement" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The accessors for [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] properties are represented as properties of the structure returned by <xref:System.Windows.Automation.AutomationElement.Cached%2A>. You do not need to retrieve the structure; you can access its members directly, as in the example below. For specific information on the properties available and their use, see <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation>.  
+  
+ To get the current value of [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] properties on this element use the <xref:System.Windows.Automation.AutomationElement.Current%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A> property can be cached and then retrieved by using the <xref:System.Windows.Automation.AutomationElement.Cached%2A> property.  
+  
+ [!code-csharp[UIAClient_snip#119](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#119)]
+ [!code-vb[UIAClient_snip#119](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#119)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">There are no cached properties.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CachedChildren">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElementCollection CachedChildren { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.AutomationElementCollection CachedChildren" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.CachedChildren" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cached child elements of this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <value>The collection of child elements. This collection can be empty if the element has no children.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The view of the returned collection is determined by the <xref:System.Windows.Automation.CacheRequest.TreeFilter%2A> condition of the <xref:System.Windows.Automation.CacheRequest> that was active when this <xref:System.Windows.Automation.AutomationElement> object was obtained.  
+  
+ Children are cached only if the scope of the <xref:System.Windows.Automation.CacheRequest> included <xref:System.Windows.Automation.TreeScope>, <xref:System.Windows.Automation.TreeScope>, or <xref:System.Windows.Automation.TreeScope>.  
+  
+ If the <xref:System.Windows.Automation.CacheRequest> specified that children were to be cached at this level, but there are no children, then the value of this property is 0. However, if no request was made to cache children at this level, an attempt to retrieve the property raises an exception.  
+  
+   
+  
+## Examples  
+ In the following example, a list box element is obtained from the parent window element while a <xref:System.Windows.Automation.CacheRequest> is active and <xref:System.Windows.Automation.CacheRequest.TreeScope%2A> is <xref:System.Windows.Automation.TreeScope>. The specified properties of the child elements (that is, the list items) are stored in the cache and can be retrieved from the <xref:System.Windows.Automation.AutomationElement.CachedChildren%2A> of the list box.  
+  
+ [!code-csharp[UIAClient_snip#119](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#119)]
+ [!code-vb[UIAClient_snip#119](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#119)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+        <exception cref="T:System.InvalidOperationException">No request was made to cache the children of this element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CachedParent">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement CachedParent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.AutomationElement CachedParent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.CachedParent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cached parent of this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <value>The parent element. The return value can be <see langword="null" /> if the specified element has no parent—for example, if this element is the root node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A> properties of a list box and its list items are cached. The list box element is available in the <xref:System.Windows.Automation.AutomationElement.CachedParent%2A> property of each list item element.  
+  
+ [!code-csharp[UIAClient_snip#119](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#119)]
+ [!code-vb[UIAClient_snip#119](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#119)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No parent element is cached.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassNameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ClassNameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ClassNameProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ClassNameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ClassName" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The class name depends on the implementation of the UI Automation provider and therefore cannot be counted upon to be in a standard format. However, if you know the class name you can use it to verify that your application is working with the expected [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element.  
+  
+ Return values of the property are of type <xref:System.String>. The default value is an empty string.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#133](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#133)]
+ [!code-vb[UIAClient_snip#133](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#133)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#134](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#134)]
+ [!code-vb[UIAClient_snip#134](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#134)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClickablePointProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ClickablePointProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ClickablePointProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ClickablePointProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the clickable point property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ An <xref:System.Windows.Automation.AutomationElement> is not clickable if it is completely obscured by another window.  
+  
+ Return values of the property are of type <xref:System.Windows.Point>. The default value is `null`.  
+  
+ The value returned is in physical screen coordinates.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property.  
+  
+ [!code-csharp[UIAClient_snip#135](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#135)]
+ [!code-vb[UIAClient_snip#135](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#135)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#166](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#166)]
+ [!code-vb[UIAClient_snip#166](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#166)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ControlTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ControlTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ControlTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ControlType" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The default value for the property is <xref:System.Windows.Automation.ControlType.Custom>  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#136](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#136)]
+ [!code-vb[UIAClient_snip#136](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#136)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#137](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#137)]
+ [!code-vb[UIAClient_snip#137](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#137)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CultureProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty CultureProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty CultureProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.CultureProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the culture property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Within the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] framework, the default value reported will always be `en-US` because the [!INCLUDE[TLA#tla_winfx](~/includes/tlasharptla-winfx-md.md)] framework automatically defaults to English. For other [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] frameworks this property must be explicitly set or it will not be exposed.  
+  
+ This property can exist on a per-control basis, but typically is only available on an application level.  
+  
+ Return values of the property are of type <xref:System.Globalization.CultureInfo>.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property.  
+  
+ [!code-csharp[UIAClient_snip#138](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#138)]
+ [!code-vb[UIAClient_snip#138](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#138)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement.AutomationElementInformation Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.AutomationElement/AutomationElementInformation Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement+AutomationElementInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current property values of the <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <value>A structure containing the current property values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The accessors for [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] properties are represented as properties of the structure returned by <xref:System.Windows.Automation.AutomationElement.Current%2A>. You do not need to retrieve the structure; you can access its members directly, as in the example below. For specific information on the properties available and their use, see <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation>.  
+  
+ To get the cached value of [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] properties on this element, use the <xref:System.Windows.Automation.AutomationElement.Cached%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how the <xref:System.Windows.Automation.AutomationElement.Current%2A> property is used to retrieve the name of an item that has been selected in a list.  
+  
+ [!code-csharp[UIAClient_snip#106](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#106)]
+ [!code-vb[UIAClient_snip#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#106)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Windows.Automation.AutomationElement" /> to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Automation.AutomationElement" /> has the same value as this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Automation.AutomationElement" /> is equal to this <see cref="T:System.Windows.Automation.AutomationElement" />;otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two elements that compare as equal may contain different cached information from different points in time. The equality check only tests that the <xref:System.Windows.Automation.AutomationElement> objects refer to the same underlying user interface element; that is, that they have the same run-time identifier.  
+  
+ This method is equivalent to the equality operator, which also compare run-time identifiers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~AutomationElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAll">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElementCollection FindAll (System.Windows.Automation.TreeScope scope, System.Windows.Automation.Condition condition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElementCollection FindAll(valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.Condition condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FindAll(System.Windows.Automation.TreeScope,System.Windows.Automation.Condition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElementCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Windows.Automation.TreeScope" />
+        <Parameter Name="condition" Type="System.Windows.Automation.Condition" />
+      </Parameters>
+      <Docs>
+        <param name="scope">A bitwise combination of values that specifies the scope of the search.</param>
+        <param name="condition">The object containing the criteria to match.</param>
+        <summary>Returns all <see cref="T:System.Windows.Automation.AutomationElement" /> objects that satisfy the specified condition.</summary>
+        <returns>A collection of objects that satisfies the specified condition. If there are no matches, an empty collection is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The scope of the search is relative to the element on which the method is called. Elements are returned in the order in which they were encountered in the tree.  
+  
+ When searching for top-level windows on the desktop, be sure to specify <xref:System.Windows.Automation.TreeScope> in `scope`, not <xref:System.Windows.Automation.TreeScope>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
+  
+ If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+  
+   
+  
+## Examples  
+ The following example shows how to use <xref:System.Windows.Automation.AutomationElement.FindAll%2A> to locate all enabled buttons in a window.  
+  
+ [!code-csharp[UIAClient_snip#116](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#116)]
+ [!code-vb[UIAClient_snip#116](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#116)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindFirst">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement FindFirst (System.Windows.Automation.TreeScope scope, System.Windows.Automation.Condition condition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement FindFirst(valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.Condition condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FindFirst(System.Windows.Automation.TreeScope,System.Windows.Automation.Condition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scope" Type="System.Windows.Automation.TreeScope" />
+        <Parameter Name="condition" Type="System.Windows.Automation.Condition" />
+      </Parameters>
+      <Docs>
+        <param name="scope">A bitwise combination of values that specifies the scope of the search.</param>
+        <param name="condition">The object containing the criteria to match.</param>
+        <summary>Returns the first child or descendant element that matches the specified condition.</summary>
+        <returns>The first element that satisfies the condition, or <see langword="null" /> if no match is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The scope of the search is relative to the element on which the method is called.  
+  
+ When searching for a top-level window on the desktop, be sure to specify <xref:System.Windows.Automation.TreeScope> in `scope`, not <xref:System.Windows.Automation.TreeScope>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
+  
+ If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+  
+   
+  
+## Examples  
+ The following example shows how to find a child window from its identifier.  
+  
+ [!code-csharp[UIAClient_snip#110](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#110)]
+ [!code-vb[UIAClient_snip#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FocusedElement">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.AutomationElement FocusedElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Automation.AutomationElement FocusedElement" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.FocusedElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Automation.AutomationElement" /> that currently has focus.</summary>
+        <value>The focused [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameworkIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty FrameworkIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty FrameworkIdProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.FrameworkIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.FrameworkId" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.String>. The default value is an empty string.  
+  
+ This property enables applications to apply special cases to entire UI frameworks. Examples of property values are "Win32", "WinForm", and "DirectUI".  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property.  
+  
+ [!code-csharp[UIAClient_snip#139](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#139)]
+ [!code-vb[UIAClient_snip#139](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#139)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromHandle">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.AutomationElement FromHandle (IntPtr hwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.AutomationElement FromHandle(native int hwnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FromHandle(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">The handle of the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] element.</param>
+        <summary>Retrieves a new <see cref="T:System.Windows.Automation.AutomationElement" /> object for the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] item referenced by the specified window handle.</summary>
+        <returns>An <see cref="T:System.Windows.Automation.AutomationElement" /> for the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] item identified by <paramref name="hwnd" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromLocalProvider">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.AutomationElement FromLocalProvider (System.Windows.Automation.Provider.IRawElementProviderSimple localImpl);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.AutomationElement FromLocalProvider(class System.Windows.Automation.Provider.IRawElementProviderSimple localImpl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FromLocalProvider(System.Windows.Automation.Provider.IRawElementProviderSimple)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localImpl" Type="System.Windows.Automation.Provider.IRawElementProviderSimple" />
+      </Parameters>
+      <Docs>
+        <param name="localImpl">The provider object.</param>
+        <summary>Retrieves a new <see cref="T:System.Windows.Automation.AutomationElement" /> object from a local <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" /> implementation.</summary>
+        <returns>An <see cref="T:System.Windows.Automation.AutomationElement" /> that represents the element served by the provider object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method might be used by a client helper library to enable its callers to access its own native element type. For example, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] uses this method internally so that it can return an <xref:System.Windows.Automation.AutomationElement> to clients that want to get a [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element directly from a <xref:System.Windows.UIElement>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromPoint">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.AutomationElement FromPoint (System.Windows.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.AutomationElement FromPoint(valuetype System.Windows.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.FromPoint(System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">The physical screen coordinates on the desktop at which to locate the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] element.</param>
+        <summary>Retrieves a new <see cref="T:System.Windows.Automation.AutomationElement" /> object for the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] item at specified point on the desktop.</summary>
+        <returns>The [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] item at the specified point.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.AutomationElement.FromPoint%2A> returns the element in the logical tree that is closest to the root element.  
+  
+ If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
+  
+ Although the point is within the bounding rectangle of the returned <xref:System.Windows.Automation.AutomationElement>, it is not necessarily on a clickable part of the control. For example, a round button might not be clickable near one of the corners of its bounding rectangle.  
+  
+   
+  
+## Examples  
+ The following example retrieves the <xref:System.Windows.Automation.AutomationElement> at the system cursor location.  
+  
+ [!code-csharp[UIAClient_snip#181](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#181)]
+ [!code-vb[UIAClient_snip#181](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#181)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCachedPattern">
+      <MemberSignature Language="C#" Value="public object GetCachedPattern (System.Windows.Automation.AutomationPattern pattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCachedPattern(class System.Windows.Automation.AutomationPattern pattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCachedPattern(System.Windows.Automation.AutomationPattern)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pattern" Type="System.Windows.Automation.AutomationPattern" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">The identifier of the pattern to retrieve.</param>
+        <summary>Retrieves the specified pattern from the cache of this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <returns>An object representing the specified pattern. If there are no matching patterns, <see langword="null" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> retrieves the specified pattern from the cache. To retrieve the current object for the specified pattern, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A>.  
+  
+ This method throws an exception if the requested pattern was not previously cached.  
+  
+   
+  
+## Examples  
+ The following example shows how to cache and retrieve a pattern.  
+  
+ [!code-csharp[UIAClient_snip#108](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#108)]
+ [!code-vb[UIAClient_snip#108](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#108)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The requested pattern is not in the cache or is not supported by the element.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCachedPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetCachedPropertyValue (System.Windows.Automation.AutomationProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCachedPropertyValue(class System.Windows.Automation.AutomationProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCachedPropertyValue(System.Windows.Automation.AutomationProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Windows.Automation.AutomationProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">The identifier of the property to retrieve.</param>
+        <summary>Retrieves the value of the specified property from the cache of this <see cref="T:System.Windows.Automation.AutomationElement" />. An appropriate default value for the property type is returned for properties not explicitly supported by the target [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] element.</summary>
+        <returns>An object containing the value of the specified property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement>.  
+  
+ <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the <xref:System.Windows.Automation.AutomationElement>'s cache. To retrieve the current object for the specified property call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
+  
+ This method throws an exception if the requested property was not previously cached.  
+  
+   
+  
+## Examples  
+ The following shows how this method can be used to retrieve a cached property.  
+  
+ [!code-csharp[UIAClient_snip#108](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#108)]
+ [!code-vb[UIAClient_snip#108](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#108)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCachedPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetCachedPropertyValue (System.Windows.Automation.AutomationProperty property, bool ignoreDefaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCachedPropertyValue(class System.Windows.Automation.AutomationProperty property, bool ignoreDefaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCachedPropertyValue(System.Windows.Automation.AutomationProperty,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Windows.Automation.AutomationProperty" />
+        <Parameter Name="ignoreDefaultValue" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="property">The identifier of the property to retrieve.</param>
+        <param name="ignoreDefaultValue">A value that specifies whether a default value should be ignored if the specified property is not supported.</param>
+        <summary>Retrieves the value of the specified property from the cache of this <see cref="T:System.Windows.Automation.AutomationElement" />, optionally ignoring any default property.</summary>
+        <returns>An object containing the value of the specified property, or <see cref="F:System.Windows.Automation.AutomationElement.NotSupported" /> if the element does not supply a value and <paramref name="ignoreDefaultValue" /> is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the cache for the <xref:System.Windows.Automation.AutomationElement>. To retrieve the current property, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
+  
+ Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=fullName>.  
+  
+ If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, if `ignoreDefaultValue` is `false`, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
+  
+ This method throws an exception if the requested property was not previously cached.  
+  
+   
+  
+## Examples  
+ The following example shows how this method can be used to retrieve a cached property.  
+  
+ [!code-csharp[UIAClient_snip#108](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#108)]
+ [!code-vb[UIAClient_snip#108](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#108)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClickablePoint">
+      <MemberSignature Language="C#" Value="public System.Windows.Point GetClickablePoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point GetClickablePoint() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetClickablePoint" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a point on the <see cref="T:System.Windows.Automation.AutomationElement" /> that can be clicked.</summary>
+        <returns>The physical screen coordinates of a point that can be used by a client to click on this element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Automation.AutomationElement> is not clickable if it is completely obscured by another window.  
+  
+ An <xref:System.Windows.Automation.AutomationElement> is clickable when it satisfies all the following conditions:  
+  
+-   It is programmatically visible and available with the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree.  
+  
+-   It is scrolled fully into view within its parent container, if any. If the element is clipped, there is no guarantee that it is clickable.  
+  
+-   The element is not obscured by any other UI element. If the element is partially obscured by some UI element other than its ancestors, it might not be clickable.  
+  
+-   The window containing the element must itself be clickable. For example, the window is not clickable if the containing window is completely transparent. Mouse clicks will click through to the window underneath, so any controls within the transparent window will not return clickable points.  
+  
+-   If the element is a container (such as list or tree view), it must have a point that when clicked will cause the background of the control to be focused. If every part of the container control is occupied by a child element, it is not clickable.  
+  
+ There is no guarantee that a control will do anything when clicked on a point defined as clickable by the UI Automation provider. Consider using control patterns instead to perform actions on controls.  
+  
+   
+  
+## Examples  
+ The following code retrieves a clickable point for a control and moves the system cursor to that point.  
+  
+ [!code-csharp[UIAClient_snip#179](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#179)]
+ [!code-vb[UIAClient_snip#179](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#179)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.NoClickablePointException">There is no clickable point.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentPattern">
+      <MemberSignature Language="C#" Value="public object GetCurrentPattern (System.Windows.Automation.AutomationPattern pattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentPattern(class System.Windows.Automation.AutomationPattern pattern) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCurrentPattern(System.Windows.Automation.AutomationPattern)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pattern" Type="System.Windows.Automation.AutomationPattern" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">The identifier of the pattern to retrieve.</param>
+        <summary>Retrieves the specified pattern object on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <returns>The pattern object, if the specified pattern is currently supported by the <see cref="T:System.Windows.Automation.AutomationElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> gets the specified pattern based on its availability at the time of the call.  
+  
+ For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Applications can concentrate overhead by caching patterns and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to retrieve a <xref:System.Windows.Automation.SelectionItemPattern>, which is then used to select an item in a list box.  
+  
+ [!code-csharp[UIAClient_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#103)]
+ [!code-vb[UIAClient_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#103)]  
+  
+> [!NOTE]
+>  For often-repeated tasks such as the one in the example, it would be more efficient to cache the pattern and use <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The pattern is not supported by the element.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetCurrentPropertyValue (System.Windows.Automation.AutomationProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentPropertyValue(class System.Windows.Automation.AutomationProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue(System.Windows.Automation.AutomationProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Windows.Automation.AutomationProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property identifier specifying which property to retrieve.</param>
+        <summary>Retrieves the value of the specified property on this <see cref="T:System.Windows.Automation.AutomationElement" />. An appropriate default value for the property type is returned for properties not explicitly supported by the target [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] element.</summary>
+        <returns>An object containing the value of the specified property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value returned by the <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> method is current at the time it is called. The value can subsequently change by other applications interacting with the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
+  
+ If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement>.  
+  
+ For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Concentrate overhead by caching properties and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText%2A> property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#126](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#126)]
+ [!code-vb[UIAClient_snip#126](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#126)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetCurrentPropertyValue (System.Windows.Automation.AutomationProperty property, bool ignoreDefaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentPropertyValue(class System.Windows.Automation.AutomationProperty property, bool ignoreDefaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue(System.Windows.Automation.AutomationProperty,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Windows.Automation.AutomationProperty" />
+        <Parameter Name="ignoreDefaultValue" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="property">The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property identifier specifying which property to retrieve.</param>
+        <param name="ignoreDefaultValue">A value that specifies whether a default value should be ignored if the specified property is supported.</param>
+        <summary>Retrieves the value of the specified property on this <see cref="T:System.Windows.Automation.AutomationElement" />, optionally ignoring any default property.</summary>
+        <returns>An object containing the value of the specified property, or <see cref="F:System.Windows.Automation.AutomationElement.NotSupported" /> if the element does not supply a value and <paramref name="ignoreDefaultValue" /> is <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Passing `false` in `ignoreDefaultValue` is equivalent to calling <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%28System.Windows.Automation.AutomationProperty%29?displayProperty=fullName>.  
+  
+ If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, if `ignoreDefaultValue` is `false`, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
+  
+ The value returned by the <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> method is current at the time it is called. The value can subsequently change by other applications interacting with the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+ For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Applications can concentrate overhead by caching properties and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText%2A> property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#123](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#123)]
+ [!code-vb[UIAClient_snip#123](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#123)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the hash code for this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <returns>The 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRuntimeId">
+      <MemberSignature Language="C#" Value="public int[] GetRuntimeId ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32[] GetRuntimeId() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetRuntimeId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the unique identifier assigned to the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] item.</summary>
+        <returns>An array of integers representing the run-time identifier.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier is only guaranteed to be unique to the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] of the desktop on which it was generated. Identifiers can be reused over time.  
+  
+ The format of run-time identifiers might change in future releases. The returned identifier should be treated as an opaque value and used only for comparison; for example, to determine whether an <xref:System.Windows.Automation.AutomationElement> is in the cache.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the run-time identifier of an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#111](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#111)]
+ [!code-vb[UIAClient_snip#111](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#111)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedPatterns">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationPattern[] GetSupportedPatterns ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationPattern[] GetSupportedPatterns() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetSupportedPatterns" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationPattern[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the control patterns that this <see cref="T:System.Windows.Automation.AutomationElement" /> supports.</summary>
+        <returns>An array of <see cref="T:System.Windows.Automation.AutomationPattern" /> objects that represent the supported control patterns.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method would typically be used for debugging. Calling it requires a great deal of processing, as it queries the <xref:System.Windows.Automation.AutomationElement> for every possible pattern. Normally you would use <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve a specific control pattern from an <xref:System.Windows.Automation.AutomationElement>. To ascertain whether a particular pattern is supported, check the appropriate property; for example, <xref:System.Windows.Automation.AutomationElement.IsWindowPatternAvailableProperty>.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the control patterns supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#114](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#114)]
+ [!code-vb[UIAClient_snip#114](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#114)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSupportedProperties">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationProperty[] GetSupportedProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationProperty[] GetSupportedProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetSupportedProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the identifiers of properties supported by the element.</summary>
+        <returns>An array of supported property identifiers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned array identifies all the properties supported by this element; however, it can also contain duplicate entries or properties that contain `null` or empty values. For most purposes it is better to use <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> to determine whether a property is currently supported and to get its current value.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the properties supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#115](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#115)]
+ [!code-vb[UIAClient_snip#115](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#115)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUpdatedCache">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement GetUpdatedCache (System.Windows.Automation.CacheRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement GetUpdatedCache(class System.Windows.Automation.CacheRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.GetUpdatedCache(System.Windows.Automation.CacheRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Windows.Automation.CacheRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">The patterns and properties to include in the updated cache.</param>
+        <summary>Retrieves a new <see cref="T:System.Windows.Automation.AutomationElement" /> with an updated cache.</summary>
+        <returns>A new <see cref="T:System.Windows.Automation.AutomationElement" /> that has an updated cache.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The original <xref:System.Windows.Automation.AutomationElement> is unchanged. <xref:System.Windows.Automation.AutomationElement.GetUpdatedCache%2A> returns a new <xref:System.Windows.Automation.AutomationElement>, that refers to the same [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] and has the same <xref:System.Windows.Automation.AutomationElement>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how a cache might be updated whenever the selection in a combo box changes.  
+  
+ [!code-csharp[UIAClient_snip#109](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#109)]
+ [!code-vb[UIAClient_snip#109](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#109)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasKeyboardFocusProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty HasKeyboardFocusProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty HasKeyboardFocusProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.HasKeyboardFocusProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.HasKeyboardFocus" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#140](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#140)]
+ [!code-vb[UIAClient_snip#140](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#140)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty HelpTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty HelpTextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.HelpTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.HelpText" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ This information is typically obtained from tooltips specified by providers.  
+  
+ Return values of the property are of type <xref:System.String>. The default value for the property is an empty string.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#126](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#126)]
+ [!code-vb[UIAClient_snip#126](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#126)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#123](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#123)]
+ [!code-vb[UIAClient_snip#123](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#123)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsContentElementProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsContentElementProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsContentElementProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsContentElementProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsContentElement" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The content view of the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree provides a view of the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] that only contains elements that represent data within the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
+  
+ An element must be a control to be able to hold content.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `true`.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#141](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#141)]
+ [!code-vb[UIAClient_snip#141](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#141)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#142](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#142)]
+ [!code-vb[UIAClient_snip#142](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#142)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsControlElementProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsControlElementProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsControlElementProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsControlElementProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsControlElement" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Controls are elements that a user perceives as interactive or containing information in the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `true`.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#143](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#143)]
+ [!code-vb[UIAClient_snip#143](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#143)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#144](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#144)]
+ [!code-vb[UIAClient_snip#144](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#144)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDockPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsDockPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsDockPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsDockPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.DockPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example  ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsEnabledProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsEnabled" /> property, which specifies whether the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] item referenced by the <see cref="T:System.Windows.Automation.AutomationElement" /> is enabled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+ When the enabled state of a control is `false`, it is assumed that child controls are also not enabled. You should not expect property-changed events from child elements when the state of the parent control changes.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#146](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#146)]
+ [!code-vb[UIAClient_snip#146](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#146)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpandCollapsePatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsExpandCollapsePatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsExpandCollapsePatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsExpandCollapsePatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.ExpandCollapsePattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example retrieves a value that specifies whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGridItemPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsGridItemPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsGridItemPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsGridItemPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.GridItemPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGridPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsGridPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsGridPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsGridPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.GridPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInvokePatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsInvokePatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsInvokePatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsInvokePatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.InvokePattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsItemContainerPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsItemContainerPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsItemContainerPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsItemContainerPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.ItemContainerPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsKeyboardFocusableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsKeyboardFocusableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsKeyboardFocusableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsKeyboardFocusableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsKeyboardFocusable" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The property provides information necessary to the proper functioning of the <xref:System.Windows.Automation.AutomationElement.SetFocus%2A> method.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#147](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#147)]
+ [!code-vb[UIAClient_snip#147](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#147)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMultipleViewPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsMultipleViewPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsMultipleViewPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsMultipleViewPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.MultipleViewPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOffscreenProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsOffscreenProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsOffscreenProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsOffscreenProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsOffscreen" /> property, which indicates whether the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] item is visible on the screen.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The return value is of type <xref:System.Boolean>, and the default value is `false`.  
+  
+ For more information about when this property is `true`, see <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsOffscreen%2A>.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#148](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#148)]
+ [!code-vb[UIAClient_snip#148](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#148)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#149](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#149)]
+ [!code-vb[UIAClient_snip#149](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#149)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPasswordProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsPasswordProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsPasswordProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsPasswordProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsPassword" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The return value for this property is a <xref:System.Boolean>. It returns `true` to indicate that the content is protected; otherwise `false`.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property.  
+  
+ [!code-csharp[UIAClient_snip#150](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#150)]
+ [!code-vb[UIAClient_snip#150](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#150)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRangeValuePatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsRangeValuePatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsRangeValuePatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsRangeValuePatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.RangeValuePattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequiredForFormProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsRequiredForFormProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsRequiredForFormProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsRequiredForFormProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsRequiredForForm" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The return value for this property is of type <xref:System.Boolean>, and the default value is `false`.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#151](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#151)]
+ [!code-vb[UIAClient_snip#151](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#151)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsScrollItemPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsScrollItemPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsScrollItemPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsScrollItemPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.ScrollItemPattern" /> control pattern is available for this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsScrollPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsScrollPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsScrollPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsScrollPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.ScrollPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelectionItemPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsSelectionItemPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsSelectionItemPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsSelectionItemPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.SelectionItemPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelectionPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsSelectionPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsSelectionPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsSelectionPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.SelectionPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronizedInputPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsSynchronizedInputPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsSynchronizedInputPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsSynchronizedInputPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.SynchronizedInputPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTableItemPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsTableItemPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsTableItemPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTableItemPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.TableItemPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTablePatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsTablePatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsTablePatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTablePatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.TablePattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTextPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsTextPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsTextPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTextPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.TextPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTogglePatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsTogglePatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsTogglePatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTogglePatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.TogglePattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTransformPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsTransformPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsTransformPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsTransformPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.TransformPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValuePatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsValuePatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsValuePatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsValuePatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.ValuePattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVirtualizedItemPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsVirtualizedItemPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsVirtualizedItemPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsVirtualizedItemPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.VirtualizedItemPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWindowPatternAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsWindowPatternAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsWindowPatternAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.IsWindowPatternAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that indicates whether the <see cref="T:System.Windows.Automation.WindowPattern" /> control pattern is available on this <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Return values of the property are of type <xref:System.Boolean>. The default value for the property is `false`.  
+  
+   
+  
+## Examples  
+ The following example ascertains whether a specified control pattern is supported by an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#145](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#145)]
+ [!code-vb[UIAClient_snip#145](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#145)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemStatusProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ItemStatusProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ItemStatusProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ItemStatusProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemStatus" /> property, which specifies the status of the visual representation of a complex item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ The return value is a control-defined <xref:System.String>. The default value is an empty string.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#152](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#152)]
+ [!code-vb[UIAClient_snip#152](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#152)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#153](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#153)]
+ [!code-vb[UIAClient_snip#153](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#153)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ItemTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ItemTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ItemTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemType" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The return value is a control-defined <xref:System.String>. The default value is an empty string.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#154](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#154)]
+ [!code-vb[UIAClient_snip#154](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#154)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, an application-defined string is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#155](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#155)]
+ [!code-vb[UIAClient_snip#155](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#155)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabeledByProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty LabeledByProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty LabeledByProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.LabeledByProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.LabeledBy" /> property, which identifies the label associated with a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Return values of the property are of type <xref:System.Windows.Automation.AutomationElement>. The default value for the property is `null`.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#156](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#156)]
+ [!code-vb[UIAClient_snip#156](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#156)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#157](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#157)]
+ [!code-vb[UIAClient_snip#157](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#157)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutInvalidatedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent LayoutInvalidatedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent LayoutInvalidatedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.LayoutInvalidatedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the event that is raised when the layout is invalidated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This event is raised by a container of elements whenever the visibility information of many elements has changed.  This event is used by the client as an indicator that it needs to refresh the <xref:System.Windows.Automation.AutomationElement.BoundingRectangleProperty> and <xref:System.Windows.Automation.AutomationElement.IsOffscreenProperty> information that it may have cached for elements within the tree. The recommended number of changes that triggers this event is 25.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalizedControlTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty LocalizedControlTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty LocalizedControlTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.LocalizedControlTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.LocalizedControlType" /> property in the local language.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ A provider is required to expose this property when it represents a custom control that does not have a well-defined control type.  
+  
+ Return values of the property are of type <xref:System.String>. The default value for the property is an empty string.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#158](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#158)]
+ [!code-vb[UIAClient_snip#158](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#158)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#159](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#159)]
+ [!code-vb[UIAClient_snip#159](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#159)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuClosedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent MenuClosedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent MenuClosedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.MenuClosedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the event that is raised when a menu is closed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuOpenedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent MenuOpenedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent MenuOpenedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.MenuOpenedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the event that is raised when a menu is opened.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty NameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty NameProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.NameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Return values of the property are of type <xref:System.String>. The default value for the property is an empty string.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#160](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#160)]
+ [!code-vb[UIAClient_snip#160](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#160)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#161](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#161)]
+ [!code-vb[UIAClient_snip#161](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#161)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeWindowHandleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty NativeWindowHandleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty NativeWindowHandleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.NativeWindowHandleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.NativeWindowHandle" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Return values of the property are of type <xref:System.Int32>. The default value for the property is 0.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#162](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#162)]
+ [!code-vb[UIAClient_snip#162](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#162)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#163](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#163)]
+ [!code-vb[UIAClient_snip#163](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#163)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSupported">
+      <MemberSignature Language="C#" Value="public static readonly object NotSupported;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly object NotSupported" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.NotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a property is not supported.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+   
+  
+## Examples  
+ The following example retrieves the help text property for an <xref:System.Windows.Automation.AutomationElement>, specifying that <xref:System.Windows.Automation.AutomationElement.NotSupported> should be returned if the control does not support that property.  
+  
+ [!code-csharp[UIAClient_snip#123](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#123)]
+ [!code-vb[UIAClient_snip#123](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#123)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Automation.AutomationElement left, System.Windows.Automation.AutomationElement right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Automation.AutomationElement left, class System.Windows.Automation.AutomationElement right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.op_Equality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="right" Type="System.Windows.Automation.AutomationElement" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Windows.Automation.AutomationElement" /> to compare.</param>
+        <param name="right">The second <see cref="T:System.Windows.Automation.AutomationElement" /> to compare.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Windows.Automation.AutomationElement" /> objects refer to the same [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] element.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Automation.AutomationElement" /> objects refer to the same [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] element; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Windows.Automation.AutomationElement> objects that compare as equal might contain different cached information from different points in time. <xref:System.Windows.Automation.AutomationElement.op_Equality%2A> only tests that the objects refer to the same underlying [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Automation.AutomationElement left, System.Windows.Automation.AutomationElement right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Automation.AutomationElement left, class System.Windows.Automation.AutomationElement right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.op_Inequality(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Automation.AutomationElement" />
+        <Parameter Name="right" Type="System.Windows.Automation.AutomationElement" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Windows.Automation.AutomationElement" /> to compare.</param>
+        <param name="right">The second <see cref="T:System.Windows.Automation.AutomationElement" /> to compare.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Windows.Automation.AutomationElement" /> objects refer to different [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements.</summary>
+        <returns>
+          <see langword="true" /> if the two objects refer to different [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] elements; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrientationProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty OrientationProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty OrientationProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.OrientationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.Orientation" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ The value of the property is of type <xref:System.Windows.Automation.OrientationType>. The default value is <xref:System.Windows.Automation.OrientationType>.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#164](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#164)]
+ [!code-vb[UIAClient_snip#164](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#164)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported> is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#165](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#165)]
+ [!code-vb[UIAClient_snip#165](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#165)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ProcessIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ProcessIdProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ProcessIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ProcessId" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
+  
+ Return values of the property are of type <xref:System.Int32>. The default value for the property is 0.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property. The default value is returned if the element does not provide one.  
+  
+ [!code-csharp[UIAClient_snip#167](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#167)]
+ [!code-vb[UIAClient_snip#167](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#167)]  
+  
+ The following example retrieves the current value of the property, but specifies that if the element itself does not provide a value for the property, <xref:System.Windows.Automation.AutomationElement.NotSupported>is to be returned instead of a default value.  
+  
+ [!code-csharp[UIAClient_snip#168](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#168)]
+ [!code-vb[UIAClient_snip#168](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#168)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootElement">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.AutomationElement RootElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Automation.AutomationElement RootElement" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationElement.RootElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root <see cref="T:System.Windows.Automation.AutomationElement" /> for the current desktop.</summary>
+        <value>The root element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the root element as a starting point for finding other elements, using the <xref:System.Windows.Automation.AutomationElement.FindAll%2A> and <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> methods.  
+  
+ When searching from the root element, be sure to specify <xref:System.Windows.Automation.TreeScope> in the scope of the search, not <xref:System.Windows.Automation.TreeScope>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
+  
+   
+  
+## Examples  
+ The following example code retrieves a collection of all the immediate children of the desktop.  
+  
+ [!code-csharp[UIAClient_snip#201](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#201)]
+ [!code-vb[UIAClient_snip#201](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#201)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuntimeIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty RuntimeIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty RuntimeIdProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.RuntimeIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the property that contains the runtime identifier of the element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ The runtime [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] property specifies an [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] for an <xref:System.Windows.Automation.AutomationElement> that is unique on the desktop.  
+  
+ The return value of the property is an array of type <xref:System.Int32>. There is no default value.  
+  
+   
+  
+## Examples  
+ The following example retrieves the current value of the property.  
+  
+ [!code-csharp[UIAClient_snip#169](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#169)]
+ [!code-vb[UIAClient_snip#169](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#169)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFocus">
+      <MemberSignature Language="C#" Value="public void SetFocus ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFocus() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.SetFocus" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets focus on the <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior of this method depends on the implementation by the UI Automation provider for the element. Setting focus does not necessarily bring the element to the foreground or make it visible.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StructureChangedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent StructureChangedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent StructureChangedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.StructureChangedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the event that is raised when the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree structure is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipClosedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent ToolTipClosedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent ToolTipClosedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ToolTipClosedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the event that is raised when a tooltip is closed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipOpenedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent ToolTipOpenedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent ToolTipOpenedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationElement.ToolTipOpenedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the event that is raised when a tooltip is opened.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent identifier in <xref:System.Windows.Automation.AutomationElementIdentifiers>.  
+  
+ Tooltips are transitory on the desktop, and the tooltip might have closed by the time the client receives the event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetCachedPattern">
+      <MemberSignature Language="C#" Value="public bool TryGetCachedPattern (System.Windows.Automation.AutomationPattern pattern, out object patternObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCachedPattern(class System.Windows.Automation.AutomationPattern pattern, object patternObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetCachedPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pattern" Type="System.Windows.Automation.AutomationPattern" />
+        <Parameter Name="patternObject" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">The identifier of the control pattern to retrieve.</param>
+        <param name="patternObject">On return, contains the pattern if it is in the cache; otherwise <see langword="null" />.</param>
+        <summary>Retrieves a control pattern from the cache.</summary>
+        <returns>
+          <see langword="true" /> if the pattern is in the cache; <see langword="false" /> if it is not in the cache or not supported.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to cache and retrieve a control pattern.  
+  
+ [!code-csharp[UIAClient_snip#107](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#107)]
+ [!code-vb[UIAClient_snip#107](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#107)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetClickablePoint">
+      <MemberSignature Language="C#" Value="public bool TryGetClickablePoint (out System.Windows.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetClickablePoint(valuetype System.Windows.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetClickablePoint(System.Windows.Point@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="System.Windows.Point&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pt">When this method returns, contains the physical screen coordinates of a clickable point.</param>
+        <summary>Retrieves a point within the element that can be clicked.</summary>
+        <returns>
+          <see langword="true" /> if there is a point that is clickable; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Automation.AutomationElement> is not clickable if it is completely obscured by another window.  
+  
+   
+  
+## Examples  
+ The following example attempts to retrieve a clickable point on an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAClient_snip#112](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#112)]
+ [!code-vb[UIAClient_snip#112](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#112)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetCurrentPattern">
+      <MemberSignature Language="C#" Value="public bool TryGetCurrentPattern (System.Windows.Automation.AutomationPattern pattern, out object patternObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetCurrentPattern(class System.Windows.Automation.AutomationPattern pattern, object patternObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationElement.TryGetCurrentPattern(System.Windows.Automation.AutomationPattern,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pattern" Type="System.Windows.Automation.AutomationPattern" />
+        <Parameter Name="patternObject" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pattern">The identifier of the control pattern to retrieve.</param>
+        <param name="patternObject">On return, the control pattern if it is supported; otherwise <see langword="null" />.</param>
+        <summary>Retrieves an object that implements a control pattern.</summary>
+        <returns>
+          <see langword="true" /> if the pattern is supported; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For some forms of [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)], this method will incur cross-process performance overhead. Applications can concentrate overhead by caching patterns and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to retrieve a control pattern.  
+  
+ [!code-csharp[UIAClient_snip#113](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#113)]
+ [!code-vb[UIAClient_snip#113](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#113)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="GetCachedPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the cached value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the cache of the <xref:System.Windows.Automation.AutomationElement>. To retrieve the current property, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="GetCurrentPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the current value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value returned by the <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> method is current at the time it is called. The value can subsequently change by other applications interacting with the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+ For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Applications can concentrate overhead by caching properties and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

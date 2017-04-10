@@ -1,0 +1,81 @@
+<Type Name="AdditionalContext" FullName="System.IdentityModel.Protocols.WSTrust.AdditionalContext">
+  <TypeSignature Language="C#" Value="public class AdditionalContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdditionalContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.AdditionalContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the auth:AdditionalContext element defined in the authorization extensions to WS-Trust. These extensions are defined in the WS-Federation specification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The auth:AdditionalContext element can be used to communicate any additional context for a token request (RST). This context is provided as a collection of name-value pairs, each of which corresponds to a single auth:ContextItem subelement. The auth:ContextItem element is represented by the <xref:System.IdentityModel.Protocols.WSTrust.ContextItem> class. You can access the list of context items through the <xref:System.IdentityModel.Protocols.WSTrust.AdditionalContext.Items%2A> property.  
+  
+ For more information about the element that this class represents, see the WS-Federation specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdditionalContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.AdditionalContext" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdditionalContext (System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Protocols.WSTrust.ContextItem&gt; items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Protocols.WSTrust.ContextItem&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Protocols.WSTrust.ContextItem})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Protocols.WSTrust.ContextItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="items">An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.AdditionalContext" /> class with the specified context items.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="items" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.IdentityModel.Protocols.WSTrust.ContextItem&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Protocols.WSTrust.ContextItem&gt; Items" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.AdditionalContext.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.IdentityModel.Protocols.WSTrust.ContextItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of context items for this instance.</summary>
+        <value>An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> objects that provide context for the request (RST) as a collection of name-value pairs. The default is an empty list.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

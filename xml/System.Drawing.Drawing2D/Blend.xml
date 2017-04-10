@@ -1,0 +1,156 @@
+<Type Name="Blend" FullName="System.Drawing.Drawing2D.Blend">
+  <TypeSignature Language="C#" Value="public sealed class Blend" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Blend extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.Blend" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a blend pattern for a <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> object. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gradients are commonly used to smoothly shade the interiors of shapes. A blend pattern is defined by two arrays (<xref:System.Drawing.Drawing2D.Blend.Factors%2A> and <xref:System.Drawing.Drawing2D.Blend.Positions%2A>) that each contain the same number of elements. Each element of the <xref:System.Drawing.Drawing2D.Blend.Positions%2A> array represents a proportion of the distance along the gradient line. Each element of the <xref:System.Drawing.Drawing2D.Blend.Factors%2A> array represents the proportion of the starting and ending colors in the gradient blend at the position along the gradient line represented by the corresponding element in the <xref:System.Drawing.Drawing2D.Blend.Positions%2A> array.  
+  
+ For example, if corresponding elements of the <xref:System.Drawing.Drawing2D.Blend.Positions%2A> and <xref:System.Drawing.Drawing2D.Blend.Factors%2A> arrays are 0.2 and 0.3, respectively, for a linear gradient from blue to red along a 100-pixel line, the color 20 pixels along that line (20 percent of the distance) consists of 30 percent blue and 70 percent red.  
+  
+   
+  
+## Examples  
+ The following example is intended to be used in a Windows Forms environment. It demonstrates how to use the <xref:System.Drawing.Drawing2D.Blend> class in conjunction with the <xref:System.Drawing.Drawing2D.LinearGradientBrush> class to draw an ellipse to screen that has its colors blended. The ellipse is blue on the left, blends to red in the center, and blends back to blue on the right. This is accomplished through the settings in the `myFactors` and `myPositions` arrays used in the <xref:System.Drawing.Drawing2D.Blend.Factors%2A> and <xref:System.Drawing.Drawing2D.Blend.Positions%2A> properties. Note that the <xref:System.Drawing.Drawing2D.Blend> property of the <xref:System.Drawing.Drawing2D.LinearGradientBrush> object named `lgBrush2` must be made equal to the <xref:System.Drawing.Drawing2D.Blend> object `myBlend`.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicMisc#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicMisc#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicMisc#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/VB/form1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Blend ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.Blend.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.Blend" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is intended to be used in a Windows Forms environment. It demonstrates how to use the <xref:System.Drawing.Drawing2D.Blend> class in conjunction with the <xref:System.Drawing.Drawing2D.LinearGradientBrush> class to draw an ellipse to screen that has its colors blended. The ellipse is blue on the left, blends to red in the center, and blends back to blue on the right. This is accomplished through the settings in the `myFactors` and `myPositions` arrays used in the <xref:System.Drawing.Drawing2D.Blend.Factors%2A> and <xref:System.Drawing.Drawing2D.Blend.Positions%2A> properties. Note that the <xref:System.Drawing.Drawing2D.Blend> property of the <xref:System.Drawing.Drawing2D.LinearGradientBrush> object named `lgBrush2` must be made equal to the <xref:System.Drawing.Drawing2D.Blend> object `myBlend`.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicMisc#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CPP/form1.cpp#3)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicMisc#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CS/form1.cs#3)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicMisc#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Blend (int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.Blend.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="count">The number of elements in the <see cref="P:System.Drawing.Drawing2D.Blend.Factors" /> and <see cref="P:System.Drawing.Drawing2D.Blend.Positions" /> arrays.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.Blend" /> class with the specified number of factors and positions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For an example, see <xref:System.Drawing.Drawing2D.Blend.%23ctor%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Factors">
+      <MemberSignature Language="C#" Value="public float[] Factors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32[] Factors" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.Blend.Factors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of blend factors for the gradient.</summary>
+        <value>An array of blend factors that specify the percentages of the starting color and the ending color to be used at the corresponding position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the elements of this array are a value from 0.0f through 1.0f. These elements specify the percentages of the ending color and the starting color to use at the corresponding blend position. For example, a value of 0.2 indicates that at the specified position, the blended color is composed of 20 percent of the ending gradient color and 80 percent of the starting gradient color.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Drawing2D.Blend> class by setting the <xref:System.Drawing.Drawing2D.Blend.Factors%2A> and <xref:System.Drawing.Drawing2D.Blend.Positions%2A> properties. This example is designed to be used with Windows Forms. Paste the code into a form that imports the <xref:System.Drawing.Drawing2D> namespace. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `DemonstrateBlend` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.Misc2#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Misc2/CPP/form1.cpp#5)]
+ [!code-csharp[System.Drawing.Misc2#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc2/CS/form1.cs#5)]
+ [!code-vb[System.Drawing.Misc2#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc2/VB/form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Positions">
+      <MemberSignature Language="C#" Value="public float[] Positions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32[] Positions" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.Blend.Positions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of blend positions for the gradient.</summary>
+        <value>An array of blend positions that specify the percentages of distance along the gradient line.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements of this array specify percentages of distance along the gradient line. For example, an element value of 0.2f specifies that this point is 20 percent of the total distance from the starting point. The elements in this array are represented by float values between 0.0f and 1.0f. The first element of the array must be 0.0f, and the last element must be 1.0f.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Drawing2D.Blend> class by setting the <xref:System.Drawing.Drawing2D.Blend.Factors%2A> and <xref:System.Drawing.Drawing2D.Blend.Positions%2A> properties. This example is designed to be used with Windows Forms. Paste the code into a form that imports the <xref:System.Drawing.Drawing2D> namespace. Handle the form's <xref:System.Windows.Forms.Control.Paint> event and call the `DemonstrateBlend` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-cpp[System.Drawing.Misc2#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Misc2/CPP/form1.cpp#5)]
+ [!code-csharp[System.Drawing.Misc2#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc2/CS/form1.cs#5)]
+ [!code-vb[System.Drawing.Misc2#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc2/VB/form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

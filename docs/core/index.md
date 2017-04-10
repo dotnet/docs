@@ -23,7 +23,7 @@ The following characteristics best define .NET Core:
 - **Cross-platform:** Runs on Windows, macOS and Linux; can be ported to other operating systems. The [supported Operating Systems (OS)](https://github.com/dotnet/core/blob/master/roadmap.md), CPUs and application scenarios will grow over time, provided by Microsoft, other companies, and individuals.
 - **Command-line tools:**  All product scenarios can be exercised at the command-line. 
 - **Compatible:** .NET Core is compatible with .NET Framework, Xamarin and Mono, via the [.NET Standard Library](../standard/library.md).
-- **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](http://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](http://www.dotnetfoundation.org/) project.
+- **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. Documentation is licensed under [CC-BY](https://creativecommons.org/licenses/by/4.0/). .NET Core is a [.NET Foundation](https://dotnetfoundation.org/) project.
 - **Supported by Microsoft:** .NET Core is supported by Microsoft, per [.NET Core Support](https://www.microsoft.com/net/core/support/)
 
 ## Composition
@@ -57,13 +57,13 @@ The [.NET Standard Library](../standard/library.md) is an API spec that describe
 
 By itself, .NET Core includes a single application model -- console apps -- which is useful for tools, local services and text-based games. Additional application models have been built on top of .NET Core to extend its functionality, such as:
 
-- [ASP.NET Core](http://asp.net)
+- [ASP.NET Core](https://docs.microsoft.com/aspnet/core/)
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
 - [Xamarin.Forms](https://www.xamarin.com/forms)
 
 ### Open Source
 
-[.NET Core](https://github.com/dotnet/core) is open source (MIT license) and was contributed to the [.NET Foundation](http://dotnetfoundation.org) by Microsoft in 2014. It is now one of the most active .NET Foundation projects. It can be freely adopted by individuals and companies, including for personal, academic or commercial purposes. Multiple companies use .NET Core as part of apps, tools, new platforms and hosting services. Some of these companies make significant contributions to .NET Core on GitHub and provide guidance on the product direction as part of the [.NET Foundation Technical Steering Group](http://www.dotnetfoundation.org/blog/tsg-welcome).
+[.NET Core](https://github.com/dotnet/core) is open source (MIT license) and was contributed to the [.NET Foundation](https://dotnetfoundation.org) by Microsoft in 2014. It is now one of the most active .NET Foundation projects. It can be freely adopted by individuals and companies, including for personal, academic or commercial purposes. Multiple companies use .NET Core as part of apps, tools, new platforms and hosting services. Some of these companies make significant contributions to .NET Core on GitHub and provide guidance on the product direction as part of the [.NET Foundation Technical Steering Group](https://dotnetfoundation.org/blog/tsg-welcome).
 
 ## Acquisition
 

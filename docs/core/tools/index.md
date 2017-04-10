@@ -74,7 +74,7 @@ dotnet /build_output/my_app.dll
 
 ### Driver
 
-The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../app-types.md) or executing a command. The only time `dotnet` is used without a command is when it's used to start an application.
+The driver is named [dotnet](dotnet.md) and has two responsibilities, either running a [framework-dependent app](../deploying/index.md) or executing a command. The only time `dotnet` is used without a command is when it's used to start an application.
 
 To run a framework-dependent app, specify the app after the driver, for example, `dotnet /path/to/my_app.dll`. When executing the command from the folder where the app's DLL resides, simply execute `dotnet my_app.dll`.
 
@@ -99,4 +99,4 @@ If you used Preview 2 tooling to produce *project.json*-based projects, consult 
 ## Additional resources
 
 * [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)
-* [.NET Core installation guide](https://aka.ms/dotnetcoregs/)
+* [.NET Core installation guide](https://aka.ms/dotnetcoregs)

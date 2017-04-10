@@ -2,7 +2,7 @@
 title: "How to: Manipulate a Table&#39;s Row Groups through the RowGroups Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "properties, RowGroups, manipulating row groups"
 ms.assetid: ea61440f-08ae-44ed-b314-5716aaaae3ed
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Manipulate a Table&#39;s Row Groups through the RowGroups Property

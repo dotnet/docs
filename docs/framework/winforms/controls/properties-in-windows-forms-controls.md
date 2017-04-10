@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "properties [Windows Forms]"
 ms.assetid: 2785279b-fb57-4937-8f6b-2050e475db6f
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Properties in Windows Forms Controls

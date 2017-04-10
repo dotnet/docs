@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "spinning elements"
 ms.assetid: 1f011976-8b07-4c31-9faf-019e0ddaa24c
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Make an Element Spin in Place

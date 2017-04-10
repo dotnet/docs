@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "bitmaps, writing metadata to"
 ms.assetid: 68f0dc4b-c0fe-43be-94f2-9d7399378fb3
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Write Metadata to a Bitmap

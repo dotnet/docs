@@ -2,7 +2,7 @@
 title: "How to: Enumerate a Subset of Print Queues | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "print queues, enumerating subset of"
 ms.assetid: cc4a1b5b-d46f-4c5e-bc26-22c226e4bee0
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enumerate a Subset of Print Queues

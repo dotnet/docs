@@ -2,7 +2,7 @@
 title: "Sharing Message Loops Between Win32 and WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "interoperability [WPF], Win32"
 ms.assetid: 39ee888c-e5ec-41c8-b11f-7b851a554442
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Sharing Message Loops Between Win32 and WPF

@@ -2,7 +2,7 @@
 title: "Adorners | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "adorners [WPF]"
 ms.assetid: 5d5f656b-8e05-4839-9d53-b0324d902aa9
 caps.latest.revision: 61
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Adorners

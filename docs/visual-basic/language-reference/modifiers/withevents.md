@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "WithEvents keyword"
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

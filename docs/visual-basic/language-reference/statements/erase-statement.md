@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Erase statement"
 ms.assetid: 7a8133d7-b750-4d74-8b66-ba1dd9778d4b
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

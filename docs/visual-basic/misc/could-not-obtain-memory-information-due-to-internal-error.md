@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrDiagnosticInfo_Memory"
 ms.assetid: 1ba8f774-5858-438e-914e-99fddc9e5e7e
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

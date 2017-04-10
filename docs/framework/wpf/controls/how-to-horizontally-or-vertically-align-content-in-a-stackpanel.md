@@ -2,7 +2,7 @@
 title: "How to: Horizontally or Vertically Align Content in a StackPanel | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "aligning, content"
 ms.assetid: c1e8f962-72c8-4e7a-8670-7a2d7e021791
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Horizontally or Vertically Align Content in a StackPanel

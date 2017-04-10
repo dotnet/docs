@@ -2,7 +2,7 @@
 title: "How to: Group Items in a ListView That Implements a GridView | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "GridView controls, grouping items"
 ms.assetid: eebef25b-ddc6-424e-a66d-ea228d1bf33d
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Group Items in a ListView That Implements a GridView

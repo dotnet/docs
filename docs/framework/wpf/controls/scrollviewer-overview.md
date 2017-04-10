@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "ScrollViewer control, about ScrollViewer control"
 ms.assetid: 94a13b94-cfdf-4b12-a1aa-90cb50c6e9b9
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ScrollViewer Overview

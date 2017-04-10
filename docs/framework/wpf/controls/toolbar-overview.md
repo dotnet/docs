@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "ToolBar control"
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
 caps.latest.revision: 28
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolBar Overview

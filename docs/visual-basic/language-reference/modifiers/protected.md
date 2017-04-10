@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Protected keyword"
 ms.assetid: 74ad3d56-309f-49d2-b60c-1d0157d010e8
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "templates [WPF], ToolBar"
 ms.assetid: bd875f46-4690-46f5-81e0-f11a9822484f
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolBar Styles and Templates

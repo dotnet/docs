@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms]"
 ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
 caps.latest.revision: 28
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolStrip Control (Windows Forms)

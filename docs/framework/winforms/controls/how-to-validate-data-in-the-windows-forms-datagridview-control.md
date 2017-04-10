@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data validation, Windows Forms"
 ms.assetid: d10aef35-701e-4a3c-a684-2a2ed1aeaca6
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Validate Data in the Windows Forms DataGridView Control

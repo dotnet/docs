@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ToolStripPanel control [Windows Forms], joining together"
 ms.assetid: 4eadda6d-e3b8-4151-aaf2-a8d564fbe6b3
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Join ToolStripPanels

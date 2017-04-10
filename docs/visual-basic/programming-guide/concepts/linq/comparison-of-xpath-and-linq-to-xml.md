@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: c3fd07c1-6761-4e4b-8eb1-ddd780ed8d44
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Comparison of XPath and LINQ to XML

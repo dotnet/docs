@@ -2,7 +2,7 @@
 title: "Join by using composite keys"
 description: How to join by using composite keys.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

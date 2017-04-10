@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "out compiler option [Visual Basic]"
 ms.assetid: 9f148c15-0909-4cb8-a2db-777f8a8b45ae
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

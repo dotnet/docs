@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], creating"
 ms.assetid: f50e270e-4db2-409a-8319-6db6ca5c7daf
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Authoring a Composite Control with Visual Basic

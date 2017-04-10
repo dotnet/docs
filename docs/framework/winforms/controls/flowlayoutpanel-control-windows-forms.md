@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms, arranging contents"
 ms.assetid: 630c9305-9ecf-4f99-94f9-ddf06de82713
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FlowLayoutPanel Control (Windows Forms)

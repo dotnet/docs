@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], invalidation and painting"
 ms.assetid: aae8e1e6-4786-432b-a15e-f4c44760d302
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Rendering a Windows Forms Control

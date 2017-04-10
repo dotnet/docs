@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "arrays [Visual Basic], parameter arrays"
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

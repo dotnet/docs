@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "namespaces"
 ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML Namespaces and Namespace Mapping for WPF XAML

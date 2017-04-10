@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "TabControl control [Windows Forms], displaying side-aligned tabs"
 ms.assetid: 110d5abd-3ae3-4ded-95bf-778aaac798a0
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Side-Aligned Tabs with TabControl

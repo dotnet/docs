@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "RichTextBox control [Windows Forms], displaying scroll bars"
 ms.assetid: cdeb42e1-86e8-410c-ba46-18aec264ef5f
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Scroll Bars in the Windows Forms RichTextBox Control

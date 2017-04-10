@@ -2,7 +2,7 @@
 title: "How to: Localize an Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "applications, localizing"
 ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
 caps.latest.revision: 37
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Localize an Application

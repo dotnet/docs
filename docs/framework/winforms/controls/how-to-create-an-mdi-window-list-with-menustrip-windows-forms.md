@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms], creating window lists"
 ms.assetid: 04fb414b-811f-4a83-aab6-b4a24646dec5
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create an MDI Window List with MenuStrip (Windows Forms)

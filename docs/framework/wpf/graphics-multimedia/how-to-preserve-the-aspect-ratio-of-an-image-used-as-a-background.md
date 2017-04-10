@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "background images, preserving aspect ratios"
 ms.assetid: 28c39478-13d7-4011-80a3-8b9cc3e54478
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Preserve the Aspect Ratio of an Image Used as a Background

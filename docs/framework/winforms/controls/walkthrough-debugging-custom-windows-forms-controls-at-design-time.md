@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "design-time debugging"
 ms.assetid: 1fd83ccd-3798-42fc-85a3-6cba99467387
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Debugging Custom Windows Forms Controls at Design Time

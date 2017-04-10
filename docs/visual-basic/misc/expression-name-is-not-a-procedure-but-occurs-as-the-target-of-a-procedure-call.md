@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrExpressionNotProcedure"
 ms.assetid: 59169d44-a279-4aca-8f14-fba8d69d8959
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

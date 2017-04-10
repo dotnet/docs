@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], adding list items"
 ms.assetid: 1b35a80a-edd8-495f-a807-a28c4aae52c6
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add and Remove Items with the Windows Forms ListView Control

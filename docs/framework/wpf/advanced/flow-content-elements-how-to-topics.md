@@ -2,7 +2,7 @@
 title: "Flow Content Elements How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "documents, flow content reference"
 ms.assetid: ef5175df-6ab9-4096-be0c-804003b44c64
 caps.latest.revision: 62
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Flow Content Elements How-to Topics

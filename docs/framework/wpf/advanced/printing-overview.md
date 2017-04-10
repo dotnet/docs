@@ -2,7 +2,7 @@
 title: "Printing Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "GDI print path"
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
 caps.latest.revision: 35
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Printing Overview

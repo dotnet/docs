@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "GoTo statement, syntax"
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

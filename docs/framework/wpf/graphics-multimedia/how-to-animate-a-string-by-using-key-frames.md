@@ -2,7 +2,7 @@
 title: "How to: Animate a String by Using Key Frames | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "key frames, animating strings with"
 ms.assetid: c62bc9fd-c09a-4227-bce0-0a1ab82049dd
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate a String by Using Key Frames

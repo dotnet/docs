@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], aligning"
 ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Align Multiple Controls on Windows Forms

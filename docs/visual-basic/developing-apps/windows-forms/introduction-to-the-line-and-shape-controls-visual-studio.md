@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "shapes, drawing"
 ms.assetid: 5c4e8b1a-0733-4020-af6c-f582f4026728
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

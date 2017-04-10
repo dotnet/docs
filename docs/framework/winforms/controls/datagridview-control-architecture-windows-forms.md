@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], architecture"
 ms.assetid: 1c6cabf0-02ee-4bbc-9574-b54bb7f5b19e
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DataGridView Control Architecture (Windows Forms)

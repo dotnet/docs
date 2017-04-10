@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "math operators"
 ms.assetid: 330178e0-a375-4742-b662-b3080c89fa54
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "Shape objects"
 ms.assetid: 893253b8-c2df-4f22-961d-cbc533d64c79
 caps.latest.revision: 52
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Shapes

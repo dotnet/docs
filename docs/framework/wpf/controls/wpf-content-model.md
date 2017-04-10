@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "ContentControl class [WPF], displaying content"
 ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF Content Model

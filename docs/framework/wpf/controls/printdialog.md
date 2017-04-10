@@ -2,7 +2,7 @@
 title: "PrintDialog | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "PrintDialog control [WPF]"
 ms.assetid: 0ce9e3e7-206f-45ec-b845-4c05cfb5ff1d
 caps.latest.revision: 74
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PrintDialog

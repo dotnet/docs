@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrLinguisticRequirements"
 ms.assetid: 99cdb11d-9488-460b-84fb-a27f43da8be4
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

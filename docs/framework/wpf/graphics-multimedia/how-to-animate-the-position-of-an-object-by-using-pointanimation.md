@@ -2,7 +2,7 @@
 title: "How to: Animate the Position of an Object by Using PointAnimation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "animation, PointAnimation"
 ms.assetid: 42310977-cc90-438a-8a47-0345898e01be
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate the Position of an Object by Using PointAnimation

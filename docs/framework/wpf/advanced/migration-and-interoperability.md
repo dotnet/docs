@@ -2,7 +2,7 @@
 title: "Migration and Interoperability | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "migration [WPF]"
 ms.assetid: d655de05-bf63-4814-bc64-6b3be01c70a2
 caps.latest.revision: 41
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Migration and Interoperability

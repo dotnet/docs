@@ -2,7 +2,7 @@
 title: "How to: Display ListView Contents by Using a GridView | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "GridView, displaying ListView contents"
 ms.assetid: 5bc1e767-ab46-4f14-bd41-3d5d39e1d000
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display ListView Contents by Using a GridView

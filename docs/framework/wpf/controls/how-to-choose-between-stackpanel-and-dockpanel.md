@@ -2,7 +2,7 @@
 title: "How to: Choose Between StackPanel and DockPanel | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls [WPF], StackPanel"
 ms.assetid: f9239086-451f-42e6-81f7-ef89ef349742
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Choose Between StackPanel and DockPanel

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "collection initializers [Visual Basic]"
 ms.assetid: c858db10-424d-47e0-92cd-e08087cc5ebc
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

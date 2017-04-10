@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], positioning items"
 ms.assetid: 11fd7c5b-ee5c-4993-9a11-89127ff0aa7a
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Position a ToolStripItem on a ToolStrip

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "constants, enumerated"
 ms.assetid: bbb5c3cc-7cdb-4814-8d6a-a6d91546ed1e
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

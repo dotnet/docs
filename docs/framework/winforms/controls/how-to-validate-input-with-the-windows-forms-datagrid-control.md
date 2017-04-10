@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "validation, user input"
 ms.assetid: f1e9c3a0-d0a1-4893-a615-b4b0db046c63
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Validate Input with the Windows Forms DataGrid Control

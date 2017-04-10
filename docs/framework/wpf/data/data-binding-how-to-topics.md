@@ -2,7 +2,7 @@
 title: "Data Binding How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "binding data, how-to topics"
 ms.assetid: a3b2563e-d879-41a7-9dfd-ac56b27fdcad
 caps.latest.revision: 81
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Data Binding How-to Topics

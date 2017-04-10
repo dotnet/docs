@@ -2,7 +2,7 @@
 title: "How to: Send Data to the Active MDI Child | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Clipboard, getting data from"
 ms.assetid: 1047d2fe-1235-46db-aad9-563aea1d743b
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Send Data to the Active MDI Child

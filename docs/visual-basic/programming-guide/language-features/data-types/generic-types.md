@@ -47,8 +47,8 @@ helpviewer_keywords:
   - "arguments [Visual Basic], type"
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
 caps.latest.revision: 45
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

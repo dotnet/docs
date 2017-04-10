@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "progress controls, setting value displayed"
 ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Value Displayed by the Windows Forms ProgressBar Control

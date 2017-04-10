@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrRate_NPerMustBeGTZero"
 ms.assetid: d49242df-dbd1-4b26-bd8c-ed56d24fdfcd
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

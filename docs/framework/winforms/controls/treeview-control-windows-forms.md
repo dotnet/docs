@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms]"
 ms.assetid: 879438b4-4eac-45c6-b345-0229c9b21ab0
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TreeView Control (Windows Forms)

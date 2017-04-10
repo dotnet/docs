@@ -2,7 +2,7 @@
 title: "How to: Draw a Filled Rectangle on a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "drawing rectangles"
 ms.assetid: d656a93c-987d-4809-aafd-493fe17450f0
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw a Filled Rectangle on a Windows Form

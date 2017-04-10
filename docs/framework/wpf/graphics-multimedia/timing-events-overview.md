@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "timing events"
 ms.assetid: 597e3280-0867-4359-a97b-5b2f4149e350
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Timing Events Overview

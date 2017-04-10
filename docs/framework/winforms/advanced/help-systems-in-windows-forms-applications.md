@@ -2,7 +2,7 @@
 title: "Help Systems in Windows Forms Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "HelpProvider component [Windows Forms], providing Help in Windows applications"
 ms.assetid: 2a96a278-432c-41fc-9e3c-5bfedf5e1267
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Help Systems in Windows Forms Applications

@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "execution, stopping"
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

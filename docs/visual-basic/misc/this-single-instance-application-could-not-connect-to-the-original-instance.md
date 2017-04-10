@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrAppModel_SingleInstanceCantConnect"
 ms.assetid: 7c2c0cee-02a1-4157-be03-39d18e18408f
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "components [Visual Basic]"
 ms.assetid: ee6a4156-73f7-4e9b-8e01-c74c4798b65c
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

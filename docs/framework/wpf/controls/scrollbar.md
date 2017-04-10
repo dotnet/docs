@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls [WPF], ScrollBar"
 ms.assetid: 60f27d35-8f7b-4285-89d2-28336a4c073a
 caps.latest.revision: 69
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ScrollBar

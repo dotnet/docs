@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Alias keyword"
 ms.assetid: 58c06b11-465d-4d87-906a-73200a3d7f19
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

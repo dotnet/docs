@@ -2,7 +2,7 @@
 title: "Graphics Rendering Tiers | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "graphics, rendering tiers"
 ms.assetid: 08dd1606-02a2-4122-9351-c0afd2ec3a70
 caps.latest.revision: 44
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Graphics Rendering Tiers

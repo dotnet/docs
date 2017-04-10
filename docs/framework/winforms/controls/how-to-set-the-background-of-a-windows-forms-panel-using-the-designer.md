@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "colors, Windows Forms Panel controls"
 ms.assetid: db83cf54-3c69-4b08-ac6c-25b9b5abb1b0
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Background of a Windows Forms Panel Using the Designer

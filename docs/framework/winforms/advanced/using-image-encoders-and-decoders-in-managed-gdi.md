@@ -2,7 +2,7 @@
 title: "Using Image Encoders and Decoders in Managed GDI+ | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "image decoders, using"
 ms.assetid: 0e838ea1-4e7e-4334-b882-ab25df607b8b
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Using Image Encoders and Decoders in Managed GDI+

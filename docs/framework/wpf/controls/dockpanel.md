@@ -2,7 +2,7 @@
 title: "DockPanel | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DockPanel control [WPF]"
 ms.assetid: 8d3d290b-d38c-47d0-918e-cee2baeb92ae
 caps.latest.revision: 62
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DockPanel

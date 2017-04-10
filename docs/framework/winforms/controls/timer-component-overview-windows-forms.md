@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "timers, about timers"
 ms.assetid: e672c05b-a8b6-4b26-9e4d-9223aa9e3873
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Timer Component Overview (Windows Forms)

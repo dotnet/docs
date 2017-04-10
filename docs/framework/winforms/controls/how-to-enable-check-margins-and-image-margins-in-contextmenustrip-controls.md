@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms]"
 ms.assetid: eb584e71-59da-4012-aaca-dbe1c7c7a156
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls

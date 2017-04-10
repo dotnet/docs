@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataRepeater, disabling add"
 ms.assetid: 298d8f60-ddfe-4361-ab66-cf76d0df5220
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

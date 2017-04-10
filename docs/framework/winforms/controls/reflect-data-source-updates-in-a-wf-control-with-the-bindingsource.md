@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: bd8bd9b2-af8a-4f11-a3d5-54eecbe2400b
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource

@@ -2,7 +2,7 @@
 title: "Accessing Unexposed Members on the Managed HTML Document Object Model | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "managed HTML DOM, accessing unexposed members"
 ms.assetid: 762295bd-2355-4aa7-b43c-5bff997a33e6
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Accessing Unexposed Members on the Managed HTML Document Object Model

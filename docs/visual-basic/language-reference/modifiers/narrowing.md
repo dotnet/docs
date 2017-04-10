@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "data type conversion"
 ms.assetid: a207ee91-aca4-4771-b4e2-713f029bf2bb
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

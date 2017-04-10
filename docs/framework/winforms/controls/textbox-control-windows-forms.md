@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "TextBox control [Windows Forms]"
 ms.assetid: e5a06987-8aec-4271-b196-2245ba992d62
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TextBox Control (Windows Forms)

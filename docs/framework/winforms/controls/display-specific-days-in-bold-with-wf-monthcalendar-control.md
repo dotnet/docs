@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "MonthCalendar control [Windows Forms], dates displayed in bold"
 ms.assetid: 8b20db5b-8118-4825-90e8-2c45c186ac7d
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control

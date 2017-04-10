@@ -2,7 +2,7 @@
 title: "Navigation How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "navigation [WPF]"
 ms.assetid: f804648e-558c-4f60-8e48-d11f4a23c436
 caps.latest.revision: 64
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Navigation How-to Topics

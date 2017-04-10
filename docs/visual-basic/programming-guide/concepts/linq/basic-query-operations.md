@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "Select clause [LINQ in Visual Basic]"
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
 caps.latest.revision: 37
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

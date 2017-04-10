@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: c3e8b3ff-fceb-4428-b0ca-1ed6f128aac8
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # LINQ to XML Annotations

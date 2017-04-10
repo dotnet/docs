@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "= assignment statements [Visual Basic]"
 ms.assetid: 2dac2e49-86c8-42f8-80c1-458452fb5e29
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,7 +2,7 @@
 title: "How to: Get the Default View of a Data Collection | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "data binding, creating views of data collections"
 ms.assetid: b641e96c-c2f6-42ea-9c5d-bac81176ad65
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Get the Default View of a Data Collection

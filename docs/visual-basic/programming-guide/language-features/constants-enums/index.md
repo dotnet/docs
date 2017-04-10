@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "Visual Basic code, improving readability with constants"
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

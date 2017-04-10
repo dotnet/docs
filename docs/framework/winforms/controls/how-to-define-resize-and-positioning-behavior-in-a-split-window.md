@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "SplitContainer control [Windows Forms], resizing"
 ms.assetid: 9bf73f36-ed2d-4a02-b15a-0770eff4fdfa
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Define Resize and Positioning Behavior in a Split Window

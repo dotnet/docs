@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "list views, displaying icons"
 ms.assetid: 9d577542-8595-429b-99e5-078770ec9d35
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Icons for the Windows Forms ListView Control

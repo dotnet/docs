@@ -2,7 +2,7 @@
 title: "Custom Dependency Properties | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "dependency properties, custom"
 ms.assetid: e6bfcfac-b10d-4f58-9f77-a864c2a2938f
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Custom Dependency Properties

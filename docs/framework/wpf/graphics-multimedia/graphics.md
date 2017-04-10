@@ -2,7 +2,7 @@
 title: "Graphics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "graphics [WPF], effects"
 ms.assetid: 3bfc652e-91b7-4697-a4f4-83ff0e98327e
 caps.latest.revision: 73
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Graphics

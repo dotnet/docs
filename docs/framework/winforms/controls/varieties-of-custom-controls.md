@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ms.assetid: 3cea09e5-4344-4ccb-9858-b66ccac210ff
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Varieties of Custom Controls

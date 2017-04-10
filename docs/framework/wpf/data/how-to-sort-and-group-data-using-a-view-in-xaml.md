@@ -2,7 +2,7 @@
 title: "How to: Sort and Group Data Using a View in XAML | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "views, grouping data"
 ms.assetid: 145c8c3f-dbdd-4d0d-816f-90b35eba7eda
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Sort and Group Data Using a View in XAML

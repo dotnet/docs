@@ -2,7 +2,7 @@
 title: "How to: Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "configuring Visual Studio to debug XBAPs [WPF]"
 ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service

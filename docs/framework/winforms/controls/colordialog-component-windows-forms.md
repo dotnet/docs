@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "color dialog box"
 ms.assetid: 261793e0-8252-47c5-b76c-621857b8da44
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ColorDialog Component (Windows Forms)

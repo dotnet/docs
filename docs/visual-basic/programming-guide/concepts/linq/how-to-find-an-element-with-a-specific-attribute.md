@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 59fb7c19-d42f-40eb-8cf8-f1d5b9658eb7
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find an Element with a Specific Attribute (Visual Basic)

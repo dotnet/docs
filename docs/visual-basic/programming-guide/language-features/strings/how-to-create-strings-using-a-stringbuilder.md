@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], using StringBuilder"
 ms.assetid: 9c042880-aa16-432e-9ccb-cd00abda9ae3
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

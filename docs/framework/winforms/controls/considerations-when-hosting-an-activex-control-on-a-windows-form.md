@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ActiveX controls [Windows Forms], adding"
 ms.assetid: 2509302d-a74e-484f-9890-2acdbfa67a68
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Considerations When Hosting an ActiveX Control on a Windows Form

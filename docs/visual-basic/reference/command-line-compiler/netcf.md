@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "/netcf compiler option [Visual Basic]"
 ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

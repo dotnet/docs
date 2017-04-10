@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "painting, with radial gradients"
 ms.assetid: b5d0fc8a-8986-4796-b003-a75b41a48928
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Paint an Area with a Radial Gradient

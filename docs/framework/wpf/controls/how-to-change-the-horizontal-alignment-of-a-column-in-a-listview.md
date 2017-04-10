@@ -2,7 +2,7 @@
 title: "How to: Change the Horizontal Alignment of a Column in a ListView | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "ListView controls, horizontal alignment"
 ms.assetid: b9573e44-9dad-4d14-939c-7859ca372758
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Horizontal Alignment of a Column in a ListView

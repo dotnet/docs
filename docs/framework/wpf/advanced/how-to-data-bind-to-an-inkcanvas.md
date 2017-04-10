@@ -2,7 +2,7 @@
 title: "How to: Data Bind to an InkCanvas | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "binding data, to InkCanvas"
 ms.assetid: 8d6b4d9e-ea7f-4412-ba83-3feccec5a515
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Data Bind to an InkCanvas

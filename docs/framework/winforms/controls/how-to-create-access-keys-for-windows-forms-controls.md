@@ -27,8 +27,8 @@ helpviewer_keywords:
   - "ALT key"
 ms.assetid: 4faa0991-28ec-4eca-91db-51dc2cd6a7ac
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Access Keys for Windows Forms Controls

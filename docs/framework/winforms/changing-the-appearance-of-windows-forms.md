@@ -2,7 +2,7 @@
 title: "Changing the Appearance of Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Windows Forms, changing the appearance of"
 ms.assetid: 12f35d5b-1587-49cc-ada3-47eec1ff1738
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Changing the Appearance of Windows Forms

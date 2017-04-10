@@ -2,7 +2,7 @@
 title: "ListBox How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls, ListBox"
 ms.assetid: 15d58f1d-3db6-4cb5-88c7-8c45f19301e2
 caps.latest.revision: 67
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ListBox How-to Topics

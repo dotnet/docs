@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "tree nodes in TreeView control, icons"
 ms.assetid: c14ddcc0-e5a6-4c21-a2d5-6799fd491781
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Icons for the Windows Forms TreeView Control

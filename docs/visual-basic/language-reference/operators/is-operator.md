@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Is operator [Visual Basic]"
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,7 +2,7 @@
 title: "ProgressBar | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ProgressBar control [WPF]"
 ms.assetid: 4545b358-b93c-47df-88e4-9946d7db9e3f
 caps.latest.revision: 65
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ProgressBar

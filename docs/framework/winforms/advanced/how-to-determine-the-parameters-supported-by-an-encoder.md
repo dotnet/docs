@@ -2,7 +2,7 @@
 title: "How to: Determine the Parameters Supported by an Encoder | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "encoder parameters, determining supported"
 ms.assetid: f47ae459-e3ce-4d41-a140-2f6c6aea3f44
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Determine the Parameters Supported by an Encoder

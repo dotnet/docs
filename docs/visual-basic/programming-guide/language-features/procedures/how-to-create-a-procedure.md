@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "procedures, about procedures"
 ms.assetid: 4f779247-0b50-47e8-9e5c-ab5cf39ac0d2
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

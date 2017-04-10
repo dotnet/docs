@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "progress controls, about progress controls"
 ms.assetid: a05d9cba-3a6a-4f8f-94b8-8ec12799fb80
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ProgressBar Control Overview (Windows Forms)

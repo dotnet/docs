@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: a07e9645-b45b-403b-b698-f652f904c7d2
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve a Collection of Attributes (LINQ to XML) (Visual Basic)

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], custom colors"
 ms.assetid: e2752fe2-1afb-489e-ab96-b7805acd96bc
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Customize Colors in ToolStrip Applications

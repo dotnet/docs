@@ -2,7 +2,7 @@
 title: "How to: Animate the Thickness of a Border by Using Key Frames | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "border thickness, animating with key frames"
 ms.assetid: 3a9cb463-0a63-407d-aae7-3fbb1a559947
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate the Thickness of a Border by Using Key Frames

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Visual Basic code, documenting with XML"
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

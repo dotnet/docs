@@ -2,7 +2,7 @@
 title: "How to: Create a Quadratic Bezier Curve | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "graphics [WPF], quadratic Bezier curves"
 ms.assetid: cd8fca4a-504e-4fd8-92ea-2969065a6e02
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Quadratic Bezier Curve

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "LINQ, queries"
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

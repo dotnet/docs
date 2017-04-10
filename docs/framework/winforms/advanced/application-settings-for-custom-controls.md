@@ -2,7 +2,7 @@
 title: "Application Settings for Custom Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], custom controls"
 ms.assetid: f44afb74-76cc-44f2-890a-44b7cdc211a1
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Application Settings for Custom Controls

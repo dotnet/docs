@@ -2,7 +2,7 @@
 title: "How to: Use SelectedValue, SelectedValuePath, and SelectedItem | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "SelectedValue, SelectedItem properties"
 ms.assetid: 2fc92ad4-f02c-4f89-bbe9-d4978a7af0db
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use SelectedValue, SelectedValuePath, and SelectedItem

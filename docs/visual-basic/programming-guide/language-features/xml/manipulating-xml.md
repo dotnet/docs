@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "XML [Visual Basic], manipulating"
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

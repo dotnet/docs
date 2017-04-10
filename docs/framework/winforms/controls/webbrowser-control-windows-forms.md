@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Web pages, Windows Forms controls"
 ms.assetid: 12667861-5b5b-46bc-8fb5-675e25264c9f
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WebBrowser Control (Windows Forms)

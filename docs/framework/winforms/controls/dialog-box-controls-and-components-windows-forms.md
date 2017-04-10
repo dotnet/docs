@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms, dialog boxes"
 ms.assetid: 6e5f5e9e-58d6-45f3-9df0-48b7bb6bfd5c
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Dialog-Box Controls and Components (Windows Forms)

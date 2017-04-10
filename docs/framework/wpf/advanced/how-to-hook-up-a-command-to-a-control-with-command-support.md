@@ -2,7 +2,7 @@
 title: "How to: Hook Up a Command to a Control with Command Support | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "classes, RoutedCommand, attaching to a Control"
 ms.assetid: 8d8592ae-0c91-469e-a1cd-d179c4544548
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hook Up a Command to a Control with Command Support

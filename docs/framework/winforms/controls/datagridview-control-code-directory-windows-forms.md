@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], code directory"
 ms.assetid: ea8bd66a-5ed6-491b-b9da-63873e275a0a
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DataGridView Control Code Directory (Windows Forms)

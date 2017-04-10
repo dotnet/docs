@@ -2,7 +2,7 @@
 title: "Restricting the Drawing Surface in GDI+ | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "GDI+, restricting drawing surface"
 ms.assetid: 8b5f71d9-d2f0-4540-9c41-740f90fd4c26
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Restricting the Drawing Surface in GDI+

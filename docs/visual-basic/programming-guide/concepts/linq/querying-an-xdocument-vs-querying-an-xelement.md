@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 2d111f84-0ded-4cde-8d93-5440557a726d
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Querying an XDocument vs. Querying an XElement (Visual Basic)

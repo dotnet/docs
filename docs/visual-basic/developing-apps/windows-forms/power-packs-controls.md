@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Power Packs"
 ms.assetid: 5e53a2d2-f200-4357-8b20-430f8f4860a4
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

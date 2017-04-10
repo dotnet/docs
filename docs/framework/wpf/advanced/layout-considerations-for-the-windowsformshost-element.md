@@ -2,7 +2,7 @@
 title: "Layout Considerations for the WindowsFormsHost Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "device-independent pixels"
 ms.assetid: 3c574597-bbde-440f-95cc-01371f1a5d9d
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Layout Considerations for the WindowsFormsHost Element

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], aligning"
 ms.assetid: bb54bce5-880f-4a36-af68-8cf92058dc1c
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Arrange Controls with Snaplines and the Grid in Windows Forms

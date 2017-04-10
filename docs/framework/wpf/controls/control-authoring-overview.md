@@ -2,7 +2,7 @@
 title: "Control Authoring Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "authoring overview for controls"
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
 caps.latest.revision: 32
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Control Authoring Overview

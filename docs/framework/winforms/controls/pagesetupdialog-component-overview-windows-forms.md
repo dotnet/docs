@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "PageSetupDialog component"
 ms.assetid: 791caacb-a5ca-4fca-bad9-1a5721ad697c
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PageSetupDialog Component Overview (Windows Forms)

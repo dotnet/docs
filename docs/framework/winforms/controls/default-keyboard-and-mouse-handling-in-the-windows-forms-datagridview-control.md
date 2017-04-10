@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "navigation keys, DataGridView control"
 ms.assetid: 4519b928-bfc8-4e8b-bb9c-b1e76a0ca552
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control

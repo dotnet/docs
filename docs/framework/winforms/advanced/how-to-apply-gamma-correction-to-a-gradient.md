@@ -2,7 +2,7 @@
 title: "How to: Apply Gamma Correction to a Gradient | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "gradients, gamma correction"
 ms.assetid: da4690e7-5fac-4fd2-b3f0-5cb35c165b92
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Apply Gamma Correction to a Gradient

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: f8028ba8-2dd1-4425-930c-8cc23176ebbc
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)

@@ -2,7 +2,7 @@
 title: "Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], examples"
 ms.assetid: 78085f26-d5d2-4b75-813e-e932b72fd06f
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control

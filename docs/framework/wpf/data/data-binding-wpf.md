@@ -2,7 +2,7 @@
 title: "Data Binding (WPF) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "binding data"
 ms.assetid: 90f79b97-17e7-40d1-abf0-3ba600ad1d7e
 caps.latest.revision: 79
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Data Binding (WPF)

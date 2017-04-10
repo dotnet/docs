@@ -2,7 +2,7 @@
 title: "How to: Change the Color of an Element Using Focus Events | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "elements, changing color of"
 ms.assetid: 7e246802-3625-47a7-ae9d-c8a2a40fd040
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Color of an Element Using Focus Events

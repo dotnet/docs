@@ -2,7 +2,7 @@
 title: "How to: Manually Render Buffered Graphics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "BufferedGraphics class"
 ms.assetid: 5192295e-bd8e-45f7-8bd6-5c4f6bd21e61
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Manually Render Buffered Graphics

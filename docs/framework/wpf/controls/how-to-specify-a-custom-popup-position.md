@@ -2,7 +2,7 @@
 title: "How to: Specify a Custom Popup Position | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "Popup control, specifying custom position"
 ms.assetid: 28c24f39-d3aa-4ee2-b950-384b4a5dab92
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Specify a Custom Popup Position

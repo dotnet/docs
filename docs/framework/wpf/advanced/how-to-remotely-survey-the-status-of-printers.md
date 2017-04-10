@@ -2,7 +2,7 @@
 title: "How to: Remotely Survey the Status of Printers | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "status, printers, surveying remotely"
 ms.assetid: d6324759-8292-4c23-9584-9c708887dc94
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Remotely Survey the Status of Printers

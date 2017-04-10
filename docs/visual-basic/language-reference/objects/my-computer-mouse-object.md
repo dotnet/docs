@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Computer.Mouse object"
 ms.assetid: da473357-2120-47dd-bd42-c63d695157eb
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

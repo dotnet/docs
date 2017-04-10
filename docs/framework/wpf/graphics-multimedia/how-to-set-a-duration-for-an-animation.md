@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "duration of animations"
 ms.assetid: 155034ef-7d00-4416-a73c-b1713992d2eb
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set a Duration for an Animation

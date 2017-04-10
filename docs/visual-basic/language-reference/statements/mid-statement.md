@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], replacing"
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

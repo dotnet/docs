@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "New keyword"
 ms.assetid: d7d566d7-fe0e-4336-91f7-641a542de4d0
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

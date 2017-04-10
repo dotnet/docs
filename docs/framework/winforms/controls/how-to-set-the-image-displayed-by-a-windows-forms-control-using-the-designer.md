@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "setting images, Windows Forms controls"
 ms.assetid: ae80d07a-e469-4251-90ca-df71f5852454
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Image Displayed by a Windows Forms Control Using the Designer

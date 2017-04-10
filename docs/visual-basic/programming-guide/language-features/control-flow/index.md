@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "conditional statements, control flow"
 ms.assetid: 5623ef47-52b1-4202-befd-9af36422ec6f
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

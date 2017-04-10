@@ -2,7 +2,7 @@
 title: "Basic Formatting and Styling in the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "data grids, formatting"
 ms.assetid: b9b90836-1f56-4aa9-8db8-edc78fe830e8
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Basic Formatting and Styling in the Windows Forms DataGridView Control

@@ -2,7 +2,7 @@
 title: "Styling for Focus in Controls, and FocusVisualStyle | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "styles, focus visual style"
 ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Styling for Focus in Controls, and FocusVisualStyle

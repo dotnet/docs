@@ -2,11 +2,10 @@
 title: "Multithreaded Programming with the Event-based Asynchronous Pattern | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -21,8 +20,8 @@ helpviewer_keywords:
   - "AsyncCompletedEventArgs class"
 ms.assetid: 958d6617-5e70-4b36-b5db-63c16dc35e43
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Multithreaded Programming with the Event-based Asynchronous Pattern

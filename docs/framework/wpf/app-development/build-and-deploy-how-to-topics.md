@@ -2,7 +2,7 @@
 title: "Build and Deploy How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "WPF application, deploying"
 ms.assetid: 88952ad2-5b74-48ca-a4c5-3f4fbb53ce12
 caps.latest.revision: 82
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Build and Deploy How-to Topics

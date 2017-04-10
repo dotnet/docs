@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], scenarios"
 ms.assetid: 09a5fd05-3447-47ec-a4ec-6082a2b7f0dd
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DataGridView Control Scenarios (Windows Forms)

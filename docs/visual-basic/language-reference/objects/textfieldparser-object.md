@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "TextFieldParser class"
 ms.assetid: d44bd2b0-7dfc-410b-a48b-534c1e97460b
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

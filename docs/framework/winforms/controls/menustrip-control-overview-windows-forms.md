@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "menus, creating"
 ms.assetid: f45516e5-bf01-4468-b851-d45f4c33c055
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # MenuStrip Control Overview (Windows Forms)

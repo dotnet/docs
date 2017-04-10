@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "PrintPreviewDialog control (using designer), about PrintPreviewDialog"
 ms.assetid: efd4ee8d-6edd-47ec-88e4-4a4759bd2384
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PrintPreviewDialog Control Overview (Windows Forms)

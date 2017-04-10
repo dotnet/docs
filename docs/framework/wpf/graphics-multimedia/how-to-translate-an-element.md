@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "TranslateTransform class"
 ms.assetid: 461c8273-15df-42f6-8672-89ba22887cc0
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Translate an Element

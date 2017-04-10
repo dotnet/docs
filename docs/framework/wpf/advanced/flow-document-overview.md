@@ -2,7 +2,7 @@
 title: "Flow Document Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "flow documents"
 ms.assetid: ef236a50-d44f-43c8-ba7c-82b0c733c0b7
 caps.latest.revision: 39
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Flow Document Overview

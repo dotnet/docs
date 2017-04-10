@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "data grids, sizing options"
 ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Sizing Options in the Windows Forms DataGridView Control

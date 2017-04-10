@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "matrix animation"
 ms.assetid: 877dc9aa-6bdc-4beb-8772-3efaec32c0f0
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Rotate an Object by Using a Geometric Path (Matrix Animation)

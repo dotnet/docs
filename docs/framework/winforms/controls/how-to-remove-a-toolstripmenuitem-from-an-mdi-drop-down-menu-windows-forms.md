@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "MDI, merging menu items"
 ms.assetid: bdafe60d-82ee-45bc-97fe-eeefca6e54c1
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Remove a ToolStripMenuItem from an MDI Drop-Down Menu (Windows Forms)

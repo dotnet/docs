@@ -2,7 +2,7 @@
 title: "How to: Animate a Rectangle Geometry by Using Key Frames | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "animation, RectangleGeometry objects with key frames"
 ms.assetid: a8b45ceb-0e32-4ba1-928f-df6d30db17c6
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate a Rectangle Geometry by Using Key Frames

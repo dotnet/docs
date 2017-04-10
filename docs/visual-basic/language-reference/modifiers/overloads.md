@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "signature, hiding by"
 ms.assetid: 0c6820b8-25b2-4664-bc59-5ca93c99c042
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

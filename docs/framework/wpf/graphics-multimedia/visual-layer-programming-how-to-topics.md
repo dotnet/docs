@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "visual layer"
 ms.assetid: ac550423-60a3-43e6-a0bc-d65ef026e0cb
 caps.latest.revision: 77
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Visual Layer Programming How-to Topics

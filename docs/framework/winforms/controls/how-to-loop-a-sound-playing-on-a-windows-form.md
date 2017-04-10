@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "playing sounds, looping"
 ms.assetid: ea95dd46-10a3-46c0-8263-4b205f00df7f
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Loop a Sound Playing on a Windows Form

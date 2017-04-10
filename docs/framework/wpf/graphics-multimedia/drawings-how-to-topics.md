@@ -2,7 +2,7 @@
 title: "Drawings How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "DrawingGroup objects"
 ms.assetid: 5f445633-529c-4091-8a2c-13035ac8c41b
 caps.latest.revision: 75
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Drawings How-to Topics

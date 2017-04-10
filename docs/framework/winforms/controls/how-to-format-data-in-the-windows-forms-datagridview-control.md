@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "cells, text alignment"
 ms.assetid: 8c33543c-9c08-4636-a65a-fdf714a529b7
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Format Data in the Windows Forms DataGridView Control

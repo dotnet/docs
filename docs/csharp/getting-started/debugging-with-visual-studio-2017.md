@@ -2,8 +2,8 @@
 title: Debugging Your C# Hello World Application with Visual Studio 2017
 description: Learn how to debug a Hello World app written in C# with Visual Studio 2017
 keywords: .NET Core, .NET Core console application, .NET Core debugging
-author: stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/24/2016
 ms.topic: article
 ms.prod: .net-core

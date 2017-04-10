@@ -2,7 +2,7 @@
 title: "Extend Glass Frame Into a WPF Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "glass frames, extending into applications"
 ms.assetid: 74388a3a-4b69-4a9d-ba1f-e107636bd660
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Extend Glass Frame Into a WPF Application

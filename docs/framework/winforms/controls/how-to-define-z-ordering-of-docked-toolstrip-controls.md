@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "z-order"
 ms.assetid: 8b595429-ba9f-46af-9c55-3d5cc53f7fff
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Define Z-Ordering of Docked ToolStrip Controls

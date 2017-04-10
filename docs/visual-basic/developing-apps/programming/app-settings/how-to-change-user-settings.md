@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], changing user settings"
 ms.assetid: 41250181-c594-4854-9988-8183b9eb03cf
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -121,8 +121,7 @@ tools that you wish to use, in this case **1.0.0-preview2-003121**:
 ### Migrating the project file
 The CLI and DNX both use the same basic project system based on `project.json` file. The syntax and the semantics of the 
 project file are pretty much the same, with small differences based on the scenarios. There are also some changes to 
-the schema which you can see in the [schema file](http://json.schemastore.org/project) or in a more friendly 
-[project.json reference](../tools/project-json.md). 
+the schema which you can see in the [schema file](http://json.schemastore.org/project).
 
 If you are building a console application, you need to add the following snippet to your project file:
 

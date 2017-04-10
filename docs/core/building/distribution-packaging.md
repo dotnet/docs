@@ -32,16 +32,16 @@ These are recommendations, and a specific package maintainer may choose to diver
 
 ### Minimum package set
 
-* `dotnet`: the latest shared framework. **dependencies**: `dotnet-host`
 * `dotnet-[major].[minor]`: a shared framework with the specified version (only the latest patch version for a given major+minor combination should be available in the package manager).
-* `dotnet-sdk`: the latest SDK. **dependencies**: `dotnet-host`, one or more `dotnet-[major].[minor]` (one of those is used by the SDK code itself, the others are here for users to build and run against).
-* `dotnet-sdk-[major].[minor]`: the SDK with the specified version. The version specified is the highest included version of included shared frameworks. This means users can easily relate an SDK to a shared framework.
+* `dotnet-sdk`: the latest SDK. **dependencies**: the latest `dotnet-sdk-[major].[minor]`.
+* `dotnet-sdk-[major].[minor]`: the SDK with the specified version. The version specified is the highest included version of included shared frameworks, so that users can easily relate an SDK to a shared framework. **dependencies**: `dotnet-host`, one or more `dotnet-[major].[minor]` (one of those is used by the SDK code itself, the others are here for users to build and run against).
 * `dotnet-host`: the latest host.
 
 ### Optional additional packages
 
 Some maintainers may choose to provide additional packages such as:
 
+* `dotnet`: the latest shared framework. This is useful for better discoverability, and for hosters who want to maintain cumulative availability of shared frameworks, but it is not strictly necessary. **dependencies**: `dotnet-host`, the latest `dotnet-[major].[minor]`.
 * `dotnet-lts`: the latest "Long-Term Support" version of the shared framework. [LTS and Current release trains](https://docs.microsoft.com/en-us/dotnet/articles/core/versions/lts-current) correspond to different cadences at which .NET Core gets released. Users have a choice of adopting one or the other train, based on how often they are willing to update. This is a concept that is also tied to support levels, so it may or may not make sense depending on the distro being considered.
 
 Disk layout

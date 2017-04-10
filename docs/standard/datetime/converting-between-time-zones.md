@@ -35,7 +35,7 @@ Coordinated Universal Time (UTC) is a high-precision, atomic time standard. The 
 
 The easiest way to convert a time to UTC is to call the `static` (`Shared` in Visual Basic) <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%29?displayProperty=fullName> method. The exact conversion performed by the method depends on the value of the `dateTime` parameter's <xref:System.DateTime.Kind%2A> property, as the following table shows.
 
-| DateTime.Kind property                              | Conversion                                                                     |
+| `DateTime.Kind`                                     | Conversion                                                                     |
 | --------------------------------------------------- | ------------------------------------------------------------------------------ |
 | <xref:System.DateTimeKind?displayProperty=fullName> | Converts local time to UTC.                                                    |
 | <xref:System.DateTimeKind?displayProperty=fullName> | Assumes the `dateTime` parameter is local time and converts local time to UTC. |
@@ -78,7 +78,7 @@ The following code converts UTC to Central Standard Time.
 
 To convert UTC to local time, call the <xref:System.DateTime.ToLocalTime%2A> method of the <xref:System.DateTime> object whose time you want to convert. The exact behavior of the method depends on the value of the object’s <xref:System.DateTime.Kind%2A> property, as the following table shows.
 
-| `DateTime.Kind` property   | Conversion                                                                               |
+| `DateTime.Kind`            | Conversion                                                                               |
 | -------------------------- | ---------------------------------------------------------------------------------------- |
 | `DateTimeKind.Local`       | Returns the <xref:System.DateTime> value unchanged.                                      |
 | `DateTimeKind.Unspecified` | Assumes that the <xref:System.DateTime> value is UTC and converts the UTC to local time. |

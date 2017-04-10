@@ -1,5 +1,5 @@
 ---
-title: "Trimming and Removing Characters from Strings  in .NET | Microsoft Docs"
+title: "Trimming and Removing Characters from Strings in .NET | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-4.6"

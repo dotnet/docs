@@ -20,7 +20,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Miscellaneous Constructs in Regular Expressions
-Regular expressions in the .NET Framework include three miscellaneous language constructs. One lets you enable or disable particular matching options in the middle of a regular expression pattern. The remaining two let you include comments in a regular expression.  
+Regular expressions in .NET include three miscellaneous language constructs. One lets you enable or disable particular matching options in the middle of a regular expression pattern. The remaining two let you include comments in a regular expression.  
   
 ## Inline Options  
  You can set or disable specific pattern matching options for part of a regular expression by using the syntax  

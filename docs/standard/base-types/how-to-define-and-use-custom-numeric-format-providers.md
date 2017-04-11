@@ -81,7 +81,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gives you exten
  [!code-csharp[Formatting.HowTo.NumericValue#3](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.NumericValue/cs/Telephone1.cs#3)]
  [!code-vb[Formatting.HowTo.NumericValue#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.NumericValue/vb/Telephone1.vb#3)]  
   
- If no default format specifier is defined, your implementation of the <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> method should include code such as the following so that the .NET Framework can provide formatting that your code does not support.  
+ If no default format specifier is defined, your implementation of the <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> method should include code such as the following so that .NET can provide formatting that your code does not support.  
   
  [!code-csharp[System.ICustomFormatter.Format#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.ICustomFormatter.Format/cs/format.cs#1)]
  [!code-vb[System.ICustomFormatter.Format#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.ICustomFormatter.Format/vb/Format.vb#1)]  

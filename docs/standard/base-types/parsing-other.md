@@ -1,5 +1,5 @@
 ---
-title: "Parsing Other Strings in the .NET Framework | Microsoft Docs"
+title: "Parsing Other Strings in .NET | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-4.6"
@@ -21,7 +21,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# Parsing Other Strings in the .NET Framework
+# Parsing Other Strings in .NET
 In addition to numeric and <xref:System.DateTime> strings, you can also parse strings that represent the types <xref:System.Char>, <xref:System.Boolean>, and <xref:System.Enum> into data types.  
   
 ## Char  
@@ -52,4 +52,4 @@ In addition to numeric and <xref:System.DateTime> strings, you can also parse st
 ## See Also  
  [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)   
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)   
- [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)
+ [Type Conversion in the .NET](../../../docs/standard/base-types/type-conversion.md)

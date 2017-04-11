@@ -33,7 +33,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
 -   Retrieve individual subexpressions from the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property and process them separately from the matched text as a whole.  
   
- The following table lists the grouping constructs supported by the .NET Framework regular expression engine and indicates whether they are capturing or non-capturing.  
+ The following table lists the grouping constructs supported by the .NET regular expression engine and indicates whether they are capturing or non-capturing.  
   
 |Grouping construct|Capturing or noncapturing|  
 |------------------------|-------------------------------|  

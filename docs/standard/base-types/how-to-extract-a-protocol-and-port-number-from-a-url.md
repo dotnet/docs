@@ -50,4 +50,4 @@ The following example extracts a protocol and port number from a URL.
  [!code-vb[RegularExpressions.Examples.Protocol#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Examples.Protocol/vb/example2.vb#2)]  
   
 ## See Also  
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

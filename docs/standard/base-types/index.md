@@ -1,5 +1,5 @@
 ---
-title: "Working with Base Types in the .NET Framework | Microsoft Docs"
+title: "Working with Base Types in .NET | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework-4.6"
@@ -19,8 +19,8 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# Working with Base Types in the .NET Framework
-This section describes .NET Framework base type operations, including formatting, conversion, and common operations.  
+# Working with Base Types in .NET
+This section describes .NET base type operations, including formatting, conversion, and common operations.  
   
 ## In This Section  
  [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)  

@@ -1,4 +1,4 @@
-# [File and Stream I/O](file-and-stream-i-o.md)
+# [File and Stream I/O](index.md)
 ## [Common I/O Tasks](common-i-o-tasks.md)
 ### [How to: Copy Directories](how-to-copy-directories.md)
 ### [How to: Enumerate Directories and Files](how-to-enumerate-directories-and-files.md)

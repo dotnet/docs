@@ -35,15 +35,7 @@ This sample covers how to write libraries for .NET using cross-platform CLI tool
 
 ## ASP.NET Core
 
-Many ASP.NET Core topics include samples that you can obtain by downloading the aspnet/Docs GitHub repository. The [ASP.NET Core tutorials](https://docs.microsoft.com/aspnet/core/tutorials/) include step-by-step guides and sample code for:
-
-* Building web apps
-* Building web APIs
-* Working with data
-* Authentication and authorization
-* Client-side development
-* Testing
-* Publishing and deployment
+See the [ASP.NET Core tutorials](https://docs.microsoft.com/aspnet/core/tutorials/). Many articles in the ASP.NET Core documentation have links to samples written for them.
 
 ## C# language
 
@@ -107,14 +99,13 @@ This tutorial demonstrates how to deploy an existing console app in a Windows co
 
 ## Viewing and downloading samples
 
-Many topics show source code and samples that are available for viewing or download from GitHub. To view a sample, follow the sample link to the sample folder at aspnet/Docs or dotnet/docs on GitHub. To download the code, follow these instructions:
+Many topics show source code and samples that are available for viewing or download from GitHub. To view a sample, just follow the sample link. To download the code, follow these instructions:
 
-1. Download the repository containing the sample code for your local system by performing one of the following procedures:
-   * [Fork](https://help.github.com/articles/fork-a-repo/) the repository and [clone](https://help.github.com/articles/cloning-a-repository/) the fork to your local system. Forking and cloning permits you to make contributions to the .NET documentation by committing changes to your fork and then creating a pull request for the official docs repository. For more information, see the [.NET Documentation Contributing Guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) and the [ASP.NET Docs Contributing Guide](https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md).
-   * Clone the repository locally. Note that if you clone a docs repository directly to your local system that you won't be able to make commits directly against the official repository, so you won't be able to make documentation contributions later. Use the fork and clone procedure previously described if you want to preserve the opportunity to contribute to the documentation later.
+1. Download the repository that contains the sample code by performing one of the following procedures:
    * Download a ZIP of the repository to your local system. Un-ZIP the compressed archive.
-1. Navigate within the repository to the sample's location. The relative path to the sample's location appears in the GitHub UI and in your browser's address bar when you follow the link to the sample.
-1. If you intend to run the sample code locally and prefer to run it from a different location on your system than where you maintain your repository files, copy the sample's files and folders to your preferred location.
+   * [Fork](https://help.github.com/articles/fork-a-repo/) the repository and [clone](https://help.github.com/articles/cloning-a-repository/) the fork to your local system. Forking and cloning permits you to make contributions to the documentation by committing changes to your fork and then creating a pull request for the official docs repository. For more information, see the [.NET Documentation Contributing Guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) and the [ASP.NET Docs Contributing Guide](https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md).
+   * Clone the repository locally. If you clone a docs repository directly to your local system, you won't be able to make commits directly against the official repository, so you won't be able to make documentation contributions later. Use the fork and clone procedure previously described if you want to preserve the opportunity to contribute to the documentation later.
+1. Navigate within the repository's folders to the sample's location. The relative path to the sample's location appears in your browser's address bar when you follow the link to the sample.
 1. To run a sample, you have several options:
    * Use the [dotnet CLI tools](../core/tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
    * Use [Visual Studio](https://www.visualstudio.com/) or [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project file (*.csproj* or *.fsproj*).

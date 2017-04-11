@@ -77,7 +77,7 @@ Add multiple C# projects to a solution:
 
 `dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj`
 
-Remove multiple C# projects to a solution:
+Remove multiple C# projects from a solution:
 
 `dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj`
 

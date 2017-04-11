@@ -58,4 +58,4 @@ The following code example uses the <xref:System.Text.RegularExpressions.Regex.R
 |`$(year)`|Add the string captured by the `year` capturing group.|  
   
 ## See Also  
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

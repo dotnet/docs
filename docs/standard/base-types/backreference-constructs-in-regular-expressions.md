@@ -26,7 +26,7 @@ Backreferences provide a convenient way to identify a repeated character or subs
 > [!NOTE]
 >  A separate syntax is used to refer to named and numbered capturing groups in replacement strings. For more information, see [Substitutions](substitutions-in-regular-expressions.md).  
   
- The .NET Framework defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
+ .NET defines separate language elements to refer to numbered and named capturing groups. For more information about capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
   
 ## Numbered Backreferences  
  A numbered backreference uses the following syntax:  

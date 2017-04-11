@@ -27,7 +27,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Regular Expression Language - Quick Reference
-<a name="top"></a> A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs.  For a brief introduction, see [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md).  
+<a name="top"></a> A regular expression is a pattern that the regular expression engine attempts to match in input text. A pattern consists of one or more character literals, operators, or constructs.  For a brief introduction, see [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md).  
   
  Each section in this quick reference lists a particular category of characters, operators, and constructs that you can use to define regular expressions:  
   
@@ -149,7 +149,7 @@ manager: "wpickett"
   
 <a name="backreference_constructs"></a>   
 ## Backreference Constructs  
- A backreference allows a previously matched subexpression to be identified subsequently in the same regular expression. The following table lists the backreference constructs supported by regular expressions in the .NET Framework. For more information, see [Backreference Constructs](backreference-constructs-in-regular-expressions.md).  
+ A backreference allows a previously matched subexpression to be identified subsequently in the same regular expression. The following table lists the backreference constructs supported by regular expressions in .NET. For more information, see [Backreference Constructs](backreference-constructs-in-regular-expressions.md).  
   
 |Backreference construct|Description|Pattern|Matches|  
 |-----------------------------|-----------------|-------------|-------------|  
@@ -197,7 +197,7 @@ manager: "wpickett"
   
 -   By using the [grouping construct](grouping-constructs-in-regular-expressions.md)`(?imnsx-imnsx:`*subexpression*`)`, which defines options for the specified group only.  
   
- The .NET Framework regular expression engine supports the following inline options.  
+ The .NET regular expression engine supports the following inline options.  
   
 |Option|Description|Pattern|Matches|  
 |------------|-----------------|-------------|-------------|  
@@ -211,7 +211,7 @@ manager: "wpickett"
   
 <a name="miscellaneous_constructs"></a>   
 ## Miscellaneous Constructs  
- Miscellaneous constructs either modify a regular expression pattern or provide information about it. The following table lists the miscellaneous constructs supported by the .NET Framework. For more information, see [Miscellaneous Constructs](miscellaneous-constructs-in-regular-expressions.md).  
+ Miscellaneous constructs either modify a regular expression pattern or provide information about it. The following table lists the miscellaneous constructs supported by .NET. For more information, see [Miscellaneous Constructs](miscellaneous-constructs-in-regular-expressions.md).  
   
 |Construct|Definition|Example|  
 |---------------|----------------|-------------|  

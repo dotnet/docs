@@ -69,7 +69,7 @@ For specific details on the files included in each support group see the [Runtim
 
 Supporting and/or shipping Visual Basic 6.0 runtime binaries on supported Windows versions does not change the support policy for the Visual Basic 6.0 IDE or Visual Studio 6.0 IDE as a whole. Those products moved out of extended support on April 8, 2008.
 
-~Further details on the support policy for the Visual Basic 6.0 and Visual Studio 6.0 products can be found at http://msdn.microsoft.com/en-us/vstudio/aa718686.aspx.~ Details on the support lifecycle of Microsoft products can be found at http://support.microsoft.com/gp/lifepolicy. As a part of this support lifecycle, Microsoft will continue to support the Visual Basic 6.0 runtime on supported Windows versions for the support lifetime of those operating systems. This means, for example, that the Visual Basic 6.0 runtime will be supported on Windows Server 2003 until June, 2008 for Mainstream Support and June, 2013 for Extended Support.
+Details on the support lifecycle of Microsoft products can be found at http://support.microsoft.com/gp/lifepolicy. As a part of this support lifecycle, Microsoft will continue to support the Visual Basic 6.0 runtime on supported Windows versions for the support lifetime of those operating systems. This means, for example, that the Visual Basic 6.0 runtime will be supported on Windows Server 2003 until June, 2008 for Mainstream Support and June, 2013 for Extended Support.
 For more details on the support lifecycle or to find out about additional support options, please visit our support page at 
 http://www.microsoft.com/support.
 

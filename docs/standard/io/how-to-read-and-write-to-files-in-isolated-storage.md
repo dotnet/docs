@@ -41,5 +41,5 @@ To read from, or write to, a file in an isolated store, use an <xref:System.IO.I
  <xref:System.IO.FileAccess?displayProperty=fullName>   
  <xref:System.IO.StreamReader?displayProperty=fullName>   
  <xref:System.IO.StreamWriter?displayProperty=fullName>   
- [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md)   
+ [File and Stream I-O](../../../docs/standard/io/index.md)   
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

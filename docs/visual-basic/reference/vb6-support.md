@@ -129,9 +129,9 @@ The VB6 runtime will ship and will be supported in Windows Server 2012 R2 for th
 
 ## Windows Server 2016
 
-Since the initial release of this support statement, the Windows Server 2016 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows Server 2012 R2.
+Since the initial release of this support statement, the Windows Server 2016 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows Server 2016.
 
-The VB6 runtime will ship and will be supported in Windows Server 2012 R2 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2012 R2 as being the same as it is for Windows Server 2012.
+The VB6 runtime will ship and will be supported in Windows Server 2016 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2016 as being the same as it is for Windows Server 2012.
 
 ## Supported Windows operating system versions
 

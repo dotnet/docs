@@ -18,7 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Common I/O Tasks
-The <xref:System.IO> namespace provides several classes that allow for various actions, such as reading and writing, to be performed on files, directories, and streams. For more information, see [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md).  
+The <xref:System.IO> namespace provides several classes that allow for various actions, such as reading and writing, to be performed on files, directories, and streams. For more information, see [File and Stream I-O](../../../docs/standard/io/index.md).  
   
 ## Common File Tasks  
   

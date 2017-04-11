@@ -43,7 +43,7 @@ This topic shows how to get the shallow value of an element. The shallow value i
 </Report>  
 ```  
   
-```cs  
+```csharp  
 public static class MyExtensions  
 {  
     public static string ShallowValue(this XElement xe)  

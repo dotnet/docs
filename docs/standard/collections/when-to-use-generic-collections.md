@@ -1,61 +1,62 @@
 ---
-title: When to Use Generic Collections
-description: When to Use Generic Collections
-keywords: .NET, .NET Core
-author: mairaw
-ms.author: mairaw
-ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: 971e08bd-b63f-4832-9e61-9f65cbedd352
+title: "When to Use Generic Collections | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-bcl"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "collections [.NET Framework], generic"
+  - "generic collections [.NET Framework]"
+ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
+caps.latest.revision: 17
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
-
 # When to Use Generic Collections
-
-Using generic collections is generally recommended, because you gain the immediate benefit of type safety without having to derive from a base collection type and implement type-specific members. Generic collection types also generally perform better than the corresponding nongeneric collection types (and better than types that are derived from nongeneric base collection types) when the collection elements are value types, because with generics there is no need to box the elements. 
-
-You should use the generic collection classes in the [System.Collections.Concurrent](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent) namespace when multiple threads might be adding or removing items from the collection concurrently.
-
-The following generic types correspond to existing collection types: 
-
-*   [List&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1) is the generic class that corresponds to [ArrayList](https://docs.microsoft.com/dotnet/core/api/System.Collections.ArrayList).
-
-*   [Dictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2) and [ConcurrentDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentDictionary-2) are the generic classes that correspond to [Hashtable](https://docs.microsoft.com/dotnet/core/api/System.Collections.Hashtable). 
-
-*   [Collection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.ObjectModel.Collection-1) is the generic class that corresponds to [CollectionBase](https://docs.microsoft.com/dotnet/core/api/System.Collections.CollectionBase). `Collection<T>` can be used as a base class, but unlike `CollectionBase`, it is not abstract. This makes it much easier to use.
-
-*   [ReadOnlyCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.ObjectModel.ReadOnlyCollection-1) is the generic class that corresponds to [ReadOnlyCollectionBase](https://docs.microsoft.com/dotnet/core/api/System.Collections.ReadOnlyCollectionBase). `ReadOnlyCollection<T>` is not abstract, and has a constructor that makes it easy to expose an existing [List&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1) as a read-only collection.
-
-*   The [Queue&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Queue-1), [ConcurrentQueue&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentQueue-1), [Stack&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Stack-1), [ConcurrentStack&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentStack-1), and [SortedList&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedList-2) generic classes correspond to the respective nongeneric classes with the same names.
-
-## Additional Types
-
-Several generic collection types do not have nongeneric counterparts. They include the following: 
-
-*   [LinkedList&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.LinkedList-1) is a general-purpose linked list that provides O(1) insertion and removal operations.
-
-*   [SortedDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedDictionary-2) is a sorted dictionary with O(log n) insertion and retrieval operations, which makes it a useful alternative to [SortedList&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedList-2). 
-
-*   [KeyedCollection&lt;TKey, TItem&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.ObjectModel.KeyedCollection-2) is a hybrid between a list and a dictionary, which provides a way to store objects that contain their own keys.
-
-*   [BlockingCollection&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.BlockingCollection-1) implements a collection class with bounding and blocking functionality.
-
-*   [ConcurrentBag&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Concurrent.ConcurrentBag-1) provides fast insertion and removal of unordered elements.
-
-## LINQ to Objects
-
-The LINQ to Objects feature enables you to use LINQ queries to access in-memory objects as long as the object type implements the [System.Collections.IEnumerable](https://docs.microsoft.com/dotnet/core/api/System.Collections.IEnumerable) or [System.Collections.Generic.IEnumerable&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IEnumerable-1) interface. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering and grouping capabilities. LINQ queries can also improve performance.
-
-## Additional Functionality
-
-Some of the generic types have functionality that is not found in the nongeneric collection types. For example, the [List&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1) class, which corresponds to the nongeneric [ArrayList](https://docs.microsoft.com/dotnet/core/api/System.Collections.ArrayList) class, has a number of methods that accept generic delegates, such as the [Predicate&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Predicate-1) delegate that allows you to specify methods for searching the list, and the [Action&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Action-1) delegate that represents methods that act on each element of the list.
-
-The [List&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.List-1) class allows you to specify your own [IComparer&lt;T&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.IComparer-1) generic interface implementations for sorting and searching the list. The [SortedDictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedDictionary-2) and [SortedList&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.SortedList-2) classes also have this capability. In addition, these classes let you specify comparers when the collection is created. In similar fashion, the [Dictionary&lt;TKey, TValue&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.Generic.Dictionary-2) and [KeyedCollection&lt;TKey, TItem&gt;](https://docs.microsoft.com/dotnet/core/api/System.Collections.ObjectModel.KeyedCollection-2) classes let you specify your own equality comparers.
-
-## See Also
-
-[Collections and Data Structures](index.md) 
-
-[Commonly Used Collection Types](commonly-used-collection-types.md)
+Using generic collections is generally recommended, because you gain the immediate benefit of type safety without having to derive from a base collection type and implement type-specific members. Generic collection types also generally perform better than the corresponding nongeneric collection types (and better than types that are derived from nongeneric base collection types) when the collection elements are value types, because with generics there is no need to box the elements.  
+  
+ For programs that target the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] or later, you should use the generic collection classes in the <xref:System.Collections.Concurrent> namespace when multiple threads might be adding or removing items from the collection concurrently.  
+  
+ The following generic types correspond to existing collection types:  
+  
+-   <xref:System.Collections.Generic.List%601> is the generic class that corresponds to <xref:System.Collections.ArrayList>.  
+  
+-   <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602> are the generic classes that correspond to <xref:System.Collections.Hashtable>.  
+  
+-   <xref:System.Collections.ObjectModel.Collection%601> is the generic class that corresponds to <xref:System.Collections.CollectionBase>. <xref:System.Collections.ObjectModel.Collection%601> can be used as a base class, but unlike <xref:System.Collections.CollectionBase>, it is not abstract. This makes it much easier to use.  
+  
+-   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> is the generic class that corresponds to <xref:System.Collections.ReadOnlyCollectionBase>. <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> is not abstract, and has a constructor that makes it easy to expose an existing <xref:System.Collections.Generic.List%601> as a read-only collection.  
+  
+-   The <xref:System.Collections.Generic.Queue%601>, <xref:System.Collections.Concurrent.ConcurrentQueue%601>, <xref:System.Collections.Generic.Stack%601>, <xref:System.Collections.Concurrent.ConcurrentStack%601>, and <xref:System.Collections.Generic.SortedList%602> generic classes correspond to the respective nongeneric classes with the same names.  
+  
+## Additional Types  
+ Several generic collection types do not have nongeneric counterparts. They include the following:  
+  
+-   <xref:System.Collections.Generic.LinkedList%601> is a general-purpose linked list that provides O(1) insertion and removal operations.  
+  
+-   <xref:System.Collections.Generic.SortedDictionary%602> is a sorted dictionary with O(log `n`) insertion and retrieval operations, which makes it a useful alternative to <xref:System.Collections.Generic.SortedList%602>.  
+  
+-   <xref:System.Collections.ObjectModel.KeyedCollection%602> is a hybrid between a list and a dictionary, which provides a way to store objects that contain their own keys.  
+  
+-   <xref:System.Collections.Concurrent.BlockingCollection%601> implements a collection class with bounding and blocking functionality.  
+  
+-   <xref:System.Collections.Concurrent.ConcurrentBag%601> provides fast insertion and removal of unordered elements.  
+  
+## LINQ to Objects  
+ The LINQ to Objects feature enables you to use LINQ queries to access in-memory objects as long as the object type implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> or <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface. LINQ queries provide a common pattern for accessing data; are typically more concise and readable than standard `foreach` loops; and provide filtering, ordering and grouping capabilities. LINQ queries can also improve performance. For more information, see [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9) and [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md).  
+  
+## Additional Functionality  
+ Some of the generic types have functionality that is not found in the nongeneric collection types. For example, the <xref:System.Collections.Generic.List%601> class, which corresponds to the nongeneric <xref:System.Collections.ArrayList> class, has a number of methods that accept generic delegates, such as the <xref:System.Predicate%601> delegate that allows you to specify methods for searching the list, the <xref:System.Action%601> delegate that represents methods that act on each element of the list, and the <xref:System.Converter%602> delegate that lets you define conversions between types.  
+  
+ The <xref:System.Collections.Generic.List%601> class allows you to specify your own <xref:System.Collections.Generic.IComparer%601> generic interface implementations for sorting and searching the list. The <xref:System.Collections.Generic.SortedDictionary%602> and <xref:System.Collections.Generic.SortedList%602> classes also have this capability. In addition, these classes let you specify comparers when the collection is created. In similar fashion, the <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.ObjectModel.KeyedCollection%602> classes let you specify your own equality comparers.  
+  
+## See Also  
+ [Collections and Data Structures](../../../docs/standard/collections/index.md)   
+ [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)   
+ [Generics](../../../docs/standard/generics/index.md)

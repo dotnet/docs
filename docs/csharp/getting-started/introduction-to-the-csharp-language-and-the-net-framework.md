@@ -81,15 +81,6 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](http://msdn.microsoft.com/en-us/d05daf50-00fe-45c7-8383-06fe41697355).  
   
-## Featured Book Chapters  
- [C# Language Fundamentals](http://go.microsoft.com/fwlink/?LinkId=195416) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
-  
- [C# and .NET Programming](http://go.microsoft.com/fwlink/?LinkId=195413) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
-  
- [Introducing C#](http://go.microsoft.com/fwlink/?LinkId=221226) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
- [Visual Studio 2008 and C# Express 2008](http://go.microsoft.com/fwlink/?LinkId=195414) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
-  
 ## See Also  
  [C#](../../csharp/csharp.md)   
  [Getting Started with Visual C# and Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

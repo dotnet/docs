@@ -19,14 +19,16 @@ include a simpler syntax, rules for conversions based on number (referred to as 
 and types of fields, and
 consistent rules for copies and assignments. As a tradeoff, Tuples do not
 support some of the object oriented idioms associated with inheritance. You
-can get an overview in the section on [Tuples in the What's new in C# 7](csharp-7.md#tuples) topic.
+can get an overview in the section on [Tuples in the What's new in C# 7](whats-new/csharp-7.md#tuples) topic.
 
 In this topic, you'll learn the language rules governing Tuples in C# 7,
 different ways to use them, and initial guidance on working with Tuples.
 
 > [!NOTE]
 > The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017,
-> you must add the NuGet package "System.ValueTuple", available in the pre-release stream.
+> you must add the NuGet package [System.ValueTuple](https://www.nuget.org/packages/System.ValueTuple/), available on the NuGet Gallery.
+> Without this package you may get a compilation error similar to `error CS8179: Predefined type 'System.ValueTuple``2' is not defined or imported`
+> or `error CS8137: Cannot define a class or member that utilizes tuples because the compiler required type 'System.Runtime.CompilerServices.TupleElementNamesAttribute' cannot be found.`
 
 Let's start with the reasons for adding new Tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single

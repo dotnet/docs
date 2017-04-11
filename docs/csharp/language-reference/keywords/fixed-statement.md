@@ -44,7 +44,7 @@ The `fixed` statement prevents the garbage collector from relocating a movable v
   
  You can initialize multiple pointers, as long as they are all of the same type.  
   
-```cs
+```csharp
 fixed (byte* ps = srcarray, pd = dstarray) {...}  
 ```
   

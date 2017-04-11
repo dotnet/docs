@@ -4,7 +4,7 @@ description: A step-by-step tutorial showing how to get started with .NET Core o
 keywords: .NET Core, CLI
 author: cartermp
 ms.author: mairaw
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -20,7 +20,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Prerequisites
 
-- [.NET Core SDK 1.0.0](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 1.0](https://www.microsoft.com/net/download/core).
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!
@@ -60,7 +60,7 @@ Let's do a quick walkthrough:
 
 2. `$ dotnet restore`
 
-   [`dotnet restore`](../tools/dotnet-restore.md) calls into [NuGet](http://nuget.org) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file.  The *project.assets.json* file is necessary to be able to compile and run.
+   [`dotnet restore`](../tools/dotnet-restore.md) calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies stated in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file.  The *project.assets.json* file is necessary to be able to compile and run.
    
    The *project.assets.json* file is a persisted and complete set of the graph of NuGet dependencies and other information describing an app.  This file is read by other tools, such as [`dotnet build`](../tools/dotnet-build.md) and [`dotnet run`](../tools/dotnet-run.md), enabling them to process the source code with a correct set of NuGet dependencies and binding resolutions.
    
@@ -73,7 +73,7 @@ Let's do a quick walkthrough:
     Hello World!
     ```
 
-    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows (use `/` for non-Windows systems). You may specify also specify arguments to the application as you'll see later on the topic.
+    Alternatively, you can also execute [`dotnet build`](../tools/dotnet-build.md) to compile the code without running the build console applications. This results in a compiled application as a DLL file that can be run with `dotnet bin\Debug\netcoreapp1.0\Hello.dll` on Windows (use `/` for non-Windows systems). You may also specify arguments to the application as you'll see later on the topic.
 
     ```
     $ dotnet bin\Debug\netcoreapp1.0\Hello.dll

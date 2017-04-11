@@ -33,19 +33,21 @@ The `using` directive has three uses:
   
 -   To allow the use of types in a namespace so that you do not have to qualify the use of a type in that namespace:  
   
-    ```cs  
+    ```csharp  
     using System.Text;  
     ```  
   
--   To allow you to access static members of a type without having to qualify the access with the type name:  
+-   To allow you to access static members of a type without having to qualify the access with the type name. 
   
-    ```cs  
+    ```csharp  
     using static System.Math;  
     ```  
-  
+     
+    For more information, see the [using static directive](using-static.md).
+
 -   To create an alias for a namespace or a type. This is called a *using alias directive*.  
   
-    ```cs  
+    ```csharp  
     using Project = PC.MyCompany.Project;  
     ```  
   
@@ -54,7 +56,7 @@ The `using` directive has three uses:
 ## Using Static Type  
  You can access static members of a type without having to qualify the access with the type name:  
   
-```cs  
+```csharp  
 using static System.Console;   
 using static System.Math;  
 class Program   
@@ -66,12 +68,6 @@ class Program
 }  
   
 ```  
-  
- `Using static` imports only accessible static members and nested types declared in the specified type.  Inherited members are not imported.  You can import from any named type with a using static directive, including Visual Basic modules.  If an F# top-level functions appear in metadata as static members of a named type whose name is a valid C# identifier, then the F# functions can be imported.  
-  
- `Using static` makes extension methods declared in the specified type available for extension method lookup.  However, the names of the extension methods are not imported into scope for unqualified reference in code.  
-  
- Methods with the same name imported from different types by different using static directives in the same compilation unit or namespace form a method group.  Overload resolution within these method groups follows normal C# rules.  
   
 ## Remarks  
  The scope of a `using` directive is limited to the file in which it appears.  
@@ -86,21 +82,16 @@ class Program
   
 ## Example 1  
   
-### Description  
  The following example shows how to define and use a `using` alias for a namespace:  
   
-### Code  
  [!code-cs[csrefKeywordsNamespace#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_1.cs)]  
   
-### Comments  
  A using alias directive cannot have an open generic type on the right hand side. For example, you cannot create a using alias for a List\<T>, but you can create one for a List\<int>.  
   
 ## Example 2  
   
-### Description  
  The following example shows how to define a `using` directive and a `using` alias for a class:  
   
-### Code  
  [!code-cs[csrefKeywordsNamespace#9](../../../csharp/language-reference/keywords/codesnippet/CSharp/using-directive_2.cs)]  
   
 ## C# Language Specification  

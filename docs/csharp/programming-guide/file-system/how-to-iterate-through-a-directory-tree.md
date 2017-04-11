@@ -42,7 +42,7 @@ The phrase "iterate a directory tree" means to access each file in each nested s
   
  In the simplest case, in which you know for certain that you have access permissions for all directories under a specified root, you can use the `System.IO.SearchOption.AllDirectories` flag. This flag returns all the nested subdirectories that match the specified pattern. The following example shows how to use this flag.  
   
-```cs  
+```csharp  
 root.GetDirectories("*.*", System.IO.SearchOption.AllDirectories);  
 ```  
   

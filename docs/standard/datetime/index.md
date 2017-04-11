@@ -1,63 +1,97 @@
 ---
-title: Dates, times, and time zones
-description: Dates, times, and time zones
-keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
-ms.date: 07/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: 76e6cacc-1c0c-4a71-8cb8-018c112385ba
+title: "Dates, Times, and Time Zones | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-bcl"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "time zone objects [.NET Framework]"
+  - "date and time data [.NET Framework]"
+  - "time zones [.NET Framework]"
+  - "times [.NET Framework], time zones"
+  - "time [.NET Framework], time zones"
+ms.assetid: 295c16e0-641b-4771-94b3-39c1ffa98c13
+caps.latest.revision: 22
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
-
-# Dates, times, and time zones
-
-In addition to the basic [System.DateTime](xref:System.DateTime) structure, .NET provides the following classes that support working with time zones:
-
-* [System.TimeZoneInfo](xref:System.TimeZoneInfo)
-    
-  Use this class to work with the system's local time zone and the Coordinated Universal Time (UTC) zone.
+# Dates, Times, and Time Zones
+In addition to the basic <xref:System.DateTime> structure, the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] provides the following classes that support working with time zones:  
   
-* [System.DateTimeOffset](xref:System.DateTimeOffset)  
-
-  Use this structure to work with dates and times whose offset (or difference) from UTC is known. The [DateTimeOffset](xref:System.DateTimeOffset) structure combines a date and time value with that time's offset from UTC. Because of its relationship to UTC, an individual date and time value unambiguously identifies a single point in time. This makes a [DateTimeOffset](xref:System.DateTimeOffset) value more portable from one computer to another than a [DateTime](xref:System.DateTime) value. 
+-   <xref:System.TimeZone>  
   
-This section of the documentation provides the information that you need to work with time zones and to create time zone-aware applications that can convert dates and times from one time zone to another.
-
-## In This Section
-
-[Time Zone Overview](time-zone-overview.md) - Discusses the terminology, concepts, and issues involved in creating time zone-aware applications.
-    
-[Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](choosing-between-datetime.md) - Discusses when to use the [System.DateTime](xref:System.DateTime), [System.DateTimeOffset](xref:System.DateTimeOffset), and [System.TimeZoneInfo](xref:System.TimeZoneInfo) types when working with date and time data.
-    
-[Finding the Time Zones Defined on a Local System](finding-the-time-zones-on-local-system.md) - Describes how to enumerate the time zones found on a local system.
-
-[Instantiating a DateTimeOffset Object](instantiating-a-datetimeoffset-object.md) - Discusses the ways in which a [System.DateTimeOffset](xref:System.DateTimeOffset) object can be instantiated, and the ways in which a [System.DateTime](xref:System.DateTime) value can be converted to a [System.DateTimeOffset](xref:System.DateTimeOffset) value.
-
-[Performing Arithmetic Operations with Dates and Times](performing-arithmetic-operations.md) - Discusses the issues involved in adding, subtracting, and comparing [System.DateTime](xref:System.DateTime) and [System.DateTimeOffset](xref:System.DateTimeOffset) values.
-
-[Converting Between DateTime and DateTimeOffset](converting-between-datetime-and-offset.md) - Describes how to convert between [System.DateTime](xref:System.DateTime) and [System.DateTimeOffset](xref:System.DateTimeOffset) values.
-
-[Converting Times Between Time Zones](converting-between-time-zones.md) - Describes how to convert times from one time zone to another.
-
-[How to: Enumerate Time Zones Present on a Computer](enumerate-time-zones.md) - Provides examples that enumerate the time zones defined in a computer's registry and that let users select a predefined time zone from a list.
-
-[How to: Access the Predefined UTC and Local Time Zone Objects](access-utc-and-local.md) - Describes how to access Coordinated Universal Time and the local time zone.
-
-[How to: Instantiate a TimeZoneInfo Object](instantiate-time-zone-info.md) - Describes how to instantiate a [System.TimeZoneInfo](xref:System.TimeZoneInfo) object from the local system registry.
-
-[How to: Use Time Zones in Date and Time Arithmetic](use-time-zones-in-arithmetic.md) - Discusses how to perform date and time arithmetic that reflects a time zone's adjustment rules.
-
-[How to: Resolve Ambiguous Times](resolve-ambiguous-times.md) - Describes how to resolve an ambiguous time by mapping it to the time zone's standard time.
-
-[How to: Let Users Resolve Ambiguous Times](let-users-resolve-ambiguous-times.md) - Describes how to let a user determine the mapping between an ambiguous local time and Coordinated Universal Time.
-
-## Reference
-
-[System.TimeZoneInfo](xref:System.TimeZoneInfo)
-
-[System.DateTimeOffset](xref:System.DateTimeOffset)
-
-[System.DateTime](xref:System.DateTime)
+     Use this class to work with the system's local time zone and the Coordinated Universal Time (UTC) zone.  The functionality of the <xref:System.TimeZone> class is largely superseded by the <xref:System.TimeZoneInfo> class.  
+  
+-   <xref:System.TimeZoneInfo>  
+  
+     Use this class to work with any time zone that is predefined on a system, to create new time zones, and to easily convert dates and times from one time zone to another. For new development, use the <xref:System.TimeZoneInfo> class instead of the <xref:System.TimeZone> class.  
+  
+-   <xref:System.DateTimeOffset>  
+  
+     Use this structure to work with dates and times whose offset (or difference) from UTC is known. The <xref:System.DateTimeOffset> structure combines a date and time value with that time's offset from UTC. Because of its relationship to UTC, an individual date and time value unambiguously identifies a single point in time. This makes a <xref:System.DateTimeOffset> value more portable from one computer to another than a <xref:System.DateTime> value.  
+  
+ This section of the documentation provides the information that you need to work with time zones and to create time zone-aware applications that can convert dates and times from one time zone to another.  
+  
+## In This Section  
+ [Time Zone Overview](../../../docs/standard/datetime/time-zone-overview.md)  
+ Discusses the terminology, concepts, and issues involved in creating time zone-aware applications.  
+  
+ [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)  
+ Discusses when to use the <xref:System.DateTime>, <xref:System.DateTimeOffset>, and <xref:System.TimeZoneInfo> types when working with date and time data.  
+  
+ [Finding the Time Zones Defined on a Local System](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)  
+ Describes how to enumerate the time zones found on a local system.  
+  
+ [How to: Enumerate Time Zones Present on a Computer](../../../docs/standard/datetime/enumerate-time-zones.md)  
+ Provides examples that enumerate the time zones defined in a computer's registry and that let users select a predefined time zone from a list.  
+  
+ [How to: Access the Predefined UTC and Local Time Zone Objects](../../../docs/standard/datetime/access-utc-and-local.md)  
+ Describes how to access Coordinated Universal Time and the local time zone.  
+  
+ [How to: Instantiate a TimeZoneInfo Object](../../../docs/standard/datetime/instantiate-time-zone-info.md)  
+ Describes how to instantiate a <xref:System.TimeZoneInfo> object from the local system registry.  
+  
+ [Instantiating a DateTimeOffset Object](../../../docs/standard/datetime/instantiating-a-datetimeoffset-object.md)  
+ Discusses the ways in which a <xref:System.DateTimeOffset> object can be instantiated, and the ways in which a <xref:System.DateTime> value can be converted to a <xref:System.DateTimeOffset> value.  
+  
+ [How to: Create Time Zones Without Adjustment Rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md)  
+ Describes how to create a custom time zone that does not support the transition to and from daylight saving time.  
+  
+ [How to: Create Time Zones with Adjustment Rules](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md)  
+ Describes how to create a custom time zone that supports one or more transitions to and from daylight saving time.  
+  
+ [Saving and Restoring Time Zones](../../../docs/standard/datetime/saving-and-restoring-time-zones.md)  
+ Describes <xref:System.TimeZoneInfo> support for serialization and deserialization of time zone data and illustrates some of the scenarios in which these features can be used.  
+  
+ [How to: Save Time Zones to an Embedded Resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)  
+ Describes how to create a custom time zone and save its information in a resource file.  
+  
+ [How to: Restore Time Zones from an Embedded Resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)  
+ Describes how to instantiate custom time zones that have been saved to an embedded resource file.  
+  
+ [Performing Arithmetic Operations with Dates and Times](../../../docs/standard/datetime/performing-arithmetic-operations.md)  
+ Discusses the issues involved in adding, subtracting, and comparing <xref:System.DateTime> and <xref:System.DateTimeOffset> values.  
+  
+ [How to: Use Time Zones in Date and Time Arithmetic](../../../docs/standard/datetime/use-time-zones-in-arithmetic.md)  
+ Discusses how to perform date and time arithmetic that reflects a time zone's adjustment rules.  
+  
+ [Converting Between DateTime and DateTimeOffset](../../../docs/standard/datetime/converting-between-datetime-and-offset.md)  
+ Describes how to convert between <xref:System.DateTime> and <xref:System.DateTimeOffset> values.  
+  
+ [Converting Times Between Time Zones](../../../docs/standard/datetime/converting-between-time-zones.md)  
+ Describes how to convert times from one time zone to another.  
+  
+ [How to: Resolve Ambiguous Times](../../../docs/standard/datetime/resolve-ambiguous-times.md)  
+ Describes how to resolve an ambiguous time by mapping it to the time zone's standard time.  
+  
+ [How to: Let Users Resolve Ambiguous Times](../../../docs/standard/datetime/let-users-resolve-ambiguous-times.md)  
+ Describes how to let a user determine the mapping between an ambiguous local time and Coordinated Universal Time.  
+  
+## Reference  
+ <xref:System.TimeZoneInfo?displayProperty=fullName>

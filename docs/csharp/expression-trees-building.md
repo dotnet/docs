@@ -35,7 +35,7 @@ a few examples to show you the techniques.
 Let's start relatively simply again. We'll use the addition
 expression I've been working with throughout these sections:
 
-```cs
+```csharp
 Expression<Func<int>> sum = () => 1 + 2;
 ```
 
@@ -43,21 +43,21 @@ To construct that expression tree, you must construct the leaf nodes.
 The leaf nodes are constants, so you can use the `Expression.Constant`
 method to create the nodes:
 
-```cs
+```csharp
 var one = Expression.Constant(1, typeof(int));
 var two = Expression.Constant(2, typeof(int));
 ```
 
 Next, you'll build the addition expression:
 
-```cs
+```csharp
 var addition = Expression.Add(one, two);
 ```
 
 Once you've got the addition expression, you can create the lambda
 expression:
 
-```cs
+```csharp
 var lamdba = Expression.Lambda(addition);
 ```
 
@@ -68,7 +68,7 @@ and build more complicated expressions.
 For expressions that are as simple as this one, you may combine all the
 calls into a single statement:
 
-```cs
+```csharp
 var lambda = Expression.Lambda(
     Expression.Add(
         Expression.Constant(1, typeof(int)),
@@ -87,14 +87,14 @@ the argument nodes, and method call nodes.
 
 Let's build an expression tree to create this expression:
 
-```cs
+```csharp
 Expression<Func<double, double, double>> distanceCalc =
     (x, y) => Math.Sqrt(x * x + y * y);
 ```
  
 You'll start by creating parameter expressions for `x` and `y`:
 
-```cs
+```csharp
 var xParameter = Expression.Parameter(typeof(double), "x");
 var yParameter = Expression.Parameter(typeof(double), "y");
 ```
@@ -102,7 +102,7 @@ var yParameter = Expression.Parameter(typeof(double), "y");
 Creating the multiplication and addition expressions follows the pattern
 you've already seen:
 
-```cs
+```csharp
 var xSquared = Expression.Multiply(xParameter, xParameter);
 var ySquared = Expression.Multiply(yParameter, yParameter);
 var sum = Expression.Add(xSquared, ySquared);
@@ -111,7 +111,7 @@ var sum = Expression.Add(xSquared, ySquared);
 Next, you need to create a method call expression for the call to
 `Math.Sqrt`.
 
-```cs
+```csharp
 var sqrtMethod = typeof(Math).GetMethod("Sqrt", new[] { typeof(double) });
 var distance = Expression.Call(sqrtMethod, sum);
 ```
@@ -119,7 +119,7 @@ var distance = Expression.Call(sqrtMethod, sum);
 And  then finally, you put the method call into a lambda expression,
 and make sure to define the arguments to the lambda expression:
 
-```cs
+```csharp
 var distanceLambda = Expression.Lambda(
     distance,
     xParameter,
@@ -146,7 +146,7 @@ the code is to manage and to read.
 
 Let's build an expression tree that is the equivalent of this code:
 
-```cs
+```csharp
 Func<int, int> factorialFunc = (n) =>
 {
     var res = 1;
@@ -165,7 +165,7 @@ to build the same functionality. It's complicated by the fact that there isn't a
 a `while` loop, instead you need to build a loop that contains a conditional test, and a label
 target to break out of the loop. 
 
-```cs
+```csharp
 var nArgument = Expression.Parameter(typeof(int), "n");
 var result = Expression.Variable(typeof(int), "result");
 

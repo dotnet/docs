@@ -60,5 +60,5 @@ Asynchronous operations enable you to perform resource-intensive I/O operations 
   
 ## See Also  
  <xref:System.IO.Stream>   
- [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md)   
+ [File and Stream I-O](../../../docs/standard/io/index.md)   
  [Asynchronous Programming with Async and Await](http://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7)

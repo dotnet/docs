@@ -1,0 +1,72 @@
+<Type Name="ListSortDirection" FullName="System.ComponentModel.ListSortDirection">
+  <TypeSignature Language="C#" Value="public enum ListSortDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListSortDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ListSortDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the direction of a sort operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.IBindingListView.ApplySort%2A?displayProperty=fullName> and <xref:System.ComponentModel.IBindingList.ApplySort%2A?displayProperty=fullName> use this enumeration.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ascending">
+      <MemberSignature Language="C#" Value="Ascending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListSortDirection Ascending = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListSortDirection.Ascending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sorts in ascending order.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Descending">
+      <MemberSignature Language="C#" Value="Descending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListSortDirection Descending = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListSortDirection.Descending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sorts in descending order.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

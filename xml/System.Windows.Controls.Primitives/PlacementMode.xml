@@ -1,0 +1,230 @@
+<Type Name="PlacementMode" FullName="System.Windows.Controls.Primitives.PlacementMode">
+  <TypeSignature Language="C#" Value="public enum PlacementMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PlacementMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.PlacementMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the placement of where a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control appears on the screen.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration class to set the value of the <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property of a <xref:System.Windows.Controls.Primitives.Popup> control. The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property value, together with the values of the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A>properties, determines where and how a <xref:System.Windows.Controls.Primitives.Popup> appears on the screen. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
+  
+   
+  
+## Examples  
+ The following example creates four <xref:System.Windows.Controls.Primitives.Popup> controls that are relative to an image. Each <xref:System.Windows.Controls.Primitives.Popup> has a different value for the placement property.  
+  
+ <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#3)]  -->
+ <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#3)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Absolute">
+      <MemberSignature Language="C#" Value="Absolute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Absolute = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Absolute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control relative to the upper-left corner of the screen and at an offset that is defined by the <see cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" /> and <see cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" /> property values. If the screen edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control then repositions itself to align with the edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AbsolutePoint">
+      <MemberSignature Language="C#" Value="AbsolutePoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode AbsolutePoint = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.AbsolutePoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control relative to the upper-left corner of the screen and at an offset that is defined by the <see cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" /> and <see cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" /> property values. If the screen edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control extends in the opposite direction from the axis defined by the <see cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" /> or <see cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" />=.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Bottom = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control where the control  aligns its upper edge with the lower edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" /> and aligns its left edge with the left edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If the lower screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control repositions itself so that its lower edge aligns with the upper edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If the upper screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control then repositions itself so that its upper edge aligns with the upper screen-edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Center">
+      <MemberSignature Language="C#" Value="Center" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Center = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Center" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control where it is centered over the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If a screen edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control repositions itself to align with the screen edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Custom = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position and repositioning behavior for the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control that is defined by the  <see cref="T:System.Windows.Controls.Primitives.CustomPopupPlacementCallback" /> delegate specified by the <see cref="P:System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallback" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Left = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Windows.Controls.Primitives.Popup" /> control that aligns its right edge with the left edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" /> and aligns its upper edge with the upper edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If the left screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the <see cref="T:System.Windows.Controls.Primitives.Popup" /> repositions itself so that its left edge aligns with the right edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If the right screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the right edge of the control aligns with the right screen-edge. If the upper or lower screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control repositions itself to align with the obscuring screen edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mouse">
+      <MemberSignature Language="C#" Value="Mouse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Mouse = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Mouse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A postion of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control that aligns its upper edge with the lower edge of the bounding box of the mouse and aligns its left edge with the left edge of the bounding box of the mouse. If the lower screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, it repositions itself to align with the upper edge of the bounding box of the mouse. If the upper screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control repositions itself to align with the upper screen-edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MousePoint">
+      <MemberSignature Language="C#" Value="MousePoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode MousePoint = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.MousePoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control relative to the tip of the mouse cursor and at an offset that is defined by the <see cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" /> and <see cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" /> property values. If a horizontal or vertical screen edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, it opens in the opposite direction from the obscuring edge. If the opposite screen edge also obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, it then aligns with the obscuring screen edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Relative">
+      <MemberSignature Language="C#" Value="Relative" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Relative = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Relative" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control relative to the upper-left corner of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" /> and at an offset that is defined by the <see cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" /> and <see cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" /> property values. If the screen edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control repositions itself to align with the screen edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativePoint">
+      <MemberSignature Language="C#" Value="RelativePoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode RelativePoint = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.RelativePoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control relative to the upper-left corner of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" /> and at an offset that is defined by the <see cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" /> and <see cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" /> property values. If a screen edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the <see cref="T:System.Windows.Controls.Primitives.Popup" /> extends in the opposite direction from the direction from the axis defined by the <see cref="P:System.Windows.Controls.Primitives.Popup.HorizontalOffset" /> or <see cref="P:System.Windows.Controls.Primitives.Popup.VerticalOffset" />. If the opposite screen edge also obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control then aligns with this screen edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Right = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control that aligns its left edge with the right edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" /> and aligns its upper edge with the upper edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If the right screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control repositions itself so that its left edge aligns with the left edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If the left screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control repositions itself so that its left edge aligns with the left screen-edge. If the upper or lower screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control then repositions itself to align with the obscuring screen edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PlacementMode Top = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PlacementMode.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> control that aligns its lower edge with the upper edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" /> and aligns its left edge with the left edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If the upper screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the control repositions itself so that its upper edge aligns with the lower edge of the <see cref="P:System.Windows.Controls.Primitives.Popup.PlacementTarget" />. If the lower screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, the lower edge of the control aligns with the lower screen-edge. If the left or right screen-edge obscures the <see cref="T:System.Windows.Controls.Primitives.Popup" />, it then repositions itself to align with the obscuring screen.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1104 @@
+<Type Name="ApplicationDeployment" FullName="System.Deployment.Application.ApplicationDeployment">
+  <TypeSignature Language="C#" Value="public sealed class ApplicationDeployment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationDeployment extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Deployment.Application.ApplicationDeployment" />
+  <AssemblyInfo>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Supports updates of the current deployment programmatically, and handles on-demand downloading of files. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can configure your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application to check for updates and install them automatically through the `subscription` element of the deployment manifest. Some applications, however, need finer control over their updates. You may want to install required updates programmatically, and prompt users to install optional updates at their convenience. By turning off subscription updates in the deployment manifest, you can take complete control of your application's update policies. Alternatively, you can use automatic subscription in conjunction with <xref:System.Deployment.Application.ApplicationDeployment>, which enables [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] to update the application periodically, but uses <xref:System.Deployment.Application.ApplicationDeployment> to download critical updates shortly after they are released.  
+  
+ You can test whether your deployment has an available update by using either the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> or the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync%2A> method; the latter method raises the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted> event on successful completion. <xref:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate%2A> returns important information about the update, such as its version number and whether it is a required update for current users. If an update is available, you can install it by using <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> or <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>; the latter method raises the <xref:System.Deployment.Application.ApplicationDeployment.UpdateCompleted> event after installation of the update is complete. For large updates, you can receive progress notifications through the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged> and <xref:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged> events, and use the information in <xref:System.ComponentModel.ProgressChangedEventArgs> to notify the user of the download status.  
+  
+ You can also use <xref:System.Deployment.Application.ApplicationDeployment> to download large files and assemblies on demand. These files must be marked as "optional" within the deployment's application manifest so that they are not downloaded during installation. You can download the files at any point during the application's duration by using the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> or the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method. You can download assemblies before they are loaded into memory by supplying an event handler for the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain> class. For more information, see [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5).  
+  
+> [!NOTE]
+>  If you update a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application while the application is running, the user will not see the updates until you call the <xref:System.Windows.Forms.Application.Restart%2A> method of the <xref:System.Windows.Forms.Application>, which will close the current running instance of the application and immediately restart it.  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment> has no public constructor; you obtain instances of the class within a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application through the <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> property. You use the <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> property to verify that the current application is a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment> supports checking for updates and downloading updated files asynchronously by using the new [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md), which exposes completion callbacks as class events. <xref:System.Deployment.Application.ApplicationDeployment> starts and manages the threads for you, and calls your application back on the correct UI thread. Through this class, you can update without locking up the application, so that the user can continue working while the update installs. If the user must stop all work while an update takes place, consider using the synchronous methods instead.  
+  
+> [!NOTE]
+>  Performing asynchronous updates requires that your application import both the <xref:System.Deployment.Application> and <xref:System.ComponentModel> namespaces.  
+  
+   
+  
+## Examples  
+ The following code example determines at application load time whether a new update is available; if a required update is available, the code example installs the update asynchronously. This code should be added to a form that contains a <xref:System.Windows.Forms.TextBox> named `downloadStatus`.  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivationUri">
+      <MemberSignature Language="C#" Value="public Uri ActivationUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ActivationUri" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.ActivationUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URL used to launch the deployment manifest of the application.</summary>
+        <value>A zero-length string if the <c>TrustUrlParameters</c> property in the deployment manifest is <see langword="false" />, or if the user has supplied a UNC to open the deployment or has opened it locally. Otherwise, the return value is the full URL used to launch the application, including any parameters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property will work in both fully trusted and partially trusted applications.  
+  
+   
+  
+## Examples  
+ The following code shows how to retrieve the URL parameters by using <xref:System.Deployment.Application.ApplicationDeployment.ActivationUri%2A>, and how to use the <xref:System.Web.HttpUtility> class to parse the query string safely. Multiple occurrences of the same query string variable are consolidated in one entry of the returned <xref:System.Collections.Specialized.NameValueCollection>.  
+  
+ [!code-csharp[ClickOnceQueryString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceQueryString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForDetailedUpdate">
+      <MemberSignature Language="C#" Value="public System.Deployment.Application.UpdateCheckInfo CheckForDetailedUpdate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Deployment.Application.UpdateCheckInfo CheckForDetailedUpdate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.UpdateCheckInfo</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs the same operation as <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />, but returns extended information about the available update.</summary>
+        <returns>An <see cref="T:System.Deployment.Application.UpdateCheckInfo" /> for the available update.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate%2A> method lets synchronous callers get the same extended information that asynchronous callers get using the <xref:System.Deployment.Application.CheckForUpdateCompletedEventArgs> class.  
+  
+   
+  
+## Examples  
+ The following code example uses <xref:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate%2A> to retrieve the information about the latest update. If an update exists, it installs it automatically only if it is a required update; otherwise, it prompts the user.  
+  
+ [!code-cpp[ClickOnceAPI#7](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#7)]
+ [!code-csharp[ClickOnceAPI#7](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#7)]
+ [!code-vb[ClickOnceAPI#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The current application is either not configured to support updates, or there is another update check operation already in progress.</exception>
+        <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The deployment manifest cannot be downloaded. This exception will appear in the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> property of the <see cref="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted" /> event.</exception>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">The deployment manifest is corrupted. Regenerate the application's manifest before you attempt to deploy this application to users. This exception will appear in the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> property of the <see cref="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted" /> event.</exception>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForDetailedUpdate">
+      <MemberSignature Language="C#" Value="public System.Deployment.Application.UpdateCheckInfo CheckForDetailedUpdate (bool persistUpdateCheckResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Deployment.Application.UpdateCheckInfo CheckForDetailedUpdate(bool persistUpdateCheckResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.UpdateCheckInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="persistUpdateCheckResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="persistUpdateCheckResult">If <see langword="false" />, the update will be applied silently and no dialog box will be displayed.</param>
+        <summary>Performs the same operation as <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />, but returns extended information about the available update.</summary>
+        <returns>An <see cref="T:System.Deployment.Application.UpdateCheckInfo" /> for the available update.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForUpdate">
+      <MemberSignature Language="C#" Value="public bool CheckForUpdate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckForUpdate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Checks <see cref="P:System.Deployment.Application.ApplicationDeployment.UpdateLocation" /> to determine whether a new update is available.</summary>
+        <returns>
+          <see langword="true" /> if a new update is available; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> method compares the version of the currently installed deployment with the version specified in the deployment manifest found at <xref:System.Deployment.Application.ApplicationDeployment.UpdateLocation%2A>. If the version on the server is different from the installed version, it returns `true`.  
+  
+ This method will block until the check has completed. To check for an update asynchronously, use the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync%2A> method instead.  
+  
+> [!NOTE]
+>  If <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> discovers that an update is available, and the user chooses not to install it, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] will prompt the user that an update is available the next time the application is run. There is no way to disable this prompting. (If the application is a required update, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] will install it without prompting.)  
+  
+   
+  
+## Examples  
+ The following code example checks for an application update; if one is available, it installs it synchronously.  
+  
+ [!code-cpp[ClickOnceAPI#5](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#5)]
+ [!code-csharp[ClickOnceAPI#5](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#5)]
+ [!code-vb[ClickOnceAPI#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] throws this exception immediately if you call the <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" /> method while an update is already in progress.</exception>
+        <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The deployment manifest cannot be downloaded.</exception>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">The deployment manifest is corrupted. You will likely need to redeploy the application to fix this problem.</exception>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForUpdate">
+      <MemberSignature Language="C#" Value="public bool CheckForUpdate (bool persistUpdateCheckResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckForUpdate(bool persistUpdateCheckResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="persistUpdateCheckResult" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="persistUpdateCheckResult">If <see langword="false" />, the update will be applied silently and no dialog box will be displayed.</param>
+        <summary>Checks <see cref="P:System.Deployment.Application.ApplicationDeployment.UpdateLocation" /> to determine whether a new update is available.</summary>
+        <returns>
+          <see langword="true" /> if a new update is available; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForUpdateAsync">
+      <MemberSignature Language="C#" Value="public void CheckForUpdateAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckForUpdateAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Checks <see cref="P:System.Deployment.Application.ApplicationDeployment.UpdateLocation" /> asynchronously to determine whether a new update is available.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync%2A> returns immediately and starts a separate thread for downloading the updated application. When the method completes or is canceled, it raises the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted> event. You can use <xref:System.ComponentModel.AsyncCompletedEventArgs> in this event handler to determine whether the operation was canceled, or if an exception was raised during update.  
+  
+ You can cancel an asynchronous update by calling <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsyncCancel%2A>.  
+  
+> [!NOTE]
+>  If <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A> discovers that an update is available, and the user chooses not to install it, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] will prompt the user that an update is available the next time the application is run. There is no way to disable this prompting. (If the application is a required update, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] will install it without prompting.)  
+  
+   
+  
+## Examples  
+ The following example checks for an update asynchronously, and installs the update if one exists.  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] throws this exception immediately if you call the <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" /> method while an update is already in progress.</exception>
+        <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The deployment manifest cannot be downloaded. This exception appears in the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> property of the <see cref="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted" /> event.</exception>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">The deployment manifest is corrupted. You will likely need to redeploy the application to fix this problem. This exception appears in the <see cref="P:System.ComponentModel.AsyncCompletedEventArgs.Error" /> property of the <see cref="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted" /> event.</exception>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForUpdateAsyncCancel">
+      <MemberSignature Language="C#" Value="public void CheckForUpdateAsyncCancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckForUpdateAsyncCancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsyncCancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels the asynchronous update check.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to cancel an update check initiated with the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync%2A> method.  
+  
+ This method will not cancel any background update that may already be in progress, such as an update started as part of a subscription. For more information about subscriptions, see [Choosing a ClickOnce Update Strategy](http://msdn.microsoft.com/library/d8b6e7bb-4ea0-47f3-91cd-48580bdceccc).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForUpdateCompleted">
+      <MemberSignature Language="C#" Value="public event System.Deployment.Application.CheckForUpdateCompletedEventHandler CheckForUpdateCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.CheckForUpdateCompletedEventHandler CheckForUpdateCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.CheckForUpdateCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" /> has completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Deployment.Application.CheckForUpdateCompletedEventArgs> class will tell you, among other things, the version of the update, how large the update is, and whether the available update is required or optional.  
+  
+   
+  
+## Examples  
+ The following code example uses <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted> to decide whether to ask the user to install the available application update. If the update is a mandatory upgrade, the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted> event handler does not prompt the user. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`.  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForUpdateProgressChanged">
+      <MemberSignature Language="C#" Value="public event System.Deployment.Application.DeploymentProgressChangedEventHandler CheckForUpdateProgressChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.DeploymentProgressChangedEventHandler CheckForUpdateProgressChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.DeploymentProgressChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a progress update is available on a <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" /> call.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged> reports on the download status of the application's deployment manifest. This can be important information for users who are downloading the deployment over slow network connections.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged> event to inform the user how much of the deployment manifest is left to download. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`..  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentDeployment">
+      <MemberSignature Language="C#" Value="public static System.Deployment.Application.ApplicationDeployment CurrentDeployment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Deployment.Application.ApplicationDeployment CurrentDeployment" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.CurrentDeployment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.ApplicationDeployment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the current <see cref="T:System.Deployment.Application.ApplicationDeployment" /> for this deployment.</summary>
+        <value>The current deployment.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create instances of <xref:System.Deployment.Application.ApplicationDeployment> directly in your application; you must retrieve a valid instance through the <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> property.  
+  
+ The <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> static property is valid only from within an application that was deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. Attempts to call this property from non-[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications will throw an exception. If you are developing an application that may or may not be deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)], use the <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> property to test whether the current program is a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.  
+  
+   
+  
+## Examples  
+ The following code example retrieves <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> and checks to determine whether the application has been updated in the past three days.  
+  
+ [!code-cpp[ClickOnceAPI#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#3)]
+ [!code-csharp[ClickOnceAPI#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#3)]
+ [!code-vb[ClickOnceAPI#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">You attempted to call this static property from a non-[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentVersion">
+      <MemberSignature Language="C#" Value="public Version CurrentVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version CurrentVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.CurrentVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of the deployment for the current running instance of the application.</summary>
+        <value>The current deployment version.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.ApplicationDeployment.CurrentVersion%2A> will differ from <xref:System.Deployment.Application.ApplicationDeployment.UpdatedVersion%2A> if a new update has been installed but you have not yet called <xref:System.Windows.Forms.Application.Restart%2A>. If the deployment manifest is configured to perform automatic updates, you can compare these two values to determine if you should restart the application.  
+  
+   
+  
+## Examples  
+ The following code example defines a method that determines whether [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] has updated the application.  
+  
+ [!code-cpp[ClickOnceAPI#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#3)]
+ [!code-csharp[ClickOnceAPI#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#3)]
+ [!code-vb[ClickOnceAPI#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DataDirectory">
+      <MemberSignature Language="C#" Value="public string DataDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.DataDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] data directory.</summary>
+        <value>A string containing the path to the application's data directory on the local disk.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFileGroup">
+      <MemberSignature Language="C#" Value="public void DownloadFileGroup (string groupName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadFileGroup(string groupName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupName">The named group of files to download. All files marked "optional" in a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application require a group name.</param>
+        <summary>Downloads a set of optional files on demand.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application, the files marked "optional" in the application manifest are not downloaded during initialization or update. You can use the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> method to download all of the files belonging to a named group on demand, so that they do not consume network resources and disk space until you are sure the user requires them. For example, certain users may need to use a data analysis package included in your application on a daily basis, while other users may never invoke it.  
+  
+ To use an assembly you have downloaded with <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A>, you attach an event listener to the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain.CurrentDomain%2A>. For an example, see =[Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5).  
+  
+ All files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application cache and are therefore isolated to the current version of the application. Let's say that after an application downloads a file group, the user installs a new version of the application, but later reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded. For more information about accessing data files, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> works in partially trusted applications, that is, in any [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application running with restricted permission. However, if you attempt to load assemblies dynamically, your application will require full trust.  
+  
+ On-demand downloading of data files is currently not supported.  
+  
+ Your application will not be responsive to user input until the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> method returns. If you need to download files without interrupting the user's workflow, use the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method instead.  
+  
+ You cannot download a single file by its file name alone. To download a single file, assign it a group name in your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment and download the group using this method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to load an assembly on demand by listening for the <xref:System.AppDomain.AssemblyResolve> event.  
+  
+ [!code-csharp[ClickOnceOnDemandCmdLine#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFileGroupAsync">
+      <MemberSignature Language="C#" Value="public void DownloadFileGroupAsync (string groupName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadFileGroupAsync(string groupName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupName">The named group of files to download. All files marked "optional" in a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application require a group name.</param>
+        <summary>Downloads, on demand, a set of optional files in the background.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application, the files marked "optional" in the application manifest are not downloaded during initialization or update. You can use the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method to download all of the files belonging to a named group on demand, so that they do not consume network resources and disk space until you are sure the user requires them. This approach works not only for static files, but also for assemblies that an application may or may not require. For example, certain users may need to use a data analysis package included in your application on a daily basis, while other users may never invoke it.  
+  
+ To download assemblies on demand, attach an event listener to the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain.CurrentDomain%2A>. For an example, see [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API](http://msdn.microsoft.com/library/d20e2789-8621-4806-b5b7-841122da1456).  
+  
+ All assemblies are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application cache.  
+  
+ All static files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application's data directory and are therefore isolated to the current version of the application. Let's say that after an application downloads a file group, the user installs a new version of the application, but later reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded. For more information about accessing static files, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
+  
+ You can download multiple file groups simultaneously using <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A>. You can distinguish among them by using the <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs.Group%2A> property of the <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs> class, which is passed to the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged> event. If you need to pass more complex state, you can use <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> to pass in a `state` object.  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> works in partially trusted applications, that is, in any [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application running with restricted permission. However, if you are attempting to load assemblies dynamically, your application will require full trust.  
+  
+ On-demand downloading of data files is currently not supported.  
+  
+ You cannot download a single file by its file name alone. To download a single file, assign it a group name in your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment and download the group using this method.  
+  
+ To cancel an asynchronous download, call the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsyncCancel%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
+        <exception cref="T:System.InvalidOperationException">You cannot initiate more than one download of <paramref name="groupName" /> at a time.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFileGroupAsync">
+      <MemberSignature Language="C#" Value="public void DownloadFileGroupAsync (string groupName, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadFileGroupAsync(string groupName, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="groupName">The named group of files to download. All files marked "optional" in a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application require a group name.</param>
+        <param name="userState">An arbitrary object containing state information for the asynchronous operation.</param>
+        <summary>Downloads, on demand, a set of optional files in the background, and passes a piece of application state to the event callbacks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application, the files marked "optional" in the application manifest are not downloaded during initialization or update. You can use the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method to download all of the files belonging to a named group on demand, so that they do not consume network resources and disk space until you are sure the user requires them. This approach works not only for static files, but also for assemblies that an application may or may not require. For example, certain users may need to use a data analysis package included in your application on a daily basis, while other users may never invoke it. To download assemblies on demand, attach an event listener to the <xref:System.AppDomain.AssemblyResolve> event on the <xref:System.AppDomain.CurrentDomain%2A>.  
+  
+ You can download multiple file groups simultaneously by using the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method. You can distinguish among them by using the <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs.Group%2A> property of the <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs> class, which is passed to the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged> event. If you need to pass a more complex state, you can use  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> to pass in a `state` object.  
+  
+ All static files are downloaded to the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application's data directory and are therefore isolated to the current version of the application. For more information about accessing static files, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d). . Let's say that after an application downloads a file group, the user installs a new version of the application, but later  user reverts to the previous version of the application. In this case, the previous version will still have the copies of the files it originally downloaded.  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> works in partially trusted applications, that is, in any [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application running with restricted permission. However, if you are attempting to load assemblies dynamically, your application will require full trust.  
+  
+ On-demand downloading of data files is currently not supported.  
+  
+ To cancel an asynchronous download, call the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsyncCancel%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="groupName" /> parameter is null or zero-length.</exception>
+        <exception cref="T:System.InvalidOperationException">You cannot initiate more than one download of <paramref name="groupName" /> at a time.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFileGroupAsyncCancel">
+      <MemberSignature Language="C#" Value="public void DownloadFileGroupAsyncCancel (string groupName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadFileGroupAsyncCancel(string groupName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsyncCancel(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupName">The named group of files to download. All files marked "optional" in a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application require a group name.</param>
+        <summary>Cancels an asynchronous file download.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="groupName" /> cannot be <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFileGroupCompleted">
+      <MemberSignature Language="C#" Value="public event System.Deployment.Application.DownloadFileGroupCompletedEventHandler DownloadFileGroupCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.DownloadFileGroupCompletedEventHandler DownloadFileGroupCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.DownloadFileGroupCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs on the main application thread when a file download is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupCompleted> event is called on the main application thread. It is thread safe to call your application's Windows Forms controls directly within this callback.  
+  
+ Check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs> supplied to this callback. If this property is `null`, the download was successful; if it is not `null`, the installation did not succeed, and you can find more information about the installation failure through the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example downloads a group of Help files in the background. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`..  
+  
+ [!code-cpp[ClickOnceAPI#8](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#8)]
+ [!code-csharp[ClickOnceAPI#8](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#8)]
+ [!code-vb[ClickOnceAPI#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFileGroupProgressChanged">
+      <MemberSignature Language="C#" Value="public event System.Deployment.Application.DeploymentProgressChangedEventHandler DownloadFileGroupProgressChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.DeploymentProgressChangedEventHandler DownloadFileGroupProgressChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.DeploymentProgressChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when status information is available on a file download operation initiated by a call to <see cref="Overload:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged> event is called on the main application thread. It is thread safe to call your application's Windows Forms controls directly within this callback.  
+  
+ Use the information supplied in <xref:System.Deployment.Application.DeploymentProgressChangedEventArgs> to communicate progress information to your users.  
+  
+   
+  
+## Examples  
+ The following code example downloads a group of Help files in the background. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`.  
+  
+ [!code-cpp[ClickOnceAPI#8](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#8)]
+ [!code-csharp[ClickOnceAPI#8](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#8)]
+ [!code-vb[ClickOnceAPI#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFileGroupDownloaded">
+      <MemberSignature Language="C#" Value="public bool IsFileGroupDownloaded (string groupName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsFileGroupDownloaded(string groupName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.IsFileGroupDownloaded(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupName">The named group of files to download. All files marked "optional" in a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application require a group name.</param>
+        <summary>Checks whether the named file group has already been downloaded to the client computer.</summary>
+        <returns>
+          <see langword="true" /> if the file group has already been downloaded for the current version of this application; otherwise, <see langword="false" />. If a new version of the application has been installed, and the new version has not added, removed, or altered files in the file group, <see cref="M:System.Deployment.Application.ApplicationDeployment.IsFileGroupDownloaded(System.String)" /> returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.ApplicationDeployment.IsFileGroupDownloaded%2A> works in a partially trusted application without any security demands.  
+  
+ When you update an application, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] copies any on-demand data files from the previous version into the new version's data directory. If you download a new version of these files, you should remove any data you want to keep from the old version and move it into the new version.  
+  
+   
+  
+## Examples  
+ The following code example downloads all of the files in the `HelpFiles` group to disk.  
+  
+ [!code-cpp[ClickOnceAPI#8](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#8)]
+ [!code-csharp[ClickOnceAPI#8](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#8)]
+ [!code-vb[ClickOnceAPI#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">
+          <paramref name="groupName" /> is not a file group defined in the application manifest.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFirstRun">
+      <MemberSignature Language="C#" Value="public bool IsFirstRun { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFirstRun" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.IsFirstRun" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this is the first time this application has run on the client computer.</summary>
+        <value>
+          <see langword="true" /> if this version of the application has never run on the client computer before; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A> to determine whether you need to perform any one-time initialization operations the first time your application runs.  
+  
+ Do not assume that a <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A> setting of `true` indicates that this instance of an application is the first one to show its user interface to the user. Due to the way the system schedules processes, one instance of the application may have its <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A> property set to `true`, but another instance may be the first to render on the screen. The value of this property is reset whenever the user upgrades from one version to the next. If you want to perform an operation only the very first time any version of the application is run, you will need to perform an additional test, such as checking for the existence of a file you created the first time, or storing a flag using **Application Settings**.  
+  
+   
+  
+## Examples  
+ The following code example uses <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A> to decide whether to check for an update to the file group `HelpFiles`. If one or more of the files have been updated, it calls <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> to obtain the new versions.  
+  
+ [!code-csharp[ClickOnceAPI#9](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#9)]
+ [!code-vb[ClickOnceAPI#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNetworkDeployed">
+      <MemberSignature Language="C#" Value="public static bool IsNetworkDeployed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsNetworkDeployed" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current application is a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application.</summary>
+        <value>
+          <see langword="true" /> if this is a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want your application to run both inside and outside of a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment (for example, if you need to debug your application on the local computer before deploying it), test <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> before accessing the <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> property.  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> will return `true` regardless of whether the application is installed or hosted online, and regardless of whether it was installed from a Web site, file share, or CD-ROM.  
+  
+   
+  
+## Examples  
+ The following code example retrieves <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> by using <xref:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed%2A> first to ensure that the reference is not `null`.  
+  
+ [!code-cpp[ClickOnceAPI#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#2)]
+ [!code-csharp[ClickOnceAPI#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeOfLastUpdateCheck">
+      <MemberSignature Language="C#" Value="public DateTime TimeOfLastUpdateCheck { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeOfLastUpdateCheck" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.TimeOfLastUpdateCheck" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date and the time [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] last checked for an application update.</summary>
+        <value>The <see cref="T:System.DateTime" /> of the last update check.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application can be configured for subscription updates. In this scenario, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] polls an application's deployment location automatically at intervals defined in the deployment manifest, and determines whether there is an update available. <xref:System.Deployment.Application.ApplicationDeployment.TimeOfLastUpdateCheck%2A> returns the time of the last update check regardless of whether it was initiated by a subscription or by an explicit check using the <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdate%2A>, <xref:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync%2A>, <xref:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate%2A>, <xref:System.Deployment.Application.ApplicationDeployment.Update%2A>, or <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A> method.  
+  
+ If no update check has been performed since the application was installed, <xref:System.Deployment.Application.ApplicationDeployment.TimeOfLastUpdateCheck%2A> returns the installation time.  
+  
+   
+  
+## Examples  
+ The following code example checks whether a [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application has been checked for available updates in the past three days.  
+  
+ [!code-cpp[ClickOnceAPI#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#3)]
+ [!code-csharp[ClickOnceAPI#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#3)]
+ [!code-vb[ClickOnceAPI#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public bool Update ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Update() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.Update" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts a synchronous download and installation of the latest version of this application.</summary>
+        <returns>
+          <see langword="true" /> if an application has been updated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application is considered updated when you publish a new version of the application to the location specified by <xref:System.Deployment.Application.ApplicationDeployment.UpdateLocation%2A>, and the version number in the application's deployment manifest is greater than the version number of the application currently installed on the user's computer.  
+  
+ The <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> call will block until the update has been downloaded to the client computer and installed into the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] cache; during this time, the application will not be responsive to the user. If you want to maintain application responsiveness or display a progress report during download, use the <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A> method instead.  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> downloads all of the files that are not marked as "optional" in the application manifest. You can download optional files on demand by using the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> or the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method.  
+  
+ [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] may already be updating the application automatically when you call the <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> method; if that happens, calls to this method will throw an <xref:System.InvalidOperationException>.  
+  
+ If you have updated one or more files in your deployment, but you have not refreshed your application manifest, you will receive an <xref:System.Deployment.Application.InvalidDeploymentException>. Most of the time, redeploying your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application solves this problem. You will also receive this exception if a public-key signature on a deployment manifest or application manifest is invalid or missing.  
+  
+ An update may request a higher level of trust on the local computer than the previous version of the application. If the application uses Trusted Application Deployment, the common language runtime (CLR) trust manager examines the deployment manifest to determine whether it contains a valid trust license. If the deployment manifest does not contain a valid trust license, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] stops the installation and throws a <xref:System.Deployment.Application.TrustNotGrantedException>. The <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> method will never display a prompt asking the user whether they want to grant the application permission to run.  
+  
+   
+  
+## Examples  
+ The following code example checks for an application update; if an update is available, it installs it synchronously.  
+  
+ [!code-cpp[ClickOnceAPI#6](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#6)]
+ [!code-csharp[ClickOnceAPI#6](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#6)]
+ [!code-vb[ClickOnceAPI#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Deployment.Application.TrustNotGrantedException">The local computer did not grant the application the permission level it requested to execute.</exception>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">Your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment is corrupted. For tips on how to diagnose and correct the problem, see [Troubleshooting ClickOnce Deployments](http://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).</exception>
+        <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The new deployment could not be downloaded from its location on the network.</exception>
+        <exception cref="T:System.InvalidOperationException">The application is currently being updated.</exception>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public void UpdateAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.UpdateAsync" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts an asynchronous download and installation of the latest version of this application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application is considered updated when you publish a new version of the application to the location specified by <xref:System.Deployment.Application.ApplicationDeployment.UpdateLocation%2A>, and the version number in the application's deployment manifest is greater than the version number of the application currently installed on the user's computer.  
+  
+ While downloading the update, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] will raise the <xref:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged> event handler on the main application thread to inform you of the status of the download. When the asynchronous update finishes or encounters an exception, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] will raise the <xref:System.Deployment.Application.ApplicationDeployment.UpdateCompleted> event on the main application thread. Examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> supplied to this event to determine whether the update succeeded.  
+  
+ If <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A> throws an exception, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] calls <xref:System.Deployment.Application.ApplicationDeployment.UpdateCompleted> and sets the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of <xref:System.ComponentModel.AsyncCompletedEventArgs> to the exception that was thrown.  
+  
+ <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A> will download all files in a deployment not marked as "optional" in the application manifest. You can download optional files on demand by using the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> or the <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A> method.  
+  
+ [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] may already be updating the application automatically when you call the <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A> method; if that happens, calls to this method will throw an <xref:System.InvalidOperationException>.  
+  
+ If you have updated one or more files in your deployment, but you have not refreshed your application manifest, you will receive an <xref:System.Deployment.Application.InvalidDeploymentException>. Most of the time, rebuilding your application manifest solves this problem. You will also receive this exception if a public-key signature on a deployment manifest or application manifest is invalid or missing.  
+  
+ An update may request a higher level of trust on the local computer than the previous version of the application. If the application uses Trusted Application Deployment, the common language runtime (CLR) trust manager examines the deployment manifest to determine whether it contains a valid trust license. If the deployment manifest does not contain a valid trust license, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] stops the installation and throws a <xref:System.Deployment.Application.TrustNotGrantedException>. <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A> will never display a prompt asking the user if they want to grant the application permission to run.  
+  
+   
+  
+## Examples  
+ The following code example determines whether a new update is available at application load time; if a required update is available, it installs the update asynchronously. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`.  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Deployment.Application.TrustNotGrantedException">The local computer did not grant this application the permission level it requested to execute.</exception>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">Your [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment is corrupted. For tips on how to diagnose and correct the problem, see [Troubleshooting ClickOnce Deployments](http://msdn.microsoft.com/library/58e90012-f68b-4852-8ae9-58e361cbcc32).</exception>
+        <exception cref="T:System.Deployment.Application.DeploymentDownloadException">The new deployment could not be downloaded from its location on the network.</exception>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsyncCancel">
+      <MemberSignature Language="C#" Value="public void UpdateAsyncCancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAsyncCancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.UpdateAsyncCancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels an asynchronous update initiated by <see cref="M:System.Deployment.Application.ApplicationDeployment.UpdateAsync" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsyncCancel%2A> only cancels an update initiated by a call to <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>; it does not cancel an update started as part of a subscription.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCompleted">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.AsyncCompletedEventHandler UpdateCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.AsyncCompletedEventHandler UpdateCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.UpdateCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AsyncCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] has finished upgrading the application as the result of a call to <see cref="M:System.Deployment.Application.ApplicationDeployment.UpdateAsync" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Deployment.Application.ApplicationDeployment.UpdateCompleted> event is called on the main application thread. You may call your application's Windows Forms controls directly within this callback without triggering an exception.  
+  
+ Check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs> supplied to this callback. If this property is `null`, the installation was successful; if it is not `null`, the installation did not succeed, and you can find more information about this installation failure through the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property. Once the update has been downloaded, you will need to call the <xref:System.Windows.Forms.Application.Restart%2A> method on the <xref:System.Windows.Forms.Application> to use the newer version of the application.  
+  
+ If the installation of the update was canceled by a call to <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsyncCancel%2A>, the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property of the <xref:System.ComponentModel.AsyncCompletedEventArgs> class will be `true`.  
+  
+ To use this event handler, your application must import both the <xref:System.Deployment.Application> and <xref:System.ComponentModel> namespaces.  
+  
+   
+  
+## Examples  
+ The following code example determines at application load time whether a new update is available; if a required update is available, it installs the update asynchronously. The example requires that you deploy a Windows Forms application that includes a <xref:System.Windows.Forms.StatusStrip> control, and that this control contain a <xref:System.Windows.Forms.ToolStripStatusLabel> control named `downloadStatus`.  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedApplicationFullName">
+      <MemberSignature Language="C#" Value="public string UpdatedApplicationFullName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UpdatedApplicationFullName" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.UpdatedApplicationFullName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the full name of the application after it has been updated.</summary>
+        <value>A <see cref="T:System.String" /> that contains the full name of the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedVersion">
+      <MemberSignature Language="C#" Value="public Version UpdatedVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version UpdatedVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.UpdatedVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of the update that was recently downloaded.</summary>
+        <value>The <see cref="T:System.Version" /> describing the version of the update.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.ApplicationDeployment.UpdatedVersion%2A> differs from <xref:System.Deployment.Application.ApplicationDeployment.CurrentVersion%2A> if a new update has been installed but you have not yet called <xref:System.Windows.Forms.Application.Restart%2A> on the <xref:System.Windows.Forms.Application>. If the application's deployment manifest is configured to perform automatic updates, you can compare these two values to determine whether you should restart the application.  
+  
+ If the application has not been updated, <xref:System.Deployment.Application.ApplicationDeployment.UpdatedVersion%2A> returns the same value as <xref:System.Deployment.Application.ApplicationDeployment.CurrentVersion%2A>.  
+  
+   
+  
+## Examples  
+ The following code example defines a method that determines whether [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] has updated the application.  
+  
+ [!code-cpp[ClickOnceAPI#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#4)]
+ [!code-csharp[ClickOnceAPI#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#4)]
+ [!code-vb[ClickOnceAPI#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateLocation">
+      <MemberSignature Language="C#" Value="public Uri UpdateLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri UpdateLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.UpdateLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Web site or file share from which this application updates itself.</summary>
+        <value>The update path, expressed as an HTTP, HTTPS, or file URL; or as a Windows network file path (UNC).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Deployment.Application.ApplicationDeployment.UpdateLocation%2A> may be different from the Web site used to download the application initially if the application's deployment is configured to use update redirection.  
+  
+ This value can be changed only in the application's deployment manifest.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.PermissionSet">For full access to the local computer. Associated enumeration: <see cref="T:System.Security.Permissions.PermissionState" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateProgressChanged">
+      <MemberSignature Language="C#" Value="public event System.Deployment.Application.DeploymentProgressChangedEventHandler UpdateProgressChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.DeploymentProgressChangedEventHandler UpdateProgressChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.DeploymentProgressChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] has new status information for an update operation initiated by calling the <see cref="M:System.Deployment.Application.ApplicationDeployment.UpdateAsync" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged> event is called on the main application thread. You may call your application's Windows Forms controls directly within this callback without triggering an exception.  
+  
+   
+  
+## Examples  
+ The following code example determines at application load time whether a new update is available; if a required update is available, it installs the update asynchronously.  
+  
+ [!code-cpp[ClickOnceAPI#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#1)]
+ [!code-csharp[ClickOnceAPI#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#1)]
+ [!code-vb[ClickOnceAPI#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

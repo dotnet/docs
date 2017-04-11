@@ -1,0 +1,373 @@
+<Type Name="ToolboxItemContainer" FullName="System.Drawing.Design.ToolboxItemContainer">
+  <TypeSignature Language="C#" Value="public class ToolboxItemContainer : System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ToolboxItemContainer extends System.Object implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItemContainer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Encapsulates a <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Design.ToolboxItemContainer> is a simple class that encapsulates a <xref:System.Drawing.Design.ToolboxItem> for efficiency. By having a single class that is always loaded, you can defer the loading of the <xref:System.Drawing.Design.ToolboxItem> until it is needed. Because new classes can be derived from <xref:System.Drawing.Design.ToolboxItem>, you could load a <xref:System.Drawing.Design.ToolboxItem> that could, in turn, load an assembly that is not already in memory. For a large collection of <xref:System.Drawing.Design.ToolboxItem> objects, this could cause a large number of assemblies to be loaded, which decreases performance. Instead, the toolbox service deals only with <xref:System.Drawing.Design.ToolboxItemContainer> objects and retrieves their contained <xref:System.Drawing.Design.ToolboxItem> only when necessary.  
+  
+ The <xref:System.Drawing.Design.ToolboxItemContainer> is designed to hold any cached data from the <xref:System.Drawing.Design.ToolboxItem>. The default implementation only holds the filter of the <xref:System.Drawing.Design.ToolboxItem>, but deriving classes may choose to cache the name, image, and other information. <xref:System.Drawing.Design.ToolboxItemContainer> objects support two forms of serialization: they can be serialized through standard runtime serialization, and they can also load and save themselves from a <xref:System.Windows.Forms.IDataObject?displayProperty=fullName>. The former provides a very easy way to save <xref:System.Drawing.Design.ToolboxItemContainer> objects to a persistent storage. The latter provides a way to integrate <xref:System.Drawing.Design.ToolboxItemContainer> objects with mixed data storage formats.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemContainer (System.Drawing.Design.ToolboxItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Design.ToolboxItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.#ctor(System.Drawing.Design.ToolboxItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Drawing.Design.ToolboxItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Drawing.Design.ToolboxItem" /> for which to create a <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> class from a <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The container’s cache of information is filled by accessing properties on the <xref:System.Drawing.Design.ToolboxItem>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemContainer (System.Windows.Forms.IDataObject data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.IDataObject data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.#ctor(System.Windows.Forms.IDataObject)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="data" Type="System.Windows.Forms.IDataObject" />
+      </Parameters>
+      <Docs>
+        <param name="data">A data object that represents a <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> class from a <see cref="T:System.Windows.Forms.IDataObject" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `data` parameter may contain data provided by the <xref:System.Drawing.Design.ToolboxItemContainer> class. It may contain data that can be read by one of the <xref:System.Drawing.Design.ToolboxItem> creators that have been supplied by the user. It may also be data with a clipboard format that has a <xref:System.Drawing.Design.ToolboxItem> creator assigned to it. In this case, the <xref:System.Drawing.Design.ToolboxItem> is created on demand.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Generally, it is not necessary to override the serialization mechanism for a <see cref="T:System.Drawing.Design.ToolboxItemContainer" />. <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> objects implement serialization by saving the <see cref="T:System.Windows.Forms.IDataObject" /> returned from the <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> property. When you override <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> and provide your own custom data, this data is included with the default <see cref="T:System.Runtime.Serialization.ISerializable" /> implementation. Override the default serialization implementation only if you intend to store private details about this <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> that should not be exposed through the public data object.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ToolboxItemContainer (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The serialization information passed in by the serializer when deserializing the <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</param>
+        <param name="context">The streaming context passed in by the serializer when deserializing the <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> class from a serialization stream.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> objects can be serialized. Generally, it is not necessary to override the serialization mechanism for a <see cref="T:System.Drawing.Design.ToolboxItemContainer" />. <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> objects implement serialization by saving the <see cref="T:System.Windows.Forms.IDataObject" /> returned from the <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> property. When you override <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> and provide your own custom data, this data is included with the default <see cref="T:System.Runtime.Serialization.ISerializable" /> implementation. Override the default serialization implementation only if you intend to store private details about this <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> that should not be exposed through the public data object.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> to compare with the current <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</param>
+        <summary>Determines whether two <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> is equal to the current <see cref="T:System.Drawing.Design.ToolboxItemContainer" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilter">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection GetFilter (System.Collections.ICollection creators);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetFilter(class System.Collections.ICollection creators) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.GetFilter(System.Collections.ICollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="creators" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="creators">A collection of <see cref="T:System.Drawing.Design.ToolboxItemCreator" /> objects.</param>
+        <summary>Returns a collection of <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> objects that represent the current filter for the <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <returns>A collection of <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> objects. This never returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `creators` parameter is a collection of <xref:System.Drawing.Design.ToolboxItemCreator> objects that represent any custom <xref:System.Drawing.Design.ToolboxItem> creators that should be included when the filter is generated. Custom creators may contribute to the filters. This parameter can be `null` if no creators are needed.  
+  
+ The types stored in a <xref:System.Drawing.Design.ToolboxItem> may have a filter associated with them. Filters can be used to restrict the tools that can be placed on designers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A hash code for the current <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="protected virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The serialization information passed in by the serializer when serializing this object.</param>
+        <param name="context">The streaming context passed in by the serializer when serializing this object.</param>
+        <summary>Saves the serialization state for the object.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Generally, it is not necessary to override the serialization mechanism for a <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> class. Instead, override the <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> property and add your own data to the data object. The <see cref="M:System.Drawing.Design.ToolboxItemContainer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method internally uses the <see cref="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" /> property to create the serialization info. Override <see cref="M:System.Drawing.Design.ToolboxItemContainer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> only if you want to save private information about the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> that should not be saved as part of the public data object.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToolboxItem">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Design.ToolboxItem GetToolboxItem (System.Collections.ICollection creators);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Design.ToolboxItem GetToolboxItem(class System.Collections.ICollection creators) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.GetToolboxItem(System.Collections.ICollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Design.ToolboxItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="creators" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="creators">A collection of <see cref="T:System.Drawing.Design.ToolboxItemCreator" /> objects.</param>
+        <summary>Returns the <see cref="T:System.Drawing.Design.ToolboxItem" /> contained in the <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</summary>
+        <returns>The <see cref="T:System.Drawing.Design.ToolboxItem" /> contained in the <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `creators` parameter is a collection of <xref:System.Drawing.Design.ToolboxItemCreator> objects that represent any custom <xref:System.Drawing.Design.ToolboxItem> creators that should be included when the <xref:System.Drawing.Design.ToolboxItem> is obtained. This parameter can be `null` if no creators are needed.  
+  
+ The <xref:System.Drawing.Design.ToolboxItemContainer.GetToolboxItem%2A> method returns a <xref:System.Drawing.Design.ToolboxItem> that represents the data stored in the <xref:System.Drawing.Design.ToolboxItemContainer>. <xref:System.Drawing.Design.ToolboxItemContainer.GetToolboxItem%2A> never returns `null`, nor does it ever raise an exception, except in extreme cases (for example, out of memory). If a <xref:System.Drawing.Design.ToolboxItem> cannot be fabricated, the appropriate exception is embedded within a special <xref:System.Drawing.Design.ToolboxItem>. The exception is thrown when the <xref:System.Drawing.Design.ToolboxItem.CreateComponents%2A> method on this special <xref:System.Drawing.Design.ToolboxItem> is called. This puts the exception at the point of user action.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCreated">
+      <MemberSignature Language="C#" Value="public bool IsCreated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCreated" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItemContainer.IsCreated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the underlying toolbox item has been deserialized.</summary>
+        <value>
+          <see langword="true" /> if the underlying toolbox item has been deserialized; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTransient">
+      <MemberSignature Language="C#" Value="public bool IsTransient { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTransient" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItemContainer.IsTransient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating if the <see cref="T:System.Drawing.Design.ToolboxItem" /> contained in the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> is transient.</summary>
+        <value>
+          <see langword="true" />, if the <see cref="T:System.Drawing.Design.ToolboxItem" /> contained in the <see cref="T:System.Drawing.Design.ToolboxItemContainer" /> is marked as transient; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The serialization information passed in by the serializer when serializing this object.</param>
+        <param name="context">The streaming context passed in by the serializer when serializing this object.</param>
+        <summary>For a description of this member, see the <see cref="M:System.Drawing.Design.ToolboxItemContainer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Drawing.Design.ToolboxItemContainer> instance is cast to an <xref:System.Runtime.Serialization.ISerializable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolboxData">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.IDataObject ToolboxData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.IDataObject ToolboxData" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItemContainer.ToolboxData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.IDataObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Windows.Forms.IDataObject" /> that describes this <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</summary>
+        <value>An <see cref="T:System.Windows.Forms.IDataObject" /> that describes this <see cref="T:System.Drawing.Design.ToolboxItemContainer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Design.ToolboxItemContainer.ToolboxData%2A> property creates the serialized version of the <xref:System.Drawing.Design.ToolboxItem>. The data object can be used by an application to store this <xref:System.Drawing.Design.ToolboxItem>. This data object is fabricated from the <xref:System.Drawing.Design.ToolboxItem>, if necessary.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Implementers may override this to provide additional storage information in the data object.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFilter">
+      <MemberSignature Language="C#" Value="public void UpdateFilter (System.Drawing.Design.ToolboxItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateFilter(class System.Drawing.Design.ToolboxItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemContainer.UpdateFilter(System.Drawing.Design.ToolboxItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Drawing.Design.ToolboxItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The source of the filter to merge with the container's filter.</param>
+        <summary>Merges the container's filter with the filter from the given item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should call the <xref:System.Drawing.Design.ToolboxItemContainer.UpdateFilter%2A> method when the toolbox item is modified or configured. You should also call it if a new <xref:System.ComponentModel.TypeDescriptionProvider>, which the changes the filter, is added.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

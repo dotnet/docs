@@ -1,0 +1,282 @@
+<Type Name="DynamicScriptObject" FullName="System.Windows.Interop.DynamicScriptObject">
+  <TypeSignature Language="C#" Value="public sealed class DynamicScriptObject : System.Dynamic.DynamicObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DynamicScriptObject extends System.Dynamic.DynamicObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.DynamicScriptObject" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Dynamic.DynamicObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables calls from a [!INCLUDE[TLA#tla_xbap](~/includes/tlasharptla-xbap-md.md)] to the HTML window that hosts the application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class are exposed through the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property of <xref:System.Windows.Interop.BrowserInteropHelper>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Attempts to convert the script object to a string representation.</summary>
+        <returns>A string representation of the script object, if the object can be converted; otherwise, a string representation of the object's default property or method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the script object cannot be converted to a string, the <xref:System.Windows.Interop.DynamicScriptObject.ToString%2A> method returns a string representation of the default property or method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetIndex">
+      <MemberSignature Language="C#" Value="public override bool TryGetIndex (System.Dynamic.GetIndexBinder binder, object[] indexes, out object result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetIndex(class System.Dynamic.GetIndexBinder binder, object[] indexes, object result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TryGetIndex(System.Dynamic.GetIndexBinder,System.Object[],System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binder" Type="System.Dynamic.GetIndexBinder" />
+        <Parameter Name="indexes" Type="System.Object[]" />
+        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="binder">The binder provided by the call site.</param>
+        <param name="indexes">The index to be retrieved.</param>
+        <param name="result">The method result.</param>
+        <summary>Gets an indexed value from the script object by using the first index value from the <paramref name="indexes" /> collection.</summary>
+        <returns>Always returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.DynamicScriptObject.TryGetIndex%2A> method throws an exception if an invalid access is attempted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binder" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="indexes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="indexes" /> is not equal to 1.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The first <paramref name="indexes" /> value is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMemberException">The member does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetMember">
+      <MemberSignature Language="C#" Value="public override bool TryGetMember (System.Dynamic.GetMemberBinder binder, out object result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetMember(class System.Dynamic.GetMemberBinder binder, object result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binder" Type="System.Dynamic.GetMemberBinder" />
+        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="binder">The binder provided by the call site.</param>
+        <param name="result">The method result.</param>
+        <summary>Gets an member value from the script object.</summary>
+        <returns>Always returns<see langword=" true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.DynamicScriptObject.TryGetMember%2A> method throws an exception if an invalid access is attempted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binder" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMemberException">The member does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryInvoke">
+      <MemberSignature Language="C#" Value="public override bool TryInvoke (System.Dynamic.InvokeBinder binder, object[] args, out object result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryInvoke(class System.Dynamic.InvokeBinder binder, object[] args, object result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TryInvoke(System.Dynamic.InvokeBinder,System.Object[],System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binder" Type="System.Dynamic.InvokeBinder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="binder">The binder provided by the call site.</param>
+        <param name="args">The arguments to pass to the default method.</param>
+        <param name="result">The method result.</param>
+        <summary>Calls the default script method.</summary>
+        <returns>Always return <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.DynamicScriptObject.TryInvoke%2A> method throws an exception if the method does not exist.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binder" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">The method does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryInvokeMember">
+      <MemberSignature Language="C#" Value="public override bool TryInvokeMember (System.Dynamic.InvokeMemberBinder binder, object[] args, out object result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryInvokeMember(class System.Dynamic.InvokeMemberBinder binder, object[] args, object result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TryInvokeMember(System.Dynamic.InvokeMemberBinder,System.Object[],System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binder" Type="System.Dynamic.InvokeMemberBinder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="result" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="binder">The binder provided by the call site.</param>
+        <param name="args">The arguments to pass to the default method.</param>
+        <param name="result">The method result.</param>
+        <summary>Calls a method on the script object.</summary>
+        <returns>Always return <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.DynamicScriptObject.TryInvokeMember%2A> method throws an exception if an invalid access is attempted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binder" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">The method does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetIndex">
+      <MemberSignature Language="C#" Value="public override bool TrySetIndex (System.Dynamic.SetIndexBinder binder, object[] indexes, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TrySetIndex(class System.Dynamic.SetIndexBinder binder, object[] indexes, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TrySetIndex(System.Dynamic.SetIndexBinder,System.Object[],System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binder" Type="System.Dynamic.SetIndexBinder" />
+        <Parameter Name="indexes" Type="System.Object[]" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="binder">The binder provided by the call site.</param>
+        <param name="indexes">The index to be retrieved.</param>
+        <param name="value">The method result</param>
+        <summary>Sets a member on the script object by using the first index specified in the <paramref name="indexes" /> collection.</summary>
+        <returns>Always returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.DynamicScriptObject.TrySetIndex%2A> method throws an exception if an invalid access is attempted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binder" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="indexes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="indexes" /> is not equal to 1.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The first <paramref name="indexes" /> value is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMemberException">The member does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetMember">
+      <MemberSignature Language="C#" Value="public override bool TrySetMember (System.Dynamic.SetMemberBinder binder, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TrySetMember(class System.Dynamic.SetMemberBinder binder, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DynamicScriptObject.TrySetMember(System.Dynamic.SetMemberBinder,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binder" Type="System.Dynamic.SetMemberBinder" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="binder">The binder provided by the call site.</param>
+        <param name="value">The value to set for the member.</param>
+        <summary>Sets a member on the script object to the specified value.</summary>
+        <returns>Always returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.DynamicScriptObject.TrySetMember%2A> method throws an exception if an invalid access is attempted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binder" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="indexes" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="indexes" /> is not equal to 1.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The first <paramref name="indexes" /> value is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMemberException">The member does not exist.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

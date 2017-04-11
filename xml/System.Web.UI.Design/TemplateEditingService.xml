@@ -1,0 +1,238 @@
+<Type Name="TemplateEditingService" FullName="System.Web.UI.Design.TemplateEditingService">
+  <TypeSignature Language="C#" Value="public sealed class TemplateEditingService : IDisposable, System.Web.UI.Design.ITemplateEditingService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplateEditingService extends System.Object implements class System.IDisposable, class System.Web.UI.Design.ITemplateEditingService" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateEditingService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.Design.ITemplateEditingService</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides services for editing control templates at design time. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplateEditingService> class is obsolete. Expose templates through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property of a control designer. The design host creates a <xref:System.Web.UI.Design.TemplatedEditableDesignerRegion> object for each <xref:System.Web.UI.Design.TemplateDefinition> in each <xref:System.Web.UI.Design.TemplateGroup> that is defined for a control designer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateEditingService (System.ComponentModel.Design.IDesignerHost designerHost);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.IDesignerHost designerHost) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.#ctor(System.ComponentModel.Design.IDesignerHost)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designerHost" Type="System.ComponentModel.Design.IDesignerHost" />
+      </Parameters>
+      <Docs>
+        <param name="designerHost">An <see cref="T:System.ComponentModel.Design.IDesignerHost" /> implementation, used to access components at design time.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateEditingService" /> class with the specified designer host.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplateEditingService> class is obsolete. Expose templates through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property of a control designer. The design host creates a <xref:System.Web.UI.Design.TemplatedEditableDesignerRegion> object for each <xref:System.Web.UI.Design.TemplateDefinition> in each <xref:System.Web.UI.Design.TemplateGroup> that is defined for a control designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFrame">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.ITemplateEditingFrame CreateFrame (System.Web.UI.Design.TemplatedControlDesigner designer, string frameName, string[] templateNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.ITemplateEditingFrame CreateFrame(class System.Web.UI.Design.TemplatedControlDesigner designer, string frameName, string[] templateNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ITemplateEditingFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Web.UI.Design.TemplatedControlDesigner" />
+        <Parameter Name="frameName" Type="System.String" />
+        <Parameter Name="templateNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The <see cref="T:System.Web.UI.Design.TemplatedControlDesigner" /> that will use the template editing frame.</param>
+        <param name="frameName">The name of the editing frame that will be displayed on the frame. Typically, this is the same as the <see cref="P:System.ComponentModel.Design.DesignerVerb.Text" /> used as the menu text for the <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> that is invoked to create the frame.</param>
+        <param name="templateNames">An array of names for the templates that the template editing frame will contain.</param>
+        <summary>Creates a new template editing frame for the specified templated control designer, using the specified name and templates.</summary>
+        <returns>The new <see cref="T:System.Web.UI.Design.ITemplateEditingFrame" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplateEditingService> class is obsolete. Expose templates through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property of a control designer. The design host creates a <xref:System.Web.UI.Design.TemplatedEditableDesignerRegion> object for each <xref:System.Web.UI.Design.TemplateDefinition> in each <xref:System.Web.UI.Design.TemplateGroup> that is defined for a control designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFrame">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.ITemplateEditingFrame CreateFrame (System.Web.UI.Design.TemplatedControlDesigner designer, string frameName, string[] templateNames, System.Web.UI.WebControls.Style controlStyle, System.Web.UI.WebControls.Style[] templateStyles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.ITemplateEditingFrame CreateFrame(class System.Web.UI.Design.TemplatedControlDesigner designer, string frameName, string[] templateNames, class System.Web.UI.WebControls.Style controlStyle, class System.Web.UI.WebControls.Style[] templateStyles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.CreateFrame(System.Web.UI.Design.TemplatedControlDesigner,System.String,System.String[],System.Web.UI.WebControls.Style,System.Web.UI.WebControls.Style[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ITemplateEditingFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Web.UI.Design.TemplatedControlDesigner" />
+        <Parameter Name="frameName" Type="System.String" />
+        <Parameter Name="templateNames" Type="System.String[]" />
+        <Parameter Name="controlStyle" Type="System.Web.UI.WebControls.Style" />
+        <Parameter Name="templateStyles" Type="System.Web.UI.WebControls.Style[]" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The <see cref="T:System.Web.UI.Design.TemplatedControlDesigner" /> that will use the template editing frame.</param>
+        <param name="frameName">The name of the editing frame that will be displayed on the frame. Typically, this is the same as the <see cref="P:System.ComponentModel.Design.DesignerVerb.Text" /> used as the menu text for the <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> that is invoked to create the frame.</param>
+        <param name="templateNames">An array of names for the templates that the template editing frame will contain.</param>
+        <param name="controlStyle">The control <see cref="T:System.Web.UI.WebControls.Style" /> for the editing frame.</param>
+        <param name="templateStyles">An array of type <see cref="T:System.Web.UI.WebControls.Style" /> that represents the template styles for the editing frame.</param>
+        <summary>Creates a new template editing frame for the specified <see cref="T:System.Web.UI.Design.TemplatedControlDesigner" /> object, using the specified name, template names, control style, and template styles.</summary>
+        <returns>The new <see cref="T:System.Web.UI.Design.ITemplateEditingFrame" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplateEditingService> class is obsolete. Expose templates through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property of a control designer. The design host creates a <xref:System.Web.UI.Design.TemplatedEditableDesignerRegion> object for each <xref:System.Web.UI.Design.TemplateGroup> that is defined for a control designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources that are used by the <see cref="T:System.Web.UI.Design.TemplateEditingService" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~TemplateEditingService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Finalizes the service.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContainingTemplateName">
+      <MemberSignature Language="C#" Value="public string GetContainingTemplateName (System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetContainingTemplateName(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingService.GetContainingTemplateName(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">The <see cref="T:System.Web.UI.Control" /> for which to get the name of the parent template.</param>
+        <summary>Gets the name of the parent template.</summary>
+        <returns>The name of the parent template.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplateEditingService> class is obsolete. Use the <xref:System.Web.UI.Design.TemplatedEditableDesignerRegion.TemplateDefinition%2A> property of the <xref:System.Web.UI.Design.TemplatedEditableDesignerRegion> class for equivalent design-time functionality.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsNestedTemplateEditing">
+      <MemberSignature Language="C#" Value="public bool SupportsNestedTemplateEditing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsNestedTemplateEditing" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateEditingService.SupportsNestedTemplateEditing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the service supports nested template editing.</summary>
+        <value>
+          <see langword="true" /> if the service supports nested template editing; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplateEditingService> class is obsolete. Expose templates through the <xref:System.Web.UI.Design.ControlDesigner.TemplateGroups%2A> property of a control designer. The design host creates a <xref:System.Web.UI.Design.TemplatedEditableDesignerRegion> object for each <xref:System.Web.UI.Design.TemplateDefinition> in each <xref:System.Web.UI.Design.TemplateGroup> that is defined for a control designer.  
+  
+ The <xref:System.Web.UI.Design.TemplateEditingService.SupportsNestedTemplateEditing%2A> property indicates whether a template editor can be invoked from a component of a parent template editor's templated control. This is called nested template editing, because a template editor is invoked for a component of a control for which a template editor is already operating.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -4,7 +4,7 @@
             wordApp.Visible = true;
 
             // The Add method has four reference parameters, all of which are 
-            // optional. Visual C# 2010 allows you to omit arguments for them if
+            // optional. Visual C# allows you to omit arguments for them if
             // the default values are what you want.
             wordApp.Documents.Add();
 

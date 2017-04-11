@@ -1,0 +1,155 @@
+<Type Name="PeerApplicationLaunchInfo" FullName="System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo">
+  <TypeSignature Language="C#" Value="public class PeerApplicationLaunchInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PeerApplicationLaunchInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the launch information required by a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> that has initiated in response to a peer collaboration invitation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application can inspect the <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Data%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Message%2A> properties in this class to get the information specific to the invitation that initiated the application launch.  
+  
+ Access to this class requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public byte[] Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Data" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets application-defined binary data associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> invitation.</summary>
+        <value>An array of bytes that containing the data associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> invitation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This data blob is free form and is provided by the caller.  The maximum amount of data that can be provided is 4,096 bytes.  
+  
+ The <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Data%2A> cannot be `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or set a message associated with the response to the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> invitation.</summary>
+        <value>A text message associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> to the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> invitation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum length for the message is 255 Unicode characters. Unless explicitly specified, the default value for all properties is `null` for reference types.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerApplication">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerApplication PeerApplication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerApplication PeerApplication" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.PeerApplication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerApplication</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> for which the invitation was sent.</summary>
+        <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> for which the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> invitation was sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless explicitly specified, the default value for all properties is `null` for reference types.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerContact">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerContact PeerContact { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerContact PeerContact" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.PeerContact" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerContact</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> that sent the invitation.</summary>
+        <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> that sent the invitation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless explicitly specified, the default value for all properties is `null` for reference types.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerEndPoint">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.PeerEndPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerEndPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> from which the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> invitation was sent.</summary>
+        <value>The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> from which the invitation was sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless explicitly specified, the default value for all properties is `null` for reference types.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

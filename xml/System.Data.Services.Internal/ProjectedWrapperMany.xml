@@ -1,0 +1,223 @@
+<Type Name="ProjectedWrapperMany" FullName="System.Data.Services.Internal.ProjectedWrapperMany">
+  <TypeSignature Language="C#" Value="public class ProjectedWrapperMany : System.Data.Services.Internal.ProjectedWrapper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectedWrapperMany extends System.Data.Services.Internal.ProjectedWrapper" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ProjectedWrapperMany" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Services.Internal.ProjectedWrapper</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a wrapper over the result elements with the ability to project a subset of the properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProjectedWrapperMany ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapperMany.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Internal.ProjectedWrapperMany" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalGetProjectedPropertyValue">
+      <MemberSignature Language="C#" Value="protected override object InternalGetProjectedPropertyValue (int propertyIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object InternalGetProjectedPropertyValue(int32 propertyIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapperMany.InternalGetProjectedPropertyValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="propertyIndex">Index of the property for which to get the value.</param>
+        <summary>Gets the value for the specified property by its index.</summary>
+        <returns>The value for the property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Internal.ProjectedWrapperMany Next { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Internal.ProjectedWrapperMany Next" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.Next" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Internal.ProjectedWrapperMany</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets another instance of <see cref="T:System.Data.Services.Internal.ProjectedWrapperMany" /> which contains the set of the next eight projected properties, and possibly another link.</summary>
+        <value>The next set of properties.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty0">
+      <MemberSignature Language="C#" Value="public object ProjectedProperty0 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty0" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty0" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to project.</summary>
+        <value>The property to project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty1">
+      <MemberSignature Language="C#" Value="public object ProjectedProperty1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty1" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to project.</summary>
+        <value>The property to project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty2">
+      <MemberSignature Language="C#" Value="public object ProjectedProperty2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty2" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to project.</summary>
+        <value>The property to project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty3">
+      <MemberSignature Language="C#" Value="public object ProjectedProperty3 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty3" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to project.</summary>
+        <value>The property to project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty4">
+      <MemberSignature Language="C#" Value="public object ProjectedProperty4 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty4" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to project.</summary>
+        <value>The property to project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty5">
+      <MemberSignature Language="C#" Value="public object ProjectedProperty5 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty5" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty5" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to project.</summary>
+        <value>The property to project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty6">
+      <MemberSignature Language="C#" Value="public object ProjectedProperty6 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty6" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to project.</summary>
+        <value>The property to project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectedProperty7">
+      <MemberSignature Language="C#" Value="public object ProjectedProperty7 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty7" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapperMany.ProjectedProperty7" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property to project.</summary>
+        <value>The property to project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

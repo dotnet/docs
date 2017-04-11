@@ -1,0 +1,103 @@
+<Type Name="DiscoverySearchPattern" FullName="System.Web.Services.Discovery.DiscoverySearchPattern">
+  <TypeSignature Language="C#" Value="public abstract class DiscoverySearchPattern" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DiscoverySearchPattern extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoverySearchPattern" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Establishes an interface for file extension search patterns for discoverable file types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A?displayProperty=fullName> property to add a discoverable file type to a Web services document. While a discovery document is usually serialized as a file using a .disco extension, you can add multiple files to the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property, and those files can have other extensions, represented by implementations of <xref:System.Web.Services.Discovery.DiscoverySearchPattern> .  
+  
+ The <xref:System.Web.Services.Discovery.DiscoverySearchPattern> class and its concrete derived classes are employed by the <xref:System.Web.Services.Discovery.DiscoveryRequestHandler> class's <xref:System.Web.Services.Discovery.DiscoveryRequestHandler.ProcessRequest%2A> method, which handles an HTTP request for a discovery document. Normally, none of these classes need to be used directly by a developer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DiscoverySearchPattern ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoverySearchPattern.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoverySearchPattern" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDiscoveryReference">
+      <MemberSignature Language="C#" Value="public abstract System.Web.Services.Discovery.DiscoveryReference GetDiscoveryReference (string filename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Services.Discovery.DiscoveryReference GetDiscoveryReference(string filename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoverySearchPattern.GetDiscoveryReference(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Discovery.DiscoveryReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">The name of a discovery file or a file that appears in a dynamically generated discovery document. For example, an .asmx or .xsd file.</param>
+        <summary>When overridden in a derived class, returns the <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> object for a given file name.</summary>
+        <returns>A file name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class derived from <xref:System.Web.Services.Discovery.DiscoverySearchPattern> implements the <xref:System.Web.Services.Discovery.DiscoverySearchPattern.GetDiscoveryReference%2A> method by returning its associated concrete class derived from <xref:System.Web.Services.Discovery.DiscoveryReference>.  
+  
+ For example, the <xref:System.Web.Services.Discovery.ContractSearchPattern> class returns a <xref:System.Web.Services.Discovery.ContractReference> instance that contains the location of an .asmx Web service file and the corresponding dynamically generated Web Services Description Language (WSDL) document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public abstract string Pattern { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Pattern" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoverySearchPattern.Pattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the file name pattern to use as a search target.</summary>
+        <value>A file name pattern.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The pattern typically specifies a file name extension, for example, .disco or .asmx.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

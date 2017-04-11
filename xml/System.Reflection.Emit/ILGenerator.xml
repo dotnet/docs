@@ -1,0 +1,1807 @@
+<Type Name="ILGenerator" FullName="System.Reflection.Emit.ILGenerator">
+  <TypeSignature Language="C#" Value="public class ILGenerator : System.Runtime.InteropServices._ILGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit ILGenerator extends System.Object implements class System.Runtime.InteropServices._ILGenerator" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.ILGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.InteropServices._ILGenerator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._ILGenerator))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Generates Microsoft intermediate language (MSIL) instructions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Reflection.Emit.ILGenerator> is used to generate method bodies for methods and constructors in dynamic assemblies (represented by the <xref:System.Reflection.Emit.MethodBuilder> and <xref:System.Reflection.Emit.ConstructorBuilder> classes) and for standalone dynamic methods (represented by the <xref:System.Reflection.Emit.DynamicMethod> class). To obtain an <xref:System.Reflection.Emit.ILGenerator>, use the <xref:System.Reflection.Emit.ConstructorBuilder.GetILGenerator%2A?displayProperty=fullName>, <xref:System.Reflection.Emit.DynamicMethod.GetILGenerator%2A?displayProperty=fullName>, and <xref:System.Reflection.Emit.MethodBuilder.GetILGenerator%2A?displayProperty=fullName> methods.  
+  
+ MSIL is used as input to a just-in-time (JIT) compiler.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginCatchBlock">
+      <MemberSignature Language="C#" Value="public virtual void BeginCatchBlock (Type exceptionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginCatchBlock(class System.Type exceptionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginCatchBlock(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionType">The <see cref="T:System.Type" /> object that represents the exception.</param>
+        <summary>Begins a catch block.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Emits a branch instruction to the end of the current exception block.  
+  
+> [!NOTE]
+>  If the filter exception block returns the `constant exception_execute_handler` (see the documentation for the Common Language Infrastructure Instruction Set), the argument to the `BeginCatchBlock` is not checked.  
+  
+   
+  
+## Examples  
+ The code sample below demonstrates the contextual usage of the `BeginCatchBlock` method.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The catch block is within a filtered exception.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exceptionType" /> is <see langword="null" />, and the exception filter block has not returned a value that indicates that finally blocks should be run until this catch block is located.</exception>
+        <exception cref="T:System.NotSupportedException">The Microsoft intermediate language (MSIL) being generated is not currently in an exception block.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginExceptFilterBlock">
+      <MemberSignature Language="C#" Value="public virtual void BeginExceptFilterBlock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginExceptFilterBlock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginExceptFilterBlock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins an exception block for a filtered exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Emits a branch instruction to the end of the current exception block.  
+  
+ If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, emitting filtered exception blocks is not supported. <xref:System.Reflection.Emit.DynamicILInfo> can be used to construct a dynamic method that uses filtered exception blocks.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The Microsoft intermediate language (MSIL) being generated is not currently in an exception block.  
+  
+ -or-  
+  
+ This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginExceptionBlock">
+      <MemberSignature Language="C#" Value="public virtual System.Reflection.Emit.Label BeginExceptionBlock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Reflection.Emit.Label BeginExceptionBlock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginExceptionBlock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.Label</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins an exception block for a non-filtered exception.</summary>
+        <returns>The label for the end of the block. This will leave you in the correct place to execute finally blocks or to finish the try.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creating an exception block records some information, but does not actually emit any Microsoft intermediate language (MSIL) onto the stream.  
+  
+   
+  
+## Examples  
+ The code sample below demonstrates the contextual usage of the `BeginExceptionBlock` method.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFaultBlock">
+      <MemberSignature Language="C#" Value="public virtual void BeginFaultBlock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginFaultBlock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginFaultBlock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins an exception fault block in the Microsoft intermediate language (MSIL) stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, emitting exception fault blocks is not supported. <xref:System.Reflection.Emit.DynamicILInfo> can be used to construct a dynamic method that uses exception fault blocks.  
+  
+   
+  
+## Examples  
+ The following code sample illustrates the use of `BeginFaultBlock`.  
+  
+ [!code-cpp[ILGenerator_BeginFaultBlock#1](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/CPP/ilgenerator_beginfaultblock.cpp#1)]
+ [!code-csharp[ILGenerator_BeginFaultBlock#1](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/CS/ilgenerator_beginfaultblock.cs#1)]
+ [!code-vb[ILGenerator_BeginFaultBlock#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_BeginFaultBlock/VB/ilgenerator_beginfaultblock.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The MSIL being generated is not currently in an exception block.  
+  
+ -or-  
+  
+ This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFinallyBlock">
+      <MemberSignature Language="C#" Value="public virtual void BeginFinallyBlock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginFinallyBlock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginFinallyBlock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins a finally block in the Microsoft intermediate language (MSIL) instruction stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample illustrates the use of `BeginFinallyBlock`.  
+  
+ [!code-cpp[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/CPP/ILGenerator_BeginFinallyBlock_2.cpp#2)]
+ [!code-csharp[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/CS/ilgenerator_beginfinallyblock_2.cs#2)]
+ [!code-vb[ILGenerator_BeginFinallyBlock_2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_BeginFinallyBlock_2/VB/ilgenerator_beginfinallyblock_2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The MSIL being generated is not currently in an exception block.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginScope">
+      <MemberSignature Language="C#" Value="public virtual void BeginScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins a lexical scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to emit symbolic information. Local variables declared after <xref:System.Reflection.Emit.ILGenerator.BeginScope%2A> are scoped until the corresponding <xref:System.Reflection.Emit.ILGenerator.EndScope%2A> is called.  
+  
+ If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
+  
+   
+  
+## Examples  
+ The following code sample illustrates the use of `BeginScope` and `EndScope`.  
+  
+ [!code-cpp[ILGenerator_Begin_EndScope#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CPP/ilgenerator_begin_endscope.cpp#2)]
+ [!code-csharp[ILGenerator_Begin_EndScope#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CS/ilgenerator_begin_endscope.cs#2)]
+ [!code-vb[ILGenerator_Begin_EndScope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_Begin_EndScope/VB/ilgenerator_begin_endscope.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareLocal">
+      <MemberSignature Language="C#" Value="public virtual System.Reflection.Emit.LocalBuilder DeclareLocal (Type localType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.LocalBuilder DeclareLocal(class System.Type localType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.LocalBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="localType">A <see cref="T:System.Type" /> object that represents the type of the local variable.</param>
+        <summary>Declares a local variable of the specified type.</summary>
+        <returns>The declared local variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The local variable is created in the current lexical scope; for example, if code is being emitted in a `for` loop (`For` loop in Visual Basic), the scope of the variable is the loop.  
+  
+ A local variable created with this overload is not pinned. To create a pinned variable for use with unmanaged pointers, use the <xref:System.Reflection.Emit.ILGenerator.DeclareLocal%28System.Type%2CSystem.Boolean%29> method overload.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the `DeclareLocal` method. This code is part of a larger code example for the <xref:System.Reflection.Emit.LocalBuilder> class.  
+  
+ [!code-cpp[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/cpp/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/CPP/localbuilder_sample_4.cpp#2)]
+ [!code-csharp[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/csharp/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/CS/localbuilder_sample_4.cs#2)]
+ [!code-vb[LocalBuilder_Sample_SetLocalSymInfo#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/LocalBuilder_Sample_SetLocalSymInfo/VB/localbuilder_sample_4.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The containing type has been created by the <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" /> method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareLocal">
+      <MemberSignature Language="C#" Value="public virtual System.Reflection.Emit.LocalBuilder DeclareLocal (Type localType, bool pinned);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.LocalBuilder DeclareLocal(class System.Type localType, bool pinned) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.LocalBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localType" Type="System.Type" />
+        <Parameter Name="pinned" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="localType">A <see cref="T:System.Type" /> object that represents the type of the local variable.</param>
+        <param name="pinned">
+          <see langword="true" /> to pin the object in memory; otherwise, <see langword="false" />.</param>
+        <summary>Declares a local variable of the specified type, optionally pinning the object referred to by the variable.</summary>
+        <returns>A <see cref="T:System.Reflection.Emit.LocalBuilder" /> object that represents the local variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The local variable is created in the current lexical scope; for example, if code is being emitted in a `for` loop (`For` loop in Visual Basic), the scope of the variable is the loop.  
+  
+ In unsafe code, an object must be pinned before it can be referred to by an unmanaged pointer. While the referenced object is pinned, it cannot be moved by garbage collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The containing type has been created by the <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" /> method.  
+  
+ -or-  
+  
+ The method body of the enclosing method has been created by the <see cref="M:System.Reflection.Emit.MethodBuilder.CreateMethodBody(System.Byte[],System.Int32)" /> method.</exception>
+        <exception cref="T:System.NotSupportedException">The method with which this <see cref="T:System.Reflection.Emit.ILGenerator" /> is associated is not represented by a <see cref="T:System.Reflection.Emit.MethodBuilder" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefineLabel">
+      <MemberSignature Language="C#" Value="public virtual System.Reflection.Emit.Label DefineLabel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Reflection.Emit.Label DefineLabel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.DefineLabel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.Label</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Declares a new label.</summary>
+        <returns>Returns a new label that can be used as a token for branching.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the position of the label within the stream, you must call <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>.  
+  
+ This is just a token and does not yet represent any particular location within the stream.  
+  
+   
+  
+## Examples  
+ The code sample below demonstrates the contextual usage of the `DefineLabel` method.  
+  
+ [!code-cpp[System.Reflection.Emit.Label Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.Label Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.Label Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.Label Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The Microsoft Intermediate Language (MSIL) instruction to be put onto the stream.</param>
+        <summary>Puts the specified instruction onto the stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `opcode` parameter requires an argument, the caller must ensure that the argument length matches the length of the declared parameter. Otherwise, results will be unpredictable. For example, if the Emit instruction requires a 2-byte operand and the caller supplies a 4-byte operand, the runtime will emit two additional bytes to the instruction stream. These extra bytes will be <xref:System.Reflection.Emit.OpCodes.Nop> instructions.  
+  
+ The instruction values are defined in <xref:System.Reflection.Emit.OpCodes>.  
+  
+   
+  
+## Examples  
+ The code sample below demonstrates the use of `Emit` to generate MSIL output via an instance of <xref:System.Reflection.Emit.ILGenerator>.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, byte arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, unsigned int8 arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="arg" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be put onto the stream.</param>
+        <param name="arg">The character argument pushed onto the stream immediately after the instruction.</param>
+        <summary>Puts the specified instruction and character argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, double arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, float64 arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="arg" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be put onto the stream. Defined in the <see langword="OpCodes" /> enumeration.</param>
+        <param name="arg">The numerical argument pushed onto the stream immediately after the instruction.</param>
+        <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, short arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, int16 arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="arg" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="arg">The <see langword="Int" /> argument pushed onto the stream immediately after the instruction.</param>
+        <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, int arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, int32 arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="arg" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be put onto the stream.</param>
+        <param name="arg">The numerical argument pushed onto the stream immediately after the instruction.</param>
+        <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, long arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, int64 arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="arg" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be put onto the stream.</param>
+        <param name="arg">The numerical argument pushed onto the stream immediately after the instruction.</param>
+        <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.ConstructorInfo con);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.ConstructorInfo con) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.ConstructorInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="con" Type="System.Reflection.ConstructorInfo" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="con">A <see langword="ConstructorInfo" /> representing a constructor.</param>
+        <summary>Puts the specified instruction and metadata token for the specified constructor onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ The location of `con` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="con" /> is <see langword="null" />. This exception is new in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)].</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.Emit.Label label);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, valuetype System.Reflection.Emit.Label label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="label" Type="System.Reflection.Emit.Label" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="label">The label to which to branch from this location.</param>
+        <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream and leaves space to include a label when fixes are done.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ Labels are created using <xref:System.Reflection.Emit.ILGenerator.DefineLabel%2A>, and their location within the stream is fixed by using <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>. If a single-byte instruction is used, the label can represent a jump of at most 127 bytes along the stream. `opcode` must represent a branch instruction. Because branches are relative instructions, `label` will be replaced with the correct offset to branch during the fixup process.  
+  
+   
+  
+## Examples  
+ The code sample below illustrates the creation of a dynamic method with a jump table. The jump table is built using an array of <xref:System.Reflection.Emit.Label>.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.Emit.Label[] labels);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, valuetype System.Reflection.Emit.Label[] labels) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="labels" Type="System.Reflection.Emit.Label[]" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="labels">The array of label objects to which to branch from this location. All of the labels will be used.</param>
+        <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream and leaves space to include a label when fixes are done.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Emits a switch table.  
+  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ Labels are created using <xref:System.Reflection.Emit.ILGenerator.DefineLabel%2A> and their location within the stream is fixed by using <xref:System.Reflection.Emit.ILGenerator.MarkLabel%2A>. If a single-byte instruction is used, the label can represent a jump of at most 127 bytes along the stream. `opcode` must represent a branch instruction. Because branches are relative instructions, `label` will be replaced with the correct offset to branch during the fixup process.  
+  
+   
+  
+## Examples  
+ The code sample below illustrates the creation of a dynamic method with a jump table. The jump table is built using an array of <xref:System.Reflection.Emit.Label>.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="con" /> is <see langword="null" />. This exception is new in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)].</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.Emit.LocalBuilder local);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.Emit.LocalBuilder local) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.LocalBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="local" Type="System.Reflection.Emit.LocalBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="local">A local variable.</param>
+        <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the index of the given local variable.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The parent method of the <paramref name="local" /> parameter does not match the method associated with this <see cref="T:System.Reflection.Emit.ILGenerator" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="local" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="opcode" /> is a single-byte instruction, and <paramref name="local" /> represents a local variable with an index greater than <see langword="Byte.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.Emit.SignatureHelper signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.Emit.SignatureHelper signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.SignatureHelper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="signature" Type="System.Reflection.Emit.SignatureHelper" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="signature">A helper for constructing a signature token.</param>
+        <summary>Puts the specified instruction and a signature token onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="signature" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.FieldInfo field);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.FieldInfo field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.FieldInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="field" Type="System.Reflection.FieldInfo" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="field">A <see langword="FieldInfo" /> representing a field.</param>
+        <summary>Puts the specified instruction and metadata token for the specified field onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration. The location of `field` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.MethodInfo meth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.MethodInfo meth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="meth" Type="System.Reflection.MethodInfo" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="meth">A <see langword="MethodInfo" /> representing a method.</param>
+        <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ The location of `meth` is recorded so that the instruction stream can be patched if necessary when persisting the module to a portable executable (PE) file.  
+  
+ If `meth` represents a generic method, it must be a generic method definition. That is, its <xref:System.Reflection.MethodInfo.IsGenericMethodDefinition%2A?displayProperty=fullName> property must be `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="meth" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="meth" /> is a generic method for which the <see cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" /> property is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public void Emit (System.Reflection.Emit.OpCode opcode, sbyte arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, int8 arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.SByte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="arg" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be put onto the stream.</param>
+        <param name="arg">The character argument pushed onto the stream immediately after the instruction.</param>
+        <summary>Puts the specified instruction and character argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, float arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, float32 arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="arg" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be put onto the stream.</param>
+        <param name="arg">The <see langword="Single" /> argument pushed onto the stream immediately after the instruction.</param>
+        <summary>Puts the specified instruction and numerical argument onto the Microsoft intermediate language (MSIL) stream of instructions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream.</param>
+        <param name="str">The <see langword="String" /> to be emitted.</param>
+        <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration. The location of `str` is recorded for future fixups if the module is persisted to a portable executable (PE) file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Emit">
+      <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, Type cls);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Type cls) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="cls" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be put onto the stream.</param>
+        <param name="cls">A <see langword="Type" />.</param>
+        <summary>Puts the specified instruction onto the Microsoft intermediate language (MSIL) stream followed by the metadata token for the given type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instruction values are defined in the `OpCodes` enumeration. The location of `cls` is recorded so that the token can be patched if necessary when persisting the module to a portable executable (PE) file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="cls" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitCall">
+      <MemberSignature Language="C#" Value="public virtual void EmitCall (System.Reflection.Emit.OpCode opcode, System.Reflection.MethodInfo methodInfo, Type[] optionalParameterTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitCall(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.MethodInfo methodInfo, class System.Type[] optionalParameterTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitCall(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo,System.Type[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" />
+        <Parameter Name="optionalParameterTypes" Type="System.Type[]" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream. Must be <see cref="F:System.Reflection.Emit.OpCodes.Call" />, <see cref="F:System.Reflection.Emit.OpCodes.Callvirt" />, or <see cref="F:System.Reflection.Emit.OpCodes.Newobj" />.</param>
+        <param name="methodInfo">The <see langword="varargs" /> method to be called.</param>
+        <param name="optionalParameterTypes">The types of the optional arguments if the method is a <see langword="varargs" /> method; otherwise, <see langword="null" />.</param>
+        <summary>Puts a <see langword="call" /> or <see langword="callvirt" /> instruction onto the Microsoft intermediate language (MSIL) stream to call a <see langword="varargs" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Reflection.Emit.ILGenerator.EmitCall%2A> method is used to emit calls to `varargs` methods because there is no overload of the <xref:System.Reflection.Emit.ILGenerator.Emit%2A> method that specifies the parameter types of the variable arguments.  
+  
+ To emit calls to methods that do not use the <xref:System.Reflection.CallingConventions> calling convention, use the <xref:System.Reflection.Emit.ILGenerator.Emit%28System.Reflection.Emit.OpCode%2CSystem.Reflection.MethodInfo%29> method overload.  
+  
+## Version Information  
+ Beginning with the .NET Framework version 2.0, the <xref:System.Reflection.Emit.ILGenerator.EmitCall%2A> method does not throw an exception when optional parameter types are specified for a method that is not `varargs`. <xref:System.InvalidProgramException> is thrown when the call is executed.  
+  
+   
+  
+## Examples  
+ The following code example emits two methods, a `varargs` method and a method that calls the `varargs` method. The `EmitCall` method is used to emit the call to the `varargs` method.  
+  
+ [!code-cpp[Emit.ArgIterator#1](~/samples/snippets/cpp/VS_Snippets_CLR/Emit.ArgIterator/cpp/source.cpp#1)]
+ [!code-csharp[Emit.ArgIterator#1](~/samples/snippets/csharp/VS_Snippets_CLR/Emit.ArgIterator/cs/source.cs#1)]
+ [!code-vb[Emit.ArgIterator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Emit.ArgIterator/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="opcode" /> does not specify a method call.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="methodInfo" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The calling convention for the method is not <see langword="varargs" />, but optional parameter types are supplied. This exception is thrown in the .NET Framework versions 1.0 and 1.1, In subsequent versions, no exception is thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitCalli">
+      <MemberSignature Language="C#" Value="public virtual void EmitCalli (System.Reflection.Emit.OpCode opcode, System.Runtime.InteropServices.CallingConvention unmanagedCallConv, Type returnType, Type[] parameterTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitCalli(valuetype System.Reflection.Emit.OpCode opcode, valuetype System.Runtime.InteropServices.CallingConvention unmanagedCallConv, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode,System.Runtime.InteropServices.CallingConvention,System.Type,System.Type[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="unmanagedCallConv" Type="System.Runtime.InteropServices.CallingConvention" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="parameterTypes" Type="System.Type[]" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream. Must be <see cref="F:System.Reflection.Emit.OpCodes.Calli" />.</param>
+        <param name="unmanagedCallConv">The unmanaged calling convention to be used.</param>
+        <param name="returnType">The <see cref="T:System.Type" /> of the result.</param>
+        <param name="parameterTypes">The types of the required arguments to the instruction.</param>
+        <summary>Puts a <see cref="F:System.Reflection.Emit.OpCodes.Calli" /> instruction onto the Microsoft intermediate language (MSIL) stream, specifying an unmanaged calling convention for the indirect call.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use<xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates the contextual usage of the <xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> method to call an unmanaged type method external to the dynamic class.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.EmitCalli Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.EmitCalli Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitCalli">
+      <MemberSignature Language="C#" Value="public virtual void EmitCalli (System.Reflection.Emit.OpCode opcode, System.Reflection.CallingConventions callingConvention, Type returnType, Type[] parameterTypes, Type[] optionalParameterTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitCalli(valuetype System.Reflection.Emit.OpCode opcode, valuetype System.Reflection.CallingConventions callingConvention, class System.Type returnType, class System.Type[] parameterTypes, class System.Type[] optionalParameterTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="opcode" Type="System.Reflection.Emit.OpCode" />
+        <Parameter Name="callingConvention" Type="System.Reflection.CallingConventions" />
+        <Parameter Name="returnType" Type="System.Type" />
+        <Parameter Name="parameterTypes" Type="System.Type[]" />
+        <Parameter Name="optionalParameterTypes" Type="System.Type[]" />
+      </Parameters>
+      <Docs>
+        <param name="opcode">The MSIL instruction to be emitted onto the stream. Must be <see cref="F:System.Reflection.Emit.OpCodes.Calli" />.</param>
+        <param name="callingConvention">The managed calling convention to be used.</param>
+        <param name="returnType">The <see cref="T:System.Type" /> of the result.</param>
+        <param name="parameterTypes">The types of the required arguments to the instruction.</param>
+        <param name="optionalParameterTypes">The types of the optional arguments for <see langword="varargs" /> calls.</param>
+        <summary>Puts a <see cref="F:System.Reflection.Emit.OpCodes.Calli" /> instruction onto the Microsoft intermediate language (MSIL) stream, specifying a managed calling convention for the indirect call.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use [EmitCalli Method (OpCode, CallingConventions, Type, Type\<xref:System.Reflection.Emit.ILGenerator.EmitCalli%2A> to put a <xref:System.Reflection.Emit.OpCodes.Calli> instruction onto the stream. Do not use <xref:System.Reflection.Emit.ILGenerator.Emit%2A>.  
+  
+ If `optionalParameterTypes` specifies optional arguments, `callingConvention` must include the <xref:System.Reflection.CallingConventions?displayProperty=fullName> flag.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="optionalParameterTypes" /> is not <see langword="null" />, but <paramref name="callingConvention" /> does not include the <see cref="F:System.Reflection.CallingConventions.VarArgs" /> flag.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitWriteLine">
+      <MemberSignature Language="C#" Value="public virtual void EmitWriteLine (System.Reflection.Emit.LocalBuilder localBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitWriteLine(class System.Reflection.Emit.LocalBuilder localBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.Emit.LocalBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localBuilder" Type="System.Reflection.Emit.LocalBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="localBuilder">The local variable whose value is to be written to the console.</param>
+        <summary>Emits the Microsoft intermediate language (MSIL) necessary to call <see cref="Overload:System.Console.WriteLine" /> with the given local variable.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of `localBuilder` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The code sample below demonstrates the contextual usage of the <xref:System.Reflection.Emit.ILGenerator.EmitWriteLine%2A> method to write a string to the console in a dynamic method.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The type of <paramref name="localBuilder" /> is <see cref="T:System.Reflection.Emit.TypeBuilder" /> or <see cref="T:System.Reflection.Emit.EnumBuilder" />, which are not supported.  
+  
+ -or-  
+  
+ There is no overload of <see cref="Overload:System.Console.WriteLine" /> that accepts the type of <paramref name="localBuilder" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localBuilder" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitWriteLine">
+      <MemberSignature Language="C#" Value="public virtual void EmitWriteLine (System.Reflection.FieldInfo fld);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitWriteLine(class System.Reflection.FieldInfo fld) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.FieldInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fld" Type="System.Reflection.FieldInfo" />
+      </Parameters>
+      <Docs>
+        <param name="fld">The field whose value is to be written to the console.</param>
+        <summary>Emits the Microsoft intermediate language (MSIL) necessary to call <see cref="Overload:System.Console.WriteLine" /> with the given field.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of `fld` must match the parameter type of an overload of the <xref:System.Console.WriteLine%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates the use of the <xref:System.Reflection.Emit.ILGenerator.EmitWriteLine%2A> method to write a string to the console in a dynamic method.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">There is no overload of the <see cref="Overload:System.Console.WriteLine" /> method that accepts the type of the specified field.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fld" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The type of the field is <see cref="T:System.Reflection.Emit.TypeBuilder" /> or <see cref="T:System.Reflection.Emit.EnumBuilder" />, which are not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EmitWriteLine">
+      <MemberSignature Language="C#" Value="public virtual void EmitWriteLine (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitWriteLine(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitWriteLine(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to be printed.</param>
+        <summary>Emits the Microsoft intermediate language (MSIL) to call <see cref="Overload:System.Console.WriteLine" /> with a string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string must have already been defined.  
+  
+   
+  
+## Examples  
+ The code sample below demonstrates the contextual usage of the `EmitWriteLine` method to write a string to the console in a dynamic method.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.OpCodes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.OpCodes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndExceptionBlock">
+      <MemberSignature Language="C#" Value="public virtual void EndExceptionBlock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndExceptionBlock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EndExceptionBlock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ends an exception block.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The code sample below demonstrates the contextual usage of the `EndExceptionBlock` method.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The end exception block occurs in an unexpected place in the code stream.</exception>
+        <exception cref="T:System.NotSupportedException">The Microsoft intermediate language (MSIL) being generated is not currently in an exception block.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndScope">
+      <MemberSignature Language="C#" Value="public virtual void EndScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EndScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ends a lexical scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to emit symbolic information. It is used with <xref:System.Reflection.Emit.ILGenerator.BeginScope%2A>.  
+  
+ If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
+  
+   
+  
+## Examples  
+ The following code sample illustrates the use of `BeginScope` and `EndScope`.  
+  
+ [!code-cpp[ILGenerator_Begin_EndScope#2](~/samples/snippets/cpp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CPP/ilgenerator_begin_endscope.cpp#2)]
+ [!code-csharp[ILGenerator_Begin_EndScope#2](~/samples/snippets/csharp/VS_Snippets_CLR/ILGenerator_Begin_EndScope/CS/ilgenerator_begin_endscope.cs#2)]
+ [!code-vb[ILGenerator_Begin_EndScope#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ILGenerator_Begin_EndScope/VB/ilgenerator_begin_endscope.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ILOffset">
+      <MemberSignature Language="C#" Value="public virtual int ILOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ILOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ILGenerator.ILOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current offset, in bytes, in the Microsoft intermediate language (MSIL) stream that is being emitted by the <see cref="T:System.Reflection.Emit.ILGenerator" />.</summary>
+        <value>The offset in the MSIL stream at which the next instruction will be emitted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is transparent, and can be called from partially trusted code.  
+  
+ If the <xref:System.Reflection.Emit.ILGenerator.ILOffset%2A> property is accessed before any MSIL instructions have been emitted, it returns 0 (zero).  
+  
+ When MSIL is generated for dynamic languages, this property can be used to map offsets in the MSIL stream to source code line numbers. The resulting information can be used to provide stack traces when exceptions are thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkLabel">
+      <MemberSignature Language="C#" Value="public virtual void MarkLabel (System.Reflection.Emit.Label loc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkLabel(valuetype System.Reflection.Emit.Label loc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.MarkLabel(System.Reflection.Emit.Label)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="loc" Type="System.Reflection.Emit.Label" />
+      </Parameters>
+      <Docs>
+        <param name="loc">The label for which to set an index.</param>
+        <summary>Marks the Microsoft intermediate language (MSIL) stream's current position with the given label.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A label cannot be defined more than once.  
+  
+   
+  
+## Examples  
+ The code sample below demonstrates the contextual usage of `MarkLabel` to implement MSIL branching in a dynamic method.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.Emit Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.Emit Example 2/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="loc" /> represents an invalid index into the label array.  
+  
+ -or-  
+  
+ An index for <paramref name="loc" /> has already been defined.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkSequencePoint">
+      <MemberSignature Language="C#" Value="public virtual void MarkSequencePoint (System.Diagnostics.SymbolStore.ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkSequencePoint(class System.Diagnostics.SymbolStore.ISymbolDocumentWriter document, int32 startLine, int32 startColumn, int32 endLine, int32 endColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.MarkSequencePoint(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Diagnostics.SymbolStore.ISymbolDocumentWriter" />
+        <Parameter Name="startLine" Type="System.Int32" />
+        <Parameter Name="startColumn" Type="System.Int32" />
+        <Parameter Name="endLine" Type="System.Int32" />
+        <Parameter Name="endColumn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="document">The document for which the sequence point is being defined.</param>
+        <param name="startLine">The line where the sequence point begins.</param>
+        <param name="startColumn">The column in the line where the sequence point begins.</param>
+        <param name="endLine">The line where the sequence point ends.</param>
+        <param name="endColumn">The column in the line where the sequence point ends.</param>
+        <summary>Marks a sequence point in the Microsoft intermediate language (MSIL) stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line numbers are indexed from 1. Columns are indexed from 0.  
+  
+ The symbolic information normally includes at least one MSIL offset for each source line. When the just-in-time (JIT) compiler is about to compile a method, it asks the profiling services for a list of MSIL offsets that should be preserved. These MSIL offsets are called *sequence points*.  
+  
+ If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, it does not support symbolic information.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="startLine" /> or <paramref name="endLine" /> is &lt;= 0.</exception>
+        <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.InteropServices._ILGenerator.GetIDsOfNames">
+      <MemberSignature Language="C#" Value="void _ILGenerator.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="rgszNames" Type="System.IntPtr" />
+        <Parameter Name="cNames" Type="System.UInt32" />
+        <Parameter Name="lcid" Type="System.UInt32" />
+        <Parameter Name="rgDispId" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="rgszNames">Passed-in array of names to be mapped.</param>
+        <param name="cNames">Count of the names to be mapped.</param>
+        <param name="lcid">The locale context in which to interpret the names.</param>
+        <param name="rgDispId">Caller-allocated array that receives the IDs corresponding to the names.</param>
+        <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.InteropServices._ILGenerator.GetTypeInfo">
+      <MemberSignature Language="C#" Value="void _ILGenerator.GetTypeInfo (uint iTInfo, uint lcid, IntPtr ppTInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iTInfo" Type="System.UInt32" />
+        <Parameter Name="lcid" Type="System.UInt32" />
+        <Parameter Name="ppTInfo" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="iTInfo">The type information to return.</param>
+        <param name="lcid">The locale identifier for the type information.</param>
+        <param name="ppTInfo">Receives a pointer to the requested type information object.</param>
+        <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.InteropServices._ILGenerator.GetTypeInfoCount">
+      <MemberSignature Language="C#" Value="void _ILGenerator.GetTypeInfoCount (out uint pcTInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#GetTypeInfoCount(System.UInt32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pcTInfo">Points to a location that receives the number of type information interfaces provided by the object.</param>
+        <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.InteropServices._ILGenerator.Invoke">
+      <MemberSignature Language="C#" Value="void _ILGenerator.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispIdMember" Type="System.UInt32" />
+        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="lcid" Type="System.UInt32" />
+        <Parameter Name="wFlags" Type="System.Int16" />
+        <Parameter Name="pDispParams" Type="System.IntPtr" />
+        <Parameter Name="pVarResult" Type="System.IntPtr" />
+        <Parameter Name="pExcepInfo" Type="System.IntPtr" />
+        <Parameter Name="puArgErr" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="dispIdMember">Identifies the member.</param>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="lcid">The locale context in which to interpret arguments.</param>
+        <param name="wFlags">Flags describing the context of the call.</param>
+        <param name="pDispParams">Pointer to a structure containing an array of arguments, an array of argument DISPIDs for named arguments, and counts for the number of elements in the arrays.</param>
+        <param name="pVarResult">Pointer to the location where the result is to be stored.</param>
+        <param name="pExcepInfo">Pointer to a structure that contains exception information.</param>
+        <param name="puArgErr">The index of the first argument that has an error.</param>
+        <summary>Provides access to properties and methods exposed by an object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for accessing managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">The method is called late-bound using the COM <c>IDispatch</c> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowException">
+      <MemberSignature Language="C#" Value="public virtual void ThrowException (Type excType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ThrowException(class System.Type excType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.ThrowException(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="excType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="excType">The class of the type of exception to throw.</param>
+        <summary>Emits an instruction to throw an exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates the contextual usage of `ThrowException` to throw an exception inside the MSIL of a dynamic method.  
+  
+ [!code-cpp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CPP/source.cpp#1)]
+ [!code-csharp[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/CS/source.cs#1)]
+ [!code-vb[System.Reflection.Emit.ILGenerator.ThrowException Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Reflection.Emit.ILGenerator.ThrowException Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="excType" /> is not the <see cref="T:System.Exception" /> class or a derived class of <see cref="T:System.Exception" />.  
+  
+ -or-  
+  
+ The type does not have a default constructor.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="excType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UsingNamespace">
+      <MemberSignature Language="C#" Value="public virtual void UsingNamespace (string usingNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UsingNamespace(string usingNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.UsingNamespace(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usingNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="usingNamespace">The namespace to be used in evaluating locals and watches for the current active lexical scope</param>
+        <summary>Specifies the namespace to be used in evaluating locals and watches for the current active lexical scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the current <xref:System.Reflection.Emit.ILGenerator> is associated with a <xref:System.Reflection.Emit.DynamicMethod> object, this method is not supported.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Length of <paramref name="usingNamespace" /> is zero.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="usingNamespace" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,136 @@
+<Type Name="IColumnMapping" FullName="System.Data.IColumnMapping">
+  <TypeSignature Language="C#" Value="public interface IColumnMapping" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColumnMapping" />
+  <TypeSignature Language="DocId" Value="T:System.Data.IColumnMapping" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Associates a data source column with a <see cref="T:System.Data.DataSet" /> column, and is implemented by the <see cref="T:System.Data.Common.DataColumnMapping" /> class, which is used in common by .NET Framework data providers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.IColumnMapping> interface enables an inheriting class to implement a Column Mapping class, which associates a data source column with a <xref:System.Data.DataSet> column. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
+  
+ An application does not create an instance of the <xref:System.Data.IColumnMapping> interface directly, but creates an instance of a class that inherits <xref:System.Data.IColumnMapping>.  
+  
+ Classes that inherit <xref:System.Data.IColumnMapping> must implement all inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IColumnMapping> interface defines the <xref:System.Data.IColumnMapping.DataSetColumn%2A> property. In turn, the <xref:System.Data.Common.DataColumnMapping> class inherits this property, and also defines the <xref:System.Data.Common.DataColumnMapping.GetDataColumnBySchemaAction%2A> method.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, and adds it to a <xref:System.Data.Common.DataColumnMappingCollection> collection. It then tells the user that the mapping was added to the collection and shows the parent for the mapping.  
+  
+ [!code-csharp[Classic WebData DataColumnMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Data.IColumnMapping" /> interface, you should implement the following constructors:  
+  
+ <list type="table">  
+<listheader>  
+<term> Item  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> ColumnMapping()  
+  
+ </term>  
+<description> Initializes a new instance of the ColumnMapping class.  
+  
+ </description>  
+</item>  
+<item>  
+<term> ColumnMapping(string sourceColumn, string dataSetColumn)  
+  
+ </term>  
+<description> Initializes a new instance of the ColumnMapping class with a source with the specified source column name and <see cref="T:System.Data.DataSet" /> column name.  
+  
+ </description>  
+</item>  
+</list></para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="DataSetColumn">
+      <MemberSignature Language="C#" Value="public string DataSetColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataSetColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IColumnMapping.DataSetColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the column within the <see cref="T:System.Data.DataSet" /> to map to.</summary>
+        <value>The name of the column within the <see cref="T:System.Data.DataSet" /> to map to. The name is not case sensitive.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, and sets its properties.  
+  
+ [!code-csharp[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceColumn">
+      <MemberSignature Language="C#" Value="public string SourceColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IColumnMapping.SourceColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the column within the data source to map from. The name is case-sensitive.</summary>
+        <value>The case-sensitive name of the column in the data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the derived class, <xref:System.Data.Common.DataColumnMapping>, and sets its properties.  
+  
+ [!code-csharp[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataColumnMapping.DataSetColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataColumnMapping.DataSetColumn Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

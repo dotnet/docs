@@ -1,0 +1,770 @@
+<Type Name="TextLine" FullName="System.Windows.Media.TextFormatting.TextLine">
+  <TypeSignature Language="C#" Value="public abstract class TextLine : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextLine extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextLine" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides an abstract class for supporting formatting services to a line of text.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TextLine ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TextLine (double pixelsPerDip);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(float64 pixelsPerDip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pixelsPerDip" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="pixelsPerDip">
+          <c>pixelsPerDip</c> should be set to the TextSource's PixelsPerDip value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor must be called for every class that is inherited from <xref:System.Windows.Media.TextFormatting.TextLine>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Baseline">
+      <MemberSignature Language="C#" Value="public abstract double Baseline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Baseline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Baseline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance from the top to the baseline of the current <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> object.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the baseline distance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collapse">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextLine Collapse (System.Windows.Media.TextFormatting.TextCollapsingProperties[] collapsingPropertiesList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextLine Collapse(class System.Windows.Media.TextFormatting.TextCollapsingProperties[] collapsingPropertiesList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.Collapse(System.Windows.Media.TextFormatting.TextCollapsingProperties[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextLine</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collapsingPropertiesList" Type="System.Windows.Media.TextFormatting.TextCollapsingProperties[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="collapsingPropertiesList">A list of <see cref="T:System.Windows.Media.TextFormatting.TextCollapsingProperties" /> objects that represent the collapsed text properties.</param>
+        <summary>Create a collapsed line based on collapsed text properties.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> value that represents a collapsed line that can be displayed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DependentLength">
+      <MemberSignature Language="C#" Value="public abstract int DependentLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DependentLength" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.DependentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of characters following the last character of the line that may trigger reformatting of the current line.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the number of characters.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public abstract void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all managed and unmanaged resources used by the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Draw">
+      <MemberSignature Language="C#" Value="public abstract void Draw (System.Windows.Media.DrawingContext drawingContext, System.Windows.Point origin, System.Windows.Media.TextFormatting.InvertAxes inversion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Draw(class System.Windows.Media.DrawingContext drawingContext, valuetype System.Windows.Point origin, valuetype System.Windows.Media.TextFormatting.InvertAxes inversion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.Draw(System.Windows.Media.DrawingContext,System.Windows.Point,System.Windows.Media.TextFormatting.InvertAxes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="drawingContext" Type="System.Windows.Media.DrawingContext" />
+        <Parameter Name="origin" Type="System.Windows.Point" />
+        <Parameter Name="inversion" Type="System.Windows.Media.TextFormatting.InvertAxes" />
+      </Parameters>
+      <Docs>
+        <param name="drawingContext">The <see cref="T:System.Windows.Media.DrawingContext" /> object onto which the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> is rendered.</param>
+        <param name="origin">A <see cref="T:System.Windows.Point" /> value that represents the drawing origin.</param>
+        <param name="inversion">An enumerated <see cref="T:System.Windows.Media.TextFormatting.InvertAxes" /> value that indicates the inversion of the horizontal and vertical axes of the drawing surface.</param>
+        <summary>Renders the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> object based upon the specified <see cref="T:System.Windows.Media.DrawingContext" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extent">
+      <MemberSignature Language="C#" Value="public abstract double Extent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Extent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Extent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance from the top-most to bottom-most black pixel in a line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the extent distance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBackspaceCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.CharacterHit GetBackspaceCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetBackspaceCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetBackspaceCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">The current <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object.</param>
+        <summary>Gets the previous character hit after backspacing.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object after backspacing.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCharacterHitFromDistance">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.CharacterHit GetCharacterHitFromDistance (double distance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetCharacterHitFromDistance(float64 distance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetCharacterHitFromDistance(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="distance" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="distance">A <see cref="T:System.Double" /> value that represents the distance from the beginning of the line.</param>
+        <summary>Gets the character hit corresponding to the specified distance from the beginning of the line.</summary>
+        <returns>The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object at the specified <paramref name="distance" /> from the beginning of the line.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text flow direction determines how the distance is measured.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDistanceFromCharacterHit">
+      <MemberSignature Language="C#" Value="public abstract double GetDistanceFromCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetDistanceFromCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetDistanceFromCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">The <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object whose distance you want to query.</param>
+        <summary>Gets the distance from the beginning of the line to the specified character hit.</summary>
+        <returns>A <see cref="T:System.Double" /> that represents the distance from the beginning of the line.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text flow direction determines how the distance is measured.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIndexedGlyphRuns">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Windows.Media.TextFormatting.IndexedGlyphRun&gt; GetIndexedGlyphRuns ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.TextFormatting.IndexedGlyphRun&gt; GetIndexedGlyphRuns() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetIndexedGlyphRuns" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Media.TextFormatting.IndexedGlyphRun&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator for enumerating <see cref="T:System.Windows.Media.TextFormatting.IndexedGlyphRun" /> objects in the <see cref="T:System.Windows.Media.TextFormatting.TextLine" />.</summary>
+        <returns>An enumerator that allows you to enumerate each <see cref="T:System.Windows.Media.TextFormatting.IndexedGlyphRun" /> object in the <see cref="T:System.Windows.Media.TextFormatting.TextLine" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By enumerating through the list of <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun> objects, the text layout client can obtain glyph information for each text source character.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.CharacterHit GetNextCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetNextCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetNextCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">The current <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object.</param>
+        <summary>Gets the next character hit for caret navigation.</summary>
+        <returns>The next <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object based on caret navigation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreviousCaretCharacterHit">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.CharacterHit GetPreviousCaretCharacterHit (System.Windows.Media.TextFormatting.CharacterHit characterHit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.CharacterHit GetPreviousCaretCharacterHit(valuetype System.Windows.Media.TextFormatting.CharacterHit characterHit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetPreviousCaretCharacterHit(System.Windows.Media.TextFormatting.CharacterHit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterHit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="characterHit" Type="System.Windows.Media.TextFormatting.CharacterHit" />
+      </Parameters>
+      <Docs>
+        <param name="characterHit">The current <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object.</param>
+        <summary>Gets the previous character hit for caret navigation.</summary>
+        <returns>The previous <see cref="T:System.Windows.Media.TextFormatting.CharacterHit" /> object based on caret navigation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextBounds">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextBounds&gt; GetTextBounds (int firstTextSourceCharacterIndex, int textLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Windows.Media.TextFormatting.TextBounds&gt; GetTextBounds(int32 firstTextSourceCharacterIndex, int32 textLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetTextBounds(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextBounds&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="firstTextSourceCharacterIndex" Type="System.Int32" />
+        <Parameter Name="textLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="firstTextSourceCharacterIndex">An <see cref="T:System.Int32" /> value that represents the index of first character of specified range.</param>
+        <param name="textLength">An <see cref="T:System.Int32" /> value that represents the number of characters of the specified range.</param>
+        <summary>Gets an array of bounding rectangles that represent the range of characters within a text line.</summary>
+        <returns>A list of <see cref="T:System.Windows.Media.TextFormatting.TextBounds" /> objects representing the bounding rectangle.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextCollapsedRanges">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextCollapsedRange&gt; GetTextCollapsedRanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Windows.Media.TextFormatting.TextCollapsedRange&gt; GetTextCollapsedRanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetTextCollapsedRanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextCollapsedRange&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of collapsed text ranges after a line has been collapsed.</summary>
+        <returns>A list of <see cref="T:System.Windows.Media.TextFormatting.TextCollapsedRange" /> objects that represent the collapsed text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextLineBreak">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextLineBreak GetTextLineBreak ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextLineBreak GetTextLineBreak() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetTextLineBreak" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextLineBreak</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the state of the line when broken by line breaking process.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextLineBreak" /> value that represents the line break.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is `null` when the line ends at the end of the paragraph.  
+  
+ The text formatter client may pass the return value back as a parameter to the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method, which allows the value to be used when formatting the next line within the same paragraph.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextRunSpans">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextSpan&lt;System.Windows.Media.TextFormatting.TextRun&gt;&gt; GetTextRunSpans ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Windows.Media.TextFormatting.TextSpan`1&lt;class System.Windows.Media.TextFormatting.TextRun&gt;&gt; GetTextRunSpans() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextLine.GetTextRunSpans" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextSpan&lt;System.Windows.Media.TextFormatting.TextRun&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> objects in a text span that are contained within a line.</summary>
+        <returns>Gets a list of <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> objects contained within a text span.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasCollapsed">
+      <MemberSignature Language="C#" Value="public abstract bool HasCollapsed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasCollapsed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.HasCollapsed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the line is collapsed.</summary>
+        <value>
+          <see langword="true" />, if the line is collapsed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasOverflowed">
+      <MemberSignature Language="C#" Value="public abstract bool HasOverflowed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasOverflowed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.HasOverflowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether content of the line overflows the specified paragraph width.</summary>
+        <value>
+          <see langword="true" />, it the line overflows the specified paragraph width; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public abstract double Height { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of a line of text.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text line height.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTruncated">
+      <MemberSignature Language="C#" Value="public virtual bool IsTruncated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTruncated" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.IsTruncated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether the text line is truncated in the middle of a word.</summary>
+        <value>
+          <see langword="true" /> if the text line is truncated in the middle of a word; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.TextFormatting.TextLine.IsTruncated%2A> property value is set only when the <xref:System.Windows.TextWrapping> property of <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> is set to <xref:System.Windows.TextWrapping>, and a single word is wider than the formatting paragraph width. In such situation, <xref:System.Windows.Media.TextFormatting.TextFormatter> truncates the line in the middle of the word to honor the desired behavior specified by <xref:System.Windows.TextWrapping> setting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public abstract int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> positions of the current line.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the total number of <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> positions of the current line.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkerBaseline">
+      <MemberSignature Language="C#" Value="public abstract double MarkerBaseline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MarkerBaseline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.MarkerBaseline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance from the edge of the line's highest point to the baseline marker of the line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the baseline distance of the marker.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkerHeight">
+      <MemberSignature Language="C#" Value="public abstract double MarkerHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MarkerHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.MarkerHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of a marker for a list item.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the height of the marker.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewlineLength">
+      <MemberSignature Language="C#" Value="public abstract int NewlineLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NewlineLength" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.NewlineLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of newline characters at the end of a line.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the number of newline characters.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverhangAfter">
+      <MemberSignature Language="C#" Value="public abstract double OverhangAfter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OverhangAfter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.OverhangAfter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance that black pixels extend beyond the bottom alignment edge of a line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the overhang after distance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverhangLeading">
+      <MemberSignature Language="C#" Value="public abstract double OverhangLeading { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OverhangLeading" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.OverhangLeading" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance that black pixels extend prior to the left leading alignment edge of the line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the overhang leading distance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverhangTrailing">
+      <MemberSignature Language="C#" Value="public abstract double OverhangTrailing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OverhangTrailing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.OverhangTrailing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance that black pixels extend following the right trailing alignment edge of the line.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the overhang trailing distance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsPerDip">
+      <MemberSignature Language="C#" Value="public double PixelsPerDip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 PixelsPerDip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.PixelsPerDip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the PixelsPerDip at which the text should be rendered.</summary>
+        <value>The current <see cref="P:System.Windows.Media.TextFormatting.TextLine.PixelsPerDip" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public abstract double Start { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Start" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance from the start of a paragraph to the starting point of a line.</summary>
+        <value>A <see cref="T:System.Double" /> value that represents the distance from the start of a paragraph to the starting point of a line.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBaseline">
+      <MemberSignature Language="C#" Value="public abstract double TextBaseline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TextBaseline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.TextBaseline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance from the top to the baseline of the line of text.</summary>
+        <value>A <see cref="T:System.Double" /> value that represents the text baseline distance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextHeight">
+      <MemberSignature Language="C#" Value="public abstract double TextHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TextHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.TextHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of the text and any other content in the line.</summary>
+        <value>A <see cref="T:System.Double" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.TextFormatting.TextLine.TextHeight%2A> may differ from the <xref:System.Windows.Media.TextFormatting.TextLine.Height%2A> property if the client specified the line height.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingWhitespaceLength">
+      <MemberSignature Language="C#" Value="public abstract int TrailingWhitespaceLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TrailingWhitespaceLength" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.TrailingWhitespaceLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of whitespace code points beyond the last non-blank character in a line.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the number of whitespace code points beyond the last non-blank character in a line.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public abstract double Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the width of a line of text, excluding trailing whitespace characters.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text line width, excluding trailing whitespace characters.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WidthIncludingTrailingWhitespace">
+      <MemberSignature Language="C#" Value="public abstract double WidthIncludingTrailingWhitespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 WidthIncludingTrailingWhitespace" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextLine.WidthIncludingTrailingWhitespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the width of a line of text, including trailing whitespace characters.</summary>
+        <value>A <see cref="T:System.Double" /> that represents the text line width, including trailing whitespace characters.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

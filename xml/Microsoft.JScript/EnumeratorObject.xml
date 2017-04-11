@@ -1,0 +1,54 @@
+<Type Name="EnumeratorObject" FullName="Microsoft.JScript.EnumeratorObject">
+  <TypeSignature Language="C#" Value="public class EnumeratorObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnumeratorObject extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.EnumeratorObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an enumerator object. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="enumerator">
+      <MemberSignature Language="C#" Value="protected System.Collections.IEnumerator enumerator;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Collections.IEnumerator enumerator" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.EnumeratorObject.enumerator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the enumerator that is represented by the <see cref="T:Microsoft.JScript.EnumeratorObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadObject">
+      <MemberSignature Language="C#" Value="protected void LoadObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void LoadObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorObject.LoadObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the enumerator to the next element of the collection and stores a reference to the current element of the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

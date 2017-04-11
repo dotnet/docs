@@ -1,0 +1,193 @@
+<Type Name="RequestCachePolicy" FullName="System.Net.Cache.RequestCachePolicy">
+  <TypeSignature Language="C#" Value="public class RequestCachePolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestCachePolicy extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Cache.RequestCachePolicy" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an application's caching requirements for resources obtained by using <see cref="T:System.Net.WebRequest" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify a default cache policy for your application by using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or the application or machine configuration files. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+  
+ You can specify the cache policy for an individual request by using the <xref:System.Net.WebRequest.CachePolicy%2A> property.  
+  
+ Caching for Web services is not supported.  
+  
+   
+  
+## Examples  
+ The following code example creates a policy with <xref:System.Net.Cache.RequestCachePolicy.Level%2A> set to <xref:System.Net.Cache.RequestCacheLevel>, and uses it to set the cache policy of a <xref:System.Net.WebRequest>.  
+  
+ [!code-cpp[NclSimpleCache#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#13)]
+ [!code-csharp[NclSimpleCache#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#13)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestCachePolicy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cache.RequestCachePolicy.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Cache.RequestCachePolicy" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Net.Cache.RequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.RequestCacheLevel>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates calling this constructor.  
+  
+ [!code-cpp[NclSimpleCache#11](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#11)]
+ [!code-csharp[NclSimpleCache#11](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestCachePolicy (System.Net.Cache.RequestCacheLevel level);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Cache.RequestCacheLevel level) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cache.RequestCachePolicy.#ctor(System.Net.Cache.RequestCacheLevel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="level" Type="System.Net.Cache.RequestCacheLevel" />
+      </Parameters>
+      <Docs>
+        <param name="level">A <see cref="T:System.Net.Cache.RequestCacheLevel" /> that specifies the cache behavior for resources obtained using <see cref="T:System.Net.WebRequest" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Cache.RequestCachePolicy" /> class. using the specified cache policy.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Net.Cache.RequestCachePolicy.Level%2A> property to `level`.  
+  
+ The <xref:System.Net.Cache.RequestCacheLevel> value controls whether caching is enabled, and when the cache can be used. For additional information, see the <xref:System.Net.Cache.RequestCacheLevel> documentation.  
+  
+   
+  
+## Examples  
+ The following code example creates a policy with <xref:System.Net.Cache.RequestCachePolicy.Level%2A> set to <xref:System.Net.Cache.RequestCacheLevel>.and uses it to set the cache policy of a <xref:System.Net.WebRequest>.  
+  
+ [!code-cpp[NclSimpleCache#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#13)]
+ [!code-csharp[NclSimpleCache#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#13)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">level is not a valid <see cref="T:System.Net.Cache.RequestCacheLevel" />.value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public System.Net.Cache.RequestCacheLevel Level { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Cache.RequestCacheLevel Level" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Cache.RequestCachePolicy.Level" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Cache.RequestCacheLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Net.Cache.RequestCacheLevel" /> value specified when this instance was constructed.</summary>
+        <value>A <see cref="T:System.Net.Cache.RequestCacheLevel" /> value that specifies the cache behavior for resources obtained using <see cref="T:System.Net.WebRequest" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications typically use <xref:System.Net.Cache.RequestCacheLevel> as their cache policy level. Using the <xref:System.Net.Cache.RequestCacheLevel> level, the effective cache policy is determined by the current cache policy and the age of the content in the cache. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> property, if not `null`, determines the cache policy in effect for a request.  
+  
+ The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> or the application or machine configuration file. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Net.Cache.RequestCacheLevel> policy and sends a request.  
+  
+ [!code-cpp[NclSimpleCache#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#13)]
+ [!code-csharp[NclSimpleCache#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Cache.RequestCachePolicy.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of this instance.</summary>
+        <returns>A <see cref="T:System.String" /> containing the <see cref="P:System.Net.Cache.RequestCachePolicy.Level" /> for this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Net.Cache.RequestCacheLevel> policy and sends a request.  
+  
+ [!code-cpp[NclSimpleCache#14](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#14)]
+ [!code-csharp[NclSimpleCache#14](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

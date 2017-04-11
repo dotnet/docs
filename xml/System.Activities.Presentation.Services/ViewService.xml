@@ -1,0 +1,96 @@
+<Type Name="ViewService" FullName="System.Activities.Presentation.Services.ViewService">
+  <TypeSignature Language="C#" Value="public abstract class ViewService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ViewService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ViewService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.Activities.Presentation.Services.ViewService" /> class maps visuals to underlying model items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Services.ModelService> and <xref:System.Activities.Presentation.Services.ViewService> classes are required for the designer to function. The <xref:System.Activities.Design.View.DesignerView> class, which is responsible for processing user input and routing it to commands, requires both of these services to map user input back to the model.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ViewService#0](WFD_ViewService#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ViewService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Services.ViewService" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModel">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem GetModel (System.Windows.DependencyObject view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem GetModel(class System.Windows.DependencyObject view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.GetModel(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="view">The view object that you want to find the model for.</param>
+        <summary>Returns the model corresponding to the view, or <see langword="null" /> if there is no model that matches the view.</summary>
+        <returns>Returns the corresponding model as a <see cref="T:System.Activities.Design.Model.ModelItem" />, or <see langword="null" /> if there is no model for the given view object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="view" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.DependencyObject GetView (System.Activities.Presentation.Model.ModelItem model);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DependencyObject GetView(class System.Activities.Presentation.Model.ModelItem model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.GetView(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="model" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="model">The model to return the view object for.</param>
+        <summary>Returns the view corresponding to the given model, or <see langword="null" /> if there is no view for the model.</summary>
+        <returns>Returns the view for this model as a <see cref="T:System.Windows.DependencyObject" />, or <see langword="null" /> if there is no view.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="model" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="model" /> does not represent a valid model for this service.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

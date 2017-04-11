@@ -1,0 +1,107 @@
+<Type Name="SubjectIdentifierOrKeyType" FullName="System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType">
+  <TypeSignature Language="C#" Value="public enum SubjectIdentifierOrKeyType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubjectIdentifierOrKeyType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType" /> enumeration defines how a subject is identified.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IssuerAndSerialNumber">
+      <MemberSignature Language="C#" Value="IssuerAndSerialNumber" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType IssuerAndSerialNumber = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.IssuerAndSerialNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The subject is identified by the certificate issuer and serial number.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicKeyInfo">
+      <MemberSignature Language="C#" Value="PublicKeyInfo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType PublicKeyInfo = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.PublicKeyInfo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The subject is identified by the public key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SubjectKeyIdentifier">
+      <MemberSignature Language="C#" Value="SubjectKeyIdentifier" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType SubjectKeyIdentifier = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.SubjectKeyIdentifier" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The subject is identified by the hash of the subject key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type is unknown.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

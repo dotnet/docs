@@ -1,0 +1,526 @@
+<Type Name="DrawListViewSubItemEventArgs" FullName="System.Windows.Forms.DrawListViewSubItemEventArgs">
+  <TypeSignature Language="C#" Value="public class DrawListViewSubItemEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawListViewSubItemEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewSubItemEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.ListView.DrawSubItem" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event enables you to customize (or owner-draw) the appearance of a <xref:System.Windows.Forms.ListView> control in the details view.  
+  
+ The <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event is raised by a <xref:System.Windows.Forms.ListView> control when its <xref:System.Windows.Forms.ListView.OwnerDraw%2A?displayProperty=fullName> property is set to `true` and its <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> passed to the event handler contains information about the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> to draw and also provides methods to help you draw the subitem.  
+  
+ Use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState%2A> or <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.Item%2A> properties to retrieve information about the parent item of the subitem to draw. To retrieve the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> itself, use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.SubItem%2A> property. Use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.Header%2A> property to retrieve the <xref:System.Windows.Forms.ColumnHeader> representing the header of the column in which the subitem is displayed.  
+  
+ Use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.Graphics%2A> property to do the actual drawing within the area specified by the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.Bounds%2A> property. To draw standard <xref:System.Windows.Forms.ListView> elements that do not need customization, use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawBackground%2A>, <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawText%2A>, and <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawFocusRectangle%2A> methods.  
+  
+ Use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawDefault%2A> property when you want the operating system to draw the subitem. This is useful when you want to customize only specific subitems.  
+  
+> [!NOTE]
+>  To avoid issues with graphics flickering when owner drawing, override the <xref:System.Windows.Forms.ListView> control and set the <xref:System.Windows.Forms.ListView.DoubleBuffered%2A> property to `true`. This feature is available only on Windows XP and the Windows Server 2003 family when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to provide custom drawing for a <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView> control in the example has a gradient background. Subitems with negative values have a red foreground and a black background.  
+  
+ A handler for the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event draws the background for entire items. A handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the text values and both the text and background for subitems that have negative values. A handler for the <xref:System.Windows.Forms.ListView.DrawColumnHeader> event draws each column header.  
+  
+ A <xref:System.Windows.Forms.ContextMenu> component provides a way to switch between the details view and the list view. In the list view, only the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event is fired. In this case, the text and background are both drawn in the <xref:System.Windows.Forms.ListView.DrawItem?displayProperty=fullName> event handler.  
+  
+ [!code-csharp[ListViewOwnerDraw#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#1)]
+ [!code-vb[ListViewOwnerDraw#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DrawListViewSubItemEventArgs (System.Drawing.Graphics graphics, System.Drawing.Rectangle bounds, System.Windows.Forms.ListViewItem item, System.Windows.Forms.ListViewItem.ListViewSubItem subItem, int itemIndex, int columnIndex, System.Windows.Forms.ColumnHeader header, System.Windows.Forms.ListViewItemStates itemState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.ListViewItem item, class System.Windows.Forms.ListViewItem/ListViewSubItem subItem, int32 itemIndex, int32 columnIndex, class System.Windows.Forms.ColumnHeader header, valuetype System.Windows.Forms.ListViewItemStates itemState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewSubItemEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.ListViewItem,System.Windows.Forms.ListViewItem.ListViewSubItem,System.Int32,System.Int32,System.Windows.Forms.ColumnHeader,System.Windows.Forms.ListViewItemStates)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="item" Type="System.Windows.Forms.ListViewItem" />
+        <Parameter Name="subItem" Type="System.Windows.Forms.ListViewItem+ListViewSubItem" />
+        <Parameter Name="itemIndex" Type="System.Int32" />
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="header" Type="System.Windows.Forms.ColumnHeader" />
+        <Parameter Name="itemState" Type="System.Windows.Forms.ListViewItemStates" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> surface on which to draw.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> within which to draw.</param>
+        <param name="item">The <see cref="T:System.Windows.Forms.ListViewItem" /> parent of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</param>
+        <param name="subItem">The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</param>
+        <param name="itemIndex">The index of the parent <see cref="T:System.Windows.Forms.ListViewItem" /> within the <see cref="P:System.Windows.Forms.ListView.Items" /> collection.</param>
+        <param name="columnIndex">The index of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> column within the <see cref="P:System.Windows.Forms.ListView.Columns" /> collection.</param>
+        <param name="header">The <see cref="T:System.Windows.Forms.ColumnHeader" /> for the column in which the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> is displayed.</param>
+        <param name="itemState">A bitwise combination of <see cref="T:System.Windows.Forms.ListViewItemStates" /> values indicating the current state of the <see cref="T:System.Windows.Forms.ListViewItem" /> parent of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawListViewSubItemEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size and location of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The location specified by this property is relative to the upper-left corner of the <xref:System.Windows.Forms.ListView> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.Bounds%2A> property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the subitem text values and both the text and background for subitems that have negative values.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> overview reference topic.  
+  
+ [!code-csharp[ListViewOwnerDraw#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#4)]
+ [!code-vb[ListViewOwnerDraw#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnIndex">
+      <MemberSignature Language="C#" Value="public int ColumnIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ColumnIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the <see cref="T:System.Windows.Forms.ListView" /> column in which the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> is displayed.</summary>
+        <value>The index of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> column within the <see cref="P:System.Windows.Forms.ListView.Columns" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ColumnIndex%2A> property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the subitem text values and both the text and background for subitems that have negative values.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> overview reference topic.  
+  
+ [!code-csharp[ListViewOwnerDraw#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#4)]
+ [!code-vb[ListViewOwnerDraw#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawBackground">
+      <MemberSignature Language="C#" Value="public void DrawBackground ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawBackground() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawBackground" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Draws the background of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> using its current background color.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to draw a standard background that uses the current value of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor%2A?displayProperty=fullName> property. The background is drawn to fill the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A> property of the parent <xref:System.Windows.Forms.ListViewItem> must be set to `false` to prevent the <xref:System.Windows.Forms.ListViewItem.BackColor%2A?displayProperty=fullName> value of the parent item from overriding the subitem value.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawBackground%2A> method in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the subitem text values and both the text and background for subitems that have negative values.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> overview reference topic.  
+  
+ [!code-csharp[ListViewOwnerDraw#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#4)]
+ [!code-vb[ListViewOwnerDraw#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawDefault">
+      <MemberSignature Language="C#" Value="public bool DrawDefault { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DrawDefault" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> should be drawn by the operating system instead of owner-drawn.</summary>
+        <value>
+          <see langword="true" /> if the subitem should be drawn by the operating system; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property when handling the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event for subitems that you do not want to customize. If you set this property to `true`, the subitem will be drawn normally using the current values of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor%2A?displayProperty=fullName>, <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Font%2A?displayProperty=fullName> properties  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A> property of the parent <xref:System.Windows.Forms.ListViewItem> must be set to `false` to prevent the <xref:System.Windows.Forms.ListViewItem.BackColor%2A?displayProperty=fullName> value of the parent item from overriding the subitem value.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#472](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#472)]
+ [!code-vb[System.Windows.Forms.EventExamples#472](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#472)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFocusRectangle">
+      <MemberSignature Language="C#" Value="public void DrawFocusRectangle (System.Drawing.Rectangle bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawFocusRectangle(valuetype System.Drawing.Rectangle bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawFocusRectangle(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">The area within which to draw the focus rectangle.</param>
+        <summary>Draws a focus rectangle for the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> if the parent <see cref="T:System.Windows.Forms.ListViewItem" /> has focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to draw a standard focus rectangle around the subitem. The focus rectangle is drawn one pixel inside the area specified by the `bounds` parameter. It is drawn only when the parent item has focus, so you do not need to check the focus state of the item before you call this method.  
+  
+ You might want to draw the focus rectangle only around the first subitem (that is, the parent item, which is displayed in the first column) rather than drawing it around every subitem of an item. This corresponds to the normal behavior of a <xref:System.Windows.Forms.ListView> control when the <xref:System.Windows.Forms.ListView.FullRowSelect%2A?displayProperty=fullName> property is set to `false`. To draw the focus rectangle around the first subitem, call the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawFocusRectangle%2A> method only when the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ColumnIndex%2A> value is 0.  
+  
+ The <xref:System.Windows.Forms.ListView> control does not provide the ability to select individual subitems, but if you want to implement subitem selection yourself, you can use this method to draw the focus rectangle around a subitem other than the first one.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawText">
+      <MemberSignature Language="C#" Value="public void DrawText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> using its current foreground color.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to draw the subitem text using the current values of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Font%2A?displayProperty=fullName> properties. The text is drawn within the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A> property of the parent <xref:System.Windows.Forms.ListViewItem> must be set to `false` to prevent the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ListViewItem.Font%2A?displayProperty=fullName> values of the parent item from overriding the subitem values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawText">
+      <MemberSignature Language="C#" Value="public void DrawText (System.Windows.Forms.TextFormatFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawText(valuetype System.Windows.Forms.TextFormatFlags flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawText(System.Windows.Forms.TextFormatFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="flags" Type="System.Windows.Forms.TextFormatFlags" />
+      </Parameters>
+      <Docs>
+        <param name="flags">A bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
+        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> using its current foreground color and formatting it with the specified <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to draw the subitem text using the current values of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Font%2A?displayProperty=fullName> properties. The text is drawn within the area specified by the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Bounds%2A> property. The <xref:System.Windows.Forms.TextFormatFlags> values specified in the `flags` parameter let you provide formatting properties for the node label, such as text alignment.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A> property of the parent <xref:System.Windows.Forms.ListViewItem> must be set to `false` to prevent the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ListViewItem.Font%2A?displayProperty=fullName> values of the parent item from overriding the subitem values.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawText%2A> method in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the subitem text values and both the text and background for subitems that have negative values.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> overview reference topic.  
+  
+ [!code-csharp[ListViewOwnerDraw#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#4)]
+ [!code-vb[ListViewOwnerDraw#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Graphics">
+      <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Graphics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to draw the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />.</summary>
+        <value>A <see cref="T:System.Drawing.Graphics" /> used to draw the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Graphics> class provides properties and methods useful for drawing on the display device.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.Graphics%2A> property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the subitem text values and both the text and background for subitems that have negative values.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> overview reference topic.  
+  
+ [!code-csharp[ListViewOwnerDraw#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#4)]
+ [!code-vb[ListViewOwnerDraw#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ColumnHeader Header { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ColumnHeader Header" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Header" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the header of the <see cref="T:System.Windows.Forms.ListView" /> column in which the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> is displayed.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ColumnHeader" /> for the column in which the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> is displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.Header%2A> property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the subitem text values and both the text and background for subitems that have negative values.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> overview reference topic.  
+  
+ [!code-csharp[ListViewOwnerDraw#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#4)]
+ [!code-vb[ListViewOwnerDraw#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent <see cref="T:System.Windows.Forms.ListViewItem" /> of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> that represents the parent of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to access the <xref:System.Windows.Forms.ListViewItem> parent of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> to draw. This is useful when the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState%2A> property does not provide adequate information to meet your needs. The <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState%2A> property provides only basic state information that you can use, for example, to determine whether the parent item is selected, checked, or focused. The <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.Item%2A> property, on the other hand, allows you to access all members of the parent <xref:System.Windows.Forms.ListViewItem>.  
+  
+ To access the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> being drawn, use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.SubItem%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#472](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#472)]
+ [!code-vb[System.Windows.Forms.EventExamples#472](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#472)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemIndex">
+      <MemberSignature Language="C#" Value="public int ItemIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ItemIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the parent <see cref="T:System.Windows.Forms.ListViewItem" /> of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</summary>
+        <value>The index of the parent <see cref="T:System.Windows.Forms.ListViewItem" /> within the <see cref="P:System.Windows.Forms.ListView.Items" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ListView> named `ListView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#472](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#472)]
+ [!code-vb[System.Windows.Forms.EventExamples#472](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#472)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemState">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItemStates ItemState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ListViewItemStates ItemState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current state of the parent <see cref="T:System.Windows.Forms.ListViewItem" /> of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</summary>
+        <value>A bitwise combination of <see cref="T:System.Windows.Forms.ListViewItemStates" /> values indicating the current state of the parent <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to check whether the <xref:System.Windows.Forms.ListViewItem> parent of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> to draw is in a particular state. This property provides only basic state information about the parent item. You can use this property, for example, to determine whether the parent item is selected, checked, or focused. If you need to know more, retrieve the parent item through the <xref:System.Windows.Forms.DrawListViewItemEventArgs.Item%2A> property and check its properties directly.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.ItemState%2A> property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the subitem text values and both the text and background for subitems that have negative values.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> overview reference topic.  
+  
+ [!code-csharp[ListViewOwnerDraw#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#4)]
+ [!code-vb[ListViewOwnerDraw#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubItem">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem.ListViewSubItem SubItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem/ListViewSubItem SubItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawListViewSubItemEventArgs.SubItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItem+ListViewSubItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> to draw.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is useful when the other <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> properties do not provide adequate information to meet your needs. The <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.SubItem%2A> property allows you to access all members of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> being drawn. You must access this object directly, for example, to draw the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Text%2A?displayProperty=fullName> value yourself rather than using the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.DrawText%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs.SubItem%2A> property in an application that provides custom drawing for a <xref:System.Windows.Forms.ListView> control. In the example, a handler for the <xref:System.Windows.Forms.ListView.DrawSubItem?displayProperty=fullName> event draws the subitem text values and both the text and background for subitems that have negative values.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.DrawListViewSubItemEventArgs> overview reference topic.  
+  
+ [!code-csharp[ListViewOwnerDraw#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewOwnerDraw/CS/listviewownerdraw.cs#4)]
+ [!code-vb[ListViewOwnerDraw#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewOwnerDraw/VB/listviewownerdraw.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

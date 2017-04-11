@@ -1,0 +1,253 @@
+<Type Name="PackageRelationship" FullName="System.IO.Packaging.PackageRelationship">
+  <TypeSignature Language="C#" Value="public class PackageRelationship" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PackageRelationship extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageRelationship" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Packaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an association between a source <see cref="T:System.IO.Packaging.Package" /> or <see cref="T:System.IO.Packaging.PackagePart" />, and a target object which can be a <see cref="T:System.IO.Packaging.PackagePart" /> or external resource.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.IO.Packaging.PackageRelationship> defines an association between a *source* <xref:System.IO.Packaging.Package> or <xref:System.IO.Packaging.PackagePart> to a *target* <xref:System.IO.Packaging.PackagePart> or external resource.  The source object is considered the "owner" of the relationship.  
+  
+ The <xref:System.IO.Packaging.PackageRelationship> class has no public constructor; instead, two Create methods are used:  
+  
+|||  
+|-|-|  
+|<xref:System.IO.Packaging.Package>.<xref:System.IO.Packaging.Package.CreateRelationship%2A>|Creates a "package-level" relationship—from a package to a specified part or external resource.|  
+|<xref:System.IO.Packaging.PackagePart>.<xref:System.IO.Packaging.PackagePart.CreateRelationship%2A>|Creates a "part-level" relationship—from one part to another part or external resource.|  
+  
+ The source package or part is identified by the <xref:System.IO.Packaging.PackageRelationship.SourceUri%2A> property of the relationship.  The target part or external resource is identified by the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> property of the relationship.  
+  
+ Creating or deleting a relationship does not affect the source or target objects in any way.  
+  
+ If a source object is deleted, all relationships owned by the object are also deleted.  
+  
+ Relationships enable navigation both in a document and between documents.  Relationships also support document object model services, such as linking a <xref:System.Printing.PrintTicket> to specific document elements when printing.  
+  
+ For more information about <xref:System.IO.Packaging.PackageRelationship> elements see Section 1.3 "Relationships" in the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that identifies the relationship.</summary>
+        <value>A string that identifies the relationship.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackageRelationship.Id%2A> property string is unique for all relationships owned by the <xref:System.IO.Packaging.PackageRelationship.SourceUri%2A> package or part.  
+  
+ The <xref:System.IO.Packaging.PackageRelationship.Id%2A> is specified in the call to the **Package**.<xref:System.IO.Packaging.Package.CreateRelationship%2A> or **PackagePart**.<xref:System.IO.Packaging.PackagePart.CreateRelationship%2A> method that created the relationship.  After the relationship is created, the <xref:System.IO.Packaging.PackageRelationship.Id%2A> cannot be changed.  
+  
+ The <xref:System.IO.Packaging.PackageRelationship.Id%2A> property string is a valid XML identifier. The <xref:System.IO.Packaging.PackageRelationship.Id%2A> type is xsd:ID and must follow the naming conventions prescribed in the *XML Schema Part 2: Datatypes* specification (see [http://www.w3.org/TR/xmlschema-2/#ID](http://www.w3.org/TR/xmlschema-2/)).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Package">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.Package Package { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.Package Package" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.Package" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.Package</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IO.Packaging.Package" /> that contains this relationship.</summary>
+        <value>The package that contains this relationship.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about <xref:System.IO.Packaging.Package> elements see the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipType">
+      <MemberSignature Language="C#" Value="public string RelationshipType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelationshipType" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.RelationshipType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the qualified type name of the relationship.</summary>
+        <value>The qualified type name of the relationship.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackageRelationship.RelationshipType%2A> is specified in the call to the **Package**.<xref:System.IO.Packaging.Package.CreateRelationship%2A> or **PackagePart**.<xref:System.IO.Packaging.PackagePart.CreateRelationship%2A> method that created the relationship.  After the relationship is created, the <xref:System.IO.Packaging.PackageRelationship.RelationshipType%2A> cannot be changed.  
+  
+ <xref:System.IO.Packaging.PackageRelationship.RelationshipType%2A> is defined in a URI-like syntax and identifies the role of the relationship. For example, "http://schemas.microsoft.com/xps/2005/06/required-resource" identifies the relationship to a target part that is a "required-resource."  
+  
+ **Package-Wide Relationship Types**  
+  
+|Description|Relationship Type|  
+|-----------------|-----------------------|  
+|Core Properties|http://schemas.microsoft.com/package/2006/relationships/metadata/core-properties|  
+|Digital Signature|http://schemas.microsoft.com/package/2006/relationships/digital-signature/signature|  
+|Digital Signature Certificate|http://schemas.microsoft.com/package/2006/relationships/digital-signature/certificate|  
+|Digital Signature Origin|http://schemas.microsoft.com/package/2006/relationships/digital-signature/origin|  
+|Thumbnail|http://schemas.microsoft.com/package/2006/relationships/metadata/thumbnail|  
+  
+ For more information about package relationship types see Chapter 3 and Appendix I of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceUri">
+      <MemberSignature Language="C#" Value="public Uri SourceUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SourceUri" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.SourceUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the package or part that owns the relationship.</summary>
+        <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.Package" /> or <see cref="T:System.IO.Packaging.PackagePart" /> that owns the relationship.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the relationship is owned by a <xref:System.IO.Packaging.Package>, <xref:System.IO.Packaging.PackageRelationship.SourceUri%2A> returns a URI of "/".  
+  
+ If the relationship is owned by a <xref:System.IO.Packaging.PackagePart>, <xref:System.IO.Packaging.PackageRelationship.SourceUri%2A> returns the URI of the part.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetMode">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.TargetMode TargetMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Packaging.TargetMode TargetMode" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.TargetMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.TargetMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the target of the relationship is <see cref="F:System.IO.Packaging.TargetMode.Internal" /> or <see cref="F:System.IO.Packaging.TargetMode.External" /> to the <see cref="T:System.IO.Packaging.Package" />.</summary>
+        <value>An enumeration value that indicates whether <see cref="P:System.IO.Packaging.PackageRelationship.TargetUri" /> references a resource <see cref="F:System.IO.Packaging.TargetMode.Internal" /> or <see cref="F:System.IO.Packaging.TargetMode.External" /> to the <see cref="T:System.IO.Packaging.Package" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> is specified in the call to the **Package**.<xref:System.IO.Packaging.Package.CreateRelationship%2A> or **PackagePart**.<xref:System.IO.Packaging.PackagePart.CreateRelationship%2A> method that created the relationship. After the relationship is created the <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> cannot be changed.  
+  
+ When <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> is <xref:System.IO.Packaging.TargetMode>, the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> MUST be a relative reference.  For a package-level relationship, the relative reference of the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is resolved relative to the pack URI of the source package that owns and contains the relationship.  (Example source package pack URI: "pack://http:,,www.adatum.com,files,datapak.package/".)  For a part-level relationship, the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is resolved relative to the source part that owns the relationship (<xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is interpreted relative to <xref:System.IO.Packaging.PackageRelationship.SourceUri%2A>).  
+  
+ When <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> is <xref:System.IO.Packaging.TargetMode>, the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> can be either a relative reference or a fully qualified URI.  If the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is a relative reference, the reference is interpreted as relative to the location of the <xref:System.IO.Packaging.Package> that contains this relationship.  
+  
+ For more information about <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> see Section 1.3.3 "Relationship Markup" of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetUri">
+      <MemberSignature Language="C#" Value="public Uri TargetUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri TargetUri" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackageRelationship.TargetUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the target resource of the relationship.</summary>
+        <value>The [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the target resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is specified in the call to the **Package**.<xref:System.IO.Packaging.Package.CreateRelationship%2A> or **PackagePart**.<xref:System.IO.Packaging.PackagePart.CreateRelationship%2A> method that created the relationship. After the relationship is created the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> cannot be changed.  
+  
+ When <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> is <xref:System.IO.Packaging.TargetMode>, the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> MUST be a relative reference.  For a package-level relationship, the relative reference of the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is resolved relative to the pack URI of the source package that owns and contains the relationship.  (Example source package pack URI: "pack://http:,,www.adatum.com,files,datapak.package/".)  For a part-level relationship, the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is resolved relative to the source part that owns the relationship (<xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is interpreted relative to <xref:System.IO.Packaging.PackageRelationship.SourceUri%2A>).  
+  
+ When <xref:System.IO.Packaging.PackageRelationship.TargetMode%2A> is <xref:System.IO.Packaging.TargetMode>, the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> can be either a relative reference or a fully qualified URI.  If the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is a relative reference, the reference is interpreted as relative to the location of the <xref:System.IO.Packaging.Package> that contains this relationship.  
+  
+ For more information about <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> see Section 1.3.3 "Relationship Markup" of the *Open Packaging Conventions* specification available for download at [http://go.microsoft.com/fwlink/?LinkID=71255](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

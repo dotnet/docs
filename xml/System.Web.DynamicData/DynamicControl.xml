@@ -1,0 +1,737 @@
+<Type Name="DynamicControl" FullName="System.Web.DynamicData.DynamicControl">
+  <TypeSignature Language="C#" Value="public class DynamicControl : System.Web.UI.Control, System.Web.DynamicData.IFieldFormattingOptions, System.Web.DynamicData.IFieldTemplateHost, System.Web.UI.IAttributeAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicControl extends System.Web.UI.Control implements class System.Web.DynamicData.IFieldFormattingOptions, class System.Web.DynamicData.IFieldTemplateHost, class System.Web.UI.IAttributeAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Control</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.DynamicData.IFieldFormattingOptions</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.DynamicData.IFieldTemplateHost</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IAttributeAccessor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.DynamicData.DynamicControl), "DynamicControl.bmp")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays the content that is defined for the field in templated data-bound controls, using ASP.NET Dynamic Data features.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.DynamicData.DynamicControl> control is used by templated data-bound controls, such as <xref:System.Web.UI.WebControls.FormView> or <xref:System.Web.UI.WebControls.ListView>, to display a data field that uses ASP.NET Dynamic Data features in a custom page. You can also use a <xref:System.Web.DynamicData.DynamicControl> control in a <xref:System.Web.UI.WebControls.TemplateField> field of a <xref:System.Web.UI.WebControls.GridView> or a <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+ The <xref:System.Web.DynamicData.DynamicControl> control provides functionality that is similar to that of the <xref:System.Web.DynamicData.DynamicField> field. However, because the <xref:System.Web.DynamicData.DynamicControl> control is only used inside templates, it gives you more flexibility in controlling how the data is displayed since you can add other HTML elements around the field. When you use a <xref:System.Web.DynamicData.DynamicControl> control, you can take advantage of the following Dynamic Data features:  
+  
+-   Automatically rendering the proper control for a field by using field templates, based on the data type. The field templates can be globally modified for the entire application.  
+  
+-   Providing built-in data validation based on the database schema. You can also add validation types by customizing the data model.  
+  
+-   Customizing data rendering for individual fields by using attributes in the data model or by using the <xref:System.Web.DynamicData.DynamicField.UIHint%2A> property.  
+  
+ To specify the field to display in a <xref:System.Web.DynamicData.DynamicControl> control, set the <xref:System.Web.DynamicData.DynamicControl.DataField%2A> property to the field name. You can apply a custom formatting string to the field value by setting the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property. By default, the formatting string is applied to field values only when the data-bound control is in read-only mode. To apply the formatting string to values displayed while the data-bound control is in edit mode, set the <xref:System.Web.DynamicData.DynamicControl.ApplyFormatInEditMode%2A> property to `true`. If a field value is `null`, you can display a custom caption by setting the <xref:System.Web.DynamicData.DynamicControl.NullDisplayText%2A> property. The <xref:System.Web.DynamicData.DynamicControl> control can also automatically convert empty string ("") field values to null values by setting the <xref:System.Web.DynamicData.DynamicControl.ConvertEmptyStringToNull%2A> property to `true`.  
+  
+ The <xref:System.Web.DynamicData.DynamicControl> control supports different display modes. To specify the mode in which to display the <xref:System.Web.DynamicData.DynamicControl> control, set the <xref:System.Web.DynamicData.DynamicControl.Mode%2A> property. The following table shows the different modes.  
+  
+ <xref:System.Web.UI.WebControls.DataBoundControlMode>  
+ for display mode. This prevents the user from modifying the values of a record or a data field. It can be used in any of the templates.  
+  
+ <xref:System.Web.UI.WebControls.DataBoundControlMode>  
+ for edit mode. This enables users to update the values of an existing record. It is used in the edit template (typically named `EditItemTemplate`).  
+  
+ <xref:System.Web.UI.WebControls.DataBoundControlMode>  
+ for insert mode. This enables users to enter values for a new record. It is used in the insert template (typically named `InsertItemTemplate`).  
+  
+ You can hide a <xref:System.Web.DynamicData.DynamicControl> control in a data-bound control by setting the <xref:System.Web.UI.Control.Visible%2A> property to `false`.  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:DynamicControl  
+    ApplyFormatInEditMode="True|False"  
+    ConvertEmptyStringToNull="True|False"  
+    CssClass="string"  
+    DataField="string"  
+    DataFormatString="string"  
+    EnableViewState="True|False"  
+    HtmlEncode="True|False"  
+    ID="string"  
+    Mode="Edit|Insert|ReadOnly"  
+    NullDisplayText="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    UIHint="string"  
+    ValidationGroup="string"  
+    Visible="True|False"  
+>  
+</asp:DynamicControl>  
+```  
+  
+   
+  
+## Examples  
+ See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.DynamicControl).  
+  
+ The following example demonstrates how to use the <xref:System.Web.DynamicData.DynamicControl> control in a <xref:System.Web.UI.WebControls.ListView> control to display, insert, delete and edit values from a database table. It is important to notice that in order to make the insert operation to work, the <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> property of the `rowguid` and `ModifiedDate` columns are set to `true`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl/VB/Default.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicControl" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicControl (System.Web.UI.WebControls.DataBoundControlMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.WebControls.DataBoundControlMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.#ctor(System.Web.UI.WebControls.DataBoundControlMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+      </Parameters>
+      <Docs>
+        <param name="mode">One of the enumeration values that specifies the mode of the control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicControl" /> class with the specified mode.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyFormatInEditMode">
+      <MemberSignature Language="C#" Value="public bool ApplyFormatInEditMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ApplyFormatInEditMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.ApplyFormatInEditMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the formatting string specified by the <see cref="P:System.Web.DynamicData.DynamicControl.DataFormatString" /> property is applied to field values when the field is in edit mode.</summary>
+        <value>
+          <see langword="true" /> if the formatting string is applied; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicControl> control has different display modes that allow the user to read, edit, or insert a field. By default, the formatting string specified by the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property is applied to a field value only when the <xref:System.Web.DynamicData.DynamicControl> control is in read-only mode. To apply the formatting string to values displayed while the data-bound control is in edit mode, set the <xref:System.Web.DynamicData.DynamicControl.ApplyFormatInEditMode%2A> property to `true`.  
+  
+> [!NOTE]
+>  The <xref:System.Web.DynamicData.DynamicControl> control does not automatically remove the formatting when the field is updated in the data source. If you do not want the formatting as part of the value stored, you will need to remove the formatting programmatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaColumn Column { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the column object that is associated with the control.</summary>
+        <value>The column object that is associated with the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.DynamicData.DynamicControl.Column%2A> property to obtain metadata information about a specific column. The <xref:System.Web.DynamicData.DynamicControl.Column%2A> property is automatically set by the <xref:System.Web.DynamicData.DynamicControl> control based on the field name provided for the <xref:System.Web.DynamicData.DynamicControl.DataField%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertEmptyStringToNull">
+      <MemberSignature Language="C#" Value="public bool ConvertEmptyStringToNull { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.ConvertEmptyStringToNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether empty string values ("") are automatically converted to null values when the data field is updated in the data source.</summary>
+        <value>
+          <see langword="true" /> if empty string values are automatically converted to null values; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Parameter> object of the data source control also has a property named <xref:System.Web.UI.WebControls.Parameter.ConvertEmptyStringToNull%2A?displayProperty=fullName>. This property performs the same function. Make sure that both properties are set appropriately.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CssClass">
+      <MemberSignature Language="C#" Value="public virtual string CssClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CssClass" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.CssClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.CssClassProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Cascading Style Sheet (CSS) class that specifies the display styles for the <see cref="T:System.Web.DynamicData.DynamicControl" /> control content.</summary>
+        <value>The name of the CSS class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public string DataField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.DataField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the data field that the <see cref="T:System.Web.DynamicData.DynamicControl" /> control is bound to.</summary>
+        <value>The name of the data field to bind the <see cref="T:System.Web.DynamicData.DynamicControl" /> control to. The default is an empty string (""), which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.DynamicControl.DataField%2A> property to specify the data field to bind to the <xref:System.Web.DynamicData.DynamicControl> control. The data field can be the column name or, for foreign key columns, the relationship name.  
+  
+ By default, the specified data field is displayed by the <xref:System.Web.DynamicData.DynamicControl> control using the field template that is associated with the field data type. You can change the field template that is rendered for the data field by setting the <xref:System.Web.DynamicData.DynamicControl.UIHint%2A> property. You can also format the displayed text by setting the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property.  
+  
+ **Note** If you want to change the display and behavior of a data field globally, you must apply attributes to your data model instead of setting this in a particular instance of the <xref:System.Web.DynamicData.DynamicControl> control. For more information, see [ASP.NET Dynamic Data](http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.DynamicData.DynamicControl.DataField%2A> property to specify which field to display in a <xref:System.Web.DynamicData.DynamicControl> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicControl.DataField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.DataField/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicControl.DataField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.DataField/VB/Default.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFormatString">
+      <MemberSignature Language="C#" Value="public string DataFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.DataFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that specifies the display format for the value of the field.</summary>
+        <value>A formatting string that specifies the display format for the value of the field. The default is an empty string (""), which indicates that no special formatting is applied to the field value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property to specify a custom display format for the values displayed in the <xref:System.Web.DynamicData.DynamicControl> control. If the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property is not set, the field value is displayed without any special formatting.  
+  
+ By default, the formatting string is applied to the field value only when the <xref:System.Web.DynamicData.DynamicControl.Mode%2A> property is set to <xref:System.Web.UI.WebControls.DataBoundControlMode>. To apply the formatting string to the field value while in edit mode, set the <xref:System.Web.DynamicData.DynamicControl.ApplyFormatInEditMode%2A> property to `true`.  
+  
+ The display format that you specify using the <xref:System.Web.DynamicData.DynamicControl.DataFormatString%2A> property is specific to this instance of the <xref:System.Web.DynamicData.DynamicControl> control. You can also change the display format for a data field across the entire application by applying the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute> to your data model and setting the <xref:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString%2A?displayProperty=fullName> named parameter in the constructor. For more information, see [ASP.NET Dynamic Data](http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldTemplate">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Control FieldTemplate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control FieldTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.FieldTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the field template that is created for the <see cref="T:System.Web.DynamicData.DynamicControl" /> control.</summary>
+        <value>The field template that is created for the <see cref="T:System.Web.DynamicData.DynamicControl" /> control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttribute">
+      <MemberSignature Language="C#" Value="public string GetAttribute (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAttribute(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.GetAttribute(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The name of the attribute.</param>
+        <summary>Retrieves the attribute value by using the specified key.</summary>
+        <returns>The value of the attribute.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the attributes collection is `null`, this method returns an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlEncode">
+      <MemberSignature Language="C#" Value="public bool HtmlEncode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HtmlEncode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.HtmlEncode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the data for the control is HTML-encoded before rendering.</summary>
+        <value>
+          <see langword="true" /> if the data for the control is HTML-encoded before rendering; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.DynamicControl.HtmlEncode%2A> property to specify whether field values are HTML-encoded to their respective string representations before they are displayed.  
+  
+> [!NOTE]
+>  HTML-encoding field values helps to prevent cross-site scripting attacks and malicious content from being displayed. This property should be enabled whenever possible. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataBoundControlMode Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DataBoundControlMode Mode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataBoundControlMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the rendering mode.</summary>
+        <value>One of the enumeration values that specifies the rendering mode for the control. The default is <see cref="F:System.Web.UI.WebControls.DataBoundControlMode.ReadOnly" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.DynamicControl.Mode%2A> property to specify which rendering mode to use to display the <xref:System.Web.DynamicData.DynamicControl> control. The following table shows the different modes.  
+  
+|Mode|Description|  
+|----------|-----------------|  
+|<xref:System.Web.UI.WebControls.DataBoundControlMode>|for display mode. This prevents the user from modifying the values of a record or a data field. It can be used in any of the templates. This is the default value.|  
+|<xref:System.Web.UI.WebControls.DataBoundControlMode>|for edit mode. This enables users to update the values of an existing record. It is used in the `EditItemTemplate` template.|  
+|<xref:System.Web.UI.WebControls.DataBoundControlMode>|for insert mode. This enables users to enter values for a new record. It is used in the `InsertItemTemplate` template.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullDisplayText">
+      <MemberSignature Language="C#" Value="public string NullDisplayText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NullDisplayText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.NullDisplayText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the caption that is displayed for a data field when the field value is <see langword="null" />.</summary>
+        <value>The caption that is displayed for a data field when the field value is <see langword="null" />. The default is an empty string (""), which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sometimes a field value is stored as null in the data source. You can specify a custom caption to display for fields that have a null value by setting the <xref:System.Web.DynamicData.DynamicControl.NullDisplayText%2A> property. If this property is not set, null field values are displayed as empty strings ("").  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.DynamicData.DynamicControl.OnInit%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.DynamicData.DynamicControl.DataField" /> property is not set.</exception>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.DynamicData.DynamicControl.OnInit(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Web.DynamicData.DynamicControl.OnInit(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The object that is used to render the <see cref="T:System.Web.DynamicData.DynamicControl" /> control content on the client's browser.</param>
+        <summary>Renders the <see cref="T:System.Web.DynamicData.DynamicControl" /> control content to the client's browser by using the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicControl.Render%2A> method is primarily used by control developers to extend the <xref:System.Web.DynamicData.DynamicControl> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAttribute">
+      <MemberSignature Language="C#" Value="public void SetAttribute (string key, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAttribute(string key, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControl.SetAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The name of the attribute to set.</param>
+        <param name="value">The value to assign to the attribute.</param>
+        <summary>Sets the specified attribute to the specified value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.DynamicData.IFieldTemplateHost.FormattingOptions">
+      <MemberSignature Language="C#" Value="System.Web.DynamicData.IFieldFormattingOptions System.Web.DynamicData.IFieldTemplateHost.FormattingOptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.IFieldFormattingOptions System.Web.DynamicData.IFieldTemplateHost.FormattingOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.System#Web#DynamicData#IFieldTemplateHost#FormattingOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.IFieldFormattingOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Web.DynamicData.IFieldTemplateHost.FormattingOptions" />.</summary>
+        <value>The formatting options to be applied to the field template.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.MetaTable Table { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable Table" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.Table" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the table object that is associated with the control.</summary>
+        <value>The table object that is associated with the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.DynamicControl.Table%2A> property to access metadata information about the table that is associated with the data-bound control that contains the <xref:System.Web.DynamicData.DynamicControl> control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">The <see cref="T:System.Web.DynamicData.DynamicControl" /> control is inside a data-bound control that is not bound to a data source control that implements the <see cref="T:System.Web.DynamicData.IDynamicDataSource" /> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UIHint">
+      <MemberSignature Language="C#" Value="public virtual string UIHint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UIHint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.UIHint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the field template that is used to render the data field.</summary>
+        <value>The name of the field template that is used to render the data field. The default is an empty string (""), which indicates that the field template will be rendered based on the data field type or on metadata information applied to the data model.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.DynamicControl.UIHint%2A> property to specify the field template to use to display the UI for a data field. Field templates by default are user controls and their names contain a suffix to identify field templates that are used for edit operations and insert operations. The suffixes are _edit and _insert, respectively. When you set a value to the <xref:System.Web.DynamicData.DynamicControl.UIHint%2A> property, you set the name without the suffixes. Dynamic Data will identify the correct mode by evaluating the <xref:System.Web.DynamicData.DynamicControl.Mode%2A> property value and will render the correct field template.  
+  
+ If the <xref:System.Web.DynamicData.DynamicControl.UIHint%2A> property is not set, by default Dynamic Data will render the field template based on the field type. For more information, see [ASP.NET Dynamic Data Scaffolding](http://msdn.microsoft.com/library/e0166a58-9178-4660-81a6-175994b11b12).  
+  
+ The field template that you specify using the <xref:System.Web.DynamicData.DynamicControl.UIHint%2A> property is specific to this instance of the <xref:System.Web.DynamicData.DynamicControl> control. You can also change the field template used by a data field across the entire application by applying the <xref:System.ComponentModel.DataAnnotations.UIHintAttribute> to your data model. Setting the <xref:System.Web.DynamicData.DynamicControl.UIHint%2A> property overrides the metadata applied to the data model. For more information about metadata attributes, see [ASP.NET Dynamic Data](http://msdn.microsoft.com/library/78c7fcd7-5f38-46a0-a4bc-48eff3c8a512).  
+  
+   
+  
+## Examples  
+ See a run-time code example of this feature: [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.DynamicControl.UIHint).  
+  
+ The following example shows how you can specify a data field to use a different field template to render its contents. The second example shows the custom field template specified by the <xref:System.Web.DynamicData.DynamicControl.UIHint%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicControl.UIHint#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicControl.UIHint#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/VB/Default.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicControl.UIHint#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/CS/Email.ascx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicControl.UIHint#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.DynamicControl.UIHint/VB/Email.ascx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationGroup">
+      <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControl.ValidationGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the validation group name for the control.</summary>
+        <value>The validation group name for the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently from other validation groups on the page. Use the <xref:System.Web.DynamicData.DynamicControl.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.DynamicData.DynamicControl> control causes validation when the page posts back to the server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

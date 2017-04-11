@@ -1,0 +1,71 @@
+<Type Name="ClientSideProviderMatchIndicator" FullName="System.Windows.Automation.ClientSideProviderMatchIndicator">
+  <TypeSignature Language="C#" Value="public enum ClientSideProviderMatchIndicator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClientSideProviderMatchIndicator extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSideProviderMatchIndicator" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify behavior when matching class names in a <see cref="T:System.Windows.Automation.ClientSideProviderDescription" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowSubstringMatch">
+      <MemberSignature Language="C#" Value="AllowSubstringMatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ClientSideProviderMatchIndicator AllowSubstringMatch = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ClientSideProviderMatchIndicator.AllowSubstringMatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ClientSideProviderMatchIndicator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that substring comparison is used for comparing class names.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisallowBaseClassNameMatch">
+      <MemberSignature Language="C#" Value="DisallowBaseClassNameMatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ClientSideProviderMatchIndicator DisallowBaseClassNameMatch = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ClientSideProviderMatchIndicator.DisallowBaseClassNameMatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ClientSideProviderMatchIndicator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the base class of the object is not used when matching window class names.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ClientSideProviderMatchIndicator None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ClientSideProviderMatchIndicator.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ClientSideProviderMatchIndicator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No special flags.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

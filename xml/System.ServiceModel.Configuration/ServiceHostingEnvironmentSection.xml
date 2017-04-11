@@ -1,0 +1,262 @@
+<Type Name="ServiceHostingEnvironmentSection" FullName="System.ServiceModel.Configuration.ServiceHostingEnvironmentSection">
+  <TypeSignature Language="C#" Value="public sealed class ServiceHostingEnvironmentSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceHostingEnvironmentSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration section that defines the type that the service hosting environment instantiates for a particular transport.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this section is empty, the default type is used.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceHostingEnvironmentSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AspNetCompatibilityEnabled">
+      <MemberSignature Language="C#" Value="public bool AspNetCompatibilityEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AspNetCompatibilityEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.AspNetCompatibilityEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("aspNetCompatibilityEnabled", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether ASP.NET compatibility mode has been enabled for the current application.</summary>
+        <value>
+          <see langword="true" /> if ASP.NET compatibility mode has been enabled for the current application; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `true`, requests to [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services flow through the ASP.NET HTTP pipeline and communication over non-HTTP protocols is prohibited.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseAddressPrefixFilters">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection BaseAddressPrefixFilters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection BaseAddressPrefixFilters" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.BaseAddressPrefixFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("baseAddressPrefixFilters", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of configuration elements that specifies prefix filters for the base addresses used by the service host.</summary>
+        <value>A collection of configuration elements that specifies prefix filters for the base addresses used by the service host.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseIdleServicesAtLowMemory">
+      <MemberSignature Language="C#" Value="public bool CloseIdleServicesAtLowMemory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CloseIdleServicesAtLowMemory" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.CloseIdleServicesAtLowMemory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("closeIdleServicesAtLowMemory", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" /> closes idle services at low memory.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection" /> closes idle services at low memory; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinFreeMemoryPercentageToActivateService">
+      <MemberSignature Language="C#" Value="public int MinFreeMemoryPercentageToActivateService { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinFreeMemoryPercentageToActivateService" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.MinFreeMemoryPercentageToActivateService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("minFreeMemoryPercentageToActivateService", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MaxValue=99, MinValue=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an integer that specifies the minimum amount of free memory that should be available to the system, before a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service can be activated.</summary>
+        <value>An integer that specifies the minimum amount of free memory that should be available to the system, before a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service can be activated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleSiteBindingsEnabled">
+      <MemberSignature Language="C#" Value="public bool MultipleSiteBindingsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MultipleSiteBindingsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.MultipleSiteBindingsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("multipleSiteBindingsEnabled", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether multiple IIS bindings per site are enabled.</summary>
+        <value>
+          <see langword="true" /> if multiple IIS bindings per site are enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ IIS consists of web sites, which are containers for virtual applications containing virtual directories. The application in a site can be accessed through one or more IIS binding. An IIS binding provides two pieces of information: a binding protocol and binding information. Binding protocol defines the scheme over which communication occurs, and binding information is the information used to access the site. An example of a binding protocol can be HTTP, whereas binding information can contain an IP address, Port, host header, etc.  
+  
+ IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. However, a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service hosted under a site allows binding to only one baseAddress per scheme.  
+  
+ To enable multiple IIS bindings per site for a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service, set this property to `true`. Notice that multiple site binding is supported only for the HTTP protocol. The address of endpoints in the configuration file needs to be a complete URI.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostDeserialize">
+      <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.PostDeserialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceActivations">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ServiceActivationElementCollection ServiceActivations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ServiceActivationElementCollection ServiceActivations" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.ServiceActivations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("serviceActivations", Options=System.Configuration.ConfigurationPropertyOptions.None)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.ServiceActivationElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of configuration elements that activates a service and can be merged across a hierarchy of configuration files.</summary>
+        <value>A collection of configuration elements that activates a service and can be merged across a hierarchy of configuration files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransportConfigurationTypes">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection TransportConfigurationTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection TransportConfigurationTypes" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection.TransportConfigurationTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("", Options=System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of types that implement the specific transport.</summary>
+        <value>A <see cref="T:System.ServiceModel.Configuration.TransportConfigurationTypeElementCollection" /> that contains all the types that implement the specific transport.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

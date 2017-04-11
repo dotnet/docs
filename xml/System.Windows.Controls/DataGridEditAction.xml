@@ -1,0 +1,57 @@
+<Type Name="DataGridEditAction" FullName="System.Windows.Controls.DataGridEditAction">
+  <TypeSignature Language="C#" Value="public enum DataGridEditAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridEditAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridEditAction" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify whether an edit is being canceled or committed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGridCellEditEndingEventArgs.EditAction%2A?displayProperty=fullName> and <xref:System.Windows.Controls.DataGridRowEditEndingEventArgs.EditAction%2A?displayProperty=fullName> properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="Cancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridEditAction Cancel = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridEditAction.Cancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridEditAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The edit is being canceled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="Commit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridEditAction Commit = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridEditAction.Commit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridEditAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The edit is being committed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

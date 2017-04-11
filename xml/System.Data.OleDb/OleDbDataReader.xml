@@ -1,0 +1,1189 @@
+<Type Name="OleDbDataReader" FullName="System.Data.OleDb.OleDbDataReader">
+  <TypeSignature Language="C#" Value="public sealed class OleDbDataReader : System.Data.Common.DbDataReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbDataReader extends System.Data.Common.DbDataReader" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbDataReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbDataReader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way of reading a forward-only stream of data rows from a data source. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an <xref:System.Data.OleDb.OleDbDataReader>, you must call the <xref:System.Data.OleDb.OleDbCommand.ExecuteReader%2A> method of the <xref:System.Data.OleDb.OleDbCommand> object, instead of directly using a constructor.  
+  
+ Before you close the <xref:System.Data.OleDb.OleDbConnection>, first close the <xref:System.Data.OleDb.OleDbDataReader> object. You must also close the <xref:System.Data.OleDb.OleDbDataReader> object if you plan to resuse an <xref:System.Data.OleDb.OleDbCommand> object.For example, you cannot retrieve output parameters until after you call <xref:System.Data.OleDb.OleDbDataReader.Close%2A>.  
+  
+ Changes made to a result set by another process or thread while data is being read may be visible to the user of the <xref:System.Data.OleDb.OleDbDataReader>. However, the precise behavior is timing dependent.  
+  
+ <xref:System.Data.OleDb.OleDbDataReader.IsClosed%2A> and <xref:System.Data.OleDb.OleDbDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OleDb.OleDbDataReader> is closed. Although the <xref:System.Data.OleDb.OleDbDataReader.RecordsAffected%2A> property may be accessed while the <xref:System.Data.OleDb.OleDbDataReader> exists, always call <xref:System.Data.OleDb.OleDbDataReader.Close%2A> before returning the value of <xref:System.Data.OleDb.OleDbDataReader.RecordsAffected%2A> to guarantee an accurate return value.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OleDb.OleDbConnection>, an <xref:System.Data.OleDb.OleDbCommand>, and an <xref:System.Data.OleDb.OleDbDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.OleDb.OleDbDataReader> and then the <xref:System.Data.OleDb.OleDbConnection>.  
+  
+ [!code-csharp[Classic WebData OleDbDataReader Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbDataReader Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData OleDbDataReader Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbDataReader Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the <see cref="T:System.Data.OleDb.OleDbDataReader" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must explicitly call the <xref:System.Data.OleDb.OleDbDataReader.Close%2A> method when you are through using the <xref:System.Data.OleDb.OleDbDataReader> to use the associated <xref:System.Data.OleDb.OleDbConnection> for any other purpose.  
+  
+> [!CAUTION]
+>  Do not call **Close** or **Dispose** on a Connection, a DataReader, or any other managed object in the **Finalize** method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a **Finalize** method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OleDb.OleDbConnection>, an <xref:System.Data.OleDb.OleDbCommand>, and an <xref:System.Data.OleDb.OleDbDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.OleDb.OleDbDataReader>, and then the <xref:System.Data.OleDb.OleDbConnection>.  
+  
+ [!code-csharp[Classic WebData IDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData IDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Depth">
+      <MemberSignature Language="C#" Value="public override int Depth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Depth" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.Depth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the depth of nesting for the current row.</summary>
+        <value>The depth of nesting for the current row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The outermost table has a depth of zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldCount">
+      <MemberSignature Language="C#" Value="public override int FieldCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FieldCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.FieldCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of columns in the current row.</summary>
+        <value>When not positioned in a valid recordset, 0; otherwise the number of columns in the current record. The default is -1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Includes hidden fields. Use <xref:System.Data.OleDb.OleDbDataReader.VisibleFieldCount%2A> to exclude hidden fields.  
+  
+ After executing a query that does not return rows, <xref:System.Data.OleDb.OleDbDataReader.FieldCount%2A> returns 0.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">There is no current connection to a data source.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoolean">
+      <MemberSignature Language="C#" Value="public override bool GetBoolean (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetBoolean(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetBoolean(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a Boolean.</summary>
+        <returns>The value of the column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore the data retrieved must already be a Boolean, or an exception is generated.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByte">
+      <MemberSignature Language="C#" Value="public override byte GetByte (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8 GetByte(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetByte(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a byte.</summary>
+        <returns>The value of the specified column as a byte.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore the data retrieved must already be a byte.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytes">
+      <MemberSignature Language="C#" Value="public override long GetBytes (int ordinal, long dataIndex, byte[] buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetBytes(int32 ordinal, int64 dataIndex, unsigned int8[] buffer, int32 bufferIndex, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="dataIndex" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="bufferIndex" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <param name="dataIndex">The index within the field from which to start the read operation.</param>
+        <param name="buffer">The buffer into which to read the stream of bytes.</param>
+        <param name="bufferIndex">The index within the <c>buffer</c> where the write operation is to start.</param>
+        <param name="length">The maximum length to copy into the buffer.</param>
+        <summary>Reads a stream of bytes from the specified column offset into the buffer as an array starting at the given buffer offset.</summary>
+        <returns>The actual number of bytes read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbDataReader.GetBytes%2A> returns the number of available bytes in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetBytes` has already been used to obtain bytes from the field. This may be the case, for example, when the <xref:System.Data.OleDb.OleDbDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+  
+ If you pass a buffer that is `null`, <xref:System.Data.OleDb.OleDbDataReader.GetBytes%2A> returns the length of the field in bytes.  
+  
+ No conversions are performed; therefore, the data retrieved must already be a byte array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChar">
+      <MemberSignature Language="C#" Value="public override char GetChar (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetChar(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetChar(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a character.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Not supported for <xref:System.Data.OleDb>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChars">
+      <MemberSignature Language="C#" Value="public override long GetChars (int ordinal, long dataIndex, char[] buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetChars(int32 ordinal, int64 dataIndex, char[] buffer, int32 bufferIndex, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+        <Parameter Name="dataIndex" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Char[]" />
+        <Parameter Name="bufferIndex" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <param name="dataIndex">The index within the row from which to start the read operation.</param>
+        <param name="buffer">The buffer into which to copy data.</param>
+        <param name="bufferIndex">The index within the <c>buffer</c> where the write operation is to start.</param>
+        <param name="length">The number of characters to read.</param>
+        <summary>Reads a stream of characters from the specified column offset into the buffer as an array starting at the given buffer offset.</summary>
+        <returns>The actual number of characters read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbDataReader.GetChars%2A> returns the number of available characters in the field. Most of the time this is the exact length of the field. However, the number returned may be less than the true length of the field if `GetChars` has already been used to obtain characters from the field. This may be the case, for example, when the <xref:System.Data.OleDb.OleDbDataReader> is reading a large data structure into a buffer. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+  
+ If you pass a buffer that is `null`, <xref:System.Data.OleDb.OleDbDataReader.GetChars%2A> returns the length of the field in characters.  
+  
+ No conversions are performed; therefore, the data retrieved must already be a character array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public System.Data.OleDb.OleDbDataReader GetData (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OleDb.OleDbDataReader GetData(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetData(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.OleDb.OleDbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Returns an <see cref="T:System.Data.OleDb.OleDbDataReader" /> object for the requested column ordinal.</summary>
+        <returns>An <see cref="T:System.Data.OleDb.OleDbDataReader" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OleDb.OleDbDataAdapter.Fill%2A> will call <xref:System.Data.OleDb.OleDbDataReader.GetData%2A> if the provider returns a <xref:System.Data.IDataReader> that has a column that supports <xref:System.Data.IDataReader>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataTypeName">
+      <MemberSignature Language="C#" Value="public override string GetDataTypeName (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDataTypeName(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDataTypeName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based column ordinal.</param>
+        <summary>Gets the name of the source data type.</summary>
+        <returns>The name of the back-end data type. For more information, see [SQL Server data types](http://go.microsoft.com/fwlink/?LinkId=198032) or [Access data types](http://go.microsoft.com/fwlink/?LinkId=198033).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDateTime">
+      <MemberSignature Language="C#" Value="public override DateTime GetDateTime (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DateTime GetDateTime(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDateTime(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.DateTime" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a <xref:System.DateTime> object.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDbDataReader">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbDataReader GetDbDataReader (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbDataReader GetDbDataReader(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDbDataReader(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDecimal">
+      <MemberSignature Language="C#" Value="public override decimal GetDecimal (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Decimal GetDecimal(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDecimal(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.Decimal" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a <xref:System.Decimal> object.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDouble">
+      <MemberSignature Language="C#" Value="public override double GetDouble (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float64 GetDouble(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetDouble(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a double-precision floating-point number.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a double-precision floating-point number.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the rows in the data reader.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although you can use this method to retrieve an explicit enumerator, in languages that support a `foreach` construct, it is simpler to use the looping construct directly in order to iterate through the rows in the data reader.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFieldType">
+      <MemberSignature Language="C#" Value="public override Type GetFieldType (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetFieldType(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetFieldType(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based column ordinal.</param>
+        <summary>Gets the <see cref="T:System.Type" /> that is the data type of the object.</summary>
+        <returns>The <see cref="T:System.Type" /> that is the data type of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFloat">
+      <MemberSignature Language="C#" Value="public override float GetFloat (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float32 GetFloat(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetFloat(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a single-precision floating-point number.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed. Therefore, the data retrieved must already be a single-precision floating-point number.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuid">
+      <MemberSignature Language="C#" Value="public override Guid GetGuid (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Guid GetGuid(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetGuid(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a globally unique identifier (GUID).</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore the data retrieved must already be a globally unique identifier.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt16">
+      <MemberSignature Language="C#" Value="public override short GetInt16 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int16 GetInt16(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetInt16(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 16-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a 16-bit signed integer.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt32">
+      <MemberSignature Language="C#" Value="public override int GetInt32 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetInt32(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetInt32(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 32-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a 32-bit signed integer.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt64">
+      <MemberSignature Language="C#" Value="public override long GetInt64 (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetInt64(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetInt64(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a 64-bit signed integer.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a 64-bit signed integer.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public override string GetName (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetName(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based column ordinal.</param>
+        <summary>Gets the name of the specified column.</summary>
+        <returns>The name of the specified column.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrdinal">
+      <MemberSignature Language="C#" Value="public override int GetOrdinal (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetOrdinal(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetOrdinal(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the column.</param>
+        <summary>Gets the column ordinal, given the name of the column.</summary>
+        <returns>The zero-based column ordinal.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbDataReader.GetOrdinal%2A> performs a case-sensitive lookup first. If it fails, a second case-insensitive search is made. The method throws an `IndexOutOfRange` exceptionif the zero-based column ordinal is not found.  
+  
+ <xref:System.Data.OleDb.OleDbDataReader.GetOrdinal%2A> is kana-width insensitive.  
+  
+ Because ordinal-based lookups are more efficient than named lookups, it is inefficient to call <xref:System.Data.OleDb.OleDbDataReader.GetOrdinal%2A> within a loop. Save time by calling <xref:System.Data.OleDb.OleDbDataReader.GetOrdinal%2A> one time and assigning the results to an integer variable for use within the loop.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Data.OleDb.OleDbDataReader.GetOrdinal%2A> method.  
+  
+ [!code-csharp[Classic WebData OleDbDataReader.GetOrdinal#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbDataReader.GetOrdinal/CS/source.cs#1)]
+ [!code-vb[Classic WebData OleDbDataReader.GetOrdinal#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbDataReader.GetOrdinal/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The name specified is not a valid column name.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSchemaTable">
+      <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchemaTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchemaTable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetSchemaTable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Data.DataTable" /> that describes the column metadata of the <see cref="T:System.Data.OleDb.OleDbDataReader" />.</summary>
+        <returns>A <see cref="T:System.Data.DataTable" /> that describes the column metadata.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OleDb.OleDbDataReader.GetSchemaTable%2A> method maps to the OLE DB **IColumnsRowset::GetColumnsRowset** method, and returns metadata about each column in the following order:  
+  
+|DataReader column|OLE DB column ID|Description|  
+|-----------------------|----------------------|-----------------|  
+|ColumnName|DBCOLUMN_NAME|The name of the column; this might not be unique. If this cannot be determined, a null value is returned. This name always reflects the most recent renaming of the column in the current view or command text.|  
+|ColumnOrdinal|DBCOLUMN_NUMBER|The zero-based ordinal of the column. This column cannot contain a null value.|  
+|ColumnSize|DBCOLUMN_COLUMNSIZE|The maximum possible length of a value in the column. For columns that use a fixed-length data type, this is the size of the data type.|  
+|NumericPrecision|DBCOLUMN_PRECISION|If DbType is a numeric data type, this is the maximum precision of the column. The precision of columns with a data type of DBTYPE_DECIMAL or DBTYPE_NUMERIC depends on the definition of the column. If DbType is not a numeric data type, this is a null value.|  
+|NumericScale|DBCOLUMN_SCALE|If DbType is DBTYPE_DECIMAL or DBTYPE_NUMERIC, this is the number of digits to the right of the decimal point. Otherwise, this is a null value.|  
+|DataType|None|Maps to the .NET Framework type of the column.|  
+|ProviderType|DBCOLUMN_TYPE|The indicator of the column's data type. If the data type of the column varies from row to row, this must be DBTYPE_VARIANT. This column cannot contain a null value.|  
+|IsLong|DBCOLUMNFLAGS_ISLONG|The provider sets DBCOLUMNFLAGS_ISLONG if the column contains a Binary Long Object (BLOB) that contains very long data. The definition of very long data is provider-specific. The setting of this flag corresponds to the value of the IS_LONG column in the PROVIDER_TYPES rowset for the data type.|  
+|AllowDBNull|DBCOLUMNFLAGS_ISNULLABLE|The provider sets DBCOLUMNFLAGS_ISNULLABLE if the consumer can set the column to a null value, or if the provider cannot determine whether the consumer can set the column to a null value. A column may contain null values, even if it cannot be set to a null value.|  
+|IsReadOnly|DBCOLUMNFLAGS_WRITE|`true` if the column cannot be modified; otherwise `false`. The column is assumed to be writable if the provider has set either the DBCOLUMNFLAGS_WRITE or DBCOLUMNFLAGS_WRITEUNKNOWN flag.|  
+|IsRowVersion|DBCOLUMNFLAGS_ISROWID|The provider sets DBCOLUMNFLAGS_ISROWID if the column contains a persistent row identifier that cannot be written to, and has no meaningful value except to identity the row.|  
+|IsUnique|DBCOLUMN_ISUNIQUE|VARIANT_TRUE: No two rows in the base table-the table returned in BaseTableName-can have the same value in this column. IsUnique is guaranteed to be VARIANT_TRUE if the column represents a key by itself or if there is a constraint of type UNIQUE that applies only to this column.<br /><br /> VARIANT_FALSE: The column can contain duplicate values in the base table. The default of this column is VARIANT_FALSE.|  
+|IsKey|DBCOLUMN_KEYCOLUMN|VARIANT_TRUE: The column is one of a set of columns in the rowset that, taken together, uniquely identify the row. The set of columns with IsKey set to VARIANT_TRUE must uniquely identify a row in the rowset. There is no requirement that this set of columns is a minimal set of columns. This set of columns may be generated from a base table primary key, a unique constraint or a unique index.<br /><br /> VARIANT_FALSE: The column is not required to uniquely identify the row.|  
+|IsAutoIncrement|DBCOLUMN_ISAUTOINCREMENT|VARIANT_TRUE: The column assigns values to new rows in fixed increments.<br /><br /> VARIANT_FALSE: The column does not assign values to new rows in fixed increments. The default of this column is VARIANT_FALSE.|  
+|BaseSchemaName|DBCOLUMN_BASESCHEMANAME|The name of the schema in the data store that contains the column. A null value if the base schema name cannot be determined. The default of this column is a null value.|  
+|BaseCatalogName|DBCOLUMN_BASECATALOGNAME|The name of the catalog in the data store that contains the column. A null value if the base catalog name cannot be determined. The default of this column is a null value.|  
+|BaseTableName|DBCOLUMN_BASETABLENAME|The name of the table or view in the data store that contains the column. A null value if the base table name cannot be determined. The default of this column is a null value.|  
+|BaseColumnName|DBCOLUMN_BASECOLUMNNAME|The name of the column in the data store. This might be different from the column name returned in the ColumnName column if an alias was used. A null value if the base column name cannot be determined or if the rowset column is derived, but not identical to, a column in the data store. The default of this column is a null value.|  
+  
+> [!NOTE]
+>  To make sure that metadata columns return the correct information, you must call <xref:System.Data.OleDb.OleDbCommand.ExecuteReader%2A> with the `behavior` parameter set to `KeyInfo`. Otherwise, some of the columns in the schema table may return default, null, or incorrect data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.OleDb.OleDbDataReader" /> is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetString">
+      <MemberSignature Language="C#" Value="public override string GetString (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetString(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetString(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a string.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore the data retrieved must already be a string.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTimeSpan">
+      <MemberSignature Language="C#" Value="public TimeSpan GetTimeSpan (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan GetTimeSpan(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetTimeSpan(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the specified column as a <see cref="T:System.TimeSpan" /> object.</summary>
+        <returns>The value of the specified column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No conversions are performed; therefore, the data retrieved must already be a <xref:System.TimeSpan> object.  
+  
+ Call <xref:System.Data.OleDb.OleDbDataReader.IsDBNull%2A> to look for null values before calling this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override object GetValue (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetValue(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets the value of the column at the specified ordinal in its native format.</summary>
+        <returns>The value to return.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns <xref:System.DBNull> for null database columns.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValues">
+      <MemberSignature Language="C#" Value="public override int GetValues (object[] values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetValues(object[] values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.GetValues(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="values">An array of <see cref="T:System.Object" /> into which to copy the attribute columns.</param>
+        <summary>Populates an array of objects with the column values of the current row.</summary>
+        <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most applications, the <xref:System.Data.OleDb.OleDbDataReader.GetValues%2A> method provides an efficient means for retrieving all columns, instead of retrieving each column individually.  
+  
+ You can pass an <xref:System.Object> array that contains fewer than the number of columns that are contained in the resulting row. Only the amount of data the <xref:System.Object> array holds is copied to the array. You can also pass an <xref:System.Object> array whose length is more than the number of columns that are contained in the resulting row.  
+  
+ This method returns <xref:System.DBNull> for null database columns.  
+  
+   
+  
+## Examples  
+ [!code-csharp[OleDbDataReader_GetValues#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/oledbdatareader_getvalues/cs/source.cs#1)]
+ [!code-vb[OleDbDataReader_GetValues#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/oledbdatareader_getvalues/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasRows">
+      <MemberSignature Language="C#" Value="public override bool HasRows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasRows" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.HasRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Data.OleDb.OleDbDataReader" /> contains one or more rows.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbDataReader" /> contains one or more rows; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClosed">
+      <MemberSignature Language="C#" Value="public override bool IsClosed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClosed" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.IsClosed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the data reader is closed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbDataReader" /> is closed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OleDb.OleDbDataReader.IsClosed%2A> and <xref:System.Data.OleDb.OleDbDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OleDb.OleDbDataReader> is closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDBNull">
+      <MemberSignature Language="C#" Value="public override bool IsDBNull (int ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDBNull(int32 ordinal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.IsDBNull(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ordinal" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="ordinal">The zero-based column ordinal.</param>
+        <summary>Gets a value that indicates whether the column contains nonexistent or missing values.</summary>
+        <returns>
+          <see langword="true" /> if the specified column value is equivalent to <see cref="T:System.DBNull" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to look for null column values before calling the typed get methods (for example, <xref:System.Data.OleDb.OleDbDataReader.GetByte%2A>, <xref:System.Data.OleDb.OleDbDataReader.GetChar%2A>, and so on) to avoid raising an error.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The column ordinal.</param>
+        <summary>Gets the value of the specified column in its native format given the column ordinal.</summary>
+        <value>The value of the specified column in its native format.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The column name.</param>
+        <summary>Gets the value of the specified column in its native format given the column name.</summary>
+        <value>The value of the specified column in its native format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A case-sensitive lookup is performed first. If it fails, a second case-insensitive search is made.  
+  
+ This method is kana-width insensitive.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NextResult">
+      <MemberSignature Language="C#" Value="public override bool NextResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool NextResult() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.NextResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the data reader to the next result, when reading the results of batch SQL statements.</summary>
+        <returns>
+          <see langword="true" /> if there are more result sets; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used to process multiple results that can be generated by executing batch SQL statements.  
+  
+ By default, the data reader is positioned on the first result.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override bool Read ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbDataReader.Read" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the <see cref="T:System.Data.OleDb.OleDbDataReader" /> to the next record.</summary>
+        <returns>
+          <see langword="true" /> if there are more rows; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default position of the <xref:System.Data.OleDb.OleDbDataReader> is before the first record. Therefore, you must call <xref:System.Data.OleDb.OleDbDataReader.Read%2A> to start accessing any data.  
+  
+ While the <xref:System.Data.OleDb.OleDbDataReader> is being used, the associated <xref:System.Data.OleDb.OleDbConnection> is busy serving it until you call <xref:System.Data.OleDb.OleDbDataReader.Close%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OleDb.OleDbConnection>, an <xref:System.Data.OleDb.OleDbCommand>, and an <xref:System.Data.OleDb.OleDbDataReader>. The example reads through the data, writing it out to the console. Finally, the example closes the <xref:System.Data.OleDb.OleDbDataReader> and then the <xref:System.Data.OleDb.OleDbConnection>.  
+  
+ [!code-csharp[Classic WebData IDataReader.Read Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData IDataReader.Read Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData IDataReader.Read Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecordsAffected">
+      <MemberSignature Language="C#" Value="public override int RecordsAffected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RecordsAffected" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.RecordsAffected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rows changed, inserted, or deleted by execution of the SQL statement.</summary>
+        <value>The number of rows changed, inserted, or deleted; 0 if no rows were affected or the statement failed; and -1 for SELECT statements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OleDb.OleDbDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.OleDb.OleDbDataReader>.  
+  
+ The value of this property is cumulative. For example, if two records are inserted in batch mode, the value of <xref:System.Data.OleDb.OleDbDataReader.RecordsAffected%2A> is two.  
+  
+ <xref:System.Data.OleDb.OleDbDataReader.IsClosed%2A> and <xref:System.Data.OleDb.OleDbDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.OleDb.OleDbDataReader> is closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleFieldCount">
+      <MemberSignature Language="C#" Value="public override int VisibleFieldCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleFieldCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbDataReader.VisibleFieldCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of fields in the <see cref="T:System.Data.OleDb.OleDbDataReader" /> that are not hidden.</summary>
+        <value>The number of fields that are not hidden.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used to determine how many fields in the <xref:System.Data.OleDb.OleDbDataReader> are visible. For example, a SELECT on a partial primary key returns the remaining parts of the key as hidden fields. The hidden fields are always appended behind the visible fields.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

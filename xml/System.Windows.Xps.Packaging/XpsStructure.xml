@@ -1,0 +1,27 @@
+<Type Name="XpsStructure" FullName="System.Windows.Xps.Packaging.XpsStructure">
+  <TypeSignature Language="C#" Value="public class XpsStructure : System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsStructure extends System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsStructure" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Xps.Packaging.XpsResource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see cref="N:System.Windows.Documents.DocumentStructures" /> or <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> element of an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has no public constructor.  References to an <xref:System.Windows.Xps.Packaging.XpsStructure> are obtained through the <xref:System.Windows.Xps.Packaging.IDocumentStructureProvider.AddDocumentStructure%2A> or <xref:System.Windows.Xps.Packaging.IStoryFragmentProvider.AddStoryFragment%2A> methods.  
+  
+ For more information about the <xref:System.Windows.Documents.DocumentStructures> or <xref:System.Windows.Documents.DocumentStructures.StoryFragments> elements of an <xref:System.Windows.Xps.Packaging.XpsDocument>, see Chapter 9 in the *XPS Paper Specification (XPS)* which you can download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

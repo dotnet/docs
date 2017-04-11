@@ -1,0 +1,66 @@
+<Type Name="UpToDateCheckType" FullName="Microsoft.Build.Utilities.UpToDateCheckType">
+  <TypeSignature Language="C#" Value="public enum UpToDateCheckType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpToDateCheckType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.UpToDateCheckType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The possible types of up to date check that we can support</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InputNewerThanOutput">
+      <MemberSignature Language="C#" Value="InputNewerThanOutput" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputNewerThanOutput = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanOutput" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Input newer than output</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputNewerThanTracking">
+      <MemberSignature Language="C#" Value="InputNewerThanTracking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputNewerThanTracking = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanTracking" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Input newer than tracking</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputOrOutputNewerThanTracking">
+      <MemberSignature Language="C#" Value="InputOrOutputNewerThanTracking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputOrOutputNewerThanTracking = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputOrOutputNewerThanTracking" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Input or output newer than tracking</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

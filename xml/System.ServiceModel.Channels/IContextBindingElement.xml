@@ -1,0 +1,27 @@
+<Type Name="IContextBindingElement" FullName="System.ServiceModel.Channels.IContextBindingElement">
+  <TypeSignature Language="C#" Value="public interface IContextBindingElement" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContextBindingElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IContextBindingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the interface for a binding element that supports context exchange protocols.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface has no members.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,92 @@
+<Type Name="SetStateEventArgs" FullName="System.Workflow.Activities.SetStateEventArgs">
+  <TypeSignature Language="C#" Value="public class SetStateEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SetStateEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SetStateEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a class that is used as an argument to set the state of a <see cref="T:System.Workflow.Activities.StateMachineWorkflowActivity" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Activities.StateMachineWorkflowActivity> allows for setting the state from the host application. This enables the host application to override the current state of a state machine. This can be accomplished by enqueuing an instance of the <xref:System.Workflow.Activities.SetStateEventArgs> class to the WorkflowQueue named by the constant <xref:System.Workflow.Activities.StateMachineWorkflowActivity?displayProperty=fullName>.  
+  
+ A simpler way to accomplish this is to use the <xref:System.Workflow.Activities.StateMachineWorkflowInstance.SetState%2A> method in the <xref:System.Workflow.Activities.StateMachineWorkflowInstance> class.  
+  
+ You can use the <xref:System.Workflow.Activities.StateMachineWorkflowInstance.SetState%2A> method to perform a SetState operation from the host, or you can do it yourself by enqueuing an event to the state machine workflow as shown in the following example.  
+  
+```  
+public void SetState(string targetStateName)  
+{  
+      if (targetStateName == null)  
+      {  
+            throw new ArgumentNullException("targetStateName");  
+      }  
+      SetStateEventArgs args1 = new SetStateEventArgs(targetStateName);  
+      this.WorkflowInstance.EnqueueItemOnIdle("SetStateQueue", args1, null, null);  
+}  
+```  
+  
+ The state machine workflow uses a special queue called `SetStateQueue` to listen to these special events.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SetStateEventArgs (string targetStateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetStateName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SetStateEventArgs.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetStateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetStateName">The state to set the <see cref="T:System.Workflow.Activities.StateActivity" /> to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SetStateEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetStateName">
+      <MemberSignature Language="C#" Value="public string TargetStateName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetStateName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SetStateEventArgs.TargetStateName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state to set the <see cref="T:System.Workflow.Activities.StateActivity" /> to.</summary>
+        <value>The state to set the <see cref="T:System.Workflow.Activities.StateActivity" /> to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,83 @@
+<Type Name="IFilterResolutionService" FullName="System.Web.UI.IFilterResolutionService">
+  <TypeSignature Language="C#" Value="public interface IFilterResolutionService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFilterResolutionService" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IFilterResolutionService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface that designer developers can use to evaluate device filters by name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page developers and control authors do not use the <xref:System.Web.UI.IFilterResolutionService> interface. The <xref:System.Web.UI.IFilterResolutionService> interface is implemented by designer developers to provide device filter-related services when parsing and persisting controls in the designer environment.  
+  
+ The <xref:System.Web.UI.IFilterResolutionService> interface is used when a designer developer needs to support the editing of filtered properties.  
+  
+ The <xref:System.Web.UI.IFilterResolutionService> interface is specific to controls' use of device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> interface provides a way to determine whether the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
+  
+ The <xref:System.Web.Configuration.HttpCapabilitiesBase> class implements the <xref:System.Web.UI.IFilterResolutionService> interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareFilters">
+      <MemberSignature Language="C#" Value="public int CompareFilters (string filter1, string filter2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareFilters(string filter1, string filter2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IFilterResolutionService.CompareFilters(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter1" Type="System.String" />
+        <Parameter Name="filter2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filter1">A device filter name.</param>
+        <param name="filter2">A device filter name</param>
+        <summary>Returns a value indicating whether a parent-child relationship exists between two specified device filters.</summary>
+        <returns>1 if the device filter identified by <paramref name="filter1" /> is a parent of the filter identified by <paramref name="filter2" />, -1 if the device filter identified by <paramref name="filter2" /> is a parent of the filter identified by <paramref name="filter1" />, and 0 if there is no parent-child relationship between the two filters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateFilter">
+      <MemberSignature Language="C#" Value="public bool EvaluateFilter (string filterName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EvaluateFilter(string filterName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filterName">The name of a device filter.</param>
+        <summary>Returns a value indicating whether the specified filter is a type of the current filter object.</summary>
+        <returns>
+          <see langword="true" /> if the specified filter is a type applicable to the current filter object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IFilterResolutionService.EvaluateFilter%2A> method determines whether a named device filter is a type of filter supported by the <xref:System.Web.UI.IFilterResolutionService> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,154 @@
+<Type Name="WindowsRuntimeMetadata" FullName="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata">
+  <TypeSignature Language="C#" Value="public static class WindowsRuntimeMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WindowsRuntimeMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an event for resolving reflection-only type requests for types that are provided by Windows Metadata files, and methods for performing the resolution.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike the .NET Framework, assembly identity isn’t important for [!INCLUDE[wrt](~/includes/wrt-md.md)] types. In the [!INCLUDE[wrt](~/includes/wrt-md.md)], Windows Metadata files (.WinMD files) contain only metadata, not code. Types can move from one Windows Metadata file to another in a service pack release, so it’s important to be able to locate the Windows Metadata files that are associated with a namespace.  
+  
+> [!NOTE]
+>  Sub-namespaces don’t imply containment. That is, namespace A.B isn't contained in namespace A.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DesignerNamespaceResolve">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs&gt; DesignerNamespaceResolve;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs&gt; DesignerNamespaceResolve" />
+      <MemberSignature Language="DocId" Value="E:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.DesignerNamespaceResolve" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the resolution of a Windows Metadata file fails in the design environment.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ReflectionOnlyNamespaceResolve">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs&gt; ReflectionOnlyNamespaceResolve;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs&gt; ReflectionOnlyNamespaceResolve" />
+      <MemberSignature Language="DocId" Value="E:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ReflectionOnlyNamespaceResolve" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the resolution of a Windows Metadata file fails in the reflection-only context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After this event is raised and handled, it is not raised again for the lifetime of the application domain. The list of files that defines the namespace cannot be changed. This event is analogous to the <xref:System.AppDomain.ReflectionOnlyAssemblyResolve> event for managed assemblies.  
+  
+ See the <xref:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs> class.  
+  
+> [!IMPORTANT]
+>  The event handler for this event should not throw exceptions.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveNamespace">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; ResolveNamespace (string namespaceName, System.Collections.Generic.IEnumerable&lt;string&gt; packageGraphFilePaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; ResolveNamespace(string namespaceName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; packageGraphFilePaths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ResolveNamespace(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="packageGraphFilePaths" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceName">The namespace to resolve.</param>
+        <param name="packageGraphFilePaths">The application paths to search for Windows Metadata files, or <see langword="null" /> to search only for Windows Metadata files from the operating system installation.</param>
+        <summary>Locates the Windows Metadata files for the specified namespace, given the specified locations to search.</summary>
+        <returns>An enumerable list of strings that represent the Windows Metadata files that define <paramref name="namespaceName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method overload is equivalent to calling the <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ResolveNamespace%28System.String%2CSystem.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.String%7D%29> method overload and specifying `null` for the `windowsSdkFilePath` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The operating system version does not support the [!INCLUDE[wrt](~/includes/wrt-md.md)].</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceName" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveNamespace">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;string&gt; ResolveNamespace (string namespaceName, string windowsSdkFilePath, System.Collections.Generic.IEnumerable&lt;string&gt; packageGraphFilePaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;string&gt; ResolveNamespace(string namespaceName, string windowsSdkFilePath, class System.Collections.Generic.IEnumerable`1&lt;string&gt; packageGraphFilePaths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMetadata.ResolveNamespace(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="windowsSdkFilePath" Type="System.String" />
+        <Parameter Name="packageGraphFilePaths" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceName">The namespace to resolve.</param>
+        <param name="windowsSdkFilePath">The path to search for Windows Metadata files provided by the SDK, or <see langword="null" /> to search for Windows Metadata files from the operating system installation.</param>
+        <param name="packageGraphFilePaths">The application paths to search for Windows Metadata files.</param>
+        <summary>Locates the Windows Metadata files for the specified namespace, given the specified locations to search.</summary>
+        <returns>An enumerable list of strings that represent the Windows Metadata files that define <paramref name="namespaceName" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The path you specify for `windowsSdkFilePath` is searched only for namespaces that begin with Windows.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The operating system version does not support the [!INCLUDE[wrt](~/includes/wrt-md.md)].</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceName" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

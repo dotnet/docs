@@ -1,0 +1,77 @@
+<Type Name="FromBase64TransformMode" FullName="System.Security.Cryptography.FromBase64TransformMode">
+  <TypeSignature Language="C#" Value="public enum FromBase64TransformMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FromBase64TransformMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.FromBase64TransformMode" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies whether white space should be ignored in the base 64 transformation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ White space includes the space character as well as tab characters, newline characters, and so on. Characters that constitute white space are those identified by the <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DoNotIgnoreWhiteSpaces">
+      <MemberSignature Language="C#" Value="DoNotIgnoreWhiteSpaces" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.FromBase64TransformMode DoNotIgnoreWhiteSpaces = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.FromBase64TransformMode.DoNotIgnoreWhiteSpaces" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.FromBase64TransformMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>White space should not be ignored.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreWhiteSpaces">
+      <MemberSignature Language="C#" Value="IgnoreWhiteSpaces" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.FromBase64TransformMode IgnoreWhiteSpaces = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.FromBase64TransformMode.IgnoreWhiteSpaces" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.FromBase64TransformMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>White space should be ignored.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

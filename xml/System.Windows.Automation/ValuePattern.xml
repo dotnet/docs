@@ -1,0 +1,212 @@
+<Type Name="ValuePattern" FullName="System.Windows.Automation.ValuePattern">
+  <TypeSignature Language="C#" Value="public class ValuePattern : System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValuePattern extends System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ValuePattern" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.BasePattern</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a control that has an intrinsic value that does not span a range and can be represented as a string. This string may or may not be editable depending on the control and its settings.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cached">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.ValuePattern.ValuePatternInformation Cached { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ValuePattern/ValuePatternInformation Cached" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ValuePattern.Cached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ValuePattern+ValuePatternInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cached [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.ValuePattern" />.</summary>
+        <value>The cached property values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. To get the value of a property at the current point in time, get the property by using <xref:System.Windows.Automation.ValuePattern.Current%2A>.  
+  
+ For information on the properties available and their use, see <xref:System.Windows.Automation.ValuePattern.ValuePatternInformation>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.ValuePattern.ValuePatternInformation Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ValuePattern/ValuePatternInformation Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ValuePattern.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ValuePattern+ValuePatternInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] property values for this <see cref="T:System.Windows.Automation.ValuePattern" />.</summary>
+        <value>The current property values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.ValuePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
+  
+ For information on the properties available and their use, see <xref:System.Windows.Automation.ValuePattern.ValuePatternInformation>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnlyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsReadOnlyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsReadOnlyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ValuePattern.IsReadOnlyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.ValuePattern.ValuePatternInformation.IsReadOnly" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.ValuePatternIdentifiers>.  
+  
+ A control should have its <xref:System.Windows.Automation.AutomationElement.IsEnabledProperty> set to `true` and its <xref:System.Windows.Automation.ValuePattern.IsReadOnlyProperty> set to `false` before a client attempts a call to <xref:System.Windows.Automation.ValuePattern.SetValue%2A>.  
+  
+   
+  
+## Examples  
+ In the following example, a root element is passed to a function that returns a collection of UI automation elements that are descendants of the root and satisfy a set of property conditions.  
+  
+ [!code-csharp[UIAValuePattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAValuePattern_snip/CSharp/UIAValuePattern_snippets.cs#100)]
+ [!code-vb[UIAValuePattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAValuePattern_snip/VisualBasic/UIAValuePattern_snippets.vb#100)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ValuePattern.Pattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="T:System.Windows.Automation.ValuePattern" /> control pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.ValuePatternIdentifiers>.  
+  
+ The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.ValuePattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAValuePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAValuePattern_snip/CSharp/UIAValuePattern_snippets.cs#101)]
+ [!code-vb[UIAValuePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAValuePattern_snip/VisualBasic/UIAValuePattern_snippets.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ValuePattern.SetValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">Value to set. The UI Automation provider is responsible for converting the value to the appropriate data type.</param>
+        <summary>Sets the value of the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Single-line edit controls support programmatic access to their contents through <xref:System.Windows.Automation.ValuePattern>. However, multi-line edit controls do not support the <xref:System.Windows.Automation.ValuePattern>; instead they provide access to their content through the <xref:System.Windows.Automation.TextPattern>control pattern.  
+  
+   
+  
+## Examples  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.ValuePattern>control pattern has its <xref:System.Windows.Automation.ValuePattern.ValueProperty> set to a user-specified value.  
+  
+ [!code-csharp[UIAValuePattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAValuePattern_snip/CSharp/UIAValuePattern_snippets.cs#103)]
+ [!code-vb[UIAValuePattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAValuePattern_snip/VisualBasic/UIAValuePattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The control is read-only.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The control is not enabled.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ValueProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ValuePattern.ValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.ValuePattern.ValuePatternInformation.Value" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.ValuePatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.ValuePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.ValuePattern> property values.  
+  
+ [!code-csharp[UIAValuePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAValuePattern_snip/CSharp/UIAValuePattern_snippets.cs#102)]
+ [!code-vb[UIAValuePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAValuePattern_snip/VisualBasic/UIAValuePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

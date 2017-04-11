@@ -1,0 +1,371 @@
+<Type Name="Oid" FullName="System.Security.Cryptography.Oid">
+  <TypeSignature Language="C#" Value="public sealed class Oid" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Oid extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Oid" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a cryptographic object identifier. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cryptographic object identifiers consist of a value/name pair. If one property in a pair is set to a known value, the other property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property, which is localized, is set automatically to "Secure Email".  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Oid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default constructor.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Oid (System.Security.Cryptography.Oid oid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.Security.Cryptography.Oid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="oid" Type="System.Security.Cryptography.Oid" />
+      </Parameters>
+      <Docs>
+        <param name="oid">The object identifier information to use to create the new object identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using the specified <see cref="T:System.Security.Cryptography.Oid" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oid " />is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Oid (string oid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string oid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="oid" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oid">An object identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using a string value of an <see cref="T:System.Security.Cryptography.Oid" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor copies the values of an existing <xref:System.Security.Cryptography.Oid> object to a new object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Oid (string value, string friendlyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, string friendlyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="friendlyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The dotted number of the identifier.</param>
+        <param name="friendlyName">The friendly name of the identifier.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class using the specified value and friendly name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to copy the values of an existing <xref:System.Security.Cryptography.Oid> object. Note that if the Oid value is not recognized, the `value` and `friendlyName` parameters are not verified to determine if they correspond to each other. This is because there are object identifiers that the .NET Framework does not recognize, although an application may be able to interpret them.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FriendlyName">
+      <MemberSignature Language="C#" Value="public string FriendlyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Oid.FriendlyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the friendly name of the identifier.</summary>
+        <value>The friendly name of the identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set to "Secure Email", the <xref:System.Security.Cryptography.Oid.Value%2A> property is set automatically to "1.3.6.1.5.5.7.3.4".  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromFriendlyName">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Oid FromFriendlyName (string friendlyName, System.Security.Cryptography.OidGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Oid FromFriendlyName(string friendlyName, valuetype System.Security.Cryptography.OidGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.FromFriendlyName(System.String,System.Security.Cryptography.OidGroup)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Oid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="friendlyName" Type="System.String" />
+        <Parameter Name="group" Type="System.Security.Cryptography.OidGroup" />
+      </Parameters>
+      <Docs>
+        <param name="friendlyName">The friendly name of the identifier.</param>
+        <param name="group">The group to search in.</param>
+        <summary>Creates an <see cref="T:System.Security.Cryptography.Oid" /> object from an OID friendly name by searching the specified group.</summary>
+        <returns>An object that represents the specified OID.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="friendlyName " /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The OID was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromOidValue">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Oid FromOidValue (string oidValue, System.Security.Cryptography.OidGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Oid FromOidValue(string oidValue, valuetype System.Security.Cryptography.OidGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.FromOidValue(System.String,System.Security.Cryptography.OidGroup)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Oid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oidValue" Type="System.String" />
+        <Parameter Name="group" Type="System.Security.Cryptography.OidGroup" />
+      </Parameters>
+      <Docs>
+        <param name="oidValue">The OID value.</param>
+        <param name="group">The group to search in.</param>
+        <summary>Creates an <see cref="T:System.Security.Cryptography.Oid" /> object by using the specified OID value and group.</summary>
+        <returns>A new instance of an <see cref="T:System.Security.Cryptography.Oid" /> object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="oidValue" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The friendly name for the OID value was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Oid.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the dotted number of the identifier.</summary>
+        <value>The dotted number of the identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If one value of an <xref:System.Security.Cryptography.Oid> property is set to a known value, the other value of an <xref:System.Security.Cryptography.Oid> property is updated automatically to a corresponding value. For example, if the <xref:System.Security.Cryptography.Oid.Value%2A> property is set to "1.3.6.1.5.5.7.3.4", the <xref:System.Security.Cryptography.Oid.FriendlyName%2A> property is set automatically to "Secure Email".  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Security.Cryptography.Oid> class.  
+  
+ [!code-cpp[Cryptography.Oid#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.Oid/CPP/cryptography.oid.cpp#1)]
+ [!code-csharp[Cryptography.Oid#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.Oid/CS/cryptography.oid.cs#1)]
+ [!code-vb[Cryptography.Oid#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.Oid/VB/cryptography.oid.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

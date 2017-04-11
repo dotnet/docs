@@ -1,0 +1,73 @@
+<Type Name="RequestNotificationStatus" FullName="System.Web.RequestNotificationStatus">
+  <TypeSignature Language="C#" Value="public enum RequestNotificationStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestNotificationStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.RequestNotificationStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the state of a notification in the request pipeline.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.RequestNotificationStatus> is introduced in the .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.RequestNotificationStatus Continue = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.RequestNotificationStatus.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.RequestNotificationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member supports the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FinishRequest">
+      <MemberSignature Language="C#" Value="FinishRequest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.RequestNotificationStatus FinishRequest = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.RequestNotificationStatus.FinishRequest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.RequestNotificationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member supports the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pending">
+      <MemberSignature Language="C#" Value="Pending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.RequestNotificationStatus Pending = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.RequestNotificationStatus.Pending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.RequestNotificationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This member supports the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

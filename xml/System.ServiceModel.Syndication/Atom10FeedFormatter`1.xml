@@ -1,0 +1,139 @@
+<Type Name="Atom10FeedFormatter&lt;TSyndicationFeed&gt;" FullName="System.ServiceModel.Syndication.Atom10FeedFormatter&lt;TSyndicationFeed&gt;">
+  <TypeSignature Language="C#" Value="public class Atom10FeedFormatter&lt;TSyndicationFeed&gt; : System.ServiceModel.Syndication.Atom10FeedFormatter where TSyndicationFeed : SyndicationFeednew()" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Atom10FeedFormatter`1&lt;.ctor (class System.ServiceModel.Syndication.SyndicationFeed) TSyndicationFeed&gt; extends System.ServiceModel.Syndication.Atom10FeedFormatter" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Atom10FeedFormatter`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TSyndicationFeed">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <BaseTypeName>System.ServiceModel.Syndication.SyndicationFeed</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Syndication.Atom10FeedFormatter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlRoot("feed", Namespace="http://www.w3.org/2005/Atom")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TSyndicationFeed">The <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> -derived type to serialize.</typeparam>
+    <summary>A class that serializes <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived classes to and from Atom 1.0 format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to serialize instances of <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived classes and to create instances of <xref:System.ServiceModel.Syndication.SyndicationFeed> derived classes from XML documents that contain Atom 1.0 feeds. If you must serialize a <xref:System.ServiceModel.Syndication.SyndicationFeed> instance, use the <xref:System.ServiceModel.Syndication.Atom10FeedFormatter> formatter instead.  
+  
+> [!NOTE]
+>  The Atom 1.0 specification allows for fractional seconds to be specified in any of its date constructs. When serializing and deserializing, the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation ignores the fractional seconds.  
+  
+   
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived class and serialize it to Atom 1.0.  
+  
+ [!code-csharp[AtomFormatter#2](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#2)]
+ [!code-vb[AtomFormatter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Atom10FeedFormatter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived class and serialize it to Atom 1.0.  
+  
+ [!code-csharp[AtomFormatter#3](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#3)]
+ [!code-vb[AtomFormatter#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Atom10FeedFormatter (TSyndicationFeed feedToWrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TSyndicationFeed feedToWrite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter`1.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="feedToWrite" Type="TSyndicationFeed" />
+      </Parameters>
+      <Docs>
+        <param name="feedToWrite">The feed to serialize.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10FeedFormatter`1" /> class with the specified <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" />-derived instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to create a <xref:System.ServiceModel.Syndication.SyndicationFeed>-derived class and serialize it to Atom 1.0.  
+  
+ [!code-csharp[AtomFormatter#2](~/samples/snippets/csharp/VS_Snippets_CFX/atomformatter/cs/snippets.cs#2)]
+ [!code-vb[AtomFormatter#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/atomformatter/vb/snippets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFeedInstance">
+      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Syndication.SyndicationFeed CreateFeedInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Syndication.SyndicationFeed CreateFeedInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10FeedFormatter`1.CreateFeedInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Syndication.SyndicationFeed</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> derived class.</summary>
+        <returns>A new instance of the <see cref="T:System.ServiceModel.Syndication.SyndicationFeed" /> class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,112 @@
+<Type Name="StartupNextInstanceEventArgs" FullName="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs">
+  <TypeSignature Language="C#" Value="public class StartupNextInstanceEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi StartupNextInstanceEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see langword="My.Application.StartupNextInstance" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs> contains the command-line arguments of the subsequent application instance and indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StartupNextInstanceEventArgs (System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; args, bool bringToForegroundFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; args, bool bringToForegroundFlag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.String},System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="args" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;" />
+        <Parameter Name="bringToForegroundFlag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="args">A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> object that contains the command-line arguments of the subsequent application instance.</param>
+        <param name="bringToForegroundFlag">A <see cref="T:System.Boolean" /> that indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs> contains the command-line arguments of the subsequent application instance and indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BringToForeground">
+      <MemberSignature Language="C#" Value="public bool BringToForeground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BringToForeground" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.</summary>
+        <value>A <see cref="T:System.Boolean" /> that indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Visual Basic Application Model checks the value of this property after running the handlers of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event. If the <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground%2A> property is `True`, the first application instance is brought to the foreground. Otherwise, the first application instance remains where it was. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandLine">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; CommandLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; CommandLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.CommandLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command-line arguments of the subsequent application instance.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> object that contains the command-line arguments of the subsequent application instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

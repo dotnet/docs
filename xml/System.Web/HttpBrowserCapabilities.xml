@@ -1,0 +1,41 @@
+<Type Name="HttpBrowserCapabilities" FullName="System.Web.HttpBrowserCapabilities">
+  <TypeSignature Language="C#" Value="public class HttpBrowserCapabilities : System.Web.Configuration.HttpCapabilitiesBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpBrowserCapabilities extends System.Web.Configuration.HttpCapabilitiesBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpBrowserCapabilities" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Configuration.HttpCapabilitiesBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables the server to gather information on the capabilities of the browser that is running on the client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpBrowserCapabilities> properties are accessible through the <xref:System.Web.HttpRequest.Browser%2A> property of the ASP.NET intrinsic <xref:System.Web.HttpContext.Request%2A> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpBrowserCapabilities ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilities.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.HttpBrowserCapabilities" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

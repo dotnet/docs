@@ -1,0 +1,159 @@
+<Type Name="HttpCacheVaryByParams" FullName="System.Web.HttpCacheVaryByParams">
+  <TypeSignature Language="C#" Value="public sealed class HttpCacheVaryByParams" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpCacheVaryByParams extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheVaryByParams" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a type-safe way to set the <see cref="P:System.Web.HttpCachePolicy.VaryByParams" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpCachePolicy.VaryByParams%2A> property identifies which HTTP `Get` or `Post` parameters ASP.NET uses to uniquely identify a variation of the response when there are multiple cached responses for a resource. This is useful when a response depends on a set of client inputs, such as headers or parameters.  
+  
+ The <xref:System.Web.HttpCacheVaryByParams> is not directly related to HTTP cache-control headers, but helps ensure that a client or proxy varies by the specified parameters. For more information about `VaryByParams`, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web](http://go.microsoft.com/fwlink/?linkid=37125) site. See section 14, "Header Field Definitions", for complete details.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.HttpCacheVaryByParams> object is accessed from the <xref:System.Web.HttpCachePolicy> object associated with an <xref:System.Web.HttpResponse>.  
+  
+ [!code-csharp[Classic HttpResponse.Cache Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.Cache Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.Cache Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.Cache Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpCacheVaryByParams ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByParams.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpCacheVaryByParams" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParams">
+      <MemberSignature Language="C#" Value="public string[] GetParams ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetParams() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByParams.GetParams" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an array of values which specify the HTTP <see langword="GET" /> or <see langword="POST" /> parameters to be used for varying the cache.</summary>
+        <returns>An array of values which contain the HTTP <see langword="GET" /> or <see langword="POST" /> parameters for varying the cache.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreParams">
+      <MemberSignature Language="C#" Value="public bool IgnoreParams { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreParams" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByParams.IgnoreParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether an HTTP response varies by <see langword="Get" /> or <see langword="Post" /> parameters.</summary>
+        <value>
+          <see langword="true" /> if HTTP request parameters are ignored; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Web.HttpCacheVaryByParams.IgnoreParams%2A> property to `true` is equivalent to setting the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive `VaryByParams` attribute to "none" for the resource.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public bool this[string header] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpCacheVaryByParams.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="header" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="header">The name of the custom parameter.</param>
+        <summary>Gets or sets a value indicating whether the cache varies according to the specified HTTP request parameter.</summary>
+        <value>
+          <see langword="true" /> if the cache should vary by the specified parameter value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When used as an accessor (getter), the <xref:System.Web.HttpCacheVaryByParams.Item%2A> indexer returns `true` if a value for the specified parameter is found in the current parameters collection, or if the collection is set to vary by * (an asterisk), which indicates all parameters.  
+  
+ When used as a mutator (setter), the <xref:System.Web.HttpCacheVaryByParams.Item%2A> indexer sets the value for the parameter in the parameters collection that corresponds to the specified header to `true`. The value * can be specified, which indicates all parameters.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.HttpCacheVaryByParams.Item%2A> indexer is accessed from the <xref:System.Web.HttpCachePolicy> object associated with an <xref:System.Web.HttpResponse>.  
+  
+ [!code-csharp[Classic HttpResponse.Cache Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpResponse.Cache Example/CS/source.cs#1)]
+ [!code-vb[Classic HttpResponse.Cache Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpResponse.Cache Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="header" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParams">
+      <MemberSignature Language="C#" Value="public void SetParams (string[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParams(string[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpCacheVaryByParams.SetParams(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">An array of values which contain the HTTP <see langword="GET" /> or <see langword="POST" /> parameters for varying the cache.</param>
+        <summary>Sets an array of values which specify the HTTP <see langword="GET" /> or <see langword="POST" /> parameters to be used for varying the cache.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

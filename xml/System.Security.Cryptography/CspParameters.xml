@@ -1,0 +1,646 @@
+<Type Name="CspParameters" FullName="System.Security.Cryptography.CspParameters">
+  <TypeSignature Language="C#" Value="public sealed class CspParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CspParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CspParameters" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains parameters that are passed to the cryptographic service provider (CSP) that performs cryptographic computations. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.CspParameters> class represents parameters that you can pass to managed cryptography classes that internally use Microsoft Cryptographic Service Providers (CSPs) from the unmanaged Microsoft Cryptography API (CAPI). Classes with names ending in "CryptoServiceProvider" are managed code wrappers for the corresponding CSP.  
+  
+ Use the <xref:System.Security.Cryptography.CspParameters> class to do the following:  
+  
+-   Specify a particular CSP by passing the provider type to the <xref:System.Security.Cryptography.CspParameters.ProviderType> or <xref:System.Security.Cryptography.CspParameters.ProviderName> property.  You can also specify a CSP using an overload of the constructor.  
+  
+-   Create a key container where you can store cryptographic keys.  Key containers provide the most secure way to persist cryptographic keys and keep them secret from malicious third parties.  For more information about creating key containers, see [How to: Store Asymmetric Keys in a Key Container](~/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
+  
+-   Specify whether to create an asymmetric signature key or an asymmetric exchange key using the <xref:System.Security.Cryptography.CspParameters.KeyNumber> property.  
+  
+   
+  
+## Examples  
+ The following code example creates a key container using the <xref:System.Security.Cryptography.CspParameters> class and saves the key in the container.  
+  
+ [!code-cpp[capikey#1](~/samples/snippets/cpp/VS_Snippets_CLR/capikey/CPP/capikey.cpp#1)]
+ [!code-csharp[capikey#1](~/samples/snippets/csharp/VS_Snippets_CLR/capikey/CS/capikey.cs#1)]
+ [!code-vb[capikey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/capikey/VB/capikey.vb#1)]  
+  
+ The following code example uses the <xref:System.Security.Cryptography.CspParameters> class to select a Smart Card Cryptographic Service Provider.  It then signs and verifies data using the smart card.  
+  
+ [!code-cpp[Cryptography.SmartCardCSP#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CPP/Cryptography.SmartCardCSP.cpp#1)]
+ [!code-csharp[Cryptography.SmartCardCSP#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CS/example.cs#1)]
+ [!code-vb[Cryptography.SmartCardCSP#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.SmartCardCSP/VB/example.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CspParameters ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CspParameters" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This form of <xref:System.Security.Cryptography.CspParameters.%23ctor%2A> initializes the <xref:System.Security.Cryptography.CspParameters> field to a value of `24`, which specifies the PROV_RSA_AES provider.  This default provider is compatible with the <xref:System.Security.Cryptography.Aes> algorithm.  
+  
+ For information about other provider types, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  
+  
+   
+  
+## Examples  
+ The following code example creates a key container using the <xref:System.Security.Cryptography.CspParameters> class and saves the key in the container.  
+  
+ [!code-cpp[capikey#1](~/samples/snippets/cpp/VS_Snippets_CLR/capikey/CPP/capikey.cpp#1)]
+ [!code-csharp[capikey#1](~/samples/snippets/csharp/VS_Snippets_CLR/capikey/CS/capikey.cs#1)]
+ [!code-vb[capikey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/capikey/VB/capikey.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CspParameters (int dwTypeIn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dwTypeIn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dwTypeIn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dwTypeIn">A provider type code that specifies the kind of provider to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CspParameters" /> class with the specified provider type code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.CspParameters.%23ctor%2A> constructor to specify a provider type by passing a numeric value that represents that provider.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+  
+ For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
+  
+   
+  
+## Examples  
+ The following code example creates a key container using the <xref:System.Security.Cryptography.CspParameters> class and saves the key in the container.  
+  
+ [!code-cpp[capikey#1](~/samples/snippets/cpp/VS_Snippets_CLR/capikey/CPP/capikey.cpp#1)]
+ [!code-csharp[capikey#1](~/samples/snippets/csharp/VS_Snippets_CLR/capikey/CS/capikey.cs#1)]
+ [!code-vb[capikey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/capikey/VB/capikey.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CspParameters (int dwTypeIn, string strProviderNameIn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dwTypeIn, string strProviderNameIn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dwTypeIn" Type="System.Int32" />
+        <Parameter Name="strProviderNameIn" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dwTypeIn">A provider type code that specifies the kind of provider to create.</param>
+        <param name="strProviderNameIn">A provider name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CspParameters" /> class with the specified provider type code and name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.CspParameters.%23ctor%2A> constructor to specify a provider type and name.  
+  
+ Specify a provider type by passing a numeric value that represents the desired provider type.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+  
+ For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.Cryptography.CspParameters> class to select a Smart Card Cryptographic Service Provider.  It then signs and verifies data using the smart card.  
+  
+ [!code-cpp[Cryptography.SmartCardCSP#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CPP/Cryptography.SmartCardCSP.cpp#1)]
+ [!code-csharp[Cryptography.SmartCardCSP#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.SmartCardCSP/CS/example.cs#1)]
+ [!code-vb[Cryptography.SmartCardCSP#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.SmartCardCSP/VB/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CspParameters (int dwTypeIn, string strProviderNameIn, string strContainerNameIn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 dwTypeIn, string strProviderNameIn, string strContainerNameIn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dwTypeIn" Type="System.Int32" />
+        <Parameter Name="strProviderNameIn" Type="System.String" />
+        <Parameter Name="strContainerNameIn" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dwTypeIn">The provider type code that specifies the kind of provider to create.</param>
+        <param name="strProviderNameIn">A provider name.</param>
+        <param name="strContainerNameIn">A container name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CspParameters" /> class with the specified provider type code and name, and the specified container name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.CspParameters.%23ctor%2A> constructor to specify a provider type, a provider name, and a container name.  
+  
+ You can use the container name to retrieve a key within that container.  
+  
+ Specify a provider type by passing a numeric value that represents the desired provider type.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+  
+ For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CspParameters (int providerType, string providerName, string keyContainerName, System.Security.AccessControl.CryptoKeySecurity cryptoKeySecurity, IntPtr parentWindowHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 providerType, string providerName, string keyContainerName, class System.Security.AccessControl.CryptoKeySecurity cryptoKeySecurity, native int parentWindowHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String,System.String,System.Security.AccessControl.CryptoKeySecurity,System.IntPtr)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="providerType" Type="System.Int32" />
+        <Parameter Name="providerName" Type="System.String" />
+        <Parameter Name="keyContainerName" Type="System.String" />
+        <Parameter Name="cryptoKeySecurity" Type="System.Security.AccessControl.CryptoKeySecurity" />
+        <Parameter Name="parentWindowHandle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="providerType">The provider type code that specifies the kind of provider to create.</param>
+        <param name="providerName">A provider name.</param>
+        <param name="keyContainerName">A container name.</param>
+        <param name="cryptoKeySecurity">An object that represents access rights and audit rules for the container.</param>
+        <param name="parentWindowHandle">A handle to the parent window for a smart card password dialog.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CspParameters" /> class using a provider type, a provider name, a container name, access information, and a handle to an unmanaged smart card password dialog.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the container name to retrieve a key within that container.  
+  
+ Specify a provider type by passing a numeric value that represents the desired provider type.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+  
+ For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CspParameters (int providerType, string providerName, string keyContainerName, System.Security.AccessControl.CryptoKeySecurity cryptoKeySecurity, System.Security.SecureString keyPassword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 providerType, string providerName, string keyContainerName, class System.Security.AccessControl.CryptoKeySecurity cryptoKeySecurity, class System.Security.SecureString keyPassword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String,System.String,System.Security.AccessControl.CryptoKeySecurity,System.Security.SecureString)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="providerType" Type="System.Int32" />
+        <Parameter Name="providerName" Type="System.String" />
+        <Parameter Name="keyContainerName" Type="System.String" />
+        <Parameter Name="cryptoKeySecurity" Type="System.Security.AccessControl.CryptoKeySecurity" />
+        <Parameter Name="keyPassword" Type="System.Security.SecureString" />
+      </Parameters>
+      <Docs>
+        <param name="providerType">The provider type code that specifies the kind of provider to create.</param>
+        <param name="providerName">A provider name.</param>
+        <param name="keyContainerName">A container name.</param>
+        <param name="cryptoKeySecurity">An object that represents access rights and audit rules for a container.</param>
+        <param name="keyPassword">A password associated with a smart card key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CspParameters" /> class using a provider type, a provider name, a container name, access information, and a password associated with a smart card key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the container name to retrieve a key within that container.  
+  
+ Specify a provider type by passing a numeric value that represents the desired provider type.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> algorithm, pass a value of `1`to the `dwTypeIn` parameter.  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> algorithm, pass a value of `13`to the `dwTypeIn` parameter.  
+  
+ For information about other provider type values, see the <xref:System.Security.Cryptography.CspParameters.ProviderType> field.  For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CryptoKeySecurity">
+      <MemberSignature Language="C#" Value="public System.Security.AccessControl.CryptoKeySecurity CryptoKeySecurity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.AccessControl.CryptoKeySecurity CryptoKeySecurity" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspParameters.CryptoKeySecurity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.CryptoKeySecurity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object that represents access rights and audit rules for a container.</summary>
+        <value>A <see cref="T:System.Security.AccessControl.CryptoKeySecurity" /> object that represents access rights and audit rules for a container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.CspParameters.CryptoKeySecurity%2A> property to specify a <xref:System.Security.AccessControl.CryptoKeySecurity> object that manages the creation of discretionary access control lists (DACLS) and system access control lists (SACLS) for a container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.CspProviderFlags Flags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.CspProviderFlags Flags" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspParameters.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CspProviderFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the flags for <see cref="T:System.Security.Cryptography.CspParameters" /> that modify the behavior of the cryptographic service provider (CSP).</summary>
+        <value>An enumeration value, or a bitwise combination of enumeration values.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Value is not a valid enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyContainerName">
+      <MemberSignature Language="C#" Value="public string KeyContainerName;" />
+      <MemberSignature Language="ILAsm" Value=".field public string KeyContainerName" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspParameters.KeyContainerName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the key container name for <see cref="T:System.Security.Cryptography.CspParameters" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.CspParameters.KeyContainerName> field to specify a name for your key container.  You can use the container name to retrieve the persisted key within that container.  
+  
+ For more information about creating key containers, see [How to: Store Asymmetric Keys in a Key Container](~/docs/standard/security/how-to-store-asymmetric-keys-in-a-key-container.md).  
+  
+   
+  
+## Examples  
+ The following code example creates a key container using the <xref:System.Security.Cryptography.CspParameters> class and saves the key in the container.  
+  
+ [!code-cpp[capikey#1](~/samples/snippets/cpp/VS_Snippets_CLR/capikey/CPP/capikey.cpp#1)]
+ [!code-csharp[capikey#1](~/samples/snippets/csharp/VS_Snippets_CLR/capikey/CS/capikey.cs#1)]
+ [!code-vb[capikey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/capikey/VB/capikey.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyNumber">
+      <MemberSignature Language="C#" Value="public int KeyNumber;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 KeyNumber" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspParameters.KeyNumber" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether an asymmetric key is created as a signature key or an exchange key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.CspParameters.KeyNumber> field initializes the <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyNumber%2A> property when you initialize a <xref:System.Security.Cryptography.CspKeyContainerInfo> object with a <xref:System.Security.Cryptography.CspParameters> object.  
+  
+ An exchange key is an asymmetric key pair used to encrypt session keys so that they can be safely stored and exchanged with other users.  You can use the <xref:System.Security.Cryptography.KeyNumber> value (`1`) to specify an exchange key.  This value corresponds to the `AT_KEYEXCHANGE` value used in the unmanaged Microsoft Cryptographic API (CAPI).  
+  
+ A signature key is an asymmetric key pair used for authenticating digitally signed messages or files.  You can use the <xref:System.Security.Cryptography.KeyNumber> value (`2`) to specify a signature key.  This value corresponds to the `AT_SIGNATURE` value used in CAPI.  
+  
+ By default, the <xref:System.Security.Cryptography.CspParameters.KeyNumber> field specifies an exchange key.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Security.Cryptography.KeyNumber> enumeration to specify a key type for an <xref:System.Security.Cryptography.RSACryptoServiceProvider> object.  
+  
+ [!code-cpp[Cryptography.KeyNumber#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.KeyNumber/cpp/sample.cpp#1)]
+ [!code-csharp[Cryptography.KeyNumber#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.KeyNumber/CS/sample.cs#1)]
+ [!code-vb[Cryptography.KeyNumber#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.KeyNumber/VB/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyPassword">
+      <MemberSignature Language="C#" Value="public System.Security.SecureString KeyPassword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.SecureString KeyPassword" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspParameters.KeyPassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecureString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a password associated with a smart card key.</summary>
+        <value>A password associated with a smart card key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.CspParameters.KeyPassword%2A> property to supply a password for a smart card key.  When you specify a password using this property, a password dialog box will not be presented to the user.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentWindowHandle">
+      <MemberSignature Language="C#" Value="public IntPtr ParentWindowHandle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int ParentWindowHandle" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CspParameters.ParentWindowHandle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a handle to the unmanaged parent window for a smart card password dialog box.</summary>
+        <value>A handle to the parent window for a smart card password dialog box.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.CspParameters.ParentWindowHandle%2A> property to specify a handle to the unmanaged parent window for a smart card password dialog box.  When you specify a handle using this property, a smart card password dialog box will be presented to the user.  
+  
+ You can avoid presenting a smart card password dialog box by explicitly specifying a password by using the <xref:System.Security.Cryptography.CspParameters.KeyPassword%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderName">
+      <MemberSignature Language="C#" Value="public string ProviderName;" />
+      <MemberSignature Language="ILAsm" Value=".field public string ProviderName" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspParameters.ProviderName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the provider name for <see cref="T:System.Security.Cryptography.CspParameters" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the Microsoft Cryptography API (CAPI) documentation in the MSDN library for details on provider names.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderType">
+      <MemberSignature Language="C#" Value="public int ProviderType;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 ProviderType" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CspParameters.ProviderType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Csp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the provider type code for <see cref="T:System.Security.Cryptography.CspParameters" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Security.Cryptography.CspParameters.ProviderType> field to specify a provider type by passing a numeric value that represents that provider.  The numeric values that represent the default provider types are defined in the WinCrypt.h header file:  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.RSA> class, pass a value of `1`.  
+  
+-   To specify a provider compatible with the <xref:System.Security.Cryptography.DSA> class, pass a value of `13`.  
+  
+ The following table lists the provider types and their corresponding numeric values defined in the WinCrypt.h header file.  
+  
+|Provider Type|Numeric Value|  
+|-------------------|-------------------|  
+|`PROV_RSA_FULL`|1|  
+|`PROV_RSA_SIG`|2|  
+|`PROV_DSS`|3|  
+|`PROV_FORTEZZA`|4|  
+|`PROV_MS_EXCHANGE`|5|  
+|`PROV_SSL`|6|  
+|`PROV_RSA_SCHANNEL`|12|  
+|`PROV_DSS_DH`|13|  
+|`PROV_EC_ECDSA_SIG`|14|  
+|`PROV_EC_ECNRA_SIG`|15|  
+|`PROV_EC_ECDSA_FULL`|16|  
+|`PROV_EC_ECNRA_FULL`|17|  
+|`PROV_DH_SCHANNEL`|18|  
+|`PROV_SPYRUS_LYNKS`|20|  
+|`PROV_RNG`|21|  
+|`PROV_INTEL_SEC`|22|  
+|`PROV_REPLACE_OWF`|23|  
+|`PROV_RSA_AES`|24|  
+  
+ For more information about the default provider types and their behaviors, see the Microsoft Cryptography API (CAPI) documentation in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,57 @@
+<Type Name="WebPartVerbRenderMode" FullName="System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode">
+  <TypeSignature Language="C#" Value="public enum WebPartVerbRenderMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartVerbRenderMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how verbs should be rendered on a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property determines whether verbs on <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a Web Parts zone are rendered in each control's title bar, or in a drop-down verbs menu. The <xref:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode> enumeration contains values that can be applied to the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode%2A> property to specify how the verbs should be rendered.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Menu">
+      <MemberSignature Language="C#" Value="Menu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode Menu = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode.Menu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Verbs are rendered in a shortcut menu in the title bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBar">
+      <MemberSignature Language="C#" Value="TitleBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode TitleBar = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode.TitleBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Verbs are rendered as links directly in the title bar.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

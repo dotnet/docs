@@ -1,0 +1,142 @@
+<Type Name="DataServiceRequestArgs" FullName="System.Data.Services.Client.DataServiceRequestArgs">
+  <TypeSignature Language="C#" Value="public class DataServiceRequestArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataServiceRequestArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceRequestArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents additional metadata that is included in a request message to [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceRequestArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceRequestArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Client.DataServiceRequestArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptContentType">
+      <MemberSignature Language="C#" Value="public string AcceptContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AcceptContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequestArgs.AcceptContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Accept header of the request message.</summary>
+        <value>The value of the Accept header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.AcceptContentType%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Accept header.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequestArgs.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Content-Type header of the request message.</summary>
+        <value>The value of the Content-Type header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.ContentType%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Content-Type header.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; Headers" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequestArgs.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the headers in the request message.</summary>
+        <value>The headers in the request message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The response is a <xref:System.Collections.Generic.Dictionary%602> object that contains key-value pairs of strings for each header in the request.  
+  
+ No validation is performed on the headers in the <xref:System.Data.Services.Client.DataServiceRequestArgs.Headers%2A> property. Therefore, make sure that you do not change an HTTP header in a way that changes the meaning of the request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slug">
+      <MemberSignature Language="C#" Value="public string Slug { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Slug" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceRequestArgs.Slug" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the Slug header of the request message.</summary>
+        <value>A value that is the Slug header of the request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No validation is performed on the value of the <xref:System.Data.Services.Client.DataServiceRequestArgs.Slug%2A> property. Therefore, make sure that the supplied value is a valid value for an HTTP Slug header.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

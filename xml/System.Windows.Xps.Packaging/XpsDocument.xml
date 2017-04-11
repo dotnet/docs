@@ -1,0 +1,779 @@
+<Type Name="XpsDocument" FullName="System.Windows.Xps.Packaging.XpsDocument">
+  <TypeSignature Language="C#" Value="public class XpsDocument : System.Windows.Xps.Packaging.XpsPartBase, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsDocument extends System.Windows.Xps.Packaging.XpsPartBase implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsDocument" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Xps.Packaging.XpsPartBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a <see cref="T:System.IO.Packaging.Package" /> that holds the content of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Xps.Packaging.XpsDocument> contains a <xref:System.Windows.Documents.FixedDocumentSequence> that comprises one or more <xref:System.Windows.Documents.FixedDocument> elements.  
+  
+ The <xref:System.Windows.Xps.Packaging.XpsDocument.%23ctor%2A> constructor is passed a reference to a <xref:System.IO.Packaging.Package> for writing, storing, and reading the content elements of the document.  
+  
+ A new empty [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is created by using the <xref:System.IO.Packaging.Package.%23ctor%2A> constructor.  
+  
+ An existing [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> is opened by using the <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName> method.  
+  
+ A <xref:System.Windows.Documents.FixedDocumentSequence> root is added to an empty [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] <xref:System.IO.Packaging.Package> by calling the <xref:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence%2A> method.  
+  
+ <xref:System.Printing.PrintTicket> elements with printer information and control can also be associated with the <xref:System.Windows.Documents.FixedDocumentSequence>, or on individual <xref:System.Windows.Documents.FixedDocument> and <xref:System.Windows.Documents.FixedPage> elements that are stored in the <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ For more information about [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] see the XML Paper Specification (XPS) available for download at [http://go.microsoft.com/fwlink/?LinkID=65761](http://go.microsoft.com/fwlink/?LinkID=65761).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XpsDocument (System.IO.Packaging.Package package);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.IO.Packaging.Package)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="package" Type="System.IO.Packaging.Package" />
+      </Parameters>
+      <Docs>
+        <param name="package">The target [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] package for the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class with access to a specified [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] <see cref="T:System.IO.Packaging.Package" /> and default interleaving, resource, and compression options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+ [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+ [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+  
+ The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XpsDocument (System.IO.Packaging.Package package, System.IO.Packaging.CompressionOption compressionOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.IO.Packaging.Package,System.IO.Packaging.CompressionOption)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="package" Type="System.IO.Packaging.Package" />
+        <Parameter Name="compressionOption" Type="System.IO.Packaging.CompressionOption" />
+      </Parameters>
+      <Docs>
+        <param name="package">The target package for the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
+        <param name="compressionOption">The package compression option.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class that is contained in a specified <see cref="T:System.IO.Packaging.Package" /> with specified default interleaving, resource, and compression options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+ [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+ [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+  
+ The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XpsDocument (string path, System.IO.FileAccess packageAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileAccess packageAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.String,System.IO.FileAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="packageAccess" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path and file name of the target <see cref="T:System.IO.Packaging.Package" /> for the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
+        <param name="packageAccess">The file I/O mode in which to open the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class that is contained in a specified <see cref="T:System.IO.Packaging.Package" /> file with default interleaving, resource, and compression options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+ [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+ [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+  
+ The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XpsDocument (System.IO.Packaging.Package package, System.IO.Packaging.CompressionOption compressionOption, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, valuetype System.IO.Packaging.CompressionOption compressionOption, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.IO.Packaging.Package,System.IO.Packaging.CompressionOption,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="package" Type="System.IO.Packaging.Package" />
+        <Parameter Name="compressionOption" Type="System.IO.Packaging.CompressionOption" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="package">The target package for the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
+        <param name="compressionOption">The package compression option.</param>
+        <param name="path">The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] for the document as a string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class that is contained in a specified <see cref="T:System.IO.Packaging.Package" /> with the specified default interleaving, resource, and compression options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+ [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+ [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+  
+ The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XpsDocument (string path, System.IO.FileAccess packageAccess, System.IO.Packaging.CompressionOption compressionOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileAccess packageAccess, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.String,System.IO.FileAccess,System.IO.Packaging.CompressionOption)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="packageAccess" Type="System.IO.FileAccess" />
+        <Parameter Name="compressionOption" Type="System.IO.Packaging.CompressionOption" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path and file name of the target <see cref="T:System.IO.Packaging.Package" /> for the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
+        <param name="packageAccess">The file I/O mode in which to open the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</param>
+        <param name="compressionOption">The package compression option.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class that is contained in a specified <see cref="T:System.IO.Packaging.Package" /> file with default interleaving, resource, and compression options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+ [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+ [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+  
+ The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFixedDocumentSequence">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter AddFixedDocumentSequence ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter AddFixedDocumentSequence() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Adds a root <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> to the package and returns a writer.</summary>
+        <returns>The [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] fixed-document sequence writer for this <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence%2A> method to insert content into an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreateaddpkgcontent)]
+ [!code-csharp[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreateaddpkgcontent)]
+ [!code-vb[XpsCreate#XpsCreateAddPkgContent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreateaddpkgcontent)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddThumbnail">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsThumbnail AddThumbnail (System.Windows.Xps.Packaging.XpsImageType imageType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsThumbnail AddThumbnail(valuetype System.Windows.Xps.Packaging.XpsImageType imageType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsThumbnail</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageType" Type="System.Windows.Xps.Packaging.XpsImageType" />
+      </Parameters>
+      <Docs>
+        <param name="imageType">The format of the image.</param>
+        <summary>Adds a thumbnail image to the package.</summary>
+        <returns>The newly added <see cref="T:System.Windows.Xps.Packaging.XpsThumbnail" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the XPS document <see cref="T:System.IO.Packaging.Package" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Xps.Packaging.XpsDocument> was opened for write access, data buffers are written to the store and the physical document <xref:System.IO.Packaging.Package> is closed.  
+  
+ After <xref:System.Windows.Xps.Packaging.XpsDocument.Close%2A> has been called, no parts of the document can be accessed with this <xref:System.Windows.Xps.Packaging.XpsDocument> instance.  
+  
+   
+  
+## Examples  
+ The following example shows how to open, insert content, and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+ [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+ [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+  
+ The following example also shows how to open, write to, and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoreDocumentProperties">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageProperties CoreDocumentProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.PackageProperties CoreDocumentProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.CoreDocumentProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.PackageProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the core <see cref="T:System.IO.Packaging.PackageProperties" /> of the [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document.</summary>
+        <value>The core properties of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> <see cref="T:System.IO.Packaging.Package" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateXpsDocumentWriter">
+      <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (System.Windows.Xps.Packaging.XpsDocument xpsDocument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Windows.Xps.Packaging.XpsDocument xpsDocument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.CreateXpsDocumentWriter(System.Windows.Xps.Packaging.XpsDocument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.XpsDocumentWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xpsDocument" Type="System.Windows.Xps.Packaging.XpsDocument" />
+      </Parameters>
+      <Docs>
+        <param name="xpsDocument">The [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] document to write.</param>
+        <summary>Creates an <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> for writing an <see cref="T:System.Windows.Xps.Packaging.XpsDocument" />.</summary>
+        <returns>The <see cref="T:System.Windows.Xps.XpsDocumentWriter" /> to use for writing the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] document.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.CreateXpsDocumentWriter%2A> method in order to write an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> and optionally, releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources that are held by any managed objects that this <xref:System.Windows.Xps.Packaging.XpsDocument> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Other objects can call <see langword="Dispose" /> multiple times. When you override <see langword="Dispose(Boolean)" />, be careful not to reference objects that were previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedDocumentSequenceReader">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader FixedDocumentSequenceReader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader FixedDocumentSequenceReader" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.FixedDocumentSequenceReader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader" /> for reading the document.</summary>
+        <value>An <see cref="T:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader" /> for reading the document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
+  
+   
+  
+## Examples  
+ The following example shows how to get a <xref:System.Windows.Xps.Packaging.XpsDocument.FixedDocumentSequenceReader%2A> in order to access <xref:System.Windows.Documents.FixedDocument> parts in an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentStructure/CSharp/Window1.xaml.cs#docstrucfixeddoc)]
+ [!code-vb[DocumentStructure#DocStrucFixedDoc](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocumentStructure/visualbasic/window1.xaml.vb#docstrucfixeddoc)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFixedDocumentSequence">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.FixedDocumentSequence GetFixedDocumentSequence ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.FixedDocumentSequence GetFixedDocumentSequence() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.GetFixedDocumentSequence" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.FixedDocumentSequence</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fixed-document sequence at the root of the package.</summary>
+        <returns>The <see cref="T:System.Windows.Documents.FixedDocumentSequence" /> of the package.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this class uses a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be a set (sequence) of one <xref:System.Windows.Documents.FixedDocument> or multiple documents.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReader">
+      <MemberSignature Language="C#" Value="public bool IsReader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReader" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.IsReader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the package is readable.</summary>
+        <value>
+          <see langword="true" /> if the package is readable; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSignable">
+      <MemberSignature Language="C#" Value="public bool IsSignable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSignable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.IsSignable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the package can be digitally signed.</summary>
+        <value>
+          <see langword="true" /> if the package can be signed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWriter">
+      <MemberSignature Language="C#" Value="public bool IsWriter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsWriter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.IsWriter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the package is writable.</summary>
+        <value>
+          <see langword="true" /> if the package is writable; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveSignature">
+      <MemberSignature Language="C#" Value="public void RemoveSignature (System.Windows.Xps.Packaging.XpsDigitalSignature signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveSignature(class System.Windows.Xps.Packaging.XpsDigitalSignature signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.RemoveSignature(System.Windows.Xps.Packaging.XpsDigitalSignature)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signature" Type="System.Windows.Xps.Packaging.XpsDigitalSignature" />
+      </Parameters>
+      <Docs>
+        <param name="signature">The signature that is deleted.</param>
+        <summary>Deletes a signature from the package.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Signatures">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Xps.Packaging.XpsDigitalSignature&gt; Signatures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Xps.Packaging.XpsDigitalSignature&gt; Signatures" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.Signatures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Xps.Packaging.XpsDigitalSignature&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] signatures that are associated with the package.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> objects that represent the signatures that are associated with the package.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.Packaging.XpsDocument.Signatures%2A> list identifies what parts are signed and whether the signatures are valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignDigitally">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally (System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.SignDigitally(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsDigitalSignature</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+        <Parameter Name="embedCertificate" Type="System.Boolean" />
+        <Parameter Name="restrictions" Type="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">The X.509 certificate to use in signing each part; or <see langword="null" /> to prompt the user to select an installed certificate.</param>
+        <param name="embedCertificate">
+          <see langword="true" /> to store the certificate in the package; otherwise, <see langword="false" />.</param>
+        <param name="restrictions">Flags that indicate what dependent parts must be excluded from the signing.</param>
+        <summary>Signs a collection of package parts with a specified X.509 certificate.</summary>
+        <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> that contains information about the signature.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `certificate` is `null`, a dialog box appears that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+  
+ [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+ [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignDigitally">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally (System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions, Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions, valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.SignDigitally(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions,System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsDigitalSignature</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+        <Parameter Name="embedCertificate" Type="System.Boolean" />
+        <Parameter Name="restrictions" Type="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
+        <Parameter Name="id" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">The X.509 certificate to use in signing each part; or <see langword="null" /> to prompt the user to select an installed certificate.</param>
+        <param name="embedCertificate">
+          <see langword="true" /> to store the certificate in the package; otherwise, <see langword="false" />.</param>
+        <param name="restrictions">Flags that indicate what dependent parts are excluded from the signing.</param>
+        <param name="id">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] to assign to the signature.</param>
+        <summary>Signs a collection of package parts by using a specified X.509 certificate.</summary>
+        <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> that contains information about the signature.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `certificate` is `null`, a dialog box appears that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+  
+ [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+ [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignDigitally">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally (System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions, Guid id, bool testIsSignable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions, valuetype System.Guid id, bool testIsSignable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.SignDigitally(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions,System.Guid,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsDigitalSignature</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+        <Parameter Name="embedCertificate" Type="System.Boolean" />
+        <Parameter Name="restrictions" Type="System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions" />
+        <Parameter Name="id" Type="System.Guid" />
+        <Parameter Name="testIsSignable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="certificate">The X.509 certificate to use in signing each part; or <see langword="null" /> to prompt the user to select an installed certificate.</param>
+        <param name="embedCertificate">
+          <see langword="true" /> to store the certificate in the package; otherwise, <see langword="false" />.</param>
+        <param name="restrictions">Flags that indicate what dependent parts to exclude from the signing.</param>
+        <param name="id">The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] to assign to the signature.</param>
+        <param name="testIsSignable">
+          <see langword="true" /> to verify that <see cref="P:System.Windows.Xps.Packaging.XpsDocument.IsSignable" /> is <see langword="true" /> before signing; otherwise, <see langword="false" />.</param>
+        <summary>Signs a collection of package parts with a specified X.509 certificate.</summary>
+        <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsDigitalSignature" /> that contains information about the signature.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `certificate` is `null`, a dialog box is presented that enables the user to select an installed X.509 certificate, such as from a smart card reader.  
+  
+ <xref:System.Security.Cryptography.CryptographicException> is thrown if `certificate` is `null` and no certificates are installed.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+  
+ [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+ [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.System#IDisposable#Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. Use the type-safe <see cref="M:System.Windows.Xps.Packaging.XpsDocument.Dispose(System.Boolean)" /> method instead.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumbnail">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsThumbnail Thumbnail { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Xps.Packaging.XpsThumbnail Thumbnail" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.Thumbnail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsThumbnail</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] thumbnail image that is associated with the document.</summary>
+        <value>An <see cref="T:System.Windows.Xps.Packaging.XpsThumbnail" /> that represents the thumbnail image that is associated with the document.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="SignDigitally">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Signs a collection of package parts by using a specified X.509 certificate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.Packaging.XpsDocument.SignDigitally%2A> method.  
+  
+ [!code-csharp[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsReadWriteSign/CSharp/SignatureDefinitionsAndSigning.cs#signxpsdocument)]
+ [!code-vb[XpsReadWriteSign#SignXpsDocument](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsReadWriteSign/visualbasic/signaturedefinitionsandsigning.vb#signxpsdocument)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Packaging.XpsDocument" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-cpp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#xpscreatepackageopen)]
+ [!code-csharp[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#xpscreatepackageopen)]
+ [!code-vb[XpsCreate#XpsCreatePackageOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#xpscreatepackageopen)]  
+  
+ The following example also shows how to create and close an <xref:System.Windows.Xps.Packaging.XpsDocument>.  
+  
+ [!code-csharp[DocumentSerialize#DocSerializeLinked](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserializelinked)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,148 @@
+<Type Name="MediaClock" FullName="System.Windows.Media.MediaClock">
+  <TypeSignature Language="C#" Value="public class MediaClock : System.Windows.Media.Animation.Clock" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaClock extends System.Windows.Media.Animation.Clock" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.MediaClock" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.Clock</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Maintains the timing state for media through a <see cref="T:System.Windows.Media.MediaTimeline" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MediaClock (System.Windows.Media.MediaTimeline media);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.MediaTimeline media) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.#ctor(System.Windows.Media.MediaTimeline)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="media" Type="System.Windows.Media.MediaTimeline" />
+      </Parameters>
+      <Docs>
+        <param name="media">The timeline to use as a template for the media clock.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MediaClock" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscontinuousTimeMovement">
+      <MemberSignature Language="C#" Value="protected override void DiscontinuousTimeMovement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DiscontinuousTimeMovement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.DiscontinuousTimeMovement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invoked when movement is discontinues.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCanSlip">
+      <MemberSignature Language="C#" Value="protected override bool GetCanSlip ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool GetCanSlip() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.GetCanSlip" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a value that indicates whether the media clock can slip.</summary>
+        <returns>
+          <see langword="true" /> if the media clock can slip; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentTimeCore">
+      <MemberSignature Language="C#" Value="protected override TimeSpan GetCurrentTimeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.TimeSpan GetCurrentTimeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.GetCurrentTimeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a value that identifies the actual media time. This value can be used for slip synchronization.</summary>
+        <returns>The actual media time.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeedChanged">
+      <MemberSignature Language="C#" Value="protected override void SpeedChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SpeedChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.SpeedChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invoked when the clock speed has changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stopped">
+      <MemberSignature Language="C#" Value="protected override void Stopped ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Stopped() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaClock.Stopped" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invoked when the clock is stopped.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeline">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.MediaTimeline Timeline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.MediaTimeline Timeline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaClock.Timeline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.MediaTimeline</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Media.MediaTimeline" /> that describes the controlling behavior of the clock.</summary>
+        <value>The <see cref="T:System.Windows.Media.MediaTimeline" /> that describes the controlling behavior of the clock.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

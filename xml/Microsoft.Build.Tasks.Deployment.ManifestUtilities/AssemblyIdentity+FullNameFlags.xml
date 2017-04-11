@@ -1,0 +1,87 @@
+<Type Name="AssemblyIdentity+FullNameFlags" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity+FullNameFlags">
+  <TypeSignature Language="C#" Value="public enum AssemblyIdentity.FullNameFlags" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed AssemblyIdentity/FullNameFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FullNameFlags" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This class represents the attributes that the <see cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.GetFullName(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FullNameFlags)" /> function returns.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity/FullNameFlags All = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FullNameFlags.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity+FullNameFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Include all attributes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity/FullNameFlags Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FullNameFlags.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity+FullNameFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Include the Name, Version, Culture, and PublicKeyToken attributes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessorArchitecture">
+      <MemberSignature Language="C#" Value="ProcessorArchitecture" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity/FullNameFlags ProcessorArchitecture = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FullNameFlags.ProcessorArchitecture" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity+FullNameFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Include the Name, Version, Culture, PublicKeyToken, and ProcessorArchitecture attributes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="Type" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity/FullNameFlags Type = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity.FullNameFlags.Type" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity+FullNameFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Include the Name, Version, Culture, PublicKeyToken, and Type attributes.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

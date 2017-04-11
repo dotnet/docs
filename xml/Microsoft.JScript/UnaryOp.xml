@@ -1,0 +1,36 @@
+<Type Name="UnaryOp" FullName="Microsoft.JScript.UnaryOp">
+  <TypeSignature Language="C#" Value="public abstract class UnaryOp : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UnaryOp extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.UnaryOp" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the base class for classes that perform operations on single operands, such as <see cref="T:Microsoft.JScript.Typeof" /> and <see cref="T:Microsoft.JScript.PostOrPrefixOperator" />. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="operand">
+      <MemberSignature Language="C#" Value="protected Microsoft.JScript.AST operand;" />
+      <MemberSignature Language="ILAsm" Value=".field family class Microsoft.JScript.AST operand" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.UnaryOp.operand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.AST</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the operand.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

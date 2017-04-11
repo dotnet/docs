@@ -1,0 +1,237 @@
+<Type Name="TaskCreationOptions" FullName="System.Threading.Tasks.TaskCreationOptions">
+  <TypeSignature Language="C#" Value="public enum TaskCreationOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TaskCreationOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCreationOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies flags that control optional behavior for the creation and execution of tasks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Threading.Tasks.TaskCreationOptions> enumeration is used with the following methods:  
+  
+-   The <xref:System.Threading.Tasks.TaskFactory.%23ctor%2A> and <xref:System.Threading.Tasks.TaskFactory%601.%23ctor%2A> constructors with a `creationOptions` parameter, to specify the default options for tasks created by the task factory.  
+  
+-   The <xref:System.Threading.Tasks.Task.%23ctor%2A> and <xref:System.Threading.Tasks.Task%601.%23ctor%2A> constructors with a `creationOptions` parameter, to specify the options used to customize the task's behavior.  
+  
+-   The <xref:System.Threading.Tasks.TaskFactory.StartNew%2A> and <xref:System.Threading.Tasks.TaskFactory%601.StartNew%2A> methods with a `creationOptions` parameter, to specify the options used to customize the task's behavior.  
+  
+-   The <xref:System.Threading.Tasks.TaskFactory.FromAsync%2A> and <xref:System.Threading.Tasks.TaskFactory%601.FromAsync%2A> methods with a `creationOptions` parameter, to specify the options used to customize the behavior of the task that executes an end method when a specified <xref:System.IAsyncResult> completes.  
+  
+-   The <xref:System.Threading.Tasks.TaskCompletionSource%601.%23ctor%2A> constructors with a `creationOptions` parameter, to specify the options used to customize the behavior of the underlying task.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AttachedToParent">
+      <MemberSignature Language="C#" Value="AttachedToParent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions AttachedToParent = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that a task is attached to a parent in the task hierarchy. By default, a child task (that is, an inner task created by an outer task) executes independently of its parent. You can use the <see cref="F:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent" /> option so that the parent and child tasks are synchronized.  
+  
+ Note that if a parent task is configured with the <see cref="F:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach" /> option, the <see cref="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" /> option in the child task has no effect, and the child task will execute as a detached child task.  
+  
+ For more information, see [Attached and Detached Child Tasks](~/docs/standard/parallel-programming/attached-and-detached-child-tasks.md).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyChildAttach">
+      <MemberSignature Language="C#" Value="DenyChildAttach" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions DenyChildAttach = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that any child task that attempts to execute as an attached child task (that is, it is created with the <see cref="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" /> option) will not be able to attach to the parent task and will execute instead as a detached child task. For more information, see [Attached and Detached Child Tasks](~/docs/standard/parallel-programming/attached-and-detached-child-tasks.md).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HideScheduler">
+      <MemberSignature Language="C#" Value="HideScheduler" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions HideScheduler = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.HideScheduler" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Prevents the ambient scheduler from being seen as the current scheduler in the created task. This means that operations like StartNew or ContinueWith that are performed in the created task will see <see cref="P:System.Threading.Tasks.TaskScheduler.Default" /> as the current scheduler.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LongRunning">
+      <MemberSignature Language="C#" Value="LongRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions LongRunning = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.LongRunning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that a task will be a long-running, coarse-grained operation involving fewer, larger components than fine-grained systems. It provides a hint to the <see cref="T:System.Threading.Tasks.TaskScheduler" /> that oversubscription may be warranted. Oversubscription lets you create more threads than the available number of hardware threads. It also provides a hint  to the task scheduler that an additional thread might be required for the task so that it does not block the forward progress of other threads or work items on the local thread-pool queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the default behavior should be used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferFairness">
+      <MemberSignature Language="C#" Value="PreferFairness" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions PreferFairness = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.PreferFairness" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A hint to a <see cref="T:System.Threading.Tasks.TaskScheduler" /> to schedule a task in as fair a manner as possible, meaning that tasks scheduled sooner will be more likely to be run sooner, and tasks scheduled later will be more likely to be run later.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RunContinuationsAsynchronously">
+      <MemberSignature Language="C#" Value="RunContinuationsAsynchronously" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions RunContinuationsAsynchronously = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Forces continuations added to the current task to be executed asynchronously.  
+  
+ Note that the <see cref="F:System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously" /> member is available in the <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> enumeration starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)].</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

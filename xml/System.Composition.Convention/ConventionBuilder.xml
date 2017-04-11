@@ -1,0 +1,220 @@
+<Type Name="ConventionBuilder" FullName="System.Composition.Convention.ConventionBuilder">
+  <TypeSignature Language="C#" Value="public class ConventionBuilder : System.Composition.Convention.AttributedModelProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConventionBuilder extends System.Composition.Convention.AttributedModelProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Convention.ConventionBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Convention</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Composition.Convention.AttributedModelProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConventionBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForType">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder ForType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder ForType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForType&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ForType&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!!T&gt; ForType&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForType``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForTypesDerivedFrom">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder ForTypesDerivedFrom (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder ForTypesDerivedFrom(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForTypesDerivedFrom(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForTypesDerivedFrom&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ForTypesDerivedFrom&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!!T&gt; ForTypesDerivedFrom&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForTypesDerivedFrom``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForTypesMatching">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder ForTypesMatching (Predicate&lt;Type&gt; typeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder ForTypesMatching(class System.Predicate`1&lt;class System.Type&gt; typeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForTypesMatching(System.Predicate{System.Type})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeFilter" Type="System.Predicate&lt;System.Type&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="typeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForTypesMatching&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ForTypesMatching&lt;T&gt; (Predicate&lt;Type&gt; typeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!!T&gt; ForTypesMatching&lt;T&gt;(class System.Predicate`1&lt;class System.Type&gt; typeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.ForTypesMatching``1(System.Predicate{System.Type})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="typeFilter" Type="System.Predicate&lt;System.Type&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="typeFilter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomAttributes">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;Attribute&gt; GetCustomAttributes (Type reflectedType, System.Reflection.MemberInfo member);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; GetCustomAttributes(class System.Type reflectedType, class System.Reflection.MemberInfo member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.GetCustomAttributes(System.Type,System.Reflection.MemberInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reflectedType" Type="System.Type" />
+        <Parameter Name="member" Type="System.Reflection.MemberInfo" />
+      </Parameters>
+      <Docs>
+        <param name="reflectedType">To be added.</param>
+        <param name="member">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomAttributes">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;Attribute&gt; GetCustomAttributes (Type reflectedType, System.Reflection.ParameterInfo parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; GetCustomAttributes(class System.Type reflectedType, class System.Reflection.ParameterInfo parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.ConventionBuilder.GetCustomAttributes(System.Type,System.Reflection.ParameterInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reflectedType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Reflection.ParameterInfo" />
+      </Parameters>
+      <Docs>
+        <param name="reflectedType">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

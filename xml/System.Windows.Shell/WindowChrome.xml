@@ -1,0 +1,719 @@
+<Type Name="WindowChrome" FullName="System.Windows.Shell.WindowChrome">
+  <TypeSignature Language="C#" Value="public class WindowChrome : System.Windows.Freezable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowChrome extends System.Windows.Freezable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.WindowChrome" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Freezable</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an object that describes the customizations to the non-client area of a window.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The                          <xref:System.Windows.Shell.WindowChrome> class enables you to extend Windows Presentation Foundation (WPF) content into the non-client area of a window that is typically reserved for the operating system’s window manager.  
+  
+## Standard Windows  
+ Standard windows are composed of two overlapping rectangles. The outer rectangle is the                                  *non-client area*, which is often referred to as                                  *chrome*. It is drawn and managed by the operating system’s window manager. Its dimensions are determined by standard operating system settings. The non-client frame provides standard window features and behaviors. These include caption buttons (Minimize, Maximize, and Close), the window border, resize and move behaviors, the application icon and title, and the system menu. The inner rectangle is the                                  *client area*. It contains the contents of your application, and it is drawn and managed by the application. For more information about windows in WPF applications, see                                  [WPF Windows Overview](~/docs/framework/wpf/app-development/wpf-windows-overview.md).  
+  
+ The following illustration shows the parts of a standard window.  
+  
+ ![Window elements](~/add/media/windowoverviewfigure1.PNG "Window elements")  
+  
+## Custom Windows  
+ You can customize a window border by setting the                                  <xref:System.Windows.Window.WindowStyle%2A?displayProperty=fullName> property to                                  <xref:System.Windows.WindowStyle> or by using the                                  <xref:System.Windows.Shell.WindowChrome> class.  
+  
+### WindowStyle.None  
+ One way to customize the appearance of a WPF application window is to set the                                          <xref:System.Windows.Window.WindowStyle%2A?displayProperty=fullName> property to                                          <xref:System.Windows.WindowStyle>. This removes the non-client frame from the window and leaves only the client area, to which you can apply a custom style. However, when the non-client frame is removed, you also lose the system features and behaviors that it provides, such as caption buttons and window resizing. Another side effect is that the window will cover the Windows taskbar when it is maximized. Setting                                          <xref:System.Windows.WindowStyle?displayProperty=fullName> enables you to create a completely custom application, but also requires that you implement custom logic in your application to emulate standard window behavior.  
+  
+### WindowChrome  
+ To customize a window while retaining its standard functionality, you can use the                                          <xref:System.Windows.Shell.WindowChrome> class. The                                          <xref:System.Windows.Shell.WindowChrome> class separates the functionality of the window frame from the visuals, and lets you control the boundary between the client and non-client areas of your application window. The                                          <xref:System.Windows.Shell.WindowChrome> class lets you put WPF content in the window frame by extending the client area to cover the non-client area. At the same time, it retains system behaviors through two invisible areas; the                                          *resize border* and                                          *caption* areas                                         .  
+  
+ There are                                          two main parts                                          to creating a custom window using the                                          <xref:System.Windows.Shell.WindowChrome> class. First, you customize the non-client part of the window by setting properties exposed on the                                          <xref:System.Windows.Shell.WindowChrome> object. Then you provide a template for the window that defines the part of your application that is extended into the non-client area.The properties exposed on the                                          <xref:System.Windows.Shell.WindowChrome> object are                                          <xref:System.Windows.Shell.WindowChrome.ResizeBorderThickness%2A>,                                          <xref:System.Windows.Shell.WindowChrome.CaptionHeight%2A>,                                          <xref:System.Windows.Shell.WindowChrome.CornerRadius%2A>, and                                          <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A>.  
+  
+ The                                          <xref:System.Windows.Shell.WindowChrome.ResizeBorderThickness%2A> property specifies an invisible border around the outside of the application window that the user can click-and-drag to resize the window.  
+  
+ The                                          <xref:System.Windows.Shell.WindowChrome.CaptionHeight%2A> property specifies an invisible area at the top of the window that enables system behaviors typically associated with the title bar. These behaviors include: click and drag to move the window, double-click to maximize the window, and right-click to show the system menu.  
+  
+ The resize border and caption area do not have any visual elements; they only define areas that respond to input and enable standard system-provided window behaviors.  
+  
+ The                                          <xref:System.Windows.Shell.WindowChrome.CornerRadius%2A> property specifies the amount that the corners of the window are rounded. This property does not have any effect if the glass frame is enabled for a window.  
+  
+ The                                          <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property specifies the width of the glass frame around the window. By default, it uses the system value specified by the                                          <xref:System.Windows.SystemParameters.WindowNonClientFrameThickness%2A> property to emulate the appearance of a standard window. When the glass frame is used, the caption buttons for Minimize, Maximize, and Close are visible and interactive. The application is responsible for displaying the application icon and caption text. You can set the                                          <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property to make the glass frame wider or narrower than the default.  
+  
+> [!CAUTION]
+>  The size of the caption buttons does not change when the                                              <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property is changed. If the height of the top of the glass frame is less than the height of the caption buttons, the caption buttons will not be completely visible.  
+  
+ To make a custom window that does not have a glass frame, set the                                          <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property to a uniform value of 0. This will disable and hide the standard caption buttons.  
+  
+ To extend the glass frame to cover the entire window, set the                                          <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property to a negative value on any side. When the                                          <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property is set to a negative value for any side, its coerced value will be equal to                                          <xref:System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness%2A>.  
+  
+> [!NOTE]
+>  Aero is a set of visual enhancements to the look and functionality of the Windows desktop that was introduced in Windows Vista. One of the more visually obvious features of Aero is translucent glass window borders. Windows Aero is enabled by the desktop composition feature of the Desktop Window Manager (DWM).  
+  
+ Windows Aero glass effects are not supported on all operating systems, and can be disabled on supported operating systems. If Windows Aero is not available, the glass frame will not be displayed regardless of the                                          <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property value. The border area specified by this property will appear black instead.Check the                                          <xref:System.Windows.SystemParameters.IsGlassEnabled%2A> property to verify that Windows Aero glass effects are available. If glass effects are not available, you should provide an alternate window style that does not use the glass frame or use the standard window by setting the window style to null.  
+  
+ You extend your WPF content into the window frame by specifying a ControlTemplate that defines the appearance and behavior of the frame content. You set the TargetType of the ControlTemplate to the type of the window that you are customizing.  
+  
+```  
+<ControlTemplate TargetType="{x:Type local:MainWindow}">  
+```  
+  
+ By default, the parts of any visual elements that are within the non-client area of the window are not interactive. To enable interactive elements in the non-client area, attach the WindowsChrome.IsHitTestVisibleInChrome attached property to the element and set it to true.  
+  
+ The following XAML markup shows the main elements needed to customize a window using the WindowChrome class.  
+  
+```  
+<Style x:Key="StandardStyle" TargetType="{x:Type local:MainWindow}">  
+    <Setter Property="shell:WindowChrome.WindowChrome">  
+        <Setter.Value>  
+            <shell:WindowChrome />  
+        </Setter.Value>  
+    </Setter>  
+    <Setter Property="Template">  
+        <Setter.Value>  
+            <ControlTemplate TargetType="{x:Type local:MainWindow}">  
+                <Grid>  
+                    <Border Background="White"  
+                            Margin="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=WindowNonClientFrameThickness}">  
+                        <ContentPresenter Content="{TemplateBinding Content}" />  
+                    </Border>  
+                    <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title}"   
+                               VerticalAlignment="Top" HorizontalAlignment="Left"   
+                               Margin="36,8,0,0"/>  
+                    <Image Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Icon}"  
+                           VerticalAlignment="Top" HorizontalAlignment="Left"  
+                           Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(shell:WindowChrome.WindowChrome).ResizeBorderThickness}"   
+                           Width="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=SmallIconSize.Width}"  
+                           shell:WindowChrome.IsHitTestVisibleInChrome="True"/>  
+                </Grid>  
+            </ControlTemplate>  
+        </Setter.Value>  
+    </Setter>  
+</Style>  
+```  
+  
+ The first setter attaches the WindowChrome to the window. It uses all default values for the WindowChrome properties, which makes the window look like a standard window.  
+  
+```  
+<Setter Property="shell:WindowChrome.WindowChrome">  
+    <Setter.Value>  
+        <shell:WindowChrome />  
+    </Setter.Value>  
+</Setter>  
+```  
+  
+ The window template must specify a content presenter to display the contents of the window specified in your application. By default the WindowChrome class extends the client area to cover the non-client border. In order to uncover the glass frame, you need to specify a margin around the ContentPresenter. This markup specifies a border with a white background around the content presenter to emulate the appearance of a standard window. It also specifies a margin that is bound to the WindowNonClientFrameThickness property, which gets the default system width for the frame.  
+  
+```  
+<Border Background="White"  
+    Margin="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=WindowNonClientFrameThickness}">  
+    <ContentPresenter Content="{TemplateBinding Content}" />  
+</Border>  
+```  
+  
+ The application icon and title are not displayed by the WindowChrome class; they have to be added to the border as custom content. The following XAML adds an image and a textblock to display the icon and title. Both elements are bound to the corresponding properties on the window. The image width is bound to the SmallIconSize width, which gets the default system size for the icon. The IsHitTestVisibleInChrome attached property is set on the image so that it can receive mouse events.  
+  
+```  
+<Image Source="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Icon}"  
+       VerticalAlignment="Top" HorizontalAlignment="Left"  
+       Margin="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(shell:WindowChrome.WindowChrome).ResizeBorderThickness}"   
+       Width="{Binding Source={x:Static shell:SystemParameters2.Current}, Path=SmallIconSize.Width}"  
+       shell:WindowChrome.IsHitTestVisibleInChrome="True"/>  
+  
+<TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title}"   
+           VerticalAlignment="Top" HorizontalAlignment="Left"   
+           Margin="36,8,0,0"/>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowChrome ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.WindowChrome" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionHeight">
+      <MemberSignature Language="C#" Value="public double CaptionHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CaptionHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.CaptionHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of the caption area at the top of a window.</summary>
+        <value>The height of the caption area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Shell.WindowChrome.CaptionHeight%2A> property to specify the area at the top of the window that enables the system behaviors typically associated with the title bar. These behaviors include double-click to maximize the window, right-click to open the system menu, and click-and-drag to move the window. This property can be set to any non-negative double value.  
+  
+ The area defined by the <xref:System.Windows.Shell.WindowChrome.CaptionHeight%2A> property starts at the bottom edge of the top resize border and extends downward the specified amount. It spans the width of the window inside the right and left resize borders. This area does not have any visual elements associated with it; it is only used to define the region that responds to the title bar behaviors. By default, the parts of any visual elements that are within the caption area of the window are not interactive. To enable interactive elements in the caption area, attach the <xref:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChrome%2A> attached property to the element and set it to `true`.  
+  
+<a name="dependencyPropertyInfo_CaptionHeight"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Shell.WindowChrome.CaptionHeightProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CaptionHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CaptionHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.CaptionHeightProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.CaptionHeight" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CornerRadius">
+      <MemberSignature Language="C#" Value="public System.Windows.CornerRadius CornerRadius { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.CornerRadius CornerRadius" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.CornerRadius" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.CornerRadius</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates the amount that the corners of a window are rounded.</summary>
+        <value>A value that describes the amount that corners are rounded.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Shell.WindowChrome.CornerRadius%2A> property to specify the amount of rounding at the corners of a window. This property can be set to any non-negative double value. The values can be non-uniform.  
+  
+ This property does not affect maximized windows or windows that have a Windows Aero glass frame. It only has an effect when Windows Aero (also called Desktop Window Manager) is not enabled or the <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property is set to 0. Hit testing in the non-client area does not take the <xref:System.Windows.Shell.WindowChrome.CornerRadius%2A> into account when determining whether the mouse is over a resize border. If the radius is too large relative to the <xref:System.Windows.Shell.WindowChrome.ResizeBorderThickness%2A> then it is possible that the user cannot perform a diagonal resize using the mouse.  
+  
+<a name="dependencyPropertyInfo_CornerRadius"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Shell.WindowChrome.CornerRadiusProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CornerRadiusProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CornerRadiusProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CornerRadiusProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.CornerRadiusProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.CornerRadius" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Shell.WindowChrome" /> class.</summary>
+        <returns>The new instance of this class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsHitTestVisibleInChrome">
+      <MemberSignature Language="C#" Value="public static bool GetIsHitTestVisibleInChrome (System.Windows.IInputElement inputElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsHitTestVisibleInChrome(class System.Windows.IInputElement inputElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.GetIsHitTestVisibleInChrome(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputElement" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="inputElement">The input element from which to read the property value.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChrome" /> attached property from the specified input element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChrome" /> attached property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="inputElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inputElement" /> is not a <see cref="T:System.Windows.DependencyObject" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResizeGripDirection">
+      <MemberSignature Language="C#" Value="public static System.Windows.Shell.ResizeGripDirection GetResizeGripDirection (System.Windows.IInputElement inputElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Shell.ResizeGripDirection GetResizeGripDirection(class System.Windows.IInputElement inputElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.GetResizeGripDirection(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputElement" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="inputElement">The input element from which to read the property value.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Shell.WindowChrome.ResizeGripDirection" /> attached property from the specified input element.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Shell.WindowChrome.ResizeGripDirection" /> attached property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="inputElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inputElement" /> is not a <see cref="T:System.Windows.DependencyObject" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWindowChrome">
+      <MemberSignature Language="C#" Value="public static System.Windows.Shell.WindowChrome GetWindowChrome (System.Windows.Window window);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Shell.WindowChrome GetWindowChrome(class System.Windows.Window window) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.GetWindowChrome(System.Windows.Window)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.WindowChrome</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="System.Windows.Window" />
+      </Parameters>
+      <Docs>
+        <param name="window">The <see cref="T:System.Windows.Window" /> from which to read the property value.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Shell.WindowChrome.WindowChrome" /> attached property from the specified <see cref="T:System.Windows.Window" />.</summary>
+        <returns>The instance of <see cref="T:System.Windows.Shell.WindowChrome" /> that is attached to the specified <see cref="T:System.Windows.Window" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="window" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GlassFrameCompleteThickness">
+      <MemberSignature Language="C#" Value="public static System.Windows.Thickness GlassFrameCompleteThickness { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Thickness GlassFrameCompleteThickness" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a uniform thickness of -1.</summary>
+        <value>A uniform thickness of -1 in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness%2A> property is provided as a utility to enable you to set the thickness of the glass frame to a named property. You set the <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property equal to <xref:System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness%2A> to extend the glass frame over the entire window. If the <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property is set to a negative value for any side, its coerced value will be equal to <xref:System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlassFrameThickness">
+      <MemberSignature Language="C#" Value="public System.Windows.Thickness GlassFrameThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness GlassFrameThickness" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.GlassFrameThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates the width of the glass border around a window.</summary>
+        <value>The width of the glass border around a window.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property to specify the amount that the Windows Aero glass frame extends into the client area of a window. By default, the glass frame will use system values to emulate the look of a standard window. If Windows Aero is enabled, then the standard caption buttons (Maximize, Minimize, Close) are enabled and interactive. To make a custom window that does not have a glass frame, set this thickness to a uniform value of 0. This will disable the standard caption buttons.  
+  
+ To extend the glass frame to cover the entire window, set the <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property to a negative value on any side. If the <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property is set to a negative value for any side, its coerced value will be equal to<xref:System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness%2A>. The <xref:System.Windows.Shell.WindowChrome.GlassFrameCompleteThickness%2A> property is provided as a utility to enable you to set the thickness of the glass frame to a named property that extends the glass over the entire window.  
+  
+ Windows Aero glass effects are not supported on all operating systems, and can be disabled on supported operating systems. If Windows Aero is not available, the glass frame will not be displayed regardless of the <xref:System.Windows.Shell.WindowChrome.GlassFrameThickness%2A> property value. You should check the <xref:System.Windows.SystemParameters.IsGlassEnabled%2A> property to verify that Windows Aero glass effects are available. If glass effects are not available, you should provide an alternate window style that does not use the glass frame.  
+  
+<a name="dependencyPropertyInfo_GlassFrameThickness"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Shell.WindowChrome.GlassFrameThicknessProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlassFrameThicknessProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GlassFrameThicknessProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GlassFrameThicknessProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.GlassFrameThicknessProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.GlassFrameThickness" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHitTestVisibleInChromeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsHitTestVisibleInChromeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsHitTestVisibleInChromeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChromeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChrome" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NonClientFrameEdges">
+      <MemberSignature Language="C#" Value="public System.Windows.Shell.NonClientFrameEdges NonClientFrameEdges { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Shell.NonClientFrameEdges NonClientFrameEdges" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.NonClientFrameEdges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates which edges of the window frame are not owned by the client.</summary>
+        <value>A bitwise combination of the enumeration values that specify which edges of the frame are not owned by the client.  
+  
+ The registered default is <see cref="F:System.Windows.Shell.NonClientFrameEdges.None" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_NonClientFrameEdges"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Shell.WindowChrome.NonClientFrameEdgesProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">‘Left, Right, Top, Bottom’ is not a valid value. At least one edge must belong to the client.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NonClientFrameEdgesProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty NonClientFrameEdgesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty NonClientFrameEdgesProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.NonClientFrameEdgesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.NonClientFrameEdges" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResizeBorderThickness">
+      <MemberSignature Language="C#" Value="public System.Windows.Thickness ResizeBorderThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness ResizeBorderThickness" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.ResizeBorderThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates the width of the border that is used to resize a window.</summary>
+        <value>The width of the border that is used to resize a window.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Shell.WindowChrome.ResizeBorderThickness%2A> property to specify the width of the area where a user can click-and-drag to resize a window. The mouse pointer changes to resize arrows when it is moved over the resize border.  
+  
+ This property can be set to any non-negative double value. The values can be non-uniform. By default, the resize border will use system values to emulate the behavior of a standard window.  
+  
+ This area is only used to define the region that is used to resize the window; it does not have any visual elements associated with it. However, it does affect the layout of elements inside the resize border.  
+  
+<a name="dependencyPropertyInfo_ResizeBorderThickness"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Shell.WindowChrome.ResizeBorderThicknessProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResizeBorderThicknessProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ResizeBorderThicknessProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ResizeBorderThicknessProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.ResizeBorderThicknessProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.ResizeBorderThickness" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResizeGripDirectionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ResizeGripDirectionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ResizeGripDirectionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.ResizeGripDirectionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.ResizeGripDirection" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsHitTestVisibleInChrome">
+      <MemberSignature Language="C#" Value="public static void SetIsHitTestVisibleInChrome (System.Windows.IInputElement inputElement, bool hitTestVisible);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsHitTestVisibleInChrome(class System.Windows.IInputElement inputElement, bool hitTestVisible) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.SetIsHitTestVisibleInChrome(System.Windows.IInputElement,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputElement" Type="System.Windows.IInputElement" />
+        <Parameter Name="hitTestVisible" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="inputElement">The element on which to set the <see cref="P:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChrome" /> attached property.</param>
+        <param name="hitTestVisible">The property value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Shell.WindowChrome.IsHitTestVisibleInChrome" /> attached property on the specified input element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="inputElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inputElement" /> is not a <see cref="T:System.Windows.DependencyObject" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetResizeGripDirection">
+      <MemberSignature Language="C#" Value="public static void SetResizeGripDirection (System.Windows.IInputElement inputElement, System.Windows.Shell.ResizeGripDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetResizeGripDirection(class System.Windows.IInputElement inputElement, valuetype System.Windows.Shell.ResizeGripDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.SetResizeGripDirection(System.Windows.IInputElement,System.Windows.Shell.ResizeGripDirection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputElement" Type="System.Windows.IInputElement" />
+        <Parameter Name="direction" Type="System.Windows.Shell.ResizeGripDirection" />
+      </Parameters>
+      <Docs>
+        <param name="inputElement">The element on which to set the <see cref="P:System.Windows.Shell.WindowChrome.ResizeGripDirection" /> attached property.</param>
+        <param name="direction">The property value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Shell.WindowChrome.ResizeGripDirection" /> attached property on the specified input element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="inputElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="inputElement" /> is not a <see cref="T:System.Windows.DependencyObject" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWindowChrome">
+      <MemberSignature Language="C#" Value="public static void SetWindowChrome (System.Windows.Window window, System.Windows.Shell.WindowChrome chrome);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetWindowChrome(class System.Windows.Window window, class System.Windows.Shell.WindowChrome chrome) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.WindowChrome.SetWindowChrome(System.Windows.Window,System.Windows.Shell.WindowChrome)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="window" Type="System.Windows.Window" />
+        <Parameter Name="chrome" Type="System.Windows.Shell.WindowChrome" />
+      </Parameters>
+      <Docs>
+        <param name="window">The <see cref="T:System.Windows.Window" /> on which to set the <see cref="P:System.Windows.Shell.WindowChrome.WindowChrome" /> attached property.</param>
+        <param name="chrome">The instance of <see cref="T:System.Windows.Shell.WindowChrome" /> to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Shell.WindowChrome.WindowChrome" /> attached property on the specified <see cref="T:System.Windows.Window" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="window" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAeroCaptionButtons">
+      <MemberSignature Language="C#" Value="public bool UseAeroCaptionButtons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseAeroCaptionButtons" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.WindowChrome.UseAeroCaptionButtons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether hit-testing is enabled on the Windows Aero caption buttons.</summary>
+        <value>
+          <see langword="true" /> if hit-testing is enabled on the caption buttons; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default Windows Aero caption buttons are Close, Maximize/Restore, and Minimize. If you do not use the Windows Aero captions buttons, you should provide an alternative method for a user to accomplish these tasks.  
+  
+<a name="dependencyPropertyInfo_UseAeroCaptionButtons"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Shell.WindowChrome.UseAeroCaptionButtonsProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAeroCaptionButtonsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UseAeroCaptionButtonsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UseAeroCaptionButtonsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.UseAeroCaptionButtonsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.UseAeroCaptionButtons" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowChromeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WindowChromeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WindowChromeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.WindowChrome.WindowChromeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Shell.WindowChrome.WindowChrome" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

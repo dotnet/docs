@@ -1,0 +1,124 @@
+<Type Name="IEnumerable" FullName="System.Collections.IEnumerable">
+  <TypeSignature Language="C#" Value="public interface IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("496B0ABE-CDEE-11d3-88E8-00902754C43A")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes an enumerator, which supports a simple iteration over a non-generic collection.  
+  
+ To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/ienumerable.cs#9be451ac13d86a97).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/ienumerable.cs#9be451ac13d86a97). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
+  
+ <xref:System.Collections.IEnumerable> is the base interface for all non-generic collections that can be enumerated. For the generic version of this interface see <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>. <xref:System.Collections.IEnumerable> contains a single method, <xref:System.Collections.IEnumerable.GetEnumerator%2A>, which returns an <xref:System.Collections.IEnumerator>. <xref:System.Collections.IEnumerator> provides the ability to iterate through the collection by exposing a <xref:System.Collections.IEnumerator.Current%2A> property and <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> methods.  
+  
+ It is a best practice to implement <xref:System.Collections.IEnumerable> and <xref:System.Collections.IEnumerator> on your collection classes to enable the `foreach` (`For Each` in Visual Basic) syntax, however implementing <xref:System.Collections.IEnumerable> is not required. If your collection does not implement <xref:System.Collections.IEnumerable>, you must still follow the iterator pattern to support this syntax by providing a `GetEnumerator` method that returns an interface, class or struct. When using Visual Basic, you must provide an <xref:System.Collections.IEnumerator> implementation, which is returned by `GetEnumerator`. When developing with C# you must provide a class that contains a `Current` property, and `MoveNext` and `Reset` methods as described by <xref:System.Collections.IEnumerator>, but the class does not have to implement <xref:System.Collections.IEnumerator>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the best practice for iterating a custom collection by implementing the <xref:System.Collections.IEnumerable> and <xref:System.Collections.IEnumerator> interfaces. In this example, members of these interfaces are not explicitly called, but they are implemented to support the use of `foreach` (`For Each` in Visual Basic) to iterate through the collection. This example is a complete Console app. To compile the Visual Basic app, change the **Startup object** to **Sub Main** in the project’s **Properties** page.  
+  
+ For a sample that shows how to implement the <xref:System.Collections.IEnumerable> interface, see [Implementing the IEnumerable Interface in a Collection Class](http://code.msdn.microsoft.com/Implementing-the-e1708a24)  
+  
+ [!code-csharp[System.Collections_EnumeratorInterfaces#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections_EnumeratorInterfaces/cs/ienumerator.cs#1)]
+ [!code-vb[System.Collections_EnumeratorInterfaces#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections_EnumeratorInterfaces/vb/ienumerator.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.IEnumerable.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`For Each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. The <xref:System.Collections.IEnumerator.Reset%2A> method also brings the enumerator back to this position.  At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call the <xref:System.Collections.IEnumerator.MoveNext%2A> method to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the implementation of the <xref:System.Collections.IEnumerable> interfaces for a custom collection. In this example, <xref:System.Collections.IEnumerable.GetEnumerator%2A> is not explicitly called, but it is implemented to support the use of `foreach` (`For Each` in Visual Basic). This code example is part of a larger example for the <xref:System.Collections.IEnumerable> interface.  
+  
+ [!code-csharp[System.Collections_EnumeratorInterfaces#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections_EnumeratorInterfaces/cs/ienumerator.cs#1)]
+ [!code-vb[System.Collections_EnumeratorInterfaces#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections_EnumeratorInterfaces/vb/ienumerator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

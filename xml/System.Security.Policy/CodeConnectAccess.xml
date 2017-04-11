@@ -1,0 +1,447 @@
+<Type Name="CodeConnectAccess" FullName="System.Security.Policy.CodeConnectAccess">
+  <TypeSignature Language="C#" Value="public class CodeConnectAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeConnectAccess extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Policy.CodeConnectAccess" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the network resource access that is granted to code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used in conjunction with the <xref:System.Security.Policy.NetCodeGroup> class to control how executing code can connect back to the site it was downloaded from. These classes provide programmatic control of the <xref:System.Net.WebPermission> granted to executing code that controls what schemes and ports the code can use access its origin site. You can specify scheme and port pairs that are permitted based on the scheme in the URL where the code originates.  
+  
+ To create a <xref:System.Security.Policy.CodeConnectAccess> object based on the code's origin scheme, use the <xref:System.Security.Policy.CodeConnectAccess.CreateOriginSchemeAccess%2A> method.  
+  
+ To create a <xref:System.Security.Policy.CodeConnectAccess> object that can use any scheme but is restricted by port, use the <xref:System.Security.Policy.CodeConnectAccess.CreateAnySchemeAccess%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Security.Policy.NetCodeGroup> object and adds it to the User policy level.  
+  
+ [!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
+ [!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeConnectAccess (string allowScheme, int allowPort);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string allowScheme, int32 allowPort) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="allowScheme" Type="System.String" />
+        <Parameter Name="allowPort" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="allowScheme">The URI scheme represented by the current instance.</param>
+        <param name="allowPort">The port represented by the current instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.CodeConnectAccess" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Policy.CodeConnectAccess.Scheme%2A> property is set using the `allowScheme` parameter. The scheme is converted to lowercase. The value of <xref:System.Security.Policy.CodeConnectAccess.Scheme%2A> controls the scheme that executing code can use to connect to a network resource.  
+  
+ The <xref:System.Security.Policy.CodeConnectAccess.Port%2A> property is set using the `allowPort` parameter. The value of <xref:System.Security.Policy.CodeConnectAccess.Port%2A> controls the port that executing code can use to connect to a network resource.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating a <xref:System.Security.Policy.CodeConnectAccess> object that permits downloaded code to connect back to its origin server using the HTTP protocol and the same port it was downloaded on. For an example that demonstrates using <xref:System.Security.Policy.CodeConnectAccess> objects to create a code group and adding the code group to a policy level, see the <xref:System.Security.Policy.CodeConnectAccess> class overview.  
+  
+ [!code-cpp[NclCodeGroup#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#2)]
+ [!code-csharp[NclCodeGroup#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="allowScheme" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="allowScheme" /> is an empty string ("").  
+  
+ -or-  
+  
+ <paramref name="allowScheme" /> contains characters that are not permitted in schemes.  
+  
+ -or-  
+  
+ <paramref name="allowPort" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="allowPort" /> is greater than 65,535.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AnyScheme">
+      <MemberSignature Language="C#" Value="public static readonly string AnyScheme;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string AnyScheme" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.AnyScheme" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the string value that represents the scheme wildcard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As an alternative to constructing a <xref:System.Security.Policy.CodeConnectAccess> object using this value, you can call the <xref:System.Security.Policy.CodeConnectAccess.CreateAnySchemeAccess%2A> method to obtain a <xref:System.Security.Policy.CodeConnectAccess> object that represents a specified port and any scheme.  
+  
+ The value of this field is "*".  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this field.  
+  
+ [!code-cpp[NclCodeGroup#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#6)]
+ [!code-csharp[NclCodeGroup#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAnySchemeAccess">
+      <MemberSignature Language="C#" Value="public static System.Security.Policy.CodeConnectAccess CreateAnySchemeAccess (int allowPort);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.CodeConnectAccess CreateAnySchemeAccess(int32 allowPort) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.CreateAnySchemeAccess(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.CodeConnectAccess</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allowPort" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="allowPort">The port represented by the returned instance.</param>
+        <summary>Returns a <see cref="T:System.Security.Policy.CodeConnectAccess" /> instance that represents access to the specified port using any scheme.</summary>
+        <returns>A <see cref="T:System.Security.Policy.CodeConnectAccess" /> instance for the specified port.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Policy.CodeConnectAccess> instance returned by this method uses the scheme wildcard value <xref:System.Security.Policy.CodeConnectAccess> ("*") to represent the scheme.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this method. For an example that demonstrates using <xref:System.Security.Policy.CodeConnectAccess> objects to create a code group and adding the code group to a policy level, see the <xref:System.Security.Policy.CodeConnectAccess> class overview.  
+  
+ [!code-cpp[NclCodeGroup#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#5)]
+ [!code-csharp[NclCodeGroup#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="allowPort" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="allowPort" /> is greater than 65,535.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOriginSchemeAccess">
+      <MemberSignature Language="C#" Value="public static System.Security.Policy.CodeConnectAccess CreateOriginSchemeAccess (int allowPort);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.CodeConnectAccess CreateOriginSchemeAccess(int32 allowPort) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.CreateOriginSchemeAccess(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.CodeConnectAccess</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="allowPort" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="allowPort">The port represented by the returned instance.</param>
+        <summary>Returns a <see cref="T:System.Security.Policy.CodeConnectAccess" /> instance that represents access to the specified port using the code's scheme of origin.</summary>
+        <returns>A <see cref="T:System.Security.Policy.CodeConnectAccess" /> instance for the specified port.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Policy.CodeConnectAccess> instance returned by this method has the scheme value <xref:System.Security.Policy.CodeConnectAccess>. The origin scheme is the scheme value from the URI where the code originated.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using <xref:System.Security.Policy.CodeConnectAccess> objects to create a code group and adding the code group to a policy level.  
+  
+ [!code-cpp[NclCodeGroup#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#3)]
+ [!code-csharp[NclCodeGroup#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="allowPort" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="allowPort" /> is greater than 65,535.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPort">
+      <MemberSignature Language="C#" Value="public static readonly int DefaultPort;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 DefaultPort" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.DefaultPort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the value used to represent the default port.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a <xref:System.Security.Policy.CodeConnectAccess> object that has the default port for a specified scheme, use this field as the `allowPort` parameter of the <xref:System.Security.Policy.CodeConnectAccess.%23ctor%2A> constructor.  
+  
+ The value of this field is -3.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating a <xref:System.Security.Policy.CodeConnectAccess> object that specifies FTP for the scheme and the default port for FTP.  
+  
+ [!code-cpp[NclCodeGroup#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#1)]
+ [!code-csharp[NclCodeGroup#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to compare to the current <see cref="T:System.Security.Policy.CodeConnectAccess" /> object.</param>
+        <summary>Returns a value indicating whether two <see cref="T:System.Security.Policy.CodeConnectAccess" /> objects represent the same scheme and port.</summary>
+        <returns>
+          <see langword="true" /> if the two objects represent the same scheme and port; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Security.Policy.CodeConnectAccess> objects are equal if their <xref:System.Security.Policy.CodeConnectAccess.Scheme%2A> and <xref:System.Security.Policy.CodeConnectAccess.Port%2A> property values are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.CodeConnectAccess.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for a particular type.</summary>
+        <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginPort">
+      <MemberSignature Language="C#" Value="public static readonly int OriginPort;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 OriginPort" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.OriginPort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the value used to represent the port value in the URI where code originated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a <xref:System.Security.Policy.CodeConnectAccess> object that has the same port as the port in the executing code's URL evidence, use this field as the `allowPort` parameter of the <xref:System.Security.Policy.CodeConnectAccess.%23ctor%2A> constructor.  
+  
+ The value of this field is -4.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating a <xref:System.Security.Policy.CodeConnectAccess> object that specifies the HTTP scheme and origin port.  
+  
+ [!code-cpp[NclCodeGroup#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#2)]
+ [!code-csharp[NclCodeGroup#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginScheme">
+      <MemberSignature Language="C#" Value="public static readonly string OriginScheme;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string OriginScheme" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Policy.CodeConnectAccess.OriginScheme" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the value used to represent the scheme in the URL where the code originated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not use this field with the <xref:System.Security.Policy.CodeConnectAccess.%23ctor%2A> constructor. Instead, use the <xref:System.Security.Policy.CodeConnectAccess.CreateOriginSchemeAccess%2A> method.  
+  
+ The value of this field is "$origin".  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this field.  
+  
+ [!code-cpp[NclCodeGroup#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#6)]
+ [!code-csharp[NclCodeGroup#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Port">
+      <MemberSignature Language="C#" Value="public int Port { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeConnectAccess.Port" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the port represented by the current instance.</summary>
+        <value>A <see cref="T:System.Int32" /> value that identifies a computer port used in conjunction with the <see cref="P:System.Security.Policy.CodeConnectAccess.Scheme" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Port values are between 0 and 65,535. The port value is specified when you create an instance of <xref:System.Security.Policy.CodeConnectAccess>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates displaying the value of this property.  
+  
+ [!code-cpp[NclCodeGroup#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#4)]
+ [!code-csharp[NclCodeGroup#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scheme">
+      <MemberSignature Language="C#" Value="public string Scheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.CodeConnectAccess.Scheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI scheme represented by the current instance.</summary>
+        <value>A <see cref="T:System.String" /> that identifies a URI scheme, converted to lowercase.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The scheme value is specified when you create an instance of <xref:System.Security.Policy.CodeConnectAccess>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates displaying the value of this property.  
+  
+ [!code-cpp[NclCodeGroup#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NclCodeGroup/cpp/sample.cpp#4)]
+ [!code-csharp[NclCodeGroup#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NclCodeGroup/CS/sample.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

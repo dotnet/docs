@@ -1,0 +1,18 @@
+<Type Name="SyntaxErrorObject" FullName="Microsoft.JScript.SyntaxErrorObject">
+  <TypeSignature Language="C#" Value="public sealed class SyntaxErrorObject : Microsoft.JScript.ErrorObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SyntaxErrorObject extends Microsoft.JScript.ErrorObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.SyntaxErrorObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ErrorObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a syntax error. For example, a syntax error can occur when you omit a semicolon.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,661 @@
+<Type Name="ControlAdapter" FullName="System.Web.UI.Adapters.ControlAdapter">
+  <TypeSignature Language="C#" Value="public abstract class ControlAdapter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ControlAdapter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Adapters.ControlAdapter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Customizes rendering for the derived control to which the adapter is attached, to modify the default markup or behavior for specific browsers, and is the base class from which all control adapters inherit.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control adapters are components that override certain <xref:System.Web.UI.Control> class methods and events in its execution lifecycle to allow browser or markup-specific handling. The .NET Framework maps a single derived control adapter to a <xref:System.Web.UI.Control> object for each client request.  
+  
+ An adapter modifies a control for a specific browser or class of browsers or acts as an arbitrary filter on some capability. Typically the adapter is defined by the markup language that the browser uses (for example, XHTML or HTML 3.2). Much of the adaptability in rendering behavior can be encapsulated in the specialized classes that derive from the <xref:System.Web.UI.HtmlTextWriter> class. Therefore, it is likely that a single adapter can be used for a number of browser class behaviors or that inclusion of the adaptability in the <xref:System.Web.UI.HtmlTextWriter> classes could make the use of a control adapter unnecessary.  
+  
+ An adapter for a control class applies to all controls that inherit from that class, unless more specialized adapters are present. For example, an adapter for the <xref:System.Web.UI.WebControls.BaseValidator> class can be used for all `Validator` objects.  
+  
+ Adapters typically do not inherit directly from the <xref:System.Web.UI.Adapters.ControlAdapter> class, but from one of the target-specific adapter base classes that provide additional functionality specific to the control type and target browser or the particular rendering required.  
+  
+ Controls themselves do not necessarily require an adapter. If controls are extended through composition, generally the child control adapters are sufficient.  
+  
+ Each control has explicit mappings to adapters through the .browser definition files. Thus, any access to the <xref:System.Web.UI.Control.Adapter%2A?displayProperty=fullName> property uses the <xref:System.Web.HttpBrowserCapabilities> object extracted from the browser definition files to perform the lookup for the mapping of the adapter to control.  
+  
+ During processing, the .NET Framework intercepts calls to the overridable methods of a control that could be target-specific. If a control adapter is attached, the .NET Framework calls the associated adapter methods.  
+  
+ The adapter performs rendering for the control through the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method. If overridden, <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> potentially should not call the base class implementation because that performs a call back on the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method. This might cause the rendering to occur twice, once by the adapter and once by the control.  
+  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> base method calls back on the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method of the control. Thus, if you override <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A>, you should not call the base class implementation unless the rendering you implement is in addition to that provided by <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> of the control.  
+  
+ You must ensure that the .NET Framework performs interception for adapters of the child controls. You can do this by calling the <xref:System.Web.UI.Adapters.ControlAdapter.RenderChildren%2A> base method, which calls the <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=fullName> method of the control, from your <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> override.  
+  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> methods are called by the control immediately before and after (respectively) the control calls the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method. If pre- and post-rendering are the only browser-specific processing tasks required, using <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> might make it unnecessary to override <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A>. The default behavior of the <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> methods is to call the corresponding methods of the <xref:System.Web.UI.HtmlTextWriter>.  
+  
+ To maintain its own state information, a control adapter can override the <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState%2A>, <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState%2A>, <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState%2A>, and <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState%2A> methods. <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState%2A>, <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState%2A>, <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState%2A>, and <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState%2A> are called when the private control and view states are saved and loaded, respectively.  
+  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.OnInit%2A>, <xref:System.Web.UI.Adapters.ControlAdapter.OnLoad%2A>, <xref:System.Web.UI.Adapters.ControlAdapter.OnPreRender%2A>, and <xref:System.Web.UI.Adapters.ControlAdapter.OnUnload%2A> base methods call back on the corresponding <xref:System.Web.UI.Control> class methods. Thus, any of these <xref:System.Web.UI.Adapters.ControlAdapter> methods that are overridden must call their base methods; otherwise, the event associated with the <xref:System.Web.UI.Control> class method will not be raised.  
+  
+ Controls and adapters optionally implement the <xref:System.Web.UI.IPostBackDataHandler> and <xref:System.Web.UI.IPostBackEventHandler> interfaces. The .NET Framework determines whether an adapter exists and whether the adapter implements these interfaces. If it does, the adapter should override the <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A>, <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A>, and <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A> methods, as necessary. If the postback data is not recognized in the adapter, it must call back on the control to process it. Subsequent event handlers also must call back on the control.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, a control that requires general adapter functionality should have a corresponding adapter base class, named in the pattern <paramref name="ControlType" /><see langword="Adapter" /> (for example, <see langword="TextBoxAdapter" />). The adapter should at a minimum return a strongly-typed instance of the control through its <see cref="P:System.Web.UI.Adapters.ControlAdapter.Control" /> property.  
+  
+1.  Control adapters for a given control type and markup language should be named in the pattern <paramref name="MarkupControlType" /><see langword="Adapter" /> (for example, <see langword="XhtmlTextBoxAdapter" />). Adapters for a control should be implemented in an <see langword="Adapters" /> subnamespace.  
+  
+ Control adapters should inherit from the appropriate base class and follow the same inheritance model as the control. For example, an adapter for a control inheriting from the <see cref="T:System.Web.UI.Control" /> base class should inherit from either the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class or the relevant <paramref name="ControlType" /><see langword="Adapter" /> class.  
+  
+ Any specialized adapters should be defined for the specialized control under all of the device nodes in configuration .browser files.  
+  
+ A properly implemented control should not assume that an adapter is attached, or that the attached adapter implements a specific interface. Instead, it should check for these before calling.  
+  
+ It is possible to simulate overriding protected event methods in the control, such as the <see cref="M:System.Web.UI.WebControls.LinkButton.OnClick(System.EventArgs)" /> method of the <see cref="T:System.Web.UI.WebControls.LinkButton" />. First, create an adapter class with an <c>OnClick</c> method. Then create a new control derived from <see cref="T:System.Web.UI.WebControls.LinkButton" /> and override the <see cref="M:System.Web.UI.WebControls.LinkButton.OnClick(System.EventArgs)" /> method. The overriden <see cref="M:System.Web.UI.WebControls.LinkButton.OnClick(System.EventArgs)" /> method calls the <c>OnClick</c> method of the adapter. The adapter object is available through the protected <see cref="P:System.Web.UI.Control.Adapter" /> property of the <see cref="T:System.Web.UI.Control" /> class. The <see cref="P:System.Web.UI.Control.Adapter" /> property of the control is <see langword="null" /> when there is no associated adapter, so any code should check for that condition before calling methods of the adapter.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ControlAdapter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs this adapter when it creates the corresponding <xref:System.Web.UI.Control> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRender">
+      <MemberSignature Language="C#" Value="protected virtual void BeginRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void BeginRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> containing methods to render the target-specific output.</param>
+        <summary>Called prior to the rendering of a control. In a derived adapter class, generates opening tags that are required by a specific target but not needed by HTML browsers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> method is called just before the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method, and is used to perform target-specific preprocessing before the rendering of the control.  
+  
+ Use the <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> method in combination with the <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> method to ensure opening and closing tag consistency.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, the <see cref="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" /> base method calls the <see cref="M:System.Web.UI.HtmlTextWriter.BeginRender" /> method. Thus, overrides of the <see cref="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" /> method should call the <see cref="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" /> base method only if its processing is in addition to, rather than instead of, the <see cref="M:System.Web.UI.HtmlTextWriter.BeginRender" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Browser">
+      <MemberSignature Language="C#" Value="protected System.Web.HttpBrowserCapabilities Browser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpBrowserCapabilities Browser" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.ControlAdapter.Browser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpBrowserCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the browser capabilities of the client making the current HTTP request.</summary>
+        <value>An <see cref="T:System.Web.HttpBrowserCapabilities" /> specifying client browser and markup capabilities.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.Adapters.ControlAdapter> object determines the client browser capabilities from the <xref:System.Web.HttpBrowserCapabilities> object that is returned by the <xref:System.Web.UI.Adapters.ControlAdapter.Browser%2A> property. This enables the <xref:System.Web.UI.Adapters.ControlAdapter> object to render browser-specific markup or otherwise modify the behavior of the <xref:System.Web.UI.Control>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.Adapters.ControlAdapter.Browser%2A> property to access the details of the requesting browser. In this example, the code checks to determine whether the browser is compatible with JavaScript, and then allows the developer to render customized output in that case.  
+  
+ [!code-cpp[ControlAdapter_Browser#1](~/samples/snippets/cpp/VS_Snippets_WebNet/ControlAdapter_Browser/CPP/controladapter_browser.cpp#1)]
+ [!code-csharp[ControlAdapter_Browser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlAdapter_Browser/CS/controladapter_browser.cs#1)]
+ [!code-vb[ControlAdapter_Browser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlAdapter_Browser/VB/controladapter_browser.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.Control Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control Control" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.ControlAdapter.Control" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the control to which this control adapter is attached.</summary>
+        <value>The <see cref="T:System.Web.UI.Control" /> to which this <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> is attached.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a derived control adapter is attached to a control, the .NET Framework calls certain adapter members instead of the control members.  
+  
+   
+  
+## Examples  
+ The following code example shows how to derive a custom control from the <xref:System.Web.UI.Control> class, and then create a corresponding adapter that inherits from the <xref:System.Web.UI.Adapters.ControlAdapter> class. The adapter overrides the <xref:System.Web.UI.Adapters.ControlAdapter.Control%2A> property and returns a strongly-typed reference to the control.  
+  
+ [!code-cpp[ControlAdapter.Control#1](~/samples/snippets/cpp/VS_Snippets_WebNet/ControlAdapter.Control/CPP/controladapter.control.cpp#1)]
+ [!code-csharp[ControlAdapter.Control#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlAdapter.Control/CS/controladapter.control.cs#1)]
+ [!code-vb[ControlAdapter.Control#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlAdapter.Control/VB/controladapter.control.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, at a minimum, you should implement a <see langword="Control" /> property to return a strongly-typed instance of the control, as shown in the Example section.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChildControls">
+      <MemberSignature Language="C#" Value="protected virtual void CreateChildControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void CreateChildControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.CreateChildControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates the target-specific child controls for a composite control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is a derived control adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> method is overridden, the override is called instead of the <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method. Thus, <xref:System.Web.UI.Adapters.ControlAdapter.CreateChildControls%2A> can be used to create a target-specific child control set.  
+  
+ For more information about combining controls to create a new control, see [Composite Controls](http://msdn.microsoft.com/en-us/fb174677-d845-467c-8bf3-cc096b2490b0).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you create an inheriting class and override the <see cref="M:System.Web.UI.Adapters.ControlAdapter.CreateChildControls" /> method, do not call the base method unless you want to add controls to those created by the base method. Otherwise you could create two sets of child controls.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EndRender">
+      <MemberSignature Language="C#" Value="protected virtual void EndRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void EndRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> containing methods to render the target-specific output.</param>
+        <summary>Called after the rendering of a control. In a derived adapter class, generates closing tags that are required by a specific target but not needed by HTML browsers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> method is called just after the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method, and is used to perform target-specific postprocessing after the rendering of the control.  
+  
+ Use the <xref:System.Web.UI.Adapters.ControlAdapter.EndRender%2A> method in combination with the <xref:System.Web.UI.Adapters.ControlAdapter.BeginRender%2A> method to ensure opening and closing tag consistency.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, the <see cref="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" /> base method calls the <see cref="M:System.Web.UI.HtmlTextWriter.EndRender" /> method. Thus, overrides of the <see cref="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" /> method should call the <see cref="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" /> base method only if its processing is in addition to, rather than instead of, the <see cref="M:System.Web.UI.HtmlTextWriter.EndRender" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAdapterControlState">
+      <MemberSignature Language="C#" Value="protected virtual void LoadAdapterControlState (object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void LoadAdapterControlState(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">An <see cref="T:System.Object" /> that contains the adapter's control state information as a <see cref="T:System.Web.UI.StateBag" />.</param>
+        <summary>Loads adapter control state information that was saved by <see cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState" /> during a previous request to the page where the control associated with this control adapter resides.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control state is the essential state information needed even if view state is disabled. When an adapter needs to maintain its own control state information, it can override the <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState%2A> methods.  
+  
+ An adapter might need to maintain control state information when there are features that need to have state maintained across requests, independent from the state of the associated control. For example, a composite control consisting of a large textual display and a group of <xref:System.Web.UI.WebControls.RadioButton> controls might render as a single view on desktop computer browsers. On other browsers, it might split its rendering—one view for the textual display and the other for the radio button group. The adapter would need to maintain its own target-specific information about the currently active view.  
+  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState%2A> method is called immediately after the <xref:System.Web.UI.Control.LoadControlState%2A?displayProperty=fullName> method, in the `LoadState` lifecycle stage. The adapter control state is separate and in addition to the control state of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadAdapterViewState">
+      <MemberSignature Language="C#" Value="protected virtual void LoadAdapterViewState (object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void LoadAdapterViewState(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">An <see cref="T:System.Object" /> that contains the adapter view state information as a <see cref="T:System.Web.UI.StateBag" />.</param>
+        <summary>Loads adapter view state information that was saved by <see cref="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState" /> during a previous request to the page where the control associated with this control adapter resides.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an adapter needs to maintain its own view state information, it can override the <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState%2A> methods.  
+  
+ An adapter needs to maintain view state information when there is data that must be maintained across requests, independent from the view state of the associated control. For example, a grid control on desktop computer browsers might render as a single view of rows and columns of values. On other browsers, it might split its rendering into multiple separate views, such as a list of rows and details of a single row. The adapter would need to maintain the data for the views that are not currently active in view state.  
+  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState%2A> method is called immediately before the <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=fullName> method in the `LoadState` lifecycle stage. The adapter view state is separate and in addition to the view state of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected virtual void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Overrides the <see cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" /> method for the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnInit%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnInit%2A?displayProperty=fullName> method.  
+  
+ Override <xref:System.Web.UI.Adapters.ControlAdapter.OnInit%2A> to perform target-specific processing in the `Initialize` stage of the control lifecycle. Typically, these are functions that are performed when a control is created.  
+  
+   
+  
+## Examples  
+ The following code sample derives a custom control adapter from the <xref:System.Web.UI.Adapters.ControlAdapter> class. It then overrides the <xref:System.Web.UI.Adapters.ControlAdapter.OnInit%2A> method to set a property on the associated control and call the base method to complete the control initialization.  
+  
+ [!code-cpp[ControlAdapter_OnInit#1](~/samples/snippets/cpp/VS_Snippets_WebNet/ControlAdapter_OnInit/CPP/controladapter_oninit.cpp#1)]
+ [!code-csharp[ControlAdapter_OnInit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlAdapter_OnInit/CS/controladapter_oninit.cs#1)]
+ [!code-vb[ControlAdapter_OnInit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlAdapter_OnInit/VB/controladapter_oninit.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.OnInit(System.EventArgs)" /> method, the adapter must call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" /> method. If the <see cref="M:System.Web.UI.Control.OnInit(System.EventArgs)" /> method is not called, the <see cref="E:System.Web.UI.Control.Init" /> event will not be raised.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLoad">
+      <MemberSignature Language="C#" Value="protected virtual void OnLoad (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnLoad(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.OnLoad(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Overrides the <see cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" /> method for the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnLoad%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnLoad%2A?displayProperty=fullName> method.  
+  
+ Override the <xref:System.Web.UI.Adapters.ControlAdapter.OnLoad%2A> method to perform target-specific processing in the `Load` stage of the control lifecycle. Typically, these are functions that should be performed for each client request.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.OnLoad(System.EventArgs)" /> method, the adapter must call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" /> method. If <see cref="M:System.Web.UI.Control.OnLoad(System.EventArgs)" /> is not called, the <see cref="E:System.Web.UI.Control.Load" /> event will not be raised.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected virtual void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Overrides the <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method for the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnPreRender%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnPreRender%2A?displayProperty=fullName> method.  
+  
+ Override the <xref:System.Web.UI.Adapters.ControlAdapter.OnPreRender%2A> method to perform target-specific processing in the `PreRender` stage of the control lifecycle. Typically, these are functions that immediately precede rendering of the control output.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.OnPreRender(System.EventArgs)" /> method, the adapter must call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method. If the <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method is not called, the <see cref="E:System.Web.UI.Control.PreRender" /> event will not be raised.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUnload">
+      <MemberSignature Language="C#" Value="protected virtual void OnUnload (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnUnload(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.OnUnload(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Overrides the <see cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" /> method for the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is an adapter attached to a <xref:System.Web.UI.Control> object and the <xref:System.Web.UI.Adapters.ControlAdapter.OnUnload%2A> method is overridden, the override method is called instead of the <xref:System.Web.UI.Control.OnUnload%2A?displayProperty=fullName> method.  
+  
+ Override the <xref:System.Web.UI.Adapters.ControlAdapter.OnUnload%2A> method to do target-specific processing in the `Unload` stage of the control lifecycle. Typically, these are cleanup functions that precede disposition of the control.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class and the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.OnUnload(System.EventArgs)" /> method, the adapter must call the corresponding base class method, which in turn calls the <see cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" /> method. If <see cref="M:System.Web.UI.Control.OnUnload(System.EventArgs)" /> is not called, the <see cref="E:System.Web.UI.Control.Unload" /> event will not be raised.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Page">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.Page Page { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Page Page" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.ControlAdapter.Page" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Page</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the page where the control associated with this adapter resides.</summary>
+        <value>A <see cref="T:System.Web.UI.Page" /> that provides access to the page instance where the associated control is situated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.Page%2A> property provides access to the <xref:System.Web.UI.Page?displayProperty=fullName> object where the control is situated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageAdapter">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.Adapters.PageAdapter PageAdapter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Adapters.PageAdapter PageAdapter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.ControlAdapter.PageAdapter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Adapters.PageAdapter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the page adapter for the page where the associated control resides.</summary>
+        <value>A <see cref="T:System.Web.UI.Adapters.PageAdapter" /> for the page where the control associated with the current <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> is situated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.PageAdapter%2A> property provides access to the <xref:System.Web.UI.Adapters.PageAdapter?displayProperty=fullName> object for the <xref:System.Web.UI.Page> object where the <xref:System.Web.UI.Control> object associated with the current <xref:System.Web.UI.Adapters.ControlAdapter> object is situated.  
+  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.PageAdapter%2A> property can be used to access other items at the page adapter level, such as common target-specific functions that could apply to several control types on the page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected virtual void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> to use to render the target-specific output.</param>
+        <summary>Generates the target-specific markup for the control to which the control adapter is attached.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override the <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method to generate target-specific markup to send to the client browser. The <xref:System.Web.UI.Adapters.ControlAdapter.Render%2A> method is called in place of the <xref:System.Web.UI.Control.Render%2A?displayProperty=fullName> method if a <xref:System.Web.UI.Adapters.ControlAdapter> object is attached to a <xref:System.Web.UI.Control> object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> base method calls the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method. Thus, overrides of the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method should call the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> base method only if its processing is in addition to, rather than instead of, the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method.  
+  
+ For a composite control, the adapter developer must ensure that the child controls are rendered. If the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method causes the child controls to be rendered but does not generate markup, it might be appropriate for the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method to call its base method. If target-specific rendering of the child controls is necessary, the adapter should implement the <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method and call the <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method from the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderChildren">
+      <MemberSignature Language="C#" Value="protected virtual void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> to use to render the target-specific output.</param>
+        <summary>Generates the target-specific markup for the child controls in a composite control to which the control adapter is attached.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override the <xref:System.Web.UI.Adapters.ControlAdapter.RenderChildren%2A> method when it is necessary to generate target-specific markup for the child control set of a composite control, in addition to the markup for the individual child controls.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you inherit from the <see cref="T:System.Web.UI.Adapters.ControlAdapter" /> class, for a composite control, the adapter developer must ensure that the child controls are rendered. If the adapter overrides the <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method, it should call the <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method from an override of the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method.  
+  
+ If the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method causes the child controls to be rendered but itself does not generate markup, it might be appropriate for the <see cref="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" /> method to call its base method, which calls the <see cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" /> method, instead of implementing an override for the <see cref="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAdapterControlState">
+      <MemberSignature Language="C#" Value="protected virtual object SaveAdapterControlState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object SaveAdapterControlState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves control state information for the control adapter.</summary>
+        <returns>An <see cref="T:System.Object" /> that contains the adapter's control state information as a <see cref="T:System.Web.UI.StateBag" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control state is the essential state information needed even if view state is disabled. When an adapter needs to maintain its own control state information, it can override the <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState%2A> methods.  
+  
+ An adapter might need to maintain control state information when there are features that need to have state maintained across requests, independent from the state of the associated control. For example, a composite control consisting of a large textual display and a group of <xref:System.Web.UI.WebControls.RadioButton> controls might render as a single view on desktop computer browsers. On other browsers, it might split its rendering—one view for the textual display and the other for the radio button group. The adapter would need to maintain its own target-specific information about the currently active view.  
+  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState%2A> method is called immediately after the <xref:System.Web.UI.Control.SaveControlState%2A?displayProperty=fullName> method in the `SaveState` lifecycle stage. The adapter control state is separate and in addition to the control state of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAdapterViewState">
+      <MemberSignature Language="C#" Value="protected virtual object SaveAdapterViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object SaveAdapterViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves view state information for the control adapter.</summary>
+        <returns>An <see cref="T:System.Object" /> that contains the adapter view state information as a <see cref="T:System.Web.UI.StateBag" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an adapter needs to maintain its own view state information, it can override the <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState%2A> and <xref:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState%2A> methods.  
+  
+ An adapter needs to maintain view state information when there is data that must be maintained across requests, independent from the associated view state of the control. For example, a grid control on desktop computer browsers might render as a single view of rows and columns of values. On other browsers, it might split its rendering into multiple separate views, such as a list of rows and details of a single row. The adapter would need to maintain the data for the views that are not currently active in view state.  
+  
+ The <xref:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState%2A> method is called immediately before the <xref:System.Web.UI.Control.SaveViewState%2A?displayProperty=fullName> method in the `SaveState` lifecycle stage. The adapter view state is separate and in addition to the view state of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

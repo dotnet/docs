@@ -1,0 +1,321 @@
+<Type Name="ImportCollection" FullName="System.Web.Services.Description.ImportCollection">
+  <TypeSignature Language="C#" Value="public sealed class ImportCollection : System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImportCollection extends System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ImportCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionBaseCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a collection of instances of the <see cref="T:System.Web.Services.Description.Import" /> class representing documents to be imported into the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Description.Import> class corresponds to the Web Services Description Language (WSDL) `<import>` element that is enclosed by the root `<definitions>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `ImportCollection` class.  
+  
+ [!code-cpp[ImportCollection_6#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#1)]
+ [!code-csharp[ImportCollection_6#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#1)]
+ [!code-vb[ImportCollection_6#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.Import import);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.Import import) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ImportCollection.Add(System.Web.Services.Description.Import)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="import" Type="System.Web.Services.Description.Import" />
+      </Parameters>
+      <Docs>
+        <param name="import">The <see cref="T:System.Web.Services.Description.Import" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Import" /> to the end of the <see cref="T:System.Web.Services.Description.ImportCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="import" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the `Add` method. For more information about the `CreateImport` method used in the sample, see the example under the <xref:System.Web.Services.Description.Import> class.  
+  
+ [!code-cpp[Importsample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#1)]
+ [!code-csharp[Importsample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#1)]
+ [!code-vb[Importsample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.Import import);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.Import import) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ImportCollection.Contains(System.Web.Services.Description.Import)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="import" Type="System.Web.Services.Description.Import" />
+      </Parameters>
+      <Docs>
+        <param name="import">The <see cref="T:System.Web.Services.Description.Import" /> for which to check collection membership.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.Import" /> is a member of the <see cref="T:System.Web.Services.Description.ImportCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="import" /> parameter is a member of the <see cref="T:System.Web.Services.Description.ImportCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the `Contains` method.  
+  
+ [!code-cpp[ImportCollection_6#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#4)]
+ [!code-csharp[ImportCollection_6#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#4)]
+ [!code-vb[ImportCollection_6#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.Import[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.Import[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ImportCollection.CopyTo(System.Web.Services.Description.Import[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Services.Description.Import[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.Import" /> serving as the destination of the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.ImportCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.Import" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the `CopyTo` method.  
+  
+ [!code-cpp[ImportCollection_6#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#3)]
+ [!code-csharp[ImportCollection_6#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#3)]
+ [!code-vb[ImportCollection_6#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.Import import);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.Import import) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ImportCollection.IndexOf(System.Web.Services.Description.Import)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="import" Type="System.Web.Services.Description.Import" />
+      </Parameters>
+      <Docs>
+        <param name="import">The <see cref="T:System.Web.Services.Description.Import" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.Import" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>A 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the `IndexOf` method.  
+  
+ [!code-cpp[ImportCollection_6#5](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#5)]
+ [!code-csharp[ImportCollection_6#5](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#5)]
+ [!code-vb[ImportCollection_6#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.Import import);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.Import import) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ImportCollection.Insert(System.Int32,System.Web.Services.Description.Import)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="import" Type="System.Web.Services.Description.Import" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert the <c>import</c> parameter.</param>
+        <param name="import">The <see cref="T:System.Web.Services.Description.Import" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Import" /> instance to the <see cref="T:System.Web.Services.Description.ImportCollection" /> at the specified zero-based index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `import` parameter is added to the end of the <xref:System.Web.Services.Description.ImportCollection>.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the `Insert` method. To view the source for the user-defined `CreateImport` method, see the example included with the <xref:System.Web.Services.Description.Import> class.  
+  
+ [!code-cpp[Importsample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#2)]
+ [!code-csharp[Importsample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#2)]
+ [!code-vb[Importsample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than zero.  
+  
+ \- or -  
+  
+ The <paramref name="index" /> parameter is greater than <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.Import this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Import Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.ImportCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.Import</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.Import" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of an <see cref="T:System.Web.Services.Description.Import" /> at the specified zero-based index.</summary>
+        <value>An <see langword="Import" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of a zero-based index to iterate through the members of the `ImportCollection`.  
+  
+ [!code-cpp[ImportCollection_6#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#2)]
+ [!code-csharp[ImportCollection_6#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#2)]
+ [!code-vb[ImportCollection_6#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.Import import);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.Import import) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ImportCollection.Remove(System.Web.Services.Description.Import)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="import" Type="System.Web.Services.Description.Import" />
+      </Parameters>
+      <Docs>
+        <param name="import">The <see cref="T:System.Web.Services.Description.Import" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.Import" /> from the <see cref="T:System.Web.Services.Description.ImportCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed <xref:System.Web.Services.Description.Import> move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the `Remove` method.  
+  
+ [!code-cpp[ImportCollection_6#6](~/samples/snippets/cpp/VS_Snippets_Remoting/ImportCollection_6/CPP/importcollection_6.cpp#6)]
+ [!code-csharp[ImportCollection_6#6](~/samples/snippets/csharp/VS_Snippets_Remoting/ImportCollection_6/CS/importcollection_6.cs#6)]
+ [!code-vb[ImportCollection_6#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ImportCollection_6/VB/importcollection_6.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParent">
+      <MemberSignature Language="C#" Value="protected override void SetParent (object value, object parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParent(object value, object parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.ImportCollection.SetParent(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="parent" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

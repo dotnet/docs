@@ -1,0 +1,53 @@
+<Type Name="IXmlBinaryWriterInitializer" FullName="System.Xml.IXmlBinaryWriterInitializer">
+  <TypeSignature Language="C#" Value="public interface IXmlBinaryWriterInitializer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlBinaryWriterInitializer" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.IXmlBinaryWriterInitializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies implementation requirements for XML binary writers that derive from this interface.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetOutput">
+      <MemberSignature Language="C#" Value="public void SetOutput (System.IO.Stream stream, System.Xml.IXmlDictionary dictionary, System.Xml.XmlBinaryWriterSession session, bool ownsStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutput(class System.IO.Stream stream, class System.Xml.IXmlDictionary dictionary, class System.Xml.XmlBinaryWriterSession session, bool ownsStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.IXmlBinaryWriterInitializer.SetOutput(System.IO.Stream,System.Xml.IXmlDictionary,System.Xml.XmlBinaryWriterSession,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="dictionary" Type="System.Xml.IXmlDictionary" />
+        <Parameter Name="session" Type="System.Xml.XmlBinaryWriterSession" />
+        <Parameter Name="ownsStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="dictionary">The <see cref="T:System.Xml.XmlDictionary" /> to use.</param>
+        <param name="session">The <see cref="T:System.Xml.XmlBinaryWriterSession" /> to use.</param>
+        <param name="ownsStream">If <see langword="true" />, stream is closed by the writer when done; otherwise <see langword="false" />.</param>
+        <summary>Specifies initialization requirements for XML binary writers that implement this method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

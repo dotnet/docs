@@ -1,0 +1,21 @@
+<Namespace Name="System.Web.Security">
+  <Docs>
+    <summary>The <see cref="N:System.Web.Security" /> namespace contains classes that are used to implement ASP.NET security in Web server applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.Membership> class is used by ASP.NET applications to validate user credentials and manage user settings such as passwords and e-mail addresses. The <xref:System.Web.Security.Roles> class enables you to manage authorization for your application based on groups of users assigned to roles in the Web application.  
+  
+ Both the <xref:System.Web.Security.Membership> class and the <xref:System.Web.Security.Roles> class work with providers, classes that access your application's data store to retrieve membership and role information. Membership and role information can be stored in a Microsoft SQL Server database using the <xref:System.Web.Security.SqlMembershipProvider> and <xref:System.Web.Security.SqlRoleProvider> classes; in an Active Directory using the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> and <xref:System.Web.Security.AuthorizationStoreRoleProvider> classes, or in a custom data source using implementations of the <xref:System.Web.Security.MembershipProvider> and <xref:System.Web.Security.RoleProvider> classes.  
+  
+ You configure ASP.NET membership using the [membership Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b9c1ee8f-33ca-4361-8666-b42a0fe86049). When an application using membership is accessed, ASP.NET creates an instance of the <xref:System.Web.Security.Membership> class that you can use to query membership information. Provider-specific implementations of the <xref:System.Web.Security.MembershipUser> class contain information about the user accessing the page. You can create custom implementations of the <xref:System.Web.Security.MembershipUser> class for your application.  
+  
+ You configure ASP.NET roles using the [roleManager Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4b0f6078-4824-4fc8-a5ee-4ae00ee3ceec). ASP.NET creates an instance of the <xref:System.Web.Security.Roles> class that contains information about the role membership of the current user.  
+  
+ ASP.NET provides server controls that interact with the <xref:System.Web.Security.Membership> class and the <xref:System.Web.Security.Roles> class. The <xref:System.Web.UI.WebControls.Login>, <xref:System.Web.UI.WebControls.CreateUserWizard>, and <xref:System.Web.UI.WebControls.ChangePassword> controls work with the <xref:System.Web.Security.Membership> class to simplify creating an authenticated Web application, and the <xref:System.Web.UI.WebControls.LoginView> control uses role-specific templates to customize Web pages for specific groups of users.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

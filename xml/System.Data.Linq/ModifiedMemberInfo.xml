@@ -1,0 +1,73 @@
+<Type Name="ModifiedMemberInfo" FullName="System.Data.Linq.ModifiedMemberInfo">
+  <TypeSignature Language="C#" Value="public struct ModifiedMemberInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ModifiedMemberInfo extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.ModifiedMemberInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Holds values of members that have been modified in [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] applications.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentValue">
+      <MemberSignature Language="C#" Value="public object CurrentValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CurrentValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.CurrentValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current value of the modified member.</summary>
+        <value>The value of the member.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo Member { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MemberInfo Member" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.Member" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MemberInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets member information for the modified member.</summary>
+        <value>Information about the member in conflict.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalValue">
+      <MemberSignature Language="C#" Value="public object OriginalValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object OriginalValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.ModifiedMemberInfo.OriginalValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the original value of the modified member.</summary>
+        <value>The original value for the modified member.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

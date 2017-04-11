@@ -1,0 +1,27 @@
+<Namespace Name="System.Drawing.Printing">
+  <Docs>
+    <summary>The <see cref="N:System.Drawing.Printing" /> namespace provides print-related services for Windows Forms applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, when you print from a Windows Forms application, you create a new instance of the <xref:System.Drawing.Printing.PrintDocument> class, set properties, such as <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A> and <xref:System.Drawing.Printing.PrintDocument.PrinterSettings%2A>, that describe how to print, and call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to actually print the document. Calling the <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=fullName> method raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> event, which should be handled to perform the document layout for printing.  
+  
+ Use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> object obtained from the <xref:System.Drawing.Printing.PrintDocument.PrintPage?displayProperty=fullName> event to specify the output to print. If you are printing a text file, use <xref:System.IO.StreamReader> to read one line at a time from the stream and call the <xref:System.Drawing.Graphics.DrawString%2A> method to draw the line in the graphics object. For more information about this process, see the <xref:System.Drawing.Graphics> and <xref:System.IO.StreamReader> classes. You can view an example of printing a text document in the <xref:System.Drawing.Printing.PrintDocument> class overview topic.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods of the <xref:System.Windows.Forms.TextRenderer> class are not supported for printing. Instead, use the <xref:System.Drawing.Graphics.DrawString%2A> methods of the <xref:System.Drawing.Graphics> class.  
+  
+ When implemented in a derived class, the <xref:System.Drawing.Printing.PrintController> controls how a <xref:System.Drawing.Printing.PrintDocument> is printed. The <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=fullName> method invokes the print controller's <xref:System.Drawing.Printing.PrintController.OnStartPrint%2A>, <xref:System.Drawing.Printing.PrintController.OnEndPrint%2A>, <xref:System.Drawing.Printing.PrintController.OnStartPage%2A>, and <xref:System.Drawing.Printing.PrintController.OnEndPage%2A> methods, which in turn tell the printer how to print the document. For more information about printing dialog boxes, see <xref:System.Windows.Forms.PrintDialog> and <xref:System.Windows.Forms.PageSetupDialog>.  
+  
+ The print-preview process uses a specialized print controller, dialog box, and control. For an example of such a print controller and dialog box, see <xref:System.Drawing.Printing.PreviewPrintController>, <xref:System.Windows.Forms.PrintPreviewDialog>, and <xref:System.Windows.Forms.PrintPreviewControl>.  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Drawing.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Presentation Foundation (WPF) application, see the <xref:System.Printing> namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

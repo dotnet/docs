@@ -1,0 +1,78 @@
+<Type Name="Enlistment" FullName="System.Transactions.Enlistment">
+  <TypeSignature Language="C#" Value="public class Enlistment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Enlistment extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.Enlistment" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Facilitates communication between an enlisted transaction participant and the transaction manager during the final phase of the transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Transactions.Transaction.EnlistVolatile%2A> and <xref:System.Transactions.Transaction.EnlistDurable%2A> methods of the <xref:System.Transactions.Transaction> object are invoked to enlist a participant in a transaction, they return this object describing the enlistment.  
+  
+ During the final phase of the transaction commit, the transaction manager passes this object to a resource manager implementing the <xref:System.Transactions.IEnlistmentNotification> interface that has enlisted in a transaction. Specifically, the transaction manager calls either the <xref:System.Transactions.IEnlistmentNotification.Commit%2A> or the <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> method of the participant, depending on whether the latter has decided to commit or roll back the transaction. The participant should call the <xref:System.Transactions.Enlistment.Done%2A> method of this object to let the transaction manager know that it has completed its work.  
+  
+ An enlistment can call the <xref:System.Transactions.Enlistment.Done%2A> method at anytime before it has called <xref:System.Transactions.PreparingEnlistment.Prepared%2A> in the prepare phase.  By doing so, the enlistment is casting a read only vote, meaning that it votes commit on the transaction but does not need to receive the final outcome. Note that, after the <xref:System.Transactions.Enlistment.Done%2A> method is called, the enlisted participant receives no further notifications from the transaction manager.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of the <xref:System.Transactions.IEnlistmentNotification> interface, and when the <xref:System.Transactions.Enlistment.Done%2A> method should be called.  
+  
+ [!code-csharp[Tx_Enlist#2](~/samples/snippets/csharp/VS_Snippets_CFX/tx_enlist/cs/enlist.cs#2)]
+ [!code-vb[Tx_Enlist#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/tx_enlist/vb/enlist.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="Done">
+      <MemberSignature Language="C#" Value="public void Done ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Done() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.Enlistment.Done" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates that the transaction participant has completed its work.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During the final phase of the transaction commit, the transaction manager calls either the <xref:System.Transactions.IEnlistmentNotification.Commit%2A>, <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> or <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> method of the participant, depending on whether the transaction is to be committed or rolled back. The resource manager should perform any work necessary to finish the transaction and then inform the transaction manager that it has finished by calling the <xref:System.Transactions.Enlistment.Done%2A> method on the `enlistment` parameter.  
+  
+ If the resource manager has enlisted durably, but does not respond by calling <xref:System.Transactions.Enlistment.Done%2A> method, the transaction manager is unsure that the resource manager has received the respective notification call. As such, the transaction manager keeps waiting for a response, and maintains information relevant to this transaction.  If <xref:System.Transactions.Enlistment.Done%2A> is never called, this piece of information is kept around indefinitely in memory or in a system-wide resource. This results in resources not being able to be reclaimed. In the case of a distributed transaction, this could eventually fill the MSDTC log which halts the MSDTC process. In the case of a transaction managed by <xref:System.Transactions>, this results in a gradual and continual increase in the memory consumption of the resource manager's process. Therefore, it is crucial that you call the <xref:System.Transactions.Enlistment.Done%2A> method once your resource manager is done with your prepare work.  
+  
+ An enlistment can call the <xref:System.Transactions.Enlistment.Done%2A> method at anytime before it has called <xref:System.Transactions.PreparingEnlistment.Prepared%2A> in the prepare phase. By doing so, the enlistment is casting a read only vote, meaning that it votes commit on the transaction but does not need to receive the final outcome. Note that, after this method is called, the enlisted participant receives no further notifications from the transaction manager.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

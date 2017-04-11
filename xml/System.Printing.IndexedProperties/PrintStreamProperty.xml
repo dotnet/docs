@@ -1,0 +1,159 @@
+<Type Name="PrintStreamProperty" FullName="System.Printing.IndexedProperties.PrintStreamProperty">
+  <TypeSignature Language="C#" Value="public sealed class PrintStreamProperty : System.Printing.IndexedProperties.PrintProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PrintStreamProperty extends System.Printing.IndexedProperties.PrintProperty" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintStreamProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Printing.IndexedProperties.PrintProperty</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a <see cref="T:System.IO.Stream" /> property (and its value) of a printing system hardware or software component.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintStreamProperty (string attributeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the <see cref="T:System.IO.Stream" /> property that the <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> class for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.IO.Stream> property of a print system object, including casing. For example, the <xref:System.Printing.PrintSystemJobInfo.JobStream%2A> property of a <xref:System.Printing.PrintSystemJobInfo> object must be spelled "JobStream", not "Stream" or "Jobstream".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintStreamProperty (string attributeName, object attributeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, object attributeValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="attributeValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the <see cref="T:System.IO.Stream" /> property that the <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> represents.</param>
+        <param name="attributeValue">The value of the property that the <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> class that has the specified value for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.IO.Stream> property of a print system object, including casing. For example, the <xref:System.Printing.PrintSystemJobInfo.JobStream%2A> property of a <xref:System.Printing.PrintSystemJobInfo> object must be spelled "JobStream", not "Stream" or "Jobstream".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalDispose">
+      <MemberSignature Language="C#" Value="protected override sealed void InternalDispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InternalDispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.InternalDispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream op_Implicit (System.Printing.IndexedProperties.PrintStreamProperty attributeRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.IO.Stream op_Implicit(class System.Printing.IndexedProperties.PrintStreamProperty attributeRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit(System.Printing.IndexedProperties.PrintStreamProperty)~System.IO.Stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintStreamProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attributeRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream op_Implicit (System.Printing.IndexedProperties.PrintStreamProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.IO.Stream op_Implicit(class System.Printing.IndexedProperties.PrintStreamProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintStreamProperty.op_Implicit(System.Printing.IndexedProperties.PrintStreamProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.IO.Stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintStreamProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      </Parameters>
+      <Docs>
+        <param name="attributeRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintStreamProperty.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the property that the <see cref="T:System.Printing.IndexedProperties.PrintStreamProperty" /> represents.</summary>
+        <value>An <see cref="T:System.Object" /> that can be cast as a <see cref="T:System.IO.Stream" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

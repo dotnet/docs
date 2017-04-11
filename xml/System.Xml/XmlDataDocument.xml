@@ -1,0 +1,635 @@
+<Type Name="XmlDataDocument" FullName="System.Xml.XmlDataDocument">
+  <TypeSignature Language="C#" Value="public class XmlDataDocument : System.Xml.XmlDocument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataDocument extends System.Xml.XmlDocument" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlDataDocument" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.XmlDocument</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("XmlDataDocument class will be removed in a future release.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows structured data to be stored, retrieved, and manipulated through a relational <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class extends <xref:System.Xml.XmlDocument>. It enables you to load either relational data or XML data and manipulate that data using the World Wide Web Consortium (W3C) Document Object Model (DOM). The DOM presents data as a hierarchy of node objects. Because `XmlDataDocument` implements the <xref:System.Xml.XPath.IXPathNavigable> interface, it can also be used as the source document for the <xref:System.Xml.Xsl.XslTransform> class.  
+  
+ `XmlDataDocument` has a close affiliation with the `DataSet` class, which provides a relational view of the loaded XML data. Any changes made to the `XmlDataDocument` are reflected in the `DataSet` and vice versa.  
+  
+ To load a `DataSet` with XML data, use <xref:System.Data.DataSet.ReadXmlSchema%2A> to build a relational mapping. The XML data can then be loaded using <xref:System.Xml.XmlDataDocument.Load%2A> or <xref:System.Xml.XmlDocument.LoadXml%2A>.  
+  
+ To load relational data, specify the `DataSet` containing the relational data as the parameter in the <xref:System.Xml.XmlDataDocument.%23ctor%2A> constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlDataDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDataDocument" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty <xref:System.Data.DataSet> is created and associated with the `XmlDataDocument`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlDataDocument (System.Data.DataSet dataset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataSet dataset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.#ctor(System.Data.DataSet)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataset" Type="System.Data.DataSet" />
+      </Parameters>
+      <Docs>
+        <param name="dataset">The <see langword="DataSet" /> to load into <see langword="XmlDataDocument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlDataDocument" /> class with the specified <see cref="T:System.Data.DataSet" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `XmlDataDocument` is synchronized with the specified `DataSet`. Any data in the `DataSet` is immediately available through the `XmlDataDocument`. Any changes in the `DataSet` are propagated in the `XmlDataDocument`. Any changes made in the `XmlDataDocument`, provided they match the `DataSet` schema, are propagated in the `DataSet`.  
+  
+   
+  
+## Examples  
+ The following example loads a customer table into an `XmlDataDocument`.  
+  
+ The example uses the SQL Server 2000 Northwind database.  
+  
+ [!code-cpp[Classic WebData XmlDataDocument.XmlDataDocument1 Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDataDocument.XmlDataDocument1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlDataDocument.XmlDataDocument1 Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDataDocument.XmlDataDocument1 Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlDataDocument.XmlDataDocument1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDataDocument.XmlDataDocument1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneNode">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlNode CloneNode (bool deep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode CloneNode(bool deep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.CloneNode(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deep" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="deep">
+          <see langword="true" /> to recursively clone the subtree under the specified node; <see langword="false" /> to clone only the node itself.</param>
+        <summary>Creates a duplicate of the current node.</summary>
+        <returns>The cloned node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cloning the `XmlDataDocument` also clones the <xref:System.Data.DataSet> schema.  
+  
+ If `deep` is set to `false`, the cloned `DataSet` has no data; that is, no rows.  
+  
+ If `deep` is set to `true`, the cloned `DataSet` is set with the schema and then populated with the data.  
+  
+ See <xref:System.Xml.XmlNode.CloneNode%2A> in the `XmlNode` class to see a table describing how this method behaves with each of the different node types.  
+  
+   
+  
+## Examples  
+ The following example loads a `DataSet` into an `XmlDataDocument` and then creates a shallow clone of the `XmlDataDocument`.  
+  
+ The example uses the SQL Server 2000 Northwind database.  
+  
+ [!code-cpp[Classic WebData XmlDataDocument.CloneNode Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDataDocument.CloneNode Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlDataDocument.CloneNode Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDataDocument.CloneNode Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlDataDocument.CloneNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDataDocument.CloneNode Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateElement">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlElement CreateElement (string prefix, string localName, string namespaceURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement CreateElement(string prefix, string localName, string namespaceURI) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.CreateElement(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceURI" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The prefix of the new element. If String.Empty or <see langword="null" />, there is no prefix.</param>
+        <param name="localName">The local name of the new element.</param>
+        <param name="namespaceURI">The namespace Uniform Resource Identifier (URI) of the new element. If String.Empty or <see langword="null" />, there is no namespaceURI.</param>
+        <summary>Creates an element with the specified <see cref="P:System.Xml.XmlNode.Prefix" />, <see cref="P:System.Xml.XmlDocument.LocalName" /> , and <see cref="P:System.Xml.XmlNode.NamespaceURI" />.</summary>
+        <returns>A new <see cref="T:System.Xml.XmlElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Note to Inheritors` If you overload this function, it cannot be used for extensibility. Instead, you can return an element created by the base class, in this case, `XmlDataDocument`. See the following example.  
+  
+```  
+class MyXmlDataDocument : XmlDataDocument {  
+ public override XmlElement CreateElement(string prefix, string localName, string nsURI) {  
+   //Ensure we are returning the base class implementation of element.  
+   XmlElement e = base.CreateElement(prefix, localName, nsURI);  
+   //Add additional code here.  
+   return e;    //Return the element created by XmlDataDocument.  
+ }      
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEntityReference">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlEntityReference CreateEntityReference (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlEntityReference CreateEntityReference(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.CreateEntityReference(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlEntityReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the entity reference.</param>
+        <summary>Creates an <see cref="T:System.Xml.XmlEntityReference" /> with the specified name.</summary>
+        <returns>An <see cref="T:System.Xml.XmlEntityReference" /> with the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xml.XmlEntityReference> nodes cannot be created for <xref:System.Xml.XmlDataDocument> objects. Calling this method throws an exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Calling this method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNavigator">
+      <MemberSignature Language="C#" Value="protected override System.Xml.XPath.XPathNavigator CreateNavigator (System.Xml.XmlNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Xml.XPath.XPathNavigator CreateNavigator(class System.Xml.XmlNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.CreateNavigator(System.Xml.XmlNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.XmlNode" /> you want the navigator initially positioned on.</param>
+        <summary>Creates a new <see cref="T:System.Xml.XPath.XPathNavigator" /> object for navigating this document. The <see langword="XPathNavigator" /> is positioned on the node specified in the <paramref name="node" /> parameter.</summary>
+        <returns>An <see langword="XPathNavigator" /> used to navigate the document.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `XPathNavigator` provides read-only, random access to data. Because it is optimized for XSLT transformations, it provides performance benefits when used as an input mechanism to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
+  
+   
+  
+## Examples  
+ To see an XSLT transformation using `XmlDataDocument` and an `XPathNavigator`, see the <xref:System.Xml.Xsl.XslTransform.Transform%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSet">
+      <MemberSignature Language="C#" Value="public System.Data.DataSet DataSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataSet DataSet" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDataDocument.DataSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Data.DataSet" /> that provides a relational representation of the data in the <see langword="XmlDataDocument" />.</summary>
+        <value>A <see langword="DataSet" /> that can be used to access the data in the <see langword="XmlDataDocument" /> using a relational model.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `DataSet` enables you to access the data in the `XmlDataDocument` using a relational model. This means that you can handle the data as tables and views, rows and columns, relations, and so on. Changes made in the `DataSet` are immediately visible in the `XmlDataDocument`.  
+  
+   
+  
+## Examples  
+ The following example modifies the price of a book using the `DataSet` methods.  
+  
+ [!code-cpp[Classic WebData XmlDataDocument.DataSet Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDataDocument.DataSet Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlDataDocument.DataSet Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDataDocument.DataSet Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlDataDocument.DataSet Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDataDocument.DataSet Example/VB/source.vb#1)]  
+  
+ The example uses the following two files as input.  
+  
+ `2books.xml`  
+  
+ [!code-xml[Classic WebData XmlDataDocument.DataSet Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlDataDocument.DataSet Example/XML/source.xml#2)]  
+  
+ `store.xsd`  
+  
+ [!code-xml[Classic WebData XmlDataDocument.DataSet Example#3](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlDataDocument.DataSet Example/XML/source.xml#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementById">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlElement GetElementById (string elemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetElementById(string elemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.GetElementById(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elemId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elemId">The attribute ID to match.</param>
+        <summary>Gets the <see cref="T:System.Xml.XmlElement" /> with the specified ID. This method is not supported by the <see cref="T:System.Xml.XmlDataDocument" /> class. Calling this method throws an exception.</summary>
+        <returns>An <see cref="T:System.Xml.XmlElement" /> with the specified ID.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not supported by the <xref:System.Xml.XmlDataDocument> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Calling this method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementFromRow">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement GetElementFromRow (System.Data.DataRow r);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlElement GetElementFromRow(class System.Data.DataRow r) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.GetElementFromRow(System.Data.DataRow)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r" Type="System.Data.DataRow" />
+      </Parameters>
+      <Docs>
+        <param name="r">The <see langword="DataRow" /> whose associated <see langword="XmlElement" /> you want to retrieve.</param>
+        <summary>Retrieves the <see cref="T:System.Xml.XmlElement" /> associated with the specified <see cref="T:System.Data.DataRow" />.</summary>
+        <returns>The <see langword="XmlElement" /> containing a representation of the specified <see langword="DataRow" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example loads a `DataSet` into an `XmlDataDocument` and then creates an `XmlElement` representing the first customer record.  
+  
+ The example uses the SQL Server 2000 Northwind database.  
+  
+ [!code-cpp[Classic WebData XmlDataDocument.GetElementFromRow Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlDataDocument.GetElementFromRow Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlDataDocument.GetElementFromRow Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlDataDocument.GetElementFromRow Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlDataDocument.GetElementFromRow Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlDataDocument.GetElementFromRow Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementsByTagName">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlNodeList GetElementsByTagName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNodeList GetElementsByTagName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.GetElementsByTagName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNodeList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The qualified name to match. It is matched against the <see cref="P:System.Xml.XmlDocument.Name" /> property of the matching node. The special value "*" matches all tags.</param>
+        <summary>Returns an <see cref="T:System.Xml.XmlNodeList" /> containing a list of all descendant elements that match the specified <see cref="P:System.Xml.XmlDocument.Name" />.</summary>
+        <returns>An <see cref="T:System.Xml.XmlNodeList" /> containing a list of all matching nodes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  It is recommended that you use the <xref:System.Xml.XmlNode.SelectNodes%2A?displayProperty=fullName> or <xref:System.Xml.XmlNode.SelectSingleNode%2A?displayProperty=fullName> method instead of the <xref:System.Xml.XmlDataDocument.GetElementsByTagName%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowFromElement">
+      <MemberSignature Language="C#" Value="public System.Data.DataRow GetRowFromElement (System.Xml.XmlElement e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetRowFromElement(class System.Xml.XmlElement e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.GetRowFromElement(System.Xml.XmlElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRow</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Xml.XmlElement" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see langword="XmlElement" /> whose associated <see langword="DataRow" /> you want to retrieve.</param>
+        <summary>Retrieves the <see cref="T:System.Data.DataRow" /> associated with the specified <see cref="T:System.Xml.XmlElement" />.</summary>
+        <returns>The <see langword="DataRow" /> containing a representation of the <see langword="XmlElement" />; <see langword="null" /> if there is no <see langword="DataRow" /> associated with the <see langword="XmlElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example modifies the price of the first book.  
+  
+ [!code-cpp[XmlDataDocument.GetRowFromElement#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlDataDocument.GetRowFromElement/CPP/getrow.cpp#1)]
+ [!code-csharp[XmlDataDocument.GetRowFromElement#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlDataDocument.GetRowFromElement/CS/getrow.cs#1)]
+ [!code-vb[XmlDataDocument.GetRowFromElement#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlDataDocument.GetRowFromElement/VB/getrow.vb#1)]  
+  
+ The example uses the following input files:  
+  
+ `2books.xml`  
+  
+ [!code-xml[Classic WebData XmlDataDocument.DataSet Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlDataDocument.DataSet Example/XML/source.xml#2)]  
+  
+ `store.xsd`  
+  
+ [!code-xml[Classic WebData XmlDataDocument.DataSet Example#3](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlDataDocument.DataSet Example/XML/source.xml#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override void Load (System.IO.Stream inStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(class System.IO.Stream inStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.Load(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="inStream">The stream containing the XML document to load.</param>
+        <summary>Loads the <see langword="XmlDataDocument" /> from the specified stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `XmlDataDocument` does not support creating entity references. If the data includes entity references, the `Load` method resolves and expands any entity references.  
+  
+> [!NOTE]
+>  In order to view the XML data relationally, you must first specify a schema to use for data mapping. This can be done either by calling the <xref:System.Data.DataSet.ReadXmlSchema%2A> method or by creating the tables and columns within the `DataSet` manually. This step must be done before calling `Load`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override void Load (System.IO.TextReader txtReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(class System.IO.TextReader txtReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.Load(System.IO.TextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="txtReader" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="txtReader">The <see langword="TextReader" /> used to feed the XML data into the document.</param>
+        <summary>Loads the <see langword="XmlDataDocument" /> from the specified <see cref="T:System.IO.TextReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `XmlDataDocument` does not support creating entity references. If the data includes entity references, the `Load` method resolves and expands any entity references.  
+  
+> [!NOTE]
+>  In order to view the XML data relationally, you must first specify a schema to use for data mapping. This can be done either by calling the <xref:System.Data.DataSet.ReadXmlSchema%2A> method or by creating the tables and columns within the `DataSet` manually. This step must be done before calling `Load`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override void Load (string filename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(string filename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.Load(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">The URL of the file containing the XML document to load.</param>
+        <summary>Loads the <see langword="XmlDataDocument" /> using the specified URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `XmlDataDocument` does not support creating entity references. If the data includes entity references, the `Load` method resolves and expands any entity references.  
+  
+> [!NOTE]
+>  In order to view the XML data relationally, you must first specify a schema to use for data mapping. This can be done either by calling the <xref:System.Data.DataSet.ReadXmlSchema%2A> method or by creating the tables and columns within the `DataSet` manually. This step must be done before calling `Load`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override void Load (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.Load(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see langword="XmlReader" /> containing the XML document to load.</param>
+        <summary>Loads the <see langword="XmlDataDocument" /> from the specified <see cref="T:System.Xml.XmlReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `XmlDataDocument` does not support creating entity references. If the data source contains entity references, you must create an <xref:System.Xml.XmlValidatingReader> with the <xref:System.Xml.XmlValidatingReader.EntityHandling%2A> property set to EntityHandling.ExpandEntities (this is the default behavior) and pass the `XmlValidatingReader` to the `Load` method. If you do not use an `XmlValidatingReader`, the `Load` method throws an exception.  
+  
+ The `Load` method always preserves significant white space. The <xref:System.Xml.XmlDocument.PreserveWhitespace%2A> property determines whether or not white space is preserved. The default is `false`, white space is not preserved.  
+  
+ If the reader is in the initial state (that is, ReadState=ReadState.Initial), `Load` consumes the entire contents of the reader and builds the DOM from what it finds.  
+  
+ If the reader is already positioned on some node at depth "n", then this method loads that node and all subsequent siblings up to the end tag that closes depth "n". This has the following results.  
+  
+ If the current node and its following siblings look similar to the following:  
+  
+```  
+<!--comment--><element1>one</element1><element2>two</element2>  
+```  
+  
+ `Load` throws an exception, because a document cannot have two root-level elements. If the current node and its following siblings look similar to the following:  
+  
+```  
+<!--comment--><?process  
+    instruction?><!--comment--></endtag>  
+```  
+  
+ `Load` will succeed; however, you will have an incomplete DOM tree, because there is no root-level element. You have to add a root-level element before you save the document; otherwise, the <xref:System.Xml.XmlDocument.Save%2A> method throws an exception.  
+  
+ If the reader is positioned on a leaf node that is invalid for the root level of a document (for example, a white space or attribute node), the reader continues to read until it is positioned on a node that can be used for the root. The document begins loading at this point.  
+  
+   
+  
+## Examples  
+ The following example modifies the price of a book using the `DataSet` methods.  
+  
+ [!code-cpp[XmlDataDocument.Load#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlDataDocument.Load/CPP/loadrdr.cpp#1)]
+ [!code-csharp[XmlDataDocument.Load#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlDataDocument.Load/CS/loadrdr.cs#1)]
+ [!code-vb[XmlDataDocument.Load#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlDataDocument.Load/VB/loadrdr.vb#1)]  
+  
+ The example uses the following two input files.  
+  
+ `2books.xml`  
+  
+ [!code-xml[XmlDataDocument.Load#2](~/samples/snippets/xml/VS_Snippets_Data/XmlDataDocument.Load/XML/2books.xml#2)]  
+  
+ `store.xsd`  
+  
+ [!code-xml[XmlDataDocument.Load#3](~/samples/snippets/xml/VS_Snippets_Data/XmlDataDocument.Load/XML/test.xsd#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The XML being loaded contains entity references, and the reader cannot resolve entities.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the <see langword="XmlDataDocument" /> using the specified data source and synchronizes the <see cref="T:System.Data.DataSet" /> with the loaded data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  In order to view the XML data relationally, you must first specify a schema to use for data mapping. This can be done either by calling the <xref:System.Data.DataSet.ReadXmlSchema%2A> method or by creating the tables and columns within the `DataSet` manually. This step must be done before calling `Load`.  
+  
+ `XmlDataDocument` does not support creating entity references. If the data includes entity references, the `Load` method resolves and expands any entity references. However, if you are using the `Load` overload that takes a <xref:System.Xml.XmlReader> as an argument, you must specify an `XmlReader` that can resolve entities.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

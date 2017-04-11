@@ -38,7 +38,7 @@ feed that contains the packages.
 
 For Windows platforms, you can use the MSI. 
 
-All of the binaries can be found on the [.NET Core getting started page](https://aka.ms/dotnetcoregs) which points to the 
+All of the binaries can be found on the [.NET Core installation guide](https://aka.ms/dotnetcoregs) which points to the 
 latest stable releases. If you wish to use newer (and potentially unstable) releases or the latest, you can use the 
 links from the [CLI repo](https://github.com/dotnet/cli). 
 

@@ -1,0 +1,574 @@
+<Type Name="SqlPersistenceProviderFactory" FullName="System.ServiceModel.Persistence.SqlPersistenceProviderFactory">
+  <TypeSignature Language="C#" Value="public class SqlPersistenceProviderFactory : System.ServiceModel.Persistence.PersistenceProviderFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlPersistenceProviderFactory extends System.ServiceModel.Persistence.PersistenceProviderFactory" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Persistence.PersistenceProviderFactory</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A system-provided <see cref="T:System.ServiceModel.Persistence.PersistenceProviderFactory" /> implementation used to create a <see cref="T:System.ServiceModel.Persistence.LockingPersistenceProvider" /> instance that uses a SQL database to store persisted service state data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class represents a factory class for a fully-functional, durable service persistence provider. You can use this system-provided provider to persist and retrieve state information about a durable [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service.  
+  
+ In addition to persistence, the provider created by the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class implements locking of service state data records by inheriting from the abstract <xref:System.ServiceModel.Persistence.LockingPersistenceProvider> class.  Methods that interact with persisted data (such as <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.Create%2A> or <xref:System.ServiceModel.Persistence.LockingPersistenceProvider.Update%2A>) have an optional parameter (`lockInstance`) that defines whether locks on the data in question are released or maintained.  
+  
+> [!NOTE]
+>  <xref:System.ServiceModel.Persistence.PersistenceException> exceptions thrown by <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> do not have their exception details hidden by default. To protect against security vulnerabilities, these details can be hidden by setting <xref:System.Workflow.Activities.WorkflowServiceAttributes.IncludeExceptionDetailInFaults%2A> to `false`.  
+  
+> [!NOTE]
+>  The SQL Persistence Provider stores and retrieves data from a SQL Server database. The host must create a secure SQL Server environment to protect against attackers gaining read/write access to the instance state either in the database or on the wire between the application and the database.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (System.Collections.Specialized.NameValueCollection parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.#ctor(System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">The collection of parameters used by the new persistence provider factory. Valid parameters include <see langword="lockTimeout" />, <see langword="connectionStringName" />, and <see langword="serializeAsText" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" /> class, configured with the specified parameter collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to arbitrarily specify `lockTimeout`, `connectionString`, and `serializeAsText` without specifying the other parameters as required by the other constructors (for example, to specify the `connectionString` and `lockTimeout` parameters without specifying the `serializeAsText` parameter.)  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class using a parameters collection.  
+  
+ [!code-csharp[SqlPersistenceProviderFactory#3](~/samples/snippets/csharp/VS_Snippets_CFX/sqlpersistenceproviderfactory/cs/sqlpersistenceproviderfactory.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">The connection parameters for the new persistence provider instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" /> class, configured with the specified connection string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class using a connection string.  
+  
+ [!code-csharp[SqlPersistenceProviderFactory#2](~/samples/snippets/csharp/VS_Snippets_CFX/sqlpersistenceproviderfactory/cs/sqlpersistenceproviderfactory.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (string connectionString, bool serializeAsText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, bool serializeAsText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.#ctor(System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="serializeAsText" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">The connection parameters for the new persistence provider instance.</param>
+        <param name="serializeAsText">Specifies whether data is serialized as text rather than binary.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" /> class, configured with the specified connection string and <see langword="serializeAsText" /> parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for `serializeAsText` is `false`, which indicates that persistence information is serialized as binary data.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class.  
+  
+ [!code-csharp[SqlPersistenceProviderFactory#1](~/samples/snippets/csharp/VS_Snippets_CFX/sqlpersistenceproviderfactory/cs/sqlpersistenceproviderfactory.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlPersistenceProviderFactory (string connectionString, bool serializeAsText, TimeSpan lockTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString, bool serializeAsText, valuetype System.TimeSpan lockTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.#ctor(System.String,System.Boolean,System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="serializeAsText" Type="System.Boolean" />
+        <Parameter Name="lockTimeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">The connection parameters for the new persistence provider factory instance.</param>
+        <param name="serializeAsText">Specifies whether data is serialized as text rather than binary.</param>
+        <param name="lockTimeout">The time-out for lock ownership. Locked instances are automatically unlocked after this time period. A time-out of <see langword="TimeSpan.Zero" /> specifies that no locking is used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" /> class, configured with the specified connection string, <see langword="serializeAsText" />, and <see langword="lockTimeout" /> parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for `serializeAsText` is `false`, which indicates that persistence information is serialized as binary data.  
+  
+ The default value for `lockTimeout` is `TimeSpan.Zero`, which indicates that locking is not used. If `TimeSpan.MaxValue` is used, then locks are maintained indefinitely.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class.  
+  
+ [!code-csharp[SqlPersistenceProviderFactory#0](~/samples/snippets/csharp/VS_Snippets_CFX/sqlpersistenceproviderfactory/cs/sqlpersistenceproviderfactory.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the connection parameters for persistence provider instances created with this factory.</summary>
+        <value>The connection parameters for persistence provider instances created with this factory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to set and access the `ConnectionString` property.  
+  
+ [!code-csharp[SqlPersistenceProviderFactory#4](~/samples/snippets/csharp/VS_Snippets_CFX/sqlpersistenceproviderfactory/cs/sqlpersistenceproviderfactory.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProvider">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Persistence.PersistenceProvider CreateProvider (Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Persistence.PersistenceProvider CreateProvider(valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.CreateProvider(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Persistence.PersistenceProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="id">The unique identifier of the persistence provider being created.</param>
+        <summary>Initializes a new <see cref="T:System.ServiceModel.Persistence.LockingPersistenceProvider" /> instance that uses a SQL database as its persistence store.</summary>
+        <returns>A newly-created <see cref="T:System.ServiceModel.Persistence.PersistenceProvider" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The initialized persistence provider uses the current parameters of the creating factory (<xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.ConnectionString%2A>, <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.LockTimeout%2A>, and <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.SerializeAsText%2A>), even if the factory's parameters are changed after the persistence provider is created.  
+  
+   
+  
+## Examples  
+ The following code example shows how to execute the `CreateProvider` method. Note that the resulting provider is accessed as a <xref:System.ServiceModel.Persistence.LockingPersistenceProvider> instance.  
+  
+ [!code-csharp[SqlPersistenceProviderFactory#7](~/samples/snippets/csharp/VS_Snippets_CFX/sqlpersistenceproviderfactory/cs/sqlpersistenceproviderfactory.cs#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCloseTimeout">
+      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultCloseTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultCloseTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.DefaultCloseTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default time-out value used when persistence providers created with this factory are closed.</summary>
+        <value>The default time-out value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for close time-out is 15 seconds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOpenTimeout">
+      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultOpenTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultOpenTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.DefaultOpenTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default time-out value used when persistence provider is opened.</summary>
+        <value>The default time-out value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for open time-out is 15 seconds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan LockTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan LockTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.LockTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The time-out for lock ownership used by persistence provider instances created by this instance. Locked instances are automatically unlocked after this time period.</summary>
+        <value>The time-out value for lock ownership.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A time-out of `TimeSpan.Zero` specifies that no locking is used.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the `LockTimeout` property.  
+  
+ [!code-csharp[SqlPersistenceProviderFactory#5](~/samples/snippets/csharp/VS_Snippets_CFX/sqlpersistenceproviderfactory/cs/sqlpersistenceproviderfactory.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAbort">
+      <MemberSignature Language="C#" Value="protected override void OnAbort ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAbort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnAbort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Represents the Abort phase.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `OnAbort` fires when the service host shuts down abruptly and active commands currently being processed are closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginClose">
+      <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult OnBeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>Represents the beginning of the Close phase.</summary>
+        <returns>The state of the <see cref="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" /> asynchronous method call.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Close phase occurs when the service is closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginOpen">
+      <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginOpen (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult OnBeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>Represents the beginning of the Open phase.</summary>
+        <returns>The state of the <see cref="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" /> asynchronous method call.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Open phase occurs when the service is opened.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClose">
+      <MemberSignature Language="C#" Value="protected override void OnClose (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClose(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnClose(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <summary>Represents the Close phase.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Close phase occurs when the service is closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndClose">
+      <MemberSignature Language="C#" Value="protected override void OnEndClose (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndClose(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnEndClose(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the result of the operation.</param>
+        <summary>Represents the end of the Close phase.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Close phase occurs when the service is closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndOpen">
+      <MemberSignature Language="C#" Value="protected override void OnEndOpen (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndOpen(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnEndOpen(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the result of the operation.</param>
+        <summary>Represents the end of the Open phase.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Open phase occurs when the service is opened.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnOpen">
+      <MemberSignature Language="C#" Value="protected override void OnOpen (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnOpen(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.OnOpen(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <summary>Represents the Open phase.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Open phase occurs when the service is opened.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeAsText">
+      <MemberSignature Language="C#" Value="public bool SerializeAsText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SerializeAsText" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.SqlPersistenceProviderFactory.SerializeAsText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether data is serialized as text rather than binary in persistence providers created with this factory.</summary>
+        <value>
+          <see langword="true" /> if the service information is serialized as text; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for `serializeAsText` is `false`, which indicates that persistence information is serialized as binary data.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the `SerializeAsText` property.  
+  
+ [!code-csharp[SqlPersistenceProviderFactory#6](~/samples/snippets/csharp/VS_Snippets_CFX/sqlpersistenceproviderfactory/cs/sqlpersistenceproviderfactory.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.SqlPersistenceProviderFactory" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Overloads of the constructor for the <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory> class provide parameters for setting the following:  
+  
+-   The connection string used for accessing the SQL database.  
+  
+-   The lock time-out used for defining lock ownership duration.  
+  
+-   Whether the persistence data is serialized as XML or binary data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

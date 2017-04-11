@@ -1,0 +1,25 @@
+<Type Name="SimpleType" FullName="System.Data.Metadata.Edm.SimpleType">
+  <TypeSignature Language="C#" Value="public abstract class SimpleType : System.Data.Metadata.Edm.EdmType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SimpleType extends System.Data.Metadata.Edm.EdmType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.SimpleType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.EdmType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A base class that describes primitive types in a conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Simple Types (EDM)](http://msdn.microsoft.com/en-us/1f387687-9372-49e9-8135-cc9650bfe539) and [Simple Types (Metadata)](http://msdn.microsoft.com/en-us/ddf09722-81b5-451b-a086-1dcf25a4f7d4).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

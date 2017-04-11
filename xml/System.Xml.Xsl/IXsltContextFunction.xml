@@ -1,0 +1,158 @@
+<Type Name="IXsltContextFunction" FullName="System.Xml.Xsl.IXsltContextFunction">
+  <TypeSignature Language="C#" Value="public interface IXsltContextFunction" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXsltContextFunction" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.IXsltContextFunction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface to a given function defined in the Extensible Stylesheet Language for Transformations (XSLT) style sheet during runtime execution.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on using <xref:System.Xml.Xsl.IXsltContextFunction>, see article Q324899, "HOW TO: Implement and Use Custom Functions When You Execute XPath Queries in Visual Basic .NET" in the Microsoft Knowledge Base at http://support.microsoft.com.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ArgTypes">
+      <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathResultType[] ArgTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XPath.XPathResultType[] ArgTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.ArgTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathResultType[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the supplied XML Path Language (XPath) types for the function's argument list. This information can be used to discover the signature of the function which allows you to differentiate between overloaded functions.</summary>
+        <value>An array of <see cref="T:System.Xml.XPath.XPathResultType" /> representing the types for the function's argument list.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public object Invoke (System.Xml.Xsl.XsltContext xsltContext, object[] args, System.Xml.XPath.XPathNavigator docContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(class System.Xml.Xsl.XsltContext xsltContext, object[] args, class System.Xml.XPath.XPathNavigator docContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.IXsltContextFunction.Invoke(System.Xml.Xsl.XsltContext,System.Object[],System.Xml.XPath.XPathNavigator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xsltContext" Type="System.Xml.Xsl.XsltContext" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="docContext" Type="System.Xml.XPath.XPathNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="xsltContext">The XSLT context for the function call.</param>
+        <param name="args">The arguments of the function call. Each argument is an element in the array.</param>
+        <param name="docContext">The context node for the function call.</param>
+        <summary>Provides the method to invoke the function with the given arguments in the given context.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the return value of the function.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `docContext` parameter is required so that functions which require a node set can be supplied the current context node.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maxargs">
+      <MemberSignature Language="C#" Value="public int Maxargs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Maxargs" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.Maxargs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of arguments for the function. This enables the user to differentiate between overloaded functions.</summary>
+        <value>The maximum number of arguments for the function.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minargs">
+      <MemberSignature Language="C#" Value="public int Minargs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Minargs" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.Minargs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the minimum number of arguments for the function. This enables the user to differentiate between overloaded functions.</summary>
+        <value>The minimum number of arguments for the function.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathResultType ReturnType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XPath.XPathResultType ReturnType" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathResultType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xml.XPath.XPathResultType" /> representing the XPath type returned by the function.</summary>
+        <value>An <see cref="T:System.Xml.XPath.XPathResultType" /> representing the XPath type returned by the function</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,167 @@
+<Type Name="ClientSideProviderDescription" FullName="System.Windows.Automation.ClientSideProviderDescription">
+  <TypeSignature Language="C#" Value="public struct ClientSideProviderDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ClientSideProviderDescription extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ClientSideProviderDescription" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes the scope of a client-side UI Automation provider so that it can be registered with the UI Automation client application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientSideProviderDescription (System.Windows.Automation.ClientSideProviderFactoryCallback clientSideProviderFactoryCallback, string className);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.ClientSideProviderFactoryCallback clientSideProviderFactoryCallback, string className) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ClientSideProviderDescription.#ctor(System.Windows.Automation.ClientSideProviderFactoryCallback,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientSideProviderFactoryCallback" Type="System.Windows.Automation.ClientSideProviderFactoryCallback" />
+        <Parameter Name="className" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clientSideProviderFactoryCallback">The method that creates the client-side provider for a window.</param>
+        <param name="className">The class name of the windows that the provider is used for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ClientSideProviderDescription" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When UI Automation encounters a window of class `className`, it calls `clientSideProviderFactoryCallback` to create an instance of the client-side provider.  
+  
+ If `className` is `null`, the provider is used for all windows for which no other provider is found.  
+  
+   
+  
+## Examples  
+ For example code, see [Create a Client-Side UI Automation Provider](~/docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientSideProviderDescription (System.Windows.Automation.ClientSideProviderFactoryCallback clientSideProviderFactoryCallback, string className, string imageName, System.Windows.Automation.ClientSideProviderMatchIndicator flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.ClientSideProviderFactoryCallback clientSideProviderFactoryCallback, string className, string imageName, valuetype System.Windows.Automation.ClientSideProviderMatchIndicator flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ClientSideProviderDescription.#ctor(System.Windows.Automation.ClientSideProviderFactoryCallback,System.String,System.String,System.Windows.Automation.ClientSideProviderMatchIndicator)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientSideProviderFactoryCallback" Type="System.Windows.Automation.ClientSideProviderFactoryCallback" />
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="imageName" Type="System.String" />
+        <Parameter Name="flags" Type="System.Windows.Automation.ClientSideProviderMatchIndicator" />
+      </Parameters>
+      <Docs>
+        <param name="clientSideProviderFactoryCallback">The method that creates the client-side provider for a window.</param>
+        <param name="className">The class name of the window that the provider is used for.</param>
+        <param name="imageName">The name of the executable or DLL for the process where the window resides.</param>
+        <param name="flags">Flags that specify behavior when matching window class names.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.ClientSideProviderDescription" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] encounters a window of class `className` within the process specified by `imageName`, it calls `clientSideProviderFactoryCallback` to create an instance of the client-side provider.  
+  
+ If `className` is `null`, the provider is used for all windows for which no other provider is found.  
+  
+ If `imageName` is `null`, the provider is used for all processes containing the window class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassName">
+      <MemberSignature Language="C#" Value="public string ClassName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClassName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ClientSideProviderDescription.ClassName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the class name of the windows that the provider is used for.</summary>
+        <value>The window class name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Automation.ClientSideProviderDescription.ClassName%2A> is `null`, the provider is called for all windows for which no other provider is found.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientSideProviderFactoryCallback">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.ClientSideProviderFactoryCallback ClientSideProviderFactoryCallback { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.ClientSideProviderFactoryCallback ClientSideProviderFactoryCallback" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ClientSideProviderDescription.ClientSideProviderFactoryCallback" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ClientSideProviderFactoryCallback</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the method that creates the client-side provider.</summary>
+        <value>The callback method.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.ClientSideProviderMatchIndicator Flags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ClientSideProviderMatchIndicator Flags" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ClientSideProviderDescription.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ClientSideProviderMatchIndicator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the flags that specify behavior when matching window class names.</summary>
+        <value>A bitwise combination of values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageName">
+      <MemberSignature Language="C#" Value="public string ImageName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImageName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ClientSideProviderDescription.ImageName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the executable or [!INCLUDE[TLA#tla_dll](~/includes/tlasharptla-dll-md.md)] for the process where the window resides.</summary>
+        <value>The image name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

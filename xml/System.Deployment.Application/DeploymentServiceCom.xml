@@ -1,0 +1,196 @@
+<Type Name="DeploymentServiceCom" FullName="System.Deployment.Application.DeploymentServiceCom">
+  <TypeSignature Language="C#" Value="public class DeploymentServiceCom" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit DeploymentServiceCom extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentServiceCom" />
+  <AssemblyInfo>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("20FD4E26-8E0F-4F73-A0E0-F27B8C57BE6F")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides internal services for the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment API.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeploymentServiceCom ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Deployment.Application.DeploymentServiceCom" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateApplicationExtension">
+      <MemberSignature Language="C#" Value="public void ActivateApplicationExtension (string textualSubId, string deploymentProviderUrl, string targetAssociatedFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateApplicationExtension(string textualSubId, string deploymentProviderUrl, string targetAssociatedFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateApplicationExtension(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textualSubId" Type="System.String" />
+        <Parameter Name="deploymentProviderUrl" Type="System.String" />
+        <Parameter Name="targetAssociatedFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textualSubId">The internal ID of the deployment.</param>
+        <param name="deploymentProviderUrl">The URL of the deployment.</param>
+        <param name="targetAssociatedFile">The target file.</param>
+        <summary>Activates an application extension.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateDeployment">
+      <MemberSignature Language="C#" Value="public void ActivateDeployment (string deploymentLocation, bool isShortcut);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateDeployment(string deploymentLocation, bool isShortcut) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateDeployment(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deploymentLocation" Type="System.String" />
+        <Parameter Name="isShortcut" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="deploymentLocation">The location of the deployment manifest on disk.</param>
+        <param name="isShortcut">Whether <c>deploymentLocation</c> is a shortcut, or the actual file.</param>
+        <summary>Starts the deployment on the client computer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateDeploymentEx">
+      <MemberSignature Language="C#" Value="public void ActivateDeploymentEx (string deploymentLocation, int unsignedPolicy, int signedPolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateDeploymentEx(string deploymentLocation, int32 unsignedPolicy, int32 signedPolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateDeploymentEx(System.String,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deploymentLocation" Type="System.String" />
+        <Parameter Name="unsignedPolicy" Type="System.Int32" />
+        <Parameter Name="signedPolicy" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="deploymentLocation">The location of the deployment manifest.</param>
+        <param name="unsignedPolicy">The policy to use for unsigned applications.</param>
+        <param name="signedPolicy">The policy to use for signed applications.</param>
+        <summary>Starts the deployment on the client computer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckForDeploymentUpdate">
+      <MemberSignature Language="C#" Value="public void CheckForDeploymentUpdate (string textualSubId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckForDeploymentUpdate(string textualSubId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.CheckForDeploymentUpdate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textualSubId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textualSubId">An internal identifier for the deployment.</param>
+        <summary>Checks the update location to determine whether an updated version of this deployment exists.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CleanOnlineAppCache">
+      <MemberSignature Language="C#" Value="public void CleanOnlineAppCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CleanOnlineAppCache() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all online-only [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications that are installed on a computer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndServiceRightNow">
+      <MemberSignature Language="C#" Value="public void EndServiceRightNow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndServiceRightNow() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.EndServiceRightNow" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stops a deployment update immediately.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaintainSubscription">
+      <MemberSignature Language="C#" Value="public void MaintainSubscription (string textualSubId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MaintainSubscription(string textualSubId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.MaintainSubscription(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textualSubId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textualSubId">The internal ID of the deployment.</param>
+        <summary>Maintains the update subscription.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

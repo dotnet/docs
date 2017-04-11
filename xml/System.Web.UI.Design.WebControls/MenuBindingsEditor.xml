@@ -1,0 +1,128 @@
+<Type Name="MenuBindingsEditor" FullName="System.Web.UI.Design.WebControls.MenuBindingsEditor">
+  <TypeSignature Language="C#" Value="public class MenuBindingsEditor : System.Drawing.Design.UITypeEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuBindingsEditor extends System.Drawing.Design.UITypeEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MenuBindingsEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Design.UITypeEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a component editor for the <see cref="P:System.Web.UI.WebControls.Menu.DataBindings" /> collection of the associated <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.MenuItemBinding> elements of the <xref:System.Web.UI.WebControls.Menu.DataBindings%2A> collection within the associated <xref:System.Web.UI.WebControls.Menu> control.  
+  
+ The <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor> object is invoked by selecting the ellipsis (**…**) button on the **DataBindings** property in the **Properties** grid of the visual designer, or by choosing **Edit Menu Items** from the **Common Tasks** context menu on the control.  
+  
+ The <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor.EditValue%2A> method edits the values of the data bindings collection of the associated <xref:System.Web.UI.WebControls.Menu> control. The <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor.GetEditStyle%2A> method gets the editing style that is associated with this editor.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.ComponentModel.EditorAttribute> attribute to associate the <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor> class and the <xref:System.Drawing.Design.UITypeEditor> class (the bindings editor base class) with a property in a custom control, derived from the <xref:System.Web.UI.WebControls.WebControl> class, that gets and sets a <xref:System.Web.UI.WebControls.MenuItemCollection> collection.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.MenuEditors#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.MenuEditors/CS/MenuEditors.cs#2)]
+ [!code-vb[System.Web.UI.Design.WebControls.MenuEditors#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.MenuEditors/VB/MenuEditors.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MenuBindingsEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuBindingsEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.MenuBindingsEditor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor> class when you select the ellipsis (**…**) button on the **DataBindings** property in the **Properties** grid of the visual designer, or by choosing **Edit Menu Items** from the **Common Tasks** context menu on the control, when designing the associated <xref:System.Web.UI.WebControls.Menu> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditValue">
+      <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuBindingsEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface that is used to acquire context information.</param>
+        <param name="provider">An object implementing the <see cref="T:System.IServiceProvider" /> interface, through which editing services can be obtained.</param>
+        <param name="value">The object to edit the value for.</param>
+        <summary>Edits the value of the data bindings collection of the associated <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
+        <returns>The new <paramref name="value" />; otherwise, if the value of the object has not changed, <paramref name="value" /> unchanged.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor.EditValue%2A> method extracts the associated <xref:System.Web.UI.WebControls.Menu> control and the <xref:System.Web.UI.Design.WebControls.MenuDesigner> object that is associated with that control from the `context` parameter. Then the <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor.EditValue%2A> method calls back on the <xref:System.Web.UI.Design.WebControls.MenuDesigner> object to display an editing dialog box that is used to edit the <xref:System.Web.UI.WebControls.MenuItemBindingCollection> collection of the <xref:System.Web.UI.WebControls.Menu> control.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <paramref name="provider" /> parameter is not used by this implementation of the <see cref="M:System.Web.UI.Design.WebControls.MenuBindingsEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method but is available for you to override in derived classes</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditStyle">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Design.UITypeEditorEditStyle GetEditStyle (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuBindingsEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object implementing the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> interface that indicates the context of the object being edited.</param>
+        <summary>Gets the editing style that is associated with this editor.</summary>
+        <returns>The editing style that is associated with this editor.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor.GetEditStyle%2A> method always returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value, which indicates that the editor user interface (UI) is a modal dialog box.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <paramref name="context" /> parameter is not used by this implementation of the <see cref="M:System.Web.UI.Design.WebControls.MenuBindingsEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" /> method but is available for you to override in derived classes</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

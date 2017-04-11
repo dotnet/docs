@@ -1,0 +1,129 @@
+<Type Name="Rule" FullName="System.Data.Rule">
+  <TypeSignature Language="C#" Value="public enum Rule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Rule extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Rule" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the action that occurs when a <see cref="T:System.Data.ForeignKeyConstraint" /> is enforced.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Rule> values are set to the <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> and the <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> properties of a <xref:System.Data.ForeignKeyConstraint> object found in a <xref:System.Data.DataTable> object's <xref:System.Data.ConstraintCollection>.  
+  
+ The <xref:System.Data.Rule> values determine the action that occurs when a value in a column is either deleted or updated. Of the two, deleting a value is the more critical and demanding of attention when setting a rule.  
+  
+ In the case where a value is deleted, `Cascade` specifies that all rows containing that value are also deleted. `SetNull` specifies that values in all child columns are set to null values. `SetDefault` specifies that all child columns be set to the default value for the column. `None` specifies that no action will occur, but exceptions are generated.  
+  
+ In the case where a value is updated, `Cascade` specifies that all child columns are likewise updated with the new value. `SetNull` specifies that all child columns be set to null values. `SetDefault` specifies that all child column values be set to the default value. `None` specifies that no action be taken, but exceptions are generated.  
+  
+ Constraints on a <xref:System.Data.DataSet> are not enforced unless the <xref:System.Data.DataSet.EnforceConstraints%2A> property is `true`.  
+  
+ When the <xref:System.Data.DataTable.AcceptChanges%2A> method is called, the <xref:System.Data.ForeignKeyConstraint.AcceptRejectRule%2A> further determines what action occurs.  
+  
+   
+  
+## Examples  
+ [!code-vb[Classic WebData ForeignKeyConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData ForeignKeyConstraint Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cascade">
+      <MemberSignature Language="C#" Value="Cascade" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Rule Cascade = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Rule.Cascade" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Rule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Delete or update related rows. This is the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Rule None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Rule.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Rule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No action taken on related rows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefault">
+      <MemberSignature Language="C#" Value="SetDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Rule SetDefault = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Rule.SetDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Rule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set values in related rows to the value contained in the <see cref="P:System.Data.DataColumn.DefaultValue" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNull">
+      <MemberSignature Language="C#" Value="SetNull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Rule SetNull = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Rule.SetNull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Rule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set values in related rows to <see langword="DBNull" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

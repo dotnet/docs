@@ -1,0 +1,58 @@
+<Type Name="CodeTypeReferenceOptions" FullName="System.CodeDom.CodeTypeReferenceOptions">
+  <TypeSignature Language="C#" Value="public enum CodeTypeReferenceOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CodeTypeReferenceOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeReferenceOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how the code type reference is to be resolved.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GenericTypeParameter">
+      <MemberSignature Language="C#" Value="GenericTypeParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeTypeReferenceOptions GenericTypeParameter = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeTypeReferenceOptions.GenericTypeParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReferenceOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Resolve the type from the type parameter.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalReference">
+      <MemberSignature Language="C#" Value="GlobalReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeTypeReferenceOptions GlobalReference = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeTypeReferenceOptions.GlobalReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReferenceOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Resolve the type from the root namespace.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,18 @@
+<Type Name="RangeErrorObject" FullName="Microsoft.JScript.RangeErrorObject">
+  <TypeSignature Language="C#" Value="public sealed class RangeErrorObject : Microsoft.JScript.ErrorObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RangeErrorObject extends Microsoft.JScript.ErrorObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.RangeErrorObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ErrorObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a range error. For example, a range error can occur when you use an incorrect index to access an array element.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

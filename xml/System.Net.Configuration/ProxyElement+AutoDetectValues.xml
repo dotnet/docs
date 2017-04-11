@@ -1,0 +1,66 @@
+<Type Name="ProxyElement+AutoDetectValues" FullName="System.Net.Configuration.ProxyElement+AutoDetectValues">
+  <TypeSignature Language="C#" Value="public enum ProxyElement.AutoDetectValues" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ProxyElement/AutoDetectValues extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ProxyElement.AutoDetectValues" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the proxy is automatically detected.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="False">
+      <MemberSignature Language="C#" Value="False" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.ProxyElement/AutoDetectValues False = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.AutoDetectValues.False" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.ProxyElement+AutoDetectValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The proxy is not automatically detected.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="True">
+      <MemberSignature Language="C#" Value="True" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.ProxyElement/AutoDetectValues True = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.AutoDetectValues.True" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.ProxyElement+AutoDetectValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The proxy is automatically detected.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.ProxyElement/AutoDetectValues Unspecified = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.AutoDetectValues.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.ProxyElement+AutoDetectValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unspecified.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

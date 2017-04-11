@@ -1,0 +1,216 @@
+<Type Name="IControlDesignerView" FullName="System.Web.UI.Design.IControlDesignerView">
+  <TypeSignature Language="C#" Value="public interface IControlDesignerView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IControlDesignerView" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IControlDesignerView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for access to the visual representation and content of a control at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is intended for use by design host developers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContainingRegion">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.DesignerRegion ContainingRegion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerRegion ContainingRegion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IControlDesignerView.ContainingRegion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.DesignerRegion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the designer region that contains the associated control, if any.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.DesignerRegion" /> object if the associated control is contained in a designer region; otherwise <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetBounds (System.Web.UI.Design.DesignerRegion region);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Drawing.Rectangle GetBounds(class System.Web.UI.Design.DesignerRegion region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerView.GetBounds(System.Web.UI.Design.DesignerRegion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.Web.UI.Design.DesignerRegion" />
+      </Parameters>
+      <Docs>
+        <param name="region">The <see cref="T:System.Web.UI.Design.DesignerRegion" /> for which you want to retrieve the bounds.</param>
+        <summary>Retrieves the outer bounds of the designer view.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> containing information about the location and measurements of the view at design time.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalidate">
+      <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invalidate(valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerView.Invalidate(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">A <see cref="T:System.Drawing.Rectangle" /> representing the location and outer measurements of the view on the design surface. The coordinate-system origin for this rectangle is the top-left corner of the element to which the behavior is attached.</param>
+        <summary>Notifies the design host that the area represented by the provided rectangle needs to be repainted on the design surface.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamingContainerDesigner">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.IDesigner NamingContainerDesigner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.IDesigner NamingContainerDesigner" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IControlDesignerView.NamingContainerDesigner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.IDesigner</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the designer component for the naming container of the associated control, if any.</summary>
+        <value>An IDesigner object representing the designer component for the naming container for the associated control; otherwise <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFlags">
+      <MemberSignature Language="C#" Value="public void SetFlags (System.Web.UI.Design.ViewFlags viewFlags, bool setFlag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFlags(valuetype System.Web.UI.Design.ViewFlags viewFlags, bool setFlag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerView.SetFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewFlags" Type="System.Web.UI.Design.ViewFlags" />
+        <Parameter Name="setFlag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="viewFlags">A member of the <see cref="T:System.Web.UI.Design.ViewFlags" /> enumeration.</param>
+        <param name="setFlag">
+          <see langword="true" /> to set the flag, <see langword="false" /> to cancel the flag.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IControlDesignerView.SetFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRegionContent">
+      <MemberSignature Language="C#" Value="public void SetRegionContent (System.Web.UI.Design.EditableDesignerRegion region, string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetRegionContent(class System.Web.UI.Design.EditableDesignerRegion region, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerView.SetRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="region">A <see cref="T:System.Web.UI.Design.DesignerRegion" /> into which the content is to be put.</param>
+        <param name="content">The HTML markup to be put into the designer region.</param>
+        <summary>Puts the provided content into the provided designer region.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsRegions">
+      <MemberSignature Language="C#" Value="public bool SupportsRegions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsRegions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IControlDesignerView.SupportsRegions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether designer regions are supported.</summary>
+        <value>
+          <see langword="true" /> if designer regions are supported; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Update() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IControlDesignerView.Update" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes the associated control to redraw the invalidated regions within its client area.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewEvent">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.Design.ViewEventHandler ViewEvent;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.Design.ViewEventHandler ViewEvent" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IControlDesignerView.ViewEvent" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event raised by the design host for the view and designer component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> is raised by the design host if any of the following occur:  
+  
+-   The user clicks on the view in the design host,  
+  
+-   The design host repaints the client region on the design surface,  
+  
+-   The user has elected to change the editing mode of an editable region corresponding to a template.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

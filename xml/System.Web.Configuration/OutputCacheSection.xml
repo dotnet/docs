@@ -1,0 +1,316 @@
+<Type Name="OutputCacheSection" FullName="System.Web.Configuration.OutputCacheSection">
+  <TypeSignature Language="C#" Value="public sealed class OutputCacheSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputCacheSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.OutputCacheSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Configures the output cache for a Web application. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.OutputCacheSection> class allows you to programmatically access and modify the `OutputCache` section.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OutputCacheSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.OutputCacheSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.OutputCacheSection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.OutputCacheSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.OutputCacheSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultProviderName">
+      <MemberSignature Language="C#" Value="public string DefaultProviderName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.DefaultProviderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("defaultProvider", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the ASP.NET default output-cache provider that is stored in the <see cref="T:System.Web.Configuration.OutputCacheSection" /> element of a configuration file.</summary>
+        <value>The name of the default provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default output-cache provider for ASP.NET is not a provider of type <xref:System.Web.Caching.OutputCacheProvider>. It is the original, in-memory provider that is used by ASP.NET for output caching. The default value is `AspNetInternalProvider`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableFragmentCache">
+      <MemberSignature Language="C#" Value="public bool EnableFragmentCache { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableFragmentCache" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.EnableFragmentCache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enableFragmentCache", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the fragment cache is enabled.</summary>
+        <value>
+          <see langword="true" /> if the fragment cache is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no user control output is cached, regardless of the [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.OutputCacheSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#4)]
+ [!code-vb[System.Web.Configuration.OutputCacheSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableKernelCacheForVaryByStar">
+      <MemberSignature Language="C#" Value="public bool EnableKernelCacheForVaryByStar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableKernelCacheForVaryByStar" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enableKernelCacheForVaryByStar", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether kernel caching is enabled.</summary>
+        <value>
+          <see langword="true" /> if kernel caching is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If static compression is enabled for the request but the client requested an uncompressed response, then kernel caching is disabled. Only compressed responses are cached in kernel.  
+  
+ Setting the <xref:System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar%2A> property to `true` doesn’t ensure kernel caching of responses. Modules in the processing pipeline must set the kernel cache policy.  
+  
+ <xref:System.Web.Configuration.OutputCacheSection.EnableKernelCacheForVaryByStar%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableOutputCache">
+      <MemberSignature Language="C#" Value="public bool EnableOutputCache { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableOutputCache" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.EnableOutputCache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enableOutputCache", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the output cache is enabled.</summary>
+        <value>
+          <see langword="true" /> if the output cache is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.Configuration.OutputCacheSection.EnableFragmentCache%2A> property is set to `false`, no page is cached on the server, regardless of the settings in [@ OutputCache](http://msdn.microsoft.com/en-us/28a9e101-fb44-4198-9cb6-b8a52312fec2) directive or caching profile used by the page. For more information, see <xref:System.Web.Configuration.OutputCacheSettingsSection> and <xref:System.Web.Configuration.OutputCacheProfile>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.EnableOutputCache%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.OutputCacheSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#3)]
+ [!code-vb[System.Web.Configuration.OutputCacheSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OmitVaryStar">
+      <MemberSignature Language="C#" Value="public bool OmitVaryStar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OmitVaryStar" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.OmitVaryStar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("omitVaryStar", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see langword="vary" /> header is enabled.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="vary" /> header is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `vary` header indicates the request-header fields that the server uses to determine which of multiple cached responses are sent in response to a client request. The default for the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> property is `false`. By default, ASP.NET sends the `vary` header in all `POST` requests, as well as in all GET-request query strings. If the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> is `true`, ASP.NET omits the `vary` header when returning the response for cached pages, provided that the `GET` request to a response is cached with no `VaryByCustom` property and the `POST` request to a response is cached with no `VaryByParam` property and no `VaryByCustom` property.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.OmitVaryStar%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.OutputCacheSection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#5)]
+ [!code-vb[System.Web.Configuration.OutputCacheSection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettingsCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettingsCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("providers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of output-cache providers that are stored in the <see cref="T:System.Web.Configuration.OutputCacheSection" /> element of a configuration file.</summary>
+        <value>The collection of providers.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendCacheControlHeader">
+      <MemberSignature Language="C#" Value="public bool SendCacheControlHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SendCacheControlHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("sendCacheControlHeader", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see langword="cache-control:private" /> header is sent by the output cache module by default.</summary>
+        <value>
+          <see langword="true" /> if the sending of <see langword="cache-control:private" /> header is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader%2A> applies to content with no output caching specified. When it is set to `false`, the `cache-control:private` header is not sent by default.  
+  
+> [!NOTE]
+>  This setting enables the content to be cached on the client by default.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.OutputCacheSection.SendCacheControlHeader%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.OutputCacheSection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/CS/OutputCacheSection.cs#6)]
+ [!code-vb[System.Web.Configuration.OutputCacheSection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.OutputCacheSection/VB/OutputCacheSection.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,139 @@
+<Type Name="DebuggerBrowsableAttribute" FullName="System.Diagnostics.DebuggerBrowsableAttribute">
+  <TypeSignature Language="C#" Value="public sealed class DebuggerBrowsableAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DebuggerBrowsableAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggerBrowsableAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Determines if and how a member is displayed in the debugger variable windows. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  In .NET Framework version 2.0, the <xref:System.Diagnostics.DebuggerBrowsableAttribute> class is not supported by Visual Basic. Using C#, you can add expansions for custom data using the <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, and <xref:System.Diagnostics.DebuggerBrowsableAttribute>. Visual Basic supports the <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute but not the <xref:System.Diagnostics.DebuggerBrowsableAttribute> attribute.  
+  
+ This attribute can be applied only as a single instance to properties and fields. It cannot be applied to assemblies.  
+  
+ The constructor for this attribute takes one of the <xref:System.Diagnostics.DebuggerBrowsableState> enumeration values, which specifies one of the following states:  
+  
+-   <xref:System.Diagnostics.DebuggerBrowsableState> indicates that the member is not displayed in the data window.  For example, using this value for the <xref:System.Diagnostics.DebuggerBrowsableAttribute> on a field removes the field from the hierarchy; the field is not displayed when you expand the enclosing type by clicking the plus sign (+) for the type instance.  
+  
+-   <xref:System.Diagnostics.DebuggerBrowsableState> indicates that the member is displayed but not expanded by default.  This is the default behavior.  
+  
+-   <xref:System.Diagnostics.DebuggerBrowsableState> indicates that the member itself is not shown, but its constituent objects are displayed if it is an array or collection.  
+  
+ For an example of the use of this attribute and the <xref:System.Diagnostics.DebuggerDisplayAttribute> and <xref:System.Diagnostics.DebuggerTypeProxyAttribute> attributes, see the example provided for the <xref:System.Diagnostics.DebuggerDisplayAttribute> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DebuggerBrowsableAttribute (System.Diagnostics.DebuggerBrowsableState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.DebuggerBrowsableState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerBrowsableAttribute.#ctor(System.Diagnostics.DebuggerBrowsableState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Diagnostics.DebuggerBrowsableState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the <see cref="T:System.Diagnostics.DebuggerBrowsableState" /> values that specifies how to display the member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DebuggerBrowsableAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute can be applied only to properties and fields.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of a <xref:System.Diagnostics.DebuggerBrowsableAttribute> attribute to instruct the debugger to not display the root (property name) of the `Keys` property, but to display the elements of the array that `Keys` gets. This code example is part of a larger example provided for the <xref:System.Diagnostics.DebuggerDisplayAttribute> class.  
+  
+ [!code-cpp[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/cpp/program.cpp#6)]
+ [!code-csharp[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/CS/program.cs#6)]
+ [!code-vb[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/VB/module1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="state" /> is not one of the <see cref="T:System.Diagnostics.DebuggerBrowsableState" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.DebuggerBrowsableState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.DebuggerBrowsableState State" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.DebuggerBrowsableAttribute.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggerBrowsableState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the display state for the attribute.</summary>
+        <value>One of the <see cref="T:System.Diagnostics.DebuggerBrowsableState" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.DebuggerBrowsableAttribute.%23ctor%2A> constructor uses the value of the `state` parameter to set this value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,788 @@
+<Type Name="PerformanceCounterType" FullName="System.Diagnostics.PerformanceCounterType">
+  <TypeSignature Language="C#" Value="public enum PerformanceCounterType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PerformanceCounterType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Diagnostics.AlphabeticalEnumConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the formula used to calculate the <see cref="M:System.Diagnostics.PerformanceCounter.NextValue" /> method for a <see cref="T:System.Diagnostics.PerformanceCounter" /> instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some counter types represent raw data, while others represent calculated values that are based on one or more counter samples. The following categories classify the types of counters available.  
+  
+-   Average: measure a value over time and display the average of the last two measurements. Associated with each average counter is a base counter that tracks the number of samples involved.  
+  
+-   Difference: subtract the last measurement from the previous one and display the difference, if it is positive; if negative, they display a zero.  
+  
+-   Instantaneous: display the most recent measurement.  
+  
+-   Percentage: display calculated values as a percentage.  
+  
+-   Rate: sample an increasing count of events over time and divide the change in count values by the change in time to display a rate of activity.  
+  
+ When sampling performance counter data, using a counter type that represents an average can make raw data values meaningful for your use. For example, the raw data counter `NumberOfItems64` can expose data that is fairly random from sample to sample. The formula for an average calculation of the values that the counter returns would be (X 0 +X 1 +…+X n)/n, where each X i is a raw counter sample.  
+  
+ Rate counters are similar to average counters, but more useful for situations in which the rate increases as a resource is used. A formula that quickly calculates the average is ((X n -X 0)/(T n -T 0)) / frequency, where each X i is a counter sample and each T i is the time that the corresponding sample was taken. The result is the average usage per second.  
+  
+> [!NOTE]
+>  Unless otherwise indicated, the time base is seconds.  
+  
+ When instrumenting applications (creating and writing custom performance counters), you might be working with performance counter types that rely on an accompanying base counter that is used in the calculations. The base counter must be immediately after its associated counter in the <xref:System.Diagnostics.CounterCreationDataCollection> collection your application uses. The following table lists the base counter types with their corresponding performance counter types.  
+  
+|Base counter type|Performance counter types|  
+|-----------------------|-------------------------------|  
+|`AverageBase`|`AverageTimer32`<br /><br /> `AverageCount64`|  
+|`CounterMultiBase`|`CounterMultiTimer`<br /><br /> `CounterMultiTimerInverse`<br /><br /> `CounterMultiTimer100Ns`<br /><br /> `CounterMultiTimer100NsInverse`|  
+|`RawBase`|`RawFraction`|  
+|`SampleBase`|`SampleFraction`|  
+  
+   
+  
+## Examples  
+ The following examples demonstrate several of the counter types in the <xref:System.Diagnostics.PerformanceCounterType> enumeration.  
+  
+ `AverageCount64`  
+  
+ [!code-cpp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CPP/averagecount32.cpp#1)]
+ [!code-csharp[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/CS/averagecount32.cs#1)]
+ [!code-vb[PerformanceCounterType.AverageCounter64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageCounter64/VB/averagecount32.vb#1)]  
+  
+ `AverageTimer32`  
+  
+ [!code-cpp[PerformanceCounterType.AverageTimer32#2](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.AverageTimer32/CPP/averagetimer32.cpp#2)]
+ [!code-csharp[PerformanceCounterType.AverageTimer32#2](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.AverageTimer32/CS/averagetimer32.cs#2)]
+ [!code-vb[PerformanceCounterType.AverageTimer32#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.AverageTimer32/VB/averagetimer32.vb#2)]  
+  
+ `ElapsedTime`  
+  
+ [!code-cpp[PerformanceCounterType.ElapsedTime#2](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.ElapsedTime/CPP/elapsedtime.cpp#2)]
+ [!code-csharp[PerformanceCounterType.ElapsedTime#2](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.ElapsedTime/CS/elapsedtime.cs#2)]
+ [!code-vb[PerformanceCounterType.ElapsedTime#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.ElapsedTime/VB/elapsedtime.vb#2)]  
+  
+ `NumberOfItems32`  
+  
+ [!code-cpp[PerformanceCounterType.NumberOfItems32#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.NumberOfItems32/CPP/numberofitems32.cpp#1)]
+ [!code-csharp[PerformanceCounterType.NumberOfItems32#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.NumberOfItems32/CS/numberofitems32.cs#1)]
+ [!code-vb[PerformanceCounterType.NumberOfItems32#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.NumberOfItems32/VB/numberofitems32.vb#1)]  
+  
+ `NumberOfItems64`  
+  
+ [!code-cpp[PerformanceCounterType.NumberOfItems64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.NumberOfItems64/CPP/numberofitems64.cpp#1)]
+ [!code-csharp[PerformanceCounterType.NumberOfItems64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.NumberOfItems64/CS/numberofitems64.cs#1)]
+ [!code-vb[PerformanceCounterType.NumberOfItems64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.NumberOfItems64/VB/numberofitems64.vb#1)]  
+  
+ `SampleFraction`  
+  
+ [!code-csharp[PerformanceCounterType.SampleFraction#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.SampleFraction/CS/program.cs#1)]
+ [!code-vb[PerformanceCounterType.SampleFraction#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.SampleFraction/VB/program.vb#1)]  
+  
+ `RateOfCountsPerSecond32`  
+  
+ [!code-cpp[PerformanceCounterType.RateOfCountsPerSecond#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.RateOfCountsPerSecond/CPP/rateofcountspersecond32.cpp#1)]
+ [!code-csharp[PerformanceCounterType.RateOfCountsPerSecond#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.RateOfCountsPerSecond/CS/rateofcountspersecond32.cs#1)]
+ [!code-vb[PerformanceCounterType.RateOfCountsPerSecond#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.RateOfCountsPerSecond/VB/rateofcountspersecond32.vb#1)]  
+  
+ `RateOfCountsPerSecond64`  
+  
+ [!code-cpp[PerformanceCounterType.RateOfCountsPerSecond64#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.RateOfCountsPerSecond64/CPP/rateofcountspersecond64.cpp#1)]
+ [!code-csharp[PerformanceCounterType.RateOfCountsPerSecond64#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.RateOfCountsPerSecond64/CS/rateofcountspersecond64.cs#1)]
+ [!code-vb[PerformanceCounterType.RateOfCountsPerSecond64#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.RateOfCountsPerSecond64/VB/rateofcountspersecond64.vb#1)]  
+  
+ `RawFraction`  
+  
+ [!code-cpp[PerformanceCounterType.RawFraction#1](~/samples/snippets/cpp/VS_Snippets_CLR/PerformanceCounterType.RawFraction/CPP/rawfraction.cpp#1)]
+ [!code-csharp[PerformanceCounterType.RawFraction#1](~/samples/snippets/csharp/VS_Snippets_CLR/PerformanceCounterType.RawFraction/CS/rawfraction.cs#1)]
+ [!code-vb[PerformanceCounterType.RawFraction#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PerformanceCounterType.RawFraction/VB/rawfraction.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AverageBase">
+      <MemberSignature Language="C#" Value="AverageBase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType AverageBase = int32(1073939458)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.AverageBase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A base counter that is used in the calculation of time or count averages, such as <see langword="AverageTimer32" /> and <see langword="AverageCount64" />. Stores the denominator for calculating a counter to present "time per operation" or "count per operation".</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AverageCount64">
+      <MemberSignature Language="C#" Value="AverageCount64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType AverageCount64 = int32(1073874176)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.AverageCount64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An average counter that shows how many items are processed, on average, during an operation. Counters of this type display a ratio of the items processed to the number of operations completed. The ratio is calculated by comparing the number of items processed during the last interval to the number of operations completed during the last interval.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 1 -N 0)/(B 1 -B 0), where N 1 and N 0 are performance counter readings, and the B 1 and B 0 are their corresponding `AverageBase` values. Thus, the numerator represents the numbers of items processed during the sample interval, and the denominator represents the number of operations completed during the sample interval.  
+  
+ Counters of this type include PhysicalDisk\ Avg. Disk Bytes/Transfer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AverageTimer32">
+      <MemberSignature Language="C#" Value="AverageTimer32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType AverageTimer32 = int32(805438464)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.AverageTimer32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An average counter that measures the time it takes, on average, to complete a process or operation. Counters of this type display a ratio of the total elapsed time of the sample interval to the number of processes or operations completed during that time. This counter type measures time in ticks of the system clock.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: ((N 1 -N 0)/F)/(B 1 -B 0), where N 1 and N 0 are performance counter readings, B 1 and B 0 are their corresponding `AverageBase` values, and F is the number of ticks per second. The value of F is factored into the equation so that the result can be displayed in seconds. Thus, the numerator represents the numbers of ticks counted during the last sample interval, F represents the frequency of the ticks, and the denominator represents the number of operations completed during the last sample interval.  
+  
+ Counters of this type include PhysicalDisk\ Avg. Disk sec/Transfer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterDelta32">
+      <MemberSignature Language="C#" Value="CounterDelta32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterDelta32 = int32(4195328)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterDelta32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A difference counter that shows the change in the measured attribute between the two most recent sample intervals.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: N 1 -N 0, where N 1 and N 0 are performance counter readings.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterDelta64">
+      <MemberSignature Language="C#" Value="CounterDelta64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterDelta64 = int32(4195584)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterDelta64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A difference counter that shows the change in the measured attribute between the two most recent sample intervals. It is the same as the <see langword="CounterDelta32" /> counter type except that is uses larger fields to accomodate larger values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: N 1 -N 0, where N 1 and N 0 are performance counter readings.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterMultiBase">
+      <MemberSignature Language="C#" Value="CounterMultiBase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterMultiBase = int32(1107494144)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterMultiBase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A base counter that indicates the number of items sampled. It is used as the denominator in the calculations to get an average among the items sampled when taking timings of multiple, but similar items. Used with <see langword="CounterMultiTimer" />, <see langword="CounterMultiTimerInverse" />, <see langword="CounterMultiTimer100Ns" />, and <see langword="CounterMultiTimer100NsInverse" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterMultiTimer">
+      <MemberSignature Language="C#" Value="CounterMultiTimer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterMultiTimer = int32(574686464)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterMultiTimer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that displays the active time of one or more components as a percentage of the total time of the sample interval. Because the numerator records the active time of components operating simultaneously, the resulting percentage can exceed 100 percent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This counter is a multitimer. Multitimers collect data from more than one instance of a component, such as a processor or disk. This counter type differs from `CounterMultiTimer100Ns` in that it measures time in units of ticks of the system performance timer, rather than in 100 nanosecond units.  
+  
+ Formula: ((N 1 - N 0) / (D 1 - D 0)) x 100 / B, where N 1 and N 0 are performance counter readings, D 1 and D 0 are their corresponding time readings in ticks of the system performance timer, and the variable B denotes the base count for the monitored components (using a base counter of type `CounterMultiBase`). Thus, the numerator represents the portions of the sample interval during which the monitored components were active, and the denominator represents the total elapsed time of the sample interval.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterMultiTimer100Ns">
+      <MemberSignature Language="C#" Value="CounterMultiTimer100Ns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterMultiTimer100Ns = int32(575735040)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterMultiTimer100Ns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that shows the active time of one or more components as a percentage of the total time of the sample interval. It measures time in 100 nanosecond (ns) units.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This counter type is a multitimer. Multitimers are designed to monitor more than one instance of a component, such as a processor or disk.  
+  
+ Formula: ((N 1 - N 0) / (D 1 - D 0)) x 100 / B, where N 1 and N 0 are performance counter readings, D 1 and D 0 are their corresponding time readings in 100-nanosecond units, and the variable B denotes the base count for the monitored components (using a base counter of type `CounterMultiBase`). Thus, the numerator represents the portions of the sample interval during which the monitored components were active, and the denominator represents the total elapsed time of the sample interval.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterMultiTimer100NsInverse">
+      <MemberSignature Language="C#" Value="CounterMultiTimer100NsInverse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterMultiTimer100NsInverse = int32(592512256)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterMultiTimer100NsInverse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that shows the active time of one or more components as a percentage of the total time of the sample interval. Counters of this type measure time in 100 nanosecond (ns) units. They derive the active time by measuring the time that the components were not active and subtracting the result from multiplying 100 percent by the number of objects monitored.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This counter type is an inverse multitimer. Multitimers are designed to monitor more than one instance of a component, such as a processor or disk. Inverse counters measure the time that a component is not active and derive its active time from the measurement of inactive time  
+  
+ Formula: (B - ((N 1 - N 0) / (D 1 - D 0))) x 100, where the denominator represents the total elapsed time of the sample interval, the numerator represents the time during the interval when monitored components were inactive, and B represents the number of components being monitored, using a base counter of type `CounterMultiBase`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterMultiTimerInverse">
+      <MemberSignature Language="C#" Value="CounterMultiTimerInverse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterMultiTimerInverse = int32(591463680)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterMultiTimerInverse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that shows the active time of one or more components as a percentage of the total time of the sample interval. It derives the active time by measuring the time that the components were not active and subtracting the result from 100 percent by the number of objects monitored.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This counter type is an inverse multitimer. Multitimers monitor more than one instance of a component, such as a processor or disk. Inverse counters measure the time that a component is not active and derive its active time from that measurement.  
+  
+ This counter differs from `CounterMultiTimer100NsInverse` in that it measures time in units of ticks of the system performance timer, rather than in 100 nanosecond units.  
+  
+ Formula: (B- ((N 1 - N 0) / (D 1 - D 0))) x 100, where the denominator represents the total elapsed time of the sample interval, the numerator represents the time during the interval when monitored components were inactive, and B represents the number of components being monitored, using a base counter of type `CounterMultiBase`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterTimer">
+      <MemberSignature Language="C#" Value="CounterTimer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterTimer = int32(541132032)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterTimer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that shows the average time that a component is active as a percentage of the total sample time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 1 - N 0) / (D 1 - D 0), where N 1 and N 0 are performance counter readings, and D 1 and D 0 are their corresponding time readings. Thus, the numerator represents the portions of the sample interval during which the monitored components were active, and the denominator represents the total elapsed time of the sample interval.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CounterTimerInverse">
+      <MemberSignature Language="C#" Value="CounterTimerInverse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CounterTimerInverse = int32(557909248)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CounterTimerInverse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that displays the average percentage of active time observed during sample interval. The value of these counters is calculated by monitoring the percentage of time that the service was inactive and then subtracting that value from 100 percent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an inverse counter type. Inverse counters measure the time that a component is note active and derive the active time from that measurement. This counter type is the same as `CounterTimer100NsInv` except that it measures time in units of ticks of the system performance timer rather than in 100 nanosecond units.  
+  
+ Formula: (1- ((N 1 - N 0) / (D 1 - D 0))) x 100, where the numerator represents the time during the interval when the monitored components were inactive, and the denominator represents the total elapsed time of the sample interval.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountPerTimeInterval32">
+      <MemberSignature Language="C#" Value="CountPerTimeInterval32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CountPerTimeInterval32 = int32(4523008)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CountPerTimeInterval32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An average counter designed to monitor the average length of a queue to a resource over time. It shows the difference between the queue lengths observed during the last two sample intervals divided by the duration of the interval. This type of counter is typically used to track the number of items that are queued or waiting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 1 - N 0) / (D 1 - D 0), where the numerator represents the number of items in the queue and the denominator represents the time elapsed during the last sample interval.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountPerTimeInterval64">
+      <MemberSignature Language="C#" Value="CountPerTimeInterval64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType CountPerTimeInterval64 = int32(4523264)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.CountPerTimeInterval64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An average counter that monitors the average length of a queue to a resource over time. Counters of this type display the difference between the queue lengths observed during the last two sample intervals, divided by the duration of the interval. This counter type is the same as <see langword="CountPerTimeInterval32" /> except that it uses larger fields to accommodate larger values. This type of counter is typically used to track a high-volume or very large number of items that are queued or waiting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 1 - N 0) / (D 1 - D 0), where the numerator represents the number of items in a queue and the denominator represents the time elapsed during the sample interval.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElapsedTime">
+      <MemberSignature Language="C#" Value="ElapsedTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType ElapsedTime = int32(807666944)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.ElapsedTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A difference timer that shows the total time between when the component or process started and the time when this value is calculated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (D 0 - N 0) / F, where D 0 represents the current time, N 0 represents the time the object was started, and F represents the number of time units that elapse in one second. The value of F is factored into the equation so that the result can be displayed in seconds.  
+  
+ Counters of this type include System\ System Up Time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfItems32">
+      <MemberSignature Language="C#" Value="NumberOfItems32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType NumberOfItems32 = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.NumberOfItems32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An instantaneous counter that shows the most recently observed value. Used, for example, to maintain a simple count of items or operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: None. Does not display an average, but shows the raw data as it is collected.  
+  
+ Counters of this type include Memory\Available Bytes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfItems64">
+      <MemberSignature Language="C#" Value="NumberOfItems64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType NumberOfItems64 = int32(65792)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.NumberOfItems64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An instantaneous counter that shows the most recently observed value. Used, for example, to maintain a simple count of a very large number of items or operations. It is the same as <see langword="NumberOfItems32" /> except that it uses larger fields to accommodate larger values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: None. Does not display an average, but shows the raw data as it is collected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfItemsHEX32">
+      <MemberSignature Language="C#" Value="NumberOfItemsHEX32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType NumberOfItemsHEX32 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.NumberOfItemsHEX32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An instantaneous counter that shows the most recently observed value in hexadecimal format. Used, for example, to maintain a simple count of items or operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: None. Does not display an average, but shows the raw data as it is collected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfItemsHEX64">
+      <MemberSignature Language="C#" Value="NumberOfItemsHEX64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType NumberOfItemsHEX64 = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.NumberOfItemsHEX64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An instantaneous counter that shows the most recently observed value. Used, for example, to maintain a simple count of a very large number of items or operations. It is the same as <see langword="NumberOfItemsHEX32" /> except that it uses larger fields to accommodate larger values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: None. Does not display an average, but shows the raw data as it is collected  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RateOfCountsPerSecond32">
+      <MemberSignature Language="C#" Value="RateOfCountsPerSecond32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType RateOfCountsPerSecond32 = int32(272696320)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.RateOfCountsPerSecond32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A difference counter that shows the average number of operations completed during each second of the sample interval. Counters of this type measure time in ticks of the system clock.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 1 - N 0) / ((D 1 -D 0) / F), where N 1 and N 0 are performance counter readings, D 1 and D 0 are their corresponding time readings, and F represents the number of ticks per second. Thus, the numerator represents the number of operations performed during the last sample interval, the denominator represents the number of ticks elapsed during the last sample interval, and F is the frequency of the ticks. The value of F is factored into the equation so that the result can be displayed in seconds.  
+  
+ Counters of this type include System\ File Read Operations/sec.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RateOfCountsPerSecond64">
+      <MemberSignature Language="C#" Value="RateOfCountsPerSecond64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType RateOfCountsPerSecond64 = int32(272696576)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.RateOfCountsPerSecond64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A difference counter that shows the average number of operations completed during each second of the sample interval. Counters of this type measure time in ticks of the system clock. This counter type is the same as the <see langword="RateOfCountsPerSecond32" /> type, but it uses larger fields to accommodate larger values to track a high-volume number of items or operations per second, such as a byte-transmission rate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 1 - N 0) / ((D 1 -D 0) / F), where N 1 and N 0 are performance counter readings, D 1 and D 0 are their corresponding time readings, and F represents the number of ticks per second. Thus, the numerator represents the number of operations performed during the last sample interval, the denominator represents the number of ticks elapsed during the last sample interval, and F is the frequency of the ticks. The value of F is factored into the equation so that the result can be displayed in seconds.  
+  
+ Counters of this type include System\ File Read Bytes/sec.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawBase">
+      <MemberSignature Language="C#" Value="RawBase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType RawBase = int32(1073939459)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.RawBase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A base counter that stores the denominator of a counter that presents a general arithmetic fraction. Check that this value is greater than zero before using it as the denominator in a <see langword="RawFraction" /> value calculation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RawFraction">
+      <MemberSignature Language="C#" Value="RawFraction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType RawFraction = int32(537003008)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.RawFraction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An instantaneous percentage counter that shows the ratio of a subset to its set as a percentage. For example, it compares the number of bytes in use on a disk to the total number of bytes on the disk. Counters of this type display the current percentage only, not an average over time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 0 / D 0) x 100, where D 0 represents a measured attribute (using a base counter of type `RawBase`) and N 0 represents one component of that attribute.  
+  
+ Counters of this type include Paging File\\% Usage Peak.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SampleBase">
+      <MemberSignature Language="C#" Value="SampleBase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType SampleBase = int32(1073939457)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.SampleBase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A base counter that stores the number of sampling interrupts taken and is used as a denominator in the sampling fraction. The sampling fraction is the number of samples that were 1 (or <see langword="true" />) for a sample interrupt. Check that this value is greater than zero before using it as the denominator in a calculation of <see langword="SampleFraction" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SampleCounter">
+      <MemberSignature Language="C#" Value="SampleCounter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType SampleCounter = int32(4260864)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.SampleCounter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An average counter that shows the average number of operations completed in one second. When a counter of this type samples the data, each sampling interrupt returns one or zero. The counter data is the number of ones that were sampled. It measures time in units of ticks of the system performance timer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 1 – N 0) / ((D 1 – D 0) / F), where the numerator (N) represents the number of operations completed, the denominator (D) represents elapsed time in units of ticks of the system performance timer, and F represents the number of ticks that elapse in one second. F is factored into the equation so that the result can be displayed in seconds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SampleFraction">
+      <MemberSignature Language="C#" Value="SampleFraction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType SampleFraction = int32(549585920)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.SampleFraction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that shows the average ratio of hits to all operations during the last two sample intervals.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: ((N 1 - N 0) / (D 1 - D 0)) x 100, where the numerator represents the number of successful operations during the last sample interval, and the denominator represents the change in the number of all operations (of the type measured) completed during the sample interval, using counters of type `SampleBase`.  
+  
+ Counters of this type include Cache\Pin Read Hits %.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timer100Ns">
+      <MemberSignature Language="C#" Value="Timer100Ns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType Timer100Ns = int32(542180608)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.Timer100Ns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that shows the active time of a component as a percentage of the total elapsed time of the sample interval. It measures time in units of 100 nanoseconds (ns). Counters of this type are designed to measure the activity of one component at a time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formula: (N 1 - N 0) / (D 1 - D 0) x 100, where the numerator represents the portions of the sample interval during which the monitored components were active, and the denominator represents the total elapsed time of the sample interval.  
+  
+ Counters of this type include Processor\ % User Time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timer100NsInverse">
+      <MemberSignature Language="C#" Value="Timer100NsInverse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterType Timer100NsInverse = int32(558957824)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterType.Timer100NsInverse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A percentage counter that shows the average percentage of active time observed during the sample interval.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an inverse counter. Counters of this type calculate active time by measuring the time that the service was inactive and then subtracting the percentage of active time from 100 percent.  
+  
+ Formula: (1- ((N 1 - N 0) / (D 1 - D 0))) x 100, where the numerator represents the time during the interval when the monitored components were inactive, and the denominator represents the total elapsed time of the sample interval.  
+  
+ Counters of this type include Processor\ % Processor Time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

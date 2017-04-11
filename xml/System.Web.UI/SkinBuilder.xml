@@ -1,0 +1,85 @@
+<Type Name="SkinBuilder" FullName="System.Web.UI.SkinBuilder">
+  <TypeSignature Language="C#" Value="public sealed class SkinBuilder : System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SkinBuilder extends System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.SkinBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Web.UI.ControlBuilder" /> object used at design time to apply control skins to controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page developers and control authors do not use the <xref:System.Web.UI.SkinBuilder> class directly.  
+  
+ ASP.NET designer builders use the <xref:System.Web.UI.SkinBuilder> class in conjunction with the <xref:System.Web.UI.ThemeProvider> class and the <xref:System.Web.UI.IThemeResolutionService> interface to apply themes and their respective control skins to controls at design time. To apply themes at design time, the base <xref:System.Web.UI.ControlBuilder> class calls the <xref:System.Web.UI.SkinBuilder.ApplyTheme%2A> method whenever a control's child control tree is built.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SkinBuilder (System.Web.UI.ThemeProvider provider, System.Web.UI.Control control, System.Web.UI.ControlBuilder skinBuilder, string themePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.ThemeProvider provider, class System.Web.UI.Control control, class System.Web.UI.ControlBuilder skinBuilder, string themePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.SkinBuilder.#ctor(System.Web.UI.ThemeProvider,System.Web.UI.Control,System.Web.UI.ControlBuilder,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Web.UI.ThemeProvider" />
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+        <Parameter Name="skinBuilder" Type="System.Web.UI.ControlBuilder" />
+        <Parameter Name="themePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="provider">A <see cref="T:System.Web.UI.ThemeProvider" /> that encapsulates theme information for controls in a designer environment.</param>
+        <param name="control">The <see cref="T:System.Web.UI.Control" /> with which the <see cref="T:System.Web.UI.SkinBuilder" /> is associated. The <see cref="M:System.Web.UI.SkinBuilder.ApplyTheme" /> method applies a control skin to this control and returns it.</param>
+        <param name="skinBuilder">A <see cref="T:System.Web.UI.ControlBuilder" /> provided by the <see cref="T:System.Web.UI.ThemeProvider" /> for the control's type.</param>
+        <param name="themePath">The absolute path to the theme file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.SkinBuilder" /> class, setting the control with which the builder is associated, the general <see cref="T:System.Web.UI.ControlBuilder" /> object provided by the <see cref="T:System.Web.UI.ThemeProvider" /> object for the control, and a path to the theme file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called by the <xref:System.Web.UI.ThemeProvider.GetSkinBuilder%2A> method of the <xref:System.Web.UI.ThemeProvider> class to return a <xref:System.Web.UI.SkinBuilder> object for the control specified in the `control` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyTheme">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Control ApplyTheme ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control ApplyTheme() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.SkinBuilder.ApplyTheme" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Applies a theme and a control skin to the current control at design time, if a <see cref="T:System.Web.UI.SkinBuilder" /> object is associated with the control.</summary>
+        <returns>The control instance to which the theme or style sheet theme and any control skin was applied. This is the same instance passed to the builder's <see cref="M:System.Web.UI.SkinBuilder.#ctor(System.Web.UI.ThemeProvider,System.Web.UI.Control,System.Web.UI.ControlBuilder,System.String)" /> constructor. This method will return <see langword="null" /> if no control was passed to the constructor.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.SkinBuilder> objects are associated with controls at design time by specifying an <xref:System.Web.UI.IThemeResolutionService> instance for the <xref:System.Web.UI.ControlBuilder> object of a control that supplies a <xref:System.Web.UI.ThemeProvider> object. The <xref:System.Web.UI.ThemeProvider> object can return a <xref:System.Web.UI.SkinBuilder> object for a given control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

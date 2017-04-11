@@ -1,0 +1,45 @@
+<Type Name="ICodeParser" FullName="System.CodeDom.Compiler.ICodeParser">
+  <TypeSignature Language="C#" Value="public interface ICodeParser" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICodeParser" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.ICodeParser" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an interface for parsing code into a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Developers of compilers can implement this interface to support code parsing by designers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit Parse (System.IO.TextReader codeStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.CodeCompileUnit Parse(class System.IO.TextReader codeStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeParser.Parse(System.IO.TextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codeStream" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="codeStream">A <see cref="T:System.IO.TextReader" /> that can be used to read the code to be compiled.</param>
+        <summary>When implemented in a derived class, compiles the specified text stream into a <see cref="T:System.CodeDom.CodeCompileUnit" />.</summary>
+        <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> that contains a representation of the parsed code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

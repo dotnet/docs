@@ -1,0 +1,57 @@
+<Type Name="DisableDpiAwarenessAttribute" FullName="System.Windows.Media.DisableDpiAwarenessAttribute">
+  <TypeSignature Language="C#" Value="public sealed class DisableDpiAwarenessAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DisableDpiAwarenessAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.DisableDpiAwarenessAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications to disable dots per inch (dpi) awareness for all user interface elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications are dpi aware, which affects how user interface layout is calculated. However, an application can disable dpi awareness by adding the <xref:System.Windows.Media.DisableDpiAwarenessAttribute> to the application assembly.  
+  
+> [!CAUTION]
+>  It is **not** recommended that you set this attribute for your application, unless you need all user interface elements of your application to be non-dpi aware.  
+  
+   
+  
+## Examples  
+ The following example shows how to disable Dpi awareness for the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] application by declaring <xref:System.Windows.Media.DisableDpiAwarenessAttribute> at the assembly level.  
+  
+ [!code-csharp[DisableDpiAwareness#DisableDpiAwarenessAttribute1](~/samples/snippets/csharp/VS_Snippets_Wpf/DisableDpiAwareness/CSharp/Window1.xaml.cs#disabledpiawarenessattribute1)]
+ [!code-vb[DisableDpiAwareness#DisableDpiAwarenessAttribute1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DisableDpiAwareness/visualbasic/window1.xaml.vb#disabledpiawarenessattribute1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DisableDpiAwarenessAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.DisableDpiAwarenessAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.DisableDpiAwarenessAttribute" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,117 @@
+<Type Name="VersioningHelper" FullName="System.Runtime.Versioning.VersioningHelper">
+  <TypeSignature Language="C#" Value="public static class VersioningHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VersioningHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.VersioningHelper" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods to aid developers in writing version-safe code. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is intended to facilitate the use of the <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> and <xref:System.Runtime.Versioning.ResourceExposureAttribute> classes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MakeVersionSafeName">
+      <MemberSignature Language="C#" Value="public static string MakeVersionSafeName (string name, System.Runtime.Versioning.ResourceScope from, System.Runtime.Versioning.ResourceScope to);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeVersionSafeName(string name, valuetype System.Runtime.Versioning.ResourceScope from, valuetype System.Runtime.Versioning.ResourceScope to) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.VersioningHelper.MakeVersionSafeName(System.String,System.Runtime.Versioning.ResourceScope,System.Runtime.Versioning.ResourceScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="from" Type="System.Runtime.Versioning.ResourceScope" />
+        <Parameter Name="to" Type="System.Runtime.Versioning.ResourceScope" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the resource.</param>
+        <param name="from">The scope of the resource.</param>
+        <param name="to">The desired resource consumption scope.</param>
+        <summary>Returns a version-safe name based on the specified resource name and the intended resource consumption source.</summary>
+        <returns>A version-safe name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The original name is returned with a scope related suffix. The suffix may include the process identity, the current <xref:System.AppDomain> identity, or both.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeVersionSafeName">
+      <MemberSignature Language="C#" Value="public static string MakeVersionSafeName (string name, System.Runtime.Versioning.ResourceScope from, System.Runtime.Versioning.ResourceScope to, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeVersionSafeName(string name, valuetype System.Runtime.Versioning.ResourceScope from, valuetype System.Runtime.Versioning.ResourceScope to, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Versioning.VersioningHelper.MakeVersionSafeName(System.String,System.Runtime.Versioning.ResourceScope,System.Runtime.Versioning.ResourceScope,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="from" Type="System.Runtime.Versioning.ResourceScope" />
+        <Parameter Name="to" Type="System.Runtime.Versioning.ResourceScope" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the resource.</param>
+        <param name="from">The beginning of the scope range.</param>
+        <param name="to">The end of the scope range.</param>
+        <param name="type">The <see cref="T:System.Type" /> of the resource.</param>
+        <summary>Returns a version-safe name based on the specified resource name, the intended resource consumption scope, and the type using the resource.</summary>
+        <returns>A version-safe name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The original name is returned with a scope related suffix.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The values for <paramref name="from " />and <paramref name="to " />are invalid. The resource type in the <see cref="T:System.Runtime.Versioning.ResourceScope" /> enumeration is going from a more restrictive resource type to a more general resource type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type " />is<see langword=" null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

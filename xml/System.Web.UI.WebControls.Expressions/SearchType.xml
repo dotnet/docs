@@ -1,0 +1,82 @@
+<Type Name="SearchType" FullName="System.Web.UI.WebControls.Expressions.SearchType">
+  <TypeSignature Language="C#" Value="public enum SearchType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SearchType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.SearchType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of search in an instance of the <see cref="T:System.Web.UI.WebControls.Expressions.SearchExpression" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Expressions.SearchExpression> filter option uses the <xref:System.Web.UI.WebControls.Expressions.SearchType> enumeration when it performs a string comparison. You set the <xref:System.Web.UI.WebControls.Expressions.SearchExpression.SearchType%2A> property to one of the <xref:System.Web.UI.WebControls.Expressions.SearchType> enumeration values.  
+  
+   
+  
+## Examples  
+ The following example shows how to use markup to set the <xref:System.Web.UI.WebControls.Expressions.SearchExpression> filter option to the StartsWith value of the <xref:System.Web.UI.WebControls.Expressions.SearchType> enumeration.  
+  
+```  
+<asp:SearchExpression SearchType="StartsWith" DataFields="Name" >  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="Contains" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.SearchType Contains = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.SearchType.Contains" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Expressions.SearchType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a search should determine whether the search string matches a string anywhere in a field.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndsWith">
+      <MemberSignature Language="C#" Value="EndsWith" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.SearchType EndsWith = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.SearchType.EndsWith" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Expressions.SearchType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a search should determine whether the search string matches a string at the end of a field.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartsWith">
+      <MemberSignature Language="C#" Value="StartsWith" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.SearchType StartsWith = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.SearchType.StartsWith" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Expressions.SearchType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a search should determine whether the search string matches a string at the beginning of a field.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

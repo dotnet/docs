@@ -1,0 +1,2817 @@
+<Type Name="ListBox" FullName="System.Windows.Forms.ListBox">
+  <TypeSignature Language="C#" Value="public class ListBox : System.Windows.Forms.ListControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListBox extends System.Windows.Forms.ListControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ListControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultBindingProperty("SelectedValue")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("SelectedIndexChanged")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Items")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ListBoxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a Windows control to display a list of items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListBox> control enables you to display a list of items to the user that the user can select by clicking. A <xref:System.Windows.Forms.ListBox> control can provide single or multiple selections using the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property. The <xref:System.Windows.Forms.ListBox> also provides the <xref:System.Windows.Forms.ListBox.MultiColumn%2A> property to enable the display of items in columns instead of a straight vertical list of items. With this, the control can display more visible items and the user no longer needs to scroll to an item.  
+  
+ Typically, Windows handles the task of drawing the items to display in the <xref:System.Windows.Forms.ListBox>. You can use the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property, and handle the <xref:System.Windows.Forms.ListBox.MeasureItem> and <xref:System.Windows.Forms.ListBox.DrawItem> events so you can override the automatic drawing that Windows provides and draw the items yourself. You can use owner-drawn <xref:System.Windows.Forms.ListBox> controls to display variable-height items, images, or a different color or font for the text of each item in the list. The <xref:System.Windows.Forms.ListBox.HorizontalExtent%2A> property, <xref:System.Windows.Forms.ListBox.GetItemHeight%2A>, and <xref:System.Windows.Forms.ListBox.GetItemRectangle%2A> also help you draw your own items.  
+  
+ In addition to display and selection functionality, the <xref:System.Windows.Forms.ListBox> also provides features that enable you to efficiently add items to the <xref:System.Windows.Forms.ListBox> and to find text within the items of the list. The <xref:System.Windows.Forms.ListBox.BeginUpdate%2A> and <xref:System.Windows.Forms.ListBox.EndUpdate%2A> methods enable you to add a large number of items to the <xref:System.Windows.Forms.ListBox> without the control being repainted each time an item is added to the list. The <xref:System.Windows.Forms.ListBox.FindString%2A> and <xref:System.Windows.Forms.ListBox.FindStringExact%2A> methods enable you to search for an item in the list that contains a specific search string.  
+  
+ The <xref:System.Windows.Forms.ListBox.Items%2A>, <xref:System.Windows.Forms.ListBox.SelectedItems%2A>, and <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> properties provide access to the three collections that are used by the <xref:System.Windows.Forms.ListBox>. The following table outlines the three collections used by the <xref:System.Windows.Forms.ListBox> and their use within the control.  
+  
+|Collection class|Use within the <xref:System.Windows.Forms.ListBox>|  
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|  
+|<xref:System.Windows.Forms.ListBox.ObjectCollection>|Contains all items contained in the <xref:System.Windows.Forms.ListBox> control.|  
+|<xref:System.Windows.Forms.ListBox.SelectedObjectCollection>|Contains a collection of the selected items which is a subset of the items contained in the <xref:System.Windows.Forms.ListBox> control.|  
+|<xref:System.Windows.Forms.ListBox.SelectedIndexCollection>|Contains a collection of the selected indexes, which is a subset of the indexes of the <xref:System.Windows.Forms.ListBox.ObjectCollection>. These indexes specify items that are selected.|  
+  
+ The following three examples show the three indexed collections that the <xref:System.Windows.Forms.ListBox> class supports.  
+  
+ The following table shows an example of how the <xref:System.Windows.Forms.ListBox.ObjectCollection> stores the items of the <xref:System.Windows.Forms.ListBox> as well as their selection state within an example <xref:System.Windows.Forms.ListBox>.  
+  
+|Index|Item|Selection state within the ListBox|  
+|-----------|----------|----------------------------------------|  
+|0|object1|Unselected|  
+|1|object2|Selected|  
+|2|object3|Unselected|  
+|3|object4|Selected|  
+|4|object5|Selected|  
+  
+ Based on the <xref:System.Windows.Forms.ListBox.ObjectCollection> shown in the previous table, this table shows how the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> would appear.  
+  
+|Index|Item|  
+|-----------|----------|  
+|0|object2|  
+|1|object4|  
+|2|object5|  
+  
+ Based on the <xref:System.Windows.Forms.ListBox.ObjectCollection> shown in the previous table, this table shows how the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> would appear.  
+  
+|Index|Index of item|  
+|-----------|-------------------|  
+|0|1|  
+|1|3|  
+|2|4|  
+  
+ The <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class enables you to add items to the <xref:System.Windows.Forms.ListBox>. The <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method can accept any object when adding a member to the <xref:System.Windows.Forms.ListBox>. When an object is being added to the <xref:System.Windows.Forms.ListBox>, the control uses the text defined in the <xref:System.Object.ToString%2A> method of the object unless a member name within the object is specified in the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property. In addition to adding items using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class you can also add items using the <xref:System.Windows.Forms.ListControl.DataSource%2A> property of the <xref:System.Windows.Forms.ListControl> class.  
+  
+> [!NOTE]
+>  If you have a <xref:System.Windows.Forms.ListBox>, <xref:System.Windows.Forms.ComboBox>, or <xref:System.Windows.Forms.CheckedListBox> on a base Windows form and want to modify the string collections of those controls in a derived Windows form, the string collections of those controls in the base Windows form must be empty. If the string collections are not empty, they become read-only when you derive another Windows form.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.ListBox> control that displays multiple items in columns and can have more than one item selected in the control's list. The code for the example adds 50 items to the <xref:System.Windows.Forms.ListBox> using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class and then selects three items from the list using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method. The code then displays values from the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> collection, through the <xref:System.Windows.Forms.ListBox.SelectedItems%2A> property, and the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, through the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> property. This example requires that the code is located in and called from a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic ListBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ListBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ListBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ListBox Example/CS/source.cs#1)]
+ [!code-vb[Classic ListBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ListBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListBox" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.ListBox> control that displays multiple items in columns and can have more than one item selected in the control's list. The code for the example adds 50 items to the <xref:System.Windows.Forms.ListBox> using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class and then selects three items from the list using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method. The code then displays values from the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> collection, through the <xref:System.Windows.Forms.ListBox.SelectedItems%2A> property, and the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>, through the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> property. This example requires that the code is located in and called from a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic ListBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ListBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ListBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ListBox Example/CS/source.cs#1)]
+ [!code-vb[Classic ListBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ListBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddItemsCore">
+      <MemberSignature Language="C#" Value="protected virtual void AddItemsCore (object[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddItemsCore(object[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.AddItemsCore(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This method has been deprecated.  There is no replacement.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of objects.</param>
+        <summary>This member is obsolete, and there is no replacement.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowSelection">
+      <MemberSignature Language="C#" Value="protected override bool AllowSelection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowSelection" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.AllowSelection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ListBox" /> currently enables selection of list items.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Windows.Forms.SelectionMode" /> is not <see cref="F:System.Windows.Forms.SelectionMode.None" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color for the control.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImage">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.BackgroundImage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant to this class.</summary>
+        <value>The background image of the form.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.BackgroundImageChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ListBox.BackgroundImage" /> property of the label changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageLayout">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.BackgroundImageLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImageLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background image layout for a <see cref="T:System.Windows.Forms.ListBox" /> as defined in the <see cref="T:System.Windows.Forms.ImageLayout" /> enumeration.</summary>
+        <value>One of the values of <see cref="T:System.Windows.Forms.ImageLayout" />. The values are <see langword="Center" />, <see langword="None" />, <see langword="Stretch" />, <see langword="Tile" />, or <see langword="Zoom" />. <see langword="Center" /> is the default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified enumeration value does not exist.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImageLayoutChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.BackgroundImageLayoutChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ListBox.BackgroundImageLayout" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdate">
+      <MemberSignature Language="C#" Value="public void BeginUpdate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginUpdate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.BeginUpdate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Maintains performance while items are added to the <see cref="T:System.Windows.Forms.ListBox" /> one at a time by preventing the control from drawing until the <see cref="M:System.Windows.Forms.ListBox.EndUpdate" /> method is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The preferred way to add multiple items to the <xref:System.Windows.Forms.ListBox> is to use the <xref:System.Windows.Forms.ListBox.ObjectCollection.AddRange%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class (through the <xref:System.Windows.Forms.ListBox.Items%2A> property of the <xref:System.Windows.Forms.ListBox>). This enables you to add an array of items to the list in a single operation. However, if you want to add items one at a time using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class, you can use the <xref:System.Windows.Forms.ListBox.BeginUpdate%2A> method to prevent the control from repainting the <xref:System.Windows.Forms.ListBox> each time an item is added to the list. Once you have completed the task of adding items to the list, call the <xref:System.Windows.Forms.ListBox.EndUpdate%2A> method to enable the <xref:System.Windows.Forms.ListBox> to repaint. This way of adding items can prevent flickered drawing of the <xref:System.Windows.Forms.ListBox> when a large number of items are being added to the list.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ListBox.BeginUpdate%2A> and <xref:System.Windows.Forms.ListBox.EndUpdate%2A> methods while adding five thousand items to a <xref:System.Windows.Forms.ListBox>. This example requires that a <xref:System.Windows.Forms.ListBox> control, named `listBox1`, has been added to a <xref:System.Windows.Forms.Form> and that this method is placed within the form and called from it.  
+  
+ [!code-cpp[Classic ListBox.BeginUpdate Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ListBox.BeginUpdate Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ListBox.BeginUpdate Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ListBox.BeginUpdate Example/CS/source.cs#1)]
+ [!code-vb[Classic ListBox.BeginUpdate Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ListBox.BeginUpdate Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.BorderStyle BorderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BorderStyle BorderStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.BorderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-504)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of border that is drawn around the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> values. The default is <see cref="F:System.Windows.Forms.BorderStyle.Fixed3D" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not one of the <see cref="T:System.Windows.Forms.BorderStyle" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearSelected">
+      <MemberSignature Language="C#" Value="public void ClearSelected ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearSelected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ClearSelected" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unselects all items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is equivalent to setting the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property to negative one (-1). You can use this method to quickly unselect all items in the list.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property with the <xref:System.Windows.Forms.ListBox.TopIndex%2A> property to move the currently selected item to the top of the list of items in the display area of the <xref:System.Windows.Forms.ListBox>. The example further demonstrates how to remove items using the <xref:System.Windows.Forms.ListBox.ObjectCollection.RemoveAt%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection?displayProperty=fullName> class, and how to clear all item selection using the <xref:System.Windows.Forms.ListBox.ClearSelected%2A> method. The code first moves the currently selected item in the <xref:System.Windows.Forms.ListBox> to the top of the list. The code then removes all items before the currently selected item and clears all selections in the <xref:System.Windows.Forms.ListBox>. This example requires that a <xref:System.Windows.Forms.ListBox> containing items is added to a form and that an item is currently selected in the <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-cpp[ListBox.SelectedIndex#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.SelectedIndex/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.SelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.SelectedIndex/CS/form1.cs#1)]
+ [!code-vb[ListBox.SelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.SelectedIndex/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Click">
+      <MemberSignature Language="C#" Value="public event EventHandler Click;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.Click" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.ListBox" /> control is clicked.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnWidth">
+      <MemberSignature Language="C#" Value="public int ColumnWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.ColumnWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of columns in a multicolumn <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>The width, in pixels, of each column in the control. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set the value to zero (0), a default width is assigned to each column. If the <xref:System.Windows.Forms.ListBox> is a multicolumn <xref:System.Windows.Forms.ListBox>, this property returns the current width of each column in the list. You can use this property to ensure that each column in a multicolumn <xref:System.Windows.Forms.ListBox> can properly display its items.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a simple two-column <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-csharp[System.Windows.Forms.ListBox.MultiColumn#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListBox.MultiColumn/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListBox.MultiColumn#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListBox.MultiColumn/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A value less than zero is assigned to the property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItemCollection">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.ListBox.ObjectCollection CreateItemCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.ListBox/ObjectCollection CreateItemCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.CreateItemCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListBox+ObjectCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the item collection.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> that represents the new item collection.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>You can override this in your derived classes to provide a different collection to store your items.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomTabOffsets">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.IntegerCollection CustomTabOffsets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/IntegerCollection CustomTabOffsets" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.CustomTabOffsets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListBox+IntegerCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the width of the tabs between the items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>A collection of integers representing the tab widths.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The integer array contains the tab spaces in ascending order.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultItemHeight">
+      <MemberSignature Language="C#" Value="public const int DefaultItemHeight = 13;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultItemHeight = (13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListBox.DefaultItemHeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>Specifies the default item height for an owner-drawn <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.DefaultSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawItem">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawItemEventHandler DrawItem;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawItemEventHandler DrawItem" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.DrawItem" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a visual aspect of an owner-drawn <see cref="T:System.Windows.Forms.ListBox" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is used by an owner-drawn <xref:System.Windows.Forms.ListBox>. The event is only raised when the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to `DrawMode.OwnerDrawFixed` or `DrawMode.OwnerDrawVariable`. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.ListBox>. If you have a variable-sized item (when the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to `DrawMode.OwnerDrawVariable`), before drawing an item, the <xref:System.Windows.Forms.ListBox.MeasureItem> event is raised. You can create an event handler for the <xref:System.Windows.Forms.ListBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the <xref:System.Windows.Forms.ListBox.DrawItem> event.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example requires that a <xref:System.Windows.Forms.ListBox> control called `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also requires that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMode">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DrawMode DrawMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DrawMode DrawMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.DrawMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the drawing mode for the control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.DrawMode" /> values representing the mode for drawing the items of the control. The default is <see langword="DrawMode.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example requires that a <xref:System.Windows.Forms.ListBox> control called `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also requires that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned to the property is not a member of the <see cref="T:System.Windows.Forms.DrawMode" /> enumeration.</exception>
+        <exception cref="T:System.ArgumentException">A multicolumn <see cref="T:System.Windows.Forms.ListBox" /> cannot have a variable-sized height.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndUpdate">
+      <MemberSignature Language="C#" Value="public void EndUpdate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUpdate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.EndUpdate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resumes painting the <see cref="T:System.Windows.Forms.ListBox" /> control after painting is suspended by the <see cref="M:System.Windows.Forms.ListBox.BeginUpdate" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The preferred way to add items to the <xref:System.Windows.Forms.ListBox> is to use the <xref:System.Windows.Forms.ListBox.ObjectCollection.AddRange%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class (through the <xref:System.Windows.Forms.ListBox.Items%2A> property of the <xref:System.Windows.Forms.ListBox>). This enables you to add an array of items to the list at one time. However, if you want to add items one at a time using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class, you can use the <xref:System.Windows.Forms.ListBox.BeginUpdate%2A> method to prevent the control from repainting the <xref:System.Windows.Forms.ListBox> each time an item is added to the list. Once you have completed the task of adding items to the list, call the <xref:System.Windows.Forms.ListBox.EndUpdate%2A> method to enable the <xref:System.Windows.Forms.ListBox> to repaint. This way of adding items can prevent flickered drawing of the <xref:System.Windows.Forms.ListBox> when a large number of items are being added to the list.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.ListBox.BeginUpdate%2A> and <xref:System.Windows.Forms.ListBox.EndUpdate%2A> methods while adding five thousand items to a <xref:System.Windows.Forms.ListBox>. This example requires that a <xref:System.Windows.Forms.ListBox> control, named `listBox1`, has been added to a <xref:System.Windows.Forms.Form> and that this method is placed within the form and called from it.  
+  
+ [!code-cpp[Classic ListBox.BeginUpdate Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ListBox.BeginUpdate Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ListBox.BeginUpdate Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ListBox.BeginUpdate Example/CS/source.cs#1)]
+ [!code-vb[Classic ListBox.BeginUpdate Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ListBox.BeginUpdate Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindString">
+      <MemberSignature Language="C#" Value="public int FindString (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindString(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.FindString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">The text to search for.</param>
+        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ListBox" /> that starts with the specified string.</summary>
+        <returns>The zero-based index of the first item found; returns <see langword="ListBox.NoMatches" /> if no match is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The search performed by this method is not case-sensitive. The search looks for words that partially match the specified search string parameter, `s`. You can use this method to search for the first item that matches the specified string. You can then perform tasks such as removing the item that contains the search text by using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Remove%2A> method or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ListBox>, you can use the version of the <xref:System.Windows.Forms.ListBox.FindString%2A> method that provides a parameter for specifying a starting index within the <xref:System.Windows.Forms.ListBox>. If you want to perform a search for an exact word match instead of a partial match, use the <xref:System.Windows.Forms.ListBox.FindStringExact%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindString%2A> method to search for the first instance of a string in a <xref:System.Windows.Forms.ListBox>. If no items are found that match the search string <xref:System.Windows.Forms.ListBox.FindString%2A> returns a -1 value and the example displays a <xref:System.Windows.Forms.MessageBox>. If an item is found that matches the search text, the example uses the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method to select the item in the <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-cpp[ListBox.FindString2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindString2/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.FindString2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindString2/CS/form1.cs#1)]
+ [!code-vb[ListBox.FindString2#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindString2/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="s" /> parameter is less than -1 or greater than or equal to the item count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindString">
+      <MemberSignature Language="C#" Value="public int FindString (string s, int startIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindString(string s, int32 startIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.FindString(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="startIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="s">The text to search for.</param>
+        <param name="startIndex">The zero-based index of the item before the first item to be searched. Set to negative one (-1) to search from the beginning of the control.</param>
+        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ListBox" /> that starts with the specified string. The search starts at a specific starting index.</summary>
+        <returns>The zero-based index of the first item found; returns <see langword="ListBox.NoMatches" /> if no match is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The search performed by this method is not case-sensitive. The search looks for words that partially match the specified search string parameter, `s`. You can use this method to search for the first item that matches the specified string at the specified starting index within the list of items for the <xref:System.Windows.Forms.ListBox>. You can then perform tasks such as removing the item that contains the search text by using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Remove%2A> method or changing the item's text. This method is typically used after a call has been made using the version of this method that does not specify a starting index. Once an initial item has been found in the list, this method is typically used to find further instances of the search text by specifying the index position in the `startIndex` parameter of the item after the first found instance of the search text. If you want to perform a search for an exact word match instead of a partial match, use the <xref:System.Windows.Forms.ListBox.FindStringExact%2A> method.  
+  
+> [!NOTE]
+>  When the search reaches the bottom of the <xref:System.Windows.Forms.ListBox>, it continues searching from the top of the <xref:System.Windows.Forms.ListBox> back to the item specified by the `startIndex` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindString%2A> method to search for all instances of the search text in the items of the <xref:System.Windows.Forms.ListBox>. The example uses the version of the <xref:System.Windows.Forms.ListBox.FindString%2A> method that enables you to specify a starting search index from which to do a continual search of all items in the <xref:System.Windows.Forms.ListBox>. The example also demonstrates how to determine when the <xref:System.Windows.Forms.ListBox.FindString%2A> method begins searching from the top of the list after it reaches the bottom of the list of items to prevent a recursive search. Once items are found in the <xref:System.Windows.Forms.ListBox>, they are selected using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+  
+ [!code-cpp[ListBox.FindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindString/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.FindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindString/CS/form1.cs#1)]
+ [!code-vb[ListBox.FindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindString/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="startIndex" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListBox.ObjectCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindStringExact">
+      <MemberSignature Language="C#" Value="public int FindStringExact (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindStringExact(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.FindStringExact(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">The text to search for.</param>
+        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ListBox" /> that exactly matches the specified string.</summary>
+        <returns>The zero-based index of the first item found; returns <see langword="ListBox.NoMatches" /> if no match is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The search performed by this method is not case-sensitive. The search looks for an exact match to the words specified in the search string parameter, `s`. You can use this method to search for the first item that matches the specified string. You can then perform tasks such as removing the item that contains the search text by using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Remove%2A> method or changing the item's text. Once you have found the specified text, if you want to search for other instances of the text in the <xref:System.Windows.Forms.ListBox>, you can use the version of the <xref:System.Windows.Forms.ListBox.FindStringExact%2A> method that provides a parameter for specifying a starting index within the <xref:System.Windows.Forms.ListBox>. If you want to perform partial word search instead of an exact word match, use the <xref:System.Windows.Forms.ListBox.FindString%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindStringExact%2A?displayProperty=fullName> method to search a <xref:System.Windows.Forms.ListBox> control for an item that exactly matches a specified string. If no items are found that match the search string, <xref:System.Windows.Forms.ListBox.FindStringExact%2A> returns a -1 value and the example displays a <xref:System.Windows.Forms.MessageBox>. If an item is found that matches the search text, the example uses the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method to select the item in the <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-cpp[ListBox.FindStringExact#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindStringExact/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.FindStringExact#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindStringExact/CS/form1.cs#1)]
+ [!code-vb[ListBox.FindStringExact#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindStringExact/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindStringExact">
+      <MemberSignature Language="C#" Value="public int FindStringExact (string s, int startIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindStringExact(string s, int32 startIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.FindStringExact(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+        <Parameter Name="startIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="s">The text to search for.</param>
+        <param name="startIndex">The zero-based index of the item before the first item to be searched. Set to negative one (-1) to search from the beginning of the control.</param>
+        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ListBox" /> that exactly matches the specified string. The search starts at a specific starting index.</summary>
+        <returns>The zero-based index of the first item found; returns <see langword="ListBox.NoMatches" /> if no match is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The search performed by this method is not case-sensitive. The search looks for words that exactly match the specified search string parameter, `s`. You can use this method to search for the first item that matches the specified string at the specified starting index within the list of items for the <xref:System.Windows.Forms.ListBox>. You can then perform tasks such as removing the item that contains the search text using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Remove%2A> method or change the item's text. This method is typically used after a call has been made using the version of this method that does not specify a starting index. Once an initial item has been found in the list, this method is typically used to find further instances of the search text by specifying the index position in the `startIndex` parameter of the item after the first found instance of the search text. If you want to perform a partial word search instead of an exact word match, use the <xref:System.Windows.Forms.ListBox.FindString%2A> method.  
+  
+> [!NOTE]
+>  When the search reaches the bottom of the <xref:System.Windows.Forms.ListBox>, it continues searching from the top of the <xref:System.Windows.Forms.ListBox> back to the item specified by the `startIndex` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindStringExact%2A> method to search for all items in a <xref:System.Windows.Forms.ListBox> that exactly match the specified search text. The example uses the version of the <xref:System.Windows.Forms.ListBox.FindStringExact%2A> method that enables you to specify a starting search index from which to do a continual search of all items in the <xref:System.Windows.Forms.ListBox>. The example also demonstrates how to determine when the <xref:System.Windows.Forms.ListBox.FindStringExact%2A> method begins searching from the top of the list after it reaches the bottom of the list of items, to prevent a recursive search. Once items are found in the <xref:System.Windows.Forms.ListBox>, they are selected using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+  
+ [!code-cpp[ListBox.FindStringExact2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindStringExact2/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.FindStringExact2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindStringExact2/CS/form1.cs#1)]
+ [!code-vb[ListBox.FindStringExact2#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindStringExact2/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="startIndex" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListBox.ObjectCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font of the text displayed by the control.</summary>
+        <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultFont" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground color of the control.</summary>
+        <value>The foreground <see cref="T:System.Drawing.Color" /> of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultForeColor" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemHeight">
+      <MemberSignature Language="C#" Value="public int GetItemHeight (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetItemHeight(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.GetItemHeight(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item to return the height for.</param>
+        <summary>Returns the height of an item in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <returns>The height, in pixels, of the specified item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is not set to `DrawMode.OwnerDrawVariable`, the value of the index parameter is ignored because all items in a standard <xref:System.Windows.Forms.ListBox> are the same size. You can use this property when you are using an owner-drawn <xref:System.Windows.Forms.ListBox> to determine the size of any item within the <xref:System.Windows.Forms.ListBox>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified value of the <paramref name="index" /> parameter is less than zero or greater than the item count.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemRectangle">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetItemRectangle (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetItemRectangle(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.GetItemRectangle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of item whose bounding rectangle you want to return.</param>
+        <summary>Returns the bounding rectangle for an item in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounding rectangle for the specified item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the item specified in the `index` parameter is not visible, the rectangle returned by this method will be outside the visible portion of the control. You can use this method to determine the size and position of an item within the list. To get the height of an item, especially a variable-height owner drawn list item, you can use the <xref:System.Windows.Forms.ListBox.GetItemHeight%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListBox.ObjectCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScaledBounds">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Rectangle GetScaledBounds (System.Drawing.Rectangle bounds, System.Drawing.SizeF factor, System.Windows.Forms.BoundsSpecified specified);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Rectangle GetScaledBounds(valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.SizeF factor, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="factor" Type="System.Drawing.SizeF" />
+        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area for which to retrieve the display bounds.</param>
+        <param name="factor">The height and width of the control's bounds.</param>
+        <param name="specified">One of the values of <see cref="T:System.Windows.Forms.BoundsSpecified" /> that specifies the bounds of the control to use when defining its size and position.</param>
+        <summary>Retrieves the bounds within which the <see cref="T:System.Windows.Forms.ListBox" /> is scaled.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> representing the bounds within which the control is scaled.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListBox> class overrides the <xref:System.Windows.Forms.Control.GetScaledBounds%2A?displayProperty=fullName> method to ensure that the requested height is scaled rather than the current height.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelected">
+      <MemberSignature Language="C#" Value="public bool GetSelected (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetSelected(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.GetSelected(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item that determines whether it is selected.</param>
+        <summary>Returns a value indicating whether the specified item is selected.</summary>
+        <returns>
+          <see langword="true" /> if the specified item is currently selected in the <see cref="T:System.Windows.Forms.ListBox" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to quickly determine whether a specified item is selected. This method is useful when a specific operation needs to be performed when a specific item in a multiple-selection <xref:System.Windows.Forms.ListBox> is selected.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.GetSelected%2A> method to determine which items in a <xref:System.Windows.Forms.ListBox> are selected in order to select the items that are not selected and deselect the items that are selected. The example also demonstrates using the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property to enable a <xref:System.Windows.Forms.ListBox> to have more than one selected item and uses the <xref:System.Windows.Forms.ListBox.Sorted%2A> property to demonstrate how to sort items in a <xref:System.Windows.Forms.ListBox> automatically. This example requires that a <xref:System.Windows.Forms.ListBox>, named `listBox1`, has been added to a form and that the `InitializeMyListBox` method defined in the example is called from the <xref:System.Windows.Forms.Form.Load> event of the form.  
+  
+ [!code-cpp[ListBox.GetSelected#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.GetSelected/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.GetSelected#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.GetSelected/CS/form1.cs#1)]
+ [!code-vb[ListBox.GetSelected#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.GetSelected/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListBox.ObjectCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalExtent">
+      <MemberSignature Language="C#" Value="public int HorizontalExtent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HorizontalExtent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.HorizontalExtent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width by which the horizontal scroll bar of a <see cref="T:System.Windows.Forms.ListBox" /> can scroll.</summary>
+        <value>The width, in pixels, that the horizontal scroll bar can scroll the control. The default is zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only reports a useful value if the <xref:System.Windows.Forms.ListBox.HorizontalScrollbar%2A> property is set to `true`. If the width of the <xref:System.Windows.Forms.ListBox> is smaller than the value of this property, the horizontal scroll bar horizontally scrolls items in the <xref:System.Windows.Forms.ListBox>. If the width of the <xref:System.Windows.Forms.ListBox> is equal to or greater than this value, the horizontal scroll bar is hidden. The value of this property is not dynamically updated by the <xref:System.Windows.Forms.ListBox>. This property is useful when the items of the <xref:System.Windows.Forms.ListBox> are owner-drawn. For example, if the owner drawn items of the <xref:System.Windows.Forms.ListBox> are 200 pixels wide, but the <xref:System.Windows.Forms.ListBox> is 60 pixels wide, the <xref:System.Windows.Forms.ListBox.HorizontalExtent%2A> property would need to be set to 200 in order to scroll the right edge of the items into the visible region of the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.HorizontalScrollbar%2A> and <xref:System.Windows.Forms.ListBox.HorizontalExtent%2A> properties to display a horizontal scroll bar that shows all item text in the <xref:System.Windows.Forms.ListBox> control. The example also uses the <xref:System.Windows.Forms.ListBox.IntegralHeight%2A> property to ensure that items are not partially displayed due to the size of the <xref:System.Windows.Forms.ListBox> control. This example requires that a <xref:System.Windows.Forms.ListBox> control, named `listBox1`, has been added to a form.  
+  
+ [!code-cpp[ListView.HorizontalExtent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.HorizontalExtent/CPP/form1.cpp#1)]
+ [!code-csharp[ListView.HorizontalExtent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.HorizontalExtent/CS/form1.cs#1)]
+ [!code-vb[ListView.HorizontalExtent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.HorizontalExtent/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalScrollbar">
+      <MemberSignature Language="C#" Value="public bool HorizontalScrollbar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HorizontalScrollbar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.HorizontalScrollbar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a horizontal scroll bar is displayed in the control.</summary>
+        <value>
+          <see langword="true" /> to display a horizontal scroll bar in the control; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListBox.HorizontalScrollbar%2A> property determines whether the <xref:System.Windows.Forms.ListBox> should display a horizontal scroll bar when the width of items within the <xref:System.Windows.Forms.ListBox> extend beyond the right edge of the control. When this property is set to `true`, the scroll bar is automatically displayed based on the width of items in the <xref:System.Windows.Forms.ListBox>. If the <xref:System.Windows.Forms.ListBox> is an owner-drawn <xref:System.Windows.Forms.ListBox>, in order to properly display a horizontal scroll bar, you must set the <xref:System.Windows.Forms.ListBox.HorizontalExtent%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.HorizontalScrollbar%2A> and <xref:System.Windows.Forms.ListBox.HorizontalExtent%2A> properties to display a horizontal scroll bar that shows all item text in the <xref:System.Windows.Forms.ListBox> control. The example also uses the <xref:System.Windows.Forms.ListBox.IntegralHeight%2A> property to ensure that items are not partially displayed due to the size of the <xref:System.Windows.Forms.ListBox> control. This example requires that a <xref:System.Windows.Forms.ListBox> control, named `listBox1`, has been added to a form.  
+  
+ [!code-cpp[ListView.HorizontalExtent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.HorizontalExtent/CPP/form1.cpp#1)]
+ [!code-csharp[ListView.HorizontalExtent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.HorizontalExtent/CS/form1.cs#1)]
+ [!code-vb[ListView.HorizontalExtent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.HorizontalExtent/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexFromPoint">
+      <MemberSignature Language="C#" Value="public int IndexFromPoint (System.Drawing.Point p);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexFromPoint(valuetype System.Drawing.Point p) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.IndexFromPoint(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="p">A <see cref="T:System.Drawing.Point" /> object containing the coordinates used to obtain the item index.</param>
+        <summary>Returns the zero-based index of the item at the specified coordinates.</summary>
+        <returns>The zero-based index of the item found at the specified coordinates; returns <see langword="ListBox.NoMatches" /> if no match is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables you to determine which item is located at a specific location within the control. You can use this method to determine which item within the list is selected when a user right-clicks the <xref:System.Windows.Forms.ListBox>. The location of the cursor can be determined and passed to the `p` parameter of the <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method to determine which item the user right-clicked the mouse over. You can then display a shortcut menu to the user to provide tasks and features based on the specific item.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to perform drag-and-drop operations using a <xref:System.Windows.Forms.ListBox> control that contains items to drop into a <xref:System.Windows.Forms.RichTextBox> control. The constructor of the form sets the <xref:System.Windows.Forms.RichTextBox.AllowDrop%2A> property to `true` to enable drag-and-drop operations to occur in the <xref:System.Windows.Forms.RichTextBox>. The example uses the <xref:System.Windows.Forms.Control.MouseDown> event of the <xref:System.Windows.Forms.ListBox> to start the drag operation by calling the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method. The example uses the <xref:System.Windows.Forms.Control.DragEnter> event to determine if an item being dragged into the <xref:System.Windows.Forms.RichTextBox> is a valid data type. The <xref:System.Windows.Forms.Control.DragDrop> event performs the actual dropping of a dragged item into the <xref:System.Windows.Forms.RichTextBox> control at the current cursor location within the <xref:System.Windows.Forms.RichTextBox>. This example requires that the <xref:System.Windows.Forms.Control.DragDrop> and <xref:System.Windows.Forms.Control.DragEnter> events have been connected to the event handlers defined in the example.  
+  
+ [!code-cpp[RichTextBox.AllowDrop#1](~/samples/snippets/cpp/VS_Snippets_Winforms/RichTextBox.AllowDrop/CPP/form1.cpp#1)]
+ [!code-csharp[RichTextBox.AllowDrop#1](~/samples/snippets/csharp/VS_Snippets_Winforms/RichTextBox.AllowDrop/CS/form1.cs#1)]
+ [!code-vb[RichTextBox.AllowDrop#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/RichTextBox.AllowDrop/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexFromPoint">
+      <MemberSignature Language="C#" Value="public int IndexFromPoint (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexFromPoint(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.IndexFromPoint(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">The x-coordinate of the location to search.</param>
+        <param name="y">The y-coordinate of the location to search.</param>
+        <summary>Returns the zero-based index of the item at the specified coordinates.</summary>
+        <returns>The zero-based index of the item found at the specified coordinates; returns <see langword="ListBox.NoMatches" /> if no match is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables you to determine which item that is located at a specific location within the control. You can use this method to determine which item within the list is selected when a user right-clicks the <xref:System.Windows.Forms.ListBox>. The location of the cursor can be determined and passed to the `x` and `y` parameters of the <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> method to determine which item the user right-clicked the mouse over. You can then display a shortcut menu to the user to provide tasks and features based on the specific item.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to perform drag-and-drop operations using a <xref:System.Windows.Forms.ListBox> control that contains items to drop into a <xref:System.Windows.Forms.RichTextBox> control. The constructor of the form sets the <xref:System.Windows.Forms.RichTextBox.AllowDrop%2A> property to `true` to enable drag-and-drop operations to occur in the <xref:System.Windows.Forms.RichTextBox>. The example uses the <xref:System.Windows.Forms.Control.MouseDown> event of the <xref:System.Windows.Forms.ListBox> to start the drag operation by calling the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method. The example uses the <xref:System.Windows.Forms.Control.DragEnter> event to determine if an item being dragged into the <xref:System.Windows.Forms.RichTextBox> is a valid data type. The <xref:System.Windows.Forms.Control.DragDrop> event performs the actual dropping of a dragged item into the <xref:System.Windows.Forms.RichTextBox> control at the current cursor location within the <xref:System.Windows.Forms.RichTextBox>. This example requires that the <xref:System.Windows.Forms.Control.DragDrop> and <xref:System.Windows.Forms.Control.DragEnter> events have been connected to the event handlers defined in the example.  
+  
+ [!code-cpp[RichTextBox.AllowDrop#1](~/samples/snippets/cpp/VS_Snippets_Winforms/RichTextBox.AllowDrop/CPP/form1.cpp#1)]
+ [!code-csharp[RichTextBox.AllowDrop#1](~/samples/snippets/csharp/VS_Snippets_Winforms/RichTextBox.AllowDrop/CS/form1.cs#1)]
+ [!code-vb[RichTextBox.AllowDrop#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/RichTextBox.AllowDrop/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntegralHeight">
+      <MemberSignature Language="C#" Value="public bool IntegralHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IntegralHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.IntegralHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the control should resize to avoid showing partial items.</summary>
+        <value>
+          <see langword="true" /> if the control resizes so that it does not display partial items; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to `true`, the control automatically resizes to ensure that an item is not partially displayed. If you want to maintain the original size of the <xref:System.Windows.Forms.ListBox> based on the space requirements of your form, set this property to `false`.  
+  
+ By default, the <xref:System.Windows.Forms.ListBox> and the <xref:System.Windows.Forms.CheckedListBox> sizes are such that they show only whole items. If you want the <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.CheckedListBox> to completely fill a docked area, set <xref:System.Windows.Forms.ListBox.IntegralHeight%2A> to `false`. This causes the control to completely fill the area, but the last item is not fully displayed.  
+  
+ If the <xref:System.Windows.Forms.ListBox> does not contain any items, this property has no effect.  
+  
+> [!NOTE]
+>  The integral height is based on the height of the <xref:System.Windows.Forms.ListBox>, rather than the client area height. As a result, when the <xref:System.Windows.Forms.ListBox.IntegralHeight%2A> property is set `true`, items can still be partially shown if scroll bars are displayed.  
+  
+> [!NOTE]
+>  If the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to `DrawMode.OwnerDrawVariable`, this property has no effect.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.HorizontalScrollbar%2A> and <xref:System.Windows.Forms.ListBox.HorizontalExtent%2A> properties to display a horizontal scroll bar that shows all item text in the <xref:System.Windows.Forms.ListBox> control. The example also uses the <xref:System.Windows.Forms.ListBox.IntegralHeight%2A> property to ensure that items are not partially displayed due to the size of the <xref:System.Windows.Forms.ListBox> control. This example requires that a <xref:System.Windows.Forms.ListBox> control, named `listBox1`, has been added to a form.  
+  
+ [!code-cpp[ListView.HorizontalExtent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.HorizontalExtent/CPP/form1.cpp#1)]
+ [!code-csharp[ListView.HorizontalExtent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.HorizontalExtent/CS/form1.cs#1)]
+ [!code-vb[ListView.HorizontalExtent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.HorizontalExtent/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemHeight">
+      <MemberSignature Language="C#" Value="public virtual int ItemHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ItemHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.ItemHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of an item in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>The height, in pixels, of an item in the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to `DrawMode.OwnerDrawFixed`, all items have the same height. When the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to `DrawMode.OwnerDrawVariable`, the <xref:System.Windows.Forms.ListBox.ItemHeight%2A> property specifies the height of each item added to the <xref:System.Windows.Forms.ListBox>. Because each item in an owner-drawn list can have a different height, you can use the <xref:System.Windows.Forms.ListBox.GetItemHeight%2A> method to get the height of a specific item in the <xref:System.Windows.Forms.ListBox>. If you use the <xref:System.Windows.Forms.ListBox.ItemHeight%2A> property on a <xref:System.Windows.Forms.ListBox> with items of variable height, this property returns the height of the first item in the control.  
+  
+ The maximum height of a <xref:System.Windows.Forms.ListBox> item is 255 pixels.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Windows.Forms.ListBox.ItemHeight" /> property was set to less than 0 or more than 255 pixels.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.ObjectCollection Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/ObjectCollection Items" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListBox+ObjectCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the items of the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>An <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> representing the items in the <see cref="T:System.Windows.Forms.ListBox" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to obtain a reference to the list of items that are currently stored in the <xref:System.Windows.Forms.ListBox>. With this reference, you can add items, remove items, and obtain a count of the items in the collection. For more information about the tasks that can be performed with the item collection, see the <xref:System.Windows.Forms.ListBox.ObjectCollection> class reference topics.  
+  
+ You can also manipulate the items of a <xref:System.Windows.Forms.ListBox> by using the <xref:System.Windows.Forms.ListControl.DataSource%2A> property. If you use the <xref:System.Windows.Forms.ListControl.DataSource%2A> property to add items to a <xref:System.Windows.Forms.ListBox>, you can view the items in the <xref:System.Windows.Forms.ListBox> using the <xref:System.Windows.Forms.ListBox.Items%2A> property but you cannot add or remove items from the list using the methods of the <xref:System.Windows.Forms.ListBox.ObjectCollection>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.ListBox> control that displays multiple items in columns and can have more than one item selected in the control's list. The code for the example adds 50 items to the <xref:System.Windows.Forms.ListBox> using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class and then selects three items from the list using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method. The code then displays values from the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> collection (through the <xref:System.Windows.Forms.ListBox.SelectedItems%2A> property) and the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> (through the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> property). This example requires that the code is located in and called from a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic ListBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ListBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ListBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ListBox Example/CS/source.cs#1)]
+ [!code-vb[Classic ListBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ListBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureItem">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.MeasureItemEventHandler MeasureItem;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MeasureItemEventHandler MeasureItem" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.MeasureItem" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MeasureItemEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an owner-drawn <see cref="T:System.Windows.Forms.ListBox" /> is created and the sizes of the list items are determined.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create an event handler for this event to specify the size an item will be made before it is drawn in the <xref:System.Windows.Forms.ListBox.DrawItem> event. The event is only raised when the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode>.  
+  
+ The maximum valid height of a <xref:System.Windows.Forms.ListBox> item is 255 pixels. Setting the <xref:System.Windows.Forms.MeasureItemEventArgs.ItemHeight%2A> property of the <xref:System.Windows.Forms.MeasureItemEventArgs> to a value greater than 255 when handling this event may yield unexpected results.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an owner-drawn <xref:System.Windows.Forms.ListBox> by setting the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to <xref:System.Windows.Forms.DrawMode> and handling the <xref:System.Windows.Forms.ListBox.DrawItem> and <xref:System.Windows.Forms.ListBox.MeasureItem> events. It also demonstrates setting the <xref:System.Windows.Forms.ListBox.BorderStyle%2A> and <xref:System.Windows.Forms.ListBox.ScrollAlwaysVisible%2A> properties and using the <xref:System.Windows.Forms.ListBox.ObjectCollection.AddRange%2A> method.  
+  
+ To run this example, paste it in an empty form that imports the <xref:System.Drawing> namespace and the <xref:System.Windows.Forms> namespace. Call `InitializeOwnerDrawnListBox` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-cpp[System.Windows.Forms.ListBoxExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListBoxExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListBoxExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListBoxExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListBoxExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListBoxExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseClick">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.MouseClick" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user clicks the <see cref="T:System.Windows.Forms.ListBox" /> control with the mouse pointer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiColumn">
+      <MemberSignature Language="C#" Value="public bool MultiColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MultiColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.MultiColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ListBox" /> supports multiple columns.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ListBox" /> supports multiple columns; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A multicolumn <xref:System.Windows.Forms.ListBox> places items into as many columns as are needed to make vertical scrolling unnecessary. The user can use the keyboard to navigate to columns that are not currently visible. Set the <xref:System.Windows.Forms.ListBox.HorizontalScrollbar%2A> property to `true` to display a horizontal scroll bar that enables the user to scroll to columns that are not currently shown in the visible region of the <xref:System.Windows.Forms.ListBox>. The value of the <xref:System.Windows.Forms.ListBox.ColumnWidth%2A> property determines the width of each column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a simple two-column <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-csharp[System.Windows.Forms.ListBox.MultiColumn#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListBox.MultiColumn/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListBox.MultiColumn#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListBox.MultiColumn/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A multicolumn <see cref="T:System.Windows.Forms.ListBox" /> cannot have a variable-sized height.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NoMatches">
+      <MemberSignature Language="C#" Value="public const int NoMatches = -1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NoMatches = (-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListBox.NoMatches" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1</MemberValue>
+      <Docs>
+        <summary>Specifies that no matches are found during a search.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constant is returned by the <xref:System.Windows.Forms.ListBox.FindString%2A>, <xref:System.Windows.Forms.ListBox.FindStringExact%2A>, and <xref:System.Windows.Forms.ListBox.IndexFromPoint%2A> methods when no matching values are found in a search.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChangeUICues">
+      <MemberSignature Language="C#" Value="protected override void OnChangeUICues (System.Windows.Forms.UICuesEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChangeUICues(class System.Windows.Forms.UICuesEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnChangeUICues(System.Windows.Forms.UICuesEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.UICuesEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.UICuesEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ChangeUICues" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataSourceChanged">
+      <MemberSignature Language="C#" Value="protected override void OnDataSourceChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataSourceChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnDataSourceChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.DataSourceChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisplayMemberChanged">
+      <MemberSignature Language="C#" Value="protected override void OnDisplayMemberChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDisplayMemberChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnDisplayMemberChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.DisplayMemberChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDrawItem">
+      <MemberSignature Language="C#" Value="protected virtual void OnDrawItem (System.Windows.Forms.DrawItemEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawItem(class System.Windows.Forms.DrawItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.DrawItemEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListBox.DrawItem" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListBox.OnDrawItem%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create owner-drawn <xref:System.Windows.Forms.ListBox> items. The code uses the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to specify that the items drawn are fixed sized and the <xref:System.Windows.Forms.ListBox.DrawItem> event to perform the drawing of each item into the <xref:System.Windows.Forms.ListBox>. The example code uses the properties and methods of the <xref:System.Windows.Forms.DrawItemEventArgs> class passed as a parameter to the event handler to draw the items. This example requires that a <xref:System.Windows.Forms.ListBox> control called `listBox1` has been added to a form and that the <xref:System.Windows.Forms.ListBox.DrawItem> event is handled by the event handler defined in the example code. The example also requires that items have been added to the <xref:System.Windows.Forms.ListBox> with the text of "Apple", "Orange", and "Plum" in that order.  
+  
+ [!code-csharp[ListBox.DrawMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.DrawMode/CS/form1.cs#1)]
+ [!code-vb[ListBox.DrawMode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.DrawMode/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFontChanged">
+      <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnFontChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleCreated">
+      <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnHandleCreated(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Specifies when the window handle has been created so that column width and other characteristics can be set. Inheriting classes should call <see langword="base.OnHandleCreated" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleDestroyed">
+      <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnHandleDestroyed(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Overridden to be sure that items are set up and cleared out correctly. Inheriting controls should call <see langword="base.OnHandleDestroyed" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMeasureItem">
+      <MemberSignature Language="C#" Value="protected virtual void OnMeasureItem (System.Windows.Forms.MeasureItemEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMeasureItem(class System.Windows.Forms.MeasureItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MeasureItemEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListBox.MeasureItem" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.ListBox.OnMeasureItem%2A> method also enables derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnParentChanged">
+      <MemberSignature Language="C#" Value="protected override void OnParentChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnParentChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnResize">
+      <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnResize(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedIndexChanged">
+      <MemberSignature Language="C#" Value="protected override void OnSelectedIndexChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.SelectedValueChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedValueChanged">
+      <MemberSignature Language="C#" Value="protected override void OnSelectedValueChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedValueChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnSelectedValueChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListControl.SelectedValueChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Padding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Padding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant to this class.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Padding" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.PaddingChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ListBox.Padding" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paint">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.Paint" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Forms.ListBox" /> control is painted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is not relevant for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredHeight">
+      <MemberSignature Language="C#" Value="public int PreferredHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PreferredHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.PreferredHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the combined height of all items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>The combined height, in pixels, of all items in the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine the height that the <xref:System.Windows.Forms.ListBox> needs to be sized to, in order to display every available item in the list and to avoid displaying vertical scroll bars. If the amount of items in the <xref:System.Windows.Forms.ListBox> is large, sizing the control using the value of the <xref:System.Windows.Forms.ListBox.PreferredHeight%2A> property might cause the <xref:System.Windows.Forms.ListBox> to be sized outside of the client area of the form or the <xref:System.Windows.Forms.ListBox> container.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Windows.Forms.Control.Size%2A> property of a <xref:System.Windows.Forms.ListBox> based on the value of the <xref:System.Windows.Forms.ListBox.PreferredHeight%2A> property in order to display all items in the <xref:System.Windows.Forms.ListBox> without use of scroll bars. This example requires that a <xref:System.Windows.Forms.ListBox> control, named `listBox1`, has been added to a form.  
+  
+ [!code-cpp[ListBox.PreferredHeight#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.PreferredHeight/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.PreferredHeight#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.PreferredHeight/CS/form1.cs#1)]
+ [!code-vb[ListBox.PreferredHeight#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.PreferredHeight/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public override void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces the control to invalidate its client area and immediately redraw itself and any child controls.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshItem">
+      <MemberSignature Language="C#" Value="protected override void RefreshItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RefreshItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.RefreshItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to refresh.</param>
+        <summary>Refreshes the item contained at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.ListControl.DisplayMember%2A> property is set and the property in the data source that is assigned to <xref:System.Windows.Forms.ListControl.DisplayMember%2A> changes, use the <xref:System.Windows.Forms.ListBox.RefreshItem%2A> method to update the value in the <xref:System.Windows.Forms.ListBox> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshItems">
+      <MemberSignature Language="C#" Value="protected override void RefreshItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RefreshItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.RefreshItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Refreshes all <see cref="T:System.Windows.Forms.ListBox" /> items and retrieves new strings for them.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RescaleConstantsForDpi">
+      <MemberSignature Language="C#" Value="protected override void RescaleConstantsForDpi (int deviceDpiOld, int deviceDpiNew);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RescaleConstantsForDpi(int32 deviceDpiOld, int32 deviceDpiNew) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.RescaleConstantsForDpi(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deviceDpiOld" Type="System.Int32" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="deviceDpiOld">The DPI value prior to the change.</param>
+        <param name="deviceDpiNew">The DPI value after the change.</param>
+        <summary>Provides constants for rescaling the control when a DPI change occurs.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetBackColor">
+      <MemberSignature Language="C#" Value="public override void ResetBackColor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetBackColor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ResetBackColor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the <see cref="P:System.Windows.Forms.Control.BackColor" /> property to its default value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetForeColor">
+      <MemberSignature Language="C#" Value="public override void ResetForeColor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetForeColor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ResetForeColor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property to its default value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeft">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.RightToLeft RightToLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RightToLeft RightToLeft" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.RightToLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether text displayed by the control is displayed from right to left.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables your menus to support languages that are written from right to left. When this property is set to `true`, item text is displayed from right to left instead of the default left to right method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleControl">
+      <MemberSignature Language="C#" Value="protected override void ScaleControl (System.Drawing.SizeF factor, System.Windows.Forms.BoundsSpecified specified);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ScaleControl(valuetype System.Drawing.SizeF factor, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="factor" Type="System.Drawing.SizeF" />
+        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
+      </Parameters>
+      <Docs>
+        <param name="factor">The factor by which the height and width of the control will be scaled.</param>
+        <param name="specified">A <see cref="T:System.Windows.Forms.BoundsSpecified" /> value that specifies the bounds of the control to use when defining its size and position.</param>
+        <summary>Scales a control's location, size, padding and margin.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollAlwaysVisible">
+      <MemberSignature Language="C#" Value="public bool ScrollAlwaysVisible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScrollAlwaysVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.ScrollAlwaysVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the vertical scroll bar is shown at all times.</summary>
+        <value>
+          <see langword="true" /> if the vertical scroll bar should always be displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListBox.ScrollAlwaysVisible%2A> property indicates whether a vertical scroll bar is always displayed, even if the number of items in the <xref:System.Windows.Forms.ListBox> does not require displaying the vertical scroll bar. By default, a <xref:System.Windows.Forms.ListBox> only shows a vertical scroll bar when there are enough items to warrant displaying. For a multicolumn <xref:System.Windows.Forms.ListBox>, the <xref:System.Windows.Forms.ListBox.ScrollAlwaysVisible%2A> property indicates that a horizontal scroll bar is displayed. A vertical scroll bar is never displayed regardless of the value of this property for a multicolumn <xref:System.Windows.Forms.ListBox>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an owner-drawn <xref:System.Windows.Forms.ListBox> by setting the <xref:System.Windows.Forms.ListBox.DrawMode%2A> property to the `OwnerDrawVariable` value and handling the <xref:System.Windows.Forms.ListBox.DrawItem> and <xref:System.Windows.Forms.ListBox.MeasureItem> events. It also demonstrates setting the <xref:System.Windows.Forms.ListBox.BorderStyle%2A> and <xref:System.Windows.Forms.ListBox.ScrollAlwaysVisible%2A> properties and using the <xref:System.Windows.Forms.ListBox.ObjectCollection.AddRange%2A> method.  
+  
+ To run this example, paste it in an empty form that imports the <xref:System.Drawing> namespace and the <xref:System.Windows.Forms> namespace. Call `InitializeOwnerDrawnListBox` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-cpp[System.Windows.Forms.ListBoxExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListBoxExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListBoxExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListBoxExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListBoxExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListBoxExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndex">
+      <MemberSignature Language="C#" Value="public override int SelectedIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectedIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the zero-based index of the currently selected item in a <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>A zero-based index of the currently selected item. A value of negative one (-1) is returned if no item is selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a standard <xref:System.Windows.Forms.ListBox>, you can use this property to determine the index of the item that is selected in the <xref:System.Windows.Forms.ListBox>. If the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is set to either `SelectionMode.MultiSimple` or `SelectionMode.MultiExtended` (which indicates a multiple-selection <xref:System.Windows.Forms.ListBox>) and multiple items are selected in the list, this property can return the index to any selected item.  
+  
+ To retrieve a collection containing the indexes of all selected items in a multiple-selection <xref:System.Windows.Forms.ListBox>, use the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> property. If you want to obtain the item that is currently selected in the <xref:System.Windows.Forms.ListBox>, use the <xref:System.Windows.Forms.ListBox.SelectedItem%2A> property. In addition, you can use the <xref:System.Windows.Forms.ListBox.SelectedItems%2A> property to obtain all the selected items in a multiple-selection <xref:System.Windows.Forms.ListBox>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property with the <xref:System.Windows.Forms.ListBox.TopIndex%2A> property to move the currently selected item to the top of the list of items in the display area of the <xref:System.Windows.Forms.ListBox>. The example further demonstrates how to remove items using the <xref:System.Windows.Forms.ListBox.ObjectCollection.RemoveAt%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection?displayProperty=fullName> class, and how to clear all item selection using the <xref:System.Windows.Forms.ListBox.ClearSelected%2A> method. The code first moves the currently selected item in the <xref:System.Windows.Forms.ListBox> to the top of the list. The code then removes all items before the currently selected item and clears all selections in the <xref:System.Windows.Forms.ListBox>. This example requires that a <xref:System.Windows.Forms.ListBox> containing items is added to a form and that an item is currently selected in the <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-cpp[ListBox.SelectedIndex#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.SelectedIndex/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.SelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.SelectedIndex/CS/form1.cs#1)]
+ [!code-vb[ListBox.SelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.SelectedIndex/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than -1 or greater than or equal to the item count.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Windows.Forms.ListBox.SelectionMode" /> property is set to <see langword="None" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndexChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SelectedIndexChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedIndexChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.SelectedIndexChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ListBox.SelectedIndex" /> property or the <see cref="P:System.Windows.Forms.ListBox.SelectedIndices" /> collection has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create an event handler for this event to determine when the selected index in the <xref:System.Windows.Forms.ListBox> has been changed. This can be useful when you need to display information in other controls based on the current selection in the <xref:System.Windows.Forms.ListBox>. You can use the event handler for this event to load the information in the other controls.  
+  
+ If the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property is set to <xref:System.Windows.Forms.SelectionMode?displayProperty=fullName> or <xref:System.Windows.Forms.SelectionMode?displayProperty=fullName>, any change to the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> collection, including removing an item from the selection, will raise this event.  
+  
+ For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.SelectedIndexChanged> event to search for and select an item in a different <xref:System.Windows.Forms.ListBox> control. The example uses the <xref:System.Windows.Forms.ListBox.SelectedIndexChanged> event to determine when the selected item in the <xref:System.Windows.Forms.ListBox> is changed. The example code then reads the text of the item using the <xref:System.Windows.Forms.ListBox.SelectedItem%2A> property and calls the <xref:System.Windows.Forms.ListBox.FindString%2A> method on a different <xref:System.Windows.Forms.ListBox> using the text returned by <xref:System.Windows.Forms.ListBox.SelectedItem%2A> in the first <xref:System.Windows.Forms.ListBox>. If an item is found in the other <xref:System.Windows.Forms.ListBox>, the item is selected. This example requires that two <xref:System.Windows.Forms.ListBox> controls, named `listBox1` and `listBox2`, have been added to a form and that both <xref:System.Windows.Forms.ListBox> controls contain items that are identical. The example also requires that the event-handling method defined in the example is connected to the <xref:System.Windows.Forms.ListBox.SelectedIndexChanged> event of `listBox1`.  
+  
+ [!code-cpp[ListBox.SelectedIndexChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.SelectedIndexChanged/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.SelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.SelectedIndexChanged/CS/form1.cs#1)]
+ [!code-vb[ListBox.SelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.SelectedIndexChanged/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndices">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.SelectedIndexCollection SelectedIndices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/SelectedIndexCollection SelectedIndices" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectedIndices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListBox+SelectedIndexCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that contains the zero-based indexes of all currently selected items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ListBox.SelectedIndexCollection" /> containing the indexes of the currently selected items in the control. If no items are currently selected, an empty <see cref="T:System.Windows.Forms.ListBox.SelectedIndexCollection" /> is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a multiple-selection <xref:System.Windows.Forms.ListBox>, this property returns a collection containing the indexes to all items that are selected in the <xref:System.Windows.Forms.ListBox>. For a single-selection <xref:System.Windows.Forms.ListBox>, this property returns a collection containing a single element containing the index of the only selected item in the <xref:System.Windows.Forms.ListBox>. For more information about how to manipulate the items of the collection, see <xref:System.Windows.Forms.ListBox.SelectedIndexCollection>.  
+  
+ The <xref:System.Windows.Forms.ListBox> class provides a number of ways to reference selected items. Instead of using the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> property to obtain the index position of the currently selected item in a single-selection <xref:System.Windows.Forms.ListBox>, you can use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property. If you want to obtain the item that is currently selected in the <xref:System.Windows.Forms.ListBox>, instead of the index position of the item, use the <xref:System.Windows.Forms.ListBox.SelectedItem%2A> property. In addition, you can use the <xref:System.Windows.Forms.ListBox.SelectedItems%2A> property if you want to obtain all the selected items in a multiple-selection <xref:System.Windows.Forms.ListBox>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.FindString%2A> method to search for all instances of the search text in the items of the <xref:System.Windows.Forms.ListBox>. The example uses the version of the <xref:System.Windows.Forms.ListBox.FindString%2A> method that enables you to specify a starting search index from which to do a continual search of all items in the <xref:System.Windows.Forms.ListBox>. The example also demonstrates how to determine when the <xref:System.Windows.Forms.ListBox.FindString%2A> method begins searching from the top of the list after it reaches the bottom of the list of items to prevent a recursive search. Once items are found in the <xref:System.Windows.Forms.ListBox>, they are selected using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method.  
+  
+ [!code-cpp[ListBox.FindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.FindString/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.FindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.FindString/CS/form1.cs#1)]
+ [!code-vb[ListBox.FindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.FindString/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItem">
+      <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SelectedItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectedItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the currently selected item in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>An object that represents the current selection in the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a standard <xref:System.Windows.Forms.ListBox>, you can use this property to determine which item is selected in the <xref:System.Windows.Forms.ListBox>. If the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is set to either `SelectionMode.MultiSimple` or `SelectionMode.MultiExtended` (which indicates a multiple-selection <xref:System.Windows.Forms.ListBox>) and multiple items are selected in the list, this property can return any selected item.  
+  
+ To retrieve a collection containing all selected items in a multiple-selection <xref:System.Windows.Forms.ListBox>, use the <xref:System.Windows.Forms.ListBox.SelectedItems%2A> property. If you want to obtain the index position of the currently selected item in the <xref:System.Windows.Forms.ListBox>, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property. In addition, you can use the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> property to obtain all the selected indexes in a multiple-selection <xref:System.Windows.Forms.ListBox>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.SelectedIndexChanged> event to search for and select an item in a different <xref:System.Windows.Forms.ListBox> control. The example uses the <xref:System.Windows.Forms.ListBox.SelectedIndexChanged> event to determine when the selected item in the <xref:System.Windows.Forms.ListBox> is changed. The example code then reads the text of the item using the <xref:System.Windows.Forms.ListBox.SelectedItem%2A> property and calls the <xref:System.Windows.Forms.ListBox.FindString%2A> method on a different <xref:System.Windows.Forms.ListBox> using the text returned by <xref:System.Windows.Forms.ListBox.SelectedItem%2A> in the first <xref:System.Windows.Forms.ListBox>. If an item is found in the other <xref:System.Windows.Forms.ListBox>, the item is selected. This example requires that two <xref:System.Windows.Forms.ListBox> controls, named `listBox1` and `listBox2`, have been added to a form and that both <xref:System.Windows.Forms.ListBox> controls contain items that are identical. The example also requires that the event-handling method defined in the example is connected to the <xref:System.Windows.Forms.ListBox.SelectedIndexChanged> event of `listBox1`.  
+  
+ [!code-cpp[ListBox.SelectedIndexChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.SelectedIndexChanged/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.SelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.SelectedIndexChanged/CS/form1.cs#1)]
+ [!code-vb[ListBox.SelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.SelectedIndexChanged/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItems">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.SelectedObjectCollection SelectedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/SelectedObjectCollection SelectedItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListBox+SelectedObjectCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection containing the currently selected items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ListBox.SelectedObjectCollection" /> containing the currently selected items in the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a multiple-selection <xref:System.Windows.Forms.ListBox>, this property returns a collection containing all items that are selected in the <xref:System.Windows.Forms.ListBox>. For a single-selection <xref:System.Windows.Forms.ListBox>, this property returns a collection containing a single element containing the only selected item in the <xref:System.Windows.Forms.ListBox>. For more information about how to manipulate the items of the collection, see <xref:System.Windows.Forms.ListBox.SelectedObjectCollection>.  
+  
+ The <xref:System.Windows.Forms.ListBox> class provides a number of ways to reference selected items. Instead of using the <xref:System.Windows.Forms.ListBox.SelectedItems%2A> property to obtain the currently selected item in a single-selection <xref:System.Windows.Forms.ListBox>, you can use the <xref:System.Windows.Forms.ListBox.SelectedItem%2A> property. If you want to obtain the index position of an item that is currently selected in the <xref:System.Windows.Forms.ListBox>, instead of the item itself, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property. In addition, you can use the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> property if you want to obtain the index positions of all selected items in a multiple-selection <xref:System.Windows.Forms.ListBox>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionMode">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.SelectionMode SelectionMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SelectionMode SelectionMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the method in which items are selected in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.SelectionMode" /> values. The default is <see langword="SelectionMode.One" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property enables you to determine how many items in the <xref:System.Windows.Forms.ListBox> a user can select at one time and how the user can make multiple-selections. When the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property is set to `SelectionMode.MultiExtended`, pressing SHIFT and clicking the mouse or pressing SHIFT and one of the arrow keys (UP ARROW, DOWN ARROW, LEFT ARROW, and RIGHT ARROW) extends the selection from the previously selected item to the current item. Pressing CTRL and clicking the mouse selects or deselects an item in the list. When the property is set to `SelectionMode.MultiSimple`, a mouse click or pressing the SPACEBAR selects or deselects an item in the list.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.GetSelected%2A> method to determine which items in a <xref:System.Windows.Forms.ListBox> are selected in order to select the items that are not selected and deselect the items that are selected. The example also demonstrates using the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property to enable a <xref:System.Windows.Forms.ListBox> to have more than one selected item and uses the <xref:System.Windows.Forms.ListBox.Sorted%2A> property to demonstrate how to sort items in a <xref:System.Windows.Forms.ListBox> automatically. This example requires that a <xref:System.Windows.Forms.ListBox>, named `listBox1`, has been added to a form and that the `InitializeMyListBox` method defined in the example is called from the <xref:System.Windows.Forms.Form.Load> event of the form.  
+  
+ [!code-cpp[ListBox.GetSelected#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.GetSelected/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.GetSelected#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.GetSelected/CS/form1.cs#1)]
+ [!code-vb[ListBox.GetSelected#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.GetSelected/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.SelectionMode" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBoundsCore">
+      <MemberSignature Language="C#" Value="protected override void SetBoundsCore (int x, int y, int width, int height, System.Windows.Forms.BoundsSpecified specified);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetBoundsCore(int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
+      </Parameters>
+      <Docs>
+        <param name="x">The new <see cref="P:System.Windows.Forms.Control.Left" /> property value of the control.</param>
+        <param name="y">The new <see cref="P:System.Windows.Forms.Control.Top" /> property value of the control.</param>
+        <param name="width">The new <see cref="P:System.Windows.Forms.Control.Width" /> property value of the control.</param>
+        <param name="height">The new <see cref="P:System.Windows.Forms.Control.Height" /> property value of the control.</param>
+        <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
+        <summary>Sets the specified bounds of the <see cref="T:System.Windows.Forms.ListBox" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The height of the <xref:System.Windows.Forms.ListBox> control increases and decreases by a multiple of the <xref:System.Windows.Forms.ListBox.ItemHeight%2A> property. If height is a number that is not a multiple of <xref:System.Windows.Forms.ListBox.ItemHeight%2A>, the height of the <xref:System.Windows.Forms.ListBox> will change by the largest multiple that is less than height.  
+  
+ Typically, the parameters that correspond to the bounds not included in the specified parameter are passed in with their current values. For example, the `height`, `width`, or the `x` or `y` properties of the <xref:System.Windows.Forms.Control.Location%2A> property can be passed in with a reference to the current instance of the control. However, all values passed in are honored and applied to the control.  
+  
+ The `specified` parameter represents the elements of the controls <xref:System.Windows.Forms.Control.Bounds%2A> changed by your application. For example, if you change the <xref:System.Windows.Forms.Control.Size%2A> of the control, the `specified` parameter value is <xref:System.Windows.Forms.BoundsSpecified>. However, if the <xref:System.Windows.Forms.Control.Size%2A> is adjusted in response to the <xref:System.Windows.Forms.Control.Dock%2A> property being set, the `specified` parameter value is <xref:System.Windows.Forms.BoundsSpecified>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.ListBox.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ListBox.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" /> method to force the bounds of the control to change. Derived classes can add size restrictions to the <see cref="M:System.Windows.Forms.ListBox.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemCore">
+      <MemberSignature Language="C#" Value="protected override void SetItemCore (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItemCore(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.SetItemCore(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The array index of the object.</param>
+        <param name="value">The object.</param>
+        <summary>Sets the object with the specified index in the derived class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemsCore">
+      <MemberSignature Language="C#" Value="protected override void SetItemsCore (System.Collections.IList value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItemsCore(class System.Collections.IList value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.SetItemsCore(System.Collections.IList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.IList" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of objects to insert into the control.</param>
+        <summary>Clears the contents of the <see cref="T:System.Windows.Forms.ListBox" /> and adds the specified items to the control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSelected">
+      <MemberSignature Language="C#" Value="public void SetSelected (int index, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSelected(int32 index, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.SetSelected(System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item in a <see cref="T:System.Windows.Forms.ListBox" /> to select or clear the selection for.</param>
+        <param name="value">
+          <see langword="true" /> to select the specified item; otherwise, <see langword="false" />.</param>
+        <summary>Selects or clears the selection for the specified item in a <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to set the selection of items in a multiple-selection <xref:System.Windows.Forms.ListBox>. To select an item in a single-selection <xref:System.Windows.Forms.ListBox>, use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.ListBox> control that displays multiple items in columns and can have more than one item selected in the control's list. The code for the example adds 50 items to the <xref:System.Windows.Forms.ListBox> using the <xref:System.Windows.Forms.ListBox.ObjectCollection.Add%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection> class and then selects three items from the list using the <xref:System.Windows.Forms.ListBox.SetSelected%2A> method. The code then displays values from the <xref:System.Windows.Forms.ListBox.SelectedObjectCollection> collection (through the <xref:System.Windows.Forms.ListBox.SelectedItems%2A> property) and the <xref:System.Windows.Forms.ListBox.SelectedIndexCollection> (through the <xref:System.Windows.Forms.ListBox.SelectedIndices%2A> property). This example requires that the code is located in and called from a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic ListBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ListBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ListBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ListBox Example/CS/source.cs#1)]
+ [!code-vb[Classic ListBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ListBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified index was outside the range of valid values.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.ListBox.SelectionMode" /> property was set to <see langword="None" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="protected virtual void Sort ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Sort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.Sort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sorts the items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ListBox.Sort%2A> forces the collection to add each item back to itself if the <xref:System.Windows.Forms.ListBox.Sorted%2A> property is `true`. Each item is then inserted into the correct position.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.ListBox.Sort%2A> method. The example demonstrates inheriting from the <xref:System.Windows.Forms.ListBox> class and overriding the <xref:System.Windows.Forms.ListBox.Sort%2A> method in the derived class to perform a user-defined sort. To run this example paste the following code in an empty form.  
+  
+ [!code-cpp[System.Windows.Forms.ListBoxSort#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListBoxSort/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListBoxSort#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListBoxSort/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListBoxSort#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListBoxSort/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You can override this method in your derived class to provide your own sorting routine. Access the results of the overridden <see cref="M:System.Windows.Forms.ListBox.Sort" /> method by setting the <see cref="P:System.Windows.Forms.ListBox.Sorted" /> property to <see langword="true" />. When adding items to a <see cref="T:System.Windows.Forms.ListBox" />, it is more efficient to sort the items first and then add new items.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Sorted">
+      <MemberSignature Language="C#" Value="public bool Sorted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Sorted" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Sorted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the items in the <see cref="T:System.Windows.Forms.ListBox" /> are sorted alphabetically.</summary>
+        <value>
+          <see langword="true" /> if items in the control are sorted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.ListBox.Sorted%2A> property to automatically sort strings alphabetically in a <xref:System.Windows.Forms.ListBox>. As items are added to a sorted <xref:System.Windows.Forms.ListBox>, the items are moved to the appropriate location in the sorted list. When adding items to a <xref:System.Windows.Forms.ListBox>, it is more efficient to sort the items first and then add new items.  
+  
+ A <xref:System.Windows.Forms.ListBox> with its <xref:System.Windows.Forms.ListBox.Sorted%2A> set to `true` should not be bound to data using the <xref:System.Windows.Forms.ListControl.DataSource%2A> property. To display sorted data in a bound <xref:System.Windows.Forms.ListBox>, you should bind to a data source that supports sorting and have the data source provide the sorting.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.GetSelected%2A> method to determine which items in a <xref:System.Windows.Forms.ListBox> are selected in order to select the items that are not selected and deselect the items that are selected. The example also demonstrates using the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property to enable a <xref:System.Windows.Forms.ListBox> to have more than one selected item and uses the <xref:System.Windows.Forms.ListBox.Sorted%2A> property to demonstrate how to sort items in a <xref:System.Windows.Forms.ListBox> automatically. This example requires that a <xref:System.Windows.Forms.ListBox>, named `listBox1`, has been added to a form and that the `InitializeMyListBox` method defined in the example is called from the <xref:System.Windows.Forms.Form.Load> event of the form.  
+  
+ [!code-cpp[ListBox.GetSelected#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.GetSelected/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.GetSelected#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.GetSelected/CS/form1.cs#1)]
+ [!code-vb[ListBox.GetSelected#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.GetSelected/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or searches for the text of the currently selected item in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>The text of the currently selected item in the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the value of this property is set to a string value, the <xref:System.Windows.Forms.ListBox> searches for the item within the <xref:System.Windows.Forms.ListBox> that matches the specified text and selects the item. You can also use this property to determine which items are currently selected in the <xref:System.Windows.Forms.ListBox>. If the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is set to `SelectionMode.MultiExtended`, this property returns the text of the first selected item. If the <xref:System.Windows.Forms.ListBox.SelectionMode%2A> property of the <xref:System.Windows.Forms.ListBox> is not set to `SelectionMode.None`, this property returns the text of the first selected item.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.TextChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ListBox.Text" /> property is changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopIndex">
+      <MemberSignature Language="C#" Value="public int TopIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TopIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.TopIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the first visible item in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <value>The zero-based index of the first visible item in the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Initially, the item with the index position zero (0) is at the top of the visible region of the <xref:System.Windows.Forms.ListBox>. If the contents of the <xref:System.Windows.Forms.ListBox> have been scrolled, another item might be at the top of the control's display area. You can use this property to obtain the index within the <xref:System.Windows.Forms.ListBox.ObjectCollection> for the <xref:System.Windows.Forms.ListBox> of the item that is currently positioned at the top of the visible region of the control. You can also use this property to position an item in the list at the top of the visible region of the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListBox.SelectedIndex%2A> property with the <xref:System.Windows.Forms.ListBox.TopIndex%2A> property to move the currently selected item to the top of the list of items in the display area of the <xref:System.Windows.Forms.ListBox>. The example further demonstrates how to remove items using the <xref:System.Windows.Forms.ListBox.ObjectCollection.RemoveAt%2A> method of the <xref:System.Windows.Forms.ListBox.ObjectCollection?displayProperty=fullName> class, and how to clear all item selection using the <xref:System.Windows.Forms.ListBox.ClearSelected%2A> method. The code first moves the currently selected item in the <xref:System.Windows.Forms.ListBox> to the top of the list. The code then removes all items before the currently selected item and clears all selections in the <xref:System.Windows.Forms.ListBox>. This example requires that a <xref:System.Windows.Forms.ListBox> containing items is added to a form and that an item is currently selected in the <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-cpp[ListBox.SelectedIndex#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.SelectedIndex/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.SelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.SelectedIndex/CS/form1.cs#1)]
+ [!code-vb[ListBox.SelectedIndex#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.SelectedIndex/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <returns>A string that states the control type, the count of items in the <see cref="T:System.Windows.Forms.ListBox" /> control, and the Text property of the first item in the <see cref="T:System.Windows.Forms.ListBox" />, if the count is not 0.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCustomTabOffsets">
+      <MemberSignature Language="C#" Value="public bool UseCustomTabOffsets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseCustomTabOffsets" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.UseCustomTabOffsets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ListBox" /> recognizes and expands tab characters when it draws its strings by using the <see cref="P:System.Windows.Forms.ListBox.CustomTabOffsets" /> integer array.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ListBox" /> recognizes and expands tab characters; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseTabStops">
+      <MemberSignature Language="C#" Value="public bool UseTabStops { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseTabStops" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.UseTabStops" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ListBox" /> can recognize and expand tab characters when drawing its strings.</summary>
+        <value>
+          <see langword="true" /> if the control can expand tab characters; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.ListBox> that displays items with tab characters.  
+  
+ [!code-cpp[ListBox.UseTabStops#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListBox.UseTabStops/CPP/form1.cpp#1)]
+ [!code-csharp[ListBox.UseTabStops#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListBox.UseTabStops/CS/form1.cs#1)]
+ [!code-vb[ListBox.UseTabStops#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListBox.UseTabStops/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WmReflectCommand">
+      <MemberSignature Language="C#" Value="protected virtual void WmReflectCommand (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WmReflectCommand(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.WmReflectCommand(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The <see cref="T:System.Windows.Forms.Message" /> the top-level window sent to the <see cref="T:System.Windows.Forms.ListBox" /> control.</param>
+        <summary>Processes the command message the <see cref="T:System.Windows.Forms.ListView" /> control receives from the top-level window.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">A Windows Message Object.</param>
+        <summary>The list's window procedure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Inheriting classes can override this to add extra functionality, but should call the <xref:System.Windows.Forms.ListBox.WndProc%2A> method on the base class to ensure that the list continues to function properly.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

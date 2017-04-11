@@ -1,0 +1,59 @@
+<Type Name="AdamRole" FullName="System.DirectoryServices.ActiveDirectory.AdamRole">
+  <TypeSignature Language="C#" Value="public enum AdamRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AdamRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.AdamRole" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates specific roles of a <see cref="T:System.DirectoryServices.ActiveDirectory.AdamInstance" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.DirectoryServices.ActiveDirectory.AdamRole> class refers to Active Directory Application Mode (ADAM) which has been renamed to Active Directory Lightweight Directory Services (AD LDS).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NamingRole">
+      <MemberSignature Language="C#" Value="NamingRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.AdamRole NamingRole = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.AdamRole.NamingRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.AdamRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The AD LDS server holds the domain naming master role.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaRole">
+      <MemberSignature Language="C#" Value="SchemaRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.AdamRole SchemaRole = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.AdamRole.SchemaRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.AdamRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The AD LDS server holds the schema operations master role.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

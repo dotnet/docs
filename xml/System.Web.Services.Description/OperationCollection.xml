@@ -1,0 +1,316 @@
+<Type Name="OperationCollection" FullName="System.Web.Services.Description.OperationCollection">
+  <TypeSignature Language="C#" Value="public sealed class OperationCollection : System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationCollection extends System.Web.Services.Description.ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionBaseCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of instances of the <see cref="T:System.Web.Services.Description.Operation" /> class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Description.Operation> class corresponds to the Web Services Description Language (WSDL) `<operation>` element enclosed by the `<portType>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the properties and methods exposed by the `OperationCollection` class.  
+  
+ [!code-cpp[OperationCollection_Methods#1](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationCollection_Methods/CPP/operationcollection_methods.cpp#1)]
+ [!code-csharp[OperationCollection_Methods#1](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationCollection_Methods/CS/operationcollection_methods.cs#1)]
+ [!code-vb[OperationCollection_Methods#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationCollection_Methods/VB/operationcollection_methods.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.Operation operation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.Operation operation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.Add(System.Web.Services.Description.Operation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
+      </Parameters>
+      <Docs>
+        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Operation" /> to the end of the <see cref="T:System.Web.Services.Description.OperationCollection" />.</summary>
+        <returns>The zero-based index where the <paramref name="operation" /> parameter has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the `Add` method.  
+  
+ [!code-cpp[OperationCollection_Methods#2](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationCollection_Methods/CPP/operationcollection_methods.cpp#2)]
+ [!code-csharp[OperationCollection_Methods#2](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationCollection_Methods/CS/operationcollection_methods.cs#2)]
+ [!code-vb[OperationCollection_Methods#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationCollection_Methods/VB/operationcollection_methods.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.Operation operation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.Operation operation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.Contains(System.Web.Services.Description.Operation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
+      </Parameters>
+      <Docs>
+        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> for which to check collection membership.</param>
+        <summary>Returns a value indicating whether the specified <see cref="T:System.Web.Services.Description.Operation" /> is a member of the <see cref="T:System.Web.Services.Description.OperationCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="operation" /> is a member of the <see cref="T:System.Web.Services.Description.OperationCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the `Contains` method.  
+  
+ [!code-cpp[OperationCollection_Methods#3](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationCollection_Methods/CPP/operationcollection_methods.cpp#3)]
+ [!code-csharp[OperationCollection_Methods#3](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationCollection_Methods/CS/operationcollection_methods.cs#3)]
+ [!code-vb[OperationCollection_Methods#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationCollection_Methods/VB/operationcollection_methods.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.Operation[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.Operation[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.CopyTo(System.Web.Services.Description.Operation[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Services.Description.Operation[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Description.Operation" /> serving as the destination for the copy action.</param>
+        <param name="index">The zero-based index at which to start placing the copied collection.</param>
+        <summary>Copies the entire <see cref="T:System.Web.Services.Description.OperationCollection" /> to a compatible one-dimensional array of type <see cref="T:System.Web.Services.Description.Operation" />, starting at the specified zero-based index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the `CopyTo` method.  
+  
+ [!code-cpp[OperationCollection_Methods#8](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationCollection_Methods/CPP/operationcollection_methods.cpp#8)]
+ [!code-csharp[OperationCollection_Methods#8](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationCollection_Methods/CS/operationcollection_methods.cs#8)]
+ [!code-vb[OperationCollection_Methods#8](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationCollection_Methods/VB/operationcollection_methods.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.Operation operation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.Operation operation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.IndexOf(System.Web.Services.Description.Operation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
+      </Parameters>
+      <Docs>
+        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> for which to search in the collection.</param>
+        <summary>Searches for the specified <see cref="T:System.Web.Services.Description.Operation" /> and returns the zero-based index of the first occurrence within the collection.</summary>
+        <returns>A 32-bit signed integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the `IndexOf` method.  
+  
+ [!code-cpp[OperationCollection_Methods#4](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationCollection_Methods/CPP/operationcollection_methods.cpp#4)]
+ [!code-csharp[OperationCollection_Methods#4](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationCollection_Methods/CS/operationcollection_methods.cs#4)]
+ [!code-vb[OperationCollection_Methods#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationCollection_Methods/VB/operationcollection_methods.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.Operation operation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.Operation operation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.Insert(System.Int32,System.Web.Services.Description.Operation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert the <c>operation</c> parameter.</param>
+        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Services.Description.Operation" /> to the <see cref="T:System.Web.Services.Description.OperationCollection" /> at the specified zero-based index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the number of items in the collection already equals the collection's capacity, the capacity is doubled by automatically reallocating the internal array before the new element is inserted.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.CollectionBase.Count%2A>, the `operation` parameter is added to the end of the <xref:System.Web.Services.Description.OperationCollection>.  
+  
+ The elements after the insertion point move down to accommodate the new element.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the `Insert` method.  
+  
+ [!code-cpp[OperationCollection_Methods#6](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationCollection_Methods/CPP/operationcollection_methods.cpp#6)]
+ [!code-csharp[OperationCollection_Methods#6](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationCollection_Methods/CS/operationcollection_methods.cs#6)]
+ [!code-vb[OperationCollection_Methods#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationCollection_Methods/VB/operationcollection_methods.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.Operation this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Operation Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.Operation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Description.Operation" /> whose value is modified or returned.</param>
+        <summary>Gets or sets the value of an <see cref="T:System.Web.Services.Description.Operation" /> at the specified zero-based index.</summary>
+        <value>An <see langword="Operation" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the zero-based index to retrieve a member of the `OperationCollection`.  
+  
+ [!code-cpp[OperationCollection_Methods#7](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationCollection_Methods/CPP/operationcollection_methods.cpp#7)]
+ [!code-csharp[OperationCollection_Methods#7](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationCollection_Methods/CS/operationcollection_methods.cs#7)]
+ [!code-vb[OperationCollection_Methods#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationCollection_Methods/VB/operationcollection_methods.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.Operation operation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.Operation operation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.Remove(System.Web.Services.Description.Operation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="System.Web.Services.Description.Operation" />
+      </Parameters>
+      <Docs>
+        <param name="operation">The <see cref="T:System.Web.Services.Description.Operation" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Web.Services.Description.Operation" /> from the <see cref="T:System.Web.Services.Description.OperationCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.CollectionBase.Count%2A>.  
+  
+ The elements that follow the removed <xref:System.Web.Services.Description.Operation> move up to occupy the vacated spot.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the `Remove` method.  
+  
+ [!code-cpp[OperationCollection_Methods#5](~/samples/snippets/cpp/VS_Snippets_Remoting/OperationCollection_Methods/CPP/operationcollection_methods.cpp#5)]
+ [!code-csharp[OperationCollection_Methods#5](~/samples/snippets/csharp/VS_Snippets_Remoting/OperationCollection_Methods/CS/operationcollection_methods.cs#5)]
+ [!code-vb[OperationCollection_Methods#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/OperationCollection_Methods/VB/operationcollection_methods.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParent">
+      <MemberSignature Language="C#" Value="protected override void SetParent (object value, object parent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParent(object value, object parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationCollection.SetParent(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="parent" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="parent">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

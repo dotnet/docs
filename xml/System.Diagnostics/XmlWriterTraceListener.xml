@@ -1,0 +1,621 @@
+<Type Name="XmlWriterTraceListener" FullName="System.Diagnostics.XmlWriterTraceListener">
+  <TypeSignature Language="C#" Value="public class XmlWriterTraceListener : System.Diagnostics.TextWriterTraceListener" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlWriterTraceListener extends System.Diagnostics.TextWriterTraceListener" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.XmlWriterTraceListener" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Diagnostics.TextWriterTraceListener</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Directs tracing or debugging output as XML-encoded data to a <see cref="T:System.IO.TextWriter" /> or to a <see cref="T:System.IO.Stream" />, such as a <see cref="T:System.IO.FileStream" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  You must have unmanaged code permission to create an instance of the <xref:System.Diagnostics.XmlWriterTraceListener> class.  
+  
+ The <xref:System.Diagnostics.XmlWriterTraceListener> class converts tracing and debugging information into an XML-encoded text stream. The description of the XML output is shown in the tables that follow. You can use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](http://go.microsoft.com/fwlink/p/?LinkId=240129) to display the XML output.  
+  
+ You can enable or disable an <xref:System.Diagnostics.XmlWriterTraceListener> through the application configuration file and then use the configured <xref:System.Diagnostics.XmlWriterTraceListener> in your application. Alternately, you can create an <xref:System.Diagnostics.XmlWriterTraceListener> in your code.  
+  
+ To configure an <xref:System.Diagnostics.XmlWriterTraceListener>, edit the configuration file that corresponds to the name of your application. In this file, you can add or remove a listener, set the properties for a listener, or remove listeners. The configuration file should be formatted like the following example.  
+  
+```  
+<configuration>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="xmlListener"   
+          type="System.Diagnostics.XmlWriterTraceListener"   
+          initializeData="xmlOutput.xml"   
+          traceOutputOptions="ProcessId, DateTime" />  
+        <remove name="Default" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
+</configuration>  
+```  
+  
+ The <xref:System.Diagnostics.XmlWriterTraceListener> class inherits the <xref:System.Diagnostics.TraceListener.Filter%2A> property from the base class <xref:System.Diagnostics.TraceListener>.  The <xref:System.Diagnostics.TraceListener.Filter%2A> property allows an additional level of trace output filtering at the listener.  If there is a filter present, the `Trace` methods of the trace listener call the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method of the filter to determine whether to emit the trace.  
+  
+> [!NOTE]
+>  If an attempt is made to write to a file that is in use or unavailable, the file name is automatically prefixed by a GUID.  
+  
+> [!NOTE]
+>  Listener methods are intended to be called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes.  The listener methods are not intended to be called directly from application code. The <xref:System.Diagnostics.XmlWriterTraceListener> listener is primarily intended for use by the <xref:System.Diagnostics.TraceSource> class. The <xref:System.Diagnostics.XmlWriterTraceListener.Write%2A> and <xref:System.Diagnostics.XmlWriterTraceListener.WriteLine%2A> methods can be called by the <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes, and default values are provided for the XML elements that <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> do not supply values for.  
+  
+ The following table describes the elements and attributes of the XML output.  
+  
+|Element|Attributes|Output|Notes|  
+|-------------|----------------|------------|-----------|  
+|`CallStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|Special characters such as > or < are replaced with escape sequences. See the escaped character translation table that follows.|  
+|`Computer`|None|Always present.|The value of the <xref:System.Environment.MachineName%2A> property.|  
+|`Correlation`|`ActivityID`|Always present|If not specified, the default is an empty GUID.|  
+||`RelatedActivityID`|Depends on the presence of the `relatedActivityId` parameter in the Trace method call.|The `relatedActivityId` parameter of the <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method.|  
+|`DataItem`|None|Depends on the `data` parameter of the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method.|This element can contain an array of elements or one element, so the values are written as a set of `DataItem` nodes under the `TraceData` element.<br /><br /> The data output uses the `ToString` method of the passed-in data objects.|  
+|`EventID`|None|Always present.|Parameter input (`id`).|  
+|`Execution`|`ProcessName`|Always present.|From the <xref:System.Diagnostics.TraceEventCache>.|  
+||`ProcessID`|Always present.|From the <xref:System.Diagnostics.TraceEventCache>. On Windows 98 and Windows Me operating systems, if `ProcessID` is greater than 2,147,483,647 it is a positive representation of a negative number and should be converted to obtain the correct process identifier.|  
+||`ThreadID`|Always present.|From the <xref:System.Diagnostics.TraceEventCache>.|  
+|`Level`|None|Always present.|Parameter input (the numeric value of `eventType`). Parameter values greater than 255 are output as 255.|  
+|`LogicalOperationStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|There can be more than one logical operation, so the values are written as `LogicalOperation` nodes under the `LogicalOperationStack` element.|  
+|`Message`|None|Depends on the presence of a message in the Trace method call.|This element is a formatted message if formatting arguments are provided.|  
+|`Source`|`Name`|Always present.|Parameter input.|  
+|`SubType`|`Name`|Always present.|Parameter input.|  
+|`TimeCreated`|`SystemTime`|Always present.|If not present in the <xref:System.Diagnostics.TraceEventCache>, the default is the current time.|  
+|`TimeStamp`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|From the <xref:System.Diagnostics.TraceEventCache>.|  
+|`Type`|None|Always present.|Always the value 3.|  
+  
+ The following table shows the characters that are escaped in the XML output. Escaping occurs in all the elements and attributes with the exception of the `DataItem` element, which is not escaped if the object passed to the `data` parameter of the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method is an <xref:System.Xml.XPath.XPathNavigator> object. If an <xref:System.Xml.XPath.XPathNavigator> is used for the data object, the <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> method is called and the entire root node is traced as unescaped data.  
+  
+|Escaped character|Value|  
+|-----------------------|-----------|  
+|&|&amp;|  
+|\<|&lt;|  
+|>|&gt;|  
+|"|&quot;|  
+|\|&apos;|  
+|0xD|&\#xD;|  
+|0xA|&\#xA;|  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Diagnostics.XmlWriterTraceListener> class to write both escaped and non-escaped data to file logs.  
+  
+ [!code-csharp[System.Diagnostics.XmlWriterTraceListener#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.XmlWriterTraceListener/CS/program.cs#1)]
+ [!code-vb[System.Diagnostics.XmlWriterTraceListener#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.XmlWriterTraceListener/VB/module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlWriterTraceListener (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.IO.Stream)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that represents the stream the trace listener writes to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class, using the specified stream as the recipient of the debugging and tracing output.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlWriterTraceListener (System.IO.TextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.IO.TextWriter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.IO.TextWriter" /> that receives the output from the trace listener.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class using the specified writer as the recipient of the debugging and tracing output.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlWriterTraceListener (string filename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">The name of the file to write to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class, using the specified file as the recipient of the debugging and tracing output.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes a new instance of the <xref:System.IO.StreamWriter> class for the specified file on the specified path, using <xref:System.Text.Encoding.UTF8%2A> encoding. If the file exists, it is appended to. If the file does not exist, a new file is created.  
+  
+> [!NOTE]
+>  To reduce the chance of an exception, any character that might invalidate the output is replaced with a "?" character.  
+  
+ The <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filename" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlWriterTraceListener (System.IO.Stream stream, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.IO.Stream,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stream">A <see cref="T:System.IO.Stream" /> that represents the stream the trace listener writes to.</param>
+        <param name="name">The name of the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class with the specified name, using the specified stream as the recipient of the debugging and tracing output.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+  
+```  
+((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =   
+    TraceOptions.Timestamp  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlWriterTraceListener (System.IO.TextWriter writer, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.IO.TextWriter,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.IO.TextWriter" /> that receives the output from the trace listener.</param>
+        <param name="name">The name of the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class with the specified name, using the specified writer as the recipient of the debugging and tracing output.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Diagnostics.TraceListener.Name%2A> property to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+  
+```  
+((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =   
+    TraceOptions.Timestamp.  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlWriterTraceListener (string filename, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filename, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">The name of the file to write to.</param>
+        <param name="name">The name of the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.XmlWriterTraceListener" /> class with the specified name, using the specified file as the recipient of the debugging and tracing output.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes a new instance of the <xref:System.IO.StreamWriter> class for the specified file on the specified path, using <xref:System.Text.Encoding.UTF8%2A> encoding. If the file exists, it is appended to. If the file does not exist, a new file is created.  
+  
+> [!NOTE]
+>  To reduce the chance of an exception, any character that might invalidate the output is replaced with a "?" character.  
+  
+ The <xref:System.Diagnostics.TraceListener.Name%2A> property is set to the `name` parameter value or to an empty string ("") if the `name` parameter is `null`. The name can be used as an index into the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection to programmatically change the properties for the listener. For example, the following code sets the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property for an instance of <xref:System.Diagnostics.XmlWriterTraceListener> whose <xref:System.Diagnostics.TraceListener.Name%2A> property is "xmlListener".  
+  
+```  
+((XmlWriterTraceListener)Trace.Listeners["xmlListener"]).TraceOutputOptions =  
+    TraceOptions.Timestamp.  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the <see cref="P:System.Diagnostics.TextWriterTraceListener.Writer" /> for this listener so that it no longer receives tracing or debugging output.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fail">
+      <MemberSignature Language="C#" Value="public override void Fail (string message, string detailMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Fail(string message, string detailMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.Fail(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="detailMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message to write.</param>
+        <param name="detailMessage">The detailed error message to append to the error message.</param>
+        <summary>Writes trace information including an error message and a detailed error message to the file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior is to display the message and detailed message in a message box when the application is running in user-interface mode, and to the <xref:System.Diagnostics.TraceListener> instances in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=fullName> collection. By default, the collection contains an instance of <xref:System.Diagnostics.DefaultTraceListener>. You can customize this behavior by adding or removing a <xref:System.Diagnostics.TraceListener> from the collection.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceData">
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="eventType" Type="System.Diagnostics.TraceEventType" />
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> that contains the current process ID, thread ID, and stack trace information.</param>
+        <param name="source">The source name.</param>
+        <param name="eventType">One of the <see cref="T:System.Diagnostics.TraceEventType" /> values.</param>
+        <param name="id">A numeric identifier for the event.</param>
+        <param name="data">A data object to emit.</param>
+        <summary>Writes trace information, a data object, and event information to the file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `data` parameter is written as a `DataItem` node in the `TraceData` element. The `ToString` method of the data object is used to convert the object to a string.  
+  
+> [!IMPORTANT]
+>  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceData">
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object[] data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="eventType" Type="System.Diagnostics.TraceEventType" />
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="data" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> that contains the current process ID, thread ID, and stack trace information.</param>
+        <param name="source">The source name.</param>
+        <param name="eventType">One of the <see cref="T:System.Diagnostics.TraceEventType" /> values.</param>
+        <param name="id">A numeric identifier for the event.</param>
+        <param name="data">An array of data objects to emit.</param>
+        <summary>Writes trace information, data objects, and event information to the file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The objects in the `data` parameter array are written as `DataItem` nodes in the `TraceData` element. The `ToString` method of each data object is used to convert the object to a string.  
+  
+> [!IMPORTANT]
+>  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceEvent">
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="eventType" Type="System.Diagnostics.TraceEventType" />
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> that contains the current process ID, thread ID, and stack trace information.</param>
+        <param name="source">The source name.</param>
+        <param name="eventType">One of the <see cref="T:System.Diagnostics.TraceEventType" /> values.</param>
+        <param name="id">A numeric identifier for the event.</param>
+        <param name="message">The message to write.</param>
+        <summary>Writes trace information, a message, and event information to the file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element.  
+  
+> [!IMPORTANT]
+>  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceEvent">
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="eventType" Type="System.Diagnostics.TraceEventType" />
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> that contains the current process ID, thread ID, and stack trace information.</param>
+        <param name="source">The source name.</param>
+        <param name="eventType">One of the <see cref="T:System.Diagnostics.TraceEventType" /> values.</param>
+        <param name="id">A numeric identifier for the event.</param>
+        <param name="format">A format string that contains zero or more format items that correspond to objects in the <c>args</c> array.</param>
+        <param name="args">An object array containing zero or more objects to format.</param>
+        <summary>Writes trace information, a formatted message, and event information to the file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `eventCache`, `source`, `eventType`, and `id` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The [String.Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method is called, passing in the `format` string and `args` array as parameters, to format the `args` object array as the `Message` element.  
+  
+> [!IMPORTANT]
+>  This method is not intended to be called directly by application code.  It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceTransfer">
+      <MemberSignature Language="C#" Value="public override void TraceTransfer (System.Diagnostics.TraceEventCache eventCache, string source, int id, string message, Guid relatedActivityId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceTransfer(class System.Diagnostics.TraceEventCache eventCache, string source, int32 id, string message, valuetype System.Guid relatedActivityId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="relatedActivityId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="eventCache">A <see cref="T:System.Diagnostics.TraceEventCache" /> that contains the current process ID, thread ID, and stack trace information.</param>
+        <param name="source">The source name.</param>
+        <param name="id">A numeric identifier for the event.</param>
+        <param name="message">A trace message to write.</param>
+        <param name="relatedActivityId">A <see cref="T:System.Guid" /> structure that identifies a related activity.</param>
+        <summary>Writes trace information including the identity of a related activity, a message, and event information to the file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is used for the correlation of related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method is called to convert the `relatedActivityId`value to a "B" formatted string, which appears in the header. The `SubTypeName` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType>.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is not intended to be called by application code.  It is intended to be called by a <xref:System.Diagnostics.TraceSource> object to emit the trace information for its <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.Write(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to write.</param>
+        <summary>Writes a verbatim message without any additional context information to the file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method to include context information in the log output.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.XmlWriterTraceListener.WriteLine(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to write.</param>
+        <summary>Writes a verbatim message without any additional context information followed by the current line terminator to the file or stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method to include context information in the log output.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

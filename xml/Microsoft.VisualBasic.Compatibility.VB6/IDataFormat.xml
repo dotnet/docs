@@ -1,0 +1,498 @@
+<Type Name="IDataFormat" FullName="Microsoft.VisualBasic.Compatibility.VB6.IDataFormat">
+  <TypeSignature Language="C#" Value="public interface IDataFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataFormat" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("AF08B280-90F2-11D0-9484-00A0C91110ED")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides support for the <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataFormat" /> property of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBinding" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public void Clone (out Microsoft.VisualBasic.Compatibility.VB6.IDataFormat newObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Clone(class Microsoft.VisualBasic.Compatibility.VB6.IDataFormat newObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Clone(Microsoft.VisualBasic.Compatibility.VB6.IDataFormat@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newObject" Type="Microsoft.VisualBasic.Compatibility.VB6.IDataFormat&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="newObject">An <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />.</param>
+        <summary>Creates a shallow copy of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public void Convert (int cookie, object from, out object varTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Convert(int32 cookie, object from, object varTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Convert(System.Int32,System.Object,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.Object" />
+        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An <see langword="Integer" />.</param>
+        <param name="from">An <see cref="T:System.Object" />.</param>
+        <param name="varTo">A <see cref="T:Microsoft.VisualBasic.VariantType" />.</param>
+        <summary>Converts an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> to a Visual Basic 6.0 <see langword="Variant" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public void Default (out bool fDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Default(bool fDefault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.Default(System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fDefault" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="fDefault">A <see cref="T:System.Boolean" />.</param>
+        <summary>Determines whether an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> is the default <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBinding">
+      <MemberSignature Language="C#" Value="public void GetBinding (System.Runtime.InteropServices.VarEnum vtPropHint, int rgfDataFormat, Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, ref Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO columnInfo, out Microsoft.VisualBasic.Compatibility.VB6.DBBINDING binding, out int size, out int cookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetBinding(valuetype System.Runtime.InteropServices.VarEnum vtPropHint, int32 rgfDataFormat, class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO columnInfo, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBBINDING binding, int32 size, int32 cookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetBinding(System.Runtime.InteropServices.VarEnum,System.Int32,Microsoft.VisualBasic.Compatibility.VB6.IRowset,Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO@,Microsoft.VisualBasic.Compatibility.VB6.DBBINDING@,System.Int32@,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vtPropHint" Type="System.Runtime.InteropServices.VarEnum" />
+        <Parameter Name="rgfDataFormat" Type="System.Int32" />
+        <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+        <Parameter Name="columnInfo" Type="Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO&amp;" RefType="ref" />
+        <Parameter Name="binding" Type="Microsoft.VisualBasic.Compatibility.VB6.DBBINDING&amp;" RefType="out" />
+        <Parameter Name="size" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cookie" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="vtPropHint">A <see cref="T:System.Runtime.InteropServices.VarEnum" />.</param>
+        <param name="rgfDataFormat">An <see langword="Integer" />.</param>
+        <param name="rowset">An <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IRowset" />.</param>
+        <param name="columnInfo">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBCOLUMNINFO" /> structure.</param>
+        <param name="binding">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBBINDING" /> structure.</param>
+        <param name="size">An <see langword="Integer" />.</param>
+        <param name="cookie">An <see langword="Integer" />.</param>
+        <summary>Gets a binding for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public void GetData (int cookie, IntPtr from, out object varTo, out int dbStatus, object pObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetData(int32 cookie, native int from, object varTo, int32 dbStatus, object pObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetData(System.Int32,System.IntPtr,System.Object@,System.Int32@,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.IntPtr" />
+        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="dbStatus" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="pObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An <see langword="Integer" />.</param>
+        <param name="from">An <see cref="T:System.IntPtr" />.</param>
+        <param name="varTo">A <see cref="T:Microsoft.VisualBasic.VariantType" />.</param>
+        <param name="dbStatus">An <see langword="Integer" />.</param>
+        <param name="pObject">An <see cref="T:System.Object" /> .</param>
+        <summary>Gets the data for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLcid">
+      <MemberSignature Language="C#" Value="public void GetLcid (out int lcid);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetLcid(int32 lcid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetLcid(System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lcid" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="lcid">An <see langword="Integer" />.</param>
+        <summary>Gets a locale ID for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRawData">
+      <MemberSignature Language="C#" Value="public void GetRawData (int cookie, IntPtr from, out object varTo, out int dbStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRawData(int32 cookie, native int from, object varTo, int32 dbStatus) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetRawData(System.Int32,System.IntPtr,System.Object@,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.IntPtr" />
+        <Parameter Name="varTo" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="dbStatus" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An <see langword="Integer" />.</param>
+        <param name="from">An <see cref="T:System.IntPtr" />.</param>
+        <param name="varTo">A <see cref="T:Microsoft.VisualBasic.VariantType" />.</param>
+        <param name="dbStatus">An <see langword="Integer" />.</param>
+        <summary>Gets the raw data for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubFormatType">
+      <MemberSignature Language="C#" Value="public void GetSubFormatType (out int subFormatType);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetSubFormatType(int32 subFormatType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.GetSubFormatType(System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subFormatType" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="subFormatType">An <see langword="Integer" />.</param>
+        <summary>Gets the subformat type for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseBinding">
+      <MemberSignature Language="C#" Value="public void ReleaseBinding (int cookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseBinding(int32 cookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.ReleaseBinding(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An <see langword="Integer" />.</param>
+        <summary>Releases a binding for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseData">
+      <MemberSignature Language="C#" Value="public void ReleaseData (int cookie, IntPtr pv);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ReleaseData(int32 cookie, native int pv) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.ReleaseData(System.Int32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="pv" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An Integer.</param>
+        <param name="pv">An <see cref="T:System.IntPtr" />.</param>
+        <summary>Releases the data for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public void SetData (int cookie, out object from, IntPtr pVarTo, object pObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetData(int32 cookie, object from, native int pVarTo, object pObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetData(System.Int32,System.Object@,System.IntPtr,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="pVarTo" Type="System.IntPtr" />
+        <Parameter Name="pObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An <see langword="Integer" />.</param>
+        <param name="from">An <see cref="T:System.IntPtr" />.</param>
+        <param name="pVarTo">A <see cref="T:Microsoft.VisualBasic.VariantType" />.</param>
+        <param name="pObject">An <see cref="T:System.Object" />.</param>
+        <summary>Sets the data for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLcid">
+      <MemberSignature Language="C#" Value="public void SetLcid (int lcid);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetLcid(int32 lcid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetLcid(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lcid" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lcid">An <see langword="Integer" />.</param>
+        <summary>Sets the locale ID for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRawData">
+      <MemberSignature Language="C#" Value="public void SetRawData (int cookie, object from, IntPtr pVarTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetRawData(int32 cookie, object from, native int pVarTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetRawData(System.Int32,System.Object,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Int32" />
+        <Parameter Name="from" Type="System.Object" />
+        <Parameter Name="pVarTo" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An <see langword="Integer" />.</param>
+        <param name="from">An <see cref="T:System.IntPtr" />.</param>
+        <param name="pVarTo">A <see cref="T:Microsoft.VisualBasic.VariantType" />.</param>
+        <summary>Sets the raw data for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSubFormatType">
+      <MemberSignature Language="C#" Value="public void SetSubFormatType (int subFormatType);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetSubFormatType(int32 subFormatType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat.SetSubFormatType(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subFormatType" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="subFormatType">An <see langword="Integer" />.</param>
+        <summary>Sets the subformat type for an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.IDataFormat> interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

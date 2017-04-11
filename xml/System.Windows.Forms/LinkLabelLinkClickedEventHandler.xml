@@ -1,0 +1,41 @@
+<Type Name="LinkLabelLinkClickedEventHandler" FullName="System.Windows.Forms.LinkLabelLinkClickedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void LinkLabelLinkClickedEventHandler(object sender, LinkLabelLinkClickedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LinkLabelLinkClickedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkLabelLinkClickedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.LinkLabelLinkClickedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.LinkLabel.LinkClicked" /> event of a <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Windows.Forms.LinkLabelLinkClickedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, until you remove the delegate. For more information about delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following example demonstrates using the <xref:System.Windows.Forms.LinkLabel> class, with multiple <xref:System.Windows.Forms.LinkArea> sections defined, to display a label on a form. The example demonstrates setting the <xref:System.Windows.Forms.Label.AutoSize%2A>, <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.DisabledLinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to customize the look of the <xref:System.Windows.Forms.LinkLabel>. The first <xref:System.Windows.Forms.LinkArea> is specified using the <xref:System.Windows.Forms.LinkLabel.LinkArea%2A?displayProperty=fullName> property. Additional links are added to the <xref:System.Windows.Forms.LinkLabel> using the <xref:System.Windows.Forms.LinkLabel.LinkCollection.Add%2A?displayProperty=fullName> method. The example handles the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event by starting the Web browser for hyperlinks, and displaying a <xref:System.Windows.Forms.MessageBox> for other links.  
+  
+ [!code-cpp[System.Windows.Forms.LinkLabel#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/CPP/linklabel.cpp#1)]
+ [!code-csharp[System.Windows.Forms.LinkLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/CS/linklabel.cs#1)]
+ [!code-vb[System.Windows.Forms.LinkLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LinkLabel/VB/linklabel.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

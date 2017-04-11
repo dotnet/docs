@@ -1,0 +1,3081 @@
+<Type Name="HttpWorkerRequest" FullName="System.Web.HttpWorkerRequest">
+  <TypeSignature Language="C#" Value="public abstract class HttpWorkerRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract HttpWorkerRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpWorkerRequest" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This abstract class defines the base worker methods and enumerations used by ASP.NET managed code to process requests.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In most cases, your code will not deal with <xref:System.Web.HttpWorkerRequest> directly because request and response data are exposed through the <xref:System.Web.HttpRequest> and <xref:System.Web.HttpResponse> classes. Some internal ASP.NET classes extend this class. If your code implements its own hosting environment, it will need to extend this class to call the <xref:System.Web.HttpRuntime.ProcessRequest%2A> method. In addition, your code could create a derived class for the purpose of child-request execution within a given application in order to pass its instance to <xref:System.Web.HttpRuntime.ProcessRequest%2A>. In this case, the derived class should keep a reference to the current <xref:System.Web.HttpWorkerRequest> and delegate most of the methods to it.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HttpWorkerRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpWorkerRequest" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpWorkerRequest.%23ctor%2A> constructor is the default constructor for the <xref:System.Web.HttpWorkerRequest> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFlush">
+      <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginFlush (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginFlush(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.BeginFlush(System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The method to call when a corresponding asynchronous operation completes.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous flush operation from other requests.</param>
+        <summary>Sends the currently buffered response to the client.</summary>
+        <returns>The worker request buffers the status, headers, and response body until an asynchronous flush operation is initiated. If the underlying <see cref="T:System.Web.HttpWorkerRequest" /> object supports asynchronous flush and this method is called from an asynchronous module event or asynchronous handler, the send operation is performed asynchronously. Otherwise, the implementation performs a synchronous flush operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRead">
+      <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The buffer to read the data into.</param>
+        <param name="offset">The byte offset in the buffer at which to begin writing data.</param>
+        <param name="count">The maximum number of bytes to read.</param>
+        <param name="callback">The method to call when a corresponding asynchronous operation completes.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous read from other requests.</param>
+        <summary>Begins an asynchronous read operation of the request entity body.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseConnection">
+      <MemberSignature Language="C#" Value="public virtual void CloseConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseConnection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.CloseConnection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Terminates the connection with the client.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFlush">
+      <MemberSignature Language="C#" Value="public virtual void EndFlush (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndFlush(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.EndFlush(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">A reference to the pending asynchronous request.</param>
+        <summary>Waits for the pending asynchronous flush operation to complete.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOfRequest">
+      <MemberSignature Language="C#" Value="public abstract void EndOfRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndOfRequest() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.EndOfRequest" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Used by the runtime to notify the <see cref="T:System.Web.HttpWorkerRequest" /> that request processing for the current request is complete.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndRead">
+      <MemberSignature Language="C#" Value="public virtual int EndRead (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EndRead(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.EndRead(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">A reference to the pending asynchronous request.</param>
+        <summary>Waits for the pending asynchronous read operation to complete.</summary>
+        <returns>The number of bytes that have been read from the stream.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlushResponse">
+      <MemberSignature Language="C#" Value="public abstract void FlushResponse (bool finalFlush);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FlushResponse(bool finalFlush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.FlushResponse(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="finalFlush" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="finalFlush">
+          <see langword="true" /> if this is the last time response data will be flushed; otherwise, <see langword="false" />.</param>
+        <summary>Sends all pending response data to the client.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppPath">
+      <MemberSignature Language="C#" Value="public virtual string GetAppPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAppPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetAppPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the virtual path to the currently executing server application.</summary>
+        <returns>The virtual path of the current application.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppPathTranslated">
+      <MemberSignature Language="C#" Value="public virtual string GetAppPathTranslated ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAppPathTranslated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetAppPathTranslated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the physical path to the currently executing server application.</summary>
+        <returns>The physical path of the current application.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppPoolID">
+      <MemberSignature Language="C#" Value="public virtual string GetAppPoolID ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetAppPoolID() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetAppPoolID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the application pool ID for the current URL.</summary>
+        <returns>Always returns null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBytesRead">
+      <MemberSignature Language="C#" Value="public virtual long GetBytesRead ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetBytesRead() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetBytesRead" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the number of bytes read in from the client.</summary>
+        <returns>A <see langword="Long" /> containing the number of bytes read.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClientCertificate">
+      <MemberSignature Language="C#" Value="public virtual byte[] GetClientCertificate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetClientCertificate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, gets the certification fields (specified in the X.509 standard) from a request issued by the client.</summary>
+        <returns>A byte array containing the stream of the entire certificate content.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no certificate is sent, the <xref:System.Web.HttpRequest.ClientCertificate%2A> collection returns empty.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClientCertificateBinaryIssuer">
+      <MemberSignature Language="C#" Value="public virtual byte[] GetClientCertificateBinaryIssuer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetClientCertificateBinaryIssuer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificateBinaryIssuer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the certificate issuer, in binary format.</summary>
+        <returns>A byte array containing the certificate issuer expressed in binary format.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClientCertificateEncoding">
+      <MemberSignature Language="C#" Value="public virtual int GetClientCertificateEncoding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetClientCertificateEncoding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificateEncoding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the <see cref="T:System.Text.Encoding" /> object in which the client certificate was encoded.</summary>
+        <returns>The certificate encoding, expressed as an integer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClientCertificatePublicKey">
+      <MemberSignature Language="C#" Value="public virtual byte[] GetClientCertificatePublicKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetClientCertificatePublicKey() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificatePublicKey" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, gets a <see langword="PublicKey" /> object associated with the client certificate.</summary>
+        <returns>A <see langword="PublicKey" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClientCertificateValidFrom">
+      <MemberSignature Language="C#" Value="public virtual DateTime GetClientCertificateValidFrom ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime GetClientCertificateValidFrom() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificateValidFrom" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, gets the date when the certificate becomes valid. The date varies with international settings.</summary>
+        <returns>A <see cref="T:System.DateTime" /> object representing when the certificate becomes valid.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetClientCertificateValidUntil">
+      <MemberSignature Language="C#" Value="public virtual DateTime GetClientCertificateValidUntil ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime GetClientCertificateValidUntil() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetClientCertificateValidUntil" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the certificate expiration date.</summary>
+        <returns>A <see cref="T:System.DateTime" /> object representing the date that the certificate expires.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConnectionID">
+      <MemberSignature Language="C#" Value="public virtual long GetConnectionID ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetConnectionID() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetConnectionID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the ID of the current connection.</summary>
+        <returns>Always returns 0.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilePath">
+      <MemberSignature Language="C#" Value="public virtual string GetFilePath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFilePath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetFilePath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the virtual path to the requested URI.</summary>
+        <returns>The path to the requested URI.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilePathTranslated">
+      <MemberSignature Language="C#" Value="public virtual string GetFilePathTranslated ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetFilePathTranslated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetFilePathTranslated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the physical file path to the requested URI (and translates it from virtual path to physical path: for example, "/proj1/page.aspx" to "c:\dir\page.aspx")</summary>
+        <returns>The translated physical file path to the requested URI.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHttpVerbName">
+      <MemberSignature Language="C#" Value="public abstract string GetHttpVerbName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetHttpVerbName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetHttpVerbName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the specified member of the request header.</summary>
+        <returns>The HTTP verb returned in the request header.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHttpVersion">
+      <MemberSignature Language="C#" Value="public abstract string GetHttpVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetHttpVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetHttpVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides access to the HTTP version of the request (for example, "HTTP/1.1").</summary>
+        <returns>The HTTP version returned in the request header.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKnownRequestHeader">
+      <MemberSignature Language="C#" Value="public virtual string GetKnownRequestHeader (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetKnownRequestHeader(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownRequestHeader(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the header. For example, the <see cref="F:System.Web.HttpWorkerRequest.HeaderAllow" /> field.</param>
+        <summary>Returns the standard HTTP request header that corresponds to the specified index.</summary>
+        <returns>The HTTP request header.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKnownRequestHeaderIndex">
+      <MemberSignature Language="C#" Value="public static int GetKnownRequestHeaderIndex (string header);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetKnownRequestHeaderIndex(string header) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownRequestHeaderIndex(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="header" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="header">The name of the header.</param>
+        <summary>Returns the index number of the specified HTTP request header.</summary>
+        <returns>The index number of the HTTP request header specified in the <paramref name="header" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKnownRequestHeaderName">
+      <MemberSignature Language="C#" Value="public static string GetKnownRequestHeaderName (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetKnownRequestHeaderName(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownRequestHeaderName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index number of the header.</param>
+        <summary>Returns the name of the specified HTTP request header.</summary>
+        <returns>The name of the HTTP request header specified in the <paramref name="index" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKnownResponseHeaderIndex">
+      <MemberSignature Language="C#" Value="public static int GetKnownResponseHeaderIndex (string header);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetKnownResponseHeaderIndex(string header) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownResponseHeaderIndex(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="header" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="header">The name of the HTTP header.</param>
+        <summary>Returns the index number of the specified HTTP response header.</summary>
+        <returns>The index number of the HTTP response header specified in the <paramref name="header" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKnownResponseHeaderName">
+      <MemberSignature Language="C#" Value="public static string GetKnownResponseHeaderName (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetKnownResponseHeaderName(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetKnownResponseHeaderName(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index number of the header.</param>
+        <summary>Returns the name of the specified HTTP response header.</summary>
+        <returns>The name of the HTTP response header specified in the <paramref name="index" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalAddress">
+      <MemberSignature Language="C#" Value="public abstract string GetLocalAddress ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLocalAddress() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetLocalAddress" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides access to the specified member of the request header.</summary>
+        <returns>The server IP address returned in the request header.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalPort">
+      <MemberSignature Language="C#" Value="public abstract int GetLocalPort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetLocalPort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetLocalPort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides access to the specified member of the request header.</summary>
+        <returns>The server port number returned in the request header.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPathInfo">
+      <MemberSignature Language="C#" Value="public virtual string GetPathInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPathInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetPathInfo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns additional path information for a resource with a URL extension. That is, for the path /virdir/page.html/tail, the <see langword="GetPathInfo" /> value is /tail.</summary>
+        <returns>Additional path information for a resource.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreloadedEntityBody">
+      <MemberSignature Language="C#" Value="public virtual byte[] GetPreloadedEntityBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetPreloadedEntityBody() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetPreloadedEntityBody" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the portion of the HTTP request body that has already been read.</summary>
+        <returns>The portion of the HTTP request body that has been read.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreloadedEntityBody">
+      <MemberSignature Language="C#" Value="public virtual int GetPreloadedEntityBody (byte[] buffer, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetPreloadedEntityBody(unsigned int8[] buffer, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetPreloadedEntityBody(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The data to read.</param>
+        <param name="offset">The byte offset at which to begin reading.</param>
+        <summary>Gets the portion of the HTTP request body that has currently been read by using the specified buffer data and byte offset.</summary>
+        <returns>The portion of the HTTP request body that has been read.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreloadedEntityBodyLength">
+      <MemberSignature Language="C#" Value="public virtual int GetPreloadedEntityBodyLength ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetPreloadedEntityBodyLength() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetPreloadedEntityBodyLength" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the length of the portion of the HTTP request body that has currently been read.</summary>
+        <returns>An integer containing the length of the currently read HTTP request body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProtocol">
+      <MemberSignature Language="C#" Value="public virtual string GetProtocol ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetProtocol() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetProtocol" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the HTTP protocol (HTTP or HTTPS).</summary>
+        <returns>HTTPS if the <see cref="M:System.Web.HttpWorkerRequest.IsSecure" /> method is <see langword="true" />, otherwise HTTP.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryString">
+      <MemberSignature Language="C#" Value="public abstract string GetQueryString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetQueryString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetQueryString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the query string specified in the request URL.</summary>
+        <returns>The request query string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryStringRawBytes">
+      <MemberSignature Language="C#" Value="public virtual byte[] GetQueryStringRawBytes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetQueryStringRawBytes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetQueryStringRawBytes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the response query string as an array of bytes.</summary>
+        <returns>An array of bytes containing the response.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRawUrl">
+      <MemberSignature Language="C#" Value="public abstract string GetRawUrl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRawUrl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRawUrl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the URL path contained in the request header with the query string appended.</summary>
+        <returns>The raw URL path of the request header.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRemoteAddress">
+      <MemberSignature Language="C#" Value="public abstract string GetRemoteAddress ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRemoteAddress() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRemoteAddress" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides access to the specified member of the request header.</summary>
+        <returns>The client's IP address.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRemoteName">
+      <MemberSignature Language="C#" Value="public virtual string GetRemoteName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRemoteName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRemoteName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the name of the client computer.</summary>
+        <returns>The name of the client computer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRemotePort">
+      <MemberSignature Language="C#" Value="public abstract int GetRemotePort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetRemotePort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRemotePort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides access to the specified member of the request header.</summary>
+        <returns>The client's HTTP port number.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequestReason">
+      <MemberSignature Language="C#" Value="public virtual int GetRequestReason ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetRequestReason() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetRequestReason" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the reason for the request.</summary>
+        <returns>Reason code. The default is <see langword="ReasonResponseCacheMiss" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServerName">
+      <MemberSignature Language="C#" Value="public virtual string GetServerName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetServerName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetServerName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the name of the local server.</summary>
+        <returns>The name of the local server.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetServerVariable">
+      <MemberSignature Language="C#" Value="public virtual string GetServerVariable (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetServerVariable(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetServerVariable(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the requested server variable.</param>
+        <summary>Returns a single server variable from a dictionary of server variables associated with the request.</summary>
+        <returns>The requested server variable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStatusDescription">
+      <MemberSignature Language="C#" Value="public static string GetStatusDescription (int code);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStatusDescription(int32 code) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetStatusDescription(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="code">The HTTP status code.</param>
+        <summary>Returns a string that describes the name of the specified HTTP status code.</summary>
+        <returns>The status description. For example, <see cref="M:System.Web.HttpWorkerRequest.GetStatusDescription(System.Int32)" /> (404) returns "Not Found".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalEntityBodyLength">
+      <MemberSignature Language="C#" Value="public virtual int GetTotalEntityBodyLength ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetTotalEntityBodyLength() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetTotalEntityBodyLength" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the length of the entire HTTP request body.</summary>
+        <returns>An integer containing the length of the entire HTTP request body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnknownRequestHeader">
+      <MemberSignature Language="C#" Value="public virtual string GetUnknownRequestHeader (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetUnknownRequestHeader(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUnknownRequestHeader(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The header name.</param>
+        <summary>Returns a nonstandard HTTP request header value.</summary>
+        <returns>The header value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnknownRequestHeaders">
+      <MemberSignature Language="C#" Value="public virtual string[][] GetUnknownRequestHeaders ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[][] GetUnknownRequestHeaders() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUnknownRequestHeaders" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[][]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Get all nonstandard HTTP header name-value pairs.</summary>
+        <returns>An array of header name-value pairs.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUriPath">
+      <MemberSignature Language="C#" Value="public abstract string GetUriPath ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetUriPath() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUriPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the virtual path to the requested URI.</summary>
+        <returns>The path to the requested URI.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrlContextID">
+      <MemberSignature Language="C#" Value="public virtual long GetUrlContextID ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetUrlContextID() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUrlContextID" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the context ID of the current connection.</summary>
+        <returns>Always returns 0.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserToken">
+      <MemberSignature Language="C#" Value="public virtual IntPtr GetUserToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetUserToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetUserToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, returns the client's impersonation token.</summary>
+        <returns>A value representing the client's impersonation token. The default is 0.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualPathToken">
+      <MemberSignature Language="C#" Value="public virtual IntPtr GetVirtualPathToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetVirtualPathToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.GetVirtualPathToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the impersonation token for the request virtual path.</summary>
+        <returns>An unmanaged memory pointer for the token for the request virtual path.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasEntityBody">
+      <MemberSignature Language="C#" Value="public bool HasEntityBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasEntityBody() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.HasEntityBody" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether the request contains body data.</summary>
+        <returns>
+          <see langword="true" /> if the request contains body data; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderAccept">
+      <MemberSignature Language="C#" Value="public const int HeaderAccept = 20;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderAccept = (20)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAccept" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Accept" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderAcceptCharset">
+      <MemberSignature Language="C#" Value="public const int HeaderAcceptCharset = 21;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderAcceptCharset = (21)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAcceptCharset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Accept-Charset" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderAcceptEncoding">
+      <MemberSignature Language="C#" Value="public const int HeaderAcceptEncoding = 22;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderAcceptEncoding = (22)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAcceptEncoding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Accept-Encoding" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderAcceptLanguage">
+      <MemberSignature Language="C#" Value="public const int HeaderAcceptLanguage = 23;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderAcceptLanguage = (23)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAcceptLanguage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>23</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Accept-Language" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderAcceptRanges">
+      <MemberSignature Language="C#" Value="public const int HeaderAcceptRanges = 20;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderAcceptRanges = (20)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAcceptRanges" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>20</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Accept-Ranges" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderAge">
+      <MemberSignature Language="C#" Value="public const int HeaderAge = 21;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderAge = (21)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>21</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Age" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderAllow">
+      <MemberSignature Language="C#" Value="public const int HeaderAllow = 10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderAllow = (10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAllow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Allow" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderAuthorization">
+      <MemberSignature Language="C#" Value="public const int HeaderAuthorization = 24;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderAuthorization = (24)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderAuthorization" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>24</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Authorization" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderCacheControl">
+      <MemberSignature Language="C#" Value="public const int HeaderCacheControl = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderCacheControl = (0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderCacheControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>The index that represents the HTTP <see langword="Cache-Control" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderConnection">
+      <MemberSignature Language="C#" Value="public const int HeaderConnection = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderConnection = (1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderConnection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Connection" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContentEncoding">
+      <MemberSignature Language="C#" Value="public const int HeaderContentEncoding = 13;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderContentEncoding = (13)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentEncoding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Content-Encoding" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContentLanguage">
+      <MemberSignature Language="C#" Value="public const int HeaderContentLanguage = 14;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderContentLanguage = (14)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentLanguage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Content-Language" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContentLength">
+      <MemberSignature Language="C#" Value="public const int HeaderContentLength = 11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderContentLength = (11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Content-Length" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContentLocation">
+      <MemberSignature Language="C#" Value="public const int HeaderContentLocation = 15;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderContentLocation = (15)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentLocation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Content-Location" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContentMd5">
+      <MemberSignature Language="C#" Value="public const int HeaderContentMd5 = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderContentMd5 = (16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentMd5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Content-MD5" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContentRange">
+      <MemberSignature Language="C#" Value="public const int HeaderContentRange = 17;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderContentRange = (17)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>17</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Content-Range" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContentType">
+      <MemberSignature Language="C#" Value="public const int HeaderContentType = 12;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderContentType = (12)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderContentType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Content-Type" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderCookie">
+      <MemberSignature Language="C#" Value="public const int HeaderCookie = 25;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderCookie = (25)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderCookie" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>25</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Cookie" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderDate">
+      <MemberSignature Language="C#" Value="public const int HeaderDate = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderDate = (2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderDate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Date" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderEtag">
+      <MemberSignature Language="C#" Value="public const int HeaderEtag = 22;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderEtag = (22)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderEtag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>22</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="ETag" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderExpect">
+      <MemberSignature Language="C#" Value="public const int HeaderExpect = 26;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderExpect = (26)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderExpect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>26</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Except" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderExpires">
+      <MemberSignature Language="C#" Value="public const int HeaderExpires = 18;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderExpires = (18)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderExpires" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>18</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Expires" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderFrom">
+      <MemberSignature Language="C#" Value="public const int HeaderFrom = 27;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderFrom = (27)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderFrom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>27</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="From" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderHost">
+      <MemberSignature Language="C#" Value="public const int HeaderHost = 28;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderHost = (28)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderHost" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>28</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Host" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderIfMatch">
+      <MemberSignature Language="C#" Value="public const int HeaderIfMatch = 29;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderIfMatch = (29)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfMatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>29</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="If-Match" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderIfModifiedSince">
+      <MemberSignature Language="C#" Value="public const int HeaderIfModifiedSince = 30;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderIfModifiedSince = (30)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfModifiedSince" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="If-Modified-Since" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderIfNoneMatch">
+      <MemberSignature Language="C#" Value="public const int HeaderIfNoneMatch = 31;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderIfNoneMatch = (31)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfNoneMatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>31</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="If-None-Match" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderIfRange">
+      <MemberSignature Language="C#" Value="public const int HeaderIfRange = 32;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderIfRange = (32)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>32</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="If-Range" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderIfUnmodifiedSince">
+      <MemberSignature Language="C#" Value="public const int HeaderIfUnmodifiedSince = 33;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderIfUnmodifiedSince = (33)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderIfUnmodifiedSince" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>33</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="If-Unmodified-Since" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderKeepAlive">
+      <MemberSignature Language="C#" Value="public const int HeaderKeepAlive = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderKeepAlive = (3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderKeepAlive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Keep-Alive" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderLastModified">
+      <MemberSignature Language="C#" Value="public const int HeaderLastModified = 19;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderLastModified = (19)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderLastModified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>19</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Last-Modified" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderLocation">
+      <MemberSignature Language="C#" Value="public const int HeaderLocation = 23;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderLocation = (23)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderLocation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>23</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Location" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderMaxForwards">
+      <MemberSignature Language="C#" Value="public const int HeaderMaxForwards = 34;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderMaxForwards = (34)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderMaxForwards" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>34</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Max-Forwards" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderPragma">
+      <MemberSignature Language="C#" Value="public const int HeaderPragma = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderPragma = (4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderPragma" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Pragma" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderProxyAuthenticate">
+      <MemberSignature Language="C#" Value="public const int HeaderProxyAuthenticate = 24;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderProxyAuthenticate = (24)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderProxyAuthenticate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>24</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Proxy-Authenticate" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderProxyAuthorization">
+      <MemberSignature Language="C#" Value="public const int HeaderProxyAuthorization = 35;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderProxyAuthorization = (35)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderProxyAuthorization" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>35</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Proxy-Authorization" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderRange">
+      <MemberSignature Language="C#" Value="public const int HeaderRange = 37;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderRange = (37)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>37</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Range" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderReferer">
+      <MemberSignature Language="C#" Value="public const int HeaderReferer = 36;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderReferer = (36)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderReferer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>36</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Referer" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderRetryAfter">
+      <MemberSignature Language="C#" Value="public const int HeaderRetryAfter = 25;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderRetryAfter = (25)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderRetryAfter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>25</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Retry-After" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderServer">
+      <MemberSignature Language="C#" Value="public const int HeaderServer = 26;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderServer = (26)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>26</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Server" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderSetCookie">
+      <MemberSignature Language="C#" Value="public const int HeaderSetCookie = 27;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderSetCookie = (27)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderSetCookie" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>27</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Set-Cookie" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadersSent">
+      <MemberSignature Language="C#" Value="public virtual bool HeadersSent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HeadersSent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.HeadersSent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether HTTP response headers have been sent to the client for the current request.</summary>
+        <returns>
+          <see langword="true" /> if HTTP response headers have been sent to the client; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTe">
+      <MemberSignature Language="C#" Value="public const int HeaderTe = 38;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderTe = (38)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderTe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>38</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="TE" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTrailer">
+      <MemberSignature Language="C#" Value="public const int HeaderTrailer = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderTrailer = (5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderTrailer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Trailer" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTransferEncoding">
+      <MemberSignature Language="C#" Value="public const int HeaderTransferEncoding = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderTransferEncoding = (6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderTransferEncoding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Transfer-Encoding" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderUpgrade">
+      <MemberSignature Language="C#" Value="public const int HeaderUpgrade = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderUpgrade = (7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderUpgrade" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Upgrade" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderUserAgent">
+      <MemberSignature Language="C#" Value="public const int HeaderUserAgent = 39;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderUserAgent = (39)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderUserAgent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>39</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="User-Agent" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderVary">
+      <MemberSignature Language="C#" Value="public const int HeaderVary = 28;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderVary = (28)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderVary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>28</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Vary" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderVia">
+      <MemberSignature Language="C#" Value="public const int HeaderVia = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderVia = (8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderVia" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Via" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderWarning">
+      <MemberSignature Language="C#" Value="public const int HeaderWarning = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderWarning = (9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderWarning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Warning" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderWwwAuthenticate">
+      <MemberSignature Language="C#" Value="public const int HeaderWwwAuthenticate = 29;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 HeaderWwwAuthenticate = (29)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.HeaderWwwAuthenticate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>29</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="WWW-Authenticate" /> HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClientConnected">
+      <MemberSignature Language="C#" Value="public virtual bool IsClientConnected ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsClientConnected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.IsClientConnected" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether the client connection is still active.</summary>
+        <returns>
+          <see langword="true" /> if the client connection is still active; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEntireEntityBodyIsPreloaded">
+      <MemberSignature Language="C#" Value="public virtual bool IsEntireEntityBodyIsPreloaded ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEntireEntityBodyIsPreloaded() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.IsEntireEntityBodyIsPreloaded" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether all request data is available and no further reads from the client are required.</summary>
+        <returns>
+          <see langword="true" /> if all request data is available; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSecure">
+      <MemberSignature Language="C#" Value="public virtual bool IsSecure ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSecure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.IsSecure" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether the connection uses SSL.</summary>
+        <returns>
+          <see langword="true" /> if the connection is an SSL connection; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineConfigPath">
+      <MemberSignature Language="C#" Value="public virtual string MachineConfigPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineConfigPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.MachineConfigPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the full physical path to the Machine.config file.</summary>
+        <value>The physical path to the Machine.config file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineInstallDirectory">
+      <MemberSignature Language="C#" Value="public virtual string MachineInstallDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineInstallDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.MachineInstallDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the physical path to the directory where the ASP.NET binaries are installed.</summary>
+        <value>The physical directory to the ASP.NET binary files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapPath">
+      <MemberSignature Language="C#" Value="public virtual string MapPath (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string MapPath(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.MapPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path.</param>
+        <summary>Returns the physical path corresponding to the specified virtual path.</summary>
+        <returns>The physical path that corresponds to the virtual path specified in the <paramref name="virtualPath" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEntityBody">
+      <MemberSignature Language="C#" Value="public virtual int ReadEntityBody (byte[] buffer, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ReadEntityBody(unsigned int8[] buffer, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.ReadEntityBody(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The byte array to read data into.</param>
+        <param name="size">The maximum number of bytes to read.</param>
+        <summary>Reads request data from the client (when not preloaded).</summary>
+        <returns>The number of bytes read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEntityBody">
+      <MemberSignature Language="C#" Value="public virtual int ReadEntityBody (byte[] buffer, int offset, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ReadEntityBody(unsigned int8[] buffer, int32 offset, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.ReadEntityBody(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">The byte array to read data into.</param>
+        <param name="offset">The byte offset at which to begin reading.</param>
+        <param name="size">The maximum number of bytes to read.</param>
+        <summary>Reads request data from the client (when not preloaded) by using the specified buffer to read from, byte offset, and maximum bytes.</summary>
+        <returns>The number of bytes read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReasonCachePolicy">
+      <MemberSignature Language="C#" Value="public const int ReasonCachePolicy = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ReasonCachePolicy = (2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonCachePolicy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Specifies a reason for the request.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReasonCacheSecurity">
+      <MemberSignature Language="C#" Value="public const int ReasonCacheSecurity = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ReasonCacheSecurity = (3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonCacheSecurity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>Specifies a reason for the request.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReasonClientDisconnect">
+      <MemberSignature Language="C#" Value="public const int ReasonClientDisconnect = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ReasonClientDisconnect = (4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonClientDisconnect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>Specifies a reason for the request.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReasonDefault">
+      <MemberSignature Language="C#" Value="public const int ReasonDefault = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ReasonDefault = (0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Specifies a reason for the request. The default value is <see cref="F:System.Web.HttpWorkerRequest.ReasonResponseCacheMiss" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReasonFileHandleCacheMiss">
+      <MemberSignature Language="C#" Value="public const int ReasonFileHandleCacheMiss = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ReasonFileHandleCacheMiss = (1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonFileHandleCacheMiss" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Specifies a reason for the request.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReasonResponseCacheMiss">
+      <MemberSignature Language="C#" Value="public const int ReasonResponseCacheMiss = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ReasonResponseCacheMiss = (0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ReasonResponseCacheMiss" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Specifies a reason for the request.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestHeaderMaximum">
+      <MemberSignature Language="C#" Value="public const int RequestHeaderMaximum = 40;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RequestHeaderMaximum = (40)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.RequestHeaderMaximum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>40</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Maximum" /> HTTP request header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestTraceIdentifier">
+      <MemberSignature Language="C#" Value="public virtual Guid RequestTraceIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid RequestTraceIdentifier" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.RequestTraceIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the corresponding Event Tracking for Windows trace ID for the current request.</summary>
+        <value>A trace ID for the current ASP.NET request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET requests execute with the same trace ID as the corresponding IIS request. This facilitates tracking a request throughout its lifetime, starting with the HTTP.SYS kernel-mode HTTP listener, through the IIS service, and into the ASP.NET system. The IDs provided by IIS differ based on the platform and service pack level.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseHeaderMaximum">
+      <MemberSignature Language="C#" Value="public const int ResponseHeaderMaximum = 30;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ResponseHeaderMaximum = (30)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpWorkerRequest.ResponseHeaderMaximum" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>30</MemberValue>
+      <Docs>
+        <summary>Specifies the index number for the <see langword="Maximum" /> HTTP response header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework assigns an index number to each standard HTTP header type, for use in the <xref:System.Web.HttpWorkerRequest.GetKnownRequestHeader%2A> and <xref:System.Web.HttpWorkerRequest.SendKnownResponseHeader%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootWebConfigPath">
+      <MemberSignature Language="C#" Value="public virtual string RootWebConfigPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootWebConfigPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.RootWebConfigPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the full physical path to the root Web.config file.</summary>
+        <value>The physical path to the root Web.config file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are implementing your own hosting environment, you may to override this property to return the location of your environment's root configuration file. An example of this is the <xref:System.Web.Hosting.SimpleWorkerRequest> class which provides a simple implementation of the <xref:System.Web.HttpWorkerRequest>. The <xref:System.Web.Hosting.SimpleWorkerRequest.RootWebConfigPath%2A?displayProperty=fullName> property of <xref:System.Web.Hosting.SimpleWorkerRequest> class overrides the <xref:System.Web.HttpWorkerRequest.RootWebConfigPath%2A> property of <xref:System.Web.HttpWorkerRequest> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendCalculatedContentLength">
+      <MemberSignature Language="C#" Value="public virtual void SendCalculatedContentLength (int contentLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendCalculatedContentLength(int32 contentLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendCalculatedContentLength(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="contentLength">The length of the response, in bytes.</param>
+        <summary>Adds a <see langword="Content-Length" /> HTTP header to the response for message bodies that are less than or equal to 2 GB.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the content length is not explicitly set, this method enables the <xref:System.Web.HttpWorkerRequest> instance to add a `Content-Length` HTTP header to the response.  
+  
+ Use this overload to set the `Content-Length` header when the length of the response message body is less than or equal to 2 GB.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendCalculatedContentLength">
+      <MemberSignature Language="C#" Value="public virtual void SendCalculatedContentLength (long contentLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendCalculatedContentLength(int64 contentLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendCalculatedContentLength(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentLength" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="contentLength">The length of the response, in bytes.</param>
+        <summary>Adds a <see langword="Content-Length" /> HTTP header to the response for message bodies that are greater than 2 GB.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the content length is not explicitly set, this method enables the <xref:System.Web.HttpWorkerRequest> instance to add a `Content-Length` HTTP header to the response. The default implementation calls the overload that takes a `contentLength` parameter of type <xref:System.Int32>.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendKnownResponseHeader">
+      <MemberSignature Language="C#" Value="public abstract void SendKnownResponseHeader (int index, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendKnownResponseHeader(int32 index, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendKnownResponseHeader(System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="index">The header index. For example, <see cref="F:System.Web.HttpWorkerRequest.HeaderContentLength" />.</param>
+        <param name="value">The value of the header.</param>
+        <summary>Adds a standard HTTP header to the response.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendResponseFromFile">
+      <MemberSignature Language="C#" Value="public abstract void SendResponseFromFile (IntPtr handle, long offset, long length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendResponseFromFile(native int handle, int64 offset, int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendResponseFromFile(System.IntPtr,System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="length" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="handle">The handle of the file to send.</param>
+        <param name="offset">The starting position in the file.</param>
+        <param name="length">The number of bytes to send.</param>
+        <summary>Adds the contents of the specified file to the response and specifies the starting position in the file and the number of bytes to send.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendResponseFromFile">
+      <MemberSignature Language="C#" Value="public abstract void SendResponseFromFile (string filename, long offset, long length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendResponseFromFile(string filename, int64 offset, int64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendResponseFromFile(System.String,System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="offset" Type="System.Int64" />
+        <Parameter Name="length" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="filename">The name of the file to send.</param>
+        <param name="offset">The starting position in the file.</param>
+        <param name="length">The number of bytes to send.</param>
+        <summary>Adds the contents of the specified file to the response and specifies the starting position in the file and the number of bytes to send.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendResponseFromMemory">
+      <MemberSignature Language="C#" Value="public abstract void SendResponseFromMemory (byte[] data, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendResponseFromMemory(unsigned int8[] data, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendResponseFromMemory(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="data">The byte array to send.</param>
+        <param name="length">The number of bytes to send, starting at the first byte.</param>
+        <summary>Adds the specified number of bytes from a byte array to the response.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendResponseFromMemory">
+      <MemberSignature Language="C#" Value="public virtual void SendResponseFromMemory (IntPtr data, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendResponseFromMemory(native int data, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendResponseFromMemory(System.IntPtr,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.IntPtr" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="data">An unmanaged pointer to the block of memory.</param>
+        <param name="length">The number of bytes to send.</param>
+        <summary>Adds the specified number of bytes from a block of memory to the response.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendStatus">
+      <MemberSignature Language="C#" Value="public abstract void SendStatus (int statusCode, string statusDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendStatus(int32 statusCode, string statusDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendStatus(System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statusCode" Type="System.Int32" />
+        <Parameter Name="statusDescription" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="statusCode">The status code to send</param>
+        <param name="statusDescription">The status description to send.</param>
+        <summary>Specifies the HTTP status code and status description of the response, such as <c>SendStatus(200, "Ok")</c>.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendUnknownResponseHeader">
+      <MemberSignature Language="C#" Value="public abstract void SendUnknownResponseHeader (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SendUnknownResponseHeader(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SendUnknownResponseHeader(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the header to send.</param>
+        <param name="value">The value of the header.</param>
+        <summary>Adds a nonstandard HTTP header to the response.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEndOfSendNotification">
+      <MemberSignature Language="C#" Value="public virtual void SetEndOfSendNotification (System.Web.HttpWorkerRequest.EndOfSendNotification callback, object extraData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetEndOfSendNotification(class System.Web.HttpWorkerRequest/EndOfSendNotification callback, object extraData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpWorkerRequest.SetEndOfSendNotification(System.Web.HttpWorkerRequest.EndOfSendNotification,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Web.HttpWorkerRequest+EndOfSendNotification" />
+        <Parameter Name="extraData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The notification callback that is called when all data is sent (out-of-band).</param>
+        <param name="extraData">An additional parameter to the callback.</param>
+        <summary>Registers for an optional notification when all the response data is sent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method might be helpful when you implement buffer recycling.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsAsyncFlush">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsAsyncFlush { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsAsyncFlush" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.SupportsAsyncFlush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether asynchronous flush operations are supported.</summary>
+        <value>
+          <see langword="true" /> if asynchronous flush operations are supported; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsAsyncRead">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsAsyncRead { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsAsyncRead" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpWorkerRequest.SupportsAsyncRead" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether asynchronous read operations are supported.</summary>
+        <value>
+          <see langword="true" /> if asynchronous read operations are supported; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="ReadEntityBody">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Overloaded. Reads request data from the client (when not preloaded).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation is free to return fewer bytes than requested even if the end of the stream has not been reached.  
+  
+ Use this overload to specify the response for message bodies greater than 2 GB.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,130 @@
+<Type Name="ErrorType" FullName="Microsoft.JScript.ErrorType">
+  <TypeSignature Language="C#" Value="public enum ErrorType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrorType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ErrorType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the JScript error types.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EvalError">
+      <MemberSignature Language="C#" Value="EvalError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType EvalError = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.EvalError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An [eval Method (Visual Studio - JScript)](http://msdn.microsoft.com/en-us/8af3274a-ce81-46db-854c-25db60cd9b38) error. Corresponds to the <see cref="T:Microsoft.JScript.EvalErrorObject" /> object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherError">
+      <MemberSignature Language="C#" Value="OtherError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType OtherError = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.OtherError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Any error other than one of the other error types. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeError">
+      <MemberSignature Language="C#" Value="RangeError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType RangeError = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.RangeError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A range error. Corresponds to the <see cref="T:Microsoft.JScript.RangeErrorObject" /> object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceError">
+      <MemberSignature Language="C#" Value="ReferenceError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType ReferenceError = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.ReferenceError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A reference error. Corresponds to the <see cref="T:Microsoft.JScript.ReferenceErrorObject" /> object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SyntaxError">
+      <MemberSignature Language="C#" Value="SyntaxError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType SyntaxError = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.SyntaxError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A syntax error. Corresponds to the <see cref="T:Microsoft.JScript.SyntaxErrorObject" /> object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeError">
+      <MemberSignature Language="C#" Value="TypeError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType TypeError = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.TypeError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A type error. Corresponds to the <see cref="T:Microsoft.JScript.TypeErrorObject" /> object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="URIError">
+      <MemberSignature Language="C#" Value="URIError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType URIError = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.URIError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Uniform Resource Identifier (URI) error. Corresponds to the <see cref="T:Microsoft.JScript.URIErrorObject" /> object.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

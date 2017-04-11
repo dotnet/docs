@@ -1,0 +1,144 @@
+<Type Name="InkCanvasGestureEventArgs" FullName="System.Windows.Controls.InkCanvasGestureEventArgs">
+  <TypeSignature Language="C#" Value="public class InkCanvasGestureEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InkCanvasGestureEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasGestureEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.InkCanvas.Gesture" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InkCanvasGestureEventArgs (System.Windows.Ink.StrokeCollection strokes, System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.GestureRecognitionResult&gt; gestureRecognitionResults);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Ink.StrokeCollection strokes, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Ink.GestureRecognitionResult&gt; gestureRecognitionResults) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasGestureEventArgs.#ctor(System.Windows.Ink.StrokeCollection,System.Collections.Generic.IEnumerable{System.Windows.Ink.GestureRecognitionResult})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="strokes" Type="System.Windows.Ink.StrokeCollection" />
+        <Parameter Name="gestureRecognitionResults" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.GestureRecognitionResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="strokes">The strokes that represent the possible gesture.</param>
+        <param name="gestureRecognitionResults">The results from the gesture recognizer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.InkCanvasGestureEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether strokes should be considered a gesture.</summary>
+        <value>
+          <see langword="true" /> if the strokes are ink; <see langword="false" /> if the strokes are a gesture.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.InkCanvas.Gesture> event occurs, the value of the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> property depends on the first <xref:System.Windows.Ink.GestureRecognitionResult> in the collection returned by the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method. If the value of the <xref:System.Windows.Ink.GestureRecognitionResult.ApplicationGesture%2A> property is <xref:System.Windows.Ink.ApplicationGesture>, or if it is a gesture whose <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A> is a value other than <xref:System.Windows.Ink.RecognitionConfidence>, then <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `true`. Otherwise, <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `false`. When <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `false`, the <xref:System.Windows.Controls.InkCanvas> adds the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Strokes%2A> to its <xref:System.Windows.Ink.StrokeCollection>. When <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `true`, the strokes are not added to the <xref:System.Windows.Controls.InkCanvas>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGestureRecognitionResults">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Ink.GestureRecognitionResult&gt; GetGestureRecognitionResults ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Ink.GestureRecognitionResult&gt; GetGestureRecognitionResults() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Ink.GestureRecognitionResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns results from the gesture recognizer.</summary>
+        <returns>A collection of possible application gestures that the <see cref="P:System.Windows.Controls.InkCanvasGestureEventArgs.Strokes" /> might be.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection returned by the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method is sorted by the <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A?displayProperty=fullName> property. For example, <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> might return a collection of <xref:System.Windows.Ink.GestureRecognitionResult> objects with the following values:  
+  
+|Index|ApplicationGesture|RecognitionConfidence|  
+|-----------|------------------------|---------------------------|  
+|0|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+|1|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+|2|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+|3|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+  
+ This means that the <xref:System.Windows.Ink.GestureRecognizer> recognizes that it is very likely that the <xref:System.Windows.Ink.Stroke> is a check mark, relatively likely that the <xref:System.Windows.Ink.Stroke> in not a gesture, and not at all likely that the <xref:System.Windows.Ink.Stroke> is a curlicue or a double curlicue.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method can return an array with <xref:System.Windows.Ink.ApplicationGesture> with a higher degree of <xref:System.Windows.Ink.RecognitionConfidence> than it has for other application gestures. This means that it is more likely that the <xref:System.Windows.Ink.Stroke> is not a gesture, as opposed to a gesture that has a lower <xref:System.Windows.Ink.RecognitionConfidence>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvasGestureEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The generic handler / delegate implementation to be invoked.</param>
+        <param name="genericTarget">The target on which the provided handler should be invoked.</param>
+        <summary>When overridden in a derived class, provides a way to invoke event handlers in a type-specific way, which can increase efficiency over the base implementation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Strokes">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection Strokes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection Strokes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasGestureEventArgs.Strokes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the strokes that represent the possible gesture.</summary>
+        <value>The strokes that represent the possible gesture.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

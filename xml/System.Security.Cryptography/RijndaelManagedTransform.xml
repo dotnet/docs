@@ -1,0 +1,306 @@
+<Type Name="RijndaelManagedTransform" FullName="System.Security.Cryptography.RijndaelManagedTransform">
+  <TypeSignature Language="C#" Value="public sealed class RijndaelManagedTransform : System.Security.Cryptography.ICryptoTransform" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RijndaelManagedTransform extends System.Object implements class System.IDisposable, class System.Security.Cryptography.ICryptoTransform" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RijndaelManagedTransform" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Cryptography.ICryptoTransform</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Performs a cryptographic transformation of data using the Rijndael algorithm. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Using this class is not recommended. A better practice is to use <xref:System.Security.Cryptography.RijndaelManaged> with a <xref:System.Security.Cryptography.CryptoStream> object. The <xref:System.Security.Cryptography.CryptoStream> object handles the padding issues that can occur when using <xref:System.Security.Cryptography.RijndaelManagedTransform> directly. For an example, see the <xref:System.Security.Cryptography.RijndaelManaged> class.  
+  
+ Both the <xref:System.Security.Cryptography.RijndaelManaged.CreateEncryptor%2A> and <xref:System.Security.Cryptography.RijndaelManaged.CreateDecryptor%2A> methods return an instance of the <xref:System.Security.Cryptography.RijndaelManagedTransform> class that is initialized with the key information of the current <xref:System.Security.Cryptography.RijndaelManaged> object.  To encrypt or decrypt data using the Rijndael algorithm, pass the <xref:System.Security.Cryptography.RijndaelManagedTransform> object returned by these methods to a <xref:System.Security.Cryptography.CryptoStream> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlockSizeValue">
+      <MemberSignature Language="C#" Value="public int BlockSizeValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSizeValue" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RijndaelManagedTransform.BlockSizeValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the block size.</summary>
+        <value>The size of the data blocks in bytes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanReuseTransform">
+      <MemberSignature Language="C#" Value="public bool CanReuseTransform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanReuseTransform" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RijndaelManagedTransform.CanReuseTransform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current transform can be reused.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanTransformMultipleBlocks">
+      <MemberSignature Language="C#" Value="public bool CanTransformMultipleBlocks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanTransformMultipleBlocks" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RijndaelManagedTransform.CanTransformMultipleBlocks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether multiple blocks can be transformed.</summary>
+        <value>
+          <see langword="true" /> if multiple blocks can be transformed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RijndaelManagedTransform.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Security.Cryptography.RijndaelManagedTransform" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a simple call to <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> class.  
+  
+ Calling `Dispose` allows the resources used by the <xref:System.Security.Cryptography.RijndaelManagedTransform> to be reallocated for other purposes. For more information about `Dispose`, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RijndaelManagedTransform.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.RijndaelManagedTransform" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call `Dispose` when you are finished using the <xref:System.Security.Cryptography.RijndaelManagedTransform>. The `Dispose` method leaves the <xref:System.Security.Cryptography.RijndaelManagedTransform> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Security.Cryptography.RijndaelManagedTransform> so the garbage collector can reclaim the memory that the <xref:System.Security.Cryptography.RijndaelManagedTransform> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Security.Cryptography.RijndaelManagedTransform>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Security.Cryptography.RijndaelManagedTransform> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputBlockSize">
+      <MemberSignature Language="C#" Value="public int InputBlockSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 InputBlockSize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RijndaelManagedTransform.InputBlockSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the input block size.</summary>
+        <value>The size of the input data blocks in bytes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputBlockSize">
+      <MemberSignature Language="C#" Value="public int OutputBlockSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 OutputBlockSize" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RijndaelManagedTransform.OutputBlockSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the output block size.</summary>
+        <value>The size of the output data blocks in bytes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RijndaelManagedTransform.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the internal state of <see cref="T:System.Security.Cryptography.RijndaelManagedTransform" /> so it can be used again to do a different encryption or decryption.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.RijndaelManagedTransform.Reset%2A> method is called automatically when you call <xref:System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock%2A>. The <xref:System.Security.Cryptography.RijndaelManagedTransform.Reset%2A> method is not called when, for example, the encrypted input data is garbage and cannot be decrypted. In this case, an exception is thrown and <xref:System.Security.Cryptography.RijndaelManagedTransform.Reset%2A> is not called. You can choose to manually call the <xref:System.Security.Cryptography.RijndaelManagedTransform.Reset%2A> method in this case.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformBlock">
+      <MemberSignature Language="C#" Value="public int TransformBlock (byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 TransformBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount, unsigned int8[] outputBuffer, int32 outputOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RijndaelManagedTransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputBuffer" Type="System.Byte[]" />
+        <Parameter Name="inputOffset" Type="System.Int32" />
+        <Parameter Name="inputCount" Type="System.Int32" />
+        <Parameter Name="outputBuffer" Type="System.Byte[]" />
+        <Parameter Name="outputOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputBuffer">The input to perform the operation on.</param>
+        <param name="inputOffset">The offset into the input byte array to begin using data from.</param>
+        <param name="inputCount">The number of bytes in the input byte array to use as data.</param>
+        <param name="outputBuffer">The output to write the data to.</param>
+        <param name="outputOffset">The offset into the output byte array to begin writing data from.</param>
+        <summary>Computes the transformation for the specified region of the input byte array and copies the resulting transformation to the specified region of the output byte array.</summary>
+        <returns>The number of bytes written.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="outputBuffer" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The length of the input buffer is less than the sum of the input offset and the input count.  
+  
+ -or-  
+  
+ The value of the <paramref name="inputCount" /> parameter is less than or equal to 0.  
+  
+ -or-  
+  
+ The value of the <paramref name="inputCount" /> parameter is greater than the length of the <paramref name="inputBuffer" /> parameter.  
+  
+ -or-  
+  
+ The length of the <paramref name="inputCount" /> parameter is not evenly devisable by input block size.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="inputOffset" /> parameter is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformFinalBlock">
+      <MemberSignature Language="C#" Value="public byte[] TransformFinalBlock (byte[] inputBuffer, int inputOffset, int inputCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] TransformFinalBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputBuffer" Type="System.Byte[]" />
+        <Parameter Name="inputOffset" Type="System.Int32" />
+        <Parameter Name="inputCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="inputBuffer">The input to perform the operation on.</param>
+        <param name="inputOffset">The offset into the byte array to begin using data from.</param>
+        <param name="inputCount">The number of bytes in the byte array to use as data.</param>
+        <summary>Computes the transformation for the specified region of the specified byte array.</summary>
+        <returns>The computed transformation.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="inputBuffer" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The value of the <paramref name="inputCount" /> parameter is less than 0.  
+  
+ -or-  
+  
+ The value of the <paramref name="inputCount" /> parameter is grater than the length of <paramref name="inputBuffer" /> parameter.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="inputOffset" /> parameter is negative.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The length of the <paramref name="inputCount" /> parameter is not evenly devisable by input block size.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,989 @@
+<Type Name="OracleCommand" FullName="System.Data.OracleClient.OracleCommand">
+  <TypeSignature Language="C#" Value="public sealed class OracleCommand : System.Data.Common.DbCommand, ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleCommand extends System.Data.Common.DbCommand implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleCommand" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.OracleClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbCommand</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("RecordsAffected")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("Microsoft.VSDesigner.Data.VS.OracleCommandDesigner, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("OracleCommand has been deprecated. http://go.microsoft.com/fwlink/?LinkID=144260", false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an SQL statement or stored procedure to execute against a database. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
+  
+ The <xref:System.Data.OracleClient.OracleCommand> class provides the following methods for executing commands against a data source:  
+  
+|Item|Description|  
+|----------|-----------------|  
+|<xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A>|Executes commands that return rows.|  
+|<xref:System.Data.OracleClient.OracleCommand.ExecuteOracleNonQuery%2A>|Executes an SQL statement against the <xref:System.Data.OracleClient.OracleCommand.Connection%2A> and returns the number of rows affected.|  
+|<xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A>|Executes commands such as SQL INSERT, DELETE, UPDATE, and SET statements.|  
+|<xref:System.Data.OracleClient.OracleCommand.ExecuteScalar%2A>|Retrieves a single value (for example, an aggregate value) from a database as a .NET Framework data type.|  
+|<xref:System.Data.OracleClient.OracleCommand.ExecuteOracleScalar%2A>|Retrieves a single value (for example, an aggregate value) from a database as an Oracle-specific data type.|  
+  
+ You can reset the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> property and reuse the <xref:System.Data.OracleClient.OracleCommand> object.  
+  
+ If execution of the command results in a fatal <xref:System.Data.OracleClient.OracleException>, the <xref:System.Data.OracleClient.OracleConnection> may close. However, the user can reopen the connection and continue.  
+  
+> [!NOTE]
+>  Unlike the **Command** object in the other .NET Framework data providers (SQL Server, OLE DB, and ODBC), the <xref:System.Data.OracleClient.OracleCommand> object does not support a <xref:System.Data.OracleClient.OracleCommand.CommandTimeout%2A> property. Setting a command timeout has no effect and the value returned is always zero.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> method of <xref:System.Data.OracleClient.OracleCommand>, along with <xref:System.Data.OracleClient.OracleDataReader> and <xref:System.Data.OracleClient.OracleConnection>, to select rows from a table.  
+  
+ [!code-csharp[Classic WebData OracleCommand#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommand" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base constructor initializes all fields to their default values. The following table shows initial property values for an instance of <xref:System.Data.OracleClient.OracleCommand>.  
+  
+|Properties|Initial Value|  
+|----------------|-------------------|  
+|<xref:System.Data.OracleClient.OracleCommand.CommandText%2A>|empty string ("")|  
+|<xref:System.Data.OracleClient.OracleCommand.CommandType%2A>|`Text`|  
+|<xref:System.Data.OracleClient.OracleCommand.Connection%2A>|null|  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData OracleCommand.OracleCommand#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.OracleCommand/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.OracleCommand#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.OracleCommand/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleCommand (string commandText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="commandText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="commandText">The text of the query.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommand" /> class with the text of the query.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleCommand (string commandText, System.Data.OracleClient.OracleConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandText, class System.Data.OracleClient.OracleConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.#ctor(System.String,System.Data.OracleClient.OracleConnection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="commandText" Type="System.String" />
+        <Parameter Name="connection" Type="System.Data.OracleClient.OracleConnection" />
+      </Parameters>
+      <Docs>
+        <param name="commandText">The text of the query.</param>
+        <param name="connection">An <see cref="T:System.Data.OracleClient.OracleConnection" /> object that represents the connection to a database.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommand" /> class with the text of the query and an <see cref="T:System.Data.OracleClient.OracleConnection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand>.  
+  
+ [!code-csharp[Classic WebData OracleCommand.OracleCommand2#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.OracleCommand2/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.OracleCommand2#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.OracleCommand2/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleCommand (string commandText, System.Data.OracleClient.OracleConnection connection, System.Data.OracleClient.OracleTransaction tx);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandText, class System.Data.OracleClient.OracleConnection connection, class System.Data.OracleClient.OracleTransaction tx) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.#ctor(System.String,System.Data.OracleClient.OracleConnection,System.Data.OracleClient.OracleTransaction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="commandText" Type="System.String" />
+        <Parameter Name="connection" Type="System.Data.OracleClient.OracleConnection" />
+        <Parameter Name="tx" Type="System.Data.OracleClient.OracleTransaction" />
+      </Parameters>
+      <Docs>
+        <param name="commandText">The text of the query.</param>
+        <param name="connection">An <see cref="T:System.Data.OracleClient.OracleConnection" /> object that represents the connection to a database.</param>
+        <param name="tx">The <see cref="T:System.Data.OracleClient.OracleTransaction" /> in which the <see cref="T:System.Data.OracleClient.OracleCommand" /> executes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleCommand" /> class with the text of the query, an <see cref="T:System.Data.OracleClient.OracleConnection" /> object, and an <see cref="T:System.Data.OracleClient.OracleTransaction" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of this implementation of the <xref:System.Data.OracleClient.OracleCommand>.  
+  
+|Properties|Initial Value|  
+|----------------|-------------------|  
+|<xref:System.Data.OracleClient.OracleCommand.CommandText%2A>|`cmdText`|  
+|<xref:System.Data.OracleClient.OracleCommand.CommandType%2A>|`Text`|  
+|<xref:System.Data.OracleClient.OracleCommand.Connection%2A>|A new <xref:System.Data.OracleClient.OracleConnection> that is the value for the `connection` parameter.|  
+  
+ You can change the value for any of these parameters by setting the related property.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData OracleCommand.OracleCommand3#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.OracleCommand3/CS/mysample.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.OracleCommand3#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.OracleCommand3/VB/mysample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public override void Cancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Cancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.Cancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Attempts to cancel the execution of an <see cref="T:System.Data.OracleClient.OracleCommand" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is nothing to cancel, nothing happens. However, if there is a command in process, and the attempt to cancel fails, no exception is generated.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand>, executes it, then cancels the execution. To accomplish this, the method is passed a string that is an SQL SELECT statement and a string to use to connect to the database.  
+  
+ [!code-csharp[Classic WebData OracleCommand.Cancel#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.Cancel/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.Cancel#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.Cancel/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of this <see cref="T:System.Data.OracleClient.OracleCommand" /> object.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleCommand" /> object in which all property values are the same as the original.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandText">
+      <MemberSignature Language="C#" Value="public override string CommandText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CommandText" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.CommandText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Oracle.Design.OracleCommandTextEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SQL statement or stored procedure to execute against the database.</summary>
+        <value>The SQL statement or stored procedure to execute. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Data.OracleClient.OracleCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> property should be set to the name of the stored procedure. The user may be required to use escape character syntax if the stored procedure name contains any special characters. The command executes this stored procedure when you call one of the Execute methods.  
+  
+ The .NET Framework Data Provider for Oracle does not support the question mark (?) placeholder for passing parameters to an SQL statement called by an <xref:System.Data.OracleClient.OracleCommand> of `CommandType.Text`. In this case, named parameters must be used. For example:  
+  
+```  
+SELECT * FROM Customers WHERE CustomerID = :pCustomerID  
+```  
+  
+ When using named parameters in an SQL statement called by an <xref:System.Data.OracleClient.OracleCommand> of `CommandType.Text`, you must precede the parameter name with a colon (:). However, in a stored procedure, or when referring to a named parameter elsewhere in your code (for example, when adding <xref:System.Data.OracleClient.OracleParameter> objects to the <xref:System.Data.OracleClient.OracleCommand.Parameters%2A> property), do not precede the named parameter with a colon (:). The .NET Framework Data Provider for Oracle supplies the colon automatically.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData OracleCommand.CommandText#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.CommandText/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.CommandText#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.CommandText/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandTimeout">
+      <MemberSignature Language="C#" Value="public override int CommandTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CommandTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.CommandTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the wait time before terminating the attempt to execute a command and generating an error.</summary>
+        <value>The time (in seconds) to wait for the command to execute. The default value is 30 seconds.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.ArgumentException> is generated if the assigned <xref:System.Data.OracleClient.OracleCommand.CommandTimeout%2A> property value is less than 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandType">
+      <MemberSignature Language="C#" Value="public override System.Data.CommandType CommandType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.CommandType CommandType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.CommandType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating how the <see cref="P:System.Data.OracleClient.OracleCommand.CommandText" /> property is interpreted.</summary>
+        <value>One of the <see cref="T:System.Data.CommandType" /> values. The default is <see langword="Text" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Data.OracleClient.OracleCommand.CommandType%2A> property is set to `StoredProcedure`, you should set the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> property to the full Oracle call syntax. The command then executes this stored procedure when you call one of the Execute methods (for example, <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> or <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A>).  
+  
+ The <xref:System.Data.OracleClient.OracleCommand.Connection%2A>, <xref:System.Data.OracleClient.OracleCommand.CommandType%2A> and <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> properties cannot be set if the current connection is performing an execute or fetch operation.  
+  
+ The .NET Framework Data Provider for Oracle does not support the question mark (?) placeholder for passing parameters to an SQL statement called by an <xref:System.Data.OracleClient.OracleCommand> of `CommandType.Text`. In this case, named parameters must be used. For example:  
+  
+```  
+SELECT * FROM Customers WHERE CustomerID = :pCustomerID  
+```  
+  
+ When using named parameters in an SQL statement called by an <xref:System.Data.OracleClient.OracleCommand> of `CommandType.Text`, you must precede the parameter name with a colon (:). However, in a stored procedure, or when referring to a named parameter elsewhere in your code (for example, when adding <xref:System.Data.OracleClient.OracleParameter> objects to the <xref:System.Data.OracleClient.OracleCommand.Parameters%2A> property), do not precede the named parameter with a colon (:). The .NET Framework Data Provider for Oracle supplies the colon automatically.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of a derived class <xref:System.Data.OracleClient.OracleCommand> and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData OracleCommand.CommandType#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.CommandType/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.CommandType#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.CommandType/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value was not a valid <see cref="T:System.Data.CommandType" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleConnection Connection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.OracleClient.OracleConnection Connection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DbConnectionEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.OracleClient.OracleConnection" /> used by this instance of the <see cref="T:System.Data.OracleClient.OracleCommand" />.</summary>
+        <value>The connection to a data source. The default is a null value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot set the <xref:System.Data.OracleClient.OracleCommand.Connection%2A>, <xref:System.Data.OracleClient.OracleCommand.CommandType%2A>, and <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> properties if the current connection is performing an execute or fetch operation.  
+  
+ If you set <xref:System.Data.OracleClient.OracleCommand.Connection%2A> while a transaction is in progress and the <xref:System.Data.OracleClient.OracleCommand.Transaction%2A> property is not null, an <xref:System.InvalidOperationException> is generated. If you set <xref:System.Data.OracleClient.OracleCommand.Connection%2A> after the transaction has been committed or rolled back, and the <xref:System.Data.OracleClient.OracleCommand.Transaction%2A> property is not null, the <xref:System.Data.OracleClient.OracleCommand.Transaction%2A> property is then set to a null value.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData OracleCommand.Connection#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.Connection/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.Connection#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.Connection/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> property was changed while a transaction was in progress.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDbParameter">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbParameter CreateDbParameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbParameter CreateDbParameter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.CreateDbParameter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbParameter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParameter">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleParameter CreateParameter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleParameter CreateParameter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.CreateParameter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleParameter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of an <see cref="T:System.Data.OracleClient.OracleParameter" /> object.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleParameter" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleCommand.CreateParameter%2A> method is a strongly-typed version of <xref:System.Data.IDbCommand.CreateParameter%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbConnection">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbConnection DbConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbConnection DbConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.DbConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbParameterCollection">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbParameterCollection DbParameterCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbParameterCollection DbParameterCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.DbParameterCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DbTransaction">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbTransaction DbTransaction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbTransaction DbTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.DbTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbTransaction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignTimeVisible">
+      <MemberSignature Language="C#" Value="public override bool DesignTimeVisible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DesignTimeVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.DesignTimeVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the command object should be visible in a customized interface control.</summary>
+        <value>
+          <see langword="true" />, if the command object should be visible in a control; otherwise <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteDbDataReader">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbDataReader ExecuteDbDataReader (System.Data.CommandBehavior behavior);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbDataReader ExecuteDbDataReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(System.Data.CommandBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="behavior">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteNonQuery">
+      <MemberSignature Language="C#" Value="public override int ExecuteNonQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ExecuteNonQuery() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteNonQuery" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes an SQL statement against the <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> and returns the number of rows affected.</summary>
+        <returns>For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For CREATE TABLE and DROP TABLE statements, the return value is 0. For all other types of statements, the return value is -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A> to perform catalog operations (for example, querying the structure of a database or creating database objects such as tables); or to change the data in a database, without using a <xref:System.Data.DataSet>, by executing UPDATE, INSERT, or DELETE statements.  
+  
+ Although <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A> does not return any rows, any output parameters or return values mapped to parameters are populated with data.  
+  
+ For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For CREATE TABLE and DROP TABLE statements, the return value is 0. For all other types of statements, the return value is -1. If a rollback occurs, the return value is also -1.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and then executes it by using <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A>. The example is passed a string that is an SQL statement (such as UPDATE, INSERT, or DELETE) and a string to use to connect to the database.  
+  
+ [!code-csharp[Classic WebData OracleCommand.ExecuteNonQuery#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteNonQuery/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.ExecuteNonQuery#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteNonQuery/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection does not exist.  
+  
+ -or-  
+  
+ The connection is not open.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOracleNonQuery">
+      <MemberSignature Language="C#" Value="public int ExecuteOracleNonQuery (out System.Data.OracleClient.OracleString rowid);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ExecuteOracleNonQuery(valuetype System.Data.OracleClient.OracleString rowid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteOracleNonQuery(System.Data.OracleClient.OracleString@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowid" Type="System.Data.OracleClient.OracleString&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="rowid">A base64 string representation of the actual row ID in the server.</param>
+        <summary>Executes an SQL statement against the <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> and returns the number of rows affected.</summary>
+        <returns>For UPDATE, INSERT, and DELETE statements, the return value is the number of rows affected by the command. For CREATE TABLE and DROP TABLE statements, the return value is 0. For all other types of statements, the return value is -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use <xref:System.Data.OracleClient.OracleCommand.ExecuteOracleNonQuery%2A> to perform catalog operations (for example, querying the structure of a database or creating database objects such as tables); or to change the data in a database, without using a <xref:System.Data.DataSet>, by executing UPDATE, INSERT, or DELETE statements.  
+  
+ <xref:System.Data.OracleClient.OracleCommand.ExecuteOracleNonQuery%2A> differs from <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A> in that it returns `rowid` as an output parameter if you are executing an INSERT, DELETE, or UPDATE statement that affects exactly one row. This allows you to uniquely identify a row in the Oracle database, which can allow you to increase performance in subsequent, related queries.  
+  
+ Although <xref:System.Data.OracleClient.OracleCommand.ExecuteOracleNonQuery%2A> does not return any rows, any output parameters or return values mapped to parameters are populated with data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection does not exist.  
+  
+ -or-  
+  
+ The connection is not open.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOracleScalar">
+      <MemberSignature Language="C#" Value="public object ExecuteOracleScalar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ExecuteOracleScalar() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteOracleScalar" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the query, and returns the first column of the first row in the result set returned by the query as an Oracle-specific data type. Extra columns or rows are ignored.</summary>
+        <returns>The first column of the first row in the result set as an Oracle-specific data type, or a null reference if the result is a <see langword="REF CURSOR" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.OracleClient.OracleCommand.ExecuteOracleScalar%2A> method to retrieve a single value (for example, an aggregate value) from a database. This requires less code than using the <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> method, and then performing the operations necessary to generate the single value from the data returned by an <xref:System.Data.OracleClient.OracleDataReader>.  
+  
+ A typical <xref:System.Data.OracleClient.OracleCommand.ExecuteOracleScalar%2A> query can be formatted as in the following C# example:  
+  
+```  
+command.CommandText = "SELECT COUNT(*) AS NumberOfRegions FROM Region";  
+count = command.ExecuteOracleScalar();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteReader">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleDataReader ExecuteReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleDataReader ExecuteReader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteReader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sends the <see cref="P:System.Data.OracleClient.OracleCommand.CommandText" /> to the <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> and builds an <see cref="T:System.Data.OracleClient.OracleDataReader" />.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleDataReader" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Data.OracleClient.OracleCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> property should be set to the name of the stored procedure. The command then executes this stored procedure when you call <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A>.  
+  
+ More than one <xref:System.Data.OracleClient.OracleDataReader> can be open at any given time.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand>, and then executes it by passing a string that is an SQL SELECT statement, and a string to use to connect to the data source.  
+  
+ [!code-csharp[Classic WebData OracleCommand.ExecuteReader1#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteReader1/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.ExecuteReader1#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteReader1/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteReader">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleDataReader ExecuteReader (System.Data.CommandBehavior behavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleDataReader ExecuteReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteReader(System.Data.CommandBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="behavior" Type="System.Data.CommandBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="behavior">One of the <see cref="T:System.Data.CommandBehavior" /> values.</param>
+        <summary>Sends the <see cref="P:System.Data.OracleClient.OracleCommand.CommandText" /> to the <see cref="P:System.Data.OracleClient.OracleCommand.Connection" />, and builds an <see cref="T:System.Data.OracleClient.OracleDataReader" /> using one of the <see cref="T:System.Data.CommandBehavior" /> values.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleDataReader" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you expect your SQL statement to return only a single row, specifying `SingleRow` as the <xref:System.Data.CommandBehavior> value may improve application performance.  
+  
+ When the <xref:System.Data.OracleClient.OracleCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> property should be set to the name of the stored procedure. The command then executes this stored procedure when you call <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A>.  
+  
+ The <xref:System.Data.OracleClient.OracleDataReader> supports a special mode that enables large binary values to be read efficiently. For more information, see the `SequentialAccess` setting for <xref:System.Data.CommandBehavior>.  
+  
+ More than one <xref:System.Data.OracleClient.OracleDataReader> can be open at any given time.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand>, and then executes it by passing a string that is an SQL SELECT statement, and a string to use to connect to the database. <xref:System.Data.CommandBehavior> is then set to <xref:System.Data.CommandBehavior>.  
+  
+ [!code-csharp[Classic WebData OracleCommand.ExecuteReader2#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteReader2/CS/mysample.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.ExecuteReader2#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteReader2/VB/mysample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteScalar">
+      <MemberSignature Language="C#" Value="public override object ExecuteScalar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ExecuteScalar() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ExecuteScalar" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the query, and returns the first column of the first row in the result set returned by the query as a .NET Framework data type. Extra columns or rows are ignored.</summary>
+        <returns>The first column of the first row in the result set as a .NET Framework data type, or a null reference if the result set is empty or the result is a <see langword="REF CURSOR" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.OracleClient.OracleCommand.ExecuteScalar%2A> method to retrieve a single value (for example, an aggregate value) from a database. This requires less code than using the <xref:System.Data.OracleClient.OracleCommand.ExecuteReader%2A> method, and then performing the operations necessary to generate the single value from the data returned by an <xref:System.Data.OracleClient.OracleDataReader>.  
+  
+ A typical <xref:System.Data.OracleClient.OracleCommand.ExecuteScalar%2A> query can be formatted as in the following C# example:  
+  
+```  
+CommandText = "SELECT COUNT(*) FROM Region";  
+Int32 count = (int32) ExecuteScalar();  
+```  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and then executes it using <xref:System.Data.OracleClient.OracleCommand.ExecuteScalar%2A>. The example is passed a string that is an SQL statement that returns an aggregate result, and a string to use to connect to the database.  
+  
+ [!code-csharp[Classic WebData OracleCommand.ExecuteScalar#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteScalar/CS/mysample.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.ExecuteScalar#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.ExecuteScalar/VB/mysample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleParameterCollection Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.OracleClient.OracleParameterCollection Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleParameterCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.OracleClient.OracleParameterCollection" />.</summary>
+        <value>The parameters of the SQL statement or stored procedure. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Data.OracleClient.OracleCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> property should be set to the name of the stored procedure. The user may be required to use escape character syntax if the stored procedure name contains any special characters. The command executes this stored procedure when you call one of the Execute methods.  
+  
+ The .NET Framework Data Provider for Oracle does not support the question mark (?) placeholder for passing parameters to an SQL statement called by an <xref:System.Data.OracleClient.OracleCommand> of `CommandType.Text`. In this case, named parameters must be used. For example:  
+  
+```  
+SELECT * FROM Customers WHERE CustomerID = :pCustomerID  
+```  
+  
+ When using named parameters in an SQL statement called by an <xref:System.Data.OracleClient.OracleCommand> of `CommandType.Text`, you must precede the parameter name with a colon (:). However, in a stored procedure, or when referring to a named parameter elsewhere in your code (for example, when adding <xref:System.Data.OracleClient.OracleParameter> objects to the <xref:System.Data.OracleClient.OracleCommand.Parameters%2A> property), do not precede the named parameter with a colon (:). The .NET Framework Data Provider for Oracle supplies the colon automatically.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and displays its parameters. To accomplish this, the method is passed an <xref:System.Data.OracleClient.OracleConnection>, a query string that is an SQL SELECT statement, and an array of <xref:System.Data.OracleClient.OracleParameter> objects.  
+  
+ [!code-csharp[Classic WebData OracleCommand.Parameters#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleCommand.Parameters/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleCommand.Parameters#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleCommand.Parameters/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prepare">
+      <MemberSignature Language="C#" Value="public override void Prepare ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Prepare() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.Prepare" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a prepared (or compiled) version of the command at the data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before you call <xref:System.Data.OracleClient.OracleCommand.Prepare%2A>, specify the data type of each parameter in the statement to be prepared.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> is not set.  
+  
+ -or-  
+  
+ The <see cref="P:System.Data.OracleClient.OracleCommand.Connection" /> is not <see cref="M:System.Data.OracleClient.OracleConnection.Open" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetCommandTimeout">
+      <MemberSignature Language="C#" Value="public void ResetCommandTimeout ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetCommandTimeout() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleCommand.ResetCommandTimeout" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the <see cref="P:System.Data.OracleClient.OracleCommand.CommandTimeout" /> property to the default value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of the <xref:System.Data.OracleClient.OracleCommand.CommandTimeout%2A> is 30 seconds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transaction">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleTransaction Transaction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.OracleClient.OracleTransaction Transaction" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.Transaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleTransaction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.OracleClient.OracleTransaction" /> within which the <see cref="T:System.Data.OracleClient.OracleCommand" /> executes.</summary>
+        <value>An <see cref="T:System.Data.OracleClient.OracleTransaction" />. The default is a null value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot set the <xref:System.Data.OracleClient.OracleCommand.Transaction%2A> property if it is already set to a specific value, and the command is in the process of executing. If you set the transaction property to an <xref:System.Data.OracleClient.OracleTransaction> object that is not connected to the same <xref:System.Data.OracleClient.OracleConnection> as the <xref:System.Data.OracleClient.OracleCommand> object, an exception will be thrown the next time you attempt to execute a statement.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedRowSource">
+      <MemberSignature Language="C#" Value="public override System.Data.UpdateRowSource UpdatedRowSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.UpdateRowSource UpdatedRowSource" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleCommand.UpdatedRowSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.UpdateRowSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies how the <see langword="Update" /> method should apply command results to the <see cref="T:System.Data.DataRow" />.</summary>
+        <value>One of the <see cref="T:System.Data.UpdateRowSource" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default <xref:System.Data.UpdateRowSource> value is `Both` unless the command is automatically generated (as in the case of the <xref:System.Data.OracleClient.OracleCommandBuilder>), in which case the default is `None`.  
+  
+ For more information about using the <xref:System.Data.UpdateRowSource> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value entered was not one of the <see cref="T:System.Data.UpdateRowSource" /> values.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

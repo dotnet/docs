@@ -1,0 +1,878 @@
+<Type Name="ClientBuildManager" FullName="System.Web.Compilation.ClientBuildManager">
+  <TypeSignature Language="C#" Value="public sealed class ClientBuildManager : MarshalByRefObject, IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientBuildManager extends System.MarshalByRefObject implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ClientBuildManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides compilation services for ASP.NET applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ClientBuildManager> class offers methods and properties for compiling ASP.NET Web applications, and retrieving the generated assemblies or generated source code. Instances of the class are established in the client's application domain and provide access to the ASP.NET build system outside of Microsoft Internet Information Services (IIS). The class can be used to develop customized tools for compiling Web applications.  
+  
+ The command-line tool `aspnet_compiler` uses the <xref:System.Web.Compilation.ClientBuildManager> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientBuildManager (string appVirtualDir, string appPhysicalSourceDir);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalSourceDir) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appVirtualDir" Type="System.String" />
+        <Parameter Name="appPhysicalSourceDir" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appVirtualDir">The virtual path to the application root.</param>
+        <param name="appPhysicalSourceDir">The physical path to the application root.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class without a specified target directory or precompilation flags.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientBuildManager (string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appVirtualDir" Type="System.String" />
+        <Parameter Name="appPhysicalSourceDir" Type="System.String" />
+        <Parameter Name="appPhysicalTargetDir" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appVirtualDir">The virtual path to the application root.</param>
+        <param name="appPhysicalSourceDir">The physical path to the application root.</param>
+        <param name="appPhysicalTargetDir">The target directory for precompilation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class with the specified target directory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This form of the constructor is typically used with precompilation, as it specifies a precompilation target directory.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientBuildManager (string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir, System.Web.Compilation.ClientBuildManagerParameter parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir, class System.Web.Compilation.ClientBuildManagerParameter parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.#ctor(System.String,System.String,System.String,System.Web.Compilation.ClientBuildManagerParameter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appVirtualDir" Type="System.String" />
+        <Parameter Name="appPhysicalSourceDir" Type="System.String" />
+        <Parameter Name="appPhysicalTargetDir" Type="System.String" />
+        <Parameter Name="parameter" Type="System.Web.Compilation.ClientBuildManagerParameter" />
+      </Parameters>
+      <Docs>
+        <param name="appVirtualDir">The virtual path to the application root.</param>
+        <param name="appPhysicalSourceDir">The physical path to the application root.</param>
+        <param name="appPhysicalTargetDir">The target directory for precompilation.</param>
+        <param name="parameter">Values that determine the precompilation behavior.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class with the specified target directory and compilation parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This form of the constructor is typically used with precompilation, as it specifies a precompilation target directory and precompilation flags.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientBuildManager (string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir, System.Web.Compilation.ClientBuildManagerParameter parameter, System.ComponentModel.TypeDescriptionProvider typeDescriptionProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalSourceDir, string appPhysicalTargetDir, class System.Web.Compilation.ClientBuildManagerParameter parameter, class System.ComponentModel.TypeDescriptionProvider typeDescriptionProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.#ctor(System.String,System.String,System.String,System.Web.Compilation.ClientBuildManagerParameter,System.ComponentModel.TypeDescriptionProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appVirtualDir" Type="System.String" />
+        <Parameter Name="appPhysicalSourceDir" Type="System.String" />
+        <Parameter Name="appPhysicalTargetDir" Type="System.String" />
+        <Parameter Name="parameter" Type="System.Web.Compilation.ClientBuildManagerParameter" />
+        <Parameter Name="typeDescriptionProvider" Type="System.ComponentModel.TypeDescriptionProvider" />
+      </Parameters>
+      <Docs>
+        <param name="appVirtualDir">The virtual path of the application root.</param>
+        <param name="appPhysicalSourceDir">The physical path of the application root.</param>
+        <param name="appPhysicalTargetDir">The target directory for precompilation.</param>
+        <param name="parameter">Values that determine the precompilation behavior.</param>
+        <param name="typeDescriptionProvider">The type-description provider to use. This parameter is primarily used to support the multi-targeting infrastructure in Visual Studio. It is used to retrieve metadata about types that is filtered for specific versions of the .NET Framework.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ClientBuildManager" /> class by using the specified virtual directory, source directory, target directory, compilation parameter, and type-description provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainShutdown">
+      <MemberSignature Language="C#" Value="public event System.Web.Compilation.BuildManagerHostUnloadEventHandler AppDomainShutdown;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.Compilation.BuildManagerHostUnloadEventHandler AppDomainShutdown" />
+      <MemberSignature Language="DocId" Value="E:System.Web.Compilation.ClientBuildManager.AppDomainShutdown" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.BuildManagerHostUnloadEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an application domain is shut down.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainStarted">
+      <MemberSignature Language="C#" Value="public event EventHandler AppDomainStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AppDomainStarted" />
+      <MemberSignature Language="DocId" Value="E:System.Web.Compilation.ClientBuildManager.AppDomainStarted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an application domain is started.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainUnloaded">
+      <MemberSignature Language="C#" Value="public event System.Web.Compilation.BuildManagerHostUnloadEventHandler AppDomainUnloaded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.Compilation.BuildManagerHostUnloadEventHandler AppDomainUnloaded" />
+      <MemberSignature Language="DocId" Value="E:System.Web.Compilation.ClientBuildManager.AppDomainUnloaded" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.BuildManagerHostUnloadEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an application domain is unloaded.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeGenDir">
+      <MemberSignature Language="C#" Value="public string CodeGenDir { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CodeGenDir" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManager.CodeGenDir" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the physical path to the directory used for code generation.</summary>
+        <value>A <see cref="T:System.String" /> containing the directory path used for code generation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The directory for code generation is typically in the temporary ASP.NET files directory.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompileApplicationDependencies">
+      <MemberSignature Language="C#" Value="public void CompileApplicationDependencies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompileApplicationDependencies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.CompileApplicationDependencies" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Compiles application-dependent files, such as files in the App_Code directory, the Global.asax file, resource files, and Web references.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ClientBuildManager.CompileApplicationDependencies%2A> method ensures that resources, Web references, files in the App_Code directory, .browser files in the App_Browsers directory, and the Global.asax file are compiled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompileFile">
+      <MemberSignature Language="C#" Value="public void CompileFile (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompileFile(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.CompileFile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The path to the file to be compiled.</param>
+        <summary>Compiles the file represented by the virtual path.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompileFile">
+      <MemberSignature Language="C#" Value="public void CompileFile (string virtualPath, System.Web.Compilation.ClientBuildManagerCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CompileFile(string virtualPath, class System.Web.Compilation.ClientBuildManagerCallback callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.CompileFile(System.String,System.Web.Compilation.ClientBuildManagerCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="callback" Type="System.Web.Compilation.ClientBuildManagerCallback" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The path to the file to be compiled.</param>
+        <param name="callback">The object to receive status information from compilation.</param>
+        <summary>Compiles the file represented by the virtual path and provides a callback class to receive status information about the build.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject">
+      <MemberSignature Language="C#" Value="public System.Web.Hosting.IRegisteredObject CreateObject (Type type, bool failIfExists);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject CreateObject(class System.Type type, bool failIfExists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.CreateObject(System.Type,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.IRegisteredObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="failIfExists" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object to be created.</param>
+        <param name="failIfExists">
+          <see langword="true" /> to throw an exception if the object has already been created in the application domain of the ASP.NET runtime; otherwise, <see langword="false" />.</param>
+        <summary>Creates an object in the application domain of the ASP.NET runtime.</summary>
+        <returns>An object in the application domain of the ASP.NET runtime.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The object already exists in the application domain and <paramref name="failIfExists" /> is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCode">
+      <MemberSignature Language="C#" Value="public string GenerateCode (string virtualPath, string virtualFileString, out System.Collections.IDictionary linePragmasTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateCode(string virtualPath, string virtualFileString, class System.Collections.IDictionary linePragmasTable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCode(System.String,System.String,System.Collections.IDictionary@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="virtualFileString" Type="System.String" />
+        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to the file.</param>
+        <param name="virtualFileString">The contents of the file.</param>
+        <param name="linePragmasTable">When this method returns, contains a dictionary of line pragmas.</param>
+        <summary>Generates code from the contents of a file.</summary>
+        <returns>A <see cref="T:System.String" /> containing the generated code.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCodeCompileUnit">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit (string virtualPath, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out System.Collections.IDictionary linePragmasTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit(string virtualPath, class System.Type codeDomProviderType, class System.CodeDom.Compiler.CompilerParameters compilerParameters, class System.Collections.IDictionary linePragmasTable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.Collections.IDictionary@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="codeDomProviderType" Type="System.Type&amp;" RefType="out" />
+        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters&amp;" RefType="out" />
+        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to the file.</param>
+        <param name="codeDomProviderType">When this method returns, contains the codeDOM provider type used for code generation and compilation.</param>
+        <param name="compilerParameters">When this method returns, contains the properties that define how the file will be compiled.</param>
+        <param name="linePragmasTable">When this method returns, contains a dictionary of line pragmas.</param>
+        <summary>Returns the codeDOM tree, compiler type, and compiler parameters for a file represented by a virtual path.</summary>
+        <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> for the given file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit%2A> method retrieves information needed to compile a file. In addition to a <xref:System.CodeDom.CodeCompileUnit> object as a return value, it returns three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the file. The `compilerParameters` parameter contains properties that determine compilation behavior. The `linePragmasTable` parameter contains a dictionary of line pragmas.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCodeCompileUnit">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit (string virtualPath, string virtualFileString, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out System.Collections.IDictionary linePragmasTable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeCompileUnit GenerateCodeCompileUnit(string virtualPath, string virtualFileString, class System.Type codeDomProviderType, class System.CodeDom.Compiler.CompilerParameters compilerParameters, class System.Collections.IDictionary linePragmasTable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit(System.String,System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.Collections.IDictionary@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeCompileUnit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="virtualFileString" Type="System.String" />
+        <Parameter Name="codeDomProviderType" Type="System.Type&amp;" RefType="out" />
+        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters&amp;" RefType="out" />
+        <Parameter Name="linePragmasTable" Type="System.Collections.IDictionary&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to the file.</param>
+        <param name="virtualFileString">The contents of the file represented by the <c>virtualPath</c> parameter.</param>
+        <param name="codeDomProviderType">When this method returns, contains the codeDOM provider type used for code generation and compilation.</param>
+        <param name="compilerParameters">When this method returns, contains the properties that define how the file represented by the <c>virtualPath</c> parameter will be compiled.</param>
+        <param name="linePragmasTable">When this method returns, contains a dictionary of line pragmas.</param>
+        <summary>Returns the contents, codeDOM tree, compiler type, and compiler parameters for a file represented by a virtual path.</summary>
+        <returns>A <see cref="T:System.CodeDom.CodeCompileUnit" /> for the given file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ClientBuildManager.GenerateCodeCompileUnit%2A> method retrieves information needed to compile a file. In addition to a <xref:System.CodeDom.CodeCompileUnit> object as a return value, it returns three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the file. The `compilerParameters` parameter contains properties that determine compilation behavior. The `linePragmasTable` parameter contains a dictionary of line pragmas.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppDomainShutdownDirectories">
+      <MemberSignature Language="C#" Value="public string[] GetAppDomainShutdownDirectories ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetAppDomainShutdownDirectories() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetAppDomainShutdownDirectories" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the directories with files that, when changed, cause the application domain to shut down.</summary>
+        <returns>A <see cref="T:System.String" /> array containing the top-level directory names.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes to files in specific top-level directories cause the application domain to shut down. Files within the Bin, App_Code, Global_Resources, Web References, and App_Browsers directories are monitored to detect any changes. When changes are detected, the application domain is shut down.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBrowserDefinitions">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionary GetBrowserDefinitions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IDictionary GetBrowserDefinitions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetBrowserDefinitions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of browser elements.</summary>
+        <returns>An <see cref="T:System.Collections.IDictionary" /> containing browser elements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.IDictionary> object contains browser names for the keys and <xref:System.Web.UI.Triplet> objects for the values. The <xref:System.Web.UI.Triplet> objects each contain the name of the parent browser element, a description, and the depth of the browser element in the tree.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCodeDirectoryInformation">
+      <MemberSignature Language="C#" Value="public void GetCodeDirectoryInformation (string virtualCodeDir, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters, out string generatedFilesDir);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetCodeDirectoryInformation(string virtualCodeDir, class System.Type codeDomProviderType, class System.CodeDom.Compiler.CompilerParameters compilerParameters, string generatedFilesDir) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetCodeDirectoryInformation(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualCodeDir" Type="System.String" />
+        <Parameter Name="codeDomProviderType" Type="System.Type&amp;" RefType="out" />
+        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters&amp;" RefType="out" />
+        <Parameter Name="generatedFilesDir" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="virtualCodeDir">The directory about which to retrieve information.</param>
+        <param name="codeDomProviderType">When this method returns, contains the provider type used for code generation and compilation.</param>
+        <param name="compilerParameters">When this method returns, contains the properties that define how the file will be compiled.</param>
+        <param name="generatedFilesDir">When this method returns, contains the directory for files generated from non-code files.</param>
+        <summary>Gets information about the compiler type, compiler parameters, and the directory in which to store code files generated from non-code files such as .wsdl files.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ClientBuildManager.GetCodeDirectoryInformation%2A> method retrieves information needed to build a code directory. It returns this information through three `out` parameters. The `codeDomProviderType` parameter returns the provider type for generating and compiling the files in the code directory. The `compilerParameters` parameter contains properties that determine compilation behavior. The `generatedFilesDir` parameter stores the directory path containing all the code files generated from non-code files in the code directory, such as .wsdl files.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualCodeDir" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledType">
+      <MemberSignature Language="C#" Value="public Type GetCompiledType (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetCompiledType(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetCompiledType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path of the file to compile.</param>
+        <summary>Compiles the file represented by the virtual path and returns its compiled type.</summary>
+        <returns>The <see cref="T:System.Type" /> of the compiled file.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompilerParameters">
+      <MemberSignature Language="C#" Value="public void GetCompilerParameters (string virtualPath, out Type codeDomProviderType, out System.CodeDom.Compiler.CompilerParameters compilerParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetCompilerParameters(string virtualPath, class System.Type codeDomProviderType, class System.CodeDom.Compiler.CompilerParameters compilerParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetCompilerParameters(System.String,System.Type@,System.CodeDom.Compiler.CompilerParameters@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="codeDomProviderType" Type="System.Type&amp;" RefType="out" />
+        <Parameter Name="compilerParameters" Type="System.CodeDom.Compiler.CompilerParameters&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to the file.</param>
+        <param name="codeDomProviderType">When this method returns, contains the provider type used for code generation and compilation.</param>
+        <param name="compilerParameters">When this method returns, contains the properties that define how the file will be compiled.</param>
+        <summary>Returns the compiler type and parameters that are used to build a file represented by a virtual path.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeneratedFileVirtualPath">
+      <MemberSignature Language="C#" Value="public string GetGeneratedFileVirtualPath (string filePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetGeneratedFileVirtualPath(string filePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetGeneratedFileVirtualPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filePath">The full physical path to a generated file.</param>
+        <summary>Returns the virtual path of a generated file.</summary>
+        <returns>A <see cref="T:System.String" /> containing the virtual path for <paramref name="filePath" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filePath" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeneratedSourceFile">
+      <MemberSignature Language="C#" Value="public string GetGeneratedSourceFile (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetGeneratedSourceFile(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetGeneratedSourceFile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path of the file to retrieve.</param>
+        <summary>Gets the physical path to the generated file for a virtual path.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the physical path to the generated file.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTopLevelAssemblyReferences">
+      <MemberSignature Language="C#" Value="public string[] GetTopLevelAssemblyReferences (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetTopLevelAssemblyReferences(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetTopLevelAssemblyReferences(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The configuration name and path.</param>
+        <summary>Returns an array of the assemblies defined in the Bin directory and the <see langword="&lt;assembly&gt;" /> section of the Web configuration file.</summary>
+        <returns>A <see cref="T:System.String" /> array containing paths to code bases in the Bin directory and the <see langword="&lt;assembly&gt;" /> section of the Web configuration file.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualCodeDirectories">
+      <MemberSignature Language="C#" Value="public string[] GetVirtualCodeDirectories ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetVirtualCodeDirectories() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.GetVirtualCodeDirectories" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the virtual paths to the App_Code directory and its subdirectories in an ASP.NET application.</summary>
+        <returns>A <see cref="T:System.String" /> array containing all the virtual paths to code directories in an application.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeLifetimeService">
+      <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.InitializeLifetimeService" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gives the application domain an infinite lifetime by preventing a lease from being created.</summary>
+        <returns>Always <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and thereby prevents a lease from being created that would limit the application domain's lifetime.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCodeAssembly">
+      <MemberSignature Language="C#" Value="public bool IsCodeAssembly (string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsCodeAssembly(string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.IsCodeAssembly(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the assembly to be identified as a code assembly.</param>
+        <summary>Indicates whether an assembly is a code assembly.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="assemblyName" /> parameter matches one of the generated code assemblies; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assemblyName" /> is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHostCreated">
+      <MemberSignature Language="C#" Value="public bool IsHostCreated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHostCreated" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ClientBuildManager.IsHostCreated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether an application domain for compiling ASP.NET Web applications has been created.</summary>
+        <value>
+          <see langword="true" /> if the application domain for compiling ASP.NET Web applications has been created; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrecompileApplication">
+      <MemberSignature Language="C#" Value="public void PrecompileApplication ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrecompileApplication() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.PrecompileApplication" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Precompiles an ASP.NET application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled.  
+  
+ The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+  
+ The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+  
+ A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrecompileApplication">
+      <MemberSignature Language="C#" Value="public void PrecompileApplication (System.Web.Compilation.ClientBuildManagerCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrecompileApplication(class System.Web.Compilation.ClientBuildManagerCallback callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.PrecompileApplication(System.Web.Compilation.ClientBuildManagerCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Web.Compilation.ClientBuildManagerCallback" />
+      </Parameters>
+      <Docs>
+        <param name="callback">A <see cref="T:System.Web.Compilation.ClientBuildManagerCallback" /> containing the method to call when reporting the result of compilation.</param>
+        <summary>Precompiles an ASP.NET application and provides a callback method to receive status information about the build.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled. The `callback` parameter contains the method to call when reporting the result of compilation.  
+  
+ The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+  
+ The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+  
+ A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrecompileApplication">
+      <MemberSignature Language="C#" Value="public void PrecompileApplication (System.Web.Compilation.ClientBuildManagerCallback callback, bool forceCleanBuild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrecompileApplication(class System.Web.Compilation.ClientBuildManagerCallback callback, bool forceCleanBuild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.PrecompileApplication(System.Web.Compilation.ClientBuildManagerCallback,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Web.Compilation.ClientBuildManagerCallback" />
+        <Parameter Name="forceCleanBuild" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="callback">A <see cref="T:System.Web.Compilation.ClientBuildManagerCallback" /> containing the method to call when reporting the result of compilation.</param>
+        <param name="forceCleanBuild">
+          <see langword="true" /> to perform a clean build, which will first delete all object and intermediate files; <see langword="false" /> to rebuild only those files that have changed. Set to true if there is a chance that a dependency might not be picked up by the build environment.</param>
+        <summary>Precompiles an ASP.NET application, provides a callback method to receive status information about the build, and indicates whether to create a clean build.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled. The `callback` parameter contains the method to call when reporting the result of compilation.  
+  
+ The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+  
+ The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+  
+ A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.System#IDisposable#Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Terminates the current ASP.NET application.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unload">
+      <MemberSignature Language="C#" Value="public bool Unload ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Unload() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ClientBuildManager.Unload" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unloads the application domain for compiling ASP.NET Web applications.</summary>
+        <returns>
+          <see langword="true" /> if the application domain is unloaded; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="PrecompileApplication">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Precompiles an ASP.NET application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports three forms of precompilation. One form allows for the in-place precompilation of an ASP.NET application. In this form, the site is deployed to production and then precompiled, which eliminates the need to dynamically compile the site when it is first visited by a user. The first user of the site will not experience the delay normally encountered on a site that is dynamically compiled.  
+  
+ The two other forms of precompilation are used for deployment. In either form, a layout of the site is generated that can be deployed to a production computer. One of these forms includes the markup pages so some amount of updating can be performed on the compiled site. The other form does not contain the markup pages and therefore cannot be updated without recompiling the original site. No source code is deployed to the target environment in either of these forms of precompilation.  
+  
+ The application to precompile is defined through the <xref:System.Web.Compilation.ClientBuildManager> constructor. The <xref:System.Web.Compilation.ClientBuildManagerParameter> object of the <xref:System.Web.Compilation.ClientBuildManager.%23ctor%2A> constructor defines which of the three forms of precompilation to perform.  
+  
+ A developer can precompile a Web site with the `aspnet_compiler` command-line tool or by calling the <xref:System.Web.Compilation.ClientBuildManager.PrecompileApplication%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

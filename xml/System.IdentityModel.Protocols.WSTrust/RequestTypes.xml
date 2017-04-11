@@ -1,0 +1,128 @@
+<Type Name="RequestTypes" FullName="System.IdentityModel.Protocols.WSTrust.RequestTypes">
+  <TypeSignature Language="C#" Value="public static class RequestTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RequestTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines protocol-agnostic RequestType URI strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Defines URI string constants to be used with the <xref:System.IdentityModel.Protocols.WSTrust.WSTrustMessage.RequestType%2A> property. These strings are protocol-agnostic URIs that correlate with the protocol-specific URIs used in the \<wst:RequestType> element in a WS-Trust token request (RST) or response (RSTR) message.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public const string Cancel;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Cancel" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.Cancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that represents a protocol-agnostic URI for a WS-Trust Cancel request; http://schemas.System.com/idfx/requesttype/cancel.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadata">
+      <MemberSignature Language="C#" Value="public const string GetMetadata;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GetMetadata" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.GetMetadata" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that represents a protocol-agnostic URI for a WS-Trust GetMetadata request; http://schemas.System.com/idfx/requesttype/getMetadata.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Issue">
+      <MemberSignature Language="C#" Value="public const string Issue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Issue" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.Issue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that represents a protocol-agnostic URI for a WS-Trust Issue request; http://schemas.System.com/idfx/requesttype/issue.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IssueCard">
+      <MemberSignature Language="C#" Value="public const string IssueCard;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IssueCard" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.IssueCard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that represents a protocol-agnostic WS-Trust IssueCard request; http://schemas.System.com/idfx/requesttype/issueCard.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Renew">
+      <MemberSignature Language="C#" Value="public const string Renew;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Renew" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.Renew" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that represents a protocol-agnostic URI for a WS-Trust Renew request; http://schemas.System.com/idfx/requesttype/renew.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public const string Validate;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Validate" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.RequestTypes.Validate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that represents a protocol-agnostic URI for a WS-Trust Validate request; http://schemas.System.com/idfx/requesttype/validate.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,95 @@
+<Type Name="MenuEventHandler" FullName="System.Web.UI.WebControls.MenuEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void MenuEventHandler(object sender, MenuEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.MenuEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.MenuEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.Menu.MenuItemClick" /> event or <see cref="E:System.Web.UI.WebControls.Menu.MenuItemDataBound" /> event of a <see cref="T:System.Web.UI.WebControls.Menu" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.MenuEventHandler> class is used to represent the method that handles the events in the following table.  
+  
+|Event|Description|  
+|-----------|-----------------|  
+|<xref:System.Web.UI.WebControls.Menu.MenuItemClick>|Occurs when a menu item is clicked. This event is commonly used to synchronize a <xref:System.Web.UI.WebControls.Menu> control with another control on the page.|  
+|<xref:System.Web.UI.WebControls.Menu.MenuItemDataBound>|Occurs when a menu item is bound to data. This event is commonly used to modify a menu item before it is rendered in a <xref:System.Web.UI.WebControls.Menu> control.|  
+  
+ When you create a <xref:System.Web.UI.WebControls.MenuEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuEventHandler> delegate to programmatically register an event handler for the <xref:System.Web.UI.WebControls.Menu.MenuItemClick> event of a <xref:System.Web.UI.WebControls.Menu> control. For this example to work correctly, you must copy the sample site map data below to a file named Web.sitemap.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[MenuEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuEventHandler/CS/menueventhandlercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[MenuEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuEventHandler/VB/menueventhandlervb.aspx#1)]  -->  
+  
+ The following is sample site map data for the previous example.  
+  
+ `<siteMap>`  
+  
+ `<siteMapNode title="Home"`  
+  
+ `description="Home">`  
+  
+ `<siteMapNode title="Music"`  
+  
+ `description="Music">`  
+  
+ `<siteMapNode title="Classical"`  
+  
+ `description="Classical"/>`  
+  
+ `<siteMapNode title="Rock"`  
+  
+ `description="Rock"/>`  
+  
+ `<siteMapNode title="Jazz"`  
+  
+ `description="Jazz"/>`  
+  
+ `</siteMapNode>`  
+  
+ `<siteMapNode title="Movies"`  
+  
+ `description="Movies">`  
+  
+ `<siteMapNode title="Action"`  
+  
+ `description="Action"/>`  
+  
+ `<siteMapNode title="Drama"`  
+  
+ `description="Drama"/>`  
+  
+ `<siteMapNode title="Musical"`  
+  
+ `description="Musical"/>`  
+  
+ `</siteMapNode>`  
+  
+ `</siteMapNode>`  
+  
+ `</siteMap>`  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

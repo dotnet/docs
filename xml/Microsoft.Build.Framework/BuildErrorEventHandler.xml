@@ -1,0 +1,34 @@
+<Type Name="BuildErrorEventHandler" FullName="Microsoft.Build.Framework.BuildErrorEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void BuildErrorEventHandler(object sender, BuildErrorEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildErrorEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildErrorEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="Microsoft.Build.Framework.BuildErrorEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:Microsoft.Build.Framework.BuildErrorEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.ErrorRaised" /> event of a build.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to write a basic logger that responds to build events.  
+  
+ [!code-csharp[msbuild_BasicLogger#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

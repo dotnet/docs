@@ -1,0 +1,95 @@
+<Type Name="PropertyDataChangedEventArgs" FullName="System.Windows.Ink.PropertyDataChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class PropertyDataChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyDataChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.PropertyDataChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see langword="PropertyDataChanged" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyDataChangedEventArgs (Guid propertyGuid, object newValue, object previousValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid propertyGuid, object newValue, object previousValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.PropertyDataChangedEventArgs.#ctor(System.Guid,System.Object,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyGuid" Type="System.Guid" />
+        <Parameter Name="newValue" Type="System.Object" />
+        <Parameter Name="previousValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyGuid">The <see cref="T:System.Guid" /> of the custom property which changed.</param>
+        <param name="newValue">The new custom property object.</param>
+        <param name="previousValue">The previous custom property object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.PropertyDataChangedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewValue">
+      <MemberSignature Language="C#" Value="public object NewValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NewValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.PropertyDataChangedEventArgs.NewValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new custom property object.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousValue">
+      <MemberSignature Language="C#" Value="public object PreviousValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PreviousValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.PropertyDataChangedEventArgs.PreviousValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the previous custom property object.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyGuid">
+      <MemberSignature Language="C#" Value="public Guid PropertyGuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid PropertyGuid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.PropertyDataChangedEventArgs.PropertyGuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Guid" /> of the custom property which changed.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

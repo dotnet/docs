@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity Name="5930d546-03ca-4c1a-9b19-3e2a9cf117e0"
+            Publisher="CN=ronpet"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>ResourceVB1</DisplayName>
+    <PublisherDisplayName>ronpet</PublisherDisplayName>
+    <Logo>Images\StoreLogo.png</Logo>
+    <Description>ResourceVB1</Description>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="en-us"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="ResourceVB1.App">
+        <VisualElements
+            DisplayName="ResourceVB1"
+            Logo="Images\Logo.png"
+            SmallLogo="Images\SmallLogo.png"
+            Description="ResourceVB1"
+            ForegroundText="light"
+            BackgroundColor="#222222">
+            <DefaultTile ShowName="allLogos" />
+            <SplashScreen Image="Images\SplashScreen.png" />
+        </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

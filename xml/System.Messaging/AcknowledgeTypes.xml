@@ -1,0 +1,181 @@
+<Type Name="AcknowledgeTypes" FullName="System.Messaging.AcknowledgeTypes">
+  <TypeSignature Language="C#" Value="public enum AcknowledgeTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AcknowledgeTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.AcknowledgeTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the types of acknowledgment message that Message Queuing returns to the sending application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.AcknowledgeTypes> class provides a set of flags that you can combine to request one or more categories of acknowledgment messages.  
+  
+ When an application sends a message, it can request that Message Queuing return acknowledgment messages indicating the success or failure of the original message. Message Queuing sends these acknowledgment messages to the administration queue you specify. Acknowledgment types can be divided broadly into four groups: positive arrival acknowledgments, positive read acknowledgments, negative arrival acknowledgments, and negative read acknowledgments. Requesting acknowledgments enables your application to receive notification of certain occurrences—for example, a message reaching its destination queue, a message being retrieved, or a time-out preventing a message from reaching or being retrieved from the destination queue.  
+  
+ When you are using the <xref:System.Messaging.Message> class to send messages to a queue, you specify the types of acknowledgments your application should receive in the <xref:System.Messaging.Message.AcknowledgeType%2A> property, as well as the administration queue that receives the acknowledgment messages in the <xref:System.Messaging.Message.AdministrationQueue%2A> property.  
+  
+ When you use the <xref:System.Messaging.Message> class to read acknowledgment messages in the administration queue, the instance's <xref:System.Messaging.Message.Acknowledgment%2A> property indicates the condition responsible for the acknowledgment message, for example, if a time-out expired before the original message was read from the queue.  
+  
+   
+  
+## Examples  
+ The following code example sends and receives a message that contains an order to and from a queue. It specifically requests a positive acknowledgment when the original message reaches or is retrieved from the queue.  
+  
+ [!code-cpp[Message.Acknowledgment#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.Acknowledgment/CPP/message_acknowledgment.cpp#1)]
+ [!code-csharp[Message.Acknowledgment#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.Acknowledgment/CS/message_acknowledgment.cs#1)]
+ [!code-vb[Message.Acknowledgment#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.Acknowledgment/VB/message_acknowledgment.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FullReachQueue">
+      <MemberSignature Language="C#" Value="FullReachQueue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes FullReachQueue = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.FullReachQueue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mask used to request positive acknowledgment if the original message reaches the queue or negative acknowledgment if the time-to-reach-queue timer expires or if the original message cannot be authenticated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullReceive">
+      <MemberSignature Language="C#" Value="FullReceive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes FullReceive = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.FullReceive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mask used to request positive acknowledgment if the original message is received from the queue before its time-to-be-received timer expires or negative acknowledgment otherwise.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NegativeReceive">
+      <MemberSignature Language="C#" Value="NegativeReceive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes NegativeReceive = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NegativeReceive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mask used to request a negative acknowledgment when the original message fails to be received from the queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=fullName> method does not remove a message from the queue, so this acknowledgment type could be returned even if you did peek the message. Only the <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> method (or the related asynchronous <xref:System.Messaging.MessageQueue.BeginReceive%2A?displayProperty=fullName> method) removes a message from the queue.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mask used to request that no acknowledgment messages (positive or negative) be posted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAcknowledgeReachQueue">
+      <MemberSignature Language="C#" Value="NotAcknowledgeReachQueue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes NotAcknowledgeReachQueue = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NotAcknowledgeReachQueue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mask used to request a negative acknowledgment when the original message cannot reach the queue. This can happen when the time-to-reach-queue timer expires or if a message cannot be authenticated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAcknowledgeReceive">
+      <MemberSignature Language="C#" Value="NotAcknowledgeReceive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes NotAcknowledgeReceive = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NotAcknowledgeReceive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mask used to request a negative acknowledgment when an error occurs that prevents the original message from being received from the queue before its time-to-be-received timer expires.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PositiveArrival">
+      <MemberSignature Language="C#" Value="PositiveArrival" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes PositiveArrival = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.PositiveArrival" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mask used to request a positive acknowledgment when the original message reaches the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PositiveReceive">
+      <MemberSignature Language="C#" Value="PositiveReceive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes PositiveReceive = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.PositiveReceive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A mask used to request a positive acknowledgment when the original message is successfully retrieved from the queue.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

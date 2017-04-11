@@ -1,0 +1,139 @@
+<Type Name="IEquatable&lt;T&gt;" FullName="System.IEquatable&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IEquatable&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEquatable`1&lt;T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.IEquatable`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of objects to compare.</typeparam>
+    <summary>Defines a generalized method that a value type or class implements to create a type-specific method for determining equality of instances.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is implemented by types whose values can be equated (for example, the numeric and string classes). A value type or class implements the <xref:System.IEquatable%601.Equals%2A> method to create a type-specific method suitable for determining equality of instances.  
+  
+> [!NOTE]
+>  The <xref:System.IComparable%601> interface defines the <xref:System.IComparable%601.CompareTo%2A> method, which determines the sort order of instances of the implementing type. The <xref:System.IEquatable%601> interface defines the <xref:System.IEquatable%601.Equals%2A> method, which determines the equality of instances of the implementing type.  
+  
+ The <xref:System.IEquatable%601> interface is used by generic collection objects such as <xref:System.Collections.Generic.Dictionary%602>, <xref:System.Collections.Generic.List%601>, and <xref:System.Collections.Generic.LinkedList%601> when testing for equality in such methods as `Contains`, `IndexOf`, `LastIndexOf`, and `Remove`. It should be implemented for any object that might be stored in a generic collection.  
+  
+   
+  
+## Examples  
+ See the example for the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Replace the type parameter of the <see cref="T:System.IEquatable`1" /> interface with the type that is implementing this interface.  
+  
+ If you implement <see cref="T:System.IEquatable`1" />, you should also override the base class implementations of <see cref="M:System.Object.Equals(System.Object)" /> and <see cref="M:System.Object.GetHashCode" /> so that their behavior is consistent with that of the <see cref="M:System.IEquatable`1.Equals(`0)" /> method. If you do override <see cref="M:System.Object.Equals(System.Object)" />, your overridden implementation is also called in calls to the static <see langword="Equals(System.Object, System.Object)" /> method on your class. In addition, you should overload the <see langword="op_Equality" /> and <see langword="op_Inequality" /> operators. This ensures that all tests for equality return consistent results.  
+  
+ <block subset="none" type="note">  
+<para>  
+ For information on overriding <see cref="M:System.Object.Equals(System.Object)" />, see the <see cref="M:System.Object.Equals(System.Object)" /> article.  
+  
+</para>  
+</block>  
+  
+ For a value type, you should always implement <see cref="T:System.IEquatable`1" /> and override <see cref="M:System.Object.Equals(System.Object)" /> for better performance. <see cref="M:System.Object.Equals(System.Object)" /> boxes value types and relies on reflection to compare two values for equality. Both your implementation of <see cref="M:System.IEquatable`1.Equals(`0)" /> and your override of <see cref="M:System.Object.Equals(System.Object)" /> should return consistent results.  
+  
+ If you implement <see cref="T:System.IEquatable`1" />, you should also implement <see cref="T:System.IComparable`1" /> if instances of your type can be ordered or sorted. If your type implements <see cref="T:System.IComparable`1" />, you should also always implement <see cref="T:System.IEquatable`1" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (T other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(!T other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IEquatable`1.Equals(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="other">An object to compare with this object.</param>
+        <summary>Indicates whether the current object is equal to another object of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the current object is equal to the <paramref name="other" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The implementation of the <xref:System.IEquatable%601.Equals%2A> method is intended to perform a test for equality with another object of type `T`, the same type as the current object. The <xref:System.IEquatable%601.Equals%2A> method is called in the following circumstances:  
+  
+-   When the `Equals` method is called and the `other` parameter represents a strongly-typed object of type `T`. (If `other` is of type <xref:System.Object>, the base <xref:System.Object.Equals%28System.Object%29?displayProperty=fullName> method is called. Of the two methods, <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> offers slightly better performance.)  
+  
+-   When the search methods of a number of generic collection objects are called. Some of these types and their methods include the following:  
+  
+    -   Some of the generic overloads of the <xref:System.Array.BinarySearch%2A> method.  
+  
+    -   The search methods of the <xref:System.Collections.Generic.List%601> class, including <xref:System.Collections.Generic.List%601.Contains%28%600%29?displayProperty=fullName>, <xref:System.Collections.Generic.List%601.IndexOf%2A?displayProperty=fullName>, <xref:System.Collections.Generic.List%601.LastIndexOf%2A?displayProperty=fullName>, and <xref:System.Collections.Generic.List%601.Remove%2A?displayProperty=fullName>.  
+  
+    -   The search methods of the <xref:System.Collections.Generic.Dictionary%602> class, including <xref:System.Collections.Generic.Dictionary%602.ContainsKey%2A> and <xref:System.Collections.Generic.IDictionary%602.Remove%2A>.  
+  
+    -   The search methods of the generic <xref:System.Collections.Generic.LinkedList%601> class, including <xref:System.Collections.Generic.LinkedList%601.Contains%2A?displayProperty=fullName> and <xref:System.Collections.Generic.LinkedList%601.Remove%2A>.  
+  
+ In other words, to handle the possibility that objects of a class will be stored in an array or a generic collection object, it is a good idea to implement <xref:System.IEquatable%601> so that the object can be easily identified and manipulated.  
+  
+ When implementing the <xref:System.IEquatable%601.Equals%2A> method, define equality appropriately for the type specified by the generic type argument. For example, if the type argument is <xref:System.Int32>, define equality appropriately for the comparison of two 32-bit signed integers.  
+  
+   
+  
+## Examples  
+ The following example shows the partial implementation of a `Person` class that implements <xref:System.IEquatable%601> and has two properties, `LastName` and `SSN`. The <xref:System.IEquatable%601.Equals%2A> method returns `True` if the `SSN` property of two `Person` objects is identical; otherwise, it returns `False`.  
+  
+ [!code-csharp[System.GenericIEquatable.Equals#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GenericIEquatable.Equals/cs/EqualsEx2.cs#3)]
+ [!code-vb[System.GenericIEquatable.Equals#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GenericIEquatable.Equals/vb/EqualsEx2.vb#3)]  
+  
+ `Person` objects can then be stored in a <xref:System.Collections.Generic.List%601> object and can be identified by the `Contains` method, as the following example shows.  
+  
+ [!code-csharp[System.GenericIEquatable.Equals#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.GenericIEquatable.Equals/cs/Snippet12.cs#12)]
+ [!code-vb[System.GenericIEquatable.Equals#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.GenericIEquatable.Equals/vb/Snippet12.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you implement <see cref="M:System.IEquatable`1.Equals(`0)" />, you should also override the base class implementations of <see cref="M:System.Object.Equals(System.Object)" /> and <see cref="M:System.Object.GetHashCode" /> so that their behavior is consistent with that of the <see cref="M:System.IEquatable`1.Equals(`0)" /> method. If you do override <see cref="M:System.Object.Equals(System.Object)" />, your overridden implementation is also called in calls to the static <see langword="Equals(System.Object, System.Object)" /> method on your class. In addition, you should overload the <see langword="op_Equality" /> and <see langword="op_Inequality" /> operators. This ensures that all tests for equality return consistent results, which the example illustrates.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

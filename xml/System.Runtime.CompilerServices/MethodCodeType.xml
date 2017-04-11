@@ -1,0 +1,121 @@
+<Type Name="MethodCodeType" FullName="System.Runtime.CompilerServices.MethodCodeType">
+  <TypeSignature Language="C#" Value="public enum MethodCodeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MethodCodeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.MethodCodeType" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines how a method is implemented.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used with <xref:System.Runtime.CompilerServices.MethodImplAttribute>.  
+  
+ The classes in System.Runtime.CompilerServices are for compiler writers use only.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IL">
+      <MemberSignature Language="C#" Value="IL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.MethodCodeType IL = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodCodeType.IL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.MethodCodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method implementation is in Microsoft intermediate language (MSIL).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Native">
+      <MemberSignature Language="C#" Value="Native" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.MethodCodeType Native = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodCodeType.Native" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.MethodCodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method is implemented in native code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OPTIL">
+      <MemberSignature Language="C#" Value="OPTIL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.MethodCodeType OPTIL = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodCodeType.OPTIL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.MethodCodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method implementation is in optimized intermediate language (OPTIL).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Runtime">
+      <MemberSignature Language="C#" Value="Runtime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.MethodCodeType Runtime = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.MethodCodeType.Runtime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.MethodCodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the method implementation is provided by the runtime.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

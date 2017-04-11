@@ -1,0 +1,240 @@
+<Type Name="IHierarchyData" FullName="System.Web.UI.IHierarchyData">
+  <TypeSignature Language="C#" Value="public interface IHierarchyData" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHierarchyData" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IHierarchyData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Exposes a node of a hierarchical data structure, including the node object and some properties that describe characteristics of the node. Objects that implement the <see cref="T:System.Web.UI.IHierarchyData" /> interface can be contained in <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> collections, and are used by ASP.NET site navigation and data source controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IHierarchyData> interface is implemented by classes that represent nodes of a hierarchical structure, and track the hierarchical relationships to their parent and child nodes. Classes that implement the <xref:System.Web.UI.IHierarchyData> interface can be contained in collections that implement the <xref:System.Web.UI.IHierarchicalEnumerable> interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Web.UI.IHierarchyData> interface with a class that wraps a <xref:System.IO.FileSystemInfo> object. The <xref:System.IO.FileSystemInfo> class is a good example of a hierarchical data node, which the <xref:System.Web.UI.IHierarchyData> interface represents for ASP.NET hierarchical data source controls. This code example is part of a larger example provided for the <xref:System.Web.UI.HierarchicalDataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_1#5](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/CS/filesystemdatasource.cs#5)]
+ [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_1#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/VB/filesystemdatasource.vb#5)]  
+  
+ The following code example demonstrates how to recursively iterate through an <xref:System.Web.UI.IHierarchicalEnumerable> collection, extract the <xref:System.Web.UI.IHierarchyData> item from the enumerator using the <xref:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData%2A> method, and perform basic work with the data item.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.IHierarchyData_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/CS/ihd_1.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.IHierarchyData_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/VB/ihd_1.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetChildren">
+      <MemberSignature Language="C#" Value="public System.Web.UI.IHierarchicalEnumerable GetChildren ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchicalEnumerable GetChildren() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchyData.GetChildren" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.IHierarchicalEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumeration object that represents all the child nodes of the current hierarchical node.</summary>
+        <returns>An <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> collection of child nodes of the current hierarchical node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.IHierarchyData.HasChildren%2A> property to determine whether the <xref:System.Web.UI.IHierarchyData> node has child nodes.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to check the <xref:System.Web.UI.IHierarchyData.HasChildren%2A> property to determine whether the current hierarchical data node has child nodes, and retrieve them using the <xref:System.Web.UI.IHierarchyData.GetChildren%2A> method. This code example is part of a larger example provided for the <xref:System.Web.UI.IHierarchyData> interface.  
+  
+ [!code-csharp[System.Web.UI.IHierarchyData_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/CS/ihd_1.aspx.cs#2)]
+ [!code-vb[System.Web.UI.IHierarchyData_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/VB/ihd_1.aspx.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParent">
+      <MemberSignature Language="C#" Value="public System.Web.UI.IHierarchyData GetParent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchyData GetParent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchyData.GetParent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.IHierarchyData</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an <see cref="T:System.Web.UI.IHierarchyData" /> object that represents the parent node of the current hierarchical node.</summary>
+        <returns>An <see cref="T:System.Web.UI.IHierarchyData" /> object that represents the parent node of the current hierarchical node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IHierarchyData> interface does not define a HasParent convenience property, so callers must check the return value of the <xref:System.Web.UI.IHierarchyData.GetParent%2A> method for `null` to determine whether the current <xref:System.Web.UI.IHierarchyData> node is the root node of the hierarchical data structure to which the node belongs.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Web.UI.IHierarchyData.GetParent%2A> method in a class that implements the <xref:System.Web.UI.IHierarchyData> interface. The `FileSystemHierarchyData` class wraps a <xref:System.IO.FileSystemInfo> object, and the <xref:System.Web.UI.IHierarchyData.GetParent%2A> method implementation checks the type of the <xref:System.IO.FileSystemInfo> object, and returns the appropriate parent object based on the type. This code example is part of a larger example provided for the <xref:System.Web.UI.IHierarchyData> interface and the <xref:System.Web.UI.HierarchicalDataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_1#10](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/CS/filesystemdatasource.cs#10)]
+ [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_1#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/VB/filesystemdatasource.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasChildren">
+      <MemberSignature Language="C#" Value="public bool HasChildren { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasChildren" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IHierarchyData.HasChildren" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the hierarchical data node that the <see cref="T:System.Web.UI.IHierarchyData" /> object represents has any child nodes.</summary>
+        <value>
+          <see langword="true" /> if the current node has child nodes; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IHierarchyData.HasChildren%2A> property is a convenience property that enables callers to avoid checking the return value of the <xref:System.Web.UI.IHierarchyData.GetChildren%2A> method for `null`. If the <xref:System.Web.UI.IHierarchyData.HasChildren%2A> property returns `true`, call the <xref:System.Web.UI.IHierarchyData.GetChildren%2A> method to retrieve an <xref:System.Web.UI.IHierarchicalEnumerable> collection of child nodes.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how an ASP.NET hierarchical data-bound control uses an <xref:System.Web.UI.IHierarchyData> object in a recursive data-binding method. The items in an <xref:System.Web.UI.IHierarchicalEnumerable> collection are enumerated, and for each an <xref:System.Web.UI.IHierarchyData> object is retrieved using the <xref:System.Web.UI.IHierarchicalEnumerable.GetHierarchyData%2A> method. Finally, the <xref:System.Web.UI.IHierarchyData.HasChildren%2A> property is checked to determine whether to recurse. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class.  
+  
+ [!code-csharp[Samples.AspNet.GeneologyTree#5](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/CS/geneologytree.cs#5)]
+ [!code-vb[Samples.AspNet.GeneologyTree#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.GeneologyTree/VB/geneologytree.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IHierarchyData.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the hierarchical data node that the <see cref="T:System.Web.UI.IHierarchyData" /> object represents.</summary>
+        <value>An <see cref="T:System.Object" /> hierarchical data node object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ While many classes that represent hierarchical data nodes, such as the <xref:System.Web.SiteMapNode> class, implement the <xref:System.Web.UI.IHierarchyData> interface directly, other classes only act as a wrapper for a class that does not implement the interface. The <xref:System.Web.UI.IHierarchyData.Item%2A> property is provided for these design situations, when business objects are functionally equivalent to an <xref:System.Web.UI.IHierarchyData> object but cannot be redesigned easily.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access <xref:System.Web.UI.IHierarchyData> properties, check the type of an <xref:System.Web.UI.IHierarchyData> object using the <xref:System.Web.UI.IHierarchyData.Type%2A> property, and cast the object to perform more type-specific operations. This code example is part of a larger example provided for the <xref:System.Web.UI.IHierarchyData> interface.  
+  
+ [!code-csharp[System.Web.UI.IHierarchyData_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/CS/ihd_1.aspx.cs#2)]
+ [!code-vb[System.Web.UI.IHierarchyData_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/VB/ihd_1.aspx.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IHierarchyData.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the hierarchical path of the node.</summary>
+        <value>A <see cref="T:System.String" /> that identifies the hierarchical path relative to the current node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IHierarchyData.Path%2A> property can be passed to the <xref:System.Web.UI.HierarchicalDataSourceControl.GetHierarchicalView%2A> method to retrieve the <xref:System.Web.UI.HierarchicalDataSourceView> object that corresponds to the node identified by <xref:System.Web.UI.IHierarchyData.Path%2A>.  
+  
+> [!CAUTION]
+>  The <xref:System.Web.UI.IHierarchyData.Path%2A> property should not contain any sensitive information about the host environment, because it might be rendered to the client in a data-bound control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.Web.UI.IHierarchyData.Path%2A> property in a class that implements the <xref:System.Web.UI.IHierarchyData> interface. The `FileSystemHierarchyData` class wraps a <xref:System.IO.FileSystemInfo> object, and the <xref:System.Web.UI.IHierarchyData.Path%2A> property implementation returns its file system path. This code example is part of a larger example provided for the <xref:System.Web.UI.IHierarchyData> interface and the <xref:System.Web.UI.HierarchicalDataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_1#7](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/CS/filesystemdatasource.cs#7)]
+ [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_1#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/VB/filesystemdatasource.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IHierarchyData.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the type of <see cref="T:System.Object" /> contained in the <see cref="P:System.Web.UI.IHierarchyData.Item" /> property.</summary>
+        <value>The name of the type of object that the <see cref="T:System.Web.UI.IHierarchyData" /> object represents.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IHierarchyData.Type%2A> property does not return the <xref:System.Type?displayProperty=fullName> of the object represented in an <xref:System.Web.UI.IHierarchyData> object. It returns a name used by data-bound controls to differentiate between items in a hierarchy that have different bindable properties.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to write the basic <xref:System.Web.UI.IHierarchyData> properties to an <xref:System.Web.HttpResponse> stream, then check the type of an <xref:System.Web.UI.IHierarchyData> object using the <xref:System.Web.UI.IHierarchyData.Type%2A> property and cast the object to perform more type-specific operations. This code example is part of a larger example provided for the <xref:System.Web.UI.IHierarchyData> interface.  
+  
+ [!code-csharp[System.Web.UI.IHierarchyData_1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/CS/ihd_1.aspx.cs#2)]
+ [!code-vb[System.Web.UI.IHierarchyData_1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.IHierarchyData_1/VB/ihd_1.aspx.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

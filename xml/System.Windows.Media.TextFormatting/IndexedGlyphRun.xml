@@ -1,0 +1,87 @@
+<Type Name="IndexedGlyphRun" FullName="System.Windows.Media.TextFormatting.IndexedGlyphRun">
+  <TypeSignature Language="C#" Value="public sealed class IndexedGlyphRun" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IndexedGlyphRun extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.IndexedGlyphRun" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Allows text engine clients to map a text source character index to the corresponding <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun> object allows a text engine client to obtain glyph information for a text source character such as the glyph's cluster map, glyph indices, and glyph typeface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GlyphRun">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GlyphRun GlyphRun { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GlyphRun GlyphRun" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.IndexedGlyphRun.GlyphRun" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GlyphRun</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Media.GlyphRun" /> that corresponds to the <see cref="T:System.Windows.Media.TextFormatting.IndexedGlyphRun" /> object.</summary>
+        <value>A <see cref="T:System.Windows.Media.GlyphRun" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextSourceCharacterIndex">
+      <MemberSignature Language="C#" Value="public int TextSourceCharacterIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TextSourceCharacterIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.IndexedGlyphRun.TextSourceCharacterIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text source character index that corresponds to the beginning of the <see cref="T:System.Windows.Media.GlyphRun" />.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the text source character index.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextSourceLength">
+      <MemberSignature Language="C#" Value="public int TextSourceLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TextSourceLength" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.IndexedGlyphRun.TextSourceLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text source character length that corresponds to the <see cref="T:System.Windows.Media.TextFormatting.IndexedGlyphRun" /> object.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents the length of the text source character.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Windows.Media.TextFormatting.IndexedGlyphRun.TextSourceLength%2A> property is not necessarily equal to the character count of the corresponding <xref:System.Windows.Media.GlyphRun>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

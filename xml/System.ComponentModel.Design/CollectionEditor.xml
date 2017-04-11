@@ -1,0 +1,569 @@
+<Type Name="CollectionEditor" FullName="System.ComponentModel.Design.CollectionEditor">
+  <TypeSignature Language="C#" Value="public class CollectionEditor : System.Drawing.Design.UITypeEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionEditor extends System.Drawing.Design.UITypeEditor" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.CollectionEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Design.UITypeEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a user interface that can edit most types of collections at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses an <xref:System.ComponentModel.EditorAttribute> to associate the <xref:System.ComponentModel.Design.CollectionEditor> with a property.  
+  
+ [!code-cpp[EditorAttributesExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EditorAttributesExample/CPP/class1.cpp#1)]
+ [!code-csharp[EditorAttributesExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EditorAttributesExample/CS/class1.cs#1)]
+ [!code-vb[EditorAttributesExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/EditorAttributesExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>This editor can edit collections that have an <see langword="Item" /> property. The editor can determine the type of the collection from the <see langword="Item" /> property, if it exists. If the collection does not have this property, or if you want to provide collections of more than one type, you can override certain protected members of this class to customize the editor to support other types of collections.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CollectionEditor (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the collection for this editor to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.CollectionEditor" /> class using the specified collection type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelChanges">
+      <MemberSignature Language="C#" Value="protected virtual void CancelChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CancelChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CancelChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels changes to the collection.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method if you need to perform additional processing when changes to the collection are canceled.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRemoveInstance">
+      <MemberSignature Language="C#" Value="protected virtual bool CanRemoveInstance (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CanRemoveInstance(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CanRemoveInstance(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to remove.</param>
+        <summary>Indicates whether original members of the collection can be removed.</summary>
+        <returns>
+          <see langword="true" /> if it is permissible to remove this value from the collection; otherwise, <see langword="false" />. The default implementation always returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When implemented in a derived class, this method indicates whether the specified value can be removed from the collection. By default, this method always returns `true`.  
+  
+ This method is called when the user tries to remove an item that is an original member of the collection. This method is not called when removing items that were added in the current editing session because they are not yet part of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSelectMultipleInstances">
+      <MemberSignature Language="C#" Value="protected virtual bool CanSelectMultipleInstances ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CanSelectMultipleInstances() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CanSelectMultipleInstances" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether multiple collection items can be selected at once.</summary>
+        <returns>
+          <see langword="true" /> if it multiple collection members can be selected at the same time; otherwise, <see langword="false" />. By default, this returns <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method indicates whether multiple collection members can be selected within the collection editor dialog box.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionItemType">
+      <MemberSignature Language="C#" Value="protected Type CollectionItemType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type CollectionItemType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.CollectionItemType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data type of each item in the collection.</summary>
+        <value>The data type of the collection items.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the data type of the items of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionType">
+      <MemberSignature Language="C#" Value="protected Type CollectionType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type CollectionType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.CollectionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data type of the collection object.</summary>
+        <value>The data type of the collection object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the data type of the collection object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="protected System.ComponentModel.ITypeDescriptorContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ITypeDescriptorContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ITypeDescriptorContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a type descriptor that indicates the current context.</summary>
+        <value>An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that indicates the context currently in use, or <see langword="null" /> if no context is available.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCollectionForm">
+      <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.Design.CollectionEditor.CollectionForm CreateCollectionForm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ComponentModel.Design.CollectionEditor/CollectionForm CreateCollectionForm() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CreateCollectionForm" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.CollectionEditor+CollectionForm</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new form to display and edit the current collection.</summary>
+        <returns>A <see cref="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" /> to provide as the user interface for editing the collection.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>You can inherit from <see cref="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" /> to provide your own form.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCollectionItemType">
+      <MemberSignature Language="C#" Value="protected virtual Type CreateCollectionItemType ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type CreateCollectionItemType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CreateCollectionItemType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the data type that this collection contains.</summary>
+        <returns>The data type of the items in the collection, or an <see cref="T:System.Object" /> if no <see langword="Item" /> property can be located on the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can retrieve the data type of the items of the collection from the <xref:System.ComponentModel.Design.CollectionEditor.CollectionItemType%2A> property, which is faster than this method.  
+  
+ This method does not need to be called by users, except in derived classes where this method has been overridden and implemented.  
+  
+ The default implementation of this method returns the data type of the `Item` property of the collection, if it exists.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Developers can choose to override this method to support collections that do not follow the typical and supported collection model, or when performance is critical, and reflection-based type resolution is too slow.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="protected virtual object CreateInstance (Type itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object CreateInstance(class System.Type itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CreateInstance(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">The type of item to create.</param>
+        <summary>Creates a new instance of the specified collection item type.</summary>
+        <returns>A new instance of the specified object.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This method should throw an exception if it cannot create a new instance of the specified type.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewItemTypes">
+      <MemberSignature Language="C#" Value="protected virtual Type[] CreateNewItemTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type[] CreateNewItemTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CreateNewItemTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the data types that this collection editor can contain.</summary>
+        <returns>An array of data types that this collection can contain.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can retrieve the data type of the items of the collection from the <xref:System.ComponentModel.Design.CollectionEditor.NewItemTypes%2A> property, which is faster than this method.  
+  
+ This method does not need to be called by users, except in derived classes where this method has been overridden and implemented.  
+  
+ The default implementation of this method returns the type of all the collection items in a Type array.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method must be overridden to support collections with multiple types. The default implementation of this method returns the data type of the <see langword="Item" /> property of the collection, if it exists. Use this method to override the default implementation.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="DestroyInstance">
+      <MemberSignature Language="C#" Value="protected virtual void DestroyInstance (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DestroyInstance(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.DestroyInstance(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The object to destroy.</param>
+        <summary>Destroys the specified instance of the object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditValue">
+      <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <param name="provider">A service provider object through which editing services can be obtained.</param>
+        <param name="value">The object to edit the value of.</param>
+        <summary>Edits the value of the specified object using the specified service provider and context.</summary>
+        <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.Design.CheckoutException">An attempt to check out a file that is checked into a source code management program did not succeed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisplayText">
+      <MemberSignature Language="C#" Value="protected virtual string GetDisplayText (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetDisplayText(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.GetDisplayText(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The list item for which to retrieve display text.</param>
+        <summary>Retrieves the display text for the given list item.</summary>
+        <returns>The display text for <paramref name="value" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditStyle">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Design.UITypeEditorEditStyle GetEditStyle (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <summary>Gets the edit style used by the <see cref="M:System.ComponentModel.Design.CollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
+        <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> enumeration value indicating the provided editing style. If the method is not supported in the specified context, this method will return the <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" /> identifier.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItems">
+      <MemberSignature Language="C#" Value="protected virtual object[] GetItems (object editValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object[] GetItems(object editValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.GetItems(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="editValue">The collection to edit.</param>
+        <summary>Gets an array of objects containing the specified collection.</summary>
+        <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from <see cref="T:System.Collections.ICollection" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectsFromInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.IList GetObjectsFromInstance (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IList GetObjectsFromInstance(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.GetObjectsFromInstance(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">An <see cref="T:System.Collections.ArrayList" /> returned as an object.</param>
+        <summary>Returns a list containing the given object</summary>
+        <returns>An <see cref="T:System.Collections.ArrayList" /> which contains the individual objects to be created.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="protected object GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The type of service to retrieve.</param>
+        <summary>Gets the requested service, if it is available.</summary>
+        <returns>An instance of the service, or <see langword="null" /> if the service cannot be found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpTopic">
+      <MemberSignature Language="C#" Value="protected virtual string HelpTopic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpTopic" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.HelpTopic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Help keyword to display the Help topic or topic list for when the editor's dialog box Help button or the F1 key is pressed.</summary>
+        <value>The Help keyword to display the Help topic or topic list for when Help is requested from the editor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this property to display a different Help topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewItemTypes">
+      <MemberSignature Language="C#" Value="protected Type[] NewItemTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] NewItemTypes" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.NewItemTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the available types of items that can be created for this collection.</summary>
+        <value>The types of items that can be created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates the data types that can be added to the collection. By default, this returns a single type of <xref:System.ComponentModel.Design.CollectionEditor.CollectionItemType%2A>. If more than one type is returned, the collection editor UI provides a way to choose which item type to create.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItems">
+      <MemberSignature Language="C#" Value="protected virtual object SetItems (object editValue, object[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SetItems(object editValue, object[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.SetItems(System.Object,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editValue" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="editValue">The collection to edit.</param>
+        <param name="value">An array of objects to set as the collection items.</param>
+        <summary>Sets the specified array as the items of the collection.</summary>
+        <returns>The newly created collection object or, otherwise, the collection indicated by the <paramref name="editValue" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If setting requires that a new object be created, the new object is returned. Otherwise, the `editValue` parameter is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="protected virtual void ShowHelp ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ShowHelp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.ShowHelp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the default Help topic for the collection editor.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

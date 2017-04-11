@@ -1,0 +1,121 @@
+<Type Name="FontEastAsianWidths" FullName="System.Windows.FontEastAsianWidths">
+  <TypeSignature Language="C#" Value="public enum FontEastAsianWidths" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontEastAsianWidths extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontEastAsianWidths" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Provides a mechanism for the user to select glyphs of different width styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a specified font does not support a particular glyph set, the default glyphs are displayed instead.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Full">
+      <MemberSignature Language="C#" Value="Full" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontEastAsianWidths Full = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontEastAsianWidths.Full" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces uniform width glyphs with full width (usually em) glyphs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Half">
+      <MemberSignature Language="C#" Value="Half" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontEastAsianWidths Half = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontEastAsianWidths.Half" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces uniform width glyphs with half width (half em) glyphs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontEastAsianWidths Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontEastAsianWidths.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default width style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Proportional">
+      <MemberSignature Language="C#" Value="Proportional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontEastAsianWidths Proportional = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontEastAsianWidths.Proportional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces uniform width glyphs with proportionally spaced glyphs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Quarter">
+      <MemberSignature Language="C#" Value="Quarter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontEastAsianWidths Quarter = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontEastAsianWidths.Quarter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces uniform width glyphs with one-quarter width (one-quarter em) glyphs.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Third">
+      <MemberSignature Language="C#" Value="Third" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontEastAsianWidths Third = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontEastAsianWidths.Third" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces uniform width glyphs with one-third width (one-third em) glyphs.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

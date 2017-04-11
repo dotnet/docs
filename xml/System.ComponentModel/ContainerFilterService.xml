@@ -1,0 +1,85 @@
+<Type Name="ContainerFilterService" FullName="System.ComponentModel.ContainerFilterService">
+  <TypeSignature Language="C#" Value="public abstract class ContainerFilterService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContainerFilterService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ContainerFilterService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class for the container filter service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Container> and <xref:System.ComponentModel.NestedContainer> classes call the <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> method each time they need to construct a component collection for return to a caller. <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> may return an updated collection of components. This enables an external service to modify the view of components that are returned from a container.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ContainerFilterService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ContainerFilterService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ContainerFilterService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterComponents">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.ComponentCollection FilterComponents (System.ComponentModel.ComponentCollection components);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.ComponentCollection FilterComponents(class System.ComponentModel.ComponentCollection components) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ContainerFilterService.FilterComponents(System.ComponentModel.ComponentCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ComponentCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="components" Type="System.ComponentModel.ComponentCollection" />
+      </Parameters>
+      <Docs>
+        <param name="components">The component collection to filter.</param>
+        <summary>Filters the component collection.</summary>
+        <returns>A <see cref="T:System.ComponentModel.ComponentCollection" /> that represents a modified collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.ContainerFilterService.FilterComponents%2A> method filters the component collection by optionally returning a new, modified collection. The default implementation returns the input collection, thereby performing no filtering.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

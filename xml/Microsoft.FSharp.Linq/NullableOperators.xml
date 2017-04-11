@@ -1,0 +1,1562 @@
+<Type Name="NullableOperators" FullName="Microsoft.FSharp.Linq.NullableOperators">
+  <TypeSignature Language="C#" Value="public static class NullableOperators" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed NullableOperators extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Linq.NullableOperators" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AutoOpen</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="op_DivideQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_DivideQmark&lt;T1,T2,T3&gt; (T1 x, Nullable&lt;T2&gt; y) where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_DivideQmark&lt;T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(!!T1 x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_DivideQmark``3(``0,System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T1" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_EqualsQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_EqualsQmark&lt;T&gt; (T x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_EqualsQmark&lt;struct .ctor (class System.ValueType) T&gt;(!!T x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_EqualsQmark``1(``0,System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterEqualsQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_GreaterEqualsQmark&lt;T&gt; (T x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterEqualsQmark&lt;struct .ctor (class System.ValueType) T&gt;(!!T x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_GreaterEqualsQmark``1(``0,System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_GreaterQmark&lt;T&gt; (T x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterQmark&lt;struct .ctor (class System.ValueType) T&gt;(!!T x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_GreaterQmark``1(``0,System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessEqualsQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_LessEqualsQmark&lt;T&gt; (T x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessEqualsQmark&lt;struct .ctor (class System.ValueType) T&gt;(!!T x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_LessEqualsQmark``1(``0,System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessGreaterQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_LessGreaterQmark&lt;T&gt; (T x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessGreaterQmark&lt;struct .ctor (class System.ValueType) T&gt;(!!T x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_LessGreaterQmark``1(``0,System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_LessQmark&lt;T&gt; (T x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessQmark&lt;struct .ctor (class System.ValueType) T&gt;(!!T x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_LessQmark``1(``0,System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_MinusQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_MinusQmark&lt;T1,T2,T3&gt; (T1 x, Nullable&lt;T2&gt; y) where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_MinusQmark&lt;T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(!!T1 x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_MinusQmark``3(``0,System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T1" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_MultiplyQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_MultiplyQmark&lt;T1,T2,T3&gt; (T1 x, Nullable&lt;T2&gt; y) where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_MultiplyQmark&lt;T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(!!T1 x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_MultiplyQmark``3(``0,System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T1" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_PercentQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_PercentQmark&lt;T1,T2,T3&gt; (T1 x, Nullable&lt;T2&gt; y) where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_PercentQmark&lt;T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(!!T1 x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_PercentQmark``3(``0,System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T1" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_PlusQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_PlusQmark&lt;T1,T2,T3&gt; (T1 x, Nullable&lt;T2&gt; y) where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_PlusQmark&lt;T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(!!T1 x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_PlusQmark``3(``0,System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T1" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkDivide&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkDivide&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, T2 y) where T1 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkDivide&lt;struct .ctor (class System.ValueType) T1, T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, !!T2 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkDivide``3(System.Nullable{``0},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="T2" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkDivideQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkDivideQmark&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, Nullable&lt;T2&gt; y) where T1 : struct where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkDivideQmark&lt;struct .ctor (class System.ValueType) T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkDivideQmark``3(System.Nullable{``0},System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkEquals&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkEquals&lt;T&gt; (Nullable&lt;T&gt; x, T y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkEquals&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkEquals``1(System.Nullable{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkEqualsQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkEqualsQmark&lt;T&gt; (Nullable&lt;T&gt; x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkEqualsQmark&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkEqualsQmark``1(System.Nullable{``0},System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkGreater&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkGreater&lt;T&gt; (Nullable&lt;T&gt; x, T y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkGreater&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkGreater``1(System.Nullable{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkGreaterEquals&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkGreaterEquals&lt;T&gt; (Nullable&lt;T&gt; x, T y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkGreaterEquals&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkGreaterEquals``1(System.Nullable{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkGreaterEqualsQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkGreaterEqualsQmark&lt;T&gt; (Nullable&lt;T&gt; x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkGreaterEqualsQmark&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkGreaterEqualsQmark``1(System.Nullable{``0},System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkGreaterQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkGreaterQmark&lt;T&gt; (Nullable&lt;T&gt; x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkGreaterQmark&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkGreaterQmark``1(System.Nullable{``0},System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkLess&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkLess&lt;T&gt; (Nullable&lt;T&gt; x, T y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkLess&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkLess``1(System.Nullable{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkLessEquals&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkLessEquals&lt;T&gt; (Nullable&lt;T&gt; x, T y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkLessEquals&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkLessEquals``1(System.Nullable{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkLessEqualsQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkLessEqualsQmark&lt;T&gt; (Nullable&lt;T&gt; x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkLessEqualsQmark&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkLessEqualsQmark``1(System.Nullable{``0},System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkLessGreater&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkLessGreater&lt;T&gt; (Nullable&lt;T&gt; x, T y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkLessGreater&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkLessGreater``1(System.Nullable{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkLessGreaterQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkLessGreaterQmark&lt;T&gt; (Nullable&lt;T&gt; x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkLessGreaterQmark&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkLessGreaterQmark``1(System.Nullable{``0},System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkLessQmark&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool op_QmarkLessQmark&lt;T&gt; (Nullable&lt;T&gt; x, Nullable&lt;T&gt; y) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_QmarkLessQmark&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; x, valuetype System.Nullable`1&lt;!!T&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkLessQmark``1(System.Nullable{``0},System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkMinus&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkMinus&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, T2 y) where T1 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkMinus&lt;struct .ctor (class System.ValueType) T1, T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, !!T2 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkMinus``3(System.Nullable{``0},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="T2" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkMinusQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkMinusQmark&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, Nullable&lt;T2&gt; y) where T1 : struct where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkMinusQmark&lt;struct .ctor (class System.ValueType) T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkMinusQmark``3(System.Nullable{``0},System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkMultiply&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkMultiply&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, T2 y) where T1 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkMultiply&lt;struct .ctor (class System.ValueType) T1, T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, !!T2 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkMultiply``3(System.Nullable{``0},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="T2" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkMultiplyQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkMultiplyQmark&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, Nullable&lt;T2&gt; y) where T1 : struct where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkMultiplyQmark&lt;struct .ctor (class System.ValueType) T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkMultiplyQmark``3(System.Nullable{``0},System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkPercent&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkPercent&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, T2 y) where T1 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkPercent&lt;struct .ctor (class System.ValueType) T1, T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, !!T2 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkPercent``3(System.Nullable{``0},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="T2" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkPercentQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkPercentQmark&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, Nullable&lt;T2&gt; y) where T1 : struct where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkPercentQmark&lt;struct .ctor (class System.ValueType) T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkPercentQmark``3(System.Nullable{``0},System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkPlus&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkPlus&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, T2 y) where T1 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkPlus&lt;struct .ctor (class System.ValueType) T1, T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, !!T2 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkPlus``3(System.Nullable{``0},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="T2" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_QmarkPlusQmark&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T3&gt; op_QmarkPlusQmark&lt;T1,T2,T3&gt; (Nullable&lt;T1&gt; x, Nullable&lt;T2&gt; y) where T1 : struct where T2 : struct where T3 : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname valuetype System.Nullable`1&lt;!!T3&gt; op_QmarkPlusQmark&lt;struct .ctor (class System.ValueType) T1, struct .ctor (class System.ValueType) T2, struct .ctor (class System.ValueType) T3&gt;(valuetype System.Nullable`1&lt;!!T1&gt; x, valuetype System.Nullable`1&lt;!!T2&gt; y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableOperators.op_QmarkPlusQmark``3(System.Nullable{``0},System.Nullable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T2">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T3">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.Nullable&lt;T1&gt;" />
+        <Parameter Name="y" Type="System.Nullable&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

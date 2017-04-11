@@ -1,0 +1,113 @@
+<Type Name="BulletedListDesigner" FullName="System.Web.UI.Design.WebControls.BulletedListDesigner">
+  <TypeSignature Language="C#" Value="public class BulletedListDesigner : System.Web.UI.Design.WebControls.ListControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BulletedListDesigner extends System.Web.UI.Design.WebControls.ListControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BulletedListDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.ListControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used to provide design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.BulletedList" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.BulletedList> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BulletedListDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BulletedListDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.BulletedListDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.BulletedListDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.BulletedList> control or a copy of that control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostFilterEvents">
+      <MemberSignature Language="C#" Value="protected override void PostFilterEvents (System.Collections.IDictionary events);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostFilterEvents(class System.Collections.IDictionary events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="events">The <see cref="T:System.Collections.IDictionary" /> that contains the <see cref="T:System.ComponentModel.EventDescriptor" /> objects representing the events of the control. The keys in the <see cref="T:System.Collections.IDictionary" /> are event names.</param>
+        <summary>Allows the designer to filter the set of events that the associated control will expose at design time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control designers use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PostFilterEvents%2A?displayProperty=fullName> method to filter the set of events that the control it is designing will expose through the <xref:System.ComponentModel.TypeDescriptor> object.  
+  
+ For the <xref:System.Web.UI.WebControls.BulletedList> control, the <xref:System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents%2A> method removes the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event from the list that is exposed by the designer.  
+  
+ The keys in the <xref:System.Collections.IDictionary> interface are the names of the events. The values in the <xref:System.Collections.IDictionary> are objects of type <xref:System.ComponentModel.EventDescriptor>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Overriding the <see cref="M:System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents(System.Collections.IDictionary)" /> method provides a way to change or remove items within the dictionary of events that are exposed by the designer for this control.  
+  
+ You can directly filter the dictionary that is accessible through the <paramref name="events" /> parameter, or you can leave it unchanged. If you are overriding the <see cref="M:System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents(System.Collections.IDictionary)" /> method, call the base implementation after you perform your own filtering.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePreviewControl">
+      <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.BulletedListDesigner.UsePreviewControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the designer should use a temporary copy rather than the actual control that is associated with the designer to generate the design-time markup.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.Design.WebControls.BulletedListDesigner.UsePreviewControl%2A> property is always `true`, the designer uses a <xref:System.Web.UI.WebControls.View> control that contains a temporary copy of the associated <xref:System.Web.UI.WebControls.BulletedList> control to generate the design-time markup. The <xref:System.Web.UI.WebControls.View> control does not affect any persistence for the <xref:System.Web.UI.WebControls.BulletedList>. If the <xref:System.Web.UI.Design.WebControls.BulletedListDesigner.UsePreviewControl%2A> property were to return `false`, the designer would use the associated <xref:System.Web.UI.WebControls.BulletedList> itself to generate the design-time markup.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You can override the <see cref="P:System.Web.UI.Design.WebControls.DetailsViewDesigner.UsePreviewControl" /> property to return <see langword="false" /> or to determine its value based on whether the control is marked with a class-level <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" /> object. If the <see cref="P:System.Web.UI.Design.WebControls.DetailsViewDesigner.UsePreviewControl" /> property is not overridden, the <see cref="T:System.Web.UI.Design.WebControls.BulletedListDesigner" /> object ignores the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

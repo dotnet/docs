@@ -1,0 +1,71 @@
+<Type Name="SubscribeCompletedEventArgs" FullName="System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs">
+  <TypeSignature Language="C#" Value="public class SubscribeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubscribeCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides qualifying information to a callback method when a <see cref="E:System.Net.PeerToPeer.Collaboration.PeerContact.SubscribeCompleted" /> event is signaled.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PeerContact">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerContact PeerContact { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerContact PeerContact" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs.PeerContact" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerContact</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> for which the subscription was requested.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> object for which a subscription was requested.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is `null` if the subscription is completed for an instance of <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe> that does not have an associated <xref:System.Net.PeerToPeer.Collaboration.PeerContact>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerNearMe">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerNearMe PeerNearMe { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerNearMe PeerNearMe" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs.PeerNearMe" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.Collaboration.PeerNearMe</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> for which the subscription is requested.</summary>
+        <value>
+          <see cref="T:System.Net.PeerToPeer.Collaboration.PeerNearMe" /> object for which a subscription was requested.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is `null` if the subscription is requested on an instance of <xref:System.Net.PeerToPeer.Collaboration.PeerContact> that does not exist in the "People Near Me" scope.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

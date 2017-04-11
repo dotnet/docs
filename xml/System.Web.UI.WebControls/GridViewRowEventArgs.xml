@@ -1,0 +1,109 @@
+<Type Name="GridViewRowEventArgs" FullName="System.Web.UI.WebControls.GridViewRowEventArgs">
+  <TypeSignature Language="C#" Value="public class GridViewRowEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewRowEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewRowEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.GridView.RowCreated" /> and <see cref="E:System.Web.UI.WebControls.GridView.RowDataBound" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before the <xref:System.Web.UI.WebControls.GridView> control can be rendered, a <xref:System.Web.UI.WebControls.GridViewRow> object must be created for each row in the control. The <xref:System.Web.UI.WebControls.GridView.RowCreated> event is raised each time a row in the <xref:System.Web.UI.WebControls.GridView> control is created. This allows you to provide an event-handling method that performs a custom routine, such as adding custom content to a row, whenever this event occurs.  
+  
+ Similarly, each row in the control must be bound to a record in the data source before the <xref:System.Web.UI.WebControls.GridView> control can be rendered. The <xref:System.Web.UI.WebControls.GridView.RowDataBound> event is raised when a data row (represented by a <xref:System.Web.UI.WebControls.GridViewRow> object) is bound to data in the <xref:System.Web.UI.WebControls.GridView> control. This allows you to provide an event-handling method that performs a custom routine, such as modifying the values of the data bound to the row, whenever this event occurs.  
+  
+ A <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object is passed to the event-handling method, which allows you to access the properties of the row that raised the event. To access a specific cell in the row, use the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.GridViewRow> object contained in the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A> property. You can also determine which row type (header row, data row, and so on) is being created by using the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property of the <xref:System.Web.UI.WebControls.GridViewRow> object.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewRowEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowEventArgs> object passed to the event-handling method to access the properties of the row being bound to data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewRowEventArgs (System.Web.UI.WebControls.GridViewRow row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.GridViewRow row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewRowEventArgs.#ctor(System.Web.UI.WebControls.GridViewRow)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="row" Type="System.Web.UI.WebControls.GridViewRow" />
+      </Parameters>
+      <Docs>
+        <param name="row">A <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object that represents the row being created or data-bound.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewRowEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewRowEventArgs> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.GridViewRowEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A>|The <xref:System.Web.UI.WebControls.GridViewRow> object contained in the `row` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Row">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.GridViewRow Row { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.GridViewRow Row" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewRowEventArgs.Row" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.GridViewRow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row being created or data-bound.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.GridViewRow" /> object that represents the row being created or data-bound.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A> property to access the properties of the row being created or data-bound. To access a specific cell in the row, use the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.GridViewRow> object contained in the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A> property. You can also determine which row type (header row, data row, and so on) is being created by using the <xref:System.Web.UI.WebControls.GridViewRow.RowType%2A> property of the <xref:System.Web.UI.WebControls.GridViewRow> object.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewRowEventArgs.Row%2A> property to access the properties of the row being bound to data.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowDataBound/CS/gridviewrowdataboundcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowDataBound/VB/gridviewrowdataboundvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

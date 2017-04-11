@@ -1,0 +1,43 @@
+<Type Name="DirectiveRegistry" FullName="System.Web.UI.Design.Directives.DirectiveRegistry">
+  <TypeSignature Language="C#" Value="public static class DirectiveRegistry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed DirectiveRegistry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.Directives.DirectiveRegistry" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides support when creating directive IntelliSense at design time.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetDirectives">
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;Type&gt; GetDirectives (Version frameworkVersion, string extension);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Type&gt; GetDirectives(class System.Version frameworkVersion, string extension) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.Directives.DirectiveRegistry.GetDirectives(System.Version,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="frameworkVersion" Type="System.Version" />
+        <Parameter Name="extension" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="frameworkVersion">The .NET Framework version.</param>
+        <param name="extension">The file name extension.</param>
+        <summary>Returns a collection of directives based on the <paramref name="frameworkVersion" /> parameter and the <paramref name="extension" /> parameter.</summary>
+        <returns>A read only collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

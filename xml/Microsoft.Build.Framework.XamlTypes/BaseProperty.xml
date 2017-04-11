@@ -1,0 +1,681 @@
+<Type Name="BaseProperty" FullName="Microsoft.Build.Framework.XamlTypes.BaseProperty">
+  <TypeSignature Language="C#" Value="public abstract class BaseProperty : System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseProperty extends System.Object implements class System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Arguments")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a <see cref="T:Microsoft.Build.Framework.XamlTypes.Rule" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This represents the schema information (name, allowed values, and so on) of a <xref:Microsoft.Build.Framework.XamlTypes.Rule> property. Because this is just schema information, there is no field such as "Value" to get/set the value of this property. If you manually instantiate this class, call <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.BeginInit%2A> before you set the first property of the object and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.EndInit%2A> after you set the last property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BaseProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.BaseProperty.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Default constructor. Required for deserializtion from a persisted format.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.Argument&gt; Arguments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Build.Framework.XamlTypes.Argument&gt; Arguments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Arguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.Argument&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of arguments for this property.</summary>
+        <value>Returns the list of arguments for this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginInit">
+      <MemberSignature Language="C#" Value="public virtual void BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.BaseProperty.BeginInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>See <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public string Category { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Category" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Category" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the category to which this property belongs.</summary>
+        <value>Returns the name of the category to which this property belongs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this field does not correspond to the `Name` property of a <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Category%2A> element that is defined in the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> class, a default <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Category%2A> that has this name is auto-generated and added to the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule> class.  
+  
+ This field is optional and is culture-invariant. When this field is not specified, this property is added to an auto-generated category named General (localized). This field cannot be set to the empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainingRule">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.XamlTypes.Rule ContainingRule { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.XamlTypes.Rule ContainingRule" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.ContainingRule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.XamlTypes.Rule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:Microsoft.Build.Framework.XamlTypes.Rule" /> that contains this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
+        <value>Returns the rule that contains this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.XamlTypes.DataSource DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.XamlTypes.DataSource DataSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.DataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.XamlTypes.DataSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data source where the current value of this property is stored.</summary>
+        <value>Returns the data source where the current value of this property is stored.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the data source is defined, it overrides the <xref:Microsoft.Build.Framework.XamlTypes.Rule.DataSource%2A> property on the containing <xref:Microsoft.Build.Framework.XamlTypes.Rule>.  
+  
+ This field is mandatory only if the parent <xref:Microsoft.Build.Framework.XamlTypes.Rule> does not have the data source initialized. The getter for this property returns only the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.DataSource%2A> that is set directly on this <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty> instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public string Default { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default value for this property.</summary>
+        <value>Returns the default value for this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional. If the value is a <xref:Microsoft.Build.Framework.XamlTypes.StringProperty>, semantics determine whether this field is culture-sensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a description of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> for use by a prospective UI client.</summary>
+        <value>Returns the description of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional and is culture-sensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a name that can be used by a prospective UI client to display this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
+        <value>Returns the display name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional and is culture-sensitive. When this property is not set, it is assigned the same value as the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.Name%2A> property (and, therefore, would not be localized).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndInit">
+      <MemberSignature Language="C#" Value="public virtual void EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.BaseProperty.EndInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>See <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="F1Keyword">
+      <MemberSignature Language="C#" Value="public string F1Keyword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string F1Keyword" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.F1Keyword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the keyword that is used to open the help page for this property.</summary>
+        <value>Returns the keyword that is used to open the help page for this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This form of specifying help takes precedence over <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> + <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>.  
+  
+ This field is optional and is culture insensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpContext">
+      <MemberSignature Language="C#" Value="public int HelpContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HelpContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Help context to use when the user presses F1.</summary>
+        <value>Returns the Help context to use when the user presses F1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property uses the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> property to display the Help context of the specified Help file.  
+  
+ This field is optional. If this property, together with <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A>, is specified, then the values of <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpString%2A> are ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpFile">
+      <MemberSignature Language="C#" Value="public string HelpFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Help file to use when the user presses F1.</summary>
+        <value>Returns the Help file to use when the user presses F1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>.  
+  
+ This field is optional and is culture-insensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpUrl">
+      <MemberSignature Language="C#" Value="public string HelpUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL of the Help page for this property. The page is opened when the user presses F1.</summary>
+        <value>Returns the URL of the Help page for this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property has a higher priority than the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>+<xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpString%2A> properties. In other words, these properties are ignored if <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> is set.  
+  
+ This field is optional and is culture-insensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeInCommandLine">
+      <MemberSignature Language="C#" Value="public bool IncludeInCommandLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeInCommandLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.IncludeInCommandLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a hint to the command-line constructor whether to include this property in the command line.</summary>
+        <value>Returns the hint to the command-line constructor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some properties are used only by the targets and are not to be included in the command line. Other properties, for example, task parameters, are included in the command line in the form of the switch/value that they emit. This field is optional and, by default, has the value `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequired">
+      <MemberSignature Language="C#" Value="public bool IsRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.IsRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether this property is required to have a value set.</summary>
+        <value>Returns a flag that indicates whether this property is required to have a value set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Metadata">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; Metadata { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; Metadata" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Metadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional attributes of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
+        <value>Returns additional attributes of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This can be used as a grab bag for additional metadata of this property that are not captured by the primary fields. Use custom UI to interpret the additional metadata because the shipped UI formats are not aware of these attributes.  
+  
+ This field is optional.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleValuesAllowed">
+      <MemberSignature Language="C#" Value="public bool MultipleValuesAllowed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MultipleValuesAllowed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.MultipleValuesAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a switch that specifies whether this property allows multiple values to be supplied/selected simultaneously.</summary>
+        <value>Returns a switch that specifies whether this property allows multiple values to be supplied/selected simultaneously. If true, multiple values may be selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
+        <value>Returns the name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is mandatory and culture-invariant. The value of this field cannot be set to the empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.ReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether this property is read-only.</summary>
+        <value>Returns <see langword="true" /> if this is a read-only property; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional and its default value is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="public string Separator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Separator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Separator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the token used to separate a switch from its value.</summary>
+        <value>Returns the token used to separate a switch from its value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value specified here overrides the value specified for the parent rule separator.  
+  
+ This field is optional and culture-invariant.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subcategory">
+      <MemberSignature Language="C#" Value="public string Subcategory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subcategory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Subcategory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the subcategory this property belongs to.</summary>
+        <value>Returns the subcategory this property belongs to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Switch">
+      <MemberSignature Language="C#" Value="public string Switch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Switch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Switch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the switch representation of this property when the property represents a tool parameter.</summary>
+        <value>Returns the switch representation of this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional and culture-invariant.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwitchPrefix">
+      <MemberSignature Language="C#" Value="public string SwitchPrefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SwitchPrefix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.SwitchPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the prefix for the switch representation of this property when this property represents a tool parameter.</summary>
+        <value>Returns the prefix for the switch representation of this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value specified here overrides the value specified for the <xref:Microsoft.Build.Framework.XamlTypes.Rule.SwitchPrefix%2A> of the parent <xref:Microsoft.Build.Framework.XamlTypes.Rule>.  
+  
+ This field is optional and culture-invariant.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueEditors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.ValueEditor&gt; ValueEditors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Build.Framework.XamlTypes.ValueEditor&gt; ValueEditors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.ValueEditors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.ValueEditor&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of value editors for this property.</summary>
+        <value>Returns the list of value editors for this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.BaseProperty.Visible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a hint to the UI client that tells it whether to display this property.</summary>
+        <value>Returns a hint to the UI client that tells it whether to display this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is optional and has the default value `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

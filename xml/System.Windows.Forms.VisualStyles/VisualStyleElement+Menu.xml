@@ -1,0 +1,39 @@
+<Type Name="VisualStyleElement+Menu" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Menu">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.Menu" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/Menu extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.Menu" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of a menu. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Menu> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Menu.BarDropDown>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Menu.BarItem>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Menu.Chevron>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Menu.DropDown>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Menu.Item>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Menu.Separator>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the menu part specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

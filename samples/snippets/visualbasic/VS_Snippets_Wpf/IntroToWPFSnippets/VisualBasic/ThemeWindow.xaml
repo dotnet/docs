@@ -1,0 +1,25 @@
+﻿<Window x:Class="SDKSample.ThemeWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SDKSample" Height="300" Width="300"
+    >
+  <StackPanel>
+    <Button Click="AeroNormalColorClick">Aero Normal Color Theme</Button>
+    <Button Click="ClassicClick">Classic Theme</Button>
+    <Button Click="LunaHomesteadClick">Luna Homestead Theme</Button>
+    <Button Click="LunaNormalColorClick">Luna Normal Color Theme</Button>
+    <Button Click="LunaMetallicClick">Luna Metallic Theme</Button>
+    <Button Click="RoyaleNormalColorClick" Margin="0,0,0,10">Royale Normal Color Theme</Button>
+    <RadioButton>Radio Button</RadioButton>
+    <CheckBox>Check Box</CheckBox>
+    <Label>Label</Label>
+    <TextBox>Text Box</TextBox>
+    <ListBox>
+      <ListBoxItem>Item 1</ListBoxItem>
+      <ListBoxItem>Item 2</ListBoxItem>
+      <ListBoxItem>Item 3</ListBoxItem>
+      <ListBoxItem>Item 4</ListBoxItem>
+      <ListBoxItem>Item 5</ListBoxItem>
+    </ListBox>
+  </StackPanel>
+</Window>

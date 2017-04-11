@@ -1,0 +1,400 @@
+<Type Name="ProfileSettings" FullName="System.Web.Configuration.ProfileSettings">
+  <TypeSignature Language="C#" Value="public sealed class ProfileSettings : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProfileSettings extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfileSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Configures the ASP.NET event profiles. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ProfileSettings> class provides a way to programmatically access and modify the `profiles` element of the `healthMonitoring` section of a configuration file.  
+  
+ Event profiles determine how events are collected by ASP.NET and raised to providers.  
+  
+   
+  
+## Examples  
+ This example demonstrates how to specify values declaratively for several attributes of the `profiles` section, which can also be accessed as members of the <xref:System.Web.Configuration.ProfileSettings> class.  
+  
+ The following configuration file excerpt shows how to declaratively specify values for several properties of the `profiles` section.  
+  
+```  
+<healthMonitoring>  
+    <profiles>  
+        <add name="Default"  
+            minInstances="1"  
+            maxLimit="Infinite"  
+            minInterval="00:10:00"  
+        />  
+        <add name="Critical"  
+            minInstances="1"  
+            maxLimit="1024"  
+            minInterval="00:00:00"  
+        />  
+    </profiles>  
+</healthMonitoring>   
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileSettings (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileSettings.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProfileSettings" /> class. using the specified name for the new instance of the class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the default settings that are used for this constructor.  
+  
+|Property|Default value|  
+|--------------|-------------------|  
+|<xref:System.Web.Configuration.ProfileSettings.Custom%2A>|An empty string ("").|  
+|<xref:System.Web.Configuration.ProfileSettings.MaxLimit%2A>|<xref:System.Int32.MaxValue>.|  
+|<xref:System.Web.Configuration.ProfileSettings.MinInstances%2A>|1.|  
+|<xref:System.Web.Configuration.ProfileSettings.MinInterval%2A>|<xref:System.TimeSpan.Zero>.|  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileSettings.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#51](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#51)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#51](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#51)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileSettings (string name, int minInstances, int maxLimit, TimeSpan minInterval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 minInstances, int32 maxLimit, valuetype System.TimeSpan minInterval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileSettings.#ctor(System.String,System.Int32,System.Int32,System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="minInstances" Type="System.Int32" />
+        <Parameter Name="maxLimit" Type="System.Int32" />
+        <Parameter Name="minInterval" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object to create.</param>
+        <param name="minInstances">The minimum number of event occurrences before the event is raised to the provider.</param>
+        <param name="maxLimit">The maximum number of times events of the same type are raised.</param>
+        <param name="minInterval">A <see cref="T:System.TimeSpan" /> that specifies the minimum length of the interval between the times when two events of the same type are raised.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProfileSettings" /> class, using specified settings for the new instance of the class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the default settings that are used for this constructor.  
+  
+|Property|Default value|  
+|--------------|-------------------|  
+|<xref:System.Web.Configuration.ProfileSettings.Custom%2A>|An empty string ("").|  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileSettings.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#52](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#52)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#52](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#52)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileSettings (string name, int minInstances, int maxLimit, TimeSpan minInterval, string custom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 minInstances, int32 maxLimit, valuetype System.TimeSpan minInterval, string custom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfileSettings.#ctor(System.String,System.Int32,System.Int32,System.TimeSpan,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="minInstances" Type="System.Int32" />
+        <Parameter Name="maxLimit" Type="System.Int32" />
+        <Parameter Name="minInterval" Type="System.TimeSpan" />
+        <Parameter Name="custom" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object to create.</param>
+        <param name="minInstances">The minimum number of event occurrences before the event is raised to the provider.</param>
+        <param name="maxLimit">The maximum number of times events of the same type are raised.</param>
+        <param name="minInterval">A <see cref="T:System.TimeSpan" /> that specifies the minimum interval between two events of the same type.</param>
+        <param name="custom">The fully qualified type of a custom class that implements <see cref="T:System.Web.Management.IWebEventCustomEvaluator" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.BufferModeSettings" /> class, using the specified settings for the new instance of the class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileSettings.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#53](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#53)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#53](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#53)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="public string Custom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Custom" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.Custom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("custom", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the fully qualified type of a custom class that implements the <see cref="T:System.Web.Management.IWebEventCustomEvaluator" /> interface.</summary>
+        <value>The fully qualified type of a custom class that implements the <see cref="T:System.Web.Management.IWebEventCustomEvaluator" /> interface. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type reference is formed as follows (items in brackets are not required): *Namespace*.*Typename*, *Assemblyname*[,] [Version=x,] [Culture=y,] [PublicKeyToken=z]. For example, "ExampleNameSpace.ExampleType, Example.Assembly, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileSettings.Custom%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#66](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#66)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#66](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#66)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLimit">
+      <MemberSignature Language="C#" Value="public int MaxLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLimit" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.MaxLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteIntConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxLimit", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of times events of the same type are raised.</summary>
+        <value>The maximum number of times events of the same type are raised. The default is <see cref="F:System.Int32.MaxValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero. The value can be made infinite by setting it to <xref:System.Int32>. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+ This property specifies the maximum number of times an event of the same type will be raised. For example if the value is `10`, the event will be raised 10 times and ignored thereafter.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileSettings.MaxLimit%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#63](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#63)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#63](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#63)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinInstances">
+      <MemberSignature Language="C#" Value="public int MinInstances { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinInstances" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.MinInstances" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("minInstances", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum number of event occurrences before the event is raised to the provider.</summary>
+        <value>The minimum number of event occurrences before the event is fired to the provider. The default is <see langword="1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero. The value can be made infinite by setting it to <xref:System.Int32>. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+ This property specifies the minimum number of times an event occurs before an event is raised to the provider. For example, a value of `5` means that ASP.NET will not raise an event to the provider until the fifth instance of the event occurs. If the value is infinite (<xref:System.Int32>), then no event will be raised to the provider.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileSettings.MinInstances%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#64](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#64)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#64](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#64)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinInterval">
+      <MemberSignature Language="C#" Value="public TimeSpan MinInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MinInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.MinInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteTimeSpanConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("minInterval", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum interval between two events of the same type.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that specifies the minimum interval between two events of the same type. The default is <see cref="F:System.TimeSpan.Zero" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value can be made infinite by setting it to <xref:System.Int32.MaxValue>. Invalid values may cause an exception when the configuration section is saved.  
+  
+ If the value is <xref:System.TimeSpan.Zero>, then there is no minimum interval.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileSettings.MinInterval%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#65](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#65)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#65](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object.</summary>
+        <value>The name of the <see cref="T:System.Web.Configuration.ProfileSettings" /> object. The default is an empty string("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A unique name is required. Duplicate names may result in a loss of data when the configuration section is saved.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.ProfileSettings.Name%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#62](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#62)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#62](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#62)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfileSettings.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

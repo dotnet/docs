@@ -1,0 +1,106 @@
+<Type Name="EnvironmentPermissionAccess" FullName="System.Security.Permissions.EnvironmentPermissionAccess">
+  <TypeSignature Language="C#" Value="public enum EnvironmentPermissionAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed EnvironmentPermissionAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.EnvironmentPermissionAccess" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies access to environment variables.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by <xref:System.Security.Permissions.EnvironmentPermission>.  
+  
+> [!NOTE]
+>  Although NoAccess and AllAccess appear in <xref:System.Security.Permissions.EnvironmentPermissionAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.EnvironmentPermission.GetPathList%2A> because they describe no environment variable access types or all environment variable access types, respectively, and <xref:System.Security.Permissions.EnvironmentPermission.GetPathList%2A> expects a single environment variable access type.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllAccess">
+      <MemberSignature Language="C#" Value="AllAccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.EnvironmentPermissionAccess AllAccess = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.EnvironmentPermissionAccess.AllAccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.EnvironmentPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /> and <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Write" /> access to environment variables. <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.AllAccess" /> represents multiple <see cref="T:System.Security.Permissions.EnvironmentPermissionAccess" /> values and causes an <see cref="T:System.ArgumentException" /> when used as the <paramref name="flag" /> parameter for the <see cref="M:System.Security.Permissions.EnvironmentPermission.GetPathList(System.Security.Permissions.EnvironmentPermissionAccess)" /> method, which expects a single value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoAccess">
+      <MemberSignature Language="C#" Value="NoAccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.EnvironmentPermissionAccess NoAccess = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.EnvironmentPermissionAccess.NoAccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.EnvironmentPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No access to environment variables. <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.NoAccess" /> represents no valid <see cref="T:System.Security.Permissions.EnvironmentPermissionAccess" /> values and causes an <see cref="T:System.ArgumentException" /> when used as the parameter for <see cref="M:System.Security.Permissions.EnvironmentPermission.GetPathList(System.Security.Permissions.EnvironmentPermissionAccess)" />, which expects a single value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="Read" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.EnvironmentPermissionAccess Read = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.EnvironmentPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only read access to environment variables is specified. Changing, deleting and creating environment variables is not included in this access level.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="Write" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.EnvironmentPermissionAccess Write = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.EnvironmentPermissionAccess.Write" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.EnvironmentPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only write access to environment variables is specified. Write access includes creating and deleting environment variables as well as changing existing values. Reading environment variables is not included in this access level.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

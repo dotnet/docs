@@ -1,0 +1,1244 @@
+<Type Name="TextRunTypographyProperties" FullName="System.Windows.Media.TextFormatting.TextRunTypographyProperties">
+  <TypeSignature Language="C#" Value="public abstract class TextRunTypographyProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextRunTypographyProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextRunTypographyProperties" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an abstract class for supporting typography properties for <see cref="T:System.Windows.Media.TextFormatting.TextRun" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text layout client uses the <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties> class to generate a set of features that are processed by the OpenType layout engine.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TextRunTypographyProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextRunTypographyProperties.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextRunTypographyProperties" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnnotationAlternates">
+      <MemberSignature Language="C#" Value="public abstract int AnnotationAlternates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AnnotationAlternates" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.AnnotationAlternates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of an alternate annotation form.</summary>
+        <value>The index of the alternate annotation form. The default is 0 (zero).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Annotation forms include glyphs placed in open or solid circles, squares, parentheses, diamonds, or rounded boxes.  
+  
+ If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.AnnotationAlternates%2A> is greater than 0 and the selected font does not support annotation alternates, the default form of the letter is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capitals">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FontCapitals Capitals { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontCapitals Capitals" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Capitals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontCapitals</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the capital form of the selected font.</summary>
+        <value>One of the <see cref="T:System.Windows.FontCapitals" /> values. The default is <see cref="F:System.Windows.FontCapitals.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
+  
+ The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
+  
+ ![Text using OpenType capitals](~/add/media/opentypefont11.gif "Text using OpenType capitals")  
+Example of capitals  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapitalSpacing">
+      <MemberSignature Language="C#" Value="public abstract bool CapitalSpacing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CapitalSpacing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.CapitalSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether inter-glyph spacing for all-capital text is globally adjusted to improve readability.</summary>
+        <value>
+          <see langword="true" /> if spacing is adjusted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Capital spacing is a feature that allows you to provide more spacing when using all capitals in text. Capital letters are typically designed to blend with lowercase letters. Spacing that appears attractive between and a capital letter and a lowercase letter may look too tight when all capital letters are used. The following text displays normal and capital spacing for the Pescadero font.  
+  
+ ![Text using OpenType capital spacing](~/add/media/opentypefont21.gif "Text using OpenType capital spacing")  
+Example of normal and capital spacing  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaseSensitiveForms">
+      <MemberSignature Language="C#" Value="public abstract bool CaseSensitiveForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CaseSensitiveForms" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.CaseSensitiveForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether glyphs adjust their vertical position to better align with uppercase glyphs.</summary>
+        <value>
+          <see langword="true" /> if the vertical position is adjusted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextualAlternates">
+      <MemberSignature Language="C#" Value="public abstract bool ContextualAlternates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContextualAlternates" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualAlternates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether custom glyph forms can be used based upon the context of the text being rendered.</summary>
+        <value>
+          <see langword="true" /> if custom glyph forms can be used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Random contextual alternates provide multiple substitute glyphs for a single character. When implemented with script-type fonts, this feature can simulate handwriting by using of a set of randomly chosen glyphs with slight differences in appearance. The following text uses random contextual alternates for the Lindsey font. Notice that the letter "a" varies slightly in appearance  
+  
+ ![Text using OpenType random contextual alternates](~/add/media/opentypefont23.gif "Text using OpenType random contextual alternates")  
+Example of random contextual alternates  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextualLigatures">
+      <MemberSignature Language="C#" Value="public abstract bool ContextualLigatures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContextualLigatures" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether contextual ligatures are enabled.</summary>
+        <value>
+          <see langword="true" /> if contextual ligatures are enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Contextual ligatures are designed to enhance readability by providing better joining behavior between the characters that make up the ligature.  
+  
+ If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualLigatures%2A> is `true` and the selected font does not support contextual ligatures, the default form of the letter is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextualSwashes">
+      <MemberSignature Language="C#" Value="public abstract int ContextualSwashes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ContextualSwashes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.ContextualSwashes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies the index of a contextual swashes form.</summary>
+        <value>The index of the standard swashes form. The default is 0 (zero).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Certain combinations of swash glyphs can cause an unattractive appearance, such as overlapping descenders on adjacent letters. Using a contextual swash allows you to use a substitute swash glyph that produces a better appearance. The following text shows the same word before and after a contextual swash is applied.  
+  
+ ![Text using OpenType contextual swashes](~/add/media/opentypefont19.gif "Text using OpenType contextual swashes")  
+Example of a contextual swash  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscretionaryLigatures">
+      <MemberSignature Language="C#" Value="public abstract bool DiscretionaryLigatures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DiscretionaryLigatures" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.DiscretionaryLigatures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether discretionary ligatures are enabled.</summary>
+        <value>
+          <see langword="true" /> if discretionary ligatures are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Discretionary ligatures are designed to be ornamental and are not specifically designed for readability. The following text displays discretionary ligature glyphs for the Pericles font.  
+  
+ ![Text using OpenType discretionary ligatures](~/add/media/opentypefont05.gif "Text using OpenType discretionary ligatures")  
+Example of discretionary set of ligatures  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EastAsianExpertForms">
+      <MemberSignature Language="C#" Value="public abstract bool EastAsianExpertForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EastAsianExpertForms" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianExpertForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the standard Japanese font forms have been replaced with the corresponding preferred typographic forms.</summary>
+        <value>
+          <see langword="true" /> if standard Japanese font forms have been replaced with the corresponding preferred typographic forms; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EastAsianLanguage">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FontEastAsianLanguage EastAsianLanguage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontEastAsianLanguage EastAsianLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontEastAsianLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the version of glyphs to be used for a specific writing system or language.</summary>
+        <value>One of the <see cref="T:System.Windows.FontEastAsianLanguage" /> values. The default is <see cref="F:System.Windows.FontEastAsianLanguage.Normal" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EastAsianWidths">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FontEastAsianWidths EastAsianWidths { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontEastAsianWidths EastAsianWidths" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.EastAsianWidths" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontEastAsianWidths</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the proportional width to be used for Latin characters in an East Asian font.</summary>
+        <value>One of the <see cref="T:System.Windows.FontEastAsianWidths" /> values. The default is <see cref="F:System.Windows.FontEastAsianWidths.Normal" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fraction">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FontFraction Fraction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontFraction Fraction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Fraction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontFraction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the fraction style.</summary>
+        <value>One of the <see cref="T:System.Windows.FontFraction" /> values. The default is <see cref="F:System.Windows.FontFraction.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OpenType fonts support styles for fractions, including slashed and stacked.  
+  
+ The following text displays fraction styles for the Palatino Linotype font.  
+  
+ ![Text using OpenType slashed and stacked fractions](~/add/media/opentypefont12.gif "Text using OpenType slashed and stacked fractions")  
+Example of slashed and stacked fraction styles  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HistoricalForms">
+      <MemberSignature Language="C#" Value="public abstract bool HistoricalForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HistoricalForms" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether historical forms are enabled.</summary>
+        <value>
+          <see langword="true" /> if historical forms are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Historical forms are typographic conventions that were common in the past. The following text displays the phrase "Boston, Massachusetts" using an historical form of glyphs for the Palatino Linotype font.  
+  
+ ![Text using OpenType historical forms](~/add/media/opentypefont10.gif "Text using OpenType historical forms")  
+Example of historical forms  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HistoricalLigatures">
+      <MemberSignature Language="C#" Value="public abstract bool HistoricalLigatures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HistoricalLigatures" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.HistoricalLigatures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether historical ligatures are enabled.</summary>
+        <value>
+          <see langword="true" /> if historical ligatures are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Historical ligatures are typographic forms used in historical typography that font designers may add to their fonts.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kerning">
+      <MemberSignature Language="C#" Value="public abstract bool Kerning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Kerning" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Kerning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether kerning is enabled.</summary>
+        <value>
+          <see langword="true" /> if kerning is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Kerning is a typographic function that adjusts the spacing between characters to enhance word shape.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MathematicalGreek">
+      <MemberSignature Language="C#" Value="public abstract bool MathematicalGreek { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MathematicalGreek" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.MathematicalGreek" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether standard typographic font forms of Greek glyphs have been replaced with corresponding font forms commonly used in mathematical notation.</summary>
+        <value>
+          <see langword="true" /> if mathematical Greek forms are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.MathematicalGreek%2A> is `true` and the selected font does not support mathematical Greek forms, the default form of the letter is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeralAlignment">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FontNumeralAlignment NumeralAlignment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontNumeralAlignment NumeralAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontNumeralAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the alignment of widths when using numerals.</summary>
+        <value>One of the <see cref="T:System.Windows.FontNumeralAlignment" /> values. The default is <see cref="F:System.Windows.FontNumeralAlignment.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OpenType fonts support a proportional and tabular figure feature to control the alignment of widths when using numerals. Proportional figures treat each numeral as having a different width—"1" is narrower than "5". Tabular figures are treated as equal-width numerals so that they align vertically, which increases the readability of numerical information.  
+  
+ The following text displays two proportional figures in the first column using the Miramonte font. Note the difference in width between the numerals "5" and "1". The second column shows the same two numeric values with the widths adjusted by using the tabular figure feature.  
+  
+ ![Text using OpenType proportional & tabular figures](~/add/media/opentypefont22.gif "Text using OpenType proportional & tabular figures")  
+Example of proportional and tabbed figures  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumeralStyle">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FontNumeralStyle NumeralStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontNumeralStyle NumeralStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.NumeralStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the set of glyphs that are used to render numeric alternate font forms.</summary>
+        <value>One of the <see cref="T:System.Windows.FontNumeralStyle" /> values. The default is <see cref="F:System.Windows.FontNumeralStyle.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OpenType fonts support an old-style numeral format. This format is useful for displaying numerals in styles that are no longer standard. The following text displays an 18th-century date in standard and old-style numeral formats for the Palatino Linotype font.  
+  
+ ![Text using OpenType old style numerals](~/add/media/opentypefont24.gif "Text using OpenType old style numerals")  
+Example of standard and old-style numerals  
+  
+ The following text displays standard numerals for the Palatino Linotype font, followed by old-style numerals.  
+  
+ ![Text using OpenType old style numeral sets](~/add/media/opentypefont13.gif "Text using OpenType old style numeral sets")  
+Example of standard and old-style numeral sets  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertiesChanged">
+      <MemberSignature Language="C#" Value="protected void OnPropertiesChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnPropertiesChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextRunTypographyProperties.OnPropertiesChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Corrects internal state for a <see cref="T:System.Windows.Media.TextFormatting.TextRunTypographyProperties" /> derived class whenever any <see cref="T:System.Windows.Media.TextFormatting.TextRunTypographyProperties" /> property changes its value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method from set accessors of a <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties> property override, if the value changes as part of the setter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlashedZero">
+      <MemberSignature Language="C#" Value="public abstract bool SlashedZero { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SlashedZero" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.SlashedZero" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a nominal zero font form should be replaced with a slashed zero.</summary>
+        <value>
+          <see langword="true" /> if slashed zero forms are enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OpenType fonts support a slashed zero numeral format to emphasize the difference between the letter "O" and the numeral "0". The slashed zero numeral is often used for identifiers in financial and business information.  
+  
+ The following text displays a sample order identifier using the Miramonte font. The first line uses standard numerals. The second line used slashed zero numerals to provide better contrast with the uppercase "O" letter.  
+  
+ ![Text using OpenType slashed zero numerals](~/add/media/opentypefont17.gif "Text using OpenType slashed zero numerals")  
+Example of slashed zero numerals  
+  
+ If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.SlashedZero%2A> is `true` and the selected font does not support slashed zero forms, the default form of the numeral is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardLigatures">
+      <MemberSignature Language="C#" Value="public abstract bool StandardLigatures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StandardLigatures" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether standard ligatures are enabled.</summary>
+        <value>
+          <see langword="true" /> if standard ligatures are enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following text displays standard ligature glyphs for the Pericles font.  
+  
+ ![Text using OpenType standard ligatures](~/add/media/opentypefont04.gif "Text using OpenType standard ligatures")  
+Example of a standard set of ligatures  
+  
+ By default, OpenType fonts in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the characters of each standard ligature touch each other.  
+  
+ ![Text using OpenType standard ligatures](~/add/media/opentypefont06.gif "Text using OpenType standard ligatures")  
+Example of standard ligatures enabled by default  
+  
+ However, you can disable standard ligature features so that a standard ligature such as "ff" displays as two separate glyphs, rather than as a combined character glyph.  
+  
+ ![Text using disabled OpenType standard ligatures](~/add/media/opentypefont07.gif "Text using disabled OpenType standard ligatures")  
+Example of disabled standard ligatures  
+  
+ If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardLigatures%2A> is `true` and the selected font does not support standard ligatures, the default form of the letter is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandardSwashes">
+      <MemberSignature Language="C#" Value="public abstract int StandardSwashes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StandardSwashes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardSwashes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of a standard swashes form.</summary>
+        <value>The index of the standard swashes form. The default is 0 (zero).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
+  
+ ![Text using OpenType standard and swash glyphs](~/add/media/opentypefont08.gif "Text using OpenType standard and swash glyphs")  
+Example of standard and swash glyphs  
+  
+ Swashes are often used as decorative elements in short phrases such as event announcements. The following text uses swashes to emphasize the capital letters of the name of the event.  
+  
+ ![Text using OpenType swashes](~/add/media/opentypefont09.gif "Text using OpenType swashes")  
+Example of swashes used for capital letters  
+  
+ If the value of <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StandardSwashes%2A> is greater than 0 and the selected font does not support standard swashes forms at the given index value, the default form of the letter is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticAlternates">
+      <MemberSignature Language="C#" Value="public abstract int StylisticAlternates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StylisticAlternates" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticAlternates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of a stylistic alternates form.</summary>
+        <value>The index of the stylistic alternates form. The default is 0 (zero).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Alternates are glyphs that can be substituted for a standard glyph. OpenType fonts, such as the Pericles font used in the following examples, contain alternate glyphs that you can use to create different appearances for text. The following text displays standard glyphs for the Pericles font.  
+  
+ ![Text using OpenType standard glyphs](~/add/media/opentypefont01.gif "Text using OpenType standard glyphs")  
+Example of a standard set of glyphs  
+  
+ The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
+  
+ ![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont02.gif "Text using OpenType stylistic alternate glyphs")  
+Example of stylistic alternate glyphs  
+  
+ The following text displays several stylistic alternate glyphs for the Pericles font.  
+  
+ ![Text using OpenType stylistic alternate glyphs](~/add/media/opentypefont03.gif "Text using OpenType stylistic alternate glyphs")  
+Example of other stylistic alternate glyphs  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet1">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet1" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet10">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet10 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet10" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet10" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet11">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet11 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet11" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet11" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet12">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet12 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet12" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet12" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet13">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet13 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet13" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet13" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet14">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet14 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet14" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet14" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet15">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet15 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet15" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet15" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet16">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet16 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet16" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet16" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet17">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet17 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet17" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet17" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet18">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet18 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet18" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet18" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet19">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet19 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet19" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet19" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet2">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet20">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet20 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet20" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet20" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet3">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet3 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet3" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet4">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet4" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet5">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet5 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet5" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet5" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet6">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet6 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet6" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet6" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet7">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet7 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet7" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet7" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet8">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet8 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet8" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet8" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylisticSet9">
+      <MemberSignature Language="C#" Value="public abstract bool StylisticSet9 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet9" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.StylisticSet9" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylistic set of a font form is enabled.</summary>
+        <value>
+          <see langword="true" /> if the stylistic set of the font form is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some fonts contain stylistic variant glyphs that correspond to portions of a character set. Glyphs in stylistic sets may be designed to harmonize visually, interact in particular ways, or work together in other ways.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Variants">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FontVariants Variants { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontVariants Variants" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Variants" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontVariants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates a variation of the standard typographic form to be used.</summary>
+        <value>One of the <see cref="T:System.Windows.FontVariants" /> values. The default is <see cref="F:System.Windows.FontVariants.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Variants are similar to superscript or subscript font forms. It is possible for a font form to contain differing glyph sets between superscript and the ordinal form, or between subscript and inferior forms. The <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties.Variants%2A> property allows you to set superscript and subscript values for an OpenType font.  
+  
+ The following text displays superscripts for the Palatino Linotype font.  
+  
+ ![Text using OpenType superscripts](~/add/media/opentypefont14.gif "Text using OpenType superscripts")  
+Example of superscripts  
+  
+ The following text displays subscripts for the Palatino Linotype font.  
+  
+ ![Text using OpenType subscripts](~/add/media/opentypefont15.gif "Text using OpenType subscripts")  
+Example of subscripts  
+  
+ Fonts that do not support variants may have an algorithmic approximation of the font form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

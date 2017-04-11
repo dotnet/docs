@@ -1,0 +1,75 @@
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.Window1"
+    Title="TextBoxBase Methods and Properties Sample"
+    ContentRendered="initValues">
+  <ScrollViewer Background="LightSteelBlue">
+    <DockPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+      <TextBlock DockPanel.Dock="Top" FontSize="18" FontWeight="Bold">TextBoxBase Methods and Properties Sample</TextBlock>
+      <StackPanel DockPanel.Dock="Left" Margin="25">
+        <Button Click="lineDown" Margin="5">LineDown</Button>
+        <Button Click="lineLeft" Margin="5">LineLeft</Button>
+        <Button Click="lineRight"  Margin="5">LineRight</Button>
+        <Button Click="lineUp" Margin="5">LineUp</Button>
+        <Button Click="pageDown" Margin="5">PageDown</Button>
+        <Button Click="pageLeft" Margin="5">PageLeft</Button>
+        <Button Click="pageRight" Margin="5">PageRight</Button>
+        <Button Click="pageUp" Margin="5">PageUp</Button>
+        <Button Click="scrollHome" Margin="5">ScrollToHome</Button>
+        <Button Click="scrollEnd" Margin="5">ScrollToEnd</Button>
+        <TextBlock>
+          Word Wrap:
+          <RadioButton Name="radiobtn1" GroupName="btnGrp1" Checked="wrapOn">On</RadioButton>
+          <RadioButton GroupName="btnGrp1" Checked="wrapOff">Off</RadioButton>
+        </TextBlock>
+      </StackPanel>
+      <StackPanel Name="myStackPanel" DockPanel.Dock="Left">
+        <TextBox TextWrapping="Wrap"
+                 Name="myTextBox" 
+                 Width="500" 
+                 Height="200" 
+                 AcceptsReturn="True"
+                 IsUndoEnabled="True"
+                 VerticalScrollBarVisibility="Visible"
+                 HorizontalScrollBarVisibility="Auto" 
+                 Margin="25">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus mauris mauris,
+          imperdiet vel, nonummy et, tincidunt nec, est. Pellentesque malesuada vestibulum sem.
+          Nullam eget mauris. Nam adipiscing metus eu metus. Donec pede. Cras nulla.
+          Pellentesque erat. Donec nisi elit, fringilla sit amet, vulputate pulvinar, nonummy a,
+          tellus. Pellentesque non libero vel magna dapibus pharetra. Integer quis dolor.
+          Suspendisse at enim sit amet nunc vestibulum interdum. Curabitur mattis dui nec turpis
+          malesuada viverra. Nunc iaculis lacus quis lorem.
+        </TextBox>
+        <StackPanel Orientation="Horizontal">
+          <Button Click="copyText" Margin="5">Copy Selection</Button>
+          <Button Click="cutText"  Margin="5">Cut Selection</Button>
+          <Button Click="pasteSelection" Margin="5">Paste Selection</Button>
+          <Button Click="selectAll" Margin="5">Select All</Button>
+          <Button Click="undoAction" Margin="5">Undo</Button>
+          <Button Click="redoAction" Margin="5">Redo</Button>
+          <Button Click="clearTB1" Margin="5">Clear Top TextBox</Button>
+          <Button Click="clearTB2" Margin="5">Clear Bottom TextBox</Button>
+        </StackPanel>
+        <TextBox TextWrapping="Wrap" 
+                 Name="myTextBox2" 
+                 Width="500" 
+                 Height="200" 
+                 AcceptsReturn="True" 
+                 Margin="25" 
+                 SelectionChanged="selectChanged"
+                 VerticalScrollBarVisibility="Auto"
+                 TextChanged="tChanged">
+          Use this TextBox to experiment with methods defined above.
+        </TextBox>
+        <TextBlock Name="myTB1"/>
+        <TextBlock Name="myTB2"/>
+        <TextBlock Name="myTB3"/>
+        <TextBlock Name="myTB4"/>
+        <TextBlock Name="myTB5"/>
+        <TextBlock Name="myTB6"/>
+      </StackPanel>
+    </DockPanel>
+  </ScrollViewer>
+</Window>

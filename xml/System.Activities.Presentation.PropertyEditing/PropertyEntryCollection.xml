@@ -1,0 +1,137 @@
+<Type Name="PropertyEntryCollection" FullName="System.Activities.Presentation.PropertyEditing.PropertyEntryCollection">
+  <TypeSignature Language="C#" Value="public abstract class PropertyEntryCollection : System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.PropertyEditing.PropertyEntry&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyEntryCollection extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.PropertyEditing.PropertyEntry&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.PropertyEditing.PropertyEntry&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Maintains the collection of sub-properties of a given parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PropertyEntryCollection (System.Activities.Presentation.PropertyEditing.PropertyValue parentValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.PropertyEditing.PropertyValue parentValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection.#ctor(System.Activities.Presentation.PropertyEditing.PropertyValue)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parentValue" Type="System.Activities.Presentation.PropertyEditing.PropertyValue" />
+      </Parameters>
+      <Docs>
+        <param name="parentValue">The parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> instance used for the initialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection" /> class using the sub-properties of the specified <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection.ParentValue" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public abstract int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances in this collection (typically the number of sub-properties for the parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" />).</summary>
+        <value>An integer that specifies the number of instances in this collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;System.Activities.Presentation.PropertyEditing.PropertyEntry&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Activities.Presentation.PropertyEditing.PropertyEntry&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Activities.Presentation.PropertyEditing.PropertyEntry&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:Systems.Collections.IEnumerator" /> object that iterates all the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances in this collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.PropertyEditing.PropertyEntry this[string propertyName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.PropertyEditing.PropertyEntry Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to get.</param>
+        <summary>Gets a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instance with the specified name from this collection. It is used for sub-property retrieval.</summary>
+        <value>A property entry instance with the specified name; or <see langword="null" /> if it does not exist.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentValue">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.PropertyEditing.PropertyValue ParentValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.PropertyEditing.PropertyValue ParentValue" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection.ParentValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> from the host infrastructure.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyEntryCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:Systems.Collections.IEnumerator" /> object that iterates all of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances in this collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through collection of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyEntry" /> instances.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

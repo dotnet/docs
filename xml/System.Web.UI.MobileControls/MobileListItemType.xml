@@ -1,0 +1,99 @@
+<Type Name="MobileListItemType" FullName="System.Web.UI.MobileControls.MobileListItemType">
+  <TypeSignature Language="C#" Value="public enum MobileListItemType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MobileListItemType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileListItemType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Assigns an item type to an element in a <see cref="T:System.Web.UI.MobileControls.List" /> or <see cref="T:System.Web.UI.MobileControls.ObjectList" /> control's child controls. This class cannot be inherited. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Web.UI.MobileControls.List> or <xref:System.Web.UI.MobileControls.ObjectList> control is rendered in templated mode, empty <xref:System.Web.UI.MobileControls.MobileListItem> objects with the corresponding item type are created for each header, footer, or separator that needs to be rendered. These empty objects are then inserted into the control's child controls.  
+  
+> [!NOTE]
+>  <xref:System.Web.UI.MobileControls.MobileListItem> objects that correspond to list items always have a type of <xref:System.Web.UI.WebControls.ListItem>.  
+  
+ You can use this enumeration for iterating through the controls collection and finding the <xref:System.Web.UI.MobileControls.MobileListItem> objects corresponding to the header, footer, and separator templates.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FooterItem">
+      <MemberSignature Language="C#" Value="FooterItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.MobileListItemType FooterItem = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.FooterItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.MobileListItemType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a footer for a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderItem">
+      <MemberSignature Language="C#" Value="HeaderItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.MobileListItemType HeaderItem = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.HeaderItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.MobileListItemType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a heading for a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ListItem">
+      <MemberSignature Language="C#" Value="ListItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.MobileListItemType ListItem = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.ListItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.MobileListItemType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents an item in a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorItem">
+      <MemberSignature Language="C#" Value="SeparatorItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.MobileListItemType SeparatorItem = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.SeparatorItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.MobileListItemType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a separator between list items. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

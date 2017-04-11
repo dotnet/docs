@@ -1,0 +1,1214 @@
+<Type Name="ClipboardProxy" FullName="Microsoft.VisualBasic.MyServices.ClipboardProxy">
+  <TypeSignature Language="C#" Value="public class ClipboardProxy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi ClipboardProxy extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.ClipboardProxy" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides methods for manipulating the Clipboard.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Items moved or copied to the Clipboard persist even after the application is shut down.  
+  
+ Data on the Clipboard can be in any data format, also called a Clipboard format. For a list of predefined formats to use with the Clipboard, see <xref:System.Windows.Forms.DataFormats>. When an item is moved or copied to the Clipboard, items in other formats are cleared. To make other formats persist, use <xref:Microsoft.VisualBasic.VariantType>, which copies everything existing on the current Clipboard, including items pasted from other applications. Place data on the Clipboard in multiple formats to maximize the possibility that a target application, whose format requirements you might not know, can successfully retrieve the data.  
+  
+ Because all Windows applications share the system Clipboard, the contents may change when you switch to another application.  
+  
+ A class must be serializable for it to be put on the Clipboard. See [Serialization](http://msdn.microsoft.com/library/f7570c09-7db5-44f2-983a-e8859caeb0d5) for more information.  
+  
+ When accessing the Clipboard remotely, a <xref:System.Threading.ThreadStateException> is thrown unless the accessing thread operates in STA (single-threaded apartment) mode. To resolve this issue, set the `ThreadApartmentState` to `STA`. For more information, see <xref:System.STAThreadAttribute>.  
+  
+ For more information, see [Storing Data to and Reading from the Clipboard](~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example reads text from the Clipboard into the string `textOnClipboard`.  
+  
+ [!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
+  
+ This example will fail if there is no text on the Clipboard.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Permissions.UIPermission> class controls access to the Clipboard, and the associated <xref:System.Security.Permissions.UIPermissionClipboard> enumeration value indicates the level of access. For more information, see [Additional Security Considerations in Windows Forms](~/docs/framework/winforms/additional-security-considerations-in-windows-forms.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example clears the Clipboard.  
+  
+```  
+My.Computer.Clipboard.Clear()  
+```  
+  
+ This removes all data from the Clipboard.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsAudio">
+      <MemberSignature Language="C#" Value="public bool ContainsAudio ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsAudio() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether the Clipboard contains audio data.</summary>
+        <returns>
+          <see langword="True" /> if audio data is stored on the Clipboard; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example determines whether the Clipboard contains audio data and displays the result.  
+  
+ [!code-vb[VbRefClipbd#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsData">
+      <MemberSignature Language="C#" Value="public bool ContainsData (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsData(string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">
+          <see langword="String" />. Name of the custom format to be checked. Required.</param>
+        <summary>Indicates whether the Clipboard contains data in the specified custom format.</summary>
+        <returns>
+          <see langword="True" /> if data in the specified custom format is stored on the Clipboard; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you have placed custom formatted data on the Clipboard, this method allows you to check the Clipboard for data in that format.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example checks for data in the custom format `specialFormat`.  
+  
+ [!code-vb[VbRefClipbd#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#6)]  
+  
+ Replace `specialFormat` with the name of the custom format you wish to check.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsFileDropList">
+      <MemberSignature Language="C#" Value="public bool ContainsFileDropList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsFileDropList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see langword="Boolean" /> indicating whether the Clipboard contains a file drop list.</summary>
+        <returns>
+          <see langword="True" /> if a file drop list is stored on the Clipboard; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A file drop list is a collection of strings containing path information for files.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox``lstFiles` if they exist.  
+  
+ [!code-vb[VbRefClipbd#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#12)]  
+  
+ This code will create an exception if there is no `ListBox` named `lstFiles`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsImage">
+      <MemberSignature Language="C#" Value="public bool ContainsImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsImage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see langword="Boolean" /> indicating whether an image is stored on the Clipboard.</summary>
+        <returns>
+          <see langword="True" /> if an image is stored on the Clipboard; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example checks to see if there is an image on the Clipboard and, if so, gets the image and adds it to `PictureBox1`.  
+  
+ [!code-vb[VbRefClipbd#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#8)]  
+  
+ This example depends on the existence of a `PictureBox` named `PictureBox1`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsText">
+      <MemberSignature Language="C#" Value="public bool ContainsText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines if there is text on the Clipboard.</summary>
+        <returns>
+          <see langword="True" /> if the Clipboard contains text; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example determines if HTML text is stored on the Clipboard and reads from the Clipboard if it does.  
+  
+ [!code-vb[VbRefClipbd#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsText">
+      <MemberSignature Language="C#" Value="public bool ContainsText (System.Windows.Forms.TextDataFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool ContainsText(valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText(System.Windows.Forms.TextDataFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
+      </Parameters>
+      <Docs>
+        <param name="format">
+          <see cref="T:System.Windows.Forms.TextDataFormat" />. If specified, identifies what text format to be checked for. Required.</param>
+        <summary>Determines if there is text on the Clipboard.</summary>
+        <returns>
+          <see langword="True" /> if the Clipboard contains text; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example determines if HTML text is stored on the Clipboard and reads from the Clipboard if it does.  
+  
+ [!code-vb[VbRefClipbd#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAudioStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetAudioStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.IO.Stream GetAudioStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an audio stream from the Clipboard.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> object containing audio data or <see langword="Nothing" /> if the Clipboard does not contain any audio data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example retrieves an audio stream from the Clipboard and plays it.  
+  
+ [!code-vb[VbRefClipbd#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public object GetData (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance object GetData(string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">
+          <see langword="String" />. Name of the data format. Required.</param>
+        <summary>Retrieves data in a custom format from the Clipboard.</summary>
+        <returns>An <see langword="Object" /> representing the Clipboard data or <see langword="Nothing" /> if the Clipboard does not contain any data that is in the specified format or can be converted to that format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example reads data in the format `specialformat` from the Clipboard and writes it to file.  
+  
+ [!code-vb[VbRefClipbd#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#7)]  
+  
+ Replace `specialformat` with the custom data format you wish to retrieve.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataObject">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.IDataObject GetDataObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.Windows.Forms.IDataObject GetDataObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.IDataObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves data from the Clipboard as an <see cref="T:System.Windows.Forms.IDataObject" />.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.IDataObject" /> object that represents the data currently on the Clipboard, or <see langword="Nothing" /> if there is no data on the Clipboard.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example reads data from the Clipboard in the form of an <xref:System.Windows.Forms.IDataObject> and then writes it to a file.  
+  
+ [!code-vb[VbRefClipbd#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#1)]  
+  
+ Replace `C:\mylogfile` with the name of the file to which you want to write.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileDropList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection GetFileDropList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.Collections.Specialized.StringCollection GetFileDropList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of strings representing file names from the Clipboard.</summary>
+        <returns>A <see cref="T:System.Collections.Specialized.StringCollection" /> containing file names or <see langword="Nothing" /> if the Clipboard does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format or can be converted to that format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is available only for non-server applications.  
+  
+ A file drop list is a collection of strings containing path information for files.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example determines if there is a file drop list on the Clipboard and adds the list to the `ListBox``lstFiles` if they exist.  
+  
+ [!code-vb[VbRefClipbd#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#9)]  
+  
+ This code creates an exception if there is no `ListBox` named `lstFiles`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImage">
+      <MemberSignature Language="C#" Value="public System.Drawing.Image GetImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance class System.Drawing.Image GetImage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an image from the Clipboard.</summary>
+        <returns>An <see cref="T:System.Drawing.Image" /> representing the Clipboard image data or <see langword="Nothing" /> if the Clipboard does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format or can be converted to that format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example checks to see if there is an image on the Clipboard before retrieving it and assigning it to `PictureBox1`.  
+  
+ [!code-vb[VbRefClipbd#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#4)]  
+  
+ For this example to function correctly, there must be a `PictureBox` named `PictureBox1` on your form.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetText">
+      <MemberSignature Language="C#" Value="public string GetText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance string GetText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves text from the Clipboard.</summary>
+        <returns>The Clipboard text data or an empty string if the Clipboard does not contain data in the <see cref="F:System.Windows.Forms.DataFormats.Text" /> or <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format, depending on the operating system.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example reads text from the Clipboard into the string `textOnClipboard`.  
+  
+ [!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
+  
+ This example fails if there is no text on the Clipboard.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetText">
+      <MemberSignature Language="C#" Value="public string GetText (System.Windows.Forms.TextDataFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance string GetText(valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText(System.Windows.Forms.TextDataFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
+      </Parameters>
+      <Docs>
+        <param name="format">
+          <see cref="T:System.Windows.Forms.TextDataFormat" />. If specified, identifies what text format should be retrieved. Default is <see cref="F:System.Windows.Forms.TextDataFormat.CommaSeparatedValue" />. Required.</param>
+        <summary>Retrieves text from the Clipboard.</summary>
+        <returns>The Clipboard text data or an empty string if the Clipboard does not contain data in the specified format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example reads text from the Clipboard into the string `textOnClipboard`.  
+  
+ [!code-vb[VbVbcnMyClipboard#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#6)]  
+  
+ This example fails if there is no text on the Clipboard.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAudio">
+      <MemberSignature Language="C#" Value="public void SetAudio (byte[] audioBytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetAudio(unsigned int8[] audioBytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioBytes" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="audioBytes">
+          <see langword="Byte" /> array. Audio data to be written to the Clipboard. Required.</param>
+        <summary>Writes audio data to the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example creates the byte array `musicReader`, reads the file `cool.wav` into it, and then writes it to the Clipboard.  
+  
+ [!code-vb[VbRefClipbd#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#2)]  
+  
+ Replace `cool.wav` with the name and path of the file you wish to read.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAudio">
+      <MemberSignature Language="C#" Value="public void SetAudio (System.IO.Stream audioStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetAudio(class System.IO.Stream audioStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="audioStream">
+          <see cref="T:System.IO.Stream" /> Audio data to be written to the clipboard. Required.</param>
+        <summary>Writes audio data to the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example creates the byte array `musicReader`, reads the file `cool.wav` into it, and then writes it to the Clipboard.  
+  
+ [!code-vb[VbRefClipbd#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#2)]  
+  
+ Replace `cool.wav` with the name and path of the file you wish to read.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public void SetData (string format, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetData(string format, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="format">
+          <see langword="String" />. Format of data. Required.</param>
+        <param name="data">
+          <see langword="Object" />. Data object to be written to the Clipboard. Required.</param>
+        <summary>Writes data in a custom format to the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example writes the `DataObject``dataChunk` to the Clipboard in the custom format `specialFormat`.  
+  
+ [!code-vb[VbVbcnMyClipboard#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#7)]  
+  
+ This example depends on the existence of the custom data format `specialFormat`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDataObject">
+      <MemberSignature Language="C#" Value="public void SetDataObject (System.Windows.Forms.DataObject data);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetDataObject(class System.Windows.Forms.DataObject data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Windows.Forms.DataObject" />
+      </Parameters>
+      <Docs>
+        <param name="data">
+          <see cref="T:System.Windows.Forms.DataObject" />. Data object to be written to the Clipboard. Required.</param>
+        <summary>Writes a <see cref="T:System.Windows.Forms.DataObject" /> to the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an advanced member; it does not show in IntelliSense unless you click the **All** tab.  
+  
+> [!IMPORTANT]
+>  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example writes the data object `dataChunk` to the Clipboard.  
+  
+ [!code-vb[VbVbcnMyClipboard#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#9)]  
+  
+ This example depends on the existence of the data object `dataChunk`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFileDropList">
+      <MemberSignature Language="C#" Value="public void SetFileDropList (System.Collections.Specialized.StringCollection filePaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetFileDropList(class System.Collections.Specialized.StringCollection filePaths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePaths" Type="System.Collections.Specialized.StringCollection" />
+      </Parameters>
+      <Docs>
+        <param name="filePaths">
+          <see cref="T:System.Collections.Specialized.StringCollection" />. List of file names. Required.</param>
+        <summary>Writes a collection of strings representing file paths to the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A file drop list is a collection of strings representing file names.  
+  
+> [!IMPORTANT]
+>  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example gets the collection of file names from **MyDocuments**, converts it to a file drop list, and writes it to the Clipboard.  
+  
+ [!code-vb[VbRefClipbd#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRefClipbd/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImage">
+      <MemberSignature Language="C#" Value="public void SetImage (System.Drawing.Image image);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetImage(class System.Drawing.Image image) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="System.Drawing.Image" />
+      </Parameters>
+      <Docs>
+        <param name="image">
+          <see cref="T:System.Drawing.Image" />. Image to be written. Required.</param>
+        <summary>Writes an image to the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example writes the image `coolPicture` to the Clipboard.  
+  
+ [!code-vb[VbVbcnMyClipboard#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#8)]  
+  
+ This example depends on the existence of the image `coolPicture`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetText">
+      <MemberSignature Language="C#" Value="public void SetText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">
+          <see langword="String" />. Text to be written. Required.</param>
+        <summary>Writes text to the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+  
+ Previous Clipboard formats are not preserved.  
+  
+> [!IMPORTANT]
+>  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example writes the string `This is a test string.` to the Clipboard.  
+  
+ [!code-vb[VbVbcnMyClipboard#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="text" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="text" /> is <see langword="Nothing" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetText">
+      <MemberSignature Language="C#" Value="public void SetText (string text, System.Windows.Forms.TextDataFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SetText(string text, valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String,System.Windows.Forms.TextDataFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
+      </Parameters>
+      <Docs>
+        <param name="text">
+          <see langword="String" />. Text to be written. Required.</param>
+        <param name="format">
+          <see cref="T:System.Windows.Forms.TextDataFormat" />. Format to be used when writing text. Default is <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" />. Required.</param>
+        <summary>Writes text to the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+  
+ Previous Clipboard formats are not preserved.  
+  
+> [!IMPORTANT]
+>  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|------------------|---------------|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example writes the string `This is a test string.` to the Clipboard.  
+  
+ [!code-vb[VbVbcnMyClipboard#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyClipboard/VB/Class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="text" /> is an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="text" /> is <see langword="Nothing" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">
+          <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

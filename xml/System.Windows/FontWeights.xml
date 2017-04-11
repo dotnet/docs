@@ -1,0 +1,439 @@
+<Type Name="FontWeights" FullName="System.Windows.FontWeights">
+  <TypeSignature Language="C#" Value="public static class FontWeights" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FontWeights extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontWeights" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of static predefined <see cref="T:System.Windows.FontWeight" /> values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A font weight describes the relative weight of a font, in terms of the lightness or heaviness of the strokes. Weight differences are generally differentiated by an increased stroke or thickness that is associated with a given character in a font, as compared to a "normal" character from that same font.  
+  
+ The <xref:System.Windows.FontWeights> values correspond to the `usWeightClass` definition in the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification. The `usWeightClass` represents an integer value between 1 and 999. Lower values indicate lighter weights; higher values indicate heavier weights.  
+  
+|Font weight|usWeightClass|  
+|-----------------|-------------------|  
+|<xref:System.Windows.FontWeights.Thin%2A>|100|  
+|<xref:System.Windows.FontWeights.ExtraLight%2A><br /><br /> <xref:System.Windows.FontWeights.UltraLight%2A>|200|  
+|<xref:System.Windows.FontWeights.Light%2A>|300|  
+|<xref:System.Windows.FontWeights.Normal%2A><br /><br /> <xref:System.Windows.FontWeights.Regular%2A>|400|  
+|<xref:System.Windows.FontWeights.Medium%2A>|500|  
+|<xref:System.Windows.FontWeights.DemiBold%2A><br /><br /> <xref:System.Windows.FontWeights.SemiBold%2A>|600|  
+|<xref:System.Windows.FontWeights.Bold%2A>|700|  
+|<xref:System.Windows.FontWeights.ExtraBold%2A><br /><br /> <xref:System.Windows.FontWeights.UltraBold%2A>|800|  
+|<xref:System.Windows.FontWeights.Black%2A><br /><br /> <xref:System.Windows.FontWeights.Heavy%2A>|900|  
+|<xref:System.Windows.FontWeights.ExtraBlack%2A><br /><br /> <xref:System.Windows.FontWeights.UltraBlack%2A>|950|  
+  
+ For more information about the [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] `usWeightClass` value, see the ["Font File Tables"](http://www.microsoft.com/typography/otspec/otff.htm) section of the [!INCLUDE[TLA2#tla_opentype](~/includes/tla2sharptla-opentype-md.md)] specification.  
+  
+   
+  
+## Examples  
+ In the following code example, the <xref:System.Windows.FontWeight> is set to "UltraBold".  
+  
+ [!code-xml[FontSnippets#FontSnippet12](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml#fontsnippet12)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Black">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight Black { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight Black" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Black" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Black" font weight.</summary>
+        <value>A value that represents a "Black" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.Black%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.Heavy%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bold">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight Bold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight Bold" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Bold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Bold" font weight.</summary>
+        <value>A value that represents a "Bold" font weight.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DemiBold">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight DemiBold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight DemiBold" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.DemiBold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Demi-bold" font weight.</summary>
+        <value>A value that represents a "Demi-bold" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.DemiBold%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.SemiBold%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtraBlack">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight ExtraBlack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight ExtraBlack" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.ExtraBlack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an "Extra-black" font weight.</summary>
+        <value>A value that represents an "Extra-black" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.FontWeights.ExtraBlack%2A> font weight is the heaviest font weight. <xref:System.Windows.FontWeights.ExtraBlack%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.UltraBlack%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtraBold">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight ExtraBold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight ExtraBold" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.ExtraBold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an "Extra-bold" font weight.</summary>
+        <value>A value that represents an "Extra-bold" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.ExtraBold%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.UltraBold%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtraLight">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight ExtraLight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight ExtraLight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.ExtraLight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an "Extra-light" font weight.</summary>
+        <value>A value that represents an "Extra-light" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.ExtraLight%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.UltraLight%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Heavy">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight Heavy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight Heavy" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Heavy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Heavy" font weight.</summary>
+        <value>A value that represents a "Heavy" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.Heavy%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.Black%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Light">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight Light { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight Light" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Light" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Light" font weight.</summary>
+        <value>A value that represents a "Light" font weight.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Medium">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight Medium { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight Medium" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Medium" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Medium" font weight.</summary>
+        <value>A value that represents a "Medium" font weight.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight Normal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight Normal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Normal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Normal" font weight.</summary>
+        <value>A value that represents a "Normal" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.Normal%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.Regular%2A>.  
+  
+   
+  
+## Examples  
+ An "Ultra-bold" font weight describes a heavier stroke than a normal weight.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Regular">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight Regular { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight Regular" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Regular" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Regular" font weight.</summary>
+        <value>A value that represents a "Regular" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.Regular%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.Normal%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SemiBold">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight SemiBold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight SemiBold" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.SemiBold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Semi-bold" font weight.</summary>
+        <value>A value that represents a "Semi-bold" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.SemiBold%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.DemiBold%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thin">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight Thin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight Thin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.Thin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a "Thin" font weight.</summary>
+        <value>A value that represents a "Thin" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.FontWeights.Thin%2A> font weight is the lightest font weight.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UltraBlack">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight UltraBlack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight UltraBlack" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.UltraBlack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an "Ultra-black" font weight.</summary>
+        <value>A value that represents an "Ultra-black" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.FontWeights.UltraBlack%2A> font weight is the heaviest font weight. <xref:System.Windows.FontWeights.UltraBlack%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.ExtraBlack%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UltraBold">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight UltraBold { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight UltraBold" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.UltraBold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an "Ultra-bold" font weight.</summary>
+        <value>A value that represents an "Ultra-bold" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.UltraBold%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.ExtraBold%2A>.  
+  
+   
+  
+## Examples  
+ An "Ultra-bold" font weight describes a heavier stroke than a normal weight.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UltraLight">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontWeight UltraLight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight UltraLight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontWeights.UltraLight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an "Ultra-light" font weight.</summary>
+        <value>A value that represents an "Ultra-light" font weight.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FontWeights.UltraLight%2A> is equivalent in font weight to <xref:System.Windows.FontWeights.ExtraLight%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

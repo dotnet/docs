@@ -1,0 +1,73 @@
+<Type Name="ConnectionPointType" FullName="System.Activities.Core.Presentation.ConnectionPointType">
+  <TypeSignature Language="C#" Value="public enum ConnectionPointType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConnectionPointType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.ConnectionPointType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of connection point.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ConnectionPointType#0](WFD_ConnectionPointType#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Core.Presentation.ConnectionPointType Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Core.Presentation.ConnectionPointType.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Core.Presentation.ConnectionPointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A default connection point.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Incoming">
+      <MemberSignature Language="C#" Value="Incoming" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Core.Presentation.ConnectionPointType Incoming = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Core.Presentation.ConnectionPointType.Incoming" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Core.Presentation.ConnectionPointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An incoming connection point.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Outgoing">
+      <MemberSignature Language="C#" Value="Outgoing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Core.Presentation.ConnectionPointType Outgoing = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Core.Presentation.ConnectionPointType.Outgoing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Core.Presentation.ConnectionPointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An outgoing connection point.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

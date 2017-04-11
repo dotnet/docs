@@ -1,0 +1,26 @@
+<Type Name="IForwardIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IForwardIterator&lt;TValue&gt;">
+  <TypeSignature Language="C#" Value="public interface IForwardIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;, Microsoft.VisualC.StlClr.Generic.IOutputIterator&lt;TValue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IForwardIterator`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt;, class Microsoft.VisualC.StlClr.Generic.IOutputIterator`1&lt;!TValue&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IForwardIterator`1" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IOutputIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">[!INCLUDE[cpp_iter_arg](~/includes/cpp-iter-arg-md.md)]</typeparam>
+    <summary>Interface for an iterator that can access elements in a container only in the forward direction by using the increment operator. The element that the iterator points to can be both written to and read from any number of times. Forward iterators can be used anywhere an input or output iterator is required.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

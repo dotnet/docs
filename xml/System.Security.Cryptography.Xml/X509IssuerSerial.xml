@@ -1,0 +1,125 @@
+<Type Name="X509IssuerSerial" FullName="System.Security.Cryptography.Xml.X509IssuerSerial">
+  <TypeSignature Language="C#" Value="public struct X509IssuerSerial" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit X509IssuerSerial extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.X509IssuerSerial" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the &lt;<see langword="X509IssuerSerial" />&gt; element of an XML digital signature.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure represents the `<X509IssuerSerial`> element of an XML digital signature defined by the XML digital signature specification. The `<X509IssuerSerial`> element is the subelement of the <`X509Data`> element that contains an X.509v3 certificate issuer's distinguished name and serial number pair. The distinguished name and serial number pair help identify a specific X.509v3 certificate.  
+  
+ The issuer of an X.509 certificate is the name of the certification authority that issued the certificate. Certification authorities assign each certificate they issue a unique serial number for identification purposes.  
+  
+ Use the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure to specify a certificate issuer's distinguished name and serial number pair when using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class.  You can add an <xref:System.Security.Cryptography.Xml.X509IssuerSerial> structure to the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data> class using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.IssuerSerials%2A> property.  Alternatively, you can add string values that represent the X.509 certificate issuer's distinguished name and serial number pair using the <xref:System.Security.Cryptography.Xml.KeyInfoX509Data.AddIssuerSerial%2A> method.  
+  
+ For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to sign and verify an XML document using an X.509 certificate from a certificate store.  This example saves key information to the signed document using the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> object.  
+  
+ [!code-csharp[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/cs/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IssuerName">
+      <MemberSignature Language="C#" Value="public string IssuerName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IssuerName" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an X.509 certificate issuer's distinguished name.</summary>
+        <value>An X.509 certificate issuer's distinguished name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.X509IssuerSerial.IssuerName%2A> property represents an X.509 certificate issuer's distinguished name specified in the `<X509IssuerSerial`> element.  
+  
+ For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to sign and verify an XML document using an X.509 certificate from a certificate store.  This example saves key information to the signed document using the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> object.  
+  
+ [!code-csharp[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/cs/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerialNumber">
+      <MemberSignature Language="C#" Value="public string SerialNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SerialNumber" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an X.509 certificate issuer's serial number.</summary>
+        <value>An X.509 certificate issuer's serial number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.X509IssuerSerial.SerialNumber%2A> property represents an X.509 certificate issuer's serial number specified in the `<X509IssuerSerial`> element.  
+  
+ For more information about the `<X509IssuerSerial`> element, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to sign and verify an XML document using an X.509 certificate from a certificate store.  This example saves key information to the signed document using the <xref:System.Security.Cryptography.Xml.X509IssuerSerial> object.  
+  
+ [!code-csharp[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/cs/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.Xml.X509IssuerSerial#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.X509IssuerSerial/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

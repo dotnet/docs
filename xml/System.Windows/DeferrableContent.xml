@@ -1,0 +1,32 @@
+<Type Name="DeferrableContent" FullName="System.Windows.DeferrableContent">
+  <TypeSignature Language="C#" Value="public class DeferrableContent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeferrableContent extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DeferrableContent" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.DeferrableContentConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents deferrable content that is held within BAML as a stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Deferrable content is precompiled or processed XAML that has not yet been parsed. Deferrable content is exposed as an object for advanced scenarios.  
+  
+ <xref:System.Windows.DeferrableContent> has an internal constructor. There is an instantiation  pathway through <xref:System.Windows.DeferrableContentConverter>, where you pass in a stream. You would only use <xref:System.Windows.DeferrableContent> if you are using <xref:System.Windows.Baml2006.Baml2006Reader> for stream processing. This is an advanced scenario where you may have to implement many of the supporting XAML services yourself.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,359 @@
+<Type Name="DocumentPage" FullName="System.Windows.Documents.DocumentPage">
+  <TypeSignature Language="C#" Value="public class DocumentPage : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DocumentPage extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentPage" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a document page produced by a paginator.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DocumentPage (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPage.#ctor(System.Windows.Media.Visual)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The visual representation of the page.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentPage" /> class by using the specified <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DocumentPage (System.Windows.Media.Visual visual, System.Windows.Size pageSize, System.Windows.Rect bleedBox, System.Windows.Rect contentBox);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visual, valuetype System.Windows.Size pageSize, valuetype System.Windows.Rect bleedBox, valuetype System.Windows.Rect contentBox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPage.#ctor(System.Windows.Media.Visual,System.Windows.Size,System.Windows.Rect,System.Windows.Rect)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+        <Parameter Name="pageSize" Type="System.Windows.Size" />
+        <Parameter Name="bleedBox" Type="System.Windows.Rect" />
+        <Parameter Name="contentBox" Type="System.Windows.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The visual representation of the page.</param>
+        <param name="pageSize">The size of the page, including margins, as it will be after any cropping.</param>
+        <param name="bleedBox">The area for print production-related bleeds, registration marks, and crop marks that may appear on the physical sheet outside the logical page boundaries.</param>
+        <param name="contentBox">The area of the page within the margins.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.DocumentPage" /> class by using the specified <see cref="T:System.Windows.Media.Visual" /> and box sizes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `bleedBox` dimensions may be greater than the `pageSize` dimensions when it is expected that the physical sheets will be cropped to their final page size.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BleedBox">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Rect BleedBox { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect BleedBox" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentPage.BleedBox" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the area for print production-related bleeds, registration marks, and crop marks that may appear on the physical sheet outside the logical page boundaries.</summary>
+        <value>A <see cref="T:System.Windows.Rect" /> representing the size and location of the bleed box area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The bleed box will extend outside the page when it is expected that the physical sheets will be cropped to their final page size.  
+  
+ Use the protected <xref:System.Windows.Documents.DocumentPage.SetBleedBox%2A> method to set this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentBox">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Rect ContentBox { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect ContentBox" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentPage.ContentBox" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the area of the page within the margins.</summary>
+        <value>A <see cref="T:System.Windows.Rect" /> representing the area of the page, not including the margins.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the protected <xref:System.Windows.Documents.DocumentPage.SetContentBox%2A> method to set this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPage.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Windows.Documents.DocumentPage" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Windows.Documents.DocumentPage.Dispose%2A> when you are finished using the <xref:System.Windows.Documents.DocumentPage>. The <xref:System.Windows.Documents.DocumentPage.Dispose%2A> method leaves the <xref:System.Windows.Documents.DocumentPage> in an unusable state. After calling <xref:System.Windows.Documents.DocumentPage.Dispose%2A> you must release all references to the <xref:System.Windows.Documents.DocumentPage> so the garbage collector can reclaim the memory that the <xref:System.Windows.Documents.DocumentPage> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Windows.Documents.DocumentPage.Dispose%2A> before you release your last reference to the <xref:System.Windows.Documents.DocumentPage>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Documents.DocumentPage> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Missing">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Documents.DocumentPage Missing;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Documents.DocumentPage Missing" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.DocumentPage.Missing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.DocumentPage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a missing page. This property is static and read only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Return the value <xref:System.Windows.Documents.DocumentPage.Missing?displayProperty=fullName> when calling code requests a page that does not exist; for example, page 2 of a one-page document.  
+  
+ There is always just one missing page object. Its <xref:System.Windows.Documents.DocumentPage.Visual%2A> property is `null`. Its <xref:System.Windows.Documents.DocumentPage.Size%2A>, <xref:System.Windows.Documents.DocumentPage.BleedBox%2A>, and <xref:System.Windows.Documents.DocumentPage.ContentBox%2A> properties are all set to special "empty" values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPageDestroyed">
+      <MemberSignature Language="C#" Value="protected void OnPageDestroyed (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnPageDestroyed(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPage.OnPageDestroyed(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Documents.DocumentPage.PageDestroyed" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageDestroyed">
+      <MemberSignature Language="C#" Value="public event EventHandler PageDestroyed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PageDestroyed" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Documents.DocumentPage.PageDestroyed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Documents.DocumentPage.Visual" /> that depicts the <see cref="T:System.Windows.Documents.DocumentPage" /> is destroyed and can no longer be used for display.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBleedBox">
+      <MemberSignature Language="C#" Value="protected void SetBleedBox (System.Windows.Rect bleedBox);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetBleedBox(valuetype System.Windows.Rect bleedBox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPage.SetBleedBox(System.Windows.Rect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bleedBox" Type="System.Windows.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="bleedBox">An object that specifies the size and location of a rectangle.</param>
+        <summary>Sets the dimensions and location of the <see cref="P:System.Windows.Documents.DocumentPage.BleedBox" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The bleed box includes material, such as crop marks, that are not necessarily included in the final, post-cropping, physical page. For this reason, the <xref:System.Windows.Rect.X%2A> and <xref:System.Windows.Rect.Y%2A> coordinates of the `bleedBox` parameter can be negative numbers, because they are specified as relative to the upper left corner of the page. For the same reason, the <xref:System.Windows.Rect.Height%2A> and <xref:System.Windows.Rect.Width%2A> of `bleedBox` can be greater than the height and width of the page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContentBox">
+      <MemberSignature Language="C#" Value="protected void SetContentBox (System.Windows.Rect contentBox);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetContentBox(valuetype System.Windows.Rect contentBox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPage.SetContentBox(System.Windows.Rect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentBox" Type="System.Windows.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="contentBox">An object that specifies the size and location of a rectangle.</param>
+        <summary>Sets the dimension and location of the <see cref="P:System.Windows.Documents.DocumentPage.ContentBox" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSize">
+      <MemberSignature Language="C#" Value="protected void SetSize (System.Windows.Size size);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetSize(valuetype System.Windows.Size size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPage.SetSize(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="size">The size of the page.</param>
+        <summary>Sets the <see cref="P:System.Windows.Documents.DocumentPage.Size" /> of the physical page as it will be after any cropping.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVisual">
+      <MemberSignature Language="C#" Value="protected void SetVisual (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetVisual(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPage.SetVisual(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The visual representation of the page.</param>
+        <summary>Sets the <see cref="P:System.Windows.Documents.DocumentPage.Visual" /> that depicts the page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Size Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size Size" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentPage.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the actual size of a page as it will be following any cropping.</summary>
+        <value>A <see cref="T:System.Windows.Size" /> representing the height and width of the page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the post-cropping size of the physical page. Hence, it is not necessarily the physical size of the sheets before they are cropped.  
+  
+ Use the protected <xref:System.Windows.Documents.DocumentPage.SetSize%2A> method to set this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visual">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Media.Visual Visual { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual Visual" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentPage.Visual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the visual representation of the page.</summary>
+        <value>A <see cref="T:System.Windows.Media.Visual" /> depicting the page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the protected <xref:System.Windows.Documents.DocumentPage.SetVisual%2A> method to set this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

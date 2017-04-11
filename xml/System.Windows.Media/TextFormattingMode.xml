@@ -1,0 +1,50 @@
+<Type Name="TextFormattingMode" FullName="System.Windows.Media.TextFormattingMode">
+  <TypeSignature Language="C#" Value="public enum TextFormattingMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextFormattingMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormattingMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the formatting methods supported by the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Display">
+      <MemberSignature Language="C#" Value="Display" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormattingMode Display = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormattingMode.Display" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormattingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> lays out text by using GDI-compatible font metrics.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ideal">
+      <MemberSignature Language="C#" Value="Ideal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormattingMode Ideal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormattingMode.Ideal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormattingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> lays out text by using ideal font metrics.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,228 @@
+<Type Name="ConnectionPoint" FullName="System.Workflow.ComponentModel.Design.ConnectionPoint">
+  <TypeSignature Language="C#" Value="public class ConnectionPoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionPoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ConnectionPoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a connection point that is displayed on the outer edges of an activity designer on a workflow design surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A connection point appears as a small square on the edge of an activity designer surface. It is used as a point where a Connector can originate on the activity designer to connect it with another activity designer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionPoint (System.Workflow.ComponentModel.Design.ActivityDesigner associatedDesigner, System.Workflow.ComponentModel.Design.DesignerEdges designerEdge, int connectionIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.ActivityDesigner associatedDesigner, valuetype System.Workflow.ComponentModel.Design.DesignerEdges designerEdge, int32 connectionIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectionPoint.#ctor(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Workflow.ComponentModel.Design.DesignerEdges,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="associatedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+        <Parameter Name="designerEdge" Type="System.Workflow.ComponentModel.Design.DesignerEdges" />
+        <Parameter Name="connectionIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="associatedDesigner">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to which the connection point belongs.</param>
+        <param name="designerEdge">The <see cref="T:System.Workflow.ComponentModel.Design.DesignerEdges" /> enumeration value that specifies where on the activity designer the connection point is located.</param>
+        <param name="connectionIndex">An index location of the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> class by using the specified <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />, <see cref="T:System.Workflow.ComponentModel.Design.DesignerEdges" /> enumeration value, and an integer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionIndex" /> is less than zero.  
+  
+ -- or --  
+  
+ <paramref name="connectionIndex" /> is greater than or equal to the number of connection points on <paramref name="associatedDesigner" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="associatedDesigner" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AssociatedDesigner">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.ActivityDesigner AssociatedDesigner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.ActivityDesigner AssociatedDesigner" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectionPoint.AssociatedDesigner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesigner</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the activity designer to which the connection point belongs.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> to which the connection point belongs.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectionPoint.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounding rectangle for the connection point.</summary>
+        <value>The <see cref="T:System.Drawing.Rectangle" /> that bounds the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionEdge">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.DesignerEdges ConnectionEdge { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.Design.DesignerEdges ConnectionEdge" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectionPoint.ConnectionEdge" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.DesignerEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the designer edge on which the connection point appears.</summary>
+        <value>A <see cref="T:System.Workflow.ComponentModel.Design.DesignerEdges" /> that specifies the activity designer edge on which the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> appears.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionIndex">
+      <MemberSignature Language="C#" Value="public int ConnectionIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectionPoint.ConnectionIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the connection index for the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" />.</summary>
+        <value>An integer that represents the connection index for the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An activity designer uses <xref:System.Workflow.ComponentModel.Design.ConnectionPoint.ConnectionIndex%2A> to identify a <xref:System.Workflow.ComponentModel.Design.ConnectionPoint> in the read-only <xref:System.Drawing.Point> collection returned by <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.GetConnections%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectionPoint.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" />.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> to indicate that the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> and <paramref name="obj" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectionPoint.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash code for the current <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" />.</summary>
+        <returns>The hash code generated by the <see cref="P:System.Workflow.ComponentModel.Design.ConnectionPoint.ConnectionIndex" /> integer or the designer available through <see cref="P:System.Workflow.ComponentModel.Design.ConnectionPoint.AssociatedDesigner" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Point Location { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Location" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectionPoint.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a point that represents the logical location of the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> on the associated <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
+        <value>The <see cref="T:System.Drawing.Point" /> that represents the logical location of the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> on the associated <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaint">
+      <MemberSignature Language="C#" Value="public void OnPaint (System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e, bool drawHighlighted);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnPaint(class System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e, bool drawHighlighted) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectionPoint.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
+        <Parameter Name="drawHighlighted" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> that contains the data</param>
+        <param name="drawHighlighted">
+          <see langword="true" /> to draw a highlighted connection point; otherwise, <see langword="false" />.</param>
+        <summary>Performs all tasks required to render the <see cref="T:System.Workflow.ComponentModel.Design.ConnectionPoint" /> on the activity designer surface.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

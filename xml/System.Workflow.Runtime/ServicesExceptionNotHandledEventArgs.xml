@@ -1,0 +1,78 @@
+<Type Name="ServicesExceptionNotHandledEventArgs" FullName="System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ServicesExceptionNotHandledEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServicesExceptionNotHandledEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Workflow.Runtime.WorkflowRuntime.ServicesExceptionNotHandled" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ When a service that derives from the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService> class encounters an exception that it cannot handle, it can call the <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.RaiseServicesExceptionNotHandledEvent%2A> method to tell the workflow runtime engine to raise the <xref:System.Workflow.Runtime.WorkflowRuntime.ServicesExceptionNotHandled?displayProperty=fullName> event. The service passes the <xref:System.Guid> of the workflow instance and the <xref:System.Exception> associated with this event in its call to <xref:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.RaiseServicesExceptionNotHandledEvent%2A>. The workflow runtime engine encapsulates these parameters in a <xref:System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs> and raises the <xref:System.Workflow.Runtime.WorkflowRuntime.ServicesExceptionNotHandled?displayProperty=fullName> event. From inside of a subscriber to the <xref:System.Workflow.Runtime.WorkflowRuntime.ServicesExceptionNotHandled?displayProperty=fullName> event, you can read the <xref:System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs.WorkflowInstanceId%2A> property and the <xref:System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs.Exception%2A> property to get the information associated with a particular <xref:System.Workflow.Runtime.WorkflowRuntime.ServicesExceptionNotHandled?displayProperty=fullName> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that could not be handled by the service.</summary>
+        <value>A <see cref="T:System.Exception" /> that represents the exception that could not be handled by the service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowInstanceId">
+      <MemberSignature Language="C#" Value="public Guid WorkflowInstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid WorkflowInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs.WorkflowInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Guid" /> of the workflow instance associated with the unhandled exception.</summary>
+        <value>The <see cref="T:System.Guid" /> of the workflow instance associated with the unhandled exception.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs.WorkflowInstanceId%2A> is equivalent to the <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A?displayProperty=fullName> of the workflow instance associated with the <xref:System.Workflow.Runtime.WorkflowRuntime.ServicesExceptionNotHandled> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,137 @@
+<Type Name="SnapLineType" FullName="System.Windows.Forms.Design.Behavior.SnapLineType">
+  <TypeSignature Language="C#" Value="public enum SnapLineType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SnapLineType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.SnapLineType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the orientation and relative location of a snapline.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.Behavior.SnapLineType> enumeration can be specified when creating an instance of the <xref:System.Windows.Forms.Design.Behavior.SnapLine> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Baseline">
+      <MemberSignature Language="C#" Value="Baseline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLineType Baseline = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLineType.Baseline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.Behavior.SnapLineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A horizontal snapline typically associated with a primary internal feature of a control; for example, the base of the text string in a <see cref="T:System.Windows.Forms.Label" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLineType Bottom = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLineType.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.Behavior.SnapLineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A horizontal snapline typically aligned to the bottom edge of a control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLineType Horizontal = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLineType.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.Behavior.SnapLineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A horizontal snapline typically not associated with an edge of a control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLineType Left = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLineType.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.Behavior.SnapLineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A vertical snapline typically aligned to the left edge of a control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLineType Right = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLineType.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.Behavior.SnapLineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A vertical snapline typically aligned to the right edge of a control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLineType Top = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLineType.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.Behavior.SnapLineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A horizontal snapline typically aligned to the top edge of a control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLineType Vertical = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLineType.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.Behavior.SnapLineType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A vertical snapline typically not associated with an edge of a control.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,39 @@
+<Type Name="ArrayLiteral" FullName="Microsoft.JScript.ArrayLiteral">
+  <TypeSignature Language="C#" Value="public sealed class ArrayLiteral : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ArrayLiteral extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ArrayLiteral" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class is used by the JScript parser to represent an array literal.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayLiteral (Microsoft.JScript.Context context, Microsoft.JScript.ASTList elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.Context context, class Microsoft.JScript.ASTList elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayLiteral.#ctor(Microsoft.JScript.Context,Microsoft.JScript.ASTList)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.JScript.Context" />
+        <Parameter Name="elements" Type="Microsoft.JScript.ASTList" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current document context.</param>
+        <param name="elements">The elements of the array.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ArrayLiteral" /> class, specifying the context and elements.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

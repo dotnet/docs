@@ -1,0 +1,193 @@
+<Type Name="KeyPressEventArgs" FullName="System.Windows.Forms.KeyPressEventArgs">
+  <TypeSignature Language="C#" Value="public class KeyPressEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyPressEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyPressEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.KeyPressEventArgs> specifies the character that is composed when the user presses a key. For example, when the user presses SHIFT + K, the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property returns an uppercase K.  
+  
+ A <xref:System.Windows.Forms.Control.KeyPress> event occurs when the user presses a key. Two events that are closely related to the <xref:System.Windows.Forms.Control.KeyPress> event are <xref:System.Windows.Forms.Control.KeyUp> and <xref:System.Windows.Forms.Control.KeyDown>. The <xref:System.Windows.Forms.Control.KeyDown> event precedes each <xref:System.Windows.Forms.Control.KeyPress> event when the user presses a key, and a <xref:System.Windows.Forms.Control.KeyUp> event occurs when the user releases a key. When the user holds down a key, duplicate <xref:System.Windows.Forms.Control.KeyDown> and <xref:System.Windows.Forms.Control.KeyPress> events occur each time the character repeats. One <xref:System.Windows.Forms.Control.KeyUp> event is generated upon release.  
+  
+ With each <xref:System.Windows.Forms.Control.KeyPress> event, a <xref:System.Windows.Forms.KeyPressEventArgs> is passed. A <xref:System.Windows.Forms.KeyEventArgs> is passed with each <xref:System.Windows.Forms.Control.KeyDown> and <xref:System.Windows.Forms.Control.KeyUp> event. A <xref:System.Windows.Forms.KeyEventArgs> specifies whether any modifier keys (CTRL, SHIFT, or ALT) were pressed along with another key. (This modifier information can also be obtained through the <xref:System.Windows.Forms.Control.ModifierKeys%2A> property of the <xref:System.Windows.Forms.Control> class.)  
+  
+ Set <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> to `true` to cancel the `KeyPress` event. This keeps the control from processing the key press.  
+  
+> [!NOTE]
+>  Some controls will process certain key strokes on <xref:System.Windows.Forms.Control.KeyDown>. For example, <xref:System.Windows.Forms.RichTextBox> processes the Enter key before <xref:System.Windows.Forms.Control.KeyPress> is called. In such cases, you cannot cancel the <xref:System.Windows.Forms.Control.KeyPress> event, and must cancel the key stroke from <xref:System.Windows.Forms.Control.KeyDown> instead.  
+  
+ For information about the event model, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following example illustrates using the <xref:System.Windows.Forms.KeyPressEventArgs> to count keys as they are pressed and to display the results after each key press. <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> is then set to true to keep the operating system from further processing the key. The example assumes a form with a <xref:System.Windows.Forms.TextBox> placed on it.  
+  
+ [!code-cpp[Classic KeyPressEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic KeyPressEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic KeyPressEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic KeyPressEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic KeyPressEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic KeyPressEventArgs Example/VB/source.vb#1)]  
+  
+ You must create a new instance of this class. You must also set the event handler. You can do this in the constructor for your class.  
+  
+ [!code-cpp[Classic KeyPressEventArgs Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic KeyPressEventArgs Example/CPP/source2.cpp#2)]
+ [!code-csharp[Classic KeyPressEventArgs Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic KeyPressEventArgs Example/CS/source2.cs#2)]
+ [!code-vb[Classic KeyPressEventArgs Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic KeyPressEventArgs Example/VB/source2.vb#2)]  
+  
+ When the specified event is raised in the control, the attached method is called and the application can execute code in response to the event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyPressEventArgs (char keyChar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char keyChar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.KeyPressEventArgs.#ctor(System.Char)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyChar" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="keyChar">The ASCII character corresponding to the key the user pressed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.Control.ModifierKeys%2A?displayProperty=fullName> property to get the current state of the modifier keys.  
+  
+   
+  
+## Examples  
+ The following example displays a message box that shows the current state of the SHIFT key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handled">
+      <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyPressEventArgs.Handled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event was handled.</summary>
+        <value>
+          <see langword="true" /> if the event is handled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the event is not handled, it will be sent to the operating system for default processing. Set <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> to `true` to cancel the `KeyPress` event.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Forms.TextBox> control. The `keypressed` method uses the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property to check whether the ENTER key is pressed. If the ENTER key is pressed, the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> property is set to `true`, which indicates the event is handled.  
+  
+ [!code-cpp[KeyPressEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/KeyPressEventArgs/CPP/form1.cpp#1)]
+ [!code-csharp[KeyPressEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/KeyPressEventArgs/CS/form1.cs#1)]
+ [!code-vb[KeyPressEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/KeyPressEventArgs/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyChar">
+      <MemberSignature Language="C#" Value="public char KeyChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char KeyChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyPressEventArgs.KeyChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character corresponding to the key pressed.</summary>
+        <value>The ASCII character that is composed. For example, if the user presses SHIFT + K, this property returns an uppercase K.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property to sample keystrokes at run time and to modify keystrokes under special run-time circumstances. For example, you can use <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> to disable non-numeric keypresses when the user enters a ZIP code, change all alphabetical keypresses to uppercase in a data entry field, or monitor the keyboard or other key input device for specific key combinations.  
+  
+ You can get or set the following keys:  
+  
+-   a-z, A-Z.  
+  
+-   CTRL.  
+  
+-   Punctuation marks.  
+  
+-   Number keys, both across the top of the keyboard and on the numeric keypad.  
+  
+-   ENTER.  
+  
+ You cannot get or set the following keys:  
+  
+-   The TAB key.  
+  
+-   INSERT and DELETE.  
+  
+-   HOME.  
+  
+-   END.  
+  
+-   PAGE UP and PAGE DOWN.  
+  
+-   F1-F2.  
+  
+-   ALT.  
+  
+-   Arrow keys.  
+  
+> [!NOTE]
+>  For information about how to detect any of the non-character keys mentioned above, see the <xref:System.Windows.Forms.KeyEventArgs> class.  
+  
+-  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Forms.TextBox> control. The `keypressed` method uses the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property to check whether the ENTER key pressed. If the ENTER key is pressed, the <xref:System.Windows.Forms.KeyPressEventArgs.Handled%2A> property is set to `true`, which indicates the event is handled.  
+  
+ [!code-cpp[KeyPressEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/KeyPressEventArgs/CPP/form1.cpp#1)]
+ [!code-csharp[KeyPressEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/KeyPressEventArgs/CS/form1.cs#1)]
+ [!code-vb[KeyPressEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/KeyPressEventArgs/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

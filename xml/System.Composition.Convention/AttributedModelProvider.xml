@@ -1,0 +1,82 @@
+<Type Name="AttributedModelProvider" FullName="System.Composition.Convention.AttributedModelProvider">
+  <TypeSignature Language="C#" Value="public abstract class AttributedModelProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AttributedModelProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Convention.AttributedModelProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.AttributedModel</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AttributedModelProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.AttributedModelProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.AttributedModel</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomAttributes">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;Attribute&gt; GetCustomAttributes (Type reflectedType, System.Reflection.MemberInfo member);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; GetCustomAttributes(class System.Type reflectedType, class System.Reflection.MemberInfo member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.AttributedModelProvider.GetCustomAttributes(System.Type,System.Reflection.MemberInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.AttributedModel</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reflectedType" Type="System.Type" />
+        <Parameter Name="member" Type="System.Reflection.MemberInfo" />
+      </Parameters>
+      <Docs>
+        <param name="reflectedType">To be added.</param>
+        <param name="member">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomAttributes">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;Attribute&gt; GetCustomAttributes (Type reflectedType, System.Reflection.ParameterInfo parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; GetCustomAttributes(class System.Type reflectedType, class System.Reflection.ParameterInfo parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.AttributedModelProvider.GetCustomAttributes(System.Type,System.Reflection.ParameterInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.AttributedModel</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reflectedType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Reflection.ParameterInfo" />
+      </Parameters>
+      <Docs>
+        <param name="reflectedType">To be added.</param>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

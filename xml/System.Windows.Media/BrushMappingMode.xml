@@ -1,0 +1,57 @@
+<Type Name="BrushMappingMode" FullName="System.Windows.Media.BrushMappingMode">
+  <TypeSignature Language="C#" Value="public enum BrushMappingMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BrushMappingMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.BrushMappingMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the coordinate system used by a <see cref="T:System.Windows.Media.Brush" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the bounding box for the RelativeToBoundingBox value depends on the property with which this enumeration is used.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Absolute">
+      <MemberSignature Language="C#" Value="Absolute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BrushMappingMode Absolute = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.BrushMappingMode.Absolute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.BrushMappingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The coordinate system is not relative to a bounding box. Values are interpreted directly in local space.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeToBoundingBox">
+      <MemberSignature Language="C#" Value="RelativeToBoundingBox" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BrushMappingMode RelativeToBoundingBox = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.BrushMappingMode.RelativeToBoundingBox" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.BrushMappingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The coordinate system is relative to a bounding box: 0 indicates 0 percent of the bounding box, and 1 indicates 100 percent of the bounding box. For example, (0.5, 0.5) describes a point in the middle of the bounding box, and (1, 1) describes a point at the bottom right of the bounding box.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

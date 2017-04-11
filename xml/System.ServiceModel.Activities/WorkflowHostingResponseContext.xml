@@ -1,0 +1,51 @@
+<Type Name="WorkflowHostingResponseContext" FullName="System.ServiceModel.Activities.WorkflowHostingResponseContext">
+  <TypeSignature Language="C#" Value="public sealed class WorkflowHostingResponseContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowHostingResponseContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowHostingResponseContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class is used in conjunction with the <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" /> class.  It is used for sending the response for a request/reply contract supported by a <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" /> implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example illustrates how a <xref:System.ServiceModel.Activities.WorkflowHostingResponseContext> is provided to a workflow hosting endpoint.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CreationEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/creationendpoint/cs/creationendpoint.cs#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SendResponse">
+      <MemberSignature Language="C#" Value="public void SendResponse (object returnValue, object[] outputs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendResponse(object returnValue, object[] outputs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingResponseContext.SendResponse(System.Object,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="returnValue" Type="System.Object" />
+        <Parameter Name="outputs" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="returnValue">The return value of the operation.</param>
+        <param name="outputs">The out arguments of the operation.</param>
+        <summary>Sends response to a message sent to the <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

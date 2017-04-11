@@ -1,0 +1,1404 @@
+<Type Name="TemplateControl" FullName="System.Web.UI.TemplateControl">
+  <TypeSignature Language="C#" Value="public abstract class TemplateControl : System.Web.UI.Control, System.Web.UI.IFilterResolutionService, System.Web.UI.INamingContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract TemplateControl extends System.Web.UI.Control implements class System.Web.UI.IFilterResolutionService, class System.Web.UI.INamingContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Control</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IFilterResolutionService</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the <see cref="T:System.Web.UI.Page" /> class and the <see cref="T:System.Web.UI.UserControl" /> class with a base set of functionality.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl> class is an abstract class that provides common properties and methods for the <xref:System.Web.UI.Page> class and the <xref:System.Web.UI.UserControl> class. A new instance of the <xref:System.Web.UI.TemplateControl> is not created directly.  
+  
+ The <xref:System.Web.UI.TemplateControl> class defines methods supporting declarative data-binding expressions:  
+  
+-   Use the <xref:System.Web.UI.TemplateControl.Eval%2A> method for data-binding expression involving data sources, such as simple properties or expressions.  
+  
+-   Use the <xref:System.Web.UI.TemplateControl.XPath%2A> method for parsing and evaluating an XPath data-binding expression.  
+  
+-   Use the <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method for data-binding against an expression containing an XPath select statement. The result is a node collection that implements the <xref:System.Collections.IEnumerable> interface.  
+  
+ For more information on data-binding expression, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca) and [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to derive a control named `MyControl` from the <xref:System.Web.UI.TemplateControl> class and override the <xref:System.Web.UI.TemplateControl.Construct%2A> method.  When `MyControl` is initialized, the overridden <xref:System.Web.UI.TemplateControl.Construct%2A> method is called.  
+  
+ [!code-csharp[TemplateControl_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/tempcontrol_samples1.ascx.cs#1)]
+ [!code-vb[TemplateControl_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.ascx.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TemplateControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TemplateControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.%23ctor%2A> constructor is not called directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbortTransaction">
+      <MemberSignature Language="C#" Value="public event EventHandler AbortTransaction;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AbortTransaction" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.TemplateControl.AbortTransaction" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a user ends a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to register a custom event handler for the <xref:System.Web.UI.TemplateControl.AbortTransaction> event. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
+  
+ [!code-csharp[TemplateControl_OnCommitTransaction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#1)]
+ [!code-vb[TemplateControl_OnCommitTransaction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppRelativeVirtualPath">
+      <MemberSignature Language="C#" Value="public string AppRelativeVirtualPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppRelativeVirtualPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateControl.AppRelativeVirtualPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the application-relative, virtual directory path to the file from which the control is parsed and compiled.</summary>
+        <value>A string representing the path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the file that defines a <xref:System.Web.UI.TemplateControl> control resides in a directory other than that of the page processing the request, use the <xref:System.Web.UI.TemplateControl.AppRelativeVirtualPath%2A> property to return the application-relative, virtual path to the <xref:System.Web.UI.TemplateControl>.  
+  
+ The <xref:System.Web.UI.Control.AppRelativeTemplateSourceDirectory%2A> property is set based on the virtual path that is set in the <xref:System.Web.UI.TemplateControl.AppRelativeVirtualPath%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The path that is set is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The path that is set is not rooted.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoHandlers">
+      <MemberSignature Language="C#" Value="protected virtual int AutoHandlers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AutoHandlers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateControl.AutoHandlers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this property is not recommended because it is no longer useful. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Web.UI.TemplateControl.AutoHandlers" /> property has been deprecated in ASP.NET NET 2.0. It is used by generated classes and is not intended for use within your code.</summary>
+        <value>Always 0.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommitTransaction">
+      <MemberSignature Language="C#" Value="public event EventHandler CommitTransaction;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CommitTransaction" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.TemplateControl.CommitTransaction" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a transaction completes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to register a custom event handler for the <xref:System.Web.UI.TemplateControl.CommitTransaction> event. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
+  
+ [!code-csharp[TemplateControl_OnCommitTransaction#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#2)]
+ [!code-vb[TemplateControl_OnCommitTransaction#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Construct">
+      <MemberSignature Language="C#" Value="protected virtual void Construct ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Construct() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.Construct" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs design-time logic.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.Construct%2A> method allows design-time code execution of the <xref:System.Web.UI.Page> and <xref:System.Web.UI.UserControl> controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.TemplateControl.Construct%2A> method of a custom control that is derived from the <xref:System.Web.UI.TemplateControl> class.  
+  
+ For the full definition of the `MyControl` class, see <xref:System.Web.UI.TemplateControl>.  
+  
+ [!code-csharp[TemplateControl_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/tempcontrol_samples1.ascx.cs#2)]
+ [!code-vb[TemplateControl_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.ascx.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResourceBasedLiteralControl">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.LiteralControl CreateResourceBasedLiteralControl (int offset, int size, bool fAsciiOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.UI.LiteralControl CreateResourceBasedLiteralControl(int32 offset, int32 size, bool fAsciiOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl(System.Int32,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.LiteralControl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="fAsciiOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="offset">The offset of the start of the string in the resource.</param>
+        <param name="size">The size of the string in bytes.</param>
+        <param name="fAsciiOnly">A Boolean value indicating if the string in the resource contains only 7-bit ASCII characters.</param>
+        <summary>Accesses literal strings stored in a resource. The <see cref="M:System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl(System.Int32,System.Int32,System.Boolean)" /> method is not intended for use from within your code.</summary>
+        <returns>A <see cref="T:System.Web.UI.LiteralControl" /> representing a literal string in a resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl%2A> method is used to access literal strings that are stored in a resource and is not intended for use from within your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableTheming">
+      <MemberSignature Language="C#" Value="public override bool EnableTheming { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateControl.EnableTheming" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value indicating whether themes apply to the control that is derived from the <see cref="T:System.Web.UI.TemplateControl" /> class.</summary>
+        <value>
+          <see langword="true" /> to use themes; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.EnableTheming%2A> property indicates whether themes are enabled for the control that is derived from the <xref:System.Web.UI.TemplateControl> class. When the <xref:System.Web.UI.TemplateControl.EnableTheming%2A> property is `true`, the theme directory for the application is searched for control skins to apply. If no skin for the particular control exists in the theme directory, skins are not applied.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public event EventHandler Error;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Error" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.TemplateControl.Error" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an unhandled exception is thrown.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Eval">
+      <MemberSignature Language="C#" Value="protected object Eval (string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object Eval(string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.Eval(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The navigation path from the container to the public property value to place in the bound control property.</param>
+        <summary>Evaluates a data-binding expression.</summary>
+        <returns>An object that results from the evaluation of the data-binding expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of `expression` must evaluate to a public property.  
+  
+ The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="expression" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="expression" /> is an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Eval">
+      <MemberSignature Language="C#" Value="protected string Eval (string expression, string format);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string Eval(string expression, string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.Eval(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The navigation path from the container to the public property value to place in the bound control property.</param>
+        <param name="format">A .NET Framework format string to apply to the result.</param>
+        <summary>Evaluates a data-binding expression using the specified format string to display the result.</summary>
+        <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of `expression` must evaluate to a public property.  
+  
+ The <xref:System.Web.UI.TemplateControl.Eval%2A> method calls the <xref:System.Web.UI.DataBinder.Eval%2A> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the object reference that the expression is evaluated against.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The data-binding method can only be used for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="expression" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="expression" /> is an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FrameworkInitialize">
+      <MemberSignature Language="C#" Value="protected virtual void FrameworkInitialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FrameworkInitialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.FrameworkInitialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the control that is derived from the <see cref="T:System.Web.UI.TemplateControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not override the <xref:System.Web.UI.TemplateControl.FrameworkInitialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalResourceObject">
+      <MemberSignature Language="C#" Value="protected object GetGlobalResourceObject (string className, string resourceKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetGlobalResourceObject(string className, string resourceKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="resourceKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string representing a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" />.</param>
+        <param name="resourceKey">A string representing a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" />.</param>
+        <summary>Gets an application-level resource object based on the specified <see cref="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" /> and <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> properties.</summary>
+        <returns>An object representing the requested resource object; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetGlobalResourceObject%2A> method to access a string named `GlobalResourceString1` from a global resource named `MyResource.resx` in the App_GlobalResources folder. The `className` parameter is `MyResource` without the .resx extension.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalResourceObject">
+      <MemberSignature Language="C#" Value="protected object GetGlobalResourceObject (string className, string resourceKey, Type objType, string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetGlobalResourceObject(string className, string resourceKey, class System.Type objType, string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String,System.String,System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="resourceKey" Type="System.String" />
+        <Parameter Name="objType" Type="System.Type" />
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string representing a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" />.</param>
+        <param name="resourceKey">A string representing a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" />.</param>
+        <param name="objType">The type of object in the resource to get.</param>
+        <param name="propName">The property name of the object to get.</param>
+        <summary>Gets an application-level resource object based on the specified <see cref="P:System.Web.Compilation.ResourceExpressionFields.ClassKey" /> and <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> properties, object type, and property name of the resource.</summary>
+        <returns>An object representing the requested resource object; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application-level resources are stored in the App_GlobalResources folder. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalResourceObject">
+      <MemberSignature Language="C#" Value="protected object GetLocalResourceObject (string resourceKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetLocalResourceObject(string resourceKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.GetLocalResourceObject(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceKey">A string representing a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" />.</param>
+        <summary>Gets a page-level resource object based on the specified <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> property.</summary>
+        <returns>An object representing the requested resource object; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.GetLocalResourceObject%2A> method to access a string named `LocalResourceString1` from a local page resource that is located in the App_LocalResources folder.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/cs/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_GetResources#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_GetResources/vb/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalResourceObject">
+      <MemberSignature Language="C#" Value="protected object GetLocalResourceObject (string resourceKey, Type objType, string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetLocalResourceObject(string resourceKey, class System.Type objType, string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.GetLocalResourceObject(System.String,System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceKey" Type="System.String" />
+        <Parameter Name="objType" Type="System.Type" />
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceKey">A string representing a <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" />.</param>
+        <param name="objType">The type of the resource object to get.</param>
+        <param name="propName">The property name of the resource object to get.</param>
+        <summary>Gets a page-level resource object based on the specified <see cref="P:System.Web.Compilation.ResourceExpressionFields.ResourceKey" /> property, object type, and property name.</summary>
+        <returns>An object representing the requested resource object; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Local resource files are stored in the App_LocalResources directory. For more information, see [Resources in ASP.NET Applications](http://msdn.microsoft.com/en-us/5a29f26b-d94d-48d9-864e-5ee8890dc265)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadControl">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Control LoadControl (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control LoadControl(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.LoadControl(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to a control file.</param>
+        <summary>Loads a <see cref="T:System.Web.UI.Control" /> object from a file based on a specified virtual path.</summary>
+        <returns>Returns the specified <see cref="T:System.Web.UI.Control" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the control supports caching, the object returned from the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method is not actually a <xref:System.Web.UI.Control> object; rather, it is a <xref:System.Web.UI.PartialCachingControl> object. If the `virtualPath` parameter is relative, the path of the loaded control is relative to the path of the <xref:System.Web.UI.TemplateControl>.  
+  
+ When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method to add a user control to an ASP.NET page.  
+  
+ In the `OnInit` event method, this page uses the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method to programmatically create a user control on the page. The method adds the control to the <xref:System.Web.UI.Control.Controls%2A> property of a <xref:System.Web.UI.WebControls.PlaceHolder> Web server control named `Placeholder1`.  
+  
+ For the definition of the `MyControl` class that is used in this code example, see <xref:System.Web.UI.TemplateControl>.  
+  
+ [!code-csharp[TemplateControl_Sample1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_Sample1/CS/TempControl_Samples1.aspx#3)]
+ [!code-vb[TemplateControl_Sample1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_Sample1/VB/tempcontrol_samples1.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The virtual path is <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadControl">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Control LoadControl (Type t, object[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control LoadControl(class System.Type t, object[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.LoadControl(System.Type,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t" Type="System.Type" />
+        <Parameter Name="parameters" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="t">The type of the control.</param>
+        <param name="parameters">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>parameters</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <summary>Loads a <see cref="T:System.Web.UI.Control" /> object based on a specified type and constructor parameters.</summary>
+        <returns>Returns the specified <see cref="T:System.Web.UI.UserControl" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the user control supports caching, the object returned from the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method is not actually a <xref:System.Web.UI.UserControl> object; rather, it is a <xref:System.Web.UI.PartialCachingControl> object.  
+  
+ When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadTemplate">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ITemplate LoadTemplate (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.ITemplate LoadTemplate(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.LoadTemplate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to a user control file.</param>
+        <summary>Obtains an instance of the <see cref="T:System.Web.UI.ITemplate" /> interface from an external file.</summary>
+        <returns>An instance of the specified template.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.LoadTemplate%2A> method to add a user control as an alternating item to a <xref:System.Web.UI.WebControls.DataList> Web server control named `DataList1`. The user control implements the <xref:System.Web.UI.ITemplate> interface and is contained in a file named Newtemplate.ascx.  
+  
+ [!code-csharp[System.Web.UI.TemplateControl_LoadTemplate#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_LoadTemplate/CS/loadtemplatecs.aspx#1)]
+ [!code-vb[System.Web.UI.TemplateControl_LoadTemplate#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_LoadTemplate/VB/loadtemplatevb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAbortTransaction">
+      <MemberSignature Language="C#" Value="protected virtual void OnAbortTransaction (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAbortTransaction(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.TemplateControl.AbortTransaction" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.OnAbortTransaction%2A> and <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> methods. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
+  
+ [!code-csharp[TemplateControl_OnCommitTransaction#3](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#3)]
+ [!code-vb[TemplateControl_OnCommitTransaction#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCommitTransaction">
+      <MemberSignature Language="C#" Value="protected virtual void OnCommitTransaction (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommitTransaction(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.TemplateControl.CommitTransaction" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> method for any transaction processing logic in which your page or user control participates.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.OnAbortTransaction%2A> and <xref:System.Web.UI.TemplateControl.OnCommitTransaction%2A> methods. Because <xref:System.Web.UI.TemplateControl> is an abstract class, this code example uses the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class. `Account` is a class that supports a `Debit` operation, which is transactional and must execute as a unit. If any exception is raised during this operation, the transaction is ended.  
+  
+ [!code-csharp[TemplateControl_OnCommitTransaction#2](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/CS/templatecontrol_oncommittransaction.cs.aspx#2)]
+ [!code-vb[TemplateControl_OnCommitTransaction#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateControl_OnCommitTransaction/VB/templatecontrol_oncommittransaction.vb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnError">
+      <MemberSignature Language="C#" Value="protected virtual void OnError (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnError(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.OnError(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.TemplateControl.Error" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates a possible way to use of the <xref:System.Web.UI.TemplateControl.OnError%2A> method. It creates a string with some arguments that are not valid, which leads to an exception. Because the <xref:System.Web.UI.TemplateControl> class is an abstract class, this code example was written using the <xref:System.Web.UI.Page> class, which is derived from the <xref:System.Web.UI.TemplateControl> class.  
+  
+```vb  
+<%@ Page language="VB" %>  
+ <html>  
+  <head>  
+  <script language="VB" runat="server">  
+  Sub Page_Load(sender as object, e as System.EventArgs)  
+  AddHandler Page.Error, AddressOf Error_Handler  
+  try  
+  Dim myString as string = "Hello"  
+  'An exception is raised because the length of 'myString' is less than '6'.  
+  Dim mySubString as string= myString.Substring(0,6)  
+  catch e1 As Exception  
+  OnError (EventArgs.Empty)  
+  End try  
+  End Sub  
+  Sub Error_Handler(sender as object,e as System.EventArgs)  
+  Response.Write("<br><b>An Error was raised</b>")  
+  End Sub  
+  </script>  
+  </head>  
+ </html>  
+```  
+  
+```csharp  
+<%@ Page language="c#" %>  
+ <html>  
+  <head>  
+  <script language="C#" runat="server">  
+  void Page_Load(object sender, System.EventArgs e)  
+  {  
+  Page.Error += new System.EventHandler(Error_Handler);  
+  try  
+  {  
+  string myString = "Hello";  
+  // An exception is raised because the length of 'myString' is less than '6'.  
+  string mySubString = myString.Substring(0,6);  
+  }  
+  catch(Exception)  
+  {  
+  OnError(EventArgs.Empty);  
+  }  
+  }  
+  void Error_Handler(object sender,System.EventArgs e)  
+  {  
+  Response.Write("<br><b>An Error was raised</b>");  
+  }  
+  </script>  
+  </head>  
+ </html>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseControl">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Control ParseControl (string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control ParseControl(string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.ParseControl(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="content">A string that contains a user control.</param>
+        <summary>Parses an input string into a <see cref="T:System.Web.UI.Control" /> object on the Web Forms page or user control.</summary>
+        <returns>The parsed <see cref="T:System.Web.UI.Control" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `content` parameter contains a user control, such as you would find in an .ascx file. This string cannot contain any code, because the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method never causes compilation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.Button> Web server control using the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method, and then adds the result to the <xref:System.Web.UI.ControlCollection> collection of a <xref:System.Web.UI.WebControls.PlaceHolder> Web server control named `myPlaceholder`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/CS/templatecontrol_parsecontrolcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl.ParseControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl.ParseControl/VB/templatecontrol_parsecontrolvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseControl">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Control ParseControl (string content, bool ignoreParserFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control ParseControl(string content, bool ignoreParserFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.ParseControl(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="ignoreParserFilter" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="content">A string that contains a user control.</param>
+        <param name="ignoreParserFilter">A value that specifies whether to ignore the parser filter.</param>
+        <summary>Parses an input string into a <see cref="T:System.Web.UI.Control" /> object on the ASP.NET Web page or user control.</summary>
+        <returns>The parsed control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `content` parameter contains a user control (the contents of an .ascx file). This string cannot contain any code, because the <xref:System.Web.UI.TemplateControl.ParseControl%2A> method never causes compilation.  
+  
+ The `ignoreParserFilter` parameter allows the <xref:System.Web.UI.PageParserFilter> class to be ignored. The <xref:System.Web.UI.PageParserFilter> class is used by the ASP.NET parser to determine whether an item is allowed in the page at parse time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadStringResource">
+      <MemberSignature Language="C#" Value="public object ReadStringResource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ReadStringResource() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.ReadStringResource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads a string resource. The <see cref="M:System.Web.UI.TemplateControl.ReadStringResource" /> method is not intended for use from within your code.</summary>
+        <returns>An object representing the resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.ReadStringResource%2A> method is not intended for use from within your code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="M:System.Web.UI.TemplateControl.ReadStringResource" /> is no longer supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadStringResource">
+      <MemberSignature Language="C#" Value="public static object ReadStringResource (Type t);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ReadStringResource(class System.Type t) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.ReadStringResource(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="t">The <see cref="T:System.Type" /> of the resource to read.</param>
+        <summary>Reads a string resource. The <see cref="M:System.Web.UI.TemplateControl.ReadStringResource(System.Type)" /> method is not intended for use from within your code.</summary>
+        <returns>An object representing the resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.ReadStringResource%2A> method is not intended for use from within your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStringResourcePointer">
+      <MemberSignature Language="C#" Value="protected void SetStringResourcePointer (object stringResourcePointer, int maxResourceOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetStringResourcePointer(object stringResourcePointer, int32 maxResourceOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.SetStringResourcePointer(System.Object,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringResourcePointer" Type="System.Object" />
+        <Parameter Name="maxResourceOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stringResourcePointer">An object representing the pointer to the string resource.</param>
+        <param name="maxResourceOffset">The resource size.</param>
+        <summary>Sets a pointer to a string resource. The <see cref="M:System.Web.UI.TemplateControl.SetStringResourcePointer(System.Object,System.Int32)" /> method is used by generated classes and is not intended for use from within your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportAutoEvents">
+      <MemberSignature Language="C#" Value="protected virtual bool SupportAutoEvents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportAutoEvents" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateControl.SupportAutoEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.TemplateControl" /> control supports automatic events.</summary>
+        <value>Always<see langword=" true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.SupportAutoEvents%2A> property indicates whether automatic events are supported. The <xref:System.Web.UI.TemplateControl.SupportAutoEvents%2A> property is read-only and is `true` for all cases.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IFilterResolutionService.CompareFilters">
+      <MemberSignature Language="C#" Value="int IFilterResolutionService.CompareFilters (string filter1, string filter2);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Web.UI.IFilterResolutionService.CompareFilters(string filter1, string filter2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.System#Web#UI#IFilterResolutionService#CompareFilters(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter1" Type="System.String" />
+        <Parameter Name="filter2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filter1">A device filter name.</param>
+        <param name="filter2">A device filter name.</param>
+        <summary>Returns a value that indicates whether a parent/child relationship exists between two specified device filters.</summary>
+        <returns>1, if <paramref name="filter1" /> is a parent of <paramref name="filter2" />; -1, if <paramref name="filter2" /> is a parent of <paramref name="filter1" />; otherwise, 0, if there is no parent/child relationship between <paramref name="filter1" /> and <paramref name="filter2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.System%23Web%23UI%23IFilterResolutionService%23CompareFilters%2A> method is part of the <xref:System.Web.UI.IFilterResolutionService> interface, which is specific to how a control uses device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> provides a way to determine if the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IFilterResolutionService.EvaluateFilter">
+      <MemberSignature Language="C#" Value="bool IFilterResolutionService.EvaluateFilter (string filterName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IFilterResolutionService.EvaluateFilter(string filterName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.System#Web#UI#IFilterResolutionService#EvaluateFilter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filterName">The name of a device filter.</param>
+        <summary>Returns a value that indicates whether the specified filter is a type of the current filter object.</summary>
+        <returns>
+          <see langword="true" /> if the specified filter is a type applicable to the current filter object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.System%23Web%23UI%23IFilterResolutionService%23EvaluateFilter%2A> method is part of the <xref:System.Web.UI.IFilterResolutionService> interface, which is specific to how a control uses device filters in a designer environment. When controls are parsed or persisted in the designer environment outside the context of a browser request, the <xref:System.Web.UI.IFilterResolutionService> provides a way to determine if the current control is affected by a named filter and whether a named filter is part of a specific device-filter hierarchy.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TestDeviceFilter">
+      <MemberSignature Language="C#" Value="public virtual bool TestDeviceFilter (string filterName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TestDeviceFilter(string filterName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.TestDeviceFilter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filterName">The browser name to test.</param>
+        <summary>Returns a Boolean value indicating whether a device filter applies to the HTTP request.</summary>
+        <returns>
+          <see langword="true" /> if the client browser specified in <paramref name="filterName" /> is the same as the specified browser; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.TestDeviceFilter%2A> method invokes the <xref:System.Web.Configuration.HttpCapabilitiesBase.IsBrowser%2A> method. For more information on device filtering, see [Device Filtering Overview](http://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUTF8ResourceString">
+      <MemberSignature Language="C#" Value="protected void WriteUTF8ResourceString (System.Web.UI.HtmlTextWriter output, int offset, int size, bool fAsciiOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteUTF8ResourceString(class System.Web.UI.HtmlTextWriter output, int32 offset, int32 size, bool fAsciiOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.WriteUTF8ResourceString(System.Web.UI.HtmlTextWriter,System.Int32,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="output" Type="System.Web.UI.HtmlTextWriter" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="fAsciiOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="output">The control to write to.</param>
+        <param name="offset">The starting position within <c>value</c>.</param>
+        <param name="size">The number of characters within <c>value</c> to use.</param>
+        <param name="fAsciiOnly">
+          <see langword="true" /> to bypass re-encoding; otherwise, <see langword="false" />.</param>
+        <summary>Writes a resource string to an <see cref="T:System.Web.UI.HtmlTextWriter" /> control. The <see cref="M:System.Web.UI.TemplateControl.WriteUTF8ResourceString(System.Web.UI.HtmlTextWriter,System.Int32,System.Int32,System.Boolean)" /> method is used by generated classes and is not intended for use from within your code.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Data that is not valid is being accessed; <paramref name="offset" /> or <paramref name="size" /> is less than zero.  
+  
+ \- or -  
+  
+ The sum of <paramref name="offset" /> and <paramref name="size" /> is greater than the resource size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XPath">
+      <MemberSignature Language="C#" Value="protected object XPath (string xPathExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object XPath(string xPathExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xPathExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xPathExpression">The XPath expression to evaluate. For more information, see <see cref="T:System.Web.UI.XPathBinder" />.</param>
+        <summary>Evaluates an XPath data-binding expression.</summary>
+        <returns>An object that results from the evaluation of the data-binding expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPath%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
+  
+ The following test XML data can be used in the preceding code example.  
+  
+```  
+<contacts>  
+   <contact id="1">  
+     <name>contact name 1</name>  
+     <note>contact note 1</note>  
+   </contact>  
+   <contact id="2">  
+     <name>contact name 2</name>  
+     <note>contact note 2</note>  
+   </contact>  
+</contacts>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XPath">
+      <MemberSignature Language="C#" Value="protected string XPath (string xPathExpression, string format);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string XPath(string xPathExpression, string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPath(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xPathExpression" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xPathExpression">The XPath expression to evaluate. For more information, see <see cref="T:System.Web.UI.XPathBinder" />.</param>
+        <param name="format">A .NET Framework format string to apply to the result.</param>
+        <summary>Evaluates an XPath data-binding expression using the specified format string to display the result.</summary>
+        <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XPath">
+      <MemberSignature Language="C#" Value="protected object XPath (string xPathExpression, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object XPath(string xPathExpression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPath(System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xPathExpression" Type="System.String" />
+        <Parameter Name="resolver" Type="System.Xml.IXmlNamespaceResolver" />
+      </Parameters>
+      <Docs>
+        <param name="xPathExpression">The XPath expression to evaluate. For more information, see <see cref="T:System.Web.UI.XPathBinder" />.</param>
+        <param name="resolver">A set of prefix and namespace mappings used for namespace resolution.</param>
+        <summary>Evaluates an XPath data-binding expression using the specified prefix and namespace mappings for namespace resolution.</summary>
+        <returns>An object that results from the evaluation of the data-binding expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XPath">
+      <MemberSignature Language="C#" Value="protected string XPath (string xPathExpression, string format, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string XPath(string xPathExpression, string format, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPath(System.String,System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xPathExpression" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="resolver" Type="System.Xml.IXmlNamespaceResolver" />
+      </Parameters>
+      <Docs>
+        <param name="xPathExpression">The XPath expression to evaluate. For more information, see <see cref="T:System.Web.UI.XPathBinder" />.</param>
+        <param name="format">A .NET Framework format string to apply to the result.</param>
+        <param name="resolver">A set of prefix and namespace mappings used for namespace resolution.</param>
+        <summary>Evaluates an XPath data-binding expression using the specified prefix and namespace mappings for namespace resolution and the specified format string to display the result.</summary>
+        <returns>A string that results from the evaluation of the data-binding expression and conversion to a string type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.XPath%2A> method calls the <xref:System.Web.UI.XPathBinder.Eval%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The data-binding method can be used only for controls contained on a <see cref="T:System.Web.UI.Page" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathSelect">
+      <MemberSignature Language="C#" Value="protected System.Collections.IEnumerable XPathSelect (string xPathExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Collections.IEnumerable XPathSelect(string xPathExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPathSelect(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xPathExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xPathExpression">The XPath expression to evaluate. For more information, see <see cref="T:System.Web.UI.XPathBinder" />.</param>
+        <summary>Evaluates an XPath data-binding expression and returns a node collection that implements the <see cref="T:System.Collections.IEnumerable" /> interface.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> node list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method in a <xref:System.Web.UI.WebControls.Repeater> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/cs/templatecontrolxpathcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.TemplateControl_XPath1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.TemplateControl_XPath1/vb/templatecontrolxpathvb.aspx#1)]  -->  
+  
+ The following test XML data can be used in the preceding code example.  
+  
+```  
+<contacts>  
+   <contact id="1">  
+     <name>contact name 1</name>  
+     <note>contact note 1</note>  
+   </contact>  
+   <contact id="2">  
+     <name>contact name 2</name>  
+     <note>contact note 2</note>  
+   </contact>  
+</contacts>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPathSelect">
+      <MemberSignature Language="C#" Value="protected System.Collections.IEnumerable XPathSelect (string xPathExpression, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Collections.IEnumerable XPathSelect(string xPathExpression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPathSelect(System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xPathExpression" Type="System.String" />
+        <Parameter Name="resolver" Type="System.Xml.IXmlNamespaceResolver" />
+      </Parameters>
+      <Docs>
+        <param name="xPathExpression">The XPath expression to evaluate. For more information, see <see cref="T:System.Web.UI.XPathBinder" />.</param>
+        <param name="resolver">A set of prefix and namespace mappings used for namespace resolution.</param>
+        <summary>Evaluates an XPath data-binding expression using the specified prefix and namespace mappings for namespace resolution and returns a node collection that implements the <see cref="T:System.Collections.IEnumerable" /> interface.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" /> node list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControl.XPathSelect%2A> method calls the <xref:System.Web.UI.XPathBinder.Select%2A?displayProperty=fullName> method using the <xref:System.Web.UI.Page.GetDataItem%2A> method to resolve the <xref:System.Xml.XPath.IXPathNavigable> object reference that the expression is evaluated against.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="ParseControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Parses an input string into a <see cref="T:System.Web.UI.Control" /> object on the ASP.NET Web page or user control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.TemplateControl.ParseControl%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="LoadControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a <see cref="T:System.Web.UI.Control" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

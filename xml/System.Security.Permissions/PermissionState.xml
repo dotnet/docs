@@ -1,0 +1,69 @@
+<Type Name="PermissionState" FullName="System.Security.Permissions.PermissionState">
+  <TypeSignature Language="C#" Value="public enum PermissionState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PermissionState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PermissionState" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies whether a permission should have all or no access to resources at creation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Permissions can be created in either a totally restrictive or totally unrestrictive state. A totally restrictive state allows no access to resources; a totally unrestricted state allows all access to a particular resource. For example, the file permission constructor could create an object representing either no access to any files or all access to all files.  
+  
+ Each type of permission clearly defines extreme states representing either all or none of the permissions expressible within the type. Thus, it is possible to create a generic permission in a completely restricted or unrestricted state without knowledge of the particular permission; however, intermediate states can only be set according to the specific permission semantics.  
+  
+ All code access permissions implemented in the .NET Framework can take a <xref:System.Security.Permissions.PermissionState> value as an argument to their constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.PermissionState None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.PermissionState.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.PermissionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No access to the resource protected by the permission.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unrestricted">
+      <MemberSignature Language="C#" Value="Unrestricted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.PermissionState Unrestricted = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.PermissionState.Unrestricted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.PermissionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Full access to the resource protected by the permission.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

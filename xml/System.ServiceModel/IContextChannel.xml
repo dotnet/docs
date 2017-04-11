@@ -1,0 +1,184 @@
+<Type Name="IContextChannel" FullName="System.ServiceModel.IContextChannel">
+  <TypeSignature Language="C#" Value="public interface IContextChannel : System.ServiceModel.Channels.IChannel, System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.IContextChannel&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContextChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.ICommunicationObject, class System.ServiceModel.IExtensibleObject`1&lt;class System.ServiceModel.IContextChannel&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.IContextChannel" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.IContextChannel&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the interface for the context control of a channel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.IContextChannel> defines the controls for the context of a channel. This includes the <xref:System.ServiceModel.IContextChannel.SessionId%2A>, <xref:System.ServiceModel.IContextChannel.InputSession%2A>, <xref:System.ServiceModel.IContextChannel.OutputSession%2A>, and <xref:System.ServiceModel.IContextChannel.AllowOutputBatching%2A> for the channel, and the <xref:System.ServiceModel.IContextChannel.LocalAddress%2A> and <xref:System.ServiceModel.IContextChannel.RemoteAddress%2A> for the endpoints participating in the session. The <xref:System.ServiceModel.IContextChannel> interface forms part of the <xref:System.ServiceModel.IServiceChannel> and <xref:System.ServiceModel.IClientChannel> interfaces and of the <xref:System.ServiceModel.IDuplexContextChannel> interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowOutputBatching">
+      <MemberSignature Language="C#" Value="public bool AllowOutputBatching { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowOutputBatching" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.AllowOutputBatching" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that instructs [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to store a set of messages before giving the messages to the transport.</summary>
+        <value>
+          <see langword="true" /> if the batching of outgoing messages is allowed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The level of batching affects the performance of the system. When you set the value to `true`, you are instructing the system to hold on to this message in a local buffer to send out with other serialized messages if possible. Set the <xref:System.ServiceModel.IContextChannel.AllowOutputBatching%2A> property to `true` if message throughput is important; set it to `false` if reducing latency is important. There are other knobs used to manage the batching of messages that are accessible from the binding elements used to configure a service. Properties common to connection-oriented transports such as TCP and named pipes that are used to tune performance are located, for example, on the <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement>. The <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxOutputDelay%2A> is used to set the maximum interval of time that a chunk of a message or a full message can remain buffered in memory before being sent out and the <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ConnectionBufferSize%2A> determines the size of this local buffer, as well as the buffer sizes used by the underlying network objects.  
+  
+ The value of <xref:System.ServiceModel.IContextChannel.AllowOutputBatching%2A> does not override the value of the <xref:System.ServiceModel.Channels.MessageProperties.AllowOutputBatching%2A> property that is set at the channel level. For example, if <xref:System.ServiceModel.Channels.MessageProperties.AllowOutputBatching%2A> is set to `true` for a particular message, that message is sent immediately regardless of the value of <xref:System.ServiceModel.IContextChannel.AllowOutputBatching%2A>.  
+  
+> [!NOTE]
+>  All request/reply messages are sent immediately regardless of the value of <xref:System.ServiceModel.IContextChannel.AllowOutputBatching%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputSession">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IInputSession InputSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.IInputSession InputSession" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.InputSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IInputSession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the input session for the channel.</summary>
+        <value>The <see cref="T:System.ServiceModel.Channels.IInputSession" /> for the channel.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress LocalAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress LocalAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.LocalAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the local endpoint for the channel.</summary>
+        <value>The local <see cref="T:System.ServiceModel.EndpointAddress" /> for the channel.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan OperationTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan OperationTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.OperationTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time period within which an operation must complete or an exception is thrown.</summary>
+        <value>The <see cref="T:System.TimeSpan" /> that specifies the time period within which an operation must complete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If transaction flow is enabled on the binding or the channel, the operation may take longer to execute than the specified timeout.  In these circumstances the operation will fail due to the expired timeout and the transaction will abort appropriately.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputSession">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IOutputSession OutputSession { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.IOutputSession OutputSession" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.OutputSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IOutputSession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the output session associated with the channel, if any.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.IOutputSession" /> implementation if an input session exists; otherwise, <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress RemoteAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress RemoteAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.RemoteAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the remote address associated with the channel.</summary>
+        <value>The remote <see cref="T:System.ServiceModel.EndpointAddress" /> for the channel.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionId">
+      <MemberSignature Language="C#" Value="public string SessionId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SessionId" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.IContextChannel.SessionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns an identifier for the current session, if any.</summary>
+        <value>The current session identifier, if any.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

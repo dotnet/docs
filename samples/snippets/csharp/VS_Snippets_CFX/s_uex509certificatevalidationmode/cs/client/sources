@@ -1,0 +1,52 @@
+!include $(_NTROOT)\ndp\Indigo\Samples\sdk\buildenv.inc
+
+# -----------------------------------------------------------------------------
+# The name and type of the assembly.
+# -----------------------------------------------------------------------------
+
+TARGETNAME                  = client
+TARGETTYPE                  = NOTARGET
+TARGETPATH                  = obj
+CLR_TARGETTYPE              = EXE
+
+NO_BROWSER_FILE             = 1
+CLS_COMPLIANT               = 0
+
+SIGN_ASSEMBLY               = 0
+
+MANAGED_CODE                = 1
+
+# -----------------------------------------------------------------------------
+# Sources to build.
+# -----------------------------------------------------------------------------
+
+SOURCES                     = \
+
+CSHARP_SOURCES              = \
+                            client.cs \
+                            generatedProxy.cs \
+
+RESOURCE_FILES              = \
+                            
+MISCFILES                   = \
+                            $(_OBJ_DIR)\$(TARGET_DIRECTORY)\$(TARGETNAME).exe.config \
+                            client.bsl \
+                            ..\setup.bat \
+                            ..\cleanup.bat \
+                            Security_AuthorizationPolicy_CS.tef \
+
+# -----------------------------------------------------------------------------
+# Assembly References 
+# -----------------------------------------------------------------------------
+
+CLR_REFERENCES              = \
+                            $(SDK_REF_PATH)\System.dll \
+                            $(SDK_REF_PATH)\System.Xml.dll \
+                            $(SYSTEM_INDIGO_REF) \
+                         
+# -----------------------------------------------------------------------------
+# Binplace 
+# -----------------------------------------------------------------------------
+
+!undef BINPLACE_GENERATE_PLACEFILE
+BINPLACE_PLACEFILE=.\placefil.txt

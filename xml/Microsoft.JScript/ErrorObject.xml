@@ -1,0 +1,121 @@
+<Type Name="ErrorObject" FullName="Microsoft.JScript.ErrorObject">
+  <TypeSignature Language="C#" Value="public class ErrorObject : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorObject extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ErrorObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an error object. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="description">
+      <MemberSignature Language="C#" Value="public object description;" />
+      <MemberSignature Language="ILAsm" Value=".field public object description" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.description" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the message that explains the reason for the error.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="message">
+      <MemberSignature Language="C#" Value="public object message;" />
+      <MemberSignature Language="ILAsm" Value=".field public object message" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.message" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the message that explains the reason for the error.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="number">
+      <MemberSignature Language="C#" Value="public object number;" />
+      <MemberSignature Language="ILAsm" Value=".field public object number" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorObject.number" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a number or code for the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.JScript.ErrorObject.number> can be a <xref:Microsoft.JScript.JSError> member, a <xref:Microsoft.JScript.JScriptException.Number%2A>, or another <xref:System.Exception>-related error number or code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static Exception op_Explicit (Microsoft.JScript.ErrorObject err);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Exception op_Explicit(class Microsoft.JScript.ErrorObject err) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorObject.op_Explicit(Microsoft.JScript.ErrorObject)~System.Exception" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="err" Type="Microsoft.JScript.ErrorObject" />
+      </Parameters>
+      <Docs>
+        <param name="err">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToException">
+      <MemberSignature Language="C#" Value="public static Exception ToException (Microsoft.JScript.ErrorObject err);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Exception ToException(class Microsoft.JScript.ErrorObject err) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ErrorObject.ToException(Microsoft.JScript.ErrorObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="err" Type="Microsoft.JScript.ErrorObject" />
+      </Parameters>
+      <Docs>
+        <param name="err">The object to convert.</param>
+        <summary>Converts an <see cref="T:Microsoft.JScript.ErrorObject" /> to an <see cref="T:System.Exception" />, implicitly.</summary>
+        <returns>The converted <see cref="T:Microsoft.JScript.ErrorObject" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

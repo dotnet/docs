@@ -1,0 +1,138 @@
+<Type Name="DiscoveryVersionConverter" FullName="System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter">
+  <TypeSignature Language="C#" Value="public class DiscoveryVersionConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscoveryVersionConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides functionality to change a WS-Discovery protocol version to another type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryVersionConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Type descriptor format information that assists in the conversion of a <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to another type.</param>
+        <param name="sourceType">The <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object that is changed to the type of this converter.</param>
+        <summary>Returns a value that indicates whether it is possible to change the given <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to the type of this converter and using the specified context and culture information.</summary>
+        <returns>
+          <see langword="true" /> if it is possible to change the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to the type of this converter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Type descriptor format information that assists in the conversion of a <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to another type.</param>
+        <param name="destinationType">The type to which the <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object is changed.</param>
+        <summary>Returns a value that indicates whether it is possible to change the given <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> to the specified type and using the specified context and culture information.</summary>
+        <returns>
+          <see langword="true" /> if it is possible to change the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to the specified type; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">Type descriptor format information that assists in the conversion of a <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to another type.</param>
+        <param name="culture">The culture information to use in the type conversion.</param>
+        <param name="value">The <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to change.</param>
+        <summary>Converts the given <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to the type of this converter, using the specified context and culture information.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> that has been changed to the type of this converter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryVersionConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">Type descriptor format information that assists in the conversion of a <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object to another type.</param>
+        <param name="culture">The culture information to use in the type conversion.</param>
+        <param name="value">The <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> to change.</param>
+        <param name="destinationType">The type to which the <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> object is being changed.</param>
+        <summary>Converts the given <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> to the specified type, using the specified context and culture information.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Discovery.DiscoveryVersion" /> that has been changed to the specified type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,197 @@
+<Type Name="IServiceBehavior" FullName="System.ServiceModel.Description.IServiceBehavior">
+  <TypeSignature Language="C#" Value="public interface IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IServiceBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a mechanism to modify or insert custom extensions across an entire service, including the <see cref="T:System.ServiceModel.ServiceHostBase" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement <xref:System.ServiceModel.Description.IServiceBehavior> to modify, examine, or extend some aspect of service-wide execution at the application level:  
+  
+-   Use the <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> method to change run-time property values or insert custom extension objects such as error handlers, message or parameter interceptors, security extensions, and other custom extension objects.  
+  
+-   Use the <xref:System.ServiceModel.Description.IServiceBehavior.Validate%2A> method to examine the description before [!INCLUDE[indigo1](~/includes/indigo1-md.md)] constructs the executing service to confirm that it can execute properly.  
+  
+-   Use the <xref:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A> method to pass to a binding element the custom information for the service so that it can support the service correctly.  
+  
+ <xref:System.ServiceModel.Description.IServiceBehavior> objects can make use of any of these methods, but often only one is important; in such cases the unused methods can return without a value.  
+  
+> [!NOTE]
+>  All of the <xref:System.ServiceModel.Description.IServiceBehavior> methods pass <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=fullName> and <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName> objects as a parameters. The <xref:System.ServiceModel.Description.ServiceDescription> parameter is for examination only; if you modify these objects the execution behavior is undefined.  
+  
+ To perform the customization task for which it is intended, the <xref:System.ServiceModel.Description.IServiceBehavior> object must be added to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> property prior to the construction of the service runtime. There are three ways to do this:  
+  
+-   Programmatically add the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> property prior to the point where the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=fullName> method is called on the <xref:System.ServiceModel.ServiceHost?displayProperty=fullName> object.  
+  
+-   Create a custom attribute that implements <xref:System.ServiceModel.Description.IServiceBehavior> and use it to mark service classes that are to be modified. When a <xref:System.ServiceModel.ServiceHost> object is constructed, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] uses reflection to discover the attributes on the service type. If any attributes implement <xref:System.ServiceModel.Description.IServiceBehavior>, they are added to the behaviors collection on <xref:System.ServiceModel.Description.ServiceDescription>.  
+  
+-   Extend the <xref:System.ServiceModel.Configuration.BehaviorExtensionElement?displayProperty=fullName> class to support the specification of the behavior in an application or machine configuration file. See the Example section for more information.  
+  
+ Examples of service behaviors in [!INCLUDE[indigo2](~/includes/indigo2-md.md)] include the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute, the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior?displayProperty=fullName>, the <xref:System.ServiceModel.Description.ServiceDebugBehavior?displayProperty=fullName> and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayProperty=fullName> behavior.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of a service behavior specified in a configuration file to insert a custom error handler in a service application. In this example, the error handler catches all exceptions and converts them into a custom `GreetingFault` SOAP fault that is then returned to the client.  
+  
+ The following <xref:System.ServiceModel.Description.IServiceBehavior> implementation adds no binding parameter objects, adds the custom <xref:System.ServiceModel.Dispatcher.IErrorHandler?displayProperty=fullName> object to each <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A?displayProperty=fullName> property, and validates that each operation of the service to which the service behavior is applied and has a <xref:System.ServiceModel.FaultContractAttribute?displayProperty=fullName> of type `GreetingFault`.  
+  
+ [!code-csharp[IErrorHandler#7](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/ierrorhandler.cs#7)]
+ [!code-vb[IErrorHandler#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/ierrorhandler.vb#7)]  
+  
+ In this example, the behavior class also implements <xref:System.ServiceModel.Configuration.BehaviorExtensionElement?displayProperty=fullName>, which enables the service behavior to be inserted by using it in an application configuration file, as the following code example demonstrates.  
+  
+ <!-- TODO: review snippet reference [!code[IErrorHandler#4](~/samples/snippets/common/VS_Snippets_CFX/ierrorhandler/common/hostapplication.exe.config#4)]  -->
+ <!-- TODO: review snippet reference [!code-csharp[IErrorHandler#4](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/hostapplication.exe.config#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[IErrorHandler#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/hostapplication.exe.config#4)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddBindingParameters">
+      <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The service description of the service.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <param name="endpoints">The service endpoints.</param>
+        <param name="bindingParameters">Custom objects to which binding elements have access.</param>
+        <summary>Provides the ability to pass custom data to binding elements to support the contract implementation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters%2A> method to add custom data objects to the `parameters` collection that binding elements can use to acquire extra information to enable them to support the contract.  
+  
+ This method is called once for each listen URI. For example, if a service has four endpoints, and two of them have the same listen URI, then this method gets called three times. The reason is that the `bindingParameters` target each channel stack and there is one channel stack for each listen URI. Because each call receives those endpoints at that listen URI, two calls each get a single <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName>, and one call gets a collection of two <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=fullName> objects.  
+  
+> [!NOTE]
+>  All of the <xref:System.ServiceModel.Description.IServiceBehavior> methods pass <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=fullName> and <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName> objects as a parameters. The <xref:System.ServiceModel.Description.ServiceDescription> parameter is for examination and insertion of customizations only; if you otherwise modify these objects the execution behavior is undefined.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The host that is currently being built.</param>
+        <summary>Provides the ability to change run-time property values or insert custom extension objects such as error handlers, message or parameter interceptors, security extensions, and other custom extension objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> method to inspect or modify the <xref:System.ServiceModel.ServiceHostBase> object that is being constructed in order to support some custom execution scenario.  
+  
+> [!NOTE]
+>  All of the <xref:System.ServiceModel.Description.IServiceBehavior> methods pass <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=fullName> and <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName> objects as a parameters. The <xref:System.ServiceModel.Description.ServiceDescription> parameter is for examination and insertion of customizations only; if you otherwise modify these objects the execution behavior is undefined.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of a service behavior specified in a configuration file to insert a custom error handler in a service application. In this example, the error handler catches all exceptions and converts them into a custom `GreetingFault` SOAP fault that is then returned to the client.  
+  
+ The following <xref:System.ServiceModel.Description.IServiceBehavior> implementation adds no binding parameter objects, adds the custom <xref:System.ServiceModel.Dispatcher.IErrorHandler?displayProperty=fullName> object to each <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A?displayProperty=fullName> property, and validates that each operation of the service to which the service behavior is applied and has a <xref:System.ServiceModel.FaultContractAttribute?displayProperty=fullName> of type `GreetingFault`.  
+  
+ [!code-csharp[IErrorHandler#7](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/ierrorhandler.cs#7)]
+ [!code-vb[IErrorHandler#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/ierrorhandler.vb#7)]  
+  
+ In this example, the behavior class also implements <xref:System.ServiceModel.Configuration.BehaviorExtensionElement?displayProperty=fullName>, which enables the service behavior to be inserted by using it in an application configuration file, as the following code example demonstrates.  
+  
+ <!-- TODO: review snippet reference [!code[IErrorHandler#4](~/samples/snippets/common/VS_Snippets_CFX/ierrorhandler/common/hostapplication.exe.config#4)]  -->
+ <!-- TODO: review snippet reference [!code-csharp[IErrorHandler#4](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/hostapplication.exe.config#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[IErrorHandler#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/hostapplication.exe.config#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The service description.</param>
+        <param name="serviceHostBase">The service host that is currently being constructed.</param>
+        <summary>Provides the ability to inspect the service host and the service description to confirm that the service can run successfully.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.IServiceBehavior.Validate%2A> method to confirm whether the current service can execute properly according to your scenario.  
+  
+> [!NOTE]
+>  All of the <xref:System.ServiceModel.Description.IServiceBehavior> methods pass <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=fullName> and <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName> objects as a parameters. The <xref:System.ServiceModel.Description.ServiceDescription> parameter is for examination and insertion of customizations only; if you otherwise modify these objects the execution behavior is undefined.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of a service behavior specified in a configuration file to insert a custom error handler in a service application. In this example, the error handler catches all exceptions and converts them into a custom `GreetingFault` SOAP fault that is then returned to the client.  
+  
+ The following <xref:System.ServiceModel.Description.IServiceBehavior> implementation adds no binding parameter objects, adds the custom <xref:System.ServiceModel.Dispatcher.IErrorHandler?displayProperty=fullName> object to each <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.ErrorHandlers%2A?displayProperty=fullName> property, and validates that each operation of the service to which the service behavior is applied and has a <xref:System.ServiceModel.FaultContractAttribute?displayProperty=fullName> of type `GreetingFault`.  
+  
+ [!code-csharp[IErrorHandler#7](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/ierrorhandler.cs#7)]
+ [!code-vb[IErrorHandler#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/ierrorhandler.vb#7)]  
+  
+ In this example, the behavior class also implements <xref:System.ServiceModel.Configuration.BehaviorExtensionElement?displayProperty=fullName>, which enables the service behavior to be inserted by using it in an application configuration file, as the following code example demonstrates.  
+  
+ <!-- TODO: review snippet reference [!code[IErrorHandler#4](~/samples/snippets/common/VS_Snippets_CFX/ierrorhandler/common/hostapplication.exe.config#4)]  -->
+ <!-- TODO: review snippet reference [!code-csharp[IErrorHandler#4](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/hostapplication.exe.config#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[IErrorHandler#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/hostapplication.exe.config#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

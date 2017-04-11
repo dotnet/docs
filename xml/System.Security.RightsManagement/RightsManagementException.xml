@@ -1,0 +1,329 @@
+<Type Name="RightsManagementException" FullName="System.Security.RightsManagement.RightsManagementException">
+  <TypeSignature Language="C#" Value="public class RightsManagementException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RightsManagementException extends System.Exception" />
+  <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.RightsManagementException" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an error condition when a rights management operation cannot complete successfully.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RightsManagementException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RightsManagementException (System.Security.RightsManagement.RightsManagementFailureCode failureCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.RightsManagement.RightsManagementFailureCode failureCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.#ctor(System.Security.RightsManagement.RightsManagementFailureCode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="failureCode" Type="System.Security.RightsManagement.RightsManagementFailureCode" />
+      </Parameters>
+      <Docs>
+        <param name="failureCode">The failure code for the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> property to create an error message for the user.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RightsManagementException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">A message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Exception.Message%2A> property to create an error message for the user.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RightsManagementException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class and sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store with information about the exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RightsManagementException (System.Security.RightsManagement.RightsManagementFailureCode failureCode, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.RightsManagement.RightsManagementFailureCode failureCode, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.#ctor(System.Security.RightsManagement.RightsManagementFailureCode,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="failureCode" Type="System.Security.RightsManagement.RightsManagementFailureCode" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="failureCode">The failure code for the error.</param>
+        <param name="innerException">The exception instance that caused the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" /> and <see cref="P:System.Exception.InnerException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RightsManagementException (System.Security.RightsManagement.RightsManagementFailureCode failureCode, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.RightsManagement.RightsManagementFailureCode failureCode, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.#ctor(System.Security.RightsManagement.RightsManagementFailureCode,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="failureCode" Type="System.Security.RightsManagement.RightsManagementFailureCode" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="failureCode">The failure code for the error.</param>
+        <param name="message">A message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" /> and <see cref="P:System.Exception.Message" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RightsManagementException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">A message that describes the error.</param>
+        <param name="innerException">The exception instance that caused this exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="P:System.Exception.Message" /> and <see cref="P:System.Exception.InnerException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Exception.Message%2A> property to create an error message for the user.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RightsManagementException (System.Security.RightsManagement.RightsManagementFailureCode failureCode, string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.RightsManagement.RightsManagementFailureCode failureCode, string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.#ctor(System.Security.RightsManagement.RightsManagementFailureCode,System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="failureCode" Type="System.Security.RightsManagement.RightsManagementFailureCode" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="failureCode">The failure code for the error.</param>
+        <param name="message">A message that describes the error.</param>
+        <param name="innerException">The exception instance that caused the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class with a given <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" />, <see cref="P:System.Exception.Message" /> and <see cref="P:System.Exception.InnerException" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailureCode">
+      <MemberSignature Language="C#" Value="public System.Security.RightsManagement.RightsManagementFailureCode FailureCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.RightsManagement.RightsManagementFailureCode FailureCode" />
+      <MemberSignature Language="DocId" Value="P:System.Security.RightsManagement.RightsManagementException.FailureCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.RightsManagementFailureCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Security.RightsManagement.RightsManagementFailureCode" /> for the error.</summary>
+        <value>The failure code for the error.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException.FailureCode%2A> and <xref:System.Exception.Message%2A> properties to create an error message for the user.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.RightsManagement.RightsManagementException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> store with the parameter name and information about the exception.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.RightsManagement.RightsManagementException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows use of the <xref:System.Security.RightsManagement.RightsManagementException>.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgbldsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgBldSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgbldsecenv)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,195 @@
+<Type Name="ISelectionItemProvider" FullName="System.Windows.Automation.Provider.ISelectionItemProvider">
+  <TypeSignature Language="C#" Value="public interface ISelectionItemProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISelectionItemProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ISelectionItemProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2acad808-b2d4-452d-a407-91ff1ad167b2")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to individual, selectable child controls of containers that implement <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.SelectionItemPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddToSelection">
+      <MemberSignature Language="C#" Value="public void AddToSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddToSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Adds the current element to the collection of selected items.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the result of a call to <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection%2A> is that a single item is selected, then send an <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> for that element; otherwise send an <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent> or <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.  
+  
+> [!NOTE]
+>  This rule does not depend on whether the container allows single or multiple selections, or on what method was used to change the selection. Only the result matters.  
+  
+   
+  
+## Examples  
+ The following example code adds the item to a collection of selected items.  
+  
+ [!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#AddToSelection](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListItemFragment.cs#addtoselection)]
+ [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#AddToSelection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listitemfragment.vb#addtoselection)]  
+[!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListItemFragment.cs#isselected)]
+[!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listitemfragment.vb#isselected)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelected">
+      <MemberSignature Language="C#" Value="public bool IsSelected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSelected" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether an item is selected.</summary>
+        <value>
+          <see langword="true" /> if the element is selected; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example code returns `true` if this item is in the collection of selected items.  
+  
+ [!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListItemFragment.cs#isselected)]
+ [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listitemfragment.vb#isselected)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFromSelection">
+      <MemberSignature Language="C#" Value="public void RemoveFromSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveFromSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the current element from the collection of selected items.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Send an <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.  
+  
+> [!NOTE]
+>  This rule does not depend on whether the container allows single or multiple selections, or on what method was used to change the selection. Only the result matters.  
+  
+   
+  
+## Examples  
+ The following example code removes the item from a collection of selected items.  
+  
+ [!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#RemoveFromSelection](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListItemFragment.cs#removefromselection)]
+ [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#RemoveFromSelection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listitemfragment.vb#removefromselection)]  
+[!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListItemFragment.cs#isselected)]
+[!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelected](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listitemfragment.vb#isselected)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionItemProvider.Select" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Deselects any selected items and then selects the current element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example code clears all items from the collection of selected items and then adds this one.  
+  
+ [!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#Select](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListItemFragment.cs#select)]
+ [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#Select](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listitemfragment.vb#select)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionContainer">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple SelectionContainer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.Provider.IRawElementProviderSimple SelectionContainer" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the UI Automation provider that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
+        <value>The provider that supports <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example code returns the UI Automation provider for the list box that contains this list item.  
+  
+ [!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#SelectionContainer](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListItemFragment.cs#selectioncontainer)]
+ [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#SelectionContainer](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listitemfragment.vb#selectioncontainer)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,39 @@
+<Type Name="XmlSerializationWriteCallback" FullName="System.Xml.Serialization.XmlSerializationWriteCallback">
+  <TypeSignature Language="C#" Value="public delegate void XmlSerializationWriteCallback(object o);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSerializationWriteCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationWriteCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="o" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="o">The object being serialized.</param>
+    <summary>Delegate that is used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class for serialization of types from SOAP-encoded, non-root XML data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for serialization derived from the <xref:System.Xml.Serialization.XmlSerializationWriter> class. During this process, the .NET Framework generates write methods that implement the <xref:System.Xml.Serialization.XmlSerializationWriteCallback> class delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized through SOAP-encoded XML and are not root elements. Then, as necessary, a write method is called during serialization.  
+  
+ You should not directly instantiate <xref:System.Xml.Serialization.XmlSerializationWriteCallback>.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,82 @@
+<Type Name="IDebugVsaScriptCodeItem" FullName="Microsoft.JScript.IDebugVsaScriptCodeItem">
+  <TypeSignature Language="C#" Value="public interface IDebugVsaScriptCodeItem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebugVsaScriptCodeItem" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugVsaScriptCodeItem" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("6DFE759A-CB8B-4ca0-A973-1D04E0BF0B53")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods that evaluate expressions and parse strings. This interface is typically implemented by an object that represents a code block, and it is typically called by a debugger. This interface provides extra functionality that is needed by an IActiveScript host.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public object Evaluate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Evaluate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugVsaScriptCodeItem.Evaluate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, evaluates the block, expression, or statement represented by the code item and returns the value. It is typically called by a debugger that needs to evaluate an expression (in a Watch window, for example). For expressions, the value is the result of the expression. For blocks and statements, the resulting expression is the last expression calculated by the block or statement.</summary>
+        <returns>Returns a value that represents the evaluation of the statement, expression, or block.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the <xref:Microsoft.JScript.IDebugVsaScriptCodeItem.Evaluate%2A> method is functionally identical to the <xref:Microsoft.JScript.IVsaScriptCodeItem.Execute%2A> method. Only the marshaling attributes differ. This version of the interface allows an unmanaged debugger to obtain the return value as an `IUnknown` pointer rather than a `VARIANT`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseNamedBreakPoint">
+      <MemberSignature Language="C#" Value="public bool ParseNamedBreakPoint (string input, out string functionName, out int nargs, out string arguments, out string returnType, out ulong offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ParseNamedBreakPoint(string input, string functionName, int32 nargs, string arguments, string returnType, unsigned int64 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugVsaScriptCodeItem.ParseNamedBreakPoint(System.String,System.String@,System.Int32@,System.String@,System.String@,System.UInt64@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="functionName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="nargs" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="arguments" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="returnType" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="offset" Type="System.UInt64&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="input">A well-formed named breakpoint string giving a function, optional argument list, and optional IL offset.</param>
+        <param name="functionName">Out parameter returning the name of the function parsed out of the input string, or the empty string if the input string is not well formed.</param>
+        <param name="nargs">Out parameter returning the number of arguments in the optional argument list. Returns zero if there is no arguments list or if the string is not well formed.</param>
+        <param name="arguments">Out parameter returning a space-separated list of the names of the types of all the arguments in the arguments list, or an empty string if the arguments list was missing or the input string was not well formed.</param>
+        <param name="returnType">Out parameter returning a string containing the return type of the function named in the input, or the empty string if the return type was missing or the input string was not well formed.</param>
+        <param name="offset">Unsigned long integer giving the IL offset from the input string, or zero if there was no IL offset or the string was not well formed.</param>
+        <summary>When implemented in a class, parses strings and returns the parsed-out information. This method is typically called by a debugger that needs to parse information about a breakpoint that is represented as a <see langword="string" />. The debugger might have a breakpoint typed in by the user in the form *functionname-arguments-ILoffset*. A named breakpoint string can have a complex format, for example, <c>F.B(C.D[], int, arg : double ) : C.Abc + 123.</c> The parameter list is optional, as is the IL offset.</summary>
+        <returns>Returns <see langword="true" /> if the named breakpoint is successfully parsed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

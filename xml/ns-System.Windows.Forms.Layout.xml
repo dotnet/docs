@@ -1,0 +1,17 @@
+<Namespace Name="System.Windows.Forms.Layout">
+  <Docs>
+    <summary>The <see cref="N:System.Windows.Forms.Layout" /> namespace contains classes for implementing layout behaviors in your form or control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following list shows the classes included in this namespace:  
+  
+-   The <xref:System.Windows.Forms.Layout.LayoutEngine> abstract base class is used by the <xref:System.Windows.Forms.TableLayoutPanel> and <xref:System.Windows.Forms.FlowLayoutPanel> controls for building custom layout engines.  
+  
+-   The <xref:System.Windows.Forms.Layout.ArrangedElementCollection> class collects objects that participate in a layout managed by a <xref:System.Windows.Forms.Layout.LayoutEngine>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

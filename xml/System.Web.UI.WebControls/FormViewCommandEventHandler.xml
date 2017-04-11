@@ -1,0 +1,61 @@
+<Type Name="FormViewCommandEventHandler" FullName="System.Web.UI.WebControls.FormViewCommandEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void FormViewCommandEventHandler(object sender, FormViewCommandEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewCommandEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewCommandEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.FormViewCommandEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.FormViewCommandEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.FormView.ItemCommand" /> event of a <see cref="T:System.Web.UI.WebControls.FormView" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormView.ItemCommand> event is raised when a button within the <xref:System.Web.UI.WebControls.FormView> control is clicked. This allows you to provide an event-handling method that performs a custom routine whenever this event occurs.  
+  
+ Buttons within a <xref:System.Web.UI.WebControls.FormView> control can also invoke some of the built-in functionality of the control. To perform one of these operations, set the `CommandName` property of a button to one of the values in the following table.  
+  
+|CommandName value|Description|  
+|-----------------------|-----------------|  
+|"Cancel"|Cancels an edit or insert operation and returns the <xref:System.Web.UI.WebControls.FormView> control to the mode specified by the <xref:System.Web.UI.WebControls.FormView.DefaultMode%2A> property. Raises the <xref:System.Web.UI.WebControls.FormView.ModeChanged> and <xref:System.Web.UI.WebControls.FormView.ModeChanging> events.|  
+|"Delete"|Deletes the current record. Raises the <xref:System.Web.UI.WebControls.FormView.ItemDeleted> and <xref:System.Web.UI.WebControls.FormView.ItemDeleting> events.|  
+|"Edit"|Puts the <xref:System.Web.UI.WebControls.FormView> control in edit mode. Raises the <xref:System.Web.UI.WebControls.FormView.ModeChanged> and <xref:System.Web.UI.WebControls.FormView.ModeChanging> events.|  
+|"Insert"|Inserts the current record in the data source. Raises the <xref:System.Web.UI.WebControls.FormView.ItemInserted> and <xref:System.Web.UI.WebControls.FormView.ItemInserting> events.|  
+|"New"|Puts the <xref:System.Web.UI.WebControls.FormView> control in insert mode. Raises the <xref:System.Web.UI.WebControls.FormView.ModeChanged> and <xref:System.Web.UI.WebControls.FormView.ModeChanging> events.|  
+|"Page"|Performs a paging operation. Set the `CommandArgument` property of the button to "First", "Last", "Next", "Prev", or a page number to specify the type of paging operation to perform. Raises the <xref:System.Web.UI.WebControls.FormView.PageIndexChanged> and <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> events.|  
+|"Update"|Updates the current record in the data source. Raises the <xref:System.Web.UI.WebControls.FormView.ItemUpdated> and <xref:System.Web.UI.WebControls.FormView.ItemUpdating> events.|  
+  
+ Although the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event is raised when a button listed in the previous table is clicked, it is recommended that you handle the events listed in the table for the operation.  
+  
+ When you create a <xref:System.Web.UI.WebControls.FormViewCommandEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.FormViewCommandEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewCommandEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCommandEventHandler/CS/formviewcommandeventhandlercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewCommandEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCommandEventHandler/VB/formviewcommandeventhandlervb.aspx#1)]  -->  
+  
+ The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewCommandEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ItemCommand> event of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewCommandEventHandlerDeclarative#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewCommandEventHandlerDeclarative/CS/formviewcommandeventhandlerdeclarativecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewCommandEventHandlerDeclarative#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewCommandEventHandlerDeclarative/VB/formviewcommandeventhandlerdeclarativevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

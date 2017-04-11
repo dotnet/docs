@@ -1,0 +1,369 @@
+<Type Name="ToolboxItemWrapper" FullName="System.Activities.Presentation.Toolbox.ToolboxItemWrapper">
+  <TypeSignature Language="C#" Value="public sealed class ToolboxItemWrapper : System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolboxItemWrapper extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a wrapper used to establish link between an actual <see cref="T:System.Drawing.Presentation.ToolboxItem" /> instance and the tool representation, as well as add support for categorization of toolbox items. This class is <see langword="sealed" />, so it cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This wrapper class provides support for the categorization of toolbox items when re-hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)]outside of [!INCLUDE[vs2010](~/includes/vs2010-md.md)].  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxItemWrapper#0](WFD_ToolboxItemWrapper#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemWrapper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A>, <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A>, and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName%2A> properties with an empty `string`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemWrapper (Type toolType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type toolType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">The type of the tool.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class with the type of the tool.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter. The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName%2A> properties are each initialized with an empty `string`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemWrapper (Type toolType, string displayName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type toolType, string displayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor(System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolType" Type="System.Type" />
+        <Parameter Name="displayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">The type of the tool.</param>
+        <param name="displayName">The name of the display.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class with the type of the tool and a specified display name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter. The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName%2A> property is initialized with an empty `string`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemWrapper (Type toolType, string bitmapName, string displayName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type toolType, string bitmapName, string displayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor(System.Type,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolType" Type="System.Type" />
+        <Parameter Name="bitmapName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolType">The type of the tool.</param>
+        <param name="bitmapName">A <see langword="string" /> that contains the name of the bitmap.</param>
+        <param name="displayName">A <see langword="string" /> that contains the name of the display.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class with the type of the tool and specified names for the bitmap and display.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName%2A> properties can be extracted from the `toolType` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemWrapper (string toolName, string assemblyName, string bitmapName, string displayName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolName, string assemblyName, string bitmapName, string displayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolName" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="bitmapName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolName">The name of the tool.</param>
+        <param name="assemblyName">The name of the assembly.</param>
+        <param name="bitmapName">The name of the bitmap.</param>
+        <param name="displayName">The name of the display.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> class with specified names for the tool, assembly, bitmap, and display.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyName">
+      <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.AssemblyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the assembly name for the toolbox item.</summary>
+        <value>The assembly name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the assembly name is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The assembly name has already been specified and cannot be changed after the corresponding <see cref="T:System.Drawing.Desigen.ToolboxItem" /> has been initialized.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Bitmap">
+      <MemberSignature Language="C#" Value="public System.Drawing.Bitmap Bitmap { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Bitmap Bitmap" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.Bitmap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Bitmap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bitmap associated with the <see cref="T:System.Drawing.Design.ToolboxItem" /> wrapped by the current object.</summary>
+        <value>Returns a <see cref="T:System.Drawing.Bitmap" /> that is associated with the <see cref="T:System.Drawing.Design.ToolboxItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitmapName">
+      <MemberSignature Language="C#" Value="public string BitmapName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BitmapName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the bitmap name.</summary>
+        <value>The bitmap name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the bitmap name is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display name.</summary>
+        <value>The display name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the display name is changed, an event is raised to indicate that the property has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Drawing.Design.ToolboxItem" /> is valid.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Drawing.Design.ToolboxItem" /> is valid; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Design.ToolboxItem> is valid if it is not `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.PropertyChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An event that occurs when a property is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.PropertyChanged> property is defined by the <xref:System.ComponentModel.INotifyPropertyChanged> interface that is implemented by the <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolName">
+      <MemberSignature Language="C#" Value="public string ToolName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the tool.</summary>
+        <value>The tool name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the name of the tool is changed, an event is raised to indicate that the property value has been changed. The set operation is idempotent: if the assembly name is set to a value that it already has, there is no change.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.OperationException">The name of the tool cannot be changed after the corresponding <see cref="T:System.Drawing.Desigen.ToolboxItem" /> has been initialized.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see langword="string" /> that represents the current object.</summary>
+        <returns>Returns the value of the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName" /> property for the current <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <value>Returns <see cref="T:System.Type" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

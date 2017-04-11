@@ -1,0 +1,281 @@
+<Type Name="XmlQueryContext" FullName="System.Xml.Xsl.Runtime.XmlQueryContext">
+  <TypeSignature Language="C#" Value="public sealed class XmlQueryContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlQueryContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlQueryContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The context of a query consists of all user-provided information that influences the operation of the query.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The context manages the following information:  
+  
+1.  Input data sources, including the default data source if one exists.  
+  
+2.  Extension objects. For more information, see [User Defined Functions and Variables](~/docs/standard/data/xml/user-defined-functions-and-variables.md).  
+  
+3.  External parameters.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultDataSource">
+      <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathNavigator DefaultDataSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XPath.XPathNavigator DefaultDataSource" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryContext.DefaultDataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the document that is queried by default if no data source is explicitly selected in the query.</summary>
+        <value>An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultNameTable">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNameTable DefaultNameTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNameTable DefaultNameTable" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryContext.DefaultNameTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNameTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the name table used by the default data source, or null if there is no default data source.</summary>
+        <value>An instance of the <see cref="T:System.Xml.XmlNameTable" /> class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataSource">
+      <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathNavigator GetDataSource (string uriRelative, string uriBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XPath.XPathNavigator GetDataSource(string uriRelative, string uriBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryContext.GetDataSource(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uriRelative" Type="System.String" />
+        <Parameter Name="uriBase" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uriRelative">A value of type <see langword="string" />.</param>
+        <param name="uriBase">A value of type <see langword="string" />.</param>
+        <summary>Gets the data source specified by the <paramref name="uriRelative" /> and <paramref name="uriBase" /> from the <c>T:System.Xml.XmlResolver</c> that the user provided.</summary>
+        <returns>An instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws an exception if no data source was found.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLateBoundObject">
+      <MemberSignature Language="C#" Value="public object GetLateBoundObject (string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetLateBoundObject(string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryContext.GetLateBoundObject(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceUri">A value of type <see langword="string" />.</param>
+        <summary>Returns the extension object that is mapped to the specified namespace, or null if no object is mapped.</summary>
+        <returns>An extension object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameter">
+      <MemberSignature Language="C#" Value="public object GetParameter (string localName, string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetParameter(string localName, string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryContext.GetParameter(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localName" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localName">A value of type <see langword="string" />.</param>
+        <param name="namespaceUri">A value of type <see langword="string" />.</param>
+        <summary>Gets a named parameter from the external argument list.</summary>
+        <returns>
+          <see langword="null" /> if no argument list was provided, or if there is no parameter by that name; otherwise, a named parameter from the external argument list.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeXsltLateBoundFunction">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; InvokeXsltLateBoundFunction (string name, string namespaceUri, System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; InvokeXsltLateBoundFunction(string name, string namespaceUri, class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt;[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryContext.InvokeXsltLateBoundFunction(System.String,System.String,System.Collections.Generic.IList{System.Xml.XPath.XPathItem}[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+        <Parameter Name="args" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;[]" />
+      </Parameters>
+      <Docs>
+        <param name="name">A value of type <see langword="string" />.</param>
+        <param name="namespaceUri">A value of type <see langword="string" />.</param>
+        <param name="args">A sequence of <see cref="T:System.Xml.XPath.XPathItem" /> instances.</param>
+        <summary>Gets a late-bound extension object from the external argument list.</summary>
+        <returns>Returns a generic list of type <see cref="T:System.Xml.XPath.XPathItem" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LateBoundFunctionExists">
+      <MemberSignature Language="C#" Value="public bool LateBoundFunctionExists (string name, string namespaceUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool LateBoundFunctionExists(string name, string namespaceUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryContext.LateBoundFunctionExists(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="namespaceUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">A value of type <see langword="string" />.</param>
+        <param name="namespaceUri">A value of type <see langword="string" />.</param>
+        <summary>Returns true if the late-bound object identified by <paramref name="namespaceUri" /> contains a method that matches <paramref name="name" />.</summary>
+        <returns>
+          <see langword="true" /> if the late bound object matches name; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnXsltMessageEncountered">
+      <MemberSignature Language="C#" Value="public void OnXsltMessageEncountered (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnXsltMessageEncountered(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryContext.OnXsltMessageEncountered(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">A value of type <see langword="string" />.</param>
+        <summary>Raises an <see cref="E:System.Xml.Xsl.XsltArgumentList.XsltMessageEncountered" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryNameTable">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNameTable QueryNameTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNameTable QueryNameTable" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryContext.QueryNameTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNameTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xml.XmlNameTable" /> instance.</summary>
+        <value>Returns an instance of the <see cref="T:System.Xml.XmlNameTable" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

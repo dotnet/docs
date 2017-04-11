@@ -1,0 +1,566 @@
+<Type Name="ToolStripManager" FullName="System.Windows.Forms.ToolStripManager">
+  <TypeSignature Language="C#" Value="public sealed class ToolStripManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Controls <see cref="T:System.Windows.Forms.ToolStrip" /> rendering and rafting, and the merging of <see cref="T:System.Windows.Forms.MenuStrip" />, <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />, and <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStripManager> supports <xref:System.Windows.Forms.ToolStrip>-related tasks for entire applications, such as merging, settings, and renderer options. The overloaded <xref:System.Windows.Forms.ToolStripManager.Merge%2A> method combines <xref:System.Windows.Forms.ToolStrip> controls with each other, and the overloaded <xref:System.Windows.Forms.ToolStripManager.RevertMerge%2A> method undoes a merge operation.  
+  
+ Use the <xref:System.Windows.Forms.ToolStripRenderer> class with the <xref:System.Windows.Forms.ToolStripManager> class to gain even more control and customizability over painting and layout style.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates all the typical scenarios of menu item merging.  
+  
+ [!code-csharp[System.Windows.Forms.ContextMenuStripMerge#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ContextMenuStripMerge#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/VB/form1.vb#1)]  
+  
+ The following code example demonstrates a call to <xref:System.Windows.Forms.ToolStripManager> and some of its members.  
+  
+ [!code-cpp[System.Windows.Forms.ToolStrip1#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CPP/form1.cpp#8)]
+ [!code-csharp[System.Windows.Forms.ToolStrip1#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/CS/form1.cs#8)]
+ [!code-vb[System.Windows.Forms.ToolStrip1#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip1/VB/form1.vb#8)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindToolStrip">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.ToolStrip FindToolStrip (string toolStripName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.ToolStrip FindToolStrip(string toolStripName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.FindToolStrip(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStrip</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolStripName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolStripName">A string specifying the name of the <see cref="T:System.Windows.Forms.ToolStrip" /> or derived <see cref="T:System.Windows.Forms.ToolStrip" /> type to find.</param>
+        <summary>Finds the specified <see cref="T:System.Windows.Forms.ToolStrip" /> or a type derived from <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ToolStrip" /> or one of its derived types as specified by the <paramref name="toolStripName" /> parameter, or <see langword="null" /> if the <see cref="T:System.Windows.Forms.ToolStrip" /> is not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.ToolStripManager.FindToolStrip%2A> method to search for a <xref:System.Windows.Forms.ToolStrip> or an object derived from <xref:System.Windows.Forms.ToolStrip>. Derived types of <xref:System.Windows.Forms.ToolStrip> are <xref:System.Windows.Forms.StatusStrip>, <xref:System.Windows.Forms.MenuStrip>, <xref:System.Windows.Forms.ToolStripDropDown>, <xref:System.Windows.Forms.ToolStripDropDownMenu>, and <xref:System.Windows.Forms.ContextMenuStrip>. If the object of the search is not specifically a <xref:System.Windows.Forms.ToolStrip> but one of these derived types, cast the return type as required.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a use of the <xref:System.Windows.Forms.ToolStripManager.FindToolStrip%2A> method. This example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A> property.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.Misc#80](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#80)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#80](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#80)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsShortcutDefined">
+      <MemberSignature Language="C#" Value="public static bool IsShortcutDefined (System.Windows.Forms.Keys shortcut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsShortcutDefined(valuetype System.Windows.Forms.Keys shortcut) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.IsShortcutDefined(System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shortcut" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="shortcut">The shortcut key for which to search.</param>
+        <summary>Retrieves a value indicating whether the specified shortcut key is used by any of the <see cref="T:System.Windows.Forms.ToolStrip" /> controls of a form.</summary>
+        <returns>
+          <see langword="true" /> if the shortcut key is used by any <see cref="T:System.Windows.Forms.ToolStrip" /> on the form; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidShortcut">
+      <MemberSignature Language="C#" Value="public static bool IsValidShortcut (System.Windows.Forms.Keys shortcut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValidShortcut(valuetype System.Windows.Forms.Keys shortcut) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.IsValidShortcut(System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shortcut" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="shortcut">The shortcut key to test for validity.</param>
+        <summary>Retrieves a value indicating whether a defined shortcut key is valid.</summary>
+        <returns>
+          <see langword="true" /> if the shortcut key is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid shortcut keys are the function keys F1 through F12 alone; function keys with CTRL, ALT, or SHIFT modifiers; or other keys with CTRL, ALT, or SHIFT modifiers. CTRL, ALT, or SHIFT keys and keys other than function keys are not valid shortcut keys if used alone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadSettings">
+      <MemberSignature Language="C#" Value="public static void LoadSettings (System.Windows.Forms.Form targetForm);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LoadSettings(class System.Windows.Forms.Form targetForm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.LoadSettings(System.Windows.Forms.Form)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetForm" Type="System.Windows.Forms.Form" />
+      </Parameters>
+      <Docs>
+        <param name="targetForm">The <see cref="T:System.Windows.Forms.Form" /> whose name is also the settings key.</param>
+        <summary>Loads settings for the given <see cref="T:System.Windows.Forms.Form" /> using the full name of the <see cref="T:System.Windows.Forms.Form" /> as the settings key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStrip> controls that are not on the form at design time when the <xref:System.Windows.Forms.ToolStrip> settings are saved are removed from the <xref:System.Windows.Forms.Form> when the settings are loaded. To reset the settings, comment out the <xref:System.Windows.Forms.ToolStripManager.LoadSettings%2A> line and leave the <xref:System.Windows.Forms.ToolStripManager.SaveSettings%2A> line. This will not load any settings and will persist the last state. When you remove the comment from the <xref:System.Windows.Forms.ToolStripManager.LoadSettings%2A> line, those settings will be applied.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="targetForm" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadSettings">
+      <MemberSignature Language="C#" Value="public static void LoadSettings (System.Windows.Forms.Form targetForm, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LoadSettings(class System.Windows.Forms.Form targetForm, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.LoadSettings(System.Windows.Forms.Form,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetForm" Type="System.Windows.Forms.Form" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetForm">The <see cref="T:System.Windows.Forms.Form" /> for which to load settings.</param>
+        <param name="key">A <see cref="T:System.String" /> representing the settings key for this <see cref="T:System.Windows.Forms.Form" />.</param>
+        <summary>Loads settings for the specified <see cref="T:System.Windows.Forms.Form" /> using the specified settings key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStrip> controls that are not on the form at design time when the <xref:System.Windows.Forms.ToolStrip> settings are saved are removed from the <xref:System.Windows.Forms.Form> when the settings are loaded. To reset the settings, comment out the <xref:System.Windows.Forms.ToolStripManager.LoadSettings%2A> line and leave the <xref:System.Windows.Forms.ToolStripManager.SaveSettings%2A> line. This will not load any settings and will persist the last state. When you remove the comment from the <xref:System.Windows.Forms.ToolStripManager.LoadSettings%2A> line, those settings will be applied.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public static bool Merge (System.Windows.Forms.ToolStrip sourceToolStrip, string targetName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Merge(class System.Windows.Forms.ToolStrip sourceToolStrip, string targetName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceToolStrip" Type="System.Windows.Forms.ToolStrip" />
+        <Parameter Name="targetName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceToolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> to be combined with the <see cref="T:System.Windows.Forms.ToolStrip" /> referred to by the <c>targetName</c> parameter.</param>
+        <param name="targetName">The name of the <see cref="T:System.Windows.Forms.ToolStrip" /> that receives the <see cref="T:System.Windows.Forms.ToolStrip" /> referred to by the <c>sourceToolStrip</c> parameter.</param>
+        <summary>Combines two <see cref="T:System.Windows.Forms.ToolStrip" /> objects of the same type.</summary>
+        <returns>
+          <see langword="true" /> if the merge is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=fullName> method to combine <xref:System.Windows.Forms.ToolStrip> objects of identical type, such as <xref:System.Windows.Forms.ToolStrip> objects with other <xref:System.Windows.Forms.ToolStrip> objects, <xref:System.Windows.Forms.MenuStrip> objects with other <xref:System.Windows.Forms.MenuStrip> objects, and so on.  
+  
+ Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=fullName> method to combine <xref:System.Windows.Forms.ToolStrip> objects of different types.  
+  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, and the source and target types must be identical, or this method returns `false`.  
+  
+> [!NOTE]
+>  If there are two <xref:System.Windows.Forms.MenuStrip> controls on an MDI child form, setting <xref:System.Windows.Forms.Form.IsMdiContainer%2A> to `true` for the parent form merges the contents of only one of the <xref:System.Windows.Forms.MenuStrip> controls. Use <xref:System.Windows.Forms.ToolStripManager.Merge%2A> to merge the contents of additional child <xref:System.Windows.Forms.MenuStrip> controls on the MDI parent form.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="sourceToolStrip" /> or <paramref name="targetName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="sourceToolStrip" /> or <paramref name="targetName" /> parameters refer to the same <see cref="T:System.Windows.Forms.ToolStrip" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public static bool Merge (System.Windows.Forms.ToolStrip sourceToolStrip, System.Windows.Forms.ToolStrip targetToolStrip);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Merge(class System.Windows.Forms.ToolStrip sourceToolStrip, class System.Windows.Forms.ToolStrip targetToolStrip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.Merge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceToolStrip" Type="System.Windows.Forms.ToolStrip" />
+        <Parameter Name="targetToolStrip" Type="System.Windows.Forms.ToolStrip" />
+      </Parameters>
+      <Docs>
+        <param name="sourceToolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> to be combined with the <see cref="T:System.Windows.Forms.ToolStrip" /> referred to by the <c>targetToolStrip</c> parameter.</param>
+        <param name="targetToolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> that receives the <see cref="T:System.Windows.Forms.ToolStrip" /> referred to by the <c>sourceToolStrip</c> parameter.</param>
+        <summary>Combines two <see cref="T:System.Windows.Forms.ToolStrip" /> objects of different types.</summary>
+        <returns>
+          <see langword="true" /> if the merge is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=fullName> method to combine <xref:System.Windows.Forms.ToolStrip> objects of different types.  
+  
+ Use the <xref:System.Windows.Forms.ToolStripManager.Merge%2A?displayProperty=fullName> method to combine <xref:System.Windows.Forms.ToolStrip> objects of identical type, such as <xref:System.Windows.Forms.ToolStrip> objects with other <xref:System.Windows.Forms.ToolStrip> objects, <xref:System.Windows.Forms.MenuStrip> objects with other <xref:System.Windows.Forms.MenuStrip> objects, and so on.  
+  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
+  
+> [!NOTE]
+>  If there are two <xref:System.Windows.Forms.MenuStrip> controls on an MDI child form, setting <xref:System.Windows.Forms.Form.IsMdiContainer%2A> to `true` for the parent form merges the contents of only one of the <xref:System.Windows.Forms.MenuStrip> controls. Use <xref:System.Windows.Forms.ToolStripManager.Merge%2A> to merge the contents of additional child <xref:System.Windows.Forms.MenuStrip> controls on the MDI parent form.  
+  
+   
+  
+## Examples  
+ The following code example merges menu items based on specified choices. This example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripManager> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.ContextMenuStripMerge#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.ContextMenuStripMerge#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Renderer">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.ToolStripRenderer Renderer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.ToolStripRenderer Renderer" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripManager.Renderer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripRenderer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default painting styles for the form.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripRenderer" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Forms.ToolStripManager.Renderer%2A> property is used when the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> property of the current <xref:System.Windows.Forms.ToolStrip> is set to <xref:System.Windows.Forms.ToolStripRenderMode>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply a custom professional renderer to an individual <xref:System.Windows.Forms.ToolStrip> or to the application as a whole.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.Misc#70](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#70)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#70](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#70)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RendererChanged">
+      <MemberSignature Language="C#" Value="public static event EventHandler RendererChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RendererChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripManager.RendererChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripManager.Renderer" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+> [!CAUTION]
+>  To prevent memory leaks, disable this event when your application is disposed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripManager.RendererChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.ToolStripManager> named `ToolStripManager1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripManager.RendererChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#603](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#603)]
+ [!code-vb[System.Windows.Forms.EventExamples#603](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#603)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.ToolStripManagerRenderMode RenderMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Forms.ToolStripManagerRenderMode RenderMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripManager.RenderMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripManagerRenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default theme for the form.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ToolStripManagerRenderMode" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A> property to get or set whether the application is painted by the <xref:System.Windows.Forms.ToolStripProfessionalRenderer>, the <xref:System.Windows.Forms.ToolStripSystemRenderer>, or a customized <xref:System.Windows.Forms.ToolStripRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a use of the <xref:System.Windows.Forms.ToolStripManager.RenderMode%2A> property. This example is part of a larger example provided for the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A> property.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.Misc#80](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#80)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#80](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#80)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The set value was not one of the <see cref="T:System.Windows.Forms.ToolStripManagerRenderMode" /> values.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <see cref="T:System.Windows.Forms.ToolStripManagerRenderMode" /> is set to <see cref="F:System.Windows.Forms.ToolStripManagerRenderMode.Custom" />; use the <see cref="P:System.Windows.Forms.ToolStripManager.Renderer" /> property instead.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RevertMerge">
+      <MemberSignature Language="C#" Value="public static bool RevertMerge (string targetName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RevertMerge(string targetName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetName">The name of the <see cref="T:System.Windows.Forms.ToolStripItem" /> for which to undo a merge operation.</param>
+        <summary>Undoes a merging of two <see cref="T:System.Windows.Forms.ToolStrip" /> objects, returning the <see cref="T:System.Windows.Forms.ToolStrip" /> with the specified name to its state before the merge and nullifying all previous merge operations.</summary>
+        <returns>
+          <see langword="true" /> if the undoing of the merge is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RevertMerge">
+      <MemberSignature Language="C#" Value="public static bool RevertMerge (System.Windows.Forms.ToolStrip targetToolStrip);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RevertMerge(class System.Windows.Forms.ToolStrip targetToolStrip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetToolStrip" Type="System.Windows.Forms.ToolStrip" />
+      </Parameters>
+      <Docs>
+        <param name="targetToolStrip">The <see cref="T:System.Windows.Forms.ToolStripItem" /> for which to undo a merge operation.</param>
+        <summary>Undoes a merging of two <see cref="T:System.Windows.Forms.ToolStrip" /> objects, returning the specified <see cref="T:System.Windows.Forms.ToolStrip" /> to its state before the merge and nullifying all previous merge operations.</summary>
+        <returns>
+          <see langword="true" /> if the undoing of the merge is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
+  
+   
+  
+## Examples  
+ The following code example undoes the merging of menu items. This example is part of a larger example available in the <xref:System.Windows.Forms.ToolStripManager> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.ContextMenuStripMerge#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.ContextMenuStripMerge#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ContextMenuStripMerge/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RevertMerge">
+      <MemberSignature Language="C#" Value="public static bool RevertMerge (System.Windows.Forms.ToolStrip targetToolStrip, System.Windows.Forms.ToolStrip sourceToolStrip);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RevertMerge(class System.Windows.Forms.ToolStrip targetToolStrip, class System.Windows.Forms.ToolStrip sourceToolStrip) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetToolStrip" Type="System.Windows.Forms.ToolStrip" />
+        <Parameter Name="sourceToolStrip" Type="System.Windows.Forms.ToolStrip" />
+      </Parameters>
+      <Docs>
+        <param name="targetToolStrip">The name of the <see cref="T:System.Windows.Forms.ToolStripItem" /> for which to undo a merge operation.</param>
+        <param name="sourceToolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> that was merged with the <c>targetToolStrip</c>.</param>
+        <summary>Undoes a merging of two <see cref="T:System.Windows.Forms.ToolStrip" /> objects, returning both <see cref="T:System.Windows.Forms.ToolStrip" /> controls to their state before the merge and nullifying all previous merge operations.</summary>
+        <returns>
+          <see langword="true" /> if the undoing of the merge is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A?displayProperty=fullName> property must be set to `true` for both <xref:System.Windows.Forms.ToolStrip> objects, or this method returns `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="sourceToolStrip" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveSettings">
+      <MemberSignature Language="C#" Value="public static void SaveSettings (System.Windows.Forms.Form sourceForm);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SaveSettings(class System.Windows.Forms.Form sourceForm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.SaveSettings(System.Windows.Forms.Form)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceForm" Type="System.Windows.Forms.Form" />
+      </Parameters>
+      <Docs>
+        <param name="sourceForm">The <see cref="T:System.Windows.Forms.Form" /> whose name is also the settings key.</param>
+        <summary>Saves settings for the given <see cref="T:System.Windows.Forms.Form" /> using the full name of the <see cref="T:System.Windows.Forms.Form" /> as the settings key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStrip> controls that are not on the form at design time when the <xref:System.Windows.Forms.ToolStrip> settings are saved are removed from the <xref:System.Windows.Forms.Form> when the settings are loaded. To reset the settings, comment out the <xref:System.Windows.Forms.ToolStripManager.LoadSettings%2A> line and leave the <xref:System.Windows.Forms.ToolStripManager.SaveSettings%2A> line. This will not load any settings and will persist the last state. When you remove the comment from the <xref:System.Windows.Forms.ToolStripManager.LoadSettings%2A> line, those settings will be applied.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="sourceForm" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveSettings">
+      <MemberSignature Language="C#" Value="public static void SaveSettings (System.Windows.Forms.Form sourceForm, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SaveSettings(class System.Windows.Forms.Form sourceForm, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripManager.SaveSettings(System.Windows.Forms.Form,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceForm" Type="System.Windows.Forms.Form" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceForm">The <see cref="T:System.Windows.Forms.Form" /> for which to save settings.</param>
+        <param name="key">A <see cref="T:System.String" /> representing the settings key for this <see cref="T:System.Windows.Forms.Form" />.</param>
+        <summary>Saves settings for the specified <see cref="T:System.Windows.Forms.Form" /> using the specified settings key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStrip> controls that are not on the form at design time when the <xref:System.Windows.Forms.ToolStrip> settings are saved are removed from the <xref:System.Windows.Forms.Form> when the settings are loaded. To reset the settings, comment out the <xref:System.Windows.Forms.ToolStripManager.LoadSettings%2A> line and leave the <xref:System.Windows.Forms.ToolStripManager.SaveSettings%2A> line. This will not load any settings and will persist the last state. When you remove the comment from the <xref:System.Windows.Forms.ToolStripManager.LoadSettings%2A> line, those settings will be applied.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualStylesEnabled">
+      <MemberSignature Language="C#" Value="public static bool VisualStylesEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool VisualStylesEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripManager.VisualStylesEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a <see cref="T:System.Windows.Forms.ToolStrip" /> is rendered using visual style information called themes.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered using themes; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

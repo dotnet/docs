@@ -1,0 +1,33 @@
+<!-- Standard settings -->
+<healthMonitoring 
+  enabled="true" heartBeatInterval="100">
+
+    <rules>
+       <add 
+         name="Process Statistics"
+         eventName="Heartbeats" 
+         provider="EventLogProvider"  
+         profile="Default"/>
+    </rules>
+
+</healthMonitoring>
+
+
+
+<!-- Custom settings -->
+<healthMonitoring 
+  enabled="true" heartBeatInterval="0">
+
+    <eventMappings>
+      <add  name="SampleProcessStatistics" type="SamplesAspNet.SampleWebProcessStatisticsEvent, webprocessstatistics, Version=1.0.1585.27289, Culture=neutral, PublicKeyToken=3648e5c763a8239f, processorArchitecture=MSIL"/>
+    </eventMappings>
+  
+    <rules>
+       <add 
+         name="Custom Process Statistics"
+         eventName="SampleProcessStatistics" 
+         provider="EventLogProvider"  
+         profile="Default"/>
+    </rules>
+
+</healthMonitoring>

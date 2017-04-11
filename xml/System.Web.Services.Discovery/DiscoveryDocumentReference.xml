@@ -1,0 +1,373 @@
+<Type Name="DiscoveryDocumentReference" FullName="System.Web.Services.Discovery.DiscoveryDocumentReference">
+  <TypeSignature Language="C#" Value="public sealed class DiscoveryDocumentReference : System.Web.Services.Discovery.DiscoveryReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryDocumentReference extends System.Web.Services.Discovery.DiscoveryReference" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryDocumentReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Discovery.DiscoveryReference</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlRoot("discoveryRef", IsNullable=true, Namespace="http://schemas.xmlsoap.org/disco/")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a reference to a discovery document. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML Web services discovery involves discovering the available XML Web services given an URL. The URL typically points to a discovery document, which usually has a.disco file name extension. The discovery document contains references to information about the existance of XML Web services, such as Service Descriptions, XML Schema Definition language (XSD) schemas, or other discovery documents. This class represents a reference to a discovery document.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryDocumentReference_ctor_WriteDocument#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/CPP/discoverydocumentreference_ctor_writedocument.cpp#1)]
+ [!code-csharp[DiscoveryDocumentReference_ctor_WriteDocument#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/CS/discoverydocumentreference_ctor_writedocument.cs#1)]
+ [!code-vb[DiscoveryDocumentReference_ctor_WriteDocument#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/VB/discoverydocumentreference_ctor_writedocument.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryDocumentReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryDocumentReference_ctor_WriteDocument#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/CPP/discoverydocumentreference_ctor_writedocument.cpp#2)]
+ [!code-csharp[DiscoveryDocumentReference_ctor_WriteDocument#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/CS/discoverydocumentreference_ctor_writedocument.cs#2)]
+ [!code-vb[DiscoveryDocumentReference_ctor_WriteDocument#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/VB/discoverydocumentreference_ctor_writedocument.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryDocumentReference (string href);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string href) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="href" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="href">Reference to a discovery document. The <see cref="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref" /> property is set to the value of <c>href</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryDocumentReference" /> class, setting the <see cref="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref" /> property to the value of <paramref name="href" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryDocumentReference_ctor_Properties#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/CPP/discoverydocumentreference_ctor_properties.cpp#1)]
+ [!code-csharp[DiscoveryDocumentReference_ctor_Properties#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/CS/discoverydocumentreference_ctor_properties.cs#1)]
+ [!code-vb[DiscoveryDocumentReference_ctor_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/VB/discoverydocumentreference_ctor_properties.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFilename">
+      <MemberSignature Language="C#" Value="public override string DefaultFilename { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultFilename" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocumentReference.DefaultFilename" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the default file to use when saving the referenced discovery document.</summary>
+        <value>Name of the default file to use when saving the referenced document to a file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryDocumentReference_ctor_Properties#4](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/CPP/discoverydocumentreference_ctor_properties.cpp#4)]
+ [!code-csharp[DiscoveryDocumentReference_ctor_Properties#4](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/CS/discoverydocumentreference_ctor_properties.cs#4)]
+ [!code-vb[DiscoveryDocumentReference_ctor_Properties#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/VB/discoverydocumentreference_ctor_properties.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Document">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Discovery.DiscoveryDocument Document { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Discovery.DiscoveryDocument Document" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Document" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Discovery.DiscoveryDocument</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the contents of the referenced discovery document as a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> object.</summary>
+        <value>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> representing the contents of the referenced discovery document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the discovery document has not been downloaded and added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> property of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>, an attempt to download and resolve the document is made.  
+  
+   
+  
+## Examples  
+ [!code-csharp[DiscoveryDocumentReference_Document_ResolveAll#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_Document_ResolveAll/CS/ddreference_document_resolveall.cs#1)]
+ [!code-vb[DiscoveryDocumentReference_Document_ResolveAll#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_Document_ResolveAll/VB/ddreference_document_resolveall.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ An error occurred during the download or resolution of the XSD schema using <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDocument">
+      <MemberSignature Language="C#" Value="public override object ReadDocument (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadDocument(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.ReadDocument(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" /> containing the discovery document.</param>
+        <summary>Reads and returns the discovery document from the passed <see cref="T:System.IO.Stream" />.</summary>
+        <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> containing the contents of the referenced discovery document.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryDocumentReference_ReadDocument#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocumentReference_ReadDocument/CPP/discoverydocumentreference_readdocument.cpp#1)]
+ [!code-csharp[DiscoveryDocumentReference_ReadDocument#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_ReadDocument/CS/discoverydocumentreference_readdocument.cs#1)]
+ [!code-vb[DiscoveryDocumentReference_ReadDocument#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_ReadDocument/VB/discoverydocumentreference_readdocument.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ref">
+      <MemberSignature Language="C#" Value="public string Ref { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Ref" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("ref")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the reference to a discovery document.</summary>
+        <value>Reference to a discovery document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most references, the <xref:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref%2A> property is a URL, such as http://www.contoso.com/MyWebService.disco.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryDocumentReference_ctor_Properties#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/CPP/discoverydocumentreference_ctor_properties.cpp#2)]
+ [!code-csharp[DiscoveryDocumentReference_ctor_Properties#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/CS/discoverydocumentreference_ctor_properties.cs#2)]
+ [!code-vb[DiscoveryDocumentReference_ctor_Properties#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/VB/discoverydocumentreference_ctor_properties.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="protected override void Resolve (string contentType, System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Resolve(string contentType, class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.Resolve(System.String,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="contentType">To be added.</param>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveAll">
+      <MemberSignature Language="C#" Value="public void ResolveAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.ResolveAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Verifies that all referenced documents within the discovery document are valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless you specifically need to resolve the individual references of a <xref:System.Web.Services.Discovery.DiscoveryDocumentReference> object, you should invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveAll%2A> or <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.ResolveOneLevel%2A> methods of <xref:System.Web.Services.Discovery.DiscoveryClientProtocol>.  
+  
+ This method resolves all references to discovery documents, XSD schemas, and Service Descriptions in the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> property of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A> and any references found in referring discovery documents.  
+  
+   
+  
+## Examples  
+ [!code-csharp[DiscoveryDocumentReference_Document_ResolveAll#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_Document_ResolveAll/CS/ddreference_document_resolveall.cs#2)]
+ [!code-vb[DiscoveryDocumentReference_Document_ResolveAll#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_Document_ResolveAll/VB/ddreference_document_resolveall.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ The discovery document could not be downloaded and verified successfully.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public override string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocumentReference.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL of the referenced discovery document.</summary>
+        <value>The URL of the referenced discovery document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the value of the <xref:System.Web.Services.Discovery.DiscoveryDocumentReference.Ref%2A> property.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryDocumentReference_ctor_Properties#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/CPP/discoverydocumentreference_ctor_properties.cpp#3)]
+ [!code-csharp[DiscoveryDocumentReference_ctor_Properties#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/CS/discoverydocumentreference_ctor_properties.cs#3)]
+ [!code-vb[DiscoveryDocumentReference_ctor_Properties#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_Properties/VB/discoverydocumentreference_ctor_properties.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteDocument">
+      <MemberSignature Language="C#" Value="public override void WriteDocument (object document, System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteDocument(object document, class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocumentReference.WriteDocument(System.Object,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Object" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="document">The <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> to write into <c>stream</c>.</param>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> into which the serialized discovery document is written.</param>
+        <summary>Writes the passed <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[DiscoveryDocumentReference_ctor_WriteDocument#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/CPP/discoverydocumentreference_ctor_writedocument.cpp#3)]
+ [!code-csharp[DiscoveryDocumentReference_ctor_WriteDocument#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/CS/discoverydocumentreference_ctor_writedocument.cs#3)]
+ [!code-vb[DiscoveryDocumentReference_ctor_WriteDocument#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocumentReference_ctor_WriteDocument/VB/discoverydocumentreference_ctor_writedocument.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

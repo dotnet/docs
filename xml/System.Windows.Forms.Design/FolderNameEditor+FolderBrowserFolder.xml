@@ -1,0 +1,210 @@
+<Type Name="FolderNameEditor+FolderBrowserFolder" FullName="System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder">
+  <TypeSignature Language="C#" Value="protected enum FolderNameEditor.FolderBrowserFolder" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed FolderNameEditor/FolderBrowserFolder extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines identifiers used to indicate the root folder for a folder browser to initially browse to.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Desktop">
+      <MemberSignature Language="C#" Value="Desktop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder Desktop = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.Desktop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user's desktop.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Favorites">
+      <MemberSignature Language="C#" Value="Favorites" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder Favorites = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.Favorites" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user's favorites list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MyComputer">
+      <MemberSignature Language="C#" Value="MyComputer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder MyComputer = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.MyComputer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The contents of the My Computer icon.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MyDocuments">
+      <MemberSignature Language="C#" Value="MyDocuments" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder MyDocuments = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.MyDocuments" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user's My Documents folder.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MyPictures">
+      <MemberSignature Language="C#" Value="MyPictures" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder MyPictures = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.MyPictures" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>User's location to store pictures.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NetAndDialUpConnections">
+      <MemberSignature Language="C#" Value="NetAndDialUpConnections" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder NetAndDialUpConnections = int32(49)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.NetAndDialUpConnections" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Network and dial-up connections.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkNeighborhood">
+      <MemberSignature Language="C#" Value="NetworkNeighborhood" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder NetworkNeighborhood = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.NetworkNeighborhood" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The network neighborhood.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Printers">
+      <MemberSignature Language="C#" Value="Printers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder Printers = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.Printers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A folder containing installed printers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Recent">
+      <MemberSignature Language="C#" Value="Recent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder Recent = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.Recent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A folder containing shortcuts to recently opened files.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SendTo">
+      <MemberSignature Language="C#" Value="SendTo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder SendTo = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.SendTo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A folder containing shortcuts to applications to send documents to.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartMenu">
+      <MemberSignature Language="C#" Value="StartMenu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder StartMenu = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.StartMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user's start menu.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Templates">
+      <MemberSignature Language="C#" Value="Templates" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.FolderNameEditor/FolderBrowserFolder Templates = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder.Templates" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user's file templates.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

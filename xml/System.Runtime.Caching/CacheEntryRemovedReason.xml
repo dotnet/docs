@@ -1,0 +1,105 @@
+<Type Name="CacheEntryRemovedReason" FullName="System.Runtime.Caching.CacheEntryRemovedReason">
+  <TypeSignature Language="C#" Value="public enum CacheEntryRemovedReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheEntryRemovedReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryRemovedReason" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the reason why a cache entry was removed or an entry is about to be removed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.CacheEntryRemovedReason> enumeration is used to provide a predefined set of reasons why a cache entry was removed or is about to be removed. The <xref:System.Runtime.Caching.CacheEntryRemovedArguments> class takes a <xref:System.Runtime.Caching.CacheEntryRemovedReason> value as one of the parameter to pass to a callback method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CacheSpecificEviction">
+      <MemberSignature Language="C#" Value="CacheSpecificEviction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason CacheSpecificEviction = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.CacheSpecificEviction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A cache entry was evicted for as reason that is defined by a particular cache implementation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeMonitorChanged">
+      <MemberSignature Language="C#" Value="ChangeMonitorChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason ChangeMonitorChanged = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.ChangeMonitorChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A cache entry was removed because a related dependency (such as a file or another cache entry) triggered eviction of the cache entry.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Evicted">
+      <MemberSignature Language="C#" Value="Evicted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason Evicted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Evicted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A cache entry was removed to free memory in the cache. This occurs when a cache instance approaches cache-specific memory limits, or when a process or cache instance approaches computer-wide memory limits.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expired">
+      <MemberSignature Language="C#" Value="Expired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason Expired = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Expired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A cache entry was removed because it expired. Expiration can be based on an absolute time or on a sliding expiration time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Removed">
+      <MemberSignature Language="C#" Value="Removed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason Removed = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Removed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A cache entry was removed by using the <see cref="M:System.Runtime.Caching.ObjectCache.Remove(System.String,System.String)" /> or <see cref="M:System.Runtime.Caching.ObjectCache.Set(System.String,System.Object,System.DateTimeOffset,System.String)" /> method.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

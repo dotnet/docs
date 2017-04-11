@@ -1,0 +1,267 @@
+<Type Name="PartConventionBuilder&lt;T&gt;" FullName="System.Composition.Convention.PartConventionBuilder&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class PartConventionBuilder&lt;T&gt; : System.Composition.Convention.PartConventionBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartConventionBuilder`1&lt;T&gt; extends System.Composition.Convention.PartConventionBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Convention.PartConventionBuilder`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.Convention</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Composition.Convention.PartConventionBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExportProperty">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ExportProperty (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; ExportProperty(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.ExportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportProperty">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ExportProperty (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertySelector, Action&lt;System.Composition.Convention.ExportConventionBuilder&gt; exportConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; ExportProperty(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertySelector, class System.Action`1&lt;class System.Composition.Convention.ExportConventionBuilder&gt; exportConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.ExportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.Composition.Convention.ExportConventionBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+        <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Composition.Convention.ExportConventionBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertySelector">To be added.</param>
+        <param name="exportConfiguration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportProperty&lt;TContract&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ExportProperty&lt;TContract&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; ExportProperty&lt;TContract&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.ExportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">To be added.</typeparam>
+        <param name="propertySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportProperty&lt;TContract&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ExportProperty&lt;TContract&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertySelector, Action&lt;System.Composition.Convention.ExportConventionBuilder&gt; exportConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; ExportProperty&lt;TContract&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertySelector, class System.Action`1&lt;class System.Composition.Convention.ExportConventionBuilder&gt; exportConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.ExportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.Composition.Convention.ExportConventionBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+        <Parameter Name="exportConfiguration" Type="System.Action&lt;System.Composition.Convention.ExportConventionBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">To be added.</typeparam>
+        <param name="propertySelector">To be added.</param>
+        <param name="exportConfiguration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportProperty">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ImportProperty (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; ImportProperty(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.ImportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportProperty">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ImportProperty (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertySelector, Action&lt;System.Composition.Convention.ImportConventionBuilder&gt; importConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; ImportProperty(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertySelector, class System.Action`1&lt;class System.Composition.Convention.ImportConventionBuilder&gt; importConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.ImportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.Composition.Convention.ImportConventionBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+        <Parameter Name="importConfiguration" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertySelector">To be added.</param>
+        <param name="importConfiguration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportProperty&lt;TContract&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ImportProperty&lt;TContract&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; ImportProperty&lt;TContract&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.ImportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">To be added.</typeparam>
+        <param name="propertySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportProperty&lt;TContract&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; ImportProperty&lt;TContract&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertySelector, Action&lt;System.Composition.Convention.ImportConventionBuilder&gt; importConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; ImportProperty&lt;TContract&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertySelector, class System.Action`1&lt;class System.Composition.Convention.ImportConventionBuilder&gt; importConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.ImportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.Composition.Convention.ImportConventionBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertySelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+        <Parameter Name="importConfiguration" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">To be added.</typeparam>
+        <param name="propertySelector">To be added.</param>
+        <param name="importConfiguration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyImportsSatisfied">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; NotifyImportsSatisfied (System.Linq.Expressions.Expression&lt;Action&lt;T&gt;&gt; methodSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; NotifyImportsSatisfied(class System.Linq.Expressions.Expression`1&lt;class System.Action`1&lt;!T&gt;&gt; methodSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.NotifyImportsSatisfied(System.Linq.Expressions.Expression{System.Action{`0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodSelector" Type="System.Linq.Expressions.Expression&lt;System.Action&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="methodSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectConstructor">
+      <MemberSignature Language="C#" Value="public System.Composition.Convention.PartConventionBuilder&lt;T&gt; SelectConstructor (System.Linq.Expressions.Expression&lt;Func&lt;System.Composition.Convention.ParameterImportConventionBuilder,T&gt;&gt; constructorSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Convention.PartConventionBuilder`1&lt;!T&gt; SelectConstructor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Composition.Convention.ParameterImportConventionBuilder, !T&gt;&gt; constructorSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Convention.PartConventionBuilder`1.SelectConstructor(System.Linq.Expressions.Expression{System.Func{System.Composition.Convention.ParameterImportConventionBuilder,`0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.Convention</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Convention.PartConventionBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorSelector" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.Composition.Convention.ParameterImportConventionBuilder,T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="constructorSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

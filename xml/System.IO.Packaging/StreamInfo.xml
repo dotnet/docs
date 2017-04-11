@@ -1,0 +1,173 @@
+<Type Name="StreamInfo" FullName="System.IO.Packaging.StreamInfo">
+  <TypeSignature Language="C#" Value="public class StreamInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StreamInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Packaging.StreamInfo" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access and information for manipulating I/O streams within a <see cref="T:System.IO.Packaging.Package" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompressionOption">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.CompressionOption CompressionOption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Packaging.CompressionOption CompressionOption" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.CompressionOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.CompressionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IO.Packaging.CompressionOption" /> setting for the stream.</summary>
+        <value>The compression option setting for the package stream.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.CompressionOption%2A> property returns CompressionOption.<xref:System.IO.Packaging.CompressionOption>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionOption">
+      <MemberSignature Language="C#" Value="public System.IO.Packaging.EncryptionOption EncryptionOption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Packaging.EncryptionOption EncryptionOption" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.EncryptionOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.EncryptionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IO.Packaging.EncryptionOption" /> setting for the stream.</summary>
+        <value>The encryption option setting for the package stream.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.EncryptionOption%2A> property returns EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a stream opened in a default <see cref="T:System.IO.FileMode" /> and <see cref="T:System.IO.FileAccess" />.</summary>
+        <returns>The I/O stream opened in a default <see cref="T:System.IO.Packaging.Package" /> root <see cref="T:System.IO.FileMode" /> and <see cref="T:System.IO.FileAccess" />..</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.IO.Packaging.StreamInfo.GetStream%2A> method (without parameters), opens the stream in file mode <xref:System.IO.FileMode> with the default storage root <xref:System.IO.FileAccess>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetStream (System.IO.FileMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream(valuetype System.IO.FileMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="System.IO.FileMode" />
+      </Parameters>
+      <Docs>
+        <param name="mode">The file mode in which to open the stream.</param>
+        <summary>Returns an I/O stream opened in a specified <see cref="T:System.IO.FileMode" />.</summary>
+        <returns>The stream opened in the specified file <paramref name="mode" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.IO.Packaging.StreamInfo.GetStream%2A> method opens the stream with the default storage root <xref:System.IO.FileAccess>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetStream (System.IO.FileMode mode, System.IO.FileAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream(valuetype System.IO.FileMode mode, valuetype System.IO.FileAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StreamInfo.GetStream(System.IO.FileMode,System.IO.FileAccess)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="System.IO.FileMode" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="mode">The file mode in which to open the stream.</param>
+        <param name="access">The file access mode in which to read or write to the stream.</param>
+        <summary>Returns an I/O stream opened in a specified <see cref="T:System.IO.FileMode" /> and with a given <see cref="T:System.IO.FileAccess" />.</summary>
+        <returns>The I/O stream opened in the specified <see cref="T:System.IO.FileMode" /> and with a given <see cref="T:System.IO.FileAccess" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StreamInfo.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the stream.</summary>
+        <value>The name of this stream.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.Name%2A> property returns an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

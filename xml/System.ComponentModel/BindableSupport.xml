@@ -1,0 +1,98 @@
+<Type Name="BindableSupport" FullName="System.ComponentModel.BindableSupport">
+  <TypeSignature Language="C#" Value="public enum BindableSupport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindableSupport extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindableSupport" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies values to indicate whether a property can be bound to a data element or another property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used at design time to indicate whether a designer should offer a property as available for data binding in a visual designer. This class does not affect whether the property can be data bound at runtime.  
+  
+   
+  
+## Examples  
+ For an example on how to use the <xref:System.ComponentModel.BindableSupport> enumeration to indicate whether a property can be bound, see the sample code in <xref:System.ComponentModel.BindableAttribute.%23ctor%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindableSupport Default = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableSupport.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.BindableSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property is set to the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="No" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindableSupport No = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableSupport.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.BindableSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property is not bindable at design time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="Yes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindableSupport Yes = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableSupport.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.BindableSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property is bindable at design time.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

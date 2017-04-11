@@ -1,0 +1,681 @@
+<Type Name="WqlEventQuery" FullName="System.Management.WqlEventQuery">
+  <TypeSignature Language="C#" Value="public class WqlEventQuery : System.Management.EventQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WqlEventQuery extends System.Management.EventQuery" />
+  <TypeSignature Language="DocId" Value="T:System.Management.WqlEventQuery" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Management.EventQuery</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a WMI event query in *WQL* format.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WqlEventQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WqlEventQuery (string queryOrEventClassName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string queryOrEventClassName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="queryOrEventClassName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="queryOrEventClassName">The string representing either the entire event query or the name of the event class to query. The object will try to parse the string as a valid event query. If unsuccessful, the parser will assume that the parameter represents an event class name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class based on the given query string or event class name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Management.WqlEventQuery> by specifying a query and then initializes a <xref:System.Management.WqlEventQuery> by specifying an event.  
+  
+ [!code-csharp[wminet_WqlEventQuery(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S)/cs/WqlEventQuery(S).cs#1)]
+ [!code-vb[wminet_WqlEventQuery(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S)/vb/WqlEventQuery(S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, string condition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, string condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventClassName" Type="System.String" />
+        <Parameter Name="condition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventClassName">The name of the event class to query.</param>
+        <param name="condition">The condition to apply to events of the specified class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class for the specified event class name, with the specified condition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, TimeSpan withinInterval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, valuetype System.TimeSpan withinInterval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventClassName" Type="System.String" />
+        <Parameter Name="withinInterval" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="eventClassName">The name of the event class to query.</param>
+        <param name="withinInterval">A <see cref="T:System.TimeSpan" /> value specifying the latency acceptable for receiving this event. This value is used in cases where there is no explicit event provider for the query requested, and WMI is required to poll for the condition. This interval is the maximum amount of time that can pass before notification of an event must be delivered.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class for the specified event class, with the specified latency time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a <xref:System.Management.WqlEventQuery> by specifying an event and a time span value specifying the latency acceptable for receiving this event.  
+  
+ [!code-csharp[wminet_WqlEventQuery(S_T)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T)/cs/WqlEventQuery(S_T).cs#1)]
+ [!code-vb[wminet_WqlEventQuery(S_T)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T)/vb/WqlEventQuery(S_T).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, string condition, TimeSpan groupWithinInterval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, string condition, valuetype System.TimeSpan groupWithinInterval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventClassName" Type="System.String" />
+        <Parameter Name="condition" Type="System.String" />
+        <Parameter Name="groupWithinInterval" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="eventClassName">The name of the event class to query.</param>
+        <param name="condition">The condition to apply to events of the specified class.</param>
+        <param name="groupWithinInterval">The specified interval at which WMI sends one <c>aggregate event</c>, rather than many events.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class with the specified event class name, condition, and grouping interval.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, TimeSpan withinInterval, string condition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, valuetype System.TimeSpan withinInterval, string condition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventClassName" Type="System.String" />
+        <Parameter Name="withinInterval" Type="System.TimeSpan" />
+        <Parameter Name="condition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventClassName">The name of the event class to query.</param>
+        <param name="withinInterval">A <see cref="T:System.TimeSpan" /> value specifying the latency acceptable for receiving this event. This value is used in cases where there is no explicit event provider for the query requested and WMI is required to poll for the condition. This interval is the maximum amount of time that can pass before notification of an event must be delivered.</param>
+        <param name="condition">The condition to apply to events of the specified class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class with the specified event class name, polling interval, and condition.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example creates the event query: "SELECT * FROM __InstanceCreationEvent *WITHIN* 10 WHERE TargetInstance ISA Win32_Service ", which sends notification of the creation of **Win32_Service** instances, with a 10-second polling interval.  
+  
+ [!code-csharp[wminet_WqlEventQuery(S_T_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T_S)/cs/WqlEventQuery(S_T_S).cs#1)]
+ [!code-vb[wminet_WqlEventQuery(S_T_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T_S)/vb/WqlEventQuery(S_T_S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, string condition, TimeSpan groupWithinInterval, string[] groupByPropertyList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, string condition, valuetype System.TimeSpan groupWithinInterval, string[] groupByPropertyList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.String,System.TimeSpan,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventClassName" Type="System.String" />
+        <Parameter Name="condition" Type="System.String" />
+        <Parameter Name="groupWithinInterval" Type="System.TimeSpan" />
+        <Parameter Name="groupByPropertyList" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="eventClassName">The name of the event class to query.</param>
+        <param name="condition">The condition to apply to events of the specified class.</param>
+        <param name="groupWithinInterval">The specified interval at which WMI sends one <c>aggregate event</c>, rather than many events.</param>
+        <param name="groupByPropertyList">The properties in the event class by which the events should be grouped.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class with the specified event class name, condition, grouping interval, and grouping properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WqlEventQuery (string eventClassName, TimeSpan withinInterval, string condition, TimeSpan groupWithinInterval, string[] groupByPropertyList, string havingCondition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventClassName, valuetype System.TimeSpan withinInterval, string condition, valuetype System.TimeSpan groupWithinInterval, string[] groupByPropertyList, string havingCondition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.#ctor(System.String,System.TimeSpan,System.String,System.TimeSpan,System.String[],System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventClassName" Type="System.String" />
+        <Parameter Name="withinInterval" Type="System.TimeSpan" />
+        <Parameter Name="condition" Type="System.String" />
+        <Parameter Name="groupWithinInterval" Type="System.TimeSpan" />
+        <Parameter Name="groupByPropertyList" Type="System.String[]" />
+        <Parameter Name="havingCondition" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventClassName">The name of the event class on which to be queried.</param>
+        <param name="withinInterval">A <see cref="T:System.TimeSpan" /> value specifying the latency acceptable for receiving this event. This value is used in cases where there is no explicit event provider for the query requested, and WMI is required to poll for the condition. This interval is the maximum amount of time that can pass before notification of an event must be delivered.</param>
+        <param name="condition">The condition to apply to events of the specified class.</param>
+        <param name="groupWithinInterval">The specified interval at which WMI sends one <c>aggregate event</c>, rather than many events.</param>
+        <param name="groupByPropertyList">The properties in the event class by which the events should be grouped.</param>
+        <param name="havingCondition">The condition to apply to the number of events.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.WqlEventQuery" /> class with the specified event class name, condition, grouping interval, grouping properties, and specified number of events.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example creates the event query: "SELECT * FROM __InstanceCreationEvent WHERE TargetInstance ISA Win32_NTLogEvent GROUP WITHIN 600 BY TargetInstance.SourceName HAVING NumberOfEvents > 15" which delivers aggregate events only if the number of **Win32_NTLogEvent** events received from the same source exceeds 15.  
+  
+ [!code-csharp[wminet_WqlEventQuery(S_T_S_T_S_S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T_S_T_S_S)/cs/WqlEventQuery(S_T_S_T_S_S).cs#1)]
+ [!code-vb[wminet_WqlEventQuery(S_T_S_T_S_S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery(S_T_S_T_S_S)/vb/WqlEventQuery(S_T_S_T_S_S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildQuery">
+      <MemberSignature Language="C#" Value="protected void BuildQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BuildQuery() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.BuildQuery" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Builds the query string according to the current property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the object.</summary>
+        <returns>The copied object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Condition">
+      <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
+      <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.Condition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the condition to be applied to events of the specified class.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the condition or conditions in the event query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new condition.  
+  
+## Property Value  
+ The condition is represented as a string, containing one or more clauses of the form: \<propName> \<operator> \<value> combined with logical operators. \<propName> must represent a property defined on the event class specified in this query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.WqlEventQuery> and displays the event query string.  
+  
+ [!code-csharp[wminet_WqlEventQuery_Condition#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery_Condition/cs/WqlEventQuery_Condition.cs#1)]
+ [!code-vb[wminet_WqlEventQuery_Condition#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery_Condition/vb/WqlEventQuery_Condition.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventClassName">
+      <MemberSignature Language="C#" Value="public string EventClassName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EventClassName" />
+      <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.EventClassName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the event class to query.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the name of the event class in the event query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new class name.  
+  
+## Property Value  
+ A string containing the name of the event class to query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.WqlEventQuery> and displays the event query string.  
+  
+ [!code-csharp[wminet_WqlEventQuery_EventClassName#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery_EventClassName/cs/WqlEventQuery_EventClassName.cs#1)]
+ [!code-vb[wminet_WqlEventQuery_EventClassName#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery_EventClassName/vb/WqlEventQuery_EventClassName.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByPropertyList">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection GroupByPropertyList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection GroupByPropertyList" />
+      <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.GroupByPropertyList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets properties in the event to be used for grouping events of the same type.</summary>
+        <value>Returns a <see cref="T:System.Collections.Specialized.StringCollection" /> containing the properties in the event to be used for grouping events of the same type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new grouping.  
+  
+## Property Value  
+ Null, if no grouping is required; otherwise, a collection of event property names.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.WqlEventQuery> and displays the event query string.  
+  
+ [!code-csharp[wminet_WqlEventQuery_GroupByPropertyList#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery_GroupByPropertyList/cs/WqlEventQuery_GroupByPropertyList.cs#1)]
+ [!code-vb[wminet_WqlEventQuery_GroupByPropertyList#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery_GroupByPropertyList/vb/WqlEventQuery_GroupByPropertyList.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupWithinInterval">
+      <MemberSignature Language="C#" Value="public TimeSpan GroupWithinInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan GroupWithinInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.GroupWithinInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval to be used for grouping events of the same type.</summary>
+        <value>Returns a <see cref="T:System.TimeSpan" /> value containing the interval used for grouping events of the same type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new interval.  
+  
+## Property Value  
+ Null, if there is no grouping involved; otherwise, the interval in which WMI should group events of the same type.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.WqlEventQuery> and displays the event query string.  
+  
+ [!code-csharp[wminet_WqlEventQuery_GroupWithinInterval#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery_GroupWithinInterval/cs/WqlEventQuery_GroupWithinInterval.cs#1)]
+ [!code-vb[wminet_WqlEventQuery_GroupWithinInterval#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery_GroupWithinInterval/vb/WqlEventQuery_GroupWithinInterval.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HavingCondition">
+      <MemberSignature Language="C#" Value="public string HavingCondition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HavingCondition" />
+      <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.HavingCondition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the condition to be applied to the aggregation of events, based on the number of events received.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the condition applied to the aggregation of events, based on the number of events received.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new grouping condition.  
+  
+## Property Value  
+ Null, if no aggregation or no condition should be applied; otherwise, a condition of the form "NumberOfEvents \<operator> \<value>".  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.WqlEventQuery> and displays the event query string.  
+  
+ [!code-csharp[wminet_WqlEventQuery_HavingCondition#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery_HavingCondition/cs/WqlEventQuery_HavingCondition.cs#1)]
+ [!code-vb[wminet_WqlEventQuery_HavingCondition#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery_HavingCondition/vb/WqlEventQuery_HavingCondition.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseQuery">
+      <MemberSignature Language="C#" Value="protected override void ParseQuery (string query);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ParseQuery(string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.WqlEventQuery.ParseQuery(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="query">The query string to be parsed.</param>
+        <summary>Parses the query string and sets the property values accordingly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryLanguage">
+      <MemberSignature Language="C#" Value="public override string QueryLanguage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.QueryLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets  the language of the query.</summary>
+        <value>Returns a <see cref="T:System.String" /> value that contains the query language that the query is written in.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ The value of this property in this object is always "WQL".  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryString">
+      <MemberSignature Language="C#" Value="public override string QueryString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
+      <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.QueryString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string representing the query.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ A string representing the query.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.WqlEventQuery> and displays the event query string.  
+  
+ [!code-csharp[wminet_WqlEventQuery_QueryString#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery_QueryString/cs/WqlEventQuery_QueryString.cs#1)]
+ [!code-vb[wminet_WqlEventQuery_QueryString#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery_QueryString/vb/WqlEventQuery_QueryString.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithinInterval">
+      <MemberSignature Language="C#" Value="public TimeSpan WithinInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan WithinInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Management.WqlEventQuery.WithinInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the polling interval to be used in this query.</summary>
+        <value>Returns a <see cref="T:System.TimeSpan" /> value containing the polling interval used in the event query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property should only be set in cases where there is no *event provider* for the event requested, and WMI is required to poll for the requested condition.  
+  
+ Setting this property value overrides any previous value stored in the object. The query string is rebuilt to reflect the new interval.  
+  
+## Property Value  
+ Null, if there is no polling involved; otherwise, a valid <xref:System.TimeSpan> value if polling is required.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.WqlEventQuery> that represents the query: "SELECT * FROM __InstanceCreationEvent *WITHIN* 1 WHERE TargetInstance ISA 'Win32_Process'".  
+  
+ [!code-csharp[wminet_WqlEventQuery_WithinInterval#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_WqlEventQuery_WithinInterval/cs/WqlEventQuery_WithinInterval.cs#1)]
+ [!code-vb[wminet_WqlEventQuery_WithinInterval#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_WqlEventQuery_WithinInterval/vb/WqlEventQuery_WithinInterval.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

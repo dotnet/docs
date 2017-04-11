@@ -1,0 +1,92 @@
+<Type Name="XmlSchemaAll" FullName="System.Xml.Schema.XmlSchemaAll">
+  <TypeSignature Language="C#" Value="public class XmlSchemaAll : System.Xml.Schema.XmlSchemaGroupBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaAll extends System.Xml.Schema.XmlSchemaGroupBase" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaAll" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Schema.XmlSchemaGroupBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the World Wide Web Consortium (W3C) <see langword="all" /> element (compositor).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Schema.XmlSchemaAll> class permits the elements in the group to appear (or not appear) in any order in the containing element.  
+  
+   
+  
+## Examples  
+ The following example creates an `all` element.  
+  
+ [!code-cpp[Classic WebData XmlSchemaAll Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaAll Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaAll Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaAll Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaAll Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaAll Example/VB/source.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic WebData XmlSchemaAll Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlSchemaAll Example/XML/source.xml#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaAll.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaAll" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public override System.Xml.Schema.XmlSchemaObjectCollection Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Items" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaAll.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("element", typeof(System.Xml.Schema.XmlSchemaElement))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaObjectCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see langword="XmlSchemaElement" /> elements contained within the <see langword="all" /> compositor.</summary>
+        <value>The collection of elements contained in <see langword="XmlSchemaAll" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

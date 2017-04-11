@@ -1,0 +1,109 @@
+<Type Name="OutlineStyles" FullName="System.Windows.Automation.Text.OutlineStyles">
+  <TypeSignature Language="C#" Value="public enum OutlineStyles" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutlineStyles extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.OutlineStyles" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("1F57B37D-CB59-43f4-95E0-7C9E40DB427E")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Values for <see cref="F:System.Windows.Automation.TextPattern.OutlineStylesAttribute" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Embossed">
+      <MemberSignature Language="C#" Value="Embossed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.OutlineStyles Embossed = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.OutlineStyles.Embossed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.OutlineStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Embossed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Engraved">
+      <MemberSignature Language="C#" Value="Engraved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.OutlineStyles Engraved = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.OutlineStyles.Engraved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.OutlineStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Engraved.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.OutlineStyles None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.OutlineStyles.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.OutlineStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No outline style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Outline">
+      <MemberSignature Language="C#" Value="Outline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.OutlineStyles Outline = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.OutlineStyles.Outline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.OutlineStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Outlined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shadow">
+      <MemberSignature Language="C#" Value="Shadow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.OutlineStyles Shadow = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.OutlineStyles.Shadow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.OutlineStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Shadowed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

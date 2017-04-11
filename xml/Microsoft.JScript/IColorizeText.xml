@@ -1,0 +1,72 @@
+<Type Name="IColorizeText" FullName="Microsoft.JScript.IColorizeText">
+  <TypeSignature Language="C#" Value="public interface IColorizeText" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColorizeText" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IColorizeText" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("DB283E60-7ADB-4cf6-9758-2931893A12FC")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines services for colorizing text when JScript code is being authored in an editor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Colorize">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ITokenEnumerator Colorize (string sourceCode, Microsoft.JScript.SourceState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.ITokenEnumerator Colorize(string sourceCode, valuetype Microsoft.JScript.SourceState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IColorizeText.Colorize(System.String,Microsoft.JScript.SourceState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ITokenEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceCode" Type="System.String" />
+        <Parameter Name="state" Type="Microsoft.JScript.SourceState" />
+      </Parameters>
+      <Docs>
+        <param name="sourceCode">The source code to colorize.</param>
+        <param name="state">The current state (normal, comment, string) of the source code.</param>
+        <summary>When implemented in a class, scans the specified source code for individual units of code and identifies the color that each should have.</summary>
+        <returns>An enumeration of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects that represent units of code to colorize.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStateForText">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.SourceState GetStateForText (string sourceCode, Microsoft.JScript.SourceState currentState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.JScript.SourceState GetStateForText(string sourceCode, valuetype Microsoft.JScript.SourceState currentState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IColorizeText.GetStateForText(System.String,Microsoft.JScript.SourceState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.SourceState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceCode" Type="System.String" />
+        <Parameter Name="currentState" Type="Microsoft.JScript.SourceState" />
+      </Parameters>
+      <Docs>
+        <param name="sourceCode">The source code to analyze.</param>
+        <param name="currentState">The current state (normal, comment, string) of the source code.</param>
+        <summary>When implemented in a class, scans the specified source code for individual units of code and identifies the state (normal, comment, string) of the specified code.</summary>
+        <returns>The state of the source code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

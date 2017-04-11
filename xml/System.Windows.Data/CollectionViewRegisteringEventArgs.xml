@@ -1,0 +1,37 @@
+<Type Name="CollectionViewRegisteringEventArgs" FullName="System.Windows.Data.CollectionViewRegisteringEventArgs">
+  <TypeSignature Language="C#" Value="public class CollectionViewRegisteringEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionViewRegisteringEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionViewRegisteringEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Data.BindingOperations.CollectionViewRegistering" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CollectionView">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.CollectionView CollectionView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.CollectionView CollectionView" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionViewRegisteringEventArgs.CollectionView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.CollectionView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection view to be registered for cross-thread access.</summary>
+        <value>The collection view to be registered for cross-thread access.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

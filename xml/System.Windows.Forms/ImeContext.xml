@@ -1,0 +1,153 @@
+<Type Name="ImeContext" FullName="System.Windows.Forms.ImeContext">
+  <TypeSignature Language="C#" Value="public static class ImeContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ImeContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImeContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains static methods that interact directly with the IME API.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="public static void Disable (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.Disable(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">A pointer to the IME to disable.</param>
+        <summary>Disables the specified IME.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enable">
+      <MemberSignature Language="C#" Value="public static void Enable (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enable(native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.Enable(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">A pointer to the IME to enable.</param>
+        <summary>Enables the specified IME.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImeMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.ImeMode GetImeMode (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.ImeMode GetImeMode(native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.GetImeMode(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">A pointer to the IME to query.</param>
+        <summary>Returns the <see cref="T:System.Windows.Forms.ImeMode" /> of the specified IME.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ImeMode" /> of the specified IME.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpen">
+      <MemberSignature Language="C#" Value="public static bool IsOpen (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOpen(native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.IsOpen(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">A pointer to the IME to query.</param>
+        <summary>Returns a value that indicates whether the specified IME is open.</summary>
+        <returns>
+          <see langword="true" /> if the specified IME is open; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImeStatus">
+      <MemberSignature Language="C#" Value="public static void SetImeStatus (System.Windows.Forms.ImeMode imeMode, IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetImeStatus(valuetype System.Windows.Forms.ImeMode imeMode, native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.SetImeStatus(System.Windows.Forms.ImeMode,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imeMode" Type="System.Windows.Forms.ImeMode" />
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="imeMode">The status to set.</param>
+        <param name="handle">A pointer to the IME to set status of.</param>
+        <summary>Sets the status of the specified IME.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOpenStatus">
+      <MemberSignature Language="C#" Value="public static void SetOpenStatus (bool open, IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOpenStatus(bool open, native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.SetOpenStatus(System.Boolean,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="open" Type="System.Boolean" />
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="open">
+          <see langword="true" /> to open the IME or <see langword="false" /> to close it.</param>
+        <param name="handle">A pointer to the IME to open or close.</param>
+        <summary>Opens or closes the IME context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

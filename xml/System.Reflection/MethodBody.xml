@@ -1,0 +1,348 @@
+<Type Name="MethodBody" FullName="System.Reflection.MethodBody">
+  <TypeSignature Language="C#" Value="public class MethodBody" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit MethodBody extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.MethodBody" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides access to the metadata and MSIL for the body of a method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Reflection.MethodBody> class provides access to information about the local variables and exception-handling clauses in a method body, and to the Microsoft intermediate language (MSIL) that makes up the method body.  
+  
+ You can use the token-resolution methods of the module class, such as <xref:System.Reflection.Module.ResolveType%2A>, <xref:System.Reflection.Module.ResolveMethod%2A>, and <xref:System.Reflection.Module.ResolveType%2A>, to resolve the tokens in the method body to <xref:System.Type> objects, <xref:System.Reflection.MethodInfo> objects, and <xref:System.Reflection.FieldInfo> objects that provide detailed information about the types, methods, and fields accessed by the MSIL in the method body.  
+  
+> [!NOTE]
+>  Parsing method bodies requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+  
+ To obtain a <xref:System.Reflection.MethodBody> object for a given method, first obtain a <xref:System.Reflection.MethodInfo> object for the method, then call the <xref:System.Reflection.MethodInfo> object's <xref:System.Reflection.MethodBase.GetMethodBody%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method.  
+  
+ The example uses the <xref:System.Reflection.MethodBody.LocalVariables%2A> property to obtain a list of <xref:System.Reflection.LocalVariableInfo> objects and then displays their types and index order. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of exception-handling clauses.  
+  
+> [!NOTE]
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=fullName> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+  
+ [!code-cpp[MethodBody#1](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#1)]
+ [!code-csharp[MethodBody#1](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#1)]
+ [!code-vb[MethodBody#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MethodBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBody.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.MethodBody" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is invoked by derived classes during the construction of <xref:System.Reflection.MethodBody> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionHandlingClauses">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;System.Reflection.ExceptionHandlingClause&gt; ExceptionHandlingClauses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Reflection.ExceptionHandlingClause&gt; ExceptionHandlingClauses" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.ExceptionHandlingClauses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Reflection.ExceptionHandlingClause&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list that includes all the exception-handling clauses in the method body.</summary>
+        <value>An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.Reflection.ExceptionHandlingClause" /> objects representing the exception-handling clauses in the body of the method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The list includes all clauses from all try blocks in the method body. Each <xref:System.Reflection.ExceptionHandlingClause> object contains information that identifies the try block with which it is associated.  
+  
+> [!NOTE]
+>  Working with exception-handling clauses requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+  
+   
+  
+## Examples  
+ The following code example defines a test method named `MethodBodyExample` and displays information about its exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.ExceptionHandlingClauses%2A> property is used to obtain a list of <xref:System.Reflection.ExceptionHandlingClause> objects.  
+  
+> [!NOTE]
+>  Not all computer languages can generate <xref:System.Reflection.ExceptionHandlingClauseOptions?displayProperty=fullName> clauses. The Visual Basic example shows a filter clause, using a Visual Basic `When` expression, which is omitted from the examples for other languages.  
+  
+ This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
+  
+ [!code-cpp[MethodBody#2](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#2)]
+ [!code-csharp[MethodBody#2](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#2)]
+ [!code-vb[MethodBody#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#2)]  
+[!code-cpp[MethodBody#4](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#4)]
+[!code-csharp[MethodBody#4](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#4)]
+[!code-vb[MethodBody#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#4)]  
+[!code-cpp[MethodBody#5](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#5)]
+[!code-csharp[MethodBody#5](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#5)]
+[!code-vb[MethodBody#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#5)]  
+[!code-cpp[MethodBody#7](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#7)]
+[!code-csharp[MethodBody#7](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#7)]
+[!code-vb[MethodBody#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetILAsByteArray">
+      <MemberSignature Language="C#" Value="public virtual byte[] GetILAsByteArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetILAsByteArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.MethodBody.GetILAsByteArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the MSIL for the method body, as an array of bytes.</summary>
+        <returns>An array of type <see cref="T:System.Byte" /> that contains the MSIL for the method body.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the token-resolution methods of the module class, such as <xref:System.Reflection.Module.ResolveType%2A>, <xref:System.Reflection.Module.ResolveMethod%2A>, and <xref:System.Reflection.Module.ResolveMember%2A>, to resolve the tokens in the method body to <xref:System.Type> objects, <xref:System.Reflection.MethodInfo> objects, and <xref:System.Reflection.FieldInfo> objects that provide detailed information about the types, methods, and fields accessed by the MSIL in the method body.  
+  
+> [!NOTE]
+>  Parsing method bodies requires a thorough understanding of metadata and MSIL instruction formats. Information can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitLocals">
+      <MemberSignature Language="C#" Value="public virtual bool InitLocals { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InitLocals" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.InitLocals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether local variables in the method body are initialized to the default values for their types.</summary>
+        <value>
+          <see langword="true" /> if the method body contains code to initialize local variables to <see langword="null" /> for reference types, or to the zero-initialized value for value types; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Reflection.MethodBody.InitLocals%2A> property refers to variables that are not explicitly initialized; that is, variables that are declared with syntax such as `int x;` in C# or `Dim x As Integer` in Visual Basic.  
+  
+ Reference variables are initialized to `null` by default. Numeric variables are initialized to zero.  
+  
+   
+  
+## Examples  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.MaxStackSize%2A> and <xref:System.Reflection.MethodBody.InitLocals%2A> properties are displayed.  
+  
+ This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
+  
+ [!code-cpp[MethodBody#2](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#2)]
+ [!code-csharp[MethodBody#2](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#2)]
+ [!code-vb[MethodBody#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#2)]  
+[!code-cpp[MethodBody#5](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#5)]
+[!code-csharp[MethodBody#5](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#5)]
+[!code-vb[MethodBody#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalSignatureMetadataToken">
+      <MemberSignature Language="C#" Value="public virtual int LocalSignatureMetadataToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LocalSignatureMetadataToken" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.LocalSignatureMetadataToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a metadata token for the signature that describes the local variables for the method in metadata.</summary>
+        <value>An integer that represents the metadata token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Reflection.MethodBody.LocalVariables%2A> property to obtain information about the method's local variables.  
+  
+> [!NOTE]
+>  Information about local variable signatures can be found in the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalVariables">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;System.Reflection.LocalVariableInfo&gt; LocalVariables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Reflection.LocalVariableInfo&gt; LocalVariables" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.LocalVariables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Reflection.LocalVariableInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of local variables declared in the method body.</summary>
+        <value>An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.Reflection.LocalVariableInfo" /> objects that describe the local variables declared in the method body.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not need the metadata token for the local variable signature provided by the <xref:System.Reflection.MethodBody.LocalSignatureMetadataToken%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.LocalVariables%2A> property is used to obtain a list of <xref:System.Reflection.LocalVariableInfo> objects.  
+  
+ This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
+  
+ [!code-cpp[MethodBody#2](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#2)]
+ [!code-csharp[MethodBody#2](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#2)]
+ [!code-vb[MethodBody#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#2)]  
+[!code-cpp[MethodBody#3](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#3)]
+[!code-csharp[MethodBody#3](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#3)]
+[!code-vb[MethodBody#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#3)]  
+[!code-cpp[MethodBody#5](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#5)]
+[!code-csharp[MethodBody#5](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#5)]
+[!code-vb[MethodBody#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#5)]  
+[!code-cpp[MethodBody#6](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#6)]
+[!code-csharp[MethodBody#6](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#6)]
+[!code-vb[MethodBody#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxStackSize">
+      <MemberSignature Language="C#" Value="public virtual int MaxStackSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxStackSize" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.MethodBody.MaxStackSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of items on the operand stack when the method is executing.</summary>
+        <value>The maximum number of items on the operand stack when the method is executing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online; see [ECMA C# and Common Language Infrastructure Standards](http://go.microsoft.com/fwlink/?LinkID=99212) on MSDN and [Standard ECMA-335 - Common Language Infrastructure (CLI)](http://go.microsoft.com/fwlink/?LinkID=65552) on the Ecma International Web site.  
+  
+   
+  
+## Examples  
+ The following code example defines a test method named `MethodBodyExample` and displays its local variable information and exception-handling clauses. The <xref:System.Reflection.MethodBase.GetMethodBody%2A?displayProperty=fullName> method is used to obtain a <xref:System.Reflection.MethodBody> object for the test method. The <xref:System.Reflection.MethodBody.MaxStackSize%2A> and <xref:System.Reflection.MethodBody.InitLocals%2A> properties are displayed.  
+  
+ This code example is part of a larger example provided for the <xref:System.Reflection.MethodBody> class.  
+  
+ [!code-cpp[MethodBody#2](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#2)]
+ [!code-csharp[MethodBody#2](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#2)]
+ [!code-vb[MethodBody#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#2)]  
+[!code-cpp[MethodBody#5](~/samples/snippets/cpp/VS_Snippets_CLR/MethodBody/cpp/source.cpp#5)]
+[!code-csharp[MethodBody#5](~/samples/snippets/csharp/VS_Snippets_CLR/MethodBody/CS/source.cs#5)]
+[!code-vb[MethodBody#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/MethodBody/VB/source.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

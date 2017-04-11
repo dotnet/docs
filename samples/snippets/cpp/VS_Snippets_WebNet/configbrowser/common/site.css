@@ -1,0 +1,307 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #b6b7bc;
+    font-size: .8em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+/* <Snippet46> */
+caption
+{
+    display: none;
+}
+/* </Snippet46> */
+
+/* <Snippet8> */
+img
+{
+    border-style: none;
+}
+/* </Snippet8> */
+
+a:link, a:visited
+{
+    color: #034af3;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+	color: #666666;
+	font-variant: small-caps;
+	text-transform: none;
+	font-weight: 200;
+	margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+/* <Snippet4> */
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/headerGRADIENT_Tall.gif);
+    height: 75px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+    display: inline;
+}
+/* </Snippet4> */
+
+/* <Snippet10> */
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    width: 750px;
+    min-height: 420px;
+    float: right;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+	width: 150px;
+    min-height: 200px;
+    float: left;
+}
+/* </Snippet10> */
+
+
+/* <Snippet26> */
+.listColumn
+{
+	font-size: 1.4em;
+	width: 475px;
+	float: left;
+}
+
+.checkboxColumn
+{
+	font-size: 1.1em;
+	width: 225px;
+	float: left;
+}
+
+.checkboxColumn li
+{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.checkboxColumn ul
+{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+/* </Snippet26> */
+
+.dataTable
+{
+    padding: 6px 0px;
+    margin: 12px 4px 4px 4px;
+	width: 705px;
+	float: left;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+	margin: 1em 0px;
+	padding: 1em;
+	border: 1px solid #ccc;
+}
+
+/* <Snippet111> */
+fieldset label
+{
+    display: block;
+    float:left;
+    width: 10em;
+}
+/* </Snippet111> */
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.submitButton
+{
+    float: right;
+    margin: 0px 10px 0px 0px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+/* <Snippet7> */
+.title
+{
+    display: block;
+    float: right;
+    text-align: left;
+    width: auto;
+}
+
+.title-logo
+{
+    float: left;
+    width: auto;
+}
+/* </Snippet7> */
+
+/* <Snippet12> */
+.level1
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* </Snippet12> */
+
+
+/* <Snippet112> */
+.errorMessage
+{
+    font-weight: bold;
+    color: Red;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+/* </Snippet112> */

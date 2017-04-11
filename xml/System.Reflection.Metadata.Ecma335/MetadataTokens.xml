@@ -1,0 +1,1287 @@
+<Type Name="MetadataTokens" FullName="System.Reflection.Metadata.Ecma335.MetadataTokens">
+  <TypeSignature Language="C#" Value="public static class MetadataTokens" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MetadataTokens extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MetadataTokens" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AssemblyFileHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.AssemblyFileHandle AssemblyFileHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.AssemblyFileHandle AssemblyFileHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.AssemblyFileHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.AssemblyFileHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyReferenceHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.AssemblyReferenceHandle AssemblyReferenceHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.AssemblyReferenceHandle AssemblyReferenceHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.AssemblyReferenceHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.AssemblyReferenceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlobHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.BlobHandle BlobHandle (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.BlobHandle BlobHandle(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.BlobHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConstantHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.ConstantHandle ConstantHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.ConstantHandle ConstantHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.ConstantHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ConstantHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomAttributeHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.CustomAttributeHandle CustomAttributeHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.CustomAttributeHandle CustomAttributeHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.CustomAttributeHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.CustomAttributeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomDebugInformationHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.CustomDebugInformationHandle CustomDebugInformationHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.CustomDebugInformationHandle CustomDebugInformationHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.CustomDebugInformationHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.CustomDebugInformationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclarativeSecurityAttributeHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.DeclarativeSecurityAttributeHandle DeclarativeSecurityAttributeHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.DeclarativeSecurityAttributeHandle DeclarativeSecurityAttributeHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.DeclarativeSecurityAttributeHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.DeclarativeSecurityAttributeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.DocumentHandle DocumentHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.DocumentHandle DocumentHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.DocumentHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.DocumentHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentNameBlobHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.DocumentNameBlobHandle DocumentNameBlobHandle (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.DocumentNameBlobHandle DocumentNameBlobHandle(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.DocumentNameBlobHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.DocumentNameBlobHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.EntityHandle EntityHandle (int token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.EntityHandle EntityHandle(int32 token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.EntityHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.EntityHandle EntityHandle (System.Reflection.Metadata.Ecma335.TableIndex tableIndex, int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.EntityHandle EntityHandle(valuetype System.Reflection.Metadata.Ecma335.TableIndex tableIndex, int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.EntityHandle(System.Reflection.Metadata.Ecma335.TableIndex,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tableIndex" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tableIndex">To be added.</param>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventDefinitionHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.EventDefinitionHandle EventDefinitionHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.EventDefinitionHandle EventDefinitionHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.EventDefinitionHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.EventDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportedTypeHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.ExportedTypeHandle ExportedTypeHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.ExportedTypeHandle ExportedTypeHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.ExportedTypeHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ExportedTypeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldDefinitionHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.FieldDefinitionHandle FieldDefinitionHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.FieldDefinitionHandle FieldDefinitionHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.FieldDefinitionHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.FieldDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericParameterConstraintHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.GenericParameterConstraintHandle GenericParameterConstraintHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.GenericParameterConstraintHandle GenericParameterConstraintHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GenericParameterConstraintHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.GenericParameterConstraintHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericParameterHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.GenericParameterHandle GenericParameterHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.GenericParameterHandle GenericParameterHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GenericParameterHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.GenericParameterHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeapOffset">
+      <MemberSignature Language="C#" Value="public static int GetHeapOffset (System.Reflection.Metadata.BlobHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapOffset(valuetype System.Reflection.Metadata.BlobHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.BlobHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Reflection.Metadata.BlobHandle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeapOffset">
+      <MemberSignature Language="C#" Value="public static int GetHeapOffset (System.Reflection.Metadata.GuidHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapOffset(valuetype System.Reflection.Metadata.GuidHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.GuidHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Reflection.Metadata.GuidHandle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeapOffset">
+      <MemberSignature Language="C#" Value="public static int GetHeapOffset (System.Reflection.Metadata.Handle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapOffset(valuetype System.Reflection.Metadata.Handle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.Handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Reflection.Metadata.Handle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeapOffset">
+      <MemberSignature Language="C#" Value="public static int GetHeapOffset (System.Reflection.Metadata.StringHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapOffset(valuetype System.Reflection.Metadata.StringHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.StringHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Reflection.Metadata.StringHandle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeapOffset">
+      <MemberSignature Language="C#" Value="public static int GetHeapOffset (System.Reflection.Metadata.UserStringHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapOffset(valuetype System.Reflection.Metadata.UserStringHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.UserStringHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Reflection.Metadata.UserStringHandle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHeapOffset">
+      <MemberSignature Language="C#" Value="public static int GetHeapOffset (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.Handle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetHeapOffset(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Handle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetHeapOffset(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.Handle" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowNumber">
+      <MemberSignature Language="C#" Value="public static int GetRowNumber (System.Reflection.Metadata.EntityHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetRowNumber(valuetype System.Reflection.Metadata.EntityHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetRowNumber(System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowNumber">
+      <MemberSignature Language="C#" Value="public static int GetRowNumber (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.EntityHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetRowNumber(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.EntityHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetRowNumber(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public static int GetToken (System.Reflection.Metadata.EntityHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetToken(valuetype System.Reflection.Metadata.EntityHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public static int GetToken (System.Reflection.Metadata.Handle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetToken(valuetype System.Reflection.Metadata.Handle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.Handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Reflection.Metadata.Handle" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public static int GetToken (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.EntityHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetToken(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.EntityHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public static int GetToken (this System.Reflection.Metadata.MetadataReader reader, System.Reflection.Metadata.Handle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetToken(class System.Reflection.Metadata.MetadataReader reader, valuetype System.Reflection.Metadata.Handle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GetToken(System.Reflection.Metadata.MetadataReader,System.Reflection.Metadata.Handle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" RefType="this" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.Handle" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GuidHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.GuidHandle GuidHandle (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.GuidHandle GuidHandle(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.GuidHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.GuidHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.Handle Handle (int token);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.Handle Handle(int32 token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.Handle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Handle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.EntityHandle Handle (System.Reflection.Metadata.Ecma335.TableIndex tableIndex, int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.EntityHandle Handle(valuetype System.Reflection.Metadata.Ecma335.TableIndex tableIndex, int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.Handle(System.Reflection.Metadata.Ecma335.TableIndex,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tableIndex" Type="System.Reflection.Metadata.Ecma335.TableIndex" />
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tableIndex">To be added.</param>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeapCount">
+      <MemberSignature Language="C#" Value="public static readonly int HeapCount;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 HeapCount" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.MetadataTokens.HeapCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportScopeHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.ImportScopeHandle ImportScopeHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.ImportScopeHandle ImportScopeHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.ImportScopeHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ImportScopeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterfaceImplementationHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.InterfaceImplementationHandle InterfaceImplementationHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.InterfaceImplementationHandle InterfaceImplementationHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.InterfaceImplementationHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.InterfaceImplementationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalConstantHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.LocalConstantHandle LocalConstantHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.LocalConstantHandle LocalConstantHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.LocalConstantHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.LocalConstantHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalScopeHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.LocalScopeHandle LocalScopeHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.LocalScopeHandle LocalScopeHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.LocalScopeHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.LocalScopeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalVariableHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.LocalVariableHandle LocalVariableHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.LocalVariableHandle LocalVariableHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.LocalVariableHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.LocalVariableHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManifestResourceHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.ManifestResourceHandle ManifestResourceHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.ManifestResourceHandle ManifestResourceHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.ManifestResourceHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ManifestResourceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberReferenceHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MemberReferenceHandle MemberReferenceHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.MemberReferenceHandle MemberReferenceHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.MemberReferenceHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MemberReferenceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodDebugInformationHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MethodDebugInformationHandle MethodDebugInformationHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.MethodDebugInformationHandle MethodDebugInformationHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.MethodDebugInformationHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodDebugInformationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodDefinitionHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MethodDefinitionHandle MethodDefinitionHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.MethodDefinitionHandle MethodDefinitionHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.MethodDefinitionHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodImplementationHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MethodImplementationHandle MethodImplementationHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.MethodImplementationHandle MethodImplementationHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.MethodImplementationHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodImplementationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodSpecificationHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MethodSpecificationHandle MethodSpecificationHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.MethodSpecificationHandle MethodSpecificationHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.MethodSpecificationHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodSpecificationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModuleReferenceHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.ModuleReferenceHandle ModuleReferenceHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.ModuleReferenceHandle ModuleReferenceHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.ModuleReferenceHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ModuleReferenceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.ParameterHandle ParameterHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.ParameterHandle ParameterHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.ParameterHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.ParameterHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyDefinitionHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.PropertyDefinitionHandle PropertyDefinitionHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.PropertyDefinitionHandle PropertyDefinitionHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.PropertyDefinitionHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.PropertyDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StandaloneSignatureHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.StandaloneSignatureHandle StandaloneSignatureHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.StandaloneSignatureHandle StandaloneSignatureHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.StandaloneSignatureHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.StandaloneSignatureHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.StringHandle StringHandle (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.StringHandle StringHandle(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.StringHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableCount">
+      <MemberSignature Language="C#" Value="public static readonly int TableCount;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 TableCount" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.Ecma335.MetadataTokens.TableCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetHeapIndex">
+      <MemberSignature Language="C#" Value="public static bool TryGetHeapIndex (System.Reflection.Metadata.HandleKind type, out System.Reflection.Metadata.Ecma335.HeapIndex index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetHeapIndex(valuetype System.Reflection.Metadata.HandleKind type, valuetype System.Reflection.Metadata.Ecma335.HeapIndex index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.TryGetHeapIndex(System.Reflection.Metadata.HandleKind,System.Reflection.Metadata.Ecma335.HeapIndex@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Reflection.Metadata.HandleKind" />
+        <Parameter Name="index" Type="System.Reflection.Metadata.Ecma335.HeapIndex&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetTableIndex">
+      <MemberSignature Language="C#" Value="public static bool TryGetTableIndex (System.Reflection.Metadata.HandleKind type, out System.Reflection.Metadata.Ecma335.TableIndex index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetTableIndex(valuetype System.Reflection.Metadata.HandleKind type, valuetype System.Reflection.Metadata.Ecma335.TableIndex index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.TryGetTableIndex(System.Reflection.Metadata.HandleKind,System.Reflection.Metadata.Ecma335.TableIndex@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Reflection.Metadata.HandleKind" />
+        <Parameter Name="index" Type="System.Reflection.Metadata.Ecma335.TableIndex&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="type">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeDefinitionHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.TypeDefinitionHandle TypeDefinitionHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.TypeDefinitionHandle TypeDefinitionHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.TypeDefinitionHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.TypeDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeReferenceHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.TypeReferenceHandle TypeReferenceHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.TypeReferenceHandle TypeReferenceHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.TypeReferenceHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.TypeReferenceHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeSpecificationHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.TypeSpecificationHandle TypeSpecificationHandle (int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.TypeSpecificationHandle TypeSpecificationHandle(int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.TypeSpecificationHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.TypeSpecificationHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowNumber">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserStringHandle">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.UserStringHandle UserStringHandle (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.UserStringHandle UserStringHandle(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataTokens.UserStringHandle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.UserStringHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

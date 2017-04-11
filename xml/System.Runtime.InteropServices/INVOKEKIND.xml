@@ -1,0 +1,99 @@
+<Type Name="INVOKEKIND" FullName="System.Runtime.InteropServices.INVOKEKIND">
+  <TypeSignature Language="C#" Value="public enum INVOKEKIND" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed INVOKEKIND extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.INVOKEKIND" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.INVOKEKIND" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `INVOKEKIND`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="INVOKE_FUNC">
+      <MemberSignature Language="C#" Value="INVOKE_FUNC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.INVOKEKIND INVOKE_FUNC = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.INVOKEKIND.INVOKE_FUNC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The member is called using a normal function invocation syntax.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="INVOKE_PROPERTYGET">
+      <MemberSignature Language="C#" Value="INVOKE_PROPERTYGET" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.INVOKEKIND INVOKE_PROPERTYGET = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYGET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The function is invoked using a normal property-access syntax.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="INVOKE_PROPERTYPUT">
+      <MemberSignature Language="C#" Value="INVOKE_PROPERTYPUT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.INVOKEKIND INVOKE_PROPERTYPUT = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYPUT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The function is invoked using a property value assignment syntax.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="INVOKE_PROPERTYPUTREF">
+      <MemberSignature Language="C#" Value="INVOKE_PROPERTYPUTREF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.INVOKEKIND INVOKE_PROPERTYPUTREF = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.INVOKEKIND.INVOKE_PROPERTYPUTREF" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The function is invoked using a property reference assignment syntax.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

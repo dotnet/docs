@@ -1,0 +1,89 @@
+<Type Name="IXmlTextParser" FullName="System.Xml.Serialization.IXmlTextParser">
+  <TypeSignature Language="C#" Value="public interface IXmlTextParser" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlTextParser" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.IXmlTextParser" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Establishes a <see cref="P:System.Xml.Serialization.IXmlTextParser.Normalized" /> property for use by the .NET Framework infrastructure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Normalized">
+      <MemberSignature Language="C#" Value="public bool Normalized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Normalized" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.IXmlTextParser.Normalized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether white space and attribute values are normalized.</summary>
+        <value>
+          <see langword="true" /> if white space attributes values are normalized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface and <xref:System.Xml.Serialization.IXmlTextParser.Normalized%2A> property in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WhitespaceHandling">
+      <MemberSignature Language="C#" Value="public System.Xml.WhitespaceHandling WhitespaceHandling { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.WhitespaceHandling WhitespaceHandling" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.IXmlTextParser.WhitespaceHandling" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.WhitespaceHandling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how white space is handled when parsing XML.</summary>
+        <value>A member of the <see cref="T:System.Xml.WhitespaceHandling" /> enumeration that describes how whites pace is handled when parsing XML.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should not implement the <xref:System.Xml.Serialization.IXmlTextParser> interface and <xref:System.Xml.Serialization.IXmlTextParser.Normalized%2A> property in your code. Instead use the <xref:System.Xml.XmlTextReader.Normalization%2A> property of the <xref:System.Xml.XmlTextReader> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

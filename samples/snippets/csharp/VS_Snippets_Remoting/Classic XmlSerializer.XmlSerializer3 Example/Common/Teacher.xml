@@ -1,0 +1,14 @@
+<!-- <Snippet2> -->
+<?xml version="1.0"?>
+ <Teacher xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2000/10/XMLSchema" xmlns="microsoft.com">
+   <Name>Mike</Name>
+   <ExtraInfo>
+     <Object xsi:type="Address">
+       <City xmlns="">Springville</City>
+     </Object>
+     <Object xsi:type="Phone">
+       <PhoneNumber xmlns="">555-0100</PhoneNumber>
+     </Object>
+   </ExtraInfo>
+ </Teacher>
+<!-- </Snippet2> -->

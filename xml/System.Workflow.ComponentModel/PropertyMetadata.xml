@@ -1,0 +1,526 @@
+<Type Name="PropertyMetadata" FullName="System.Workflow.ComponentModel.PropertyMetadata">
+  <TypeSignature Language="C#" Value="public class PropertyMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.PropertyMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the behavior of a dependency property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Attribute[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Attribute[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with an array of attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The object representing the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (System.Workflow.ComponentModel.DependencyPropertyOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Workflow.ComponentModel.DependencyPropertyOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Attribute[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The object that represents the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
+        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value and an array of attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, System.Workflow.ComponentModel.DependencyPropertyOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Workflow.ComponentModel.DependencyPropertyOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The object representing the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
+        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value and a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (System.Workflow.ComponentModel.DependencyPropertyOptions options, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Workflow.ComponentModel.DependencyPropertyOptions,System.Attribute[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
+        <Parameter Name="attributes" Type="System.Attribute[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value and an array of attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, System.Workflow.ComponentModel.DependencyPropertyOptions options, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Workflow.ComponentModel.DependencyPropertyOptions,System.Attribute[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
+        <Parameter Name="attributes" Type="System.Attribute[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The object that represents the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
+        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value, a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value, and an array of attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, System.Workflow.ComponentModel.DependencyPropertyOptions options, System.Workflow.ComponentModel.GetValueOverride getValueOverride, System.Workflow.ComponentModel.SetValueOverride setValueOverride);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options, class System.Workflow.ComponentModel.GetValueOverride getValueOverride, class System.Workflow.ComponentModel.SetValueOverride setValueOverride) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Workflow.ComponentModel.DependencyPropertyOptions,System.Workflow.ComponentModel.GetValueOverride,System.Workflow.ComponentModel.SetValueOverride)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
+        <Parameter Name="getValueOverride" Type="System.Workflow.ComponentModel.GetValueOverride" />
+        <Parameter Name="setValueOverride" Type="System.Workflow.ComponentModel.SetValueOverride" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The object that represents the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
+        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="getValueOverride">The <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> delegate that belongs to this instance.</param>
+        <param name="setValueOverride">The <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> delegate that belongs to this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value, a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value, and delegates to override the <see langword="GetValue" /> and <see langword="SetValue" /> logic associated with the dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMetadata (object defaultValue, System.Workflow.ComponentModel.DependencyPropertyOptions options, System.Workflow.ComponentModel.GetValueOverride getValueOverride, System.Workflow.ComponentModel.SetValueOverride setValueOverride, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Workflow.ComponentModel.DependencyPropertyOptions options, class System.Workflow.ComponentModel.GetValueOverride getValueOverride, class System.Workflow.ComponentModel.SetValueOverride setValueOverride, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Workflow.ComponentModel.DependencyPropertyOptions,System.Workflow.ComponentModel.GetValueOverride,System.Workflow.ComponentModel.SetValueOverride,System.Attribute[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="defaultValue" Type="System.Object" />
+        <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
+        <Parameter Name="getValueOverride" Type="System.Workflow.ComponentModel.GetValueOverride" />
+        <Parameter Name="setValueOverride" Type="System.Workflow.ComponentModel.SetValueOverride" />
+        <Parameter Name="attributes" Type="System.Attribute[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="defaultValue">The object that represents the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
+        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="getValueOverride">The <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> delegate that belongs to this instance.</param>
+        <param name="setValueOverride">The <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> delegate that belongs to this instance.</param>
+        <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value, a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value, delegates to override the <see langword="GetValue" /> and <see langword="SetValue" /> logic associated with the dependency property, and an array of attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public object DefaultValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DefaultValue" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default value of the associated dependency property.</summary>
+        <value>An object representing the default value for this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be a null reference (`Nothing` in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Attempting to set this property when <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" /> is <see langword="true." /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttributes">
+      <MemberSignature Language="C#" Value="public Attribute[] GetAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Attribute[] GetAttributes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.GetAttributes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Attribute[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an array that contains all attributes.</summary>
+        <returns>An array that contains all attributes.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttributes">
+      <MemberSignature Language="C#" Value="public Attribute[] GetAttributes (Type attributeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Attribute[] GetAttributes(class System.Type attributeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.GetAttributes(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Attribute[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="attributeType">The <see cref="T:System.Type" /> of attributes to return.</param>
+        <summary>Receives an array of type <see cref="T:System.Attribute" /> that contains those attributes having type equal to <paramref name="attributeType" />.</summary>
+        <returns>An array of type <see cref="T:System.Attribute" /> that contains those attributes having type equal to <paramref name="attributeType" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValueOverride">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.GetValueOverride GetValueOverride { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.GetValueOverride GetValueOverride" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.PropertyMetadata.GetValueOverride" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.GetValueOverride</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> callback, a callback invoked immediately upon a call to the <see cref="M:System.Workflow.ComponentModel.DependencyObject.GetValue(System.Workflow.ComponentModel.DependencyProperty)" /> method.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> callback, a callback invoked immediately upon a call to the <see cref="M:System.Workflow.ComponentModel.DependencyObject.GetValue(System.Workflow.ComponentModel.DependencyProperty)" /> method.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Attempting to set this property when <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" /> is <see langword="true." /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMetaProperty">
+      <MemberSignature Language="C#" Value="public bool IsMetaProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMetaProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.PropertyMetadata.IsMetaProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.Options" /> is set to <see cref="F:System.Workflow.ComponentModel.DependencyPropertyOptions.Metadata" />.</summary>
+        <value>
+          <see langword="true" /> if this option is set to <see cref="F:System.Workflow.ComponentModel.DependencyPropertyOptions.Metadata" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNonSerialized">
+      <MemberSignature Language="C#" Value="public bool IsNonSerialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNonSerialized" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.PropertyMetadata.IsNonSerialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.Options" /> is set to <see cref="F:System.Workflow.ComponentModel.DependencyPropertyOptions.NonSerialized" />.</summary>
+        <value>
+          <see langword="true" /> if set to <see cref="F:System.Workflow.ComponentModel.DependencyPropertyOptions.NonSerialized" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.PropertyMetadata.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.Options" /> are set to <see cref="F:System.Workflow.ComponentModel.DependencyPropertyOptions.ReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if set to <see cref="F:System.Workflow.ComponentModel.DependencyPropertyOptions.ReadOnly" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSealed">
+      <MemberSignature Language="C#" Value="protected bool IsSealed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSealed" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> has been applied to a property resulting in the immutable state.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> is immutable; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the PropertyMetadata.IsSealed is equal to `true`, the following operations cause a <xref:System.InvalidOperationException> to be raised:  
+  
+-   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue%2A>.  
+  
+-   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.Options%2A>.  
+  
+-   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.SetValueOverride%2A>.  
+  
+-   Attempting to set the <xref:System.Workflow.ComponentModel.PropertyMetadata.GetValueOverride%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApply">
+      <MemberSignature Language="C#" Value="protected virtual void OnApply (System.Workflow.ComponentModel.DependencyProperty dependencyProperty, Type targetType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnApply(class System.Workflow.ComponentModel.DependencyProperty dependencyProperty, class System.Type targetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.PropertyMetadata.OnApply(System.Workflow.ComponentModel.DependencyProperty,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyProperty" Type="System.Workflow.ComponentModel.DependencyProperty" />
+        <Parameter Name="targetType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyProperty">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> to which this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> has been applied.</param>
+        <param name="targetType">The <see cref="T:System.Type" /> associated with this metadata if this instance is type-specific metadata. If this is default metadata, this value is a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Provides processing when this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> is applied to a dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sends notification that this metadata has been applied to a property, and the metadata is being sealed. This routine is no-op in this implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.DependencyPropertyOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.DependencyPropertyOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.PropertyMetadata.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or set the property which represents the option setting for the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated to this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</summary>
+        <value>The option setting for the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated to this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The possible values for this property are:  
+  
+ <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+  
+ <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+  
+ <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+  
+ <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+  
+ <xref:System.Workflow.ComponentModel.DependencyPropertyOptions>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Attempting to set this property when <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" /> is <see langword="true." /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValueOverride">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.SetValueOverride SetValueOverride { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.SetValueOverride SetValueOverride" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.PropertyMetadata.SetValueOverride" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.SetValueOverride</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> callback, a callback invoked immediately upon a call to the <see cref="M:System.Workflow.ComponentModel.DependencyObject.SetValue(System.Workflow.ComponentModel.DependencyProperty,System.Object)" /> method.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> callback, a callback invoked immediately upon a call to the <see cref="M:System.Workflow.ComponentModel.DependencyObject.SetValue(System.Workflow.ComponentModel.DependencyProperty,System.Object)" /> method.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Trying to set this property when <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.IsSealed" /> is <see langword="true." /></exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

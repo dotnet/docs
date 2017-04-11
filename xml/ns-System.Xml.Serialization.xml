@@ -1,0 +1,17 @@
+<Namespace Name="System.Xml.Serialization">
+  <Docs>
+    <summary>The <see cref="N:System.Xml.Serialization" /> namespace contains classes that are used to serialize objects into XML format documents or streams.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The central class in the namespace is the <xref:System.Xml.Serialization.XmlSerializer> class. To use this class, use the <xref:System.Xml.Serialization.XmlSerializer.%23ctor%2A> constructor to create an instance of the class using the type of the object to serialize. Once an <xref:System.Xml.Serialization.XmlSerializer> is created, create an instance of the object to serialize. You must also create an object to write the file to a document or stream, such as a <xref:System.IO.Stream>, <xref:System.IO.TextWriter>, or <xref:System.Xml.XmlWriter>. You can then call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method to convert the object into an XML document.  
+  
+ To deserialize an object from an XML document, create a suitable object to read the document or stream (again, a <xref:System.IO.Stream>, <xref:System.IO.TextWriter>, or <xref:System.Xml.XmlWriter>). Invoke the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method while casting the resulting object to the type of the original object (that was serialized).  
+  
+ To further control the serialization, the <xref:System.Xml.Serialization> namespace contains several <xref:System.Attribute> classes that can be applied to members of a class. For example, if a class contains a member that will be serialized as an XML element, you can apply the <xref:System.Xml.Serialization.XmlElementAttribute> attribute to the member. When applying the attribute, you can specify details such as the actual XML element name using the <xref:System.Xml.Serialization.XmlElementAttribute.ElementName%2A> property. For a complete list of all the attributes, see the <xref:System.Xml.Serialization.XmlSerializer> class overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,116 @@
+<Type Name="MessageBodyMemberAttribute" FullName="System.ServiceModel.MessageBodyMemberAttribute">
+  <TypeSignature Language="C#" Value="public class MessageBodyMemberAttribute : System.ServiceModel.MessageContractMemberAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageBodyMemberAttribute extends System.ServiceModel.MessageContractMemberAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageBodyMemberAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.MessageContractMemberAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that a member is serialized as an element inside the SOAP body.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.MessageBodyMemberAttribute> attribute to specify that a data member is serialized into the SOAP body and to control some serialization items.  
+  
+ The <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A> property is used to specify the order of body parts in cases where the default alphabetical order is not appropriate.  
+  
+ The other properties are inherited from the base class, <xref:System.ServiceModel.MessageContractMemberAttribute?displayProperty=fullName>.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] controlling the serialization of the contents of a SOAP body without modifying the default SOAP envelope itself, see <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=fullName>, [Specifying Data Transfer in Service Contracts](~/docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md), and [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
+  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Using Message Contracts](~/docs/framework/wcf/feature-details/using-message-contracts.md).  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.ServiceModel.MessageContractAttribute> to control the SOAP envelope structure for both the request message and the response message, and the use of both the <xref:System.ServiceModel.MessageHeaderAttribute> (to create a SOAP header for the response message) and the <xref:System.ServiceModel.MessageBodyMemberAttribute> (to specify the bodies of both the request and response message). The code example contains an example of each message when sent.  
+  
+ [!code-csharp[MessageHeaderAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/messageheaderattribute/cs/services.cs#1)]
+ [!code-vb[MessageHeaderAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/messageheaderattribute/vb/services.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessageBodyMemberAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageBodyMemberAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageBodyMemberAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.ServiceModel.MessageBodyMemberAttribute> for a complete example.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageBodyMemberAttribute.Order" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates the position in which the member is serialized into the SOAP body.</summary>
+        <value>The location of the element in the SOAP body.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A> property to specify the location of a data member in the SOAP body element. The value is not required to be consecutive, because it does not represent the position of the member, only the sorting key.  
+  
+ The order of the body elements is alphabetical by default. The semantics of this property are the same as the semantics of the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A> property to serialize the `sourceAccount` value first, the `targetAccount` value second and the `amount` value third. If the <xref:System.ServiceModel.MessageBodyMemberAttribute.Order%2A> property is not used, the `amount` value is serialized first.  
+  
+```  
+[MessageContract]  
+public class BankingTransaction  
+{  
+  [MessageHeader] public Operation operation;  
+  [MessageBodyMember(Order=1)] public Account sourceAccount;  
+  [MessageBodyMember(Order=2)] public Account targetAccount;  
+  [MessageBodyMember(Order=3)] public int amount;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value passed to the property setter is a negative integer.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

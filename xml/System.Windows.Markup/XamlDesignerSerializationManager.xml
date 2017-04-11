@@ -1,0 +1,65 @@
+<Type Name="XamlDesignerSerializationManager" FullName="System.Windows.Markup.XamlDesignerSerializationManager">
+  <TypeSignature Language="C#" Value="public class XamlDesignerSerializationManager : System.Windows.Markup.ServiceProviders" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlDesignerSerializationManager extends System.Windows.Markup.ServiceProviders" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlDesignerSerializationManager" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.ServiceProviders</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides services for XAML serialization by XAML designers or other callers that require advanced serialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.XamlDesignerSerializationManager> attempts to optimize access to services that are called frequently during the serialization process.  
+  
+ A <xref:System.Windows.Markup.XamlDesignerSerializationManager> is also used as an input for certain specialized `ShouldSerialize` methods on [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] classes such as <xref:System.Windows.Controls.TextBlock.ShouldSerializeInlines%2A?displayProperty=fullName>, and for an overload of <xref:System.Windows.Markup.XamlWriter.Save%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlDesignerSerializationManager (System.Xml.XmlWriter xmlWriter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlWriter xmlWriter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlDesignerSerializationManager.#ctor(System.Xml.XmlWriter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">The XML writer implementation to use as basis for the <see cref="T:System.Windows.Markup.XamlDesignerSerializationManager" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlDesignerSerializationManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XamlWriterMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Markup.XamlWriterMode XamlWriterMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Markup.XamlWriterMode XamlWriterMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlDesignerSerializationManager.XamlWriterMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.XamlWriterMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XAML writer mode.</summary>
+        <value>The XAML writer mode.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">Not a valid member of the <see cref="T:System.Windows.Markup.XamlWriterMode" /> enumeration.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

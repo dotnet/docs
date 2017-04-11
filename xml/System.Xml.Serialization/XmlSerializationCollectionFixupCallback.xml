@@ -1,0 +1,41 @@
+<Type Name="XmlSerializationCollectionFixupCallback" FullName="System.Xml.Serialization.XmlSerializationCollectionFixupCallback">
+  <TypeSignature Language="C#" Value="public delegate void XmlSerializationCollectionFixupCallback(object collection, object collectionItems);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSerializationCollectionFixupCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationCollectionFixupCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="collection" Type="System.Object" />
+    <Parameter Name="collectionItems" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="collection">The collection into which the collection items array is copied.</param>
+    <param name="collectionItems">An array of items to be copied into the <c>object collection</c>.</param>
+    <summary>Delegate used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class for deserialization of SOAP-encoded XML data types that map to collections or enumerations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization derived from the <xref:System.Xml.Serialization.XmlSerializationReader> class. During this process, the .NET Framework generates collection fix-up methods that use the <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback> delegate. This occurs for SOAP-encoded arrays or SOAP-encoded, multi-reference elements whose data types, in either case, map to .NET Framework collections or enumerations. As necessary, the collection fix-up method is called during deserialization.  
+  
+ You should not directly instantiate <xref:System.Xml.Serialization.XmlSerializationCollectionFixupCallback>.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

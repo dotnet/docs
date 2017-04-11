@@ -1,0 +1,57 @@
+<Type Name="CustomErrorsRedirectMode" FullName="System.Web.Configuration.CustomErrorsRedirectMode">
+  <TypeSignature Language="C#" Value="public enum CustomErrorsRedirectMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomErrorsRedirectMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorsRedirectMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies values for how the URL of the original request is handled when a custom error page is displayed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.Configuration.CustomErrorsRedirectMode> values when you set the <xref:System.Web.Configuration.CustomErrorsSection.RedirectMode%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResponseRedirect">
+      <MemberSignature Language="C#" Value="ResponseRedirect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.CustomErrorsRedirectMode ResponseRedirect = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsRedirectMode.ResponseRedirect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.CustomErrorsRedirectMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Display the error page and change the URL of the original request.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseRewrite">
+      <MemberSignature Language="C#" Value="ResponseRewrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.CustomErrorsRedirectMode ResponseRewrite = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsRedirectMode.ResponseRewrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.CustomErrorsRedirectMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Display the error page without changing the original URL.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,96 @@
+<Type Name="TopLevelNameCollisionOptions" FullName="System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions">
+  <TypeSignature Language="C#" Value="public enum TopLevelNameCollisionOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TopLevelNameCollisionOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies additional information about a forest trust collision when the <see cref="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" /> property value is <see cref="F:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.TopLevelName" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ <xref:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType%2A>  
+  
+ <xref:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DisabledByAdmin">
+      <MemberSignature Language="C#" Value="DisabledByAdmin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions DisabledByAdmin = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions.DisabledByAdmin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The forest trust account was disabled by administrative action.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledByConflict">
+      <MemberSignature Language="C#" Value="DisabledByConflict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions DisabledByConflict = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions.DisabledByConflict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The forest trust account was disabled due to a conflict with an existing forest trust account.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NewlyCreated">
+      <MemberSignature Language="C#" Value="NewlyCreated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions NewlyCreated = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions.NewlyCreated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The forest trust account has been created and is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No action has occurred.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

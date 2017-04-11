@@ -1,0 +1,66 @@
+<Type Name="ShaderRenderMode" FullName="System.Windows.Media.Effects.ShaderRenderMode">
+  <TypeSignature Language="C#" Value="public enum ShaderRenderMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShaderRenderMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.ShaderRenderMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the policy for rendering a <see cref="T:System.Windows.Media.Effects.ShaderEffect" /> in software.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.ShaderRenderMode Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.ShaderRenderMode.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Allow hardware and software rendering.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HardwareOnly">
+      <MemberSignature Language="C#" Value="HardwareOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.ShaderRenderMode HardwareOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.ShaderRenderMode.HardwareOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Require hardware rendering, ignore if unavailable.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SoftwareOnly">
+      <MemberSignature Language="C#" Value="SoftwareOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.ShaderRenderMode SoftwareOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.ShaderRenderMode.SoftwareOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.ShaderRenderMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Force software rendering.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,56 @@
+<Type Name="IAppDomainFactory" FullName="System.Web.Hosting.IAppDomainFactory">
+  <TypeSignature Language="C#" Value="public interface IAppDomainFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAppDomainFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAppDomainFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("e6e21054-a7dc-4378-877d-b7f4a2d7e8ba")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a single method to create a new <see cref="T:System.AppDomain" /> instance for a Web application. This interface was used by .NET Framework versions earlier than 2.0; version 2.0 uses the <see cref="T:System.Web.Hosting.IAppManagerAppDomainFactory" /> interface instead.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public object Create (string module, string typeName, string appId, string appPath, string strUrlOfAppOrigin, int iZone);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(string module, string typeName, string appId, string appPath, string strUrlOfAppOrigin, int32 iZone) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainFactory.Create(System.String,System.String,System.String,System.String,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="module" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="appId" Type="System.String" />
+        <Parameter Name="appPath" Type="System.String" />
+        <Parameter Name="strUrlOfAppOrigin" Type="System.String" />
+        <Parameter Name="iZone" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="module">The module containing the Web application.</param>
+        <param name="typeName">The type of the Web application.</param>
+        <param name="appId">The unique identifier for the Web application.</param>
+        <param name="appPath">The path to the Web application's files.</param>
+        <param name="strUrlOfAppOrigin">The URL of origin for the Web application.</param>
+        <param name="iZone">The zone of origin for the Web application.</param>
+        <summary>Creates a new application domain for the specified Web application. This interface was used by .NET Framework versions earlier than 2.0; version 2.0 uses the <see cref="T:System.Web.Hosting.IAppManagerAppDomainFactory" /> interface instead.</summary>
+        <returns>A new application domain for the specified Web application.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

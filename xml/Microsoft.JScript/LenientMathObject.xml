@@ -1,0 +1,469 @@
+<Type Name="LenientMathObject" FullName="Microsoft.JScript.LenientMathObject">
+  <TypeSignature Language="C#" Value="public sealed class LenientMathObject : Microsoft.JScript.MathObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientMathObject extends Microsoft.JScript.MathObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientMathObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.MathObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.MathObject" /> class. The <see cref="T:Microsoft.JScript.LenientMathObject" /> class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="abs">
+      <MemberSignature Language="C#" Value="public object abs;" />
+      <MemberSignature Language="ILAsm" Value=".field public object abs" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.abs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.abs(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="acos">
+      <MemberSignature Language="C#" Value="public object acos;" />
+      <MemberSignature Language="ILAsm" Value=".field public object acos" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.acos" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.acos(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="asin">
+      <MemberSignature Language="C#" Value="public object asin;" />
+      <MemberSignature Language="ILAsm" Value=".field public object asin" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.asin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.asin(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="atan">
+      <MemberSignature Language="C#" Value="public object atan;" />
+      <MemberSignature Language="ILAsm" Value=".field public object atan" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.atan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.atan(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="atan2">
+      <MemberSignature Language="C#" Value="public object atan2;" />
+      <MemberSignature Language="ILAsm" Value=".field public object atan2" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.atan2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.atan2(System.Double,System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ceil">
+      <MemberSignature Language="C#" Value="public object ceil;" />
+      <MemberSignature Language="ILAsm" Value=".field public object ceil" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.ceil" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.ceil(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="cos">
+      <MemberSignature Language="C#" Value="public object cos;" />
+      <MemberSignature Language="ILAsm" Value=".field public object cos" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.cos" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.cos(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="E">
+      <MemberSignature Language="C#" Value="public const double E = 2.71828182845905;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float64 E = (2.71828182845905)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.E" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <MemberValue>2.71828182845905</MemberValue>
+      <Docs>
+        <summary>Stores a value that represents Euler's constant, the base of the natural logarithm, specified by the constant e.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="exp">
+      <MemberSignature Language="C#" Value="public object exp;" />
+      <MemberSignature Language="ILAsm" Value=".field public object exp" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.exp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.exp(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="floor">
+      <MemberSignature Language="C#" Value="public object floor;" />
+      <MemberSignature Language="ILAsm" Value=".field public object floor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.floor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.floor(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LN10">
+      <MemberSignature Language="C#" Value="public const double LN10 = 2.30258509299405;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float64 LN10 = (2.30258509299405)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.LN10" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <MemberValue>2.30258509299405</MemberValue>
+      <Docs>
+        <summary>Stores a value that represents the logarithm base e of 10, the natural logarithm of 10.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LN2">
+      <MemberSignature Language="C#" Value="public const double LN2 = 0.693147180559945;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float64 LN2 = (0.693147180559945)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.LN2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <MemberValue>0.693147180559945</MemberValue>
+      <Docs>
+        <summary>Stores a value that represents the logarithm base e of 2, the natural logarithm of 2.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="log">
+      <MemberSignature Language="C#" Value="public object log;" />
+      <MemberSignature Language="ILAsm" Value=".field public object log" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.log" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.log(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LOG10E">
+      <MemberSignature Language="C#" Value="public const double LOG10E = 0.434294481903252;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float64 LOG10E = (0.434294481903252)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.LOG10E" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <MemberValue>0.434294481903252</MemberValue>
+      <Docs>
+        <summary>Stores a value that represents the logarithm base 10 of e, the common logarithm of e.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LOG2E">
+      <MemberSignature Language="C#" Value="public const double LOG2E = 1.44269504088896;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float64 LOG2E = (1.44269504088896)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.LOG2E" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <MemberValue>1.44269504088896</MemberValue>
+      <Docs>
+        <summary>Stores a value that represents the logarithm base 2 of e, the binary logarithm of e.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="max">
+      <MemberSignature Language="C#" Value="public object max;" />
+      <MemberSignature Language="ILAsm" Value=".field public object max" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.max" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.max(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="min">
+      <MemberSignature Language="C#" Value="public object min;" />
+      <MemberSignature Language="ILAsm" Value=".field public object min" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.min" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.min(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PI">
+      <MemberSignature Language="C#" Value="public const double PI = 3.14159265358979;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float64 PI = (3.14159265358979)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.PI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <MemberValue>3.14159265358979</MemberValue>
+      <Docs>
+        <summary>Stores a value that represents the ratio of the circumference of a circle to its diameter, specified by the constant π.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pow">
+      <MemberSignature Language="C#" Value="public object pow;" />
+      <MemberSignature Language="ILAsm" Value=".field public object pow" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.pow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.pow(System.Double,System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="random">
+      <MemberSignature Language="C#" Value="public object random;" />
+      <MemberSignature Language="ILAsm" Value=".field public object random" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.random" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.random" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="round">
+      <MemberSignature Language="C#" Value="public object round;" />
+      <MemberSignature Language="ILAsm" Value=".field public object round" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.round" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.round(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="sin">
+      <MemberSignature Language="C#" Value="public object sin;" />
+      <MemberSignature Language="ILAsm" Value=".field public object sin" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.sin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.sin(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="sqrt">
+      <MemberSignature Language="C#" Value="public object sqrt;" />
+      <MemberSignature Language="ILAsm" Value=".field public object sqrt" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.sqrt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.sqrt(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SQRT1_2">
+      <MemberSignature Language="C#" Value="public const double SQRT1_2 = 0.707106781186548;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float64 SQRT1_2 = (0.707106781186548)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.SQRT1_2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <MemberValue>0.707106781186548</MemberValue>
+      <Docs>
+        <summary>Stores a value that represents the following equivalent values: (√2)/2, √(½), and 1/(√2).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SQRT2">
+      <MemberSignature Language="C#" Value="public const double SQRT2 = 1.4142135623731;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float64 SQRT2 = (1.4142135623731)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.SQRT2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <MemberValue>1.4142135623731</MemberValue>
+      <Docs>
+        <summary>Stores a value that represents √2.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="tan">
+      <MemberSignature Language="C#" Value="public object tan;" />
+      <MemberSignature Language="ILAsm" Value=".field public object tan" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientMathObject.tan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.MathObject.tan(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

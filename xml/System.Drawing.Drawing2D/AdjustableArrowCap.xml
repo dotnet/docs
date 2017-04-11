@@ -1,0 +1,182 @@
+<Type Name="AdjustableArrowCap" FullName="System.Drawing.Drawing2D.AdjustableArrowCap">
+  <TypeSignature Language="C#" Value="public sealed class AdjustableArrowCap : System.Drawing.Drawing2D.CustomLineCap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AdjustableArrowCap extends System.Drawing.Drawing2D.CustomLineCap" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.AdjustableArrowCap" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Drawing2D.CustomLineCap</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an adjustable arrow-shaped line cap. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdjustableArrowCap (float width, float height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 width, float32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.AdjustableArrowCap.#ctor(System.Single,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="width">The width of the arrow.</param>
+        <param name="height">The height of the arrow.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.AdjustableArrowCap" /> class with the specified width and height. The arrow end caps created with this constructor are always filled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates an <xref:System.Drawing.Drawing2D.AdjustableArrowCap> object named `myArrow`.  
+  
+-   Creates a <xref:System.Drawing.Pen> object named `capPen`, and sets its <xref:System.Drawing.Pen.CustomStartCap%2A> and <xref:System.Drawing.Pen.CustomEndCap%2A> properties equal to `myArrow`.  
+  
+-   Uses the <xref:System.Drawing.Graphics.DrawLine%2A> method to draw to screen a line capped by two arrows.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicMisc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CPP/form1.cpp#1)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicMisc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicMisc#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdjustableArrowCap (float width, float height, bool isFilled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 width, float32 height, bool isFilled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.AdjustableArrowCap.#ctor(System.Single,System.Single,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="isFilled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="width">The width of the arrow.</param>
+        <param name="height">The height of the arrow.</param>
+        <param name="isFilled">
+          <see langword="true" /> to fill the arrow cap; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.AdjustableArrowCap" /> class with the specified width, height, and fill property. Whether an arrow end cap is filled depends on the argument passed to the <paramref name="isFilled" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, an <xref:System.Windows.Forms.Control.OnPaint%2A> event object. The code performs the following actions:  
+  
+-   Creates an <xref:System.Drawing.Drawing2D.AdjustableArrowCap> object named `myArrow`.  
+  
+-   Creates a <xref:System.Drawing.Pen> object named `capPen`, and sets its <xref:System.Drawing.Pen.CustomStartCap%2A> and <xref:System.Drawing.Pen.CustomEndCap%2A> properties equal to `myArrow`.  
+  
+-   Uses the <xref:System.Drawing.Graphics.DrawLine%2A> method to draw to screen a line capped by two arrows.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicMisc#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicMisc#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicMisc#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filled">
+      <MemberSignature Language="C#" Value="public bool Filled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Filled" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.AdjustableArrowCap.Filled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the arrow cap is filled.</summary>
+        <value>This property is <see langword="true" /> if the arrow cap is filled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public float Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Height" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.AdjustableArrowCap.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of the arrow cap.</summary>
+        <value>The height of the arrow cap.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The height of the arrow cap is scaled by the width of the <xref:System.Drawing.Pen> object used to draw the line being capped. For example, if you are drawing a capped line with a pen that has a width of 5 pixels, and the <xref:System.Drawing.Drawing2D.AdjustableArrowCap> object has a height of 3, then the actual arrow cap is drawn 15 pixels high.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleInset">
+      <MemberSignature Language="C#" Value="public float MiddleInset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MiddleInset" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.AdjustableArrowCap.MiddleInset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of units between the outline of the arrow cap and the fill.</summary>
+        <value>The number of units between the outline of the arrow cap and the fill of the arrow cap.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public float Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.AdjustableArrowCap.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the arrow cap.</summary>
+        <value>The width, in units, of the arrow cap.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The width of the arrow cap is scaled by the width of the <xref:System.Drawing.Pen> object used to draw the line being capped. For example, if you are drawing a capped line with a pen that has a width of 5 pixels, and the <xref:System.Drawing.Drawing2D.AdjustableArrowCap> object has a width of 3, then the actual arrow cap is drawn 15 pixels wide.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

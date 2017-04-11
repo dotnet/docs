@@ -1,0 +1,114 @@
+<Type Name="ControlBodyGlyph" FullName="System.Windows.Forms.Design.Behavior.ControlBodyGlyph">
+  <TypeSignature Language="C#" Value="public class ControlBodyGlyph : System.Windows.Forms.Design.Behavior.ComponentGlyph" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlBodyGlyph extends System.Windows.Forms.Design.Behavior.ComponentGlyph" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Design.Behavior.ComponentGlyph</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Associates a <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> with its control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.Behavior.Glyph> is placed on every control and is sized to the exact bounds of each control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlBodyGlyph (System.Drawing.Rectangle bounds, System.Windows.Forms.Cursor cursor, System.ComponentModel.IComponent relatedComponent, System.Windows.Forms.Design.Behavior.Behavior behavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.Cursor cursor, class System.ComponentModel.IComponent relatedComponent, class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ControlBodyGlyph.#ctor(System.Drawing.Rectangle,System.Windows.Forms.Cursor,System.ComponentModel.IComponent,System.Windows.Forms.Design.Behavior.Behavior)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="cursor" Type="System.Windows.Forms.Cursor" />
+        <Parameter Name="relatedComponent" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</param>
+        <param name="cursor">A <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor to display when the mouse pointer is over the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</param>
+        <param name="relatedComponent">The component with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
+        <param name="behavior">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlBodyGlyph (System.Drawing.Rectangle bounds, System.Windows.Forms.Cursor cursor, System.ComponentModel.IComponent relatedComponent, System.Windows.Forms.Design.ControlDesigner designer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.Cursor cursor, class System.ComponentModel.IComponent relatedComponent, class System.Windows.Forms.Design.ControlDesigner designer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ControlBodyGlyph.#ctor(System.Drawing.Rectangle,System.Windows.Forms.Cursor,System.ComponentModel.IComponent,System.Windows.Forms.Design.ControlDesigner)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="cursor" Type="System.Windows.Forms.Cursor" />
+        <Parameter Name="relatedComponent" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="designer" Type="System.Windows.Forms.Design.ControlDesigner" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</param>
+        <param name="cursor">A <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor to display when the mouse pointer is over the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</param>
+        <param name="relatedComponent">The component with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
+        <param name="designer">A <see cref="T:System.Windows.Forms.Design.ControlDesigner" /> with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.ControlBodyGlyph.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounds of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> representing the bounds of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHitTest">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.Cursor GetHitTest (System.Drawing.Point p);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.Cursor GetHitTest(valuetype System.Drawing.Point p) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.ControlBodyGlyph.GetHitTest(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="p">A point to hit test.</param>
+        <summary>Indicates whether a mouse click at the specified point should be handled by the <see cref="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" />.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.Cursor" /> if the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated with <paramref name="p" />; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

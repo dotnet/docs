@@ -1,0 +1,860 @@
+<Type Name="D3DImage" FullName="System.Windows.Interop.D3DImage">
+  <TypeSignature Language="C#" Value="public class D3DImage : System.Windows.Media.ImageSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi D3DImage extends System.Windows.Media.ImageSource" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.D3DImage" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.ImageSource</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An <see cref="T:System.Windows.Media.ImageSource" /> that displays a user-created Direct3D surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Interop.D3DImage> class to host Direct3D content in a Windows Presentation Foundation (WPF) application.  
+  
+ Call the <xref:System.Windows.Interop.D3DImage.Lock%2A> method to change the Direct3D content displayed by the <xref:System.Windows.Interop.D3DImage>. Call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface to a <xref:System.Windows.Interop.D3DImage>. Call the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method to track updates to the Direct3D surface. Call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method to display the changed areas.  
+  
+ The <xref:System.Windows.Interop.D3DImage> class manages two display buffers, which are called the *back buffer* and the *front buffer*. The back buffer is your Direct3D surface.  Changes to the back buffer are copied forward to the front buffer when you call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method, where it is displayed on the hardware. Occasionally, the front buffer becomes unavailable. This lack of availability can be caused by screen locking, full-screen exclusive Direct3D applications, user-switching, or other system activities. When this occurs, your WPF application is notified by handling the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event.  How your application responds to the front buffer becoming unavailable depends on whether WPF is enabled to fall back to software rendering. The <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method has an overload that takes a parameter that specifies whether WPF falls back to software rendering.  
+  
+## Responding to an Unavailable Front Buffer when WPF Does not Fall Back to Software Rendering  
+ When you call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%29> overload or call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> overload with the `enableSoftwareFallback` parameter set to `false`, the rendering system releases its reference to the back buffer when the front buffer becomes unavailable and nothing is displayed. When the front buffer is available again, the rendering system raises the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to notify your WPF application.  You can create an event handler for the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to restart rendering again with a valid Direct3D surface. To restart rendering, you must call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A>.  
+  
+## Responding to an Unavailable Front Buffer when WPF Falls Back to Software Rendering  
+ When you call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> overload with the `enableSoftwareFallback` parameter set to `true`, the rendering system retains its reference to the back buffer when the front buffer becomes unavailable, so there is no need to call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> when the front buffer is available again.  There may be situations where the user’s device becomes unavailable.  When that occurs, call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> to release WPF’s reference to the back buffer.  If you need to reset your device, call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> with the `backBuffer` parameter set to `null`, and then call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> again with `backBuffer` set to a valid Direct3D surface.  
+  
+> [!NOTE]
+>  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](~/docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md).  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Interop.D3DImage> class does not display Direct3D content when WPF renders in software, such as over a Remote Desktop connection, unless you call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> and specify `true` for the `enableSoftwareFallback` parameter.  
+  
+   
+  
+## Examples  
+ The following code example shows how to declare a <xref:System.Windows.Interop.D3DImage> in XAML. You must map the <xref:System.Windows.Interop> namespace, because it is not included in the default XAML namespaces. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+  
+ [!code-xml[System.Windows.Interop.D3DImage#10](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml#10)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public D3DImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.D3DImage" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default display resolution is 1/96th inch.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public D3DImage (double dpiX, double dpiY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 dpiX, float64 dpiY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.#ctor(System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="dpiX" Type="System.Double" />
+        <Parameter Name="dpiY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="dpiX">The display resolution on the x-axis.</param>
+        <param name="dpiY">The display resolution on the y-axis.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.D3DImage" /> class with the specified display resolution.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default display resolution is 1/96th inch.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="dpiX" /> or <paramref name="dpiY" /> is less than zero.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDirtyRect">
+      <MemberSignature Language="C#" Value="public void AddDirtyRect (System.Windows.Int32Rect dirtyRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDirtyRect(valuetype System.Windows.Int32Rect dirtyRect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.AddDirtyRect(System.Windows.Int32Rect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dirtyRect" Type="System.Windows.Int32Rect" />
+      </Parameters>
+      <Docs>
+        <param name="dirtyRect">An <see cref="T:System.Windows.Int32Rect" /> that represents the area that changed.</param>
+        <summary>Specifies the area of the back buffer that changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method to indicate changes your code has made to the back buffer. To be rendered, the changed area on the back buffer must have a corresponding changed area on the <xref:System.Windows.Interop.D3DImage>.  
+  
+ Call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> and <xref:System.Windows.Interop.D3DImage.Lock%2A> methods before calling the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method.  
+  
+ Call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method to copy the changed areas to the front buffer.  
+  
+> [!NOTE]
+>  After a few calls to the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method, the changed areas are merged into a single area. This means you must have valid data outside of the changed areas.  
+  
+   
+  
+## Examples  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+  
+ [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The bitmap has not been locked by a call to the <see cref="M:System.Windows.Interop.D3DImage.Lock" /> or <see cref="M:System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)" /> methods.  
+  
+ -or-  
+  
+ The back buffer has not been assigned by a call to the <see cref="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" /> method.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the following conditions is true.  
+  
+ <paramref name="dirtyRect.X" /> &lt; 0  
+  
+ <paramref name="dirtyRect.Y" /> &lt; 0  
+  
+ <paramref name="dirtyRect.Width" /> &lt; 0 or <paramref name="dirtyRect.Width" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelWidth" />  
+  
+ <paramref name="dirtyRect.Height" /> &lt; 0 or <paramref name="dirtyRect.Height" /> &gt; <see cref="P:System.Windows.Interop.D3DImage.PixelHeight" /></exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Interop.D3DImage Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Interop.D3DImage Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.D3DImage</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Interop.D3DImage" /> object, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (which may no longer resolve), but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCore">
+      <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFreezable">The object to clone.</param>
+        <summary>Makes the instance a clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Interop.D3DImage CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Interop.D3DImage CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.D3DImage</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Interop.D3DImage" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are copied.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValueCore">
+      <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Freezable" /> to be cloned.</param>
+        <summary>Makes the instance a modifiable clone (deep copy) of the specified <see cref="T:System.Windows.Freezable" /> using current property values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyBackBuffer">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.Media.Imaging.BitmapSource CopyBackBuffer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Windows.Media.Imaging.BitmapSource CopyBackBuffer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CopyBackBuffer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapSource</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a software copy of the <see cref="T:System.Windows.Interop.D3DImage" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.BitmapSource" /> that is a software copy of the current state of the back buffer; otherwise, <see langword="null" /> if the back buffer cannot be read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.D3DImage.CopyBackBuffer%2A> method is called by clients such as the printing system and the <xref:System.Windows.Media.Imaging.RenderTargetBitmap> class.  
+  
+ Optionally override the <xref:System.Windows.Interop.D3DImage.CopyBackBuffer%2A> method to implement custom logic and return a different <xref:System.Windows.Media.Imaging.BitmapSource>. For example, you can return a placeholder <xref:System.Windows.Media.Imaging.BitmapSource> if the default <xref:System.Windows.Interop.D3DImage.CopyBackBuffer%2A> implementation returns `null`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, creates a new instance of the <see cref="T:System.Windows.Interop.D3DImage" /> derived class.</summary>
+        <returns>The new instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you derive from the <xref:System.Windows.Interop.D3DImage> class, you must override the <xref:System.Windows.Interop.D3DImage.CreateInstanceCore%2A> method to enable correct cloning. The default implementation performs a `return new D3DImage()`, which will not be correct if the instance is a different class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~D3DImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Frees resources and performs other cleanup operations before the <see cref="T:System.Windows.Interop.D3DImage" /> is reclaimed by garbage collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
+  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="FreezeCore">
+      <MemberSignature Language="C#" Value="protected override sealed bool FreezeCore (bool isChecking);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.FreezeCore(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isChecking" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isChecking">Has no effect.</param>
+        <summary>Makes the <see cref="T:System.Windows.Interop.D3DImage" /> unmodifiable or determines whether it can be made unmodifiable.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Interop.D3DImage> class does not allow freezing because changes are always possible due to front buffer availability.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsFrozenCore">
+      <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFreezable">The instance to copy.</param>
+        <summary>Makes the instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" /> using base (non-animated) property values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValueAsFrozenCore">
+      <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Freezable" /> to copy and freeze.</param>
+        <summary>Makes the current instance a frozen clone of the specified <see cref="T:System.Windows.Freezable" />. If the object has animated dependency properties, their current animated values are copied.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public override sealed double Height { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of the <see cref="T:System.Windows.Interop.D3DImage" />.</summary>
+        <value>The height of the <see cref="T:System.Windows.Interop.D3DImage" />, in measure units. A measure unit is 1/96th inch.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.Windows.Interop.D3DImage.Height%2A> can change when a new back buffer is assigned by a call to the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFrontBufferAvailable">
+      <MemberSignature Language="C#" Value="public bool IsFrontBufferAvailable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFrontBufferAvailable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.IsFrontBufferAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a front buffer exists.</summary>
+        <value>
+          <see langword="true" /> if a front buffer exists; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Occasionally, the front buffer becomes unavailable. This lack of availability can be caused by screen locking, full-screen exclusive Direct3D applications, user-switching, or other system activities. When this occurs, your WPF application is notified by handling the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event.  How your application responds to the front buffer becoming unavailable depends on whether WPF is enabled to fall back to software rendering. The <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method has an overload that takes a parameter that specifies whether WPF falls back to software rendering. For more information, see the remarks in the <xref:System.Windows.Interop.D3DImage> class.  
+  
+<a name="dependencyPropertyInfo_IsFrontBufferAvailable"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following code example shows how to check the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailable%2A> property when rendering the composition target. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+  
+ [!code-csharp[System.Windows.Interop.D3DImage#2](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFrontBufferAvailableChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.DependencyPropertyChangedEventHandler IsFrontBufferAvailableChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.DependencyPropertyChangedEventHandler IsFrontBufferAvailableChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyPropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Interop.D3DImage.IsFrontBufferAvailable" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> to be notified when the status of the front buffer changes. How your application responds to the front buffer becoming unavailable depends on whether WPF is enabled to fall back to software rendering. The <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method has an overload that takes a parameter that specifies whether WPF falls back to software rendering. For more information, see the remarks in the <xref:System.Windows.Interop.D3DImage> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFrontBufferAvailableProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsFrontBufferAvailableProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsFrontBufferAvailableProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Interop.D3DImage.IsFrontBufferAvailableProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Interop.D3DImage.IsFrontBufferAvailable" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lock">
+      <MemberSignature Language="C#" Value="public void Lock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Lock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Lock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Locks the <see cref="T:System.Windows.Interop.D3DImage" /> and enables operations on the back buffer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Interop.D3DImage.Lock%2A> method to change the back buffer by calling the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> and <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> methods. While the <xref:System.Windows.Interop.D3DImage> is locked, your application can also render to the Direct3D surface assigned to the back buffer.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Interop.D3DImage.Lock%2A> method blocks when the rendering system is reading the back buffer to update the front buffer. Use the <xref:System.Windows.Interop.D3DImage.TryLock%2A> method to avoid blocking indefinitely.  
+  
+   
+  
+## Examples  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Lock%2A> method to enable updates to the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+  
+ [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The lock count equals <see cref="F:System.UInt32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Metadata">
+      <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.ImageMetadata Metadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageMetadata Metadata" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Metadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.ImageMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the metadata associated with the image source.</summary>
+        <value>
+          <see langword="null" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelHeight">
+      <MemberSignature Language="C#" Value="public int PixelHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.PixelHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of the <see cref="T:System.Windows.Interop.D3DImage" />, in pixels.</summary>
+        <value>The height of the <see cref="T:System.Windows.Interop.D3DImage" />, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.Windows.Interop.D3DImage.PixelHeight%2A> can change when a new back buffer is assigned by a call to the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelHeight%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+  
+ [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelWidth">
+      <MemberSignature Language="C#" Value="public int PixelWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.PixelWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the width of the <see cref="T:System.Windows.Interop.D3DImage" />, in pixels.</summary>
+        <value>The width of the <see cref="T:System.Windows.Interop.D3DImage" />, in pixels.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.Windows.Interop.D3DImage.PixelWidth%2A> can change when a new back buffer is assigned by a call to the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelWidth%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+  
+ [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBackBuffer">
+      <MemberSignature Language="C#" Value="public void SetBackBuffer (System.Windows.Interop.D3DResourceType backBufferType, IntPtr backBuffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBackBuffer(valuetype System.Windows.Interop.D3DResourceType backBufferType, native int backBuffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backBufferType" Type="System.Windows.Interop.D3DResourceType" />
+        <Parameter Name="backBuffer" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="backBufferType">The type of Direct3D surface. Must be a valid <see cref="T:System.Windows.Interop.D3DResourceType" />.</param>
+        <param name="backBuffer">The Direct3D surface to assign as the back buffer.</param>
+        <summary>Assigns a Direct3D surface as the source of the back buffer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface to the back buffer.  
+  
+> [!NOTE]
+>  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](~/docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md).  
+  
+ Calling the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%29> overload is identical to calling the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> overload with the `enableSoftwareFallback` parameter set to `false`. When you call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%29> or call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> with the `enableSoftwareFallback` parameter set to `false`, the rendering system releases its reference to the back buffer when front buffer becomes unavailable and nothing is displayed. When the front buffer is available again, the rendering system raises the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to notify your WPF application.  You can create an event handler for the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to restart rendering again with a valid Direct3D surface. To restart rendering, you must call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A>.  
+  
+ The following list shows the required back buffer settings for the `IDirect3DSurface9` type.  
+  
+-   `D3DFMT_A8R8G8B8` or `D3DFMT_X8R8G8B8`  
+  
+-   `D3DUSAGE_RENDERTARGET`  
+  
+-   `D3DPOOL_DEFAULT`  
+  
+ Multisampling is allowed on `IDirect3DSurface9Ex` surfaces only.  
+  
+   
+  
+## Examples  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+  
+ [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Interop.D3DImage" /> has not been locked by a call to the <see cref="M:System.Windows.Interop.D3DImage.Lock" /> or <see cref="M:System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)" /> methods.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="backBufferType" /> is not a valid <see cref="T:System.Windows.Interop.D3DResourceType" />.</exception>
+        <exception cref="T:System.ArgumentException">The creation parameters for <paramref name="backBuffer" /> do not meet the requirements for the <paramref name="backBufferType" />-or-The <paramref name="backBuffer" /> device is not valid.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBackBuffer">
+      <MemberSignature Language="C#" Value="public void SetBackBuffer (System.Windows.Interop.D3DResourceType backBufferType, IntPtr backBuffer, bool enableSoftwareFallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBackBuffer(valuetype System.Windows.Interop.D3DResourceType backBufferType, native int backBuffer, bool enableSoftwareFallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.SetBackBuffer(System.Windows.Interop.D3DResourceType,System.IntPtr,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backBufferType" Type="System.Windows.Interop.D3DResourceType" />
+        <Parameter Name="backBuffer" Type="System.IntPtr" />
+        <Parameter Name="enableSoftwareFallback" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="backBufferType">The type of Direct3D surface. Must be a valid <see cref="T:System.Windows.Interop.D3DResourceType" />.</param>
+        <param name="backBuffer">The Direct3D surface to assign as the back buffer.</param>
+        <param name="enableSoftwareFallback">
+          <see langword="true" /> to fall back on software rendering; otherwise, <see langword="false" />.</param>
+        <summary>Assigns a Direct3D surface as the source of the back buffer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%29> overload or call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> overload with the `enableSoftwareFallback` parameter set to `false`, the rendering system releases its reference to the back buffer when the front buffer becomes unavailable and nothing is displayed. When the front buffer is available again, the rendering system raises the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to notify your WPF application.  You can create an event handler for the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to restart rendering again with a valid Direct3D surface. To restart rendering, you must call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A>.  
+  
+ When you call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> with the `enableSoftwareFallback` parameter set to `true`, the rendering system retains its reference to the back buffer when the front buffer becomes unavailable, so there is no need to call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> when the front buffer is available again.  There may be situations where the user’s device becomes unavailable.  When that occurs, call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> to release WPF’s reference to the back buffer.  If you need to reset your device, call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> with `backBuffer` set to `null`, and then call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> again with `backBuffer` set to a valid Direct3D surface.  
+  
+ The following list shows the required back buffer settings for the `IDirect3DSurface9` type.  
+  
+-   `D3DFMT_A8R8G8B8` or `D3DFMT_X8R8G8B8`  
+  
+-   `D3DUSAGE_RENDERTARGET`  
+  
+-   `D3DPOOL_DEFAULT`  
+  
+ Multisampling is allowed on `IDirect3DSurface9Ex` surfaces only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLock">
+      <MemberSignature Language="C#" Value="public bool TryLock (System.Windows.Duration timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryLock(valuetype System.Windows.Duration timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.TryLock(System.Windows.Duration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Windows.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The duration to wait for the lock to be acquired.</param>
+        <summary>Attempts to lock the <see cref="T:System.Windows.Interop.D3DImage" /> and waits for the specified duration.</summary>
+        <returns>
+          <see langword="true" /> if the lock was acquired; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="timeout" /> is set to <see cref="P:System.Windows.Duration.Automatic" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The lock count equals <see cref="F:System.UInt32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Unlock">
+      <MemberSignature Language="C#" Value="public void Unlock ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unlock() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.D3DImage.Unlock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Decrements the lock count for the <see cref="T:System.Windows.Interop.D3DImage" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the lock count for the <xref:System.Windows.Interop.D3DImage> reaches zero, the <xref:System.Windows.Interop.D3DImage> is fully unlocked. The <xref:System.Windows.Interop.D3DImage> is marked for rendering if the image has changed areas that were specified by previous calls to the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method.  
+  
+ When the changes are committed and rendering occurs, additional calls to the <xref:System.Windows.Interop.D3DImage.Lock%2A> method block until the render thread has copied the contents of the back buffer to the front buffer. This synchronization avoids display artifacts, such as tearing.  
+  
+> [!NOTE]
+>  Do not update the Direct3D surface while the <xref:System.Windows.Interop.D3DImage> is unlocked.  
+  
+   
+  
+## Examples  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method to copy the updated back buffer to the front buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
+  
+ [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public override sealed double Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.D3DImage.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the width of the <see cref="T:System.Windows.Interop.D3DImage" />.</summary>
+        <value>The width of the <see cref="T:System.Windows.Interop.D3DImage" />, in measure units. A measure unit is 1/96th inch.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.Windows.Interop.D3DImage.Width%2A> can change when a new back buffer is assigned by a call to the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

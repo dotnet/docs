@@ -1,0 +1,283 @@
+<Type Name="ListView" FullName="System.Windows.Controls.ListView">
+  <TypeSignature Language="C#" Value="public class ListView : System.Windows.Controls.ListBox" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi ListView extends System.Windows.Controls.ListBox" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ListView" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.ListBox</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.StyleTypedProperty(Property="ItemContainerStyle", StyleTargetType=typeof(System.Windows.Controls.ListViewItem))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a control that displays a list of data items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.ListView> is an <xref:System.Windows.Controls.ItemsControl>, which means it can contain a collection of objects of any type (such as string, image, or panel). For more information, see the <xref:System.Windows.Controls.ItemsControl> class.  
+  
+ The presentation of the data items in a <xref:System.Windows.Controls.ListView> is defined by its view mode, which is specified by the <xref:System.Windows.Controls.ListView.View%2A> property. [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] provides a <xref:System.Windows.Controls.GridView> view mode that partitions the <xref:System.Windows.Controls.ListView> data item content into columns. The properties and methods on <xref:System.Windows.Controls.GridView> and its related classes style and specify the content of the columns.  
+  
+ The following illustration shows a <xref:System.Windows.Controls.ListView> with a <xref:System.Windows.Controls.GridView> view.  
+  
+ ![ListView with GridView output](~/add/media/listviewgridview.JPG "ListView with GridView output")  
+  
+ You can also define custom views by creating a class that derives from <xref:System.Windows.Controls.ViewBase>. For more information, see [How to: Create a Custom View Mode for a ListView](~/docs/framework/wpf/controls/how-to-create-a-custom-view-mode-for-a-listview.md).  
+  
+ If you define a custom <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> for a <xref:System.Windows.Controls.ListView> control and also define an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, you must include a <xref:System.Windows.Controls.ContentPresenter> in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A>. The <xref:System.Windows.Controls.ContentPresenter> is required for the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to work correctly.  
+  
+ To avoid alignment issues in a <xref:System.Windows.Controls.GridView> view mode, do not add content or set properties that affect the width of an item in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> of a <xref:System.Windows.Controls.ListView>. To prevent alignment issues, use properties and templates that are defined for the <xref:System.Windows.Controls.GridView> view mode. This includes properties and templates that are defined for classes that are used in a <xref:System.Windows.Controls.GridView> view mode, such as <xref:System.Windows.Controls.GridViewColumn> and <xref:System.Windows.Controls.GridViewColumnHeader>.  
+  
+ Two <xref:System.Windows.Controls.ListView> controls cannot share the same view. To specify a view that can be used more than one time, use templates or styles. For an example of a <xref:System.Windows.Controls.GridView> and other custom views that are defined as reusable resources, see [ListView with Multiple Views Sample](http://go.microsoft.com/fwlink/?LinkID=160013).  
+  
+ Do not use the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties for <xref:System.Windows.Controls.ListView> content that is displayed by using a <xref:System.Windows.Controls.GridView>. To specify the alignment of content in a column of a <xref:System.Windows.Controls.GridView>, define a <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>.  
+  
+ Displaying a large number of items may cause performance issues.  See [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md) for more information.  
+  
+## Customizing the ListView Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.ListView> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ListView>, see [ListView Styles and Templates](~/docs/framework/wpf/controls/listview-styles-and-templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ListView> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Controls.ListView> control that implements a <xref:System.Windows.Controls.GridView> as its <xref:System.Windows.Controls.ListView.View%2A>. The illustration in the Remarks section is taken from this example.  
+  
+ [!code-xml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ListView" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void ClearContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListView.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.Controls.ListViewItem" /> container to clear.</param>
+        <param name="item">The object that the <see cref="T:System.Windows.Controls.ListViewItem" /> contains.</param>
+        <summary>Removes all templates, styles, and bindings for the object that is displayed as a <see cref="T:System.Windows.Controls.ListViewItem" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListView.GetContainerForItemOverride" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a new <see cref="T:System.Windows.Controls.ListViewItem" /> container.</summary>
+        <returns>A new <see cref="T:System.Windows.Controls.ListViewItem" /> control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsItemItsOwnContainerOverride">
+      <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListView.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to evaluate.</param>
+        <summary>Determines whether an object is a <see cref="T:System.Windows.Controls.ListViewItem" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="item" /> is a <see cref="T:System.Windows.Controls.ListViewItem" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListView.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Defines an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.ListView" /> control.</summary>
+        <returns>Returns a <see cref="T:System.Windows.Automation.Peers.ListViewAutomationPeer" /> object for the <see cref="T:System.Windows.Controls.ListView" /> control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsChanged">
+      <MemberSignature Language="C#" Value="protected override void OnItemsChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnItemsChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListView.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Collections.Specialized.NotifyCollectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event arguments.</param>
+        <summary>Responds to an <see cref="M:System.Windows.Controls.ItemsControl.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when there is a change in the items collection of a <xref:System.Windows.Controls.ListView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ListView.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">An object that is a <see cref="T:System.Windows.Controls.ListViewItem" /> or that can be converted into one.</param>
+        <param name="item">The object to use to create the <see cref="T:System.Windows.Controls.ListViewItem" />.</param>
+        <summary>Sets the styles, templates, and bindings for a <see cref="T:System.Windows.Controls.ListViewItem" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method prepares a <xref:System.Windows.Controls.ListViewItem> control for display according to the specified <xref:System.Windows.Controls.ListView.View%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="View">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ViewBase View { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ViewBase View" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ListView.View" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ViewBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that defines how the data is styled and organized in a <see cref="T:System.Windows.Controls.ListView" /> control.</summary>
+        <value>A <see cref="T:System.Windows.Controls.ViewBase" /> object that specifies how to display information in the <see cref="T:System.Windows.Controls.ListView" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] environment includes the configurable view mode named <xref:System.Windows.Controls.GridView>. You can also create a custom view that inherits from <xref:System.Windows.Controls.ViewBase>. For more information, see [How to: Create a Custom View Mode for a ListView](~/docs/framework/wpf/controls/how-to-create-a-custom-view-mode-for-a-listview.md).  
+  
+<a name="dependencyPropertyInfo_View"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.ListView.ViewProperty>|  
+|Metadata properties set to `true`|None|  
+  
+> [!NOTE]
+>  The type of property metadata for this property is <xref:System.Windows.PropertyMetadata>, not <xref:System.Windows.FrameworkPropertyMetadata>.  
+  
+   
+  
+## Examples  
+ The following example shows how to specify a <xref:System.Windows.Controls.GridView> object as the <xref:System.Windows.Controls.ListView.View%2A> for a <xref:System.Windows.Controls.ListView> control.  
+  
+ [!code-csharp[ListViewCode#ListViewView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#listviewview)]
+ [!code-vb[ListViewCode#ListViewView](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#listviewview)]
+ [!code-xml[ListViewCode#ListViewView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewview)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ViewProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ViewProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ListView.ViewProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.ListView.View" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

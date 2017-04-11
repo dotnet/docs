@@ -1,0 +1,281 @@
+<Type Name="EnumeratedPrintQueueTypes" FullName="System.Printing.EnumeratedPrintQueueTypes">
+  <TypeSignature Language="C#" Value="public enum EnumeratedPrintQueueTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnumeratedPrintQueueTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.EnumeratedPrintQueueTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies attributes of print queues.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use these values with the <xref:System.Printing.PrintServer.GetPrintQueues%2A> method to list subsets of available print queues.  
+  
+ PushedMachineConnection and PushedUserConnection refer to policies that enable automated connection of machines and users to printers. See the section "Deploying Printers to Users or Computers by Using Group Policy" in the [Step-by-Step Guide for Print Management](http://technet2.microsoft.com/WindowsServer/en/Library/312b10cb-73ec-40c7-a4df-63dd7248d93d1033.mspx).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Printing.EnumeratedPrintQueueTypes> enumeration to get a subset of available print queues.  
+  
+ [!code-cpp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/cpp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CPP/Program.cpp#listsubsetofprintqueues)]
+ [!code-csharp[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/csharp/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/CSharp/Program.cs#listsubsetofprintqueues)]
+ [!code-vb[EnumerateSubsetOfPrintQueues#ListSubsetOfPrintQueues](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EnumerateSubsetOfPrintQueues/visualbasic/program.vb#listsubsetofprintqueues)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Connections">
+      <MemberSignature Language="C#" Value="Connections" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes Connections = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.Connections" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that is connected to the specified print server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectPrinting">
+      <MemberSignature Language="C#" Value="DirectPrinting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes DirectPrinting = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.DirectPrinting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that sends a print job directly to printing instead of spooling the job first.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableBidi">
+      <MemberSignature Language="C#" Value="EnableBidi" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes EnableBidi = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.EnableBidi" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue for a printer that has bidirectional communication enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableDevQuery">
+      <MemberSignature Language="C#" Value="EnableDevQuery" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes EnableDevQuery = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.EnableDevQuery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that holds its print jobs when the document and printer configurations do not match.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fax">
+      <MemberSignature Language="C#" Value="Fax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes Fax = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.Fax" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that services a fax machine.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepPrintedJobs">
+      <MemberSignature Language="C#" Value="KeepPrintedJobs" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes KeepPrintedJobs = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.KeepPrintedJobs" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that keeps jobs in the queue after printing them.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes Local = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that is installed as a local print queue on the specified print server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PublishedInDirectoryServices">
+      <MemberSignature Language="C#" Value="PublishedInDirectoryServices" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes PublishedInDirectoryServices = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.PublishedInDirectoryServices" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that is visible in the directory of printers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PushedMachineConnection">
+      <MemberSignature Language="C#" Value="PushedMachineConnection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes PushedMachineConnection = int32(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.PushedMachineConnection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that was installed by using the Push Printer Connections computer policy. See Remarks.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PushedUserConnection">
+      <MemberSignature Language="C#" Value="PushedUserConnection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes PushedUserConnection = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.PushedUserConnection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that was installed by using the Push Printer Connections user policy. See Remarks.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Queued">
+      <MemberSignature Language="C#" Value="Queued" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes Queued = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.Queued" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that allows multiple print jobs in the queue.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RawOnly">
+      <MemberSignature Language="C#" Value="RawOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes RawOnly = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.RawOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that spools only raw data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shared">
+      <MemberSignature Language="C#" Value="Shared" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes Shared = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.Shared" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that is shared.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminalServer">
+      <MemberSignature Language="C#" Value="TerminalServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes TerminalServer = int32(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.TerminalServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that is installed by the redirection feature in Terminal Services.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkOffline">
+      <MemberSignature Language="C#" Value="WorkOffline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.EnumeratedPrintQueueTypes WorkOffline = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.EnumeratedPrintQueueTypes.WorkOffline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.EnumeratedPrintQueueTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A print queue that can work offline.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

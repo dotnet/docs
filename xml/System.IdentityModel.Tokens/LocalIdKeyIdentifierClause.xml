@@ -1,0 +1,245 @@
+<Type Name="LocalIdKeyIdentifierClause" FullName="System.IdentityModel.Tokens.LocalIdKeyIdentifierClause">
+  <TypeSignature Language="C#" Value="public class LocalIdKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalIdKeyIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a key identifier clause that identifies a security tokens specified in the security header of the SOAP message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause> does not need to be used, other than when a custom security token service is created. When a security token service returns a security token, the issued security token contains references to attached and unattached security tokens Attached references refer to security tokens that are contained within the security header of the SOAP message and unattached references are security tokens that are not included within the security header of the SOAP message. These references typically affirm the authenticity of the issued security token.  
+  
+ The <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause> key identifier is placed within an `<SecurityTokenReference>` element.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="localId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="localId">The value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class using the specified identifier and array of types.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localId" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="localId" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId, Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId, class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="localId" Type="System.String" />
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="localId">The value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> property.</param>
+        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <c>localId</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class using the specified identifier an owner security token type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localId" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="localId" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId, byte[] derivationNonce, int derivationLength, Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId, unsigned int8[] derivationNonce, int32 derivationLength, class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Int32,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="localId" Type="System.String" />
+        <Parameter Name="derivationNonce" Type="System.Byte[]" />
+        <Parameter Name="derivationLength" Type="System.Int32" />
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="localId">The value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> property.</param>
+        <param name="derivationNonce">An array of <see cref="T:System.Byte" /> that contains the nonce that was used to create a derived key. Sets the value that is returned by the <see cref="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" /> method.</param>
+        <param name="derivationLength">The size of the derived key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" /> property.</param>
+        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <c>localId</c> parameter. Sets the value of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class using the specified identifier, nonce, derived key length an owner security token type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] does not support the creation of implied derived key identifiers.  However, [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] will process and consume an incoming SOAP message with implied derived key identifiers.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="localId" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="localId" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalId">
+      <MemberSignature Language="C#" Value="public string LocalId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocalId" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message.</summary>
+        <value>The value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+      </Parameters>
+      <Docs>
+        <param name="clause">To be added.</param>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> and the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties match the current instance; otherwise, <see langword="false" />. See the remarks for more details.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A match on the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property occurs when one of the following happens:  
+  
+-   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property for the instance represented by the `keyIdentifierClause` parameter is `null`.  
+  
+-   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property for the current instance is `null`.  
+  
+-   The <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property for the two instances are identical.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public bool Matches (string localId, Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(string localId, class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localId" Type="System.String" />
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="localId">The value of the <see langword="wsu:Id" /> attribute for an XML element within the current SOAP message.</param>
+        <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <c>localId</c> parameter.</param>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified reference and type.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="localId" /> and <paramref name="ownerType" /> parameters match the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties; otherwise, <see langword="false" />. See the remarks for more details.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A match on the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property occurs when one of the following happens:  
+  
+-   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> propertyfor the current instance is `null`.  
+  
+-   The value of the `ownerType` parameter is `null`.  
+  
+-   The value of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> property is identical to the `ownerType` parameter for the current method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerType">
+      <MemberSignature Language="C#" Value="public Type OwnerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type OwnerType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of security token that is referred to by the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> property.</summary>
+        <value>A <see cref="T:System.Type" /> that contains the type of security token that is referred to by the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.ToString%2A> method returns a string that contains the values of the <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId%2A> and <xref:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

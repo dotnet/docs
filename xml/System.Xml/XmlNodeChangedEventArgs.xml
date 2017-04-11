@@ -1,0 +1,308 @@
+<Type Name="XmlNodeChangedEventArgs" FullName="System.Xml.XmlNodeChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class XmlNodeChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNodeChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Xml.XmlDocument.NodeChanged" />, <see cref="E:System.Xml.XmlDocument.NodeChanging" />, <see cref="E:System.Xml.XmlDocument.NodeInserted" />, <see cref="E:System.Xml.XmlDocument.NodeInserting" />, <see cref="E:System.Xml.XmlDocument.NodeRemoved" /> and <see cref="E:System.Xml.XmlDocument.NodeRemoving" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following C# code shows how to use the event handler.  
+  
+```  
+//Add a new event handler.  
+XmlDocument doc = new XmlDocument();  
+doc.NodeInserted += new XmlNodeChangedEventHandler(NodeInsertedHandler);  
+//Define the event handler.  
+void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)  
+{  
+ Console.WriteLine("Node " + args.Node.Name + " inserted!!");  
+}  
+```  
+  
+> [!NOTE]
+>  If an operation is comprised of multiple actions, it results in multiple events. For example, an <xref:System.Xml.XmlNode.AppendChild%2A> call may have to remove the node being appended from its previous parent. In this case you will see a `NodeRemoved` event followed by a `NodeInserted` event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlNodeChangedEventArgs (System.Xml.XmlNode node, System.Xml.XmlNode oldParent, System.Xml.XmlNode newParent, string oldValue, string newValue, System.Xml.XmlNodeChangedAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNode node, class System.Xml.XmlNode oldParent, class System.Xml.XmlNode newParent, string oldValue, string newValue, valuetype System.Xml.XmlNodeChangedAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlNodeChangedEventArgs.#ctor(System.Xml.XmlNode,System.Xml.XmlNode,System.Xml.XmlNode,System.String,System.String,System.Xml.XmlNodeChangedAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+        <Parameter Name="oldParent" Type="System.Xml.XmlNode" />
+        <Parameter Name="newParent" Type="System.Xml.XmlNode" />
+        <Parameter Name="oldValue" Type="System.String" />
+        <Parameter Name="newValue" Type="System.String" />
+        <Parameter Name="action" Type="System.Xml.XmlNodeChangedAction" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.XmlNode" /> that generated the event.</param>
+        <param name="oldParent">The old parent <see cref="T:System.Xml.XmlNode" /> of the <see cref="T:System.Xml.XmlNode" /> that generated the event.</param>
+        <param name="newParent">The new parent <see cref="T:System.Xml.XmlNode" /> of the <see cref="T:System.Xml.XmlNode" /> that generated the event.</param>
+        <param name="oldValue">The old value of the <see cref="T:System.Xml.XmlNode" /> that generated the event.</param>
+        <param name="newValue">The new value of the <see cref="T:System.Xml.XmlNode" /> that generated the event.</param>
+        <param name="action">The <see cref="T:System.Xml.XmlNodeChangedAction" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlNodeChangedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNodeChangedAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeChangedAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNodeChangedAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating what type of node change event is occurring.</summary>
+        <value>An <see langword="XmlNodeChangedAction" /> value describing the node change event.  
+  
+ <list type="table">  
+<listheader>  
+<term> XmlNodeChangedAction Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Insert  
+  
+ </term>  
+<description> A node has been or will be inserted.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Remove  
+  
+ </term>  
+<description> A node has been or will be removed.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Change  
+  
+ </term>  
+<description> A node has been or will be changed.  
+  
+ </description>  
+</item>  
+</list>  
+  
+ <block subset="none" type="note">  
+<para>  
+ The <see langword="Action" /> value does not differentiate between when the event occurred (before or after). You can create separate event handlers to handle both instances.  
+  
+</para>  
+</block></value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewParent">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNode NewParent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode NewParent" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.NewParent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="P:System.Xml.XmlNode.ParentNode" /> after the operation completes.</summary>
+        <value>The value of the <see langword="ParentNode" /> after the operation completes. This property returns <see langword="null" /> if the node is being removed.  
+  
+ <block subset="none" type="note">  
+<para>  
+ For attribute nodes this property returns the <see cref="P:System.Xml.XmlAttribute.OwnerElement" />.  
+  
+</para>  
+</block></value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewValue">
+      <MemberSignature Language="C#" Value="public string NewValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewValue" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.NewValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new value of the node.</summary>
+        <value>The new value of the node. This property returns <see langword="null" /> if the node is neither an attribute nor a text node, or if the node is being removed.  
+  
+ If called in a <see cref="E:System.Xml.XmlDocument.NodeChanging" /> event, <see langword="NewValue" /> returns the value of the node if the change is successful. If called in a <see cref="E:System.Xml.XmlDocument.NodeChanged" /> event, <see langword="NewValue" /> returns the current value of the node.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Node">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNode Node { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode Node" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.Node" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xml.XmlNode" /> that is being added, removed or changed.</summary>
+        <value>The <see langword="XmlNode" /> that is being added, removed or changed; this property never returns <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldParent">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNode OldParent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode OldParent" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.OldParent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="P:System.Xml.XmlNode.ParentNode" /> before the operation began.</summary>
+        <value>The value of the <see langword="ParentNode" /> before the operation began. This property returns <see langword="null" /> if the node did not have a parent.  
+  
+ <block subset="none" type="note">  
+<para>  
+ For attribute nodes this property returns the <see cref="P:System.Xml.XmlAttribute.OwnerElement" />.  
+  
+</para>  
+</block></value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldValue">
+      <MemberSignature Language="C#" Value="public string OldValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OldValue" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlNodeChangedEventArgs.OldValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the original value of the node.</summary>
+        <value>The original value of the node. This property returns <see langword="null" /> if the node is neither an attribute nor a text node, or if the node is being inserted.  
+  
+ If called in a <see cref="E:System.Xml.XmlDocument.NodeChanging" /> event, <see langword="OldValue" /> returns the current value of the node that will be replaced if the change is successful. If called in a <see cref="E:System.Xml.XmlDocument.NodeChanged" /> event, <see langword="OldValue" /> returns the value of node prior to the change.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

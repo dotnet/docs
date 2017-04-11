@@ -1,0 +1,146 @@
+<Type Name="FontVariants" FullName="System.Windows.FontVariants">
+  <TypeSignature Language="C#" Value="public enum FontVariants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontVariants extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontVariants" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Renders variant typographic glyph forms.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a specified font does not support a particular glyph set, the default glyphs are displayed.  
+  
+   
+  
+## Examples  
+ The <xref:System.Windows.Documents.Typography.Variants%2A> property allows you to set superscript and subscript values for an OpenType font.  
+  
+ The following text displays superscripts for the Palatino Linotype font.  
+  
+ ![Text using OpenType superscripts](~/add/media/opentypefont14.gif "Text using OpenType superscripts")  
+Example of superscripts  
+  
+ The following code example shows how to define superscripts for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
+  
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#12](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#12)]  -->
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#12](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#12)]  -->  
+  
+ The following text displays subscripts for the Palatino Linotype font.  
+  
+ ![Text using OpenType subscripts](~/add/media/opentypefont15.gif "Text using OpenType subscripts")  
+Example of subscripts  
+  
+ The following code example shows how to define subscripts for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
+  
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#13](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#13)]  -->
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#13](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#13)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Inferior">
+      <MemberSignature Language="C#" Value="Inferior" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontVariants Inferior = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontVariants.Inferior" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontVariants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces a default glyph with an inferior glyph, or it may combine glyph substitution with positioning adjustments for proper placement. Inferior forms are typically used in chemical formulas or mathematical notation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontVariants Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontVariants.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontVariants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default font behavior. Font scaling and positioning is normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ordinal">
+      <MemberSignature Language="C#" Value="Ordinal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontVariants Ordinal = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontVariants.Ordinal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontVariants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces a default glyph with an ordinal glyph, or it may combine glyph substitution with positioning adjustments for proper placement. Ordinal forms are normally associated with numeric notation of an ordinal word, such as "1st" for "first."</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ruby">
+      <MemberSignature Language="C#" Value="Ruby" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontVariants Ruby = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontVariants.Ruby" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontVariants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces a default glyph with a smaller Japanese Kana glyph. This is used to clarify the meaning of Kanji, which may be unfamiliar to the reader.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscript">
+      <MemberSignature Language="C#" Value="Subscript" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontVariants Subscript = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontVariants.Subscript" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontVariants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces a default glyph with a subscript glyph.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Superscript">
+      <MemberSignature Language="C#" Value="Superscript" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontVariants Superscript = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontVariants.Superscript" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontVariants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces a default glyph with a superscript glyph. Superscript is commonly used for footnotes.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

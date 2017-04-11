@@ -1,0 +1,107 @@
+<Type Name="ComAliasNameAttribute" FullName="System.Runtime.InteropServices.ComAliasNameAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ComAliasNameAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComAliasNameAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComAliasNameAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates the COM alias for a parameter or field type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to parameters, fields, properties, or return values.  
+  
+   
+  
+## Examples  
+ In the following type library,  `OLE_COLOR` is an alias for `int`. During import, the arguments of the `Color` accessor are marked with the <xref:System.Runtime.InteropServices.ComAliasNameAttribute> to indicate that type library refers to them as `OLE_COLOR`.  
+  
+```  
+  
+typedef int OLE_COLOR;    
+  
+interface Baz {  
+ HRESULT SetColor([in] OLE_COLOR cl);  
+ HRESULT GetColor([out, retval] OLE_COLOR *cl);  
+}  
+  
+```  
+  
+ is imported as:  
+  
+ [!code-cpp[Classic ComAliasNameAttribute Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic ComAliasNameAttribute Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/CS/source.cs#2)]
+ [!code-vb[Classic ComAliasNameAttribute Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ComAliasNameAttribute Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComAliasNameAttribute (string alias);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string alias) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAliasNameAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="alias" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="alias">The alias for the field or parameter as found in the type library when it was imported.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ComAliasNameAttribute" /> class with the alias for the attributed field or parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComAliasNameAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the alias for the field or parameter as found in the type library when it was imported.</summary>
+        <value>The alias for the field or parameter as found in the type library when it was imported.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

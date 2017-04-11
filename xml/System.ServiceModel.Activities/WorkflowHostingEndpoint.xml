@@ -1,0 +1,205 @@
+<Type Name="WorkflowHostingEndpoint" FullName="System.ServiceModel.Activities.WorkflowHostingEndpoint">
+  <TypeSignature Language="C#" Value="public abstract class WorkflowHostingEndpoint : System.ServiceModel.Description.ServiceEndpoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowHostingEndpoint extends System.ServiceModel.Description.ServiceEndpoint" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Description.ServiceEndpoint</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An abstract implementation of <see cref="T:System.ServiceModel.Description.ServiceEndpoint" />. Derive from this class to expose contracts that support workflow creation and bookmark resumption.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to derive a class from the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint> class.  
+  
+ [!code-csharp[CreationEndpoint2#2](~/samples/snippets/csharp/VS_Snippets_Misc/CreationEndpoint2/CS/CreationEndpoint.cs#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkflowHostingEndpoint (Type contractType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type contractType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contractType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="contractType">The type of the contract that defines the basic message exchange patterns for a workflow hosting operation.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" /> class with the specified contract type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkflowHostingEndpoint (Type contractType, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type contractType, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.#ctor(System.Type,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contractType" Type="System.Type" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="contractType">The service contract for the endpoint.</param>
+        <param name="binding">The binding for the endpoint.</param>
+        <param name="address">The address of the endpoint.</param>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpoint" /> class with the specified contract type, binding, and endpoint address.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrelationQueries">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.CorrelationQuery&gt; CorrelationQueries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.CorrelationQuery&gt; CorrelationQueries" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowHostingEndpoint.CorrelationQueries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.CorrelationQuery&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.CorrelationQuery" /> instances .</summary>
+        <value>A collection of correlation queries.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Populate this collection with queries that are run when a message arrives on the endpoint to determine which workflow instance the message should be sent to. This property does not need to be used if custom instance resolution is provided by overriding <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnGetCreationContext">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Activities.WorkflowCreationContext OnGetCreationContext (object[] inputs, System.ServiceModel.OperationContext operationContext, Guid instanceId, System.ServiceModel.Activities.WorkflowHostingResponseContext responseContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Activities.WorkflowCreationContext OnGetCreationContext(object[] inputs, class System.ServiceModel.OperationContext operationContext, valuetype System.Guid instanceId, class System.ServiceModel.Activities.WorkflowHostingResponseContext responseContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetCreationContext(System.Object[],System.ServiceModel.OperationContext,System.Guid,System.ServiceModel.Activities.WorkflowHostingResponseContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.WorkflowCreationContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputs" Type="System.Object[]" />
+        <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" />
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="responseContext" Type="System.ServiceModel.Activities.WorkflowHostingResponseContext" />
+      </Parameters>
+      <Docs>
+        <param name="inputs">The inputs to the service operation.</param>
+        <param name="operationContext">Provides the execution context of the service operation invoked.</param>
+        <param name="instanceId">The instance ID of the workflow instance being created.</param>
+        <param name="responseContext">The <see cref="T:System.ServiceModel.Activities.WorkflowHostingEndpointResponseContext" /> object that can be used to send replies back to the message source for a request/reply contract.</param>
+        <summary>Override to create a new<see cref="T:System.ServiceModel.Activities.WorkflowCreationContext" /> instance.</summary>
+        <returns>A workflow creation context object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to implement the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetCreationContext%2A> method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnGetInstanceId">
+      <MemberSignature Language="C#" Value="protected virtual Guid OnGetInstanceId (object[] inputs, System.ServiceModel.OperationContext operationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance valuetype System.Guid OnGetInstanceId(object[] inputs, class System.ServiceModel.OperationContext operationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId(System.Object[],System.ServiceModel.OperationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputs" Type="System.Object[]" />
+        <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" />
+      </Parameters>
+      <Docs>
+        <param name="inputs">The inputs to the service operation.</param>
+        <param name="operationContext">The operation context of the service operation.</param>
+        <summary>Override to return the instance ID for the workflow instance being created.</summary>
+        <returns>The instance ID for the newly created workflow instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Return null to indicate that an instance ID should be automatically generated.  
+  
+   
+  
+## Examples  
+ The following example shows how to implement the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnGetInstanceId%2A> method.  
+  
+ [!code-csharp[CreationEndpoint#0](~/samples/snippets/csharp/VS_Snippets_CFX/creationendpoint/cs/creationendpoint.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnResolveBookmark">
+      <MemberSignature Language="C#" Value="protected virtual System.Activities.Bookmark OnResolveBookmark (object[] inputs, System.ServiceModel.OperationContext operationContext, System.ServiceModel.Activities.WorkflowHostingResponseContext responseContext, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Activities.Bookmark OnResolveBookmark(object[] inputs, class System.ServiceModel.OperationContext operationContext, class System.ServiceModel.Activities.WorkflowHostingResponseContext responseContext, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnResolveBookmark(System.Object[],System.ServiceModel.OperationContext,System.ServiceModel.Activities.WorkflowHostingResponseContext,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Bookmark</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputs" Type="System.Object[]" />
+        <Parameter Name="operationContext" Type="System.ServiceModel.OperationContext" />
+        <Parameter Name="responseContext" Type="System.ServiceModel.Activities.WorkflowHostingResponseContext" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="inputs">The inputs to the service operation.</param>
+        <param name="operationContext">The execution context of the service operation being invoked.</param>
+        <param name="responseContext">The <see cref="T:System.ServiceModel.Activities.WorkflowHostingResponseContext" /> object that can be used to send replies back to the message source for a request/reply contract.</param>
+        <param name="value">A value to be passed back to the workflow instance when the bookmark is resumed</param>
+        <summary>Override to return a bookmark to be resumed on the workflow instance.</summary>
+        <returns>A bookmark.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to implement the <xref:System.ServiceModel.Activities.WorkflowHostingEndpoint.OnResolveBookmark%2A> method.  
+  
+ [!code-csharp[ResumeBookmarkEndpoint#0](~/samples/snippets/csharp/VS_Snippets_CFX/resumebookmarkendpoint/cs/resumebookmarkendpoint.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

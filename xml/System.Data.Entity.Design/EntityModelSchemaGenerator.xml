@@ -1,0 +1,295 @@
+<Type Name="EntityModelSchemaGenerator" FullName="System.Data.Entity.Design.EntityModelSchemaGenerator">
+  <TypeSignature Language="C#" Value="public sealed class EntityModelSchemaGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityModelSchemaGenerator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityModelSchemaGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The class creates a default CCMapping between an EntityContainer in S space and an EntityContainer in C space. The Mapping will be created based on the declared types of extents. So Inheritance does not work.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityModelSchemaGenerator (System.Data.Metadata.Edm.EntityContainer storeEntityContainer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.EntityContainer storeEntityContainer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.#ctor(System.Data.Metadata.Edm.EntityContainer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeEntityContainer" Type="System.Data.Metadata.Edm.EntityContainer" />
+      </Parameters>
+      <Docs>
+        <param name="storeEntityContainer">The storage model EntityContainer from which conceptual and mapping metadata is created.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityModelSchemaGenerator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityModelSchemaGenerator (System.Data.Metadata.Edm.EntityContainer storeEntityContainer, string namespaceName, string modelEntityContainerName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.EntityContainer storeEntityContainer, string namespaceName, string modelEntityContainerName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.#ctor(System.Data.Metadata.Edm.EntityContainer,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="storeEntityContainer" Type="System.Data.Metadata.Edm.EntityContainer" />
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="modelEntityContainerName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="storeEntityContainer">The storage model EntityContainer from which conceptual and mapping metadata is created.</param>
+        <param name="namespaceName">The name for the conceptual model namespace. If this value is null, the storeEntityContainer name is used for the namespace name.</param>
+        <param name="modelEntityContainerName">The EntityContainer name declared in the conceptual model.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityModelSchemaGenerator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityModelSchemaGenerator (System.Data.Metadata.Edm.StoreItemCollection storeItemCollection, string namespaceName, string modelEntityContainerName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.StoreItemCollection storeItemCollection, string namespaceName, string modelEntityContainerName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.#ctor(System.Data.Metadata.Edm.StoreItemCollection,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="storeItemCollection" Type="System.Data.Metadata.Edm.StoreItemCollection" />
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="modelEntityContainerName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="storeItemCollection">The StoreItemCollection that contains an EntityContainer and other items to create the Model Metadata from.</param>
+        <param name="namespaceName">The name to give the namespace. If null, the name of the storeEntityContainer will be used.</param>
+        <param name="modelEntityContainerName">The name to give the Model EntityContainer. If null, a modified version of the namespace of the of a type referenced in storeEntityContainer will be used.</param>
+        <summary>Constructs an EntityModelGenerator</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmItemCollection">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmItemCollection EdmItemCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmItemCollection EdmItemCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityModelSchemaGenerator.EdmItemCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EdmItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the EdmItemCollection that was created by the GenerateMetadata method.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.EdmItemCollection" /> object that contains the conceptual schema definition language (CSDL).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityContainer">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EntityContainer EntityContainer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EntityContainer EntityContainer" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityModelSchemaGenerator.EntityContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EntityContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the conceptual model EntityContainer that was created by the GenerateMetadata method.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object that contains the conceptual model EntityContainer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateForeignKeyProperties">
+      <MemberSignature Language="C#" Value="public bool GenerateForeignKeyProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateForeignKeyProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateForeignKeyProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the flag for generating foreign key properties in a conceptual model.</summary>
+        <value>If the value of this property is set to <see langword="true" /> then foreign key properties are generated in the conceptual model; otherwise foreign key properties are not generated in the conceptual model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateMetadata">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateMetadata() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateMetadata" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates the conceptual model metadata information and returns any schema errors.</summary>
+        <returns>A collection of schema error objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateMetadata">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateMetadata (Version targetEntityFrameworkVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateMetadata(class System.Version targetEntityFrameworkVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateMetadata(System.Version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetEntityFrameworkVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="targetEntityFrameworkVersion">The property of EntityFrameworkVersions that corresponds to the targeted version of the Entity Framework.</param>
+        <summary>Generates the conceptual model metadata information and returns any schema errors.</summary>
+        <returns>A collection of schema error objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PluralizationService">
+      <MemberSignature Language="C#" Value="public System.Data.Entity.Design.PluralizationServices.PluralizationService PluralizationService { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Entity.Design.PluralizationServices.PluralizationService PluralizationService" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityModelSchemaGenerator.PluralizationService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.PluralizationServices.PluralizationService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the PluralizationService value that indicates the service used when generating a model.</summary>
+        <value>The <see cref="T:System.Data.Entity.Design.PluralizationServices.PluralizationService" /> value that indicates the service used when generating a model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteModelSchema">
+      <MemberSignature Language="C#" Value="public void WriteModelSchema (string outputFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteModelSchema(string outputFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.WriteModelSchema(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="outputFileName">The name of the output file.</param>
+        <summary>Writes the generated conceptual schema definition language (CSDL) to the specified file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteModelSchema">
+      <MemberSignature Language="C#" Value="public void WriteModelSchema (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteModelSchema(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.WriteModelSchema(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XmlWriter to which the CSDL is written.</param>
+        <summary>Writes the generated conceptual schema definition language (CSDL) to an XmlWriter object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStorageMapping">
+      <MemberSignature Language="C#" Value="public void WriteStorageMapping (string outputFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStorageMapping(string outputFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.WriteStorageMapping(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="outputFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="outputFileName">The name of the output file.</param>
+        <summary>Writes the generated mapping specification language (MSL) to the specified file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStorageMapping">
+      <MemberSignature Language="C#" Value="public void WriteStorageMapping (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteStorageMapping(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityModelSchemaGenerator.WriteStorageMapping(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XmlWriter to which the MSL is written.</param>
+        <summary>Writes the generated mapping specification language (MSL) to an XmlWriter object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

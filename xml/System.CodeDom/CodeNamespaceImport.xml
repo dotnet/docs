@@ -1,0 +1,117 @@
+<Type Name="CodeNamespaceImport" FullName="System.CodeDom.CodeNamespaceImport">
+  <TypeSignature Language="C#" Value="public class CodeNamespaceImport : System.CodeDom.CodeObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeNamespaceImport extends System.CodeDom.CodeObject" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeNamespaceImport" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a namespace import directive that indicates a namespace to use.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeNamespaceImport> can be used to represent a namespace import directive.  
+  
+ In most languages, a namespace import directive causes visibility of the types within the imported namespaces to code that references types in the imported namespaces.  
+  
+> [!NOTE]
+>  Use fully qualified type references to avoid potential ambiguity.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates use of a <xref:System.CodeDom.CodeNamespaceImport> to import the <xref:System.CodeDom.CodeNamespaceImport> namespace:  
+  
+ [!code-cpp[CodeNamespaceImportExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeNamespaceImportExample/CPP/codenamespaceimportexample.cpp#2)]
+ [!code-csharp[CodeNamespaceImportExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeNamespaceImportExample/CS/codenamespaceimportexample.cs#2)]
+ [!code-vb[CodeNamespaceImportExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeNamespaceImportExample/VB/codenamespaceimportexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeNamespaceImport ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceImport.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeNamespaceImport" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeNamespaceImport (string nameSpace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string nameSpace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceImport.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="nameSpace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nameSpace">The name of the namespace to import.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeNamespaceImport" /> class using the specified namespace to import.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinePragma">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeLinePragma LinePragma { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeLinePragma LinePragma" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespaceImport.LinePragma" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeLinePragma</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line and file the statement occurs on.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeLinePragma" /> that indicates the context of the statement.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespaceImport.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the namespace to import.</summary>
+        <value>The name of the namespace to import.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

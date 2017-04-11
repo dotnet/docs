@@ -1,0 +1,188 @@
+<Type Name="ProcessInputEventArgs" FullName="System.Windows.Input.ProcessInputEventArgs">
+  <TypeSignature Language="C#" Value="public class ProcessInputEventArgs : System.Windows.Input.NotifyInputEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessInputEventArgs extends System.Windows.Input.NotifyInputEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.ProcessInputEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.NotifyInputEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for postprocess input events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Process input events enable access to the <xref:System.Windows.Input.InputManager> staging area.  
+  
+ The input staging area processes raw input into [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] events.  
+  
+ <xref:System.Windows.Input.ProcessInputEventArgs> is used with the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
+  
+ Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+  
+1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
+  
+2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
+  
+3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
+  
+4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
+  
+5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PeekInput">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem PeekInput ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StagingAreaInputItem PeekInput() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PeekInput" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StagingAreaInputItem</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets, but does not pop, the input event on the top of the staging area stack.</summary>
+        <returns>The input event that is on the top of the staging area stack.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value will be `null` if the staging area is empty.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for getting the top input.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PopInput">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem PopInput ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StagingAreaInputItem PopInput() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PopInput" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StagingAreaInputItem</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the input event off the top of the staging area stack.</summary>
+        <returns>The input event that was on the top of the staging area stack. This will be <see langword="null" /> if the staging area is empty.</returns>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for popping an input event.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PushInput">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem PushInput (System.Windows.Input.StagingAreaInputItem input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StagingAreaInputItem PushInput(class System.Windows.Input.StagingAreaInputItem input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PushInput(System.Windows.Input.StagingAreaInputItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StagingAreaInputItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.Windows.Input.StagingAreaInputItem" />
+      </Parameters>
+      <Docs>
+        <param name="input">The input event to put on the staging area stack.</param>
+        <summary>Puts the specified input event onto the top of the staging area stack.</summary>
+        <returns>The staging area input item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `input` cannot be `null` and it cannot already exist in the staging area.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for pushing an input event.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="PushInput">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem PushInput (System.Windows.Input.InputEventArgs input, System.Windows.Input.StagingAreaInputItem promote);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StagingAreaInputItem PushInput(class System.Windows.Input.InputEventArgs input, class System.Windows.Input.StagingAreaInputItem promote) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PushInput(System.Windows.Input.InputEventArgs,System.Windows.Input.StagingAreaInputItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StagingAreaInputItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.Windows.Input.InputEventArgs" />
+        <Parameter Name="promote" Type="System.Windows.Input.StagingAreaInputItem" />
+      </Parameters>
+      <Docs>
+        <param name="input">The input event to put on the staging area stack.</param>
+        <param name="promote">An existing staging area item to promote the state from.</param>
+        <summary>Puts the specified input event onto the top of the specified staging area stack.</summary>
+        <returns>The staging area input item that wraps the specified input.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `input` cannot be `null` and it cannot already exist in the staging area.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for pushing an input event. Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="PushInput">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Puts an input event onto the top of the staging area stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The input to place on the staging area cannot be `null` and it cannot already exist in the staging area.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

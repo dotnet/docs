@@ -1,0 +1,109 @@
+<Type Name="TemplateContentLoader" FullName="System.Windows.TemplateContentLoader">
+  <TypeSignature Language="C#" Value="public class TemplateContentLoader : System.Xaml.XamlDeferringLoader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateContentLoader extends System.Xaml.XamlDeferringLoader" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TemplateContentLoader" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xaml.XamlDeferringLoader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements <see cref="T:System.Xaml.XamlDeferringLoader" /> in order to defer loading of the XAML content that is defined for a template in WPF XAML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_TemplateContentLoader"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateContentLoader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TemplateContentLoader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TemplateContentLoader" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override object Load (System.Xaml.XamlReader xamlReader, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Load(class System.Xaml.XamlReader xamlReader, class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TemplateContentLoader.Load(System.Xaml.XamlReader,System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xamlReader" Type="System.Xaml.XamlReader" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="xamlReader">The initiating reader that is then returned on calls to <see cref="M:System.Windows.TemplateContentLoader.Save(System.Object,System.IServiceProvider)" />.</param>
+        <param name="serviceProvider">Service provider for required services.</param>
+        <summary>Loads XAML content in a deferred mode, based on a <see cref="T:System.Xaml.XamlReader" /> and certain required services from a service provider.</summary>
+        <returns>The root object for the node stream of the input <see cref="T:System.Xaml.XamlReader" />. Specifically, this is a <see cref="T:System.Windows.TemplateContent" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.IXamlObjectWriterFactory> is a required service, it must be available on the passed `serviceProvider`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xamlReader" /> or <paramref name="serviceProvider" /> are <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="serviceProvider" /> does not provide a required service.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlReader Save (object value, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xaml.XamlReader Save(object value, class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.TemplateContentLoader.Save(System.Object,System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to commit for deferred loading.</param>
+        <param name="serviceProvider">Service provider for required services.</param>
+        <summary>Do not use; always throws an exception. See Remarks.</summary>
+        <returns>Always throws an exception. See Remarks.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The purpose of <xref:System.Windows.TemplateContentLoader> is to load the XAML and invoke an object factory metaphor, a `Save` path is not part of its intended design. The <xref:System.Xaml.IXamlObjectWriterFactory> passed as a service for <xref:System.Windows.TemplateContentLoader.Load%2A> provides support for all further operations involving XAML and the template.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Thrown in all cases.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

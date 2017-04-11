@@ -1,0 +1,89 @@
+<Type Name="IObjectReference" FullName="System.Runtime.Serialization.IObjectReference">
+  <TypeSignature Language="C#" Value="public interface IObjectReference" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObjectReference" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IObjectReference" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that the current interface implementer is a reference to another object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[IObjectReference Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IObjectReference Interface Example/CPP/iobjectreference.cpp#1)]
+ [!code-csharp[IObjectReference Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IObjectReference Interface Example/CS/iobjectreference.cs#1)]
+ [!code-vb[IObjectReference Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IObjectReference Interface Example/VB/iobjectreference.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Implement this interface on objects that are references to a different object, which cannot be resolved until the current object is completely restored. During the fixup stage, any object implementing <see cref="T:System.Runtime.Serialization.IObjectReference" /> is queried for its real object and that object is inserted into the graph. Fixup refers to the process of finalizing references not already completed during the object deserialization process.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="GetRealObject">
+      <MemberSignature Language="C#" Value="public object GetRealObject (System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetRealObject(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IObjectReference.GetRealObject(System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> from which the current object is deserialized.</param>
+        <summary>Returns the real object that should be deserialized, rather than the object that the serialized stream specifies.</summary>
+        <returns>Returns the actual object that is put into the graph.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is useful in a remoting situation where you serialize a proxy-creator object, not an actual object. When the proxy-creator object is deserialized, deserialization calls its <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%2A> method. At this point, the proxy-creator object creates a new instance of the proxy object that refers back to the original actual object, perhaps on a remote computer. Finally, the proxy-creator object is discarded and reclaimed later by garbage collection.  
+  
+ For example, consider how <xref:System.Type> objects are serialized. Instead of transmitting the data from the <xref:System.Type> object, the system transmits a holder object with the name of the type object and information on the assembly where it is found in an object implementing <xref:System.Runtime.Serialization.IObjectReference>. When both the type name and assembly name are available, the deserialization infrastructure calls <xref:System.Runtime.Serialization.IObjectReference.GetRealObject%2A> on the holder object that has been transmitted. This holder returns the <xref:System.Type> object that is inserted into the graph.  
+  
+ This method is protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+  
+   
+  
+## Examples  
+ [!code-cpp[IObjectReference Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IObjectReference Interface Example/CPP/iobjectreference.cpp#1)]
+ [!code-csharp[IObjectReference Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IObjectReference Interface Example/CS/iobjectreference.cs#1)]
+ [!code-vb[IObjectReference Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IObjectReference Interface Example/VB/iobjectreference.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission. The call will not work on a medium trusted server.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

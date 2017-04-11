@@ -1,0 +1,33 @@
+﻿<Window x:Class="CustomInkControlSample.Window2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StrokeCollectionEraseMethods"
+    >
+    <DockPanel Loaded="OnLoad" Name="root">
+
+        <StackPanel  Background="DarkSlateBlue">
+            <Button Name="switchMode" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="SwitchMode_Click">Select</Button>
+            <Button Name="copyStrokesBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="CopyStrokes_Click">Copy Strokes</Button>
+            <Button Name="deleteStrokesBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="DeleteStrokes_Click">Delete Selected Strokes</Button>
+            <Button Name="replaceStrokesBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="ReplaceStrokes_Click">Replace Strokes</Button>
+            <Button Name="insertStrokesBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="InsertStrokes_Click">Insert Strokes</Button>
+            <Button Name="moveStrokesBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="MoveStrokes_Click">Move Strokes</Button>
+            <Button Name="saveStrokesBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="SaveStrokes_Click">Save Strokes</Button>
+            <Button Name="loadStrokesBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="LoadStrokes_Click">Load Strokes</Button>
+            <Button Name="addTimestampBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="AddTimestamp_Click">Add Timestamp</Button>
+            <Button Name="getTimestampBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="GetTimestamp_Click">Get Timestamp</Button>
+        </StackPanel>
+        <InkCanvas DockPanel.Dock="Top" Name="inkCanvas1" MinHeight="200"></InkCanvas>
+        <InkCanvas Name="inkCanvas2" Background="Green"></InkCanvas>
+    </DockPanel>
+</Window>

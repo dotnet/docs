@@ -1,0 +1,818 @@
+<Type Name="ClaimTypes" FullName="System.IdentityModel.Claims.ClaimTypes">
+  <TypeSignature Language="C#" Value="public static class ClaimTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ClaimTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Claims.ClaimTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the pre-defined types of claims that an entity can claim. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Claims.ClaimTypes> class to search for a particular type of claim in a <xref:System.IdentityModel.Claims.ClaimSet> or to create a claim. To search for a particular type of claim in a <xref:System.IdentityModel.Claims.ClaimSet>, use the <xref:System.IdentityModel.Claims.ClaimSet.FindClaims%28System.String%2CSystem.String%29> method and use the properties of this class to specify the claim type for the `claimType` parameter. When the constructor for the <xref:System.IdentityModel.Claims.Claim> class is used to create a new claim, use the properties of the <xref:System.IdentityModel.Claims.ClaimTypes> class to specify the `claimType` parameter. For many of the claim types, the <xref:System.IdentityModel.Claims.Claim> class has static properties that return a claim of a specific type. For instance, the [CreateHashClaim(Byte\<xref:System.IdentityModel.Claims.Claim.CreateHashClaim%28System.Byte%5B%5D%29> method returns a claim using the <xref:System.IdentityModel.Claims.ClaimTypes.Hash%2A> claim type.  
+  
+   
+  
+## Examples  
+ [!code-csharp[c_ClaimTypes#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_claimtypes/cs/service.cs#1)]
+ [!code-vb[c_ClaimTypes#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_claimtypes/vb/service.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Anonymous">
+      <MemberSignature Language="C#" Value="public static string Anonymous { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Anonymous" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Anonymous" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the anonymous user.</summary>
+        <value>The URI for a claim that specifies the anonymous user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/anonymous.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authentication">
+      <MemberSignature Language="C#" Value="public static string Authentication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Authentication" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Authentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies details about whether an identity is authenticated.</summary>
+        <value>The URI for a claim that specifies details about whether an identity is authenticated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authentication.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthorizationDecision">
+      <MemberSignature Language="C#" Value="public static string AuthorizationDecision { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string AuthorizationDecision" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.AuthorizationDecision" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies an authorization decision on an entity.</summary>
+        <value>The URI for a claim that specifies an authorization decision on an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/authorizationdecision.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Country">
+      <MemberSignature Language="C#" Value="public static string Country { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Country" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Country" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the country/region in which an entity resides.</summary>
+        <value>The URI for a claim that specifies a country/region in which an entity resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateOfBirth">
+      <MemberSignature Language="C#" Value="public static string DateOfBirth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DateOfBirth" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.DateOfBirth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the date of birth of an entity.</summary>
+        <value>The URI for a claim that specifies the date of birth of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dateofbirth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DenyOnlySid">
+      <MemberSignature Language="C#" Value="public static string DenyOnlySid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DenyOnlySid" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.DenyOnlySid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies a deny-only security identifier (SID) for an entity.</summary>
+        <value>The URI for a claim that specifies a deny-only SID for an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A deny-only SID denies the specified entity to a securable object.  
+  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dns">
+      <MemberSignature Language="C#" Value="public static string Dns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Dns" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Dns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the DNS name associated with the computer name or with the alternative name of either the subject or issuer of an X.509 certificate.</summary>
+        <value>The URI for a claim that specifies the DNS name associated with the computer name or with the alternative name of either the subject or issuer of an X.509 certificate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/dns.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Email">
+      <MemberSignature Language="C#" Value="public static string Email { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Email" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Email" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the email address of an entity.</summary>
+        <value>The URI for a claim that specifies the email address of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gender">
+      <MemberSignature Language="C#" Value="public static string Gender { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Gender" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Gender" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the gender of an entity.</summary>
+        <value>The URI for a claim that specifies the gender of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/gender.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GivenName">
+      <MemberSignature Language="C#" Value="public static string GivenName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string GivenName" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.GivenName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the given name of an entity.</summary>
+        <value>The URI for a claim that specifies the given name of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hash">
+      <MemberSignature Language="C#" Value="public static string Hash { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Hash" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Hash" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies a hash value.</summary>
+        <value>The URI for a claim that specifies a hash value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/hash.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HomePhone">
+      <MemberSignature Language="C#" Value="public static string HomePhone { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string HomePhone" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.HomePhone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the home phone number of an entity.</summary>
+        <value>The URI for a claim that specifies the home phone number of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/homephone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locality">
+      <MemberSignature Language="C#" Value="public static string Locality { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Locality" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Locality" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the locale in which an entity resides.</summary>
+        <value>The URI for a claim that specifies the locale in which an entity resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/locality.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MobilePhone">
+      <MemberSignature Language="C#" Value="public static string MobilePhone { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string MobilePhone" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.MobilePhone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the mobile phone number of an entity.</summary>
+        <value>The URI for a claim that specifies the mobile phone number of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/mobilephone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public static string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Name" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the name of an entity.</summary>
+        <value>The URI for a claim that specifies the name of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameIdentifier">
+      <MemberSignature Language="C#" Value="public static string NameIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string NameIdentifier" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.NameIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the name of an entity.</summary>
+        <value>The URI for a claim that specifies the name of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OtherPhone">
+      <MemberSignature Language="C#" Value="public static string OtherPhone { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string OtherPhone" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.OtherPhone" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the alternative phone number of an entity.</summary>
+        <value>The URI for a claim that specifies the alternative phone number of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/otherphone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostalCode">
+      <MemberSignature Language="C#" Value="public static string PostalCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string PostalCode" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.PostalCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the postal code of an entity.</summary>
+        <value>The URI for a claim that specifies the postal code of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/postalcode.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PPID">
+      <MemberSignature Language="C#" Value="public static string PPID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string PPID" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.PPID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the private personal identifier (PPI) of an entity.</summary>
+        <value>The URI for a claim that specifies the private personal identifier (PPI) of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rsa">
+      <MemberSignature Language="C#" Value="public static string Rsa { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Rsa" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Rsa" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies an RSA key.</summary>
+        <value>The URI for a claim that specifies an RSA key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sid">
+      <MemberSignature Language="C#" Value="public static string Sid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Sid" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Sid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies a security identifier (SID).</summary>
+        <value>The URI for a claim that specifies a security identifier (SID).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/sid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Spn">
+      <MemberSignature Language="C#" Value="public static string Spn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Spn" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Spn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies a service principal name (SPN) claim.</summary>
+        <value>The URI for a claim that specifies a service principal name (SPN) claim.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/spn.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateOrProvince">
+      <MemberSignature Language="C#" Value="public static string StateOrProvince { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StateOrProvince" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.StateOrProvince" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the state or province in which an entity resides.</summary>
+        <value>The URI for a claim that specifies the state or province in which an entity resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/stateorprovince.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StreetAddress">
+      <MemberSignature Language="C#" Value="public static string StreetAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string StreetAddress" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.StreetAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the street address of an entity.</summary>
+        <value>The URI for a claim that specifies the street address of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/streetaddress.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Surname">
+      <MemberSignature Language="C#" Value="public static string Surname { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Surname" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Surname" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the surname of an entity.</summary>
+        <value>The URI for a claim that specifies the surname of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="public static string System { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string System" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.System" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that identifies the system entity.</summary>
+        <value>The URI for a claim that identifies the system entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Claims.ClaimTypes.System%2A> is typically used to identify the issuer of a claim when the issuer is the current application.  
+  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/system.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumbprint">
+      <MemberSignature Language="C#" Value="public static string Thumbprint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Thumbprint" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Thumbprint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies a thumbprint.</summary>
+        <value>The URI for a claim that specifies a thumbprint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A thumbprint is a globally unique SHA-1 hash of an X.509 certificate.  
+  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Upn">
+      <MemberSignature Language="C#" Value="public static string Upn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Upn" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Upn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies a user principal name (UPN).</summary>
+        <value>The URI for a claim that specifies UPN.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn.  
+  
+   
+  
+## Examples  
+ //  \<snippet1>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uri">
+      <MemberSignature Language="C#" Value="public static string Uri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Uri" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Uri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies a URI.</summary>
+        <value>The URI for a claim that specifies a URI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/uri.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Webpage">
+      <MemberSignature Language="C#" Value="public static string Webpage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Webpage" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.Webpage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI for a claim that specifies the Web page of an entity.</summary>
+        <value>The URI for a claim that specifies the Web page of an entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by this property is http://schemas.xmlsoap.org/ws/2005/05/identity/claims/webpage.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X500DistinguishedName">
+      <MemberSignature Language="C#" Value="public static string X500DistinguishedName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string X500DistinguishedName" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimTypes.X500DistinguishedName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string that contains the URI for a distinguished name claim of an X.509 certificate.</summary>
+        <value>The URI for a distinguished name claim of an X.509 certificate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The X.500 standard defines the methodology for defining distinguished names that is used by X.509 certificates.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

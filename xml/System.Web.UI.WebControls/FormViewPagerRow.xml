@@ -1,0 +1,57 @@
+<Type Name="FormViewPagerRow" FullName="System.Web.UI.WebControls.FormViewPagerRow">
+  <TypeSignature Language="C#" Value="public class FormViewPagerRow : System.Web.UI.WebControls.FormViewRow" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormViewPagerRow extends System.Web.UI.WebControls.FormViewRow implements class System.Web.UI.INamingContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewPagerRow" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.FormViewRow</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the pager row in a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.Web.UI.WebControls.FormViewPagerRow> is created to hold the pager controls in a <xref:System.Web.UI.WebControls.FormView> control. The <xref:System.Web.UI.INamingContainer> interface is a marker that indicates that the <xref:System.Web.UI.WebControls.FormViewPagerRow> control is part of the <xref:System.Web.UI.Page> object's control hierarchy.  
+  
+ This class is used primarily by control developers. Control developers can override the <xref:System.Web.UI.WebControls.FormViewPagerRow.%23ctor%2A> constructor and the <xref:System.Web.UI.WebControls.FormView.CreateRow%2A> and <xref:System.Web.UI.WebControls.FormView.InitializePager%2A> methods of the <xref:System.Web.UI.WebControls.FormView> class to create a custom pager row.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormViewPagerRow (int rowIndex, System.Web.UI.WebControls.DataControlRowType rowType, System.Web.UI.WebControls.DataControlRowState rowState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rowIndex, valuetype System.Web.UI.WebControls.DataControlRowType rowType, valuetype System.Web.UI.WebControls.DataControlRowState rowState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewPagerRow.#ctor(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rowIndex" Type="System.Int32" />
+        <Parameter Name="rowType" Type="System.Web.UI.WebControls.DataControlRowType" />
+        <Parameter Name="rowState" Type="System.Web.UI.WebControls.DataControlRowState" />
+      </Parameters>
+      <Docs>
+        <param name="rowIndex">The index of the row in the <see cref="T:System.Web.UI.WebControls.FormView" /> control.</param>
+        <param name="rowType">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowType" /> enumeration values.</param>
+        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> enumeration values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormViewPagerRow" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormViewPagerRow.%23ctor%2A> constructor calls the base class constructor, <xref:System.Web.UI.WebControls.FormViewRow.%23ctor%2A>, with the specified parameters. For a <xref:System.Web.UI.WebControls.FormViewPagerRow> control in a <xref:System.Web.UI.WebControls.FormView> control, the call is made  `rowType` equal to <xref:System.Web.UI.WebControls.DataControlRowType> and `rowState` equal to <xref:System.Web.UI.WebControls.DataControlRowState>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

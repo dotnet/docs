@@ -1,0 +1,37 @@
+<Type Name="ModelBinderProviders" FullName="System.Web.ModelBinding.ModelBinderProviders">
+  <TypeSignature Language="C#" Value="public static class ModelBinderProviders" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ModelBinderProviders extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderProviders" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for model binder providers for the application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public static System.Web.ModelBinding.ModelBinderProviderCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.ModelBinding.ModelBinderProviderCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBinderProviders.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelBinderProviderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the model binder providers for the application.</summary>
+        <value>The model binder providers for the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

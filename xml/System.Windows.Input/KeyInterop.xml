@@ -1,0 +1,63 @@
+<Type Name="KeyInterop" FullName="System.Windows.Input.KeyInterop">
+  <TypeSignature Language="C#" Value="public static class KeyInterop" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit KeyInterop extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyInterop" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static methods to convert between [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] Virtual-Keys and the [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] <see cref="T:System.Windows.Input.Key" /> enumeration.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KeyFromVirtualKey">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.Key KeyFromVirtualKey (int virtualKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.Key KeyFromVirtualKey(int32 virtualKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyInterop.KeyFromVirtualKey(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Key</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualKey" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="virtualKey">The virtual key to convert.</param>
+        <summary>Converts a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] Virtual-Key into [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] <see cref="T:System.Windows.Input.Key" />.</summary>
+        <returns>The [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualKeyFromKey">
+      <MemberSignature Language="C#" Value="public static int VirtualKeyFromKey (System.Windows.Input.Key key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 VirtualKeyFromKey(valuetype System.Windows.Input.Key key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyInterop.VirtualKeyFromKey(System.Windows.Input.Key)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Windows.Input.Key" />
+      </Parameters>
+      <Docs>
+        <param name="key">The [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] to convert.</param>
+        <summary>Converts a [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] <see cref="T:System.Windows.Input.Key" /> into a [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] Virtual-Key.</summary>
+        <returns>The [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] Virtual-Key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

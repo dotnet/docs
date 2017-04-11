@@ -1,0 +1,37 @@
+<Type Name="InstanceOwner" FullName="System.Runtime.DurableInstancing.InstanceOwner">
+  <TypeSignature Language="C#" Value="public sealed class InstanceOwner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InstanceOwner extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceOwner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the owner of an instance in the instance store. An instance owner is an interaction participant with an instance in the instance store.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InstanceOwnerId">
+      <MemberSignature Language="C#" Value="public Guid InstanceOwnerId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InstanceOwnerId" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceOwner.InstanceOwnerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets ID of the instance owner as a GUID.</summary>
+        <value>The ID of the instance owner.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

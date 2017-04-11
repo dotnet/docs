@@ -1,0 +1,128 @@
+<Type Name="PropertyFilterOptions" FullName="System.ComponentModel.PropertyFilterOptions">
+  <TypeSignature Language="C#" Value="public enum PropertyFilterOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyFilterOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyFilterOptions" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies which properties should be reported by type descriptors, specifically the <see cref="M:System.ComponentModel.TypeDescriptor.GetProperties(System.Object)" /> method. This enumeration is used to specify the value of the <see cref="P:System.ComponentModel.PropertyFilterAttribute.Filter" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This filter mechanism is only implemented by the custom <xref:System.ComponentModel.DependencyPropertyDescriptor> for <xref:System.Windows.DependencyObject>.  
+  
+ Invalid and Valid are relevant only for attached properties. The validity of a property is determined by working with the following attributes: <xref:System.Windows.AttachedPropertyBrowsableForChildrenAttribute> , <xref:System.Windows.AttachedPropertyBrowsableForTypeAttribute>, <xref:System.Windows.AttachedPropertyBrowsableWhenAttributePresentAttribute> which define the intended scope of the attached property in the object tree once the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] is loaded. Designer applications that populate property grids and include attached properties in the grid must examine the value or presence of these attributes and the relative position of the current element versus either a parent or child element that "owns" the attached property. The owner-setter relationship together with the attribute values and <xref:System.ComponentModel.PropertyFilterOptions> will define whether a given attached property that is set on an element is valid or invalid.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions All = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Return all properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions Invalid = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Return only those properties that are not valid given the current context of the object. See Remarks.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Return no properties</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValues">
+      <MemberSignature Language="C#" Value="SetValues" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions SetValues = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.SetValues" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Return only those properties that have local values currently set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsetValues">
+      <MemberSignature Language="C#" Value="UnsetValues" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions UnsetValues = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.UnsetValues" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Return only those properties whose local values are not set, or do not have properties set in an external expression store (such as binding or deferred resource).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Valid">
+      <MemberSignature Language="C#" Value="Valid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyFilterOptions Valid = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyFilterOptions.Valid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyFilterOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Return any property that is valid on the  object in the current scope. See Remarks.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

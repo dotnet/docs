@@ -1,0 +1,33 @@
+﻿<Window x:Class="UIAAutomationID_snip.FindByAutomationID"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="UIAAutomationID_snip" Height="300" Width="600"
+    >
+  <DockPanel>
+    <Button Margin="10,0,0,0"
+            Name="btnStartTarget"
+            Height="25"
+            Click="btnStartTarget_Click"
+            KeyboardNavigation.AcceptsReturn="True"
+            KeyboardNavigation.IsTabStop="True">Start Target</Button>
+    <StackPanel Name="spInsert"
+                  Margin="0,0,0,20"
+                  Orientation="Horizontal" 
+                  Visibility="Visible"
+                  IsEnabled="True">
+      <TextBox Width="250"
+                Height="25"
+                Margin="10,0,0,0"
+                MaxLength="100"
+                Name="tbAutomationID"
+                MaxLines="1"></TextBox>
+      <Button Margin="10,0,0,0"
+              Name="btnFindElement"
+              Height="25"
+              Click="btnFindElement_Click"
+              KeyboardNavigation.AcceptsReturn="True"
+              KeyboardNavigation.IsTabStop="True">Find Element</Button>
+    </StackPanel>
+    <TextBlock Margin="10,0,10,0" Name="txtFeedback" TextWrapping="WrapWithOverflow" />
+  </DockPanel>
+</Window>

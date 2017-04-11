@@ -1,0 +1,142 @@
+<Type Name="InstanceValue" FullName="System.Runtime.DurableInstancing.InstanceValue">
+  <TypeSignature Language="C#" Value="public sealed class InstanceValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InstanceValue extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceValue" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stores the information about instance data and metadata.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data and metadata in the instance persistence system is organized as named values in property bags.  Each property bag is a dictionary associating <xref:System.Xml.Linq.XName> objects with <xref:System.Runtime.DurableInstancing.InstanceValue> objects.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceValue.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value object.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> class by using value object passed as a parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstanceValue (object value, System.Runtime.DurableInstancing.InstanceValueOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value, valuetype System.Runtime.DurableInstancing.InstanceValueOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceValue.#ctor(System.Object,System.Runtime.DurableInstancing.InstanceValueOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="options" Type="System.Runtime.DurableInstancing.InstanceValueOptions" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value object.</param>
+        <param name="options">The options for the value object. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<see cref="T:System.Runtime.DurableInstancing.InstanceValueOptions" />.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceValue" /> class by using the value Object and the options for those values passed as parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeletedValue">
+      <MemberSignature Language="C#" Value="public static System.Runtime.DurableInstancing.InstanceValue DeletedValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Runtime.DurableInstancing.InstanceValue DeletedValue" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceValue.DeletedValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the previously deleted value.</summary>
+        <value>The previously deleted value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDeletedValue">
+      <MemberSignature Language="C#" Value="public bool IsDeletedValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDeletedValue" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceValue.IsDeletedValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the object represents a deleted value.</summary>
+        <value>
+          <see langword="true" /> if the object represents a deleted value; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Runtime.DurableInstancing.InstanceValueOptions Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.DurableInstancing.InstanceValueOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceValue.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceValueOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the option for an instance value.</summary>
+        <value>The option for an instance value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceValue.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the instance value as an object.</summary>
+        <value>The value of the instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

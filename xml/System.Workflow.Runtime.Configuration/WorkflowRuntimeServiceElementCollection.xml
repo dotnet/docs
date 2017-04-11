@@ -1,0 +1,128 @@
+<Type Name="WorkflowRuntimeServiceElementCollection" FullName="System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection">
+  <TypeSignature Language="C#" Value="public class WorkflowRuntimeServiceElementCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowRuntimeServiceElementCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the collection of services to be added to the workflow runtime engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Represents the services specified by the <`Services`> element in a configuration file.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowRuntimeServiceElementCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement serviceSettings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement serviceSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.Add(System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceSettings" Type="System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" />
+      </Parameters>
+      <Docs>
+        <param name="serviceSettings">A <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" /> that represents a service to be initialized and activated by the workflow runtime engine.</param>
+        <summary>Adds a <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" /> to this <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceSettings" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Configuration.ConfigurationElement" />.</summary>
+        <returns>An empty <see cref="T:System.Configuration.ConfigurationElement" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An empty <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> is created and returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement settings);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="settings">A <see cref="T:System.Configuration.ConfigurationElement" /> for which to return a key.</param>
+        <summary>Returns a key for the specified <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" />.</summary>
+        <returns>The assembly-qualified type name of the service for the <see cref="T:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement" /> specified by <paramref name="settings" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `settings` should specify a <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>. The <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement.Type%2A?displayProperty=fullName> for `settings` is returned. This property holds the assembly-qualified type name of the service specified by the <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

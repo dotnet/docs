@@ -1,0 +1,135 @@
+<Type Name="IEnumeratorContract&lt;C&gt;" FullName="System.AddIn.Contract.Collections.IEnumeratorContract&lt;C&gt;">
+  <TypeSignature Language="C#" Value="public interface IEnumeratorContract&lt;C&gt; : System.AddIn.Contract.IContract where C : IContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumeratorContract`1&lt;(class System.AddIn.Contract.IContract) C&gt; implements class System.AddIn.Contract.IContract" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IEnumeratorContract`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="C">
+      <Constraints>
+        <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="C">The type of objects to enumerate. <c>C</c> must implement the <see cref="T:System.AddIn.Contract.IContract" /> interface.</typeparam>
+    <summary>Enumerates the elements of a generic collection of <see cref="T:System.AddIn.Contract.IContract" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, the return value of <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A> is undefined. Therefore, you must call <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> to advance the enumerator to the first element of the collection before calling <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A>.  
+  
+ <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A> returns the same object until <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> is called. <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> sets the return value of <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A> to the next element.  
+  
+ If <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> also return `false`. If the last call to <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> returned `false`, the return value of <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A> is undefined.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCurrent">
+      <MemberSignature Language="C#" Value="public C GetCurrent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !C GetCurrent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IEnumeratorContract`1.GetCurrent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>C</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the <see cref="T:System.AddIn.Contract.IContract" /> in the collection at the current position of the enumerator.</summary>
+        <returns>The <see cref="T:System.AddIn.Contract.IContract" /> in the collection at the current position of the enumerator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value of <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A> is undefined under any of the following conditions:  
+  
+-   The enumerator is positioned before the first element in the collection, immediately after the enumerator is created or after <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.Reset%2A> is called. <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> must be called to advance the enumerator to the first element of the collection before calling <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A>.  
+  
+-   The last call to <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+  
+-   The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.  
+  
+ <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A> returns the same object until <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> is called. <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> sets the return value of <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.GetCurrent%2A> to the next element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public bool MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IEnumeratorContract`1.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the enumerator to the next element of the collection.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After an enumerator is created or after the <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.Reset%2A> method is called, an enumerator is positioned before the first element of the collection. The first call to the <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> method moves the enumerator to the first element of the collection.  
+  
+ If <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> also return `false` until <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.Reset%2A> is called.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> or <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.Reset%2A> throws an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IEnumeratorContract`1.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the enumerator to its initial position, which is before the first element in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.MoveNext%2A> or <xref:System.AddIn.Contract.Collections.IEnumeratorContract%601.Reset%2A> throws an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

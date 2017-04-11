@@ -1,0 +1,53 @@
+<Type Name="LenientDateConstructor" FullName="Microsoft.JScript.LenientDateConstructor">
+  <TypeSignature Language="C#" Value="public sealed class LenientDateConstructor : Microsoft.JScript.DateConstructor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientDateConstructor extends Microsoft.JScript.DateConstructor" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientDateConstructor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.DateConstructor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.DateConstructor" /> class. The <see cref="T:Microsoft.JScript.LenientDateConstructor" /> class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="parse">
+      <MemberSignature Language="C#" Value="public object parse;" />
+      <MemberSignature Language="ILAsm" Value=".field public object parse" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDateConstructor.parse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DateConstructor.parse(System.String)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UTC">
+      <MemberSignature Language="C#" Value="public object UTC;" />
+      <MemberSignature Language="ILAsm" Value=".field public object UTC" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDateConstructor.UTC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

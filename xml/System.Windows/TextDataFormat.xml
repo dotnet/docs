@@ -1,0 +1,114 @@
+<Type Name="TextDataFormat" FullName="System.Windows.TextDataFormat">
+  <TypeSignature Language="C#" Value="public enum TextDataFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextDataFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TextDataFormat" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the data format of the text data.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CommaSeparatedValue">
+      <MemberSignature Language="C#" Value="CommaSeparatedValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDataFormat CommaSeparatedValue = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDataFormat.CommaSeparatedValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text data is in the <see cref="F:System.Windows.DataFormats.CommaSeparatedValue" /> data format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Html">
+      <MemberSignature Language="C#" Value="Html" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDataFormat Html = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDataFormat.Html" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text data is in the <see cref="F:System.Windows.DataFormats.Html" /> data format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rtf">
+      <MemberSignature Language="C#" Value="Rtf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDataFormat Rtf = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDataFormat.Rtf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text data is in the <see cref="F:System.Windows.DataFormats.Rtf" /> data format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDataFormat Text = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDataFormat.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text data is in the <see cref="F:System.Windows.DataFormats.Text" /> data format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnicodeText">
+      <MemberSignature Language="C#" Value="UnicodeText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDataFormat UnicodeText = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDataFormat.UnicodeText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text data is in the <see cref="F:System.Windows.DataFormats.UnicodeText" /> data format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Xaml">
+      <MemberSignature Language="C#" Value="Xaml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDataFormat Xaml = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextDataFormat.Xaml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text data is in the <see cref="F:System.Windows.DataFormats.Xaml" /> data format.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

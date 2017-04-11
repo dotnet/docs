@@ -1,0 +1,320 @@
+<Type Name="CommandBinding" FullName="System.Windows.Input.CommandBinding">
+  <TypeSignature Language="C#" Value="public class CommandBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandBinding extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.CommandBinding" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Binds a <see cref="T:System.Windows.Input.RoutedCommand" /> to the event handlers that implement the command.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Input.CommandBinding> associates a command with the <xref:System.Windows.Input.CommandBinding.PreviewExecuted>/<xref:System.Windows.Input.CommandBinding.Executed> and <xref:System.Windows.Input.CommandBinding.PreviewCanExecute>/<xref:System.Windows.Input.CommandBinding.CanExecute> events which implement and determine the status of the command.  
+  
+ When the <xref:System.Windows.Input.RoutedCommand.Execute%2A> or <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method of a <xref:System.Windows.Input.RoutedCommand> is called, the <xref:System.Windows.Input.CommandBinding.PreviewExecuted>/<xref:System.Windows.Input.CommandBinding.Executed> or the <xref:System.Windows.Input.CommandBinding.PreviewCanExecute>/<xref:System.Windows.Input.CommandBinding.CanExecute> events are raised on the command target.  If the command target has a <xref:System.Windows.Input.CommandBinding> for the command, the appropriate handlers are called.  If the command target does not have a <xref:System.Windows.Input.CommandBinding> for the command, the events are routed through the element tree until an element that has a <xref:System.Windows.Input.CommandBinding> is found.  
+  
+ A <xref:System.Windows.Input.CommandBinding> has limited use with an <xref:System.Windows.Input.ICommand> that is not a<xref:System.Windows.Input.RoutedCommand>.  This is because a <xref:System.Windows.Input.CommandBinding> binds the command to the <xref:System.Windows.Input.ExecutedRoutedEventHandler> and the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> which listen to the <xref:System.Windows.Input.CommandManager.Executed> and <xref:System.Windows.Input.CommandManager.CanExecute> routed events which are raised when the <xref:System.Windows.Input.RoutedCommand.Execute%2A> and <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method of the <xref:System.Windows.Input.RoutedCommand> are called.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandBinding (System.Windows.Input.ICommand command);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.ICommand command) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="command" Type="System.Windows.Input.ICommand" />
+      </Parameters>
+      <Docs>
+        <param name="command">The command to base the new <see cref="T:System.Windows.Input.RoutedCommand" /> on.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBinding" /> class by using the specified <see cref="T:System.Windows.Input.ICommand" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandBinding (System.Windows.Input.ICommand command, System.Windows.Input.ExecutedRoutedEventHandler executed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.ICommand command, class System.Windows.Input.ExecutedRoutedEventHandler executed) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.ExecutedRoutedEventHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="command" Type="System.Windows.Input.ICommand" />
+        <Parameter Name="executed" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="command">The command to base the new <see cref="T:System.Windows.Input.RoutedCommand" /> on.</param>
+        <param name="executed">The handler for the <see cref="E:System.Windows.Input.CommandBinding.Executed" /> event on the new <see cref="T:System.Windows.Input.RoutedCommand" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBinding" /> class by using the specified <see cref="T:System.Windows.Input.ICommand" /> and the specified <see cref="E:System.Windows.Input.CommandBinding.Executed" /> event handler.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommandBinding (System.Windows.Input.ICommand command, System.Windows.Input.ExecutedRoutedEventHandler executed, System.Windows.Input.CanExecuteRoutedEventHandler canExecute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.ICommand command, class System.Windows.Input.ExecutedRoutedEventHandler executed, class System.Windows.Input.CanExecuteRoutedEventHandler canExecute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.ExecutedRoutedEventHandler,System.Windows.Input.CanExecuteRoutedEventHandler)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="command" Type="System.Windows.Input.ICommand" />
+        <Parameter Name="executed" Type="System.Windows.Input.ExecutedRoutedEventHandler" />
+        <Parameter Name="canExecute" Type="System.Windows.Input.CanExecuteRoutedEventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="command">The command to base the new <see cref="T:System.Windows.Input.RoutedCommand" /> on.</param>
+        <param name="executed">The handler for the <see cref="E:System.Windows.Input.CommandBinding.Executed" /> event on the new <see cref="T:System.Windows.Input.RoutedCommand" />.</param>
+        <param name="canExecute">The handler for the <see cref="E:System.Windows.Input.CommandBinding.CanExecute" /> event on the new <see cref="T:System.Windows.Input.RoutedCommand" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.CommandBinding" /> class by using the specified <see cref="T:System.Windows.Input.ICommand" /> and the specified <see cref="E:System.Windows.Input.CommandBinding.Executed" /> and <see cref="E:System.Windows.Input.CommandBinding.CanExecute" /> event handlers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecute">
+      <MemberSignature Language="C#" Value="public event System.Windows.Input.CanExecuteRoutedEventHandler CanExecute;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.CanExecuteRoutedEventHandler CanExecute" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandBinding.CanExecute" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.CanExecuteRoutedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the command associated with this <see cref="T:System.Windows.Input.CommandBinding" /> initiates a check to determine whether the command can be executed on the command target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method on a <xref:System.Windows.Input.RoutedCommand> is called, the <xref:System.Windows.Input.CommandBinding.PreviewCanExecute> event is raised on the command target.  If the event is not handled, the <xref:System.Windows.Input.CommandBinding.CanExecute> event is raised.  If the command target has a <xref:System.Windows.Input.CommandBinding> for the command, the <xref:System.Windows.Input.CommandBinding.CanExecute> handler for that <xref:System.Windows.Input.CommandBinding> is called.  If the command target does not have a <xref:System.Windows.Input.CommandBinding> for the command, the <xref:System.Windows.Input.CommandBinding.CanExecute> event bubbles up the element tree searching for an element that has a <xref:System.Windows.Input.CommandBinding> associated with the command.  
+  
+<a name="routedEventInfo_CanExecute"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.CommandManager.CanExecuteEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.CanExecuteRoutedEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.CommandBinding.PreviewCanExecute>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.CommandBinding> that maps an <xref:System.Windows.Input.ExecutedRoutedEventHandler> and a <xref:System.Windows.Input.CanExecuteRoutedEventArgs> handler to the <xref:System.Windows.Input.ApplicationCommands.Open%2A> command.  
+  
+ [!code-xml[commandwithhandler#CommandHandlerCommandBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlercommandbinding)]  
+  
+ [!code-csharp[CommandHandlerProcedural#CommandHandlerBindingInit](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandHandlerProcedural/CSharp/Window1.xaml.cs#commandhandlerbindinginit)]
+ [!code-vb[CommandHandlerProcedural#CommandHandlerBindingInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandHandlerProcedural/visualbasic/window1.xaml.vb#commandhandlerbindinginit)]  
+  
+ The following shows the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> which sets <xref:System.Windows.Input.CanExecuteRoutedEventArgs.CanExecute%2A> to `true`.  
+  
+ [!code-csharp[commandwithhandler#CommandHandlerCanExecuteHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml.cs#commandhandlercanexecutehandler)]
+ [!code-vb[commandwithhandler#CommandHandlerCanExecuteHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/commandWithHandler/VisualBasic/Window1.xaml.vb#commandhandlercanexecutehandler)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.CommandBinding.Command" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Input.ICommand" /> associated with this <see cref="T:System.Windows.Input.CommandBinding" />.</summary>
+        <value>The command associated with this binding.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.CommandBinding> that maps an <xref:System.Windows.Input.ExecutedRoutedEventHandler> and a <xref:System.Windows.Input.CanExecuteRoutedEventArgs> handler to the <xref:System.Windows.Input.ApplicationCommands.Open%2A> command.  
+  
+ [!code-xml[commandWithHandler#CommandHandlerCommandBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlercommandbinding)]  
+  
+ [!code-csharp[commandhandlerprocedural#CommandHandlerBindingInit](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandHandlerProcedural/CSharp/Window1.xaml.cs#commandhandlerbindinginit)]
+ [!code-vb[commandhandlerprocedural#CommandHandlerBindingInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandHandlerProcedural/visualbasic/window1.xaml.vb#commandhandlerbindinginit)]  
+  
+ The following shows the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> which sets <xref:System.Windows.Input.CanExecuteRoutedEventArgs.CanExecute%2A> to `true`.  
+  
+ [!code-csharp[commandWithHandler#CommandHandlerCanExecuteHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml.cs#commandhandlercanexecutehandler)]
+ [!code-vb[commandWithHandler#CommandHandlerCanExecuteHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/commandWithHandler/VisualBasic/Window1.xaml.vb#commandhandlercanexecutehandler)]  
+  
+ The following shows the <xref:System.Windows.Input.ExecutedRoutedEventHandler> which creates a <xref:System.Windows.MessageBox> when the command is executed.  
+  
+ [!code-csharp[commandWithHandler#CommandHandlerExecutedHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml.cs#commandhandlerexecutedhandler)]
+ [!code-vb[commandWithHandler#CommandHandlerExecutedHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/commandWithHandler/VisualBasic/Window1.xaml.vb#commandhandlerexecutedhandler)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Executed">
+      <MemberSignature Language="C#" Value="public event System.Windows.Input.ExecutedRoutedEventHandler Executed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.ExecutedRoutedEventHandler Executed" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandBinding.Executed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ExecutedRoutedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the command associated with this <see cref="T:System.Windows.Input.CommandBinding" /> executes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Windows.Input.RoutedCommand> executes, it raises the <xref:System.Windows.Input.CommandBinding.PreviewExecuted> event on the command target.  If the <xref:System.Windows.Input.CommandBinding.PreviewExecuted> event is not handled, the <xref:System.Windows.Input.CommandBinding.Executed> event is raised on the command target.  If the command target has a <xref:System.Windows.Input.CommandBinding> for the specific command, the <xref:System.Windows.Input.CommandBinding.Executed> handler for that <xref:System.Windows.Input.CommandBinding> is called.  If the command target does not have a <xref:System.Windows.Input.CommandBinding> for that specific command the <xref:System.Windows.Input.CommandBinding.Executed> event bubbles up the element tree searching for an element that has a <xref:System.Windows.Input.CommandBinding> associated with the command.  If a <xref:System.Windows.Input.CommandBinding> is not found, the command is not handled.  
+  
+<a name="routedEventInfo_Executed"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.CommandManager.ExecutedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Input.ExecutedRoutedEventHandler>|  
+  
+-   The corresponding tunneling event is <xref:System.Windows.Input.CommandBinding.PreviewExecuted>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.CommandBinding> that maps an <xref:System.Windows.Input.ExecutedRoutedEventHandler> and a <xref:System.Windows.Input.CanExecuteRoutedEventArgs> handler to the <xref:System.Windows.Input.ApplicationCommands.Open%2A> command.  
+  
+ [!code-xml[commandwithhandler#CommandHandlerCommandBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml#commandhandlercommandbinding)]  
+  
+ [!code-csharp[CommandHandlerProcedural#CommandHandlerBindingInit](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandHandlerProcedural/CSharp/Window1.xaml.cs#commandhandlerbindinginit)]
+ [!code-vb[CommandHandlerProcedural#CommandHandlerBindingInit](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandHandlerProcedural/visualbasic/window1.xaml.vb#commandhandlerbindinginit)]  
+  
+ The following shows the <xref:System.Windows.Input.ExecutedRoutedEventHandler> which creates a <xref:System.Windows.MessageBox> when the command is executed.  
+  
+ [!code-csharp[commandWithHandler#CommandHandlerExecutedHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml.cs#commandhandlerexecutedhandler)]
+ [!code-vb[commandWithHandler#CommandHandlerExecutedHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/commandWithHandler/VisualBasic/Window1.xaml.vb#commandhandlerexecutedhandler)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewCanExecute">
+      <MemberSignature Language="C#" Value="public event System.Windows.Input.CanExecuteRoutedEventHandler PreviewCanExecute;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.CanExecuteRoutedEventHandler PreviewCanExecute" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandBinding.PreviewCanExecute" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.CanExecuteRoutedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the command associated with this <see cref="T:System.Windows.Input.CommandBinding" /> initiates a check to determine whether the command can be executed on the current command target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method on a <xref:System.Windows.Input.RoutedCommand> is called, the <xref:System.Windows.Input.CommandBinding.PreviewCanExecute> event is raised on the command target if the command target has a <xref:System.Windows.Input.CommandBinding> for the command. Then the <xref:System.Windows.Input.CommandBinding.CanExecute> handler for that <xref:System.Windows.Input.CommandBinding> is called.  If the command target does not have a <xref:System.Windows.Input.CommandBinding> for the command, the <xref:System.Windows.Input.CommandBinding.CanExecute> event bubbles up the element tree searching for an element that has a <xref:System.Windows.Input.CommandBinding> associated with the command.  If the event is not handled, the <xref:System.Windows.Input.CommandBinding.CanExecute> event is raised.  
+  
+<a name="routedEventInfo_PreviewCanExecute"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.CommandManager.PreviewCanExecuteEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.CanExecuteRoutedEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.CommandBinding.CanExecute>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewExecuted">
+      <MemberSignature Language="C#" Value="public event System.Windows.Input.ExecutedRoutedEventHandler PreviewExecuted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.ExecutedRoutedEventHandler PreviewExecuted" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.CommandBinding.PreviewExecuted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ExecutedRoutedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the command associated with this <see cref="T:System.Windows.Input.CommandBinding" /> executes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Windows.Input.RoutedCommand> executes, it raises the <xref:System.Windows.Input.CommandBinding.PreviewExecuted> event on the command target.  If the command target has a <xref:System.Windows.Input.CommandBinding> for the command the <xref:System.Windows.Input.CommandBinding.PreviewExecuted> handler for that <xref:System.Windows.Input.CommandBinding> is called.  If the command target does not have a <xref:System.Windows.Input.CommandBinding> for the command the <xref:System.Windows.Input.CommandBinding.PreviewExecuted> event tunnels down the element tree searching for an element that has a <xref:System.Windows.Input.CommandBinding> associated with the command.  If the preview event is not handled, the <xref:System.Windows.Input.CommandBinding.Executed> event is raised on command target.  
+  
+<a name="routedEventInfo_PreviewExecuted"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Input.CommandManager.PreviewExecutedEvent>|  
+|Routing strategy|Tunneling|  
+|Delegate|<xref:System.Windows.Input.ExecutedRoutedEventHandler>|  
+  
+-   The corresponding bubbling event is <xref:System.Windows.Input.CommandBinding.Executed>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

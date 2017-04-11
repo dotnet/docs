@@ -1,0 +1,18 @@
+<Type Name="ModifyDNResponse" FullName="System.DirectoryServices.Protocols.ModifyDNResponse">
+  <TypeSignature Language="C#" Value="public class ModifyDNResponse : System.DirectoryServices.Protocols.DirectoryResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModifyDNResponse extends System.DirectoryServices.Protocols.DirectoryResponse" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ModifyDNResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryResponse</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.ModifyDNResponse" /> class is returned by <see cref="M:System.DirectoryServices.Protocols.DirectoryConnection.SendRequest(System.DirectoryServices.Protocols.DirectoryRequest)" /> as a response to <see cref="T:System.DirectoryServices.Protocols.ModifyDNRequest" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

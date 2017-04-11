@@ -1,0 +1,49 @@
+<Type Name="StoppedEventArgs" FullName="System.Management.StoppedEventArgs">
+  <TypeSignature Language="C#" Value="public class StoppedEventArgs : System.Management.ManagementEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StoppedEventArgs extends System.Management.ManagementEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Management.StoppedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Management.ManagementEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Holds event data for the <see cref="E:System.Management.ManagementEventWatcher.Stopped" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.Management.ManagementStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Management.ManagementStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.Management.StoppedEventArgs.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ManagementStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the completion status of the operation.</summary>
+        <value>Returns a <see cref="T:System.Management.ManagementStatus" /> containing the status of the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ A <xref:System.Management.ManagementStatus> value representing the status of the operation.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

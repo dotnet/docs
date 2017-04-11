@@ -1,0 +1,299 @@
+<Type Name="ParallelTimeline" FullName="System.Windows.Media.Animation.ParallelTimeline">
+  <TypeSignature Language="C#" Value="public class ParallelTimeline : System.Windows.Media.Animation.TimelineGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParallelTimeline extends System.Windows.Media.Animation.TimelineGroup" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ParallelTimeline" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.TimelineGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a segment of time that may contain child <see cref="T:System.Windows.Media.Animation.Timeline" /> objects. These child timelines become active according to their respective <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> properties. Also, child timelines are able to overlap (run in parallel) with each other.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Animation.ParallelTimeline> objects can be children (nested inside) of a <xref:System.Windows.Media.Animation.Storyboard>. This can provide better encapsulation of timing sequences in complex animations.  
+  
+ <xref:System.Windows.Media.Animation.ParallelTimeline> has its own <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> property therefore all child timeline <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> values are relative to the parent <xref:System.Windows.Media.Animation.ParallelTimeline> value for <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParallelTimeline ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ParallelTimeline.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ParallelTimeline" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParallelTimeline (Nullable&lt;TimeSpan&gt; beginTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ParallelTimeline.#ctor(System.Nullable{System.TimeSpan})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="beginTime" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="beginTime">The <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ParallelTimeline" /> class with the specified <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParallelTimeline (Nullable&lt;TimeSpan&gt; beginTime, System.Windows.Duration duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime, valuetype System.Windows.Duration duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ParallelTimeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="beginTime" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="duration" Type="System.Windows.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="beginTime">The <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <param name="duration">The <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ParallelTimeline" /> class with the specified <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> and <see cref="P:System.Windows.Media.Animation.Timeline.Duration" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParallelTimeline (Nullable&lt;TimeSpan&gt; beginTime, System.Windows.Duration duration, System.Windows.Media.Animation.RepeatBehavior repeatBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ParallelTimeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration,System.Windows.Media.Animation.RepeatBehavior)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="beginTime" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="duration" Type="System.Windows.Duration" />
+        <Parameter Name="repeatBehavior" Type="System.Windows.Media.Animation.RepeatBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="beginTime">The <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <param name="duration">The <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <param name="repeatBehavior">The <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> for this <see cref="T:System.Windows.Media.Animation.TimelineGroup" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ParallelTimeline" /> class with the specified <see cref="P:System.Windows.Media.Animation.Timeline.BeginTime" />, <see cref="P:System.Windows.Media.Animation.Timeline.Duration" />, and <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.ParallelTimeline Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.ParallelTimeline Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ParallelTimeline.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ParallelTimeline</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.ParallelTimeline" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.ParallelTimeline CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.ParallelTimeline CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ParallelTimeline.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ParallelTimeline</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.ParallelTimeline" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ParallelTimeline.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of this <see cref="T:System.Windows.Freezable" />.</summary>
+        <returns>The new <see cref="T:System.Windows.Freezable" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.Windows.Freezable.CreateInstanceCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNaturalDurationCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Duration GetNaturalDurationCore (System.Windows.Media.Animation.Clock clock);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Duration GetNaturalDurationCore(class System.Windows.Media.Animation.Clock clock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ParallelTimeline.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Duration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clock" Type="System.Windows.Media.Animation.Clock" />
+      </Parameters>
+      <Docs>
+        <param name="clock">The <see cref="T:System.Windows.Media.Animation.Clock" /> to return the natural duration from.</param>
+        <summary>Return the natural duration (duration of a single iteration) from a specified <see cref="T:System.Windows.Media.Animation.Clock" />.</summary>
+        <returns>The <see cref="T:System.Windows.Duration" /> quantity representing the natural duration.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A natural duration is the period of a single iteration. If this method returns <xref:System.Windows.Duration.Automatic%2A> it means that the natural duration is unknown. In this case, the <xref:System.Windows.Media.Animation.Clock.NaturalDuration%2A> of the <xref:System.Windows.Media.Animation.Clock> is determined by the author. For example, the duration of streaming media would be determined by the provider of the streaming media.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlipBehavior">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.SlipBehavior SlipBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Animation.SlipBehavior SlipBehavior" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.SlipBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies how this timeline will behave when one or more of its <see cref="T:System.Windows.Media.Animation.Timeline" /> children slips.</summary>
+        <value>A value that indicates how this timeline will behave when one or more of its <see cref="T:System.Windows.Media.Animation.Timeline" /> children slips. The default value is <see cref="F:System.Windows.Media.Animation.SlipBehavior.Grow" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is often desirable to synchronize animations and media. However, this is complicated by the fact that media playback can be delayed by loading or buffering making it difficult to reliably play an animation along with media. The <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> property is used to determine what happens when media and animations are played together. A value of <xref:System.Windows.Media.Animation.SlipBehavior> (default) specifies that animation timelines do not need to be synced and will play when specified regardless of the state of other media in the timeline. A value of <xref:System.Windows.Media.Animation.SlipBehavior> on the other hand, specifies that an animation will wait (slip) until media is ready to play. The diagrams below illustrate this behavior.  
+  
+ This <xref:System.Windows.Media.Animation.Storyboard> plays a video and an animation. When <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> is set to <xref:System.Windows.Media.Animation.SlipBehavior> and the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> property of the <xref:System.Windows.Media.Animation.Storyboard> is set to <xref:System.Windows.Duration.Automatic%2A>, the <xref:System.Windows.Media.Animation.Storyboard> grows to play all media and animations.  
+  
+ ![Diagram: Key for SlipBehavior diagram](~/add/media/slipbehaviorkey.png "Diagram: Key for SlipBehavior diagram")  
+  
+ ![Diagram: SlipBehavior property value of Grow](~/add/media/slipbehaviorgrow1.png "Diagram: SlipBehavior property value of Grow")  
+  
+ This <xref:System.Windows.Media.Animation.Storyboard> has a <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> of <xref:System.Windows.Media.Animation.SlipBehavior> and a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of 5 seconds which gives media and animations 5 seconds to play regardless of how much they slip.  
+  
+ ![Diagram: SlipBehavior property value of Grow](~/add/media/slipbehaviorgrow2.png "Diagram: SlipBehavior property value of Grow")  
+  
+ This <xref:System.Windows.Media.Animation.Storyboard> has a <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> of <xref:System.Windows.Media.Animation.SlipBehavior>. Note that the <xref:System.Windows.Media.Animation.DoubleAnimation> (and any other non-media children of the <xref:System.Windows.Media.Animation.Storyboard>) does not progress unless the media timeline is also progressing.  If the media takes a while to load, or if it is buffering, the animation will wait (slips) with it.  This allows animations to synchronize with a single media file.  
+  
+ ![SlipBehavior diagram for media and animation](~/add/media/slipbehaviorslip1.png "SlipBehavior diagram for media and animation")  
+  
+ This <xref:System.Windows.Media.Animation.Storyboard> has a <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> of <xref:System.Windows.Media.Animation.SlipBehavior> and a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of 5 seconds.  In this scenario, the media file and animation are guaranteed to play for 5 seconds.  
+  
+ ![Diagram: SlipBehavior property of a Storyboard](~/add/media/slipbehaviorslip2.png "Diagram: SlipBehavior property of a Storyboard")  
+  
+<a name="dependencyPropertyInfo_SlipBehavior"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehaviorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlipBehaviorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SlipBehaviorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SlipBehaviorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ParallelTimeline.SlipBehaviorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> dependency property.  
+  
+   
+  
+## Examples  
+ [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

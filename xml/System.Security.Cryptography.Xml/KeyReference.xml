@@ -1,0 +1,136 @@
+<Type Name="KeyReference" FullName="System.Security.Cryptography.Xml.KeyReference">
+  <TypeSignature Language="C#" Value="public sealed class KeyReference : System.Security.Cryptography.Xml.EncryptedReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KeyReference extends System.Security.Cryptography.Xml.EncryptedReference" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.KeyReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.Xml.EncryptedReference</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="&lt;KeyReference&gt;" /> element used in XML encryption. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.Xml.KeyReference> class represents the `<KeyReference>` element that contains information about the location of an encrypted key.  
+  
+ Use the `<KeyReference>` element to refer to `<EncryptedKey>` elements that were encrypted using the key defined in the enclosing `<EncryptedKey>` element. You can use multiple `<KeyReference>` elements when multiple `<EncryptedKey>` elements exist that are encrypted using the same key.  
+  
+ You can include additional information such as XPath transforms, decompression transforms, or information about how to retrieve the elements from a document storage facility to aid the decrypting application.  
+  
+ For more information about XML encryption standards, see the XML Encryption specification, which is available from the World Wide Web Consortium (W3C) at http://www.w3.org/TR/xmlenc-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Security.Cryptography.Xml.KeyReference> object while encrypting an XML document.  
+  
+ [!code-csharp[System.Security.Cryptography.Xml.Keyreference#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.Keyreference/cs/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.Xml.Keyreference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.Keyreference/vb/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyReference" /> class for XML encryption.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.KeyReference> class that represents the `<KeyReference>` element. The `<KeyReference>` element is a child element of the `<ReferenceList>` element.  
+  
+ For more information about XML encryption standards, see the XML Encryption specification, which is available from the World Wide Web Consortium (W3C) at http://www.w3.org/TR/xmlenc-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Security.Cryptography.Xml.KeyReference> object while encrypting an XML document.  
+  
+ [!code-csharp[System.Security.Cryptography.Xml.Keyreference#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.Keyreference/cs/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.Xml.Keyreference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.Keyreference/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyReference (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyReference.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">A Uniform Resource Identifier (URI) that points to the encrypted key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyReference" /> class for XML encryption using the supplied Uniform Resource Identifier (URI).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.KeyReference> class that represents the `<KeyReference>` element, using the supplied Uniform Resource Identifier (URI). The URI indicates the location of the encrypted key. The `<KeyReference>` element is a child element of the `<ReferenceList>` element.  
+  
+ For more information about XML encryption standards, see the XML Encryption specification, which is available from the World Wide Web Consortium (W3C) at http://www.w3.org/TR/xmlenc-core/.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Security.Cryptography.Xml.KeyReference> object while encrypting an XML document.  
+  
+ [!code-csharp[System.Security.Cryptography.Xml.Keyreference#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.Keyreference/cs/sample.cs#1)]
+ [!code-vb[System.Security.Cryptography.Xml.Keyreference#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.Xml.Keyreference/vb/sample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyReference (string uri, System.Security.Cryptography.Xml.TransformChain tc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uri, class System.Security.Cryptography.Xml.TransformChain tc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.KeyReference.#ctor(System.String,System.Security.Cryptography.Xml.TransformChain)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+        <Parameter Name="transformChain" Type="System.Security.Cryptography.Xml.TransformChain" />
+      </Parameters>
+      <Docs>
+        <param name="uri">A Uniform Resource Identifier (URI) that points to the encrypted key.</param>
+        <param name="tc">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.KeyReference" /> class for XML encryption using the specified Uniform Resource Identifier (URI) and a <see cref="T:System.Security.Cryptography.Xml.TransformChain" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.KeyReference> class that represents the `<KeyReference>` element, using the supplied Uniform Resource Identifier (URI) and transform chain. The URI indicates the location of the encrypted key and the transform chain that can contain XPath transforms, decompression transforms, or information on how to retrieve the encrypted data from a document storage facility. The `<KeyReference>` element is a child element of the `<ReferenceList>` element.  
+  
+ For more information about XML encryption standards, see the XML Encryption specification, which is available from the World Wide Web Consortium (W3C) at http://www.w3.org/TR/xmlenc-core/.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

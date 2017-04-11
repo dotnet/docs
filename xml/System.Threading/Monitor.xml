@@ -1,0 +1,1172 @@
+<Type Name="Monitor" FullName="System.Threading.Monitor">
+  <TypeSignature Language="C#" Value="public static class Monitor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Monitor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Monitor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a mechanism that synchronizes access to objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Threading.Monitor> class allows you to synchronize access to a region of code by taking and releasing a lock on a particular object by calling the <xref:System.Threading.Monitor.Enter%2A?displayProperty=fullName>, <xref:System.Threading.Monitor.TryEnter%2A?displayProperty=fullName>, and <xref:System.Threading.Monitor.Exit%2A?displayProperty=fullName> methods. Object locks provide the ability to restrict access to a block of code, commonly called a critical section. While a thread owns the lock for an object, no other thread can acquire that lock. You can also use the <xref:System.Threading.Monitor> class to ensure that no other thread is allowed to access a section of application code being executed by the lock owner, unless the other thread is executing the code using a different locked object.  
+  
+ In this article:  
+  
+ [The Monitor class: An overview](#Overview)   
+ [The lock object](#Lock)   
+ [The critical section](#CriticalSection)   
+ [Pulse, PulseAll, and Wait](#Pulse)   
+ [Monitors and wait handles](#WaitHandles)  
+  
+<a name="Overview"></a>   
+## The Monitor class: An overview  
+ <xref:System.Threading.Monitor> has the following features:  
+  
+-   It is associated with an object on demand.  
+  
+-   It is unbound, which means it can be called directly from any context.  
+  
+-   An instance of the <xref:System.Threading.Monitor> class cannot be created; the methods of the <xref:System.Threading.Monitor> class are all static. Each method is passed the synchronized object that controls access to the critical section.  
+  
+> [!NOTE]
+>  Use the <xref:System.Threading.Monitor> class to lock objects other than strings (that is, reference types other than <xref:System.String>), not value types. For details, see the overloads of the <xref:System.Threading.Monitor.Enter%2A> method and [The lock object](#Lock) section later in this article.  
+  
+ The following table describes the actions that can be taken by threads that access synchronized objects:  
+  
+|Action|Description|  
+|------------|-----------------|  
+|<xref:System.Threading.Monitor.Enter%2A>, <xref:System.Threading.Monitor.TryEnter%2A>|Acquires a lock for an object. This action also marks the beginning of a critical section. No other thread can enter the critical section unless it is executing the instructions in the critical section using a different locked object.|  
+|<xref:System.Threading.Monitor.Wait%2A>|Releases the lock on an object in order to permit other threads to lock and access the object. The calling thread waits while another thread accesses the object. Pulse signals are used to notify waiting threads about changes to an object's state.|  
+|<xref:System.Threading.Monitor.Pulse%2A> (signal), <xref:System.Threading.Monitor.PulseAll%2A>|Sends a signal to one or more waiting threads. The signal notifies a waiting thread that the state of the locked object has changed, and the owner of the lock is ready to release the lock. The waiting thread is placed in the object's ready queue so that it might eventually receive the lock for the object. Once the thread has the lock, it can check the new state of the object to see if the required state has been reached.|  
+|<xref:System.Threading.Monitor.Exit%2A>|Releases the lock on an object. This action also marks the end of a critical section protected by the locked object.|  
+  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], there are two sets of overloads for the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.TryEnter%2A> methods. One set of overloads has a `ref` (in C#) or `ByRef` (in Visual Basic) <xref:System.Boolean> parameter that is atomically set to `true` if the lock is acquired, even if an exception is thrown when acquiring the lock. Use these overloads if it is critical to release the lock in all cases, even when the resources the lock is protecting might not be in a consistent state.  
+  
+<a name="Lock"></a>   
+## The lock object  
+ The Monitor class consists of `static` (in C#) or  `Shared` (in Visual Basic) methods that operate on an object that controls access to the critical section.  The following information is maintained for each synchronized object:  
+  
+-   A reference to the thread that currently holds the lock.  
+  
+-   A reference to a ready queue, which contains the threads that are ready to obtain the lock.  
+  
+-   A reference to a waiting queue, which contains the threads that are waiting for notification of a change in the state of the locked object.  
+  
+ <xref:System.Threading.Monitor> locks objects (that is, reference types), not value types. While you can pass a value type to <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A>, it is boxed separately for each call. Since each call creates a separate object, <xref:System.Threading.Monitor.Enter%2A> never blocks, and the code it is supposedly protecting is not really synchronized. In addition, the object passed to <xref:System.Threading.Monitor.Exit%2A> is different from the object passed to <xref:System.Threading.Monitor.Enter%2A>, so <xref:System.Threading.Monitor> throws <xref:System.Threading.SynchronizationLockException> exception with the message "Object synchronization method was called from an unsynchronized block of code."  
+  
+ The following example illustrates this problem. It launches ten tasks, each of which just sleeps for 250 milliseconds. Each task then updates a counter variable, `nTasks`, which is intended to count the number of tasks that actually launched and executed. Because `nTasks` is a global variable that can be updated by multiple tasks simultaneously, a monitor is used to protect it from simultaneous modification by multiple tasks. However, as the output from the example shows, each of the tasks throws a <xref:System.Threading.SynchronizationLockException> exception.  
+  
+ [!code-csharp[Conceptual.Monitors#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.monitors/cs/badlock1.cs#2)]
+ [!code-vb[Conceptual.Monitors#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.monitors/vb/badlock1.vb#2)]  
+  
+ Each task throws a <xref:System.Threading.SynchronizationLockException> exception because the `nTasks` variable is boxed before the call to the <xref:System.Threading.Monitor.Enter%2A?displayProperty=fullName> method in each task. In other words, each method call is passed a separate variable that is independent of the others. `nTasks` is boxed again in the call to the <xref:System.Threading.Monitor.Exit%2A?displayProperty=fullName> method. Once again, this creates ten new boxed variables, which are independent of each other, `nTasks`, and the ten boxed variables created in the call to the <xref:System.Threading.Monitor.Enter%2A?displayProperty=fullName> method. The exception is thrown, then, because our code is attempting to release a lock on a newly created variable that was not previously locked.  
+  
+ Although you can box a value type variable before calling <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A>, as shown in the following example, and pass the same boxed object to both methods, there is no advantage to doing this. Changes to the unboxed variable are not reflected in the boxed copy, and there is no way to change the value of the boxed copy.  
+  
+ [!code-csharp[Conceptual.Monitors#3](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.monitors/cs/badbox1.cs#3)]
+ [!code-vb[Conceptual.Monitors#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.monitors/vb/badbox1.vb#3)]  
+  
+ When selecting an object on which to synchronize, you should lock only on private or internal objects. Locking on external objects might result in deadlocks, because unrelated code could choose the same objects to lock on for different purposes.  
+  
+ Note that you can synchronize on an object in multiple application domains if the object used for the lock derives from <xref:System.MarshalByRefObject>.  
+  
+<a name="CriticalSection"></a>   
+## The critical section  
+ Use the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods to mark the beginning and end of a critical section.  
+  
+> [!NOTE]
+>  The functionality provided by the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods is identical to that provided by the [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement in C# and the [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) statement in Visual Basic, except that the language constructs wrap the <xref:System.Threading.Monitor.Enter%28System.Object%2CSystem.Boolean%40%29?displayProperty=fullName> method overload and the <xref:System.Threading.Monitor.Exit%2A?displayProperty=fullName> method in a `try`…`finally` block to ensure that the monitor is released.  
+  
+ If the critical section is a set of contiguous instructions, then the lock acquired by the <xref:System.Threading.Monitor.Enter%2A> method guarantees that only a single thread can execute the enclosed code with the locked object. In this case, we recommend that you place that code in a `try` block and place the call to the <xref:System.Threading.Monitor.Exit%2A> method in a `finally` block. This ensures that the lock is released even if an exception occurs. The following code fragment illustrates this pattern.  
+  
+ [!code-csharp[System.Threading.Monitor.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.monitor.class/cs/Pattern2.cs#2)]
+ [!code-vb[System.Threading.Monitor.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.monitor.class/vb/Pattern2.vb#2)]  
+  
+ This facility is typically used to synchronize access to a static or instance method of a class.  
+  
+ If a critical section spans an entire method, the locking facility can be achieved by placing the <xref:System.Runtime.CompilerServices.MethodImplAttribute?displayProperty=fullName> on the method, and specifying the <xref:System.Runtime.CompilerServices.MethodImplOptions> value in the constructor of <xref:System.Runtime.CompilerServices.MethodImplAttribute?displayProperty=fullName>. When you use this attribute, the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> method calls are not needed. The following code fragment illustrates this pattern:  
+  
+ [!code-csharp[System.Threading.Monitor.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.monitor.class/cs/Pattern2.cs#3)]
+ [!code-vb[System.Threading.Monitor.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.monitor.class/vb/Pattern2.vb#3)]  
+  
+ Note that the attribute causes the current thread to hold the lock until the method returns; if the lock can be released sooner, use the <xref:System.Threading.Monitor> class, the C# [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement, or the Visual Basic [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) statement inside of the method instead of the attribute.  
+  
+ While it is possible for the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> statements that lock and release a given object to cross member or class boundaries or both, this practice is not recommended.  
+  
+<a name="Pulse"></a>   
+## Pulse, PulseAll, and Wait  
+ Once a thread owns the lock and has entered the critical section that the lock protects, it can call the <xref:System.Threading.Monitor.Wait%2A?displayProperty=fullName>, <xref:System.Threading.Monitor.Pulse%2A?displayProperty=fullName>, and <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=fullName> methods.  
+  
+ <xref:System.Threading.Monitor.Wait%2A> releases the lock if it is held, allows a waiting thread or threads to obtain the lock and enter the critical section,   and waits to be notified by a call to the <xref:System.Threading.Monitor.Pulse%2A?displayProperty=fullName> or <xref:System.Threading.Monitor.PulseAll%2A?displayProperty=fullName> method. When <xref:System.Threading.Monitor.Wait%2A> is notified, it returns and obtains the lock again.  
+  
+ Both <xref:System.Threading.Monitor.Pulse%2A> and <xref:System.Threading.Monitor.PulseAll%2A> signal for the next thread in the wait queue to proceed.  
+  
+<a name="WaitHandles"></a>   
+## Monitors and wait handles  
+ It is important to note the distinction between the use of the <xref:System.Threading.Monitor> class and <xref:System.Threading.WaitHandle> objects.  
+  
+-   The <xref:System.Threading.Monitor> class is purely managed, fully portable, and might be more efficient in terms of operating-system resource requirements.  
+  
+-   <xref:System.Threading.WaitHandle> objects represent operating-system waitable objects, are useful for synchronizing between managed and unmanaged code, and expose some advanced operating-system features like the ability to wait on many objects at once.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Threading.Monitor> class to synchronize access to a single instance of a random number generator represented by the <xref:System.Random> class. The example creates ten tasks, each of which executes asynchronously on a thread pool thread. Each task generates 10,000 random numbers, calculates their average, and updates two procedure-level variables that maintain a running total of the number of random numbers generated and their sum. After all tasks have executed, these two values are then used to calculate the overall mean.  
+  
+ [!code-csharp[System.Threading.Monitor.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.monitor.class/cs/example1.cs#1)]
+ [!code-vb[System.Threading.Monitor.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.monitor.class/vb/example1.vb#1)]  
+  
+ Because they can be accessed from any task running on a thread pool thread, access to the variables `total` and `n` must also be synchronized. The <xref:System.Threading.Interlocked.Add%2A?displayProperty=fullName> method is used for this purpose.  
+  
+ The following example demonstrates the combined use of the <xref:System.Threading.Monitor> class (implemented with the `lock` or `SyncLock` language construct), the <xref:System.Threading.Interlocked> class, and the <xref:System.Threading.AutoResetEvent> class. It defines two `internal` (in C#) or `Friend` (in Visual Basic) classes, `SyncResource` and `UnSyncResource`, that respectively provide synchronized and unsynchronized access to a resource. To ensure that the example illustrates the difference between the synchronized and unsynchronized access (which could be the case if each method call completes rapidly), the method includes a random delay: for threads whose <xref:System.Threading.Thread.ManagedThreadId%2A?displayProperty=fullName> property is even, the method calls <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> to introduce a delay of 2,000 milliseconds. Note that, because the `SyncResource` class is not public, none of the client code takes a lock on the synchronized resource; the internal class itself takes the lock. This prevents malicious code from taking a lock on a public object.  
+  
+ [!code-csharp[Conceptual.Monitors#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.monitors/cs/source.cs#1)]
+ [!code-vb[Conceptual.Monitors#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.monitors/vb/source.vb#1)]  
+  
+ The example defines a variable, `numOps`, that defines the number of threads that will attempt to access the resource. The application thread calls the <xref:System.Threading.ThreadPool.QueueUserWorkItem%28System.Threading.WaitCallback%29?displayProperty=fullName> method for synchronized and unsynchronized access five times each. The <xref:System.Threading.ThreadPool.QueueUserWorkItem%28System.Threading.WaitCallback%29?displayProperty=fullName> method has a single parameter, a delegate that accepts no parameters and returns no value. For synchronized access, it invokes the `SyncUpdateResource` method; for unsynchronized access, it invokes the `UnSyncUpdateResource` method. After each set of method calls, the application thread calls the [AutoResetEvent.WaitOne](https://msdn.microsoft.com/library/58195swd.aspx) method so that it blocks until the <xref:System.Threading.AutoResetEvent> instance is signaled.  
+  
+ Each call to the `SyncUpdateResource` method calls the internal `SyncResource.Access` method and then calls the <xref:System.Threading.Interlocked.Decrement%2A?displayProperty=fullName> method to decrement the `numOps` counter. The <xref:System.Threading.Interlocked.Decrement%2A?displayProperty=fullName> method Is used to decrement the counter, because otherwise you cannot be certain that a second thread will access the value before a first thread's decremented value has been stored in the variable. When the last synchronized worker thread decrements the counter to zero, indicating that all synchronized threads have completed accessing the resource, the `SyncUpdateResource` method calls the [EventWaitHandle.Set](https://msdn.microsoft.com/library/system.threading.eventwaithandle.set.aspx) method, which signals the main thread to continue execution.  
+  
+ Each call to the `UnSyncUpdateResource` method calls the internal `UnSyncResource.Access` method and then calls the <xref:System.Threading.Interlocked.Decrement%2A?displayProperty=fullName> method to decrement the `numOps` counter. Once again, the <xref:System.Threading.Interlocked.Decrement%2A?displayProperty=fullName> method Is used to decrement the counter to ensure that a second thread does not access the value before a first thread's decremented value has been assigned to the variable. When the last unsynchronized worker thread decrements the counter to zero, indicating that no more unsynchronized threads need to access the resource, the `UnSyncUpdateResource` method calls the [EventWaitHandle.Set](https://msdn.microsoft.com/library/system.threading.eventwaithandle.set.aspx) method, which signals the main thread to continue execution.  
+  
+ As the output from  the example shows, synchronized access ensures that the calling thread exits the protected resource before another thread can access it; each thread waits on its predecessor. On the other hand, without the lock, the `UnSyncResource.Access` method is called in the order in which threads reach it.  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="Enter">
+      <MemberSignature Language="C#" Value="public static void Enter (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enter(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Enter(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to acquire the monitor lock.</param>
+        <summary>Acquires an exclusive lock on the specified object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use `Enter` to acquire the <xref:System.Threading.Monitor> on the object passed as the parameter. If another thread has executed an `Enter` on the object but has not yet executed the corresponding <xref:System.Threading.Monitor.Exit%2A>, the current thread will block until the other thread releases the object. It is legal for the same thread to invoke `Enter` more than once without it blocking; however, an equal number of `Exit` calls must be invoked before other threads waiting on the object will unblock.  
+  
+ Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. When you pass a value type variable to `Enter`, it is boxed as an object. If you pass the same variable to `Enter` again, it is boxed as a separate object, and the thread does not block. In this case, the code that `Monitor` is supposedly protecting is not protected. Furthermore, when you pass the variable to `Exit`, still another separate object is created. Because the object passed to `Exit` is different from the object passed to `Enter`, `Monitor` throws <xref:System.Threading.SynchronizationLockException>. For more information, see the conceptual topic [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db).  
+  
+ <xref:System.Threading.Thread.Interrupt%2A> can interrupt threads that are waiting to enter a `Monitor` on an object. A <xref:System.Threading.ThreadInterruptedException> will be thrown.  
+  
+ Use a C# `try`…`finally` block (`Try`…`Finally` in Visual Basic) to ensure that you release the monitor, or use the C# `lock` statement (`SyncLock` statement in Visual Basic), which wraps the <xref:System.Threading.Monitor.Enter%2A> and <xref:System.Threading.Monitor.Exit%2A> methods in a `try`…`finally` block.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the `Enter` method.  
+  
+ [!code-cpp[MonitorExmpl2#1](~/samples/snippets/cpp/VS_Snippets_CLR/MonitorExmpl2/CPP/monitor2.cpp#1)]
+ [!code-csharp[MonitorExmpl2#1](~/samples/snippets/csharp/VS_Snippets_CLR/MonitorExmpl2/CS/monitor2.cs#1)]
+ [!code-vb[MonitorExmpl2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MonitorExmpl2/VB/monitor2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Enter">
+      <MemberSignature Language="C#" Value="public static void Enter (object obj, ref bool lockTaken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enter(object obj, bool lockTaken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Enter(System.Object,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="lockTaken" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to wait.</param>
+        <param name="lockTaken">The result of the attempt to acquire the lock, passed by reference. The input must be <see langword="false" />. The output is <see langword="true" /> if the lock is acquired; otherwise, the output is <see langword="false" />. The output is set even if an exception occurs during the attempt to acquire the lock.  
+  
+ Note   If no exception occurs, the output of this method is always <see langword="true" />.</param>
+        <summary>Acquires an exclusive lock on the specified object, and atomically sets a value that indicates whether the lock was taken.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use `Enter` to acquire the <xref:System.Threading.Monitor> on the object passed as the `obj` parameter. If another thread has executed an `Enter` on the object but has not yet executed the corresponding <xref:System.Threading.Monitor.Exit%2A>, the current thread will block until the other thread releases the object. It is legal for the same thread to invoke `Enter` more than once without it blocking; however, an equal number of `Exit` calls must be invoked before other threads waiting on the object will unblock.  
+  
+ If the lock was not taken because an exception was thrown, the variable specified for the `lockTaken` parameter is `false` after this method ends. This allows the program to determine, in all cases, whether it is necessary to release the lock. If this method returns without throwing an exception, the variable specified for the `lockTaken` parameter is always `true`, and there is no need to test it.  
+  
+ Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. When you pass a value type variable to `Enter`, it is boxed as an object. If you pass the same variable to `Enter` again, it is boxed as a separate object, and the thread does not block. In this case, the code that `Monitor` is supposedly protecting is not protected. Furthermore, when you pass the variable to `Exit`, another separate object is created. Because the object passed to `Exit` is different from the object passed to `Enter`, `Monitor` throws <xref:System.Threading.SynchronizationLockException>. For more information, see the conceptual topic [Monitors](http://msdn.microsoft.com/library/33fe4aef-b44b-42fd-9e72-c908e39e75db).  
+  
+ <xref:System.Threading.Thread.Interrupt%2A> can interrupt threads that are waiting to enter a `Monitor` on an object. A <xref:System.Threading.ThreadInterruptedException> will be thrown.  
+  
+   
+  
+## Examples  
+ The following code shows the basic pattern for using the <xref:System.Threading.Monitor.Enter%28System.Object%2CSystem.Boolean%40%29> method overload. This overload always sets the value of the variable that is passed to the `ref` parameter (`ByRef` in Visual Basic) `lockTaken`, even if the method throws an exception, so the value of the variable is a reliable way to test whether the lock has to be released.  
+  
+ [!code-csharp[System.Threading.Monitor.Enter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.monitor.enter/cs/example.cs#2)]
+ [!code-vb[System.Threading.Monitor.Enter#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.monitor.enter/vb/example.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The input to <paramref name="lockTaken" /> is <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Exit">
+      <MemberSignature Language="C#" Value="public static void Exit (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Exit(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Exit(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to release the lock.</param>
+        <summary>Releases an exclusive lock on the specified object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The calling thread must own the lock on the `obj` parameter. If the calling thread owns the lock on the specified object, and has made an equal number of `Exit` and <xref:System.Threading.Monitor.Enter%2A> calls for the object, then the lock is released. If the calling thread has not invoked `Exit` as many times as `Enter`, the lock is not released.  
+  
+ If the lock is released and other threads are in the ready queue for the object, one of the threads acquires the lock. If other threads are in the waiting queue waiting to acquire the lock, they are not automatically moved to the ready queue when the owner of the lock calls `Exit`. To move one or more waiting threads into the ready queue, call <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> before invoking `Exit`.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the `Exit` method.  
+  
+ [!code-cpp[MonitorExmpl2#1](~/samples/snippets/cpp/VS_Snippets_CLR/MonitorExmpl2/CPP/monitor2.cpp#1)]
+ [!code-csharp[MonitorExmpl2#1](~/samples/snippets/csharp/VS_Snippets_CLR/MonitorExmpl2/CS/monitor2.cs#1)]
+ [!code-vb[MonitorExmpl2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MonitorExmpl2/VB/monitor2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Threading.SynchronizationLockException">The current thread does not own the lock for the specified object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEntered">
+      <MemberSignature Language="C#" Value="public static bool IsEntered (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEntered(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.IsEntered(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to test.</param>
+        <summary>Determines whether the current thread holds the lock on the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the current thread holds the lock on <paramref name="obj" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method works only for locks that are acquired by using the methods of the <xref:System.Threading.Monitor> class, or by using the C# `lock` statement or the Visual Basic `SyncLock` statement, which are implemented with <xref:System.Threading.Monitor>.  
+  
+ Use this method with diagnostic tools, such as the <xref:System.Diagnostics.Debug.Assert%2A> method and the <xref:System.Diagnostics.Contracts.Contract> class, to debug locking issues that involve the <xref:System.Threading.Monitor>class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="obj" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Pulse">
+      <MemberSignature Language="C#" Value="public static void Pulse (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Pulse(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Pulse(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object a thread is waiting for.</param>
+        <summary>Notifies a thread in the waiting queue of a change in the locked object's state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only the current owner of the lock can signal a waiting object using `Pulse`.  
+  
+ The thread that currently owns the lock on the specified object invokes this method to signal the next thread in line for the lock. Upon receiving the pulse, the waiting thread is moved to the ready queue. When the thread that invoked `Pulse` releases the lock, the next thread in the ready queue (which is not necessarily the thread that was pulsed) acquires the lock.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Threading.Monitor> class does not maintain state indicating that the <xref:System.Threading.Monitor.Pulse%2A> method has been called. Thus, if you call <xref:System.Threading.Monitor.Pulse%2A> when no threads are waiting, the next thread that calls <xref:System.Threading.Monitor.Wait%2A> blocks as if <xref:System.Threading.Monitor.Pulse%2A> had never been called. If two threads are using <xref:System.Threading.Monitor.Pulse%2A> and <xref:System.Threading.Monitor.Wait%2A> to interact, this could result in a deadlock. Contrast this with the behavior of the <xref:System.Threading.AutoResetEvent> class: If you signal an <xref:System.Threading.AutoResetEvent> by calling its <xref:System.Threading.EventWaitHandle.Set%2A> method, and there are no threads waiting, the <xref:System.Threading.AutoResetEvent> remains in a signaled state until a thread calls <xref:System.Threading.WaitHandle.WaitOne%2A>, <xref:System.Threading.WaitHandle.WaitAny%2A>, or <xref:System.Threading.WaitHandle.WaitAll%2A>. The <xref:System.Threading.AutoResetEvent> releases that thread and returns to the unsignaled state.  
+  
+ Note that a synchronized object holds several references, including a reference to the thread that currently holds the lock, a reference to the ready queue, which contains the threads that are ready to obtain the lock, and a reference to the waiting queue, which contains the threads that are waiting for notification of a change in the object's state.  
+  
+ The `Pulse`, <xref:System.Threading.Monitor.PulseAll%2A>, and <xref:System.Threading.Monitor.Wait%2A> methods must be invoked from within a synchronized block of code.  
+  
+ To signal multiple threads, use the <xref:System.Threading.Monitor.PulseAll%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Threading.SynchronizationLockException">The calling thread does not own the lock for the specified object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PulseAll">
+      <MemberSignature Language="C#" Value="public static void PulseAll (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PulseAll(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.PulseAll(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object that sends the pulse.</param>
+        <summary>Notifies all waiting threads of a change in the object's state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The thread that currently owns the lock on the specified object invokes this method to signal all threads waiting to acquire the lock on the object. After the signal is sent, the waiting threads are moved to the ready queue. When the thread that invoked `PulseAll` releases the lock, the next thread in the ready queue acquires the lock.  
+  
+ Note that a synchronized object holds several references, including a reference to the thread that currently holds the lock, a reference to the ready queue, which contains the threads that are ready to obtain the lock, and a reference to the waiting queue, which contains the threads that are waiting for notification of a change in the object's state.  
+  
+ The <xref:System.Threading.Monitor.Pulse%2A>, `PulseAll`, and <xref:System.Threading.Monitor.Wait%2A> methods must be invoked from within a synchronized block of code.  
+  
+ The remarks for the <xref:System.Threading.Monitor.Pulse%2A> method explain what happens if <xref:System.Threading.Monitor.Pulse%2A> is called when no threads are waiting.  
+  
+ To signal a single thread, use the `Pulse` method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Threading.SynchronizationLockException">The calling thread does not own the lock for the specified object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEnter">
+      <MemberSignature Language="C#" Value="public static bool TryEnter (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryEnter(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to acquire the lock.</param>
+        <summary>Attempts to acquire an exclusive lock on the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the current thread acquires the lock; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If successful, this method acquires an exclusive lock on the `obj` parameter. This method returns immediately, whether or not the lock is available.  
+  
+ This method is similar to <xref:System.Threading.Monitor.Enter%2A>, but it will never block the current thread. If the thread cannot enter without blocking, the method returns `false,`.  
+  
+> [!NOTE]
+>  Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. For details, see the <xref:System.Threading.Monitor> article.  
+  
+ To ensure that the thread does not enter the critical section, you should examine the method's return value and  execute code in the critical section only if its return value is `true`. The following code fragment shows the pattern used to call this method. Note that you should call <xref:System.Threading.Monitor.Exit%2A> in a `finally` block to ensure that the calling thread releases its lock on the critical section if an exception occurs.  
+  
+ [!code-csharp[System.Threading.Monitor.TryEnter#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/cs/pattern1.cs#1)]
+ [!code-vb[System.Threading.Monitor.TryEnter#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/vb/pattern1.vb#1)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the `TryEnter` method.  
+  
+ [!code-cpp[MonitorExmpl2#1](~/samples/snippets/cpp/VS_Snippets_CLR/MonitorExmpl2/CPP/monitor2.cpp#1)]
+ [!code-csharp[MonitorExmpl2#1](~/samples/snippets/csharp/VS_Snippets_CLR/MonitorExmpl2/CS/monitor2.cs#1)]
+ [!code-vb[MonitorExmpl2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/MonitorExmpl2/VB/monitor2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEnter">
+      <MemberSignature Language="C#" Value="public static void TryEnter (object obj, ref bool lockTaken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, bool lockTaken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="lockTaken" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to acquire the lock.</param>
+        <param name="lockTaken">The result of the attempt to acquire the lock, passed by reference. The input must be <see langword="false" />. The output is <see langword="true" /> if the lock is acquired; otherwise, the output is <see langword="false" />. The output is set even if an exception occurs during the attempt to acquire the lock.</param>
+        <summary>Attempts to acquire an exclusive lock on the specified object, and atomically sets a value that indicates whether the lock was taken.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If successful, this method acquires an exclusive lock on the `obj` parameter. This method returns immediately, whether or not the lock is available.  
+  
+ If the lock was not taken because an exception was thrown, the variable specified for the `lockTaken` parameter is `false` after this method ends. This allows the program to determine, in all cases, whether it is necessary to release the lock.  
+  
+ This method is similar to <xref:System.Threading.Monitor.Enter%28System.Object%2CSystem.Boolean%40%29>, but it will never block the current thread. If the thread cannot enter without blocking, the `lockTaken` argument is set to `false` when the method returns.  
+  
+> [!NOTE]
+>  Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. For more information, see the <xref:System.Threading.Monitor> article.  
+  
+ To ensure that the thread does not enter the critical section, you should examine the value of `lockTaken` and  execute code in the critical section only if its value is `true`. The following code fragment shows the pattern used to call this method. Note that you should call <xref:System.Threading.Monitor.Exit%2A> in a `finally` block to ensure that the calling thread releases its lock on the critical section if an exception occurs.  
+  
+ [!code-csharp[System.Threading.Monitor.TryEnter#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/cs/pattern1.cs#2)]
+ [!code-vb[System.Threading.Monitor.TryEnter#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/vb/pattern1.vb#2)]  
+  
+   
+  
+## Examples  
+ The following code shows the basic pattern for using the <xref:System.Threading.Monitor.TryEnter%28System.Object%2CSystem.Boolean%40%29> method overload. This overload always sets the value of the variable that is passed to the `ref` parameter (`ByRef` in Visual Basic) `lockTaken`, even if the method throws an exception, so the value of the variable is a reliable way to test whether the lock has to be released.  
+  
+ [!code-csharp[System.Threading.Monitor.Enter#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.monitor.enter/cs/example.cs#3)]
+ [!code-vb[System.Threading.Monitor.Enter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.monitor.enter/vb/example.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The input to <paramref name="lockTaken" /> is <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEnter">
+      <MemberSignature Language="C#" Value="public static bool TryEnter (object obj, int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryEnter(object obj, int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to acquire the lock.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait for the lock.</param>
+        <summary>Attempts, for the specified number of milliseconds, to acquire an exclusive lock on the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the current thread acquires the lock; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `millisecondsTimeout` parameter equals <xref:System.Threading.Timeout.Infinite>, this method is equivalent to <xref:System.Threading.Monitor.Enter%2A>. If `millisecondsTimeout` equals 0, this method is equivalent to <xref:System.Threading.Monitor.TryEnter%2A>.  
+  
+> [!NOTE]
+>  Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. For details, see the <xref:System.Threading.Monitor> article.  
+  
+ To ensure that the thread does not enter the critical section, you should examine the method's return value and  execute code in the critical section only if its return value is `true`. The following code fragment shows the pattern used to call this method. Note that you should call <xref:System.Threading.Monitor.Exit%2A> in a `finally` block to ensure that the calling thread releases its lock on the critical section if an exception occurs.  
+  
+ [!code-csharp[System.Threading.Monitor.TryEnter#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/cs/pattern1.cs#3)]
+ [!code-vb[System.Threading.Monitor.TryEnter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/vb/pattern1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is negative, and not equal to <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEnter">
+      <MemberSignature Language="C#" Value="public static bool TryEnter (object obj, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryEnter(object obj, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to acquire the lock.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> representing the amount of time to wait for the lock. A value of –1 millisecond specifies an infinite wait.</param>
+        <summary>Attempts, for the specified amount of time, to acquire an exclusive lock on the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the current thread acquires the lock; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of the `timeout` parameter converted to milliseconds equals –1, this method is equivalent to <xref:System.Threading.Monitor.Enter%2A>. If the value of `timeout` equals 0, this method is equivalent to <xref:System.Threading.Monitor.TryEnter%2A>.  
+  
+> [!NOTE]
+>  Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. For details, see the <xref:System.Threading.Monitor> class topic.  
+  
+ To ensure that the thread does not enter the critical section, you should examine the method's return value and  execute code in the critical section only if its return value is `true`. The following code fragment shows the pattern used to call this method. Note that you should call <xref:System.Threading.Monitor.Exit%2A> in a `finally` block to ensure that the calling thread releases its lock on the critical section if an exception occurs.  
+  
+ [!code-csharp[System.Threading.Monitor.TryEnter#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/cs/pattern1.cs#5)]
+ [!code-vb[System.Threading.Monitor.TryEnter#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/vb/pattern1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="timeout" /> in milliseconds is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> (–1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEnter">
+      <MemberSignature Language="C#" Value="public static void TryEnter (object obj, int millisecondsTimeout, ref bool lockTaken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, int32 millisecondsTimeout, bool lockTaken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+        <Parameter Name="lockTaken" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to acquire the lock.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait for the lock.</param>
+        <param name="lockTaken">The result of the attempt to acquire the lock, passed by reference. The input must be <see langword="false" />. The output is <see langword="true" /> if the lock is acquired; otherwise, the output is <see langword="false" />. The output is set even if an exception occurs during the attempt to acquire the lock.</param>
+        <summary>Attempts, for the specified number of milliseconds, to acquire an exclusive lock on the specified object, and atomically sets a value that indicates whether the lock was taken.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `millisecondsTimeout` parameter equals <xref:System.Threading.Timeout.Infinite>, this method is equivalent to <xref:System.Threading.Monitor.Enter%28System.Object%29>. If `millisecondsTimeout` equals 0, this method is equivalent to <xref:System.Threading.Monitor.TryEnter%28System.Object%29>.  
+  
+ If the lock was not taken because an exception was thrown, the variable specified for the `lockTaken` parameter is `false` after this method ends. This allows the program to determine, in all cases, whether it is necessary to release the lock.  
+  
+> [!NOTE]
+>  Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. For more information, see the <xref:System.Threading.Monitor> class topic.  
+  
+ To ensure that the thread does not enter the critical section, you should examine the value of `lockTaken` and  execute code in the critical section only if its value is `true`. The following code fragment shows the pattern used to call this method. Note that you should call <xref:System.Threading.Monitor.Exit%2A> in a `finally` block to ensure that the calling thread releases its lock on the critical section if an exception occurs.  
+  
+ [!code-csharp[System.Threading.Monitor.TryEnter#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/cs/pattern1.cs#4)]
+ [!code-vb[System.Threading.Monitor.TryEnter#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/vb/pattern1.vb#4)]  
+  
+   
+  
+## Examples  
+ The following code shows the basic pattern for using the <xref:System.Threading.Monitor.TryEnter%28System.Object%2CSystem.Boolean%40%29> method overload. This overload always sets the value of the variable that is passed to the `ref` parameter (`ByRef` in Visual Basic) `lockTaken`, even if the method throws an exception, so the value of the variable is a reliable way to test whether the lock has to be released.  
+  
+ [!code-csharp[System.Threading.Monitor.Enter#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.monitor.enter/cs/example.cs#4)]
+ [!code-vb[System.Threading.Monitor.Enter#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.monitor.enter/vb/example.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The input to <paramref name="lockTaken" /> is <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="millisecondsTimeout" /> is negative, and not equal to <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEnter">
+      <MemberSignature Language="C#" Value="public static void TryEnter (object obj, TimeSpan timeout, ref bool lockTaken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, valuetype System.TimeSpan timeout, bool lockTaken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.TimeSpan,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="lockTaken" Type="System.Boolean&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to acquire the lock.</param>
+        <param name="timeout">The amount of time to wait for the lock. A value of –1 millisecond specifies an infinite wait.</param>
+        <param name="lockTaken">The result of the attempt to acquire the lock, passed by reference. The input must be <see langword="false" />. The output is <see langword="true" /> if the lock is acquired; otherwise, the output is <see langword="false" />. The output is set even if an exception occurs during the attempt to acquire the lock.</param>
+        <summary>Attempts, for the specified amount of time, to acquire an exclusive lock on the specified object, and atomically sets a value that indicates whether the lock was taken.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of the `timeout` parameter converted to milliseconds equals –1, this method is equivalent to <xref:System.Threading.Monitor.Enter%28System.Object%29>. If the value of `timeout` equals 0, this method is equivalent to <xref:System.Threading.Monitor.TryEnter%28System.Object%29>.  
+  
+ If the lock was not taken because an exception was thrown, the variable specified for the `lockTaken` parameter is `false` after this method ends. This allows the program to determine, in all cases, whether it is necessary to release the lock.  
+  
+> [!NOTE]
+>  Use <xref:System.Threading.Monitor> to lock objects (that is, reference types), not value types. For more information, see the <xref:System.Threading.Monitor> class topic.  
+  
+ To ensure that the thread does not enter the critical section, you should examine the value of `lockTaken` and  execute code in the critical section only if its value is `true`. The following code fragment shows the pattern used to call this method. Note that you should call <xref:System.Threading.Monitor.Exit%2A> in a `finally` block to ensure that the calling thread releases its lock on the critical section if an exception occurs.  
+  
+ [!code-csharp[System.Threading.Monitor.TryEnter#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/cs/pattern1.cs#6)]
+ [!code-vb[System.Threading.Monitor.TryEnter#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.Threading.Monitor.TryEnter/vb/pattern1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The input to <paramref name="lockTaken" /> is <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="timeout" /> in milliseconds is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> (–1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public static bool Wait (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to wait.</param>
+        <summary>Releases the lock on an object and blocks the current thread until it reacquires the lock.</summary>
+        <returns>
+          <see langword="true" /> if the call returned because the caller reacquired the lock for the specified object. This method does not return if the lock is not reacquired.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The thread that currently owns the lock on the specified object invokes this method in order to release the object so that another thread can access it. The caller is blocked while waiting to reacquire the lock. This method is called when the caller needs to wait for a state change that will occur as a result of another thread's operations.  
+  
+ When a thread calls `Wait`, it releases the lock on the object and enters the object's waiting queue. The next thread in the object's ready queue (if there is one) acquires the lock and has exclusive use of the object. All threads that call `Wait` remain in the waiting queue until they receive a signal from <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A>, sent by the owner of the lock. If `Pulse` is sent, only the thread at the head of the waiting queue is affected. If `PulseAll` is sent, all threads that are waiting for the object are affected. When the signal is received, one or more threads leave the waiting queue and enter the ready queue. A thread in the ready queue is permitted to reacquire the lock.  
+  
+ This method returns when the calling thread reacquires the lock on the object. Note that this method blocks indefinitely if the holder of the lock does not call `Pulse` or `PulseAll`.  
+  
+ The caller executes `Wait` once, regardless of the number of times <xref:System.Threading.Monitor.Enter%2A> has been invoked for the specified object. Conceptually, the `Wait` method stores the number of times the caller invoked `Enter` on the object and invokes `Exit` as many times as necessary to fully release the locked object. The caller then blocks while waiting to reacquire the object. When the caller reacquires the lock, the system calls `Enter` as many times as necessary to restore the saved `Enter` count for the caller. Calling `Wait` releases the lock for the specified object only; if the caller is the owner of locks on other objects, these locks are not released.  
+  
+ Note that a synchronized object holds several references, including a reference to the thread that currently holds the lock, a reference to the ready queue, which contains the threads that are ready to obtain the lock, and a reference to the waiting queue, which contains the threads that are waiting for notification of a change in the object's state.  
+  
+ The <xref:System.Threading.Monitor.Pulse%2A>, <xref:System.Threading.Monitor.PulseAll%2A>, and `Wait` methods must be invoked from within a synchronized block of code.  
+  
+ The remarks for the <xref:System.Threading.Monitor.Pulse%2A> method explain what happens if <xref:System.Threading.Monitor.Pulse%2A> is called when no threads are waiting.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Threading.SynchronizationLockException">The calling thread does not own the lock for the specified object.</exception>
+        <exception cref="T:System.Threading.ThreadInterruptedException">The thread that invokes <see langword="Wait" /> is later interrupted from the waiting state. This happens when another thread calls this thread's <see cref="M:System.Threading.Thread.Interrupt" /> method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public static bool Wait (object obj, int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj, int32 millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to wait.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait before the thread enters the ready queue.</param>
+        <summary>Releases the lock on an object and blocks the current thread until it reacquires the lock. If the specified time-out interval elapses, the thread enters the ready queue.</summary>
+        <returns>
+          <see langword="true" /> if the lock was reacquired before the specified time elapsed; <see langword="false" /> if the lock was reacquired after the specified time elapsed. The method does not return until the lock is reacquired.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not return until it reacquires an exclusive lock on the `obj` parameter.  
+  
+ The thread that currently owns the lock on the specified object invokes this method in order to release the object so that another thread can access it. The caller is blocked while waiting to reacquire the lock. This method is called when the caller needs to wait for a state change that will occur as a result of another thread's operations.  
+  
+ The time-out ensures that the current thread does not block indefinitely if another thread releases the lock without first calling the <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method. It also moves the thread to the ready queue, bypassing other threads ahead of it in the wait queue, so that it can reacquire the lock sooner. The thread can test the return value of the <xref:System.Threading.Monitor.Wait%2A> method to determine whether it reacquired the lock prior to the time-out. The thread can evaluate the conditions that caused it to enter the wait, and if necessary call the <xref:System.Threading.Monitor.Wait%2A> method again.  
+  
+ When a thread calls `Wait`, it releases the lock on the object and enters the object's waiting queue. The next thread in the object's ready queue (if there is one) acquires the lock and has exclusive use of the object. The thread that invoked `Wait` remains in the waiting queue until either a thread that holds the lock invokes <xref:System.Threading.Monitor.PulseAll%2A>, or it is the next in the queue and a thread that holds the lock invokes <xref:System.Threading.Monitor.Pulse%2A>. However, if `millisecondsTimeout` elapses before another thread invokes this object's <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method, the original thread is moved to the ready queue in order to regain the lock.  
+  
+> [!NOTE]
+>  If <xref:System.Threading.Timeout.Infinite> is specified for the `millisecondsTimeout` parameter, this method blocks indefinitely unless the holder of the lock calls <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A>. If `millisecondsTimeout` equals 0, the thread that calls `Wait` releases the lock and then immediately enters the ready queue in order to regain the lock.  
+  
+ The caller executes `Wait` once, regardless of the number of times <xref:System.Threading.Monitor.Enter%2A> has been invoked for the specified object. Conceptually, the `Wait` method stores the number of times the caller invoked <xref:System.Threading.Monitor.Enter%2A> on the object and invokes <xref:System.Threading.Monitor.Exit%2A> as many times as necessary to fully release the locked object. The caller then blocks while waiting to reacquire the object. When the caller reacquires the lock, the system calls <xref:System.Threading.Monitor.Enter%2A> as many times as necessary to restore the saved <xref:System.Threading.Monitor.Enter%2A> count for the caller. Calling `Wait` releases the lock for the specified object only; if the caller is the owner of locks on other objects, these locks are not released.  
+  
+> [!NOTE]
+>  A synchronized object holds several references, including a reference to the thread that currently holds the lock, a reference to the ready queue, which contains the threads that are ready to obtain the lock, and a reference to the waiting queue, which contains the threads that are waiting for notification of a change in the object's state.  
+  
+ The <xref:System.Threading.Monitor.Pulse%2A>, <xref:System.Threading.Monitor.PulseAll%2A>, and `Wait` methods must be invoked from within a synchronized block of code.  
+  
+ The remarks for the <xref:System.Threading.Monitor.Pulse%2A> method explain what happens if <xref:System.Threading.Monitor.Pulse%2A> is called when no threads are waiting.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Threading.SynchronizationLockException">The calling thread does not own the lock for the specified object.</exception>
+        <exception cref="T:System.Threading.ThreadInterruptedException">The thread that invokes <see langword="Wait" /> is later interrupted from the waiting state. This happens when another thread calls this thread's <see cref="M:System.Threading.Thread.Interrupt" /> method.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="millisecondsTimeout" /> parameter is negative, and is not equal to <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public static bool Wait (object obj, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to wait.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> representing the amount of time to wait before the thread enters the ready queue.</param>
+        <summary>Releases the lock on an object and blocks the current thread until it reacquires the lock. If the specified time-out interval elapses, the thread enters the ready queue.</summary>
+        <returns>
+          <see langword="true" /> if the lock was reacquired before the specified time elapsed; <see langword="false" /> if the lock was reacquired after the specified time elapsed. The method does not return until the lock is reacquired.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not return until it reacquires an exclusive lock on the `obj` parameter.  
+  
+ The thread that currently owns the lock on the specified object invokes this method in order to release the object so that another thread can access it. The caller is blocked while waiting to reacquire the lock. This method is called when the caller needs to wait for a state change that will occur as a result of another thread's operations.  
+  
+ The time-out ensures that the current thread does not block indefinitely if another thread releases the lock without first calling the <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method. It also moves the thread to the ready queue, bypassing other threads ahead of it in the wait queue, so that it can reacquire the lock sooner. The thread can test the return value of the <xref:System.Threading.Monitor.Wait%2A> method to determine whether it reacquired the lock prior to the time-out. The thread can evaluate the conditions that caused it to enter the wait, and if necessary call the <xref:System.Threading.Monitor.Wait%2A> method again.  
+  
+ When a thread calls `Wait`, it releases the lock on the object and enters the object's waiting queue. The next thread in the object's ready queue (if there is one) acquires the lock and has exclusive use of the object. The thread that invoked `Wait` remains in the waiting queue until either a thread that holds the lock invokes <xref:System.Threading.Monitor.PulseAll%2A>, or it is the next in the queue and a thread that holds the lock invokes <xref:System.Threading.Monitor.Pulse%2A>. However, if `timeout` elapses before another thread invokes this object's <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method, the original thread is moved to the ready queue in order to regain the lock.  
+  
+> [!NOTE]
+>  If a <xref:System.TimeSpan> representing –1 millisecond is specified for the `timeout` parameter, this method blocks indefinitely unless the holder of the lock calls <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A>. If `timeout` is 0 milliseconds, the thread that calls `Wait` releases the lock and then immediately enters the ready queue in order to regain the lock.  
+  
+ The caller executes `Wait` once, regardless of the number of times <xref:System.Threading.Monitor.Enter%2A> has been invoked for the specified object. Conceptually, the `Wait` method stores the number of times the caller invoked <xref:System.Threading.Monitor.Enter%2A> on the object and invokes <xref:System.Threading.Monitor.Exit%2A> as many times as necessary to fully release the locked object. The caller then blocks while waiting to reacquire the object. When the caller reacquires the lock, the system calls <xref:System.Threading.Monitor.Enter%2A> as many times as necessary to restore the saved <xref:System.Threading.Monitor.Enter%2A> count for the caller. Calling `Wait` releases the lock for the specified object only; if the caller is the owner of locks on other objects, these locks are not released.  
+  
+> [!NOTE]
+>  A synchronized object holds several references, including a reference to the thread that currently holds the lock, a reference to the ready queue, which contains the threads that are ready to obtain the lock, and a reference to the waiting queue, which contains the threads that are waiting for notification of a change in the object's state.  
+  
+ The <xref:System.Threading.Monitor.Pulse%2A>, <xref:System.Threading.Monitor.PulseAll%2A>, and `Wait` methods must be invoked from within a synchronized block of code.  
+  
+ The remarks for the <xref:System.Threading.Monitor.Pulse%2A> method explain what happens if <xref:System.Threading.Monitor.Pulse%2A> is called when no threads are waiting.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Threading.SynchronizationLockException">The calling thread does not own the lock for the specified object.</exception>
+        <exception cref="T:System.Threading.ThreadInterruptedException">The thread that invokes <see langword="Wait" /> is later interrupted from the waiting state. This happens when another thread calls this thread's <see cref="M:System.Threading.Thread.Interrupt" /> method.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="timeout" /> parameter in milliseconds is negative and does not represent <see cref="F:System.Threading.Timeout.Infinite" /> (–1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public static bool Wait (object obj, int millisecondsTimeout, bool exitContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj, int32 millisecondsTimeout, bool exitContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+        <Parameter Name="exitContext" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to wait.</param>
+        <param name="millisecondsTimeout">The number of milliseconds to wait before the thread enters the ready queue.</param>
+        <param name="exitContext">
+          <see langword="true" /> to exit and reacquire the synchronization domain for the context (if in a synchronized context) before the wait; otherwise, <see langword="false" />.</param>
+        <summary>Releases the lock on an object and blocks the current thread until it reacquires the lock. If the specified time-out interval elapses, the thread enters the ready queue. This method also specifies whether the synchronization domain for the context (if in a synchronized context) is exited before the wait and reacquired afterward.</summary>
+        <returns>
+          <see langword="true" /> if the lock was reacquired before the specified time elapsed; <see langword="false" /> if the lock was reacquired after the specified time elapsed. The method does not return until the lock is reacquired.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not return until it reacquires an exclusive lock on the `obj` parameter.  
+  
+ The thread that currently owns the lock on the specified object invokes this method in order to release the object so that another thread can access it. The caller is blocked while waiting to reacquire the lock. This method is called when the caller needs to wait for a state change that will occur as a result of another thread's operations.  
+  
+ The time-out ensures that the current thread does not block indefinitely if another thread releases the lock without first calling the <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method. It also moves the thread to the ready queue, bypassing other threads ahead of it in the wait queue, so that it can reacquire the lock sooner. The thread can test the return value of the <xref:System.Threading.Monitor.Wait%2A> method to determine whether it reacquired the lock prior to the time-out. The thread can evaluate the conditions that caused it to enter the wait, and if necessary call the <xref:System.Threading.Monitor.Wait%2A> method again.  
+  
+ When a thread calls `Wait`, it releases the lock and enters the waiting queue. At this point, the next thread in the ready queue (if there is one) is allowed to take control of the lock. The thread that invoked `Wait` remains in the waiting queue until either a thread that holds the lock invokes <xref:System.Threading.Monitor.PulseAll%2A>, or it is the next in the queue and a thread that holds the lock invokes <xref:System.Threading.Monitor.Pulse%2A>. However, if `millisecondsTimeout` elapses before another thread invokes this object's <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method, the original thread is moved to the ready queue in order to regain the lock.  
+  
+> [!NOTE]
+>  If <xref:System.Threading.Timeout.Infinite> is specified for the `millisecondsTimeout` parameter, this method blocks indefinitely unless the holder of the lock calls <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A>. If `millisecondsTimeout` equals 0, the thread that calls `Wait` releases the lock and then immediately enters the ready queue in order to regain the lock.  
+  
+ The caller executes `Wait` once, regardless of the number of times <xref:System.Threading.Monitor.Enter%2A> has been invoked for the specified object. Conceptually, the `Wait` method stores the number of times the caller invoked <xref:System.Threading.Monitor.Enter%2A> on the object and invokes <xref:System.Threading.Monitor.Exit%2A> as many times as necessary to fully release the locked object. The caller then blocks while waiting to reacquire the object. When the caller reacquires the lock, the system calls <xref:System.Threading.Monitor.Enter%2A> as many times as necessary to restore the saved <xref:System.Threading.Monitor.Enter%2A> count for the caller. Calling `Wait` releases the lock for the specified object only; if the caller is the owner of locks on other objects, these locks are not released.  
+  
+> [!NOTE]
+>  A synchronized object holds several references, including a reference to the thread that currently holds the lock, a reference to the ready queue, which contains the threads that are ready to obtain the lock, and a reference to the waiting queue, which contains the threads that are waiting for notification of a change in the object's state.  
+  
+ The <xref:System.Threading.Monitor.Pulse%2A>, <xref:System.Threading.Monitor.PulseAll%2A>, and `Wait` methods must be invoked from within a synchronized block of code.  
+  
+ The remarks for the <xref:System.Threading.Monitor.Pulse%2A> method explain what happens if <xref:System.Threading.Monitor.Pulse%2A> is called when no threads are waiting.  
+  
+## Notes on Exiting the Context  
+ The`exitContext` parameter has no effect unless the <xref:System.Threading.Monitor.Wait%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that is not derived from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
+  
+ When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the <xref:System.Threading.Monitor.Wait%2A> method. It returns to the original nondefault context after the call to the <xref:System.Threading.Monitor.Wait%2A> method completes.  
+  
+ This can be useful when the context-bound class has the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> attribute applied. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the <xref:System.Threading.Monitor.Wait%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the <xref:System.Threading.Monitor.Wait%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Threading.SynchronizationLockException">
+          <see langword="Wait" /> is not invoked from within a synchronized block of code.</exception>
+        <exception cref="T:System.Threading.ThreadInterruptedException">The thread that invokes <see langword="Wait" /> is later interrupted from the waiting state. This happens when another thread calls this thread's <see cref="M:System.Threading.Thread.Interrupt" /> method.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value of the <paramref name="millisecondsTimeout" /> parameter is negative, and is not equal to <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Wait">
+      <MemberSignature Language="C#" Value="public static bool Wait (object obj, TimeSpan timeout, bool exitContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj, valuetype System.TimeSpan timeout, bool exitContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object,System.TimeSpan,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="exitContext" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object on which to wait.</param>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> representing the amount of time to wait before the thread enters the ready queue.</param>
+        <param name="exitContext">
+          <see langword="true" /> to exit and reacquire the synchronization domain for the context (if in a synchronized context) before the wait; otherwise, <see langword="false" />.</param>
+        <summary>Releases the lock on an object and blocks the current thread until it reacquires the lock. If the specified time-out interval elapses, the thread enters the ready queue. Optionally exits the synchronization domain for the synchronized context before the wait and reacquires the domain afterward.</summary>
+        <returns>
+          <see langword="true" /> if the lock was reacquired before the specified time elapsed; <see langword="false" /> if the lock was reacquired after the specified time elapsed. The method does not return until the lock is reacquired.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not return until it reacquires an exclusive lock on the `obj` parameter.  
+  
+ The thread that currently owns the lock on the specified object invokes this method in order to release the object so that another thread can access it. The caller is blocked while waiting to reacquire the lock. This method is called when the caller needs to wait for a state change that will occur as a result of another thread's operations.  
+  
+ The time-out ensures that the current thread does not block indefinitely if another thread releases the lock without first calling the <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method. It also moves the thread to the ready queue, bypassing other threads ahead of it in the wait queue, so that it can reacquire the lock sooner. The thread can test the return value of the <xref:System.Threading.Monitor.Wait%2A> method to determine whether it reacquired the lock prior to the time-out. The thread can evaluate the conditions that caused it to enter the wait, and if necessary call the <xref:System.Threading.Monitor.Wait%2A> method again.  
+  
+ When a thread calls `Wait`, it releases the lock and enters the waiting queue. At this point, the next thread in the ready queue (if there is one) is allowed to take control of the lock. The thread that invoked `Wait` remains in the waiting queue until either a thread that holds the lock invokes <xref:System.Threading.Monitor.PulseAll%2A>, or it is the next in the queue and a thread that holds the lock invokes <xref:System.Threading.Monitor.Pulse%2A>. However, if `timeout` milliseconds elapse before another thread invokes this object's <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A> method, the original thread is moved to the ready queue in order to regain the lock.  
+  
+> [!NOTE]
+>  If a <xref:System.TimeSpan> representing -1 millisecond is specified for the `timeout` parameter, this method blocks indefinitely unless the holder of the lock calls <xref:System.Threading.Monitor.Pulse%2A> or <xref:System.Threading.Monitor.PulseAll%2A>. If `timeout` is 0 milliseconds, the thread that calls `Wait` releases the lock and then immediately enters the ready queue in order to regain the lock.  
+  
+ The caller executes `Wait` once, regardless of the number of times <xref:System.Threading.Monitor.Enter%2A> has been invoked for the specified object. Conceptually, the `Wait` method stores the number of times the caller invoked <xref:System.Threading.Monitor.Enter%2A> on the object and invokes <xref:System.Threading.Monitor.Exit%2A> as many times as necessary to fully release the locked object. The caller then blocks while waiting to reacquire the object. When the caller reacquires the lock, the system calls <xref:System.Threading.Monitor.Enter%2A> as many times as necessary to restore the saved <xref:System.Threading.Monitor.Enter%2A> count for the caller. Calling `Wait` releases the lock for the specified object only; if the caller is the owner of locks on other objects, these locks are not released.  
+  
+> [!NOTE]
+>  A synchronized object holds several references, including a reference to the thread that currently holds the lock, a reference to the ready queue, which contains the threads that are ready to obtain the lock, and a reference to the waiting queue, which contains the threads that are waiting for notification of a change in the object's state.  
+  
+ The <xref:System.Threading.Monitor.Pulse%2A>, <xref:System.Threading.Monitor.PulseAll%2A>, and `Wait` methods must be invoked from within a synchronized block of code.  
+  
+ The remarks for the <xref:System.Threading.Monitor.Pulse%2A> method explain what happens if <xref:System.Threading.Monitor.Pulse%2A> is called when no threads are waiting.  
+  
+## Notes on Exiting the Context  
+ The`exitContext` parameter has no effect unless the <xref:System.Threading.Monitor.Wait%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that is not derived from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
+  
+ When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the <xref:System.Threading.Monitor.Wait%2A> method. It returns to the original nondefault context after the call to the <xref:System.Threading.Monitor.Wait%2A> method completes.  
+  
+ This can be useful when the context-bound class has the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> attribute applied. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the <xref:System.Threading.Monitor.Wait%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the <xref:System.Threading.Monitor.Wait%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="obj" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Threading.SynchronizationLockException">
+          <see langword="Wait" /> is not invoked from within a synchronized block of code.</exception>
+        <exception cref="T:System.Threading.ThreadInterruptedException">The thread that invokes Wait is later interrupted from the waiting state. This happens when another thread calls this thread's <see cref="M:System.Threading.Thread.Interrupt" /> method.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="timeout" /> parameter is negative and does not represent <see cref="F:System.Threading.Timeout.Infinite" /> (–1 millisecond), or is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

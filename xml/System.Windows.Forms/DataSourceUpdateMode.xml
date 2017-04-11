@@ -1,0 +1,86 @@
+<Type Name="DataSourceUpdateMode" FullName="System.Windows.Forms.DataSourceUpdateMode">
+  <TypeSignature Language="C#" Value="public enum DataSourceUpdateMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataSourceUpdateMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataSourceUpdateMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies when a data source is updated when changes occur in the bound control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a control is bound to a data source using a <xref:System.Windows.Forms.Binding> object, you can specify when an update to the data source will occur using the <xref:System.Windows.Forms.DataSourceUpdateMode> enumeration.  
+  
+ When the update mode is Never, you can force the data source to be updated by using the <xref:System.Windows.Forms.Binding.WriteValue%2A> method.  
+  
+> [!NOTE]
+>  Even when the update mode is set to Never, the data source will be updated when the binding is first created, so at that least one update will always occur.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataSourceUpdateMode Never = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataSourceUpdateMode.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataSourceUpdateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data source is never updated and values entered into the control are not parsed, validated or re-formatted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="OnPropertyChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataSourceUpdateMode OnPropertyChanged = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataSourceUpdateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data source is updated whenever the value of the control property changes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidation">
+      <MemberSignature Language="C#" Value="OnValidation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataSourceUpdateMode OnValidation = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataSourceUpdateMode.OnValidation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataSourceUpdateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data source is updated when the control property is validated,</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After validation, the value in the control property will also be re-formatted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,54 @@
+<Type Name="ParameterXPathQueryGenerator" FullName="System.ServiceModel.Description.ParameterXPathQueryGenerator">
+  <TypeSignature Language="C#" Value="public static class ParameterXPathQueryGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ParameterXPathQueryGenerator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ParameterXPathQueryGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables the creation of an XPath from a data contract.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFromDataContractSerializer">
+      <MemberSignature Language="C#" Value="public static string CreateFromDataContractSerializer (System.Xml.Linq.XName serviceContractName, string operationName, string parameterName, bool isReply, Type type, System.Reflection.MemberInfo[] pathToMember, out System.Xml.XmlNamespaceManager namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Xml.Linq.XName serviceContractName, string operationName, string parameterName, bool isReply, class System.Type type, class System.Reflection.MemberInfo[] pathToMember, class System.Xml.XmlNamespaceManager namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ParameterXPathQueryGenerator.CreateFromDataContractSerializer(System.Xml.Linq.XName,System.String,System.String,System.Boolean,System.Type,System.Reflection.MemberInfo[],System.Xml.XmlNamespaceManager@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceContractName" Type="System.Xml.Linq.XName" />
+        <Parameter Name="operationName" Type="System.String" />
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="isReply" Type="System.Boolean" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="pathToMember" Type="System.Reflection.MemberInfo[]" />
+        <Parameter Name="namespaces" Type="System.Xml.XmlNamespaceManager&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="serviceContractName">The name of the service contract XML element that contains the service contract namespace.</param>
+        <param name="operationName">The name of the service operation.</param>
+        <param name="parameterName">The name of the service operation parameter.</param>
+        <param name="isReply">
+          <see langword="true" /> to indicate that the service operation is a response; otherwise, <see langword="false" />.</param>
+        <param name="type">The data contract.</param>
+        <param name="pathToMember">The metadata, generated using the <see cref="M:System.Type.GetMember(System.String)" /> method of the <see cref="T:System.Type" /> class, which points to the specific data member used to generated the query.</param>
+        <param name="namespaces">When this method returns, contains the XML namespaces and their prefixes found in the data contract. Instantiate this parameter before passing it in this method.</param>
+        <summary>Creates an XPath using the specified operation name, parameter name, and data contract information.</summary>
+        <returns>The XPath generated from the specified operation name, parameter name, and data contract information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

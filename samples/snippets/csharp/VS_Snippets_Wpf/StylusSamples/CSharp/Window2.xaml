@@ -1,0 +1,13 @@
+﻿<Window x:Class="StylusSamples.Window2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StylusSamples"
+    >
+	<Canvas Name="myCanvas" Background="Blue" >
+		<InkCanvas Name="inkCanvas1"
+            Background="#FFFFC0"
+			MinHeight="300">
+		</InkCanvas>
+		<!--<Button Name="button1" >Move me</Button>-->
+	</Canvas>
+</Window>

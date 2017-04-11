@@ -1,0 +1,184 @@
+<Type Name="IReferenceService" FullName="System.ComponentModel.Design.IReferenceService">
+  <TypeSignature Language="C#" Value="public interface IReferenceService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReferenceService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IReferenceService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for obtaining references to objects within a project by name or type, obtaining the name of a specified object, and for locating the parent of a specified object within a designer project.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IReferenceService> interface provides the following methods:  
+  
+-   The <xref:System.ComponentModel.Design.IReferenceService.GetReference%2A> method returns the component with the specified name, or `null` if no component with the specified name was found.  
+  
+-   The <xref:System.ComponentModel.Design.IReferenceService.GetName%2A> method returns the name associated with the specified component.  
+  
+-   The <xref:System.ComponentModel.Design.IReferenceService.GetComponent%2A> method returns the parent container of the specified component.  
+  
+-   The <xref:System.ComponentModel.Design.IReferenceService.GetReferences%2A> method returns an array of references to all project components, or all project components of an optionally specified type.  
+  
+   
+  
+## Examples  
+ The following example control uses the <xref:System.ComponentModel.Design.IReferenceService.GetReferences%2A> method of the <xref:System.ComponentModel.Design.IReferenceService> interface to obtain a list of components in the current design mode project of the type of the currently selected component.  
+  
+ [!code-cpp[IReferenceServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IReferenceServiceExample/CPP/ireferenceserviceexample.cpp#1)]
+ [!code-csharp[IReferenceServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IReferenceServiceExample/CS/ireferenceserviceexample.cs#1)]
+ [!code-vb[IReferenceServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IReferenceServiceExample/VB/ireferenceserviceexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetComponent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent GetComponent (object reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.IComponent GetComponent(object reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetComponent(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The object to retrieve the parent component for.</param>
+        <summary>Gets the component that contains the specified component.</summary>
+        <returns>The base <see cref="T:System.ComponentModel.IComponent" /> that contains the specified object, or <see langword="null" /> if no parent component exists.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public string GetName (object reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetName(object reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetName(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The object to return the name of.</param>
+        <summary>Gets the name of the specified component.</summary>
+        <returns>The name of the object referenced, or <see langword="null" /> if the object reference is not valid.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of each component sited in a design time project is set in the <xref:System.ComponentModel.ISite.Name%2A> property of the <xref:System.ComponentModel.ISite> where the component is sited.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReference">
+      <MemberSignature Language="C#" Value="public object GetReference (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetReference(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReference(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the component to return a reference to.</param>
+        <summary>Gets a reference to the component whose name matches the specified name.</summary>
+        <returns>An object the specified name refers to, or <see langword="null" /> if no reference is found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferences">
+      <MemberSignature Language="C#" Value="public object[] GetReferences ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetReferences() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReferences" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets all available references to project components.</summary>
+        <returns>An array of all objects with references available to the <see cref="T:System.ComponentModel.Design.IReferenceService" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferences">
+      <MemberSignature Language="C#" Value="public object[] GetReferences (Type baseType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetReferences(class System.Type baseType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReferences(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="baseType">The type of object to return references to instances of.</param>
+        <summary>Gets all available references to components of the specified type.</summary>
+        <returns>An array of all available objects of the specified type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

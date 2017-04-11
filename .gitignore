@@ -212,6 +212,7 @@ _site/
 api_src/
 api/
 _themes/
+_themes.pdf/
 log/
 .optemp/
 .openpublishing.buildcore.ps1
@@ -219,3 +220,6 @@ log/
 spell.json
 samples/framework/docker/MVCRandomAnswerGenerator/containerImage
 .DS_Store
+_dependentPackages/
+!/xml/System.IO.Log/
+!/xml/System.Net.Cache/

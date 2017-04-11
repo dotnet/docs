@@ -1,0 +1,18 @@
+<Type Name="Block" FullName="Microsoft.JScript.Block">
+  <TypeSignature Language="C#" Value="public sealed class Block : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Block extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Block" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a block in JScript. This class is used mainly by the <see cref="T:Microsoft.JScript.JSParser" /> to create <see cref="T:Microsoft.JScript.Block" /> objects when it parses code. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,44 @@
+<Type Name="CodePagesEncodingProvider" FullName="System.Text.CodePagesEncodingProvider">
+  <TypeSignature Language="C#" Value="public sealed class CodePagesEncodingProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodePagesEncodingProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Text.CodePagesEncodingProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Encoding.CodePages</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static System.Text.EncodingProvider Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.EncodingProvider Instance" />
+      <MemberSignature Language="DocId" Value="P:System.Text.CodePagesEncodingProvider.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.CodePages</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.EncodingProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

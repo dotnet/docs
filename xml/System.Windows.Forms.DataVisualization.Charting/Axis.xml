@@ -1,0 +1,1879 @@
+<Type Name="Axis" FullName="System.Windows.Forms.DataVisualization.Charting.Axis">
+  <TypeSignature Language="C#" Value="public class Axis : System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Axis extends System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Axis" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataVisualization.Charting.ChartNamedElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Enabled")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides methods and properties that manage axes in the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Chart" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class encapsulates all the functionality for axes in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control, and is exposed by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisX2%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.AxisY2%2A> properties of <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> objects.  
+  
+ For all charts—except bar, stacked bar, pie and doughnut—the primary and secondary axes are as follows:  
+  
+|Axis Type|Description|  
+|---------------|-----------------|  
+|Primary X-Axis|Bottom horizontal axis.|  
+|Secondary X-Axis|Top horizontal axis.|  
+|Primary Y-Axis|Left vertical axis.|  
+|Secondary Y-Axis|Right vertical axis.|  
+  
+ Bar and stacked-bar charts have their axes rotated 90 degrees clockwise, so the primary X axis for these two chart types is the left-vertical axis.  
+  
+ **Note** There can be only one set of axes—two vertical and two horizontal—for each <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Axis> class also contains several methods that can be used to convert axis values to absolute pixel coordinates, which are useful for 2D custom drawing, or to relative coordinates, which are useful for 3D custom drawing. Absolute and relative coordinates can also be converted to axis values.  
+  
+ The following are the most important axis elements exposed by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> class:  
+  
+|Axis Element|Description|  
+|------------------|-----------------|  
+|Axis Labels|The labels of an axis, and their associated properties.|  
+|Grid Lines|The major and minor grid lines of an axis.|  
+|Tick Marks|The major and minor tick marks of an axis.|  
+|Strip Lines|Strip lines.|  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Axis ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Axis (System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea, System.Windows.Forms.DataVisualization.Charting.AxisName axisTypeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea, valuetype System.Windows.Forms.DataVisualization.Charting.AxisName axisTypeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.#ctor(System.Windows.Forms.DataVisualization.Charting.ChartArea,System.Windows.Forms.DataVisualization.Charting.AxisName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="chartArea" Type="System.Windows.Forms.DataVisualization.Charting.ChartArea" />
+        <Parameter Name="axisTypeName" Type="System.Windows.Forms.DataVisualization.Charting.AxisName" />
+      </Parameters>
+      <Docs>
+        <param name="chartArea">The chart area.</param>
+        <param name="axisTypeName">The axis name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Axis" /> class with the specified <paramref name="chartArea" /> and <paramref name="axisTypeName" /> values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrowStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle ArrowStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle ArrowStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ArrowStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the arrow style of a 2D axis; this style is not applied to 3D chart areas.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AxisName">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataVisualization.Charting.AxisName AxisName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.AxisName AxisName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.AxisName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the axis, which can be either X, Y, X2 or Y2.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisName" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crossing">
+      <MemberSignature Language="C#" Value="public virtual double Crossing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Crossing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Crossing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(NaN)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.AxisCrossingValueConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location at which an axis is crossed by its associated axis.</summary>
+        <value>A <see langword="double" /> value that represents where an axis is crossed by its associated axis. The default value is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property for a primary axis will determine where the other primary axis crosses it, and similarly setting it for a secondary axis will determine where the other secondary axis crosses it. For example, setting the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Crossing%2A> property of the primary X-axis determines where the primary Y-axis will cross it.  
+  
+ Four modes can be used for the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Crossing%2A> property of an axis:  
+  
+-   "Auto", which means that the crossing value will be set to the minimum or maximum value for the relevant axis. If the axis is primary, the value will be its minimum value, if the axis is secondary it will its maximum value. To set to "Auto" at run time, use a <xref:System.Double> value.  
+  
+-   "Minimum", which means the crossing value of the axis will be its minimum value. To set to "Minimum" at run-time use a <xref:System.Double> value.  
+  
+-   "Maximum", which means the crossing value of the axis will be its maximum value. To set to "Maximum" at run-time use a <xref:System.Double> value.  
+  
+-   A specified `double` value that is between the minimum and maximum values for the relevant axis. If the crossing value is less then minimum value, or the crossing value is greater than maximum value, an exception will be thrown.  
+  
+ When a non-default crossing value is used, the labels and tick marks of the axis may or may not follow the crossing axis, depending on the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsMarksNextToAxis%2A> property setting. By default they will move with the crossing axis.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomLabels">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection CustomLabels { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection CustomLabels" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.CustomLabels" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartCollectionEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection" /> object used to store <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabel" /> objects.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to add or remove custom labels for an axis. Using <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabel> objects enables the developer to arbitrarily set the text for axis labels.  
+  
+ Only custom labels can be used in the second row of labels. Also, if a custom label is used in the first label row, then all labels in this first row must be custom labels.  
+  
+ Labels can also be set from the data points, or generated automatically from the axis scale.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged and, optionally, managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AxisEnabled Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.AxisEnabled Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Windows.Forms.DataVisualization.Charting.AxisEnabled), "Auto")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisEnabled</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether an axis is enabled.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisEnabled" /> enumeration value. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.Auto" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an axis is not enabled, the axis, along with its attributes (tick marks, strip lines, labels, and so forth), will not be displayed.  
+  
+ If an axis is enabled, the axis, along with all its attributes (tick marks, strip lines, labels, and so forth), will be displayed regardless of whether or not it is being used to plot a <xref:System.Windows.Forms.DataVisualization.Charting.Series>.  
+  
+ If a value of <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled> is used, an axis may or may not be displayed, depending on whether it is being used to plot a <xref:System.Windows.Forms.DataVisualization.Charting.Series>. The axes that are used to plot data are determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XAxisType%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Series.YAxisType%2A> property settings.  
+  
+> [!NOTE]
+>  If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>, but the axis is not being used to plot data; the grid line of an adjacent axis will be drawn instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosition">
+      <MemberSignature Language="C#" Value="public double GetPosition (double axisValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetPosition(float64 axisValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.GetPosition(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="axisValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="axisValue">The axis value.</param>
+        <summary>Converts an axis value to a relative position (0-100%). If an axis is logarithmic, the value is converted to a linear scale.</summary>
+        <returns>A <see langword="double" /> value that represents the relative position (0-100%).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterlacedColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color InterlacedColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color InterlacedColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.InterlacedColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of interlaced strip lines.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> object that represents the color of interlaced strip lines.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the color of interlaced strip lines that are displayed when you invoke the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.InterlacedColor%2A> property.  
+  
+ To specify the border color of the interlaced strip lines, you must display the strips using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.StripLines%2A> collection property instead of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.InterlacedColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interval">
+      <MemberSignature Language="C#" Value="public double Interval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Interval" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Interval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.AxisIntervalValueConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval of an axis.</summary>
+        <value>A <see langword="double" /> value that represents the interval of an axis. The default value is "Auto", which is represented by a value of zero (0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines how often the labels and major tick marks and grid lines associated with the axis are drawn if the `Interval` property value of a label, tick mark, or grid line is set to <xref:System.Double>, which signifies that it is not set.  
+  
+ The `Interval` property of a major tick mark, grid line or label of the axis has priority over the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property setting of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
+  
+ A value of zero represents an "Auto" value. This <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property cannot be set to <xref:System.Double.NaN>. If you assign this property a value of <xref:System.Double.NaN>, a value of zero will be used instead.  
+  
+ **Note** The minor grid lines and tick marks of an axis never use this property for their interval.  
+  
+ The interval type of the axis is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalAutoMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode IntervalAutoMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode IntervalAutoMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines if a fixed number of intervals is used on the axis, or if the number of intervals depends on the axis size.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode" /> enumeration value. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.FixedCount" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property is set to "Auto", the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode%2A> property determines how many intervals should be calculated. If your chart is resized or redrawn often, you can set the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode%2A> property to <xref:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode>, in which case the chart will dynamically calculate axis intervals. This is especially useful in situations where the chart intervals are displayed differently, depending on their data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalOffset">
+      <MemberSignature Language="C#" Value="public double IntervalOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 IntervalOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.AxisIntervalValueConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval offset of an axis.</summary>
+        <value>A <see langword="double" /> value that represents the interval offset of an axis. The default value is "Auto", which is represented by a value of zero (0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property determines the interval offset of an axis. This value is used as the interval offset of an axis' labels and the major tick marks and grid lines associated with the axis if the `IntervalOffset` property value of the labels, tick marks, or grid lines is not set, which is represented by a value of <xref:System.Double>.  
+  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the tick marks, labels and grid lines of an axis has priority over the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property setting of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
+  
+ A value of zero represents an "Auto" value. Also, <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> cannot be set to not set (that is, a <xref:System.Double.NaN>). If you assign <xref:System.Double.NaN>, a value of "Auto"—that is, a value of zero—will be used instead.  
+  
+ **Note** The minor grid lines and tick marks of an axis never use this property for their interval offset.  
+  
+ The interval offset type of the axis is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalOffsetType">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType IntervalOffsetType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffsetType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval offset type of an axis.</summary>
+        <value>The interval offset type of an axis. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the interval offset type of an axis, and is used for the interval offset type of an axis' labels, and major tick marks or grid lines if the axis element's own `IntervalOffsetType` property value is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
+  
+ Setting this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> will result in a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> being used (only the axis elements such as major grid lines, etc. can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>).  
+  
+> [!NOTE]
+>  The minor grid lines and tick marks of an axis never use this property for their interval offset type.  
+  
+ The interval of the axis is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntervalType">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType IntervalType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType IntervalType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval type of an axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType" /> that represents the interval type of an axis. The default value is <see cref="F:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property determines the interval type of an axis, and is used for the interval type of an axis' labels, major tick marks, or major grid lines if the axis element's own `IntervalType` property value is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
+  
+ Setting this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> will result in a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> being used. Only the axis elements, such as grid lines, can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
+  
+ **Note** The minor grid lines and tick marks of an axis never use this property for their interval type.  
+  
+ The interval of the axis is determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property.  
+  
+> [!IMPORTANT]
+>  If the axis interval type is represented by a time such as hours, minutes, and so forth, then in order for zooming to function correctly, the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalType%2A> must be set to a time value as well. For example, if ChartArea1.AxisX.IntervalType is set to hours, then ChartArea1.CursorX.IntervalType could be set to minutes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInterlaced">
+      <MemberSignature Language="C#" Value="public bool IsInterlaced { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInterlaced" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsInterlaced" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines if interlaced strip lines are displayed for an axis.</summary>
+        <value>
+          <see langword="True" /> if interlaced strip lines are displayed for an axis; otherwise, <see langword="False" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLabelAutoFit">
+      <MemberSignature Language="C#" Value="public bool IsLabelAutoFit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLabelAutoFit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines whether axis labels are automatically fitted.</summary>
+        <value>
+          <see langword="True" /> if axis labels are automatically fitted; otherwise, <see langword="False" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLogarithmic">
+      <MemberSignature Language="C#" Value="public bool IsLogarithmic { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLogarithmic" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsLogarithmic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag which indicates whether the axis is logarithmic. Zeros or negative data values are not allowed on logarithmic charts.</summary>
+        <value>
+          <see langword="True" /> if the axis is logarithmic; otherwise, <see langword="False" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMarginVisible">
+      <MemberSignature Language="C#" Value="public bool IsMarginVisible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMarginVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsMarginVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines whether to add a margin to the axis.</summary>
+        <value>
+          <see langword="True" /> if a space is added between the first or last data point and the border of chart area.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMarksNextToAxis">
+      <MemberSignature Language="C#" Value="public virtual bool IsMarksNextToAxis { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMarksNextToAxis" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsMarksNextToAxis" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that determines whether tick marks and axis labels move with an axis if the crossing point of an axis changes.</summary>
+        <value>
+          <see langword="True" /> if tick marks and axis labels move with an axis when the crossing point of an axis changes; otherwise, <see langword="False" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReversed">
+      <MemberSignature Language="C#" Value="public bool IsReversed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReversed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsReversed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag which indicates whether the axis is reversed.</summary>
+        <value>
+          <see langword="True" /> if the axis is reversed; otherwise, <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If set to reversed, the values on the axis are in reversed sort order and the direction of values on the axis is flipped.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsStartedFromZero">
+      <MemberSignature Language="C#" Value="public bool IsStartedFromZero { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsStartedFromZero" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.IsStartedFromZero" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag which indicates whether the minimum value of the axis will be automatically set to zero if all data point values are positive. If there are negative data point values, the minimum value of the data points will be used.</summary>
+        <value>
+          <see langword="True" /> if the minimum value of the axis is automatically set to zero when all data point values are positive; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabelAutoFitMaxFontSize">
+      <MemberSignature Language="C#" Value="public int LabelAutoFitMaxFontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LabelAutoFitMaxFontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitMaxFontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum font size that can be used by the label auto-fitting algorithm.</summary>
+        <value>An <see langword="integer" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The font size cannot be less than 5.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabelAutoFitMinFontSize">
+      <MemberSignature Language="C#" Value="public int LabelAutoFitMinFontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LabelAutoFitMinFontSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitMinFontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum font size that can be used by the label auto-fitting algorithm.</summary>
+        <value>An <see langword="integer" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabelAutoFitStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles LabelAutoFitStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles LabelAutoFitStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LabelAutoFitStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.FlagsEnumUITypeEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the allowable label changes that can be made to enable the label to be fit along an axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit%2A> property must be set to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabelStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LabelStyle LabelStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.LabelStyle LabelStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LabelStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LabelStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelStyle" /> properties of an axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LabelStyle" /> object, which defines the axis label style.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the style, formatting, and so forth, of axis labels.  
+  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit%2A> property is `true`, the font size, font angle and the use of offset labels are determined automatically. If you set any one of the LabelStyle.Font.Size, <xref:System.Windows.Forms.DataVisualization.Charting.LabelStyle.Angle%2A> or <xref:System.Windows.Forms.DataVisualization.Charting.LabelStyle.IsStaggered%2A> properties, the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLabelAutoFit%2A> property will be set to `false`.  
+  
+ Note that if a format that consists of a date without a time is used for labels, and the <xref:System.DateTime> data point values that are used specify times, the times will affect the positions of the data points, even though they are not displayed due to the label formatting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color LineColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LineColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line color of an axis.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> object that represents the line color used to draw the axis. The default is <see cref="P:System.Drawing.Color.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property to specify the line color of an axis.  
+  
+ **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineDashStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartDashStyle LineDashStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartDashStyle LineDashStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LineDashStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartDashStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line style of an axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartDashStyle" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineDashStyle%2A> property determines the line style used for an axis. The line can be solid, dotted, and so forth.  
+  
+ **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineWidth">
+      <MemberSignature Language="C#" Value="public int LineWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LineWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LineWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the line width of an axis, in pixels.</summary>
+        <value>An <see langword="integer" /> value that represents the width of an axis line. The default value is one (1) pixel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineWidth%2A> property gets or sets the width of an axis line, in pixels. If the width is set to zero (0), the line will not be displayed.  
+  
+ **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogarithmBase">
+      <MemberSignature Language="C#" Value="public double LogarithmBase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LogarithmBase" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.LogarithmBase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value for the logarithm base for the logarithmic axis.</summary>
+        <value>A <see langword="double" /> value. The default value is base 10.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only has an effect when the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsLogarithmic%2A> property is set to `true`.  
+  
+ Note that this property is only applicable to value axes, which are used to plot data. Setting this property for a categorical axis will result in an exception being thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorGrid">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Grid MajorGrid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Grid MajorGrid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MajorGrid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Grid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Grid" /> object used to set the major grid line properties for an axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Grid" /> object used to get or set the major grid properties of an axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Major grid lines are always drawn in conjunction with a data point. That is, they will occur at the same point along an axis as a data point, for categorical axis tick marks. For value axes, major grid lines by default are drawn wherever labels occur.  
+  
+ You can use this property to change major grid line frequency, color, and so forth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorTickMark">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.TickMark MajorTickMark { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.TickMark MajorTickMark" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MajorTickMark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.TickMark</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.TickMark" /> object used to set the major tick mark properties of an axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TickMark" /> object used to set the properties of a major tick mark of an axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Major tick marks are always drawn in conjunction with a data point. Categorical axis tick marks will occur at the same point along an axis as a data point. For value axes, major tick marks are drawn by default wherever labels occur.  
+  
+ You can use this property to change the major tick mark properties such as frequency, color, or size.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="public double Maximum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Maximum" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Maximum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(NaN)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.AxisMinMaxAutoValueConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum value of an axis.</summary>
+        <value>A <see langword="double" /> value that represents the maximum value of an axis. The default value is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To automatically round the maximum and minimum axis values call the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.RoundAxisValues%2A> method. The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Maximum%2A> value must be greater than the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Minimum%2A> value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumAutoSize">
+      <MemberSignature Language="C#" Value="public float MaximumAutoSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 MaximumAutoSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MaximumAutoSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(75)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size of the axis, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</summary>
+        <value>A <see langword="float " />value that represents the maximum size of the axis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="public double Minimum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Minimum" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Minimum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(NaN)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.AxisMinMaxAutoValueConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum value of an axis.</summary>
+        <value>A <see langword="double" /> value that represents the minimum value of an axis. The default value is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that if you set this value explicitly, the X-values of data elements must be taken into account. If all data points have X-values of zero, the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control will assume the first data point occurs at zero. Also, if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Minimum%2A> value is explicitly set, the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IsStartedFromZero%2A> property will be ignored. The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Minimum%2A> value must be less than the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Maximum%2A> value.  
+  
+ To automatically round the maximum and minimum axis values. call the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.RoundAxisValues%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorGrid">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Grid MinorGrid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Grid MinorGrid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MinorGrid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.Grid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Grid" /> object used to specify the minor grid lines attributes of an axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.Grid" /> object used to get or set the attributes of the minor grid lines of an axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Minor grid lines are drawn in between the major grid lines.  
+  
+ Use this property to change the attributes of a minor grid line, such as frequency, color, and so forth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorTickMark">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.TickMark MinorTickMark { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.TickMark MinorTickMark" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.MinorTickMark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.TickMark</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.TickMark" /> object used to set the minor tick mark properties of an axis.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TickMark" /> object used for the minor tick mark properties of an axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Minor tick marks should be drawn between major tick marks, where labels usually occur.  
+  
+ Use this property to change the minor tick mark frequency, color, and so forth.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the axis.</summary>
+        <value>A <see langword="string" /> value that represents the text name of the axis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelPositionToValue">
+      <MemberSignature Language="C#" Value="public double PixelPositionToValue (double position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 PixelPositionToValue(float64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.PixelPositionToValue(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="position">The pixel position.</param>
+        <summary>Converts an absolute pixel position along an axis to an axis value. This method only works in paint events.</summary>
+        <returns>A <see langword="double" /> value that represents the axis value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PositionToValue">
+      <MemberSignature Language="C#" Value="public double PositionToValue (double position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 PositionToValue(float64 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.PositionToValue(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="position">The relative position (0-100%).</param>
+        <summary>Converts a relative coordinate along an axis to an axis value. This method only works in paint events.</summary>
+        <returns>A <see langword="double" /> value that represents the axis value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundAxisValues">
+      <MemberSignature Language="C#" Value="public void RoundAxisValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RoundAxisValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.RoundAxisValues" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Automatically rounds axis values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.RoundAxisValues%2A> method to round the values of an axis. Note that the interval used for the axis will not be changed when this method is called. This method is only supported for the X and X2 axes. The Y and Y2 axes values are rounded by default.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleBreakStyle">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle ScaleBreakStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle ScaleBreakStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleBreakStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the axis scale break style.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScaleBreakStyle" /> object, which represents the scale break style of the chart axis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleView">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AxisScaleView ScaleView { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.AxisScaleView ScaleView" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ScaleView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisScaleView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the view of an axis.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScaleView" /> object, which represents the scale view of an axis.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollBar">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.AxisScrollBar ScrollBar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.AxisScrollBar ScrollBar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ScrollBar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataVisualization.Charting.NoNameExpandableObjectConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisScrollBar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an axis scrollbar.</summary>
+        <value>An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScrollbar" /> object, which represents the scrollbar of an axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to manipulate the scrollbar of an axis.  
+  
+ For further details, refer to the <xref:System.Windows.Forms.DataVisualization.Charting.AxisScrollbar> class documentation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StripLines">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.StripLinesCollection StripLines { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.StripLinesCollection StripLines" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.StripLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartCollectionEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.StripLinesCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLinesCollection" /> collection object.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLinesCollection" /> collection object, which stores all <see cref="T:System.Windows.Forms.DataVisualization.Charting.StripLine" /> objects for an axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Strip lines are used to draw rectangular strips across a <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea> object, and are always drawn across the entire \<A href="">area.  
+  
+ These strip lines are not related to the grid lines.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextOrientation">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.TextOrientation TextOrientation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.TextOrientation TextOrientation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.TextOrientation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.TextOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the orientation of the text in the axis title.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.TextOrientation" /> enumeration value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title of the axis.</summary>
+        <value>A <see langword="string" /> value that represents the title of the axis.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets the title of the axis.  
+  
+ You can set the font properties of the title using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.TitleFont%2A> property.  
+  
+ You can set the color of the title using the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.TitleForeColor%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleAlignment">
+      <MemberSignature Language="C#" Value="public System.Drawing.StringAlignment TitleAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.StringAlignment TitleAlignment" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.TitleAlignment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.StringAlignment), "Center")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment of an axis title.</summary>
+        <value>A <see cref="T:System.Drawing.StringAlignment" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible alignment values are <xref:System.Drawing.StringAlignment>, <xref:System.Drawing.StringAlignment>, and <xref:System.Drawing.StringAlignment>. A value of <xref:System.Drawing.StringAlignment> equates to an alignment to the top or the right, depending on the orientation of the axis or strip line. In the same manner, a value of <xref:System.Drawing.StringAlignment> equates to an alignment to the bottom or the right.  
+  
+ If you want more control over the positioning of an axis title, you must perform custom drawing using the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint> or <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint> event.  
+  
+ You can further align and position the titles of <xref:System.Windows.Forms.DataVisualization.Charting.StripLine> objects by using their <xref:System.Windows.Forms.DataVisualization.Charting.StripLine.TextLineAlignment%2A> and TitleAngle properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleFont">
+      <MemberSignature Language="C#" Value="public System.Drawing.Font TitleFont { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font TitleFont" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.TitleFont" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Font), "Microsoft Sans Serif, 8pt")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title font properties of an axis.</summary>
+        <value>A <see cref="T:System.Drawing.Font" /> object used for the font properties of a title.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets title font properties such as face or size.  
+  
+ To set font properties at run time, a new <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Font%2A> object must be created. Any attempt to change the properties of the current <xref:System.Windows.Forms.DataVisualization.Charting.AnnotationGroup.Font%2A> object at run time will result in a compilation error.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color TitleForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color TitleForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.TitleForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataVisualization.Charting.ChartColorEditor, System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Drawing.ColorConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text color of the axis title.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> structure. The default color is <see cref="P:System.Drawing.Color.Black" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Gets or sets the text color of an <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object title.  
+  
+ You can use any valid ARGB (alpha, red, green, blue) color.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTip">
+      <MemberSignature Language="C#" Value="public string ToolTip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Axis.ToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the tooltip used for the axis.</summary>
+        <value>A <see langword="string" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueToPixelPosition">
+      <MemberSignature Language="C#" Value="public double ValueToPixelPosition (double axisValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 ValueToPixelPosition(float64 axisValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.ValueToPixelPosition(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="axisValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="axisValue">The axis value.</param>
+        <summary>Converts an axis value to an absolute coordinate along an axis. Measured in pixels. This method only works in paint events.</summary>
+        <returns>A <see langword="double" /> value that represents the pixel position.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueToPosition">
+      <MemberSignature Language="C#" Value="public double ValueToPosition (double axisValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 ValueToPosition(float64 axisValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Axis.ValueToPosition(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="axisValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="axisValue">The axis value.</param>
+        <summary>Converts an axis value to its relative position (0-100%). If an axis has a logarithmic scale, the value is converted to a linear scale. This method only works in paint events.</summary>
+        <returns>A <see langword="double" /> value that represents the relative position (0-100%).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

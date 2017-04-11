@@ -1,0 +1,96 @@
+<Type Name="Collation" FullName="System.Printing.Collation">
+  <TypeSignature Language="C#" Value="public enum Collation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Collation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.Collation" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a printer collates output when it prints multiple copies of a multi-page print job.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A standard printer typically collates output by printing every page of the first copy, then every page of the second copy, and so on. When a standard printer does not collate, it prints every copy of the first page, then every copy of the second page, and so on.  
+  
+ Some printers are specially equipped with collating bins. The printing sequence for these specially equipped printers may differ from those of standard printers; however the outcome is the same: each copy of a multi-paged print job contains all its pages in the proper sequence without manual sorting.  
+  
+ Use the values of this type primarily for the following purposes.  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.CollationCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, these values indicate the type of output that the printer supports. (Many printers support both types.)  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.Collation%2A> property of a <xref:System.Printing.PrintTicket>, the value instructs the printer whether to collate.  
+  
+ The **Unknown** value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the collation feature to an unrecognized collation option, then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.Collation%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+   
+  
+## Examples  
+ The following example shows how to test a printer's capabilities and configure a print job to take advantage of them. .  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Collated">
+      <MemberSignature Language="C#" Value="Collated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Collation Collated = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Collated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Collation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Collated output.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Uncollated">
+      <MemberSignature Language="C#" Value="Uncollated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Collation Uncollated = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Uncollated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Collation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Uncollated output.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Collation Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Collation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

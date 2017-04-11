@@ -1,0 +1,66 @@
+<Type Name="PropertyValueOrigin" FullName="System.Configuration.PropertyValueOrigin">
+  <TypeSignature Language="C#" Value="public enum PropertyValueOrigin" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueOrigin extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.PropertyValueOrigin" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the level in the configuration hierarchy where a configuration property value originated.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.PropertyValueOrigin Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The configuration property value originates from the <see cref="P:System.Configuration.ConfigurationProperty.DefaultValue" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherited">
+      <MemberSignature Language="C#" Value="Inherited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.PropertyValueOrigin Inherited = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.Inherited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The configuration property value is inherited from a parent level in the configuration.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHere">
+      <MemberSignature Language="C#" Value="SetHere" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.PropertyValueOrigin SetHere = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.SetHere" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The configuration property value is defined at the current level of the hierarchy.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

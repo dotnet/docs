@@ -1,0 +1,114 @@
+<Type Name="PipeOptions" FullName="System.IO.Pipes.PipeOptions">
+  <TypeSignature Language="C#" Value="public enum PipeOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PipeOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides options for creating a <see cref="T:System.IO.Pipes.PipeStream" /> object. This enumeration has a <see cref="T:System.FlagsAttribute" /> attribute that allows a bitwise combination of its member values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IO.Pipes.PipeOptions> enumeration to specify advanced pipe options.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Asynchronous">
+      <MemberSignature Language="C#" Value="Asynchronous" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeOptions Asynchronous = int32(1073741824)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.Asynchronous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipes.PipeOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the pipe can be used for asynchronous reading and writing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipes.PipeOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that there are no additional parameters.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteThrough">
+      <MemberSignature Language="C#" Value="WriteThrough" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeOptions WriteThrough = int32(-2147483648)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeOptions.WriteThrough" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipes.PipeOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the system should write through any intermediate cache and go directly to the pipe.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

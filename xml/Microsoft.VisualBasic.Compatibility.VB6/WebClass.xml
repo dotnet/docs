@@ -1,0 +1,247 @@
+<Type Name="WebClass" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebClass">
+  <TypeSignature Language="C#" Value="public class WebClass" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi WebClass extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables upgraded Visual Basic 6.0 <see langword="WebClass" /> projects to run in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a Visual Basic 6.0 `WebClass` project is upgraded to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], it is converted to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ Declarations are added to your project: one for the `WebClass` and one for each `WebItem` and `Template` in the `WebClass` project. A `Page_Load` event procedure is added to the project. This creates first a `WebClass` object and then <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> objects for each `WebItem` and `Template` associated with the Visual Basic 6.0 `WebClass` project. Finally, in the `Page_Load` event procedure, you will see a call to the `WebClass` Compatibility runtime: <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass.ProcessEvents%2A>. This enables the runtime to render the <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> specified in the Request URL. This code is the only new code added to your upgraded project and serves only to emulate the underlying behavior of the Visual Basic 6.0 `WebClass` runtime.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebClass (string UserWebClassName, string WebClassFileName, object ContainingClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string UserWebClassName, string WebClassFileName, object ContainingClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClass.#ctor(System.String,System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="UserWebClassName" Type="System.String" />
+        <Parameter Name="WebClassFileName" Type="System.String" />
+        <Parameter Name="ContainingClass" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="UserWebClassName">A <see cref="T:System.String" /> that contains the <see langword="Name" /> property for the Visual Basic 6.0 <see langword="WebClass" /> object.</param>
+        <param name="WebClassFileName">A <see cref="T:System.String" /> that contains the file name for the Visual Basic 6.0 <see langword="WebClass" /> object.</param>
+        <param name="ContainingClass">A <see cref="T:System.String" /> that contains the <see langword="Application" /> property for the Visual Basic 6.0 <see langword="WebClass" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.WebClass.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name that is used in code to identify a <see langword="WebClass" /> object.</summary>
+        <value>A <see cref="T:System.String" /> that contains the name for the <see langword="WebClass" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Read-only.  
+  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextItem">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.WebItem NextItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.Compatibility.VB6.WebItem NextItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.WebClass.NextItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.WebItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets another <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> object in the current <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" /> object.</summary>
+        <value>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used to shift processing from one <xref:Microsoft.VisualBasic.Compatibility.VB6.WebItem> to another during a single request.  
+  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessEvents">
+      <MemberSignature Language="C#" Value="public void ProcessEvents (System.Web.HttpRequest Request);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void ProcessEvents(class System.Web.HttpRequest Request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClass.ProcessEvents(System.Web.HttpRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Request" Type="System.Web.HttpRequest" />
+      </Parameters>
+      <Docs>
+        <param name="Request">An <see cref="T:System.Web.HttpRequest" /> object.</param>
+        <summary>Renders a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> in a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlData">
+      <MemberSignature Language="C#" Value="public string UrlData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UrlData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.WebClass.UrlData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a parameter that is appended to the end of any URL that is generated by using the <see cref="Overload:Microsoft.VisualBasic.Compatibility.VB6.WebClass.URLFor" /> method.</summary>
+        <value>A <see cref="T:System.String" /> that contains the parameter that will be appended.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URLFor">
+      <MemberSignature Language="C#" Value="public string URLFor (Microsoft.VisualBasic.Compatibility.VB6.WebItem obj, string EventName = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance string URLFor(class Microsoft.VisualBasic.Compatibility.VB6.WebItem obj, string EventName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClass.URLFor(Microsoft.VisualBasic.Compatibility.VB6.WebItem,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.VisualBasic.Compatibility.VB6.WebItem" />
+        <Parameter Name="EventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> object for which you want to generate a URL and raise an event.</param>
+        <param name="EventName">Optional. A <see cref="T:System.String" /> that refers to an event in the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" />.</param>
+        <summary>Specifies the URL that the system must have to reference a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" /><see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> in the browser.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the URL.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URLFor">
+      <MemberSignature Language="C#" Value="public string URLFor (string objName, string EventName = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance string URLFor(string objName, string EventName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClass.URLFor(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objName" Type="System.String" />
+        <Parameter Name="EventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="objName">A <see cref="T:System.String" /> that contains the name of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> object for which you want to generate a URL and raise an event.</param>
+        <param name="EventName">Optional. A <see cref="T:System.String" /> that refers to an event in the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" />.</param>
+        <summary>Specifies the URL that the system must have to reference a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebClass" /><see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebItem" /> in the browser.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the URL.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.WebClass> class is used by the upgrade tools to upgrade a Visual Basic 6.0 `WebClass` project to an [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Web-site project.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

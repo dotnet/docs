@@ -1,0 +1,11 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.AWindow"
+    Title="Window with Button"
+    Width="250" Height="100">
+
+  <!-- Add button to window -->
+  <Button Name="button" Click="button_Click">Click Me!</Button>
+
+</Window>

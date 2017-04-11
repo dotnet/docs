@@ -1,0 +1,498 @@
+<Type Name="XamlXmlWriter" FullName="System.Xaml.XamlXmlWriter">
+  <TypeSignature Language="C#" Value="public class XamlXmlWriter : System.Xaml.XamlWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlXmlWriter extends System.Xaml.XamlWriter" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlXmlWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xaml.XamlWriter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Uses a <see cref="T:System.IO.TextWriter" /> or <see cref="T:System.Xml.XmlWriter" /> support class to write a XAML node stream to a text or markup serialized form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is typically used in serialization scenarios.  
+  
+## How to Use XamlXmlWriter  
+ The <xref:System.Xaml.XamlWriter> API has several methods that write different types of XAML nodes. Collectively, these are referred to in documentation as the `Write` methods of a <xref:System.Xaml.XamlWriter>. <xref:System.Xaml.XamlXmlWriter> uses several internal state classes to determine what to do when one of its `Write` implementations is called. A `Write` call uses the states to determine whether the requested element, attribute, or value can be written, or whether an exception is thrown. For example, if you call <xref:System.Xaml.XamlXmlWriter.WriteEndObject%2A> and the state of the <xref:System.Xaml.XamlXmlWriter> current node position is on a value or within a member, an exception is thrown. Typically, callers of the <xref:System.Xaml.XamlXmlWriter> API should be aware of the type of the current XAML node that is coming from the XAML reader and the XAML node stream. Based on this knowledge, callers should avoid calling `Write` APIs that are not relevant to the current node type.  
+  
+## XAML Namespaces and XamlXmlWriter  
+ The XAML namespace writing behavior of <xref:System.Xaml.XamlXmlWriter> is complex and is not limited to explicit calls to <xref:System.Xaml.XamlXmlWriter.WriteNamespace%2A>. Instead, other `Write` calls, such as <xref:System.Xaml.XamlXmlWriter.WriteStartObject%2A>, might require that the namespace declaration be written at particular points in the node structure. The XAML writer either generates a prefix by its own logic, or uses information from the <xref:System.Xaml.INamespacePrefixLookup> service to determine a preferred prefix. Also, explicit <xref:System.Xaml.XamlXmlWriter.WriteNamespace%2A> calls might defer or might return nothing if the XAML namespace declaration is already applicable and declared elsewhere.  
+  
+## Write Method Exceptions  
+ Exceptions thrown by the <xref:System.Xaml.XamlXmlWriter>`Write` methods are typically either <xref:System.InvalidOperationException> or <xref:System.Xaml.XamlXmlWriterException>.  
+  
+ An <xref:System.InvalidOperationException> often indicates that a XAML reader passed an invalid node structure into the XAML node stream. In this case the node structure is invalid for reasons that are not related to validation of a XAML schema or a XAML schema context. Rather, the node stream is invalid in its basic form. For example, if a faulty XAML reader implementation generated a XAML node stream that contained two consecutive `StartObject` nodes, the attempt to call the second <xref:System.Xaml.XamlXmlWriter.WriteStartObject%2A> would throw an <xref:System.InvalidOperationException>. All XAML writers would consider such an operation to be invalid. Another example of an <xref:System.InvalidOperationException> is when XAML namespace information is unavailable through the XAML schema context that applies to the current node stream position.  
+  
+ A <xref:System.Xaml.XamlXmlWriterException> indicates an exception where this particular XAML writer implementation chooses to throw an exception based on its intended functionality. A <xref:System.Xaml.XamlXmlWriterException> can indicate specific cases where a <xref:System.Xaml.XamlXmlWriter> violates its own state or settings. For example, a <xref:System.Xaml.XamlXmlWriterException> might result from attempts to write XAML namespace information into a position that the <xref:System.Xaml.XamlXmlWriter> and its serialization format do not support, or writing duplicate members when the instance's <xref:System.Xaml.XamlXmlWriterSettings> forbid it.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlXmlWriter (System.IO.Stream stream, System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write.</param>
+        <param name="schemaContext">The XAML schema context for the XAML writer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriter" /> class from a stream.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlXmlWriter (System.IO.TextWriter textWriter, System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter textWriter, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.IO.TextWriter,System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="textWriter" Type="System.IO.TextWriter" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="textWriter">The <see cref="T:System.IO.TextWriter" /> that writes the output.</param>
+        <param name="schemaContext">The XAML schema context for the XAML writer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriter" /> class from a <see cref="T:System.IO.TextWriter" /> basis.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="textWriter" /> or <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlXmlWriter (System.Xml.XmlWriter xmlWriter, System.Xaml.XamlSchemaContext schemaContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlWriter xmlWriter, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.Xml.XmlWriter,System.Xaml.XamlSchemaContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">The <see cref="T:System.Xml.XmlWriter" /> that writes the output.</param>
+        <param name="schemaContext">The XAML schema context for the XAML writer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriter" /> class from a <see cref="T:System.Xml.XmlWriter" /> basis.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xmlWriter" /> or <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlXmlWriter (System.IO.Stream stream, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.XamlXmlWriterSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlWriterSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.IO.Stream,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+        <Parameter Name="settings" Type="System.Xaml.XamlXmlWriterSettings" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write.</param>
+        <param name="schemaContext">The XAML schema context for the XAML writer.</param>
+        <param name="settings">An instance of <see cref="T:System.Xaml.XamlXmlWriterSettings" />, which typically has specific non-default settings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriter" /> class from a stream using a writer settings object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not change any values of the `settings` object after the <xref:System.Xaml.XamlXmlWriter> instance is constructed. <xref:System.Xaml.XamlXmlWriter> cannot update its internal settings based on settings values that are mutable at run time. Settings should be provided for initialization only. You can merge settings from an active XAML writer by using one of the <xref:System.Xaml.XamlXmlWriterSettings> constructor signatures; however, you must then apply these settings to a new XAML writer instance instead of attempting to adjust the existing one.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> or <paramref name="schemaContext" /> is <see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlXmlWriter (System.IO.TextWriter textWriter, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.XamlXmlWriterSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter textWriter, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlWriterSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.IO.TextWriter,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="textWriter" Type="System.IO.TextWriter" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+        <Parameter Name="settings" Type="System.Xaml.XamlXmlWriterSettings" />
+      </Parameters>
+      <Docs>
+        <param name="textWriter">The <see cref="T:System.IO.TextWriter" /> that writes the output.</param>
+        <param name="schemaContext">The XAML schema context for the XAML writer.</param>
+        <param name="settings">An instance of <see cref="T:System.Xaml.XamlXmlWriterSettings" />, which typically has specific non-default settings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriter" /> class from a <see cref="T:System.IO.TextWriter" /> basis using a settings object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not change any values of the `settings` object after the <xref:System.Xaml.XamlXmlWriter> instance is constructed. <xref:System.Xaml.XamlXmlWriter> cannot update its internal settings based on settings values that are mutable at run time. Settings should be provided for initialization only. You can merge settings from an active XAML writer by using one of the <xref:System.Xaml.XamlXmlWriterSettings> constructor signatures; however, you must then apply these settings to a new XAML writer instance instead of attempting to adjust the existing one.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="textWriter" /> or <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlXmlWriter (System.Xml.XmlWriter xmlWriter, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.XamlXmlWriterSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlWriter xmlWriter, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.XamlXmlWriterSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.#ctor(System.Xml.XmlWriter,System.Xaml.XamlSchemaContext,System.Xaml.XamlXmlWriterSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="schemaContext" Type="System.Xaml.XamlSchemaContext" />
+        <Parameter Name="settings" Type="System.Xaml.XamlXmlWriterSettings" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">The <see cref="T:System.Xml.XmlWriter" /> that writes the output.</param>
+        <param name="schemaContext">The XAML schema context for the XAML writer.</param>
+        <param name="settings">An instance of <see cref="T:System.Xaml.XamlXmlWriterSettings" />, which typically has specific non-default settings.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriter" /> class from a <see cref="T:System.Xml.XmlWriter" /> basis using a settings object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not change any values of the `settings` object after the <xref:System.Xaml.XamlXmlWriter> instance is constructed. <xref:System.Xaml.XamlXmlWriter> cannot update its internal settings based on settings values that are mutable at run time. Settings should be provided for initialization only. You can merge settings from an active XAML writer by using one of the <xref:System.Xaml.XamlXmlWriterSettings> constructor signatures; however, you must then apply these settings to a new XAML writer instance instead of attempting to adjust the existing one.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xmlWriter" /> or <paramref name="schemaContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release the unmanaged resources; otherwise, <see langword="false" />.</param>
+        <summary>Releases the unmanaged resources used by <see cref="T:System.Xaml.XamlXmlWriter" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation calls `Close` on the underlying <xref:System.Xml.XmlWriter> or <xref:System.IO.TextWriter> for cases where <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A> is `true` in any supplied <xref:System.Xaml.XamlXmlWriterSettings>. Otherwise, it calls <xref:System.Xaml.XamlXmlWriter.Flush%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public void Flush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flush() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.Flush" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calls the <see langword="Flush" /> method of the underlying <see cref="T:System.Xml.XmlWriter" /> or <see cref="T:System.IO.TextWriter" />, which writes anything that is currently in the buffer, and then closes the writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Dispose` behavior for a <xref:System.Xaml.XamlXmlWriter> can be influenced by its writer settings, especially by <xref:System.Xaml.XamlXmlWriterSettings.CloseOutput%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaContext">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlSchemaContext SchemaContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlWriter.SchemaContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XAML schema context that this <see cref="T:System.Xaml.XamlXmlWriter" /> uses for processing.</summary>
+        <value>The XAML schema context that this <see cref="T:System.Xaml.XamlXmlWriter" /> uses for XAML processing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A XAML writer typically gets its XAML schema context from the associated XAML reader that is supplying the XAML node stream.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Settings">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlXmlWriterSettings Settings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlXmlWriterSettings Settings" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlXmlWriter.Settings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlXmlWriterSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the writer settings that this <see cref="T:System.Xaml.XamlXmlWriter" /> uses for XAML processing.</summary>
+        <value>The writer settings that this <see cref="T:System.Xaml.XamlXmlWriter" /> uses for XAML processing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value that you get from this property is a copy and not a reference. Changing property values on the settings does not affect the active <xref:System.Xaml.XamlXmlWriter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndMember">
+      <MemberSignature Language="C#" Value="public override void WriteEndMember ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndMember() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteEndMember" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Writes a XAML end member node to the underlying <see cref="T:System.Xml.XmlWriter" /> or <see cref="T:System.IO.TextWriter" />. Throws an exception if the current position of the XAML node stream is not within a member, or if the internal writer state does not support writing to an end member.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The current position of the XAML node stream is not within a member.</exception>
+        <exception cref="T:System.Xaml.XamlXmlWriterException">The current writer state does not support writing an end member.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEndObject">
+      <MemberSignature Language="C#" Value="public override void WriteEndObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteEndObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Writes a XAML end object node to the underlying <see cref="T:System.Xml.XmlWriter" /> or <see cref="T:System.IO.TextWriter" />. Throws an exception if the current position of the XAML node stream that is being processed is incompatible with writing an end object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In markup and text representations of XAML, an end object is a closing tag.  
+  
+ The most common case where <xref:System.InvalidOperationException> is thrown by <xref:System.Xaml.XamlXmlWriter.WriteEndObject%2A> is when the current XAML node stream position is still within a member, and <xref:System.Xaml.XamlXmlWriter.WriteEndObject%2A> is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The current position of the XAML node stream is not in a scope where an end member can be written.</exception>
+        <exception cref="T:System.Xaml.XamlXmlWriterException">The current writer state does not support writing an end object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteGetObject">
+      <MemberSignature Language="C#" Value="public override void WriteGetObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteGetObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteGetObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Writes an object for cases where the specified object is a default or implicit value of the property that is being written, instead of being specified as an object value in the input XAML node set.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNamespace">
+      <MemberSignature Language="C#" Value="public override void WriteNamespace (System.Xaml.NamespaceDeclaration namespaceDeclaration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteNamespace(class System.Xaml.NamespaceDeclaration namespaceDeclaration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteNamespace(System.Xaml.NamespaceDeclaration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="namespaceDeclaration" Type="System.Xaml.NamespaceDeclaration" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceDeclaration">The XAML namespace declaration to write.</param>
+        <summary>Writes namespace information to the underlying <see cref="T:System.Xml.XmlWriter" /> or <see cref="T:System.IO.TextWriter" />. May throw an exception for certain states; however, may instead defer writing the namespace information until the writer and the XAML node stream that is being processed reaches a position where a XAML namespace declaration can be inserted.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="namespaceDeclaration" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="namespaceDeclaration" /> is not a valid XAML namespace declaration (has a null prefix or null identifier component).</exception>
+        <exception cref="T:System.Xaml.XamlXmlWriterException">The current writer state does not support writing a XAML namespace declaration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartMember">
+      <MemberSignature Language="C#" Value="public override void WriteStartMember (System.Xaml.XamlMember property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartMember(class System.Xaml.XamlMember property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteStartMember(System.Xaml.XamlMember)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Xaml.XamlMember" />
+      </Parameters>
+      <Docs>
+        <param name="property">The XAML member identifier for the member to write.</param>
+        <summary>Writes a XAML start member node to the underlying <see cref="T:System.Xml.XmlWriter" /> or <see cref="T:System.IO.TextWriter" />. Throws an exception if the current position of the XAML node stream is within another member, or if it is not in a scope or writer state where a start member can be written.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Internal default logic in the <xref:System.Xaml.XamlXmlWriter> first attempts to write the member in attribute form. If no attribute form is supported because the property or its value does not support text syntax, a property element is written instead. If the property is a XAML content property, a `GetObject` case, or an implicit property, other XAML forms might be written, such as inner text or an object child that has no intervening member.  
+  
+ The duplicate member exception is never thrown if <xref:System.Xaml.XamlXmlWriterSettings.AssumeValidInput%2A> is `true` in the <xref:System.Xaml.XamlXmlWriterSettings> object that was used for settings for this <xref:System.Xaml.XamlXmlWriter>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="property" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="property" /> is not a valid <see cref="T:System.Xaml.XamlMember" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The current position of the XAML node stream is invalid for writing a start member.</exception>
+        <exception cref="T:System.Xaml.XamlXmlWriterException">The writer state is not valid for writing a start member.  
+  
+ -or-  
+  
+ The XAML writer attempted to write a duplicate member. This exception may have a more precise inner exception.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStartObject">
+      <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xaml.XamlType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartObject(class System.Xaml.XamlType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteStartObject(System.Xaml.XamlType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Xaml.XamlType" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Xaml.XamlType" /> (XAML type identifier) for the object to write.</param>
+        <summary>Writes a XAML start object node to the underlying <see cref="T:System.Xml.XmlWriter" /> or <see cref="T:System.IO.TextWriter" />. Throws an exception if the current position of the XAML node stream is not in a scope where a start object can be written, or if the writer is not in a state that can write a start object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is not a valid <see cref="T:System.Xaml.XamlType" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The current position of the XAML node stream is not valid for writing a new start object.</exception>
+        <exception cref="T:System.Xaml.XamlXmlWriterException">The state of the XAML writer is not valid for writing a new start object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteValue">
+      <MemberSignature Language="C#" Value="public override void WriteValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteValue(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriter.WriteValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value information to write.</param>
+        <summary>Writes a XAML value node to the underlying <see cref="T:System.Xml.XmlWriter" /> or <see cref="T:System.IO.TextWriter" />. Throws an exception if the current position of the XAML node stream is invalid for writing a value, or the writer is in a state where a value cannot be written.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The input `value` may be `null`, which supports explicitly writing out null as a serialized value. This behavior uses the <xref:System.Xaml.XamlLanguage.Null%2A?displayProperty=fullName> definition as <xref:System.Xaml.XamlXmlWriter.WriteStartObject%2A> input and then immediately calls <xref:System.Xaml.XamlXmlWriter.WriteEndObject%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The current position of the XAML node stream is not valid for writing a value.</exception>
+        <exception cref="T:System.Xaml.XamlXmlWriterException">The XAML writer state does not support the writing of a value node.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> specifies a value that is not null or a string.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

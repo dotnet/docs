@@ -1,0 +1,715 @@
+<Type Name="ComponentEditorPage" FullName="System.Windows.Forms.Design.ComponentEditorPage">
+  <TypeSignature Language="C#" Value="public abstract class ComponentEditorPage : System.Windows.Forms.Panel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ComponentEditorPage extends System.Windows.Forms.Panel" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentEditorPage" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Panel</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a base implementation for a <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.ComponentEditorPage> class is a complete implementation for a component editor page that consists of an empty window. You can extend this page to add your own controls. <xref:System.Windows.Forms.Design.ComponentEditorPage> is used by a <xref:System.Windows.Forms.Design.ComponentEditorForm> of a <xref:System.Windows.Forms.Design.WindowsFormsComponentEditor>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an example <xref:System.Windows.Forms.Design.ComponentEditorPage> implementation.  
+  
+ [!code-cpp[ComponentEditorExample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentEditorExample/CPP/componenteditorexamplecomponent.cpp#6)]
+ [!code-csharp[ComponentEditorExample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentEditorExample/CS/componenteditorexamplecomponent.cs#6)]
+ [!code-vb[ComponentEditorExample#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentEditorExample/VB/componenteditorexamplecomponent.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComponentEditorPage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public virtual void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.Activate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Activates and displays the page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyChanges">
+      <MemberSignature Language="C#" Value="public virtual void ApplyChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ApplyChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Applies changes to all the components being edited.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSize">
+      <MemberSignature Language="C#" Value="public override bool AutoSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.AutoSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not relevant for this class.</summary>
+        <value>
+          <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSizeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler AutoSizeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoSizeChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.ComponentEditorPage.AutoSizeChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This event is not relevant for this class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommitOnDeactivate">
+      <MemberSignature Language="C#" Value="public bool CommitOnDeactivate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CommitOnDeactivate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.CommitOnDeactivate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether the editor should apply its changes before it is deactivated.</summary>
+        <value>
+          <see langword="true" /> if the editor should apply its changes; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The standard implementation returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Component">
+      <MemberSignature Language="C#" Value="protected System.ComponentModel.IComponent Component { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Component" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Component" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the component to edit.</summary>
+        <value>The <see cref="T:System.ComponentModel.IComponent" /> this page allows you to edit.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the creation parameters for the control.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that indicates the creation parameters for the control.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivate">
+      <MemberSignature Language="C#" Value="public virtual void Deactivate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deactivate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.Deactivate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Deactivates and hides the page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterLoadingMode">
+      <MemberSignature Language="C#" Value="protected void EnterLoadingMode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnterLoadingMode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.EnterLoadingMode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Increments the loading counter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each procedure that performs loading or initialization should first call the <xref:System.Windows.Forms.Design.ComponentEditorPage.EnterLoadingMode%2A> method to indicate that it will load something before the editor can display the loaded editor page. When a loading procedure that called <xref:System.Windows.Forms.Design.ComponentEditorPage.EnterLoadingMode%2A> completes, it should call the <xref:System.Windows.Forms.Design.ComponentEditorPage.ExitLoadingMode%2A> method to indicate that its part of the load process is completed.  
+  
+ The <xref:System.Windows.Forms.Design.ComponentEditorPage.Loading%2A> property is used as a counter to determine when loading is complete. A page is in loading mode if the value of the <xref:System.Windows.Forms.Design.ComponentEditorPage.Loading%2A> property is non-zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitLoadingMode">
+      <MemberSignature Language="C#" Value="protected void ExitLoadingMode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ExitLoadingMode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ExitLoadingMode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Decrements the loading counter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each procedure that performs loading or initialization should first call the <xref:System.Windows.Forms.Design.ComponentEditorPage.EnterLoadingMode%2A> method to indicate that it will load something before the editor can display the loaded editor page. When a loading procedure that called <xref:System.Windows.Forms.Design.ComponentEditorPage.EnterLoadingMode%2A> completes, it should call the <xref:System.Windows.Forms.Design.ComponentEditorPage.ExitLoadingMode%2A> method to indicate that its part of the load process is completed.  
+  
+ The <xref:System.Windows.Forms.Design.ComponentEditorPage.Loading%2A> property is used as a counter to determine when loading is complete. A page is in loading mode if the value of the <xref:System.Windows.Forms.Design.ComponentEditorPage.Loading%2A> property is non-zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstActivate">
+      <MemberSignature Language="C#" Value="protected bool FirstActivate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FirstActivate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.FirstActivate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the page is being activated for the first time.</summary>
+        <value>
+          <see langword="true" /> if the page has not previously been activated; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetControl">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Control GetControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.Control GetControl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.GetControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control that represents the window for this page.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.Control" /> that represents the window for this page.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectedComponent">
+      <MemberSignature Language="C#" Value="protected System.ComponentModel.IComponent GetSelectedComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.ComponentModel.IComponent GetSelectedComponent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.GetSelectedComponent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the component that is to be edited.</summary>
+        <returns>The <see cref="T:System.ComponentModel.IComponent" /> that is to be edited.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Icon">
+      <MemberSignature Language="C#" Value="public System.Drawing.Icon Icon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Icon Icon" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Icon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Icon</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the icon for the page.</summary>
+        <value>An <see cref="T:System.Drawing.Icon" /> used to represent the page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFirstActivate">
+      <MemberSignature Language="C#" Value="protected bool IsFirstActivate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsFirstActivate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsFirstActivate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the page is being activated for the first time.</summary>
+        <returns>
+          <see langword="true" /> if this is the first time the page is being activated; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLoading">
+      <MemberSignature Language="C#" Value="protected bool IsLoading ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsLoading() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsLoading" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the page is being loaded.</summary>
+        <returns>
+          <see langword="true" /> if the page is being loaded; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPageMessage">
+      <MemberSignature Language="C#" Value="public virtual bool IsPageMessage (ref System.Windows.Forms.Message msg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPageMessage(valuetype System.Windows.Forms.Message msg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.IsPageMessage(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="msg">The message to process.</param>
+        <summary>Processes messages that could be handled by the page.</summary>
+        <returns>
+          <see langword="true" /> if the page processed the message; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method gives the page a chance to process messages before the caller uses them. If this returns `true`, the message will be consumed; otherwise, the caller will continue to process the message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadComponent">
+      <MemberSignature Language="C#" Value="protected abstract void LoadComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadComponent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.LoadComponent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Loads the component into the page user interface (UI).</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Each page must override this method and implement its own custom behavior.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Loading">
+      <MemberSignature Language="C#" Value="protected int Loading { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Loading" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Loading" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates how many load dependencies remain until loading has been completed.</summary>
+        <value>The number of remaining load dependencies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used to track the number of loading stages remaining. For each process needed to completely load the document, this counter is incremented before loading begins, and decremented when each loading process completes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadRequired">
+      <MemberSignature Language="C#" Value="protected bool LoadRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LoadRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.LoadRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a component must be loaded before editing can occur.</summary>
+        <value>
+          <see langword="true" /> if a component must be loaded before editing can occur; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyComplete">
+      <MemberSignature Language="C#" Value="public virtual void OnApplyComplete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnApplyComplete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.OnApplyComplete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when the page and any sibling pages have applied their changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageSite">
+      <MemberSignature Language="C#" Value="protected System.Windows.Forms.IComponentEditorPageSite PageSite { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.IComponentEditorPageSite PageSite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.PageSite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.IComponentEditorPageSite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the page site.</summary>
+        <value>The page site.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The site for this component editor page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReloadComponent">
+      <MemberSignature Language="C#" Value="protected virtual void ReloadComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReloadComponent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ReloadComponent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reloads the component for the page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the current component may have changed elsewhere and needs to be reloaded into the user interface (UI).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveComponent">
+      <MemberSignature Language="C#" Value="protected abstract void SaveComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SaveComponent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SaveComponent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the component from the page user interface (UI).</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Each page must override this method and implement its own custom behavior.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SetComponent">
+      <MemberSignature Language="C#" Value="public virtual void SetComponent (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetComponent(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetComponent(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to be edited.</param>
+        <summary>Sets the component to be edited.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDirty">
+      <MemberSignature Language="C#" Value="protected virtual void SetDirty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetDirty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetDirty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the page as changed since the last load or save.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSite">
+      <MemberSignature Language="C#" Value="public virtual void SetSite (System.Windows.Forms.IComponentEditorPageSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSite(class System.Windows.Forms.IComponentEditorPageSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SetSite(System.Windows.Forms.IComponentEditorPageSite)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="System.Windows.Forms.IComponentEditorPageSite" />
+      </Parameters>
+      <Docs>
+        <param name="site">The site for this page.</param>
+        <summary>Sets the site for this page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public virtual void ShowHelp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowHelp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.ShowHelp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Shows Help information if the page supports Help information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is only called if <xref:System.Windows.Forms.Design.ComponentEditorPage.SupportsHelp%2A> returns `true`. The Help system calls the <xref:System.Windows.Forms.Design.ComponentEditorPage.ShowHelp%2A> method to provide Help for the page. <xref:System.Windows.Forms.Design.ComponentEditorPage.ShowHelp%2A> is usually called in response to F1 or when the Help button is clicked to allow the page to bring up its associated Help topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsHelp">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsHelp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsHelp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentEditorPage.SupportsHelp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether the editor supports Help.</summary>
+        <returns>
+          <see langword="true" /> if the editor supports Help; otherwise, <see langword="false" />. The default implementation returns <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public virtual string Title { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ComponentEditorPage.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the title of the page.</summary>
+        <value>The title of the page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The caller may use this to show the name of this editor before it's actually activated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

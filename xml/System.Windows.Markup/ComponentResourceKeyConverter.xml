@@ -1,0 +1,185 @@
+<Type Name="ComponentResourceKeyConverter" FullName="System.Windows.Markup.ComponentResourceKeyConverter">
+  <TypeSignature Language="C#" Value="public class ComponentResourceKeyConverter : System.Windows.ExpressionConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentResourceKeyConverter extends System.Windows.ExpressionConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ComponentResourceKeyConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.ExpressionConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements a type converter for <see cref="T:System.Windows.ComponentResourceKey" /> objects, which deliberately have no type conversion pathways. The type converter enforces and reports that behavior.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values. You should use markup extensions instead. For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception. The exceptions might possibly report invalid input, but even input that is considered valid will result in <xref:System.NotSupportedException>.  
+  
+<a name="xamlTextUsage_ComponentResourceKeyConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComponentResourceKeyConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ComponentResourceKeyConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ComponentResourceKeyConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
+        <param name="sourceType">The type being evaluated for conversion.</param>
+        <summary>Determines whether an object of the specified type can be converted to an instance of <see cref="T:System.Windows.ComponentResourceKey" />, using the specified context. Always returns <see langword="false" />.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
+        <param name="destinationType">The type being evaluated for conversion.</param>
+        <summary>Determines whether an instance of <see cref="T:System.Windows.ComponentResourceKey" /> can be converted to the specified type, using the specified context. Always returns <see langword="false" />.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
+        <param name="culture">Culture specific information.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Attempts to convert the specified object to a <see cref="T:System.Windows.ComponentResourceKey" />, using the specified context. Throws an exception in all cases.</summary>
+        <returns>Throws an exception in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values (should use markup extensions instead). For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Cannot perform the conversion.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A format context that provides information about the environment from which this converter is being invoked.</param>
+        <param name="culture">Culture specific information.</param>
+        <param name="value">The object to convert.</param>
+        <param name="destinationType">The type to convert the object to.</param>
+        <summary>Attempts to convert a <see cref="T:System.Windows.ComponentResourceKey" /> to the specified type, using the specified context. Throws an exception in all cases.</summary>
+        <returns>Throws an exception in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.ComponentResourceKey> type should not use a type converter pathway to convert values. You should use markup extensions instead. For this reason, the <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.CanConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Type%29> methods always return `false`. The <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertFrom%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%29> and <xref:System.Windows.Markup.ComponentResourceKeyConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> methods always throw an exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Cannot perform the conversion.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not type of <see cref="T:System.Windows.ComponentResourceKey" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

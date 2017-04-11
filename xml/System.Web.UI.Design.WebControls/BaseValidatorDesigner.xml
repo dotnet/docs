@@ -1,0 +1,146 @@
+<Type Name="BaseValidatorDesigner" FullName="System.Web.UI.Design.WebControls.BaseValidatorDesigner">
+  <TypeSignature Language="C#" Value="public class BaseValidatorDesigner : System.Web.UI.Design.WebControls.PreviewControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BaseValidatorDesigner extends System.Web.UI.Design.WebControls.PreviewControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BaseValidatorDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.PreviewControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.Design.SupportsPreviewControl(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides design-time support in a visual designer for Web server controls that are derived from the <see cref="T:System.Web.UI.WebControls.BaseValidator" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes a control that is derived from the <xref:System.Web.UI.WebControls.BaseValidator> abstract class is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.BaseValidatorDesigner> objects provide design-time support for controls that are derived from the <xref:System.Web.UI.WebControls.BaseValidator> class in a visual designer.  
+  
+ The <xref:System.Web.UI.Design.WebControls.BaseValidatorDesigner.GetDesignTimeHtml%2A> method gets the markup that is used to render the associated control at design time.  
+  
+   
+  
+## Examples  
+ The following example derives the `SimpleCompareValidator` control from the <xref:System.Web.UI.WebControls.CompareValidator> class. `SimpleCompareValidator` is a copy of the <xref:System.Web.UI.WebControls.CompareValidator>. The example also derives the designer `SimpleCompareValidatorDesigner` from the <xref:System.Web.UI.Design.WebControls.BaseValidatorDesigner> class and uses the <xref:System.ComponentModel.DesignerAttribute> attribute to associate the `SimpleCompareValidatorDesigner` class with the `SimpleCompareValidator` control.  
+  
+ `SimpleCompareValidatorDesigner` overrides the <xref:System.Web.UI.Design.WebControls.BaseValidatorDesigner.GetDesignTimeHtml%2A> method to draw a solid border around the `SimpleCompareValidator` control at design time if the value of the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> field.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.BaseValidatorDesigner#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.BaseValidatorDesigner/CS/CustomCompareValidatorDesigner.cs#1)]
+ [!code-vb[System.Web.UI.Design.WebControls.BaseValidatorDesigner#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.BaseValidatorDesigner/VB/customcomparevalidatordesigner.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BaseValidatorDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseValidatorDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.BaseValidatorDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.BaseValidatorDesigner> class when it creates the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseValidator> class or a copy of that control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateViewControl">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.Control CreateViewControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.Control CreateViewControl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseValidatorDesigner.CreateViewControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of the associated control to render on the design surface.</summary>
+        <returns>A Web server control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseValidatorDesigner.GetDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the markup that is used to render the associated control at design time.</summary>
+        <returns>A string containing the markup used to render the <see cref="T:System.Web.UI.WebControls.BaseValidator" /> at design time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.WebControls.BaseValidator.ErrorMessage%2A> or <xref:System.Web.UI.WebControls.BaseValidator.Text%2A> property of the associated control that is derived from the <xref:System.Web.UI.WebControls.BaseValidator> class is an empty string (""), or if the <xref:System.Web.UI.WebControls.BaseValidator.Display%2A> property is set to the <xref:System.Web.UI.WebControls.ValidatorDisplay> field, the <xref:System.Web.UI.Design.WebControls.BaseValidatorDesigner.GetDesignTimeHtml%2A> method sets the <xref:System.Web.UI.WebControls.BaseValidator.ErrorMessage%2A> property to the control ID, which is enclosed in brackets ([]) and sets the <xref:System.Web.UI.WebControls.BaseValidator.Display%2A> property to the <xref:System.Web.UI.WebControls.ValidatorDisplay> field. The <xref:System.Web.UI.Design.WebControls.BaseValidatorDesigner.GetDesignTimeHtml%2A> then calls the <xref:System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml%2A> base method to generate the markup, and restores the control properties to their original values, if necessary.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the <xref:System.Web.UI.Design.WebControls.BaseValidatorDesigner.GetDesignTimeHtml%2A> method that draws a solid border around the associated control at design time if the value of the <xref:System.Web.UI.WebControls.WebControl.BorderStyle%2A> property of the control is set to the <xref:System.Web.UI.WebControls.BorderStyle> or <xref:System.Web.UI.WebControls.BorderStyle> field.  
+  
+ [!code-csharp[System.Web.UI.Design.WebControls.BaseValidatorDesigner#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.BaseValidatorDesigner/CS/CustomCompareValidatorDesigner.cs#3)]
+ [!code-vb[System.Web.UI.Design.WebControls.BaseValidatorDesigner#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.WebControls.BaseValidatorDesigner/VB/customcomparevalidatordesigner.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseValidatorDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">A collection that implements the <see cref="T:System.Collections.IDictionary" /> of the added and shadowed properties.</param>
+        <summary>Used by the designer to remove or add properties in the properties grid, or to shadow properties of the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control designer objects use methods that are derived from the <xref:System.ComponentModel.Design.ComponentDesigner.PreFilterProperties%2A?displayProperty=fullName> method to shadow control properties with corresponding design-time properties that the designer implements, and to add properties to or remove properties from the properties grid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

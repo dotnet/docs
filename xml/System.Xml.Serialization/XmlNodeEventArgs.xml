@@ -1,0 +1,320 @@
+<Type Name="XmlNodeEventArgs" FullName="System.Xml.Serialization.XmlNodeEventArgs">
+  <TypeSignature Language="C#" Value="public class XmlNodeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlNodeEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlNodeEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Xml.Serialization.XmlSerializer.UnknownNode" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ The <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event can occur only when you call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event of the <xref:System.Xml.Serialization.XmlSerializer> to print various properties of an unknown XML node that is encountered when calling the <xref:System.Xml.Serialization.XmlSerializer> class's <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
+  
+ [!code-cpp[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LineNumber">
+      <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlNodeEventArgs.LineNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the line number of the unknown XML node.</summary>
+        <value>The line number of the unknown XML node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinePosition">
+      <MemberSignature Language="C#" Value="public int LinePosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LinePosition" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlNodeEventArgs.LinePosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the position in the line of the unknown XML node.</summary>
+        <value>The position number of the unknown XML node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlSerializer.UnknownNode Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializer.UnknownNode Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalName">
+      <MemberSignature Language="C#" Value="public string LocalName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocalName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlNodeEventArgs.LocalName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XML local name of the XML node being deserialized.</summary>
+        <value>The XML local name of the node being deserialized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlNodeEventArgs.LocalName%2A> property returns the local name (also known as a local part) of an XML qualified name. The <xref:System.Xml.Serialization.XmlNodeEventArgs.LocalName%2A> property conforms to the 1999 http://www.w3.org specification `Namespaces in XML`.  
+  
+   
+  
+## Examples  
+ The following example prints the <xref:System.Xml.Serialization.XmlNodeEventArgs.LocalName%2A> of an unknown XML node that is encountered when calling the <xref:System.Xml.Serialization.XmlSerializer> class's <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method.  
+  
+ [!code-cpp[Classic XmlNodeEventArgs.LocalName Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.LocalName Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlNodeEventArgs.LocalName Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.LocalName Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlNodeEventArgs.LocalName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlNodeEventArgs.LocalName Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlNodeEventArgs.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the XML node being deserialized.</summary>
+        <value>The name of the node being deserialized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example prints the name of the unknown node that caused the <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event to occur.  
+  
+ [!code-cpp[Classic XmlNodeEventArgs.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.Name Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlNodeEventArgs.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.Name Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlNodeEventArgs.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlNodeEventArgs.Name Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceURI">
+      <MemberSignature Language="C#" Value="public string NamespaceURI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceURI" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlNodeEventArgs.NamespaceURI" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the namespace URI that is associated with the XML node being deserialized.</summary>
+        <value>The namespace URI that is associated with the XML node being deserialized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example prints the URI of the unknown XML node that caused the <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event to occur.  
+  
+ [!code-cpp[Classic XmlNodeEventArgs.NamespaceURI Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.NamespaceURI Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlNodeEventArgs.NamespaceURI Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.NamespaceURI Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlNodeEventArgs.NamespaceURI Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlNodeEventArgs.NamespaceURI Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeType">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNodeType NodeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlNodeEventArgs.NodeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the XML node being deserialized.</summary>
+        <value>The <see cref="T:System.Xml.XmlNodeType" /> that represents the XML node being deserialized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XmlNodeType> enumeration returns a description of the node being deserialized. For example, it returns "Comment" if the node is a comment.  
+  
+   
+  
+## Examples  
+ The following example prints a description of the unknown node that caused the <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event to occur.  
+  
+ [!code-cpp[Classic XmlNodeEventArgs.NodeType Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.NodeType Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlNodeEventArgs.NodeType Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.NodeType Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlNodeEventArgs.NodeType Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlNodeEventArgs.NodeType Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectBeingDeserialized">
+      <MemberSignature Language="C#" Value="public object ObjectBeingDeserialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ObjectBeingDeserialized" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlNodeEventArgs.ObjectBeingDeserialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object being deserialized.</summary>
+        <value>The <see cref="T:System.Object" /> being deserialized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example prints the value returned by the <xref:System.Object.ToString%2A> method when the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method encounters an unknown XML node.  
+  
+ [!code-cpp[Classic XmlNodeEventArgs.ObjectBeingDeserialized Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.ObjectBeingDeserialized Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlNodeEventArgs.ObjectBeingDeserialized Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.ObjectBeingDeserialized Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlNodeEventArgs.ObjectBeingDeserialized Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlNodeEventArgs.ObjectBeingDeserialized Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlNodeEventArgs.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text of the XML node being deserialized.</summary>
+        <value>The text of the XML node being deserialized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example prints the text of the unknown XML node that caused the <xref:System.Xml.Serialization.XmlSerializer.UnknownNode> event to occur.  
+  
+ [!code-cpp[Classic XmlNodeEventArgs.Text Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.Text Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlNodeEventArgs.Text Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlNodeEventArgs.Text Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlNodeEventArgs.Text Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlNodeEventArgs.Text Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

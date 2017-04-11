@@ -1,0 +1,1420 @@
+<Type Name="DictionaryBase" FullName="System.Collections.DictionaryBase">
+  <TypeSignature Language="C#" Value="public abstract class DictionaryBase : System.Collections.IDictionary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit DictionaryBase extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.DictionaryBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IDictionary</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the <see langword="abstract" /> base class for a strongly typed collection of key/value pairs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The foreach statement of the C# language (for each in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.DictionaryBase> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>.  
+  
+ The `foreach` statement is a wrapper around the enumerator, which only allows reading from, not writing to, the collection.  
+  
+> [!NOTE]
+>  Because keys can be inherited and their behavior changed, their absolute uniqueness cannot be guaranteed by comparisons using the <xref:System.Type.Equals%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
+  
+ This implementation does not provide a synchronized (thread-safe) wrapper for a <see cref="T:System.Collections.DictionaryBase" />, but derived classes can create their own synchronized versions of the <see cref="T:System.Collections.DictionaryBase" /> using the <see cref="P:System.Collections.ICollection.SyncRoot" /> property.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+    <block subset="none" type="overrides">
+      <para>This base class is provided to make it easier for implementers to create a strongly typed custom collection. Implementers are encouraged to extend this base class instead of creating their own.  
+  
+ Members of this base class are protected and are intended to be used through a derived class only.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DictionaryBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.DictionaryBase" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the contents of the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.DictionaryBase.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.DictionaryBase.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the <see cref="T:System.Collections.DictionaryEntry" /> objects copied from the <see cref="T:System.Collections.DictionaryBase" /> instance. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the <see cref="T:System.Collections.DictionaryBase" /> elements to a one-dimensional <see cref="T:System.Array" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.DictionaryBase>.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.DictionaryBase.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Collections.DictionaryBase" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.DictionaryBase" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements contained in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Collections.DictionaryBase" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dictionary">
+      <MemberSignature Language="C#" Value="protected System.Collections.IDictionary Dictionary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Dictionary" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.Dictionary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of elements contained in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> representing the <see cref="T:System.Collections.DictionaryBase" /> instance itself.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IDictionaryEnumerator" /> that iterates through the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> for the <see cref="T:System.Collections.DictionaryBase" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerHashtable">
+      <MemberSignature Language="C#" Value="protected System.Collections.Hashtable InnerHashtable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable InnerHashtable" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.InnerHashtable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Hashtable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of elements contained in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <value>A <see cref="T:System.Collections.Hashtable" /> representing the <see cref="T:System.Collections.DictionaryBase" /> instance itself.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClear">
+      <MemberSignature Language="C#" Value="protected virtual void OnClear ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnClear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs additional custom processes before clearing the contents of the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action before the collection is cleared.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed before deleting all the elements from the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnClear" /> is invoked before the standard Clear behavior, whereas <see cref="M:System.Collections.DictionaryBase.OnClearComplete" /> is invoked after the standard Clear behavior.  
+  
+ For example, implementers can exempt certain elements from deletion by a global Clear.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClearComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnClearComplete ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClearComplete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnClearComplete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs additional custom processes after clearing the contents of the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action after the collection is cleared.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed after deleting all the elements from the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnClear" /> is invoked before the standard Clear behavior, whereas <see cref="M:System.Collections.DictionaryBase.OnClearComplete" /> is invoked after the standard Clear behavior.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnGet">
+      <MemberSignature Language="C#" Value="protected virtual object OnGet (object key, object currentValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object OnGet(object key, object currentValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnGet(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="currentValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to get.</param>
+        <param name="currentValue">The current value of the element associated with <c>key</c>.</param>
+        <summary>Gets the element with the specified key and value in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <returns>An <see cref="T:System.Object" /> containing the element with the specified key and value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method returns `currentValue`. It is intended to be overridden by a derived class to perform additional action when the specified element is retrieved.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed when executing the standard Get behavior of the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnGet(System.Object,System.Object)" /> can be used to specify processes to perform before returning the value retrieved from the underlying <see cref="T:System.Collections.Hashtable" />. For example, implementers can cast the value into another type before returning it.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsert">
+      <MemberSignature Language="C#" Value="protected virtual void OnInsert (object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInsert(object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnInsert(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to insert.</param>
+        <param name="value">The value of the element to insert.</param>
+        <summary>Performs additional custom processes before inserting a new element into the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is inserted.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed before inserting the element into the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnInsert(System.Object,System.Object)" /> is invoked before the standard Insert behavior, whereas <see cref="M:System.Collections.DictionaryBase.OnInsertComplete(System.Object,System.Object)" /> is invoked after the standard Insert behavior.  
+  
+ For example, implementers can restrict which types of objects can be inserted into the <see cref="T:System.Collections.Hashtable" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsertComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnInsertComplete (object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInsertComplete(object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnInsertComplete(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to insert.</param>
+        <param name="value">The value of the element to insert.</param>
+        <summary>Performs additional custom processes after inserting a new element into the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is inserted.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed after inserting the element into the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnInsert(System.Object,System.Object)" /> is invoked before the standard Insert behavior, whereas <see cref="M:System.Collections.DictionaryBase.OnInsertComplete(System.Object,System.Object)" /> is invoked after the standard Insert behavior.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemove">
+      <MemberSignature Language="C#" Value="protected virtual void OnRemove (object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRemove(object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnRemove(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to remove.</param>
+        <param name="value">The value of the element to remove.</param>
+        <summary>Performs additional custom processes before removing an element from the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is removed.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed before removing the element from the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnRemove(System.Object,System.Object)" /> is invoked before the standard Remove behavior, whereas <see cref="M:System.Collections.DictionaryBase.OnRemoveComplete(System.Object,System.Object)" /> is invoked after the standard Remove behavior.  
+  
+ For example, implementers can prevent removal of elements by always throwing an exception in <see cref="M:System.Collections.DictionaryBase.OnRemove(System.Object,System.Object)" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemoveComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnRemoveComplete (object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRemoveComplete(object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnRemoveComplete(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to remove.</param>
+        <param name="value">The value of the element to remove.</param>
+        <summary>Performs additional custom processes after removing an element from the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is removed.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed after removing the element from the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnRemove(System.Object,System.Object)" /> is invoked before the standard Remove behavior, whereas <see cref="M:System.Collections.DictionaryBase.OnRemoveComplete(System.Object,System.Object)" /> is invoked after the standard Remove behavior.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSet">
+      <MemberSignature Language="C#" Value="protected virtual void OnSet (object key, object oldValue, object newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSet(object key, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnSet(System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="oldValue" Type="System.Object" />
+        <Parameter Name="newValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to locate.</param>
+        <param name="oldValue">The old value of the element associated with <c>key</c>.</param>
+        <param name="newValue">The new value of the element associated with <c>key</c>.</param>
+        <summary>Performs additional custom processes before setting a value in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action before the specified element is set.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed before setting the specified element in the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnSet(System.Object,System.Object,System.Object)" /> is invoked before the standard Set behavior, whereas <see cref="M:System.Collections.DictionaryBase.OnSetComplete(System.Object,System.Object,System.Object)" /> is invoked after the standard Set behavior.  
+  
+ For example, implementers can restrict which values can be overwritten by performing a check inside <see cref="M:System.Collections.DictionaryBase.OnSet(System.Object,System.Object,System.Object)" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSetComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnSetComplete (object key, object oldValue, object newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSetComplete(object key, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnSetComplete(System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="oldValue" Type="System.Object" />
+        <Parameter Name="newValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to locate.</param>
+        <param name="oldValue">The old value of the element associated with <c>key</c>.</param>
+        <param name="newValue">The new value of the element associated with <c>key</c>.</param>
+        <summary>Performs additional custom processes after setting a value in the <see cref="T:System.Collections.DictionaryBase" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action after the specified element is set.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed after setting the specified element in the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnSet(System.Object,System.Object,System.Object)" /> is invoked before the standard Set behavior, whereas <see cref="M:System.Collections.DictionaryBase.OnSetComplete(System.Object,System.Object,System.Object)" /> is invoked after the standard Set behavior.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidate">
+      <MemberSignature Language="C#" Value="protected virtual void OnValidate (object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValidate(object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.OnValidate(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to validate.</param>
+        <param name="value">The value of the element to validate.</param>
+        <summary>Performs additional custom processes when validating the element with the specified key and value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of this method is intended to be overridden by a derived class to perform some action when the specified element is validated.  
+  
+ The On* methods are invoked only on the instance returned by the <xref:System.Collections.DictionaryBase.Dictionary%2A> property, but not on the instance returned by the <xref:System.Collections.DictionaryBase.InnerHashtable%2A> property.  
+  
+ The default implementation of this method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method allows implementers to define processes that must be performed when executing the standard behavior of the underlying <see cref="T:System.Collections.Hashtable" />. By defining this method, implementers can add functionality to inherited methods without having to override all other methods.  
+  
+ <see cref="M:System.Collections.DictionaryBase.OnValidate(System.Object,System.Object)" /> can be used to impose restrictions on the type of objects that are accepted into the collection. The default implementation prevents <see langword="null" /> from being added to or removed from the underlying <see cref="T:System.Collections.Hashtable" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to a <see cref="T:System.Collections.DictionaryBase" /> object is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.DictionaryBase" /> object is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Collections.DictionaryBase> object is not synchronized. Derived classes can provide a synchronized version of the <xref:System.Collections.DictionaryBase> class using the <xref:System.Collections.ICollection.SyncRoot%2A> property.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/source2.cpp#3)]
+ [!code-csharp[System.Collections.DictionaryBase#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/source2.cs#3)]
+ [!code-vb[System.Collections.DictionaryBase#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/source2.vb#3)]  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to a <see cref="T:System.Collections.DictionaryBase" /> object.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.DictionaryBase" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes can provide their own synchronized version of the <xref:System.Collections.DictionaryBase> class using the <xref:System.Collections.ICollection.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.DictionaryBase> object, not directly on the <xref:System.Collections.DictionaryBase> object. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.DictionaryBase> object.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock the collection using the <xref:System.Collections.ICollection.SyncRoot%2A> property during the entire enumeration.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/source2.cpp#3)]
+ [!code-csharp[System.Collections.DictionaryBase#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/source2.cs#3)]
+ [!code-vb[System.Collections.DictionaryBase#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/source2.vb#3)]  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IDictionary.Add">
+      <MemberSignature Language="C#" Value="void IDictionary.Add (object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Add(object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.System#Collections#IDictionary#Add(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to add.</param>
+        <param name="value">The value of the element to add.</param>
+        <summary>Adds an element with the specified key and value into the <see cref="T:System.Collections.DictionaryBase" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object that has no correlation between its state and its hash code value should typically not be used as the key. For example, <xref:System.String> objects are better than <xref:System.Text.StringBuilder> objects for use as keys.  
+  
+ You can also use the <xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.DictionaryBase>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.DictionaryBase>, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.DictionaryBase" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.DictionaryBase" /> is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.DictionaryBase" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IDictionary.Contains">
+      <MemberSignature Language="C#" Value="bool IDictionary.Contains (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IDictionary.Contains(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.System#Collections#IDictionary#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to locate in the <see cref="T:System.Collections.DictionaryBase" />.</param>
+        <summary>Determines whether the <see cref="T:System.Collections.DictionaryBase" /> contains a specific key.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.DictionaryBase" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(1) operation.  
+  
+ Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `key` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `key` parameter on the objects in the collection.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IDictionary.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IDictionary.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.System#Collections#IDictionary#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a <see cref="T:System.Collections.DictionaryBase" /> object has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.DictionaryBase" /> object has a fixed size; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
+  
+ A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IDictionary.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.IDictionary.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.System#Collections#IDictionary#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a <see cref="T:System.Collections.DictionaryBase" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.DictionaryBase" /> object is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+  
+ A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IDictionary.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IDictionary.Item[object key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.System#Collections#IDictionary#Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key whose value to get or set.</param>
+        <summary>Gets or sets the value associated with the specified key.</summary>
+        <value>The value associated with the specified key. If the specified key is not found, attempting to get it returns <see langword="null" />, and attempting to set it creates a new element using the specified key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[key]`.  
+  
+ You can also use the [IDictionary.Item\<xref:System.Collections.IDictionary.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.DictionaryBase>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.DictionaryBase>, setting the <xref:System.Collections.IDictionary.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.IDictionary.Add%2A> method does not modify existing elements.  
+  
+ Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.DictionaryBase" /> is read-only.  
+  
+ -or-  
+  
+ The property is set, <paramref name="key" /> does not exist in the collection, and the <see cref="T:System.Collections.DictionaryBase" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IDictionary.Keys">
+      <MemberSignature Language="C#" Value="System.Collections.ICollection System.Collections.IDictionary.Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.System#Collections#IDictionary#Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object containing the keys in the <see cref="T:System.Collections.DictionaryBase" /> object.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> object containing the keys in the <see cref="T:System.Collections.DictionaryBase" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order of the keys in the <xref:System.Collections.ICollection> object is unspecified, but is the same order as the associated values in the <xref:System.Collections.ICollection> object returned by the <xref:System.Collections.IDictionary.Values%2A> property.  
+  
+ The returned <xref:System.Collections.ICollection> is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the keys in the original <xref:System.Collections.DictionaryBase> object. Therefore, changes to the <xref:System.Collections.DictionaryBase> continue to be reflected in the returned <xref:System.Collections.ICollection>.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> property of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IDictionary.Remove">
+      <MemberSignature Language="C#" Value="void IDictionary.Remove (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Remove(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.System#Collections#IDictionary#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from the <see cref="T:System.Collections.DictionaryBase" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Collections.DictionaryBase> does not contain an element with the specified key, the <xref:System.Collections.DictionaryBase> remains unchanged. No exception is thrown.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.DictionaryBase" /> is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.DictionaryBase" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IDictionary.Values">
+      <MemberSignature Language="C#" Value="System.Collections.ICollection System.Collections.IDictionary.Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.DictionaryBase.System#Collections#IDictionary#Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> object containing the values in the <see cref="T:System.Collections.DictionaryBase" /> object.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> object containing the values in the <see cref="T:System.Collections.DictionaryBase" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order of the values in the <xref:System.Collections.ICollection> object is unspecified, but is the same order as the associated keys in the <xref:System.Collections.ICollection> object returned by the <xref:System.Collections.IDictionary.Keys%2A> property.  
+  
+ The returned <xref:System.Collections.ICollection> is not a static copy; instead, the <xref:System.Collections.ICollection> refers back to the values in the original <xref:System.Collections.DictionaryBase> object. Therefore, changes to the <xref:System.Collections.DictionaryBase> continue to be reflected in the returned <xref:System.Collections.ICollection>.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example implements the <xref:System.Collections.DictionaryBase> class and uses that implementation to create a dictionary of <xref:System.String> keys and values that have a <xref:System.String.Length%2A> property of 5 characters or less.  
+  
+ [!code-cpp[System.Collections.DictionaryBase#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CPP/dictionarybase.cpp#1)]
+ [!code-csharp[System.Collections.DictionaryBase#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.DictionaryBase/CS/dictionarybase.cs#1)]
+ [!code-vb[System.Collections.DictionaryBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.DictionaryBase/VB/dictionarybase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.DictionaryBase.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through the <see cref="T:System.Collections.DictionaryBase" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.DictionaryBase" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

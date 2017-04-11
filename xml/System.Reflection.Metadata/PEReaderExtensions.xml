@@ -1,0 +1,125 @@
+<Type Name="PEReaderExtensions" FullName="System.Reflection.Metadata.PEReaderExtensions">
+  <TypeSignature Language="C#" Value="public static class PEReaderExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PEReaderExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.PEReaderExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetMetadataReader">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MetadataReader GetMetadataReader (this System.Reflection.PortableExecutable.PEReader peReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Metadata.MetadataReader GetMetadataReader(class System.Reflection.PortableExecutable.PEReader peReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader(System.Reflection.PortableExecutable.PEReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MetadataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peReader" Type="System.Reflection.PortableExecutable.PEReader" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="peReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadataReader">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MetadataReader GetMetadataReader (this System.Reflection.PortableExecutable.PEReader peReader, System.Reflection.Metadata.MetadataReaderOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Metadata.MetadataReader GetMetadataReader(class System.Reflection.PortableExecutable.PEReader peReader, valuetype System.Reflection.Metadata.MetadataReaderOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader(System.Reflection.PortableExecutable.PEReader,System.Reflection.Metadata.MetadataReaderOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MetadataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peReader" Type="System.Reflection.PortableExecutable.PEReader" RefType="this" />
+        <Parameter Name="options" Type="System.Reflection.Metadata.MetadataReaderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="peReader">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadataReader">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MetadataReader GetMetadataReader (this System.Reflection.PortableExecutable.PEReader peReader, System.Reflection.Metadata.MetadataReaderOptions options, System.Reflection.Metadata.MetadataStringDecoder utf8Decoder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Metadata.MetadataReader GetMetadataReader(class System.Reflection.PortableExecutable.PEReader peReader, valuetype System.Reflection.Metadata.MetadataReaderOptions options, class System.Reflection.Metadata.MetadataStringDecoder utf8Decoder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.PEReaderExtensions.GetMetadataReader(System.Reflection.PortableExecutable.PEReader,System.Reflection.Metadata.MetadataReaderOptions,System.Reflection.Metadata.MetadataStringDecoder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MetadataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peReader" Type="System.Reflection.PortableExecutable.PEReader" RefType="this" />
+        <Parameter Name="options" Type="System.Reflection.Metadata.MetadataReaderOptions" />
+        <Parameter Name="utf8Decoder" Type="System.Reflection.Metadata.MetadataStringDecoder" />
+      </Parameters>
+      <Docs>
+        <param name="peReader">To be added.</param>
+        <param name="options">To be added.</param>
+        <param name="utf8Decoder">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMethodBody">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.MethodBodyBlock GetMethodBody (this System.Reflection.PortableExecutable.PEReader peReader, int relativeVirtualAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Metadata.MethodBodyBlock GetMethodBody(class System.Reflection.PortableExecutable.PEReader peReader, int32 relativeVirtualAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.PEReaderExtensions.GetMethodBody(System.Reflection.PortableExecutable.PEReader,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodBodyBlock</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peReader" Type="System.Reflection.PortableExecutable.PEReader" RefType="this" />
+        <Parameter Name="relativeVirtualAddress" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="peReader">To be added.</param>
+        <param name="relativeVirtualAddress">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

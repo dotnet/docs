@@ -1,0 +1,61 @@
+<Namespace Name="System.ComponentModel.Design">
+  <Docs>
+    <summary>The <see cref="N:System.ComponentModel.Design" /> namespace contains classes that developers can use to build custom design-time behavior for components and user interfaces for configuring components at design time. The design time environment provides systems that enable developers to arrange components and configure their properties. Some components may require specific design-time only behavior to function properly in a design time environment. It may also be valuable to provide custom user interfaces which assist developers in configuring components or the values of complex data types. The classes and interfaces defined within this namespace can be used to build design-time behavior for components, access design-time services, and implement customized design-time configuration interfaces.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes in this namespace include:  
+  
+-   A basic <xref:System.ComponentModel.Design.IDesigner> interface that you can use to customize design-time behavior for specific types of components.  
+  
+-   A <xref:System.ComponentModel.Design.ComponentDesigner> class that provides a more sophisticated designer base class which implements the <xref:System.ComponentModel.Design.IDesigner>, <xref:System.IDisposable>, and <xref:System.ComponentModel.Design.IDesignerFilter> interfaces.  
+  
+-   Designer interfaces and services that enable a designer to support additional functionality, including:  
+  
+    -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  
+    -   <xref:System.ComponentModel.Design.IDesignerEventService>  
+  
+    -   <xref:System.ComponentModel.Design.IDesignerFilter>  
+  
+    -   <xref:System.ComponentModel.Design.IDesignerHost>  
+  
+    -   <xref:System.ComponentModel.Design.IDesignerOptionService>  
+  
+    -   <xref:System.ComponentModel.Design.IDictionaryService>  
+  
+    -   <xref:System.ComponentModel.Design.IEventBindingService>  
+  
+    -   <xref:System.ComponentModel.Design.IExtenderListService>  
+  
+    -   <xref:System.ComponentModel.Design.IExtenderProviderService>  
+  
+    -   <xref:System.ComponentModel.Design.IHelpService>  
+  
+    -   <xref:System.ComponentModel.Design.IInheritanceService>  
+  
+    -   <xref:System.ComponentModel.Design.IMenuCommandService>  
+  
+    -   <xref:System.ComponentModel.Design.IReferenceService>  
+  
+    -   <xref:System.ComponentModel.Design.IResourceService>  
+  
+    -   <xref:System.ComponentModel.Design.IRootDesigner>  
+  
+    -   <xref:System.ComponentModel.Design.ISelectionService>  
+  
+    -   <xref:System.ComponentModel.Design.IServiceContainer>  
+  
+    -   <xref:System.ComponentModel.Design.ITypeDescriptorFilterService>  
+  
+    -   <xref:System.ComponentModel.Design.ITypeResolutionService>  
+  
+-   Classes that can be used to customize design-time license context management and serialization: <xref:System.ComponentModel.Design.DesigntimeLicenseContext> and <xref:System.ComponentModel.Design.DesigntimeLicenseContextSerializer>.  
+  
+-   Simple collection editors that can be extended: <xref:System.ComponentModel.Design.ArrayEditor> and <xref:System.ComponentModel.Design.CollectionEditor>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,48 @@
+---
+title: "ISymUnmanagedDocument::GetSourceLength Method | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ISymUnmanagedDocument.GetSourceLength"
+apilocation: 
+  - "diasymreader.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ISymUnmanagedDocument::GetSourceLength"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "GetSourceLength method [.NET Framework debugging]"
+  - "ISymUnmanagedDocument::GetSourceLength method [.NET Framework debugging]"
+ms.assetid: e087dbbb-f4fb-4fbe-8292-e4f1a14d0df2
+caps.latest.revision: 7
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+# ISymUnmanagedDocument::GetSourceLength Method
+Gets the length, in bytes, of the embedded source.  
+  
+## Syntax  
+  
+```  
+HRESULT GetSourceLength(  
+    [out, retval]  ULONG32*  pRetVal);  
+```  
+  
+#### Parameters  
+ `pRetVal`  
+ [out] A pointer to a variable that indicates the length, in bytes, of the embedded source.  
+  
+## Return Value  
+ S_OK if the method succeeds.  
+  
+## See Also  
+ [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

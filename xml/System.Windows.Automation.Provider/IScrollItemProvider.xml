@@ -1,0 +1,60 @@
+<Type Name="IScrollItemProvider" FullName="System.Windows.Automation.Provider.IScrollItemProvider">
+  <TypeSignature Language="C#" Value="public interface IScrollItemProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScrollItemProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IScrollItemProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("2360c714-4bf1-4b26-ba65-9b21316127eb")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to individual child controls of containers that implement <see cref="T:System.Windows.Automation.Provider.IScrollProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.ScrollItemPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ScrollIntoView">
+      <MemberSignature Language="C#" Value="public void ScrollIntoView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollIntoView() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Scrolls the content area of a container object in order to display the control within the visible region (viewport) of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not provide the ability to specify the position of the control within the visible region (viewport) of the container.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The item cannot be scrolled into view.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

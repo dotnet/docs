@@ -26,7 +26,7 @@ See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/rel
 
 ## .NET Core dependencies
 
-.NET Core requires OpenSSL when running on macOS. An easy way to obtain OpenSSL is by using the [Homebrew ("brew")](http://brew.sh/) package manager for macOS. After installing *brew*, install OpenSSL by executing the following commands at a Terminal (command) prompt:
+.NET Core requires OpenSSL when running on macOS. An easy way to obtain OpenSSL is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install OpenSSL by executing the following commands at a Terminal (command) prompt:
 
 ```Terminal
 brew update
@@ -36,7 +36,7 @@ ln -s /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/
 ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
 ```
 
-After installing OpenSSL, obtain the official [.NET Core SDK for Mac installer](https://go.microsoft.com/fwlink/?linkid=843444). .NET Core 1.1.1 is the latest version. For long-term support versions and additional downloads, visit [.NET Downloads: All downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md).
+After installing OpenSSL, download and install the .NET Core SDK from [.NET Downloads](https://www.microsoft.com/net/download/core). If you have problems with the installation on macOS, consult the [Known issues & workarounds](https://github.com/dotnet/core/blob/master/cli/known-issues.md) topic.
 
 ## Visual Studio for Mac
 

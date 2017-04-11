@@ -1,0 +1,27 @@
+<Advertisements>
+    <Ad>
+        <ImageUrl>~\Data\ad1.gif</ImageUrl>
+        <NavigateUrl>http://msdn.microsoft.com/vbasic/</NavigateUrl>
+        <AlternativeText>Visual Basic Developer Site</AlternativeText>
+        <Width>140</Width>
+        <Height>100</Height>
+        <!-- The following custom elements will be used by WAP-enabled
+            devices. -->
+        <WmlImageUrl>~\Data\mobileAd1.jpg</WmlImageUrl>
+        <WmlNavigateUrl>http://msdn.microsoft.com/mobile/</WmlNavigateUrl>
+        <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>
+
+    </Ad>
+    <Ad>
+        <ImageUrl>~\Data\ad2.gif</ImageUrl>
+        <NavigateUrl>http://msdn.microsoft.com</NavigateUrl>
+        <AlternateText>MSDN</AlternateText>
+        <Width>150</Width>
+        <Height>150</Height>
+        <!-- The following custom elements will be used by WAP-enabled
+            devices. -->
+        <WmlImageUrl>~\Data\mobileAd2.jpg</WmlImageUrl>
+        <WmlNavigateUrl>http://msdn.microsoft.com/mobility/</WmlNavigateUrl>
+        <WmlAlternateText>Windows Mobile Developer Site</WmlAlternateText>
+    </Ad>
+</Advertisements>

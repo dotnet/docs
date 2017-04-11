@@ -1,0 +1,159 @@
+<Type Name="BaselineAlignment" FullName="System.Windows.BaselineAlignment">
+  <TypeSignature Language="C#" Value="public enum BaselineAlignment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BaselineAlignment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.BaselineAlignment" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes how the baseline for a text-based element is positioned on the vertical axis, relative to the established baseline for text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Documents.Inline.BaselineAlignment%2A> property to align text within a containing box (in this case, a <xref:System.Windows.Documents.Paragraph>).  
+  
+ [!code-xml[FlowMiscSnippets_snip#BaselineAlignmentExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/baselinealignmentexample.xaml#baselinealignmentexamplewholepage)]  
+  
+ The following illustration shows the result of the code above.  
+  
+ ![Baseline Alignment](~/add/media/baselinealignment.png "Baseline Alignment")  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Baseline">
+      <MemberSignature Language="C#" Value="Baseline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaselineAlignment Baseline = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaselineAlignment.Baseline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A baseline that is aligned at the actual baseline of the containing box.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaselineAlignment Bottom = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaselineAlignment.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A baseline that is aligned at the lower edge of the containing box.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Center">
+      <MemberSignature Language="C#" Value="Center" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaselineAlignment Center = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaselineAlignment.Center" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A baseline that is aligned to the center of the containing box.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscript">
+      <MemberSignature Language="C#" Value="Subscript" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaselineAlignment Subscript = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaselineAlignment.Subscript" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A baseline that is aligned at the subscript position of the containing box.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Superscript">
+      <MemberSignature Language="C#" Value="Superscript" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaselineAlignment Superscript = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaselineAlignment.Superscript" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A baseline that is aligned at the superscript position of the containing box.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextBottom">
+      <MemberSignature Language="C#" Value="TextBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaselineAlignment TextBottom = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaselineAlignment.TextBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A baseline that is aligned at the lower edge of the text baseline.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextTop">
+      <MemberSignature Language="C#" Value="TextTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaselineAlignment TextTop = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaselineAlignment.TextTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A baseline that is aligned at the upper edge of the text baseline.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaselineAlignment Top = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaselineAlignment.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A baseline that is aligned to the upper edge of the containing box.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

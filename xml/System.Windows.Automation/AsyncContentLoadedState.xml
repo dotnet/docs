@@ -1,0 +1,74 @@
+<Type Name="AsyncContentLoadedState" FullName="System.Windows.Automation.AsyncContentLoadedState">
+  <TypeSignature Language="C#" Value="public enum AsyncContentLoadedState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AsyncContentLoadedState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AsyncContentLoadedState" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("d8e55844-7043-4edc-979d-593cc6b4775e")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify the state of the content being loaded into a content element.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Beginning">
+      <MemberSignature Language="C#" Value="Beginning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.AsyncContentLoadedState Beginning = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AsyncContentLoadedState.Beginning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AsyncContentLoadedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that asynchronous loading of the content into the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element is beginning.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="Completed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.AsyncContentLoadedState Completed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AsyncContentLoadedState.Completed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AsyncContentLoadedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that asynchronous loading of the content into the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element is complete.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Progress">
+      <MemberSignature Language="C#" Value="Progress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.AsyncContentLoadedState Progress = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AsyncContentLoadedState.Progress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AsyncContentLoadedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that asynchronous loading of the content into the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element is in progress. UI Automation providers should specify the percent complete so that client applications will know how much more content remains.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

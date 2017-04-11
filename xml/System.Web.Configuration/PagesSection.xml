@@ -1,0 +1,1144 @@
+<Type Name="PagesSection" FullName="System.Web.Configuration.PagesSection">
+  <TypeSignature Language="C#" Value="public sealed class PagesSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagesSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PagesSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides programmatic access to the  section of the configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.PagesSection> class provides a way to programmatically access and modify the content of the configuration file  section. This configuration section supports setting certain ASP.NET page and control directives globally for all pages and controls in the scope of the configuration file. This includes the `@ Page` directive, the `@ Import` directive through the <xref:System.Web.Configuration.PagesSection.Namespaces%2A> collection property, and the `@ Register` directive through the <xref:System.Web.Configuration.PagesSection.Controls%2A> collection property. It also provides support for mapping tag types to other tag types at run time through the <xref:System.Web.Configuration.PagesSection.TagMapping%2A> collection property.  
+  
+ Directives specify settings used by the page and user-control compilers when they process ASP.NET Web Forms page (.aspx) and user control (.ascx) files.  
+  
+   
+  
+## Examples  
+ This example demonstrates how to specify values declaratively for several attributes of the `pages` section, which can also be accessed as members of the <xref:System.Web.Configuration.PagesSection> class.  
+  
+ The following configuration file example shows how to specify values declaratively for the  section.  
+  
+```  
+<system.web>  
+  <pages buffer="true"   
+    enableSessionState="true"   
+    enableViewState="true"  
+    enableViewStateMac="true"   
+    autoEventWireup="true"   
+    validateRequest="true"  
+    asyncTimeout="45"  
+    maintainScrollPositionOnPostBack = "False"  
+    viewStateEncryptionMode = "Auto">  
+    <namespaces>  
+      <add namespace="System" />  
+      <add namespace="System.Collections" />  
+      <add namespace="System.Collections.Specialized" />  
+      <add namespace="System.ComponentModel" />  
+      <add namespace="System.Configuration" />  
+      <add namespace="System.Web" />  
+    </namespaces>  
+    <controls>  
+      <clear />  
+      <remove tagPrefix="MyTags" />  
+      <!—- Searches all linked assemblies for the namespace -->  
+      <add tagPrefix="MyTags1" namespace=" MyNameSpace "/>  
+      <!-- Uses a specified assembly -->  
+      <add tagPrefix="MyTags2" namespace="MyNameSpace"   
+        assembly="MyAssembly"/>  
+      <!-- Uses the specified source for the user control -->  
+      <add tagprefix="MyTags3" tagname="MyCtrl"       
+        src="MyControl.ascx"/>  
+    </controls>  
+    <tagMapping>  
+      <clear />  
+      <add  
+        tagTypeName=  
+          "System.Web.UI.WebControls.WebParts.WebPartManager"  
+        mappedTagTypeName=  
+          "Microsoft.Sharepoint.WebPartPartManager,   
+          MSPS.Web.dll, Version='2.0.0.0'"   
+      />  
+      <remove tagTypeName="SomeOtherNS.Class, Assemblyname" />  
+    </tagMapping>  
+  </pages>  
+</system.web>  
+```  
+  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.PagesSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#1)]
+ [!code-vb[System.Web.Configuration.PagesSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PagesSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PagesSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.PagesSection" /> class using default settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.PagesSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.PagesSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan AsyncTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AsyncTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.AsyncTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanSecondsConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("asyncTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="10675199.02:48:05.4775807", MinValueString="00:00:00")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the number of seconds to wait for an asynchronous handler to complete during asynchronous page processing.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> value indicating the amount of time in seconds to wait for an asynchronous handler to complete during asynchronous page processing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 45 seconds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoEventWireup">
+      <MemberSignature Language="C#" Value="public bool AutoEventWireup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoEventWireup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.AutoEventWireup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("autoEventWireup", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether events for ASP.NET pages are automatically connected to event-handling functions.</summary>
+        <value>
+          <see langword="true" /> if events for ASP.NET pages are automatically connected to event-handling functions; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `true`, ASP.NET does not require that you explicitly bind event handlers to a page event such as <xref:System.Web.UI.Control.Load>.  
+  
+ When <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `false`, you must explicitly bind the event to a method. For example, if you have a `Page_Load` method in the code for a page, the method will be called in response to the <xref:System.Web.UI.Control.Load> event only if you write code like that in the following example (notice the `Handles` statement in Visual Basic and the event handler code in C#):  
+  
+```vb  
+Partial Class AutoEventWireupExample  
+    Inherits System.Web.UI.Page  
+    Protected Sub Page_Load(ByVal sender As Object, _  
+            ByVal e As System.EventArgs) Handles Me.Load  
+        Response.Write("Executing Page_Load")  
+    End Sub  
+End Class  
+```  
+  
+```csharp  
+public partial class AutoEventWireupExample : System.Web.UI.Page  
+{   
+    protected void Page_Load(object sender, System.EventArgs e)  
+    {  
+        Response.Write("Executing Page_Load");  
+    }  
+    override protected void OnInit(EventArgs e)  
+    {  
+        this.Load += new System.EventHandler(this.Page_Load);  
+    }  
+}  
+```  
+  
+ When <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `true`, handlers are automatically bound to events at run time based on their name and signature. For each event, ASP.NET searches for a method that is named according to the pattern `Page_`*eventname*, such as `Page_Load` or `Page_Init`. ASP.NET checks first for an overload that has the typical event-handler signature (that is, it specifies <xref:System.Object> and <xref:System.EventArgs> parameters). If an event handler with this signature is not found, ASP.NET checks for an overload that has no parameters.  
+  
+ When <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `false`, you must explicitly bind event handlers to events, as shown in the preceding example. In that case, the method names do not have to follow a pattern.  
+  
+ The default value is `true` if <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is not specified in the `@ Page` directive. Visual Studio automatically includes the attribute when it creates code-behind files. For ASP.NET pages written in C#, Visual Studio sets the value to `true`. For Visual Basic, Visual Studio sets the value to `false` because handlers are bound to events by using the  keyword, which is inserted automatically by Visual Studio when it generates an event handler. If you set <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> to `true`, you can omit (or remove) the  keyword.  
+  
+ Do not set <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> to `true` if performance is a key consideration. When automatic event wireup is enabled, ASP.NET must make between 15 and 30 tries to match events with methods.  
+  
+ Note the following about binding event handlers to events:  
+  
+-   If you set <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> to `true`, make sure that you do not also manually attach page event handlers to events. If you do, handlers might be called more than one time.  
+  
+-   Automatic binding is performed only for page events, not for events for controls on the page.  
+  
+-   As an alternative to binding events to handlers, you can override the `On`*eventname* methods of the page or of controls.  
+  
+   
+  
+## Examples  
+ The following code example shows how to set or read the <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> property in code.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#9)]
+ [!code-vb[System.Web.Configuration.PagesSection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#9)]  
+  
+ The following example shows the two forms of method signatures that are automatically attached to page events when <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `true`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Configuration.PagesSection#50](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/Default.aspx#50)]  -->
+ [!code-csharp[System.Web.Configuration.PagesSection#50](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/Default2.aspx.cs#50)]
+ [!code-vb[System.Web.Configuration.PagesSection#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/Default2.aspx.vb#50)]
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Configuration.PagesSection#50](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/Default.aspx#50)]  -->  
+  
+ The following example shows how to explicitly wire up events when <xref:System.Web.Configuration.PagesSection.AutoEventWireup%2A> is `false`.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#51](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/Default.aspx.cs#51)]
+ [!code-vb[System.Web.Configuration.PagesSection#51](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/Default.aspx.vb#51)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buffer">
+      <MemberSignature Language="C#" Value="public bool Buffer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Buffer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Buffer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("buffer", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether .aspx pages and .ascx controls use response buffering.</summary>
+        <value>
+          <see langword="true" /> if .aspx pages and .ascx controls use response buffering; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When response buffering is turned on, the page or control output is buffered until after the entire page or control is processed. Do not set <xref:System.Web.Configuration.PagesSection.Buffer%2A> to `true` if performance is a key consideration.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.Buffer%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#16](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#16)]
+ [!code-vb[System.Web.Configuration.PagesSection#16](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientIDMode">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ClientIDMode ClientIDMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ClientIDMode ClientIDMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.ClientIDMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("clientIDMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ClientIDMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default algorithm that is used to generate a control's identifier.</summary>
+        <value>A value that indicates how the value in the <see cref="P:System.Web.UI.Control.ClientID" /> property is generated. The default value is <see cref="F:System.Web.UI.ClientIDMode.Predictable" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.Configuration.PagesSection.ClientIDMode%2A> property to set the default value for a whole Web site. You can override this value for an individual Web page or for individual controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompilationMode">
+      <MemberSignature Language="C#" Value="public System.Web.UI.CompilationMode CompilationMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.CompilationMode CompilationMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.CompilationMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("compilationMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CompilationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines how .aspx pages and .ascx controls are compiled.</summary>
+        <value>One of the values for the <see cref="P:System.Web.Configuration.PagesSection.CompilationMode" /> property, which specifies how .aspx pages and .ascx controls are compiled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is <xref:System.Web.UI.CompilationMode>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.CompilationMode%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#6)]
+ [!code-vb[System.Web.Configuration.PagesSection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlRenderingCompatibilityVersion">
+      <MemberSignature Language="C#" Value="public Version ControlRenderingCompatibilityVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version ControlRenderingCompatibilityVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.ControlRenderingCompatibilityVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.Configuration.VersionConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("controlRenderingCompatibilityVersion", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationValidator(typeof(System.Web.Configuration.VersionValidator))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the ASP.NET version that any rendered HTML will be compatible with.</summary>
+        <value>The ASP.NET version that any rendered HTML will be compatible with.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is set by the `controlRenderingCompatibilityVersion` attribute of the `pages` element in the Web.config file. The value of this property is the default value for the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=fullName> property. For information about how it is used, see the <xref:System.Web.UI.Control.RenderingCompatibility%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt was made to set this property to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Controls">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.TagPrefixCollection Controls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TagPrefixCollection Controls" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Controls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("controls")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.TagPrefixCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Web.Configuration.TagPrefixInfo" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Configuration.TagPrefixCollection" /> of <see cref="T:System.Web.Configuration.TagPrefixInfo" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.TagPrefixInfo> objects correspond to the `@ Register` directive on an ASP.NET page. The `@ Register` directive allows you to specify the tag prefix for a user control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.Controls%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#12)]
+ [!code-vb[System.Web.Configuration.PagesSection#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeSection">
+      <MemberSignature Language="C#" Value="protected override void DeserializeSection (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeSection(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PagesSection.DeserializeSection(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableEventValidation">
+      <MemberSignature Language="C#" Value="public bool EnableEventValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableEventValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.EnableEventValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enableEventValidation", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether event validation is enabled.</summary>
+        <value>
+          <see langword="true" /> if event validation is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.PagesSection.EnableEventValidation%2A> attribute indicates whether event validation should be performed. The default value is `true`. A Web application can optionally disable event validation to revert to .NET Framework version 1.0 behavior.  
+  
+ The base control checks this attribute to determine whether it should validate events. A derived control does not inherit this base control attribute, and so it is exempt from event validation by default. You still instruct ASP.NET to perform event validation on the derived control by adding the <xref:System.Web.Configuration.PagesSection.EnableEventValidation%2A> attribute to the derived control itself and setting it to `true`.  
+  
+> [!NOTE]
+>  Event validation reduces the risk of unauthorized postback requests and callbacks. It instructs ASP.NET to validate only those events that can be raised in the control during a postback request or callback. With this model, a control registers its events during rendering and then validates the events during the post-back or callback handling. All event-driven controls in ASP.NET use this feature by default.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableSessionState">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.PagesEnableSessionState EnableSessionState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.PagesEnableSessionState EnableSessionState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.EnableSessionState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enableSessionState", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.PagesEnableSessionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the session state is enabled, disabled, or read-only.</summary>
+        <value>One of the values for the <see cref="P:System.Web.Configuration.PagesSection.EnableSessionState" /> property, which specifies whether the session state is enabled, disabled, or read-only. The default is <see cref="F:System.Web.Configuration.PagesEnableSessionState.True" />, which indicates that session state is enabled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.EnableSessionState%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#14)]
+ [!code-vb[System.Web.Configuration.PagesSection#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The value is not a valid <see cref="T:System.Web.Configuration.PagesEnableSessionState" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableViewState">
+      <MemberSignature Language="C#" Value="public bool EnableViewState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableViewState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.EnableViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enableViewState", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether view state is enabled or disabled.</summary>
+        <value>
+          <see langword="true" /> if view state is enabled; <see langword="false" /> if view state is disabled. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.EnableViewState%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#5)]
+ [!code-vb[System.Web.Configuration.PagesSection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableViewStateMac">
+      <MemberSignature Language="C#" Value="public bool EnableViewStateMac { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableViewStateMac" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.EnableViewStateMac" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enableViewStateMac", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether ASP.NET should run a message authentication code (MAC) on the page's view state when the page is posted back from the client.</summary>
+        <value>
+          <see langword="true" /> if ASP.NET should run a message authentication code (MAC) on the page's view state when the page is posted back from the client; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A view-state MAC is an encrypted version of the hidden variable that a page's view state is persisted to when the page is sent to the browser. When this property is set to `true`, the encrypted view state is checked to verify that it has not been tampered with on the client.  
+  
+> [!IMPORTANT]
+>  This attribute should never be set to `false` in a production Web site, even if the application or page does not use view state. The view state MAC helps ensure the security of other ASP.NET functions in addition to the view state.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.EnableViewStateMac%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#8)]
+ [!code-vb[System.Web.Configuration.PagesSection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDeviceFilters">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.IgnoreDeviceFilterElementCollection IgnoreDeviceFilters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.IgnoreDeviceFilterElementCollection IgnoreDeviceFilters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.IgnoreDeviceFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("ignoreDeviceFilters")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.IgnoreDeviceFilterElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of device tags that ASP.NET should ignore when it renders a page.</summary>
+        <value>The collection of device tags that ASP.NET should ignore.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Device tags to ignore are specified as HTML namespace prefixes that should be passed as they are to the browser instead of being processed by ASP.NET. An example is the `sys` prefix that is used for Microsoft Ajax elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaintainScrollPositionOnPostBack">
+      <MemberSignature Language="C#" Value="public bool MaintainScrollPositionOnPostBack { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MaintainScrollPositionOnPostBack" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.MaintainScrollPositionOnPostBack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maintainScrollPositionOnPostBack", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the page scroll position should be maintained upon returning from a postback from the server.</summary>
+        <value>
+          <see langword="true" /> if the page-scroll position should be maintained after postback; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MasterPageFile">
+      <MemberSignature Language="C#" Value="public string MasterPageFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MasterPageFile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.MasterPageFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("masterPageFile", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to the master page for the application.</summary>
+        <value>A reference to the master page for the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property can be either a relative or an absolute path.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.MasterPageFile%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#15](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#15)]
+ [!code-vb[System.Web.Configuration.PagesSection#15](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPageStateFieldLength">
+      <MemberSignature Language="C#" Value="public int MaxPageStateFieldLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPageStateFieldLength" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.MaxPageStateFieldLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxPageStateFieldLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of characters that a single view-state field can contain.</summary>
+        <value>The maximum number of characters that a single view-state field can contain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page and control view state is stored in hidden view-state fields when the page or control is rendered. If the length of the data stored exceeds the <xref:System.Web.Configuration.PagesSection.MaxPageStateFieldLength%2A> value, then the data is split between multiple view-state fields.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.MaxPageStateFieldLength%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#10)]
+ [!code-vb[System.Web.Configuration.PagesSection#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespaces">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.NamespaceCollection Namespaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.NamespaceCollection Namespaces" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Namespaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("namespaces")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.NamespaceCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Web.Configuration.NamespaceInfo" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Configuration.NamespaceCollection" /> of <see cref="T:System.Web.Configuration.NamespaceInfo" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.TagPrefixInfo> objects correspond to the `@ Import` directive on an ASP.NET page. The `Import` directive allows you to specify namespaces that are automatically imported into all the pages of an application.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.Namespaces%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#2)]
+ [!code-vb[System.Web.Configuration.PagesSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageBaseType">
+      <MemberSignature Language="C#" Value="public string PageBaseType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PageBaseType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.PageBaseType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("pageBaseType", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies a code-behind class that .aspx pages inherit by default.</summary>
+        <value>A string that specifies a code-behind class that .aspx pages inherit by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.PageBaseType%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#18](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#18)]
+ [!code-vb[System.Web.Configuration.PagesSection#18](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageParserFilterType">
+      <MemberSignature Language="C#" Value="public string PageParserFilterType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PageParserFilterType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.PageParserFilterType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("pageParserFilterType", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the parser filter type.</summary>
+        <value>A string that specifies the parser filter type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A parser filter, which is an instance of the <xref:System.Web.UI.PageParserFilter> class, is called by the page compilation process before the parsing step to allow for changes to the source code at run time.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.PageParserFilterType%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#3)]
+ [!code-vb[System.Web.Configuration.PagesSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAllHiddenFieldsAtTopOfForm">
+      <MemberSignature Language="C#" Value="public bool RenderAllHiddenFieldsAtTopOfForm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RenderAllHiddenFieldsAtTopOfForm" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.RenderAllHiddenFieldsAtTopOfForm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("renderAllHiddenFieldsAtTopOfForm", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether all system-generated hidden fields are rendered at the top of the form.</summary>
+        <value>
+          <see langword="true" /> if system-generated hidden fields are rendered at the top of the form; otherwise, <see langword="false" />. The default is <see langword="true." /></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.Configuration.PagesSection.RenderAllHiddenFieldsAtTopOfForm%2A> property to specify that some system-generated hidden fields are rendered at the end of the form.  
+  
+ In versions of ASP.NET earlier than the .NET Framework 3.5 SP1, ASP.NET renders some hidden fields (for example, `__VIEWSTATE`) at the top of the form. Other hidden fields (for example, `__EVENTVALIDATION`) are rendered near the bottom of the form, just before the closing `</div>` tag. By default, in ASP.NET 3.5 SP1, all system-generated hidden fields are rendered at the top of the page. This makes sure that the information in these fields is sent to the server even if a postback is performed before the page has finished loading. If <xref:System.Web.Configuration.PagesSection.RenderAllHiddenFieldsAtTopOfForm%2A> is set to `false`, performing a postback before the page has finished loading can cause an "Invalid postback or callback argument" error.  
+  
+> [!NOTE]
+>  Although the property name indicates "all hidden fields," user-created hidden fields are not affected by settings for this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReadOnly">
+      <MemberSignature Language="C#" Value="protected override void SetReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.PagesSection.SetReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmartNavigation">
+      <MemberSignature Language="C#" Value="public bool SmartNavigation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SmartNavigation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.SmartNavigation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("smartNavigation", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether smart navigation is enabled.</summary>
+        <value>
+          <see langword="true" /> if smart navigation is enabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Smart navigation requires Microsoft Internet Explorer 5.5 or greater.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.SmartNavigation%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#19](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#19)]
+ [!code-vb[System.Web.Configuration.PagesSection#19](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleSheetTheme">
+      <MemberSignature Language="C#" Value="public string StyleSheetTheme { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StyleSheetTheme" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.StyleSheetTheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("styleSheetTheme", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of an ASP.NET style sheet theme.</summary>
+        <value>The name of an ASP.NET style sheet theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.StyleSheetTheme%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#13)]
+ [!code-vb[System.Web.Configuration.PagesSection#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagMapping">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.TagMapCollection TagMapping { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TagMapCollection TagMapping" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.TagMapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("tagMapping")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.TagMapCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Web.Configuration.TagMapInfo" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Configuration.TagMapCollection" /> of <see cref="T:System.Web.Configuration.TagMapInfo" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.TagPrefixInfo> object has no corresponding directive on an ASP.NET page. The <xref:System.Web.Configuration.TagPrefixInfo> objects allow you to remap tag type names to other type names at compile time.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.TagMapping%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#17)]
+ [!code-vb[System.Web.Configuration.PagesSection#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Theme">
+      <MemberSignature Language="C#" Value="public string Theme { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Theme" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.Theme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("theme", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of an ASP.NET page theme.</summary>
+        <value>The name of an ASP.NET page theme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.Theme%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#4)]
+ [!code-vb[System.Web.Configuration.PagesSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserControlBaseType">
+      <MemberSignature Language="C#" Value="public string UserControlBaseType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserControlBaseType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.UserControlBaseType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("userControlBaseType", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies a code-behind class that user controls inherit by default.</summary>
+        <value>A string that specifies a code-behind file that user controls inherit by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.UserControlBaseType%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#11)]
+ [!code-vb[System.Web.Configuration.PagesSection#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateRequest">
+      <MemberSignature Language="C#" Value="public bool ValidateRequest { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateRequest" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.ValidateRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("validateRequest", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether ASP.NET examines input from the browser for dangerous values. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).</summary>
+        <value>
+          <see langword="true" /> if ASP.NET examines input from the browser for dangerous values; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Request validation is performed by comparing all input data to a list of potentially dangerous values. If a match occurs, ASP.NET raises an <xref:System.Web.HttpRequestValidationException>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesSection.ValidateRequest%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#7)]
+ [!code-vb[System.Web.Configuration.PagesSection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewStateEncryptionMode">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ViewStateEncryptionMode ViewStateEncryptionMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ViewStateEncryptionMode ViewStateEncryptionMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.PagesSection.ViewStateEncryptionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("viewStateEncryptionMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ViewStateEncryptionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the encryption mode that ASP.NET uses when maintaining <see langword="ViewState" /> values.</summary>
+        <value>A <see cref="T:System.Web.UI.ViewStateEncryptionMode" /> enumeration value indicating when the <see langword="ViewState" /> values are encrypted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The possible <xref:System.Web.UI.Page.ViewStateEncryptionMode%2A> enumeration values are `Always`, `Auto`, and `Never`. The default value is `Auto`. If <xref:System.Web.UI.Page.ViewStateEncryptionMode%2A> property is set to `Auto`, `ViewState` will be encrypted when a control requests it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

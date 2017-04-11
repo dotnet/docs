@@ -1,0 +1,86 @@
+<Type Name="RuleConditionChangeAction" FullName="System.Workflow.Activities.Rules.RuleConditionChangeAction">
+  <TypeSignature Language="C#" Value="public abstract class RuleConditionChangeAction : System.Workflow.ComponentModel.WorkflowChangeAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RuleConditionChangeAction extends System.Workflow.ComponentModel.WorkflowChangeAction" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleConditionChangeAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.WorkflowChangeAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an abstract base class from which all dynamic update notifications of changes to <see cref="T:System.Workflow.Activities.Rules.RuleCondition" />s must be derived.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class can be used by a tracking service to determine that <xref:System.Workflow.Activities.Rules.RuleCondition>s have been dynamically updated. The derived classes indicate which <xref:System.Workflow.Activities.Rules.RuleCondition> is being dynamically updated, and what operation is being performed (added to the workflow, removed from the workflow, or changed).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RuleConditionChangeAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionChangeAction.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleConditionChangeAction" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionName">
+      <MemberSignature Language="C#" Value="public abstract string ConditionName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConditionName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleConditionChangeAction.ConditionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to be changed.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> to be changed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateChanges">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges (System.Workflow.ComponentModel.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges(class System.Workflow.ComponentModel.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationErrorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> that the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> changes are occurring in.</param>
+        <summary>When overridden in a derived class, verifies that the <see cref="T:System.Workflow.Activities.Rules.RuleConditionChangeAction" /> is configured correctly and has no errors.</summary>
+        <returns>The collection of validation errors.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

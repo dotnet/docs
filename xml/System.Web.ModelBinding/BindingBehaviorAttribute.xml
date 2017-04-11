@@ -1,0 +1,78 @@
+<Type Name="BindingBehaviorAttribute" FullName="System.Web.ModelBinding.BindingBehaviorAttribute">
+  <TypeSignature Language="C#" Value="public class BindingBehaviorAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingBehaviorAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.BindingBehaviorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a base class for model-binding behavior attributes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BindingBehaviorAttribute (System.Web.ModelBinding.BindingBehavior behavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.ModelBinding.BindingBehavior behavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.BindingBehaviorAttribute.#ctor(System.Web.ModelBinding.BindingBehavior)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="behavior" Type="System.Web.ModelBinding.BindingBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="behavior">The model-binding behavior.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.BindingBehaviorAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Behavior">
+      <MemberSignature Language="C#" Value="public System.Web.ModelBinding.BindingBehavior Behavior { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.ModelBinding.BindingBehavior Behavior" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.BindingBehaviorAttribute.Behavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.BindingBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the model-binding behavior value.</summary>
+        <value>The model-binding behavior value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeId">
+      <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.BindingBehaviorAttribute.TypeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique identifier for this attribute.</summary>
+        <value>The unique identifier for this attribute.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

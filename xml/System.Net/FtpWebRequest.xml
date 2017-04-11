@@ -1,0 +1,1317 @@
+<Type Name="FtpWebRequest" FullName="System.Net.FtpWebRequest">
+  <TypeSignature Language="C#" Value="public sealed class FtpWebRequest : System.Net.WebRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FtpWebRequest extends System.Net.WebRequest" />
+  <TypeSignature Language="DocId" Value="T:System.Net.FtpWebRequest" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Net.WebRequest</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements a File Transfer Protocol (FTP) client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To obtain an instance of <xref:System.Net.FtpWebRequest>, use the <xref:System.Net.WebRequest.Create%2A> method. You can also use the <xref:System.Net.WebClient> class to upload and download information from an FTP server. Using either of these approaches, when you specify a network resource that uses the FTP scheme (for example, `"ftp://contoso.com"`) the <xref:System.Net.FtpWebRequest> class provides the ability to programmatically interact with FTP servers.  
+  
+ The URI may be relative or absolute. If the URI is of the form `"ftp://contoso.com/%2fpath"` (%2f is an escaped '/'), then the URI is absolute, and the current directory is `/path`. If, however, the URI is of the form `"ftp://contoso.com/path"`, first the .NET Framework logs into the FTP server (using the user name and password set by the <xref:System.Net.FtpWebRequest.Credentials%2A> property), then the current directory is set to `<UserLoginDirectory>/path`.  
+  
+ You must have a valid user name and password for the server or the server must allow anonymous logon. You can specify the credentials used to connect to the server by setting the <xref:System.Net.FtpWebRequest.Credentials%2A> property or you can include them in the <xref:System.Uri.UserInfo%2A> portion of the URI passed to the <xref:System.Net.WebRequest.Create%2A> method. If you include <xref:System.Uri.UserInfo%2A> information in the URI, the <xref:System.Net.FtpWebRequest.Credentials%2A> property is set to a new network credential with the specified user name and password information.  
+  
+> [!CAUTION]
+>  Unless the <xref:System.Net.FtpWebRequest.EnableSsl%2A> property is `true`, all data and commands, including your user name and password information, are sent to the server in clear text. Anyone monitoring network traffic can view your credentials and use them to connect to the server. If you are connecting to an FTP server that requires credentials and supports Secure Sockets Layer (SSL), you should set <xref:System.Net.FtpWebRequest.EnableSsl%2A> to `true`.  
+  
+ You must have <xref:System.Net.WebPermission> to access the FTP resource; otherwise, a <xref:System.Security.SecurityException> exception is thrown.  
+  
+ Specify the FTP command to send to the server by setting the <xref:System.Net.FtpWebRequest.Method%2A> property to a value defined in the <xref:System.Net.WebRequestMethods.Ftp> structure. To transmit text data, change the <xref:System.Net.FtpWebRequest.UseBinary%2A> property from its default value (`true`) to `false`. For details and restrictions, see <xref:System.Net.FtpWebRequest.Method%2A>.  
+  
+ When using an <xref:System.Net.FtpWebRequest> object to upload a file to a server, you must write the file content to the request stream obtained by calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method or its asynchronous counterparts, the <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A> and <xref:System.Net.FtpWebRequest.EndGetRequestStream%2A> methods. You must write to the stream and close the stream before sending the request.  
+  
+ Requests are sent to the server by calling the <xref:System.Net.FtpWebRequest.GetResponse%2A> method or its asynchronous counterparts, the <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> and <xref:System.Net.FtpWebRequest.EndGetResponse%2A> methods. When the requested operation completes, an <xref:System.Net.FtpWebResponse> object is returned. The <xref:System.Net.FtpWebResponse> object provides the status of the operation and any data downloaded from the server.  
+  
+ You can set a time-out value for reading or writing to the server by using the <xref:System.Net.FtpWebRequest.ReadWriteTimeout%2A> property. If the time-out period is exceeded, the calling method throws a <xref:System.Net.WebException> with <xref:System.Net.WebExceptionStatus> set to <xref:System.Net.WebExceptionStatus>.  
+  
+ When downloading a file from an FTP server, if the command was successful, the contents of the requested file are available in the response object's stream. You can access this stream by calling the <xref:System.Net.FtpWebResponse.GetResponseStream%2A> method. For more information, see <xref:System.Net.FtpWebResponse>.  
+  
+ If the <xref:System.Net.FtpWebRequest.Proxy%2A> property is set, either directly or in a configuration file, communications with the FTP server are made through the specified proxy. If the specified proxy is an HTTP proxy, only the <xref:System.Net.WebRequestMethods.Ftp.DownloadFile>, <xref:System.Net.WebRequestMethods.Ftp.ListDirectory>, and <xref:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails> commands are supported.  
+  
+ Only downloaded binary content is cached; that is, content received using the <xref:System.Net.WebRequestMethods.Ftp.DownloadFile> command with the <xref:System.Net.FtpWebRequest.UseBinary%2A> property set to `true`.  
+  
+ Multiple <xref:System.Net.FtpWebRequest>s reuse existing connections, if possible.  
+  
+ For more information about the FTP protocol, see RFC 959, "File Transfer Protocol," available at [http://www.rfc-editor.org/](http://www.ietf.org/rfc/rfc959.txt).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates deleting a file from an FTP server.  
+  
+ [!code-cpp[NCLFtpClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#4)]
+ [!code-csharp[NCLFtpClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#4)]  
+  
+ The following code example demonstrates downloading a file from an FTP server by using the <xref:System.Net.WebClient> class.  
+  
+ [!code-cpp[NCLFtpClient#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#5)]
+ [!code-csharp[NCLFtpClient#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#5)]  
+  
+ The following code example demonstrates using asynchronous operations to upload a file to an FTP server.  
+  
+ [!code-cpp[NCLFtpAsync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpAsync/CPP/async.cpp#1)]
+ [!code-csharp[NCLFtpAsync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpAsync/CS/async.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Net.WebPermission">for accessing the resource referenced by this request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public override void Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FtpWebRequest.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Terminates an asynchronous FTP operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no operation in progress, this method does nothing. If a file transfer is in progress, this method terminates the transfer.  
+  
+> [!NOTE]
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the user can terminate an asynchronous upload of a file from the local directory to the server.  
+  
+ [!code-cpp[NCLFtpClient#10](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#10)]
+ [!code-csharp[NCLFtpClient#10](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetRequestStream">
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginGetRequestStream (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginGetRequestStream(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FtpWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <c>callback</c> delegate when the operation completes.</param>
+        <summary>Begins asynchronously opening a request's content stream for writing.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> instance that indicates the status of the operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must complete the asynchronous operation by calling the <xref:System.Net.FtpWebRequest.EndGetRequestStream%2A> method. Typically, <xref:System.Net.FtpWebRequest.EndGetRequestStream%2A> is called by the method referenced by `callback`. To determine the state of the operation, check the properties in the <xref:System.IAsyncResult> object returned by this method.  
+  
+ This method does not block while waiting for the stream. To block, call <xref:System.Net.FtpWebRequest.GetRequestStream%2A> in place of this method.  
+  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+> [!NOTE]
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates beginning an asynchronous operation to get a request's stream. This code example is part of a larger example provided for the <xref:System.Net.FtpWebRequest> class overview.  
+  
+ [!code-cpp[NCLFtpAsync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpAsync/CPP/async.cpp#4)]
+ [!code-csharp[NCLFtpAsync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpAsync/CS/async.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A previous call to this method or <see cref="M:System.Net.FtpWebRequest.GetRequestStream" /> has not yet completed.</exception>
+        <exception cref="T:System.Net.WebException">A connection to the FTP server could not be established.</exception>
+        <exception cref="T:System.Net.ProtocolViolationException">The <see cref="P:System.Net.FtpWebRequest.Method" /> property is not set to <see cref="F:System.Net.WebRequestMethods.Ftp.UploadFile" />.</exception>
+        <block subset="none" type="usage">
+          <para>This method generates network traffic.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetResponse">
+      <MemberSignature Language="C#" Value="public override IAsyncResult BeginGetResponse (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginGetResponse(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FtpWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when the operation is complete.</param>
+        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <c>callback</c> delegate when the operation completes.</param>
+        <summary>Begins sending a request and receiving a response from an FTP server asynchronously.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> instance that indicates the status of the operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must complete the asynchronous operation by calling the <xref:System.Net.FtpWebRequest.EndGetResponse%2A> method. Typically, <xref:System.Net.FtpWebRequest.EndGetResponse%2A> is called by the method referenced by `callback`. To determine the state of the operation, check the properties in the <xref:System.IAsyncResult> object returned by the <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method.  
+  
+ If the <xref:System.Net.FtpWebRequest.Proxy%2A> property is set, either directly or in a configuration file, communications with the FTP server are made through the specified proxy.  
+  
+ <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> does not block while waiting for the response from the server. To block, call the <xref:System.Net.FtpWebRequest.GetResponse%2A> method in place of <xref:System.Net.FtpWebRequest.BeginGetResponse%2A>.  
+  
+ For more information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
+  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+> [!NOTE]
+>  If a <xref:System.Net.WebException> is thrown, use the <xref:System.Net.WebException.Response%2A> and <xref:System.Net.WebException.Status%2A> properties of the exception to determine the response from the server.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates ending an asynchronous operation to get a request's stream, and then starting a request to get the response. This code example is part of a larger example provided for the <xref:System.Net.FtpWebRequest> class overview.  
+  
+ [!code-cpp[NCLFtpAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpAsync/CPP/async.cpp#5)]
+ [!code-csharp[NCLFtpAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpAsync/CS/async.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="M:System.Net.FtpWebRequest.GetResponse" /> or <see cref="M:System.Net.FtpWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" /> has already been called for this instance.</exception>
+        <block subset="none" type="usage">
+          <para>This method generates network traffic.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCertificates">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.ClientCertificates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509CertificateCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the certificates used for establishing an encrypted connection to the FTP server.</summary>
+        <value>An <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" /> object that contains the client certificates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Client certificates are used to authenticate the client during the initial SSL connection negotiation. For more information, see <xref:System.Net.FtpWebRequest.EnableSsl%2A>.  
+  
+> [!NOTE]
+>  The .NET Framework caches SSL sessions as they are created and attempts to reuse a cached session for a new request, if possible. When attempting to reuse an SSL session, the .NET Framework uses the first element of <xref:System.Net.HttpWebRequest.ClientCertificates%2A> (if there is one), or tries to reuse an anonymous session if <xref:System.Net.HttpWebRequest.ClientCertificates%2A> is empty.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionGroupName">
+      <MemberSignature Language="C#" Value="public override string ConnectionGroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionGroupName" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.ConnectionGroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the connection group that contains the service point used to send the current request.</summary>
+        <value>A <see cref="T:System.String" /> value that contains a connection group name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Connection groups associate a set of requests with a particular connection or set of connections. The connections in a connection group can be reused only by requests originating in the same application domain, when the credentials on the request are the same and the request specifies the connection group name. When a request does not specify a connection group name, any existing connection to the requested server that is not associated with a connection group can be used. When the credentials are not the same, the existing connection is closed and the new request must be reauthenticated.  
+  
+ Using connection groups can improve performance because this allows all of the requests for a user to reuse the connection authenticated with the user's credentials.  
+  
+ Changing the <xref:System.Net.FtpWebRequest.ConnectionGroupName%2A> property after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
+  
+   
+  
+## Examples  
+ The following code example retrieves the value of this property.  
+  
+ [!code-cpp[NCLFtpClient#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#16)]
+ [!code-csharp[NCLFtpClient#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#16)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLength">
+      <MemberSignature Language="C#" Value="public override long ContentLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.ContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that is ignored by the <see cref="T:System.Net.FtpWebRequest" /> class.</summary>
+        <value>An <see cref="T:System.Int64" /> value that should be ignored.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpWebRequest.ContentLength%2A> property is provided only for compatibility with other implementations of the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes. There is no reason to use <xref:System.Net.FtpWebRequest.ContentLength%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentOffset">
+      <MemberSignature Language="C#" Value="public long ContentOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ContentOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.ContentOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a byte offset into the file being downloaded by this request.</summary>
+        <value>An <see cref="T:System.Int64" /> instance that specifies the file offset, in bytes. The default value is zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Net.FtpWebRequest.ContentOffset%2A> property when downloading a file from an FTP server. This offset indicates the position in the server's file that marks the start of the data to be downloaded. The offset is specified as the number of bytes from the start of the file; the offset of the first byte is zero.  
+  
+ Setting <xref:System.Net.FtpWebRequest.ContentOffset%2A> causes the <xref:System.Net.FtpWebRequest> to send a restart (`REST`) command to the server. This command is ignored by most FTP server implementations if you are uploading data to the server.  
+  
+ Changing <xref:System.Net.FtpWebRequest.ContentOffset%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates downloading part of a file from a server and appending the downloaded data to a local file.  
+  
+ [!code-cpp[NclFtpClient#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#7)]
+ [!code-csharp[NclFtpClient#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified for this property is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public override string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <value>Always throws a <see cref="T:System.NotSupportedException" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpWebRequest.ContentType%2A> property is provided only for compatibility with other implementations of the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes. There is no reason to use <xref:System.Net.FtpWebRequest.ContentType%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Content type information is not supported for FTP.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Credentials">
+      <MemberSignature Language="C#" Value="public override System.Net.ICredentials Credentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.Credentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.ICredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the credentials used to communicate with the FTP server.</summary>
+        <value>An <see cref="T:System.Net.ICredentials" /> instance; otherwise, <see langword="null" /> if the property has not been set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You are not required to specify credentials when connecting using anonymous logon. You must set the <xref:System.Net.FtpWebRequest.Credentials%2A> property by using a credential of type <xref:System.Net.NetworkCredential>; this ensures that the user name and password can be read and sent to the server.  
+  
+> [!CAUTION]
+>  Credentials information is not encrypted when transmitted to the server unless the <xref:System.Net.FtpWebRequest.EnableSsl%2A> property is set to `true`.  
+  
+ Changing <xref:System.Net.FtpWebRequest.Credentials%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
+  
+   
+  
+## Examples  
+ The following code example retrieves the value of this property and uses it to display the user name.  
+  
+ [!code-cpp[NCLFtpClient#14](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#14)]
+ [!code-csharp[NCLFtpClient#14](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#14)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An <see cref="T:System.Net.ICredentials" /> of a type other than <see cref="T:System.Net.NetworkCredential" /> was specified for a set operation.</exception>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCachePolicy">
+      <MemberSignature Language="C#" Value="public static System.Net.Cache.RequestCachePolicy DefaultCachePolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Net.Cache.RequestCachePolicy DefaultCachePolicy" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.DefaultCachePolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.Cache.RequestCachePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Defines the default cache policy for all FTP requests.</summary>
+        <value>A <see cref="T:System.Net.Cache.RequestCachePolicy" /> that defines the cache policy for FTP requests.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only content received using the <xref:System.Net.WebRequestMethods.Ftp.DownloadFile> command is cached.  
+  
+ The following table describes the effects of FTP caching policies on <xref:System.Net.FtpWebRequest>.  
+  
+|Policy|Effect|  
+|------------|------------|  
+|<xref:System.Net.Cache.RequestCacheLevel>|Returns the cached resource if the resource is fresh, the content length is accurate, and the expiration, modification, and content length attributes are present.|  
+|<xref:System.Net.Cache.RequestCacheLevel>|Returns the resource from the server.|  
+|<xref:System.Net.Cache.RequestCacheLevel>|Returns the cached resource if the content length is present and matches the entry size; otherwise, throws a <xref:System.Net.WebException>.|  
+|<xref:System.Net.Cache.RequestCacheLevel>|Returns the cached resource if the content length is provided and matches the entry size; otherwise, the resource is downloaded from the server and is returned to the caller.|  
+|<xref:System.Net.Cache.RequestCacheLevel>|Returns the cached resource if the timestamp of the cached resource is the same as the time stamp of the resource on the server; otherwise, the resource is downloaded from the server, stored in the cache, and returned to the caller.|  
+|<xref:System.Net.Cache.RequestCacheLevel>|Downloads the resource from the server, stores it in the cache, and returns the resource to the caller.|  
+|<xref:System.Net.Cache.RequestCacheLevel>|If a cached resource exists, it is deleted. The resource is downloaded from the server and is returned to the caller.|  
+  
+> [!NOTE]
+>  Setting <xref:System.Net.FtpWebRequest.DefaultCachePolicy%2A> overrides any configuration setting.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The caller tried to set this property to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableSsl">
+      <MemberSignature Language="C#" Value="public bool EnableSsl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableSsl" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.EnableSsl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> that specifies that an SSL connection should be used.</summary>
+        <value>
+          <see langword="true" /> if control and data transmissions are encrypted; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Unless the <xref:System.Net.FtpWebRequest.EnableSsl%2A> property is `true`, all data and commands, including your user name and password information, are sent to the server in clear text. Anyone monitoring network traffic can view your credentials and use them to connect to the server. If you are connecting to an FTP server that requires credentials and supports SSL, you should set <xref:System.Net.FtpWebRequest.EnableSsl%2A> to `true`.  
+  
+ The `"AUTH TLS"` command is sent to the server to request an encrypted session. If the server does not recognize this command, you receive a <xref:System.Net.WebException> exception.  
+  
+   
+  
+## Examples  
+ The following code example uses an encrypted connection to download the directory listing from an FTP server.  
+  
+ [!code-cpp[NCLFtpClient#8](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#8)]
+ [!code-csharp[NCLFtpClient#8](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection to the FTP server has already been established.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetRequestStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream EndGetRequestStream (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream EndGetRequestStream(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FtpWebRequest.EndGetRequestStream(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> object that was returned when the operation started.</param>
+        <summary>Ends a pending asynchronous operation started with <see cref="M:System.Net.FtpWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />.</summary>
+        <returns>A writable <see cref="T:System.IO.Stream" /> instance associated with this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the operation has not completed, the <xref:System.Net.FtpWebRequest.EndGetRequestStream%2A> method blocks until the operation completes. To determine whether the operation has completed, check the <xref:System.IAsyncResult.IsCompleted%2A> property before calling <xref:System.Net.FtpWebRequest.EndGetRequestStream%2A>.  
+  
+ In addition to the exceptions noted in "Exceptions," <xref:System.Net.FtpWebRequest.EndGetRequestStream%2A> rethrows exceptions that were thrown while opening the stream for writing.  
+  
+> [!NOTE]
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates ending an asynchronous operation to get a request's stream. This code example is part of a larger example provided for the <xref:System.Net.FtpWebRequest> class overview.  
+  
+ [!code-cpp[NCLFtpAsync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpAsync/CPP/async.cpp#5)]
+ [!code-csharp[NCLFtpAsync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpAsync/CS/async.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="asyncResult" /> was not obtained by calling <see cref="M:System.Net.FtpWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was already called for the operation identified by <paramref name="asyncResult" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetResponse">
+      <MemberSignature Language="C#" Value="public override System.Net.WebResponse EndGetResponse (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.WebResponse EndGetResponse(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FtpWebRequest.EndGetResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> that was returned when the operation started.</param>
+        <summary>Ends a pending asynchronous operation started with <see cref="M:System.Net.FtpWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />.</summary>
+        <returns>A <see cref="T:System.Net.WebResponse" /> reference that contains an <see cref="T:System.Net.FtpWebResponse" /> instance. This object contains the FTP server's response to the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the operation has not completed at the time the <xref:System.Net.FtpWebRequest.EndGetResponse%2A> method is called, <xref:System.Net.FtpWebRequest.EndGetResponse%2A> blocks until the operation completes. To prevent blocking, check the <xref:System.IAsyncResult.IsCompleted%2A> property before calling <xref:System.Net.FtpWebRequest.EndGetResponse%2A>.  
+  
+ In addition to the exceptions noted in "Exceptions," <xref:System.Net.FtpWebRequest.EndGetResponse%2A> rethrows exceptions that were thrown while communicating with the server.  
+  
+> [!NOTE]
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates ending an asynchronous operation to get a response. This code example is part of a larger example provided for the <xref:System.Net.FtpWebRequest> class overview.  
+  
+ [!code-cpp[NCLFtpAsync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpAsync/CPP/async.cpp#6)]
+ [!code-csharp[NCLFtpAsync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpAsync/CS/async.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="asyncResult" /> was not obtained by calling <see cref="M:System.Net.FtpWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />.</exception>
+        <exception cref="T:System.InvalidOperationException">This method was already called for the operation identified by <paramref name="asyncResult" />.</exception>
+        <exception cref="T:System.Net.WebException">An error occurred using an HTTP proxy.</exception>
+        <block subset="none" type="usage">
+          <para>This method generates network traffic.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequestStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream GetRequestStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetRequestStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FtpWebRequest.GetRequestStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the stream used to upload data to an FTP server.</summary>
+        <returns>A writable <see cref="T:System.IO.Stream" /> instance used to store data to be sent to the server by the current request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the request properties before calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method. After writing the data to the stream, you must close the stream prior to sending the request.  
+  
+ If you have not set the <xref:System.Net.FtpWebRequest.Method%2A> property to <xref:System.Net.WebRequestMethods.Ftp.UploadFile> or <xref:System.Net.WebRequestMethods.Ftp.AppendFile>, you cannot get the stream.  
+  
+ <xref:System.Net.FtpWebRequest.GetRequestStream%2A> blocks while waiting for the stream. To prevent this, call the <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A> method in place of <xref:System.Net.FtpWebRequest.GetRequestStream%2A>.  
+  
+> [!NOTE]
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates copying a file to a request's data stream and sending a request to the server to upload the data and append it to a file.  
+  
+ [!code-cpp[NCLFtpClient#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#3)]
+ [!code-csharp[NCLFtpClient#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="M:System.Net.FtpWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" /> has been called and has not completed.  
+  
+ \- or -  
+  
+ An HTTP proxy is enabled, and you attempted to use an FTP command other than <see cref="F:System.Net.WebRequestMethods.Ftp.DownloadFile" />, <see cref="F:System.Net.WebRequestMethods.Ftp.ListDirectory" />, or <see cref="F:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails" />.</exception>
+        <exception cref="T:System.Net.WebException">A connection to the FTP server could not be established.</exception>
+        <exception cref="T:System.Net.ProtocolViolationException">The <see cref="P:System.Net.FtpWebRequest.Method" /> property is not set to <see cref="F:System.Net.WebRequestMethods.Ftp.UploadFile" /> or <see cref="F:System.Net.WebRequestMethods.Ftp.AppendFile" />.</exception>
+        <block subset="none" type="usage">
+          <para>This method generates network traffic.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponse">
+      <MemberSignature Language="C#" Value="public override System.Net.WebResponse GetResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.WebResponse GetResponse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.FtpWebRequest.GetResponse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the FTP server response.</summary>
+        <returns>A <see cref="T:System.Net.WebResponse" /> reference that contains an <see cref="T:System.Net.FtpWebResponse" /> instance. This object contains the FTP server's response to the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To access the FTP-specific properties, you must cast the <xref:System.Net.WebResponse> object returned by this method to <xref:System.Net.FtpWebResponse>.  
+  
+ <xref:System.Net.FtpWebRequest.GetResponse%2A> causes a control connection to be established, and might also create a data connection. <xref:System.Net.FtpWebRequest.GetResponse%2A> blocks until the response is received. To prevent this, you can perform this operation asynchronously by calling the <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> and <xref:System.Net.FtpWebRequest.EndGetResponse%2A> methods in place of <xref:System.Net.FtpWebRequest.GetResponse%2A>.  
+  
+ If the <xref:System.Net.FtpWebRequest.Proxy%2A> property is set, either directly or in a configuration file, communications with the FTP server are made through the proxy.  
+  
+ If a <xref:System.Net.WebException> is thrown, use the <xref:System.Net.WebException.Response%2A> and <xref:System.Net.WebException.Status%2A> properties of the exception to determine the response from the server.  
+  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
+  
+> [!NOTE]
+>  Multiple calls to <xref:System.Net.FtpWebRequest.GetResponse%2A> return the same response object; the request is not reissued.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates copying a file to a request's data stream and sending a request to append data to a file to the server. The example calls <xref:System.Net.FtpWebRequest.GetResponse%2A> to send the request and block until the response is returned by the server.  
+  
+ [!code-cpp[NCLFtpClient#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#3)]
+ [!code-csharp[NCLFtpClient#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="M:System.Net.FtpWebRequest.GetResponse" /> or <see cref="M:System.Net.FtpWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" /> has already been called for this instance.  
+  
+ \- or -  
+  
+ An HTTP proxy is enabled, and you attempted to use an FTP command other than <see cref="F:System.Net.WebRequestMethods.Ftp.DownloadFile" />, <see cref="F:System.Net.WebRequestMethods.Ftp.ListDirectory" />, or <see cref="F:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails" />.</exception>
+        <exception cref="T:System.Net.WebException">
+          <see cref="P:System.Net.FtpWebRequest.EnableSsl" /> is set to <see langword="true" />, but the server does not support this feature.  
+  
+ \- or -  
+  
+ A <see cref="P:System.Net.FtpWebRequest.Timeout" /> was specified and the timeout has expired.</exception>
+        <block subset="none" type="usage">
+          <para>This method generates network traffic.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public override System.Net.WebHeaderCollection Headers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an empty <see cref="T:System.Net.WebHeaderCollection" /> object.</summary>
+        <value>An empty <see cref="T:System.Net.WebHeaderCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpWebRequest.Headers%2A> property is provided only for compatibility with other implementations of the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes. There is no reason to use <xref:System.Net.FtpWebRequest.Headers%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepAlive">
+      <MemberSignature Language="C#" Value="public bool KeepAlive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepAlive" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.KeepAlive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO("We don't support KeepAlive = true")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that specifies whether the control connection to the FTP server is closed after the request completes.</summary>
+        <value>
+          <see langword="true" /> if the connection to the server should not be destroyed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Net.FtpWebRequest.KeepAlive%2A> property is set to `false`, the control connection is closed when you call the <xref:System.Net.FtpWebResponse.Close%2A> method.  
+  
+ Changing <xref:System.Net.FtpWebRequest.KeepAlive%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
+  
+   
+  
+## Examples  
+ The following code example retrieves and displays property values for a specified <xref:System.Net.FtpWebRequest> object.  
+  
+ [!code-cpp[NCLFtpClient#15](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#15)]
+ [!code-csharp[NCLFtpClient#15](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#15)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public override string Method { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Method" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the command to send to the FTP server.</summary>
+        <value>A <see cref="T:System.String" /> value that contains the FTP command to send to the server. The default value is <see cref="F:System.Net.WebRequestMethods.Ftp.DownloadFile" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpWebRequest.Method%2A> property determines which command is sent to the server. You set the <xref:System.Net.FtpWebRequest.Method%2A> by using the strings defined in the public field members of the <xref:System.Net.WebRequestMethods.Ftp> class. Note that the strings defined in the <xref:System.Net.WebRequestMethods.Ftp> class are the only supported options for the <xref:System.Net.FtpWebRequest.Method%2A> property. Setting the <xref:System.Net.FtpWebRequest.Method%2A> property to any other value will result in an <xref:System.ArgumentException> exception.  
+  
+ When setting <xref:System.Net.FtpWebRequest.Method%2A> to <xref:System.Net.WebRequestMethods.Ftp.UploadFile>, you must do so before calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method. Failure to call these members in the correct order causes a <xref:System.Net.ProtocolViolationException> exception when you attempt to get the request stream.  
+  
+ The credentials supplied for the <xref:System.Net.FtpWebRequest> object must have permission to perform the specified method. If not, the FTP command fails.  
+  
+ To determine the success or failure of a command, check the <xref:System.Net.FtpWebResponse.StatusCode%2A> and <xref:System.Net.FtpWebResponse.StatusDescription%2A> properties.  
+  
+   
+  
+## Examples  
+ The following code example sets this property to <xref:System.Net.WebRequestMethods.Ftp.DeleteFile>.  
+  
+ [!code-cpp[NCLFtpClient#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#4)]
+ [!code-csharp[NCLFtpClient#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+        <exception cref="T:System.ArgumentException">The method is invalid.  
+  
+ \- or -  
+  
+ The method is not supported.  
+  
+ \- or -  
+  
+ Multiple methods were specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PreAuthenticate">
+      <MemberSignature Language="C#" Value="public override bool PreAuthenticate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreAuthenticate" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.PreAuthenticate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <value>Always throws a <see cref="T:System.NotSupportedException" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpWebRequest.PreAuthenticate%2A> property is provided only for compatibility with other implementations of the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Preauthentication is not supported for FTP.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Proxy">
+      <MemberSignature Language="C#" Value="public override System.Net.IWebProxy Proxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.Proxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the proxy used to communicate with the FTP server.</summary>
+        <value>An <see cref="T:System.Net.IWebProxy" /> instance responsible for communicating with the FTP server.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpWebRequest.Proxy%2A> property identifies the <xref:System.Net.IWebProxy> instance that communicates with the FTP server. The proxy is set by the system by using configuration files and the Internet Explorer Local Area Network settings. To specify that no proxy should be used, set <xref:System.Net.FtpWebRequest.Proxy%2A> to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A?displayProperty=fullName> method. For more information about automatic proxy detection, see [Automatic Proxy Detection](~/docs/framework/network-programming/automatic-proxy-detection.md).  
+  
+ You must set <xref:System.Net.FtpWebRequest.Proxy%2A> before writing data to the request's stream or getting the response. Changing <xref:System.Net.FtpWebRequest.Proxy%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
+  
+ The <xref:System.Net.FtpWebRequest> class supports HTTP and ISA Firewall Client proxies.  
+  
+ If the specified proxy is an HTTP proxy, only the <xref:System.Net.WebRequestMethods.Ftp.DownloadFile>, <xref:System.Net.WebRequestMethods.Ftp.ListDirectory>, and <xref:System.Net.WebRequestMethods.Ftp.ListDirectoryDetails> commands are supported.  
+  
+   
+  
+## Examples  
+ The following code example displays this property value.  
+  
+ [!code-cpp[NCLFtpClient#16](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#16)]
+ [!code-csharp[NCLFtpClient#16](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#16)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">This property cannot be set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWriteTimeout">
+      <MemberSignature Language="C#" Value="public int ReadWriteTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ReadWriteTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.ReadWriteTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a time-out when reading from or writing to a stream.</summary>
+        <value>The number of milliseconds before the reading or writing times out. The default value is 300,000 milliseconds (5 minutes).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpWebRequest.ReadWriteTimeout%2A> is used when writing to the stream returned by the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method or reading from the stream returned by the <xref:System.Net.FtpWebResponse.GetResponseStream%2A> method.  
+  
+ Specifically, the <xref:System.Net.FtpWebRequest.ReadWriteTimeout%2A> property controls the time-out for the <xref:System.IO.Stream.Read%2A> method, which is used to read the stream returned by the <xref:System.Net.FtpWebResponse.GetResponseStream%2A> method, and for the <xref:System.IO.Stream.Write%2A> method, which is used to write to the stream returned by the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method. If the time-out period is exceeded, the calling method throws a <xref:System.Net.WebException> with <xref:System.Net.WebExceptionStatus> set to <xref:System.Net.WebExceptionStatus>.  
+  
+ To specify the amount of time to wait for the request to complete, use the <xref:System.Net.FtpWebRequest.Timeout%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The request has already been sent.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified for a set operation is less than or equal to zero and is not equal to <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameTo">
+      <MemberSignature Language="C#" Value="public string RenameTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RenameTo" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.RenameTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new name of a file being renamed.</summary>
+        <value>The new name of the file being renamed.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value specified for a set operation is <see langword="null" /> or an empty string.</exception>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestUri">
+      <MemberSignature Language="C#" Value="public override Uri RequestUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RequestUri" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.RequestUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI requested by this instance.</summary>
+        <value>A <see cref="T:System.Uri" /> instance that identifies a resource that is accessed using the File Transfer Protocol.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Net.FtpWebRequest.RequestUri%2A> property is the URI specified when the <xref:System.Net.WebRequest.Create%2A> method was called to obtain this instance.  
+  
+   
+  
+## Examples  
+ The following code example displays this property value.  
+  
+ [!code-cpp[NCLFtpClient#14](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#14)]
+ [!code-csharp[NCLFtpClient#14](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServicePoint">
+      <MemberSignature Language="C#" Value="public System.Net.ServicePoint ServicePoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ServicePoint ServicePoint" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.ServicePoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.ServicePoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Net.ServicePoint" /> object used to connect to the FTP server.</summary>
+        <value>A <see cref="T:System.Net.ServicePoint" /> object that can be used to customize connection behavior.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no <xref:System.Net.ServicePoint> object exists, one is created for the FTP server. To set the maximum number of connections that can be open for an FTP server, set the <xref:System.Net.ServicePoint.ConnectionLimit%2A> property of the <xref:System.Net.ServicePoint> instance returned by this property.  
+  
+   
+  
+## Examples  
+ The following code example retrieves the service point from a request and sets the maximum number of connections to one.  
+  
+ [!code-cpp[NCLFtpClient#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#1)]
+ [!code-csharp[NCLFtpClient#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public override int Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of milliseconds to wait for a request.</summary>
+        <value>An <see cref="T:System.Int32" /> value that contains the number of milliseconds to wait before a request times out. The default value is <see cref="F:System.Threading.Timeout.Infinite" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify an infinite value, set the <xref:System.Net.FtpWebRequest.Timeout%2A> property to <xref:System.Threading.Timeout.Infinite> (-1). This is the default value.  
+  
+ <xref:System.Net.FtpWebRequest.Timeout%2A> is the number of milliseconds that a synchronous request made with the <xref:System.Net.FtpWebRequest.GetResponse%2A> method waits for a response and that the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method waits for a stream. If a resource does not respond within the time-out period, the request throws a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> property set to <xref:System.Net.WebExceptionStatus>.  
+  
+ Changing <xref:System.Net.FtpWebRequest.Timeout%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
+  
+ A Domain Name System (DNS) query may take up to 15 seconds to return or time out. If your request contains a host name that requires resolution and you set <xref:System.Net.FtpWebRequest.Timeout%2A> to a value less than 15 seconds, it may take 15 seconds or more before a <xref:System.Net.WebException> is thrown to indicate a time-out on your request.  
+  
+   
+  
+## Examples  
+ The following code example sets this property.  
+  
+ [!code-cpp[NCLFtpClient#23](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#23)]
+ [!code-csharp[NCLFtpClient#23](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#23)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified is less than zero and is not <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseBinary">
+      <MemberSignature Language="C#" Value="public bool UseBinary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseBinary" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.UseBinary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that specifies the data type for file transfers.</summary>
+        <value>
+          <see langword="true" /> to indicate to the server that the data to be transferred is binary; <see langword="false" /> to indicate that the data is text. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are sending binary data, such as an image, set this property to `true`. If you are sending text, set the property to `false`. Specifying `true` causes the <xref:System.Net.FtpWebRequest> to send a `"TYPE I"` command to the server. Specifying `false` causes the <xref:System.Net.FtpWebRequest> to send a `"Type A"` command to the server. FTP servers can ignore these commands.  
+  
+ Changing <xref:System.Net.FtpWebRequest.UseBinary%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
+  
+   
+  
+## Examples  
+ The following code example retrieves and displays property values for a specified <xref:System.Net.FtpWebRequest> object.  
+  
+ [!code-cpp[NCLFtpClient#15](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#15)]
+ [!code-csharp[NCLFtpClient#15](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#15)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultCredentials">
+      <MemberSignature Language="C#" Value="public override bool UseDefaultCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.UseDefaultCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always throws a <see cref="T:System.NotSupportedException" />.</summary>
+        <value>Always throws a <see cref="T:System.NotSupportedException" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.FtpWebRequest.UseDefaultCredentials%2A> property is provided only for compatibility with other implementations of the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes. There is no reason to use <xref:System.Net.FtpWebRequest.UseDefaultCredentials%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Default credentials are not supported for FTP.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UsePassive">
+      <MemberSignature Language="C#" Value="public bool UsePassive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsePassive" />
+      <MemberSignature Language="DocId" Value="P:System.Net.FtpWebRequest.UsePassive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the behavior of a client application's data transfer process.</summary>
+        <value>
+          <see langword="false" /> if the client application's data transfer process listens for a connection on the data port; otherwise, <see langword="true" /> if the client should initiate a connection on the data port. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Net.FtpWebRequest.UsePassive%2A> property to `true` sends the "`PASV"` command to the server. This command requests the server to listen on a data port and to wait for a connection rather than initiate one upon receipt of a transfer command.  
+  
+ For a description of the behaviors that are specified using <xref:System.Net.FtpWebRequest.UsePassive%2A>, see RFC 959, "File Transfer Protocol," Section 3.2, "Establishing Data Connections" and Section 4.1.2, "Transfer Parameter Commands," available at [http://www.rfc-editor.org/](http://www.ietf.org/rfc/rfc959.txt).  
+  
+ Changing <xref:System.Net.FtpWebRequest.UsePassive%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
+  
+ If <xref:System.Net.FtpWebRequest.UsePassive%2A> is set to `true`, the FTP server may not send the size of the file, and download progress can always be zero. If <xref:System.Net.FtpWebRequest.UsePassive%2A> is set to `false`, a firewall can raise an alert and block the file download.  
+  
+   
+  
+## Examples  
+ The following code example retrieves and displays property values for a specified <xref:System.Net.FtpWebRequest> object.  
+  
+ [!code-cpp[NCLFtpClient#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLFtpClient/CPP/ftptests.cpp#6)]
+ [!code-csharp[NCLFtpClient#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLFtpClient/CS/ftptests.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A new value was specified for this property for a request that is already in progress.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

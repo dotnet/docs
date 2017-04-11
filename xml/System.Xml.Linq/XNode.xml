@@ -1,0 +1,3174 @@
+<Type Name="XNode" FullName="System.Xml.Linq.XNode">
+  <TypeSignature Language="C#" Value="public abstract class XNode : System.Xml.Linq.XObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XNode extends System.Xml.Linq.XObject" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XNode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XDocument</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.Linq</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Linq.XObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the abstract concept of a node (element, comment, document type, processing instruction, or text node) in the XML tree.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xml.Linq.XNode> is an abstract common base class for the following types:  
+  
+-   <xref:System.Xml.Linq.XComment>  
+  
+-   <xref:System.Xml.Linq.XContainer>  
+  
+-   <xref:System.Xml.Linq.XDocumentType>  
+  
+-   <xref:System.Xml.Linq.XProcessingInstruction>  
+  
+-   <xref:System.Xml.Linq.XText>  
+  
+ <xref:System.Xml.Linq.XContainer> is an abstract common base class for the following types:  
+  
+-   <xref:System.Xml.Linq.XDocument>  
+  
+-   <xref:System.Xml.Linq.XElement>  
+  
+ Objects of classes that derive from <xref:System.Xml.Linq.XContainer> can contain child nodes.  
+  
+> [!NOTE]
+>  An <xref:System.Xml.Linq.XAttribute> is not an <xref:System.Xml.Linq.XNode>. Attributes are maintained as a list of name/value pairs on an element.  
+  
+ If you are writing a complex XML application, such as an XML editor or a word processor that stores content as XML, you will often work at the node level. Typical activities when working at the node level include adding nodes, deleting nodes, transforming nodes, and iterating through axes that return collections of nodes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddAfterSelf">
+      <MemberSignature Language="C#" Value="public void AddAfterSelf (object content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfterSelf(object content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddAfterSelf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="content">A content object that contains simple content or a collection of content objects to be added after this node.</param>
+        <summary>Adds the specified content immediately after this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+   
+  
+## Examples  
+ The following example uses this method to add an element into the tree.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child1 = xmlTree.Element("Child1");  
+child1.AddAfterSelf(  
+    new XElement("NewChild", 10)  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim child1 As XElement = xmlTree.<Child1>(0)  
+child1.AddAfterSelf(New XElement("NewChild", 10))  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <NewChild>10</NewChild>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAfterSelf">
+      <MemberSignature Language="C#" Value="public void AddAfterSelf (object[] content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfterSelf(object[] content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddAfterSelf(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="content">A parameter list of content objects.</param>
+        <summary>Adds the specified content immediately after this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+   
+  
+## Examples  
+ The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child1 = xmlTree.Element("Child1");  
+child1.AddAfterSelf(  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
+Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim child1 As XElement = xmlTree.<Child1>(0)  
+child1.AddAfterSelf( _  
+    From el In srcTree.Elements() _  
+    Where CInt(el) > 3 _  
+    Select el)  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBeforeSelf">
+      <MemberSignature Language="C#" Value="public void AddBeforeSelf (object content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeforeSelf(object content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="content">A content object that contains simple content or a collection of content objects to be added before this node.</param>
+        <summary>Adds the specified content immediately before this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses this method to add an element into the tree.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child1 = xmlTree.Element("Child1");  
+child1.AddBeforeSelf(  
+    new XElement("NewChild", 10)  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim child1 As XElement = xmlTree.<Child1>(0)  
+child1.AddBeforeSelf(New XElement("NewChild", 10))  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <NewChild>10</NewChild>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBeforeSelf">
+      <MemberSignature Language="C#" Value="public void AddBeforeSelf (object[] content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeforeSelf(object[] content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="content">A parameter list of content objects.</param>
+        <summary>Adds the specified content immediately before this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this function might affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child1 = xmlTree.Element("Child1");  
+child1.AddBeforeSelf(  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
+Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim child1 As XElement = xmlTree.<Child1>(0)  
+child1.AddBeforeSelf( _  
+    From el In srcTree.Elements() _  
+    Where CInt(el) > 3 _  
+    Select el)  
+  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Ancestors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Ancestors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of the ancestor elements of this node.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the ancestor elements of this node.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not return itself in the results.  
+  
+ The nodes in the returned collection are in reverse document order.  
+  
+ This method uses deferred execution.  
+  
+   
+  
+## Examples  
+ The following example uses this method to enumerate the ancestors of a node.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child",   
+        new XElement("GrandChild", "content")  
+    )  
+);  
+IEnumerable<XElement> grandChild = xmlTree.Descendants("GrandChild");  
+foreach (XElement el in grandChild.Ancestors())  
+    Console.WriteLine(el.Name);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child>  
+                <GrandChild>content</GrandChild>  
+            </Child>  
+        </Root>  
+  
+Dim grandChild As IEnumerable(Of XElement) = xmlTree...<GrandChild>  
+For Each el In grandChild.Ancestors()  
+    Console.WriteLine(el.Name)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                Child  
+Root  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ancestors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors (System.Xml.Linq.XName name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors(class System.Xml.Linq.XName name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Ancestors(System.Xml.Linq.XName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
+        <summary>Returns a filtered collection of the ancestor elements of this node. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the ancestor elements of this node. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.  
+  
+ The nodes in the returned collection are in reverse document order.  
+  
+ This method uses deferred execution.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method will not return itself in the results.  
+  
+   
+  
+## Examples  
+ The following example uses this method.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child",   
+        new XElement("GrandChild", "content")  
+    )  
+);  
+IEnumerable<XElement> grandChild = xmlTree.Descendants("GrandChild");  
+foreach (XElement el in grandChild.Ancestors("Child"))  
+    Console.WriteLine(el.Name);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child>  
+                <GrandChild>content</GrandChild>  
+            </Child>  
+        </Root>  
+  
+Dim grandChild As IEnumerable(Of XElement) = xmlTree...<GrandChild>  
+For Each el In grandChild.Ancestors("Child")  
+    Console.WriteLine(el.Name)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+Child  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareDocumentOrder">
+      <MemberSignature Language="C#" Value="public static int CompareDocumentOrder (System.Xml.Linq.XNode n1, System.Xml.Linq.XNode n2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CompareDocumentOrder(class System.Xml.Linq.XNode n1, class System.Xml.Linq.XNode n2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n1" Type="System.Xml.Linq.XNode" />
+        <Parameter Name="n2" Type="System.Xml.Linq.XNode" />
+      </Parameters>
+      <Docs>
+        <param name="n1">First <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <param name="n2">Second <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <summary>Compares two nodes to determine their relative XML document order.</summary>
+        <returns>An <see langword="int" /> containing 0 if the nodes are equal; -1 if <paramref name="n1" /> is before <paramref name="n2" />; 1 if <paramref name="n1" /> is after <paramref name="n2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses this method.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1",  
+        new XElement("GrandChild1", 1),  
+        new XElement("GrandChild2", 2),  
+        new XElement("GrandChild3", 3)  
+    ),  
+    new XElement("Child2",  
+        new XElement("GrandChild4", 4),  
+        new XElement("GrandChild5", 5),  
+        new XElement("GrandChild6", 6)  
+    )  
+);  
+XElement el1 = xmlTree.Descendants("GrandChild2").First();  
+XElement el2 = xmlTree.Descendants("GrandChild6").First();  
+if (XElement.CompareDocumentOrder(el1, el2) == 0)  
+    Console.WriteLine("Compared elements are the same element");  
+else if (XElement.CompareDocumentOrder(el1, el2) > 0)  
+    Console.WriteLine("el1 is after el2");  
+else  
+    Console.WriteLine("el1 is before el2");  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>  
+                <GrandChild1>1</GrandChild1>  
+                <GrandChild2>2</GrandChild2>  
+                <GrandChild3>3</GrandChild3>  
+            </Child1>  
+            <Child2>  
+                <GrandChild4>4</GrandChild4>  
+                <GrandChild5>5</GrandChild5>  
+                <GrandChild6>6</GrandChild6>  
+            </Child2>  
+        </Root>  
+  
+Dim el1 As XElement = xmlTree...<GrandChild2>(0)  
+Dim el2 As XElement = xmlTree...<GrandChild6>(0)  
+  
+If (XElement.CompareDocumentOrder(el1, el2) = 0) Then  
+    Console.WriteLine("Compared elements are the same element")  
+ElseIf (XElement.CompareDocumentOrder(el1, el2) > 0) Then  
+    Console.WriteLine("el1 is after el2")  
+Else  
+    Console.WriteLine("el1 is before el2")  
+End If  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+el1 is before el2  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReader">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlReader CreateReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader CreateReader() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CreateReader" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlReader" /> for this node.</summary>
+        <returns>An <see cref="T:System.Xml.XmlReader" /> that can be used to read this node and its descendants.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically use this method when you have to supply another component with an <xref:System.Xml.XmlReader>. For example, you can create an <xref:System.Xml.XmlReader> from a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] tree, and then pass that reader to <xref:System.Xml.XmlDocument.Load%2A>.  
+  
+ All of the readers returned by <xref:System.Xml.XmlReader.Create%2A> are normalizing readers. They always perform line break normalization and full normalization of attributes. In contrast, the <xref:System.Xml.XmlReader> returned by <xref:System.Xml.Linq.XNode.CreateReader%2A> is not a normalizing reader. It does not transform any white space. It also returns attributes in the order that they were added, not in attribute name order.  
+  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] does not keep information about whether attributes are default attributes. <xref:System.Xml.XmlReader.IsDefault%2A> will always return false regardless of whether the attribute was populated from a default value or not.  
+  
+ The the `PUBLIC` and `SYSTEM` pseudo attributes on <xref:System.Xml.Linq.XDocumentType> are not available through the <xref:System.Xml.XmlReader.MoveToAttribute%2A?displayProperty=fullName> method. They are only available through the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=fullName> method that takes the qualified name of the attribute as a parameter. If you have to retrieve the `PUBLIC` or `SYSTEM` attributes, you should use the <xref:System.Xml.XmlReader.GetAttribute%2A?displayProperty=fullName> method.  
+  
+ Base64 and BinHex data are not supported. If you attempt to retrieve these types of data (for example, by calling <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A>), the reader will throw <xref:System.NotSupportedException>.  
+  
+ The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType>.  
+  
+   
+  
+## Examples  
+ The following example creates an XML tree, creates an <xref:System.Xml.XmlReader> by using the <xref:System.Xml.Linq.XNode.CreateReader%2A> method, and creates an <xref:System.Xml.XmlDocument> by using the reader.  
+  
+```csharp  
+  
+                XDocument xmlTree = new XDocument(  
+    new XElement("Root",  
+        new XAttribute("Att1", "Attribute Content"),  
+        new XElement("Child1", 1),  
+        new XElement("Child2", 2)  
+    )  
+);  
+XmlReader reader = xmlTree.CreateReader();  
+reader.MoveToContent();  
+XmlDocument doc = new XmlDocument();  
+XmlNode cd = doc.ReadNode(reader);  
+doc.AppendChild(cd);  
+Console.WriteLine(doc.OuterXml);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XDocument =  _   
+    <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
+        <Root Att1="Attribute Content">  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+        </Root>  
+Dim reader As XmlReader = xmlTree.CreateReader()  
+reader.MoveToContent()  
+Dim doc As XmlDocument = New XmlDocument()  
+Dim cd As XmlNode = doc.ReadNode(reader)  
+doc.AppendChild(cd)  
+Console.WriteLine(doc.OuterXml)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+<Root Att1="Attribute Content"><Child1>1</Child1><Child2>2</Child2></Root>  
+```  
+  
+ Another use for this method is to do an XSLT transformation. You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML tree, create a new document, and create an <xref:System.Xml.XmlWriter> that will write into the new document. Then, you can invoke the XSLT transformation, passing the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> to the transformation. After the transformation successfully completes, the new XML tree is populated with the results of the transform.  
+  
+```csharp  
+  
+                string xslMarkup = @"<?xml version='1.0'?>  
+<xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+    <xsl:template match='/Parent'>  
+        <Root>  
+            <C1>  
+            <xsl:value-of select='Child1'/>  
+            </C1>  
+            <C2>  
+            <xsl:value-of select='Child2'/>  
+            </C2>  
+        </Root>  
+    </xsl:template>  
+</xsl:stylesheet>";  
+  
+XDocument xmlTree = new XDocument(  
+    new XElement("Parent",  
+        new XElement("Child1", "Child1 data"),  
+        new XElement("Child2", "Child2 data")  
+    )  
+);  
+  
+XDocument newTree = new XDocument();  
+using (XmlWriter writer = newTree.CreateWriter()) {  
+    // Load the style sheet.  
+    XslCompiledTransform xslt = new XslCompiledTransform();  
+    xslt.Load(XmlReader.Create(new StringReader(xslMarkup)));  
+  
+    // Execute the transform and output the results to a writer.  
+    xslt.Transform(xmlTree.CreateReader(), writer);  
+}  
+  
+Console.WriteLine(newTree);  
+```  
+  
+```vb  
+  
+                Dim xslMarkup As XDocument = _   
+    <?xml version='1.0'?>  
+    <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+        <xsl:template match='/Parent'>  
+            <Root>  
+                <C1>  
+                    <xsl:value-of select='Child1'/>  
+                </C1>  
+                <C2>  
+                    <xsl:value-of select='Child2'/>  
+                </C2>  
+            </Root>  
+        </xsl:template>  
+    </xsl:stylesheet>  
+  
+Dim xmlTree As XElement = _   
+        <Parent>  
+            <Child1>Child1 data</Child1>  
+            <Child2>Child2 data</Child2>  
+        </Parent>  
+  
+Dim newTree As XDocument = New XDocument()  
+  
+Using writer As XmlWriter = newTree.CreateWriter()  
+    ' Load the style sheet.  
+    Dim xslt As XslCompiledTransform = _  
+        New XslCompiledTransform()  
+    xslt.Load(xslMarkup.CreateReader())  
+  
+    ' Execute the transform and output the results to a writer.  
+    xslt.Transform(xmlTree.CreateReader(), writer)  
+End Using  
+  
+Console.WriteLine(newTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <C1>Child1 data</C1>  
+  <C2>Child2 data</C2>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReader">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlReader CreateReader (System.Xml.Linq.ReaderOptions readerOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader CreateReader(valuetype System.Xml.Linq.ReaderOptions readerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CreateReader(System.Xml.Linq.ReaderOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="readerOptions" Type="System.Xml.Linq.ReaderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="readerOptions">A <see cref="T:System.Xml.Linq.ReaderOptions" /> object that specifies whether to omit duplicate namespaces.</param>
+        <summary>Creates an <see cref="T:System.Xml.XmlReader" /> with the options specified by the <paramref name="readerOptions" /> parameter.</summary>
+        <returns>An <see cref="T:System.Xml.XmlReader" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeepEquals">
+      <MemberSignature Language="C#" Value="public static bool DeepEquals (System.Xml.Linq.XNode n1, System.Xml.Linq.XNode n2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DeepEquals(class System.Xml.Linq.XNode n1, class System.Xml.Linq.XNode n2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.DeepEquals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n1" Type="System.Xml.Linq.XNode" />
+        <Parameter Name="n2" Type="System.Xml.Linq.XNode" />
+      </Parameters>
+      <Docs>
+        <param name="n1">The first <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <param name="n2">The second <see cref="T:System.Xml.Linq.XNode" /> to compare.</param>
+        <summary>Compares the values of two nodes, including the values of all descendant nodes.</summary>
+        <returns>
+          <see langword="true" /> if the nodes are equal; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following criteria determine whether two nodes are equal:  
+  
+-   A `null` node is equal to another `null` node but unequal to a non-`null` node.  
+  
+-   Two <xref:System.Xml.Linq.XNode> objects of different types are never equal.  
+  
+-   Two <xref:System.Xml.Linq.XText> nodes are equal if they contain the same text.  
+  
+-   Two <xref:System.Xml.Linq.XElement> nodes are equal if they have the same tag name, the same set of attributes with the same values, and (ignoring comments and processing instructions) contain two equal length sequences of equal content nodes.  
+  
+-   Two <xref:System.Xml.Linq.XDocument> nodes are equal if their root nodes are equal.  
+  
+-   Two <xref:System.Xml.Linq.XComment> nodes are equal if they contain the same comment text.  
+  
+-   Two <xref:System.Xml.Linq.XProcessingInstruction> nodes are equal if they have the same target and data.  
+  
+-   Two <xref:System.Xml.Linq.XDocumentType> nodes are equal if the have the same name, public ID, system ID, and internal subset.  
+  
+   
+  
+## Examples  
+ The following example uses this method to compare two XML trees.  
+  
+```csharp  
+  
+                XElement xmlTree1 = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
+);  
+XElement xmlTree2 = new XElement("Root",  
+    new XAttribute("Att1", 1),  
+    new XAttribute("Att2", 2),  
+    new XElement("Child1", 1),  
+    new XElement("Child2", "some content")  
+);  
+Console.WriteLine(XNode.DeepEquals(xmlTree1, xmlTree2));  
+```  
+  
+```vb  
+  
+                Dim xmlTree1 As XElement = _   
+        <Root Att1="1" Att2="2">  
+            <Child1>1</Child1>  
+            <Child2>some content</Child2>  
+        </Root>  
+  
+Dim xmlTree2 As XElement = _   
+        <Root Att1="1" Att2="2">  
+            <Child1>1</Child1>  
+            <Child2>some content</Child2>  
+        </Root>  
+  
+Console.WriteLine(XNode.DeepEquals(xmlTree1, xmlTree2))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+True  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentOrderComparer">
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XNodeDocumentOrderComparer DocumentOrderComparer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Xml.Linq.XNodeDocumentOrderComparer DocumentOrderComparer" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.DocumentOrderComparer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XNodeDocumentOrderComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a comparer that can compare the relative position of two nodes.</summary>
+        <value>An <see cref="T:System.Xml.Linq.XNodeDocumentOrderComparer" /> that can compare the relative position of two nodes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is primarily used internally for implementing the <xref:System.Xml.Linq.Extensions.InDocumentOrder%2A> extension method. The recommended approach is to use that extension method instead of using this property directly.  
+  
+   
+  
+## Examples  
+ The following example creates an XML tree with some elements. It then creates a <xref:System.Collections.Generic.List%601> of <xref:System.Xml.Linq.XNode> that contains some elements from the XML tree at random. It sorts the list, using this property to retrieve a <xref:System.Xml.Linq.XNodeDocumentOrderComparer>, which implements the <xref:System.Collections.IComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName> interfaces.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+  
+List<XNode> nodeList = new List<XNode>();  
+nodeList.Add(xmlTree.Element("Child5"));  
+nodeList.Add(xmlTree.Element("Child3"));  
+nodeList.Add(xmlTree.Element("Child1"));  
+  
+// Sort nodes in document order.  
+nodeList.Sort(XNode.DocumentOrderComparer);  
+  
+foreach (XElement el in nodeList)  
+    Console.WriteLine(el);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim nodeList As List(Of XNode) = New List(Of XNode)()  
+nodeList.Add(xmlTree.Element("Child5"))  
+nodeList.Add(xmlTree.Element("Child3"))  
+nodeList.Add(xmlTree.Element("Child1"))  
+  
+' Sort nodes in document order.  
+nodeList.Sort(XNode.DocumentOrderComparer)  
+  
+For Each el In nodeList  
+    Console.WriteLine(el)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                <Child1>1</Child1>  
+<Child3>3</Child3>  
+<Child5>5</Child5>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementsAfterSelf">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsAfterSelf ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsAfterSelf() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsAfterSelf" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of the sibling elements after this node, in document order.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the sibling elements after this node, in document order.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only includes siblings in the returned collection. It does not include descendants.  
+  
+ This method uses deferred execution.  
+  
+   
+  
+## Examples  
+ The following example creates an element with some complex content. It then uses this method to retrieve the nodes in document order.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child = xmlTree.Element("Child3");  
+IEnumerable<XElement> elements = child.ElementsAfterSelf();  
+foreach (XElement el in elements)  
+    Console.WriteLine(el.Name);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _  
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child As XElement = xmlTree.<Child3>(0)  
+Dim elements As IEnumerable(Of XElement) = child.ElementsAfterSelf()  
+For Each el In elements  
+    Console.WriteLine(el.Name)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                Child4  
+Child5  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementsAfterSelf">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsAfterSelf (System.Xml.Linq.XName name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsAfterSelf(class System.Xml.Linq.XName name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsAfterSelf(System.Xml.Linq.XName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
+        <summary>Returns a filtered collection of the sibling elements after this node, in document order. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the sibling elements after this node, in document order. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only includes siblings in the returned collection. It does not include descendants.  
+  
+ This method uses deferred execution.  
+  
+   
+  
+## Examples  
+ The following example creates an element with some complex content. It then uses this method to retrieve the sibling elements, in document order.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child = xmlTree.Element("Child3");  
+IEnumerable<XElement> elements = child.ElementsAfterSelf("Child4");  
+foreach (XElement el in elements)  
+    Console.WriteLine(el.Name);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child As XElement = xmlTree.<Child3>(0)  
+Dim elements As IEnumerable(Of XElement) = child.ElementsAfterSelf("Child4")  
+  
+For Each el In elements  
+    Console.WriteLine(el.Name)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+Child4  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementsBeforeSelf">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsBeforeSelf ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsBeforeSelf() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsBeforeSelf" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of the sibling elements before this node, in document order.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the sibling elements before this node, in document order.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only includes siblings in the returned collection. It does not include descendants.  
+  
+ This method uses deferred execution.  
+  
+   
+  
+## Examples  
+ The following example uses this axis method.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child = xmlTree.Element("Child3");  
+IEnumerable<XElement> elements = child.ElementsBeforeSelf();  
+foreach (XElement el in elements)  
+    Console.WriteLine(el.Name);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child As XElement = xmlTree.<Child3>(0)  
+Dim elements As IEnumerable(Of XElement) = child.ElementsBeforeSelf()  
+  
+For Each el In elements  
+    Console.WriteLine(el.Name)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                Child1  
+Child2  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementsBeforeSelf">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsBeforeSelf (System.Xml.Linq.XName name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsBeforeSelf(class System.Xml.Linq.XName name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsBeforeSelf(System.Xml.Linq.XName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.Linq.XName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="T:System.Xml.Linq.XName" /> to match.</param>
+        <summary>Returns a filtered collection of the sibling elements before this node, in document order. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XElement" /> of the sibling elements before this node, in document order. Only elements that have a matching <see cref="T:System.Xml.Linq.XName" /> are included in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only includes siblings in the returned collection. It does not include descendants.  
+  
+ This method uses deferred execution.  
+  
+   
+  
+## Examples  
+ The following example uses this method.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child = xmlTree.Element("Child3");  
+IEnumerable<XElement> elements = child.ElementsBeforeSelf("Child2");  
+foreach (XElement el in elements)  
+    Console.WriteLine(el.Name);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child As XElement = xmlTree.<Child3>(0)  
+Dim elements As IEnumerable(Of XElement) = child.ElementsBeforeSelf("Child2")  
+  
+For Each el In elements  
+    Console.WriteLine(el.Name)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+Child2  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EqualityComparer">
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XNodeEqualityComparer EqualityComparer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Xml.Linq.XNodeEqualityComparer EqualityComparer" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.EqualityComparer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XNodeEqualityComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a comparer that can compare two nodes for value equality.</summary>
+        <value>A <see cref="T:System.Xml.Linq.XNodeEqualityComparer" /> that can compare two nodes for value equality.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses this property to retrieve an <xref:System.Xml.Linq.XNodeEqualityComparer>, which implements the <xref:System.Collections.IEqualityComparer?displayProperty=fullName> and <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName> interfaces. It creates a dictionary that uses this property.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+  
+Dictionary<XNode, string> nodeDictionary = new Dictionary<XNode, string>(XNode.EqualityComparer);  
+nodeDictionary.Add(xmlTree.Element("Child5"), "Child 5 Information");  
+nodeDictionary.Add(xmlTree.Element("Child3"), "Child 3 Information");  
+nodeDictionary.Add(xmlTree.Element("Child1"), "Child 1 Information");  
+  
+string str = nodeDictionary[xmlTree.Element("Child3")];  
+Console.WriteLine(str);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim nodeDictionary As Dictionary(Of XNode, String) = New Dictionary(Of XNode, String)(XNode.EqualityComparer)  
+nodeDictionary.Add(xmlTree.Element("Child5"), "Child 5 Information")  
+nodeDictionary.Add(xmlTree.Element("Child3"), "Child 3 Information")  
+nodeDictionary.Add(xmlTree.Element("Child1"), "Child 1 Information")  
+  
+Dim str As String = nodeDictionary(xmlTree.Element("Child3"))  
+Console.WriteLine(str)  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+Child 3 Information  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAfter">
+      <MemberSignature Language="C#" Value="public bool IsAfter (System.Xml.Linq.XNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAfter(class System.Xml.Linq.XNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.IsAfter(System.Xml.Linq.XNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.Linq.XNode" /> to compare for document order.</param>
+        <summary>Determines if the current node appears after a specified node in terms of document order.</summary>
+        <returns>
+          <see langword="true" /> if this node appears after the specified node; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.CompareDocumentOrder%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses this method.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+XElement child5 = xmlTree.Element("Child5");  
+if (child5.IsAfter(child3))  
+    Console.WriteLine("Child5 is after Child3");  
+else  
+    Console.WriteLine("Child5 is not after Child3");  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child3 As XElement = xmlTree.<Child3>(0)  
+Dim child5 As XElement = xmlTree.<Child5>(0)  
+If (child5.IsAfter(child3)) Then  
+    Console.WriteLine("Child5 is after Child3")  
+Else  
+    Console.WriteLine("Child5 is not after Child3")  
+End If  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+Child5 is after Child3  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBefore">
+      <MemberSignature Language="C#" Value="public bool IsBefore (System.Xml.Linq.XNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsBefore(class System.Xml.Linq.XNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.IsBefore(System.Xml.Linq.XNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.Linq.XNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.Linq.XNode" /> to compare for document order.</param>
+        <summary>Determines if the current node appears before a specified node in terms of document order.</summary>
+        <returns>
+          <see langword="true" /> if this node appears before the specified node; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.IsBefore%2A> method must traverse the ancestors of the two nodes being compared until it finds the common parent. Then it must traverse the list of the common parent’s child nodes to determine the order of the two nodes being compared. Therefore, using this method might affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses this method.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XText("More text content."),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+XElement child5 = xmlTree.Element("Child5");  
+if (child5.IsBefore(child3))  
+    Console.WriteLine("Child5 is before Child3");  
+else  
+    Console.WriteLine("Child5 is not before Child3");  
+```  
+  
+ [vb]  
+  
+```  
+  
+                Dim xmlTree As XElement = _   
+        <Root>Text content.  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>More text content.  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child3 As XElement = xmlTree.<Child3>(0)  
+Dim child5 As XElement = xmlTree.<Child5>(0)  
+If (child5.IsBefore(child3)) Then  
+    Console.WriteLine("Child5 is before Child3")  
+Else  
+    Console.WriteLine("Child5 is not before Child3")  
+End If  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+Child5 is not before Child3  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextNode">
+      <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode NextNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XNode NextNode" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.NextNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the next sibling node of this node.</summary>
+        <value>The <see cref="T:System.Xml.Linq.XNode" /> that contains the next sibling node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no next node, this property returns `null`.  
+  
+   
+  
+## Examples  
+ The following example uses this property to loop through nodes.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XText("Some Text"),  
+    new XElement("Child2",  
+        2,  
+        new XElement("GrandChild", "GrandChild Content")  
+    ),  
+    new XComment("a comment"),  
+    new XElement("Child3")  
+);  
+XNode node = xmlTree.Element("Child2");  
+do {  
+    StringBuilder sb = new StringBuilder();  
+    sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)));  
+    switch (node.NodeType)  
+    {  
+        case XmlNodeType.Text:  
+            sb.Append((node as XText).Value);  
+            break;  
+        case XmlNodeType.Element:  
+            sb.Append((node as XElement).Name);  
+            break;  
+        case XmlNodeType.Comment:  
+            sb.Append((node as XComment).Value);  
+            break;  
+    }  
+    Console.WriteLine(sb.ToString());  
+}  
+while ((node = node.NextNode) != null);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>Some Text  
+            <Child2>2  
+                <GrandChild>GrandChild Content</GrandChild>  
+            </Child2>  
+            <!--a comment-->  
+            <Child3>3</Child3>  
+        </Root>  
+  
+Dim node As XNode = xmlTree.Element("Child2")  
+Do  
+    Dim sb As StringBuilder = New StringBuilder()  
+    sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)))  
+    Select Case node.NodeType  
+        Case XmlNodeType.Text  
+            sb.Append(DirectCast(node, XText).Value)  
+        Case XmlNodeType.Element  
+            sb.Append(DirectCast(node, XElement).Name)  
+        Case XmlNodeType.Comment  
+            sb.Append(DirectCast(node, XComment).Value)  
+    End Select  
+    Console.WriteLine(sb.ToString())  
+  
+    node = node.NextNode  
+Loop While (Not (node Is Nothing))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                NodeType: Element   Child2  
+NodeType: Comment   a comment  
+NodeType: Element   Child3  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodesAfterSelf">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; NodesAfterSelf ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; NodesAfterSelf() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.NodesAfterSelf" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of the sibling nodes after this node, in document order.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> of the sibling nodes after this node, in document order.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only includes siblings in the returned collection. It does not include descendants.  
+  
+ This method uses deferred execution.  
+  
+   
+  
+## Examples  
+ The following example creates an XML tree, and then queries the tree using this axis method.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XText("More text content."),  
+    new XElement("child3", "child3 content")  
+);  
+XElement child = xmlTree.Element("Child2");  
+IEnumerable<XNode> nodes =  
+    from node in child.NodesAfterSelf()  
+    select node;  
+foreach (XNode node in nodes)  
+{  
+    Console.WriteLine("Node type: {0}  {1}",  
+        node.NodeType,  
+        node.NodeType == XmlNodeType.Text ? (node as XText).Value : "");  
+}  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = New XElement("Root", _New XText("Text content."), _  
+    New XElement("Child1", "child1 content"), _  
+    New XElement("Child2", "child2 content"), _  
+    New XText("More text content."), _  
+    New XElement("child3", "child3 content") _  
+)  
+  
+Dim child As XElement = xmlTree.Element("Child2")  
+Dim nodes As IEnumerable(Of XNode) = _  
+    From node In child.NodesAfterSelf() _  
+    Select node  
+For Each node As XNode In nodes  
+    Dim s As String = ""  
+    If node.NodeType = XmlNodeType.Text Then  
+        s = DirectCast(node, XText).Value  
+    End If  
+    Console.WriteLine("Node type: {0}  {1}", node.NodeType, s)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                Node type: Text  More text content.  
+Node type: Element  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodesBeforeSelf">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; NodesBeforeSelf ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; NodesBeforeSelf() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.NodesBeforeSelf" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of the sibling nodes before this node, in document order.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Xml.Linq.XNode" /> of the sibling nodes before this node, in document order.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method only includes siblings in the returned collection. It does not include descendants.  
+  
+ This method uses deferred execution.  
+  
+   
+  
+## Examples  
+ The following example creates an XML tree, and then queries the tree using this axis method.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XText("Text content."),  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XText("More text content."),  
+    new XElement("child3", "child3 content")  
+);  
+XElement child = xmlTree.Element("Child2");  
+IEnumerable<XNode> nodes =  
+    from node in child.NodesBeforeSelf()  
+    select node;  
+foreach (XNode node in nodes)  
+    Console.WriteLine("Node type: {0}  {1}",  
+        node.NodeType,  
+        node.NodeType == XmlNodeType.Text ? (node as XText).Value : "");  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = New XElement("Root", _  
+    New XText("Text content."), _  
+    New XElement("Child1", "child1 content"), _  
+    New XElement("Child2", "child2 content"), _  
+    New XText("More text content."), _  
+    New XElement("child3", "child3 content") _  
+)  
+  
+Dim child As XElement = xmlTree.Element("Child2")  
+Dim nodes As IEnumerable(Of XNode) = _  
+    From node In child.NodesBeforeSelf() _  
+    Select node  
+For Each node As XNode In nodes  
+    Dim s As String = ""  
+    If node.NodeType = XmlNodeType.Text Then  
+        s = DirectCast(node, XText).Value  
+    End If  
+    Console.WriteLine("Node type: {0}  {1}", node.NodeType, s)  
+Next  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                Node type: Text  Text content.  
+Node type: Element  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousNode">
+      <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode PreviousNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XNode PreviousNode" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.PreviousNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the previous sibling node of this node.</summary>
+        <value>The <see cref="T:System.Xml.Linq.XNode" /> that contains the previous sibling node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this <xref:System.Xml.Linq.XNode> does not have a parent, or if there is no previous node, this property returns `null`.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.PreviousNode%2A> property must traverse the list of direct child nodes under the parent container. Therefore, using this property might affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses this property to loop through nodes.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XText("Some Text"),  
+    new XElement("Child2",  
+        2,  
+        new XElement("GrandChild", "GrandChild Content")  
+    ),  
+    new XComment("a comment"),  
+    new XElement("Child3")  
+);  
+XNode node = xmlTree.Element("Child2");  
+do {  
+    StringBuilder sb = new StringBuilder();  
+    sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)));  
+    switch (node.NodeType)  
+    {  
+        case XmlNodeType.Text:  
+            sb.Append((node as XText).Value);  
+            break;  
+        case XmlNodeType.Element:  
+            sb.Append((node as XElement).Name);  
+            break;  
+        case XmlNodeType.Comment:  
+            sb.Append((node as XComment).Value);  
+            break;  
+    }  
+    Console.WriteLine(sb.ToString());  
+}  
+while ((node = node.PreviousNode) != null);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _  
+    <Root>  
+        <Child1>1</Child1>Some Text<Child2>2  
+            <GrandChild>GrandChild Content</GrandChild>  
+        </Child2>  
+        <!--a comment-->  
+        <Child3>3</Child3>  
+    </Root>  
+  
+Dim node As XNode = xmlTree.Element("Child2")  
+Do  
+    Dim sb As StringBuilder = New StringBuilder()  
+    sb.Append(String.Format("NodeType: {0}", node.NodeType.ToString().PadRight(10)))  
+    Select Case node.NodeType  
+        Case XmlNodeType.Text  
+            sb.Append(DirectCast(node, XText).Value)  
+        Case XmlNodeType.Element  
+            sb.Append(DirectCast(node, XElement).Name)  
+        Case XmlNodeType.Comment  
+            sb.Append(DirectCast(node, XComment).Value)  
+    End Select  
+    Console.WriteLine(sb.ToString())  
+  
+    node = node.PreviousNode  
+Loop While (Not (node Is Nothing))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                NodeType: Element   Child2  
+NodeType: Text      Some Text  
+NodeType: Element   Child1  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFrom">
+      <MemberSignature Language="C#" Value="public static System.Xml.Linq.XNode ReadFrom (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XNode ReadFrom(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReadFrom(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.XNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the node to read into this <see cref="T:System.Xml.Linq.XNode" />.</param>
+        <summary>Creates an <see cref="T:System.Xml.Linq.XNode" /> from an <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>An <see cref="T:System.Xml.Linq.XNode" /> that contains the node and its descendant nodes that were read from the reader. The runtime type of the node is determined by the node type (<see cref="P:System.Xml.Linq.XObject.NodeType" />) of the first node encountered in the reader.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to write a method that returns a collection of nodes, yielding each node as the node is read from the reader. This method enables you to process arbitrarily large XML files with a very small memory footprint.  
+  
+ The reader that you pass to this method might throw exceptions. <xref:System.Xml.Linq.XNode.ReadFrom%2A> does not catch all exceptions thrown by the reader; the unhandled exceptions bubble up to the code that called <xref:System.Xml.Linq.XNode.ReadFrom%2A>. In particular, your code should be prepared to handle <xref:System.Xml.XmlException>.  
+  
+ For an example of how to stream a more complex document, see [How to: Stream XML Fragments with Access to Header Information](http://msdn.microsoft.com/library/01311522-9d03-4977-8641-2932c6f56092).  
+  
+ Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. If you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint.  
+  
+ For an example of using [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to transform extremely large XML documents while maintaining a small memory footprint, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
+  
+   
+  
+## Examples  
+ This example uses the following XML file, named Source.xml:  
+  
+```xml  
+  
+                <?xml version="1.0" encoding="utf-8" ?>   
+<Root>  
+  <Child Key="01">  
+    <GrandChild>aaa</GrandChild>  
+  </Child>  
+  <Child Key="02">  
+    <GrandChild>bbb</GrandChild>  
+  </Child>  
+  <Child Key="03">  
+    <GrandChild>ccc</GrandChild>  
+  </Child>  
+</Root>  
+```  
+  
+ This example creates a custom axis method that uses <xref:System.Xml.Linq.XNode.ReadFrom%2A>. You can query the custom axis by using a LINQ query.  
+  
+> [!NOTE]
+>  The following example uses the yield return construct of C#. Because there is no equivalent feature in [!INCLUDE[vb_orcas_long](~/includes/vb-orcas-long-md.md)], this example is provided only in C#.  
+  
+```csharp  
+  
+                class Program  
+{  
+    static IEnumerable<XElement> StreamRootChildDoc(string uri)  
+    {  
+        using (XmlReader reader = XmlReader.Create(uri))  
+        {  
+            reader.MoveToContent();  
+            // Parse the file and display each of the nodes.  
+            while (reader.Read())  
+            {  
+                switch (reader.NodeType)  
+                {  
+                    case XmlNodeType.Element:  
+                        if (reader.Name == "Child")  
+                        {  
+                            XElement el = XElement.ReadFrom(reader) as XElement;  
+                            if (el != null)  
+                                yield return el;  
+                        }  
+                        break;  
+                }  
+            }  
+        }  
+    }  
+  
+    static void Main(string[] args)  
+    {  
+        IEnumerable<string> grandChildData =  
+            from el in StreamRootChildDoc("Source.xml")  
+            where (int)el.Attribute("Key") > 1  
+            select (string)el.Element("GrandChild");  
+  
+        foreach (string str in grandChildData)  
+            Console.WriteLine(str);  
+    }  
+}  
+```  
+  
+ This example produces the following output.  
+  
+```  
+  
+                bbb  
+ccc  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Xml.XmlReader" /> is not positioned on a recognized node type.</exception>
+        <exception cref="T:System.Xml.XmlException">The underlying <see cref="T:System.Xml.XmlReader" /> throws an exception.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Remove" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes this node from its parent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming, you should not manipulate or modify a set of nodes while you are querying for nodes in that set. In practical terms, this means that you should not iterate over a set of nodes and remove them. Instead, you should materialize them into a <xref:System.Collections.Generic.List%601> by using the <xref:System.Linq.Enumerable.ToList%2A> extension method. Then, you can iterate over the list to remove the nodes. For more information, see [Mixed Declarative Code/Imperative Code Bugs (LINQ to XML)](http://msdn.microsoft.com/library/d9a5c404-2b0e-46cd-a358-0e78773b3094).  
+  
+ Alternatively, if you want to remove a set of nodes, it is recommended that you use the <xref:System.Xml.Linq.Extensions.Remove%2A?displayProperty=fullName> method. This method copies the nodes to a list, and then iterates over the list to remove the nodes.  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.Remove%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+  
+   
+  
+## Examples  
+ The following example removes a node from its parent.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+child3.Remove();  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child3 As XElement = xmlTree.<Child3>(0)  
+child3.Remove()  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>child1 content</Child1>  
+  <Child2>child2 content</Child2>  
+  <Child4>child4 content</Child4>  
+  <Child5>child5 content</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceWith">
+      <MemberSignature Language="C#" Value="public void ReplaceWith (object content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceWith(object content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReplaceWith(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="content">Content that replaces this node.</param>
+        <summary>Replaces this node with the specified content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method first removes this node from its parent, and then adds the specified content to this node's parent, in the place of this node.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+   
+  
+## Examples  
+ The following example uses this method to replace the contents of a node with different content.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+child3.ReplaceWith(  
+    new XElement("NewChild", "new content")  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child3 As XElement = xmlTree.<Child3>(0)  
+child3.ReplaceWith(<NewChild>new content</NewChild>)  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>child1 content</Child1>  
+  <Child2>child2 content</Child2>  
+  <NewChild>new content</NewChild>  
+  <Child4>child4 content</Child4>  
+  <Child5>child5 content</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceWith">
+      <MemberSignature Language="C#" Value="public void ReplaceWith (object[] content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceWith(object[] content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReplaceWith(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="content">A parameter list of the new content.</param>
+        <summary>Replaces this node with the specified content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method first removes this node from its parent, and then adds the specified content to this node's parent, in the place of this node.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+   
+  
+## Examples  
+ The following example shows using the results of a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query as the input to this method.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+child3.ReplaceWith(  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
+Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim child3 As XElement = xmlTree.<Child3>(0)  
+child3.ReplaceWith( _  
+    From el In srcTree.Elements() _  
+    Where (CInt(el) > 3) _  
+    Select el)  
+  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the indented XML for this node.</summary>
+        <returns>A <see cref="T:System.String" /> containing the indented XML.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses this method to retrieve indented XML.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1)  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+        </Root>  
+  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>1</Child1>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (System.Xml.Linq.SaveOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(valuetype System.Xml.Linq.SaveOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Xml.Linq.SaveOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">A <see cref="T:System.Xml.Linq.SaveOptions" /> that specifies formatting behavior.</param>
+        <summary>Returns the XML for this node, optionally disabling formatting.</summary>
+        <returns>A <see cref="T:System.String" /> containing the XML.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses this method to retrieve unformatted and formatted XML.  
+  
+```csharp  
+  
+                XElement root = XElement.Parse("<Root><Child/></Root>");  
+Console.WriteLine(root.ToString(SaveOptions.DisableFormatting));  
+Console.WriteLine("---");  
+Console.WriteLine(root.ToString(SaveOptions.None));  
+```  
+  
+```vb  
+  
+                Dim root As XElement = <Root>  
+                           <Child/>  
+                       </Root>  
+Console.WriteLine(root.ToString(SaveOptions.DisableFormatting))  
+Console.WriteLine("---")  
+Console.WriteLine(root.ToString(SaveOptions.None))  
+```  
+  
+ This example produces the following output:  
+  
+```  
+  
+                <Root><Child /></Root>  
+---  
+<Root>  
+  <Child />  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTo">
+      <MemberSignature Language="C#" Value="public abstract void WriteTo (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.WriteTo(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Xml.XmlWriter" /> into which this method will write.</param>
+        <summary>Writes this node to an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to write code that does a streaming transform of a very large document. For more information, see [How to: Perform Streaming Transform of Large XML Documents](http://msdn.microsoft.com/library/0759e428-6e59-4d80-a506-365d3a6a2b73).  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.XmlWriter> that writes to a <xref:System.Text.StringBuilder>. It then uses this method to write two XML trees to the writer.  
+  
+```csharp  
+  
+                StringBuilder sb = new StringBuilder();  
+XmlWriterSettings xws = new XmlWriterSettings();  
+xws.OmitXmlDeclaration = true;  
+xws.Indent = true;  
+  
+using (XmlWriter xw = XmlWriter.Create(sb, xws)) {  
+    xw.WriteStartElement("Root");  
+    XElement child1 = new XElement("Child",  
+        new XElement("GrandChild", "some content")  
+    );  
+    child1.WriteTo(xw);  
+    XElement child2 = new XElement("AnotherChild",  
+        new XElement("GrandChild", "different content")  
+    );  
+    child2.WriteTo(xw);  
+    xw.WriteEndElement();  
+}  
+Console.WriteLine(sb.ToString());  
+```  
+  
+```vb  
+  
+                Dim sb As StringBuilder = New StringBuilder()  
+Dim xws As XmlWriterSettings = New XmlWriterSettings()  
+xws.OmitXmlDeclaration = True  
+xws.Indent = True  
+  
+Using xw = XmlWriter.Create(sb, xws)  
+    xw.WriteStartElement("Root")  
+    Dim child1 As XElement = <Child>  
+                                 <GrandChild>some content</GrandChild>  
+                             </Child>  
+    child1.WriteTo(xw)  
+    Dim child2 As XElement = <AnotherChild>  
+                                 <GrandChild>different content</GrandChild>  
+                             </AnotherChild>  
+    child2.WriteTo(xw)  
+    xw.WriteEndElement()  
+End Using  
+  
+Console.WriteLine(sb.ToString())  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child>  
+    <GrandChild>some content</GrandChild>  
+  </Child>  
+  <AnotherChild>  
+    <GrandChild>different content</GrandChild>  
+  </AnotherChild>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Ancestors">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of the ancestor elements of this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Optionally a node name can be specified to filter for ancestor elements with a specific name.  
+  
+ The nodes in the returned collection are in reverse document order.  
+  
+ This method uses deferred execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ElementsAfterSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of the sibling elements after this node, in document order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses deferred execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ReplaceWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces this node with the specified content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must  traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses this method to replace the contents of a node with different content.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+child3.ReplaceWith(  
+    new XElement("NewChild", "new content")  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child3 As XElement = xmlTree.<Child3>(0)  
+child3.ReplaceWith(<NewChild>new content</NewChild>)  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>child1 content</Child1>  
+  <Child2>child2 content</Child2>  
+  <NewChild>new content</NewChild>  
+  <Child4>child4 content</Child4>  
+  <Child5>child5 content</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddAfterSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified content immediately after this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+   
+  
+## Examples  
+ The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child1 = xmlTree.Element("Child1");  
+child1.AddAfterSelf(  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _  
+    <Root>  
+        <Element1>1</Element1>  
+        <Element2>2</Element2>  
+        <Element3>3</Element3>  
+        <Element4>4</Element4>  
+        <Element5>5</Element5>  
+    </Root>  
+  
+Dim xmlTree As XElement = _  
+    <Root>  
+        <Child1>1</Child1>  
+        <Child2>2</Child2>  
+        <Child3>3</Child3>  
+        <Child4>4</Child4>  
+        <Child5>5</Child5>  
+    </Root>  
+  
+Dim child1 As XElement = xmlTree.<Child1>(0)  
+child1.AddAfterSelf( _  
+    From el In srcTree.Elements() _  
+    Where CInt(el) > 3 _  
+    Select el _  
+)  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="ElementsBeforeSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of the sibling elements before this node, in document order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses deferred execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="AddBeforeSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified content immediately before this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child notes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child1 = xmlTree.Element("Child1");  
+child1.AddBeforeSelf(  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
+Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim child1 As XElement = xmlTree.<Child1>(0)  
+child1.AddBeforeSelf( _  
+From el In srcTree.Elements() _  
+Where CInt(el) > 3 _  
+Select el)  
+  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

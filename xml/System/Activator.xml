@@ -1,0 +1,2254 @@
+<Type Name="Activator" FullName="System.Activator">
+  <TypeSignature Language="C#" Value="public sealed class Activator : System.Runtime.InteropServices._Activator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Activator extends System.Object implements class System.Runtime.InteropServices._Activator" />
+  <TypeSignature Language="DocId" Value="T:System.Activator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.InteropServices._Activator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComDefaultInterface(typeof(System.Runtime.InteropServices._Activator))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains methods to create types of objects locally or remotely, or obtain references to existing remote objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [CreateInstance(Type, BindingFlags, Binder, Object\<xref:System.Activator.CreateInstance%2A> method creates an instance of a type defined in an assembly by invoking the constructor that best matches the specified arguments. If no arguments are specified, the constructor that takes no parameters, that is, the default constructor, is invoked.  
+  
+ You must have sufficient permission to search for and call a constructor; otherwise, an exception is thrown. By default, only public constructors are considered during the search for a constructor. If no constructor or default constructor can be found, an exception is thrown.  
+  
+ A binder parameter specifies an object that searches an assembly for a suitable constructor. You can specify your own binder and search criteria. If no binder is specified, a default binder is used. For more information, see the <xref:System.Reflection.Binder?displayProperty=fullName> and <xref:System.Reflection.BindingFlags?displayProperty=fullName> classes.  
+  
+ An evidence parameter affects the security policy and permissions for the constructor. For more information, see the <xref:System.Security.Policy.Evidence?displayProperty=fullName> class.  
+  
+ An instance of a type can be created at a local or remote site. If the type is created remotely, an activation attribute parameter specifies the URI of the remote site. The call to create the instance might pass through intermediary sites before it reaches the remote site. Other activation attributes can modify the environment, or context, in which the call operates at the remote and intermediary sites.  
+  
+ If the instance is created locally, a reference to that object is returned. If the instance is created remotely, a reference to a proxy is returned. The remote object is manipulated through the proxy as if it were a local object.  
+  
+ The <xref:System.Activator.GetObject%2A> method creates a proxy to a currently running remote object, server-activated well-known object, or XML Web service. You can specify the connection medium, that is, the channel. For more information, see the <xref:System.Runtime.Remoting.Channels.ChannelServices?displayProperty=fullName> class.  
+  
+ Assemblies contain type definitions. The <xref:System.Activator.CreateInstance%2A> method creates an instance of a type from a currently running assembly. The <xref:System.Activator.CreateInstanceFrom%2A> method creates an instance from a file that contains an assembly. The <xref:System.Activator.CreateComInstanceFrom%2A> method creates an instance of a COM object from a file that contains an assembly.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Activator> class to dynamically construct objects at run time.  
+  
+ [!code-cpp[ActivatorX#1](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/ActivatorX.cpp#1)]
+ [!code-csharp[ActivatorX#1](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/ActivatorX.cs#1)]
+ [!code-vb[ActivatorX#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/ActivatorX.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateComInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateComInstanceFrom (string assemblyName, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateComInstanceFrom(string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateComInstanceFrom(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <summary>Creates an instance of the COM object whose name is specified, using the named assembly file and the default constructor.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute with a value of `true` must be applied either explicitly or by default to the COM type so the <xref:System.Activator.CreateComInstanceFrom%2A> method can create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> or <paramref name="assemblyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.TypeLoadException">An instance cannot be created through COM.  
+  
+ -or-  
+  
+ <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> is not found, or the module you are trying to load does not specify a file name extension.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class.  
+  
+ -or-  
+  
+ This member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.NotSupportedException">The caller cannot provide activation attributes for an object that does not inherit from <see cref="T:System.MarshalByRefObject" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="assemblyName" /> is the empty string ("").</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateComInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateComInstanceFrom (string assemblyName, string typeName, byte[] hashValue, System.Configuration.Assemblies.AssemblyHashAlgorithm hashAlgorithm);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateComInstanceFrom(string assemblyName, string typeName, unsigned int8[] hashValue, valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm hashAlgorithm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateComInstanceFrom(System.String,System.String,System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="hashValue" Type="System.Byte[]" />
+        <Parameter Name="hashAlgorithm" Type="System.Configuration.Assemblies.AssemblyHashAlgorithm" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <param name="hashValue">The value of the computed hash code.</param>
+        <param name="hashAlgorithm">The hash algorithm used for hashing files and generating the strong name.</param>
+        <summary>Creates an instance of the COM object whose name is specified, using the named assembly file and the default constructor.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ A <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute with a value of `true` must be applied either explicitly or by default to the COM type so the <xref:System.Activator.CreateComInstanceFrom%2A> method can create an instance of that type; otherwise, <xref:System.TypeLoadException> is thrown.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> or <paramref name="assemblyName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="assemblyName" /> is the empty string ("").</exception>
+        <exception cref="T:System.IO.PathTooLongException">An assembly or module was loaded twice with two different evidences, or the assembly name is longer than MAX_PATH characters.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> is not found, or the module you are trying to load does not specify a file name extension.</exception>
+        <exception cref="T:System.IO.FileLoadException">
+          <paramref name="assemblyName" /> is found but cannot be loaded.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.</exception>
+        <exception cref="T:System.Security.SecurityException">A code base that does not start with "file://" was specified without the required <see langword="WebPermission" />.</exception>
+        <exception cref="T:System.TypeLoadException">An instance cannot be created through COM.  
+  
+ -or-  
+  
+ <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.MemberAccessException">An instance of an abstract class cannot be created.  
+  
+ -or-  
+  
+ This member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.NotSupportedException">The caller cannot provide activation attributes for an object that does not inherit from <see cref="T:System.MarshalByRefObject" />.</exception>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for reading a URI that begins with "file://". Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Net.WebPermission">for reading a URI that does not begin with "file://".</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (ActivationContext activationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.ActivationContext activationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.ActivationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activationContext" Type="System.ActivationContext" />
+      </Parameters>
+      <Docs>
+        <param name="activationContext">An activation context object that specifies the object to create.</param>
+        <summary>Creates an instance of the type designated by the specified <see cref="T:System.ActivationContext" /> object.</summary>
+        <returns>A handle that must be unwrapped to access the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ The activation context is used during manifest-based activation to set up the domain policy and to provide an application-based security model. The <xref:System.ActivationContext> class contains an <xref:System.ApplicationIdentity> object that provides access to the application manifest. For more information, see the <xref:System.Security.Policy.ApplicationSecurityManager> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static object CreateInstance (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object to create.</param>
+        <summary>Creates an instance of the specified type using that type's default constructor.</summary>
+        <returns>A reference to the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor to be invoked must be accessible.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Activator.CreateInstance%28System.Type%29> method. Instances of several different types are created and their default values are displayed.  
+  
+ [!code-cpp[ActivatorX#4](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/source2.cpp#4)]
+ [!code-csharp[ActivatorX#4](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/source2.cs#4)]
+ [!code-vb[ActivatorX#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/source2.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is not a <see langword="RuntimeType" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is an open generic type (that is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" />).</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="type" /> cannot be a <see cref="T:System.Reflection.Emit.TypeBuilder" />.  
+  
+ -or-  
+  
+ Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ The assembly that contains <paramref name="type" /> is a dynamic assembly that was created with <see cref="F:System.Reflection.Emit.AssemblyBuilderAccess.Save" />.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor being called throws an exception.</exception>
+        <exception cref="T:System.MethodAccessException">
+          <block subset="none" type="note">  
+<para>  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
+  
+</para>  
+</block>  
+  
+ The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.MissingMethodException">
+          <block subset="none" type="note">  
+<para>  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MissingMemberException" />, instead.  
+  
+</para>  
+</block>  
+  
+ No matching public constructor was found.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">
+          <paramref name="type" /> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="type" /> is not a valid type.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant sets. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (ActivationContext activationContext, string[] activationCustomData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.ActivationContext activationContext, string[] activationCustomData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.ActivationContext,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activationContext" Type="System.ActivationContext" />
+        <Parameter Name="activationCustomData" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="activationContext">An activation context object that specifies the object to create.</param>
+        <param name="activationCustomData">An array of Unicode strings that contain custom activation data.</param>
+        <summary>Creates an instance of the type that is designated by the specified <see cref="T:System.ActivationContext" /> object and activated with the specified custom activation data.</summary>
+        <returns>A handle that must be unwrapped to access the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ The activation context is used during manifest-based activation to set up the domain policy and to provide an application-based security model. The <xref:System.ActivationContext> class contains an <xref:System.ApplicationIdentity> object that provides access to the application manifest. For more information, see the <xref:System.Security.Policy.ApplicationSecurityManager> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (string assemblyName, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. For more information, see the Remarks section. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
+        <param name="typeName">The fully qualified name of the preferred type.</param>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly and default constructor.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+  
+ `assemblyName` can be either of the following:  
+  
+-   The simple name of an assembly, without its path or file extension. For example, you would specify `TypeExtensions` for an assembly whose path and name are .\bin\TypeExtensions.dll.  
+  
+-   The full name of a signed assembly, which consists of its simple name, version, culture, and public key token; for example, "TypeExtensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=181869f2f7435b51".  
+  
+ For more information on how the common language runtime identifies and loads assemblies, see [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md). For information on using the application configuration file to define assembly locations, see [Specifying an Assembly's Location](~/docs/framework/configure-apps/specify-assembly-location.md). If `assemblyName` is found, it is loaded in the default context.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+   
+  
+## Examples  
+ The following example defines a class named `Person` in an assembly named `PersonInfo`. Note that the `Person` class has two constructors, one of which is parameterless.  
+  
+ [!code-csharp[System.Activator.CreateInstance#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/personinfo.cs#1)]
+ [!code-vb[System.Activator.CreateInstance#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/personinfo.vb#1)]  
+  
+ The following example calls the <xref:System.Activator.CreateInstance%28System.String%2CSystem.String%29> method to instantiate the `Person` class. It requires a reference to PersonInfo.dll to be added to the project. Because the <xref:System.Activator.CreateInstance%28System.String%2CSystem.String%29> method calls the `Person` class default constructor,  the example assigns a value to its `Name` property.  
+  
+ [!code-csharp[System.Activator.CreateInstance#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstanceex1.cs#2)]
+ [!code-vb[System.Activator.CreateInstance#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstanceex1.vb#2)]  
+  
+ However, <xref:System.Activator.CreateInstance%2A> is frequently called to instantiate a type that crosses machine boundaries or that is not known at design time. In this case, you cannot include a reference to the assembly in the project and cannot make early-bound calls to the type's members. To work around this limitation, the following example uses the <xref:System.Activator.CreateInstance%2A> method along with reflection to assign a value to the `Person` object's `Name` property and to display its value.  
+  
+ [!code-csharp[System.Activator.CreateInstance#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstanceex1a.cs#3)]
+ [!code-vb[System.Activator.CreateInstance#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstanceex1a.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching public constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">You cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.NotSupportedException">Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.  
+  
+ -or-  
+  
+ The assembly name or code base is invalid.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, bool nonPublic);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, bool nonPublic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="nonPublic" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object to create.</param>
+        <param name="nonPublic">
+          <see langword="true" /> if a public or nonpublic default constructor can match; <see langword="false" /> if only a public default constructor can match.</param>
+        <summary>Creates an instance of the specified type using that type's default constructor.</summary>
+        <returns>A reference to the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is not a <see langword="RuntimeType" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is an open generic type (that is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" />).</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="type" /> cannot be a <see cref="T:System.Reflection.Emit.TypeBuilder" />.  
+  
+ -or-  
+  
+ Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ The assembly that contains <paramref name="type" /> is a dynamic assembly that was created with <see cref="F:System.Reflection.Emit.AssemblyBuilderAccess.Save" />.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor being called throws an exception.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching public constructor was found.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">
+          <paramref name="type" /> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="type" /> is not a valid type.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object to create.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <summary>Creates an instance of the specified type using the constructor that best matches the specified parameters.</summary>
+        <returns>A reference to the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor to be invoked must be accessible and must provide the most specific match with the specified argument list.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+   
+  
+## Examples  
+ The following example calls the  <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Object%5B%5D%29> method to create a <xref:System.String> object. It calls the [String.String(Char\<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> constructor to instantiate a string that contains ten elements from a character array starting at the fourteenth position.  
+  
+ [!code-csharp[System.Activator.CreateInstance#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/CreateInstance5.cs#5)]
+ [!code-vb[System.Activator.CreateInstance#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/CreateInstance5.vb#5)]  
+  
+ The following example creates a jagged array whose elements are arguments to be passed to a <xref:System.String> constructor. The example then passes each array to the <xref:System.Activator.CreateInstance%28System.Type%2CSystem.Object%5B%5D%29> method to invoke the appropriate string constructor.  
+  
+ [!code-csharp[System.Activator.CreateInstance#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activator.createinstance/cs/createinstance2.cs#4)]
+ [!code-vb[System.Activator.CreateInstance#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activator.createinstance/vb/createinstance2.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is not a <see langword="RuntimeType" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is an open generic type (that is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" />).</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="type" /> cannot be a <see cref="T:System.Reflection.Emit.TypeBuilder" />.  
+  
+ -or-  
+  
+ Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ The assembly that contains <paramref name="type" /> is a dynamic assembly that was created with <see cref="F:System.Reflection.Emit.AssemblyBuilderAccess.Save" />.  
+  
+ -or-  
+  
+ The constructor that best matches <paramref name="args" /> has <see langword="varargs" /> arguments.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor being called throws an exception.</exception>
+        <exception cref="T:System.MethodAccessException">
+          <block subset="none" type="note">  
+<para>  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
+  
+</para>  
+</block>  
+  
+ The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.MissingMethodException">
+          <block subset="none" type="note">  
+<para>  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MissingMemberException" />, instead.  
+  
+</para>  
+</block>  
+  
+ No matching public constructor was found.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">
+          <paramref name="type" /> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="type" /> is not a valid type.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (AppDomain domain, string assemblyName, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.AppDomain domain, string assemblyName, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.AppDomain,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="domain">The remote domain where the type named <c>typeName</c> is created.</param>
+        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
+        <param name="typeName">The fully qualified name of the preferred type.</param>
+        <summary>Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly and default constructor.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+  
+ Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+  
+> [!NOTE]
+>  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> or <paramref name="domain" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching public constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract type.  
+  
+ -or-  
+  
+ This member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.NotSupportedException">Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.  
+  
+ -or-  
+  
+ The assembly name or code base is invalid.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (string assemblyName, string typeName, object[] activationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName, object[] activationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.String,System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
+        <param name="typeName">The fully qualified name of the preferred type.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly and default constructor.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching public constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.NotSupportedException">Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.  
+  
+ -or-  
+  
+ <paramref name="activationAttributes" /> is not a <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" />  
+  
+ array.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.  
+  
+ -or-  
+  
+ The assembly name or code base is invalid.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">An error occurred when attempting remote activation in a target specified in <paramref name="activationAttributes" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, object[] args, object[] activationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, object[] args, object[] activationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Object[],System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object to create.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <summary>Creates an instance of the specified type using the constructor that best matches the specified parameters.</summary>
+        <returns>A reference to the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor to be invoked must be accessible and must provide the most specific match with the specified argument list.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is not a <see langword="RuntimeType" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is an open generic type (that is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" />).</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="type" /> cannot be a <see cref="T:System.Reflection.Emit.TypeBuilder" />.  
+  
+ -or-  
+  
+ Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.  
+  
+ -or-  
+  
+ The assembly that contains <paramref name="type" /> is a dynamic assembly that was created with <see cref="F:System.Reflection.Emit.AssemblyBuilderAccess.Save" />.  
+  
+ -or-  
+  
+ The constructor that best matches <paramref name="args" /> has <see langword="varargs" /> arguments.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor being called throws an exception.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching public constructor was found.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">
+          <paramref name="type" /> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="type" /> is not a valid type.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object to create.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>type</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>type</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>type</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <summary>Creates an instance of the specified type using the constructor that best matches the specified parameters.</summary>
+        <returns>A reference to the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor to be invoked must provide the most specific match with the specified argument list under the constraints of the specified binder and binding attributes.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is not a <see langword="RuntimeType" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is an open generic type (that is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" />).</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="type" /> cannot be a <see cref="T:System.Reflection.Emit.TypeBuilder" />.  
+  
+ -or-  
+  
+ Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ The assembly that contains <paramref name="type" /> is a dynamic assembly that was created with <see cref="F:System.Reflection.Emit.AssemblyBuilderAccess.Save" />.  
+  
+ -or-  
+  
+ The constructor that best matches <paramref name="args" /> has <see langword="varargs" /> arguments.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor being called throws an exception.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">
+          <paramref name="type" /> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="type" /> is not a valid type.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static object CreateInstance (Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstance(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.Type,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object to create.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>type</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>type</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>type</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <summary>Creates an instance of the specified type using the constructor that best matches the specified parameters.</summary>
+        <returns>A reference to the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor to be invoked must provide the most specific match with the specified argument list under the constraints of the specified binder and binding attributes.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> is not a <see langword="RuntimeType" />.  
+  
+ -or-  
+  
+ <paramref name="type" /> is an open generic type (that is, the <see cref="P:System.Type.ContainsGenericParameters" /> property returns <see langword="true" />).</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="type" /> cannot be a <see cref="T:System.Reflection.Emit.TypeBuilder" />.  
+  
+ -or-  
+  
+ Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.  
+  
+ -or-  
+  
+ The assembly that contains <paramref name="type" /> is a dynamic assembly that was created with <see cref="F:System.Reflection.Emit.AssemblyBuilderAccess.Save" />.  
+  
+ -or-  
+  
+ The constructor that best matches <paramref name="args" /> has <see langword="varargs" /> arguments.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor being called throws an exception.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">
+          <paramref name="type" /> is a COM object but the class identifier used to obtain the type is invalid, or the identified class is not registered.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="type" /> is not a valid type.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for supplying evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (string assemblyName, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
+        <param name="typeName">The fully qualified name of the preferred type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that the search for <c>typeName</c> is not case-sensitive; <see langword="false" /> to specify that the search is case-sensitive.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>typeName</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly and the constructor that best matches the specified parameters.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5.)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.NotSupportedException">Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.  
+  
+ -or-  
+  
+ The constructor that best matches <paramref name="args" /> has <see langword="varargs" /> arguments.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.  
+  
+ -or-  
+  
+ The assembly name or code base is invalid.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (AppDomain domain, string assemblyName, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.AppDomain domain, string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="domain">The domain where the type named <c>typeName</c> is created.</param>
+        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
+        <param name="typeName">The fully qualified name of the preferred type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that the search for <c>typeName</c> is not case-sensitive; <see langword="false" /> to specify that the search is case-sensitive.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>typeName</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <summary>Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly and the constructor that best matches the specified parameters.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+  
+ Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+  
+> [!NOTE]
+>  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="domain" /> or <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.NotSupportedException">Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.  
+  
+ -or-  
+  
+ The constructor that best matches <paramref name="args" /> has <see langword="varargs" /> arguments.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.  
+  
+ -or-  
+  
+ The assembly name or code base is invalid.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (string assemblyName, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes, System.Security.Policy.Evidence securityInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Methods which use evidence to sandbox are obsolete and will be removed in a future release of the .NET Framework. Please use an overload of CreateInstance which does not take an Evidence parameter. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+        <Parameter Name="securityInfo" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
+        <param name="typeName">The fully qualified name of the preferred type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that the search for <c>typeName</c> is not case-sensitive; <see langword="false" /> to specify that the search is case-sensitive.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>typeName</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <param name="securityInfo">Information used to make security policy decisions and grant code permissions.</param>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly and the constructor that best matches the specified parameters.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+  
+> [!NOTE]
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to create nonpublic types and members if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the assembly that contains the nonpublic types and members is restricted to the caller’s grant set or to a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
+>   
+>  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.NotSupportedException">Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.  
+  
+ -or-  
+  
+ The constructor that best matches <paramref name="args" /> has <see langword="varargs" /> arguments.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.  
+  
+ -or-  
+  
+ The assembly name or code base is invalid.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstance (AppDomain domain, string assemblyName, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes, System.Security.Policy.Evidence securityAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstance(class System.AppDomain domain, string assemblyName, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Methods which use evidence to sandbox are obsolete and will be removed in a future release of the .NET Framework. Please use an overload of CreateInstance which does not take an Evidence parameter. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+        <Parameter Name="securityAttributes" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="domain">The domain where the type named <c>typeName</c> is created.</param>
+        <param name="assemblyName">The name of the assembly where the type named <c>typeName</c> is sought. If <c>assemblyName</c> is <see langword="null" />, the executing assembly is searched.</param>
+        <param name="typeName">The fully qualified name of the preferred type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that the search for <c>typeName</c> is not case-sensitive; <see langword="false" /> to specify that the search is case-sensitive.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>typeName</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object. The <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> specifies the URL that is required to activate a remote object.</param>
+        <param name="securityAttributes">Information used to make security policy decisions and grant code permissions.</param>
+        <summary>Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly and the constructor that best matches the specified parameters.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use [CreateInstance Method (AppDomain, String, String, Boolean, BindingFlags, Binder, Object\[\], CultureInfo, Object\<xref:System.Activator.CreateInstance%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+  
+ Use <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> to unwrap the return value.  
+  
+> [!NOTE]
+>  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="domain" /> or <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyName" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyName" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Runtime.InteropServices.InvalidComObjectException">The COM type was not obtained through <see cref="Overload:System.Type.GetTypeFromProgID" /> or <see cref="Overload:System.Type.GetTypeFromCLSID" />.</exception>
+        <exception cref="T:System.NotSupportedException">Creation of <see cref="T:System.TypedReference" />, <see cref="T:System.ArgIterator" />, <see cref="T:System.Void" />, and <see cref="T:System.RuntimeArgumentHandle" /> types, or arrays of those types, is not supported.  
+  
+ -or-  
+  
+ <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.  
+  
+ -or-  
+  
+ The constructor that best matches <paramref name="args" /> has <see langword="varargs" /> arguments.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyName" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <exception cref="T:System.IO.FileLoadException">An assembly or module was loaded twice with two different evidences.  
+  
+ -or-  
+  
+ The assembly name or code base is invalid.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for the ability to invoke operations on all type members. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T CreateInstance&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T CreateInstance&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstance``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type to create.</typeparam>
+        <summary>Creates an instance of the type designated by the specified generic type parameter, using the parameterless constructor.</summary>
+        <returns>A reference to the newly created object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activator.CreateInstance%60%601> generic method is used by compilers to implement the instantiation of types specified by type parameters. For example, in the following generic method, the implementation of `new T()` (`gcnew T()` in C++) uses the <xref:System.Activator.CreateInstance%60%601> generic method.  
+  
+ [!code-cpp[System.Activation.CreateInstance~~1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.activation.createinstance~~1/cpp/remarks.cpp#1)]
+ [!code-csharp[System.Activation.CreateInstance~~1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.activation.createinstance~~1/cs/remarks.cs#1)]
+ [!code-vb[System.Activation.CreateInstance~~1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.activation.createinstance~~1/vb/remarks.vb#1)]  
+  
+ In general, there is no use for the <xref:System.Activator.CreateInstance%60%601> generic method in application code, because the type must be known at compile time. If the type is known at compile time, normal instantiation syntax can be used (`new` operator in C#, `New` in Visual Basic, `gcnew` in C++). If the type is not known at compile time, you can call a non-generic overload of <xref:System.Activator.CreateInstance%2A>.  
+  
+ There are no overloads of the <xref:System.Activator.CreateInstance%60%601> generic method that take argument lists, because the non-generic overloads of <xref:System.Activator.CreateInstance%2A> already provide late-bound constructor resolution.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.MissingMethodException">
+          <block subset="none" type="note">  
+<para>  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MissingMemberException" />, instead.  
+  
+</para>  
+</block>  
+  
+ The type that is specified for <paramref name="T" /> does not have a parameterless constructor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (string assemblyFile, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyFile" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyFile">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly file and default constructor.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Activator.CreateInstanceFrom%2A> method. This code example is part of a larger example provided for the <xref:System.Activator> class.  
+  
+ [!code-cpp[ActivatorX#3](~/samples/snippets/cpp/VS_Snippets_CLR/ActivatorX/cpp/ActivatorX.cpp#3)]
+ [!code-csharp[ActivatorX#3](~/samples/snippets/csharp/VS_Snippets_CLR/ActivatorX/cs/ActivatorX.cs#3)]
+ [!code-vb[ActivatorX#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/ActivatorX/VB/ActivatorX.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching public constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyFile" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyFile" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does have the required <see cref="T:System.Security.Permissions.FileIOPermission" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyFile" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to search directory paths and read their contents. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (AppDomain domain, string assemblyFile, string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(class System.AppDomain domain, string assemblyFile, string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+        <Parameter Name="assemblyFile" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="domain">The remote domain where the type named <c>typeName</c> is created.</param>
+        <param name="assemblyFile">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <summary>Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly file and default constructor.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+> [!NOTE]
+>  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="domain" /> or <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching public constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyFile" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyFile" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does have the required <see cref="T:System.Security.Permissions.FileIOPermission" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyFile" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to search directory paths and read their contents. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (string assemblyFile, string typeName, object[] activationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, object[] activationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.String,System.String,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyFile" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyFile">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly file and default constructor.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching public constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyFile" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyFile" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does have the required <see cref="T:System.Security.Permissions.FileIOPermission" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyFile" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to search directory paths and read their contents. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (string assemblyFile, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyFile" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyFile">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that the search for <c>typeName</c> is not case-sensitive; <see langword="false" /> to specify that the search is case-sensitive.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>typeName</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly file and the constructor that best matches the specified parameters.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyFile" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyFile" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required <see cref="T:System.Security.Permissions.FileIOPermission" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyFile" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to search directory paths and read their contents. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(class System.AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+        <Parameter Name="assemblyFile" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="domain">The remote domain where the type named <c>typeName</c> is created.</param>
+        <param name="assemblyFile">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that the search for <c>typeName</c> is not case-sensitive; <see langword="false" /> to specify that the search is case-sensitive.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>typeName</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <summary>Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly file and the constructor that best matches the specified parameters.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions sections of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="domain" /> or <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyFile" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyFile" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does have the required <see cref="T:System.Security.Permissions.FileIOPermission" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyFile" /> is not a valid assembly.  
+  
+ -or-  
+  
+ <paramref name="assemblyName" /> was compiled for a version of the common language runtime that is later than the version that is currently loaded.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for supplying evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to search directory paths and read their contents. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (string assemblyFile, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes, System.Security.Policy.Evidence securityInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Methods which use evidence to sandbox are obsolete and will be removed in a future release of the .NET Framework. Please use an overload of CreateInstanceFrom which does not take an Evidence parameter. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyFile" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+        <Parameter Name="securityInfo" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyFile">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that the search for <c>typeName</c> is not case-sensitive; <see langword="false" /> to specify that the search is case-sensitive.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>typeName</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <param name="securityInfo">Information used to make security policy decisions and grant code permissions.</param>
+        <summary>Creates an instance of the type whose name is specified, using the named assembly file and the constructor that best matches the specified parameters.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyFile" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyFile" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required <see cref="T:System.Security.Permissions.FileIOPermission" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyFile" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to call unmanaged code when creating an instance of a delegate. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to search directory paths and read their contents. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceFrom">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.ObjectHandle CreateInstanceFrom (AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, object[] args, System.Globalization.CultureInfo culture, object[] activationAttributes, System.Security.Policy.Evidence securityAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.ObjectHandle CreateInstanceFrom(class System.AppDomain domain, string assemblyFile, string typeName, bool ignoreCase, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, object[] args, class System.Globalization.CultureInfo culture, object[] activationAttributes, class System.Security.Policy.Evidence securityAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.CreateInstanceFrom(System.AppDomain,System.String,System.String,System.Boolean,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo,System.Object[],System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Methods which use Evidence to sandbox are obsolete and will be removed in a future release of the .NET Framework. Please use an overload of CreateInstanceFrom which does not take an Evidence parameter. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.ObjectHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+        <Parameter Name="assemblyFile" Type="System.String" />
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+        <Parameter Name="binder" Type="System.Reflection.Binder" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="activationAttributes" Type="System.Object[]" />
+        <Parameter Name="securityAttributes" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="domain">The remote domain where the type named <c>typeName</c> is created.</param>
+        <param name="assemblyFile">The name of a file that contains an assembly where the type named <c>typeName</c> is sought.</param>
+        <param name="typeName">The name of the preferred type.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> to specify that the search for <c>typeName</c> is not case-sensitive; <see langword="false" /> to specify that the search is case-sensitive.</param>
+        <param name="bindingAttr">A combination of zero or more bit flags that affect the search for the <c>typeName</c> constructor. If <c>bindingAttr</c> is zero, a case-sensitive search for public constructors is conducted.</param>
+        <param name="binder">An object that uses <c>bindingAttr</c> and <c>args</c> to seek and identify the <c>typeName</c> constructor. If <c>binder</c> is <see langword="null" />, the default binder is used.</param>
+        <param name="args">An array of arguments that match in number, order, and type the parameters of the constructor to invoke. If <c>args</c> is an empty array or <see langword="null" />, the constructor that takes no parameters (the default constructor) is invoked.</param>
+        <param name="culture">Culture-specific information that governs the coercion of <c>args</c> to the formal types declared for the <c>typeName</c> constructor. If <c>culture</c> is <see langword="null" />, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used.</param>
+        <param name="activationAttributes">An array of one or more attributes that can participate in activation. This is typically an array that contains a single <see cref="T:System.Runtime.Remoting.Activation.UrlAttribute" /> object that specifies the URL that is required to activate a remote object.  
+  
+ This parameter is related to client-activated objects. Client activation is a legacy technology that is retained for backward compatibility but is not recommended for new development. Distributed applications should instead use Windows Communication Foundation.</param>
+        <param name="securityAttributes">Information used to make security policy decisions and grant code permissions.</param>
+        <summary>Creates an instance of the type whose name is specified in the specified remote domain, using the named assembly file and the constructor that best matches the specified parameters.</summary>
+        <returns>A handle that must be unwrapped to access the newly created instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use [CreateInstanceFrom Method (AppDomain, String, String, Boolean, BindingFlags, Binder, Object\[\], CultureInfo, Object\<xref:System.Activator.CreateInstanceFrom%2A> when a host needs to execute code in an application domain that has restricted security permissions.  
+  
+ Use the <xref:System.Runtime.Remoting.ObjectHandle.Unwrap%2A?displayProperty=fullName> method to unwrap the return value.  
+  
+> [!NOTE]
+>  This method uses <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> to require the immediate caller to have full trust.  
+  
+ For information about other exceptions that can be thrown by invoked methods, see the Exceptions section of the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> and <xref:System.Activator.CreateInstance%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="domain" /> or <paramref name="typeName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">No matching constructor was found.</exception>
+        <exception cref="T:System.TypeLoadException">
+          <paramref name="typename" /> was not found in <paramref name="assemblyFile" />.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">
+          <paramref name="assemblyFile" /> was not found.</exception>
+        <exception cref="T:System.MethodAccessException">The caller does not have permission to call this constructor.</exception>
+        <exception cref="T:System.MemberAccessException">Cannot create an instance of an abstract class, or this member was invoked with a late-binding mechanism.</exception>
+        <exception cref="T:System.Reflection.TargetInvocationException">The constructor, which was invoked through reflection, threw an exception.</exception>
+        <exception cref="T:System.Security.SecurityException">The caller does have the required <see cref="T:System.Security.Permissions.FileIOPermission" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="activationAttributes" /> is not an empty array, and the type being created does not derive from <see cref="T:System.MarshalByRefObject" />.</exception>
+        <exception cref="T:System.BadImageFormatException">
+          <paramref name="assemblyFile" /> is not a valid assembly.  
+  
+ -or-  
+  
+ The common language runtime (CLR) version 2.0 or later is currently loaded, and <paramref name="assemblyName" /> was compiled for a version of the CLR that is later than the currently loaded version. Note that the .NET Framework versions 2.0, 3.0, and 3.5 all use CLR version 2.0.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for supplying evidence. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to search directory paths and read their contents. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
+        <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing nonpublic types and members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public static object GetObject (Type type, string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetObject(class System.Type type, string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.GetObject(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the well-known object to which you want to connect.</param>
+        <param name="url">The URL of the well-known object.</param>
+        <summary>Creates a proxy for the well-known object indicated by the specified type and URL.</summary>
+        <returns>A proxy that points to an endpoint served by the requested well-known object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the proxy to send messages to the remote object. No messages are sent over the network until a method is called on the proxy.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> or <paramref name="url" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+          <paramref name="type" /> is not marshaled by reference and is not an interface.</exception>
+        <exception cref="T:System.MemberAccessException">This member was invoked with a late-binding mechanism.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public static object GetObject (Type type, string url, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetObject(class System.Type type, string url, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.GetObject(System.Type,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the well-known object to which you want to connect.</param>
+        <param name="url">The URL of the well-known object.</param>
+        <param name="state">Channel-specific data or <see langword="null" />.</param>
+        <summary>Creates a proxy for the well-known object indicated by the specified type, URL, and channel data.</summary>
+        <returns>A proxy that points to an endpoint served by the requested well-known object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the proxy to send messages to the remote object. No messages are sent over the network until a method is called on the proxy.  
+  
+ The `state` parameter communicates information to the channel, and is passed to the <xref:System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> or <paramref name="url" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.Remoting.RemotingException">
+          <paramref name="type" /> is not marshaled by reference and is not an interface.</exception>
+        <exception cref="T:System.MemberAccessException">This member was invoked with a late-binding mechanism.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.InteropServices._Activator.GetIDsOfNames">
+      <MemberSignature Language="C#" Value="void _Activator.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Activator.GetIDsOfNames(valuetype System.Guid riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.System#Runtime#InteropServices#_Activator#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="rgszNames" Type="System.IntPtr" />
+        <Parameter Name="cNames" Type="System.UInt32" />
+        <Parameter Name="lcid" Type="System.UInt32" />
+        <Parameter Name="rgDispId" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="rgszNames">The passed-in array of names to map.</param>
+        <param name="cNames">The count of the names to map.</param>
+        <param name="lcid">The locale context in which to interpret the names.</param>
+        <param name="rgDispId">The caller-allocated array that receives the IDs corresponding to the names.</param>
+        <summary>Maps a set of names to a corresponding set of dispatch identifiers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetIDsOfNames`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.InteropServices._Activator.GetTypeInfo">
+      <MemberSignature Language="C#" Value="void _Activator.GetTypeInfo (uint iTInfo, uint lcid, IntPtr ppTInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Activator.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.System#Runtime#InteropServices#_Activator#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iTInfo" Type="System.UInt32" />
+        <Parameter Name="lcid" Type="System.UInt32" />
+        <Parameter Name="ppTInfo" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="iTInfo">The type information to return.</param>
+        <param name="lcid">The locale identifier for the type information.</param>
+        <param name="ppTInfo">An object that receives a pointer to the requested type information object.</param>
+        <summary>Retrieves the type information for an object, which can then be used to get the type information for an interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfo`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.InteropServices._Activator.GetTypeInfoCount">
+      <MemberSignature Language="C#" Value="void _Activator.GetTypeInfoCount (out uint pcTInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Activator.GetTypeInfoCount(unsigned int32 pcTInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.System#Runtime#InteropServices#_Activator#GetTypeInfoCount(System.UInt32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pcTInfo" Type="System.UInt32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pcTInfo">When this method returns, contains a pointer to a location that receives the number of type information interfaces provided by the object. This parameter is passed uninitialized.</param>
+        <summary>Retrieves the number of type information interfaces that an object provides (either 0 or 1).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::GetTypeInfoCount`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.InteropServices._Activator.Invoke">
+      <MemberSignature Language="C#" Value="void _Activator.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._Activator.Invoke(unsigned int32 dispIdMember, valuetype System.Guid riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activator.System#Runtime#InteropServices#_Activator#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispIdMember" Type="System.UInt32" />
+        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="lcid" Type="System.UInt32" />
+        <Parameter Name="wFlags" Type="System.Int16" />
+        <Parameter Name="pDispParams" Type="System.IntPtr" />
+        <Parameter Name="pVarResult" Type="System.IntPtr" />
+        <Parameter Name="pExcepInfo" Type="System.IntPtr" />
+        <Parameter Name="puArgErr" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="dispIdMember">A dispatch identifier that identifies the member.</param>
+        <param name="riid">Reserved for future use. Must be IID_NULL.</param>
+        <param name="lcid">The locale context in which to interpret arguments.</param>
+        <param name="wFlags">Flags describing the context of the call.</param>
+        <param name="pDispParams">A pointer to a structure that contains an array of arguments, an array of argument DISPIDs for named arguments, and counts for the number of elements in the arrays.</param>
+        <param name="pVarResult">A pointer to the location where the result is to be stored.</param>
+        <param name="pExcepInfo">A pointer to a structure that contains exception information.</param>
+        <param name="puArgErr">The index of the first argument that has an error.</param>
+        <summary>Provides access to properties and methods exposed by an object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to access managed classes from unmanaged code, and should not be called from managed code. For more information about `IDispatch::Invoke`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

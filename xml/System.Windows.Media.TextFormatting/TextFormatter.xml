@@ -1,0 +1,313 @@
+<Type Name="TextFormatter" FullName="System.Windows.Media.TextFormatting.TextFormatter">
+  <TypeSignature Language="C#" Value="public abstract class TextFormatter : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextFormatter extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextFormatter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides services for formatting text and breaking text lines using a custom text layout client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.TextFormatting.TextFormatter> is the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] text engine that provides services for formatting text and breaking text lines. <xref:System.Windows.Media.TextFormatting.TextFormatter> can handle different text character formats and paragraph styles, and includes support for international text layout.  
+  
+ Unlike a traditional text [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)], the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the interaction of the text formatter client and the text layout client.  
+  
+ ![Diagram of text layout client and TextFormatter](~/add/media/textformatter01.png "Diagram of text layout client and TextFormatter")  
+Interaction between the text layout client and the TextFormatter object  
+  
+## Text Formatting Services  
+ <xref:System.Windows.Media.TextFormatting.TextFormatter> provides support for text features, such as OpenType typography, as well as support for text run, line, and paragraph level features.  
+  
+ The following table is a list of the key <xref:System.Windows.Media.TextFormatting.TextFormatter> supported services for text features.  
+  
+|Feature|Description|  
+|-------------|-----------------|  
+|Background brush|The <xref:System.Windows.Media.Brush> that is used for the background color. See the <xref:System.Windows.Media.TextFormatting.TextRunProperties.BackgroundBrush%2A> property.|  
+|Baseline alignment|Determines the baseline distance of the line. See the <xref:System.Windows.Media.TextFormatting.TextRunProperties.BaselineAlignment%2A> property.|  
+|Font linking|Provides font linking through the use of composite fonts.|  
+|Foreground brush|The <xref:System.Windows.Media.Brush> that is used for the foreground color. See the <xref:System.Windows.Media.TextFormatting.TextRunProperties.ForegroundBrush%2A> property.|  
+|OpenType|Advanced OpenType typographic features, such contextual alternates and standard ligatures. See the <xref:System.Windows.Media.TextFormatting.TextRunTypographyProperties> class properties.|  
+|Typeface|Determines the typeface, as well as, weight, style, and stretch. See the <xref:System.Windows.Media.TextFormatting.TextRunProperties.Typeface%2A> property.|  
+|Text decoration|Provides support for <xref:System.Windows.TextDecoration> objects, such as underline or strikethrough. See the <xref:System.Windows.Media.TextFormatting.TextRunProperties.TextDecorations%2A> property.|  
+|Text effects|Provides support for <xref:System.Windows.Media.TextEffect> objects. See the <xref:System.Windows.Media.TextFormatting.TextRunProperties.TextEffects%2A> property.|  
+  
+ The following table is a list of the key <xref:System.Windows.Media.TextFormatting.TextFormatter> supported services for paragraph-level features.  
+  
+|Feature|Description|  
+|-------------|-----------------|  
+|Flow direction|Flow direction of the paragraph—left-to-right, or right-to-left. See the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties.FlowDirection%2A> property.|  
+|Line indentation|Indentation for each line in the paragraph. See the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties.Indent%2A> property.|  
+|Marker|Marker characteristics of the first line in the paragraph. See the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties.TextMarkerProperties%2A> property.|  
+|Paragraph indentation|Indentation for the first line in the paragraph. See the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties.ParagraphIndent%2A> property.|  
+|Tabs|Includes support for tab alignment and tab leader.|  
+|Width|Determine minimum and maximum paragraph width. See the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatMinMaxParagraphWidth%2A> methods.|  
+|Word wrap|Determine how text wraps when it reaches the flow edge. See the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties.TextWrapping%2A> property.|  
+  
+ The following table is a list of the key <xref:System.Windows.Media.TextFormatting.TextFormatter> supported services for line-level features.  
+  
+|Feature|Description|  
+|-------------|-----------------|  
+|Alignment|Text alignment—left, right, centered, or justified. See the <xref:System.Windows.Media.TextFormatting.TextParagraphProperties.TextAlignment%2A> property.|  
+|Line height|Height of the line. See the <xref:System.Windows.Media.TextFormatting.TextLine.Height%2A> property.|  
+|Line collapsing|Line collapsing support. See the <xref:System.Windows.Media.TextFormatting.TextLine.Collapse%2A> method.|  
+|Black box measurement|Represents the metrics used to lay out a character in a device font. See the <xref:System.Windows.Media.CharacterMetrics> class.|  
+|Caret support|Caret navigation and editing support. See the <xref:System.Windows.Media.TextFormatting.TextLine> character hit properties, such as <xref:System.Windows.Media.TextFormatting.TextLine.GetNextCaretCharacterHit%2A> and <xref:System.Windows.Media.TextFormatting.TextLine.GetPreviousCaretCharacterHit%2A>.|  
+  
+ The following table is a list of the key <xref:System.Windows.Media.TextFormatting.TextFormatter> supported services for text run-level features.  
+  
+|Feature|Description|  
+|-------------|-----------------|  
+|Hidden run|Range of characters that are not visible. See the <xref:System.Windows.Media.TextFormatting.TextHidden> object.|  
+|Breaking|Line and paragraph breaking.|  
+  
+   
+  
+## Examples  
+ The following example shows how to use a <xref:System.Windows.Media.TextFormatting.TextFormatter> object to generate formatted lines of text that can be displayed as drawing objects.  
+  
+ [!code-csharp[TextFormattingSnippets#TextFormattingSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormattingSnippets/CSharp/Window1.xaml.cs#textformattingsnippet1)]
+ [!code-vb[TextFormattingSnippets#TextFormattingSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormattingSnippets/visualbasic/window1.xaml.vb#textformattingsnippet1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TextFormatter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.TextFormatting.TextFormatter Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.TextFormatting.TextFormatter Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextFormatter</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> class. This is a static method.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.TextFormatting.TextFormatter Create (System.Windows.Media.TextFormattingMode textFormattingMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.TextFormatting.TextFormatter Create(valuetype System.Windows.Media.TextFormattingMode textFormattingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.Create(System.Windows.Media.TextFormattingMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextFormatter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textFormattingMode" Type="System.Windows.Media.TextFormattingMode" />
+      </Parameters>
+      <Docs>
+        <param name="textFormattingMode">The <see cref="T:System.Windows.Media.TextFormattingMode" /> that specifies the text layout for the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> class with the specified formatting mode. This is a static method.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all managed and unmanaged resources used by the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatLine">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextLine FormatLine (System.Windows.Media.TextFormatting.TextSource textSource, int firstCharIndex, double paragraphWidth, System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, System.Windows.Media.TextFormatting.TextLineBreak previousLineBreak);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextLine FormatLine(class System.Windows.Media.TextFormatting.TextSource textSource, int32 firstCharIndex, float64 paragraphWidth, class System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, class System.Windows.Media.TextFormatting.TextLineBreak previousLineBreak) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.FormatLine(System.Windows.Media.TextFormatting.TextSource,System.Int32,System.Double,System.Windows.Media.TextFormatting.TextParagraphProperties,System.Windows.Media.TextFormatting.TextLineBreak)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextLine</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textSource" Type="System.Windows.Media.TextFormatting.TextSource" />
+        <Parameter Name="firstCharIndex" Type="System.Int32" />
+        <Parameter Name="paragraphWidth" Type="System.Double" />
+        <Parameter Name="paragraphProperties" Type="System.Windows.Media.TextFormatting.TextParagraphProperties" />
+        <Parameter Name="previousLineBreak" Type="System.Windows.Media.TextFormatting.TextLineBreak" />
+      </Parameters>
+      <Docs>
+        <param name="textSource">A <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> value that represents the text source for the line.</param>
+        <param name="firstCharIndex">An <see cref="T:System.Int32" /> value that specifies the character index of the starting character in the line.</param>
+        <param name="paragraphWidth">A <see cref="T:System.Double" /> value that specifies the width of the paragraph that the line fills.</param>
+        <param name="paragraphProperties">A <see cref="T:System.Windows.Media.TextFormatting.TextParagraphProperties" /> value that represents paragraph properties, such as flow direction, alignment, or indentation.</param>
+        <param name="previousLineBreak">A <see cref="T:System.Windows.Media.TextFormatting.TextLineBreak" /> value that specifies the text formatter state, in terms of where the previous line in the paragraph was broken by the text formatting process.</param>
+        <summary>Creates a <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> that is used for formatting and displaying document content.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> value that represents a line of text that can be displayed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method to return a formatted <xref:System.Windows.Media.TextFormatting.TextLine>.  
+  
+ [!code-csharp[TextFormattingSnippets#TextFormattingSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormattingSnippets/CSharp/Window1.xaml.cs#textformattingsnippet2)]
+ [!code-vb[TextFormattingSnippets#TextFormattingSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormattingSnippets/visualbasic/window1.xaml.vb#textformattingsnippet2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatLine">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextLine FormatLine (System.Windows.Media.TextFormatting.TextSource textSource, int firstCharIndex, double paragraphWidth, System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, System.Windows.Media.TextFormatting.TextLineBreak previousLineBreak, System.Windows.Media.TextFormatting.TextRunCache textRunCache);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextLine FormatLine(class System.Windows.Media.TextFormatting.TextSource textSource, int32 firstCharIndex, float64 paragraphWidth, class System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, class System.Windows.Media.TextFormatting.TextLineBreak previousLineBreak, class System.Windows.Media.TextFormatting.TextRunCache textRunCache) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.FormatLine(System.Windows.Media.TextFormatting.TextSource,System.Int32,System.Double,System.Windows.Media.TextFormatting.TextParagraphProperties,System.Windows.Media.TextFormatting.TextLineBreak,System.Windows.Media.TextFormatting.TextRunCache)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextLine</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textSource" Type="System.Windows.Media.TextFormatting.TextSource" />
+        <Parameter Name="firstCharIndex" Type="System.Int32" />
+        <Parameter Name="paragraphWidth" Type="System.Double" />
+        <Parameter Name="paragraphProperties" Type="System.Windows.Media.TextFormatting.TextParagraphProperties" />
+        <Parameter Name="previousLineBreak" Type="System.Windows.Media.TextFormatting.TextLineBreak" />
+        <Parameter Name="textRunCache" Type="System.Windows.Media.TextFormatting.TextRunCache" />
+      </Parameters>
+      <Docs>
+        <param name="textSource">A <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> object that represents the text source for the line.</param>
+        <param name="firstCharIndex">An <see cref="T:System.Int32" /> value that specifies the character index of the starting character in the line.</param>
+        <param name="paragraphWidth">A <see cref="T:System.Double" /> value that specifies the width of the paragraph that the line fills.</param>
+        <param name="paragraphProperties">A <see cref="T:System.Windows.Media.TextFormatting.TextParagraphProperties" /> object that represents paragraph properties, such as flow direction, alignment, or indentation.</param>
+        <param name="previousLineBreak">A <see cref="T:System.Windows.Media.TextFormatting.TextLineBreak" /> object that specifies the text formatter state, in terms of where the previous line in the paragraph was broken by the text formatting process.</param>
+        <param name="textRunCache">A <see cref="T:System.Windows.Media.TextFormatting.TextRunCache" /> object that represents the caching mechanism for the layout of text.</param>
+        <summary>Creates a <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> that is used for formatting and displaying document content.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> value that represents a line of text that can be displayed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to improve performance in applications where the <xref:System.Windows.Media.TextFormatting.TextLine> has significant performance implications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatMinMaxParagraphWidth">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.MinMaxParagraphWidth FormatMinMaxParagraphWidth (System.Windows.Media.TextFormatting.TextSource textSource, int firstCharIndex, System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth FormatMinMaxParagraphWidth(class System.Windows.Media.TextFormatting.TextSource textSource, int32 firstCharIndex, class System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.FormatMinMaxParagraphWidth(System.Windows.Media.TextFormatting.TextSource,System.Int32,System.Windows.Media.TextFormatting.TextParagraphProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.MinMaxParagraphWidth</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textSource" Type="System.Windows.Media.TextFormatting.TextSource" />
+        <Parameter Name="firstCharIndex" Type="System.Int32" />
+        <Parameter Name="paragraphProperties" Type="System.Windows.Media.TextFormatting.TextParagraphProperties" />
+      </Parameters>
+      <Docs>
+        <param name="textSource">A <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> object that represents the text source for the line.</param>
+        <param name="firstCharIndex">An <see cref="T:System.Int32" /> value that specifies the character index of the starting character in the line.</param>
+        <param name="paragraphProperties">A <see cref="T:System.Windows.Media.TextFormatting.TextParagraphProperties" /> object that represents paragraph properties, such as flow direction, alignment, or indentation.</param>
+        <summary>Returns a value that represents the smallest and largest possible paragraph width that can fully contain the specified text content.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.MinMaxParagraphWidth" /> value that represents the smallest and largest possible paragraph width that can fully contain the specified text content.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following text uses the minimum paragraph width for the source text, which displays as multiple lines. The minimum paragraph width corresponds to the word that has the greatest width—in this case, the word "jumped". Notice that multiple words can appear on the same line, as long as the total width does not exceed the minimum paragraph width.  
+  
+ ![Text Formatter using the minimum paragraph width](~/add/media/textformatter03.png "Text Formatter using the minimum paragraph width")  
+Minimum paragraph width  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatMinMaxParagraphWidth%2A> method to generate the minimum paragraph width for the formatted lines of text.  
+  
+ [!code-csharp[TextFormattingSnippets#TextFormattingSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormattingSnippets/CSharp/Window1.xaml.cs#textformattingsnippet3)]
+ [!code-vb[TextFormattingSnippets#TextFormattingSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormattingSnippets/visualbasic/window1.xaml.vb#textformattingsnippet3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatMinMaxParagraphWidth">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.MinMaxParagraphWidth FormatMinMaxParagraphWidth (System.Windows.Media.TextFormatting.TextSource textSource, int firstCharIndex, System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, System.Windows.Media.TextFormatting.TextRunCache textRunCache);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth FormatMinMaxParagraphWidth(class System.Windows.Media.TextFormatting.TextSource textSource, int32 firstCharIndex, class System.Windows.Media.TextFormatting.TextParagraphProperties paragraphProperties, class System.Windows.Media.TextFormatting.TextRunCache textRunCache) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextFormatter.FormatMinMaxParagraphWidth(System.Windows.Media.TextFormatting.TextSource,System.Int32,System.Windows.Media.TextFormatting.TextParagraphProperties,System.Windows.Media.TextFormatting.TextRunCache)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.MinMaxParagraphWidth</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textSource" Type="System.Windows.Media.TextFormatting.TextSource" />
+        <Parameter Name="firstCharIndex" Type="System.Int32" />
+        <Parameter Name="paragraphProperties" Type="System.Windows.Media.TextFormatting.TextParagraphProperties" />
+        <Parameter Name="textRunCache" Type="System.Windows.Media.TextFormatting.TextRunCache" />
+      </Parameters>
+      <Docs>
+        <param name="textSource">A <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> object that represents the text source for the line.</param>
+        <param name="firstCharIndex">An <see cref="T:System.Int32" /> value that specifies the character index of the starting character in the line.</param>
+        <param name="paragraphProperties">A <see cref="T:System.Windows.Media.TextFormatting.TextParagraphProperties" /> object that represents paragraph properties, such as flow direction, alignment, or indentation.</param>
+        <param name="textRunCache">A <see cref="T:System.Windows.Media.TextFormatting.TextRunCache" /> object that represents the caching mechanism for the layout of text.</param>
+        <summary>Returns a value that represents the smallest and largest possible paragraph width that can fully contain the specified text content.</summary>
+        <returns>A <see cref="T:System.Windows.Media.TextFormatting.MinMaxParagraphWidth" /> value that represents the smallest and largest possible paragraph width that can fully contain the specified text content.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,64 @@
+<Type Name="PostOrPrefixOperator" FullName="Microsoft.JScript.PostOrPrefixOperator">
+  <TypeSignature Language="C#" Value="public class PostOrPrefixOperator : Microsoft.JScript.UnaryOp" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostOrPrefixOperator extends Microsoft.JScript.UnaryOp" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.PostOrPrefixOperator" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.UnaryOp</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Performs increment and decrement operations that correspond to the prefix and postfix syntax. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PostOrPrefixOperator (int operatorTok);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 operatorTok) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.PostOrPrefixOperator.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="operatorTok" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="operatorTok">One of the <see cref="T:Microsoft.JScript.JSToken" /> enumeration values. Specifies the operation to perform.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.PostOrPrefixOperator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluatePostOrPrefix">
+      <MemberSignature Language="C#" Value="public object EvaluatePostOrPrefix (ref object v);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object EvaluatePostOrPrefix(object v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.PostOrPrefixOperator.EvaluatePostOrPrefix(System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="v">The operand.</param>
+        <summary>Performs an increment or decrement operation on the specified operand.</summary>
+        <returns>The result of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

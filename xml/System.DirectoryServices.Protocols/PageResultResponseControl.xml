@@ -1,0 +1,55 @@
+<Type Name="PageResultResponseControl" FullName="System.DirectoryServices.Protocols.PageResultResponseControl">
+  <TypeSignature Language="C#" Value="public class PageResultResponseControl : System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PageResultResponseControl extends System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.PageResultResponseControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.PageResultResponseControl" /> class is a directory control used to pass page data from the server to the client.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cookie">
+      <MemberSignature Language="C#" Value="public byte[] Cookie { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Cookie" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.PageResultResponseControl.Cookie" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.PageResultResponseControl.Cookie" /> property contains the page search cookie returned by the server.</summary>
+        <value>The page search cookie returned by the server.  If the cookie is empty, then the paged search completed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalCount">
+      <MemberSignature Language="C#" Value="public int TotalCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalCount" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.PageResultResponseControl.TotalCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.PageResultResponseControl.TotalCount" /> property contains the estimated result set size.</summary>
+        <value>The estimated value of the total count of the entries returned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

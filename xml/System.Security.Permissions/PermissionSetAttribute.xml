@@ -1,0 +1,257 @@
+<Type Name="PermissionSetAttribute" FullName="System.Security.Permissions.PermissionSetAttribute">
+  <TypeSignature Language="C#" Value="public sealed class PermissionSetAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PermissionSetAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PermissionSetAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows security actions for a <see cref="T:System.Security.PermissionSet" /> to be applied to code using declarative security. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Permissions.PermissionSetAttribute> properties <xref:System.Security.Permissions.PermissionSetAttribute.Name%2A>, <xref:System.Security.Permissions.PermissionSetAttribute.File%2A>, and <xref:System.Security.Permissions.PermissionSetAttribute.XML%2A> are mutually exclusive, meaning that a permission set can have as its source only one of the following: a named permission set, a file containing an XML representation of a permission set, or a string containing an XML representation of a permission set.  
+  
+ The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> that is used. A <xref:System.Security.Permissions.SecurityAction> performed on a <xref:System.Security.PermissionSet> is the equivalent of performing that action on each of the permissions within the set.  
+  
+ The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the corresponding permission class.  
+  
+   
+  
+## Examples  
+ The following example shows the use of the <xref:System.Security.Permissions.PermissionSetAttribute> Class.  
+  
+ [!code-csharp[System.Security.Permissions.PermissionSetAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.PermissionSetAttribute/CS/permissionsetattribute.cs#1)]
+ [!code-vb[System.Security.Permissions.PermissionSetAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.PermissionSetAttribute/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PermissionSetAttribute (System.Security.Permissions.SecurityAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PermissionSetAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
+      </Parameters>
+      <Docs>
+        <param name="action">One of the enumeration values that specifies a security action.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.PermissionSetAttribute" /> class with the specified security action.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePermission">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PermissionSetAttribute.CreatePermission" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This method is not used.</summary>
+        <returns>A null reference (<see langword="nothing" /> in Visual Basic) in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not used; it is included only to support inheritance from <xref:System.Security.Permissions.SecurityAttribute>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePermissionSet">
+      <MemberSignature Language="C#" Value="public System.Security.PermissionSet CreatePermissionSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.PermissionSet CreatePermissionSet() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PermissionSetAttribute.CreatePermissionSet" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PermissionSet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a new permission set based on this permission set attribute object.</summary>
+        <returns>A new permission set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method should be called only by the security system, never by application code.  
+  
+ Attributes are used at compile time to convert security declarations to a serialized form in metadata. Declarative security data in metadata is created from the permission object that this method returns, which corresponds to this attribute instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="File">
+      <MemberSignature Language="C#" Value="public string File { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string File" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.File" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a file containing the XML representation of a custom permission set to be declared.</summary>
+        <value>The physical path to the file containing the XML representation of the permission set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the file specified is Unicode, set the <xref:System.Security.Permissions.PermissionSetAttribute.UnicodeEncoded%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Permissions.PermissionSetAttribute.File%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Permissions.PermissionSetAttribute> class.  
+  
+ [!code-csharp[System.Security.Permissions.PermissionSetAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.PermissionSetAttribute/CS/permissionsetattribute.cs#2)]
+ [!code-vb[System.Security.Permissions.PermissionSetAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.PermissionSetAttribute/VB/Form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hex">
+      <MemberSignature Language="C#" Value="public string Hex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Hex" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.Hex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the hexadecimal representation of the XML encoded permission set.</summary>
+        <value>The hexadecimal representation of the XML encoded permission set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the permission set.</summary>
+        <value>The name of an immutable <see cref="T:System.Security.NamedPermissionSet" /> (one of several permission sets that are contained in the default policy and cannot be altered).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because named permission sets can vary from computer to computer, the use of named permission sets for declarative security is restricted to the immutable named permission sets included as part of the default policy. This ensures that the permissions contained in the permission set referenced will be the same wherever the code is run. A compiler error will be thrown if a mutable or unrecognized named permission set is used.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Permissions.PermissionSetAttribute.Name%2A> property. This code example is part of a larger example provided for the <xref:System.Security.Permissions.PermissionSetAttribute> class.  
+  
+ [!code-csharp[System.Security.Permissions.PermissionSetAttribute#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.PermissionSetAttribute/CS/permissionsetattribute.cs#3)]
+ [!code-vb[System.Security.Permissions.PermissionSetAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.PermissionSetAttribute/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnicodeEncoded">
+      <MemberSignature Language="C#" Value="public bool UnicodeEncoded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UnicodeEncoded" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.UnicodeEncoded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the file specified by <see cref="P:System.Security.Permissions.PermissionSetAttribute.File" /> is Unicode or ASCII encoded.</summary>
+        <value>
+          <see langword="true" /> if the file is Unicode encoded; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set, the file is assumed to be ASCII.  
+  
+ If <xref:System.Security.Permissions.PermissionSetAttribute.File%2A> is `null` this property is not used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XML">
+      <MemberSignature Language="C#" Value="public string XML { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XML" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Permissions.PermissionSetAttribute.XML" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML representation of a permission set.</summary>
+        <value>The XML representation of a permission set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

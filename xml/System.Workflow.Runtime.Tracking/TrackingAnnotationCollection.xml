@@ -1,0 +1,87 @@
+<Type Name="TrackingAnnotationCollection" FullName="System.Workflow.Runtime.Tracking.TrackingAnnotationCollection">
+  <TypeSignature Language="C#" Value="public class TrackingAnnotationCollection : System.Collections.Generic.List&lt;string&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TrackingAnnotationCollection extends System.Collections.Generic.List`1&lt;string&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.List&lt;System.String&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.String</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a collection of annotations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Annotations are `strings` that you define that contain information to associate with certain kinds of tracking data. For more information, see <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint.Annotations%2A?displayProperty=fullName>, <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.Annotations%2A?displayProperty=fullName>, or <xref:System.Workflow.Runtime.Tracking.TrackingDataItem.Annotations%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingAnnotationCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> class</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection> is initialized to an empty list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingAnnotationCollection (System.Collections.Generic.IEnumerable&lt;string&gt; annotations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;string&gt; annotations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection.#ctor(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="annotations" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="annotations">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> list of <see langword="string" /> annotations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> class by using a list of string annotations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection> is initialized to contain the strings specified in `annotations`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="annotations" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

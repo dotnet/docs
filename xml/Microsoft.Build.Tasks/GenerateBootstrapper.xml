@@ -1,0 +1,431 @@
+<Type Name="GenerateBootstrapper" FullName="Microsoft.Build.Tasks.GenerateBootstrapper">
+  <TypeSignature Language="C#" Value="public sealed class GenerateBootstrapper : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GenerateBootstrapper extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GenerateBootstrapper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements the <c>GenerateBootstrapper</c> task. Use the <c>GenerateBootstrapper</c> element in your project file to create and execute this task. For usage and parameter information, see [GenerateBootstrapper Task](http://msdn.microsoft.com/library/ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenerateBootstrapper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateBootstrapper.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GenerateBootstrapper" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationFile">
+      <MemberSignature Language="C#" Value="public string ApplicationFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file the bootstrapper will use to begin the installation of the application after all prerequisites have been installed.</summary>
+        <value>The file the bootstrapper will use to begin the installation of the application after all prerequisites have been installed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationName">
+      <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the application that the bootstrapper will install.</summary>
+        <value>The name of the application that the bootstrapper will install.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This name will appear in the UI the bootstrapper uses during installation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationRequiresElevation">
+      <MemberSignature Language="C#" Value="public bool ApplicationRequiresElevation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ApplicationRequiresElevation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationRequiresElevation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether a component runs with elevated permissions when it is installed on a target computer.</summary>
+        <value>Returns<see langword=" True" /> if the installed component runs with elevated permissions; otherwise <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set in the project file, but it is not exposed in the MSBuild schema. In the project file's `MsiBootstrapper` section, set the [RequiresElevation Property](http://msdn.microsoft.com/en-us/6f449071-9caf-46e7-b7d4-7bbc21cf9aa7) to `True`.  
+  
+ A component runs with elevated permissions when it writes a registry key or is being installed to the GAC. For example, if you are installing assemblies to the GAC, you need to set this property to `True`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationUrl">
+      <MemberSignature Language="C#" Value="public string ApplicationUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ApplicationUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Web location that is hosting the application’s installer.</summary>
+        <value>The Web location that is hosting the application’s installer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BootstrapperComponentFiles">
+      <MemberSignature Language="C#" Value="public string[] BootstrapperComponentFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] BootstrapperComponentFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperComponentFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the built location of bootstrapper package files.</summary>
+        <value>The built location of bootstrapper package files.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:Microsoft.Build.Tasks.GenerateBootstrapper.CopyComponents%2A> is `true`, the values of <xref:Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperComponentFiles%2A> should all be based on <xref:Microsoft.Build.Tasks.GenerateBootstrapper.OutputPath%2A>. Otherwise, the <xref:Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperComponentFiles%2A> values are based on the value of the <xref:Microsoft.Build.Tasks.GenerateBootstrapper.Path%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BootstrapperItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] BootstrapperItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] BootstrapperItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the products to build into the bootstrapper.</summary>
+        <value>The products to build into the bootstrapper.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BootstrapperKeyFile">
+      <MemberSignature Language="C#" Value="public string BootstrapperKeyFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BootstrapperKeyFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.BootstrapperKeyFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the built location of setup.exe.</summary>
+        <value>The built location of setup.exe.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComponentsLocation">
+      <MemberSignature Language="C#" Value="public string ComponentsLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ComponentsLocation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ComponentsLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a location for the bootstrapper to look for installation prerequisites to install.</summary>
+        <value>The location for the bootstrapper to look for installation prerequisites to install.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can have the following values::  
+  
+-   `HomeSite`: Indicates that the prerequisite is being hosted by the component vendor.  
+  
+-   `Relative`: Indicates that the preqrequisite is at the same location of the application.  
+  
+-   `Absolute`: Indicates that all components are to be found at a centralized URL. This value should be used in conjunction with the `ComponentsUrl` property.  
+  
+ If <xref:Microsoft.Build.Tasks.GenerateBootstrapper.ComponentsLocation%2A> is not specified, `HomeSite` is used by default.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ComponentsUrl">
+      <MemberSignature Language="C#" Value="public string ComponentsUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ComponentsUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.ComponentsUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL containing the installation prerequisites.</summary>
+        <value>The URL containing the installation prerequisites.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyComponents">
+      <MemberSignature Language="C#" Value="public bool CopyComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.CopyComponents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether the bootstrapper copies all output files to the path specified in the <see cref="P:Microsoft.Build.Tasks.GenerateBootstrapper.OutputPath" /> property.</summary>
+        <value>
+          <see langword="true" /> if the bootstrapper should copy all output files to the path specified in the <see cref="P:Microsoft.Build.Tasks.GenerateBootstrapper.OutputPath" /> property; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this parameter is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public string Culture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Culture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the culture to use for the bootstrapper UI and installation prerequisites.</summary>
+        <value>The culture to use for the bootstrapper UI and installation prerequisites.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified culture is unavailabe, the task uses the value of the <xref:Microsoft.Build.Tasks.GenerateBootstrapper.FallbackCulture%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateBootstrapper.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the <c>GenerateBootstrapper</c> task.</summary>
+        <returns>
+          <see langword="true" /> if the task execution succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FallbackCulture">
+      <MemberSignature Language="C#" Value="public string FallbackCulture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FallbackCulture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.FallbackCulture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the secondary culture to use for the bootstraper UI and installation prerequisites.</summary>
+        <value>The secondary culture to use for the bootstraper UI and installation prerequisites.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputPath">
+      <MemberSignature Language="C#" Value="public string OutputPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OutputPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.OutputPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location to copy setup.exe and all package files.</summary>
+        <value>The location to copy setup.exe and all package files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of all available prerequisite packages.</summary>
+        <value>The location of all available prerequisite packages.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportUrl">
+      <MemberSignature Language="C#" Value="public string SupportUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SupportUrl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.SupportUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to provide should the bootstrapper installation fail.</summary>
+        <value>The URL to provide should the bootstrapper installation fail.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public bool Validate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Validate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.Validate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether the bootstrapper performs XSD validation on the specified input bootstrapper items.</summary>
+        <value>
+          <see langword="true" /> if the bootstrapper performs XSD validation on the specified input bootstrapper items; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this parameter is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualStudioVersion">
+      <MemberSignature Language="C#" Value="public string VisualStudioVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VisualStudioVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateBootstrapper.VisualStudioVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Visual Studio version, in the form &lt;major build.minor build&gt;, for example “4.0”.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,71 @@
+<Type Name="IWeakEventListener" FullName="System.Windows.IWeakEventListener">
+  <TypeSignature Language="C#" Value="public interface IWeakEventListener" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWeakEventListener" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.IWeakEventListener" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides event listening support for classes that expect to receive events through the WeakEvent pattern and a <see cref="T:System.Windows.WeakEventManager" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.WeakEventManager> (a dispatcher) forwards an event by calling the <xref:System.Windows.IWeakEventListener.ReceiveWeakEvent%2A> method on classes that implement this interface, and that have been added as listeners by calling <xref:System.Windows.WeakEventManager> methods beforehand.  
+  
+ The principal reason for following the WeakEvent pattern is when the event source has an object lifetime that is potentially independent of the event listeners. Using the central event dispatching of a <xref:System.Windows.WeakEventManager> enables the handlers for listeners to be garbage collected (or manually purged) even if the source object lifetime extends beyond the listeners. By contrast, a normal event hookup using `+=` or equivalent language-specific event syntax causes the potentially still-connected source to hold a strong reference to the handlers. This keeps the listener references from being garbage collected in a timely fashion.  
+  
+ One common situation where the relationships between sources and listeners suggests the use of this pattern is the handling of update events coming from sources for data bindings.  
+  
+ You can use the WeakEvent pattern to listen for events that are external to your application. You only need to define a <xref:System.Windows.WeakEventManager> for it, provide listening behavior in <xref:System.Windows.IWeakEventListener.ReceiveWeakEvent%2A>, and use the <xref:System.Windows.WeakEventManager> to attach the handler references rather than `+=`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ReceiveWeakEvent">
+      <MemberSignature Language="C#" Value="public bool ReceiveWeakEvent (Type managerType, object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReceiveWeakEvent(class System.Type managerType, object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managerType" Type="System.Type" />
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="managerType">The type of the <see cref="T:System.Windows.WeakEventManager" /> calling this method.</param>
+        <param name="sender">Object that originated the event.</param>
+        <param name="e">Event data.</param>
+        <summary>Receives events from the centralized event manager.</summary>
+        <returns>
+          <see langword="true" /> if the listener handled the event. It is considered an error by the <see cref="T:System.Windows.WeakEventManager" /> handling in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] to register a listener for an event that the listener does not handle. Regardless, the method should return <see langword="false" /> if it receives an event that it does not recognize or handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example implements <xref:System.Windows.IWeakEventListener.ReceiveWeakEvent%2A> to provide WeakEvent pattern support for two hypothetical events `ClockwiseSpin` and `CounterclockwiseSpin` that each have a dedicated <xref:System.Windows.WeakEventManager> (not shown). This implementation calls class handler stubs for each supported event, casting the event data (in this case the two events share an event data type `SpinEventArgs`). The implementation returns `false` if the event received is not one that is expected.  
+  
+ [!code-csharp[CorePseudocode#IWeakEventListener](~/samples/snippets/csharp/VS_Snippets_Wpf/CorePseudocode/CSharp/corepseudocode.cs#iweakeventlistener)]
+ [!code-vb[CorePseudocode#IWeakEventListener](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CorePseudocode/visualbasic/corepseudocode.vb#iweakeventlistener)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This method is intended to receive all possible events where the receiver is in a listener list. Particularly if implementing for a class that is listening for more than one event, you must check the type of the incoming <paramref name="managerType" /> parameter in order to know which event the call corresponds to. This is why each event that is to be part of the pattern must have a dedicated <see cref="T:System.Windows.WeakEventManager" />. Also, the <paramref name="e" /> parameter is typed as the general <see cref="T:System.EventArgs" />. Therefore, in order get any specific properties out of the event data, your implementation will need to cast to the specific event data type.  
+  
+ Typically, after checking for the identity of the event based on the <see cref="T:System.Windows.WeakEventManager" /> type, your implementation should call a private class handler. Your class handler could conceivably be the very same class handler that is used to handle that event for listeners that are added through the conventional event pattern of adding via <see langword="+=" /> to the event on the sender. The following example section provides a rough implementation template.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

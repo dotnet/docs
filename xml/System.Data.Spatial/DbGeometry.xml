@@ -1,0 +1,1614 @@
+<Type Name="DbGeometry" FullName="System.Data.Spatial.DbGeometry">
+  <TypeSignature Language="C#" Value="public class DbGeometry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DbGeometry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Spatial.DbGeometry" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DataAnnotations.BindableType</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a base class for objects that define geometric shapes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Area">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Area { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Area" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.Area" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nullable double value that indicates the area of this DbGeometry value, which may be null if this value does not represent a surface.</summary>
+        <value>A nullable double value that indicates the area of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsBinary">
+      <MemberSignature Language="C#" Value="public byte[] AsBinary ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] AsBinary() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.AsBinary" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates the well known binary representation of this DbGeometry value.</summary>
+        <returns>The well-known binary representation of this DbGeometry value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsGml">
+      <MemberSignature Language="C#" Value="public string AsGml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AsGml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.AsGml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates the Geography Markup Language (GML) representation of this DbGeometry value.</summary>
+        <returns>A string containing the GML representation of this DbGeometry value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsText">
+      <MemberSignature Language="C#" Value="public string AsText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AsText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.AsText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates the well known text representation of this DbGeometry value.  Includes only X and Y coordinates for points.</summary>
+        <returns>A string containing the well known text representation of this DbGeometry value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Boundary">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry Boundary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometry Boundary" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.Boundary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the boundary of the DbGeometry objects.</summary>
+        <value>The boundary of the DbGeometry objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buffer">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry Buffer (Nullable&lt;double&gt; distance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeometry Buffer(valuetype System.Nullable`1&lt;float64&gt; distance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Buffer(System.Nullable{System.Double})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="distance" Type="System.Nullable&lt;System.Double&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="distance">The distance.</param>
+        <summary>Returns a geometry object that represents the union of all points whose distance from a geometry instance is less than or equal to a specified value.</summary>
+        <returns>A geometry object that represents the union of all points.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Centroid">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry Centroid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometry Centroid" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.Centroid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the DbGeometry value that represents the centroid of this DbGeometry value, which may be null if this value does not represent a surface.</summary>
+        <value>The DbGeometry value that represents the centroid of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Contains(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value for containment.</param>
+        <summary>Determines whether this DbGeometry value spatially contains the specified DbGeometry argument.</summary>
+        <returns>
+          <see langword="true" /> if this geometry value contains <paramref name="other" />; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvexHull">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry ConvexHull { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometry ConvexHull" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.ConvexHull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the convex hull of this DbGeometry value as another DbGeometry value.</summary>
+        <value>The convex hull of this DbGeometry value as another DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoordinateSystemId">
+      <MemberSignature Language="C#" Value="public int CoordinateSystemId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CoordinateSystemId" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.CoordinateSystemId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the coordinate system identifier of the DbGeometry object.</summary>
+        <value>The coordinate system identifier of the DbGeometry object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Crosses">
+      <MemberSignature Language="C#" Value="public bool Crosses (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Crosses(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Crosses(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value.</param>
+        <summary>Determines whether this DbGeometry value spatially crosses the specified DbGeometry argument.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> crosses this geometry value; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCoordinateSystemId">
+      <MemberSignature Language="C#" Value="public static int DefaultCoordinateSystemId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property int32 DefaultCoordinateSystemId" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default coordinate system id (SRID) for geometry values.</summary>
+        <value>The default coordinate system id (SRID) for geometry values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Difference">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry Difference (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeometry Difference(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Difference(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value for which the difference with this value should be computed.</param>
+        <summary>Computes the difference between this DbGeometry value and another DbGeometry value.</summary>
+        <returns>A new DbGeometry value representing the difference between this geometry value and <paramref name="other" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dimension">
+      <MemberSignature Language="C#" Value="public int Dimension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Dimension" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.Dimension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the dimension of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value or, if the value is a collection, the dimension of its largest element.</summary>
+        <value>The dimension of the given <see cref="T:System.Data.Spatial.DbGeometry" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disjoint">
+      <MemberSignature Language="C#" Value="public bool Disjoint (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Disjoint(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Disjoint(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value for disjointness.</param>
+        <summary>Determines whether this DbGeometry is spatially disjoint from the specified DbGeometry argument.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> is disjoint from this geometry value; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Distance">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Distance (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;float64&gt; Distance(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Distance(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value for which the distance from this value should be computed.</param>
+        <summary>Computes the distance between the closest points in this DbGeometry value and another DbGeometry value.</summary>
+        <returns>A double value that specifies the distance between the two closest points in this geometry value and <paramref name="other" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementAt">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry ElementAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeometry ElementAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.ElementAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index.</param>
+        <summary>Returns an element of this DbGeometry value from a specific position, if it represents a geometry collection. &lt;param name="index"&gt;The position within this geometry value from which the element should be taken.&lt;/param&gt;&lt;returns&gt;The element in this geometry value at the specified position, if it represents a collection of other geometry values; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <returns>An element of this DbGeometry value from a specific position.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementCount">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ElementCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ElementCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.ElementCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements in this DbGeometry value, if it represents a geometry collection. &lt;returns&gt;The number of elements in this geometry value, if it represents a collection of other geometry values; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <value>The number of elements in this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Elevation">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Elevation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Elevation" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.Elevation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the elevation (Z coordinate) of this DbGeometry value, if it represents a point. &lt;returns&gt;The elevation (Z coordinate) of this geometry value, if it represents a point; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <value>The elevation (Z coordinate) of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndPoint">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry EndPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometry EndPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.EndPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a DbGeometry value representing the start point of this value, which may be null if this DbGeometry value does not represent a curve.</summary>
+        <value>A DbGeometry value representing the start point of this value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Envelope">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry Envelope { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometry Envelope" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.Envelope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the envelope (minimum bounding box) of this DbGeometry value, as a geometry value.</summary>
+        <value>The envelope (minimum bounding box) of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExteriorRing">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry ExteriorRing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometry ExteriorRing" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.ExteriorRing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the DbGeometry value that represents the exterior ring of this DbGeometry value, which may be null if this value does not represent a polygon.</summary>
+        <value>The DbGeometry value that represents the exterior ring of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry FromBinary (byte[] wellKnownBinary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry FromBinary(unsigned int8[] wellKnownBinary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.FromBinary(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownBinary" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownBinary">A byte array that contains a well known binary representation of the geometry value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well known binary value.</summary>
+        <returns>A new DbGeometry value as defined by the well known binary value with the default geometry coordinate system identifier (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownBinary" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry FromBinary (byte[] wellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry FromBinary(unsigned int8[] wellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.FromBinary(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownBinary">A byte array that contains a well known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known binary value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromGml">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry FromGml (string geometryMarkup);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry FromGml(string geometryMarkup) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.FromGml(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryMarkup" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="geometryMarkup">A string that contains a Geography Markup Language (GML) representation of the geometry value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified Geography Markup Language (GML) value.</summary>
+        <returns>A new DbGeometry value as defined by the GML value with the default geometry coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryMarkup" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromGml">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry FromGml (string geometryMarkup, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry FromGml(string geometryMarkup, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.FromGml(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryMarkup" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryMarkup">A string that contains a Geography Markup Language (GML) representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified Geography Markup Language (GML) value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the GML value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryMarkup" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry FromText (string wellKnownText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry FromText(string wellKnownText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.FromText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownText">A string that contains a well known text representation of the geometry value.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well known text value.</summary>
+        <returns>A new DbGeometry value as defined by the well known text value with the default geometry coordinate system identifier (SRID) (<see cref="P:System.Data.Spatial.DbGeometry.DefaultCoordinateSystemId" />).</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownText" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry FromText (string wellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry FromText(string wellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.FromText(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="wellKnownText">A string that contains a well known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> value based on the specified well known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known text value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryCollectionFromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry GeometryCollectionFromBinary (byte[] geometryCollectionWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry GeometryCollectionFromBinary(unsigned int8[] geometryCollectionWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.GeometryCollectionFromBinary(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryCollectionWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryCollectionWellKnownBinary">A byte array that contains a well known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> collection value based on the specified well known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known binary value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryCollectionWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryCollectionFromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry GeometryCollectionFromText (string geometryCollectionWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry GeometryCollectionFromText(string geometryCollectionWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.GeometryCollectionFromText(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="geometryCollectionWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="geometryCollectionWellKnownText">A string that contains a well known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> collection value based on the specified well known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known text value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="geometryCollectionWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InteriorRingAt">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry InteriorRingAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeometry InteriorRingAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.InteriorRingAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index.</param>
+        <summary>Returns an interior ring from this DbGeometry value at a specific position, if it represents a polygon. &lt;param name="index"&gt;The position within this geometry value from which the interior ring should be taken.&lt;/param&gt;&lt;returns&gt;The interior ring in this geometry value at the specified position, if it represents a polygon; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <returns>An interior ring from this DbGeometry value at a specific position.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InteriorRingCount">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; InteriorRingCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; InteriorRingCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.InteriorRingCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of interior rings in this DbGeometry value, if it represents a polygon. &lt;returns&gt;The number of elements in this geometry value, if it represents a polygon; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <value>The number of interior rings in this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersection">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry Intersection (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeometry Intersection(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Intersection(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value for which the intersection with this value should be computed.</param>
+        <summary>Computes the intersection of this DbGeometry value and another DbGeometry value.</summary>
+        <returns>A new DbGeometry value representing the intersection between this geometry value and <paramref name="other" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersects">
+      <MemberSignature Language="C#" Value="public bool Intersects (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Intersects(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Intersects(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value for intersection.</param>
+        <summary>Determines whether this DbGeometry value spatially intersects the specified DbGeometry argument.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> intersects this geometry value; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClosed">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsClosed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsClosed" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.IsClosed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is closed, which may be null if this value does not represent a curve.</summary>
+        <value>
+          <see langword="True" /> if this DbGeometry value is closed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is empty, which may be null if this value does not represent a curve.</summary>
+        <value>
+          <see langword="True" /> if this DbGeometry value is empty; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRing">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsRing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsRing" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.IsRing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is a ring, which may be null if this value does not represent a curve.</summary>
+        <value>
+          <see langword="True" /> if this DbGeometry value is a ring; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSimple">
+      <MemberSignature Language="C#" Value="public bool IsSimple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSimple" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.IsSimple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is simple.</summary>
+        <value>
+          <see langword="True" /> if this DbGeometry value is simple; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nullable Boolean value indicating whether this DbGeometry value is valid.</summary>
+        <value>
+          <see langword="True" /> if this DbGeometry value is valid; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Length" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nullable double value that indicates the length of this DbGeometry value, which may be null if this value does not represent a curve.</summary>
+        <value>The length of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineFromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry LineFromBinary (byte[] lineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry LineFromBinary(unsigned int8[] lineWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.LineFromBinary(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineWellKnownBinary">A byte array that contains a well known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> line value based on the specified well known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known binary value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="lineWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LineFromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry LineFromText (string lineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry LineFromText(string lineWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.LineFromText(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineWellKnownText">A string that contains a well known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> line value based on the specified well known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known text value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="lineWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Measure">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Measure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Measure" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.Measure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Measure (M coordinate) of this DbGeometry value, if it represents a point. &lt;returns&gt;The Measure (M coordinate) value of this geometry value, if it represents a point; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <value>The Measure (M coordinate) of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiLineFromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry MultiLineFromBinary (byte[] multiLineWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry MultiLineFromBinary(unsigned int8[] multiLineWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.MultiLineFromBinary(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiLineWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiLineWellKnownBinary">The well-known binary value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Returns the multiline value from a binary value.</summary>
+        <returns>The multiline value from a binary value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiLineFromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry MultiLineFromText (string multiLineWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry MultiLineFromText(string multiLineWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.MultiLineFromText(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiLineWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiLineWellKnownText">The well-known text.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Returns the multiline value from a well-known text value.</summary>
+        <returns>The multiline value from a well-known text value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiPointFromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry MultiPointFromBinary (byte[] multiPointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry MultiPointFromBinary(unsigned int8[] multiPointWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.MultiPointFromBinary(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPointWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPointWellKnownBinary">The well-known binary value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Returns the multipoint value from a well-known binary value.</summary>
+        <returns>The multipoint value from a well-known binary value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiPointFromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry MultiPointFromText (string multiPointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry MultiPointFromText(string multiPointWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.MultiPointFromText(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPointWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPointWellKnownText">The well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Returns the multipoint value from a well-known text value.</summary>
+        <returns>The multipoint value from a well-known text value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiPolygonFromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry MultiPolygonFromBinary (byte[] multiPolygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry MultiPolygonFromBinary(unsigned int8[] multiPolygonWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.MultiPolygonFromBinary(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPolygonWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPolygonWellKnownBinary">The multi polygon well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Returns the multi polygon value from a well-known binary value.</summary>
+        <returns>The multipoint value from a well-known text value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiPolygonFromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry MultiPolygonFromText (string multiPolygonWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry MultiPolygonFromText(string multiPolygonWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.MultiPolygonFromText(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="multiPolygonWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="multiPolygonWellKnownText">The multi polygon well-known text value.</param>
+        <param name="coordinateSystemId">The coordinate system identifier.</param>
+        <summary>Returns the multi polygon value from a well-known binary value.</summary>
+        <returns>The multi polygon value from a well-known binary value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overlaps">
+      <MemberSignature Language="C#" Value="public bool Overlaps (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Overlaps(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Overlaps(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value for overlap.</param>
+        <summary>Determines whether this DbGeometry value spatially overlaps the specified DbGeometry argument.</summary>
+        <returns>
+          <see langword="true" /> if this geometry value overlaps <paramref name="other" />; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PointAt">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry PointAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeometry PointAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.PointAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index.</param>
+        <summary>Returns an element of this DbGeometry value from a specific position, if it represents a linestring or linear ring. &lt;param name="index"&gt;The position within this geometry value from which the element should be taken.&lt;/param&gt;&lt;returns&gt;The element in this geometry value at the specified position, if it represents a linestring or linear ring; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <returns>An element of this DbGeometry value from a specific position.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointCount">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; PointCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PointCount" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.PointCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of points in this DbGeometry value, if it represents a linestring or linear ring. &lt;returns&gt;The number of elements in this geometry value, if it represents a linestring or linear ring; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <value>The number of points in this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointFromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry PointFromBinary (byte[] pointWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry PointFromBinary(unsigned int8[] pointWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.PointFromBinary(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pointWellKnownBinary">A byte array that contains a well known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> point value based on the specified well known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known binary value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pointWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PointFromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry PointFromText (string pointWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry PointFromText(string pointWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.PointFromText(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pointWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pointWellKnownText">A string that contains a well known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> point value based on the specified well known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known text value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="pointWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PointOnSurface">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry PointOnSurface { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometry PointOnSurface" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.PointOnSurface" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a point on the surface of this DbGeometry value, which may be null if this value does not represent a surface.</summary>
+        <value>A point on the surface of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PolygonFromBinary">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry PolygonFromBinary (byte[] polygonWellKnownBinary, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry PolygonFromBinary(unsigned int8[] polygonWellKnownBinary, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.PolygonFromBinary(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="polygonWellKnownBinary" Type="System.Byte[]" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="polygonWellKnownBinary">A byte array that contains a well known binary representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> polygon value based on the specified well known binary value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known binary value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="polygonWellKnownBinary" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PolygonFromText">
+      <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry PolygonFromText (string polygonWellKnownText, int coordinateSystemId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry PolygonFromText(string polygonWellKnownText, int32 coordinateSystemId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.PolygonFromText(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="polygonWellKnownText" Type="System.String" />
+        <Parameter Name="coordinateSystemId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="polygonWellKnownText">A string that contains a well known text representation of the geometry value.</param>
+        <param name="coordinateSystemId">The identifier of the coordinate system that the new DbGeometry value should use.</param>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeometry" /> polygon value based on the specified well known text value and coordinate system identifier (SRID).</summary>
+        <returns>A new DbGeometry value as defined by the well known text value with the specified coordinate system identifier.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="polygonWellKnownText" />
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="coordinateSystemId" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderValue">
+      <MemberSignature Language="C#" Value="public object ProviderValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ProviderValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.ProviderValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a representation of this DbGeometry value that is specific to the underlying provider that constructed it.</summary>
+        <value>A representation of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relate">
+      <MemberSignature Language="C#" Value="public bool Relate (System.Data.Spatial.DbGeometry other, string matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Relate(class System.Data.Spatial.DbGeometry other, string matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Relate(System.Data.Spatial.DbGeometry,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+        <Parameter Name="matrix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value for relation.</param>
+        <param name="matrix">A string that contains the text representation of the (DE-9IM) intersection pattern that defines the relation.</param>
+        <summary>Determines whether this DbGeometry value spatially relates to the specified DbGeometry argument according to the given Dimensionally Extended Nine-Intersection Model (DE-9IM) intersection pattern.</summary>
+        <returns>
+          <see langword="true" /> if this geometry value relates to <paramref name="other" /> according to the specified intersection pattern matrix; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" /> <paramref name="matrix" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SpatialEquals">
+      <MemberSignature Language="C#" Value="public bool SpatialEquals (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SpatialEquals(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.SpatialEquals(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value for equality.</param>
+        <summary>Determines whether this DbGeometry is spatially equal to the specified DbGeometry argument.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> is spatially equal to this geometry value; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SpatialTypeName">
+      <MemberSignature Language="C#" Value="public string SpatialTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SpatialTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.SpatialTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a spatial type name representation of this DbGeometry value.</summary>
+        <value>A spatial type name representation of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPoint">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry StartPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometry StartPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.StartPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a DbGeometry value representing the start point of this value, which may be null if this DbGeometry value does not represent a curve.</summary>
+        <value>A DbGeometry value representing the start point of this value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SymmetricDifference">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry SymmetricDifference (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeometry SymmetricDifference(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.SymmetricDifference(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value for which the symmetric difference with this value should be computed.</param>
+        <summary>Computes the symmetric difference between this DbGeometry value and another DbGeometry value.</summary>
+        <returns>A new DbGeometry value representing the symmetric difference between this geometry value and <paramref name="other" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the geometry value.</summary>
+        <returns>A string representation of the geometry value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Touches">
+      <MemberSignature Language="C#" Value="public bool Touches (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Touches(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Touches(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value.</param>
+        <summary>Determines whether this DbGeometry value spatially touches the specified DbGeometry argument.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="other" /> touches this geometry value; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometry Union (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeometry Union(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Union(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value for which the union with this value should be computed.</param>
+        <summary>Computes the union of this DbGeometry value and another DbGeometry value.</summary>
+        <returns>A new DbGeometry value representing the union between this geometry value and <paramref name="other" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WellKnownValue">
+      <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeometryWellKnownValue WellKnownValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeometryWellKnownValue WellKnownValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.WellKnownValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.DataMember(Name="Geometry")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Spatial.DbGeometryWellKnownValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a data contract serializable well known representation of this DbGeometry value.</summary>
+        <value>A data contract serializable well known representation of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Within">
+      <MemberSignature Language="C#" Value="public bool Within (System.Data.Spatial.DbGeometry other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Within(class System.Data.Spatial.DbGeometry other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeometry.Within(System.Data.Spatial.DbGeometry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Data.Spatial.DbGeometry" />
+      </Parameters>
+      <Docs>
+        <param name="other">The geometry value that should be compared with this geometry value for containment.</param>
+        <summary>Determines whether this DbGeometry value is spatially within the specified DbGeometry argument.</summary>
+        <returns>
+          <see langword="true" /> if this geometry value is within <paramref name="other" />; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="other" />
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XCoordinate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; XCoordinate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; XCoordinate" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.XCoordinate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the X coordinate of this DbGeometry value, if it represents a point. &lt;returns&gt;The X coordinate value of this geometry value, if it represents a point; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <value>The X coordinate of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YCoordinate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; YCoordinate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; YCoordinate" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeometry.YCoordinate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Y coordinate of this DbGeometry value, if it represents a point. &lt;returns&gt;The Y coordinate value of this geometry value, if it represents a point; otherwise <see langword="null" />.&lt;/returns&gt;</summary>
+        <value>The Y coordinate of this DbGeometry value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

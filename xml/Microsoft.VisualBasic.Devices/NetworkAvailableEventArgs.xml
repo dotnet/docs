@@ -1,0 +1,82 @@
+<Type Name="NetworkAvailableEventArgs" FullName="Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs">
+  <TypeSignature Language="C#" Value="public class NetworkAvailableEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi NetworkAvailableEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see langword="My.Application.NetworkAvailabilityChanged" /> and <see langword="My.Computer.Network.NetworkAvailabilityChanged" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=fullName> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=fullName> events occur when the availability of the network changes.  
+  
+ <xref:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs> contains the new state of the network connection. To get the current state of the network connection, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NetworkAvailableEventArgs (bool networkAvailable);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(bool networkAvailable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="networkAvailable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="networkAvailable">A <see cref="T:System.Boolean" /> that indicates whether a network is available to the application.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=fullName> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=fullName> events occur when the availability of the network changes.  
+  
+ <xref:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs> contains the new state of the network connection. To get the current state of the network connection, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNetworkAvailable">
+      <MemberSignature Language="C#" Value="public bool IsNetworkAvailable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNetworkAvailable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.IsNetworkAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a network is available to the application.</summary>
+        <value>A <see cref="T:System.Boolean" /> that indicates whether a network is available to the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged?displayProperty=fullName> and the <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged?displayProperty=fullName> events occur when the availability of the network changes.  
+  
+ <xref:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs> contains the new state of the network connection. To get the current state of the network connection, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

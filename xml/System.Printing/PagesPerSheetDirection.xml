@@ -1,0 +1,188 @@
+<Type Name="PagesPerSheetDirection" FullName="System.Printing.PagesPerSheetDirection">
+  <TypeSignature Language="C#" Value="public enum PagesPerSheetDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagesPerSheetDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PagesPerSheetDirection" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the arrangement of pages when more than one page of content appears on a single side of print media.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the values of this type primarily for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.PagesPerSheetDirectionCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, these values indicate the page arrangements that the printer supports.  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.PagesPerSheetDirection%2A> property of a <xref:System.Printing.PrintTicket>, the value directs the printer to arrange pages of content in a specified direction.  
+  
+ The **Unknown** value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the pages-per-sheet-direction feature to an unrecognized option (that is, an option that is not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.PagesPerSheetDirection%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+   
+  
+## Examples  
+ The following example shows how to test a printer's capabilities and configure the print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BottomLeft">
+      <MemberSignature Language="C#" Value="BottomLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection BottomLeft = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.BottomLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pages appear in columns, from top to bottom and right to left relative to page orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomRight">
+      <MemberSignature Language="C#" Value="BottomRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection BottomRight = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.BottomRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pages appear in columns, from top to bottom and left to right relative to page orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftBottom">
+      <MemberSignature Language="C#" Value="LeftBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection LeftBottom = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.LeftBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pages appear in rows, from right to left and top to bottom relative to page orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftTop">
+      <MemberSignature Language="C#" Value="LeftTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection LeftTop = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.LeftTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pages appear in rows, from right to left and bottom to top relative to page orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightBottom">
+      <MemberSignature Language="C#" Value="RightBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection RightBottom = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.RightBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pages appear in rows, from left to right and top to bottom relative to page orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightTop">
+      <MemberSignature Language="C#" Value="RightTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection RightTop = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.RightTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pages appear in rows, from left to right and bottom to top relative to page orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLeft">
+      <MemberSignature Language="C#" Value="TopLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection TopLeft = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.TopLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pages appear in columns, from bottom to top and right to left relative to page orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRight">
+      <MemberSignature Language="C#" Value="TopRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection TopRight = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.TopRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pages appear in columns, from bottom to top and left to right relative to page orientation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PagesPerSheetDirection Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PagesPerSheetDirection.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PagesPerSheetDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

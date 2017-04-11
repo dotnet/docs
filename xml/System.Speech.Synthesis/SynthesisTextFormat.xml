@@ -1,0 +1,65 @@
+<Type Name="SynthesisTextFormat" FullName="System.Speech.Synthesis.SynthesisTextFormat">
+  <TypeSignature Language="C#" Value="public enum SynthesisTextFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SynthesisTextFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesisTextFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates the types of text formats that may be used to construct a <see cref="T:System.Speech.Synthesis.Prompt" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.Prompt.%23ctor%2A> constructor uses <xref:System.Speech.Synthesis.SynthesisTextFormat> to indicate the format of the text that its `textToSpeak` parameter contains.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ssml">
+      <MemberSignature Language="C#" Value="Ssml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesisTextFormat Ssml = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisTextFormat.Ssml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesisTextFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the text format is SSML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Speech.Synthesis.Prompt.%23ctor%2A> for an example.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesisTextFormat Text = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisTextFormat.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesisTextFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the text format is Text.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

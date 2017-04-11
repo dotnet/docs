@@ -1,0 +1,243 @@
+<Type Name="Binding" FullName="Microsoft.JScript.Binding">
+  <TypeSignature Language="C#" Value="public abstract class Binding : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Binding extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Binding" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a reference to a class member, callable expression, or variable name. This class attempts to resolve the reference to the correct value at compile time.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="defaultMember">
+      <MemberSignature Language="C#" Value="protected System.Reflection.MemberInfo defaultMember;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.Reflection.MemberInfo defaultMember" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.defaultMember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MemberInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to a default indexed property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="protected abstract object GetObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.GetObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, gets the object that the binding reference is defined on.</summary>
+        <returns>The object that the binding reference is defined on.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleNoSuchMemberError">
+      <MemberSignature Language="C#" Value="protected abstract void HandleNoSuchMemberError ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void HandleNoSuchMemberError() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.HandleNoSuchMemberError" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, handles situations in which the binding reference is to a member that cannot be found.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can do nothing and allow late binding to resolve the reference, or it can throw an exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isAssignmentToDefaultIndexedProperty">
+      <MemberSignature Language="C#" Value="protected bool isAssignmentToDefaultIndexedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isAssignmentToDefaultIndexedProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.isAssignmentToDefaultIndexedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a value that indicates whether the binding reference is to a default indexed property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A binding reference that contains square brackets and that does not reference a default indexed property references an array element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isFullyResolved">
+      <MemberSignature Language="C#" Value="protected bool isFullyResolved;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isFullyResolved" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.isFullyResolved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a value that indicates whether the binding reference is fully resolved.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMissing">
+      <MemberSignature Language="C#" Value="public static bool IsMissing (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsMissing(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.IsMissing(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to compare.</param>
+        <summary>Determines whether the specified object is equivalent to <see cref="T:Microsoft.JScript.Missing" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is equivalent to <see cref="T:Microsoft.JScript.Missing" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isNonVirtual">
+      <MemberSignature Language="C#" Value="protected bool isNonVirtual;" />
+      <MemberSignature Language="ILAsm" Value=".field family bool isNonVirtual" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.isNonVirtual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a value that indicates whether the binding reference is to a member that overrides a member in a base class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="name">
+      <MemberSignature Language="C#" Value="protected string name;" />
+      <MemberSignature Language="ILAsm" Value=".field family string name" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a string that identifies the binding reference.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveRHValue">
+      <MemberSignature Language="C#" Value="protected void ResolveRHValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ResolveRHValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.ResolveRHValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resolves the right-hand side of the binding reference.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateToILObject">
+      <MemberSignature Language="C#" Value="protected abstract void TranslateToILObject (System.Reflection.Emit.ILGenerator il, Type obtype, bool noValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TranslateToILObject(class System.Reflection.Emit.ILGenerator il, class System.Type obtype, bool noValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.TranslateToILObject(System.Reflection.Emit.ILGenerator,System.Type,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="il" Type="System.Reflection.Emit.ILGenerator" />
+        <Parameter Name="obtype" Type="System.Type" />
+        <Parameter Name="noValue" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="il">An object that generates Microsoft intermediate language (MSIL) instructions.</param>
+        <param name="obtype">The type of the object.</param>
+        <param name="noValue">
+          <see langword="true" /> if the object does not have a value; otherwise, <see langword="false" />.</param>
+        <summary>When overridden in a derived class, generates Microsoft intermediate language (MSIL) code for the object that the binding reference is defined on.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateToILWithDupOfThisOb">
+      <MemberSignature Language="C#" Value="protected abstract void TranslateToILWithDupOfThisOb (System.Reflection.Emit.ILGenerator il);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TranslateToILWithDupOfThisOb(class System.Reflection.Emit.ILGenerator il) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.TranslateToILWithDupOfThisOb(System.Reflection.Emit.ILGenerator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="il" Type="System.Reflection.Emit.ILGenerator" />
+      </Parameters>
+      <Docs>
+        <param name="il">An object that generates Microsoft intermediate language (MSIL) instructions.</param>
+        <summary>When overridden in a derived class, generates Microsoft intermediate language (MSIL) code for the binding reference. If necessary, copies the current topmost value on the evaluation stack and then pushes the copy onto the evaluation stack.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

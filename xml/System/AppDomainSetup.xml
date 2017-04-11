@@ -1,0 +1,1053 @@
+<Type Name="AppDomainSetup" FullName="System.AppDomainSetup">
+  <TypeSignature Language="C#" Value="public sealed class AppDomainSetup : IAppDomainSetup" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit AppDomainSetup extends System.Object implements class System.IAppDomainSetup" />
+  <TypeSignature Language="DocId" Value="T:System.AppDomainSetup" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IAppDomainSetup</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents assembly binding information that can be added to an instance of <see cref="T:System.AppDomain" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changing the properties of an <xref:System.AppDomainSetup> instance does not affect any existing <xref:System.AppDomain>. It can affect only the creation of a new <xref:System.AppDomain>, when the <xref:System.AppDomain.CreateDomain%2A> method is called with the <xref:System.AppDomainSetup> instance as a parameter.  
+  
+ This class implements the <xref:System.IAppDomainSetup> interface.  
+  
+> [!CAUTION]
+>  The default value for the <xref:System.AppDomainSetup.DisallowCodeDownload%2A> property is false. This setting is unsafe for services. To help prevent services from downloading partially trusted code, set this property to true  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AppDomainSetup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AppDomainSetup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AppDomainSetup (ActivationContext activationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.#ctor(System.ActivationContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activationContext" Type="System.ActivationContext" />
+      </Parameters>
+      <Docs>
+        <param name="activationContext">The activation context to be used for an application domain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AppDomainSetup" /> class with the specified activation context to use for manifest-based activation of an application domain.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ActivationContext> object specified for `activationContext` is used to generate an <xref:System.Runtime.Hosting.ActivationArguments> object containing information required to activate a new application domain. This <xref:System.Runtime.Hosting.ActivationArguments> object can be accessed by using the <xref:System.AppDomainSetup.ActivationArguments%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activationContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AppDomainSetup (System.Runtime.Hosting.ActivationArguments activationArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Hosting.ActivationArguments activationArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.#ctor(System.Runtime.Hosting.ActivationArguments)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activationArguments" Type="System.Runtime.Hosting.ActivationArguments" />
+      </Parameters>
+      <Docs>
+        <param name="activationArguments">An object that specifies information required for the manifest-based activation of a new application domain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AppDomainSetup" /> class with the specified activation arguments required for manifest-based activation of an application domain.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object specified for `activationArguments` can be accessed by using the <xref:System.AppDomainSetup.ActivationArguments%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activationArguments" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivationArguments">
+      <MemberSignature Language="C#" Value="public System.Runtime.Hosting.ActivationArguments ActivationArguments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Hosting.ActivationArguments ActivationArguments" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ActivationArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Hosting.ActivationArguments</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets data about the activation of an application domain.</summary>
+        <value>An object that contains data about the activation of an application domain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No exception is thrown if this property is set to `null`.  
+  
+ The information provided by the <xref:System.Runtime.Hosting.ActivationArguments> object supports manifest-based activation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The property is set to an <see cref="T:System.Runtime.Hosting.ActivationArguments" /> object whose application identity does not match the application identity of the <see cref="T:System.Security.Policy.ApplicationTrust" /> object returned by the <see cref="P:System.AppDomainSetup.ApplicationTrust" /> property. No exception is thrown if the <see cref="P:System.AppDomainSetup.ApplicationTrust" /> property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainInitializer">
+      <MemberSignature Language="C#" Value="public AppDomainInitializer AppDomainInitializer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.AppDomainInitializer AppDomainInitializer" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.AppDomainInitializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AppDomainInitializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.AppDomainInitializer" /> delegate, which represents a callback method that is invoked when the application domain is initialized.</summary>
+        <value>A delegate that represents a callback method that is invoked when the application domain is initialized.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To pass information to the callback method, assign an array of strings to the <xref:System.AppDomainSetup.AppDomainInitializerArguments%2A> property. The array is passed to the callback method each time an <xref:System.AppDomain> is initialized.  
+  
+ The callback method is executed in the context of the newly created application domain.  
+  
+   
+  
+## Examples  
+ The following example creates a child application domain named `ChildDomain`, using an <xref:System.AppDomainSetup> object and evidence from the default application domain. The <xref:System.AppDomainSetup.AppDomainInitializer%2A> property is set to the callback method `AppDomainInit`, which is invoked when the child domain is initialized. The arguments for the callback method are placed in an array of strings, which is assigned to the <xref:System.AppDomainSetup.AppDomainInitializerArguments%2A> property. When the child domain is created, the callback method simply prints the strings.  
+  
+ [!code-cpp[AppDomainInitializer#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomainInitializer/cpp/source.cpp#1)]
+ [!code-csharp[AppDomainInitializer#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomainInitializer/CS/source.cs#1)]
+ [!code-vb[AppDomainInitializer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AppDomainInitializer/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainInitializerArguments">
+      <MemberSignature Language="C#" Value="public string[] AppDomainInitializerArguments { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AppDomainInitializerArguments" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.AppDomainInitializerArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the arguments passed to the callback method represented by the <see cref="T:System.AppDomainInitializer" /> delegate. The callback method is invoked when the application domain is initialized.</summary>
+        <value>An array of strings that is passed to the callback method represented by the <see cref="T:System.AppDomainInitializer" /> delegate, when the callback method is invoked during <see cref="T:System.AppDomain" /> initialization.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.AppDomainSetup.AppDomainInitializer%2A> property to specify a callback method that is invoked during <xref:System.AppDomain> initialization. If the <xref:System.AppDomainSetup.AppDomainInitializer%2A> property is not set, the array assigned to this property is not used.  
+  
+ The callback method is executed in the context of the newly created application domain.  
+  
+   
+  
+## Examples  
+ The following code example creates a child application domain named `ChildDomain`, using an <xref:System.AppDomainSetup> object and evidence from the default application domain. The <xref:System.AppDomainSetup.AppDomainInitializer%2A> property is set to the callback method `AppDomainInit`, which is invoked when the child domain is initialized. The arguments for the callback method are placed in an array of strings, which is assigned to the <xref:System.AppDomainSetup.AppDomainInitializerArguments%2A> property. When the child domain is created, the callback method simply prints the strings.  
+  
+ [!code-cpp[AppDomainInitializer#1](~/samples/snippets/cpp/VS_Snippets_CLR/AppDomainInitializer/cpp/source.cpp#1)]
+ [!code-csharp[AppDomainInitializer#1](~/samples/snippets/csharp/VS_Snippets_CLR/AppDomainInitializer/CS/source.cs#1)]
+ [!code-vb[AppDomainInitializer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AppDomainInitializer/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainManagerAssembly">
+      <MemberSignature Language="C#" Value="public string AppDomainManagerAssembly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppDomainManagerAssembly" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.AppDomainManagerAssembly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display name of the assembly that provides the type of the application domain manager for application domains created using this <see cref="T:System.AppDomainSetup" /> object.</summary>
+        <value>The display name of the assembly that provides the <see cref="T:System.Type" /> of the application domain manager.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify the type of the application domain manager, set both this property and the <xref:System.AppDomainSetup.AppDomainManagerType%2A> property. If either of these properties is not set, the other is ignored.  
+  
+ If no type is provided, the application domain manager is created from the same type as the parent application domain (that is, the application domain from which the <xref:System.AppDomain.CreateDomain%2A?displayProperty=fullName> method is called).  
+  
+ When the application domain is loaded, <xref:System.TypeLoadException> is thrown if the assembly does not exist, or if the assembly does not contain the type specified by the <xref:System.AppDomainSetup.AppDomainManagerType%2A> property. <xref:System.IO.FileLoadException> is thrown if the assembly is found but the version information does not match.  
+  
+ To set the application domain manager for the default application domain, use the [\<appDomainManagerAssembly>](~/docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) and [\<appDomainManagerType>](~/docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md) elements in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file, or use the environment variables described in <xref:System.AppDomainManager>.  
+  
+ This feature requires the application to have full trust. (For example, an application running on the desktop has full trust.) If the application does not have full trust, a <xref:System.TypeLoadException> is thrown.  
+  
+ The format of the assembly display name is given by the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppDomainManagerType">
+      <MemberSignature Language="C#" Value="public string AppDomainManagerType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppDomainManagerType" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.AppDomainManagerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the full name of the type that provides the application domain manager for application domains created using this <see cref="T:System.AppDomainSetup" /> object.</summary>
+        <value>The full name of the type, including the namespace.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify the type of the application domain manager, set both this property and the <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A> property. If either of these properties is not set, the other is ignored.  
+  
+ If no type is provided, the application domain manager is created from the same type as the parent application domain (that is, the application domain from which the <xref:System.AppDomain.CreateDomain%2A?displayProperty=fullName> method is called).  
+  
+ When the application domain is loaded, <xref:System.TypeLoadException> is thrown if the assembly specified by the <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A> property does not contain the type specified by this property.  
+  
+ To set the application domain manager for the default application domain, use the [\<appDomainManagerAssembly>](~/docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) and [\<appDomainManagerType>](~/docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md) elements in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file, or use the environment variables described in <xref:System.AppDomainManager>.  
+  
+ This feature requires the application to have full trust. (For example, an application running on the desktop has full trust.) If the application does not have full trust, a <xref:System.TypeLoadException> is thrown.  
+  
+ The format of the full name of a type is given by the <xref:System.Type.FullName%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationBase">
+      <MemberSignature Language="C#" Value="public string ApplicationBase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationBase" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ApplicationBase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the directory containing the application.</summary>
+        <value>The name of the application base directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application base directory is where the assembly manager begins probing for assemblies.  
+  
+ The <xref:System.AppDomainSetup.ApplicationBase%2A> property can influence which permissions are granted to an application domain. For example, an application domain originating from the local computer normally receives full trust based on its location of origin. However, if the <xref:System.AppDomainSetup.ApplicationBase%2A> property of that <xref:System.AppDomain> is set to the full name of an intranet directory, the <xref:System.AppDomainSetup.ApplicationBase%2A> setting restricts the permissions granted to the application domain to a LocalIntranet grant even though the application domain actually originates from the local computer.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.AppDomainSetup.ApplicationBase%2A> property to set the location where the assembly loader begins probing for assemblies to load into a new application domain.  
+  
+> [!NOTE]
+>  You must ensure that the folder you specify exists.  
+  
+ [!code-cpp[ADApplicationBase#1](~/samples/snippets/cpp/VS_Snippets_CLR/ADApplicationBase/CPP/adapplicationbase.cpp#1)]
+ [!code-csharp[ADApplicationBase#1](~/samples/snippets/csharp/VS_Snippets_CLR/ADApplicationBase/CS/adapplicationbase.cs#1)]
+ [!code-vb[ADApplicationBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ADApplicationBase/VB/adapplicationbase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationName">
+      <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ApplicationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the application.</summary>
+        <value>The name of the application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the <xref:System.AppDomainSetup.ApplicationName%2A> property when you create a new application domain.  
+  
+ The example creates a new application domain, and then calls the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A?displayProperty=fullName> method to load the example assembly into the new application domain and create an instance of the `Worker` class. The `Worker` class inherits <xref:System.MarshalByRefObject>, so the example can use the proxy returned by <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> to call the `TestLoad` method.  
+  
+ The `TestLoad` method loads an assembly that you specify. You must either specify a valid, fully qualified assembly name, or comment out the <xref:System.Reflection.Assembly.Load%28System.String%29> method. The `TestLoad` method lists the assemblies that are loaded into the new application domain, showing that your specified assembly and the example assembly are loaded.  
+  
+ The example uses the <xref:System.LoaderOptimizationAttribute> attribute to tell the assembly loader how the application will share code across application domains.  
+  
+ [!code-cpp[ADMultiDomain#1](~/samples/snippets/cpp/VS_Snippets_CLR/ADMultiDomain/CPP/admultidomain.cpp#1)]
+ [!code-csharp[ADMultiDomain#1](~/samples/snippets/csharp/VS_Snippets_CLR/ADMultiDomain/CS/admultidomain.cs#1)]
+ [!code-vb[ADMultiDomain#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ADMultiDomain/VB/admultidomain.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationTrust">
+      <MemberSignature Language="C#" Value="public System.Security.Policy.ApplicationTrust ApplicationTrust { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.ApplicationTrust ApplicationTrust" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ApplicationTrust" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.ApplicationTrust</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object containing security and trust information.</summary>
+        <value>An object that contains security and trust information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is `null` when the <xref:System.AppDomainSetup> is created. Once changed, it cannot be reset to a null reference.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The property is set to an <see cref="T:System.Security.Policy.ApplicationTrust" /> object whose application identity does not match the application identity of the <see cref="T:System.Runtime.Hosting.ActivationArguments" /> object returned by the <see cref="P:System.AppDomainSetup.ActivationArguments" /> property. No exception is thrown if the <see cref="P:System.AppDomainSetup.ActivationArguments" /> property is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The property is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CachePath">
+      <MemberSignature Language="C#" Value="public string CachePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CachePath" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.CachePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of an area specific to the application where files are shadow copied.</summary>
+        <value>The fully qualified name of the directory path and file name where files are shadow copied.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order for this property to have an effect, the <xref:System.AppDomainSetup.ApplicationName%2A> property must also be set. If the <xref:System.AppDomainSetup.ApplicationName%2A> property is not set, the <xref:System.AppDomainSetup.CachePath%2A> property is ignored and the shadow copy cache location defaults to the download cache.  
+  
+ For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationFile">
+      <MemberSignature Language="C#" Value="public string ConfigurationFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationFile" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ConfigurationFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the configuration file for an application domain.</summary>
+        <value>The name of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The configuration file describes the search rules and configuration data for the application domain. The host that creates the application domain is responsible for supplying this data because the meaningful values vary from situation to situation.  
+  
+ For example, the configuration data for ASP.NET applications is stored for each application, site, and computer, while the configuration data for an executable is stored for each application, user, and computer. Only the host knows the specifics of the configuration data for a particular circumstance.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DisallowApplicationBaseProbing">
+      <MemberSignature Language="C#" Value="public bool DisallowApplicationBaseProbing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisallowApplicationBaseProbing" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DisallowApplicationBaseProbing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether the application base path and private binary path are probed when searching for assemblies to load.</summary>
+        <value>
+          <see langword="true" /> if probing is not allowed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A> property is `true`, the value of the <xref:System.AppDomainSetup.ApplicationBase%2A> property is ignored. That is, no assemblies are probed for in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> property. In addition, the values of the <xref:System.AppDomainSetup.PrivateBinPath%2A> property and the <xref:System.AppDomainSetup.PrivateBinPathProbe%2A> property are ignored. No assemblies are probed for in the directories specified by the <xref:System.AppDomainSetup.PrivateBinPath%2A> property.  
+  
+ The <xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A> property provides an additional layer of control over the loading process. In the normal assembly loading sequence, the application base is probed before the <xref:System.AppDomain.AssemblyResolve?displayProperty=fullName> event is raised. However, some applications might need to load assemblies from an OLE compound file within a document, or from a unique known location that is neither in the global assembly cache nor in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties. Such applications can use the <xref:System.AppDomainSetup.DisallowApplicationBaseProbing%2A> property to avoid the delay caused by normal probing, and to avoid loading copies of the necessary assembly that might be located in the normal probing paths.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisallowBindingRedirects">
+      <MemberSignature Language="C#" Value="public bool DisallowBindingRedirects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisallowBindingRedirects" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DisallowBindingRedirects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether an application domain allows assembly binding redirection.</summary>
+        <value>
+          <see langword="true" /> if redirection of assemblies is not allowed; <see langword="false" /> if it is allowed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AppDomainSetup.DisallowBindingRedirects%2A> property is designed to be used by services and server applications where assembly binding redirection is not part of the application scenario.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisallowCodeDownload">
+      <MemberSignature Language="C#" Value="public bool DisallowCodeDownload { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisallowCodeDownload" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DisallowCodeDownload" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether HTTP download of assemblies is allowed for an application domain.</summary>
+        <value>
+          <see langword="true" /> if HTTP download of assemblies is not allowed; <see langword="false" /> if it is allowed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AppDomainSetup.DisallowCodeDownload%2A> property is designed to be used by services and server applications where downloading code from an intranet or the Internet is not part of the application scenario.  
+  
+> [!CAUTION]
+>  The default value for the <xref:System.AppDomainSetup.DisallowCodeDownload%2A> property is `false`. This setting is unsafe for services. To help prevent services from downloading partially trusted code, set this property to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisallowPublisherPolicy">
+      <MemberSignature Language="C#" Value="public bool DisallowPublisherPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisallowPublisherPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DisallowPublisherPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the [&lt;publisherPolicy&gt;](~/docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md) section of the configuration file is applied to an application domain.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="&lt;publisherPolicy&gt;" /> section of the configuration file for an application domain is ignored; <see langword="false" /> if the declared publisher policy is honored.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AppDomainSetup.DisallowPublisherPolicy%2A> property specifically applies to a Web application that is loaded locally. Use this property to help prevent a malicious attempt to execute an unsafe Web application in safe mode.  
+  
+ For more information about bypassing publisher policy, see the [Redirecting Assembly Versions](~/docs/framework/configure-apps/redirect-assembly-versions.md) topic. For more information about safe mode, see the "Examining the Configuration Files" section of the [How the Runtime Locates Assemblies](~/docs/framework/deployment/how-the-runtime-locates-assemblies.md) topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DynamicBase">
+      <MemberSignature Language="C#" Value="public string DynamicBase { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DynamicBase" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DynamicBase" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the base directory where the directory for dynamically generated files is located.</summary>
+        <value>The directory where the <see cref="P:System.AppDomain.DynamicDirectory" /> is located.  
+  
+ <block subset="none" type="note">  
+<para>  
+ The return value of this property is different from the value assigned. See the Remarks section.  
+  
+</para>  
+</block></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to set the base directory where the dynamic directory for the new application domain will be located. When code in the new application domain loads an assembly, assembly resolution looks first in the normal probing paths. If it does not find the assembly, it looks in the dynamic directory, which is returned by the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property. Dynamic assemblies that will be loaded and executed by the new application domain can be placed there.  
+  
+ When you assign a path to the <xref:System.AppDomainSetup.DynamicBase%2A> property, an additional subdirectory is added; the name of this subdirectory is the hash code of the value assigned to the <xref:System.AppDomainSetup.ApplicationName%2A> property. Thus, the base directory subsequently returned by this property is always different from the value assigned.  
+  
+> [!IMPORTANT]
+>  Assigning a value to this property does not create any directories. The directories must be created or verified by the code that uses them.  
+  
+ The dynamic directory is a subdirectory of <xref:System.AppDomainSetup.DynamicBase%2A>. Its simple name is the value returned by the <xref:System.AppDomainSetup.ApplicationName%2A> property, so its format is *original path*\\*hash code*\\*application name*.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.AppDomainSetup.DynamicBase%2A> property to set the path an application domain probes when loading dynamic assemblies.  
+  
+ The example creates an <xref:System.AppDomainSetup> object and sets its <xref:System.AppDomainSetup.ApplicationName%2A> property to "Example" and its <xref:System.AppDomainSetup.DynamicBase%2A> property to "C:\DynamicAssemblyDir". The example then displays the <xref:System.AppDomainSetup.DynamicBase%2A> property, to show that the hash code of the application name has been appended as a subdirectory of the path that was originally assigned.  
+  
+> [!NOTE]
+>  The base directory in this example is intended to be outside the probing path for the example application. Be sure to compile the example in a different location. Delete the base directory and all its subdirectories each time you run the example.  
+  
+ The example creates a new application domain using the <xref:System.AppDomainSetup> object. The example then creates the dynamic directory if it does not already exist. Although the example uses the application domain's <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property to get the name of the dynamic directory, it could just as easily create the directory beforehand by concatenating the original path, the hash code of the application name, and the application name.  
+  
+ The example has a `GenerateDynamicAssembly` method that emits an assembly named `DynamicHelloWorld.dll` and stores it in the new application domain's dynamic directory. The dynamic assembly contains one type, `HelloWorld`, that has a static method (`Shared` method in Visual Basic) named `HelloFromAD`. Calling this method displays the name of the application domain.  
+  
+ The `Example` class derives from <xref:System.MarshalByRefObject>, so the example can create an instance of the class in the new application domain and call its `Test` method. The `Test` method loads the dynamic assembly by its display name and calls the static `HelloFromAD` method.  
+  
+ You can show that the dynamic directory is searched after the normal probing paths by writing code for an assembly named `DynamicHelloWorld.dll` and compiling it in the same directory as this example. The assembly must have a class named `HelloWorld` with a static method named `HelloFromAD`. This method does not have to have the same functionality as the one in the example; it can simply display a string to the console. The assembly must also have an <xref:System.Reflection.AssemblyVersionAttribute> attribute that sets its version to 1.0.0.0. When you run the example, the assembly you compiled in the current directory is found before the dynamic directory is searched.  
+  
+ [!code-cpp[ADDynamicBase#1](~/samples/snippets/cpp/VS_Snippets_CLR/ADDynamicBase/CPP/addynamicbase.cpp#1)]
+ [!code-csharp[ADDynamicBase#1](~/samples/snippets/csharp/VS_Snippets_CLR/ADDynamicBase/CS/addynamicbase.cs#1)]
+ [!code-vb[ADDynamicBase#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ADDynamicBase/VB/addynamicbase.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.MemberAccessException">This property cannot be set because the application name on the application domain is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfigurationBytes">
+      <MemberSignature Language="C#" Value="public byte[] GetConfigurationBytes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetConfigurationBytes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.GetConfigurationBytes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the XML configuration information set by the <see cref="M:System.AppDomainSetup.SetConfigurationBytes(System.Byte[])" /> method, which overrides the application's XML configuration information.</summary>
+        <returns>An array that contains the XML configuration information that was set by the <see cref="M:System.AppDomainSetup.SetConfigurationBytes(System.Byte[])" /> method, or <see langword="null" /> if the <see cref="M:System.AppDomainSetup.SetConfigurationBytes(System.Byte[])" /> method has not been called.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method provides a way to override the configuration information of an application that creates a new application domain. The configuration file information in `value` overrides the configuration file information for the application. For example, when the Example.exe application creates a new application domain, it can override the configuration information originally obtained from Example.exe.config file.  
+  
+> [!IMPORTANT]
+>  Some consumers of configuration file information do not use the information stored by the <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method. The runtime does not enforce this. To ensure that all configuration file information is overridden in a new application domain, use the <xref:System.AppDomainSetup.ConfigurationFile%2A> property to specify a configuration file. The <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method does affect assembly binding.  
+  
+ The XML in `value` is the same as the XML in a normal configuration file, except that it is stored as a <xref:System.Byte> array.  
+  
+ To access the configuration bytes for an application domain, use the <xref:System.AppDomain.SetupInformation%2A?displayProperty=fullName> property to get the <xref:System.AppDomainSetup> object for the application domain, then use the <xref:System.AppDomainSetup.GetConfigurationBytes%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LicenseFile">
+      <MemberSignature Language="C#" Value="public string LicenseFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LicenseFile" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.LicenseFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of the license file associated with this domain.</summary>
+        <value>The location and name of the license file.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LoaderOptimization">
+      <MemberSignature Language="C#" Value="public LoaderOptimization LoaderOptimization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.LoaderOptimization LoaderOptimization" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.LoaderOptimization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.LoaderOptimization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the optimization policy used to load an executable.</summary>
+        <value>An enumerated constant that is used with the <see cref="T:System.LoaderOptimizationAttribute" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a dynamic assembly and saves it to disk, and then uses the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to set the optimization policy used to load the assembly into an application domain.  
+  
+ [!code-cpp[ADDyno#1](~/samples/snippets/cpp/VS_Snippets_CLR/ADDyno/CPP/addyno.cpp#1)]
+ [!code-csharp[ADDyno#1](~/samples/snippets/csharp/VS_Snippets_CLR/ADDyno/CS/addyno.cs#1)]
+ [!code-vb[ADDyno#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ADDyno/VB/addyno.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartialTrustVisibleAssemblies">
+      <MemberSignature Language="C#" Value="public string[] PartialTrustVisibleAssemblies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] PartialTrustVisibleAssemblies" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.PartialTrustVisibleAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of assemblies marked with the <see cref="F:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault" /> flag that are made visible to partial-trust code running in a sandboxed application domain.</summary>
+        <value>An array of partial assembly names, where each partial name consists of the simple assembly name and the public key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute can be made conditional by setting its <xref:System.Security.AllowPartiallyTrustedCallersAttribute.PartialTrustVisibilityLevel%2A> property to <xref:System.Security.PartialTrustVisibilityLevel>. An APTCA assembly that is marked with <xref:System.Security.PartialTrustVisibilityLevel> cannot be used by partially trusted code unless the host application allows it.  
+  
+ The host of a sandboxed application domain allows code in the application domain to use assemblies with conditional APTCA attributes by creating an array that contains the simple name and public key of each assembly, and assigning the array to this property. For example, an element of the array might look like the following: "MyAssembly, PublicKey=0024000004800000940000000602000000240000525341310004000001000100db2ad5e5fedc67ea526ff72ad426ef68e08e241d296c499eedfec6648dcc62b1a12f72be5833a45bbec481b68415b08a5fbc9f9ef247b523dd72bbea65bb532784ddc5c704544bd2f1c2d46fdbe41e4f949e76f9947357b2d5cf8ca9f970701bbd6e8ab64ad31b20ad0be9b56dae4f6b83332b92a2a3b8ea2804c40efbc0b6b9".  
+  
+> [!IMPORTANT]
+>  If you are using a subclass of <xref:System.AppDomainManager>, and the assembly that defines it depends on assemblies that are marked with the conditional APTCA attribute, you must include those assemblies in the list that you pass to the <xref:System.AppDomainSetup.PartialTrustVisibleAssemblies%2A> property of the <xref:System.AppDomainSetup> you use to create application domains. Otherwise the assemblies that are marked with the conditional APTCA attribute will be disabled.  
+  
+> [!NOTE]
+>  When you are debugging an application that is running in a sandboxed application domain, some <xref:System.Security.SecurityException> messages can be misleading. For example, a message might state that one of your fully trusted assemblies has only limited permissions, when the real cause of the problem is that a security demand that exceeds the grant set of the sandboxed application domain has propagated to the boundary of the sandboxed application domain and failed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateBinPath">
+      <MemberSignature Language="C#" Value="public string PrivateBinPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PrivateBinPath" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.PrivateBinPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of directories under the application base directory that are probed for private assemblies.</summary>
+        <value>A list of directory names separated by semicolons.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Private assemblies are deployed in the same directory structure as the application. If the directories specified for <xref:System.AppDomainSetup.PrivateBinPath%2A> are not under <xref:System.AppDomainSetup.ApplicationBase%2A>, they are ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrivateBinPathProbe">
+      <MemberSignature Language="C#" Value="public string PrivateBinPathProbe { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PrivateBinPathProbe" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.PrivateBinPathProbe" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string value that includes or excludes <see cref="P:System.AppDomainSetup.ApplicationBase" /> from the search path for the application, and searches only <see cref="P:System.AppDomainSetup.PrivateBinPath" />.</summary>
+        <value>A null reference (<see langword="Nothing" /> in Visual Basic) to include the application base path when searching for assemblies; any non-null string value to exclude the path. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to any non-null string value, including <xref:System.String?displayProperty=fullName> (""), to exclude the application directory path — that is, <xref:System.AppDomainSetup.ApplicationBase%2A> — from the search path for the application, and to search for assemblies only in <xref:System.AppDomainSetup.PrivateBinPath%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SandboxInterop">
+      <MemberSignature Language="C#" Value="public bool SandboxInterop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SandboxInterop" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.SandboxInterop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether interface caching is disabled for interop calls in the application domain, so that a <c>QueryInterface</c> is performed on each call.</summary>
+        <value>
+          <see langword="true" /> if interface caching is disabled for interop calls in application domains created with the current <see cref="T:System.AppDomainSetup" /> object; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Disabling interface caching has a significant impact on the performance of interop calls.  
+  
+ This member is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCompatibilitySwitches">
+      <MemberSignature Language="C#" Value="public void SetCompatibilitySwitches (System.Collections.Generic.IEnumerable&lt;string&gt; switches);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCompatibilitySwitches(class System.Collections.Generic.IEnumerable`1&lt;string&gt; switches) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="switches" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="switches">An enumerable set of string values that specify compatibility switches, or <see langword="null" /> to erase the existing compatibility switches.</param>
+        <summary>Sets the specified switches, making the application domain compatible with previous versions of the .NET Framework for the specified issues.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Major versions of the .NET Framework sometimes introduce breaking changes from the previous version. For example, the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] introduces a small number of breaking changes from the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. Use the <xref:System.AppDomainSetup.SetCompatibilitySwitches%2A> method to specify that one or more of these breaking changes should be rolled back for the application domain, to make the behavior compatible with the previous version of the .NET Framework.  
+  
+ Each time you call this method, it replaces the existing switch settings. To erase the settings, specify `null` for the `switches` parameter.  
+  
+ The set of string values you provide for `switches` can be a simple string array, because arrays implement the <xref:System.Collections.IEnumerable> interface.  
+  
+ The following table provides examples of compatibility switches that can be set to restore the behavior of earlier versions of the .NET Framework.  
+  
+|Switch|Meaning|  
+|------------|-------------|  
+|"NetFx40_LegacySecurityPolicy"|Code access security (CAS) for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;NetFx40_LegacySecurityPolicy\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).|  
+|"NetFx40_Legacy20SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] are enabled in this application domain. Successfully restoring legacy sorting behavior also requires the sort00001000.dll dynamic link library to be available on the local system. See [\&lt;CompatSortNLSVersion\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/compatsortnlsversion-element.md).|  
+|"NetFx40_Legacy40SortingBehavior"|String sorting defaults for the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and Unicode 5.0 are enabled in this application domain. Successfully restoring legacy sorting behavior also requires the sort00060101.dll dynamic link library to be available on the local system.|  
+|"NetFx40_TimeSpanLegacyFormatMode"|<xref:System.TimeSpan> formatting behavior for the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] is enabled in this application domain. See [\&lt;TimeSpan_LegacyFormatMode\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/timespan-legacyformatmode-element.md) and the "Restoring Legacy TimeSpan Formatting" section of the <xref:System.TimeSpan> topic.|  
+|"UseRandomizedStringHashAlgorithm"|The runtime calculates hash codes for strings on a per application domain basis instead of using a single hashing algorithm that produces a consistent hash code across application domains. See [\&lt;UseRandomizedStringHashAlgorithm\&gt; Element](~/docs/framework/configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConfigurationBytes">
+      <MemberSignature Language="C#" Value="public void SetConfigurationBytes (byte[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetConfigurationBytes(unsigned int8[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.SetConfigurationBytes(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array that contains the XML configuration information to be used for the application domain.</param>
+        <summary>Provides XML configuration information for the application domain, replacing the application's XML configuration information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method provides a way to replace the configuration information of an application that creates a new application domain. The configuration file information in `value`replaces the configuration file information for the application. For example, when the Example.exe application creates a new application domain, it can replace the configuration information originally obtained from the Example.exe.config file.  
+  
+> [!IMPORTANT]
+>  Some consumers of configuration file information do not use the information stored by the <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method. The runtime does not enforce this. To ensure that all configuration file information is replaced in a new application domain, use the <xref:System.AppDomainSetup.ConfigurationFile%2A> property to specify a configuration file. The <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method does affect assembly binding.  
+  
+ The XML in `value` is the same as the XML in a normal configuration file, except that it is stored as a <xref:System.Byte> array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNativeFunction">
+      <MemberSignature Language="C#" Value="public void SetNativeFunction (string functionName, int functionVersion, IntPtr functionPointer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNativeFunction(string functionName, int32 functionVersion, native int functionPointer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.SetNativeFunction(System.String,System.Int32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="functionName" Type="System.String" />
+        <Parameter Name="functionVersion" Type="System.Int32" />
+        <Parameter Name="functionPointer" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="functionName">The name of the string comparison function to override.</param>
+        <param name="functionVersion">The function version. For [!INCLUDE[net_v45](~/includes/net-v45-md.md)], its value must be 1 or greater.</param>
+        <param name="functionPointer">A pointer to the function that overrides <c>functionName</c>.</param>
+        <summary>Provides the common language runtime with an alternate implementation of a string comparison function.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following string comparison and sorting methods can be overridden by the <xref:System.AppDomainSetup.SetNativeFunction%2A> method:  
+  
+-   `IsNLSDefinedString`  
+  
+-   `CompareStringEx`  
+  
+-   `LCMapStringEx`  
+  
+-   `FindNLSStringEx`  
+  
+-   `CompareStringOrdinal`  
+  
+-   `GetNLSVersion`  
+  
+ For information about these functions, see [National Language Support Functions](http://go.microsoft.com/fwlink/?LinkId=228134).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="functionName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="functionVersion" /> is not 1 or greater.  
+  
+ -or-  
+  
+ <paramref name="functionPointer" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowCopyDirectories">
+      <MemberSignature Language="C#" Value="public string ShadowCopyDirectories { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShadowCopyDirectories" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ShadowCopyDirectories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the names of the directories containing assemblies to be shadow copied.</summary>
+        <value>A list of directory names separated by semicolons.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When shadow copying is enabled, the default is to shadow copy all assemblies found through probing; that is, in the directories specified by the <xref:System.AppDomainSetup.PrivateBinPath%2A> and <xref:System.AppDomainSetup.ApplicationBase%2A> properties. The <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property restricts the shadow copy to the assemblies in the directories specified by <xref:System.AppDomainSetup.ShadowCopyDirectories%2A>.  
+  
+ If you don’t assign a string to the <xref:System.AppDomainSetup.ShadowCopyDirectories%2A> property, or if you set this property to `null`, all assemblies in the directories specified by the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> properties are shadow copied.  
+  
+> [!IMPORTANT]
+>  Directory paths must not contain semicolons, because the semicolon is the delimiter character. There is no escape character for semicolons.  
+  
+ When shadow copying is in effect, assembly files are copied to another location before the assemblies are loaded. The original assembly file is not locked, so it can be updated. For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the path information. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadowCopyFiles">
+      <MemberSignature Language="C#" Value="public string ShadowCopyFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShadowCopyFiles" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ShadowCopyFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that indicates whether shadow copying is turned on or off.</summary>
+        <value>The string value "true" to indicate that shadow copying is turned on; or "false" to indicate that shadow copying is turned off.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on shadow copying, see [Shadow Copying Assemblies](~/docs/framework/app-domains/shadow-copy-assemblies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFrameworkName">
+      <MemberSignature Language="C#" Value="public string TargetFrameworkName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkName" />
+      <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.TargetFrameworkName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that specifies the target version and profile of the .NET Framework for the application domain, in a format that can be parsed by the <see cref="M:System.Runtime.Versioning.FrameworkName.#ctor(System.String)" /> constructor.</summary>
+        <value>The target version and profile of the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to tell the currently running version of the .NET Framework that the application domain will be used to load and run assemblies that have been compiled for the target version and profile. If the currently running version of the .NET Framework has optional behaviors that affect the compatibility of code that was compiled with the target version, it can enable or disable those behaviors, as appropriate, to improve compatibility. This can be useful when an application supports add-ins compiled with multiple versions of the .NET Framework by running them in separate application domains.  
+  
+ For client applications, the value of the <xref:System.AppDomainSetup.TargetFrameworkName%2A> property is inferred from the <xref:System.Runtime.Versioning.TargetFrameworkAttribute> attribute. In [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] and later, this attribute is added to the assembly automatically based on the setting of the project's **Target Framework** property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

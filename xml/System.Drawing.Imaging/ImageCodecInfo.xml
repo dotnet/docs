@@ -1,0 +1,290 @@
+<Type Name="ImageCodecInfo" FullName="System.Drawing.Imaging.ImageCodecInfo">
+  <TypeSignature Language="C#" Value="public sealed class ImageCodecInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImageCodecInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageCodecInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> class provides the necessary storage members and methods to retrieve all pertinent information about the installed image encoders and decoders (called codecs). Not inheritable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GDI+ uses image encoders to convert the images stored in <xref:System.Drawing.Bitmap> objects to various file formats. Image encoders are built into GDI+ for the BMP, JPEG, GIF, TIFF, and PNG formats. An encoder is invoked when you call the <xref:System.Drawing.Image.Save%2A> or <xref:System.Drawing.Image.SaveAdd%2A> method of a <xref:System.Drawing.Image> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clsid">
+      <MemberSignature Language="C#" Value="public Guid Clsid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Clsid" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.Clsid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Guid" /> structure that contains a GUID that identifies a specific codec.</summary>
+        <value>A <see cref="T:System.Guid" /> structure that contains a GUID that identifies a specific codec.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodecName">
+      <MemberSignature Language="C#" Value="public string CodecName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CodecName" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.CodecName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that contains the name of the codec.</summary>
+        <value>A string that contains the name of the codec.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DllName">
+      <MemberSignature Language="C#" Value="public string DllName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DllName" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.DllName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets string that contains the path name of the DLL that holds the codec. If the codec is not in a DLL, this pointer is <see langword="null" />.</summary>
+        <value>A string that contains the path name of the DLL that holds the codec.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilenameExtension">
+      <MemberSignature Language="C#" Value="public string FilenameExtension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FilenameExtension" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.FilenameExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets string that contains the file name extension(s) used in the codec. The extensions are separated by semicolons.</summary>
+        <value>A string that contains the file name extension(s) used in the codec.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public System.Drawing.Imaging.ImageCodecFlags Flags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Imaging.ImageCodecFlags Flags" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets 32-bit value used to store additional information about the codec. This property returns a combination of flags from the <see cref="T:System.Drawing.Imaging.ImageCodecFlags" /> enumeration.</summary>
+        <value>A 32-bit value used to store additional information about the codec.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDescription">
+      <MemberSignature Language="C#" Value="public string FormatDescription { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormatDescription" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.FormatDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that describes the codec's file format.</summary>
+        <value>A string that describes the codec's file format.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatID">
+      <MemberSignature Language="C#" Value="public Guid FormatID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid FormatID" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.FormatID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Guid" /> structure that contains a GUID that identifies the codec's format.</summary>
+        <value>A <see cref="T:System.Guid" /> structure that contains a GUID that identifies the codec's format.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImageDecoders">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Imaging.ImageCodecInfo[] GetImageDecoders ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Imaging.ImageCodecInfo[] GetImageDecoders() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageCodecInfo.GetImageDecoders" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageCodecInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an array of <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> objects that contain information about the image decoders built into GDI+.</summary>
+        <returns>An array of <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> objects. Each <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> object in the array contains information about one of the built-in image decoders.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For an example, see <xref:System.Drawing.Imaging.ImageCodecInfo.GetImageEncoders%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImageEncoders">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Imaging.ImageCodecInfo[] GetImageEncoders ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Imaging.ImageCodecInfo[] GetImageEncoders() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ImageCodecInfo.GetImageEncoders" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.ImageCodecInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an array of <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> objects that contain information about the image encoders built into GDI+.</summary>
+        <returns>An array of <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> objects. Each <see cref="T:System.Drawing.Imaging.ImageCodecInfo" /> object in the array contains information about one of the built-in image encoders.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code uses the <xref:System.Drawing.Imaging.ImageCodecInfo.GetImageEncoders%2A> method to retrieve all the codec information for all installed image encoders and codecs, and then draws all the information about each codec to the screen.  
+  
+ [!code-cpp[System.Drawing.Imaging.ClassicImageCodecExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Imaging.ClassicImageCodecExample/cpp/form1.cpp#1)]
+ [!code-csharp[System.Drawing.Imaging.ClassicImageCodecExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Imaging.ClassicImageCodecExample/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.Imaging.ClassicImageCodecExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Imaging.ClassicImageCodecExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MimeType">
+      <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.MimeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that contains the codec's Multipurpose Internet Mail Extensions (MIME) type.</summary>
+        <value>A string that contains the codec's Multipurpose Internet Mail Extensions (MIME) type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignatureMasks">
+      <MemberSignature Language="C#" Value="public byte[][] SignatureMasks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[][] SignatureMasks" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.SignatureMasks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[][]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a two dimensional array of bytes that can be used as a filter.</summary>
+        <value>A two dimensional array of bytes that can be used as a filter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignaturePatterns">
+      <MemberSignature Language="C#" Value="public byte[][] SignaturePatterns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[][] SignaturePatterns" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.SignaturePatterns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[][]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a two dimensional array of bytes that represents the signature of the codec.</summary>
+        <value>A two dimensional array of bytes that represents the signature of the codec.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public int Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ImageCodecInfo.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the version number of the codec.</summary>
+        <value>The version number of the codec.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2029 @@
+<Type Name="QueryBuilder" FullName="Microsoft.FSharp.Linq.QueryBuilder">
+  <TypeSignature Language="C#" Value="public class QueryBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable QueryBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Linq.QueryBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Class</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QueryBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="All&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public bool All&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool All&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.All``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("all")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AverageBy&lt;T,Q,TValue&gt;">
+      <MemberSignature Language="C#" Value="public TValue AverageBy&lt;T,Q,TValue&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt; projection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TValue AverageBy&lt;T, Q, TValue&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TValue&gt; projection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.AverageBy``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("averageBy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="projection" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="projection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AverageByNullable&lt;T,Q,TValue&gt;">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TValue&gt; AverageByNullable&lt;T,Q,TValue&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Nullable&lt;TValue&gt;&gt; projection) where TValue : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;!!TValue&gt; AverageByNullable&lt;T, Q, struct .ctor (class System.ValueType) TValue&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype System.Nullable`1&lt;!!TValue&gt;&gt; projection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.AverageByNullable``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Nullable{``2}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("averageByNullable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;TValue&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TValue">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="projection" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Nullable&lt;TValue&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="projection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public bool Contains&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, T key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, !!T key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Contains``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("contains")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="key" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public int Count&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Count&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Count``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("count")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Distinct&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; Distinct&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; Distinct&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Distinct``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("distinct", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExactlyOne&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public T ExactlyOne&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T ExactlyOne&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.ExactlyOne``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("exactlyOne")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExactlyOneOrDefault&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public T ExactlyOneOrDefault&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T ExactlyOneOrDefault&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.ExactlyOneOrDefault``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("exactlyOneOrDefault")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public bool Exists&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Exists&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Exists``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("exists")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Find&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public T Find&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Find&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Find``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("find")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="For&lt;T,Q,TResult,Q2&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt; For&lt;T,Q,TResult,Q2&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q2&gt;&gt; body);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TResult, !!Q&gt; For&lt;T, Q, TResult, Q2&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TResult, !!Q2&gt;&gt; body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.For``4(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Linq.QuerySource{``2,``3}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="Q2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q2&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="Q2">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupBy&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;System.Linq.IGrouping&lt;TKey,T&gt;,Q&gt; GroupBy&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; keySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;class System.Linq.IGrouping`2&lt;!!TKey, !!T&gt;, !!Q&gt; GroupBy&lt;T, Q, TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.GroupBy``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("groupBy", AllowIntoPattern=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;System.Linq.IGrouping&lt;TKey,T&gt;,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupJoin&lt;TOuter,Q,TInner,TKey,TResult&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt; GroupJoin&lt;TOuter,Q,TInner,TKey,TResult&gt; (Microsoft.FSharp.Linq.QuerySource&lt;TOuter,Q&gt; outerSource, Microsoft.FSharp.Linq.QuerySource&lt;TInner,Q&gt; innerSource, Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,TKey&gt; outerKeySelector, Microsoft.FSharp.Core.FSharpFunc&lt;TInner,TKey&gt; innerKeySelector, Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,Microsoft.FSharp.Core.FSharpFunc&lt;System.Collections.Generic.IEnumerable&lt;TInner&gt;,TResult&gt;&gt; resultSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TResult, !!Q&gt; GroupJoin&lt;TOuter, Q, TInner, TKey, TResult&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TOuter, !!Q&gt; outerSource, class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TInner, !!Q&gt; innerSource, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TOuter, !!TKey&gt; outerKeySelector, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TInner, !!TKey&gt; innerKeySelector, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TOuter, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Collections.Generic.IEnumerable`1&lt;!!TInner&gt;, !!TResult&gt;&gt; resultSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.GroupJoin``5(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Linq.QuerySource{``2,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``3},Microsoft.FSharp.Core.FSharpFunc{``2,``3},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IEnumerable{``2},``4}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("groupJoin", IsLikeGroupJoin=true, JoinConditionWord="on")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOuter" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TInner" />
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="outerSource" Type="Microsoft.FSharp.Linq.QuerySource&lt;TOuter,Q&gt;" />
+        <Parameter Name="innerSource" Type="Microsoft.FSharp.Linq.QuerySource&lt;TInner,Q&gt;" />
+        <Parameter Name="outerKeySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,TKey&gt;" />
+        <Parameter Name="innerKeySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TInner,TKey&gt;" />
+        <Parameter Name="resultSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,Microsoft.FSharp.Core.FSharpFunc&lt;System.Collections.Generic.IEnumerable&lt;TInner&gt;,TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOuter">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TInner">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="outerSource">To be added.</param>
+        <param name="innerSource">To be added.</param>
+        <param name="outerKeySelector">To be added.</param>
+        <param name="innerKeySelector">To be added.</param>
+        <param name="resultSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupValBy&lt;T,TKey,TValue,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;System.Linq.IGrouping&lt;TKey,TValue&gt;,Q&gt; GroupValBy&lt;T,TKey,TValue,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt; resultSelector, Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; keySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;class System.Linq.IGrouping`2&lt;!!TKey, !!TValue&gt;, !!Q&gt; GroupValBy&lt;T, TKey, TValue, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TValue&gt; resultSelector, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.GroupValBy``4(Microsoft.FSharp.Linq.QuerySource{``0,``3},Microsoft.FSharp.Core.FSharpFunc{``0,``2},Microsoft.FSharp.Core.FSharpFunc{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("groupValBy", AllowIntoPattern=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;System.Linq.IGrouping&lt;TKey,TValue&gt;,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TValue" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="resultSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="resultSelector">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Head&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public T Head&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Head&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Head``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("head")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadOrDefault&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public T HeadOrDefault&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T HeadOrDefault&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.HeadOrDefault``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("headOrDefault")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join&lt;TOuter,Q,TInner,TKey,TResult&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt; Join&lt;TOuter,Q,TInner,TKey,TResult&gt; (Microsoft.FSharp.Linq.QuerySource&lt;TOuter,Q&gt; outerSource, Microsoft.FSharp.Linq.QuerySource&lt;TInner,Q&gt; innerSource, Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,TKey&gt; outerKeySelector, Microsoft.FSharp.Core.FSharpFunc&lt;TInner,TKey&gt; innerKeySelector, Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,Microsoft.FSharp.Core.FSharpFunc&lt;TInner,TResult&gt;&gt; resultSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TResult, !!Q&gt; Join&lt;TOuter, Q, TInner, TKey, TResult&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TOuter, !!Q&gt; outerSource, class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TInner, !!Q&gt; innerSource, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TOuter, !!TKey&gt; outerKeySelector, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TInner, !!TKey&gt; innerKeySelector, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TOuter, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TInner, !!TResult&gt;&gt; resultSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Join``5(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Linq.QuerySource{``2,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``3},Microsoft.FSharp.Core.FSharpFunc{``2,``3},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``2,``4}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("join", IsLikeJoin=true, JoinConditionWord="on")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOuter" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TInner" />
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="outerSource" Type="Microsoft.FSharp.Linq.QuerySource&lt;TOuter,Q&gt;" />
+        <Parameter Name="innerSource" Type="Microsoft.FSharp.Linq.QuerySource&lt;TInner,Q&gt;" />
+        <Parameter Name="outerKeySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,TKey&gt;" />
+        <Parameter Name="innerKeySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TInner,TKey&gt;" />
+        <Parameter Name="resultSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,Microsoft.FSharp.Core.FSharpFunc&lt;TInner,TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOuter">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TInner">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="outerSource">To be added.</param>
+        <param name="innerSource">To be added.</param>
+        <param name="outerKeySelector">To be added.</param>
+        <param name="innerKeySelector">To be added.</param>
+        <param name="resultSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Last&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public T Last&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Last&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Last``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("last")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastOrDefault&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public T LastOrDefault&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T LastOrDefault&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.LastOrDefault``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("lastOrDefault")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftOuterJoin&lt;TOuter,Q,TInner,TKey,TResult&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt; LeftOuterJoin&lt;TOuter,Q,TInner,TKey,TResult&gt; (Microsoft.FSharp.Linq.QuerySource&lt;TOuter,Q&gt; outerSource, Microsoft.FSharp.Linq.QuerySource&lt;TInner,Q&gt; innerSource, Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,TKey&gt; outerKeySelector, Microsoft.FSharp.Core.FSharpFunc&lt;TInner,TKey&gt; innerKeySelector, Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,Microsoft.FSharp.Core.FSharpFunc&lt;System.Collections.Generic.IEnumerable&lt;TInner&gt;,TResult&gt;&gt; resultSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TResult, !!Q&gt; LeftOuterJoin&lt;TOuter, Q, TInner, TKey, TResult&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TOuter, !!Q&gt; outerSource, class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TInner, !!Q&gt; innerSource, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TOuter, !!TKey&gt; outerKeySelector, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TInner, !!TKey&gt; innerKeySelector, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TOuter, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Collections.Generic.IEnumerable`1&lt;!!TInner&gt;, !!TResult&gt;&gt; resultSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.LeftOuterJoin``5(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Linq.QuerySource{``2,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``3},Microsoft.FSharp.Core.FSharpFunc{``2,``3},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{System.Collections.Generic.IEnumerable{``2},``4}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("leftOuterJoin", IsLikeGroupJoin=true, JoinConditionWord="on")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TOuter" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TInner" />
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="outerSource" Type="Microsoft.FSharp.Linq.QuerySource&lt;TOuter,Q&gt;" />
+        <Parameter Name="innerSource" Type="Microsoft.FSharp.Linq.QuerySource&lt;TInner,Q&gt;" />
+        <Parameter Name="outerKeySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,TKey&gt;" />
+        <Parameter Name="innerKeySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TInner,TKey&gt;" />
+        <Parameter Name="resultSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TOuter,Microsoft.FSharp.Core.FSharpFunc&lt;System.Collections.Generic.IEnumerable&lt;TInner&gt;,TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TOuter">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TInner">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="outerSource">To be added.</param>
+        <param name="innerSource">To be added.</param>
+        <param name="outerKeySelector">To be added.</param>
+        <param name="innerKeySelector">To be added.</param>
+        <param name="resultSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBy&lt;T,Q,TValue&gt;">
+      <MemberSignature Language="C#" Value="public TValue MaxBy&lt;T,Q,TValue&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt; valueSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TValue MaxBy&lt;T, Q, TValue&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TValue&gt; valueSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.MaxBy``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("maxBy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="valueSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="valueSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxByNullable&lt;T,Q,TValue&gt;">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TValue&gt; MaxByNullable&lt;T,Q,TValue&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Nullable&lt;TValue&gt;&gt; valueSelector) where TValue : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;!!TValue&gt; MaxByNullable&lt;T, Q, struct .ctor (class System.ValueType) TValue&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype System.Nullable`1&lt;!!TValue&gt;&gt; valueSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.MaxByNullable``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Nullable{``2}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("maxByNullable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;TValue&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TValue">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="valueSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Nullable&lt;TValue&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="valueSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinBy&lt;T,Q,TValue&gt;">
+      <MemberSignature Language="C#" Value="public TValue MinBy&lt;T,Q,TValue&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt; valueSelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TValue MinBy&lt;T, Q, TValue&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TValue&gt; valueSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.MinBy``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("minBy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="valueSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="valueSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinByNullable&lt;T,Q,TValue&gt;">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TValue&gt; MinByNullable&lt;T,Q,TValue&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Nullable&lt;TValue&gt;&gt; valueSelector) where TValue : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;!!TValue&gt; MinByNullable&lt;T, Q, struct .ctor (class System.ValueType) TValue&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype System.Nullable`1&lt;!!TValue&gt;&gt; valueSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.MinByNullable``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Nullable{``2}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("minByNullable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;TValue&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TValue">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="valueSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Nullable&lt;TValue&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="valueSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nth&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public T Nth&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Nth&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Nth``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("nth")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Quote&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; Quote&lt;T&gt; (Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; q);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; Quote&lt;T&gt;(class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; q) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Quote``1(Microsoft.FSharp.Quotations.FSharpExpr{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="q" Type="Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="q">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Linq.IQueryable&lt;T&gt; Run&lt;T&gt; (Microsoft.FSharp.Quotations.FSharpExpr&lt;Microsoft.FSharp.Linq.QuerySource&lt;T,System.Linq.IQueryable&gt;&gt; q);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.IQueryable`1&lt;!!T&gt; Run&lt;T&gt;(class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, class System.Linq.IQueryable&gt;&gt; q) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Run``1(Microsoft.FSharp.Quotations.FSharpExpr{Microsoft.FSharp.Linq.QuerySource{``0,System.Linq.IQueryable}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="q" Type="Microsoft.FSharp.Quotations.FSharpExpr&lt;Microsoft.FSharp.Linq.QuerySource&lt;T,System.Linq.IQueryable&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="q">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select&lt;T,Q,TResult&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt; Select&lt;T,Q,TResult&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; projection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!TResult, !!Q&gt; Select&lt;T, Q, TResult&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; projection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Select``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("select", AllowIntoPattern=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;TResult,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="projection" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="projection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Skip&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; Skip&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; Skip&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Skip``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("skip", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipWhile&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; SkipWhile&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; SkipWhile&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.SkipWhile``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("skipWhile", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortBy&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; SortBy&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; keySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; SortBy&lt;T, Q, TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.SortBy``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("sortBy", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortByDescending&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; SortByDescending&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; keySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; SortByDescending&lt;T, Q, TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.SortByDescending``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("sortByDescending", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortByNullable&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; SortByNullable&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Nullable&lt;TKey&gt;&gt; keySelector) where TKey : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; SortByNullable&lt;T, Q, struct .ctor (class System.ValueType) TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype System.Nullable`1&lt;!!TKey&gt;&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.SortByNullable``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Nullable{``2}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("sortByNullable", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Nullable&lt;TKey&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortByNullableDescending&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; SortByNullableDescending&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Nullable&lt;TKey&gt;&gt; keySelector) where TKey : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; SortByNullableDescending&lt;T, Q, struct .ctor (class System.ValueType) TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype System.Nullable`1&lt;!!TKey&gt;&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.SortByNullableDescending``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Nullable{``2}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("sortByNullableDescending", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Nullable&lt;TKey&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,System.Collections.IEnumerable&gt; Source&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, class System.Collections.IEnumerable&gt; Source&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Source``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,System.Collections.IEnumerable&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; Source&lt;T,Q&gt; (System.Linq.IQueryable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; Source&lt;T, Q&gt;(class System.Linq.IQueryable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Source``2(System.Linq.IQueryable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SumBy&lt;T,Q,TValue&gt;">
+      <MemberSignature Language="C#" Value="public TValue SumBy&lt;T,Q,TValue&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt; projection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TValue SumBy&lt;T, Q, TValue&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TValue&gt; projection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.SumBy``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("sumBy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="projection" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TValue&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="projection">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SumByNullable&lt;T,Q,TValue&gt;">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TValue&gt; SumByNullable&lt;T,Q,TValue&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Nullable&lt;TValue&gt;&gt; valueSelector) where TValue : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;!!TValue&gt; SumByNullable&lt;T, Q, struct .ctor (class System.ValueType) TValue&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype System.Nullable`1&lt;!!TValue&gt;&gt; valueSelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.SumByNullable``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Nullable{``2}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("sumByNullable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;TValue&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TValue">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="valueSelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Nullable&lt;TValue&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TValue">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="valueSelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Take&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; Take&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; Take&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Take``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("take", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TakeWhile&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; TakeWhile&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; TakeWhile&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.TakeWhile``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("takeWhile", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThenBy&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; ThenBy&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; keySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; ThenBy&lt;T, Q, TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.ThenBy``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("thenBy", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThenByDescending&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; ThenByDescending&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; keySelector);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; ThenByDescending&lt;T, Q, TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.ThenByDescending``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("thenByDescending", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThenByNullable&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; ThenByNullable&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Nullable&lt;TKey&gt;&gt; keySelector) where TKey : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; ThenByNullable&lt;T, Q, struct .ctor (class System.ValueType) TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype System.Nullable`1&lt;!!TKey&gt;&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.ThenByNullable``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Nullable{``2}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("thenByNullable", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Nullable&lt;TKey&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThenByNullableDescending&lt;T,Q,TKey&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; ThenByNullableDescending&lt;T,Q,TKey&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,Nullable&lt;TKey&gt;&gt; keySelector) where TKey : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; ThenByNullableDescending&lt;T, Q, struct .ctor (class System.ValueType) TKey&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype System.Nullable`1&lt;!!TKey&gt;&gt; keySelector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.ThenByNullableDescending``3(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Nullable{``2}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("thenByNullableDescending", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+        <TypeParameter Name="TKey">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="keySelector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Nullable&lt;TKey&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <typeparam name="TKey">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="keySelector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Where&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; Where&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; Where&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Where``2(Microsoft.FSharp.Linq.QuerySource{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CustomOperation("where", AllowIntoPattern=true, MaintainsVariableSpace=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.ProjectionParameter</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="predicate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yield&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; Yield&lt;T,Q&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; Yield&lt;T, Q&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Yield``2(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YieldFrom&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; YieldFrom&lt;T,Q&gt; (Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; computation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; YieldFrom&lt;T, Q&gt;(class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; computation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.YieldFrom``2(Microsoft.FSharp.Linq.QuerySource{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zero&lt;T,Q&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt; Zero&lt;T,Q&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Linq.QuerySource`2&lt;!!T, !!Q&gt; Zero&lt;T, Q&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryBuilder.Zero``2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Linq.QuerySource&lt;T,Q&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="Q" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="Q">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

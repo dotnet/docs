@@ -1,0 +1,8 @@
+<Namespace Name="System.IdentityModel.Policy">
+  <Docs>
+    <summary>The <see cref="N:System.IdentityModel.Policy" /> namespace contains classes that are used to implement authorization policy when using the WCF claims-based identity model.  
+  
+ Beginning with .NET Framework 4.5 and the integration of Windows Identity Foundation (WIF) into the .NET Framework, the WCF claims-based identity model has been superseded by WIF. WIF provides a claims-based identity object model that can be used to provide authentication and authorization across several Microsoft product stacks, including the CLR, WCF, and ASP.NET. In WIF, authorization policy is implemented by extending the <see cref="T:System.Security.Claims.ClaimsAuthorizationManager" /> class. Beginning with .NET 4.5, authorization policy should be implemented by using WIF instead of the classes in the <see cref="N:System.IdentityModel.Claims" /> namespace.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,209 @@
+<Type Name="CreateUserWizardStep" FullName="System.Web.UI.WebControls.CreateUserWizardStep">
+  <TypeSignature Language="C#" Value="public sealed class CreateUserWizardStep : System.Web.UI.WebControls.TemplatedWizardStep" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CreateUserWizardStep extends System.Web.UI.WebControls.TemplatedWizardStep" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CreateUserWizardStep" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.TemplatedWizardStep</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains basic functionality for creating a user in a step that can be templated. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.CreateUserWizard> control creates new user accounts in a Web site's user data store. The <xref:System.Web.UI.WebControls.CreateUserWizardStep> is, by default, the first step within the <xref:System.Web.UI.WebControls.CreateUserWizard> control. The <xref:System.Web.UI.WebControls.CreateUserWizardStep> step is a required step within the <xref:System.Web.UI.WebControls.CreateUserWizard> control.  
+  
+ The <xref:System.Web.UI.WebControls.CreateUserWizardStep> class is derived from the <xref:System.Web.UI.WebControls.TemplatedWizardStep> class. The <xref:System.Web.UI.WebControls.CreateUserWizardStep> is displayed in the <xref:System.Web.UI.WebControls.CreateUserWizard> control before the <xref:System.Web.UI.WebControls.CompleteWizardStep> step.  
+  
+> [!NOTE]
+>  Although the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step is the first step in the wizard by default, it is possible to provide a different first step. Doing so, however, can affect whether the **Previous** button is displayed. For example, if the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step does not have a custom navigation template, and is preceded by another step that is rendered before <xref:System.Web.UI.WebControls.CreateUserWizardStep>, then the **Previous** button is displayed on the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step at run time. If the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step is rendered before the alternate "first" step, then the **Previous** button is not displayed. Furthermore, the **Previous** button is never rendered at design time. If you want the **Previous** button to be rendered at design time, you must add it to the custom navigation template of the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step.  
+  
+ You can modify the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step to contain additional fields, or change the display order of the fields included in the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step, by editing the template associated with the control.  
+  
+ The new Web site user account is created in the data store when the user clicks the **Next** button on the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step. By default, the <xref:System.Web.UI.WebControls.CreateUserWizardStep.AllowReturn%2A> property is set to `false` to keep the user from returning to the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step and accidentally attempting to create another user account with the same credentials. If you set the <xref:System.Web.UI.WebControls.CreateUserWizardStep.AllowReturn%2A> property to `true`, you must include logic in your application to remove the user account that was originally created before the user returned to this step, or to allow the user to edit information he or she originally entered.  
+  
+   
+  
+## Examples  
+ The first code example uses the short-form declarative syntax of the <xref:System.Web.UI.WebControls.CreateUserWizardStep> class to add an additional control to a <xref:System.Web.UI.WebControls.CreateUserWizard> control. The code example requires the following entries in the Web.config file.  
+  
+ `<configuration>`  
+  
+ `<system.web>`  
+  
+ `<profile>`  
+  
+ `<properties>`  
+  
+ `<add name="lastName" />`  
+  
+ `<add name="firstName" />`  
+  
+ `</properties>`  
+  
+ `</profile>`  
+  
+ `</system.web>`  
+  
+ `</configuration>`  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardCreatedUser#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardCreatedUser/CS/createuserwizardcreatedusercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CreateUserWizardCreatedUser#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardCreatedUser/VB/createuserwizardcreateduservb.aspx#1)]  -->  
+  
+> [!IMPORTANT]
+>  This control has a text box that accepts user input, which is a potential security threat. User input in a Web page can potentially contain malicious client script. By default, ASP.NET Web pages validate user input to ensure that the input does not contain HTML elements or script. As long as this validation is enabled, you do not need to explicitly check for script or HTML elements in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ The second code example lists the complete <xref:System.Web.UI.WebControls.CreateUserWizardStep> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CreateUserWizardStep#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CreateUserWizardStep/CS/createuserwizardstepcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CreateUserWizardStep#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CreateUserWizardStep/VB/createuserwizardstepvb.aspx#1)]  -->  
+  
+> [!IMPORTANT]
+>  This control has a text box that accepts user input, which is a potential security threat. User input in a Web page can potentially contain malicious client script. By default, ASP.NET Web pages validate user input to ensure that the input does not contain HTML elements or script. As long as this validation is enabled, you do not need to explicitly check for script or HTML elements in user input. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CreateUserWizardStep ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CreateUserWizardStep.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.WebControls.CreateUserWizardStep" /> control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowReturn">
+      <MemberSignature Language="C#" Value="public override bool AllowReturn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowReturn" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CreateUserWizardStep.AllowReturn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the user is allowed to return to the current step from a subsequent step in a <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control.</summary>
+        <value>
+          <see langword="true" /> if the user is allowed to return to the <see cref="T:System.Web.UI.WebControls.CreateUserWizardStep" /> step; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.CreateUserWizardStep.AllowReturn%2A> property is set to `false` to keep users from returning to the <xref:System.Web.UI.WebControls.CreateUserWizardStep> step and accidentally trying to create another user account with the same credentials. If you override the <xref:System.Web.UI.WebControls.CreateUserWizardStep.AllowReturn%2A> property and set it to `true`, you should include logic in your application to remove the user account that was originally created before the user returned to this step, or to allow the user to edit information he or she originally entered.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to set the property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StepType">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WizardStepType StepType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WizardStepType StepType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CreateUserWizardStep.StepType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Filterable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WizardStepType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of user interface (UI) to display for the <see cref="T:System.Web.UI.WebControls.CreateUserWizardStep" /> step of a <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control.</summary>
+        <value>The <see cref="F:System.Web.UI.WebControls.WizardStepType.Auto" /> enumeration value of the <see cref="T:System.Web.UI.WebControls.WizardStepType" /> enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property specifies the navigation options to display for the user-account-creation step of the <xref:System.Web.UI.WebControls.CreateUserWizard> control.  
+  
+ The <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property determines which of the <xref:System.Web.UI.WebControls.Wizard> control's navigation buttons are displayed on the <xref:System.Web.UI.WebControls.CreateUserWizardStep> control. For more information, see the <xref:System.Web.UI.WebControls.WizardStepBase.StepType%2A?displayProperty=fullName> property.  
+  
+> [!CAUTION]
+>  If you attempt to change the <xref:System.Web.UI.WebControls.CreateUserWizardStep.StepType%2A> property to any value other than the <xref:System.Web.UI.WebControls.WizardStepType> value of the <xref:System.Web.UI.WebControls.WizardStepType> enumeration, an <xref:System.InvalidOperationException> will be thrown.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.WebControls.CreateUserWizardStep.StepType" /> property to a value other than the <see langword="WizardStepType.Auto" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public override string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CreateUserWizardStep.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title to use for the user-account-creation step of the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control.</summary>
+        <value>The title to use for the user-account-creation step of the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control. The default value is "Sign up for your new account." The default text for the control is localized based on the server's current locale.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2485 @@
+<Type Name="Calendar" FullName="System.Globalization.Calendar">
+  <TypeSignature Language="C#" Value="public abstract class Calendar : ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Calendar extends System.Object implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.Calendar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Globalization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents time in divisions, such as weeks, months, and years.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A calendar divides time into units, such as weeks, months, and years. The number, length, and start of the divisions vary in each calendar.  
+  
+> [!NOTE]
+>  For information about using the calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
+  
+ Any moment in time can be represented as a set of numeric values using a particular calendar. For example, a vernal equinox occurred at (1999, 3, 20, 8, 46, 0, 0.0) in the Gregorian calendar, that is, March 20, 1999 C.E. at 8:46:00:0.0. An implementation of <xref:System.Globalization.Calendar> can map any date in the range of a specific calendar to a similar set of numeric values, and <xref:System.DateTime> can map such sets of numeric values to a textual representation using information from <xref:System.Globalization.Calendar> and <xref:System.Globalization.DateTimeFormatInfo>. The textual representation can be culture-sensitive, for example, "8:46 AM March 20th 1999 AD" for the en-US culture, or culture-insensitive, for example, "1999-03-20T08:46:00" in ISO 8601 format.  
+  
+ A <xref:System.Globalization.Calendar> implementation can define one or more eras. The <xref:System.Globalization.Calendar> class identifies the eras as enumerated integers, where the current era (<xref:System.Globalization.Calendar.CurrentEra>) has the value 0.  
+  
+ To make up for the difference between the calendar year and the actual time that the earth rotates around the sun or the actual time that the moon rotates around the earth, a leap year has a different number of days from a standard calendar year. Each <xref:System.Globalization.Calendar> implementation defines leap years differently.  
+  
+ For consistency, the first unit in each interval (the first month, for example) is assigned the value 1.  
+  
+ The <xref:System.Globalization> namespace includes the following <xref:System.Globalization.Calendar> implementations:  
+  
+-   <xref:System.Globalization.ChineseLunisolarCalendar>  
+  
+-   <xref:System.Globalization.EastAsianLunisolarCalendar>  
+  
+-   <xref:System.Globalization.GregorianCalendar>  
+  
+-   <xref:System.Globalization.HebrewCalendar>  
+  
+-   <xref:System.Globalization.HijriCalendar>  
+  
+-   <xref:System.Globalization.JapaneseCalendar>  
+  
+-   <xref:System.Globalization.JapaneseLunisolarCalendar>  
+  
+-   <xref:System.Globalization.JulianCalendar>  
+  
+-   <xref:System.Globalization.KoreanCalendar>  
+  
+-   <xref:System.Globalization.KoreanLunisolarCalendar>  
+  
+-   <xref:System.Globalization.PersianCalendar>  
+  
+-   <xref:System.Globalization.TaiwanCalendar>  
+  
+-   <xref:System.Globalization.TaiwanLunisolarCalendar>  
+  
+-   <xref:System.Globalization.ThaiBuddhistCalendar>  
+  
+-   <xref:System.Globalization.UmAlQuraCalendar>  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Calendar ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Globalization.Calendar" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>In the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], the <see cref="T:System.Globalization.Calendar" /> class constructor is unavailable, and classes derived from <see cref="T:System.Globalization.Calendar" /> are not public. If you want a calendar of a specific type, such as a Gregorian calendar object, you have to retrieve it from the <see cref="P:System.Globalization.CultureInfo.Calendar" /> or <see cref="P:System.Globalization.DateTimeFormatInfo.Calendar" /> property, or from the <see cref="P:System.Globalization.CultureInfo.OptionalCalendars" /> property array.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDays">
+      <MemberSignature Language="C#" Value="public virtual DateTime AddDays (DateTime time, int days);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddDays(valuetype System.DateTime time, int32 days) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddDays(System.DateTime,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="days" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add days.</param>
+        <param name="days">The number of days to add.</param>
+        <summary>Returns a <see cref="T:System.DateTime" /> that is the specified number of days away from the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of days to the specified <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `days` value is added to the specified <xref:System.DateTime>. If `days` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+  
+ The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+  
+ [!code-csharp[System.Globalization.Calendar.AddMethods#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#1)]
+ [!code-vb[System.Globalization.Calendar.AddMethods#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#1)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="days" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHours">
+      <MemberSignature Language="C#" Value="public virtual DateTime AddHours (DateTime time, int hours);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddHours(valuetype System.DateTime time, int32 hours) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddHours(System.DateTime,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="hours" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add hours.</param>
+        <param name="hours">The number of hours to add.</param>
+        <summary>Returns a <see cref="T:System.DateTime" /> that is the specified number of hours away from the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of hours to the specified <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `hours` value is added to the specified <xref:System.DateTime>. If `hours` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
+  
+ The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+  
+ [!code-csharp[System.Globalization.Calendar.AddMethods#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#2)]
+ [!code-vb[System.Globalization.Calendar.AddMethods#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#2)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="hours" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMilliseconds">
+      <MemberSignature Language="C#" Value="public virtual DateTime AddMilliseconds (DateTime time, double milliseconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddMilliseconds(valuetype System.DateTime time, float64 milliseconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddMilliseconds(System.DateTime,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="milliseconds" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to add milliseconds to.</param>
+        <param name="milliseconds">The number of milliseconds to add.</param>
+        <summary>Returns a <see cref="T:System.DateTime" /> that is the specified number of milliseconds away from the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of milliseconds to the specified <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `milliseconds` value is rounded to the nearest integer before it is added to the specified <xref:System.DateTime>. If `milliseconds` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
+  
+ The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+  
+ [!code-csharp[System.Globalization.Calendar.AddMethods#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#3)]
+ [!code-vb[System.Globalization.Calendar.AddMethods#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#3)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="milliseconds" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMinutes">
+      <MemberSignature Language="C#" Value="public virtual DateTime AddMinutes (DateTime time, int minutes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddMinutes(valuetype System.DateTime time, int32 minutes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddMinutes(System.DateTime,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="minutes" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add minutes.</param>
+        <param name="minutes">The number of minutes to add.</param>
+        <summary>Returns a <see cref="T:System.DateTime" /> that is the specified number of minutes away from the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of minutes to the specified <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `minutes` value is added to the specified <xref:System.DateTime>. If `minutes` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
+  
+ The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+  
+ [!code-csharp[System.Globalization.Calendar.AddMethods#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#4)]
+ [!code-vb[System.Globalization.Calendar.AddMethods#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#4)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="minutes" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMonths">
+      <MemberSignature Language="C#" Value="public abstract DateTime AddMonths (DateTime time, int months);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddMonths(valuetype System.DateTime time, int32 months) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddMonths(System.DateTime,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="months" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add months.</param>
+        <param name="months">The number of months to add.</param>
+        <summary>When overridden in a derived class, returns a <see cref="T:System.DateTime" /> that is the specified number of months away from the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of months to the specified <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `months` value is added to the specified <xref:System.DateTime>. If `months` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+  
+ For example, suppose that the current calendar has 12 months, where the fourth month has 30 days and the tenth month has 31 days. If the specified month is the tenth month, the specified day is the 31st day of that month, and the value of the `months` parameter is 6, the resulting year is one more than the specified year, the resulting month is the fourth month, and the resulting day is the 30th day, which is the last day of the resulting month.  
+  
+ If the value of the `months` parameter is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+  
+ [!code-csharp[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#5)]
+ [!code-vb[System.Globalization.Calendar.AddMethods#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#5)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="months" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSeconds">
+      <MemberSignature Language="C#" Value="public virtual DateTime AddSeconds (DateTime time, int seconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddSeconds(valuetype System.DateTime time, int32 seconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddSeconds(System.DateTime,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="seconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add seconds.</param>
+        <param name="seconds">The number of seconds to add.</param>
+        <summary>Returns a <see cref="T:System.DateTime" /> that is the specified number of seconds away from the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of seconds to the specified <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `seconds` value is added to the specified <xref:System.DateTime>. If `seconds` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The day part of the resulting <xref:System.DateTime> is affected if the resulting time is outside the day of the specified <xref:System.DateTime>. The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>.  
+  
+ The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+  
+ [!code-csharp[System.Globalization.Calendar.AddMethods#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#6)]
+ [!code-vb[System.Globalization.Calendar.AddMethods#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#6)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="seconds" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWeeks">
+      <MemberSignature Language="C#" Value="public virtual DateTime AddWeeks (DateTime time, int weeks);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddWeeks(valuetype System.DateTime time, int32 weeks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddWeeks(System.DateTime,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="weeks" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add weeks.</param>
+        <param name="weeks">The number of weeks to add.</param>
+        <summary>Returns a <see cref="T:System.DateTime" /> that is the specified number of weeks away from the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of weeks to the specified <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `weeks` value is added to the specified <xref:System.DateTime>. If `weeks` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The month part of the resulting <xref:System.DateTime> is affected if the resulting day is outside the month of the specified <xref:System.DateTime>. The year part of the resulting <xref:System.DateTime> is affected if the resulting month is outside the year of the specified <xref:System.DateTime>. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+  
+ In all .NET Framework classes derived from the <xref:System.Globalization.Calendar> class, a week is defined as seven days.  
+  
+ The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+  
+ [!code-csharp[System.Globalization.Calendar.AddMethods#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#7)]
+ [!code-vb[System.Globalization.Calendar.AddMethods#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#7)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="weeks" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddYears">
+      <MemberSignature Language="C#" Value="public abstract DateTime AddYears (DateTime time, int years);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime AddYears(valuetype System.DateTime time, int32 years) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.AddYears(System.DateTime,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="years" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to which to add years.</param>
+        <param name="years">The number of years to add.</param>
+        <summary>When overridden in a derived class, returns a <see cref="T:System.DateTime" /> that is the specified number of years away from the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that results from adding the specified number of years to the specified <see cref="T:System.DateTime" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `years` value is added to the specified <xref:System.DateTime>. If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The day part of the resulting <xref:System.DateTime> is affected if the resulting day is not a valid day in the resulting month of the resulting year. It is changed to the last valid day in the resulting month of the resulting year. The month part of the resulting <xref:System.DateTime> is affected if the resulting month is not a valid month in the resulting year. It is changed to the last valid month in the resulting year. The era part of the resulting <xref:System.DateTime> is affected if the resulting year is outside the era of the specified <xref:System.DateTime>. The time-of-day part of the resulting <xref:System.DateTime> remains the same as the specified <xref:System.DateTime>.  
+  
+ For example, in the Gregorian calendar, February has 28 days, except during a leap year when it has 29 days. If the specified date is the 29th day of February in a leap year and the value of `years` is 1, the resulting date is the 28th day of February in the following year.  
+  
+ If `years` is negative, the resulting <xref:System.DateTime> is earlier than the specified <xref:System.DateTime>.  
+  
+ The<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value always equals <xref:System.DateTimeKind?displayProperty=fullName>. You can preserve the <xref:System.DateTime.Kind%2A> property of the `time` parameter by calling the <xref:System.DateTime.SpecifyKind%2A?displayProperty=fullName> method, as the following example shows.  
+  
+ [!code-csharp[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/cs/add1.cs#8)]
+ [!code-vb[System.Globalization.Calendar.AddMethods#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.addmethods/vb/add1.vb#8)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The resulting <see cref="T:System.DateTime" /> is outside the supported range of this calendar.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="years" /> is outside the supported range of the <see cref="T:System.DateTime" /> return value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AlgorithmType">
+      <MemberSignature Language="C#" Value="public virtual System.Globalization.CalendarAlgorithmType AlgorithmType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CalendarAlgorithmType AlgorithmType" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.AlgorithmType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CalendarAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current calendar is solar-based, lunar-based, or a combination of both.</summary>
+        <value>One of the <see cref="T:System.Globalization.CalendarAlgorithmType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses reflection to instantiate each <xref:System.Globalization.Calendar> type found in the .NET Framework and displays the value of its <xref:System.Globalization.Calendar.AlgorithmType%2A> property.  
+  
+ [!code-csharp[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/cs/algorithmtype1.cs#1)]
+ [!code-vb[System.Globalization.Calendar.AlgorithmType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.calendar.algorithmtype/vb/algorithmtype1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a copy of the current <see cref="T:System.Globalization.Calendar" /> object.</summary>
+        <returns>A new instance of <see cref="T:System.Object" /> that is the memberwise clone of the current <see cref="T:System.Globalization.Calendar" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new memberwise clone is not read-only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentEra">
+      <MemberSignature Language="C#" Value="public const int CurrentEra = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CurrentEra = (0)" />
+      <MemberSignature Language="DocId" Value="F:System.Globalization.Calendar.CurrentEra" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>Represents the current era of the current calendar.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.Calendar.CurrentEra> field represents the index of the current era in the <xref:System.Globalization.Calendar.Eras%2A> array. Because eras are arranged in reverse chronological order (from the current era to earlier eras), this field is a constant that has a value of 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DaysInYearBeforeMinSupportedYear">
+      <MemberSignature Language="C#" Value="protected virtual int DaysInYearBeforeMinSupportedYear { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DaysInYearBeforeMinSupportedYear" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.DaysInYearBeforeMinSupportedYear" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of days in the year that precedes the year that is specified by the <see cref="P:System.Globalization.Calendar.MinSupportedDateTime" /> property.</summary>
+        <value>The number of days in the year that precedes the year specified by <see cref="P:System.Globalization.Calendar.MinSupportedDateTime" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns a constant value of 365. Note that the property value can be overridden by classes derived from the <xref:System.Globalization.Calendar> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Eras">
+      <MemberSignature Language="C#" Value="public abstract int[] Eras { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] Eras" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.Eras" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the list of eras in the current calendar.</summary>
+        <value>An array of integers that represents the eras in the current calendar.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The eras are in reverse chronological order, with the current era as the first element of the array, and the oldest era as the last element of the array. For example, the value of the current era in <xref:System.Globalization.JapaneseCalendar> is 4, which is the first element of the array.  
+  
+   
+  
+## Examples  
+ The following code example displays the values contained in <xref:System.Globalization.JapaneseCalendar.Eras%2A?displayProperty=fullName>.  
+  
+ [!code-cpp[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/CPP/yslin_japanesecalendar_eras.cpp#1)]
+ [!code-csharp[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/CS/yslin_japanesecalendar_eras.cs#1)]
+ [!code-vb[System.Globalization.JapaneseCalendar.Eras#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.JapaneseCalendar.Eras/VB/yslin_japanesecalendar_eras.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDayOfMonth">
+      <MemberSignature Language="C#" Value="public abstract int GetDayOfMonth (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDayOfMonth(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDayOfMonth(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>When overridden in a derived class, returns the day of the month in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>A positive integer that represents the day of the month in the <paramref name="time" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDayOfWeek">
+      <MemberSignature Language="C#" Value="public abstract DayOfWeek GetDayOfWeek (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DayOfWeek GetDayOfWeek(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDayOfWeek(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>When overridden in a derived class, returns the day of the week in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>A <see cref="T:System.DayOfWeek" /> value that represents the day of the week in the <paramref name="time" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DayOfWeek> values are Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, and Saturday.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDayOfYear">
+      <MemberSignature Language="C#" Value="public abstract int GetDayOfYear (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDayOfYear(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDayOfYear(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>When overridden in a derived class, returns the day of the year in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>A positive integer that represents the day of the year in the <paramref name="time" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The day of the year is defined as the number of days from the first day of the year. For example, in <xref:System.Globalization.GregorianCalendar>, <xref:System.Globalization.Calendar.GetDayOfYear%2A> for January 1 returns 1, and <xref:System.Globalization.Calendar.GetDayOfYear%2A> for December 31 returns 365 in a common year or 366 in a leap year.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDaysInMonth">
+      <MemberSignature Language="C#" Value="public virtual int GetDaysInMonth (int year, int month);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDaysInMonth(int32 year, int32 month) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="month" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="month">A positive integer that represents the month.</param>
+        <summary>Returns the number of days in the specified month and year of the current era.</summary>
+        <returns>The number of days in the specified month in the specified year in the current era.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, in <xref:System.Globalization.GregorianCalendar>, <xref:System.Globalization.Calendar.GetDaysInMonth%2A> for February returns 28 in a common year or 29 in a leap year.  
+  
+   
+  
+## Examples  
+ The following code example compares different implementations of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar_Compare#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CPP/calendar_compare.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar_Compare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CS/calendar_compare.cs#1)]
+ [!code-vb[System.Globalization.Calendar_Compare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/VB/calendar_compare.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="month" /> is outside the range supported by the calendar.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDaysInMonth">
+      <MemberSignature Language="C#" Value="public abstract int GetDaysInMonth (int year, int month, int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDaysInMonth(int32 year, int32 month, int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDaysInMonth(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="month" Type="System.Int32" />
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="month">A positive integer that represents the month.</param>
+        <param name="era">An integer that represents the era.</param>
+        <summary>When overridden in a derived class, returns the number of days in the specified month, year, and era.</summary>
+        <returns>The number of days in the specified month in the specified year in the specified era.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, in <xref:System.Globalization.GregorianCalendar>, <xref:System.Globalization.Calendar.GetDaysInMonth%2A> for February returns 28 in a common year or 29 in a leap year.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="month" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="era" /> is outside the range supported by the calendar.</exception>
+        <block subset="none" type="overrides">
+          <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDaysInYear">
+      <MemberSignature Language="C#" Value="public virtual int GetDaysInYear (int year);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDaysInYear(int32 year) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDaysInYear(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <summary>Returns the number of days in the specified year of the current era.</summary>
+        <returns>The number of days in the specified year in the current era.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, in <xref:System.Globalization.GregorianCalendar>, <xref:System.Globalization.Calendar.GetDaysInYear%2A> returns 365 for a common year or 366 for a leap year.  
+  
+   
+  
+## Examples  
+ The following code example compares different implementations of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar_Compare#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CPP/calendar_compare.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar_Compare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CS/calendar_compare.cs#1)]
+ [!code-vb[System.Globalization.Calendar_Compare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/VB/calendar_compare.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDaysInYear">
+      <MemberSignature Language="C#" Value="public abstract int GetDaysInYear (int year, int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetDaysInYear(int32 year, int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetDaysInYear(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="era">An integer that represents the era.</param>
+        <summary>When overridden in a derived class, returns the number of days in the specified year and era.</summary>
+        <returns>The number of days in the specified year in the specified era.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, in <xref:System.Globalization.GregorianCalendar>, <xref:System.Globalization.Calendar.GetDaysInYear%2A> returns 365 for a common year or 366 for a leap year.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="era" /> is outside the range supported by the calendar.</exception>
+        <block subset="none" type="overrides">
+          <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEra">
+      <MemberSignature Language="C#" Value="public abstract int GetEra (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetEra(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetEra(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>When overridden in a derived class, returns the era in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>An integer that represents the era in <paramref name="time" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHour">
+      <MemberSignature Language="C#" Value="public virtual int GetHour (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHour(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetHour(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>Returns the hours value in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>An integer from 0 to 23 that represents the hour in <paramref name="time" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLeapMonth">
+      <MemberSignature Language="C#" Value="public virtual int GetLeapMonth (int year);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetLeapMonth(int32 year) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetLeapMonth(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">A year.</param>
+        <summary>Calculates the leap month for a specified year.</summary>
+        <returns>A positive integer that indicates the leap month in the specified year.  
+  
+ -or-  
+  
+ Zero if this calendar does not support a leap month or if the <paramref name="year" /> parameter does not represent a leap year.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a calendar that supports the notion of a leap month, the leap month can occur either after a particular month or after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLeapMonth">
+      <MemberSignature Language="C#" Value="public virtual int GetLeapMonth (int year, int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetLeapMonth(int32 year, int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetLeapMonth(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">A year.</param>
+        <param name="era">An era.</param>
+        <summary>Calculates the leap month for a specified year and era.</summary>
+        <returns>A positive integer that indicates the leap month in the specified year and era.  
+  
+ -or-  
+  
+ Zero if this calendar does not support a leap month or if the <paramref name="year" /> and <paramref name="era" /> parameters do not specify a leap year.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a calendar that supports the notion of a leap month, the leap month can occur either after a particular month or after any month in a year. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29> method returns a number between 1 and 13 that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%28System.DateTime%29> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMilliseconds">
+      <MemberSignature Language="C#" Value="public virtual double GetMilliseconds (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetMilliseconds(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMilliseconds(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>Returns the milliseconds value in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>A double-precision floating-point number from 0 to 999 that represents the milliseconds in the <paramref name="time" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMinute">
+      <MemberSignature Language="C#" Value="public virtual int GetMinute (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetMinute(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMinute(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>Returns the minutes value in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>An integer from 0 to 59 that represents the minutes in <paramref name="time" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonth">
+      <MemberSignature Language="C#" Value="public abstract int GetMonth (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetMonth(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMonth(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>When overridden in a derived class, returns the month in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>A positive integer that represents the month in <paramref name="time" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, in <xref:System.Globalization.HebrewCalendar>, <xref:System.Globalization.Calendar.GetMonth%2A> for Tishrei returns 1, and <xref:System.Globalization.Calendar.GetMonth%2A> for Elul returns 12 in a common year or 13 in a leap year.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonthsInYear">
+      <MemberSignature Language="C#" Value="public virtual int GetMonthsInYear (int year);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetMonthsInYear(int32 year) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <summary>Returns the number of months in the specified year in the current era.</summary>
+        <returns>The number of months in the specified year in the current era.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, in <xref:System.Globalization.HebrewCalendar>, <xref:System.Globalization.Calendar.GetMonthsInYear%2A> returns 12 for a common year or 13 for a leap year.  
+  
+   
+  
+## Examples  
+ The following code example compares different implementations of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar_Compare#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CPP/calendar_compare.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar_Compare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CS/calendar_compare.cs#1)]
+ [!code-vb[System.Globalization.Calendar_Compare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/VB/calendar_compare.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMonthsInYear">
+      <MemberSignature Language="C#" Value="public abstract int GetMonthsInYear (int year, int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetMonthsInYear(int32 year, int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetMonthsInYear(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="era">An integer that represents the era.</param>
+        <summary>When overridden in a derived class, returns the number of months in the specified year in the specified era.</summary>
+        <returns>The number of months in the specified year in the specified era.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, in <xref:System.Globalization.HebrewCalendar>, <xref:System.Globalization.Calendar.GetMonthsInYear%2A> returns 12 for a common year or 13 for a leap year.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="era" /> is outside the range supported by the calendar.</exception>
+        <block subset="none" type="overrides">
+          <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSecond">
+      <MemberSignature Language="C#" Value="public virtual int GetSecond (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetSecond(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetSecond(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>Returns the seconds value in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>An integer from 0 to 59 that represents the seconds in <paramref name="time" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWeekOfYear">
+      <MemberSignature Language="C#" Value="public virtual int GetWeekOfYear (DateTime time, System.Globalization.CalendarWeekRule rule, DayOfWeek firstDayOfWeek);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetWeekOfYear(valuetype System.DateTime time, valuetype System.Globalization.CalendarWeekRule rule, valuetype System.DayOfWeek firstDayOfWeek) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetWeekOfYear(System.DateTime,System.Globalization.CalendarWeekRule,System.DayOfWeek)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="rule" Type="System.Globalization.CalendarWeekRule" />
+        <Parameter Name="firstDayOfWeek" Type="System.DayOfWeek" />
+      </Parameters>
+      <Docs>
+        <param name="time">A date and time value.</param>
+        <param name="rule">An enumeration value that defines a calendar week.</param>
+        <param name="firstDayOfWeek">An enumeration value that represents the first day of the week.</param>
+        <summary>Returns the week of the year that includes the date in the specified <see cref="T:System.DateTime" /> value.</summary>
+        <returns>A positive integer that represents the week of the year that includes the date in the <paramref name="time" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to determine the number of weeks in the year by setting `time` to the last day of the year.  
+  
+ The <xref:System.Globalization.DateTimeFormatInfo> object for a particular culture that uses the calendar indicated by the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName> property includes the following culture-specific values that can be used for the `rule` and `firstDayOfWeek` parameters:  
+  
+-   The <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A?displayProperty=fullName> property contains the default first day of the week that can be used for the `firstDayOfWeek` parameter.  
+  
+-   The <xref:System.Globalization.DateTimeFormatInfo.CalendarWeekRule%2A?displayProperty=fullName> property contains the default calendar week rule that can be used for the `rule` parameter.  
+  
+ The following example uses the current culture's <xref:System.Globalization.DateTimeFormatInfo> object to determine that January 1, 2011 is in the first week of the year in the Gregorian calendar.  
+  
+ [!code-csharp[System.Globalization.Calendar.GetWeekOfYear#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CS/getweekofyearex1.cs#2)]
+ [!code-vb[System.Globalization.Calendar.GetWeekOfYear#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/VB/getweekofyearex1.vb#2)]  
+  
+ For some calendars, a call to the <xref:System.Globalization.Calendar.GetWeekOfYear%2A> method throws an <xref:System.ArgumentOutOfRangeException> for particular combinations of `rule` and `firstDayOfWeek` values even if `time` is greater than the date returned by that calendar's <xref:System.Globalization.Calendar.MinSupportedDateTime%2A> property. The following table lists the affected calendars, the specific `rule` values, and the range of the earliest supported `time` values. The specific minimum <xref:System.DateTime> value depends on the value of the `firstDayOfWeek` parameter.  
+  
+|Calendar|CalendarWeekRule value|Gregorian date (M/dd/yyyy)|Date in calendar (M/dd/yyyy)|  
+|--------------|----------------------------|------------------------------------|--------------------------------------|  
+|<xref:System.Globalization.ChineseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/19/1901 to 2/25/1901|1/1/1901 to 1/7/1901|  
+|<xref:System.Globalization.ChineseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/19/1901 to 2/22/1901|1/01/1901 to 1/04/1901|  
+|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule>|9/17/1583|1/01/5344|  
+|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule>|9/17/1583 to 9/23/1583|1/01/5344 to 1/07/5344|  
+|<xref:System.Globalization.HebrewCalendar>|<xref:System.Globalization.CalendarWeekRule>|9/17/1583 to 9/20/1583|1/01/5344 to 1/04/5344|  
+|<xref:System.Globalization.HijriCalendar>|<xref:System.Globalization.CalendarWeekRule>|7/18/0622 to 7/24/0622|1/01/0001 to 1/07/0001|  
+|<xref:System.Globalization.HijriCalendar>|<xref:System.Globalization.CalendarWeekRule>|7/18/0622 to 7/21/0622|1/01/0001 to 1/04/0001|  
+seLunisolarCalendar](assetId:///T:System.Globalization.JapaneseLunisolarCalendar?qualifyHint=False&autoUpgrade=True)|<xref:System.Globalization.CalendarWeekRule>|1/28/1960 to 2/03/1960|1/01/35 to 1/07/0035|  
+|<xref:System.Globalization.JapaneseLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|1/28/1960 to 1/31/1960|1/01/0035 to 1/04/0035|  
+|<xref:System.Globalization.JulianCalendar>|<xref:System.Globalization.CalendarWeekRule>|1/01/0001 to 1/05/0001|1/03/0001 to 1/07/0001|  
+|<xref:System.Globalization.JulianCalendar>|<xref:System.Globalization.CalendarWeekRule>|1/01/0001 to 1/02/0001|1/03/0001 to 1/04/0001|  
+|<xref:System.Globalization.KoreanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/14/0918 to 2/20/0918|1/01/0918 to 1/07/0918|  
+|<xref:System.Globalization.KoreanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/14/0918 to 2/17/0918|1/01/0918 to 1/04/0918|  
+|<xref:System.Globalization.PersianCalendar>|<xref:System.Globalization.CalendarWeekRule>|3/21/0622 to 3/27/0622|1/01/0001 to 1/07/0001|  
+nCalendar](assetId:///T:System.Globalization.PersianCalendar?qualifyHint=False&autoUpgrade=True)|<xref:System.Globalization.CalendarWeekRule>|3/21/0622 to 3/24/0622|1/01/0001 to 1/04/0001|  
+|<xref:System.Globalization.TaiwanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/18/1912 to 2/24/1912|1/01/0001 to 1/07/0001|  
+|<xref:System.Globalization.TaiwanLunisolarCalendar>|<xref:System.Globalization.CalendarWeekRule>|2/18/1912 to 2/21/1912|1/01/0001 to 1/04/0001|  
+|<xref:System.Globalization.UmAlQuraCalendar>|<xref:System.Globalization.CalendarWeekRule>|4/30/1900 to 5/06/1900|1/01/1318 to 1/07/1318|  
+|<xref:System.Globalization.UmAlQuraCalendar>|<xref:System.Globalization.CalendarWeekRule>|4/30/1900 to 5/03/1900|1/01/1318 to 1/04/1318|  
+  
+   
+  
+## Examples  
+ The following code example shows how the result of <xref:System.Globalization.Calendar.GetWeekOfYear%2A> varies depending on the <xref:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek%2A> and the <xref:System.Globalization.CalendarWeekRule> used. If the specified date is the last day of the year, <xref:System.Globalization.Calendar.GetWeekOfYear%2A> returns the total number of weeks in that year.  
+  
+ [!code-cpp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CPP/yslin_calendar_getweekofyear.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/CS/yslin_calendar_getweekofyear.cs#1)]
+ [!code-vb[System.Globalization.Calendar.GetWeekOfYear#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar.GetWeekOfYear/VB/yslin_calendar_getweekofyear.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="time" /> is earlier than <see cref="P:System.Globalization.Calendar.MinSupportedDateTime" /> or later than <see cref="P:System.Globalization.Calendar.MaxSupportedDateTime" />.  
+  
+ -or-  
+  
+ <paramref name="firstDayOfWeek" /> is not a valid <see cref="T:System.DayOfWeek" /> value.  
+  
+ -or-  
+  
+ <paramref name="rule" /> is not a valid <see cref="T:System.Globalization.CalendarWeekRule" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetYear">
+      <MemberSignature Language="C#" Value="public abstract int GetYear (DateTime time);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetYear(valuetype System.DateTime time) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.GetYear(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="time" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
+        <summary>When overridden in a derived class, returns the year in the specified <see cref="T:System.DateTime" />.</summary>
+        <returns>An integer that represents the year in <paramref name="time" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the members of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar/CPP/calendar.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar/CS/calendar.cs#1)]
+ [!code-vb[System.Globalization.Calendar#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar/VB/calendar.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLeapDay">
+      <MemberSignature Language="C#" Value="public virtual bool IsLeapDay (int year, int month, int day);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapDay(int32 year, int32 month, int32 day) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="month" Type="System.Int32" />
+        <Parameter Name="day" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="month">A positive integer that represents the month.</param>
+        <param name="day">A positive integer that represents the day.</param>
+        <summary>Determines whether the specified date in the current era is a leap day.</summary>
+        <returns>
+          <see langword="true" /> if the specified day is a leap day; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make up for the difference between the calendar year and the actual time that the earth rotates around the sun or the actual time that the moon rotates around the earth, a leap year has a different number of days from a standard calendar year. Each <xref:System.Globalization.Calendar> implementation defines leap years differently.  
+  
+ A leap day is a day that occurs only in a leap year. For example, in the Gregorian calendar, the 29th day of February is the only leap day.  
+  
+   
+  
+## Examples  
+ The following code example compares different implementations of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar_Compare#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CPP/calendar_compare.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar_Compare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CS/calendar_compare.cs#1)]
+ [!code-vb[System.Globalization.Calendar_Compare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/VB/calendar_compare.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="month" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="day" /> is outside the range supported by the calendar.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLeapDay">
+      <MemberSignature Language="C#" Value="public abstract bool IsLeapDay (int year, int month, int day, int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapDay(int32 year, int32 month, int32 day, int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapDay(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="month" Type="System.Int32" />
+        <Parameter Name="day" Type="System.Int32" />
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="month">A positive integer that represents the month.</param>
+        <param name="day">A positive integer that represents the day.</param>
+        <param name="era">An integer that represents the era.</param>
+        <summary>When overridden in a derived class, determines whether the specified date in the specified era is a leap day.</summary>
+        <returns>
+          <see langword="true" /> if the specified day is a leap day; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make up for the difference between the calendar year and the actual time that the earth rotates around the sun or the actual time that the moon rotates around the earth, a leap year has a different number of days from a standard calendar year. Each <xref:System.Globalization.Calendar> implementation defines leap years differently.  
+  
+ A leap day is a day that occurs only in a leap year. For example, in the Gregorian calendar, the 29th day of February is the only leap day.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="month" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="day" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="era" /> is outside the range supported by the calendar.</exception>
+        <block subset="none" type="overrides">
+          <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLeapMonth">
+      <MemberSignature Language="C#" Value="public virtual bool IsLeapMonth (int year, int month);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapMonth(int32 year, int32 month) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="month" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="month">A positive integer that represents the month.</param>
+        <summary>Determines whether the specified month in the specified year in the current era is a leap month.</summary>
+        <returns>
+          <see langword="true" /> if the specified month is a leap month; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make up for the difference between the calendar year and the actual time that the earth rotates around the sun or the actual time that the moon rotates around the earth, a leap year has a different number of days from a standard calendar year. Each <xref:System.Globalization.Calendar> implementation defines leap years differently.  
+  
+ A leap month is an entire month that occurs only in a leap year. For example, in the Hebrew calendar, Adar Beit is the only leap month.  
+  
+   
+  
+## Examples  
+ The following code example compares different implementations of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar_Compare#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CPP/calendar_compare.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar_Compare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CS/calendar_compare.cs#1)]
+ [!code-vb[System.Globalization.Calendar_Compare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/VB/calendar_compare.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="month" /> is outside the range supported by the calendar.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLeapMonth">
+      <MemberSignature Language="C#" Value="public abstract bool IsLeapMonth (int year, int month, int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapMonth(int32 year, int32 month, int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapMonth(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="month" Type="System.Int32" />
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="month">A positive integer that represents the month.</param>
+        <param name="era">An integer that represents the era.</param>
+        <summary>When overridden in a derived class, determines whether the specified month in the specified year in the specified era is a leap month.</summary>
+        <returns>
+          <see langword="true" /> if the specified month is a leap month; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make up for the difference between the calendar year and the actual time that the earth rotates around the sun or the actual time that the moon rotates around the earth, a leap year has a different number of days from a standard calendar year. Each <xref:System.Globalization.Calendar> implementation defines leap years differently.  
+  
+ A leap month is an entire month that occurs only in a leap year. For example, in the Hebrew calendar, Adar Beit is the only leap month.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="month" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="era" /> is outside the range supported by the calendar.</exception>
+        <block subset="none" type="overrides">
+          <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLeapYear">
+      <MemberSignature Language="C#" Value="public virtual bool IsLeapYear (int year);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapYear(int32 year) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapYear(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <summary>Determines whether the specified year in the current era is a leap year.</summary>
+        <returns>
+          <see langword="true" /> if the specified year is a leap year; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make up for the difference between the calendar year and the actual time that the earth rotates around the sun or the actual time that the moon rotates around the earth, a leap year has a different number of days from a standard calendar year. Each <xref:System.Globalization.Calendar> implementation defines leap years differently.  
+  
+   
+  
+## Examples  
+ The following code example compares different implementations of the <xref:System.Globalization.Calendar> class.  
+  
+ [!code-cpp[System.Globalization.Calendar_Compare#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CPP/calendar_compare.cpp#1)]
+ [!code-csharp[System.Globalization.Calendar_Compare#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/CS/calendar_compare.cs#1)]
+ [!code-vb[System.Globalization.Calendar_Compare#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.Calendar_Compare/VB/calendar_compare.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLeapYear">
+      <MemberSignature Language="C#" Value="public abstract bool IsLeapYear (int year, int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsLeapYear(int32 year, int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.IsLeapYear(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="era">An integer that represents the era.</param>
+        <summary>When overridden in a derived class, determines whether the specified year in the specified era is a leap year.</summary>
+        <returns>
+          <see langword="true" /> if the specified year is a leap year; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make up for the difference between the calendar year and the actual time that the earth rotates around the sun or the actual time that the moon rotates around the earth, a leap year has a different number of days from a standard calendar year. Each <xref:System.Globalization.Calendar> implementation defines leap years differently.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="era" /> is outside the range supported by the calendar.</exception>
+        <block subset="none" type="overrides">
+          <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in <c>Eras[0]</c>, which is the value for the current era of the calendar.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this <see cref="T:System.Globalization.Calendar" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Globalization.Calendar" /> object is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxSupportedDateTime">
+      <MemberSignature Language="C#" Value="public virtual DateTime MaxSupportedDateTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaxSupportedDateTime" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.MaxSupportedDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the latest date and time supported by this <see cref="T:System.Globalization.Calendar" /> object.</summary>
+        <value>The latest date and time supported by this calendar. The default is <see cref="F:System.DateTime.MaxValue" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSupportedDateTime">
+      <MemberSignature Language="C#" Value="public virtual DateTime MinSupportedDateTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinSupportedDateTime" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.MinSupportedDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the earliest date and time supported by this <see cref="T:System.Globalization.Calendar" /> object.</summary>
+        <value>The earliest date and time supported by this calendar. The default is <see cref="F:System.DateTime.MinValue" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public static System.Globalization.Calendar ReadOnly (System.Globalization.Calendar calendar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.Calendar ReadOnly(class System.Globalization.Calendar calendar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.ReadOnly(System.Globalization.Calendar)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Globalization.Calendar</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="calendar" Type="System.Globalization.Calendar" />
+      </Parameters>
+      <Docs>
+        <param name="calendar">A <see cref="T:System.Globalization.Calendar" /> object.</param>
+        <summary>Returns a read-only version of the specified <see cref="T:System.Globalization.Calendar" /> object.</summary>
+        <returns>The <see cref="T:System.Globalization.Calendar" /> object specified by the <paramref name="calendar" /> parameter, if <paramref name="calendar" /> is read-only.  
+  
+ -or-  
+  
+ A read-only memberwise clone of the <see cref="T:System.Globalization.Calendar" /> object specified by <paramref name="calendar" />, if <paramref name="calendar" /> is not read-only.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="calendar" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDateTime">
+      <MemberSignature Language="C#" Value="public virtual DateTime ToDateTime (int year, int month, int day, int hour, int minute, int second, int millisecond);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime ToDateTime(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="month" Type="System.Int32" />
+        <Parameter Name="day" Type="System.Int32" />
+        <Parameter Name="hour" Type="System.Int32" />
+        <Parameter Name="minute" Type="System.Int32" />
+        <Parameter Name="second" Type="System.Int32" />
+        <Parameter Name="millisecond" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="month">A positive integer that represents the month.</param>
+        <param name="day">A positive integer that represents the day.</param>
+        <param name="hour">An integer from 0 to 23 that represents the hour.</param>
+        <param name="minute">An integer from 0 to 59 that represents the minute.</param>
+        <param name="second">An integer from 0 to 59 that represents the second.</param>
+        <param name="millisecond">An integer from 0 to 999 that represents the millisecond.</param>
+        <summary>Returns a <see cref="T:System.DateTime" /> that is set to the specified date and time in the current era.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that is set to the specified date and time in the current era.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="month" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="day" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="hour" /> is less than zero or greater than 23.  
+  
+ -or-  
+  
+ <paramref name="minute" /> is less than zero or greater than 59.  
+  
+ -or-  
+  
+ <paramref name="second" /> is less than zero or greater than 59.  
+  
+ -or-  
+  
+ <paramref name="millisecond" /> is less than zero or greater than 999.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToDateTime">
+      <MemberSignature Language="C#" Value="public abstract DateTime ToDateTime (int year, int month, int day, int hour, int minute, int second, int millisecond, int era);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime ToDateTime(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond, int32 era) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.ToDateTime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+        <Parameter Name="month" Type="System.Int32" />
+        <Parameter Name="day" Type="System.Int32" />
+        <Parameter Name="hour" Type="System.Int32" />
+        <Parameter Name="minute" Type="System.Int32" />
+        <Parameter Name="second" Type="System.Int32" />
+        <Parameter Name="millisecond" Type="System.Int32" />
+        <Parameter Name="era" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">An integer that represents the year.</param>
+        <param name="month">A positive integer that represents the month.</param>
+        <param name="day">A positive integer that represents the day.</param>
+        <param name="hour">An integer from 0 to 23 that represents the hour.</param>
+        <param name="minute">An integer from 0 to 59 that represents the minute.</param>
+        <param name="second">An integer from 0 to 59 that represents the second.</param>
+        <param name="millisecond">An integer from 0 to 999 that represents the millisecond.</param>
+        <param name="era">An integer that represents the era.</param>
+        <summary>When overridden in a derived class, returns a <see cref="T:System.DateTime" /> that is set to the specified date and time in the specified era.</summary>
+        <returns>The <see cref="T:System.DateTime" /> that is set to the specified date and time in the current era.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.Calendar.ToDateTime%2A> method is useful because it can convert any date in the current calendar to a Gregorian calendar date. The Gregorian date can subsequently be used, for example, to compare dates in different calendars or create an equivalent date in a particular calendar.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="month" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="day" /> is outside the range supported by the calendar.  
+  
+ -or-  
+  
+ <paramref name="hour" /> is less than zero or greater than 23.  
+  
+ -or-  
+  
+ <paramref name="minute" /> is less than zero or greater than 59.  
+  
+ -or-  
+  
+ <paramref name="second" /> is less than zero or greater than 59.  
+  
+ -or-  
+  
+ <paramref name="millisecond" /> is less than zero or greater than 999.  
+  
+ -or-  
+  
+ <paramref name="era" /> is outside the range supported by the calendar.</exception>
+        <block subset="none" type="overrides">
+          <para>The derived class must support <see cref="F:System.Globalization.Calendar.CurrentEra" /> when it is passed as the <paramref name="era" /> parameter. One way to support <see cref="F:System.Globalization.Calendar.CurrentEra" /> is by replacing it with the value stored in the first element of the <see cref="P:System.Globalization.Calendar.Eras" /> property array, which is the value for the current era of the calendar.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ToFourDigitYear">
+      <MemberSignature Language="C#" Value="public virtual int ToFourDigitYear (int year);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ToFourDigitYear(int32 year) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.Calendar.ToFourDigitYear(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="year">A two-digit or four-digit integer that represents the year to convert.</param>
+        <summary>Converts the specified year to a four-digit year by using the <see cref="P:System.Globalization.Calendar.TwoDigitYearMax" /> property to determine the appropriate century.</summary>
+        <returns>An integer that contains the four-digit representation of <paramref name="year" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Globalization.Calendar.TwoDigitYearMax%2A> is the last year in the 100-year range that can be represented by a two-digit year. The century is determined by finding the sole occurrence of the two-digit `year` within that 100-year range. For example, if <xref:System.Globalization.Calendar.TwoDigitYearMax%2A> is set to 2029, the 100-year range is from 1930 to 2029. Therefore, a 2-digit value of 30 is interpreted as 1930, while a 2-digit value of 29 is interpreted as 2029.  
+  
+ If `year` is greater than or equal to 100, the value of `year` is returned unchanged.  
+  
+ <xref:System.Globalization.Calendar.ToFourDigitYear%2A> supports either a two-digit year or a four-digit year. Passing a two-digit year value (less than 100) causes the method to convert the value to a four-digit value according to the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A> value representing the appropriate century. If the application supplies a four-digit year value that is within the supported calendar range to <xref:System.Globalization.Calendar.ToFourDigitYear%2A>, the method returns the actual input value. If the application supplies a four-digit value that is outside the supported calendar range, or if it supplies a negative value, the method throws an exception.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="year" /> is outside the range supported by the calendar.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoDigitYearMax">
+      <MemberSignature Language="C#" Value="public virtual int TwoDigitYearMax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TwoDigitYearMax" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.Calendar.TwoDigitYearMax" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the last year of a 100-year range that can be represented by a 2-digit year.</summary>
+        <value>The last year of a 100-year range that can be represented by a 2-digit year.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property allows a 2-digit year to be properly translated to a 4-digit year. For example, if this property is set to 2029, the 100-year range is from 1930 to 2029. Therefore, a 2-digit value of 30 is interpreted as 1930, while a 2-digit value of 29 is interpreted as 2029.  
+  
+ The initial value of this property is derived from the settings in the regional and language options portion of Control Panel. However, that information can change during the life of the <xref:System.AppDomain>. The <xref:System.Globalization.Calendar> class does not detect changes in the system settings automatically. If the calendar is not supported in the regional and language options, the initial value of this property is the default value defined by the <xref:System.Globalization.Calendar> class.  
+  
+ Your application should set this value to 99 to indicate that 2-digit years are to be taken literally. For example, if this property is set to 99, the 100-year range is from 0 (not a valid value for most calendars) to 99. Therefore, a 2-digit value of 30 is interpreted as 30.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Globalization.Calendar" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

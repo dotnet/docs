@@ -4,7 +4,7 @@ description: Information on samples and tutorials for .NET Core, ASP.NET Core, a
 keywords: .NET, .NET Core, ASP.NET, C#, sample, tutorial
 author: BillWagner
 ms.author: wiwagn
-ms.date: 03/31/2017
+ms.date: 04/11/2017
 ms.topic: article
 ms.prod: .net
 ms.devlang: dotnet
@@ -13,7 +13,7 @@ ms.assetid: 617310e7-336b-4864-8dab-7e2021512929
 
 # Samples and tutorials
 
-The .NET documentation contains a rich set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find great resources to learn the F# programming language on the [F# Foundation's site](http://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, try these [interactive tutorials](http://go.microsoft.com/fwlink/p/?LinkId=817234). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
+The .NET documentation contains a set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](http://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, try these [interactive tutorials](http://go.microsoft.com/fwlink/p/?LinkId=817234). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
 
 ## .NET Core
 
@@ -73,11 +73,11 @@ This series of samples demonstrate many of the features of Language Integrated Q
 
 **[Console Application](../csharp/tutorials/console-teleprompter.md)**
 
-This tutorial demonstrates Console I/O, the structure of a console app, and the basics of the Task-based asynchronous programming model. The [completed sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-teleprompter) is available in the dotnet/docs repository on GitHub.
+This tutorial demonstrates Console I/O, the structure of a console app, and the basics of the task-based asynchronous programming model. The [completed sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-teleprompter) is available in the dotnet/docs repository on GitHub.
 
 **[REST Client](../csharp/tutorials/console-webapiclient.md)**
 
-This tutorial demonstrates web communications, JSON serialization, and Object Oriented features of the C# language. The [completed sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient) is available in the dotnet/docs repository on GitHub.
+This tutorial demonstrates web communications, JSON serialization, and object-oriented features of the C# language. The [completed sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient) is available in the dotnet/docs repository on GitHub.
 
 **[Working with LINQ](../csharp/tutorials/working-with-linq.md)**
 
